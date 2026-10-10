@@ -1,44 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-10T01:57:19.602624+00:00",
-  "candidate_count": 47,
-  "classifier_irrelevant_count": 37,
+  "discovered_utc": "2026-10-10T08:14:52.418738+00:00",
+  "candidate_count": 54,
+  "classifier_irrelevant_count": 43,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 10,
-    "broad_web": 19,
-    "developer": 9,
-    "research": 9
+    "adjacent": 3,
+    "broad_web": 34,
+    "developer": 17,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 8,
     "enabling": 0,
-    "adjacent": 10,
+    "adjacent": 3,
     "speculative": 0,
-    "irrelevant": 37
+    "irrelevant": 43
   },
   "type_counts": {
-    "model": 3,
-    "review": 1,
-    "video": 3,
-    "news": 4,
-    "research": 9,
-    "tool": 14,
-    "sdk": 9,
-    "policy": 1,
-    "retail": 10,
-    "community": 22,
+    "model": 4,
+    "review": 7,
+    "video": 5,
+    "news": 22,
+    "research": 5,
+    "tool": 20,
+    "sdk": 19,
+    "optics": 1,
+    "policy": 3,
+    "retail": 2,
+    "community": 2,
     "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 10,
-    "community_evidence_review": 4,
-    "model_catalog_review": 2,
-    "reject_noise": 37,
-    "report_card_evidence": 1,
-    "research_news_review": 10,
-    "retail_rebrand_review": 1,
-    "watching": 1
+    "adjacent_radar": 3,
+    "policy_privacy": 1,
+    "reject_noise": 43,
+    "report_card_evidence": 6,
+    "research_news_review": 11,
+    "research_optics": 1,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -52,17 +52,18 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "1ddea148dd0e6eab",
-      "title": "Clemson safety Lannden Zanders announces retirement from football ...",
-      "url": "https://www.tigernet.com/clemson-football/news/clemson-safety-lannden-zanders-announces-retirement-from-football-40490",
-      "summary": "Clemson safety Lannden Zanders announced that he is walking away from football on Wednesday. Zanders missed the majority of last season after a shoulder injury suffered in the opener versus ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "e9bc25514d72b151",
+      "title": "Smart Glasses Review: Nighttime Footage Disappointing — Are ... - TikTok",
+      "url": "https://www.tiktok.com/@datboyspliff/video/7693799022049430815",
+      "summary": "Smart Glasses Review: Nighttime Footage Disappointing — Are They Worth It? Lead: This is a concise hands-on report about trying a pair of smart glasses bought online. The main takeaway: the nighttime video quality was disappointing compared with expectations and with higher-end models like Ray-Ban Meta.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 4,
       "keyword_hits": [
-        "announced"
+        "hands-on",
+        "review"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -70,31 +71,33 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
-        "model"
+        "review",
+        "video",
+        "policy"
       ],
-      "primary_type": "model",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
+        "report_card_evidence",
+        "policy_privacy"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9983e93a31a8dfa3",
-      "title": "Winchester Deer Season XP Review - Nodak Angler",
-      "url": "https://nodakangler.com/forums/threads/winchester-deer-season-xp-review.958/",
-      "summary": "The cartridges have been in production for years and only now are available for the coming deer season. While there is a lot in the R&D, a box of 20 sells at a refreshing MSRP of $22. You can afford to actually practice shooting at the range at that price. Photo courtesy of Winchester Ammo Do...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "42c1a425a365b04f",
+      "title": "EO Adapt Smart Glasses review: mabilis na features at verdict | TikTok",
+      "url": "https://www.tiktok.com/@burnvlog/video/7675008571389594900",
+      "summary": "Takeaway / Call-to-action Kung naghahanap ng mabilis, praktikal, at sulit na smart glasses, EO Adapt Smart Glasses ay isang inirerekomendang option ayon sa reviewer. Para sa demo, dagdag na specs, at presyo, tingnan ang EO Executive Optical o magtanong sa kanilang opisyal na account.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
         "review"
       ],
@@ -104,35 +107,522 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review",
+        "video",
+        "optics"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "93bf766d804b7545",
+      "title": "getd smart glasses review - TikTok Shop",
+      "url": "https://shop.tiktok.com/us/k/getd-smart-glasses-review",
+      "summary": "Getd smart glasses represent a groundbreaking fusion of technology and fashion, designed to elevate your everyday experiences.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e2c2e2bbdf913cef",
+      "title": "Kmart Smart Glasses review — affordable camera glasses tested | TikTok",
+      "url": "https://www.tiktok.com/@jmellortiktok/video/7672679802800721159",
+      "summary": "Lead Kmart’s new camera smart glasses make a familiar wearable trend affordable. This piece gives a concise, grounded review that covers build quality, camera performance, ease of use, and who benefits from buying these low-cost smart glasses.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review",
+        "video"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: camera glasses, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7889ebf79a9ac58",
+      "title": "KYD’s Trash or Gold: Innovative Smart Glasses Review | TikTok",
+      "url": "https://www.tiktok.com/@kydyuzhi_ni/video/7589264226401684758",
+      "summary": "Keywords: smart glasses review, innovative tech gadgets, features of smart glasses, multi-functional eyewear, smart glasses convenience, KYD's Trash or Gold, hands-free technology, tech gadget insights, audio and camera features, wearable smart technology This is an AI-generated summary of the content, and is not intended to provide factual ...",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review",
+        "video"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "37e3075ac48e9067",
+      "title": "Meta Quest Smart Glasses review: are they worth the price? | TikTok",
+      "url": "https://www.tiktok.com/@hellojimmer/video/7663122239235034398",
+      "summary": "Keywords: Meta smart glasses review, Meta glasses first impressions, are Meta glasses worth it, Meta glasses price worth, smart glasses for creators, college student tech purchase, content creation gear This is an AI-generated summary of the content, and is not intended to provide factual context.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review",
+        "video",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "287f08c3f0e5d28f",
+      "title": "Meta Account: The Simpler Way to Access Your Apps and Devices",
+      "url": "https://about.fb.com/news/2026/04/meta-account/",
+      "summary": "Today we’re introducing the improved Meta Account: the simpler, centralized way to sign in and manage your Meta apps and devices like Facebook, Instagram, and AI glasses.",
+      "discovery_channel": "broad_web+research",
+      "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3eb6d2519faaa262",
+      "title": "XREAL AURA | It Feels Like Tomorrow",
+      "url": "https://www.xreal.com/us/aura",
+      "summary": "XREAL AURA is a next-generation Android XR spatial computer that combines lightweight glasses with a dedicated compute puck. Powered by Android XR and Gemini, XREAL AURA is designed to deliver immersive entertainment, productivity, and spatial computing experiences in a portable form factor.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL AURA",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc5504df76d901f9",
+      "title": "19 Farms and Orchards for Apple Picking Near NYC - Time Out",
+      "url": "https://www.timeout.com/new-york-kids/things-to-do/best-apple-picking-farms-and-orchards-for-families-near-nyc",
+      "summary": "Pick your own fruit, sip hot apple cider, hop on a hayride and more at these spots for apple picking near NYC.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5ec73b2771f5ae6",
+      "title": "Cities Nearby New York, New York, United States - TheCitiesNow.com",
+      "url": "https://www.thecitiesnow.com/united_states/new_york/new_york",
+      "summary": "Cities Nearby New York, New York, United States Find five hundred cities near New York, New York, United States from closest to farthest by distance. Distances from New York to nearby cities are shown in miles, kilometers (km) and nautical miles (nm). Cities near New York",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04b01ed87888fab2",
+      "title": "The Best Pumpkin Patches In & Near NYC - Secret NYC",
+      "url": "https://secretnyc.co/best-pumpkin-patches-near-new-york-city/",
+      "summary": "The Best Pumpkin Patches In & Near NYC — Including The Oldest Farm in New York State It's pumpkin picking season, and we've rounded up all the best pumpkin patches both in the city and right outside!",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b42a8218366a7a22",
+      "title": "Hindawi",
+      "url": "https://www.hindawi.com/",
+      "summary": "Hindawi journals have joined Wiley’s open access journal portfolio Journal content is available to openly view, download, and share on Wiley Online Library. With a 200 year tradition of publishing excellence, Wiley is committed to expanding routes to open access publishing and ensuring the maximum reach and impact of high-quality, trusted research for the benefit of humankind.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
         "model",
-        "review",
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "92927a0f9aaf57b7",
+      "title": "Hindawi Editor Community site",
+      "url": "https://editors.hindawi.com/",
+      "summary": "Hindawi is pleased to provide a community for all Academic Editors who support our journals and are shaping the future of research. This platform provides a hub for our journal Academic Editors to easily discover supportive guidelines and share conference information.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7eedff411c40a8e",
+      "title": "List of Hindawi journals closing in May 2024",
+      "url": "https://www.hindawi.com/list-hindawi-journals-closing-may-2024",
+      "summary": "List of Hindawi journals closing in May 2024 In December 2023, we announced that the Hindawi journals will be integrated with Wiley’s open access portfolio during the middle of the calendar year 2024.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e8a5e97fa12e825",
+      "title": "14 Parent-Child Duos Who Have Been Nominated for Oscars",
+      "url": "https://www.sheknows.com/parenting/slideshow/1234836343/oscar-nominated-parents-children/",
+      "summary": "The pair acted alongside each other in the 1981 film On Golden Pond (pictured). Henry — who had two previous nominations — won Best Actor in a Leading Role but was not in attendance at the ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "30b8cefbc961be74",
+      "title": "All the awards and nominations of Born on the Fourth of July",
+      "url": "https://www.filmaffinity.com/en/movie-awards.php?movie-id=349399",
+      "summary": "All the awards and nominations of Born on the Fourth of July , awards won at a Festival, at Festivals or at a Film Academy",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54b97551d19eac90",
+      "title": "American Fiction (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/American_Fiction_(film)",
+      "summary": "In July 2023, with the announcement of its world premiere, the film's title was reported to be American Fiction. [11] It is the first film from Orion to be distributed through Amazon MGM Studios Distribution, following Amazon's acquisition of MGM the year before, which also resulted in the 2021 MGM logo being added to the beginning of the film ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
         "retail"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence",
-        "retail_rebrand_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2084dd9811617195",
-      "title": "4 stroke “making oil” - General Discussion Forum - General Discussion ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/ftlgeneral_415591/",
-      "summary": "What you think?I get a few customers each year with high oil levels in their 4-stroke outboards and it's really tough to explain why sometimes. So I...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "b4e94fdea786f58a",
+      "title": "Born on the Fourth of July (1989) - Awards - IMDb",
+      "url": "https://www.imdb.com/title/tt0096969/awards/",
+      "summary": "Born on the Fourth of July (1989) - Awards, nominations, and wins",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -140,31 +630,283 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4d5db2e27ae6fe9",
+      "title": "files.hindawi.com",
+      "url": "http://files.hindawi.com/journals/jpath/2014/756539.enw",
+      "summary": "﻿%0 Journal Article %T Antimicrobial Susceptibility of Escherichia coli Isolated from Fresh-Marketed Nile Tilapia (Oreochromis niloticus) %J Journal of Pathogens %V ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53f8351cf2364178",
+      "title": "files.hindawi.com",
+      "url": "http://files.hindawi.com/journals/ijac/2018/9182508.enw",
+      "summary": "﻿%0 Journal Article %T Conformational and Functional Properties of Soybean Proteins Produced by Extrusion-Hydrolysis Approach %J International Journal of Analytical ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a13d659c70611435",
+      "title": "film Jam \"based on a novel\" premier July nominations director ...",
+      "url": "https://www.wordplays.com/crossword-solver/film-Jam-%22based-on-a-novel%22-premier-July-nominations-director",
+      "summary": "Answers for film Jam %22based on a novel%22 premier July nominations director crossword clue, 6 letters. Search for crossword clues found in the Daily Celebrity, NY Times, Daily Mirror, Telegraph and major publications. Find clues for film Jam %22based on a novel%22 premier July nominations director or most any crossword answer or clues for crossword answers.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90398cbc10bd36b8",
+      "title": "Fixed Point Theory and Applications for Function Spaces | Hindawi",
+      "url": "https://preview.hindawi.com/journals/jfs/si/613154/",
+      "summary": "The objective of this Special Issue is to report the latest advancements in the solutions of real-world problems, in particular by using the fixed/best-proximity point theory. The solvability of such problems is usually investigated in specific function spaces. The choice of the appropriate fixed/best-proximity point theorem and use the specific properties of the underlying function space can ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5671f86e6a44092",
+      "title": "Hindawi/Syndication",
+      "url": "https://syndication.hindawi.com/",
+      "summary": "Please wait while we log you in using Hindawi Single Sign On.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf34621fb7f3ef01",
+      "title": "mts.hindawi.com - IIS Windows Server",
+      "url": "https://mts.hindawi.com/",
+      "summary": "IIS Windows Server",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1daf53541d089d0a",
+      "title": "Our Energy Advantage | BHE Data Centers - Black Hills Energy",
+      "url": "https://datacenters.blackhillsenergy.com/energy-advantage",
+      "summary": "We operate electric utilities in Colorado, Montana, South Dakota and Wyoming, serving approximately 222,000 customers’ energy needs with nearly 1.5 gigawatt of electric generation and a 9,000-mile electric transmission and distribution system. In 2021, Wyoming Electric announced its Ready Wyoming electric transmission expansion initiative.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d966fcec5412f026",
+      "title": "Report login issues | Hindawi",
+      "url": "https://editors.hindawi.com/signup",
+      "summary": "Editor Community login request form If you are an Editorial Board Member for a Hindawi journal and you cannot login to your account, please request access by completing the short form below. When completing the form, please include the email address you use to access Hindawi's manuscript submission system. *The Editor Community is only open to active Editorial Board Members for Hindawi ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "research",
       "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a7e5cf3b1759923f",
-      "title": "Attorney: Fry 'Shattered' Over Foster Accident - TigerNet",
-      "url": "https://www.tigernet.com/clemson-football/story/attorney-fry-shattered-over-foster-accident-5989",
-      "summary": "Clemson left guard Roman Fry lost a good friend this past Saturday in a freak accident he will never forget.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "6f8a58dcb9a36e83",
+      "title": "Severe Vitamin B12 Deficiency in Pregnancy Mimicking HELLP Syndrome",
+      "url": "https://preview.hindawi.com/journals/criog/2019/4325647/",
+      "summary": "Severe vitamin B12 deficiency may present with hematologic abnormalities that mimic thrombotic microangiopathy disorders such as hemolysis, elevated liver enzymes, and low platelet count (HELLP) syndrome. We report a patient diagnosed with severe vitamin B12 deficiency, following termination of pregnancy for suspected preeclampsia and HELLP syndrome at 21 weeks’ gestation. When ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -172,30 +914,123 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "55d99d6b196885d4",
+      "title": "Try This Quiz on Oscar-Winning Adaptations of Popular Books ...",
+      "url": "https://www.nytimes.com/interactive/2026/01/26/books/review/oscar-winning-books.html",
+      "summary": "This 1970 film won multiple Academy Awards, including the awkwardly titled Oscar for best “story and screenplay — based on factual material or material not previously published or produced ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bfa95a21409c79a9",
+      "title": "Wonder (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wonder_(film)",
+      "summary": "Wonder is a 2017 American coming-of-age family comedy drama film directed by Stephen Chbosky, who co-wrote the screenplay with Steven Conrad and Jack Thorne. It is based on the 2012 novel by R. J. Palacio and stars Julia Roberts, Owen Wilson, Jacob Tremblay, Mandy Patinkin, and Daveed Diggs. The film follows a boy named August \"Auggie\" Pullman with Treacher Collins syndrome as he tries to fit ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "29d4aeb4724f3c17",
+      "title": "Black Hills Colorado Electric, LLC 2026 Rule 3627 Report ...",
+      "url": "https://tristate.coop/sites/default/files/PDF/TransmissionPlanningDocs/2026/Appendix%20N%20-%20Black%20Hills%20Supporting%20Documents.pdf",
+      "summary": "5.2.2 Transmission Line Conductors Transmission line conductors will utilize the environment and location assumptions identified in Table 5-2 and Table 5-3, and the maximum conductor temperature in Table 5-1 or as determined by specific Engineering Analysis based upon the transmission line design and/or minimum safety clearances.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ddc6191d780d5131",
-      "title": "Lannden Zanders: Clemson Football S Recruit - Bio, Rankings & More",
-      "url": "https://www.tigernet.com/clemson-football/recruit/lannden-zanders-3205",
-      "summary": "Lannden Zanders is a 3-star Safety from Shelby, NC that played for Crest. Lannden signed with Clemson on 2018-12-19.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "5b69d9c1a88b6fcb",
+      "title": "Black Hills Corporation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Black_Hills_Corporation",
+      "summary": "Black Hills Corporation is an American diversified energy company that is an electric and gas utility in South Dakota, Montana, Wyoming, Colorado, Arkansas, Kansas, Nebraska, and Iowa.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -203,30 +1038,29 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c6326c58a54e5daa",
-      "title": "Lannden Zanders: Clemson Football Safety - News, Stats, Bio & More",
-      "url": "https://www.tigernet.com/clemson-football/player/lannden-zanders-506",
-      "summary": "Lannden Zanders is a Clemson Football Safety from Shelby, NC",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "028a67bc16d3655b",
+      "title": "Black Hills Signs Agreements for $1.8B Power Expansion to ...",
+      "url": "https://constructionreviewonline.com/black-hills-signs-agreements-for-1-8b-power-expansion-to-serve-google-data-center-in-wyoming/",
+      "summary": "The company expects to begin earning a return on its generation investment when construction starts in 2027. Revenue from microgrid management fees is expected to begin in late 2027 and increase as the data center’s electricity demand ramps up. Google has provided Black Hills with $399 million in refundable advances for long-lead equipment.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -234,173 +1068,12 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6c995ddb6f311209",
-      "title": "Lund Forum - Toys for Big Boys | In-Depth Outdoors",
-      "url": "https://www.in-depthoutdoors.com/community/forums/forum/fishing/toys/lund/",
-      "summary": "All Lund Topics Welcome! Subject Replies Last Post DIY Center Rod Storage Lund Fisherman posted by dhpricco on August 7, 2024 at 10:43 am 30 6 days, 11 hours ago by Jon Haukaas 2023 Rebell XL Disappointed in Quality of fit and finish. posted by Anthony Spiridigloizzi on August 21, 2026 at 12:23 pm 7 1 week ago by bigcrappie Pro Ride Seats posted by Terry Reed on November 13, 2021 at 9:47 am 6 ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "194d3cf17fa47acc",
-      "title": "Not seeing other unit - Lowrance Electronics - Lowrance Electronics ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/not-seeing-other-unit/",
-      "summary": "You will not see other units hooked up on Lowrance network unless you have them connected through a NEMA. A Ethernet cord, connecting the units to share sonar and gps, doesn’t show up under the network. One quick and easy way to see if they are reading is to go to the structure page and click “source”. Should read “this unit” or “hds 9” if hooked up correctly. IF you don’t have ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d05c2dc345d2427",
-      "title": "What lakes can you catch zander on in ND? - Nodak Angler",
-      "url": "https://nodakangler.com/forums/threads/what-lakes-can-you-catch-zander-on-in-nd.14007/",
-      "summary": "interesting~ Sam Wenner, of Jamestown, N.D., caught what is expected to be certified as a state and North American record for zander while fishing Aug. 17 on Spiritwood Lake near Jamestown – Spiritwood and nearby Alkali Lake have the only verified zander populations in North America.While they can grow much larger than walleyes, the fact that zanders look very much like their cousin made ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "rumor"
       ],
       "primary_type": "rumor",
       "routing_targets": [
-        "research_news_review",
-        "watching",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1b5e336b3c8ddaa6",
-      "title": "Zander in Spiritwood Lake ND - North Dakota Fishing – General ...",
-      "url": "https://www.in-depthoutdoors.com/community/forums/topic/ndgeneral_1237618/",
-      "summary": "So I was looking through the North Dakota fishing regulations and on the limits and possession page at the bottom it mentions Zander, which are the...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "750e8b55cd00d755",
-      "title": "CNN - Facebook",
-      "url": "https://www.facebook.com/cnn/",
-      "summary": "CNN's John Miller breaks down new NYPD video of the initial moment federal immigration agents approached a car before they shot and wounded the driver while his 5-year-old child was in the back seat during a targeted enforcement operation in New York City.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -409,278 +1082,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "88102178ae69e4e6",
-      "title": "CNN - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/CNN",
-      "summary": "CNN ... Cable News Network, Inc.[2] (CNN) is an American multinational news media company and the flagship namesake property of CNN Worldwide, a division of Skydance Corporation.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d7a46108c6a4c24",
-      "title": "CNN - YouTube",
-      "url": "https://www.youtube.com/cnn",
-      "summary": "CNN is the world leader in news and information and seeks to inform, engage and empower the world.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6969738801badee6",
-      "title": "CNN interrupted for breaking news as Donald Trump makes grim ... - MSN",
-      "url": "https://www.msn.com/en-us/news/politics/cnn-interrupted-for-breaking-news-as-donald-trump-makes-grim-admission/ar-AA1Rlp4j",
-      "summary": "CNN interrupted its regular programming for breaking news after Donald Trump was contradicted live on the on-air. The urgent update concerned the fatal shooting of a National Guard member,...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e1433faa86d0d506",
-      "title": "CNN Live | CNN",
-      "url": "https://www.cnn.com/videos/live",
-      "summary": "After a lengthy legal battle against pop star Taylor Swift, plaintiff Sean Hall speaks with CNN on how decades of cultural appropriation have shaped the music industry and gives insight on the ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7755b1337d296939",
-      "title": "Noticias del mundo: última hora y actualidad internacional, hoy | CNN",
-      "url": "https://cnnespanol.cnn.com/mundo",
-      "summary": "¿Por qué Trump e Irán podrían estar esperando a que terminen las elecciones intermedias? CNN",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5d674bc5ad464036",
-      "title": "US - CNN",
-      "url": "https://www.cnn.com/us",
-      "summary": "Delta passenger stole airport tug and drove around tarmac at California airport before crashing, official says Surya Vaidy/CNN",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4181eb25b227ee3f",
-      "title": "World news - breaking news, video, headlines and opinion | CNN",
-      "url": "https://www.cnn.com/world",
-      "summary": "View CNN world news today for international news and videos from Europe, Asia, Africa, the Middle East and the Americas.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "94e0d789760fca27",
-      "title": "Últimas noticias de Estados Unidos, Latinoamérica y el mundo, hoy | CNN ...",
-      "url": "https://cnnespanol.cnn.com/",
-      "summary": "2:17 \"California te dio la bienvenida\": candidatos a gobernador discrepan sobre leyes inmigratorias en debate organizado por CNN",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6b23c91abfd6f226",
-      "title": "Bee 10 Day 27: Beeg Cheell : r/Ben10 - Reddit",
-      "url": "https://www.reddit.com/r/Ben10/comments/fguvq5/bee_10_day_27_beeg_cheell/",
-      "summary": "119 votes, 12 comments. 152K subscribers in the Ben10 community. A subreddit for all things related to the Television show Ben 10 (incl. Alien Force…",
+      "id": "5e87db7103763901",
+      "title": "Black Hills Strategy and Business Model - umbrex.com",
+      "url": "https://umbrex.com/resources/company-profiles/black-hills-corporation/",
+      "summary": "Black Hills Strategy and Business Model Executive Overview Black Hills is a U.S. regulated utility holding company focused on delivering electricity and natural gas to customers in the Rocky Mountain, Great Plains, and Midwest regions.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -690,130 +1112,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "064cab1bbcf34157",
-      "title": "BEEG Sana Is Back! : r/Hololive - Reddit",
-      "url": "https://www.reddit.com/r/Hololive/comments/t9obf3/beeg_sana_is_back/",
-      "summary": "So the big reason Sana didn't stream cause she had a back problem, so she had a hard time being able to sit. Her Jupiters are pretty beeg. Hopefully she recovers and come back healthy after shes done streaming. Oh btw, Yatagarasu is our mother now.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "61c03c92b573eac2",
-      "title": "Beeg Yikes, Very Beeg Yikes : r/vtubers - Reddit",
-      "url": "https://www.reddit.com/r/vtubers/comments/1axuq9z/beeg_yikes_very_beeg_yikes/",
-      "summary": "Welcome and enjoy your stay! MembersOnline Mabu150cm ADMIN MOD Beeg Yikes, Very Beeg Yikes Streamers/Videos Share Add a Comment Be the first to comment Nobody's responded to this post yet.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "542faaf6fb2fda90",
-      "title": "beeg yoshi - Reddit",
-      "url": "https://www.reddit.com/r/beegyoshi/",
-      "summary": "Beeg Snoshi It was perfect snow for building and I Knew What I Had To Do. Beeg Snoshi.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8202b335aaa14722",
-      "title": "beeg.porn on reddit.com",
-      "url": "https://www.reddit.com/domain/beeg.porn/",
-      "summary": "Colombiana tetona se muestra por webcam (beeg.porn) submitted 2 years ago by bustydabest to u/bustydabest 1 comment share save",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3269d610f99b6c9d",
-      "title": "Can't log in to FB using my personal Chrome browser",
-      "url": "https://support.google.com/chrome/thread/289875940/can-t-log-in-to-fb-using-my-personal-chrome-browser?hl=en",
-      "summary": "I can't login to my Facebook account on my computer while logged into chrome using my personal google account. I can get into FB while logged into chrome using my work gmail account so it is not a problem with my FB login and password.",
+      "id": "3f75fbf8508a3e08",
+      "title": "Dizziness and Tingling in Hands and Feet: Causes, Getting Help",
+      "url": "https://www.healthline.com/health/dizziness-and-tingling-in-hands-and-feet",
+      "summary": "Co-occurring dizziness and tingling in your hands and feet has several possible causes, most of which warrant a trip to the doctor’s office. Two of them, stroke and brain injury, are medical...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -840,10 +1142,130 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "31bdd6a8ffebff86",
-      "title": "Did anyone else get prompted to “Sign In” again to their Facebook app ...",
-      "url": "https://www.reddit.com/r/facebook/comments/l346n3/did_anyone_else_get_prompted_to_sign_in_again_to/",
-      "summary": "I contacted Facebook PR and they said they're looking into it. \"We’re looking into reports that some people are currently having to login again to access their Facebook accounts. We believe this was due to a configuration change and we’re working to get things back to normal as quickly as possible\" Reply reply Kazekero •",
+      "id": "2337b3a50c72811b",
+      "title": "Effective Federal Funds Rate - Federal Reserve Bank of New York",
+      "url": "https://www.newyorkfed.org/markets/%20reference-rates/effr",
+      "summary": "The New York Fed publishes the EFFR for the prior business day on the New York Fed’s website at approximately 9:00 a.m. For more information on the EFFR’s publication schedule and methodology, see Additional Information about Reference Rates Administered by the New York Fed.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d08c770931e7b91",
+      "title": "FEDERAL RESERVE BANK of NEW YORK",
+      "url": "https://markets.newyorkfed.org/api/rates/all/latest.json",
+      "summary": "{ \"refRates\": [ { \"effectiveDate\": \"2026-10-09\", \"type\": \"SOFRAI\" ,\"average30day\": 3.81569 ,\"average90day\": 3.70963 ,\"average180day\": 3.68823 ,\"index\": 1.26208139 ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d0a1c60654df6bf5",
+      "title": "headTitleNoCommunity - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/azuredbsupport/lesson-learned-499-hikaricp-retry-policy---the-connection-is-closed/4157204",
+      "summary": "headTitleNoCommunity pageTitle description redirect",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4a034aeb4addcea",
+      "title": "markets.newyorkfed.org",
+      "url": "https://markets.newyorkfed.org/api/rates/secured/sofr/last/15.json",
+      "summary": "{ \"refRates\": [ { \"effectiveDate\": \"2026-10-08\", \"type\": \"SOFR\" ,\"percentRate\": 3.87 ,\"percentPercentile1\": 3.83 ,\"percentPercentile25\": 3.85 ,\"percentPercentile75 ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "629438b067b8ccb2",
+      "title": "Multiple Symptom Checker - Medicine.com",
+      "url": "https://www.medicine.com/symptom-checker",
+      "summary": "Begin by entering symptoms that best describe your current condition. Symptoms can be entered in your own words or chosen from the list of matching suggestions; select the most appropriate. If no suggestions appear, double-check your spelling or use different words to describe your symptoms.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -852,14 +1274,43 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e266c5113a8b8e56",
+      "title": "New Platform SSO with registration during Automated Device Enrollment ...",
+      "url": "https://techcommunity.microsoft.com/blog/intunecustomersuccess/new-platform-sso-with-registration-during-automated-device-enrollment-on-macos/4519846",
+      "summary": "By Iris Yuning Ye, Product Manager – Microsoft Intune & Justin Ploegert, Principal Product Manager – Microsoft Entra A new setting ‘Enable Registration...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -871,10 +1322,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b6a09bfdf3dcc1e1",
-      "title": "Facebook 2FA bug/loop (finally) resolved & full access regained!",
-      "url": "https://www.reddit.com/r/facebook/comments/15xi6z5/facebook_2fa_bugloop_finally_resolved_full_access/",
-      "summary": "Facebook logged me out simultaneously on both my laptop and phone. I have gone through the whole ID verification thing and got an email with a code. The issue is when you try go on the response is go to your notifications on FB on your phone BUT i am logged out of FB on my phone. I get the same message if I try use the code to login on my phone.",
+      "id": "816a827018ee3917",
+      "title": "Peripheral neuropathy - Symptoms and causes - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/peripheral-neuropathy/symptoms-causes/syc-20352061",
+      "summary": "Peripheral neuropathy happens when the peripheral nerves, which are located outside of the brain and spinal cord, are damaged. This condition often causes weakness, numbness and pain, usually in the hands and feet. It also can affect other areas and body functions, including digestion and urination.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -883,15 +1334,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -901,10 +1352,160 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "930c86a57265c415",
-      "title": "Facebook 2FA is stuck in a loop and I have tried everything I can to ...",
-      "url": "https://www.reddit.com/r/facebook/comments/uh756j/facebook_2fa_is_stuck_in_a_loop_and_i_have_tried/",
-      "summary": "A little over a month ago, my old phone that I used for Facebook was dropped one too many times and is unrepairable. I purchased a new android device and tried to log into FB and was asked for a login code but no code was ever sent and I never set up a secondary 2FA code app. I use FB primarily for my business and as you can imagine, not having access has caused significant disruption to my ...",
+      "id": "a6a3f20834c27ae5",
+      "title": "Reference Rates: Statements and Operating Policies",
+      "url": "https://www.newyorkfed.org/markets/reference-rates/statements-and-operating-policies",
+      "summary": "Home > Markets & Policy Implementation > Data > Reference Rates > Reference Rates: Statements and Operating Policies",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c14d8f98066b624",
+      "title": "Secured Overnight Financing Rate (SOFR) | FRED | St. Louis Fed",
+      "url": "https://fred.stlouisfed.org/series/SOFR",
+      "summary": "Graph and download economic data for Secured Overnight Financing Rate (SOFR) from 2018-04-03 to 2026-10-08 about financing, overnight, securities, rate, and USA.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "df78ada0dbdb835d",
+      "title": "Secured Overnight Financing Rate - Federal Reserve Bank of New York",
+      "url": "https://www.newyorkfed.org/markets/reference-rates/sofr",
+      "summary": "Each business day, the New York Fed publishes the SOFR on the New York Fed website at approximately 8:00 a.m. ET. For more information on the SOFR’s publication schedule and methodology, see Additional Information about Reference Rates Administered by the New York Fed.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1dac692d4540b8b",
+      "title": "SOFR Rate Today – Overnight Fixing & Daily History",
+      "url": "https://www.bluegamma.io/fixings/sofr",
+      "summary": "Today's SOFR rate with day-over-day change, plus a daily history of official Federal Reserve Bank of New York SOFR fixings. Free table and chart, updated every publication day.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81cad7d348bac4a1",
+      "title": "SOFR Rate Today: 3.87% | History & Averages",
+      "url": "https://www.sofrrate.com/",
+      "summary": "The Secured Overnight Financing Rate (SOFR) is 3.87% for October 8, 2026, as published by the New York Federal Reserve. It is published every U.S. business day, reflecting the prior business day's repo-market transactions.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6369ad0dba7cdad0",
+      "title": "Symptom Checker - Patient",
+      "url": "https://patient.info/symptom-checker",
+      "summary": "Enter only abnormal test results, for example \"low iron\". Do not enter tests that you have been told are normal. If you have recently travelled abroad, you may be affected by a disease more common in that country. In this case, select the country where you were travelling. Important information AskPatient is an information and navigation tool.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -913,14 +1514,13 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -932,10 +1532,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e9d3446e8a4c613",
-      "title": "Facebook login no longer possible, little help? : r/lineapp - Reddit",
-      "url": "https://www.reddit.com/r/lineapp/comments/1acl5x9/facebook_login_no_longer_possible_little_help/",
-      "summary": "I created an account on facebook long ago, and had been using the facebook login occasionally, unaware that Line had plans to remove the facebook login option. I have only friends on Line, and do not know how to contact them outside of this app. I tried to reach out to Line Help, and they were of no help whatsoever, just copy and paste job. I tried downloading an older version with facebook ...",
+      "id": "61c9346cecdcd4ca",
+      "title": "Symptom Checker with Body from WebMD - Check Your Medical ...",
+      "url": "https://symptoms.webmd.com/",
+      "summary": "Identify possible conditions and treatment related to your symptoms. This tool does not provide medical advice. This tool is not intended to be a substitute for professional medical advice,...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -944,14 +1544,13 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -963,10 +1562,130 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9b72820691267628",
-      "title": "Facebook Login Problems : r/BlueStacks - Reddit",
-      "url": "https://www.reddit.com/r/BlueStacks/comments/197bh6e/facebook_login_problems/",
-      "summary": "Facebook Login Problems Has there been any recent problems with Facebook on Bluestacks? I simply cannot login into any accounts using Bluestacks. Tried creating new instances, clearing cache, downloading the Facebook App, tried to login into my account using chrome, nothing works. It usually gives me different errors.",
+      "id": "fe0458aa56c65cb7",
+      "title": "Transition from LIBOR - Federal Reserve Bank of New York",
+      "url": "https://www.newyorkfed.org/arrc/sofr-transition",
+      "summary": "The New York Fed publishes SOFR each business day at approximately 8:00 a.m Eastern Time. SOFR is a much more resilient rate than LIBOR was because of how it is produced and the depth and liquidity of the markets that underlie it.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c7116ee856cb2e2",
+      "title": "Transmission - Black Hills Energy",
+      "url": "https://www.blackhillsenergy.com/our-company/transmission",
+      "summary": "Transmission A network of pipelines and power lines help us transfer natural gas and electricity to businesses and customers across the Midwest. From the wellhead to the burner tip and from the coal mine to the light switch, we are always transmitting the energy you need when you need it.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6a7d496e9cf2cef1",
+      "title": "Transmission projects - Black Hills Energy",
+      "url": "https://www.blackhillsenergy.com/transmission-rates-and-planning/transmission-projects",
+      "summary": "Transmission line siting process Starting a new transmission line project is a process we take seriously. We look at a number of things when siting a line, like cost, land use, number of and proximity to residences, environmental sensitivities, and cultural or historical areas. We typically use a five step process for siting our transmission ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8555753fbe12ffe5",
+      "title": "Used Volkswagen Dealer in Seattle - vwofkirkland.com",
+      "url": "https://www.vwofkirkland.com/used-inventory/volkswagen/all.htm",
+      "summary": "Find Your Ideal Pre-Owned Volkswagen in Kirkland Searching for a high-quality used Volkswagen in the Seattle area? At Volkswagen of Kirkland, we have an extensive selection of popular pre-owned VW models to suit a variety of needs and preferences. By purchasing a late model, low mileage used vehicle from our dealership, you can enjoy dependable, efficient performance for less. Explore Our Used ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "134a8bbc1daac322",
+      "title": "What Causes Hand and Foot Pain and How to Manage It",
+      "url": "https://www.verywellhealth.com/pain-in-hands-and-feet-5095756",
+      "summary": "Pain in your hands and feet may arise from conditions like neuropathy or lupus, causing symptoms such as tingling and stiffness. Learn how to identify these issues and explore expert-recommended treatments.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -975,16 +1694,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -994,10 +1712,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "afb423430c25689d",
-      "title": "Facebook: How do you get past the \"See more of...\" login popup ... - Reddit",
-      "url": "https://www.reddit.com/r/socialmedia/comments/ad9rzm/facebook_how_do_you_get_past_the_see_more_of/",
-      "summary": "I'm trying to view a public page but I don't have a Facebook account. Whenever I try and view it, a popup modal comes up prompting me to login and I can't get rid of it - \"See more of [page name] on Facebook\". Is there a way to bypass this page without logging in?",
+      "id": "927fee1ff6ff8fc8",
+      "title": "Why Does My Hand Hurt? 5 Causes of Hand and Wrist Pain",
+      "url": "https://www.webmd.com/pain-management/hand-pain-causes",
+      "summary": "Understand some common causes and treatments of hand pain, including carpal tunnel syndrome, arthritis, and trigger finger.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1006,506 +1724,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e6ba6a889ca8ca7",
-      "title": "How to browse Facebook without logging in? : r/privacytoolsIO",
-      "url": "https://www.reddit.com/r/privacytoolsIO/comments/o2h5sw/how_to_browse_facebook_without_logging_in/",
-      "summary": "I'm not on Facebook but I need to follow my university page to stay updated. Its a public page but Facebook asks me to login when I visit it. So is there an alternative like nitter for Twitter ? Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Add a Comment CoolioDood •",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5cb8055e9a01907a",
-      "title": "r/danglers - Reddit",
-      "url": "https://www.reddit.com/r/danglers/",
-      "summary": "r/danglers: For all our dangling animal friends",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "379a2013fb5441dc",
-      "title": "Tips for fitting beeg engines in cars : r/automationgame - Reddit",
-      "url": "https://www.reddit.com/r/automationgame/comments/1bpbvx0/tips_for_fitting_beeg_engines_in_cars/",
-      "summary": "Hello, you might remember me for asking which cars can accept the biggest V16 a year or so ago. Now, I’ve found the only coupe bodies in the vanilla game that can accept these big engines are the 2005 Coupes, specifically the ones labeled ‘grm_mercy_26’ and bigger, the smallest one that can accept the biggest V16 being the 2.63m long trim in FR. While I haven’t discovered any other ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f76f4f067cdaf830",
-      "title": "Unexpected error occurred when I tried logging in on the Facebook ...",
-      "url": "https://www.reddit.com/r/facebook/comments/1dgw957/unexpected_error_occurred_when_i_tried_logging_in/",
-      "summary": "The ongoing Facebook downage is more than a mere inconvenience; it's a significant disruption impacting countless digital lives. As users flounder in the virtual limbo, awaiting the dawn of normalcy, Facebook's response will set a precedent for handling future crises.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "614819386fc944c0",
-      "title": "Walmart - Nortwest 88Th Avenue, Tamarac, FL - Hours & Weekly Ad",
-      "url": "https://www.storeopeninghours.com/walmart-nortwest-88th-avenue-tamarac-fl",
-      "summary": "Walmart Neighborhood Market can be found not far from the intersection of Northwest 89th Avenue and Northwest 70th Street, in Tamarac, Florida.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
-        "retail"
+        "news"
       ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "abb38098cbaf0abd",
-      "title": "Walmart Locations & Hours Near Tamarac, FL with Reviews | The Real ...",
-      "url": "https://www.yellowpages.com/tamarac-fl/walmart",
-      "summary": "Find 305 listings related to Walmart in Tamarac on YP.com. See reviews, photos, directions, phone numbers and more for Walmart locations in Tamarac, FL.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f2977b9d169aad7c",
-      "title": "WALMART Locations - Store Locator Tool",
-      "url": "https://storelocatortool.com/v3/walmart-locations/",
-      "summary": "Use our interactive map to discover the closest Walmart stores in your area with accurate location data and navigation assistance. Walmart hours vary by store location, city, department, pharmacy schedule, pickup availability, delivery windows, and holiday hours. The hours below are general estimates for many Walmart stores in the United States.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "research",
-        "tool",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18d18214806091c7",
-      "title": "Walmart Locations Near Tamarac, FL-General Merchandise - Superpages",
-      "url": "https://www.superpages.com/tamarac-fl/walmart",
-      "summary": "Find 305 listings related to Walmart in Tamarac on YP.com. See reviews, photos, directions, phone numbers and more for Walmart locations in Tamarac, FL.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1a12251cfd483b76",
-      "title": "WALMART NEIGHBORHOOD MARKET - 6931 Northwest 88th Avenue, Tamarac FL ...",
-      "url": "https://www.loc8nearme.com/florida/tamarac/walmart/599307/",
-      "summary": "Walmart Neighborhood Market is a convenient grocery store for fresh produce and everyday items. Many customers report it as their go-to store with everything they need. Positive reviews highlight a clean, well-laid-out environment with fully stocked, clean aisles.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "38198eb766732145",
-      "title": "Walmart Neighborhood Market in Tamarac, FL | Grocery, Pharmacy, Fresh ...",
-      "url": "https://www.walmart.com/store/2930-tamarac-fl",
-      "summary": "If you're low on groceries in your pantry and refrigerator, need to refill your candy dish and or secret sweets stash, or just want to stock up on all your favorite beauty supplies and perfumes, you can find everything you need at your Tamarac Walmart Neighborhood Market.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "90deeefa2718fb31",
-      "title": "Walmart Supercenter Locations & Hours Near Tamarac, FL with Reviews ...",
-      "url": "https://www.yellowpages.com/tamarac-fl/walmart-supercenter",
-      "summary": "Find 257 listings related to Walmart Supercenter in Tamarac on YP.com. See reviews, photos, directions, phone numbers and more for Walmart Supercenter locations in Tamarac, FL.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5be26d3ac2bb41c7",
-      "title": "Walmart Tamarac, FL - Last Updated August 2026 - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=walmart&find_loc=Tamarac%2C+FL",
-      "summary": "\"The Walmart across the street from me is a far better place to shop. However, Whole Foods, if you...\" more",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "72783b596d8b4684",
-      "title": "Walmart Tamarac, FL - Store Locator & Hours",
-      "url": "https://www.storeopeninghours.com/retailers/walmart/tamarac-fl",
-      "summary": "Right now, Walmart runs 33 locations near Tamarac, Florida. See this page for a full listing of every Walmart location nearby.",
-      "discovery_channel": "research",
-      "query": "smart glasses microdisplay optical engine research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "baa9915415071710",
-      "title": "what happened to beeg? : r/tipofmypenis - Reddit",
-      "url": "https://www.reddit.com/r/tipofmypenis/comments/5r8ior/what_happened_to_beeg/",
-      "summary": "what happened to beeg? something i noticed in the last week or so, beeg's porn site has been posting non-HD, low-quality (in more ways than one), and videos heavy on lesbian content rather than just straight up porn...anyone know what's going on?",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c4ef9f77967df64a",
-      "title": "What is Beeg? what is the actual meaning of BEEG? - Reddit",
-      "url": "https://www.reddit.com/r/videogamedunkey/comments/dfosv9/what_is_beeg_what_is_the_actual_meaning_of_beeg/",
-      "summary": "That means you want to say, BEEG - Big Enlarged Enormous Grand? This word is used as sexual content.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bd408af4c1fae496",
-      "title": "Why do videos on beeg.com seem to be deleted? : r/TooAfraidToAsk",
-      "url": "https://www.reddit.com/r/TooAfraidToAsk/comments/96bz4u/why_do_videos_on_beegcom_seem_to_be_deleted/",
-      "summary": "Why do videos on beeg.com seem to be deleted? For a long time beeg.com was my to go fap site but i noticed that after a while a lot of videos just dissapear. Some of the old videos stay there almost for ever but some videos just vanish after like 2 months. Are they deleted? And where i can find them if i want to? Archived post.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
