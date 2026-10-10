@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-10T10:11:19.557479+00:00`
+Generated: `2026-10-10T10:50:16.845751+00:00`
 
 - Intake files inspected: **260**
 - Candidates retained in this review window/history: **10620**
@@ -12,9 +12,9 @@ Generated: `2026-10-10T10:11:19.557479+00:00`
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 574
+- `needs_editorial_verification`: 581
 - `rejected_noise`: 7704
-- `source_review`: 56
+- `source_review`: 49
 - `watching`: 44
 
 ## Action queue
@@ -256,6 +256,9 @@ Generated: `2026-10-10T10:11:19.557479+00:00`
 | normal | needs_editorial_verification | direct | [AI Prescription Glasses Guide: Smart Eyewear for Vision Correction](https://www.evenrealities.com/blogs/buyers-guide/ai-prescription-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses with Prescription \| Smart Glasses with Rx ...](https://eydology.com/collections/ai-smart-glasses) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago These smart glasses put a 171-inch screen right in front of your eyes, and they're $50 off Coverage Xreal](https://www.androidcentral.com/wearables/xreal-one-pro-ar-prime-big-deal-days-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago Xreal Aura official pricing revealed: Priority Deposit remains active as we look to the holidays Coverage Xreal](https://www.androidcentral.com/gaming/virtual-reality/xreal-aura-official-pricing-revealed-priority-deposit-remains-active-as-we-look-to-the-holidays) | reachable (200) | research_news_review |
@@ -268,9 +271,6 @@ Generated: `2026-10-10T10:11:19.557479+00:00`
 | normal | needs_editorial_verification | enabling | [Calagaz Photo and Digital Imaging \| Mobile, AL](https://calagaz.com/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [Did someone wearing Meta Glasses film you today? Are you sure? – The Guardian - PSU Sites](https://news.google.com/rss/articles/CBMivAFBVV95cUxPT2pQTmdLTGViRjgwN3JnUVpSaV80bmw3bmVXN0pndG5uRVdpVWt1TE5mcDVULUJCSzRwYS1lbWtyazNTeTZ1RFZWUzhRdElra3FlbGlCcmhIZ1lSUTVZREtZajRjekFCVjlVY3JUS3NKTGRqaEg3YWlodzJHQTNjdjhublU5ZDJtb2NkSU1sS2Ztd3ZqcTVYME5Gd3I4OW9CNXAtbDJBMkM4bkoyc1NlRWdIRVY1dXplZ09NSg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [EO Adapt Smart Glasses review: mabilis na features at verdict \| TikTok](https://www.tiktok.com/@burnvlog/video/7675008571389594900) | reachable (200) | research_news_review, report_card_evidence, research_optics |
-| normal | needs_editorial_verification | direct | [Even Realities microdrama explores the horrors of smart-glasses surveillance - Ad Age](https://news.google.com/rss/articles/CBMibEFVX3lxTE85UDMzcUFtYjVxOEFlM09oLUdRajJnZ1hWMGlXN01VTmFISXlWcmhXeDRVLXVBOEIwQWpPQ2dONm5pTGhNTk5FRzdkVVBreThBaEVseDE1enJoOWFhWHVObmlGdUN3MlJoUEpQYQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring - mixed-news.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQZVZrWnFJeWlfVGlLdlVieE5CSzc2NnBxR1VuTTZUbG4xLW5tcUt1b0hNMnRNR3ktVm5WYnJqNnBjdlVxdE11LTROZ2x6ZEE2Zk5uSU1zZ0ZfZ29udS1OTzNYSEdRVzhuN01YNUdSTHZRWWdSa2dPSG11dWJfSTEtZnVpazBfdw?oc=5) | reachable (200) | research_news_review, development_hacking |
-| normal | needs_editorial_verification | direct | [First Look: Project Aura — The Next Step in XR for Android XR and Gemini](https://www.xreal.com/blog/aura-25-tas-release-en) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 
 ## Meaning of states
 
