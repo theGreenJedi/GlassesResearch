@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-11T14:09:10.238634+00:00`
+Generated: `2026-10-11T18:11:14.542050+00:00`
 
-- Intake files inspected: **256**
-- Candidates retained in this review window/history: **10571**
+- Intake files inspected: **254**
+- Candidates retained in this review window/history: **10485**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2174
+- `adjacent_radar`: 2154
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 583
-- `rejected_noise`: 7709
-- `source_review`: 48
-- `watching`: 41
+- `needs_editorial_verification`: 581
+- `rejected_noise`: 7646
+- `source_review`: 46
+- `watching`: 42
 
 ## Action queue
 
@@ -29,8 +29,6 @@ Generated: `2026-10-11T14:09:10.238634+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.436](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.436) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.437](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.437) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.438](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.438) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.439](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.439) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.440](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.440) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -152,6 +150,7 @@ Generated: `2026-10-11T14:09:10.238634+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.813](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.813) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.814](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.814) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.815](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.815) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.818](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.818) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
@@ -200,7 +199,6 @@ Generated: `2026-10-11T14:09:10.238634+00:00`
 | high | needs_editorial_verification | direct | [Notebookcheck 5d ago Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Oakley & Meta launch sports smart glasses in New Zealand - ChannelLife New Zealand](https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2htVVdRV1pTQnlpWXROa2ltQ0ZOcW1udlp4QXR0b2didGZaeW5HWDNQUmR4dDlacWVwZ3BVUjlUQUNUMnNpMXVVVVZ1ay12LXgyWFliQTBvbzZSdFI3MDRyOS1hdWt1Vy1PZDhndmpBWlQ1VGRQN3NHN1JyRVYwbmJ3QXdhSWY4MVFMVU4yZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Oakley & Meta launch sports smart glasses in New Zealand - FutureFive New Zealand](https://news.google.com/rss/articles/CBMijgFBVV95cUxPbVpmTHlRRU45eE5wSkpaTVdlYXhXM3VVRVVyQzZmd3NTRlByVzlneWZmemkxU2VxUDdQbTBtcVkzY0dfekd1eHRBdTE2VFVrX3c1TFlVTnpKczRMQTgyNDhwV3h6alFXV2puNTF0dkM4cmlMX0RPYXVOeXd3dzhzcGdtS3ZnS3ZxVGhMOWZB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta confirmed to officially launch in PH - gizguide.com](https://news.google.com/rss/articles/CBMifkFVX3lxTE1jTUo4ODd6eEJuMmpZemwxbXNHbzNuaFp6czE1M0FYc09DWS1yaHMwYjd1OWlITUQ4RjIyR1lGNHNmdnhVaWpLbkp6X0NlSWlGYVdaMmJlelpreEpnWUNsZlRUZkpnbU9VNkpUdmdaSW1FOUhjbVJ6eC0xd2paUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Philippines Launch Confirmed at Meta Connect - gadgetpilipinas.net](https://news.google.com/rss/articles/CBMifEFVX3lxTE9YWmJreE9tWEZXTm1hTGExZE9xWkNkUm05NHdOTjZjMXgtcS0wTEZUTmV0YklpNTJ2czg2dU1IWXJUS2g3TWZFd3Q3eDBPSWVtN2FIeVpheHFncnNGTW1xNFFxYjllZjc4SE12M2tYYl85bVpDa3JHR0xQcHM?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta to Launch in the Philippines - manilashaker.com](https://news.google.com/rss/articles/CBMidkFVX3lxTE1FNXN4d0JObWo4UC1FcndqSl9rYkkxUlNuQldkVGpoTm5HanlOa2ZOYmFVOXB3THpHalltWF90RHRNU2Jrd1RHem9yTy0yMm9OMWNRUUljSHNZRG8tZnJwcnZldlRFMVlyRzF3enYxQWlCU0JkM0E?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [RayNeo Air 4 Pro AR Glasses](https://www.rayneo.com/products/rayneo-air-4-pro-ar-glasses) | reachable (200) | research_news_review |
@@ -271,6 +269,8 @@ Generated: `2026-10-11T14:09:10.238634+00:00`
 | normal | needs_editorial_verification | direct | [HarborAeroWind Smart Glasses Review and Buying Guide](https://testforlab101.github.io/harboraerowind-smart-glasses-review/index.html) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [How Long Can Meta Glasses Record? - BGR](https://news.google.com/rss/articles/CBMiaEFVX3lxTE9LOEloWXo3ZUZsSHVaV0I3UE8xWHpYSkxlbnJFWEM5Q0lrVE5hTzMtbS1SbDFyVnM5U2hZTUV1T3lZNjNzVHNWb0VZRjNPbGdkbGRXc3lKaHFfQjFHcjhMeHdiLVJkOWd3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | enabling | [How to get my camera to work - Microsoft Q&A](https://learn.microsoft.com/en-us/answers/questions/6017046/how-to-get-my-camera-to-work) | reachable (200) | research_news_review, development_hacking, research_optics, policy_privacy |
+| normal | needs_editorial_verification | enabling | [How to Read My Eyeglasses Prescription- Eye Prescription Calculator ...](https://www.glassesshop.com/doc/how-do-i-read-my-prescription) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [How to tell if someone is wearing smart glasses near you - Popular Science](https://news.google.com/rss/articles/CBMioAFBVV95cUxQRkd6ZW83MUlQejhwRElMU1VYSW9xMDFtSDNJaExRZGNQN1NVSmRWQWVyTm82T2RTMllWYVg2WDNPd3lyV0UwVWFfWm94TDdNbGEwRzV3c1dzQ3hJaHR3czluclJPSTBTczRjQm1oNldXX0NON05aOGtoVmpNV0FSQm9jVm5qeWJNSjRSR3lKM2J5MW5sY0FtcnhaMjJJTmtK?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
