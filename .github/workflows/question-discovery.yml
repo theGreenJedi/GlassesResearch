@@ -32,7 +32,7 @@ jobs:
       - name: Discover and reconcile questions
         env:
           GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
-          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ secrets.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
+          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
           QUESTION_DISCOVERY_FEEDS: ${{ vars.QUESTION_DISCOVERY_FEEDS }}
         run: python scripts/question_discovery.py
 
