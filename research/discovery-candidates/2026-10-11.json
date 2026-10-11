@@ -1,39 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-11T13:04:54.256184+00:00",
-  "candidate_count": 43,
-  "classifier_irrelevant_count": 41,
+  "discovered_utc": "2026-10-11T14:08:48.915590+00:00",
+  "candidate_count": 57,
+  "classifier_irrelevant_count": 40,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "broad_web": 22,
-    "developer": 18,
-    "research": 3
+    "adjacent": 24,
+    "broad_web": 28,
+    "community": 11,
+    "developer": 7,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 2,
-    "adjacent": 0,
+    "direct": 4,
+    "enabling": 0,
+    "adjacent": 13,
     "speculative": 0,
-    "irrelevant": 41
+    "irrelevant": 40
   },
   "type_counts": {
-    "model": 5,
-    "review": 4,
-    "video": 10,
-    "news": 14,
-    "research": 4,
-    "tool": 18,
-    "sdk": 18,
-    "optics": 2,
-    "policy": 1,
-    "retail": 1,
-    "teardown": 1,
-    "community": 1
+    "model": 4,
+    "review": 2,
+    "video": 1,
+    "news": 32,
+    "research": 1,
+    "tool": 10,
+    "sdk": 9,
+    "optics": 1,
+    "teardown": 2,
+    "community": 10
   },
   "routing_counts": {
-    "reject_noise": 41,
-    "research_news_review": 2,
-    "research_optics": 2
+    "adjacent_radar": 13,
+    "model_catalog_review": 1,
+    "reject_noise": 40,
+    "report_card_evidence": 2,
+    "research_news_review": 17,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,17 +50,17 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "27754ca895dcea60",
-      "title": "Johns Hopkins Medicine MyChart",
-      "url": "https://www.hopkinsmedicine.org/patient-care/mychart",
-      "summary": "Johns Hopkins MyChart allows you to communicate with your provider, access test results, request prescription renewals, manage appointments and more.",
+      "id": "b04a64f482a555d0",
+      "title": "I Put on Meta and Xreal’s XR Glasses. Face Computers Are ...",
+      "url": "https://www.wired.com/story/weve-tried-meta-and-xreals-xr-glasses-is-there-a-winner/",
+      "summary": "Xreal’s long-hyped Aura glasses arrive soon for $1,279. Here’s how they fare against Meta’s recently announced VR Glasses.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "XREAL AURA",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "prescription"
+        "announced"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -65,261 +68,63 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "enabling",
+      "relationship": "direct",
       "content_types": [
-        "optics"
-      ],
-      "primary_type": "optics",
-      "routing_targets": [
-        "research_news_review",
-        "research_optics"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: prescription",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ebe4aeb4902dd1c5",
-      "title": "MyChart - Login Page",
-      "url": "https://mychart.hopkinsmedicine.org/",
-      "summary": "Communicate with your provider Securely get answers to your medical questions from the comfort of your home Access your test results No more waiting for a phone call or letter – view your results and your doctor's comments within days Request prescription renewals Send a request to renew your medication prescriptions. Manage your appointments Schedule your next appointment, or view details ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "prescription"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "enabling",
-      "content_types": [
-        "optics"
-      ],
-      "primary_type": "optics",
-      "routing_targets": [
-        "research_news_review",
-        "research_optics"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: prescription",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "589485f286e4eb87",
-      "title": "How to Leave a Google Review",
-      "url": "https://www.howtogeek.com/733488/how-to-leave-a-google-review/",
-      "summary": "Like Yelp, Google lets you leave reviews, and everyone can see them right on Google Maps. You can review almost any location, from a local business to a hiking trail or historical landmark.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ee830dc16e9fc59",
-      "title": "How to leave a Google review: easy step-by-step guide",
-      "url": "https://www.howtodiyeverything.com/how-to-leave-a-google-review-easy-step-by-step-guide/",
-      "summary": "We'll show you how to leave a Google review with simple steps in our easy guide, plus why quick customer feedback is crucial to business.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "391d197032da934b",
-      "title": "Manage your Google Business reviews",
-      "url": "https://support.google.com/business/workflow/9945796?hl=en",
-      "summary": "Ready to get started? Use this tool to report review removals and check review status.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0bf88337ab52aad",
-      "title": "Free NFL Games: Watch Live and Stream Without Paying a Dime",
-      "url": "https://huffsports.com/football/free-nfl-games/",
-      "summary": "Discover how to watch NFL games for free with this comprehensive guide! From network broadcasts and apps like NFL and Yahoo Sports to streaming platforms like Tubi, learn practical, legal options to enjoy game day without paying a dime.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1c9b739cd70713e9",
-      "title": "Google",
-      "url": "https://www.google.us/",
-      "summary": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d1b3913959ef2c10",
-      "title": "Google Business Reviews",
-      "url": "https://business.google.com/reviews",
-      "summary": "No information is available for this page.Learn why",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "model_catalog_review"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "97ffbdab9bc80da9",
-      "title": "Google Reviews | Read Customer Service Reviews of www.google.com",
-      "url": "https://www.trustpilot.com/review/www.google.com",
-      "summary": "Evaluating 1,121 reviews, most reviewers were unhappy with their experience overall. Many customers frequently reported frustrating hardware faults, unexpected repair costs, and defective products that failed to function properly or completely broke down shortly after initial purchase.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "0c18842c24ef2a1e",
+      "title": "Review: ENGO 3 smart glasses are for serious athletes only",
+      "url": "https://www.walesonline.co.uk/whats-on/shopping/engo-34085959",
+      "summary": "The ENGO 3 smart glasses do just that, forgoing fancy cameras, AI assistants, and entertainment features to focus on one mission: helping runners and cyclists see their performance data without ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d770df75461e214c",
+      "title": "ENGO Technology | ActiveLook™ Augmented Reality for Athletes",
+      "url": "https://fr.engoeyewear.com/pages/technology",
+      "summary": "engo on TF1 : Inside our technology TF1 came to meet us in Grenoble to discover the technology behind our smart glasses and see them in action, from running and cycling to sailing.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -327,13 +132,539 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "direct",
       "content_types": [
-        "review",
-        "tool",
-        "sdk",
         "teardown"
       ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a8022dcbc14e5e7",
+      "title": "XREAL AURA Starts at $1,279, Bringing Wired XR Glasses with ...",
+      "url": "https://www.prnewswire.com/news-releases/xreal-aura-starts-at-1-279--bringing-wired-xr-glasses-with-android-xr-to-customers-this-year-302900445.html",
+      "summary": "XREAL AURA is coming soon and combines XREAL optics, Android XR, Gemini and Snapdragon Reality Elite for comfortable, high-powered spatial computing glasses – and there's even more coming soon ...",
+      "discovery_channel": "broad_web",
+      "query": "XREAL AURA",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ef34c5836a7bee69",
+      "title": "13 Best Colorado Cities Near Denver, Colorado (+ Some Towns!)",
+      "url": "https://delightfullydenver.com/colorado-cities-near-denver/",
+      "summary": "Discover Denver and the rest of beautiful Colorado! From soaring Rocky Mountain peaks to picturesque prairies, Colorado is the perfect destination for outdoor adventures. But don’t overlook some of the most charming cities near Denver, such as Boulder, Fort Collins, and Golden.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64b47cf316b11b86",
+      "title": "15 Charming Small Towns Near Denver Worth Exploring",
+      "url": "https://www.onlyinyourstate.com/colorado/small-towns-near-denver",
+      "summary": "Discover 15 charming small towns near Denver, each offering unique history, outdoor activities, and picturesque settings. If you spend all your time in the spectacular albeit sprawling Mile High City, you're missing out on some of the most charming locales in the state of Colorado.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7483d27e9020137a",
+      "title": "16 Unmissable Lakes Near Denver, Colorado",
+      "url": "https://delightfullydenver.com/lakes-near-denver/",
+      "summary": "From hiking to laying out on a beach, Colorado lakes near Denver provide enough diversity that you can choose a different activity each weekend and always be pleased.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c7907a168aada13",
+      "title": "Is Seitan Healthy? Benefits, Downsides and How to Make - Dr. Axe",
+      "url": "https://draxe.com/nutrition/seitan/",
+      "summary": "Seitan is a popular meat replacement that is made using wheat gluten and can be found in many types of cuisine. It's generally low in calories but high in protein, and pre-packaged varieties may also contain extra sodium, additives and fillers.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bebbec6471749133",
+      "title": "Seitan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Seitan",
+      "summary": "The word seitan is of Japanese origin and was coined in 1961 by George Ohsawa, a Japanese advocate of the macrobiotic diet, having been shown it by one of his students, Kiyoshi Mokutani.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "983bb2adf33bf32f",
+      "title": "SEITAN Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/seitan",
+      "summary": "The meaning of SEITAN is flavored wheat gluten often used as a meat analogue.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f5ca261bcd634c5",
+      "title": "SEITAN | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/seitan",
+      "summary": "As prepared in macrobiotic practice, seitan consists of powdered wheat gluten, which is extracted from whole wheat flour by washing the flour and rinsing away the starch.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b56c4c5006f57f42",
+      "title": "What Is Seitan, and Is It Healthy? - Bob's Red Mill Natural Foods",
+      "url": "https://www.bobsredmill.com/articles/what-is-seitan-and-is-it-healthy",
+      "summary": "Seitan, commonly referred to as \"wheat meat,\" has been around for years and has transformed into a popular vegan and vegetarian meat option. As the name suggests, seitan is made from wheat; however, it does not share many similarities with flour or bread.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "373d5c021a95c22d",
+      "title": "What Is Seitan? (+ What It Tastes Like) - Insanely Good",
+      "url": "https://insanelygoodrecipes.com/what-is-seitan/",
+      "summary": "Seitan (pronounced SAY-tan), in its simplest form, is a mixture of water and vital wheat gluten, similar to flour. It's super trendy right now, thanks to TikTok, but this meatless alternative has been around for thousands of years.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2ca7a2dbc15dbe9",
+      "title": "What is Seitan? (and How to Make it) - The Hidden Veggies",
+      "url": "https://thehiddenveggies.com/what-is-seitan/",
+      "summary": "Seitan is a vegan meat substitute made from wheat gluten. It’s also sometimes referred to as wheat meat, flour and water chicken, wheat gluten, or gluten steaks.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a1a169fa42e319f9",
+      "title": "What is seitan? Complete guide to this healthy vegan meat alternative",
+      "url": "https://www.veganfoodandliving.com/features/what-is-seitan/",
+      "summary": "Seitan is a versatile and protein-packed meat substitute that has taken the vegan culinary world by storm thanks to its innate ability to mimic the texture of meat.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "00393e2abaef5c25",
+      "title": "What Is Seitan? | Food Network",
+      "url": "https://www.foodnetwork.com/how-to/packages/food-network-essentials/what-is-seitan",
+      "summary": "Seitan is a plant-based meat substitute made from wheat gluten that mimics the flavor and texture of chicken. Here's how to make seitan, and advice for buying and storing pre-made seitan.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "46238312e2205e94",
+      "title": "What is Seitan? – Seitan Society",
+      "url": "https://seitansociety.com/what-is-seitan/",
+      "summary": "Seitan (also known as “wheat meat,” “wheat protein,” or simply “gluten”) is a food made from gluten, the protein found in wheat.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6cb5aa3de7a0f481",
+      "title": "Current local time in Tokyo, Japan - WorldTimeServer.com",
+      "url": "https://www.worldtimeserver.com/current_time_in_JP.aspx?city=Tokyo",
+      "summary": "Try our World Meeting Planner and get a color-coded chart comparing the time of day in Tokyo, Japan with all of the other international locations where others will be participating.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de1dfbdba90ea648",
+      "title": "Current Time in Japan - WorldTimeData",
+      "url": "https://worldtimedata.com/time/japan/",
+      "summary": "Check current time in Japan. See local time in capital, time zones and current time across the country.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f55cef79253e185d",
+      "title": "Home | SMART Telluride",
+      "url": "https://smarttelluride.colorado.gov/",
+      "summary": "SMART invites qualified firms to submit proposals for Investment Management and Advisory Services. Please review the Request for Proposal (RFP) for project details, submission requirements, and key deadlines.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
       "primary_type": "review",
       "routing_targets": [
         "reject_noise"
@@ -344,10 +675,41 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "57a8dcb78aa93d55",
-      "title": "How to See My Google Reviews? - Simple Guide",
-      "url": "https://techdator.com/how-to-see-my-google-reviews/",
-      "summary": "Discover how to easily view your Google Reviews with this simple guide—check business feedback, personal reviews, or use a direct link.",
+      "id": "b932b4b76c51b0c9",
+      "title": "SAINT® AR-15 Rifles - Springfield Armory",
+      "url": "https://www.springfield-armory.com/ar-series/saint-ar-15-rifles/",
+      "summary": "Put your money where it matters — the SAINT® rifle from Springfield Armory® offers an outstanding value in an AR-15 with top-tier components selected for rugged dependability and relentless performance.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e14b1570d8fb1cd",
+      "title": "Tokyo Time and Date | Japan | CheckTimes.com",
+      "url": "https://www.checktimes.com/world/asia/jp/tokyo/tokyo/",
+      "summary": "Tokyo, Tokyo current time in Japan is displayed live with seconds along with active date and timezone. An interactive map offers time difference from Tokyo to other parts of the world. Mobile Friendly.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -375,108 +737,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "200598151cb08fee",
-      "title": "How to Watch NFL Games Free: The Ultimate Guide for Cord-Cutters",
-      "url": "https://www.ctvforme.com/blog/how-to-watch-nfl-games-free/",
-      "summary": "Discover the best ways to watch NFL games for free without cable. This ultimate guide covers top streaming options for cord-cutters to catch every NFL action.",
+      "id": "a3e6451aad638a6a",
+      "title": "Tokyo Time Now | Current Local Time in Tokyo, Japan | Official Time ...",
+      "url": "https://worldstandardtime.com/state-japan-tokyo",
+      "summary": "Get accurate local time in Tokyo, Japan. Live clock showing current time, date, UTC/GMT offset, DST changes, and time zone information. Find Tokyo's exact time, international time differences, and business hours. Available in multiple languages: 时间 时区, समय क्षेत्र, Zona Horaria, Fuseau Horaire.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6b98c23beb2932c3",
-      "title": "National Football League: How to watch and live stream for FREE and ...",
-      "url": "https://www.goal.com/en-us/news/watch-live-stream-national-football-league-free/blt2a3419347bf48a49",
-      "summary": "Here is how you can catch the NFL without paying a dime. You can watch many National Football League (NFL) games for free in the USA, and have a few excellent options depending on whether...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e20088469979436f",
-      "title": "NFL 2026 livestream: How to watch the NFL for free | Mashable",
-      "url": "https://mashable.com/article/nfl-live-stream-for-free",
-      "summary": "How to watch NFL for free. Live stream the NFL for free from anywhere in the world.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab1f29ae0ad7593e",
-      "title": "NFL Channel | Always on. Always football.",
-      "url": "https://www.nfl.com/watch/nfl-channel-live",
-      "summary": "Get 24/7, always-on access to NFL content on NFL Channel! The NFL Channel features Live Game Day Coverage, NFL Game Replays, Original Shows, Emmy-Award winning series and more, available FREE!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -490,7 +756,6 @@
       "relationship": "irrelevant",
       "content_types": [
         "model",
-        "video",
         "tool",
         "sdk"
       ],
@@ -504,17 +769,138 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c14e751d4982ab84",
-      "title": "Perplexity AI Models Explained and How Answers Are Generated ...",
-      "url": "https://www.datastudios.org/post/perplexity-ai-models-explained-and-how-answers-are-generated-architecture-retrieval-model-selecti",
-      "summary": "Perplexity AI has redefined the landscape of conversational search and research assistance by fusing advanced large language models with a robust retrieval and citation pipeline, creating an answer generation process that prioritizes factual accuracy, traceability, and real-time relevance.The system’s architecture is distinguished by a dynamic interplay between its underlying model selection ...",
+      "id": "25d1ea0431ba749b",
+      "title": "What time is it in Tokyo, Japan right now?",
+      "url": "https://24timezones.com/Tokyo/time",
+      "summary": "Exact time in Tokyo time zone now. Official Tokyo timezone and time change dates for year 2026.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d13ad35bb627a5f",
+      "title": "Assessment 30-second Chair Stand",
+      "url": "https://www.cdc.gov/steadi/media/pdfs/STEADI-Assessment-30Sec-508.pdf",
+      "summary": "30-Second Chair Stand Purpose: To test leg strength and endurance Equipment: A chair with a straight back without arm rests (seat 17” high), and a stopwatch.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18b0d4997e94bb86",
+      "title": "Basic Information - Yosemite National Park (U.S. National Park Service)",
+      "url": "https://www.nps.gov/yose/planyourvisit/basicinfo.htm",
+      "summary": "Yosemite National Park includes nearly 1,200 square miles of mountainous scenery, including high cliffs, deep valleys, tall waterfalls, ancient giant sequoias, and a large wilderness.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd48e90be60af5f4",
+      "title": "Best of September 2026 - XNXX.COM",
+      "url": "https://xnxx.health/best",
+      "summary": "BEST OF 20 YEARS of porn A gym session with a wild MILF in underwear and high heels - railing in the reverse cowgirl pose for the hottest XXX action! Get prepped for the best XXX exercise with a kinky MILF, stepmother, mother-in-law or son.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2baf481bbbad8795",
+      "title": "FastRouter.ai: Route requests to the right LLM for cost ...",
+      "url": "https://www.producthunt.com/products/fastrouter-ai",
+      "summary": "FastRouter is a unified AI gateway and control plane for developers and enterprise teams building with LLMs. It routes every request to the right model across 200+ LLMs through one OpenAI-compatible API, optimizing for cost, latency, quality, and reliability.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [
-        "research"
+        "api"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -524,9 +910,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "sdk",
+        "community"
       ],
-      "primary_type": "research",
+      "primary_type": "sdk",
       "routing_targets": [
         "reject_noise"
       ],
@@ -536,623 +923,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "72b08403342bc1ef",
-      "title": "Restaurants, Dentists, Bars, Beauty Salons, Doctors - Yelp",
-      "url": "https://www.yelp.com/",
-      "summary": "User Reviews and Recommendations of Best Restaurants, Shopping, Nightlife, Food, Entertainment, Things to Do, Services and More at Yelp",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e623cfb65b278a89",
-      "title": "Sign in - Google Accounts",
-      "url": "https://customerreviews.google.com/",
-      "summary": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f227e9ec5c13a02c",
-      "title": "Watch NFL Channel - Free Live TV | Tubi",
-      "url": "https://tubitv.com/live/613761/nfl-channel",
-      "summary": "Get 24/7, always-on access to NFL content on NFL Channel! The NFL Channel features Live Game Day Coverage, NFL Game Replays, Original Shows, Emmy-Award winning series and more, available FREE!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e1b1c88b0c2d9f4c",
-      "title": "Watch NFL Channel: Live TV Channel for Free | Pluto TV",
-      "url": "https://pluto.tv/us/watch/live-tv/20706/",
-      "summary": "Get 24/7, unlimited access to NFL content on NFL Channel for FREE. The NFL Channel features Live Game Day Coverage, NFL Game Replays, Original Shows, Emmy-Award winning series and more!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a1d7306d39b5468b",
-      "title": "Ways to Watch NFL: Times, TV Channels & Streaming | NFL.com",
-      "url": "https://www.nfl.com/ways-to-watch",
-      "summary": "Your complete guide to watching NFL games. See full schedule, kickoff times, TV networks, and streaming services for every matchup.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a9007c317fb4998b",
-      "title": "Where to Watch NFL Games — Schedule, Scores & TV Channels | FreeCast",
-      "url": "https://freecast.com/nfl",
-      "summary": "Full NFL season schedule, live scores, standings, news, and where to watch every game live in the U.S. on FOX, CBS, NBC, ABC, Prime Video, Netflix, Peacock, and free over-the-air TV.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7511c46130de9293",
-      "title": "AI Models & Content Generation - Perplexity Help Center",
-      "url": "https://www.perplexity.ai/help-center/en/collections/18799291-ai-models-content-generation",
-      "summary": "Learn to switch between AI models in Perplexity. This guide shows you the model selector and how to choose your preferred model for each search. Can I install ChatGPT plugins or transfer data from ChatGPT or Claude.ai? Can I use my ChatGPT or Claude.ai account with Perplexity? Troubleshooting for image generation What is Model Council?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "702cb32ed361d716",
-      "title": "AI Models: How to?? : perplexity_ai - redditmedia.com",
-      "url": "https://www.redditmedia.com/r/perplexity_ai/comments/1j3girp/ai_models_how_to/",
-      "summary": "Hey there! I totally get your confusion, and I’m happy to help clarify how to set a default AI model and make sense of the different options in Perplexity: Account Settings (Default Model) The default AI model is selected in your Settings > Account > AI Model section (as shown in your screenshot).",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6b92b1e098f9406",
-      "title": "Best Buy Stores in Jacksonville, Florida | Shop Electronics & More",
-      "url": "https://stores.bestbuy.com/fl/jacksonville.html",
-      "summary": "Find all Best Buy store locations in Jacksonville, Florida. View hours, get directions, and shop the latest electronics and more in a store near you.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3bbc0a5733ca848d",
-      "title": "Best Perplexity AI Models Comparison - insights.terabox.com",
-      "url": "https://insights.terabox.com/hub/which-perplexity-ai-model-should-you-use-for-your-specific-task",
-      "summary": "For users on the Perplexity Max plan, the \"Model Council\" feature represents a significant step forward in AI utility. Instead of choosing just one model, the Model Council allows you to run a query across three models simultaneously.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7c20555fe864fd1b",
-      "title": "Best Restaurants Jacksonville FL | The 50 Must-Try Restaurants in Jax ...",
-      "url": "https://www.visitjacksonville.com/blog/jacksonville-best-bites/",
-      "summary": "Discover the best restaurants in Jacksonville, FL, from farm-to-table to casual dockside dining. Explore 50 unique and delicious must-try bites across the city!",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ccb7a9e1ed789dab",
-      "title": "Choosing the Right AI Model in Perplexity",
-      "url": "https://www.firstaimovers.com/p/perplexity-choose-ai-model",
-      "summary": "Perplexity AI offers multiple AI models to power its answers, and picking the right one can elevate your results. On the free plan, Perplexity automatically uses a default model optimized for quick, accurate answers (“Best” mode) and handles model choice for you.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25f2ea56f1ab5b65",
-      "title": "Employee Links | Johns Hopkins Medicine",
-      "url": "https://www.hopkinsmedicine.org/all-childrens-hospital/health-professionals/employee-links",
-      "summary": "Johns Hopkins All Children’s Hospital is dedicated to providing access to online resources for our employees and health care partners. Here are the most common web resources requested by our team members ...",
+      "id": "e005ba18cdcffd2c",
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX.COM",
+      "url": "https://xnxx.health/",
+      "summary": "Sex Video,Sex Porno,Seks Porno,XXX 1080p Video,ankha XXX,YouPorn,XVIDEOS,jav hd,erotic film. XNXX Porn Movies,XNXX.COM GAY Porn,Porn Comics Porno Anal Sex Tube Movies ...",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9dcfd7b83c0dcaf0",
-      "title": "ESS - Employee Self Service",
-      "url": "https://ess.johnshopkins.edu/",
-      "summary": "Employee Self Service (ESS) is a convenient, secure, user-friendly enhancement to the central HR/Payroll system that will allow you to view your personal and payroll data and easily make changes.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4463203b75e4e6e1",
-      "title": "Facebook",
-      "url": "https://www.facebook.com/signin.htm/",
-      "summary": "When this happens, it's usually because the owner only shared it with a small group of people, changed who can see it or it's been deleted.",
-      "discovery_channel": "research",
-      "query": "smart eyewear site:media.mit.edu",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "be655421ad6a55b8",
-      "title": "Help Center",
-      "url": "https://help.instagram.com/1267233311582177/",
-      "summary": "Meta, including Meta Company Products like Instagram, doesn't have a general public phone number available for customer service.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6fcb3991fc5b704f",
-      "title": "How do I change to my preferred AI model? - Perplexity Help ...",
-      "url": "https://www.perplexity.ai/help-center/en/articles/12802813-how-do-i-change-to-my-preferred-ai-model",
-      "summary": "On the web, select the model dropdown in the bottom right, choose Custom, and pick a model along with reasoning and speed options. On the web, you can change to your preferred model by selecting the model dropdown in the bottom right corner of the prompt input box.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d09d3eafd01abc06",
-      "title": "How to Grow | Instagram for Creators",
-      "url": "https://creators.instagram.com/how-to-grow",
-      "summary": "Discover tips to grow your following on Instagram by creating engaging content such as Reels and photos that resonate with your audience. Experiment to find what works best for you.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ddb36ee303eaa6a1",
-      "title": "Instagram for Business: Marketing on Instagram | Instagram for Business",
-      "url": "https://business.instagram.com/",
-      "summary": "Over 2 million businesses connect with people on Instagram. Learn how to use Instagram to reach new customers, grow your audience and engage with existing customers.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "df8f3e364277420b",
-      "title": "Learn more about",
-      "url": "https://myjhsupport.jh.edu/",
-      "summary": "myJH is your one-stop shop for Hopkins resources. Whether you’re a student within the Whiting School of Engineering or a provider at the Johns Hopkins Hospital, myJH is the online front door through which hundreds of Hopkins-related tools are available.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1101387478eb9f6d",
-      "title": "Level Up with Instagram Reels | Instagram for Creators",
-      "url": "https://creators.instagram.com/reels",
-      "summary": "Reels is where people create, share and discover videos. Learn how to use Instagram Reels to create moments your fans watch on repeat.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1177,27 +953,32 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6fca7b50865984f6",
-      "title": "Log into Facebook",
-      "url": "https://www.facebook.com/",
-      "summary": "Connect and share with friends, family, and the world on Facebook.",
-      "discovery_channel": "research",
-      "query": "smart eyewear site:media.mit.edu",
+      "id": "236be09579bf1df4",
+      "title": "Hopscotch AI: 500+ AI models available via a single API ...",
+      "url": "https://www.producthunt.com/products/hopscotch-7",
+      "summary": "Hopscotch AI brings 500+ models into one API, with no platform fees or markup. Your team can test new models quickly and find the right fit for each task and workflow without building additional integrations.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
       "source": "Bing web RSS",
-      "source_lane": "research",
+      "source_lane": "research_radar",
       "materiality_score": 2,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "api"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "research",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1207,27 +988,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "45a7900bf60d9aa4",
-      "title": "Login and Password | Facebook Help Center",
-      "url": "https://www.facebook.com/help/log%20in/",
-      "summary": "Find out what to do if you're having trouble logging in, or learn how to log out of Facebook.",
-      "discovery_channel": "research",
-      "query": "smart eyewear site:media.mit.edu",
+      "id": "95ea2298e6b9a7bb",
+      "title": "How do I run a single test using Jest? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42827054/how-do-i-run-a-single-test-using-jest",
+      "summary": "I have a test 'works with nested children' within the file fix-order-test.js. Running the below runs all the tests in the file. jest fix-order-test How do I run only a single test? The below does...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
-      "source_lane": "research",
+      "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1237,10 +1018,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aadaf0fb1bec9217",
-      "title": "myJH",
-      "url": "https://my.jh.edu/myJH/",
-      "summary": "Designed & Developed by Johns Hopkins Information Technology Technology Acceleration Group",
+      "id": "bc83ae03317a3097",
+      "title": "How to test the type of a thrown exception in Jest",
+      "url": "https://stackoverflow.com/questions/46042613/how-to-test-the-type-of-a-thrown-exception-in-jest",
+      "summary": "The answer by bodolsog which suggests using a try/catch is close, but rather than expecting true to be false to ensure the expect assertions in the catch are hit, you can instead use expect.assertions (2) at the start of your test where 2 is the number of expected assertions. I feel this more accurately describes the intention of the test.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ea2dca8d02cbfc5",
+      "title": "Most Viewed Sex videos - XNXX.DEV",
+      "url": "https://xnxx.dev/popular",
+      "summary": "XNXX.DEV Most Viewed Sex videos, free sex videos",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1267,15 +1078,559 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b73ca1c3d5b1452e",
-      "title": "myJH - Landing",
-      "url": "https://my.jh.edu/",
-      "summary": "Welcome to my.jh. This is your access point to hundreds of Johns Hopkins web applications and key information about your Johns Hopkins community. Create Account",
+      "id": "5799a4a7d788b6b2",
+      "title": "Plan Your Visit - Yosemite National Park (U.S. National Park Service) - NPS",
+      "url": "https://home.nps.gov/yose/planyourvisit/index.htm",
+      "summary": "First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3de5684351c9c5a2",
+      "title": "powershell - Test Database Connectivity - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/29229109/test-database-connectivity",
+      "summary": "The other answers are great; just providing this as another option. If you have the SqlServer PowerShell module installed, you can use the Invoke-Sqlcmd cmdlet to test connectivity, like so:",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c13300f596dc5ed",
+      "title": "Printing additional output in Google Test - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7923903/printing-additional-output-in-google-test",
+      "summary": "Is there a googletest function I can call inside my unit test that outputs text in this format? Manually sending data to cout works, but it doesn't include the usual coloured output so I have to explicitly indent the output by printing 13 spaces or whatever.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "894bb564256e7314",
+      "title": "Sup AI: AI ensemble that scored #1 on Humanity's Last Exam ...",
+      "url": "https://www.producthunt.com/products/sup-ai",
+      "summary": "My dad Scott (AI Research Scientist at TRI, PhD from UCLA) is my research partner on this. He sends me papers at all hours, we argue about whether they actually apply and what modifications make sense, and then I build and test things.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9f56d6aabf81d97f",
+      "title": "Talk. Test. Treat. | SAW | CDC",
+      "url": "https://www.cdc.gov/sti-awareness/talktesttreat/index.html",
+      "summary": "Talk. Test. Treat. is a campaign that encourages individuals and healthcare providers to take three simple actions – Talk. Test. Treat. – to protect their health, the health of their partner (s), and that of their patients. The campaign reinforces that all STIs are preventable and treatable, and most are curable.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "848744656ee2d587",
+      "title": "Test Order Directory | Submitting Specimens to CDC | Infectious ...",
+      "url": "https://www.cdc.gov/laboratory/specimen-submission/list.html",
+      "summary": "The searchable Test Order Directory features an up-to-date list of orderable tests and provides information on specimen requirements, contact information, test turnaround times, and other supplemental information. Access the directory here or while completing a Specimen Submission Form. Effective September 28, 2026, an updated directory is ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "72ca6950f6e5f8d4",
+      "title": "The 15 Best Things to Do in Yosemite National Park",
+      "url": "https://www.lonelyplanet.com/articles/best-things-to-do-in-yosemite-national-park",
+      "summary": "With its spectacular granite monoliths, plunging waterfalls and glacier-carved valleys, Yosemite National Park delivers the kind of epic scenery and adventure that sticks with you long after your trip ends. Most visitors arrive expecting to see the icons: Half Dome, El Capitan and Yosemite Falls.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "815152324162f02d",
+      "title": "Ultimate Guide To Yosemite National Park - Enjoy National Parks",
+      "url": "https://enjoynationalparks.com/yosemite-national-park/",
+      "summary": "Discover the natural beauty of Yosemite National Park. Your ultimate guide to hiking trails, scenic spots, and wildlife in California’s iconic park.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5fa0103e05f350dd",
+      "title": "Unit test naming best practices - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/155436/unit-test-naming-best-practices",
+      "summary": "What are the best practices for naming unit test classes and test methods? This was discussed on SO before, at What are some popular naming conventions for Unit Tests? I don't know if this is a v...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c157e8968be649a4",
+      "title": "What is the difference between 'it' and 'test' in Jest?",
+      "url": "https://stackoverflow.com/questions/45778192/what-is-the-difference-between-it-and-test-in-jest",
+      "summary": "In my opinion, it really has a point when it comes to read the result of a failing test that you haven't written yourself. It helps to faster understand what the test is about. Some developer also shorten the Should do this thing to Does this thing which is a bit shorter and also fits semantically to the it notation.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2bca55c8996aeb1d",
+      "title": "XNXX Free Porn Videos - HD Porno Tube & XXX Sex Videos - WWW.XNXX.DEV",
+      "url": "https://www.xnxx.dev/",
+      "summary": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, sexy girls in xxx rated porn clips.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a980535143fb7563",
+      "title": "Yosemite - U.S. National Park Service",
+      "url": "https://www.nps.gov/yose/index.htm",
+      "summary": "First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ed7a876b1beb8c0",
+      "title": "Yosemite National Park",
+      "url": "https://www.yosemite.com/yosemite-mariposa-stories/yosemite-facts/",
+      "summary": "Yosemite National Park enthralls visitors with its diverse terrain, abundant wildlife, and incomparable scenery. 750,000 acres of soaring cliffs, cascading waterfalls, and lush meadows make Yosemite one of the world’s natural wonders.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22cd97e06a29b688",
+      "title": "Yosemite National Park - Visit California",
+      "url": "https://www.visitcalifornia.com/things-to-do/yosemite-national-park/",
+      "summary": "Nearly the size of Rhode Island, Yosemite National Park dazzles with unforgettable natural beauty. Most visitors head directly to Yosemite Valley, a 4,000-foot-deep trough lined by sheer cliffs of glacially sculpted rock.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b05d83e008922380",
+      "title": "Yosemite National Park - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yosemite_National_Park",
+      "summary": "Yosemite National Park (/ joʊˈsɛmɪti / yoh-SEM-ih-tee[5]) is a national park of the United States in California. [6][7] It is bordered on the southeast by the Sierra National Forest and on the northwest by Stanislaus National Forest.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "82bf8920cfb2fe3c",
+      "title": "Yosemite National Park | (Official GANP Page)",
+      "url": "https://national-parks.org/united-states/yosemite/",
+      "summary": "Yosemite National Park is a renowned national park in California, known for its towering granite cliffs, waterfalls, giant sequoias, and scenic valleys. Explore Yosemite National Park facts, photos, an interactive map, top trails, and things to do, from Yosemite Valley to Glacier Point.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b541d304d60a345",
+      "title": "Yosemite National Park | Lodging, Camping, Attractions | Yosemite.com",
+      "url": "https://www.yosemite.com/",
+      "summary": "Plan your vacation to Yosemite today! Discover things to do in Yosemite, places to stay in Yosemite and some of the best places to eat in Yosemite Mariposa County.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3505e7bd033885f1",
+      "title": "Aymo AI: All-in-one AI Platform for Teams | Product Hunt",
+      "url": "https://www.producthunt.com/products/aymo-ai",
+      "summary": "Get access to latest models of GPT, Claude, Gemini, DeepSeek, Grok, Kimi, GLM and 45+ top AI models in one secure workspace with powerful team features. Compare outputs AI model response side by side, upload and chat with files, search the web, generate images, and collaborate with your team on every plan.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7346a2b5a1966804",
+      "title": "Hark: The personal AI that handles life before you have to ...",
+      "url": "https://www.producthunt.com/products/hark-3",
+      "summary": "Hark Pro is a personal AI designed to take things off your plate, not add another chatbot to your day. It remembers what matters, thinks ahead about what you might need, and uses its own cloud computer to get things done across the web — from managing calendars and email to shopping, travel, bills, and everyday errands. Your sensitive credentials stay encrypted, Hark never sells your data or ...",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1297,15 +1652,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d471a5400f324b44",
-      "title": "myJH - Landing",
-      "url": "https://my.jh.edu/html/jpl.html",
-      "summary": "To access the Clinical Workstation Resource Center, you must connect to the Hopkins network.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "51f8bceab8b2b101",
+      "title": "Milliseconds.ai: Fast AI decisions on text and images, via ...",
+      "url": "https://www.producthunt.com/products/milliseconds-ai",
+      "summary": "Meet decision-machine-1, the small model behind milliseconds.ai. Route emails, extract invoice data, apply return policies (or build your hot-dog identification empire).",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1315,9 +1670,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1327,15 +1682,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "187dc7347499c273",
-      "title": "MyJH Account | Check Your Tax Return Status & More - Jackson Hewitt",
-      "url": "https://www.jacksonhewitt.com/join-my-jh",
-      "summary": "Get faster tax prep with Jackson Hewitt's MyJH account. Explore the benefits, including how to sign up, the features, and helpful FAQs.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "2f18d0f69c99964d",
+      "title": "OpenAI: APIs and tools for building AI products | Product Hunt",
+      "url": "https://www.producthunt.com/products/openai",
+      "summary": "The most powerful platform for building AI products. Build and scale AI experiences powered by industry-leading models and tools.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1345,9 +1700,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1357,15 +1713,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1fab3166c95647fa",
-      "title": "What is myJH?",
-      "url": "https://myjhsupport.jh.edu/what-is-myjh/",
-      "summary": "What is myJH? The myJH portal is commonly referred to as myJH. Because it aims to serve all of Johns Hopkins, it must remain highly flexible. The new user experience makes it easy for users to access the tools and information crucial to life at Johns Hopkins.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "a6fbfe15fd8bf75c",
+      "title": "Proofsource: AI search visibility, with agents that fix the ...",
+      "url": "https://www.producthunt.com/products/proofsource",
+      "summary": "It asks your buyers' questions on ChatGPT, Claude, Perplexity and Google AI Overviews every day, shows who gets named instead and why, maps the pages AI trusts, and drafts the fixes.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1375,9 +1731,70 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f1e65b59dbbf679",
+      "title": "Spira AI: The #1 agent that runs your entire social | Product ...",
+      "url": "https://www.producthunt.com/products/spira-ai",
+      "summary": "Built by the teams behind Creatify AI, TikTok, CapCut, Meta, Snap and Midjourney — Spira gives you autonomous AI Influencers that run your social media end-to-end 24/7. They catch trends before they peak, create content in your voice, and publish across TikTok, Instagram, X and more.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fff0a6a69137c472",
+      "title": "Z.ai: Official Playground for High-Performance GLM Models ...",
+      "url": "https://www.producthunt.com/products/z-ai",
+      "summary": "Official Z.ai platform to experience our new, MIT-licensed GLM models (Base, Reasoning, Rumination). Simple UI focuses on model interaction. Free.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
