@@ -1,35 +1,41 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-11T22:08:16.473359+00:00",
-  "candidate_count": 65,
-  "classifier_irrelevant_count": 65,
+  "discovered_utc": "2026-10-11T22:45:51.975425+00:00",
+  "candidate_count": 55,
+  "classifier_irrelevant_count": 44,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 1,
-    "broad_web": 52,
-    "developer": 13
+    "adjacent": 13,
+    "broad_web": 40,
+    "developer": 4,
+    "research": 1
   },
   "relationship_counts": {
     "direct": 0,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 11,
     "speculative": 0,
-    "irrelevant": 65
+    "irrelevant": 44
   },
   "type_counts": {
-    "model": 3,
-    "review": 1,
-    "video": 4,
-    "news": 30,
-    "tool": 16,
-    "sdk": 13,
-    "hack": 2,
-    "retail": 1,
-    "teardown": 1,
-    "community": 16
+    "model": 2,
+    "review": 2,
+    "video": 3,
+    "news": 29,
+    "research": 2,
+    "tool": 8,
+    "sdk": 5,
+    "policy": 1,
+    "retail": 11,
+    "community": 5
   },
   "routing_counts": {
-    "reject_noise": 65
+    "adjacent_radar": 11,
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "reject_noise": 44,
+    "research_news_review": 11,
+    "retail_rebrand_review": 8
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -40,24 +46,18 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://dumall.baidu.com/product/902971303493639",
-      "error": "<urlopen error _ssl.c:1064: The handshake operation timed out>"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "8b4b07289b7c5951",
-      "title": "Advice for the public - World Health Organization (WHO)",
-      "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/",
-      "summary": "Naming the coronavirus disease (COVID-19) and the virus that causes it Risk communication and community engagement Country-level coordination, planning, and monitoring Critical preparedness, readiness and response actions for COVID-19 Guidance for schools, workplaces & institutions Health Workers Humanitarian operations, camps and other fragile ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "710e5cf4bf92e275",
+      "title": "10 Best New York Hotels, United States (From $157) - Booking.com",
+      "url": "https://www.booking.com/city/us/new-york.html",
+      "summary": "Great savings on hotels in New York, United States online. Good availability and great rates. Read hotel reviews and choose the best hotel deal for your stay.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -65,65 +65,31 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0fa8a1a8f066e20f",
-      "title": "Best Buy in Fort Worth, TX - 5604 SW Loop 820 - Electronics, Appliances ...",
-      "url": "https://stores.bestbuy.com/tx/fort-worth/5604-sw-loop-820-176.html",
-      "summary": "Visit your local Best Buy at 5604 SW Loop 820 in Fort Worth, TX for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free shipping.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "video",
-        "retail"
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "75fd94c71cc004aa",
-      "title": "Covid-19 (Coronavirus Disease 2019) - What You Need to Know",
-      "url": "https://www.drugs.com/cg/covid-19-coronavirus-disease-2019.html",
-      "summary": "Care guide for Covid-19 (Coronavirus Disease 2019). Includes: possible causes, signs and symptoms, standard treatment options and means of care and support.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "850731b06f160591",
+      "title": "18 Best Hikes Near NYC That Make For Perfect Day Trips",
+      "url": "https://thenatureseeker.com/the-10-best-places-near-nyc-for-day-hikes/",
+      "summary": "One of the best things about living near New York City is that you don’t have to go far to find incredible outdoor escapes. From rugged mountain trails in the Hudson Highlands to peaceful lakeside walks in New Jersey and Connecticut, the region is full of opportunities for adventure.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -131,30 +97,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2c53d1b423253dcc",
-      "title": "COVID-19: What are the Stages and Causes of Death? - Drugs.com",
-      "url": "https://www.drugs.com/medical-answers/covid-19-symptoms-progress-death-3536264/",
-      "summary": "What are the signs, symptoms and stages of COVID-19, and what causes death in COVID-19? How long do you spend in the ICU with COVID-19? How long do you have COVID-19 before you die? What are the stages and symptoms of COVID-19? Day 1: The symptoms usually start with a fever, a dry cough and mild breathing issues which may get worse over the next week. You also may have symptoms of a sore ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "73c62a780008012c",
+      "title": "Cities Near Me - New York Metropolitan Area | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/NYC",
+      "summary": "Find the top 15 cities, towns, and suburbs near NYC, like New York and Hoboken, and explore the surrounding area for a day trip.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -162,30 +128,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4d15d55de3a3d923",
-      "title": "English Wikipedia - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/English_Wikipedia",
-      "summary": "The English Wikipedia is the primary [a] English-language edition of Wikipedia, an online encyclopedia. It was created by Jimmy Wales and Larry Sanger on 15 January 2001, as Wikipedia's first edition.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "53705a79fed2384e",
+      "title": "Walmart - 11800 Hialeah Gardens Blvd, Hialeah, Florida | Hours",
+      "url": "https://www.storesinfo.com/walmart/florida/hialeah/11800-hialeah-gardens-blvd.html",
+      "summary": "Find store hours, phone number, driving directions and answers to frequently asked questions below. Located at 11800 Hialeah Gardens Blvd, this Walmart provides a wide array of products and services for residents in the Hialeah area.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -193,32 +159,293 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "retail",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ec970a6cb0b5eccc",
-      "title": "Enroll in MyOCCU Online & Mobile | OCCU",
-      "url": "https://myoccu.org/learn/digital-banking/enroll-myoccu-online-mobile",
-      "summary": "With MyOCCU Online & Mobile, managing your accounts is right at your fingertips. Deposit checks. Transfer funds between accounts. Open a new account or apply for a loan. Pay bills online. Review account balances. Send secure messages to our team. Never used online banking with OCCU? Enroll today and experience better online banking.",
+      "id": "15d45dd3b43ca8c2",
+      "title": "Walmart - 5851 NW 177th St, Hialeah, Florida - StoresInfo",
+      "url": "https://www.storesinfo.com/walmart/florida/hialeah/5851-nw-177th-st.html",
+      "summary": "Find store hours, phone number, driving directions and answers to frequently asked questions below. Shoppers visiting Hialeah can find this Walmart Supercenter at 5851 NW 177th St, offering a wide range of products including groceries, electronics, and clothing.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6a4ce2fa5a3cfd0d",
+      "title": "Walmart - Hialeah, Fl 33015, FL - Hours & Weekly Ad",
+      "url": "https://www.storeopeninghours.com/walmart-hialeah-fl-33015-fl",
+      "summary": "Walmart Supercenter is currently found close to the intersection of Northwest 179th Terrace and Northwest 57th Avenue/red Road, in Hialeah, Florida.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d81b0d3f08e37f1",
+      "title": "Walmart - Hialeah, Okeechobee Road, FL - Hours & Weekly Ad",
+      "url": "https://www.storeopeninghours.com/walmart-hialeah-okeechobee-road-fl",
+      "summary": "This page includes information for Walmart Hialeah, Okeechobee Road, FL, including the working times, store address info and direct contact number.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ec0be9920a98f67",
+      "title": "Walmart Hialeah Supercenter - 5851 Nw 177th St, Florida - MyStore411",
+      "url": "https://www.mystore411.com/store/view/1446/Walmart-Hialeah",
+      "summary": "Hialeah Supercenter - 5851 Nw 177th St in Florida 33015: store location & hours, services, holiday hours, map, driving directions and more",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a27b9e205f278d3",
+      "title": "WALMART SUPERCENTER - 5851 NW 177th St, Hialeah FL - Hours, Directions ...",
+      "url": "https://www.loc8nearme.com/florida/hialeah/walmart/38790/",
+      "summary": "Walmart Supercenter offers a convenient online grocery shopping experience with free same-day delivery for Walmart+ members. Customers can order fresh produce, organic items, and their favorite groceries through the Walmart Grocery app or website, enjoying the same low in-store prices.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4161b390dbed574b",
+      "title": "WALMART SUPERCENTER - 9300 NW 77th Avenue, Hialeah FL - Loc8NearMe",
+      "url": "https://www.loc8nearme.com/florida/hialeah-gardens/walmart/38788/",
+      "summary": "Walmart Supercenter at 9300 NW 77th Avenue, Hialeah FL 33016 - hours, address, map, directions, phone number, customer ratings and reviews.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b53ebcfb5e2437cf",
+      "title": "Walmart Supercenter in Hialeah, FL | Grocery, Electronics, Toys ...",
+      "url": "https://www.walmart.com/store/2814-hialeah-fl",
+      "summary": "Get Walmart hours, driving directions and check out weekly specials at your Hialeah in Hialeah, FL. Get Hialeah store hours and driving directions, buy online, and pick up in-store at 9300 Nw 77th Ave, Hialeah, FL 33016 or call 305-819-0672.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4ff8c3500b1c8e46",
+      "title": "Booking.com: Press",
+      "url": "https://news.booking.com/",
+      "summary": "Booking.com’s research proves what travelers intuitively know: a getaway is the ultimate diagnostic tool for compatibility. When companions travel together, hidden habits surface, communication gets tested, and relationships either level up …",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "review"
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "research",
+        "tool"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ed091087c5813147",
+      "title": "Careers - Tesla",
+      "url": "https://www.tesla.com/careers",
+      "summary": "An intensive training program that prepares participants for a successful career at Tesla. Develop technical expertise and earn certifications through in-class theory, hands-on labs and self-paced learning.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "hands-on"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -240,12 +467,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "00ac4f23c5775daa",
-      "title": "Home – Wikimedia Foundation",
-      "url": "https://wikimediafoundation.org/",
-      "summary": "Wikipedia is built by nearly 250,000 volunteers from all kinds of backgrounds. They edit articles, check facts, fix code, and help make the internet’s knowledge better.",
+      "id": "b5f76ce063ccf56c",
+      "title": "Creating a Private listing for a specific buyer? - The eBay Community",
+      "url": "https://community.ebay.com/forum/selling-57920/topic/creating-a-private-listing-for-a-specific-buyer-96174/",
+      "summary": "Creating a Private listing for a specific buyer? Hi all, I've done this in years past but not recently and since the listing form has changed I cannot figure out how to create a private listing for one specific buyer. This is for an item I have never listed on eBay but do own. I will not sell it off eBay. It is for a multi-purchase repeat buyer who messaged me through eBay asking if I have ...",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -259,7 +486,9 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "retail",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -271,43 +500,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6af274b782c4243b",
-      "title": "Wiki - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Wiki",
-      "summary": "The online encyclopedia project Wikipedia is the most popular wiki-based website, as well as being one of the internet's most popular websites, having been ranked consistently as such since at least 2007. [10]",
+      "id": "c90bc77710b60145",
+      "title": "eBay Standard Envelope - \"Delivered\" but not Delivered",
+      "url": "https://community.ebay.com/forum/shipping-57923/topic/ebay-standard-envelope-delivered-but-not-delivered-442226/",
+      "summary": "I have been using the eBay Standard Envelope for several months but the constant customer concerns on tracking (false \"delivered\" or lack of tracking) may not be worth the hassle. Up front, every buyer gets an e-mail message from us explaining the nuances of the eBay Standard Envelope, but more and more are not reading it, or ignoring it.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3cd6f22d5d177cd",
-      "title": "Wikimedia",
-      "url": "https://www.wikimedia.org/",
-      "summary": "Welcome! The Wikimedia movement is a global community of people, projects, and activities working together to create and share knowledge freely. Join us in making all knowledge available to everyone, everywhere.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -335,43 +533,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aa9d47316abcdb82",
-      "title": "Wikipedia",
-      "url": "https://www.wikipedia.org/",
-      "summary": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation.",
+      "id": "ccc1c8fec4692a79",
+      "title": "retrieve deleted listings | Selling | eBay Community",
+      "url": "https://community.ebay.com/forum/selling-57920/topic/retrieve-deleted-listings-120421/",
+      "summary": "retrieve deleted listings I accidentally deleted some listings that I meant to relist. Is there any way to retrieve them? Or at least find out what listings were deleted?",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f495c6b45edfd3d8",
-      "title": "Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/",
-      "summary": "The prefix for a line comment in C-family computer languages The root directory in the Domain/OS Shell — see Path (computing) § Summary of systems The operator for integer division, in Python 2.2+ and other programming languages An empty regular expression, in ed-style syntax The logical defined-or (null coalescing) operator in Perl The prefix for the authority component of a Uniform ...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -386,223 +553,9 @@
       "content_types": [
         "tool",
         "sdk",
-        "hack"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b76d566245273c0d",
-      "title": "Wikipedia - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Wikipedia",
-      "summary": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an American nonprofit organization funded mainly by donations from readers. [1] Wikipedia is the largest and most read reference work in history. [2][3]",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b4ac386123be41cc",
-      "title": "Wikipedia - Wikipedia",
-      "url": "https://gpe.wikipedia.org/wiki/Wikipedia",
-      "summary": "Ebe founded by Jimmy Wales den Larry Sanger on January 15, 2001, na de Wikimedia Foundation an American nonprofit organization dey host Wikipedia since 2003, funded mainly by donations from readers.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dacd1d57fd15344f",
-      "title": "Wikipedia, the free encyclopedia",
-      "url": "https://en.m.wikipedia.org/wiki/Main_Page",
-      "summary": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other volunteer projects:",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "92c0f87d8503858f",
-      "title": "Wikipedia:About - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Wikipedia:About",
-      "summary": "Wikipedia is a free online encyclopedia that anyone can edit, and millions already have. Wikipedia's purpose is to present information on all branches of knowledge.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cf90796ee5e94ef",
-      "title": "2026-27 NHL Schedule and Results | Hockey-Reference.com",
-      "url": "https://www.hockey-reference.com/leagues/NHL_2027_games.html",
-      "summary": "Check out the complete 2027 NHL Schedule and Results along with the NHL Preseason and Regular schedule for the 2026-27 NHL season on Hockey-Reference.com",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a8516e30b2e83699",
-      "title": "72,634 Seattle, WA jobs - Glassdoor",
-      "url": "https://www.glassdoor.com/Job/seattle-jobs-SRCH_IL.0,7_IC1150505.htm",
-      "summary": "Search jobs in Seattle, WA. Get the right job in Seattle with company ratings & salaries. 72,634 open jobs in Seattle. Get hired!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3aaf9e874c276bd3",
-      "title": "[Spoiler] Jcpenny's version of the winning dress vs on the runway",
-      "url": "https://www.reddit.com/r/ProjectRunway/comments/738459/spoiler_jcpennys_version_of_the_winning_dress_vs/",
-      "summary": "The skirt is longer in the back. If you check out the JCPenney site, there is a pic of the back. It goes down to the back of the model's knees. Don't know why they cropped that out in the front view. Reply reply wakarehen •",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -612,27 +565,29 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "350b3c59aa02fa5d",
-      "title": "Alright, please walk me through an operative session build ... - Reddit",
-      "url": "https://www.reddit.com/r/RogueTraderCRPG/comments/18s9s4v/alright_please_walk_me_through_an_operative/",
-      "summary": "Alright, please walk me through an operative session build like the mon-keigh I am Rogue Trader: Builds Title, my mc may have high intelligence but irl I do not Edit: operative ASSASSIN build, proving my own point Share Add a Comment Sort by:",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "9462626e6fd97778",
+      "title": "Where is request an invoice in the shopping cart ... - The eBay Community",
+      "url": "https://community.ebay.com/forum/selling-57920/topic/where-is-request-an-invoice-in-the-shopping-cart-on-a-mobile-device-446736/",
+      "summary": "I usually use a desktop computer. I know you can put two items or more in the cart, and be able to request an invoice. It is at the top right, which is across f...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "tool",
+        "sdk",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -642,12 +597,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dc25383d511f19e8",
-      "title": "Best Warhammer 40k Rogue Trader Operative build - PCGamesN",
-      "url": "https://www.pcgamesn.com/rogue-trader/best-operative-build-in-warhammer-40000-rogue-trader",
-      "summary": "Best Warhammer 40k Rogue Trader Operative build As a Warhammer version of a secret agent, creating an Operative might stump you at first. Never fear – our guide details the best way to build one.",
+      "id": "7264aa2cbf3c01de",
+      "title": "All Volkswagen Dealers in Harrisonburg, VA 22802 - Autotrader",
+      "url": "https://www.autotrader.com/car-dealers/volkswagen/harrisonburg-va",
+      "summary": "Find Harrisonburg Volkswagen Dealers. Search for all Volkswagen dealers in Harrisonburg, VA 22802 and view their inventory at Autotrader",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -672,70 +627,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "660745e441c0cf9e",
-      "title": "Branch & ATM Locations - OCCU",
-      "url": "https://myoccu.org/locations",
-      "summary": "Find the OCCU location nearest to you. Search for branches, ATMs, video tellers and shared ATMs of the Co-Op network.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c15c3a882b1c14eb",
-      "title": "careers.wa.gov - Find a job working for Washington state",
-      "url": "https://careers.wa.gov/",
-      "summary": "Washington offers competitive benefits for you and your family. Washington is a great place to work, play and raise a family. Receive email notices about job openings. Create a profile to apply for any of our job openings or sign-in to an existing account to apply for a job or manage your profile.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7fbe1f07d7b2e13e",
-      "title": "Carla Coulter | Obituaries | Maryville Forum",
-      "url": "https://www.maryvilleforum.com/obituaries/carla-coulter/article_b3082f7e-1f68-11e5-9811-fbdf8da66d09.html",
-      "summary": "Carla Coulter Carla Coulter 1951-2015 Carla Coulter, 63 of Coin, Iowa, passed away on Sunday, June 28, 2015 at Mercy Medical Center in Des Moines, Iowa. Carla, the daughter of Billy Ross and Gwendola (Daniel) Spiers was born October 5, 1951 in Kansas City, Missouri.",
+      "id": "d7d5b26ab6924fa4",
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "summary": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline tickets & hotels worldwide. How much will you save?",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -750,9 +645,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -762,12 +657,402 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2a067bd746435756",
-      "title": "Digital Banking Tools | Online & Mobile Banking | OCCU",
-      "url": "https://myoccu.at/digital-banking.php",
-      "summary": "Manage your finances effortlessly with OCCU's digital banking. Access online banking, mobile app features, and secure account management tools from anywhere.",
+      "id": "ce78cc9690a6f65b",
+      "title": "Booking.com - Home",
+      "url": "https://about.booking.com/",
+      "summary": "Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a856f2b410f2611",
+      "title": "Booking.com Tech Blog",
+      "url": "https://blog.booking.com/",
+      "summary": "Booking.com is the world's leading online accommodation experience provider, operating across 220+ countries in more than 45 languages. Our team of UX designers and writers, developers, database engineers and Sysadmins are solving complicated problems at huge scale.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d979693cd2cc6872",
+      "title": "CMA's Valley Volkswagen | New & Used VW Dealer in Staunton, VA",
+      "url": "https://www.cmasvalleyvw.com/",
+      "summary": "Visit CMA's Valley Volkswagen for a variety of new Volkswagen & used cars in Staunton, VA. Near Charlottesville, Harrisonburg, Waynesboro & Lexington, VA. We offer quality service and car parts.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a143e033b65a75dc",
+      "title": "Collision Support - Tesla",
+      "url": "https://www.tesla.com/support/collision-support",
+      "summary": "Tesla Approved Body Shops have been factory trained and equipped to rebuild Tesla vehicles to the original vehicle specifications for structural integrity and quality of finish.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a854a5c6895b1624",
+      "title": "Demo Drive | Tesla Support",
+      "url": "https://www.tesla.com/support/demo-drive",
+      "summary": "A Tesla Advisor will contact you prior to your appointment to confirm. If you don't live close to a Tesla site that offers demo drives, you can schedule a self-serve demo drive, which allows you to experience a Tesla vehicle on your own terms at a nearby location.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "484e582fc49cda1b",
+      "title": "Ferienwohnung, Hotel, Ferienhaus oder Bed & Breakfast auf Booking.com ...",
+      "url": "https://join.booking.com/?lang=de",
+      "summary": "Mehr Gäste für Ihre Ferienwohnung, Hotel, Ferienhaus, Bed & Breakfast oder Pension. Keine Anmeldegebühren, Unterstützung für Sie und Ihre Gäste rund um die Uhr. Verdienen Sie jetzt mit dem größten Online-Reiseunternehmen Geld!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3923f63c0f723d87",
+      "title": "Find a Certified Installer | Tesla",
+      "url": "https://www.tesla.com/support/certified-installers",
+      "summary": "Tesla partners with local installers to install Wall Connector and Powerwall. Find Tesla Certified Installers for an estimate, timeline and more.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc18ec36a1777c5e",
+      "title": "Find Us | Tesla",
+      "url": "https://www.tesla.com/findus",
+      "summary": "Use the interactive Find Us map to locate Tesla charging stations, service centers, galleries and stores on the go.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e3c3427d19cb97d4",
+      "title": "Find Us | Tesla",
+      "url": "https://www.tesla.com/findus/location/store/torrance",
+      "summary": "Tesla Service Los Angeles-Torrance 2560 W. 237th St",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "42656b04da8dc24e",
+      "title": "Find Us | Tesla",
+      "url": "https://www.tesla.com/en_CA/findus/location/store/toronto",
+      "summary": "Confirm Your Location Select the region to see content specific to your location",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "187a2e440df64423",
+      "title": "Flow Volkswagen of Charlottesville | New and Used Cars For Sale",
+      "url": "https://www.flowvolkswagencharlottesville.com/",
+      "summary": "At Flow Volkswagen of Charlottesville, we help drivers across central Virginia find the VW that fits their life, whether that's a commuter sedan, a family SUV, or something fully electric.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b2033f728d4a89fb",
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "summary": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af3b1fd003484e9c",
+      "title": "Google Scholar Citations",
+      "url": "https://scholar.google.com/citations",
+      "summary": "Google Scholar Citations lets you track citations to your publications over time.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7e77388f9d2d0ca",
+      "title": "Google Scholar Search Help",
+      "url": "https://scholar.google.com/intl/en/scholar/help.html",
+      "summary": "Google Scholar library Google Scholar library is your personal collection of articles. You can save articles right off the search page, organize them by adding labels, and use the power of Scholar search to quickly find just the one you want - at any time and from anywhere. You decide what goes into your library, and we’ll keep the links up ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -792,164 +1077,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f14cdc489f3c3270",
-      "title": "Digital Banking — Our Community CU",
-      "url": "https://www.ourcu.com/digital-banking",
-      "summary": "DIGITAL BANKING We are excited to offer our members an enhanced Mobile App and Online Banking experience. Finance management made easy from the palm of your hand! View your accounts, transfer funds, manage your cards, and pay bills 24/7 from the OURCU Mobile App. Download on your phone or other mobile devices for fast, efficient financial information.",
+      "id": "083e430bf9070e6a",
+      "title": "Latest News - Raleigh News & Observer",
+      "url": "https://www.newsobserver.com/latest-news/",
+      "summary": "Latest News Weather News Tornadoes, severe storms possible as remnants of Hurricane Isaias hit Triangle Much of central NC and the Triangle could see a couple inches of rain and thunderstorms...",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73e7df2c8ed05013",
-      "title": "Find a job with us - King County, Washington",
-      "url": "https://kingcounty.gov/en/dept/dhr/about-king-county/jobs-benefits/find-a-job",
-      "summary": "King County is one of the largest employers in Washington State. We have more than 17,000 employees delivering a wide array of services to a diverse community. We’re looking for forward-thinkers, idealists, and doers to join us across all job areas.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11c973884ba32718",
-      "title": "Found a bunch of old JCPenney gift cards and all of them are ... - Reddit",
-      "url": "https://www.reddit.com/r/personalfinance/comments/zdl72o/found_a_bunch_of_old_jcpenney_gift_cards_and_all/",
-      "summary": "Found a bunch of old JCPenney gift cards and all of them are marked as inactive, are they all worthless because of the company's bankruptcy back in 2020?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "60928811bc1902e3",
-      "title": "How to apply rewards online checkout? : r/JCPenney - Reddit",
-      "url": "https://www.reddit.com/r/JCPenney/comments/18kk0v6/how_to_apply_rewards_online_checkout/",
-      "summary": "I have $40 of rewards that I'd like to use. But unfortunately, I'm unable to find an option to apply the $40 at online checkout because the store doesn't hold anything my size. How would I go about doing that?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "106708ea01419807",
-      "title": "JCPenney Coffee Shop - December 1972 : r/VintageMenus - Reddit",
-      "url": "https://www.reddit.com/r/VintageMenus/comments/a3c6ys/jcpenney_coffee_shop_december_1972/",
-      "summary": "My uncle was the manager of the shoe department at the JCPenney's in Monroeville Mall outside of Pittsburgh, PA in the late 60s/70s. Their cafeteria was right inside the side entrance to the store and we ate their fairly frequently.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown",
-        "community"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e251661b0ccbbe2f",
-      "title": "Job Opportunities | City of Seattle - GovernmentJobs.com",
-      "url": "https://www.governmentjobs.com/careers/seattle",
-      "summary": "Welcome to the City of Seattle's Job Opportunities Page You can now apply online by clicking on the job title you are interested in and clicking on the \"Apply\" link!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -974,12 +1107,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5141ea99d7b32be1",
-      "title": "Job Search | Indeed",
-      "url": "https://www.indeed.com/",
-      "summary": "With Indeed, you can search millions of jobs online to find the next step in your career. With tools for job search, resumes, company reviews and more, we're with you every step of the way.",
+      "id": "04b6e86ff8ed72ca",
+      "title": "List Your Apartment, Hotel, Holiday Home or B&B on Booking.com",
+      "url": "https://join.booking.com/index.html",
+      "summary": "Attract more guests to your apartment, hotel, holiday home, B&B or guest house. No sign up fees, plus 24/7 assistance for you and your guests. Whether big or small, an individual or a professional, start earning more with the largest online travel company in the world!",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1004,12 +1137,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "735c9ffd6394f6bc",
-      "title": "Jobs in Seattle (54,000+ Open Roles) | LinkedIn",
-      "url": "https://www.linkedin.com/jobs/jobs-in-seattle-wa",
-      "summary": "Today's top 53,000+ jobs in Seattle. Leverage your professional network, and get hired. New Seattle jobs added daily.",
+      "id": "3594bfe939e55596",
+      "title": "Local Raleigh NC & Triangle News | Raleigh News & Observer",
+      "url": "https://www.newsobserver.com/news/local/",
+      "summary": "Local news from Raleigh and The Triangle area. Follow area breaking news, crime, business, education, politics, food, arts, culture, sports and weather.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1034,12 +1167,432 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0bf0c3cf51d98d0",
-      "title": "MyOCCU Mobile Banking - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.myoccu.mobile&hl=en-US",
-      "summary": "Access accounts, deposit checks, transfer funds, pay bills and more.",
+      "id": "94f7b2cbf055bde1",
+      "title": "Meta Business Suite: Manage Your Facebook & Instagram ...",
+      "url": "https://www.facebook.com/business/tools/meta-business-suite/",
+      "summary": "Meta Business Suite is a one-stop shop where you can manage all of your marketing and advertising activities on Facebook and Instagram. It centralizes tools that help you connect with your customers on all apps and get better business results.",
+      "discovery_channel": "broad_web+research",
+      "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6168b1e1bbe95f16",
+      "title": "NC Sports News & Game Scores | Raleigh News & Observer",
+      "url": "https://www.newsobserver.com/sports/",
+      "summary": "Get all North Carolina sports news on teams, player scores, videos, and detailed insights, covering major Raleigh area sports events and leagues.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dd882ffaaba8e80d",
+      "title": "New & Pre-Owned Electric Cars | Tesla",
+      "url": "https://www.tesla.com/inventory/new",
+      "summary": "Find new and pre-owned Tesla cars. Every new Tesla has a variety of configuration options and all pre-owned Tesla vehicles have passed the highest inspection standards.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f01f75e4fd106a8",
+      "title": "New Volkswagen for Sale or Lease in Staunton, VA",
+      "url": "https://www.cmasvalleyvw.com/inventory/new",
+      "summary": "Find your next new Volkswagen at CMA's Valley Volkswagen. Browse our current inventory of SUVs, sedans, and performance models near Staunton, VA today.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "12f953fb9bf68b74",
+      "title": "News & Observer eEdition | Raleigh News & Observer",
+      "url": "https://www.newsobserver.com/e-edition/edition-special/",
+      "summary": "Find the eEdition copy of the News & Observer newspaper. Read the digital replica version of our daily printed paper on your phone, tablet or other handheld devices.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0971f4e3eaca04c",
+      "title": "News & Observer | Archive",
+      "url": "https://eedition.newsobserver.com/",
+      "summary": "News & Observer | Archive ... Archive",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96aca2a29dea8594",
+      "title": "News & Observer | Login",
+      "url": "https://eedition.newsobserver.com/shortcode/LMCRAL/login",
+      "summary": "News & Observer | Login",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de9d6964c3110265",
+      "title": "Partner Hub | Booking.com for Partners",
+      "url": "https://partner.booking.com/ja",
+      "summary": "2019年9月1日に、弊社ではヨーロッパ在住のユーザーを対象に料金の表示方法を変更いたしました。 本変更は、Booking.comに掲載されている全宿泊施設が、オンライン企業による料金の表示について透明性を提供することを目的とした欧州連合（EU）の消費者関連法に準拠するためのものです ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "33055ce143985408",
+      "title": "Raleigh NC News, Sports & Politics | Raleigh News & Observer",
+      "url": "https://www.newsobserver.com/",
+      "summary": "Read today's latest news from Raleigh, Durham and surrounding areas in North Carolina. Follow crime, weather, state politics, sports and community.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6bca9b047174975a",
+      "title": "Raleigh, RTP & the Triangle News | Raleigh News & Observer",
+      "url": "https://www.newsobserver.com/news/",
+      "summary": "Read the latest news happening in Raleigh, Durham, the Triangle, NC, SC and the nation. Check out updates on politics, events, culture, lifestyle, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6546ca5a24906cc",
+      "title": "Reservas y comunicación con los clientes - Booking.com for Partners",
+      "url": "https://partner.booking.com/es/ayuda/reservas",
+      "summary": "Mensajes a los clientes, cambios en la reserva, cancelaciones y no presentaciones",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "098f7663c17268e8",
+      "title": "Supercharger - Tesla",
+      "url": "https://www.tesla.com/supercharger",
+      "summary": "Supercharger Locations Go Anywhere With 80,000+ Superchargers, Tesla owns and operates the largest global, fast charging network in the world. Located on major routes near convenient amenities, Superchargers keep you charged when you're away from home. Simply plug in, charge and go.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses microdisplay waveguide projection engine",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a4a4a1ab418ffde",
+      "title": "The News & Observer",
+      "url": "https://eedition2.newsobserver.com/html5/reader/production/default.aspx?editionapp=true&pubid=c06b0101-285a-4067-9a6e-35fc2113325d&edid=107ce16b-8011-47e0-94e5-94e98e50f002&pwaversion=2.19.0",
+      "summary": "The News & Observer - Wed Oct 18 2023",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96fb8e9cc801f1bb",
+      "title": "Today's The News & Observer Obituaries - Legacy.com",
+      "url": "https://www.legacy.com/us/obituaries/newsobserver/today",
+      "summary": "Find The News & Observer Obituaries and death notices from Raleigh, NC funeral homes and newspapers. Discover the latest obits this week, including today's.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c76e95e77d92c57",
+      "title": "TOP 10 BEST Volkswagen in Harrisonburg, VA - Updated 2026 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Volkswagen&find_loc=Harrisonburg%2C+VA",
+      "summary": "Top 10 Best Volkswagen Near Harrisonburg, Virginia (Updated 2026) Sort: Recommended",
       "discovery_channel": "adjacent+broad_web",
-      "query": "IFA 2026 smart glasses; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "query": "Volkswagen Smart Glasses; hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1064,312 +1617,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "21cde5afbbc2e014",
-      "title": "NHL schedule & upcoming games - Elite Prospects",
-      "url": "https://www.eliteprospects.com/league/nhl/schedule",
-      "summary": "See all upcoming NHL games for the current season, with fixtures, dates and matchups. The schedule updates as games are confirmed.",
+      "id": "d3a6167943eaf500",
+      "title": "You Can Now Rent a Tesla From Tesla Costa Mesa",
+      "url": "https://www.tesla.com/event/tesla-rental-costa-mesa",
+      "summary": "Rent a Tesla at our Tesla Costa Mesa location and see how it makes every errand, commute and road trip more fun. While it’s yours, try Full Self-Driving** (Supervised) and control and monitor your vehicle from anywhere with the Tesla app.",
       "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "def2cb7935d2d2bd",
-      "title": "NHL Schedule - 2026 Season - ESPN",
-      "url": "https://www.espn.com/nhl/schedule",
-      "summary": "The complete 2026 NHL season schedule on ESPN. Includes game times, TV listings and ticket information for all NHL games.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f7b3610afd086ce",
-      "title": "NHL Schedule 2026-27 - CBS Sports",
-      "url": "https://www.cbssports.com/nhl/schedule/",
-      "summary": "Get the full schedule for the 2026 NHL season, including matchups, dates, times and TV and ticket information.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb00379937abb948",
-      "title": "NHL Scores, 2026-27 Season - ESPN",
-      "url": "https://www.espn.com/nhl/scoreboard",
-      "summary": "Live scores for every 2026-27 NHL season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "600c8fcb5ec8b361",
-      "title": "NHL TV Schedule Tonight: What Channel Is Every Game On? (2026-27)",
-      "url": "https://www.sportsdle.com/nhl/tv-schedule",
-      "summary": "Tonight's NHL games with the TV channel and streaming service for each one in the US and Canada — ESPN, TNT, HBO Max, Sportsnet, TVA Sports, Prime Video — plus a full 2026-27 TV schedule for all 32 teams.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f05b8e8b7896bc5",
-      "title": "NHL Weekly Schedule - 2024/25 Season - Daily Faceoff",
-      "url": "https://www.dailyfaceoff.com/nhl-weekly-schedule/2026-09-21",
-      "summary": "View the full weekly NHL schedule for 2024/25. Compare every game, team, and matchup from preseason to NHL playoffs.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f52d8463aeedb8b",
-      "title": "Now Hiring: 86,000 Jobs in Seattle, WA | Indeed",
-      "url": "https://www.indeed.com/l-Seattle,-WA-jobs.html",
-      "summary": "Browse 86,834 jobs in Seattle, WA. New jobs posted today. Apply now and find your next opportunity on Indeed.com.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7c96fc825053d1c9",
-      "title": "OCCU - Oregon Community Credit Union - Facebook",
-      "url": "https://www.facebook.com/MyOCCU/",
-      "summary": "OCCU - Oregon Community Credit Union. 11,682 followers · 157 talking about this · 31 were here. Official Facebook page of Oregon Community Credit Union (OCCU). At OCCU, we’re here for you now and...",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e87bf2fa3ddbe7c",
-      "title": "Occu homepage: Better renting. That's different. – Occu",
-      "url": "https://occu.ie/",
-      "summary": "Better renting. That's different! At Occu, we believe that renting should be better, so we are working hard to bring you the best: smarter, benefit-focused",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7f099ed707160f4e",
-      "title": "Oklahoma Central Credit Union | Tulsa OK - Facebook",
-      "url": "https://www.facebook.com/OklahomaCentral/",
-      "summary": "Oklahoma Central Credit Union, Tulsa. 3,574 followers · 192 talking about this · 157 were here. OCCU Your trusted financial partner in Eastern Oklahoma High-earning checking • personal guidance...",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ee947eff9718274",
-      "title": "On Ice Tonight · Sunday Oct 11 · NHL TV schedule",
-      "url": "https://www.onicetonight.app/",
-      "summary": "Every NHL game, every network, by puck-drop time. US and Canadian TV, live scores, your team highlighted.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
+      "query": "smart glasses microdisplay waveguide projection engine",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1394,251 +1647,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8f19a87556441f21",
-      "title": "Online Banking in OK: Secure Digital Banking | OCCU",
-      "url": "https://www.oklahomacentral.creditunion/online-banking",
-      "summary": "Access secure online banking with OCCU. Manage accounts, pay bills, transfer funds, and bank anytime from anywhere in Oklahoma.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a6dd13cdbd9b3164",
-      "title": "Operative Build Guide – Rogue Trader - Pro Game Guides",
-      "url": "https://progameguides.com/warhammer-40000-rogue-trader/operative-build-guide-rogue-trader/",
-      "summary": "Best Operative Build in Warhammer 40k Rogue Trader Below is a list of Rogue Trader features you will want to take for your Operative main character while leveling him from level one to 16. In game terms, this particular build will serve you until the end of the first act in the game. And remember, you can always respec if you feel like something's not right with your character or if you prefer ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ffa250a4e93055a",
-      "title": "Orange County's Federal Credit Union",
-      "url": "http://www.orangecountyscu.org/",
-      "summary": "Orange County's Federal Credit Union services include checking and savings, mobile banking, and retirement accounts, as well as auto, small business, and home loans with mortgage offerings including Zero Down and 3% Down options.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ac4ce1fe96862ca",
-      "title": "PSA: Do not go to JCPenney for headshot photos - Reddit",
-      "url": "https://www.reddit.com/r/medicalschool/comments/x2k95n/psa_do_not_go_to_jcpenney_for_headshot_photos/",
-      "summary": "Well first, don’t be like me and wait until the last minute to get your ERAS stuff taken care of. But second, do not go to JCPenney for headshot photos! I thought I would give JCPenney a try because multiple people on this subreddit have mentioned it is a good deal and gets you a sufficient headshot.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "30199facb0d0194b",
-      "title": "Revan619's Collection of Rogue Trader Unfair Builds - Steam Community",
-      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3399032797",
-      "summary": "This is a guide to give one Rogue Trader build designed for Unfair per Origin. Multiple other variants are available on the full build spreadsheet...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b43e42deac492de0",
-      "title": "Revan619's Crime Lord Operative Overseer Build Guide - Rogue Trader ...",
-      "url": "https://www.neoseeker.com/warhammer-40000-rogue-trader/builds/Crime_Lord_Operative_Overseer_Revan619",
-      "summary": "Revan619's Crime Lord Operative Overseer Build Guide - Rogue Trader: Lex Imperialis v1.5 This build is optimized for the v1.5+ versions of Rogue Trader, and is shared on Neoseeker with permission ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a4dda45806d0327",
-      "title": "Rogue Trader Operative Build Guide (Patch 1.6) - brokenbuilds.gg",
-      "url": "https://brokenbuilds.gg/rogue-trader/guides/operative-build-guide",
-      "summary": "Rogue Trader Operative Build Guide (Patch 1.6) - a guide for Warhammer 40,000: Rogue Trader on BrokenBuilds.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4052e0960b169904",
-      "title": "Rogue Trader Sniper Build Guide (Operative, Patch 1.6)",
-      "url": "https://brokenbuilds.gg/rogue-trader/guides/sniper-build-guide",
-      "summary": "The Sixth Gargantuan Update, build 1.6.0.482, made a deliberate buff to the two weakest competitive picks, Operative and the Assassin, across more than 1,800 changes shipped on 11 June 2026 alongside The Infinite Museion expansion. The single change that matters most: Analyse Enemies now works during additional and interrupt turns.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "256be7c99c05c2a1",
-      "title": "seattle jobs - craigslist",
-      "url": "https://www.craigslist.org/search/area/seattle?cat=jjj",
-      "summary": "Female Caregiver Needed for Adult Family Home (Renton, WA) 10/8 Depends on experience and qualification...",
+      "id": "76c8647b4ff5b372",
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/youtubemusic",
+      "summary": "© 2026 Google LLC.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1653,9 +1665,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1665,12 +1677,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "09fd303192096e59",
-      "title": "Seattle Kraken Schedule | Seattle Kraken - NHL.com",
-      "url": "https://www.nhl.com/kraken/schedule",
-      "summary": "The official calendar for the Seattle Kraken including ticket information, stats, rosters, and more.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
+      "id": "278db0c859635a87",
+      "title": "YouTube Music - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music&hl=en-US",
+      "summary": "Change up your routine with the new Discover Mix, a personalized playlist with songs you’ll love based on what you listen to the most. With a new set of songs each Wednesday, there is always more...",
+      "discovery_channel": "adjacent+broad_web",
+      "query": "Xiaodu AI glasses; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1683,9 +1695,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1695,10 +1707,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fb793ccfd136f6d1",
-      "title": "Seattle, WA Jobs Near Me (New & Hiring Now) - Monster.com",
-      "url": "https://www.monster.com/jobs/l-seattle-wa",
-      "summary": "Browse 6,400+ Seattle, WA jobs. Upload your resume, get matched to nearby job openings and apply in minutes with Monster.",
+      "id": "d4b54f322f26c002",
+      "title": "YouTube Music - YouTube",
+      "url": "https://www.youtube.com/youtube%20-MUSIC",
+      "summary": "Expect an incredible lineup of artists, including DaBaby, Concrete Boys, Rich The Kid, Tobe Nwigwe, Chxrry, Belly Gang Kush, Bunna B, and The Paradox. Season premieres August 19th. Subscribe and...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1713,309 +1725,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bfb88eff68c78772",
-      "title": "Seattle, WA Jobs Paying $22 - $47 per hour - Snagajob",
-      "url": "https://www.snagajob.com/find-jobs/w-seattle,+wa",
-      "summary": "Find hourly jobs in Seattle, WA on Snagajob.com. Apply to 339 full-time and part-time jobs, gigs, shifts, local jobs and more!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "043265bc33b0dfcd",
-      "title": "The Back 40 is open for business in Sheridan | Times-tribune ...",
-      "url": "https://www.maryvilleforum.com/times-tribune/the-back-40-is-open-for-business-in-sheridan/article_8ab976f1-b7eb-4caa-b46f-4bd08bf4fd4e.html",
-      "summary": "SHERIDAN, Mo. — On July 9, the Worth County Progress Organization hosted a ribbon cutting to celebrate the brand-new bar and restaurant, The Back 40 in Sheridan.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "207fdb6369bcdae6",
-      "title": "TIL in 2013, JCPenney sold a stainless steel tea kettle that ... - Reddit",
-      "url": "https://www.reddit.com/r/todayilearned/comments/ue97e9/til_in_2013_jcpenney_sold_a_stainless_steel_tea/",
-      "summary": "TIL in 2013, JCPenney sold a stainless steel tea kettle that attracted controversy due to its perceived resemblance to Adolf Hitler.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ffdf9ab3b177f9c0",
-      "title": "Ultimate Rogue Trader Sniper Build for 2026 - Hack The Minotaur",
-      "url": "https://hacktheminotaur.com/rogue-trader/ultimate-rogue-trader-sniper-build/",
-      "summary": "The Operative Sniper/Assassin picks the single enemy who decides the fight, strips away its cover and dodge, then removes it with one guaranteed critical hit. Bosses, healers, enemy Psykers, and commanders die on the turn you choose. Everything else is cleanup. This guide covers the meta setup end to end. It leads with the two hardest decisions in Rogue Trader, character creation and level ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "152ebeac29018644",
-      "title": "Warhammer 40K: Rogue Trader - Best Operative Build",
-      "url": "https://www.highgroundgaming.com/warhammer-40k-rogue-trader-best-operative-build/",
-      "summary": "Here is the best Operative build in Warhammer 40K: Rogue Trader right now. I cover origin, stats, leveling, and advanced doctrine.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "381c3ad8da5f0ee5",
-      "title": "Warhammer 40K: Rogue Trader Operative Build Guide",
-      "url": "https://www.gameskinny.com/tips/warhammer-40k-rogue-trader-operative-build-guide/",
-      "summary": "Operative's are tactical death-dealers from afar. Here's our best operative build guide in Warhammer 40K Rogue Trader.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "040442225ad29a7b",
-      "title": "WDRB+WAVE News | Louisville News, Weather & Sports",
-      "url": "https://www.wdrbwave.com/",
-      "summary": "WDRB+WAVE News is your go-to source for breaking news in Louisville, Kentucky and Indiana. We offer the latest news headlines, weather, traffic, sports and more.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9fc0c839f63c7f90",
-      "title": "What will happen to my rewards when I will return something ... - Reddit",
-      "url": "https://www.reddit.com/r/JCPenney/comments/rkhiw6/what_will_happen_to_my_rewards_when_i_will_return/",
-      "summary": "I made a purchase using my rewards but now I want to return that item. I was wondering what will happen to my rewards? Will I get this back or the rewards amount will be lapsed once used?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f39df47fa944148a",
-      "title": "Working as a cashier : r/JCPenney - Reddit",
-      "url": "https://www.reddit.com/r/JCPenney/comments/1bymy1g/working_as_a_cashier/",
-      "summary": "Is JCPenney really worth working for? There are these young girls I have been having to shadow. They haven't really taught me anything. The assistant manager had told me she knows it can get over whelming being a cashier and to just come to her if I ever get too overwhelmed and not to just give up.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "392aba7111c61acb",
-      "title": "価格.com - カメラ | 通販・価格比較・製品情報",
-      "url": "https://kakaku.com/camera/",
-      "summary": "ランキング・クチコミ・スペックからあなたにぴったりなカメラを探せるだけでなく、全国通販サイトの最安価格をチェックできます！",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
