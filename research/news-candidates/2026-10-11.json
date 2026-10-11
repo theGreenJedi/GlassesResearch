@@ -1,26 +1,23 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-11T10:21:27.145706+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 132,
+  "discovered_utc": "2026-10-11T13:04:26.777267+00:00",
+  "candidate_count": 2,
+  "precision_rejected_count": 121,
   "relationship_counts": {
-    "direct": 1,
+    "direct": 2,
     "enabling": 0,
     "adjacent": 0,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "model": 1,
-    "tool": 1,
-    "sdk": 1,
-    "community": 1
+    "review": 1,
+    "video": 1,
+    "teardown": 1
   },
   "routing_counts": {
-    "community_evidence_review": 1,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
-    "research_news_review": 1
+    "report_card_evidence": 2,
+    "research_news_review": 2
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -31,45 +28,73 @@
   ],
   "candidates": [
     {
-      "id": "24b3a81e5804cfc5",
-      "title": "Mentra 3.3.0-dev.814",
-      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.814",
-      "source": "direct-feed",
-      "source_lane": "research_radar",
-      "published": "2026-10-11T09:36:52Z",
-      "summary": "Mentra 3.3.0-dev.814 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: de1f28f . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
-      "materiality_score": 6,
+      "id": "ab1983e0740a6399",
+      "title": "REVIEW: Rokid Glasses offer a glimpse into an AI powered future - Tech AU",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVGozaXNFczM1ZDdMX0g4dU54aG04MVZuR293bTdyaC1PajhBdEdocndCcDBjREZTNXFsWWxNY3BVT0RrZFg3UUt3SFNlV0s5eU5kUEZzUzRJcUZyTlM1WVJIWjZlWnB0V1lkVktQTmxzVTBOYUJvM3NFWXQyTVNuVG5SeWZMU1JxNVJnR1l3?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sun, 11 Oct 2026 11:17:46 GMT",
+      "summary": "REVIEW: Rokid Glasses offer a glimpse into an AI powered future Tech AU",
+      "materiality_score": 2,
       "keyword_hits": [
-        "bluetooth",
-        "developer",
-        "release",
-        "sdk"
+        "ai",
+        "review"
       ],
       "status": "candidate",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "community"
+        "review"
       ],
-      "primary_type": "model",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "development_hacking",
-        "community_evidence_review"
+        "report_card_evidence"
       ],
-      "triage_priority": "high",
+      "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: rokid",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
+      "institution_test": "review durability"
+    },
+    {
+      "id": "18efdbca1b682016",
+      "title": "YouTube Is Working on Spoken Camera and Mic Alerts for Smart Glasses [APK Teardown] - Nerd's Chalk",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOOFZncUNMcTBLVEY5ZHBzZUxBYlVla1V4TDhqNDBjUEdyNzl6ZWVwc0JOdDZSRG5GZjVHQTh5NVJVVENyb0kxMV9EREY2dFZOWktnbUxlbkU4aFMzMXlMM3dLR1l1Y2VpRzR3V3JHYjVhNEJjZ09vZE9jTkIzSTlwb0gwMTRpLXd4ZGtRaXB2a2JPeHdsR211WHIwRW5QNWpPNVlJYWZhQVY?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Sat, 10 Oct 2026 22:24:09 GMT",
+      "summary": "YouTube Is Working on Spoken Camera and Mic Alerts for Smart Glasses [APK Teardown] Nerd's Chalk",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "camera",
+        "teardown"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "video",
+        "teardown"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
     }
   ]
 }
