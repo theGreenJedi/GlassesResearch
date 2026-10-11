@@ -138,3 +138,11 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 98. [What are the biggest limitations of smart glasses today?](10-ownership-future.md#98-what-are-the-biggest-limitations-of-smart-glasses-today)
 99. [What improvements are most likely in the next generation of smart glasses?](10-ownership-future.md#99-what-improvements-are-most-likely-in-the-next-generation-of-smart-glasses)
 100. [What would an ideal user-controlled smart-glasses platform look like?](10-ownership-future.md#100-what-would-an-ideal-user-controlled-smart-glasses-platform-look-like)
+
+
+## Questions researched from actual search language
+
+- [When did smart glasses come out?](01-basics.md#when-did-smart-glasses-come-out) — Distinguishes early head-worn systems, 2011 consumer see-through glasses, and the 2013 Glass Explorer launch.
+- [When did AI glasses come out?](01-basics.md#when-did-ai-glasses-come-out) — Separates voice-assistant eyewear (2019), generative-AI glasses (2023), and camera-aware AI (2023–24).
+
+These questions were observed in first-party Search Console data, researched against attributed historical sources, and added without setting a numerical expansion target.
