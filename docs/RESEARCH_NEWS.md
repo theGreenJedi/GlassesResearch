@@ -33,7 +33,7 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 
 ### October 10, 2026 — MentraOS community engineering findings
 
-**Across the Wire · Community-reported · Not GR verified.** Three upstream investigations cover BLE photo-transfer corruption during audio startup, dark-scene camera exposure timing, and G1 firmware-supported Latin characters. [Read the attributed technical wire report](../news/articles/2026-10-10-mentra-community-firmware-camera-and-g1-findings/).
+**Across the Wire · Community-reported · Not GR verified.** Three upstream investigations cover BLE photo-transfer corruption during audio startup, dark-scene camera exposure timing, and G1 firmware-supported Latin characters. [Read the attributed technical wire report](news/articles/2026-10-10-mentra-community-firmware-camera-and-g1-findings.md).
 
 
 
