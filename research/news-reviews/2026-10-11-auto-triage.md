@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-11T07:15:23.366973+00:00`
+Generated: `2026-10-11T10:21:53.018403+00:00`
 
-- Intake files inspected: **256**
-- Candidates retained in this review window/history: **10660**
+- Intake files inspected: **254**
+- Candidates retained in this review window/history: **10583**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2204
+- `adjacent_radar`: 2185
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 579
-- `rejected_noise`: 7766
-- `source_review`: 53
+- `needs_editorial_verification`: 578
+- `rejected_noise`: 7710
+- `source_review`: 52
 - `watching`: 42
 
 ## Action queue
@@ -29,8 +29,6 @@ Generated: `2026-10-11T07:15:23.366973+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.434](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.434) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.435](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.435) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.436](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.436) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.437](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.437) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.438](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.438) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -152,6 +150,7 @@ Generated: `2026-10-11T07:15:23.366973+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.811](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.811) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.812](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.812) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.813](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.813) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.814](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.814) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
@@ -271,6 +270,7 @@ Generated: `2026-10-11T07:15:23.366973+00:00`
 | normal | needs_editorial_verification | direct | [Even Realities' app 2.3.2 needs new firmware on both the G2 glasses and the R1 ring - mixed-news.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQZVZrWnFJeWlfVGlLdlVieE5CSzc2NnBxR1VuTTZUbG4xLW5tcUt1b0hNMnRNR3ktVm5WYnJqNnBjdlVxdE11LTROZ2x6ZEE2Zk5uSU1zZ0ZfZ29udS1OTzNYSEdRVzhuN01YNUdSTHZRWWdSa2dPSG11dWJfSTEtZnVpazBfdw?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [First Look: Project Aura — The Next Step in XR for Android XR and Gemini](https://www.xreal.com/blog/aura-25-tas-release-en) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | normal | needs_editorial_verification | enabling | [Foundation for Polish Science - A two-photon vision-based retinal display for augmented reality applications - Fundacja na rzecz Nauki](https://news.google.com/rss/articles/CBMilwFBVV95cUxPaGswWTFEV3o2NWJTVDB2Ym1sM1ZyOFZpZWZWc1ZSREVkTURjOF9fSW9ndFVscXhYY2ZRYmEteFJxcENfVDhaNWxheXpIUGtkMkhod0dldTNEaV9kRnhBNV9PcVQ4M1RIdDlUUXRFOVBVQzVOX0M4OGdfcThZMVpxOGZNRmtmWGlqbG1PWEJKb3BNaFkwcGNj?oc=5) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [getd smart glasses review - TikTok Shop](https://shop.tiktok.com/us/k/getd-smart-glasses-review) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
