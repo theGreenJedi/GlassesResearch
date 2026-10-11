@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-11T18:58:28.635849+00:00`
+Generated: `2026-10-11T22:08:45.440751+00:00`
 
-- Intake files inspected: **256**
-- Candidates retained in this review window/history: **10527**
+- Intake files inspected: **254**
+- Candidates retained in this review window/history: **10486**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2162
+- `adjacent_radar`: 2147
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 579
-- `rejected_noise`: 7678
-- `source_review`: 50
+- `needs_editorial_verification`: 577
+- `rejected_noise`: 7653
+- `source_review`: 51
 - `watching`: 42
 
 ## Action queue
@@ -29,7 +29,6 @@ Generated: `2026-10-11T18:58:28.635849+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.438](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.438) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.439](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.439) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.440](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.440) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.441](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.441) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -152,6 +151,7 @@ Generated: `2026-10-11T18:58:28.635849+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.815](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.815) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.818](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.818) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.819](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.819) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.820](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.820) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
