@@ -53,6 +53,7 @@ jobs:
       - name: Validate search impact tracker
         run: |
           python -m py_compile scripts/analytics_report.py scripts/analytics_history.py scripts/cloudflare_rum.py scripts/search_impact.py scripts/question_discovery.py
+          python -m unittest discover -s tests -p 'test_question_discovery.py'
           python scripts/search_impact.py --validate-only
 
   analytics-report:
