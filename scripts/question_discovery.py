@@ -84,7 +84,7 @@ def seed_published_answers(reg):
                 continue
             qid=f"Q-{reg['next_id']:06d}"; reg["next_id"]+=1
             slug=re.sub(r"[^a-z0-9 -]","",match.group(0).lstrip("# ").casefold())
-                    slug=re.sub(r"\s+","-",slug).strip("-")
+            slug=re.sub(r"\s+","-",slug).strip("-")
             item={"id":qid,"canonical_question":question,"normalized":n,"variants":[question],"status":"answered","first_observed":"published_corpus","last_observed":"published_corpus","observations":[{"question":question,"source":"published_practical_answers","observed_at":"published_corpus"}],"answer_url":f"/docs/faq/{path.stem}/#{slug}","evidence_state":"published"}
             reg["questions"].append(item); by_norm[n]=item
     return reg
