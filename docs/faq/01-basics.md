@@ -43,3 +43,18 @@ Usually not. Most consumer glasses depend on a phone for networking, accounts, A
 ## 10. Are smart glasses the same as VR headsets?
 
 No. VR headsets block or camera-reconstruct the outside world and prioritize immersion. Everyday smart glasses usually preserve direct vision and add audio, capture, or limited displays. Tethered XR glasses can create a large virtual screen but remain lighter and less immersive than a full headset. The trade is capability versus weight, discretion, battery, and social usability.
+
+
+## When did smart glasses come out?
+
+**There is no single start date.** Experimental head-worn computers and displays predate the consumer market; the answer depends on whether "smart glasses" means a display, a networked computer, or a conventional-looking eyewear product. For concrete commercial milestones, Epson dates the see-through Moverio BT-100 to **November 25, 2011**. Google's Glass Explorer Edition began shipping to selected testers in **April 2013**, bringing camera-equipped, network-connected eyewear to much wider attention. Google Glass was an important milestone, **not the invention of smart glasses**.
+
+Evidence: [Epson product history (2011)](https://corporate.epson/en/about/history/milestone-products/2011-11-bt100.html) (manufacturer account, including the wider wearable-display category); [Google spokesperson confirming April 2013 Explorer shipments](https://abcnews.com/blogs/technology/2013/04/google-glass-explorer-edition-to-ship-this-month) (contemporaneous reporting). For longer context, see the [GlassesResearch industry timeline](/docs/INDUSTRY_TIMELINE/).
+
+## When did AI glasses come out?
+
+**Voice-assistant glasses and today's generative-AI glasses arrived at different times.** Amazon introduced **Echo Frames with hands-free Alexa on September 25, 2019**, initially by invitation, without a camera or display. Meta announced **Ray-Ban Meta smart glasses with conversational Meta AI on September 27, 2023**, with retail availability beginning October 17, 2023. Meta began testing **camera-grounded multimodal AI in December 2023** and announced a wider US/Canada beta rollout in **April 2024**. None of these dates proves the first-ever application of AI to wearable eyewear; they identify verifiable consumer-product milestones with distinct capabilities.
+
+Evidence: [Amazon's Echo Frames announcement (2019)](https://press.aboutamazon.com/2019/9/amazon-introduces-8-new-echo-devices); [Meta's Ray-Ban Meta announcement (2023)](https://about.fb.com/news/2023/09/new-ray-ban-meta-smart-glasses/); [Meta's multimodal early access (December 2023)](https://about.fb.com/news/2023/12/meta-ai-updates/); [Meta's vision-enabled expansion (April 2024)](https://about.fb.com/news/2024/04/new-ray-ban-meta-smart-glasses-styles-and-meta-ai-updates/).
+
+*These two history answers were evidence-checked on 2026-10-11; dates describe different product categories, not a universal "first."*

@@ -33,11 +33,11 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 
 ### October 11, 2026 — MentraOS miniapp update consent and pairing ownership
 
-**Across the Wire · Community-reported · Not GR verified.** Development-branch miniapp update consent and a still-open pairing ownership proposal, including residual-media implications. [Read the attributed technical report](../news/articles/2026-10-11-mentra-miniapp-consent-and-pairing-ownership/).
+**Across the Wire · Community-reported · Not GR verified.** Development-branch miniapp update consent and a still-open pairing ownership proposal, including residual-media implications. [Read the attributed technical report](news/articles/2026-10-11-mentra-miniapp-consent-and-pairing-ownership.md).
 
 ### October 10, 2026 — MentraOS community engineering findings
 
-**Across the Wire · Community-reported · Not GR verified.** Three upstream investigations cover BLE photo-transfer corruption during audio startup, dark-scene camera exposure timing, and G1 firmware-supported Latin characters. [Read the attributed technical wire report](../news/articles/2026-10-10-mentra-community-firmware-camera-and-g1-findings/).
+**Across the Wire · Community-reported · Not GR verified.** Three upstream investigations cover BLE photo-transfer corruption during audio startup, dark-scene camera exposure timing, and G1 firmware-supported Latin characters. [Read the attributed technical wire report](news/articles/2026-10-10-mentra-community-firmware-camera-and-g1-findings.md).
 
 
 

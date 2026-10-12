@@ -2,6 +2,8 @@
 
 **Across the Wire · Community-reported · October 11, 2026 · Not independently verified by GlassesResearch**
 
+**Published:** October 12, 2026
+
 Two upstream MentraOS pull requests raise owner-control and privacy questions relevant to smart-glasses interoperability. These are repository-reported development states, **not** independently tested hardware behavior or confirmation of production availability.
 
 ## Miniapp update checks and user consent
