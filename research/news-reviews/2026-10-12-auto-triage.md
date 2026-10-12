@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-12T18:45:12.325060+00:00`
+Generated: `2026-10-12T19:53:54.453134+00:00`
 
-- Intake files inspected: **249**
-- Candidates retained in this review window/history: **10245**
+- Intake files inspected: **251**
+- Candidates retained in this review window/history: **10324**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2031
+- `adjacent_radar`: 2045
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 575
-- `rejected_noise`: 7533
-- `source_review`: 48
+- `rejected_noise`: 7597
+- `source_review`: 49
 - `watching`: 42
 
 ## Action queue
@@ -150,6 +150,7 @@ Generated: `2026-10-12T18:45:12.325060+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.839](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.839) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.840](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.840) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.841](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.841) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.842](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.842) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
@@ -270,7 +271,6 @@ Generated: `2026-10-12T18:45:12.325060+00:00`
 | normal | needs_editorial_verification | direct | [getd smart glasses review - TikTok Shop](https://shop.tiktok.com/us/k/getd-smart-glasses-review) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [GitHub - Mentra-Community/MentraOS: MentraOS is the leading smart ...](https://github.com/Mentra-Community/MentraOS) | reachable (200) | research_news_review, report_card_evidence, development_hacking, community_evidence_review |
 | normal | needs_editorial_verification | direct | [HarborAeroWind Smart Glasses Review and Buying Guide](https://testforlab101.github.io/harboraerowind-smart-glasses-review/index.html) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
-| normal | needs_editorial_verification | enabling | [How to get my camera to work - Microsoft Q&A](https://learn.microsoft.com/en-us/answers/questions/6017046/how-to-get-my-camera-to-work) | reachable (200) | research_news_review, development_hacking, research_optics, policy_privacy |
 
 ## Meaning of states
 
