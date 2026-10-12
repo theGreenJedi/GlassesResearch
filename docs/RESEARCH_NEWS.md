@@ -31,6 +31,10 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
 
+### October 12, 2026 — MentraOS telemetry and hotspot reliability
+
+**Across the Wire · Community-reported · Not GR verified.** SDK telemetry and two hotspot reliability changes, with privacy and physical-device verification outstanding. [Read the attributed technical report](../news/articles/2026-10-12-mentra-telemetry-and-hotspot-reliability/).
+
 ### October 11, 2026 — MentraOS miniapp update consent and pairing ownership
 
 **Across the Wire · Community-reported · Not GR verified.** Development-branch miniapp update consent and a still-open pairing ownership proposal, including residual-media implications. [Read the attributed technical report](news/articles/2026-10-11-mentra-miniapp-consent-and-pairing-ownership.md).
