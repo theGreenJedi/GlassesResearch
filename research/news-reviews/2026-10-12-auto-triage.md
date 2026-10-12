@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-12T11:23:45.321647+00:00`
+Generated: `2026-10-12T12:29:24.845043+00:00`
 
 - Intake files inspected: **251**
 - Candidates retained in this review window/history: **10363**
@@ -12,9 +12,9 @@ Generated: `2026-10-12T11:23:45.321647+00:00`
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 573
+- `needs_editorial_verification`: 571
 - `rejected_noise`: 7613
-- `source_review`: 50
+- `source_review`: 52
 - `watching`: 43
 
 ## Action queue
@@ -51,7 +51,6 @@ Generated: `2026-10-12T11:23:45.321647+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.564](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.564) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.566](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.566) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.567](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.567) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.568](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.568) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.569](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.569) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.571](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.571) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.572](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.572) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -59,7 +58,6 @@ Generated: `2026-10-12T11:23:45.321647+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.574](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.574) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.575](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.575) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.577](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.577) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.579](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.579) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.583](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.583) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.584](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.584) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.585](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.585) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -243,6 +241,7 @@ Generated: `2026-10-12T11:23:45.321647+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경에 '네이버 지도' 실린다…삼성·구글·메타와 협력 - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTFBtTzQ4TmxKWHIxVGNrRXI1UEFaVDhCRjhyb2ZqU0ZSVTA4UUNkaDNTalZCTnE1YlY1Q2J1RVBVcVV2TXZDM2hibFVCcnZYVHp5RFE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AIグラス 【レイバン メタ】に次世代モデルが登場。3Kカメラや最大9時間駆動バッテリーを搭載 - SPUR（シュプール）](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1fTFNFWmJoQzZqVkdtT0VpSWxNc1QtcWx0cXhIcFVNWC1BZGU1NlpWaUp2dzc2Ry1vX2tqS0FEY1k3cnUwSUlyOWVVR0V4QkJDcEJId2Z3?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Smart Glasses](https://www.amazon.com/ai-smart-glasses/s?k=ai+smart+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [An unannounced Xreal AR glasses computing kit cleared the FCC with Wi-Fi 6E at 160MHz - MIXED Reality News](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWExQbFU2NzMxUnZFQ1JkLS1UY2lQU2FsTUlIYXlKZXlMM2VlVXVoM2tKVE5yNVExUG1KRE1TRGpfWF8wTW92b2VHdWRKYkR2bG1WTkNDREJ4RUZXakRLb09hc1Y1eFJTYlc4em5qWGh0MVlRZ3I4QjN3eGp1NXRqREZfWXNPWk0w?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-12T11:23:45.321647+00:00`
 | normal | needs_editorial_verification | enabling | [Foundation for Polish Science - A two-photon vision-based retinal display for augmented reality applications - Fundacja na rzecz Nauki](https://news.google.com/rss/articles/CBMilwFBVV95cUxPaGswWTFEV3o2NWJTVDB2Ym1sM1ZyOFZpZWZWc1ZSREVkTURjOF9fSW9ndFVscXhYY2ZRYmEteFJxcENfVDhaNWxheXpIUGtkMkhod0dldTNEaV9kRnhBNV9PcVQ4M1RIdDlUUXRFOVBVQzVOX0M4OGdfcThZMVpxOGZNRmtmWGlqbG1PWEJKb3BNaFkwcGNj?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Four Apple Smart Glasses Models: Luxury Meets Artificial Intelligence Soon - آي-فون إسلام](https://news.google.com/rss/articles/CBMixgFBVV95cUxNUzZDUXJEbFVhOUZqUGg3Qjl6ckZRVEdTMjczNFJfazR4NjR3Vm1zZTJLeHg5NU9hY1Bzdjk2ZWhsdTdMejF4S3FSVG1HNzB0bXVLYjFsZzh6VEQ5STVXNkw2T3VHYlpXWGQ4dC00Qi1QTU9aVUxHOHRrYVVjVkRpWm9hem9XMjJfbGZadU9YRkc5X0hWbWtlV1NUbWppczU3ZU9JTGRUVjc0UGFmbEpuelBHZFBhbWdGS2tvOFVlRVIxdm1XVXc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Free Fieldwatch Android app spots trackers, drones, and smart glasses nearby - NoypiGeeks](https://news.google.com/rss/articles/CBMicEFVX3lxTE1mclJMT2xZUzgxajc0b2NJV2NCbWUyODI4aWg5RmRwLVk0QlpqVjRNbE1iMEd1Z2lZS3VsajRCTXB0Z29kVHBtbllyQjVHdlBlLU8zZTdKdm5NbVZFRmxRYzdfQm5Ka0MzN1RsaEMyNGo?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [getd smart glasses review - TikTok Shop](https://shop.tiktok.com/us/k/getd-smart-glasses-review) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
