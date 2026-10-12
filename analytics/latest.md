@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-12T10:09:03+00:00**
+Generated automatically: **2026-10-12T12:45:33+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-10-04 → 2026-10-10):** 576 impressions, 7 clicks, 1.22% CTR, average position 14.8.
-- **7-day change:** impressions +8.7%; clicks +250.0%.
-- **Rolling 28 days:** 1917 impressions, 11 clicks, 0.57% CTR, average position 11.2.
+- **Google, latest final 7 days (2026-10-04 → 2026-10-10):** 671 impressions, 9 clicks, 1.34% CTR, average position 14.8.
+- **7-day change:** impressions +26.6%; clicks +350.0%.
+- **Rolling 28 days:** 2012 impressions, 13 clicks, 0.65% CTR, average position 11.4.
 
 ## Practical Answers — search discovery
 
@@ -24,12 +24,12 @@ _No rows yet._
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| open source smart glasses | 2 | 27 | 7.41% | 9.2 |
+| open source smart glasses | 2 | 37 | 5.41% | 11.2 |
 | open source glasses | 1 | 4 | 25.00% | 10.2 |
 | audio eyewear | 0 | 2 | 0.00% | 55.0 |
 | audio glasses | 0 | 6 | 0.00% | 48.5 |
 | best audio smart glasses | 0 | 1 | 0.00% | 10.0 |
-| best bluetooth glasses | 0 | 5 | 0.00% | 16.4 |
+| best bluetooth glasses | 0 | 9 | 0.00% | 26.0 |
 | best bluetooth safety glasses | 0 | 1 | 0.00% | 92.0 |
 | best camera glasses for video | 0 | 1 | 0.00% | 47.0 |
 | best glasses camera | 0 | 1 | 0.00% | 47.0 |
@@ -39,68 +39,63 @@ _No rows yet._
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | 4 | 66 | 6.06% | 9.9 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | 5 | 84 | 5.95% | 10.6 |
 | https://glassesresearch.org/docs/community-research/bimapdev-smartglasses/ | 2 | 2 | 100.00% | 2.5 |
 | https://glassesresearch.org/docs/faq/ | 1 | 10 | 10.00% | 4.6 |
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 10 | 10.00% | 5.4 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 12 | 8.33% | 6.1 |
+| https://glassesresearch.org/models/W610/software/ | 1 | 1 | 100.00% | 3.0 |
 | https://glassesresearch.org/research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 5 | 20.00% | 10.0 |
-| https://glassesresearch.org/ | 0 | 13 | 0.00% | 38.1 |
+| https://glassesresearch.org/ | 0 | 14 | 0.00% | 35.9 |
 | https://glassesresearch.org/artifacts/ | 0 | 1 | 0.00% | 10.0 |
 | https://glassesresearch.org/changes/ | 0 | 3 | 0.00% | 9.0 |
 | https://glassesresearch.org/changes/gre-000002/ | 0 | 2 | 0.00% | 5.0 |
-| https://glassesresearch.org/changes/gre-000003/ | 0 | 6 | 0.00% | 8.8 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **13 browser pageviews**, **10 RUM visits**.
-- Rolling 7d: **250 browser pageviews**, **210 RUM visits**.
+- Rolling 24h: **8 browser pageviews**, **8 RUM visits**.
+- Rolling 7d: **181 browser pageviews**, **123 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| / | 3 | 2 |
 | /docs/SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN/ | 2 | 2 |
 | /models/catalog/gls-0060/ | 1 | 1 |
 | /docs/INDUSTRY_TIMELINE/ | 1 | 1 |
-| /models/AnkoCameraGlasses/ | 1 | 1 |
-| /research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 1 |
 | /docs/report-cards/LINEAGE_PROFILES_LENOVO_THINKREALITY_A6/ | 1 | 1 |
-| /docs/COMPARISON_ENGINE/ | 1 | 0 |
-| /models/catalog/ | 1 | 0 |
 | /docs/faq/09-development-openness/ | 1 | 1 |
+| / | 1 | 1 |
+| /docs/faq/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 7 | 7 |
-| glassesresearch.org | 3 | 0 |
+| (direct / none) | 6 | 6 |
 | www.bing.com | 1 | 1 |
-| kagi.com | 1 | 1 |
 | duckduckgo.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **4,141 requests**, **883 HTTP visits**, **46.4 MB** served.
-- Rolling 7d: **40,468 requests**, **9,309 HTTP visits**, **848.3 MB** served.
+- Rolling 24h: **3,568 requests**, **948 HTTP visits**, **47.6 MB** served.
+- Rolling 7d: **40,335 requests**, **9,307 HTTP visits**, **847.4 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 2,139 | 638 |
-| BE | 511 | 83 |
-| DE | 203 | 39 |
-| FR | 168 | 6 |
-| AU | 162 | 3 |
-| PL | 148 | 6 |
-| GB | 104 | 40 |
+| US | 1,941 | 717 |
+| BE | 343 | 82 |
+| DE | 185 | 30 |
+| NL | 151 | 12 |
+| PL | 147 | 5 |
+| GB | 98 | 40 |
 | ID | 89 | 1 |
-| CN | 88 | 4 |
-| HK | 73 | 3 |
+| CN | 88 | 3 |
+| AU | 81 | 3 |
+| SG | 78 | 5 |
 
 ## What to watch
 
