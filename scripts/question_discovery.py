@@ -39,7 +39,8 @@ def gsc_token():
 
 def gsc_questions():
     token,site=gsc_token()
-    if not token: return []
+    if not token:
+        raise RuntimeError("Google Search Console question discovery is not configured: credentials or property URL missing")
     end=date.today()-timedelta(days=2); start=end-timedelta(days=27)
     endpoint="https://searchconsole.googleapis.com/webmasters/v3/sites/"+quote(site,safe="")+"/searchAnalytics/query"
     r=requests.post(endpoint,headers={"Authorization":f"Bearer {token}"},json={"startDate":start.isoformat(),"endDate":end.isoformat(),"type":"web","dataState":"final","dimensions":["query"],"rowLimit":25000},timeout=45)
@@ -67,7 +68,7 @@ def external_questions():
 def seed_published_answers(reg):
     """Seed the canonical registry from already-published Practical Answers."""
     by_norm={q["normalized"]:q for q in reg["questions"]}
-    pattern=re.compile(r"^##\\s+(?:\\d+\\.\\s+)?(.+?\\?)\\s*$",re.M)
+    pattern=re.compile(r"^##\s+(?:\d+\.\s+)?(.+?\?)\s*$",re.M)
     for path in sorted(FAQ_ROOT.glob("*.md")):
         if path.name in {"README.md","ASK_YOUR_OWN_QUESTION.md","COMMUNITY_QUESTIONS.md"}: continue
         text=path.read_text(encoding="utf-8")
@@ -77,13 +78,13 @@ def seed_published_answers(reg):
                 item=by_norm[n]
                 if item.get("answer_url") is None:
                     slug=re.sub(r"[^a-z0-9 -]","",match.group(0).lstrip("# ").casefold())
-                    slug=re.sub(r"[\\s]+","-",slug).strip("-")
+                    slug=re.sub(r"\s+","-",slug).strip("-")
                     item["answer_url"]=f"/docs/faq/{path.stem}/#{slug}"
                     item["status"]="answered"; item["evidence_state"]="published"
                 continue
             qid=f"Q-{reg['next_id']:06d}"; reg["next_id"]+=1
             slug=re.sub(r"[^a-z0-9 -]","",match.group(0).lstrip("# ").casefold())
-            slug=re.sub(r"[\\s]+","-",slug).strip("-")
+            slug=re.sub(r"\s+","-",slug).strip("-")
             item={"id":qid,"canonical_question":question,"normalized":n,"variants":[question],"status":"answered","first_observed":"published_corpus","last_observed":"published_corpus","observations":[{"question":question,"source":"published_practical_answers","observed_at":"published_corpus"}],"answer_url":f"/docs/faq/{path.stem}/#{slug}","evidence_state":"published"}
             reg["questions"].append(item); by_norm[n]=item
     return reg

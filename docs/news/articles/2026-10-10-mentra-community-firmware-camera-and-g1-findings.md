@@ -6,6 +6,8 @@ description: "Across the Wire: community technical findings on Mentra Live Bluet
 
 **Across the Wire · Community-reported · October 10, 2026**
 
+**Published:** October 12, 2026
+
 These are public project-maintainer and contributor findings, **not independently verified by GlassesResearch**. Reported tests are attributed to the upstream project; a merged PR is not proof of broad device rollout or independent performance.
 
 ## Mentra Live: Bluetooth photo transfer disrupted by audio startup
