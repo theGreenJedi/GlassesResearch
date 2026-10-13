@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 ALLOWED_STATUS = {"reported", "under_review"}
 ALLOWED_SOURCE_CLASS = {
     "primary",
+    "primary_artifact",  # Upstream release/commit: source evidence, not GR verification.
     "technical_reporting",
     "reputable_secondary",
     "retailer_oem",
