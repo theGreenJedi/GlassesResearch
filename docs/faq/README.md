@@ -27,6 +27,10 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [**What smart glasses are recalled?**](10-ownership-future.md#what-smart-glasses-are-recalled) — Current verified recall records, affected models, primary regulatory evidence, and remedies.
 - [**Is the INMO Air3 recalled?**](10-ownership-future.md#is-the-inmo-air3-recalled) — Yes. See the verified recall, stop-use guidance, and announced remedy.
 
+## Reader-observed historical question
+
+- [Which smart-glasses brands introduced important product milestones?](01-basics.md#which-brands-in-smart-glasses-are-known-for-introducing-groundbreaking-products-that-have-set-new-industry-standards)
+
 ## How to read the recommendations
 
 - “Best” means the strongest current match for a stated use case, not a universal winner.
