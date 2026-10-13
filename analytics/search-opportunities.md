@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-09-13 → 2026-10-10**.
+Google Search Console page/query pairs for **2026-09-14 → 2026-10-11**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -15,6 +15,7 @@ Google Search Console page/query pairs for **2026-09-13 → 2026-10-10**.
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | sunglasses for developers | 14 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/evidence/EV-0050-mainstream-optical-serviceability-wave-seven/ | rokid 0050 | 8 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 8 | 0 | 0.00% | 9.1 |
+| https://glassesresearch.org/docs/REPORT_CARD/ | inmo air 3 industrial version vs realwear vuzix iristick | 6 | 0 | 0.00% | 2.7 |
 | https://glassesresearch.org/models/PROFILES_LINEAGE_TOSHIBA_DYNAEDGE/ | toshiba ar100 | 4 | 0 | 0.00% | 6.8 |
 | https://glassesresearch.org/ | research glasses | 4 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source smart glasses | 3 | 0 | 0.00% | 6.3 |
@@ -46,7 +47,6 @@ Google Search Console page/query pairs for **2026-09-13 → 2026-10-10**.
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best bluetooth glasses | 9 | 0 | 0.00% | 22.1 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses bluetooth | 8 | 0 | 0.00% | 18.6 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses with camera and bluetooth | 8 | 0 | 0.00% | 22.2 |
-| https://glassesresearch.org/docs/REPORT_CARD/ | inmo air 3 industrial version vs realwear vuzix iristick | 7 | 0 | 0.00% | 11.0 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart bluetooth glasses | 7 | 0 | 0.00% | 21.7 |
 | https://glassesresearch.org/guides/smart-glasses-with-video-recording/ | glasses record video | 7 | 0 | 0.00% | 27.1 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | open source glasses | 6 | 1 | 16.67% | 18.3 |
