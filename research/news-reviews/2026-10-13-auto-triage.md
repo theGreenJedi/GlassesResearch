@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-13T09:34:09.250149+00:00`
+Generated: `2026-10-13T11:13:35.426992+00:00`
 
 - Intake files inspected: **248**
-- Candidates retained in this review window/history: **10255**
+- Candidates retained in this review window/history: **10259**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
@@ -12,9 +12,9 @@ Generated: `2026-10-13T09:34:09.250149+00:00`
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 558
+- `needs_editorial_verification`: 564
 - `rejected_noise`: 7536
-- `source_review`: 49
+- `source_review`: 47
 - `watching`: 40
 
 ## Action queue
@@ -149,6 +149,8 @@ Generated: `2026-10-13T09:34:09.250149+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.870](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.870) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.874](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.874) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.878](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.878) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.879](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.879) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.880](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.880) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
@@ -170,6 +172,7 @@ Generated: `2026-10-13T09:34:09.250149+00:00`
 | high | needs_editorial_verification | direct | [Snap (SNAP) Stock May Be Undervalued After Its AI Glasses Launch - finance.yahoo.com](https://news.google.com/rss/articles/CBMinAFBVV95cUxQMnN0eHZ3NHdpWV8tYU5JNGpLXzVhV09teElIcVpJTURGelhycG9EY3JBMVV4S2k3eUhtektpYWc3SGxBbDY2dU45RHFkODFKWmtvYUxYMzZNbUc0UWljajV0SVJjRWowUjF0ZGtDd0g2OFJEYmZXWXZTOGxCTUxKZTliNEJ3QzFXTTdMUFA4b3p5VWU0RDZhRklRLVE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SNAP Stock Eyes AR Upside As SPECS AI Glasses Launch - Timothy Sykes](https://news.google.com/rss/articles/CBMidEFVX3lxTE5tZWN2UjdpS1Z3OEdQUjZOT1VsUDh4ZXN2U3F4ejQxcFE4RHp5T3RLRVhLRnpCNWs3QUlKZURfTDk4bVVoaXZkVW1ySnhXeDAzVmpWcE5XakhjNnM2d1Y1WDFGdW5SSll1bl9KTG8yQnpsSTMt?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SNAP Stock Eyes AR Upside As SPECS AI Glasses Launch - Timothy Sykes](https://news.google.com/rss/articles/CBMib0FVX3lxTFBFaHFzUjEtZE5zSlEzV3JXQTIwdjVjRUsyS0xMaXFvR1JUNGpoTU56X0RseHVLRm00STUxWDMyd1VqVU9zd0VFdThlMXRVVWNmQW5EOTlMZHhhSVV2dVVnbW5xb0UyU1l1QzBYT3VHRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Two affordable smart glasses launch, one with 20MP Sony camera, one with tint-shift lenses - Notebookcheck](https://news.google.com/rss/articles/CBMizgFBVV95cUxOdFJZWEVZMG1QZTZZWlA4VjcydWlpQnFiSUQ1N01fdVp6YlI4b2x6RFhMaDRWeUIzWEFXa2lxb3hCVUQ3LWx1Q0pXUVdIMi1oQlA2WTF4alZYYU9iSmpBYVU4b1ZXaHdEQXhlOFkzOUdTZkVhMnNkYkp6bUphTkNZZ3VGMEJRNExhMURoSXVpRGE1UzBDaUNmendhRGkzOUR1TDZQYm1fOGd5bVpycVJNdnBLd3IxcEtiaXowbURwRlJHd2g2YmVsYkJFalEwdw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Vuzix Announces Shrike Waveguide Display Platform for Defense, Security and First Responder Applications - auganix.org](https://news.google.com/rss/articles/CBMie0FVX3lxTE5FdkR2cWwzRFZrVTF3dGo4SnljcUN4RVZFMmdrRXRwckdkVUU0VmFEVEZSNEtScU05VnU5UFJRM2hkZExmbHBiNVJYT3NEbVVkd3E5RlhCN1g3cGQ5R2NyRWJLUmVrb1NYQUVmMGFNbDVBTFQ3azdHU256SQ?oc=5) | reachable (200) | research_news_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Vuzix launches Shrike, a customizable waveguide display for defense and security wearables. - pluang.com](https://news.google.com/rss/articles/CBMimgFBVV95cUxPMlFCYWZ2eUNsd1lZdTV2OWtma0xTbnBBSF9qaU5JQXJqV2JYR1B5WjJfT01IMEZEc3NtV2tsb0ZHUzRwUWRGRlJ5eldrajZWSjV0N0NYSWJ3NlltbXdta3Z4aG1vVVN1MHZkTmhveFRxc0l4Qk92bHhYUHpueWs2VnFhTVBrRUJQNWJIZnpSOEp6V1BBbFk2ZkxB?oc=5) | reachable (200) | research_news_review, research_optics |
 | high | needs_editorial_verification | direct | [AI Glasses: What Christians Should Know About Privacy - Crosswalk.com](https://news.google.com/rss/articles/CBMipgFBVV95cUxQRW9NWEF1NGJDcGg5SXFaZ3YwSkRKNEw2dTI0ampJQmhGU2dCUF92Ym04TUQ4ajVDQXFIRGNOS1hxcEVMYXFiaW1fY1dkUm5NTF9hLUlqMHhiSnl2OFFYY013SU5ELVdfQUlBRkY4SnlpMVNPQzhnbWc4Uk5UaXJwQjhvc3otM3dzVmFEU3c3dkctRDhyOThMV2NITjFsYWJMbHRBbUtR?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -268,9 +271,6 @@ Generated: `2026-10-13T09:34:09.250149+00:00`
 | normal | needs_editorial_verification | direct | [Meta Quest Smart Glasses review: are they worth the price? \| TikTok](https://www.tiktok.com/@hellojimmer/video/7663122239235034398) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Meta's new VR glasses and AI glasses: Hands-on \| Mashable](https://mashable.com/tech/meta-vr-glasses-ai-glasses-hands-on) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Meta’s smart glasses are innovative. Are they a security threat? - Tubefilter](https://news.google.com/rss/articles/CBMilgFBVV95cUxNQllwNUhjbUlXdW45SzBMN1RRaTY0RWpOTVdZS3BzVkQ4ZzE5c24yb2NzOFU4NGdXOWFBOHNWcnZhQW1UcTZtYm1JVEdLeWlZMDhER1hxWTJCUWVBRDJBSkIwRnd3Z1pCUTgza1VoTVp6RGJPbmlFZmxWbDJBbDdNZG01bTNzajd5X1BOWFo4aWlqVElKcnc?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Meta’s smart glasses are innovative. Are they a security threat? - Tubefilter](https://news.google.com/rss/articles/CBMimwFBVV95cUxQS0RvQ2pqZmJ1STRNZmVVR2JCWTZIREZrVTJvd3lOeFpzRU1wX1NMaUNXQWN0b0ZwQ19tRGxTRE9OcWJ2YTF5LUR2bDFjckFnczF1eDcySFJGNHNMRExRTjRhWUJXcE9weVJMeDFxNVJqOVdLR0JTelFCWVhBZE05Y2VuMTNFaFBWVl9aQkNaWU10MXNmMHBuaFE5VdIBmwFBVV95cUxQS0RvQ2pqZmJ1STRNZmVVR2JCWTZIREZrVTJvd3lOeFpzRU1wX1NMaUNXQWN0b0ZwQ19tRGxTRE9OcWJ2YTF5LUR2bDFjckFnczF1eDcySFJGNHNMRExRTjRhWUJXcE9weVJMeDFxNVJqOVdLR0JTelFCWVhBZE05Y2VuMTNFaFBWVl9aQkNaWU10MXNmMHBuaFE5VQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [OAIC opens investigation into maker of HeyCyan smart glasses phone app - Australian Cyber Security Magazine](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSUFydmFiLWxxcmFSMDhJdG1KaHZNZm9hLU1JMzVVbVAwZE1VNjZuZm1EbWFoZmZkRHd1eU14eHRhdnBzelAxUXRYUlhXZzdjZmN1cWR0SXZFLU1QTUFsVTZvZk5uRGpnRlJwOGxaMVl1SnlsYzJtZXFlNjZZM3M3aTJ4REVMU2dZcXJROV95SEUzMjBmbWY5Q1dCRGZhY3Bua3lIM0EwRGF1RDhSZ0lybEF6dmhXaTh4UFE?oc=5) | reachable (200) | research_news_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Oakley Metaで記録する、走って、食べて、チルする休日。 - HOUYHNHNM（フイナム）](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPNlo1eE1Cc1lOcU8wOE5wbFNzWUtUNjI1cnUwVzNfcVROakxfN3pqcnBjTmNuMFZ6enlBSHNxU21SYllOa2tJMlc5XzFXbzN3Q3dB?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
