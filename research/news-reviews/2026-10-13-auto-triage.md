@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-13T07:40:07.975598+00:00`
+Generated: `2026-10-13T09:34:09.250149+00:00`
 
-- Intake files inspected: **246**
-- Candidates retained in this review window/history: **10193**
+- Intake files inspected: **248**
+- Candidates retained in this review window/history: **10255**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2047
+- `adjacent_radar`: 2053
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 554
-- `rejected_noise`: 7485
-- `source_review`: 48
+- `needs_editorial_verification`: 558
+- `rejected_noise`: 7536
+- `source_review`: 49
 - `watching`: 40
 
 ## Action queue
@@ -147,6 +147,8 @@ Generated: `2026-10-13T07:40:07.975598+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.842](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.842) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.864](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.864) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.870](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.870) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.874](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.874) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.878](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.878) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Meta adds camera-free AI glasses as Samsung prepares 2026 launch - digitimes.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxQOUNKR09TOFduRG9UdmtoTWFXWVU2X1BKc1BwYjk1ZF85TkZNOEtJcUc3X2U4UVlaZXlNRTNUVlJ4R2NIcTN1aHFURkFWdmlUUUFOWldYanVEUVJMS09GVk5JUGhPSHlsd0E1bnlzT19RekVSUGE3RTNGR01FUDNjZzZidkxuTXVud3lfVmg3ODltVEU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
@@ -212,6 +214,8 @@ Generated: `2026-10-13T07:40:07.975598+00:00`
 | high | needs_editorial_verification | direct | [Xreal's Aura smartglasses will cost $1,279, preorders open soon - Mashable](https://news.google.com/rss/articles/CBMibkFVX3lxTE1PM2FhNEtBQ0NQOU5OMWljNEw2eWVNY2xJT2gtMXRyb0cwbm1YWEw5anBjVWtjRWdqV3Z0SVBHdjdSTFljMTZ0alViYXk2TGxtZ2g4Nng5YzBMcTNCeG9yU2F3VnV6YnNrY2k5emJn?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal's Aura store page lists four versions its own FAQ says are not announced - MIXED Reality News](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX01JSkFseVhPVFJycl91ZXB0OW5oa1VpTmJfWG9wTTlmTy1UOU5HN1JXVEZ3Nk1xeE9lMVJDc1h0VzdPVVp0UFNXcjVraHlfeTdmT3FRMzhuendaR1NJSUN0dkZCVGt3bXplTnl1S2tUdTcxUDdxMzdFRXU4UnpCaDJYa3hkTmZV?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [‘Compromising those who need it most’: Charity pushes back on smart glasses blanket ban - News24](https://news.google.com/rss/articles/CBMiygJBVV95cUxPTHdQVjNiSGgxRXBKTEZPWi1WX2FwdDUxTU1LM25zR0xLTklRU0xMR1lmS0o1TzNaQ2o0MVVpbGwwRS05c0V3bGY4UmtUM0Q4Z1loRVV0bUNsWTdDSVg1WnNGWG5LRUtWZlJvcThjRmhOSERyLUIxOGlaSVFseEI0bHpNVjVsMjhkOGE2NHhTaEQwU3RSbEI1cm5vdHZRRkVNOGJhTFBJQTVYelBxMVktUGRsSl9IYVNLenJNdzZ0S25lQUtBRWZZUmxZeWVmVHhjWUxaUFR3Y1hsUFFEOXBla1IydF9TSktINy1fcUVGc1UzZXhSbjVzRk56MFBibndRS2JfYzRLWnFLRTlLdW5ULTliNThnM0xFNzRLTmJrNjB4SW5mQk9hd2pNZWVqTmZPZUcxOEJjbkc2NDY0Z3p4QjhIRkpKaFFKSnfSAc8CQVVfeXFMUGttc2JHRWdiU1Vnam5IWlZqbW1DRVR2NTdDaHl3SER0cHVUQTFjcXRzbzRFVElZZ0otTW1qUlpQZzllaWJuaWdMWUFmNWZmaDE1WEh1VjNTcVZfNVB3RmFIaGZ3SEF1M1o2eWdwSkVmSWUtX29Fc05pY1FoVURxX0tieTdtWmJrYkFhblQtR1htU2RyaEd4V0VBS3BFaVRGVFBvMk1QTUlzZ3pnbjBIWkp2bHhWWWltcFZMbE85ZElPSHZOcVlJOWJkSWwxVXBqWERsNjZVOWdEVmV3aWZDNmcyblVCRjlEZERkTk9SZndqdlpZME9TenE0UmNTM2hSbTM4aWg1bC1lS0dqY1gyUVdYN2xjWGJ0Q2N2c3FuZ2lQdjNQZ20zNWh0XzRzclZCTklERjZHSkdJZGZKY2trRUp4MmZ0TkN4bk42a3A5c1U?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [AI Glasses Challenge South Korea’s Exam Security - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSFBnTEhRSlA5LW1fX2hsbXVRcXpyMnc3RU5DLUxub1ZpUHVwOW43ckVVeU1WcjlQbHF2SFppczdpd2FSc1JhWjc2cTROWTFDU3dsUlhwSHdZa0Zia2dvVlNOc044Z3hxcDA2QlM3UjQtTGc5QzMzVnRzNE8xaFlMYmRPTDBUZUJf?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [South Korean Universities Tighten Security After Students Caught Cheating With AI Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1hKWjl1TUdUbGlCREpzR2gwakRNTklJV3JMQmVvTGpJZmhsN0xFbDNPYXBCYjctamVuTXFEcWhRdU9XQVJzbDBMdVhoLXJQYXZxNk4zS2NMNmxWMzQ5RFhNMk84RUp2MVRHU3VrSW9mTG45Tk1HRVRZQlpQampHZnp4NWZ3ZmJPMkVXVTI2REg0MFdReVUxOTJFeEVLTHRSTW9UaEF4M1lTUWhOQlNVaHlqQ1pkMXNuSzlpdG5pa1Q?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [XREAL XBX A01+ Review: $299 AR Glasses, Tested and Compared (2026)](https://monarchxr.com/xreal-xbx-a01-plus-review/) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | ["It's both brilliant and profoundly unsettling at the same time" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses - D](https://news.google.com/rss/articles/CBMigAJBVV95cUxNZ1JJcXV2Y1RCdXpSZ2RzLVJxQUdaWGdycEFuMS1QMmNFbzNndWlWem5xS3NYS0NtS283bUZiNmFpcHhYMXNTdmp4azV6WVpIUy1HSDk3cTBjY2ZmOTRSN052bDdqWjNlaGhDaGZPUHZpOG9SNXBMX3d1R3RKUzYtcHBJeUxpY0oxekVjN2RBT3ZUcWIyQ2ZVeHRpcUZyUFZ0a193aWEzMWI4NlNnQ3hrN0ZGa3pZRlV5V0lSazNPVWZEQ3UzWnJra0N4Tm5YRVI1U1NoSUdjWlJvemprNi1jelZCZ1lQZ2wwVmJFYmdlMTRiTTRJZEhzWGp1V1kxLWlt?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | ['스마트 안경' 연대·시립대 가려다 적발...이렇게 보인다 - 이데일리](https://news.google.com/rss/articles/CBMigAFBVV95cUxOY2Q3OFltRTR2SmZSN1NEMXNCWVZXV0x0dnprOGJna2Q2ZUlEMkMtRXRJdzNKUlBmWXpmbk40X0Q3cXpPSGgwemsyU0ZGNHRNT0dxR2J0Q0txSVJrb3dmZFdfWDJCa2g5ZFp0Q19NcUpubEIwVEFjWDdVV1ZjbUpkeA?oc=5) | reachable (200) | research_news_review |
@@ -267,10 +271,6 @@ Generated: `2026-10-13T07:40:07.975598+00:00`
 | normal | needs_editorial_verification | direct | [Meta’s smart glasses are innovative. Are they a security threat? - Tubefilter](https://news.google.com/rss/articles/CBMimwFBVV95cUxQS0RvQ2pqZmJ1STRNZmVVR2JCWTZIREZrVTJvd3lOeFpzRU1wX1NMaUNXQWN0b0ZwQ19tRGxTRE9OcWJ2YTF5LUR2bDFjckFnczF1eDcySFJGNHNMRExRTjRhWUJXcE9weVJMeDFxNVJqOVdLR0JTelFCWVhBZE05Y2VuMTNFaFBWVl9aQkNaWU10MXNmMHBuaFE5VdIBmwFBVV95cUxQS0RvQ2pqZmJ1STRNZmVVR2JCWTZIREZrVTJvd3lOeFpzRU1wX1NMaUNXQWN0b0ZwQ19tRGxTRE9OcWJ2YTF5LUR2bDFjckFnczF1eDcySFJGNHNMRExRTjRhWUJXcE9weVJMeDFxNVJqOVdLR0JTelFCWVhBZE05Y2VuMTNFaFBWVl9aQkNaWU10MXNmMHBuaFE5VQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [OAIC opens investigation into maker of HeyCyan smart glasses phone app - Australian Cyber Security Magazine](https://news.google.com/rss/articles/CBMiugFBVV95cUxOSUFydmFiLWxxcmFSMDhJdG1KaHZNZm9hLU1JMzVVbVAwZE1VNjZuZm1EbWFoZmZkRHd1eU14eHRhdnBzelAxUXRYUlhXZzdjZmN1cWR0SXZFLU1QTUFsVTZvZk5uRGpnRlJwOGxaMVl1SnlsYzJtZXFlNjZZM3M3aTJ4REVMU2dZcXJROV95SEUzMjBmbWY5Q1dCRGZhY3Bua3lIM0EwRGF1RDhSZ0lybEF6dmhXaTh4UFE?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Oakley Metaで記録する、走って、食べて、チルする休日。 - HOUYHNHNM（フイナム）](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPNlo1eE1Cc1lOcU8wOE5wbFNzWUtUNjI1cnUwVzNfcVROakxfN3pqcnBjTmNuMFZ6enlBSHNxU21SYllOa2tJMlc5XzFXbzN3Q3dB?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Open Source Smart Glasses - DIY AR - YouTube](https://www.youtube.com/watch?v=PwmGNWkpKW8) | reachable (200) | research_news_review, report_card_evidence, development_hacking, deep_research |
-| normal | needs_editorial_verification | direct | [OpenVision 2.14.0 runs Ray-Ban Meta glasses on a ChatGPT subscription, not API credits - mixed-news.com](https://news.google.com/rss/articles/CBMilgFBVV95cUxQS3ZPZFRwWlVxaHVjTEw5bVFPUmhDNndhWFVjVlg0WmJHWXp4d25ZVm9hX3p6U3Vjc0JBeFcxNmFrRzRPQXBBSDR6SzhwZDUwVlJuNzByY09XQUUyUllPNHd0eFlHY25seGpfQ0ZweDFxSFFiMXk2RWRmbmJ4TGkta1J5WkpsOXM5VjJ1N1FTMXotNDhuYXc?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
-| normal | needs_editorial_verification | direct | [PrimeAeroBerg Pulse Smart Glasses Review and Buying Guide](https://testforlab101.github.io/primeaeroberg-pulse-smart-glasses-review/index.html) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
-| normal | needs_editorial_verification | direct | [PrimeAeroBrook Echo Smart Glasses Review and Buying Guide](https://testforlab101.github.io/primeaerobrook-echo-smart-glasses-review/index.html) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 
 ## Meaning of states
 
