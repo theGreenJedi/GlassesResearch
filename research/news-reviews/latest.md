@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-13T20:49:07.439361+00:00`
+Generated: `2026-10-13T22:55:19.151474+00:00`
 
-- Intake files inspected: **246**
-- Candidates retained in this review window/history: **10152**
+- Intake files inspected: **248**
+- Candidates retained in this review window/history: **10209**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2016
+- `adjacent_radar`: 2036
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 569
-- `rejected_noise`: 7455
+- `needs_editorial_verification`: 572
+- `rejected_noise`: 7489
 - `source_review`: 48
 - `watching`: 43
 
@@ -158,6 +158,8 @@ Generated: `2026-10-13T20:49:07.439361+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.886](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.886) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.887](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.887) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.890](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.890) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.894](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.894) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.895](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.895) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung 1st AI Glasses Launch in November Powered by Google Gemini: Report - LatestLY](https://news.google.com/rss/articles/CBMivwFBVV95cUxPdUJfTXRyYURkN2M2NVplZVpZQTVRR2JUanFMbkdURTY5Tmh3Ym9IX29idVVxXy1sZ25GRV9QeTY0aktxVjg2NTV5TWhZeU51ZzVqWDdHX2tIRDJycnl6WHhqTi1Kc2R2anFNcnc2eEFvZDhERC1JcExGRDNJc1ZwVUV4ZUtRSEZnUHBqZGx5SXJSQ3NMWmM1UlVhckZiVWk1cFQteVJsOFljcS1fekQzMENDZWV5eWh0T1dTRHB5RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-13T20:49:07.439361+00:00`
 | normal | needs_editorial_verification | direct | [Best Smart Glasses Compared: Side-by-Side Review (2026)](https://smartglasses.computer/blog/best-smart-glasses-compared-2026) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Best smart glasses in 2026: Top AR and AI glasses worth your money ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Blind veterans run Army Ten-Miler with help from AI glasses - Axios](https://news.google.com/rss/articles/CBMiowFBVV95cUxOU2RXSThlTlNhY3A1ZXdIV1hHRXhUVU1SZVF1cV83b1ZudDZxT09wYjM2RDZtSkdvRFM5S3B1LUhtNVZRa2hoX2pWN2JLTGU4R0JXdndNTG9uQXp2dkxUN3c5M0VzczNTeUxZdTBKdWdGbm43bk1CdnNpMnluQ3pad1g2WFNhTHBnX1VTZTRhWlUzMWxYM2t1bDdjWGtNSFdtQ0hn?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | enabling | [Calagaz Photo and Digital Imaging \| Mobile, AL](https://calagaz.com/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
-| normal | needs_editorial_verification | direct | [Cellid、Qualcommの「Snapdragon(R) START」プログラムに参画し、 ARグラスの開発を加速 - ニコニコニュース](https://news.google.com/rss/articles/CBMie0FVX3lxTFBRT1g2S1hMR2x4eFlmRWNNLUs3YWZMXzNzV2YzQkRpMXo2a0x2a3ZuYko3S3luS2JjanpNU2wtaVJ1ODRDQlo3NnhLcmliUUJ0Y0lvTXBMajNCMzd6RGdJcFZvMGt5TTlrRWMyczhqYTg4c2lGTmt0aXFfTQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
