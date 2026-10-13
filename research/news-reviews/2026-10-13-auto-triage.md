@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-13T15:19:52.931109+00:00`
+Generated: `2026-10-13T17:41:02.947944+00:00`
 
-- Intake files inspected: **246**
-- Candidates retained in this review window/history: **10184**
+- Intake files inspected: **248**
+- Candidates retained in this review window/history: **10258**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2038
+- `adjacent_radar`: 2051
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 563
-- `rejected_noise`: 7480
-- `source_review`: 42
-- `watching`: 42
+- `needs_editorial_verification`: 561
+- `rejected_noise`: 7538
+- `source_review`: 46
+- `watching`: 43
 
 ## Action queue
 
@@ -154,6 +154,8 @@ Generated: `2026-10-13T15:19:52.931109+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.881](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.881) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.882](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.882) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.883](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.883) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.884](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.884) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.886](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.886) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung 1st AI Glasses Launch in November Powered by Google Gemini: Report - LatestLY](https://news.google.com/rss/articles/CBMivwFBVV95cUxPdUJfTXRyYURkN2M2NVplZVpZQTVRR2JUanFMbkdURTY5Tmh3Ym9IX29idVVxXy1sZ25GRV9QeTY0aktxVjg2NTV5TWhZeU51ZzVqWDdHX2tIRDJycnl6WHhqTi1Kc2R2anFNcnc2eEFvZDhERC1JcExGRDNJc1ZwVUV4ZUtRSEZnUHBqZGx5SXJSQ3NMWmM1UlVhckZiVWk1cFQteVJsOFljcS1fekQzMENDZWV5eWh0T1dTRHB5RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -227,7 +229,6 @@ Generated: `2026-10-13T15:19:52.931109+00:00`
 | normal | needs_editorial_verification | direct | [AI Glasses Challenge South Korea’s Exam Security - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSFBnTEhRSlA5LW1fX2hsbXVRcXpyMnc3RU5DLUxub1ZpUHVwOW43ckVVeU1WcjlQbHF2SFppczdpd2FSc1JhWjc2cTROWTFDU3dsUlhwSHdZa0Zia2dvVlNOc044Z3hxcDA2QlM3UjQtTGc5QzMzVnRzNE8xaFlMYmRPTDBUZUJf?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Spark Security Concerns Just Month Before College Entrance Exam - SBS 뉴스](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsd9IBZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsdw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [South Korean Universities Tighten Security After Students Caught Cheating With AI Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1hKWjl1TUdUbGlCREpzR2gwakRNTklJV3JMQmVvTGpJZmhsN0xFbDNPYXBCYjctamVuTXFEcWhRdU9XQVJzbDBMdVhoLXJQYXZxNk4zS2NMNmxWMzQ5RFhNMk84RUp2MVRHU3VrSW9mTG45Tk1HRVRZQlpQampHZnp4NWZ3ZmJPMkVXVTI2REg0MFdReVUxOTJFeEVLTHRSTW9UaEF4M1lTUWhOQlNVaHlqQ1pkMXNuSzlpdG5pa1Q?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [XREAL XBX A01+ Review: $299 AR Glasses, Tested and Compared (2026)](https://monarchxr.com/xreal-xbx-a01-plus-review/) | reachable (200) | research_news_review, report_card_evidence, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | ["It's both brilliant and profoundly unsettling at the same time" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses - D](https://news.google.com/rss/articles/CBMigAJBVV95cUxNZ1JJcXV2Y1RCdXpSZ2RzLVJxQUdaWGdycEFuMS1QMmNFbzNndWlWem5xS3NYS0NtS283bUZiNmFpcHhYMXNTdmp4azV6WVpIUy1HSDk3cTBjY2ZmOTRSN052bDdqWjNlaGhDaGZPUHZpOG9SNXBMX3d1R3RKUzYtcHBJeUxpY0oxekVjN2RBT3ZUcWIyQ2ZVeHRpcUZyUFZ0a193aWEzMWI4NlNnQ3hrN0ZGa3pZRlV5V0lSazNPVWZEQ3UzWnJra0N4Tm5YRVI1U1NoSUdjWlJvemprNi1jelZCZ1lQZ2wwVmJFYmdlMTRiTTRJZEhzWGp1V1kxLWlt?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | ["논술 시험에 AI 안경까지"…연세대·서울시립대서 잇따라 적발 - KBC광주방송](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBLUnk0c1p4V3NCN05jdkJZTjZUODJoSnJKRk42aWdmajVnX3FrLUhmSGFvVUx1bDV5ZnJ5c1FNa3NiUVI4emtqNlhzLXA2YzlmQ1h2aW1Xdl9qS2cxQlRtRg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ['AI 스마트 안경' 부정행위 늘어나는데…대학마다 제재는 '들쭉날쭉' - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMib0FVX3lxTFBpQmpRZkk0SGx3V3ZnWGVEckNudThyaGNacEhpOHQ1emlscTRTWVVYb1F0UGlPZzhxaWRtMjRFYVRhaVBQX1RxRzFWRkVVeWFCbEpRbEtIUllzbnhJLTJaR1F4OUhLZ1hIVFlvS0xsTdIBb0FVX3lxTFBpQmpRZkk0SGx3V3ZnWGVEckNudThyaGNacEhpOHQ1emlscTRTWVVYb1F0UGlPZzhxaWRtMjRFYVRhaVBQX1RxRzFWRkVVeWFCbEpRbEtIUllzbnhJLTJaR1F4OUhLZ1hIVFlvS0xsTQ?oc=5) | reachable (200) | research_news_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-13T15:19:52.931109+00:00`
 | normal | needs_editorial_verification | enabling | [Foundation for Polish Science - A two-photon vision-based retinal display for augmented reality applications - Fundacja na rzecz Nauki](https://news.google.com/rss/articles/CBMilwFBVV95cUxPaGswWTFEV3o2NWJTVDB2Ym1sM1ZyOFZpZWZWc1ZSREVkTURjOF9fSW9ndFVscXhYY2ZRYmEteFJxcENfVDhaNWxheXpIUGtkMkhod0dldTNEaV9kRnhBNV9PcVQ4M1RIdDlUUXRFOVBVQzVOX0M4OGdfcThZMVpxOGZNRmtmWGlqbG1PWEJKb3BNaFkwcGNj?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [From brick phones to AI glasses: How tech took over our lives in 40 years - The Independent](https://news.google.com/rss/articles/CBMimwFBVV95cUxPZGk0cG9pVmdpNUtIbHRqY0xaUld0SmJhVmF3bmdFNlB0TU8zQ002MS1QU3VYOFdjRnFOUW1rRUdCdFFHS1NHUHQ5ZlV3aXBEd2VORVlQU3VIeGVCM1VNNXZOMHBMU0hGUXNJbl9DTHFFR0dMUkVUSGotS1E0MVJKcmpxaWtBMmlJSVFzMktLa0dkWEtEeDF3TTliUQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Gafas inteligentes: de qué hablamos cuando hablamos de privacidad - Modaengafas.com](https://news.google.com/rss/articles/CBMikgFBVV95cUxNZEpyaHpQYjF4dWRzSzN0Z2xXQ0x2cXpOY0FHbGdjbXhtMFI2Y25JaVJxZFNUZGd4Y1RFSE44dk1nVU85ZkhCQWx3bmlGaHhuekQ3M2pUbUxPaDRyX2tTaEtsVkVMWWZVZmhPZENDS2NhaUdkYWhoby01QUROZHAyZmU1NjA2aHdLWkFLRFBiWDNIdw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Get a look at every single pair of Samsung smart glasses. - The Verge](https://news.google.com/rss/articles/CBMimgFBVV95cUxNXzJ4cFBNMng3ekpsTFV5bE5LZUphd0dQS3EwRHlxMFhZTkowZTN2SWo0Zy1WS2kwbW4zTUc0SkdRR19iVlgwSktsaWMzYU5vcFpwY2xZRkRiaDYzcFJiSVo0WDRvWDdRbVFsdWUxTHpJS00xWlZ6TFBKY1ZVZDhNcmdyYUxVcVhWWnlJM0x6NWZWSl9jNk82NWNB?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
