@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-14T10:03:09.547860+00:00`
+Generated: `2026-10-14T13:51:20.373735+00:00`
 
-- Intake files inspected: **250**
-- Candidates retained in this review window/history: **10277**
+- Intake files inspected: **252**
+- Candidates retained in this review window/history: **10356**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2043
+- `adjacent_radar`: 2058
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 583
-- `rejected_noise`: 7543
-- `source_review`: 46
+- `needs_editorial_verification`: 591
+- `rejected_noise`: 7598
+- `source_review`: 47
 - `watching`: 42
 
 ## Action queue
@@ -170,6 +170,7 @@ Generated: `2026-10-14T10:03:09.547860+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.912](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.912) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.913](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.913) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.914](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.914) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.916](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.916) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ2hqZUl1NXJaUm5JVlZLSWRXOXhPQzJYdzJNa1Q2emVxdTJyWnBMUHI5bk5yVE5QQ3c0V01lTXdJcGpNQ0dTOGtISF9LcGZ1TEh0N3RZbWZwbW9DX3NCd0JNRXk2dVhLd2V3STBnQmtZRmNlV1V6VkJMUDlRWlpnMl9OYkJfU2RraEw0bkxkcXdIbFQ3TU02dHNSYVJfUHBUam9WNWNXMWZSekRXc01CNHV0dW44MnJCaWxHZjRQVXUyOUluV3pZ?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -267,7 +268,6 @@ Generated: `2026-10-14T10:03:09.547860+00:00`
 | normal | needs_editorial_verification | direct | [Alibaba Unveils New Qwen AI Smart Glasses to Compete With Meta - Analytics India Magazine](https://news.google.com/rss/articles/CBMiogFBVV95cUxNWjlFSUJ6aXZaWFQweDh1cEN6bTk5c25xZzhwWUdJVkZoQjVCNWgtMDNLMndlWm1qWjlGOFZHY1FoWGxTWVFEdUJqZDdrTDVHdEZHR09SZ3VsSGdLMXhaSnBldS1ZRk5jRkJobDVLdXVrMGQxSk9scnlzZXNKY2FSTVd6Z0k3eEdpS1lzaUNrTFdWeXB4TFBtMWpRZl9iZmpraEE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Alibaba、AIスマートグラス「Qwen Glasses N1」を中国発売 - 디지털투데이](https://news.google.com/rss/articles/CBMiywFBVV95cUxQOTJTRmlKbGx3QnBGZXNqd1BLUlJNdWdQaTQzTTdKR1gyazNITGJ5emw2QjRZek81LWhQTGZzdEpNdnJPeFFOa0ppMWVfOUZ3MVdZZGxsMFAtN19jTmYzTS1WSkY1Mk5jVXR0ZzJuYXR6b2VULVZtdlRyeU1BY1J0NDkzczNmUDhoSmpaYVQ3WnhKcWcwanhQZzhQOGdBOERTOC1RSkxoYkdLaW5GZlJoelZHNURRaXhQUGFlLVJEeW5GVm4xWHp2RTlQTQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Alibaba株、Qwen AIスマートグラス発表後に時間外取引で上昇 執筆 - Investing.com - FX \| 株式市場 \| ファイナンス \| 金融ニュース](https://news.google.com/rss/articles/CBMid0FVX3lxTE5YTW5xRm9ENlhzTFY2S3hMdnJkQk5GdTZKLTFGVXFKNjhxTjNWRWg3WGlNWTlpbDV6b3NySzJCQ3YxNTNYY0RCRTZTT1pRQjZBN3Y5VzlzQUtQbm5YNHVOSG4xTEV0M2hoNWVQRF9UaFB1TU1GUXI0?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Apple lays off 60 VR employees as focus shifts to Siri AI and smart glasses: Report - Digit](https://news.google.com/rss/articles/CBMivgFBVV95cUxOcUJoVVpfelNXdmVHOHo1eE1VRFVNd1ZJRklUMDRXNmJnYUhmTXlPY3ZRNlNmSk8wZ08yRVVqTXdfN0hMdGpidDdwT0hMR1VEUFpTQm9rOVVBYjQ3LWFxa2FTdHFZLWZxcS1fLVNWdkV2cUNENmZDLU9MVG45bHdmZU9HY21ZcndvU1FjdmczTU9vXzVQR2Nrd1RzYkstTHV2M0NEQy1kblo3Q2ZvdV93Rld0aFR5Vm5GZ2xTaktB0gHEAUFVX3lxTE9jYmZrSlp2M1FIbU1HanNRM2dBb2dIUTRObTNJcXhfMTNGRVhhRmlkbFh3ZkpzY2gxUWRsNXNCQlh4OEdtVl9odnR6YUFlXzJLNDJ6bUJsc1pPS2lId3c1MnlmUzVXMlVSV0lQTlVjM3FkZW9jdVJJOFVyOFZZSlNsN1ZUX1dRZFJDVURxX3dHTWt6TFp5bk53MTYySDZxTVpEeDdvUXBGNTNXYjJmUXE2UnhUampwc0cwZFhwTzZVeXBpLXU?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 19h ago How Will AR Glasses Like Specs Transform Enterprise Work? Coverage Snap](https://arinsider.co/2026/10/13/how-will-ar-glasses-like-specs-transform-enterprise-work/) | reachable (200) | research_news_review |
