@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-14T07:47:46.733539+00:00`
+Generated: `2026-10-14T09:03:40.292873+00:00`
 
-- Intake files inspected: **252**
-- Candidates retained in this review window/history: **10287**
+- Intake files inspected: **248**
+- Candidates retained in this review window/history: **10170**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2053
-- `catalog_review`: 17
+- `adjacent_radar`: 2020
+- `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 580
-- `rejected_noise`: 7542
-- `source_review`: 48
+- `needs_editorial_verification`: 572
+- `rejected_noise`: 7465
+- `source_review`: 50
 - `watching`: 43
 
 ## Action queue
@@ -168,7 +168,6 @@ Generated: `2026-10-14T07:47:46.733539+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.910](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.910) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.911](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.911) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Jio AI Smart Glasses: UPI Payments, Features And Launch Date - Flickonclick](https://news.google.com/rss/articles/CBMie0FVX3lxTFAzYzY1eS1FMVhNX0xjNUxaN1B4X0VzQmpCX1NjRmdTVVgtdm1GNDFpLTM3T1dycjQ2d3JkZGZlMHl0V25IMHlveER3SlB4S09TbHZnVGlzVm9IVkVSdVVyOC1lcGlxRGM2cndmejZYajZrb0ZXUjZEN2hXRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung 1st AI Glasses Launch in November Powered by Google Gemini: Report - LatestLY](https://news.google.com/rss/articles/CBMivwFBVV95cUxPdUJfTXRyYURkN2M2NVplZVpZQTVRR2JUanFMbkdURTY5Tmh3Ym9IX29idVVxXy1sZ25GRV9QeTY0aktxVjg2NTV5TWhZeU51ZzVqWDdHX2tIRDJycnl6WHhqTi1Kc2R2anFNcnc2eEFvZDhERC1JcExGRDNJc1ZwVUV4ZUtRSEZnUHBqZGx5SXJSQ3NMWmM1UlVhckZiVWk1cFQteVJsOFljcS1fekQzMENDZWV5eWh0T1dTRHB5RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung 1st AI Glasses Launch in November Powered by Google Gemini: Report - latestly.com](https://news.google.com/rss/articles/CBMixAFBVV95cUxQS0dTdFRycm5yTE1qNFRXMUhjRVVrSTZHQ0wtZ2tGR0JKYUhNYzlycWdTRlRNTEhFYUVLZlRtZ0Z2YVN3VFZEVWhQWmkwZ2ZldFhEU2xzSDUyQi1pY2Y0eXRNeVVrdHFmN2ZneGtYREhwaHg2eXJKbXRsNmp5RTBvN0t0UGUxdkpHX3hUeW96Zm9DZ216dy1TLVhqaS0xOEkyaWpIeE5JUjJhSmZIV2RNS2FKVkhYLW5zR1ZweVRMa1E5cnN60gHEAUFVX3lxTFBLR1N0VHJybnJMTWo0VFcxSGNFVWtJNkdDTC1na0ZHQkphSE1jOXJxZ1NGVE1MSEVhRUtmVG1nRnZhU3dUVkRVaFBaaTBnZmV0WERTbHNINTJCLWljZjR5dE15VWt0cWY3Zmd4a1hESHBoeDZ5ckptdGw2anlFMG83S3RQZTF2SkdfeFR5b3pmb0NnbXp3LVMtWGppLTE4STJpakh4TklSMmFKZkhXZE1LYUpWSFgtbnNHVnB5VExrUTlyc3o?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -263,6 +262,7 @@ Generated: `2026-10-14T07:47:46.733539+00:00`
 | normal | needs_editorial_verification | direct | [Alibaba reentra na corrida dos óculos inteligentes para dar escala a novo sistema de IA - Jornal de Negócios](https://news.google.com/rss/articles/CBMi4gFBVV95cUxPS21wOFM3a29UVmQyQ054MTdLemtVYldTcm9oUG1hb0tlZERPVEFSMnJJckZGa1RXUlRaLWxvb3BzTWNtUlUtcUNDSnRxZTFlem9EaU92VEYzZ1dYRDRFNEVqUjBrakdrQmhzR29xSEFmNERuSWlBaXlabG5KX1VQdGEyeFh0S0xLb3JaRDdrNmJjWkN2a0R3Vk5POHo2WlJfTUZkTGV3ZVdVRHN0d0VTNldDdHVzSVNwajZsZ0VqOVNqbDRkRkdUVXM4VmxmMzF4ZjljNF92bjk2bk9TaE9OZHpn?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Alibaba unveils US$450 AI glasses in expanding push into gadgets - The Star](https://news.google.com/rss/articles/CBMitwFBVV95cUxPamZmSXN1Y3NiM0xYUkUwMWFjT0p4eXhwbFI1S0JPa0UzcEtPRFNXTFZuMU1abG1xRFh2UzN1UGhrWEZ2dVM3WWlBOWNSdjhkVW5xS2w0TzJ3MjY1eTJIQ1hJSWFvVkNxZThrbTZPQnQtSndBRG5DNzhvWjV5bEVQQjAxSzg3bzczdlYzMFR3Z3AyRy1rTkhNcVlMR1VSVUduVFN6a2c2U21FOTZXdG1mRzNaZ0llbkU?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Alibaba、AIスマートグラス「Qwen Glasses N1」を中国発売 - 디지털투데이](https://news.google.com/rss/articles/CBMiywFBVV95cUxQOTJTRmlKbGx3QnBGZXNqd1BLUlJNdWdQaTQzTTdKR1gyazNITGJ5emw2QjRZek81LWhQTGZzdEpNdnJPeFFOa0ppMWVfOUZ3MVdZZGxsMFAtN19jTmYzTS1WSkY1Mk5jVXR0ZzJuYXR6b2VULVZtdlRyeU1BY1J0NDkzczNmUDhoSmpaYVQ3WnhKcWcwanhQZzhQOGdBOERTOC1RSkxoYkdLaW5GZlJoelZHNURRaXhQUGFlLVJEeW5GVm4xWHp2RTlQTQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android XR Smart Glasses: Peep All the Frames - Droid Life](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPWndqXzU2SktULTZybGRZV1JVa09aZDN2Z0tVNTdfSzdmOU1XVXRjSksyRUgwR1hRSG5veTlLbE9vcXF5ZFhiYzNlOGx0aTJjamxDbGdnX08ySkhxU0c5SEcxenIzWlh0QTZheUNuVk85djFHRllTMVBDeWd0LUQ1WjcwQXhJWHZINGhj?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 16h ago How Will AR Glasses Like Specs Transform Enterprise Work? Coverage Snap](https://arinsider.co/2026/10/13/how-will-ar-glasses-like-specs-transform-enterprise-work/) | reachable (200) | research_news_review |
