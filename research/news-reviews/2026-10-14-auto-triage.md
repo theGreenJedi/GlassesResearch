@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-14T15:12:36.348533+00:00`
+Generated: `2026-10-14T18:44:32.726207+00:00`
 
-- Intake files inspected: **254**
-- Candidates retained in this review window/history: **10439**
+- Intake files inspected: **252**
+- Candidates retained in this review window/history: **10407**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2086
-- `catalog_review`: 16
+- `adjacent_radar`: 2065
+- `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 591
-- `rejected_noise`: 7649
-- `source_review`: 48
-- `watching`: 45
+- `needs_editorial_verification`: 595
+- `rejected_noise`: 7637
+- `source_review`: 49
+- `watching`: 43
 
 ## Action queue
 
@@ -172,9 +172,14 @@ Generated: `2026-10-14T15:12:36.348533+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.914](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.914) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.916](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.916) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.917](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.917) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.918](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.918) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.919](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.919) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.920](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.920) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ2hqZUl1NXJaUm5JVlZLSWRXOXhPQzJYdzJNa1Q2emVxdTJyWnBMUHI5bk5yVE5QQ3c0V01lTXdJcGpNQ0dTOGtISF9LcGZ1TEh0N3RZbWZwbW9DX3NCd0JNRXk2dVhLd2V3STBnQmtZRmNlV1V6VkJMUDlRWlpnMl9OYkJfU2RraEw0bkxkcXdIbFQ3TU02dHNSYVJfUHBUam9WNWNXMWZSekRXc01CNHV0dW44MnJCaWxHZjRQVXUyOUluV3pZ?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Android XR Smart Glasses Launch in November - Droid Life](https://news.google.com/rss/articles/CBMiigFBVV95cUxORnJYUTBnelBmaGhibV9KTHEwblc3c1A3RDRpVkZvalg2UVFrak1tVldkdEhHRU83QzUySzlfaXBseHpNMlhvajNBdGIxRWVUR3EtVmZ2RU1EeTMxTUdYQm4zS1dHRkNwQnlyenFuXzRFeVdtaGZIdUVON0I3QnFEeGxzX0Z2MWJVZHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Jio AI Smart Glasses: UPI Payments, Features And Launch Date - Flickonclick](https://news.google.com/rss/articles/CBMie0FVX3lxTFAzYzY1eS1FMVhNX0xjNUxaN1B4X0VzQmpCX1NjRmdTVVgtdm1GNDFpLTM3T1dycjQ2d3JkZGZlMHl0V25IMHlveER3SlB4S09TbHZnVGlzVm9IVkVSdVVyOC1lcGlxRGM2cndmejZYajZrb0ZXUjZEN2hXRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung 1st AI Glasses Launch in November Powered by Google Gemini: Report - LatestLY](https://news.google.com/rss/articles/CBMivwFBVV95cUxPdUJfTXRyYURkN2M2NVplZVpZQTVRR2JUanFMbkdURTY5Tmh3Ym9IX29idVVxXy1sZ25GRV9QeTY0aktxVjg2NTV5TWhZeU51ZzVqWDdHX2tIRDJycnl6WHhqTi1Kc2R2anFNcnc2eEFvZDhERC1JcExGRDNJc1ZwVUV4ZUtRSEZnUHBqZGx5SXJSQ3NMWmM1UlVhckZiVWk1cFQteVJsOFljcS1fekQzMENDZWV5eWh0T1dTRHB5RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -266,11 +271,6 @@ Generated: `2026-10-14T15:12:36.348533+00:00`
 | normal | needs_editorial_verification | direct | [AI 스마트 안경 부정행위 잇단 적발...교육부, 수능 대책 마련 나서 - 충청신문](https://news.google.com/rss/articles/CBMibkFVX3lxTE9pN1dmTzQ5V1R0ZUJlSlZXb1JRV2tfVUUtRW52RUR1MXRZQ21kZDhIblE0ZDJ0THBrZGhuZV83MFJFSzQ0dmczT0QtXzlXdU9ib2lYc0tORXh5V1QwZFJFVkRvUkhCY0ptTzRVZlVR0gFuQVVfeXFMT2k3V2ZPNDlXVHRlQmVKVldvUlFXa19VRS1FbnZFRHUxdFlDbWRkOEhuUTRkMnRMcGtkaG5lXzcwUkVLNDR2ZzNPRC1fOVd1T2JvaVhzS05FeHlXVDBkUkVWRG9SSEJjSm1PNFVmVVE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 스마트 안경 부정행위 적발: 이번 수능 괜찮은 거야? 🕶️ - 뉴닉](https://news.google.com/rss/articles/CBMiU0FVX3lxTFBmZ1NRcDQ5SW1KdGdzZkczblc4V2xITzByczVBOHNpYUl0amdrY2Vqc1dFMzdiU0xSNEFja2pvYjdabWg2ZFNIY1NiQjZQOVFxTHVZ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경까지 등장한 입시 부정행위…서울시립대·연세대 연속 적발 - 엠에스투데이](https://news.google.com/rss/articles/CBMibEFVX3lxTFBxeHpMUDYtNEx5V3M5WEgyUHVsNGxzMXdZMklFa0VHb0FhcFBIeTdYMXVFRDJ3a1RGdUY3ZHVtY0o2dFpibDZ3TGRkcUNqQXNvUE90UkVzS1ZuX003UjNkelBMdDZhNHZqWmMxMdIBcEFVX3lxTE5JZ3B1RFROeVV4cjRndlA0OHZ3dW1mWjhGeHVEUGNkdDBCZS1iZUVrWEljLWN6UVA5cVVSU0Nsdl9wdk9jUG5hODUtM2U4SHJmd2thU21POVhPY2tWRWozNFBRRGh6bEh0d190TzU5WEo?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI 안경에 뚫린 시험장, 교육도 바뀌어야 [기자수첩] - 시사오늘](https://news.google.com/rss/articles/CBMia0FVX3lxTE1ZT0RQRzRWdERER1FGcTNSYzVCOC1iVTllUXhqWjJLZ0hjVjcyZVNVaVBoWUZOT20yVGpfdU03clJOVGRzcG9YeDdUYkpwNmJoalBybUlZdDlfbHhYZ0hUd3Z0eVgzOFFsUzFz?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI-Powered Smart Glasses Review: Innovation at Your Fingertips \| TikTok](https://www.tiktok.com/@devdoesreviews/video/7496558647867231510) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [AI眼镜闯入韩国大学招生考试：当作弊工具越来越像普通眼镜，考场如何应对？ - 新浪网](https://news.google.com/rss/articles/CBMifkFVX3lxTE40ZktNOUxETWhhTjBSX1BJS09lRmFsZzhkZzUxM0xZZzl1RjhCOXFRZXVaNzBpNmtPSWpBN2MxZU9pNWNJYW1ta0ZGQ0NqV2czeExJRkFEZ3FOZHN4NXRBaW9hZ3BxSzJlVjk5Nk41a0xJR2RhVndqNnlsMWZJUQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Alibaba selects Himax’s WiseEye chip for next-generation AI glasses - TradingView](https://news.google.com/rss/articles/CBMiygFBVV95cUxPN1RjU3FtamlpSWZBWWI4WDcyNmpxd29vbF9HRm50UmVRMGJxY0xBSlV3bU1lQjVKcXMwSHpvT0E1NjcycXVNcVBnTkQyYVpmbm40aUZyM25Sb3RMQVljaXZveXVSaGpHNG8zXy1Tbnp0WlFhU0VjMmQwWE1UaVVFMThJT3ZXTXA0bGV0ckVVMWFQNVJ1WnllUUloMk5kanBVZGZuRFdNLTZkekdFSkhmU1hZbmVUdDZxSGFXajA5dUhoZmMxOUJtMXB3?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Alibaba Takes AI Beyond Chatbots With Smart Glasses, Bose-Powered Earbuds - Benzinga](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZjdQb0NMTTdmZU5nUEJzS1NyUWxXa0R1WGFzYjRSQk95REdLUkxiSFBDcDRtY1k2azRmRDhRdjQwX3ExNXZTNXM4RldOem5oSUdwMUh6TVkwR0x2Qm0zMWI3cWg4Z1JaYXU4V1JkT2ZVbEhsTW13T3RfbnB2ODMzdGxVR3FyRFBEZlRlS2hMQlNwNGdCZVdBN2tWRm5pZE94Rzl0eGViVEV3YS1DbUJsYXFQUkRsSUI1NWpPalhDOXNQSWM?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
