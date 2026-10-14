@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-14T09:05:37.877983+00:00`
+Generated: `2026-10-14T09:46:50.881256+00:00`
 
 - Intake files inspected: **249**
 - Candidates retained in this review window/history: **10177**
@@ -12,9 +12,9 @@ Generated: `2026-10-14T09:05:37.877983+00:00`
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 576
+- `needs_editorial_verification`: 578
 - `rejected_noise`: 7465
-- `source_review`: 50
+- `source_review`: 48
 - `watching`: 45
 
 ## Action queue
@@ -22,6 +22,7 @@ Generated: `2026-10-14T09:05:37.877983+00:00`
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [Rokid Lumen publishes unofficial Meta Neural Band control bridge for Rokid RG](https://github.com/beyondlevi/rokid-lumen) | reachable (200) | development/hacking, owner control, security/privacy, Research & News |
+| high | needs_editorial_verification | direct | [MentraOS adds version-verified Private Cloud bootstrap](https://github.com/Mentra-Community/MentraOS/commit/801ee044144fe964eaa24e8b7c3b1326458c931b) | reachable (200) | development/hacking, cloud independence, owner control |
 | high | needs_editorial_verification | direct | [OpenVision 2.14 adds ChatGPT/SuperGrok sign-in and follows with Keychain credential fix](https://github.com/rayl15/OpenVision) | reachable (200) | development/hacking, owner control, deep research |
 | high | needs_editorial_verification | direct | [Rokid Lumen releases beta.19–.21 with cross-app handwriting, notification replies and memory fixes](https://github.com/beyondlevi/rokid-lumen/releases/tag/v0.2.0-beta.21) | reachable (200) | development/hacking, owner control, Research & News, Rokid RG ecosystem |
 | high | needs_editorial_verification | direct | [Qdrant Edge demonstrates local-first visual memory for smart glasses](https://github.com/qdrant/qdrant-edge-demo) | reachable (200) | development/hacking, cloud independence, deep research |
@@ -270,7 +271,6 @@ Generated: `2026-10-14T09:05:37.877983+00:00`
 | normal | needs_editorial_verification | direct | [Are AI Smart Glasses Worth It? Honest Pros and Cons \| TikTok](https://www.tiktok.com/@bargainmandeals/video/7692446812728315158) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Auganix Sep 3, 2026 TDK Acquires OQmented Assets to Strengthen Smart Glasses Display Business](https://www.auganix.org/ar-news-tdk-acquires-oqmented-assets/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses Compared: Side-by-Side Review (2026)](https://smartglasses.computer/blog/best-smart-glasses-compared-2026) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Blind Veterans Cross the Army Ten-Miler Finish Line, Despite Heavy Rain, with support of Meta AI Glasses and Lighthouse Guild - PR Newswire](https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbXJYRWlRWDZfTVNrWVptZjBQSFg5QUxzanEtLUxfSTluTF9ZQzRjNWhfVTRpbWU5X19GN3ZWLTE0TExOZGlYdWpiNl9RbHZmWHQxMmRaRzAzWHJtSVdJbGMxUUJRRFAxcVFVejRSNDIzbVlkNTdoUXNLN2w2RzYyQVJTV0w4QWJ3cHhOeDN4NExfYWE3XzlrQjZtRlFCNWZCZHhROXNnNWJpc0UtRHFKd2xBMmRDU3JYT2NzQncyN0g2TF9SalhQTHk3bDB5WDlSZEZSdXFXcnFKSXFZZ1JyeDhuMEpqMVh5UDNYbUxra2QtY0RmU0hjbUFMeGt6Wkh1Y1pwcTJ6cmNVMW8?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
