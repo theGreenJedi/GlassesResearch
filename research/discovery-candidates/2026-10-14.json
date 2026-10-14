@@ -1,41 +1,35 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-14T18:43:58.716619+00:00",
-  "candidate_count": 104,
-  "classifier_irrelevant_count": 89,
+  "discovered_utc": "2026-10-14T19:27:28.853344+00:00",
+  "candidate_count": 60,
+  "classifier_irrelevant_count": 59,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 15,
-    "broad_web": 67,
-    "developer": 15,
-    "manufacturer_catalog": 1,
+    "broad_web": 33,
+    "developer": 17,
     "research": 10
   },
   "relationship_counts": {
     "direct": 1,
     "enabling": 0,
-    "adjacent": 14,
+    "adjacent": 0,
     "speculative": 0,
-    "irrelevant": 89
+    "irrelevant": 59
   },
   "type_counts": {
-    "model": 9,
-    "video": 3,
-    "news": 36,
-    "research": 20,
-    "tool": 18,
-    "sdk": 15,
-    "retail": 13,
-    "community": 21
+    "model": 8,
+    "review": 4,
+    "news": 16,
+    "research": 10,
+    "tool": 25,
+    "sdk": 19,
+    "retail": 6,
+    "community": 10
   },
   "routing_counts": {
-    "adjacent_radar": 14,
-    "deep_research": 1,
-    "development_hacking": 1,
-    "model_catalog_review": 3,
-    "reject_noise": 89,
+    "reject_noise": 59,
     "report_card_evidence": 1,
-    "research_news_review": 15,
+    "research_news_review": 1,
     "retail_rebrand_review": 1
   },
   "policy": {
@@ -50,16 +44,18 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "1112a291d64f3aeb",
-      "title": "Manufacturer catalog lead: Sale Up to 20% off smart glasses",
-      "url": "https://lucyd.co/collections/glasses-on-sale",
-      "summary": "Same-domain catalog/developer link discovered from https://lucyd.co/",
-      "discovery_channel": "manufacturer_catalog",
-      "query": "",
-      "source": "https://lucyd.co/",
+      "id": "c5a0599dc6125416",
+      "title": "XREAL xbx a01+ Review - Gaming Nexus",
+      "url": "https://www.gamingnexus.com/Article/16436/XREAL-xbx-a012b/",
+      "summary": "XREAL has long produced AR glasses in the mid to high price range that I’ve been using for many years now. There’s been a few companies that have produced more entry level priced AR glasses and the xbx line from XREAL is their foray into that area. I was sent the xbx a01+ from XREAL, which is ...",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -68,34 +64,32 @@
       "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "model",
-        "sdk",
+        "review",
         "retail"
       ],
-      "primary_type": "model",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "development_hacking",
+        "report_card_evidence",
         "retail_rebrand_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "507a969d16787f43",
-      "title": "BODYWORN™ Police Body Worn Camera | Coreforce Inc.",
-      "url": "https://www.coreforcetech.com/hardware/bodyworn",
-      "summary": "Following a successful training and deployment, the Arkansas City Police Department announced that the agency’s commissioned officers are now equipped with Coreforce, Inc.’s patented Eos by Coreforce™ body-worn camera technology.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "f35e837af01a5ac2",
+      "title": "3 Blade Set for Many 54 in. Cut Craftsman, Husqvarna, Poulan Mowers ...",
+      "url": "https://www.homedepot.com/p/MaxPower-3-Blade-Set-for-Many-54-in-Cut-Craftsman-Husqvarna-Poulan-Mowers-Replaces-OEM-s-187256-and-532187256-561747B/312209176",
+      "summary": "Complete all your hardest work easily with Maxpower 3-Blade Set for Cut Craftsman, Husqvarna and Poulan Mowers Replaces OEM Number 187256 and 532187256.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 4,
       "keyword_hits": [
-        "announced"
+        "oem"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -103,668 +97,67 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "899353426ba03cc0",
+      "title": "54 in - Craftsman - Riding Mower Blades - The Home Depot",
+      "url": "https://www.homedepot.com/b/Outdoors-Outdoor-Power-Equipment-Outdoor-Power-Equipment-Parts-Riding-Mower-Parts-Riding-Mower-Blades/Craftsman/54-in/N-5yc1vZ2fkp8yoZ1z1b2aiZ1z24vaj",
+      "summary": "Get free shipping on qualified Craftsman, 54 in Riding Mower Blades products or Buy Online Pick Up in Store today in the Outdoors Department.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1f3e6c9d8d40af00",
-      "title": "Coreforce - Body Cameras Grant Assistance Program - Police1",
-      "url": "https://www.police1.com/coreforce-body-cameras-grant-assistance/",
-      "summary": "Fill out the form below to get no-cost, customized grant help for projects in the Body Cameras category. This includes grant research, grant alert notices and grant application feedback from our team of grant experts.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "9c5467d1849963d8",
+      "title": "Craftsman 54 Mower Blades for sale | eBay",
+      "url": "https://www.ebay.com/sch/i.html?_nkw=craftsman+54+mower+blades&_sop=12",
+      "summary": "Get the best deals for Craftsman 54 Mower Blades at eBay.com. We have a great online selection at the lowest prices with Fast & Free shipping on many items!",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 4,
       "keyword_hits": [
-        "research"
+        "shipping"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "30e4955b04d4dcc6",
-      "title": "Police Body Cameras | Law Enforcement Products",
-      "url": "https://www.police1.com/police-products/body-cameras/",
-      "summary": "Meet the most intelligent body worn camera focused on officer safety with real time alerts. With the launch of Assist Chat on SVX, Assisted Narrative and a new drone dispatch integration, the company aims to simplify communication, improve accuracy and strengthen officer safety across the field.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "launch"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f2aa0cd4a5683c9e",
-      "title": "Utility, Soma Global, STRAX Intelligence, and Kologik rebrand ... - Police1",
-      "url": "https://www.police1.com/police-products/body-cameras/utility-soma-global-strax-intelligence-and-kologik-rebrand-as-coreforce",
-      "summary": "Based in Decatur, Georgia, Coreforce equips law enforcement, first responders, corrections, district attorneys, and other sectors of public safety organizations with the tools they need to work transparently and efficiently.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "rebrand"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "27a932416c3688b7",
-      "title": "`free`: output format - Unix & Linux Stack Exchange",
-      "url": "https://unix.stackexchange.com/questions/33541/free-output-format",
-      "summary": "I use free to get the amount of free space on some of my servers. Its output is something like: $ free -m total used free shared buffers cached Mem: 3...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "baa132452a1d2506",
-      "title": "Can someone explain in detail what \"set -m\" does?",
-      "url": "https://unix.stackexchange.com/questions/196603/can-someone-explain-in-detail-what-set-m-does",
-      "summary": "-m Job control is enabled. But what does this actually mean? I came across this command in a SO question, I have the same problem as OP, which is \"fabric cannot start tomcat\". And set -m solved this. The OP explained a little, but I don't quite understand: The issue was in background tasks as they will be killed when the command ends.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f20360071ef84512",
-      "title": "Coreforce - Police1",
-      "url": "https://www.police1.com/coreforce",
-      "summary": "Utility, Inc., established in 2001 in Georgia, stands as your premier source for innovative law enforcement technology. We’re dedicated to enhancing public safety through our advanced suite of cloud-based solutions.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4695b7855cb8e419",
-      "title": "Coreforce | Login",
-      "url": "https://pcsofl.somahub.io/auth/login",
-      "summary": "Please login. Reset Password? Trouble Logging in? in technology.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5223387068440416",
-      "title": "Coreforce | Public Safety Technology",
-      "url": "https://www.coreforcetech.com/",
-      "summary": "COREFORCE provides in-field technology for a multifaceted approach to evidence capture and safety. In-vehicle video and ALPR solutions enhance the investigative process, yielding faster case resolution.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3afb02a8ea87ca3c",
-      "title": "DEMS Justice by Coreforce - Login",
-      "url": "https://ht.utility.com/",
-      "summary": "This is test, something went wrong. Forgot your password? Enter your email address you registered with Coreforce Justice. We will send you the instructions to reset your password. Back To LoginReset Password Email",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8eb16c8cb09f1b0",
-      "title": "Flock Safety and Coreforce announce integration partnership ... - Police1",
-      "url": "https://www.police1.com/police-products/investigation/evidence-management/flock-safety-and-coreforce-announce-integration-partnership-to-enhance-real-time-awareness-and-operational-efficiency-for-law-enforcement",
-      "summary": "With nearly 25 years of experience and a national presence in more than 40 states, Coreforce helps public safety agencies operate with greater clarity, transparency, and confidence.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73dd9e51ade4d2ca",
-      "title": "Grant Assistance Programs - Police1",
-      "url": "https://www.police1.com/grant-assistance-programs",
-      "summary": "The Police1 Tactical Products section is your resource for discovering and comparing essential tactical gear for police officers, including SWAT gear, tactical body armor, tactical boots, tactical apparel, tactical eyewear and mission-ready equipment.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e9145a5b6f52bc39",
-      "title": "M&M's 是如何做到「只溶在口，不溶在手」的？ - 知乎",
-      "url": "https://www.zhihu.com/question/20444119",
-      "summary": "最后说一下M&M's豆，它是用糖衣包裹的巧克力豆。 与巧克力比起来，糖衣确实不容易熔化，不管是在口中，还是在手中。 用牛奶巧克力那款试了下，攥在手里5分钟也没熔化，只是有点掉色。 （但是看楼上有人说，试过，会熔化。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73ce43b0c08e09ae",
-      "title": "德克萨斯A&M大学TAMU怎么样？ - 知乎",
-      "url": "https://www.zhihu.com/question/36220237",
-      "summary": "德克萨斯A&M大学，全美第六大公立高校，世界百强名校，建于1876年，位于美国德克萨斯州卡城，拥有极高的学术成就和教学水准。 德克萨斯A&M大学曾被译为“德州农工大学”，这是将校名中的“A&M”错误翻译为“农业和机械”之故。如今的“A&M”在校名中只是一个符号，没有任何实际的含义，该校 ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "489370eb2b6a078f",
-      "title": "1971 Chevrolet Chevelle Malibu - 2nd Gen - CLASSIC.COM",
-      "url": "https://www.classic.com/m/chevrolet/chevelle/2nd-gen/malibu/year-1971/",
-      "summary": "There are 223 1971 Chevrolet Chevelle Malibu - 2nd Gen for sale right now - Follow the Market and get notified with new listings and sale prices.",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6553c052461a5d9a",
-      "title": "1971 Chevrolet Chevelle Malibu Classic Cars for Sale",
-      "url": "https://classics.autotrader.com/classic-cars-for-sale/1971-chevrolet-chevelle-malibu-for-sale",
-      "summary": "1971 Chevrolet Chevelle Malibu Classic cars for sale near near you by classic car dealers and private sellers on Classics on Autotrader. See prices, photos, and find dealers near you.",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1758700b9569c7ae",
-      "title": "1971 Chevrolet Malibu Classic Cars for Sale - Classics on Autotrader",
-      "url": "https://classics.autotrader.com/classic-cars-for-sale/1971-chevrolet-malibu-for-sale",
-      "summary": "1971 Chevrolet Malibu Classic cars for sale near near you by classic car dealers and private sellers on Classics on Autotrader. See prices, photos, and find dealers near you.",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "485e4b144a12345c",
-      "title": "1971 Chevrolet Malibu for Sale - ClassicCars.com",
-      "url": "https://classiccars.com/listings/find/1971/chevrolet/malibu",
-      "summary": "There are 9 new and used 1971 Chevrolet Malibus listed for sale near you on ClassicCars.com with prices starting as low as $12,495. Find your dream car today.",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea16e5052ea409fc",
-      "title": "1971 Chevrolet Malibu For Sale - Hemmings",
-      "url": "https://www.hemmings.com/classifieds/cars-for-sale/chevrolet/malibu/1971",
-      "summary": "1971 Chevrolet Malibu For Sale If you're looking for a classic Chevrolet Malibu, look no further than Hemmings, the premiere online classic car dealer of the US!",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5bcba5ea063a93af",
-      "title": "1971 Chevrolet Malibu Market - CLASSIC.COM",
-      "url": "https://www.classic.com/m/chevrolet/malibu/year-1971/",
-      "summary": "There are 6 1971 Chevrolet Malibu for sale right now - Follow the Market and get notified with new listings and sale prices.",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77f0d940c181712e",
-      "title": "1971 Malibu Classic Cars For Sale - AllCollectorCars.com",
-      "url": "https://www.allcollectorcars.com/classic-cars-for-sale/malibu/1971/",
-      "summary": "\"Step into the thrilling world of muscle car mastery with this 1971 Chevrolet Chevelle, a true icon reimagined with a modern heart. This restomod fuses classic...",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "08c1a8fd2d0c3669",
-      "title": "1971 Malibu For Sale - AutaBuy.com",
-      "url": "https://www.autabuy.com/classifieds/cars-for-sale/?s=71%20Malibu",
-      "summary": "View 1971 Malibus for sale on AutaBuy.com. New listings added daily. Private party and dealers. AI smart search available.",
-      "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -788,54 +181,25 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cff351818b06101a",
-      "title": "AR (EP) - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/AR_(EP)",
-      "summary": "AR is the debut extended play by American singer Addison Rae. It was released on August 18, 2023, through Sandlot Records. AR is a bubblegum pop record which Rolling Stone described as \"plasticky, pristine pop that online audiences ironically, and then unironically, eat up.\" It consists of four songs, while Rae's debut single \"Obsessed\" appears as a bonus track on Spotify. [2] The EP was met ...",
-      "discovery_channel": "broad_web+developer",
-      "query": "AR glasses; AR glasses SDK developer",
+      "id": "fcaacd17d697681e",
+      "title": "GitHub - ztjhz/BetterChatGPT: An amazing UI for OpenAI's ChatGPT ...",
+      "url": "https://github.com/ztjhz/BetterChatGPT",
+      "summary": "Better ChatGPT is the ultimate destination for anyone who wants to experience the limitless power of conversational AI. With no limits and completely free to use for all, our app harnesses the full potential of OpenAI's ChatGPT API to offer you an unparalleled chatbot experience.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses lenses optics",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
       "keyword_hits": [
-        "released"
+        "api",
+        "github"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e0a69690a901c27",
-      "title": "Pinterest - Apps on Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.pinterest&hl=en-US",
-      "summary": "Pinterest is a place of endless possibilities. You can: Create boards, save Pins and make collages of all your inspiration. Unlock billions of ideas, from fashion tips 👠 and easy recipes 🍜 to...",
-      "discovery_channel": "adjacent+developer+research",
-      "query": "ActiveLook API BLE; Project Aria smart glasses research; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
         "tool",
@@ -851,44 +215,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "27d9e5f68d07a19e",
-      "title": "Pinterest - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Pinterest",
-      "summary": "Pinterest, Inc. was founded by Ben Silbermann, Paul Sciarra, and Evan Sharp, [8] and is headquartered in San Francisco. [‡ 2] Pinterest emerged from an earlier app created by Ben Silbermann and Paul Sciarra called Tote [9] which served as a virtual replacement for paper catalogs.",
+      "id": "826908829238e5ef",
+      "title": "\"3 Pack Craftsman Replacement Blades for 54\"\" 187254 532187256 ...",
+      "url": "https://www.walmart.com/ip/3-Craftsman-Replacement-Blades-for-54-187254-532187256-532187254/293874743",
+      "summary": "Durable Triple Set: This offering includes three heavy-duty replacement mower blades, specifically engineered for AYP 54-inch decks to maintain cutting efficiency.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b976c8835765ca9f",
-      "title": "Pinterest Login",
-      "url": "https://www.pinterest.com/pinterest/",
-      "summary": "Discover recipes, home ideas, style inspiration and other ideas to try.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -902,7 +234,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -914,17 +247,17 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "775e1740c4b6a716",
-      "title": "Pipe Tobacco Cabinet - eBay",
-      "url": "https://www.ebay.com/shop/pipe-tobacco-cabinet?_nkw=pipe+tobacco+cabinet",
-      "summary": "Explore a wide range of our Pipe Tobacco Cabinet selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now for fast shipping and easy returns!",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
+      "id": "5a0789c60a453e6b",
+      "title": "AB Registration Completion List - Data.Healthcare.gov",
+      "url": "https://data.healthcare.gov/ab-registration-completion-list",
+      "summary": "The official U.S. government website for Healthcare data. Publicly available datasets for research and transparency.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 3,
       "keyword_hits": [
-        "shipping"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -934,7 +267,8 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "model",
+        "research"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -946,14 +280,14 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "56939f35a42afde0",
-      "title": "Providing Exceptional Care to Cincinnati | The Christ Hospital",
-      "url": "https://www.thechristhospital.com/",
-      "summary": "The Christ Hospital provides groundbreaking research and exceptional, compassionate care for patients in Greater Cincinnati and the Tri-State region.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "76c3b1fa1cd1c220",
+      "title": "AB Suspension and Termination List - Data.Healthcare.gov",
+      "url": "https://data.healthcare.gov/ab-suspension-and-termination-list",
+      "summary": "The official U.S. government website for Healthcare data. Publicly available datasets for research and transparency.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 3,
       "keyword_hits": [
         "research"
@@ -966,9 +300,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "model",
         "research"
       ],
-      "primary_type": "research",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -978,10 +313,138 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cf2892c785524c9d",
-      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
-      "url": "https://www.speedtest.net/server/u",
-      "summary": "Use Speedtest on all your devices with our free desktop and mobile apps.",
+      "id": "13ce458c23fa2715",
+      "title": "Amazon.com: Craftsman 54 Inch Mower Deck Parts",
+      "url": "https://www.amazon.com/craftsman-54-inch-mower-deck-parts/s?k=craftsman+54+inch+mower+deck+parts",
+      "summary": "54-inch Craftsman mower deck parts including spindles, blades, and belts for maintenance and operation.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "755090c28098a346",
+      "title": "Amazon.com: Craftsman 54 Inch Mower Parts",
+      "url": "https://www.amazon.com/craftsman-54-inch-mower-parts/s?k=craftsman+54+inch+mower+parts",
+      "summary": "Discover genuine and compatible mower parts for 54 inch Craftsman decks. Shop spindles, blades, and more today.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0929c23d170cc9bd",
+      "title": "Cost centers - GitHub Docs",
+      "url": "https://docs.github.com/en/billing/concepts/cost-centers",
+      "summary": "Cost centers allow you to attribute usage and spending to business units, improving accountability, forecasting, and cost allocation. You can also apply one or more budgets to them to control costs. Cost center creation Enterprise owners and billing managers can create and edit cost centers for any resource. Organization owners can create and edit cost centers that contain resources in their ...",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses lenses optics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc3be0099bc7a6f4",
+      "title": "Craftsman 54 in. 2-in-1 Mower Blade Set For Lawn Tractors 3 pk",
+      "url": "https://www.acehardware.com/departments/lawn-and-garden/lawn-mowers/lawn-mower-blades/7007357",
+      "summary": "Fits CRAFTSMAN, AYP, Ariens, Husqvarna, Poulan and Poulan Pro Riding Mowers with 54 in. cutting decks. Factory tested and approved to provide the perfect fit, strength, durability and performance.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78d5c5056110e85d",
+      "title": "CRAFTSMAN 54 Lawn Mower Blades at Lowes.com",
+      "url": "https://www.lowes.com/pl/outdoor-tools-equipment/lawn-mowers/lawn-mower-parts-accessories/lawn-mower-blades/craftsman/54/4294612712-3252463372-950214834",
+      "summary": "Find CRAFTSMAN 54 lawn mower blades at Lowe's today. Shop lawn mower blades and a variety of outdoors products online at Lowes.com.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -1009,45 +472,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2d58f4faaefa2bbf",
-      "title": "Tobacco Pipe Cabinet for sale | eBay",
-      "url": "https://m.ebay.com/sch/i.html?_nkw=tobacco+pipe+cabinet&_sop=12",
-      "summary": "Get the best deals for Tobacco Pipe Cabinet at eBay.com. We have a great online selection at the lowest prices with Fast & Free shipping on many items!",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dcb9b6657cfde093",
-      "title": "Used 1971 Chevrolet Malibu for Sale - Carsforsale.com®",
-      "url": "https://www.carsforsale.com/1971-chevrolet-malibu-for-sale-C1059817",
-      "summary": "Shop 9 used 1971 Chevrolet Malibu as low as $15,995. Get free history reports, credit checks, expert reviews & online financing.",
+      "id": "8118805f15e30fd9",
+      "title": "CRAFTSMAN 54-in Deck Standard Mower Blade for CRAFTSMAN riding mowers ...",
+      "url": "https://www.lowes.com/pd/CRAFTSMAN-54-In-High-Lift-S-Blade/5001241263",
+      "summary": "The precise, engineered design of a CRAFTSMAN blade ensures an exact fit with every blade change. Heat dipped for durability and flexibility, these blades have been tested for thousands of hours to ensure they meet equipment standards.",
       "discovery_channel": "developer",
-      "query": "Project Aria developer smart glasses",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1060,11 +490,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "review",
         "tool",
-        "sdk",
-        "retail"
+        "sdk"
       ],
-      "primary_type": "tool",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1074,12 +504,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "65e2a59cd30a12f9",
-      "title": "Wi-Fi Not Working? 3 Simple Steps to Audit and Improve Your Home Network",
-      "url": "https://www.speedtest.net/about/knowledge/simple-wifi-audit",
-      "summary": "Learn what to do when your computer is not connecting to Wi-Fi and how Speedtest can help you audit your internet experience across your home network",
+      "id": "4996b16ce51bc994",
+      "title": "Fidelity Investments",
+      "url": "https://scs.fidelity.com/tpv/accounts.shtml",
+      "summary": "Access Fidelity Investments to manage accounts, investments, and financial plans efficiently.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "Project Aria developer smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1105,15 +535,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a61b1edfaa16e63c",
-      "title": "9 Live Water Cameras in San Antonio, Texas (2026) - Watch Live ...",
-      "url": "https://opencctv.org/cameras/united-states/texas/san-antonio",
-      "summary": "Watch live webcam feeds from San Antonio updated in real time. Open the live webcam map to explore all public cameras in San Antonio. San Antonio has extensive traffic camera coverage across the city, with additional views of local waterways.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "id": "0a474f935371e862",
+      "title": "Fidelity Investments | About Fidelity",
+      "url": "https://about.fidelity.com/",
+      "summary": "From digital assets and alternative investments to holistic planning and innovative tools that help people save, Fidelity recently launched offerings that benefit from our diversified businesses.",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1123,9 +553,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "model",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1135,15 +567,174 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e9191204fc65166f",
-      "title": "Adopt Me Legendary value list : r/AdoptMeTrading - Reddit",
-      "url": "https://www.reddit.com/r/AdoptMeTrading/comments/gfjzcr/adopt_me_legendary_value_list/",
-      "summary": "Adopt Me Legendary value list Please let me know your opinions and reasons why i should change some of the ratings. Please upvote this if you agree so we could have a general baseline for pet values. (it may help stop offers like 2 Unicorns for a Bat Dragon) -If a pet has a plus sign over it.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "65127195cb9958fe",
+      "title": "Fidelity Investments: Invest, Trade, Plan for Retirement & Build Wealth",
+      "url": "https://www.fidelity.com/",
+      "summary": "Open a brokerage account, save with a Roth IRA, HSA, or 529, and work with an advisor on a wealth strategy built around your goals. Learn how Fidelity Investments can help.",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "394bf77cd9eabfee",
+      "title": "free-chatgpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/free-chatgpt",
+      "summary": "A powerful tool to use chat-gpt-4/gpt-4o version for free. Unlimited messages no limits.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1773c7e6526018fa",
+      "title": "GitHub - isxlan0/Codex_AccountSwitch: Manage and switch multiple AI ...",
+      "url": "https://github.com/isxlan0/Codex_AccountSwitch",
+      "summary": "Manage and switch multiple AI coding accounts locally without restarting development tools. - isxlan0/Codex_AccountSwitch",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a9a9b4d77ef8f78",
+      "title": "GitHub - wikieden/Freedom-To-Chatgpt-Claude-Agent: ChatGPT调教指南|咒语指南 ...",
+      "url": "https://github.com/wikieden/Freedom-To-Chatgpt-Claude-Agent",
+      "summary": "ChatGPT调教指南|咒语指南|聊天提示词指南|学习指南. Contribute to wikieden/Freedom-To-Chatgpt-Claude-Agent development by creating an account on GitHub.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses lenses optics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c1db6aa7f65d2df",
+      "title": "GITHUB_TOKEN - GitHub Docs",
+      "url": "https://docs.github.com/en/actions/concepts/security/github_token",
+      "summary": "Learn what GITHUB_TOKEN is, how it works, and why it matters for secure automation in GitHub Actions workflows.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses lenses optics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc37ec05c1c41302",
+      "title": "Hoping for help with Redgifs, not sure where else to ask. I ... - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/1cet6i4/hoping_for_help_with_redgifs_not_sure_where_else/",
+      "summary": "Hoping for help with Redgifs, not sure where else to ask. I can no longer browse and download individual gifs with ease. I was using an extension called \"Allow Right-Click\", but it no longer works, I've figured out how to add a link to Jdownloader, using share, but that is tedious to organize. : r/DataHoarder Go to DataHoarder r/DataHoarder r/DataHoarder",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1153,9 +744,11 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
+        "tool",
+        "sdk",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1165,15 +758,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9ea884c6dd2817e6",
-      "title": "AdoptMeRBX - Reddit",
-      "url": "https://www.reddit.com/r/AdoptMeRBX/",
-      "summary": "r/AdoptMeRBX: Welcome to r/AdoptMeRBX, an unofficial subreddit for the popular Roblox game, Adopt Me! Discuss anything and everything related to…",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "e982d943410d7325",
+      "title": "I can't load Redgifs.com on my desktop. : r/techsupport",
+      "url": "https://www.reddit.com/r/techsupport/comments/1avw04i/i_cant_load_redgifscom_on_my_desktop/",
+      "summary": "Posted by u/scrobette50 - 5 votes and 6 comments",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1183,9 +776,11 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
+        "tool",
+        "sdk",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1195,12 +790,140 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6c144c62d366b504",
-      "title": "Cameras - Texas Department of Transportation",
-      "url": "https://its.txdot.gov/its/District/SAT/cameras",
-      "summary": "Leaflet | © INRIX, Powered by Esri | Texas Parks & Wildlife, CONANP, Esri, TomTom, Garmin, SafeGraph, GeoTechnologies, Inc, METI/NASA, USGS, EPA, NPS, USDA, USFWS",
+      "id": "15b1a728ff765e60",
+      "title": "Log in to Fidelity",
+      "url": "https://digital.fidelity.com/app/home",
+      "summary": "Fidelity supports 128-bit browser encryption. Before investing, consider the funds’ investment objectives, risks, charges, and expenses. Contact Fidelity for a prospectus or, if available, a summary prospectus containing this information. Read it carefully. Fidelity Brokerage Services LLC, Member NYSE, SIPC. 900 Salem Street, Smithfield, RI 02917",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50c35291692cfa8a",
+      "title": "Log In to Fidelity NetBenefits",
+      "url": "https://login.fidelity.com/ftgw/Fas/Fidelity/NBPart/Upgrade/Init",
+      "summary": "If you have an account on Fidelity.com use the same username and password.",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb8355f263022057",
+      "title": "r/redditsync on Reddit: the problem with redgifs",
+      "url": "https://www.reddit.com/r/redditsync/comments/105tk5m/the_problem_with_redgifs/",
+      "summary": "For future reference, subdomains (*.redgifs.com) still belong to the same entity as the main domain (redgifs.com). I also took a look at the certificate, and it's valid for redgifs and all subdomains, so in this case you can safely rule out malicious behavior. As for how to get rid of it, uh...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36b2ad1330ea17db",
+      "title": "Rate Review",
+      "url": "https://ratereview.healthcare.gov/",
+      "summary": "Rate Review The Affordable Care Act (ACA) requires that insurers planning to significantly increase plan premiums submit their rates to either the state or federal government for review. The rate review process is designed to improve insurer accountability and transparency. It ensures that experts evaluate whether the proposed rate increases are based on reasonable cost assumptions and solid ...",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "research"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d6d2c2e275843ba",
+      "title": "All Eyeglasses",
+      "url": "https://www.americasbest.com/category/eyeglasses",
+      "summary": "All Eyeglasses Men's Women's Youth All Eyeglasses (1190)",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1225,100 +948,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "13377aa3573dddc1",
-      "title": "Camping at Dalhousie Springs - Travel Outback Australia",
-      "url": "https://traveloutbackaustralia.com/camping-at-dalhousie-springs.html/",
-      "summary": "Located 51km east of Dalhousie, it’s a great option for those heading into the Simpson Desert, or who are just a little more adventurous. You’ll definitely need a 4WD to get there.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "49b09c716b0f5e4c",
-      "title": "Camping at Dalhousie Springs – Travel Outback Australia",
-      "url": "http://stagingwpe.traveloutbackaustralia.com/camping-at-dalhousie-springs.html/",
-      "summary": "But what is the Dalhousie campground really like? Is it true that it gets really, really crowded? Or that there’s millions of mosquitoes? This page tells you the good -and bad- things about camping at Dalhousie Springs including our secret camping spot!",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bac8a6b0e89c0b46",
-      "title": "Cornell & Diehl Haunted Bookshop - PIPES and CIGARS",
-      "url": "https://www.pipesandcigars.com/product/cornell-and-diehl-haunted-bookshop-pipe-tobacco/001-CDT.html",
-      "summary": "Haunted Bookshop is an unapologetically strong Burley-based blend that is slightly sweetened by the addition of red Virginia and spiced up and deepened by including the Cajun delicacy, Perique. This is a heady smoke with plenty of pepper. Show Description Hide Description Packaging Can, Tin, Bulk Package Size 8 oz, 2 oz, 1 oz Brand Cornell & Diehl Tobacco Burley, Perique, Virginia More ...",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d433ad1886e97b7",
-      "title": "Create your first presentation in Slides - Google Help",
-      "url": "https://support.google.com/a/users/answer/10665800?hl=en",
-      "summary": "Add videos, shapes, charts, and more —Click Insert to add videos, shapes, charts, slide numbers, and other features to your presentation. You can also move, delete, or re-size these inserted...",
+      "id": "35eca723b21e4c4b",
+      "title": "Archive - HealthCare.gov",
+      "url": "https://www.healthcare.gov/archive/",
+      "summary": "Use the links below to view archived versions of HealthCare.gov:",
       "discovery_channel": "research",
       "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
@@ -1345,12 +978,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fe5a831275aed6a0",
-      "title": "Dalhousie Springs Campground",
-      "url": "https://www.parks.sa.gov.au/parks/witjira-national-park/booking/73186",
-      "summary": "The water in the Dalhousie Main Spring is around 37 degrees, making it perfect for a relaxing soak. Access: 4WD only. Suitable for: tents and camper trailers. Facilities: long-drop toilets. Unallocated camping: maximum 50 vehicles. Electricity: unpowered.",
+      "id": "e03e49fd274b00b2",
+      "title": "CB&S Bank - 62 Locations, Hours, Phone Numbers … — October 2026",
+      "url": "https://www.branchspot.com/cbs-bank/",
+      "summary": "CB&S Bank is a community bank established in 1906 and headquartered in Russellville, Alabama. It reports $2.9 billion in total assets. Deposits have been federally insured by the FDIC since 1935. It holds $2.5 billion in deposits. It reported $5 million in net income over its latest reporting period. Its primary business focus is commercial ...",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1363,9 +996,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1375,12 +1008,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "920df010f2720e84",
-      "title": "Dalhousie Springs Campground camping guide | CampWatch",
-      "url": "https://www.campwatch.com.au/campgrounds/dalhousie-springs-campground",
-      "summary": "Stay at Dalhousie Springs Campground in Witjira National Park, South Australia. Campground guide with booking info, facilities, and availability alerts.",
+      "id": "17afc8cb12be102b",
+      "title": "CB&S Bank Birmingham, AL: Hours, Routing # — July 2026",
+      "url": "https://www.branchspot.com/al/birmingham/cbs-bank/1301-doug-baker-boulevard/",
+      "summary": "About this branch CB&S Bank is a community bank with a branch at 1301 Doug Baker Boulevard in Birmingham, AL. This branch opened on April 1, 2008 as a satellite of the institution.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5967e54e594c37f2",
+      "title": "CB&S Bank Branch Locator",
+      "url": "https://www.bankbranchlocator.com/cb-s-bank/",
+      "summary": "For a comprehensive list of CB&S Bank branches, including detailed information such as hours of operation, contact numbers, addresses, available services, and more, please narrow your search by selecting a location from the map or list below.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1405,162 +1068,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6548be8bdf6cddbe",
-      "title": "Dalhousie Springs Campground SA - ExplorOz",
-      "url": "https://www.exploroz.com/places/98848/sa+dalhousie-springs-campground",
-      "summary": "There’s a lovely walk around the spring where you can see the rainbow serpent spring and a short walk up medicine hill. From the east end of the main pool there’s a 6 km return walk to more springs.",
+      "id": "99f0fb4acd176da7",
+      "title": "CB&S Bank in Birmingham, AL 35223 - (205) 8...",
+      "url": "https://www.chamberofcommerce.com/business-directory/alabama/birmingham/bank/2012407183-cb-s-bank",
+      "summary": "CB&S Bank is a leading full-service community bank that opened its doors in Russellville, Alabama in 1906. Now CB&S Bank has $2.7 billion in assets, 55 branches across Alabama, Mississippi, and Tennessee, and more than 500 employees.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fbebd08666d4f267",
-      "title": "Dalhousie Springs campground | SA Campsites | Camptoo",
-      "url": "https://www.camptoo.com.au/campsites/sa/dalhousie-springs-campground",
-      "summary": "Explore Dalhousie Springs Campground — Witjira, SA. A welcoming campsite with essential amenities in scenic surroundings. Ideal for families and friends.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2c9c6905d2d5326d",
-      "title": "Dalhousie Springs Campground, Abminga, Australia",
-      "url": "https://www.holidayparks.info/en/australia/south-australia/abminga/campground-dalhousie-springs",
-      "summary": "Information about services, prices, map, photos of Dalhousie Springs Campground, Abminga, Australia",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aa161e0f57b058cf",
-      "title": "Dalhousie Springs Campground, Flinders Ranges and Outback, South ...",
-      "url": "https://campermate.com/en/location/australia/sa/flinders-ranges-and-outback/paid-campsites/dalhousie-springs-campground/7aa232d6-f3fb-4a6a-b072-182d176e22f0",
-      "summary": "Dalhousie Springs Campground in Witjira National Park, offers sites for vehilce based camping, and camper trailers. Facilities include toilets and cold showers. In the area you can enjoy bush walking, swimming in the hot springs, and walking trails. Dalhousie Homestead ruins are a short drive away. No reviews currently found. A very basic campsite.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ee3326111e8de486",
-      "title": "Dalhousie Springs Campground, Witjira National Park",
-      "url": "https://southaustralia.com/products/flinders-ranges-and-outback/attraction/dalhousie-springs-witjira-national-park",
-      "summary": "The park is home to more than 120 mound springs, including the National Heritage-listed Dalhousie Springs, used by Aboriginal people for thousands of years as a source of food, shelter and medicine.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2ade46ef4ba68484",
-      "title": "Flock Camera Locations in San Antonio, TX — Live Map | Flock Camera ...",
-      "url": "https://flockcameralocations.com/locations/texas/san-antonio",
-      "summary": "237 Flock Safety cameras and ALPRs have been reported within 10 miles of San Antonio, Texas. See each one on a live map — community-documented license plate reader locations across the San Antonio area.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1585,12 +1098,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2c2f286dc7f34c85",
-      "title": "Free Paper Squishy Templates",
-      "url": "https://inspiringhomedecor.com/free-paper-squishy-templates/",
-      "summary": "This paper squishy craft is easy to customize and requires only a few inexpensive supplies. The printable templates make shaping simple, while decorating the paper gives you plenty of creative freedom.",
+      "id": "1f5cc9d9cdc93a1d",
+      "title": "CB&S Bank Locations in Alabama",
+      "url": "https://www.bankbranchlocator.com/cb-s-bank-locations-in-alabama.html",
+      "summary": "Additionally, a comprehensive list of all CB&S Bank branch locations in Alabama, including precise addresses, contact information, hours of operation, routing number, and reviews, is available further down the page.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1603,9 +1116,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "model"
       ],
-      "primary_type": "research",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1615,12 +1128,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7fda2486c2b5112a",
-      "title": "Free Printable Paper Squishy Templates (A4 PDFs) | SQUISHY IDEA",
-      "url": "https://squishyidea.com/templates",
-      "summary": "Browse free printable A4 paper squishy template PDFs for dumplings, snacks, drinks, fruit, and DIY craft ideas. Request a download by email and make them at home.",
+      "id": "e023c114a6afe73c",
+      "title": "CB&S Bank, Inc., BIRMINGHAM OFFICE",
+      "url": "https://www.usbanklocations.com/cb-s-bank-inc-birmingham-office.html",
+      "summary": "CB&S Bank, Inc., BIRMINGHAM OFFICE at 1301 Doug Baker Blvd, Birmingham, AL 35242 has $17,452K deposit.Rate this bank, find bank financial info, routing numbers ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1633,9 +1146,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1645,12 +1158,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3b5d1316a1e340e7",
-      "title": "Free Printable Paper Squishy Templates | Food, 3D & Coloring",
-      "url": "https://www.squishyguide.com/en/templates/",
-      "summary": "Browse free printable paper squishy templates with food shapes, 3D patterns, coloring PNGs, Letter and A4 downloads, and beginner instructions.",
+      "id": "eefc9e7a88999d5f",
+      "title": "CB&S Bank: Personal and Business Banking, Loans and more",
+      "url": "https://www.cbsbank.com/",
+      "summary": "CB&S Bank is a provider of personal and business banking solutions including checking, savings, investments, home loans, personal and commercial loans.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1663,9 +1176,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1675,12 +1188,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4c663e6e04f5ba26",
-      "title": "Free Printable Paper Squishy Templates | Print, Color & Make",
-      "url": "https://www.squishyguide.com/en/print-paper-squishy-templates/",
-      "summary": "Print free paper squishy templates at the right size. Choose a color or coloring PNG, use 100% scale, then cut, tape, stuff, and seal your squishy.",
+      "id": "83127b508d769c2c",
+      "title": "Find CB&S Bank Locations in Alabama | Branches, ATMs & Hours",
+      "url": "https://locations.cbsbank.com/al/",
+      "summary": "Locate CB&S Bank branches and ATMs near you in Alabama. Get hours, directions, and services for personal and business banking, loans, and more. Visit your nearest location today!",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1693,9 +1206,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "news"
       ],
-      "primary_type": "research",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1705,10 +1218,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "79932c797cbf14c9",
-      "title": "Google Slides",
-      "url": "https://docs.google.com/presentation/offline/edit",
-      "summary": "This browser version is no longer supported. Please upgrade to a supported browser.",
+      "id": "21e2b01915f638a6",
+      "title": "Find CB&S Bank Locations in Birmingham, AL | Branches, ATMs ...",
+      "url": "https://locations.cbsbank.com/al/birmingham/",
+      "summary": "Locate CB&S Bank branches and ATMs near you in Birmingham, AL. Get hours, directions, and services for personal and business banking, loans, and more. Visit your nearest location today!",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "069c2560dc1e2690",
+      "title": "Find Insurance Options | Finder.Healthcare.gov",
+      "url": "https://finder.healthcare.gov/api/finder_api_v3.0.xsd",
+      "summary": "allow 5 digit format allow 5 digit format allow max 60 characters allow max 512 characters allow 14 characters allow 10 characters allow 5 digits allow 11 digits List ...",
       "discovery_channel": "research",
       "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
@@ -1723,7 +1266,8 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "research",
+        "sdk"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -1735,70 +1279,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5a7e59844b41d026",
-      "title": "Google Slides - create and edit presentations online, for ...",
-      "url": "https://www.google.com/slides/about/",
-      "summary": "Create a new presentation and edit with others at the same time. Get stuff done with or without an internet connection. Use Slides to edit PowerPoint files. Free from Google.",
-      "discovery_channel": "research",
-      "query": "Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ea43295b644c3ff",
-      "title": "Google Slides - essentials.withgoogle.com",
-      "url": "https://essentials.withgoogle.com/?type=Slides",
-      "summary": "Create beautiful presentations together. Google Slides helps you bring your ideas to life, collaborate and present like a pro to deliver impactful presentations in your browser from anywhere - no installation required.",
-      "discovery_channel": "research",
-      "query": "Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f734aae2ecf13f8",
-      "title": "Google Slides cheat sheet: How to get started – Computerworld",
-      "url": "https://www.computerworld.com/article/1658651/how-to-use-google-slides.html",
-      "summary": "Need to build a slide presentation for a meeting, training, or other event? Google Slides is an easy-to-use web app that comes with essential tools and extras for creating and presenting slide...",
+      "id": "fe97d3ee11f9e05e",
+      "title": "Finder.Healthcare.gov",
+      "url": "https://finder.healthcare.gov/",
+      "summary": "Find and compare health insurance plans to suit your needs on the Plan Finder platform.",
       "discovery_channel": "research",
       "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
@@ -1826,10 +1310,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7917bd67cb059158",
-      "title": "Google Slides: Presentation Slideshow Maker | Google Workspace",
-      "url": "https://workspace.google.com/products/slides/",
-      "summary": "Create stunning presentations with Google Slides. Discover slide templates for every use case, use AI to generate unique visualizations, and more.",
+      "id": "a1d90bc310a3c384",
+      "title": "Has anyone been using chat GPT for studying? - Reddit",
+      "url": "https://www.reddit.com/r/medicalschool/comments/127o0eu/has_anyone_been_using_chat_gpt_for_studying/",
+      "summary": "87 votes, 91 comments. true I never said I was using it as my sole method of studying. I just think it’s been really helpful for answering very specific questions in a way that google can’t. After the answer, using other resources to verify the answer is not very difficult. I feel like it has saved me some time at points. Reply reply More replies GareduNord1 •",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e483d3917a034afe",
+      "title": "HealthCare.gov - Welcome to the Health Insurance Marketplace",
+      "url": "https://www.healthcare.gov/",
+      "summary": "Welcome to the Health Insurance Marketplace®. Official government website.",
       "discovery_channel": "research",
       "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
@@ -1856,12 +1370,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "adf8c1b9036ed191",
-      "title": "haunted bookshelf",
-      "url": "https://pipeworld.com/haunted-bookshelf/",
-      "summary": "Visit the post for more. Tobacco Products Will Not Be Sold to Anyone Under the Age of 21 Copyright © 2026 Pipe World All Rights Reserved | Built By Hot Dog Marketing",
+      "id": "573658f6e6285c0f",
+      "title": "Heidi's Brooklyn Deli - South Portland, ME - Yelp",
+      "url": "https://www.yelp.com/biz/heidis-brooklyn-deli-south-portland",
+      "summary": "Do you recommend this business? Yelp users haven’t asked any questions yet about Heidi's Brooklyn Deli.",
       "discovery_channel": "broad_web",
-      "query": "display smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1886,130 +1400,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "238a5250641b7975",
-      "title": "Haunted Bookshop 2oz Pipe Tobacco - Smokingpipes.com",
-      "url": "https://www.smokingpipes.com/pipe-tobacco/cornell-diehl/haunted-bookshop-2oz/product_id/27374",
-      "summary": "About This Pipe Tobacco Another of the late Bob Runowski's blends, named in honor of the famous novel written by Christopher Morley, Cornell & Diehl's Haunted Bookshop is a Burley and Virginia blend with just a touch of Perique.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8a1606e33615d1d",
-      "title": "Haunted Bookshop Pipe Tobacco | Cornell & Diehl",
-      "url": "https://www.cornellanddiehl.com/pipe-tobaccos/haunted-bookshop/136396",
-      "summary": "Haunted Bookshop is another of the late Bob Runowski's blends, named in honor of the famous novel written by Christopher Morley. A Burley and Virginia blend with just a touch of Perique.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9cbb959f3843fdbf",
-      "title": "Hiding the Facebook forced login-in : r/uBlockOrigin - Reddit",
-      "url": "https://www.reddit.com/r/uBlockOrigin/comments/11gy9ck/hiding_the_facebook_forced_loginin/",
-      "summary": "I loathe Facebook, don't have an account with the scumbags, but occasionally, I need to visit a page for some information. As soon as I start scrolling, the page freezes and a modal dialog pops up forcing me to log in, preventing further access to the content.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e0f8e7c9af2c287f",
-      "title": "Hiding the Facebook login popup and overlay - Reddit",
-      "url": "https://www.reddit.com/r/uBlockOrigin/comments/133uncy/hiding_the_facebook_login_popup_and_overlay/",
-      "summary": "Hiding the Facebook login popup and overlay Saw a previous thread about getting rid of the facebook login popup and overlay. These filters were mentioned - facebook.com##div [role=\"dialog\"] facebook.com###scrollview + div facebook.com##div [data-nosnippet=\"\"] Using the above filters does get rid of the popup and overlay, but...",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c8be6c209e4800df",
-      "title": "How do potions and aging up pets affect their value? - Reddit",
-      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/mbxz68/how_do_potions_and_aging_up_pets_affect_their/",
-      "summary": "Hello, not the best with values. I’ve had this question for a while with some people sharing screenshots of players they saw adding potions to rare pets saying it decreases their value. I’m sure this is true, but how much does it decrease the value of valuable pets? How valuable does the pet have to be to lower its value?",
+      "id": "20d10ca2412cddfc",
+      "title": "Heidi's Brooklyn Deli -South Portland | South Portland ME - Facebook",
+      "url": "https://www.facebook.com/heidissouthportland/",
+      "summary": "In consideration of employee safety during the storm this Saturday, both Auburn & South Portland locations will be closed. Stay safe out there! Happy Christmas Eve! Heidi's Auburn & South Portland are open until 4pm today for all your last minute gift cards and to re-fuel during the last minute holiday rush!",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2024,9 +1418,9 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2036,73 +1430,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "318f66dc95727a81",
-      "title": "How to fix: Unable to login Facebook and Page isn't available ... - Reddit",
-      "url": "https://www.reddit.com/r/facebook/comments/1cy2mxm/how_to_fix_unable_to_login_facebook_and_page_isnt/",
-      "summary": "Hi, I'm currently unable to log into my Facebook account right now even though my email & password are correct. Before this, I was trying to remove my mom's account which was on my phone and when I pressed settings I got the \"Page isn't available right now\" screen. When I try to go back to my account, it shows up as well.",
+      "id": "75b52fc9c0b908b6",
+      "title": "Heidi's Brooklyn Deli South Portland",
+      "url": "https://order.toasttab.com/online/heidis-brooklyn-deli-south-portland-me-415-philbrook-avenue",
+      "summary": "Our best-selling sandwich, made with roast turkey, fresh avocado, and Heidi’s Cajun sauce on your choice of house-made bread. Select your preferred toppings when ordering so we can build it just the way you like it.",
       "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "059eb619fa15596f",
-      "title": "Log in | Slides",
-      "url": "https://slides.com/users/sign_in",
-      "summary": "Welcome back! Let's get you signed in Log in with Google Log in with Facebook Email Password",
-      "discovery_channel": "research",
-      "query": "Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bf61a6baee09483e",
-      "title": "Meta",
-      "url": "https://auth.meta.com/setup/",
-      "summary": "Set up your Meta account and manage your devices efficiently.",
-      "discovery_channel": "broad_web+research",
-      "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2127,162 +1460,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e0f6e8c87f3755e",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/how-do-i-create-a-custom-background-to-use-for/19614570-dd77-4e2e-b649-3cc49c205609",
-      "summary": "Microsoft Community",
+      "id": "ab00125c13552ca5",
+      "title": "Heidi's Brooklyn Deli South Portland | Toast",
+      "url": "https://toast.app/r/heidis-brooklyn-deli-south-portland-me-415-philbrook-avenue/order",
+      "summary": "Our best-selling sandwich, made with roast turkey, fresh avocado, and Heidi’s Cajun sauce on your choice of house-made bread. Select your preferred toppings when ordering so we can build it just the way you like it.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2067d348cfb8e1bf",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/constant-bsods-usually-after-having-a-game-running/312e8fb9-87fb-4fd4-a7b8-1861de85d104",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "82285275d246dac3",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/excel-table-lagging-with-a-table-header-cell-cell/376a52f3-2b93-4989-bfd9-737d5f2e2a7a",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7bfc18d48c7e99af",
-      "title": "Microsoft Community",
-      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/my-microsoft-account-got-hacked-and-my-primary/ccf18cba-8b17-4494-adf7-c0cb2f81e912",
-      "summary": "Microsoft Community",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e5e609d4b0cc79b",
-      "title": "MyChart - Account Recovery - The Christ Hospital",
-      "url": "https://www.thechristhospitalmychart.com/mychart/recoverlogin.asp",
-      "summary": "What account do you want to recover? Not sure what an Epic ID is? Use the option under 'I want to recover my MyChart account' instead.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "800a69cc8d88d315",
-      "title": "MyChart | The Christ Hospital Health Network",
-      "url": "https://www.thechristhospital.com/patients-and-visitors/tools/mychart/",
-      "summary": "Access and manage your healthcare from your smartphone, tablet, or computer. Download the MyChart app for mobile or access MyChart in your Web browser.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2307,12 +1490,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "19d97a0ab5057f86",
-      "title": "National Parks and Wildlife Service South Australia",
-      "url": "https://www.parks.sa.gov.au/parks/witjira-national-park/accommodation",
-      "summary": "The park includes the National Heritage-listed Dalhousie Springs, used by Aboriginal people for thousands of years as a source of food, shelter and medicine. You can swim in the main spring’s warm waters.",
+      "id": "1a5a5739b082b335",
+      "title": "Heidi's Brooklyn Deli, South Portland - Restaurantji",
+      "url": "https://www.restaurantji.com/me/south-portland/heidis-brooklyn-deli-/",
+      "summary": "Latest reviews, photos and ratings for Heidi's Brooklyn Deli at 415 Philbrook Avenue in South Portland - view the menu, hours, phone number, address and map.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2337,10 +1520,371 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4c6b29bffd805d44",
-      "title": "New Volkswagens for Sale in Sterling, VA | Volkswagen Dealership",
-      "url": "https://www.lindsayvolkswagen.com/inventory/new",
-      "summary": "Discover a wide range of new Volkswagens for sale in Sterling, VA at our Volkswagen dealership. Find your perfect car today and drive away with confidence!",
+      "id": "40c0b554e71291d1",
+      "title": "HEIDI'S-South Portland Location - Official MapQuest",
+      "url": "https://www.mapquest.com/us/maine/heidis-south-portland-location-371236454",
+      "summary": "Heidi's Brooklyn Deli in South Portland, ME, offers a variety of fresh, made-to-order sandwiches, salads, and baked goods. Notable menu items include the Hell's Kitchen sandwich with egg salad, bacon, Swiss cheese, and avocado, and the Cajun Turkey with avocado, which ranks among the bestsellers.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d63354aab5180c2",
+      "title": "HEIDI'S-South Portland Location - South Portland, ME 04106",
+      "url": "https://www.yellowpages.com/south-portland-me/mip/heidis-south-portland-location-563178546",
+      "summary": "Get reviews, hours, directions, coupons and more for HEIDI'S-South Portland Location. Search for other American Restaurants on The Real Yellow Pages®.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f171aacd8748644a",
+      "title": "HEIDI'S-South Portland Location in South Portland , ME",
+      "url": "https://www.superpages.com/south-portland-me/bpp/heidis-south-portland-location-563178546",
+      "summary": "Get reviews, hours, directions, coupons and more for HEIDI'S-South Portland Location. Search for other American Restaurants on superpages.com.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "135193a7d3f9691b",
+      "title": "Heidis Deli",
+      "url": "https://heidisbrooklyndeli.com/",
+      "summary": "With the mentorship of their mother Heidi, Jenee and Juliana, along with their incredible staff work hard every day to create a memorable experience offering the highest-quality products and neighborly service to their patrons.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7211f1e528b9ec0f",
+      "title": "I am quitting chatgpt : r/ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/109g9gf/i_am_quitting_chatgpt/",
+      "summary": "ChatGPT’s version: A hypothetical AI dependency disorder (AIDD) refers to a phenomenon in which an individual becomes so reliant on an artificial intelligence (AI) workflow that they experience withdrawal symptoms when the AI becomes unavailable.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses lenses optics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfdce9a1c3683de9",
+      "title": "Internet Banking - CB&S Bank",
+      "url": "https://www.cbsbank.com/personal-services/internet-banking",
+      "summary": "Manage your finances anytime with CB&S Bank Internet Banking—view balances, transfer funds, pay bills, and download transactions securely.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f6dc01563b01776",
+      "title": "Keffer Volkswagen | Volkswagen Dealer in Huntersville, NC | Cornelius ...",
+      "url": "https://www.keffervw.com/",
+      "summary": "Shop new and used Volkswagen vehicles at Keffer Volkswagen in Huntersville, NC. Explore lease and finance specials or schedule your next service visit.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5933b87a4f45d70",
+      "title": "Local Assistance for Health Insurance Application",
+      "url": "https://localhelp.healthcare.gov/Help",
+      "summary": "Find local help to apply for health insurance. People and groups in the community offer free assistance both with the application process and with picking and enrolling in a plan.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ae03154acfd2a45",
+      "title": "Reddit, what are your best custom instructions for ChatGPT?",
+      "url": "https://www.reddit.com/r/ChatGPTPro/comments/15ffpx3/reddit_what_are_your_best_custom_instructions_for/",
+      "summary": "Given your unique disposition and specialized interests, I would earnestly and reverentially urge you to consult directly with ChatGPT, this extraordinary oracle of artificial intelligence, to collaboratively brainstorm a list of Custom Instructions exquisitely tailored to meet your specific aspirations and requirements.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses lenses optics",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bee788c16fa7234f",
+      "title": "Search - Local Assistance for Health Insurance Application",
+      "url": "https://localhelp.healthcare.gov/es/",
+      "summary": "Search our online directory and set up a time to talk in-person, over the phone, or by email. An agent, broker, or assister near you can help you with your application and more.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51c835925a88daf4",
+      "title": "South Portland - Heidi's Club - order.toasttab.com",
+      "url": "https://order.toasttab.com/online/heidis-brooklyn-deli-south-portland-me-415-philbrook-avenue/item-heidis-club_686b7b58-3704-435d-9f87-e6aaf67ba45b",
+      "summary": "Order Heidi's Club online from South Portland in South Portland, ME. A Heidi’s classic with ham, turkey, hot bacon, cheese, and mayo on your choice of fresh-bak",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "481b231e77044acf",
+      "title": "Tips about the Health Insurance Marketplace® | HealthCare.gov",
+      "url": "https://www.healthcare.gov/quick-guide/one-page-guide-to-the-marketplace/",
+      "summary": "If you haven’t applied for insurance on HealthCare.gov before, here's what you need to know about the Health Insurance Marketplace®. Make sure you have health coverage.",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1230856ff8856be2",
+      "title": "Used Cars for Sale in Charlotte, NC | Carolina Volkswagen",
+      "url": "https://www.carolinavw.com/pre-owned-vehicles/",
+      "summary": "Shop used cars, trucks, and SUVs for sale in Charlotte, NC at Carolina Volkswagen. Browse used Volkswagen models, value your trade, and apply for financing online.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -2358,877 +1902,6 @@
         "retail"
       ],
       "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8ebcedd1321d949e",
-      "title": "Paper Squishy Printable Templates PDF - eparenting.co.uk",
-      "url": "https://www.eparenting.co.uk/printables/paper_squishy_printable_templates.php",
-      "summary": "Make your own paper squishy with these free printable templates for paper squishies in PDF or JPG format. Get into the viral squishy trend with your own creativity.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "28513ce1275b6d93",
-      "title": "Paper Squishy Template - Pinterest",
-      "url": "https://www.pinterest.com/ideas/paper-squishy-template/902681754960/",
-      "summary": "Find and save ideas about paper squishy template on Pinterest.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8fd9e3d4ba97cded",
-      "title": "Paper Squishy Template Printable Diy - Pinterest",
-      "url": "https://www.pinterest.com/ideas/paper-squishy-template-printable-diy/930141390348/",
-      "summary": "Find and save ideas about paper squishy template printable diy on Pinterest.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9724ed3301d01788",
-      "title": "Paper Squishy Template: 24 Free Printable Squishies",
-      "url": "https://www.marysprintables.com/paper-squishy-template/",
-      "summary": "Free paper squishy template with 24 cute designs and matching backs. Pick a size, print in color or color-in, then tape, stuff and squish your own.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f22cb88566954f6b",
-      "title": "Paper Squishy Templates: Free Printable PDFs + 12 Ideas",
-      "url": "https://funnysquishy.com/blogs/news/paper-squishy-templates-ideas",
-      "summary": "Free printable paper squishy templates (butter, dumpling, toast) as A4 and Letter PDFs, plus how to draw your own and 12 weekend ideas.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a8ae71d185b36e8",
-      "title": "Patient Tools and Services | The Christ Hospital Health Network",
-      "url": "https://www.thechristhospital.com/patients-and-visitors/tools/",
-      "summary": "Access tools and services that can enhance your experience at our hospital and other locations in our health network. Stay connected, access care, manage appointments, and more with MyChart. Learn about how to access MyChart on desktop via your Web browser, and how to download the mobile app.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c28db44e8979c1be",
-      "title": "Patients and Visitors | The Christ Hospital Health Network",
-      "url": "https://www.thechristhospital.com/patients-and-visitors/",
-      "summary": "Get all the information you’re looking for, including general info about our facilities and forms which you’ll need, as well as helpful tools and services. Discover the tools and services you can access to enhance your experience at our hospital and other locations in our health network:",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "56ecc885022fb263",
-      "title": "Pipe Tobacco & Tobacco Pipes",
-      "url": "https://www.pipestud.com/",
-      "summary": "Buying and selling your collectible tobacco tins and tobacco pipes since 2001!",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "851c69d5b2cbbca1",
-      "title": "r/Adoptmecrosstrading - Reddit",
-      "url": "https://www.reddit.com/r/Adoptmecrosstrading/",
-      "summary": "r/Adoptmecrosstrading: have some adopt me pets and you want diamonds, bloxburg cash,robux , or mm2 weapons? this is your place to go!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4a88ed0380dd4a6",
-      "title": "r/AdoptMeRBX on Reddit: elvebredd or gg values??",
-      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/1bgk48o/elvebredd_or_gg_values/",
-      "summary": "Gg is adopt me trading values but instead of the .com one thats known to be flawed, people have created a .gg one thats a fair bit more accurate",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7c9c22a952837568",
-      "title": "RoyaleHigh_CrossTrade - Reddit",
-      "url": "https://www.reddit.com/r/RoyaleHigh_CrossTrade/",
-      "summary": "Trading adopt me for rh or cash. Please nyp! My adopt me inv is on my pinned post :) Lf: dims, everfalls halo, everfriend halo, winter23, got parasol.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "39c579875ace166a",
-      "title": "San Antonio Skyline Cam - EarthCam",
-      "url": "https://www.earthcam.com/usa/texas/sanantonio/",
-      "summary": "Explore the Webcams of the World! EarthCam and KSAT-12 invite visitors to enjoy great views of the San Antonio, Texas, skyline with this live-streaming webcam. The view looks down Saint Mary's Street toward prominent landmarks including the historic Alamo, the Alamodome, and the Tower of Americas.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7404d59f04ac9b9e",
-      "title": "Sign up for MyChart - The Christ Hospital",
-      "url": "https://www.thechristhospitalmychart.com/mychart/accesscheck.asp",
-      "summary": "Enter your activation code as it appears on your enrollment letter or After Visit Summary. No activation code?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2e372cfbb7dd1648",
-      "title": "Slides – Professional presentations. From draft to delivery.",
-      "url": "https://www.google.slides.com/",
-      "summary": "Learn from every deck. See which slides land, how far viewers get, and what earns a second look. Then improve the deck that’s already live.",
-      "discovery_channel": "research",
-      "query": "Project Aria smart glasses research",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e3065dcd9793c1e4",
-      "title": "Squishy Templates - Etsy",
-      "url": "https://www.etsy.com/market/squishy_templates",
-      "summary": "Discover delightful squishy templates for creative fun and party favors. Explore unique coloring pages, customizable birthday tags, and charming Valentine's Day printables, perfect for all ages.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "306b17fd6bf24ab5",
-      "title": "The Christ Hospital",
-      "url": "https://mobileapp.thechristhospital.com/",
-      "summary": "We’ve upgraded to MyChart App to provide a more connected healthcare experience! Download the MyChart App today! Your username and password will not change.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fbaa4f560b6d1622",
-      "title": "The Christ Hospital - Login",
-      "url": "https://filetransfer.thechristhospital.com/webclient/Login.xhtml",
-      "summary": "Next Unauthorized use is prohibited",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd706741f7951ad3",
-      "title": "The Christ Hospital - MyChart - Login Page",
-      "url": "https://www.thechristhospitalmychart.com/",
-      "summary": "Forgot login information? Need help? Sign up.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d80a92d7af5a1f25",
-      "title": "Tobacco Pipe Cabinet - Etsy",
-      "url": "https://www.etsy.com/market/tobacco_pipe_cabinet",
-      "summary": "Check out our tobacco pipe cabinet selection for the very best in unique or custom, handmade pieces from our pipes shops.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4495dda027400bf4",
-      "title": "TOP 10 BEST Camera Stores in San Antonio, TX - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=camera+stores&find_loc=San+Antonio%2C+TX",
-      "summary": "Top 10 Best camera stores Near San Antonio, Texas (Updated 2026) Sort: Recommended",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01c811cc4c528f34",
-      "title": "Values make no sense. : r/AdoptMeRBX - Reddit",
-      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/192h39y/values_make_no_sense/",
-      "summary": "The values system is a complete mess, it’s the main reason I pretty much exclusively use happy values, maybe use that one site everyone hates just as a rough guideline since inaccurate or not, it’s the first search result and it knows more than me.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a070585746e641b4",
-      "title": "Values of Adopt Me pets in Royale High? : r/crosstradingroblox - Reddit",
-      "url": "https://www.reddit.com/r/crosstradingroblox/comments/smi28o/values_of_adopt_me_pets_in_royale_high/",
-      "summary": "I’m interested in cross-trading Adopt Me pets for Royale High diamonds/halos, except I don’t know their values. If anyone can give me an estimate of some of my pet’s INDIVIDUAL values it’d help.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f227737d4c9c102",
-      "title": "Vintage Tobacco Cabinet - Etsy",
-      "url": "https://www.etsy.com/market/vintage_tobacco_cabinet",
-      "summary": "Check out our vintage tobacco cabinet selection for the very best in unique or custom, handmade pieces from our tobacciana shops.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "631e5a5fc554b8d1",
-      "title": "Volkswagen Dealer Tysons Corner VA New & Used Cars for Sale - Stohlman ...",
-      "url": "https://www.stohlman-vw.com/",
-      "summary": "Stohlman Volkswagen in Tysons Corner, VA offers new and used Volkswagen cars, trucks, and SUVs to our customers. Visit us for sales, financing, service, and parts!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73fb674ae9d3a6d6",
-      "title": "Watching facebook videos without login : r/uBlockOrigin - Reddit",
-      "url": "https://www.reddit.com/r/uBlockOrigin/comments/o8rmgf/watching_facebook_videos_without_login/",
-      "summary": "But now what happens is i play the video and after a few min it refreshes without taking me to a login screen of else i end up at this login page. Is there some way I can watch facebook videos without logging in? I'm quite new to ublock EDIT: in case this is relevant, I'm using ublock origin 1.35.2 on microsoft edge Archived post.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "community"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b4e309507eeef427",
-      "title": "What are some of your unpopular adopt me opinions? Pets ... - Reddit",
-      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/1dqciom/what_are_some_of_your_unpopular_adopt_me_opinions/",
-      "summary": "What are some of your unpopular adopt me opinions? Pets, players, trading, values etc. : r/AdoptMeRBX Go to AdoptMeRBX r/AdoptMeRBX r/AdoptMeRBX",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d9ad2e279553e337",
-      "title": "What happens during a check disk? - Microsoft Q&A",
-      "url": "https://answers.microsoft.com/en-us/windows/forum/all/what-happens-during-a-check-disk/64a5463b-a99b-4e20-91fb-61aaaf4a6579",
-      "summary": "I have recently be getting messages to run a check disk at the start up so i have been wondering what exactly happens during a check disk,how long it takes and what do you do in order to end it in case of an emergency.I also want to know the…",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "29fc583adfea9112",
-      "title": "What is the most accurate Adopt Me value website - Reddit",
-      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/18x5rgf/what_is_the_most_accurate_adopt_me_value_website/",
-      "summary": "Sites are never exactly accurate for values to begin with. They're either accurate when they first set up but never adjust to when values change, or they use auto-generated values based off average of completed trades on their site (ex. traderie, amtv.)",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "baa5b5c51af0b9fb",
-      "title": "You guys were right about Haunted Bookshop. : r/PipeTobacco",
-      "url": "https://www.reddit.com/r/PipeTobacco/comments/ubmeli/you_guys_were_right_about_haunted_bookshop/",
-      "summary": "No matter what, you want to keep tobacco out of the light. Sunlight particularly can kill you tobacco. As for warm vs cool, I'd say aromatics you want to keep cool, burleys it doesn't matter, English and Virginia you might want to consider keeping them somewhere with cycles of hot and cold, to accelerate the aging process.",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
