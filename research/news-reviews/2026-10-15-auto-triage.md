@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-15T05:40:54.772499+00:00`
+Generated: `2026-10-15T07:34:34.005950+00:00`
 
 - Intake files inspected: **255**
-- Candidates retained in this review window/history: **10384**
+- Candidates retained in this review window/history: **10403**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2053
+- `adjacent_radar`: 2044
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 593
-- `rejected_noise`: 7624
-- `source_review`: 48
-- `watching`: 48
+- `needs_editorial_verification`: 592
+- `rejected_noise`: 7647
+- `source_review`: 51
+- `watching`: 51
 
 ## Action queue
 
@@ -182,6 +182,8 @@ Generated: `2026-10-15T05:40:54.772499+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.925](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.925) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.926](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.926) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.927](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.927) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.928](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.928) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.929](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.929) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-15T05:40:54.772499+00:00`
 | normal | needs_editorial_verification | direct | ["지금 나 찍고 있는 거야?"…몰래 촬영 논란에 EU, 스마트 안경 경고 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5hUmxpOHluLVdjMjNkMEk2Y1FEcC1TNlduWGZ1Nktab0tlUUVETEUxanY1cUJnOW1xN3h1d0hjejFoRDRvRjZvSlFtZk44N1NpM05Ya2N3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ['AI 안경' 도촬 우려에 내로남불 인식…경기연구원 '신호등 규칙' 제안 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMiakFVX3lxTE12RzhUQzJRemY2NlhucVBDRHQ2OTB4ZExIcnNsc21QTjItczN5U1RsNWVUbEFwNEhLaEZCYnZuRjFvTmZzUmVPUUtuN29paUhocTJEWGx2QlJYc0F6eXFUTVoyQmwyZU9vamfSAW9BVV95cUxOd3RiTWZtellkaUFlQU9SR2ZRU0d0RlpvTGdPLXcxbnB4SDN4aXhhRzd1ODRoSEsxLWM3Qk5WVHJGSWt2OU5jU3FvZFUwMWUwMGhYVzhKdjJMMkRXLUs5VkNfSHVMcy1pOXhlZ1hiUWc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [1小时搞定AI眼镜定制“深圳周期”惊艳外国游客 - 搜狐](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUjBxRTgyMll5ZllFdXZsTkhwMzhrMnZ1cC1KakdUdTgzdUdsczBFT2JVSldqdHNxMFhDdV9NbkZFN0tIbU53azBaWTFoVWhkWG51WWo5UWRuNjlvTFJ5RDduS0oxSGRrM3M4dkFWQ0RSbm1Fc3hqNWZRYWZ0ZndzWlhnei15N205?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [[AI 안경의 명과 암 ①] 구글 글래스 이후 다시 열린 경쟁…화면보다 달라진 것은 AI - 산업종합저널](https://news.google.com/rss/articles/CBMiU0FVX3lxTFAzU3djZ19JeERpTHNGT0VXNXRPdXhBbjBtZHo4WW9Ybm5QMVh6Y2RfZF9XWmNUekJmazZZR1dZV2FCeVJWdV9qeVJnNGtvbTFRZ240?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [[단독] 로스쿨 입시도 ‘AI 안경’ 비상 - 서울신문](https://news.google.com/rss/articles/CBMidEFVX3lxTE0xZjhUR09tU2wtSFVVS2pXbXVJTF8za3hlNU5sUEtVaVh4cEg5eHEtazRmQm1seFNEZ0JVWElHaVVLR1h3WDlNN2sydkFhUVBnZ1NRdjQwbUFMdTl2YzBCV1hjc3AyVDhfeGZMRC1EV2E0cXht?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
