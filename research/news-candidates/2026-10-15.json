@@ -1,79 +1,131 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-15T15:16:28.847257+00:00",
-  "candidate_count": 2,
-  "precision_rejected_count": 148,
+  "discovered_utc": "2026-10-15T18:23:03.967004+00:00",
+  "candidate_count": 3,
+  "precision_rejected_count": 147,
   "relationship_counts": {
-    "direct": 1,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 1,
-    "speculative": 0,
+    "adjacent": 0,
+    "speculative": 1,
     "irrelevant": 0
   },
   "type_counts": {
     "model": 2,
-    "policy": 1
+    "tool": 1,
+    "sdk": 1,
+    "policy": 1,
+    "community": 1,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 1,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
     "model_catalog_review": 2,
     "policy_privacy": 1,
-    "research_news_review": 2
+    "research_news_review": 3,
+    "watching": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.everysight.com/pages/maverick-ai",
+      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
   "candidates": [
     {
-      "id": "bc54240702ceafc0",
-      "title": "SD Express 2026 Student Competition Winners Announced - Business Wire",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNS2VhNmhqMTRSd3FnM2tmSUo3TUowaWkzZEV1UjV4bDY5TnZYZzNfTUtLcHd1cnY4M09CT3NteTNUTkRuZHRqNWdTY0FkMGJKU25hQ0IzSEFxdzhza0FCQ2FaWk9Oc01SSjAzajBVNlVVdklTcy1QYVR2S1psbi1CejhLZkdKd25EMmlZanRJN1NVMXhqc0ZDb2dITkZ2VGh1R01OSnNJeV9kZTlKbXRr?oc=5",
-      "source": "Google News: AI wearable camera",
-      "source_lane": "adjacent_hci",
-      "published": "Thu, 15 Oct 2026 14:00:00 GMT",
-      "summary": "SD Express 2026 Student Competition Winners Announced Business Wire",
+      "id": "e48e6b9c0981a5f7",
+      "title": "Mentra 3.3.0-dev.930",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.930",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-15T18:15:26Z",
+      "summary": "Mentra 3.3.0-dev.930 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 7108fa3 . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "51c819061ab70453",
+      "title": "Apple Intelligence Expected to Launch in Mainland China in December; Apple Supply Chain Sees Financing Influx - BigGo Finance",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9RQmhUamhncXd6NTN0S3Q5NzNIdUZXcXlfam5sUVl4U01TRzJSM2VmN3RIbUU5TnhSQmNCR1dHdDZKeFZwVmVrZ1Ywc3MxRlE4UlNITzBpN3hJQjdpNm1WOEVLOWZhYTU1blRzemZPZ09LemhwVUE?oc=5",
+      "source": "Google News: smart glasses tools",
+      "source_lane": "core_glasses",
+      "published": "Thu, 15 Oct 2026 03:55:00 GMT",
+      "summary": "Apple Intelligence Expected to Launch in Mainland China in December; Apple Supply Chain Sees Financing Influx BigGo Finance",
       "materiality_score": 4,
       "keyword_hits": [
-        "announced"
+        "launch"
       ],
       "status": "candidate",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "speculative",
       "content_types": [
-        "model"
+        "model",
+        "rumor"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
+        "watching",
+        "model_catalog_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "future/rumor signals: expected to",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "likely durable"
     },
     {
-      "id": "ac7441d71a73ba0b",
-      "title": "Meta’s camera-free Ray-Ban Meta Audio glasses are finally available to buy — buy now from $349 - Yahoo Tech",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbmV2Y0dxLWt2aUxoSmRlMFhfMTZjTlA5bnp0X0FBQnpNeUhXN0h3dWJQdFNkVGMwNElQMXlPTDRHTXFpMFpISmdKM0h5eHNfa3dCbTNIRHRYbzF0SEpISzFkdFQtUF9WeWxUZU1vUEgwYWhJZFpGQmMycHVMUVdia0pYN1hSUXFL?oc=5",
-      "source": "Google News: Meta Ray-Ban glasses",
+      "id": "58964fdb7c832263",
+      "title": "Meta faces Dutch summary proceedings over smart glasses’ privacy safeguards (update*) - MLex",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNLUU0b0trMm5LYUpnTFJuc3h2am9ZYlpJR2ttd0xWbzF5Mm9ETWZQU29IcEVHZU9ZUUVIallLaTI1RmRNcEwyWnQ0SjMwS0x4aU8xbXZkUVk3TXA2Nmk0NW9MSnJHZGswYzJJcWlWa3NrVU5WTlZVb1hCQ19YZ3ZZbVFmZUdSVlY4M2RjaEFoSUVYazlKOGZsM3RVc0VzV19iN25UcktGdzZkb3dHbC1WYzV2WnFBTWRPTl8wRE5Kb2hEQdIBWkFVX3lxTE16N1JiTkQ3dENmRVd0bFYyNmN5UnhGdEhkbmxuZU5OU0hhTGNvUDNENFlONGpYSllUNE1ScExlOGdLdlFDOExDOWQzQ3dwOWE2eXU0UVJ0bFpFQQ?oc=5",
+      "source": "Google News: smart glasses privacy",
       "source_lane": "core_glasses",
-      "published": "Wed, 14 Oct 2026 13:18:44 GMT",
-      "summary": "Meta’s camera-free Ray-Ban Meta Audio glasses are finally available to buy — buy now from $349 Yahoo Tech",
+      "published": "Wed, 14 Oct 2026 10:20:37 GMT",
+      "summary": "Meta faces Dutch summary proceedings over smart glasses’ privacy safeguards (update*) MLex",
       "materiality_score": 2,
       "keyword_hits": [
-        "available",
-        "camera"
+        "privacy",
+        "update"
       ],
       "status": "candidate",
       "evidence_class": "secondary",
@@ -82,18 +134,16 @@
       "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "model",
         "policy"
       ],
-      "primary_type": "model",
+      "primary_type": "policy",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
         "policy_privacy"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: audio glasses, ray-ban meta",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
