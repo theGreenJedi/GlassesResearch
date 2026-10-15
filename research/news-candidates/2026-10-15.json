@@ -1,23 +1,32 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-15T19:15:24.845784+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 137,
+  "discovered_utc": "2026-10-15T22:27:07.824850+00:00",
+  "candidate_count": 4,
+  "precision_rejected_count": 143,
   "relationship_counts": {
-    "direct": 1,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 2,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "model": 1,
-    "review": 1
+    "model": 2,
+    "news": 1,
+    "tool": 1,
+    "sdk": 1,
+    "policy": 1,
+    "retail": 1,
+    "community": 1
   },
   "routing_counts": {
-    "model_catalog_review": 1,
-    "report_card_evidence": 1,
-    "research_news_review": 1
+    "adjacent_radar": 2,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 2,
+    "policy_privacy": 1,
+    "research_news_review": 4,
+    "retail_rebrand_review": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -32,17 +41,59 @@
   ],
   "candidates": [
     {
-      "id": "b3a60bfa4f90940d",
-      "title": "The XREAL 1 Pro+ is now available – hands on review - Pocketables",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVGZzOHBDOE43UjFvVlZPM2NTMUh2c3dMcnB4SGZaU2VHTmtLMXJtWUtKNEdOZWxKaUpqNlRvZzVsaFg5aktJeTJWbDVldlFyV1ZodXdHN09NNEFHekhXSTJKcHdKdEtqa1ZxM21GQ0M1Xzh0NWg4bUh4cThoclBqemQzX2d4TUdhTHBNTW4yTQ?oc=5",
-      "source": "Google News: XREAL glasses",
-      "source_lane": "core_glasses",
-      "published": "Thu, 15 Oct 2026 13:00:00 GMT",
-      "summary": "The XREAL 1 Pro+ is now available – hands on review Pocketables",
-      "materiality_score": 2,
+      "id": "9802352893fefbb3",
+      "title": "Mentra 3.3.0-dev.931",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.931",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-15T19:20:14Z",
+      "summary": "Mentra 3.3.0-dev.931 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 734bbe9 . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "available",
-        "review"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "d1d4aa1dcfed4d20",
+      "title": "Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5",
+      "source": "Google News: smart glasses hands-on",
+      "source_lane": "core_glasses",
+      "published": "Thu, 15 Oct 2026 20:23:00 GMT",
+      "summary": "Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip Technetbook",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "camera",
+        "chip",
+        "launch"
       ],
       "status": "candidate",
       "evidence_class": "secondary",
@@ -51,18 +102,87 @@
       "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "model",
-        "review"
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "report_card_evidence"
+        "model_catalog_review"
       ],
-      "triage_priority": "normal",
+      "triage_priority": "high",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "09f0cecadaf287d5",
+      "title": "Wearable AI Device Security: What Small Businesses Should Do Now - Kenosha.com",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNcllDWnhBX2laZWJGZ0xteWFxVXZEaHBVY1M1ZUZGVEgtTkF2ckdfNnRkWmxPUTNoME4xMDRyT0ZTME9pZHVpV3dlbnBsNTVlLVF4NUpkSWtFdHFkNzlPWXpvTzZRNWh1ZlJLbXpTNVhNSGMxVlpFaXlvYmhONEhXZDdabHFGUVlBZ0ZHMmxuN2wwNl91blE?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Thu, 15 Oct 2026 20:30:09 GMT",
+      "summary": "Wearable AI Device Security: What Small Businesses Should Do Now Kenosha.com",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "ai",
+        "security"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "31df414fd7f083b6",
+      "title": "Amazon Bee AI Wearable Privacy Debate Explained - https://tech-insider.org/",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9qU0NLOTJ1M1Zab2dVZDhKaklMUHlrQlRWaGh6Ulp1OWl1RlBqNzV1eXB2TXlWY01ucGtfNHJYd0VvLThXYl9TMndsck1VcVBweUwwQzFCQzBsWVZWY2YyekF1NUpEdXotQk5KQURjNA?oc=5",
+      "source": "Google News: AI wearable camera",
+      "source_lane": "adjacent_hci",
+      "published": "Thu, 15 Oct 2026 13:59:05 GMT",
+      "summary": "Amazon Bee AI Wearable Privacy Debate Explained https://tech-insider.org/",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "privacy"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy",
+        "retail"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
