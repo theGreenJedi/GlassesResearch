@@ -21,10 +21,10 @@
 ## Current Desk
 
 <div class="gr-newsroom-static-latest-unavailable">
-Latest verified stories require the live newsroom feed. [Browse the full archive](../news/ARCHIVE/).
+Latest verified stories require the live newsroom feed. [Browse the full archive](news/ARCHIVE.md).
 </div>
 
-**Explore:** [Full archive](../news/ARCHIVE/) · [Across the Wire](../FEEDS/#across-the-wire) · [Verified RSS](https://glassesresearch.org/feed.xml) · [Email alerts](../alerts/README/)
+**Explore:** [Full archive](news/ARCHIVE.md) · [Across the Wire](FEEDS.md#across-the-wire) · [Verified RSS](https://glassesresearch.org/feed.xml) · [Email alerts](alerts/README.md)
 
 *Across the Wire is the high-recall discovery stream. Items there are reported or under review and are not verified GlassesResearch claims.*
 
@@ -33,77 +33,77 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 
 ### October 12, 2026 — MentraOS telemetry and hotspot reliability
 
-**Across the Wire · Community-reported · Not GR verified.** SDK telemetry and two hotspot reliability changes, with privacy and physical-device verification outstanding. [Read the attributed technical report](../news/articles/2026-10-12-mentra-telemetry-and-hotspot-reliability/).
+**Across the Wire · Community-reported · Not GR verified.** SDK telemetry and two hotspot reliability changes, with privacy and physical-device verification outstanding. [Read the attributed technical report](news/articles/2026-10-12-mentra-telemetry-and-hotspot-reliability/).
 
 ### October 11, 2026 — MentraOS miniapp update consent and pairing ownership
 
-**Across the Wire · Community-reported · Not GR verified.** Development-branch miniapp update consent and a still-open pairing ownership proposal, including residual-media implications. [Read the attributed technical report](../news/articles/2026-10-11-mentra-miniapp-consent-and-pairing-ownership.md).
+**Across the Wire · Community-reported · Not GR verified.** Development-branch miniapp update consent and a still-open pairing ownership proposal, including residual-media implications. [Read the attributed technical report](news/articles/2026-10-11-mentra-miniapp-consent-and-pairing-ownership.md).
 
 ### October 10, 2026 — MentraOS community engineering findings
 
-**Across the Wire · Community-reported · Not GR verified.** Three upstream investigations cover BLE photo-transfer corruption during audio startup, dark-scene camera exposure timing, and G1 firmware-supported Latin characters. [Read the attributed technical wire report](../news/articles/2026-10-10-mentra-community-firmware-camera-and-g1-findings.md).
+**Across the Wire · Community-reported · Not GR verified.** Three upstream investigations cover BLE photo-transfer corruption during audio startup, dark-scene camera exposure timing, and G1 firmware-supported Latin characters. [Read the attributed technical wire report](news/articles/2026-10-10-mentra-community-firmware-camera-and-g1-findings.md).
 
 
 
 ### September 24, 2026 — INMO Air3 recalled for overheating hazard
 
-Canonical coverage: [verified CPSC recall note](../news/articles/2026-09-24-inmo-air3-cpsc-recall.md). The official remedy is a V3.16 system update; GlassesResearch is preserving pre-/post-update thermal and performance behavior as a testing target without assuming what the firmware changes.
+Canonical coverage: [verified CPSC recall note](news/articles/2026-09-24-inmo-air3-cpsc-recall.md). The official remedy is a V3.16 system update; GlassesResearch is preserving pre-/post-update thermal and performance behavior as a testing target without assuming what the firmware changes.
 
 
 ### September 23, 2026 — Meta announces camera-free Ray-Ban Meta Audio
 
-**Across the Wire · Reported.** Meta and EssilorLuxottica's camera-free AI-glasses announcement is a first-class taxonomy signal: camera presence is becoming a deliberate architecture choice rather than an assumed capability. [Read the evidence-bounded wire note](../news/articles/2026-09-23-meta-ray-ban-audio-camera-free.md).
+**Across the Wire · Reported.** Meta and EssilorLuxottica's camera-free AI-glasses announcement is a first-class taxonomy signal: camera presence is becoming a deliberate architecture choice rather than an assumed capability. [Read the evidence-bounded wire note](news/articles/2026-09-23-meta-ray-ban-audio-camera-free.md).
 
 ### September 23, 2026 — Meta externalizes compute in new VR-glasses architecture
 
-**Across the Wire · Reported.** GlassesResearch is tracking this as wearable-computing architecture rather than broadening the smart-glasses catalog into VR: moving substantial compute off the face changes the weight, thermal, battery and serviceability boundary. [Read the architecture wire note](../news/articles/2026-09-23-meta-vr-glasses-external-compute.md).
+**Across the Wire · Reported.** GlassesResearch is tracking this as wearable-computing architecture rather than broadening the smart-glasses catalog into VR: moving substantial compute off the face changes the weight, thermal, battery and serviceability boundary. [Read the architecture wire note](news/articles/2026-09-23-meta-vr-glasses-external-compute.md).
 
 
 ### September 19, 2026 — You bought the glasses. Can you repair them?
 
-Canonical coverage: [published editorial](../news/articles/2026-09-19-right-to-repair-smart-glasses.md). The Acme Revival allegations remain unadjudicated; the editorial uses the dispute to examine repairability, software-controlled servicing, and whether ownership survives hardware failure.
+Canonical coverage: [published editorial](news/articles/2026-09-19-right-to-repair-smart-glasses.md). The Acme Revival allegations remain unadjudicated; the editorial uses the dispute to examine repairability, software-controlled servicing, and whether ownership survives hardware failure.
 
 ### September 13, 2026 — Viral fake Tube notices turn smart-glasses privacy backlash into public shaming
 
-Canonical coverage: [published article](../news/articles/2026-09-13-london-underground-smart-glasses-backlash.md). Campaign provenance and online spread are corroborated; the notices are treated as spoof material rather than official Transport for London messaging, and GlassesResearch is watching for any first-party TfL response.
+Canonical coverage: [published article](news/articles/2026-09-13-london-underground-smart-glasses-backlash.md). Campaign provenance and online spread are corroborated; the notices are treated as spoof material rather than official Transport for London messaging, and GlassesResearch is watching for any first-party TfL response.
 
 ### September 3, 2026 — HTC VIVE Eagle reaches U.S. retail availability
 
 <!-- newsroom-package: GRNP-D7A34C36E3E6 -->
 
-Canonical coverage: [verified article](../news/articles/2026-09-03-vive-eagle-us-availability.md).
+Canonical coverage: [verified article](news/articles/2026-09-03-vive-eagle-us-availability.md).
 
 ### August 28, 2026 — Meta closes the mid-recording capture-LED bypass
 
-Canonical coverage: [verified article](../news/articles/2026-08-28-meta-capture-led-recording-fix.md).
+Canonical coverage: [verified article](news/articles/2026-08-28-meta-capture-led-recording-fix.md).
 
 ### July 14, 2026 — New York courts prohibit recording-capable smart glasses in UCS facilities
 
-Canonical coverage: [verified article](../news/articles/2026-07-14-new-york-courts-smart-glasses-policy.md).
+Canonical coverage: [verified article](news/articles/2026-07-14-new-york-courts-smart-glasses-policy.md).
 
 ### August 24, 2026 — Meta Adventurer enters the canonical catalog as GLS-0165
 
-Canonical coverage: [verified article](../news/articles/2026-08-24-meta-adventurer-gls-0165.md) · [model page](https://glassesresearch.org/models/catalog/gls-0165/).
+Canonical coverage: [verified article](news/articles/2026-08-24-meta-adventurer-gls-0165.md) · [model page](https://glassesresearch.org/models/catalog/gls-0165/).
 
 ### August 24, 2026 — Nautica / Lucyd Corsair enters the canonical catalog as GLS-0164
 
-Canonical coverage: [verified article](../news/articles/2026-08-24-nautica-lucyd-corsair-gls-0164.md) · [model page](https://glassesresearch.org/models/catalog/gls-0164/).
+Canonical coverage: [verified article](news/articles/2026-08-24-nautica-lucyd-corsair-gls-0164.md) · [model page](https://glassesresearch.org/models/catalog/gls-0164/).
 
 ### August 24, 2026 — What WIRED's guide reveals that specification sheets miss
 
-Canonical coverage: [verified synthesis](../news/articles/2026-08-24-wired-smart-glasses-testing-lessons.md).
+Canonical coverage: [verified synthesis](news/articles/2026-08-24-wired-smart-glasses-testing-lessons.md).
 
 ### August 21, 2026 — RayNeo announces iO, GT and GT Max for September 4
 
-Canonical coverage: [verified article](../news/articles/2026-08-21-rayneo-io-gt-series.md).
+Canonical coverage: [verified article](news/articles/2026-08-21-rayneo-io-gt-series.md).
 
 ### August 18, 2026 — MemoMind One enters the canonical catalog as GLS-0160
 
-Canonical coverage: [verified article](../news/articles/2026-08-18-memomind-one-gls-0160.md) · [model page](https://glassesresearch.org/models/catalog/gls-0160/).
+Canonical coverage: [verified article](news/articles/2026-08-18-memomind-one-gls-0160.md) · [model page](https://glassesresearch.org/models/catalog/gls-0160/).
 
 ### August 17, 2026 — Lucyd Armor enters the canonical catalog as GLS-0159
 
-Canonical coverage: [verified article](../news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [model page](https://glassesresearch.org/models/catalog/gls-0159/).
+Canonical coverage: [verified article](news/articles/2026-08-17-lucyd-armor-gls-0159.md) · [model page](https://glassesresearch.org/models/catalog/gls-0159/).
 
 ### August 13, 2026 — CyanBridge v2.1.1 expands HeyCyan/W610 owner-control paths
 
@@ -136,10 +136,10 @@ Continue: [current Halliday model](https://glassesresearch.org/models/catalog/gl
 <details id="verified-research-alerts" open>
 <summary><strong>Follow verified research by email</strong></summary>
 
-Receive only verified, published GlassesResearch work. Follow specific models, brands/lineages, or topics and choose delivery cadence. [How Verified Research Alerts work](../alerts/README/).
+Receive only verified, published GlassesResearch work. Follow specific models, brands/lineages, or topics and choose delivery cadence. [How Verified Research Alerts work](alerts/README.md).
 
 <div class="verified-alerts" data-verified-research-alerts></div>
 
 </details>
 
-Older published developments remain in the **[Research & News Archive](../news/ARCHIVE/)**. The complete fast-moving discovery stream remains available through **[Across the Wire](../FEEDS/#across-the-wire)**.
+Older published developments remain in the **[Research & News Archive](news/ARCHIVE.md)**. The complete fast-moving discovery stream remains available through **[Across the Wire](FEEDS.md#across-the-wire)**.
