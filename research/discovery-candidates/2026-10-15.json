@@ -1,39 +1,45 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-15T10:22:23.362360+00:00",
-  "candidate_count": 45,
-  "classifier_irrelevant_count": 43,
+  "discovered_utc": "2026-10-15T13:32:25.781606+00:00",
+  "candidate_count": 96,
+  "classifier_irrelevant_count": 76,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 2,
-    "broad_web": 38,
-    "developer": 3,
-    "retail": 4
+    "adjacent": 14,
+    "broad_web": 54,
+    "developer": 22,
+    "manufacturer_catalog": 3,
+    "research": 3
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
-    "adjacent": 2,
+    "direct": 3,
+    "enabling": 3,
+    "adjacent": 14,
     "speculative": 0,
-    "irrelevant": 43
+    "irrelevant": 76
   },
   "type_counts": {
     "model": 4,
-    "review": 1,
-    "news": 30,
-    "tool": 2,
-    "sdk": 1,
+    "video": 7,
+    "news": 54,
+    "research": 4,
+    "tool": 26,
+    "sdk": 25,
+    "optics": 3,
     "policy": 2,
-    "retail": 4,
+    "retail": 3,
     "teardown": 1,
-    "community": 3
+    "community": 3,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 2,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
-    "reject_noise": 43,
-    "research_news_review": 2
+    "adjacent_radar": 14,
+    "development_hacking": 6,
+    "model_catalog_review": 3,
+    "reject_noise": 76,
+    "research_news_review": 20,
+    "research_optics": 3,
+    "retail_rebrand_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,17 +53,17 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "70bf3b29544b8289",
-      "title": "Smarter LTL Freight Shipping | FedEx Freight",
-      "url": "https://www.fedexfreight.com/en-us",
-      "summary": "FedEx Freight is 100% focused on LTL shipping. Move fast with a reliable national network, enhanced automation, and dedicated support.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "dd2295caf1f9ae0c",
+      "title": "How to Prep for Your Colonoscopy - SUFLAVE",
+      "url": "https://suflave.com/HowtoPrep",
+      "summary": "SUFLAVE is an osmotic laxative indicated for cleansing of the colon in preparation for colonoscopy in adults. Be sure to tell your doctor about all the medicines you take, including prescription and non-prescription medicines, vitamins, and herbal supplements.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 4,
       "keyword_hits": [
-        "shipping"
+        "prescription"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -65,28 +71,205 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "model"
+        "tool",
+        "sdk",
+        "optics"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f36bebca8d0fdbf3",
+      "title": "SUFLAVE Bowel Prep Instructions - Premier Gastroenterology",
+      "url": "https://www.pgalr.com/site/assets/files/1513/suflave_prep_instructions.pdf",
+      "summary": "*Failure to comply with these instructions may result in a cancellation of your procedure. **You will be given a prescription for the SUFLAVE to take to your pharmacy or the prescription will be sent to your pharmacy for you to pick up.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "tool",
+        "sdk",
+        "optics"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "571409e1c3a6e31a",
+      "title": "SUFLAVE Colonoscopy Prep Instructions | Lee Health",
+      "url": "https://www.leehealth.org/our-services/gastroenterology/gastroenterology-procedures-preparation/instructions-in-english/suflave-colonoscopy-prep-instructions",
+      "summary": "Follow these instructions, not the ones that come with the medicine. Get your SUFLAVE prescription from the pharmacy. If you have trouble getting it, call our office at 239-343-6222. Start eating a low residue diet.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "tool",
+        "sdk",
+        "optics"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56a6e34bd42749f9",
+      "title": "Manufacturer catalog lead: Explore More",
+      "url": "https://www.inmoxr.com/pages/inmo-go3-ai-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.inmoxr.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
         "model_catalog_review",
-        "adjacent_radar"
+        "development_hacking"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1741a27edda1f397",
-      "title": "XNXX.com - Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
-      "url": "https://www.xnxx.net/",
-      "summary": "The xnxx application only works on Android. It cannot work on Apple Iphones because Apple completely bans porn and doesn't allow anything out of their control. This App doesn't require any special permissions and is free of malware and spyware. XNXX has been existing for almost 20 years. We are simply not in the business of messing with our users.",
+      "id": "64a80ee1f28899f5",
+      "title": "Manufacturer catalog lead: inmo halloween sale 2026 save up to 261 on go3 ai glasses",
+      "url": "https://www.inmoxr.com/blogs/news/inmo-halloween-sale-2026-save-up-to-261-on-go3-ai-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.inmoxr.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c998532e0900c3b",
+      "title": "Manufacturer catalog lead: 🎃 Up to $261 Off INMO GO3 & Bundles. Shop Now 🎃 Up to $261 Off INMO GO3 & Bundles. Shop Now",
+      "url": "https://www.inmoxr.com/pages/halloween-sale",
+      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.inmoxr.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4f8ec64e3918f10",
+      "title": "25 Best & Fun Things to Do in Biloxi - The Tourist Checklist",
+      "url": "https://thetouristchecklist.com/things-to-do-in-biloxi/",
+      "summary": "Biloxi is a fun city located on the beautiful Gulf Coast of Mississippi. It offers a mix of history, entertainment, and beautiful beaches. Whether you’re looking to enjoy tasty food, learn about the area’s past, or relax by the sea, Biloxi has something for everyone.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -99,12 +282,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -113,10 +295,447 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "af5ad2c4837fb99e",
-      "title": "The Cure - Index Fórum",
-      "url": "https://forum.index.hu/Article/showArticle?t=9015696",
-      "summary": "Na, lefoglaltam ezt a címet. Indulhat a beszélgetés, de előre közlöm, hogy nem bírom az idiótákat, és nem feltétlenül vagyok barátságos. Ha senki nem ír az is jó. :)) G****",
+      "id": "b2c66c84b29373f7",
+      "title": "Biloxi, Mississippi Travel l Guide: Casinos, Seafood & Things To Do ...",
+      "url": "https://www.coastalmississippi.com/plan/coastal-communities/biloxi/",
+      "summary": "From the Biloxi Lighthouse and seafood museums to live music, gaming, and local festivals, this Coastal Mississippi city offers something for every traveler. What makes Biloxi stand out is its mix of relaxation and excitement.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d51c8a956ec6c4aa",
+      "title": "Cities Nearby Biloxi, Mississippi, United States",
+      "url": "https://www.thecitiesnow.com/united_states/mississippi/biloxi",
+      "summary": "Find five hundred cities near Biloxi, Mississippi, United States from closest to farthest by distance. Distances from Biloxi to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a855daef10554c18",
+      "title": "Cold War Commemorative Ribbon - Medals of America",
+      "url": "https://www.medalsofamerica.com/cold-war-commemorative-ribbon",
+      "summary": "Shop our collection of Cold War Commemorative Ribbon and more here at Medals of America. Your top source of medals, insignia, and apparel",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "14a5b7bd404e9dac",
+      "title": "High-Quality Military Badges & Insignia | Medals of America",
+      "url": "https://www.medalsofamerica.com/badges-and-insignia",
+      "summary": "Medals of America is your resource for the best military badges and insignia for the Navy, Marines, Army, Air Force, and Coast Guard. Whether you’re looking for a shiny new version to wear on your uniform or want to replace the lost military insignias of a parent or relative, you’ll find it here.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aa607518b195d465",
+      "title": "How to Properly Display Military Medals at Home - Medals of America",
+      "url": "https://www.medalsofamerica.com/blog/how-to-properly-display-military-medals-at-home/",
+      "summary": "Discover how to display military medals at home with expert tips on shadow boxes, arrangement, and preservation to honor service and protect your medals.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f89d8af4272da22",
+      "title": "Military Apparel & Clothing | Shirts, Hats, & More | MoA",
+      "url": "https://www.medalsofamerica.com/apparel",
+      "summary": "Shop military apparel featuring shirts, hoodies, outerwear, hats, footwear, women's styles, and accessories designed to honor service and support America's armed forces.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86530a096cb14bb5",
+      "title": "Military Car Emblems & Accessories - Medals of America",
+      "url": "https://www.medalsofamerica.com/military-auto-accessories/auto-accessories/metallic-car-emblems",
+      "summary": "Shop our collection of high quality metallic car emblems and more here at Medals of America. A veteran owned source for military medals, apparel and more.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1544e097d5f3653d",
+      "title": "Military Patches | Army, Navy, Air Force, and Marines | MoA",
+      "url": "https://www.medalsofamerica.com/military-patches",
+      "summary": "Our military patches are ready to select and wear proudly. Show your dedication to the United States with USMC, USAF, Army, Navy, and Coast Guard insignia",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b20c00136324468",
+      "title": "Military Service Awards & Apparel | Medals of America",
+      "url": "https://www.medalsofamerica.com/",
+      "summary": "Discover the largest selection of authentic military service awards, apparel, gear, and accessories. From t-shirts to hats to clothing to ribbons and shadow boxes, Medals of America has you covered! Satisfaction Guaranteed!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b9316870f010a22",
+      "title": "REQUEST A CATALOG - Medals of America",
+      "url": "https://www.medalsofamerica.com/catalog_signup",
+      "summary": "Medals of America Medals of America catalogs feature our new products and exclusive designs. When you request a catalog, you'll also receive advance notice of sales and the latest news from MOA",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "455a14e94e66d991",
+      "title": "The 12 Best Things To Do In Biloxi, Mississippi - Southern Living",
+      "url": "https://www.southernliving.com/travel/mississippi/biloxi-ms",
+      "summary": "Biloxi, Mississippi, is a Gulf Coast town with an abundance of local seafood, casinos, and coastal activities. Learn about the shrimping and seafood industry at the maritime museum or on a boat excursion.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "019bfb9b9ee47a61",
+      "title": "U.S. Army Insignia & Badges - Medals of America",
+      "url": "https://www.medalsofamerica.com/badges-and-insignia/army-badges-and-insignia/army-insignia",
+      "summary": "Shop U.S. Army insignia and badges crafted to military standards. Perfect for uniform wear, replacement, or display.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "270de1a223c35a11",
+      "title": "U.S. Military Medals Created During WWII - Medals of America",
+      "url": "https://www.medalsofamerica.com/blog/u-s-military-medals-created-during-wwii/",
+      "summary": "Many medals were created during and after World War II to honor the service of those who participated in the global war. Read about the medals created.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cffaaf0c9b843ba0",
+      "title": "SUFLAVE® (polyethylene glycol 3350, sodium sulfate, potassium chloride ...",
+      "url": "https://suflave.com/",
+      "summary": "The goal of the study was to establish non-inferiority of SUFLAVE to SUPREP Bowel Prep Kit, using a 10% non-inferiority margin. Most common adverse reactions (≥2%) are: nausea, abdominal distension, vomiting, abdominal pain and headache.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c1bff1419c96a2c",
+      "title": "7-Day Forecast 37.7N 122.45W - National Weather Service",
+      "url": "https://www.weather.gov/94016",
+      "summary": "Lat: 37.77056°N Lon: 122.42694°W Elev: 150.0ft. Mostly clear, with a low around 51. Light west southwest wind. Sunny, with a high near 80. East northeast wind 6 to 9 mph becoming northwest in the afternoon. Mostly clear, with a low around 57. West wind 5 to 10 mph becoming east after midnight. Sunny, with a high near 81.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -132,8 +751,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -145,47 +763,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e02a16dca5ce04c",
-      "title": "Unemployment spiked for Black men in January as more joined the ... - CNBC",
-      "url": "https://www.cnbc.com/2025/02/07/unemployment-spiked-for-black-men-in-january-as-more-joined-the-labor-force.html",
-      "summary": "Unemployment among Black men surged in January as the number of those looking for work increased, according to data released Friday by the Department of Labor. In January, Black workers...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "0bc1c1cafab548f4",
+      "title": "Google Account",
+      "url": "https://myaccount.google.com/intro/personal-info",
+      "summary": "To edit the info that you use on Google services, like your name and photo, sign in to your account. You can also choose what personal info to show when you interact with others on Google services.",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c37165f8661ec00",
-      "title": "13 Best Things To Do in Jasper National Park - U.S. News Travel",
-      "url": "https://travel.usnews.com/Jasper_National_Park/Things_To_Do/",
-      "summary": "Ranking of the top 13 things to do in Jasper National Park. Travelers favorites include #1 Maligne Lake, #2 Jasper SkyTram and more.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -195,9 +781,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "retail",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -207,15 +794,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e012f6313a227794",
-      "title": "20 STUNNING Jasper Hikes You Shouldn't Miss - The Banff Blog",
-      "url": "https://thebanffblog.com/jasper-hikes/",
-      "summary": "A hike in Jasper is a must-do when you visit Jasper National Park. Jasper is a real gem in the Canadian Rockies and sees a fraction of the crowds of Banff National Park. Here you can find quieter trails and a chance to cross paths with wildlife such as moose, bears, or caribou.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "id": "127b9df2e7fe9a4d",
+      "title": "How to Prepare for Your Colonoscopy using Suflave Prep",
+      "url": "https://www.hcfdh.com/storage/app/media/suflave-prep.pdf",
+      "summary": "How to Prepare for Your Colonoscopy using Suflave Prep A colonoscopy is an exam of your colon (large intestine). Your doctor will use a colonoscope (flexible tube with a camera at the end) to see the inside of your colon on a video monitor. During your procedure, your doctor can:",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -225,9 +812,12 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "video",
+        "tool",
+        "sdk",
+        "teardown"
       ],
-      "primary_type": "retail",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -237,12 +827,928 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fc443fb57bca9376",
-      "title": "About – Wanda Joyce Robinson Foundation",
-      "url": "https://wjrfoundation.org/about/",
-      "summary": "The Wanda Joyce Robinson Foundation, Inc. is an independent, non-partisan 501 (c) (3) non-profit organization that fosters partnerships aimed at healing and unifying our community. We welcome a diversity of ideas and experiences in our search for equitable and inclusive solutions to address the impact of parental incarceration on children and youth.",
+      "id": "0a4172dda2657ef4",
+      "title": "How To Take Suflave Colonoscopy Prep - snhhealthcare.com",
+      "url": "https://snhhealthcare.com/how-to-prepare-for-a-suflave-colonoscopy.html",
+      "summary": "Suflave is a split-dose (2-day) regimen for colonoscopy preparation. It requires two doses of liquid in two separate doses, each containing one flavor enhancing packet. A low residue breakfast can be consumed on the day before the colonoscopy, followed by clear liquids up to 2 hours prior.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a90c02ca5e7a1fcf",
+      "title": "San Francisco Bay Area weather forecast – NBC Bay Area",
+      "url": "https://www.nbcbayarea.com/weather/",
+      "summary": "NBC Bay Area meteorologists use microclimate weather to bring you local weather forecasts and radar from San Francisco, Oakland and San Jose.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee3faa0f0731db1e",
+      "title": "San Francisco Bay Area, CA - National Weather Service",
+      "url": "https://www.weather.gov/mtr/",
+      "summary": "Near-critical fire weather conditions are expected in the North and East Bay interior mountains Thursday to Saturday due to offshore winds overnight leading to possible extreme fire behavior and rapid rates of spread.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ffeda2185c666211",
+      "title": "San Francisco Weather Forecast",
+      "url": "https://www.weather-forecast.com/locations/San-Francisco/forecasts/latest",
+      "summary": "San Francisco Weather Forecast. Providing a local hourly San Francisco weather forecast of rain, sun, wind, humidity and temperature. The Long-range 16 day forecast also includes detail for San Francisco weather today.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2dccfd26fbfc449",
+      "title": "San Francisco, CA 10-Day Weather Forecast - Weather Underground",
+      "url": "https://www.wunderground.com/forecast/us/ca/san-francisco",
+      "summary": "Weather Underground provides local & long-range weather forecasts, weatherreports, maps & tropical weather conditions for the San Francisco area.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8463a252014dc8e6",
+      "title": "San Francisco, CA Current Weather - The Weather Network",
+      "url": "https://www.theweathernetwork.com/en/city/us/california/san-francisco/current",
+      "summary": "Get San Francisco, CA current weather report with temperature, feels like, wind, humidity, pressure, UV and more from TheWeatherNetwork.com.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "00c721a1aff83843",
+      "title": "San Francisco, CA Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/san-francisco/94103/hourly-weather-forecast/347629",
+      "summary": "Hourly weather forecast in San Francisco, CA. Check current conditions in San Francisco, CA with radar, hourly, and more.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f2d5a2b1a10aad5",
+      "title": "San Francisco, CA Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/san-francisco/94103/weather-forecast/347629",
+      "summary": "San Francisco, CA Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e450751fac4f73c",
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/",
+      "summary": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use).",
+      "discovery_channel": "developer",
+      "query": "Project Aria developer smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4792c63d5da66923",
+      "title": "Suflave Bowel Prep - Split Dose (2 day) Regimen",
+      "url": "https://normanendo.com/userfiles/file/Suflave%20September%202024.pdf",
+      "summary": "Important: if you experience preparation related symptoms (nausea, bloating or cramping), pause or slow the rate of drinking the additional water until your symptoms diminish.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b17e977869df05ff",
+      "title": "Suflave: Uses, Dosage, Side Effects, Warnings - Drugs.com",
+      "url": "https://www.drugs.com/suflave.html",
+      "summary": "How is Suflave taken? Suflave is administered as a split-dose regimen over two days. The first dose is taken the evening before the colonoscopy, and the second dose is taken the following morning, 5 to 8 hours before the colonoscopy and no sooner than 4 hours after the first dose.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ccd1b77d60036ab1",
+      "title": "Suflave: Uses, Side Effects, Dosage & Reviews - GoodRx",
+      "url": "https://www.goodrx.com/suflave/what-is",
+      "summary": "Suflave is only approved for use in adults, whereas other bowel preps can also be used in children. Suflave works by causing diarrhea, but other side effects can include nausea and vomiting.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1d16c92f2ce9e363",
+      "title": "SUFLAVE® COLONOSCOPY PREP INSTRUCTIONS",
+      "url": "https://www.theportlandclinic.com/wp-content/uploads/2026/04/1189-002-380-C-SUFLAVE-Instructions-04-2026.pdf",
+      "summary": "What if I take diabetes medications? If you are diabetic, take only half of your normal diabetic medication dosage on your prep day and procedure day.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "48450b03d563dac2",
+      "title": "Weather Forecast and Conditions for San Francisco, California - The ...",
+      "url": "https://weather.com/us/california/city/san-francisco/today",
+      "summary": "Today’s and tonight’s San Francisco, California weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "48a73d2e79e874c9",
+      "title": "Weather forecast and conditions for San Francisco, California, United ...",
+      "url": "https://weather.com/en-NA/us/california/city/san-francisco/today",
+      "summary": "Today’s and tonight’s San Francisco, California, United States weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e6ba21afc2c2586",
+      "title": "About Us – Missnellaeu",
+      "url": "https://missnella.eu/pages/about-us",
+      "summary": "About Us When I was young, my favourite colour was blue, light blue. I loved everything about this colour: the sky, the sea, I even made sure my parents would buy me clothes and shoes in light blue. When I founded Miss Nella Kids back in 2015, there was no doubt that the first colour was going to be *drum rolls* LIGHT BLUE (Mermaid Blue). Like many other brilliant things in life and in ...",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c64aab0cad09585e",
+      "title": "B2B products – Missnellaeu",
+      "url": "https://missnella.eu/collections/b2b-products",
+      "summary": "Home B2B products Featured Best Selling Alphabetically, A-Z Alphabetically, Z-A Price, low to high Price, high to low Date, new to old Date, old to new 1 2 3 … 10 1 ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fcf155df28677516",
+      "title": "Book a Free Bridal Stylist Appointment Online | David's Bridal",
+      "url": "https://appointments.davidsbridal.com/appointments/",
+      "summary": "Make a free David's Bridal appointment online. Book anytime to try-on dresses in-store with a personal stylist, get a virtual consultation, or text to chat!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "026614b5bc248d31",
+      "title": "Career Areas - Careers | David's Bridal",
+      "url": "https://jobs.davidsbridal.com/career-areas",
+      "summary": "Corporate Careers Regardless of where you are in your career - from an established professional or someone just starting off, at David’s Bridal we offer you a career path to fit your individual needs. Our corporate headquarters in Conshohocken, PA, a suburb of Philadelphia, is where you’ll find 600+ colleagues ready to collaborate and support you. Our corporate team members are some of the ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0559aa47b36b9e1c",
+      "title": "Careers at United Airlines | United Airlines jobs",
+      "url": "https://careers.united.com/us/en/home",
+      "summary": "From finance to brand and beyond, be part of what makes us United. Join our flight attendants, pilots or operations teams in transforming the travel experience.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses firmware",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a97023ac29900edc",
+      "title": "City Hall Wedding Dresses - David's Bridal",
+      "url": "https://www.davidsbridal.com/brides/wedding-dresses/city-hall-wedding-dresses",
+      "summary": "model size: All sort: best match filter get it fast filter get it fast DB Studio 4.4 (9)",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4212eb764af42a27",
+      "title": "Colecciones – Missnellaeu",
+      "url": "https://missnella.eu/es/collections",
+      "summary": "Leading supplier of kids non toxic peel off nail polish & specially designed children’s nail varnish.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2425906ac419c2c",
+      "title": "Customize your music & podcasts - YouTube Music Help - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/6313542?hl=en",
+      "summary": "You can explore new music and podcasts and customize your listening experience with the YouTube Music app. Learn how to navigate the YouTube Music app and discover new music based on your listening habits.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96f4e17434042df5",
+      "title": "David's Bridal - Pearl by David's",
+      "url": "https://pearl.davidsbridal.com/",
+      "summary": "One powerful platform. Every wedding detail, done. Everything out of your head and off of your list. Pearl Planner creates your personalized, AI-powered dashboard and timeline so you can plan smarter, stress less, and celebrate more. All for free.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d61d6e8460dc5729",
+      "title": "David's Bridal Jobs - Find Your Career - Careers | David's Bridal",
+      "url": "https://jobs.davidsbridal.com/",
+      "summary": "Find out about David's Bridal Careers in the US with opportunities in product design, marketing, technology and more. Join Our Team!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "785a83cdb6a84689",
+      "title": "Do I Charge Sales Tax to Out-of-State Customers?",
+      "url": "https://salestaxstate.com/do-i-charge-sales-tax-to-out-of-state-customers/",
+      "summary": "This comprehensive guide is here to untangle that confusion, walking you through the critical concept of sales tax nexus and explaining exactly when, why, and how you might need to collect sales tax from your out-of-state customers.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d80c6d03889ae0b",
+      "title": "Dressy Pants Suits and Jumpsuits | David's Bridal",
+      "url": "https://www.davidsbridal.com/dresses/jumpsuits-pantsuits",
+      "summary": "Searching for the perfect jumpsuit, pantsuit or romper for your for your next special event? David's Bridal has the right styles to find the perfect dre...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aabd399ce28049ef",
+      "title": "Empfehlungen und Suchergebnisse verwalten - YouTube-Hilfe",
+      "url": "https://support.google.com/youtube/answer/6342839?hl=de",
+      "summary": "Empfehlungen optimieren Du kannst die Empfehlungen unter anderem beeinflussen, indem du sie an deine Interessen anpasst. Wenn du uns zum Beispiel mitteilst, dass ein Video auf deinem Startseitenfeed für dich nicht interessant ist, hilft uns das, die empfohlenen Videos auf YouTube künftig besser auf dich zuzuschneiden.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8dfdd62414f7f91c",
+      "title": "Excise tax - Internal Revenue Service",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/excise-tax",
+      "summary": "Individuals may be responsible for paying the tax and filing an excise tax return if they purchased sport fishing and archery equipment from outside of the United States, including through online purchases directly from foreign manufacturers or sellers.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a4cbcc74a8819b5e",
+      "title": "Federal Excise Tax on Trucks | 1-800Accountant",
+      "url": "https://1800accountant.com/blog/trucker-taxes-excise-tax",
+      "summary": "When and how do truckers have to pay federal excise taxes (FET)? Find out everything you need to know for both truck drivers and sellers.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "960ff0c9b8161366",
+      "title": "FET and Sales Tax — mibuso.com",
+      "url": "https://forum.mibuso.com/discussion/78108/fet-and-sales-tax",
+      "summary": "Not a tax expert, but my hunch is that you will need 2 Tax Areas: Both will include the FET Tax Jurisdiction.... And 1 will also include a local tax, and the other won't.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -267,12 +1773,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "364e2fa64e656703",
-      "title": "African American unemployment rate U.S. 2025 | Statista",
-      "url": "https://www.statista.com/statistics/194151/unemployment-rate-of-african-americans-in-the-us-since-1990/",
-      "summary": "In 2025, the unemployment rate of African Americans in the United States stood at 6.9 percent. This was over the national average of 4 percent.",
+      "id": "0860e5ba07132121",
+      "title": "Flight Changes | United Airlines",
+      "url": "https://www.united.com/en/us/fly/travel/trip-planning/flight-change.html",
+      "summary": "Adjust your travel plans all the way up to the day of your trip. Learn more about changing or canceling your flight, and flying standby.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "smart glasses firmware",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -297,40 +1803,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3417c0524d0c6354",
-      "title": "All Volkswagen Dealers in Buckeye, AZ 85326 - Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/volkswagen/buckeye-az",
-      "summary": "Find Buckeye Volkswagen Dealers. Search for all Volkswagen dealers in Buckeye, AZ 85326 and view their inventory at Autotrader",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a1613ad4a51579aa",
-      "title": "Apostle, Disciple, Prophet: The Difference Explained - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/apostle-disciple-prophet-the-difference-explained.52204/",
-      "summary": "The office of an apostle ceased with its first holders. In 2 Corinthians 8:23 and Phil 2:25 the word \"messenger\" is the rendering of the same Greek word, elsewhere rendered \"apostle.\" Disciple a scholar, sometimes applied to the followers of John the Baptist ( Matthew 9:14 ), and of the Pharisees ( 22:16 ), but principally to the followers of ...",
+      "id": "11753e2d1e10dbd4",
+      "title": "Formal Dresses - David's Bridal",
+      "url": "https://www.davidsbridal.com/dresses/formal-evening-dresses",
+      "summary": "Find formal dresses & evening gowns from David's Bridal stunning collection of evening dresses & formal wear in elegant colors and styles, all at amazin...",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -357,12 +1833,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8bf221f7f1d6f4cb",
-      "title": "Civilian unemployment rate - U.S. Bureau of Labor Statistics",
-      "url": "https://www.bls.gov/charts/employment-situation/civilian-unemployment-rate.htm",
-      "summary": "Line chart with 8 lines. The chart has 1 X axis displaying categories. The chart has 1 Y axis displaying Percent. Data ranges from 3.4 to 14.8.",
+      "id": "10f8ee929d301455",
+      "title": "Former employee’s complaint spurs EEOC investigation into ...",
+      "url": "https://biztimes.com/former-employees-complaint-spurs-eeoc-investigation-into-northwestern-mutuals-dei-practices/",
+      "summary": "That claim was made by former employee Mark McNulty, who alleges he and other employees were denied employment opportunities because of Northwestern Mutual’s DEI initiatives.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e0d407eef000ea1",
+      "title": "Help Center - United Airlines",
+      "url": "https://www.united.com/en/us/fly/help-center.html",
+      "summary": "United Airlines Help Center provides FAQs and guidance on flights, refunds, credits, baggage policy, MileagePlus, seats/upgrades, and more.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses firmware",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5bc187cf6470c858",
+      "title": "If I pay sales tax, do I need to charge sales tax? - TaxJar",
+      "url": "https://www.taxjar.com/blog/ecommerce-faq-if-i-pay-sales-tax-do-i-need-to-charge-sales-tax",
+      "summary": "In this instance, you are not required to collect sales tax from your buyer, but your buyer is generally required by the state to pay use tax on the purchase. (Whether or not use tax payment is actually enforced by the state is a different story.)",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -387,10 +1923,130 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7581ad26c2c8a586",
-      "title": "Depart from Me, I Never Knew You ~ Meaning of Matthew 7:21-23",
-      "url": "https://www.talkjesus.com/threads/depart-from-me-i-never-knew-you-meaning-of-matthew-7-21-23.49818/",
-      "summary": "Matthew 7:21-23 Not everyone who says to Me, \"Lord, Lord,\" shall enter the kingdom of heaven, but he who does the will of My Father in heaven. Many will say to Me in that day, \"Lord, Lord, have we not prophesied in Your name, cast out demons in Your name, and done many wonders in Your name?\" And then I will declare to them, \"I never knew you; depart from Me, you who practice lawlessness.\"",
+      "id": "d4b25cfcedca4d44",
+      "title": "Join MileagePlus and Earn Miles | United Airlines",
+      "url": "https://www.united.com/en/us/fly/mileageplus.html",
+      "summary": "MileagePlus is the award-winning loyalty program of United Airlines. Join MileagePlus to earn miles you can redeem for flights, upgrades and more.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses firmware",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b58f8ac1cf10d7bc",
+      "title": "Latest news, sport and opinion from the Guardian",
+      "url": "https://www.theguardian.com/",
+      "summary": "Latest US news, world news, sports, business, opinion, analysis and reviews from the Guardian, the world's leading liberal voice",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "87413e378f3347ad",
+      "title": "LAVkids – Missnellaeu",
+      "url": "https://missnella.eu/nl/collections/lavkids-1",
+      "summary": "ABOUT LAV KIDS: KIDS SKINCARE Lav Kids Skincare is dedicated to our beloved friend and colleague, Lavinia Silvasan, who deeply cared for this world and aspired to make it a better place. Though she left us too soon to see her dreams come true, she will forever remain in our hearts.Her dream was to provide safe and gent",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81bc7aee68896862",
+      "title": "Make-up – Missnellaeu",
+      "url": "https://missnella.eu/collections/make-up-1",
+      "summary": "Safe & Non-Toxic Kids' Make-up: Imagination Unleashed! As parents, it’s important to be able to purchase makeup derived from natural sources for your kids. At Miss Nella online, you can find numerous natural, chemical-free products. Our amazing line of moderately priced cosmetics is free of chemicals and alcohol, f",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad7fa192b134484a",
+      "title": "Men's - Tuxedos, Suits, and Accessories - David's Bridal",
+      "url": "https://www.davidsbridal.com/mens/mens-tuxedos-suits-accessories",
+      "summary": "Explore a wide range of tuxedos, suits, and accessories for men at David's Bridal, perfect for any special occasion.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -417,12 +2073,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ece87276359bcf57",
-      "title": "Does paradise still exist? - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/does-paradise-still-exist.63134/",
-      "summary": "'' The Greek word, Euangelion, which means to share the good news (gospel) is not used anywhere in this Passage (1 Pet 3:18-20). The Greek word is Kerusso, which is a more general word and means to make a proclamation.''",
+      "id": "e336bc276b1def0b",
+      "title": "Miss Nella Limited Edition Case - Miss Nella – Missnellaeu",
+      "url": "https://missnella.eu/products/pop-up-case",
+      "summary": "Give your little ones the possibility to express their artistic flair with this Miss Nella Pop-up Case. It’s got all the essentials for a flawless beauty routine while playing dress-up: 9 peel-off kids’ nail polishes 3 XL lip balm 1 Nail Accessories Set that features a pair of toe separators, one nail filler and som",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -447,14 +2103,14 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5cbc97dfe974035d",
-      "title": "E-16. Unemployment rates by age, sex, race, and Hispanic or Latino ...",
-      "url": "https://www.bls.gov/web/empsit/cpsee_e16.htm",
-      "summary": "Data for October 2025 were not collected due to the federal government shutdown; therefore, reliable estimates for the fourth quarter of 2025 could not be produced.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "4f7400ed4f4b930c",
+      "title": "netflix eureka - DiscoveryClient_xxx:111-222:8080 - was unable to ...",
+      "url": "https://stackoverflow.com/questions/44857616/discoveryclient-xxx111-2228080-was-unable-to-refresh-its-cache-status-can",
+      "summary": "DiscoveryClient_xxx:111-222:8080 - was unable to refresh its cache! status = Cannot execute request on any known server : I run a spring cloud application on my localhost.and i register with local...",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
@@ -465,9 +2121,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -477,14 +2133,14 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "518f1beb23835e1c",
-      "title": "Employment Situation News Release - 2025 M01 Results",
-      "url": "https://www.bls.gov/news.release/archives/empsit_02072025.htm",
-      "summary": "Among the major worker groups, the unemployment rates for adult men (3.7 percent), adult women (3.7 percent), teenagers (11.8 percent), Whites (3.5 percent), Blacks (6.2 percent), Asians (3.7 percent), and Hispanics (4.8 percent) showed little or no change in January.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "225ee8ff19b2a8b4",
+      "title": "netflix eureka - Problems spring-cloud-config and spring-cloud-bus ...",
+      "url": "https://stackoverflow.com/questions/37542939/problems-spring-cloud-config-and-spring-cloud-bus",
+      "summary": "I have three applications ,one is spring-cloud-config server point and others are spring-cloud-config client points. I configured spring-cloud-bus in each other to make my client points auto refresh",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
@@ -495,9 +2151,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "research"
       ],
-      "primary_type": "model",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -507,14 +2163,14 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7e4540601f535e83",
-      "title": "How long is the Tribulation period? - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/how-long-is-the-tribulation-period.21104/",
-      "summary": "This 250 day gap, or 8 1/2 months is the time that will be required for the rebuilding of the Jewish Temple in Jerusalem, after the Antichrist confirms the \"covenant.\" We operate under the Gregorian calendar of 365 days per year with a leap day every four years. 365 days time 7 years, plus one leap day totals 2,556 days.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "f6df95d3620ed46b",
+      "title": "Netflix video player in Chrome - how to seek? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42105028/netflix-video-player-in-chrome-how-to-seek",
+      "summary": "I have been unable to figure out how to do a video seek (automatically advance to a certain point in the video) in the Netflix video player running in Chrome. The currentTime property can be read b...",
+      "discovery_channel": "research",
+      "query": "Project Aria smart glasses research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
@@ -525,9 +2181,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video",
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -537,130 +2194,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e3ae10d5efdcc24",
-      "title": "Internet Speed Test",
-      "url": "https://testmy.net/",
-      "summary": "Accurately test your Internet connection speed with this powerful broadband speed test. Improve your bandwidth speed with the truth.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8f2222600a58daee",
-      "title": "Internet Speed test : Test your broadband connection (speedtest ...",
-      "url": "https://www.nperf.com/en/",
-      "summary": "Measure your internet connection's download, upload, latency in seconds. Get detailed performance stats and compare your results worldwide.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "23e2ffe59d168238",
-      "title": "January 2025 Jobs Day Analysis - Joint Center",
-      "url": "https://jointcenter.org/january-2025-jobs-day-analysis/",
-      "summary": "The Joint Center analyzes the employment numbers from the Bureau of Labor Statistics and showcases how the numbers impact Black workers. Our January Jobs Day analysis is below. From December to January, the unemployment rate for Black workers increased from 6.1 percent to 6.2 percent.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "63688885b4fe88dc",
-      "title": "Jasper National Park | (Official GANP Page)",
-      "url": "https://national-parks.org/canada/jasper/",
-      "summary": "Jasper National Park is located in the province of Alberta in western Canada and is the largest national park in the Canadian Rockies. Covering approximately 4,247 square miles (11,000 sq km), Jasper protects a vast wilderness of mountains, glaciers, rivers, forests, and alpine meadows.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a220137d29c6165",
-      "title": "kynonprofit – Wanda Joyce Robinson Foundation",
-      "url": "https://wjrfoundation.org/tag/kynonprofit/",
-      "summary": "Maybe it’s learning something new, starting a new project or the idea of a fresh start. We’ve used the first month of 2024 to learn, grow and advocate for our youth and families.",
+      "id": "476341eaf15eaaf3",
+      "title": "NewsBreak: Local News & Alerts",
+      "url": "https://www.newsbreak.com/",
+      "summary": "NewsBreak is the best local source for news, videos, weather, traffic, safety, sports, business, and more.",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -687,10 +2224,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9a77ca1dc2f2d2a6",
-      "title": "Marriage in the days of Jesus | Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/marriage-in-the-days-of-jesus.80003/",
-      "summary": "Betrothal and Wedding Customs at the Time of Christ When I read the story of Mary and how she was expecting to bear Jesus, while she was betrothed to Joseph, I am always interested in the customs of the day. Here is an overview of the betrothal and wedding customs at the time Jesus was born. Stage 1- Betrothal Betrothal was what we would consider an “engagement” today. The first stage of ...",
+      "id": "9822dc537366acae",
+      "title": "NJ vs NY Car Sales Tax: Where Do You Pay? | 2026",
+      "url": "https://drivelocal.vipautomotivegroup.com/tips/do-i-pay-nj-or-ny-sales-tax-if-i-live-in-ny-and-buy-in-nj/",
+      "summary": "The tax question is real but straightforward: you pay the tax rate of the state where the vehicle will be primarily garaged and registered, not necessarily where it was purchased.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a1b524c1069ee13",
+      "title": "Northwestern Mutual Sold College Grads a Dream Job. They Left ...",
+      "url": "https://fromthegman.net/2025/11/24/northwestern-mutual-sold-college-grads-a-dream-job-they-left-in-ruin-and-debt/",
+      "summary": "The Guardian: Expecting to be financial advisers at the Fortune 500 firm, some hires say they were ‘gaslit’ into peddling ‘terrible’ life insurance to all their contacts.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0dedf5fe8f8648aa",
+      "title": "Plus-Size Wedding Dresses - David's Bridal",
+      "url": "https://www.davidsbridal.com/brides/plus-wedding-dresses",
+      "summary": "Shop your style with plus size bridal gowns Browse dresses by silhouette, style, and color to find a plus size wedding dress that effortlessly matches your vision. Keep it classic with A-line and sheath dresses, or go for a dramatic fit in one of our mermaid wedding dresses or elegant ball gowns. When you feel like shaking up the traditional style, bridal separates and wedding jumpsuits give ...",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -717,12 +2314,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9c9531666dce1520",
-      "title": "New Home for Wanda J – Wanda Joyce Robinson Foundation",
-      "url": "https://wjrfoundation.org/new-home-for-wanda-j/",
-      "summary": "This Spring, the Wanda Joyce Robinson Foundation will set up offices inside the Thorn Hill Education Center, a community center focused on adult education and community. The center has existed in Frankfort for decades, offering adult education, English language classes, corrections education, workplace development, career and college navigation and much more.",
+      "id": "8d50efdd6c06efff",
+      "title": "Report: Northwestern Mutual former, current workers ... - MSN",
+      "url": "https://www.msn.com/en-us/money/other/report-northwestern-mutual-former-current-workers-criticize-company/ar-AA1RdMpe",
+      "summary": "The Guardian, a newspaper based in Great Britain, reported talking to 21 current and former Northwestern Mutual workers, and to five people who interviewed with the company but didn't take...",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -735,10 +2332,159 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "teardown",
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d86e78a053d9534",
+      "title": "Report: Northwestern Mutual former, current workers criticize ...",
+      "url": "https://bluewaterhealthyliving.com/news/national-news/wisconsin/report-northwestern-mutual-former-current-workers-criticize-company/",
+      "summary": "The Guardian, a newspaper based in Great Britain, reported talking to 21 current and former Northwestern Mutual workers, and to five people who interviewed with the company but didn’t take a job.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80b7fec4bcd489a5",
+      "title": "Sales Tax Information | NY DMV",
+      "url": "https://dmv.ny.gov/registration/sales-tax-information",
+      "summary": "Pay vehicle sales tax, prove the sales tax was paid or prove that a vehicle registration is exempt from sales tax.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7bcf5e035da4fe20",
+      "title": "Sign in to Your United MileagePlus Account - United Airlines",
+      "url": "https://www.united.com/en/us/united-mileageplus-signin",
+      "summary": "Sign in to your MileagePlus account on the official website of United Airlines.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses firmware",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "873ae79211dd58a4",
+      "title": "Tax Services for Trucking Equipment — An Excise and Sales Tax Guide",
+      "url": "https://www.transportationtaxconsulting.com/tax-services-for-trucking-equipment-an-excise-and-sales-tax-guide",
+      "summary": "This guide focuses on two of the most commonly confused areas when buying, leasing, or maintaining equipment: federal excise tax (FET) and state/local sales and use tax.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "52b9fcdefc350c79",
+      "title": "The Guardian: ‘Friends end up blocking you’: Northwestern ...",
+      "url": "https://www.insurance-forums.com/community/threads/the-guardian-%E2%80%98friends-end-up-blocking-you%E2%80%99-northwestern-mutual-sold-college-grads-a-dream-job-they-left-in-ruin-and-debt.116714/",
+      "summary": "\"I don't believe they're recruiting people to succeed in a career,\" says David*, a Northwestern adviser of 15 years. He thinks they are instead using young students and graduates to get new sales leads: \"It's gathering immense data and not paying for it.\"",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
         "community"
       ],
-      "primary_type": "teardown",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -748,12 +2494,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2609314b6f6768ee",
-      "title": "New Year. Same Goal. – Wanda Joyce Robinson Foundation",
-      "url": "https://wjrfoundation.org/new-year-same-goal/",
-      "summary": "Looking forward … the new year is a time to refocus and set goals. We recently reviewed our mission, vision and core values to make sure we are doing the work to reflect the goals we have in place.",
+      "id": "37ceef1c9757e10d",
+      "title": "Trade Bundles – Missnellaeu",
+      "url": "https://missnella.eu/collections/trade-bundles",
+      "summary": "Join over 5,000 people who get free and fresh content delivered automatically each time we publish!",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -778,12 +2524,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "575aca80469a6c64",
-      "title": "News – Wanda Joyce Robinson Foundation",
-      "url": "https://wjrfoundation.org/news/",
-      "summary": "Home News News",
+      "id": "300f0ac6084e6a25",
+      "title": "Trucking Companies Overpay Sales Tax on Exempt Equipment",
+      "url": "https://www.transportationtaxconsulting.com/many-trucking-companies-overpay-sales-tax-on-equipment-purchases-that-could-be-exempt-under-excise-tax-rules",
+      "summary": "While the excise tax has its own set of rules and exemptions, many states mirror those exemptions in their sales and use tax laws. That means if a vehicle or piece of equipment qualifies for FET exemption, it may also be exempt from state sales tax.",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -808,12 +2554,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "22aa2b03efc4ea07",
-      "title": "Opening the bible at random... - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/opening-the-bible-at-random.37556/",
-      "summary": "As of late each day I'll pray and then have an extended period of quiet time to try and hear what God has to say to me at the moment. After the quiet period I'll also invite God to speak into my life through His word and open the Bible to a random page to see if anything relevant to my life...",
+      "id": "b5d419d1cad45d03",
+      "title": "United Airlines - Flight Check In",
+      "url": "https://www.united.com/en/us/checkin",
+      "summary": "Check in for your United or United Express-operated flight, depending on where you are in your travel experience.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "smart glasses firmware",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -838,42 +2584,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d6aab3671e43c6f4",
-      "title": "Plan your visit - Jasper National Park - Parks Canada",
-      "url": "https://parks.canada.ca/pn-np/ab/jasper/visit.aspx",
-      "summary": "Spanning over 11,000 square kilometres, Jasper is the largest national park in the Canadian Rockies. Known for its vast wilderness, majestic peaks, abundant wildlife and outstanding natural beauty, visitors from all over Canada and round the world travel here to experience this very special place.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "522e4308c1e8999a",
-      "title": "Psalm 119:105 Meaning - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/psalm-119-105-meaning.47976/",
-      "summary": "Psalm 119:105 Thy word is a lamp unto my feet, and a light unto my path. The authorship of this chapter in Psalms is unknown. Nevertheless, the author of our verse seems to have understood that the journey itself is as important as the destination. Before we explore this verse in depth it is...",
+      "id": "441c7530e91229e7",
+      "title": "United Airlines - Rewards for Businesses",
+      "url": "https://unitedperksplus.united.com/",
+      "summary": "Discover United PerksPlus SM Welcome to United PerksPlus, a complimentary corporate program designed to reward small- and mid-sized enterprises for business travel on United®, United Express®, All Nippon Airways (ANA), Austrian Airlines, Brussels Airlines, Eurowings, Eurowings Discover, Lufthansa and Swiss International Air Lines.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "smart glasses firmware",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -898,12 +2614,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0b29b51bceccc3f3",
-      "title": "Seeing 11:11 and it's Meaning in the Bible - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/seeing-11-11-and-its-meaning-in-the-bible.35456/",
-      "summary": "Seeing 11:11 and it's Meaning in the Bible I am wondering if anyone here has been seeing 11:11 everywhere. I was several months ago. I prayed about it and asked G-d that if it was not of Him, to take it away. Well, needless to say, it persisted I couldn't figure it out, and started ignoring it...",
+      "id": "c3d01ae02580af3e",
+      "title": "Upcoming Movies 2026 | List of Movies Releasing This Friday - BookMyShow",
+      "url": "https://in.bookmyshow.com/explore/upcoming-movies",
+      "summary": "Looking for upcoming movies in theatres has never been as easy as it is with Bookmyshow! Check out our upcoming movies calendar to block your dates to watch the most anticipated movies releasing soon.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -916,9 +2632,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -928,42 +2644,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2db3f0b5fda3839d",
-      "title": "Seven. ( God's lucky number ? ) - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/seven-gods-lucky-number.19543/",
-      "summary": "The seven-day week is the only time measurement that cannot be detected by natural means. The length of a day is obvious from sunset to sunset, a month from new moon to new moon, a year from spring to spring, but the 7-day week exists only because it was revealed by God to humanity, according to His Will.",
+      "id": "007a17e188576d31",
+      "title": "Upcoming Movies 2026 — New Releases This Week | District",
+      "url": "https://www.district.in/movies/upcoming-movies",
+      "summary": "New movies releasing this week and beyond — release dates, trailers, cast and pre-booking for 2026's biggest films. The complete upcoming-movies calendar on District.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d6db55830a439914",
-      "title": "Sign in to your account - techcommunity.microsoft.com",
-      "url": "https://techcommunity.microsoft.com/blog/exchange/high-volume-email-reaches-general-availability-in-exchange-online/4507353",
-      "summary": "High Volume Email reached GA! Trying to sign you in",
-      "discovery_channel": "broad_web+developer",
-      "query": "ThinkAR AiLENS; ActiveLook API BLE",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -988,10 +2674,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bc7fe20b0e826cdc",
-      "title": "Test - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Test",
-      "summary": "Test Look up test, testing, Test, or TEST in Wiktionary, the free dictionary. Test (s), testing, or TEST most often refers to: Test (assessment), an educational assessment intended to measure the respondents' knowledge or other abilities Test (s), testing, or TEST may also refer to:",
+      "id": "8c4805f620bf1411",
+      "title": "Upcoming Streaming Movies - IMDb",
+      "url": "https://www.imdb.com/list/ls083888295/",
+      "summary": "Lieutenant Troy Brennan's reconnaissance mission over Soviet territory goes awry, forcing him to crash-land and survive in Russian wilderness while evading capture or rescue. 3. Unabomber. A Harvard student becomes the Unabomber after psychological experiments.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e8202f423a9aaa5",
+      "title": "Use Tax for Businesses",
+      "url": "https://www.tax.ny.gov/pubs_and_bulls/tg_bulletins/st/use_tax_for_businesses.htm",
+      "summary": "In most instances, when you purchase a taxable item or service in the state, or if it is delivered to you in the state, the seller will collect sales tax from you. The seller then pays the tax over to the Tax Department.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a24c25171d001fff",
+      "title": "Verify it’s you when you complete a sensitive action",
+      "url": "https://support.google.com/accounts/answer/7162782?hl=en&co=GENIE.Platform%3DAndroid",
+      "summary": "This happens if Google can’t verify your identity. In the 7 day period: You can still use and access your account but you won’t be allowed to update any sensitive information or complete sensitive actions unless you verify it’s you. After the 7 day period: You can access the relevant sensitive action even without the verification.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1006,9 +2752,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1018,370 +2764,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6d6ad17eea56abe1",
-      "title": "TEST Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/test",
-      "summary": "The meaning of TEST is a means of testing. How to use test in a sentence.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "92ada6b9c99c1382",
-      "title": "To the Class of 2026 – Wanda Joyce Robinson Foundation",
-      "url": "https://wjrfoundation.org/to-the-class-of-2026/",
-      "summary": "Since 2019, Wanda J has awarded 24 seniors (including five new this year) the Adam Hyatt Memorial Scholarship. This scholarship is renewable for up to three additional years and is awarded to graduating seniors who overcame obstacles that weren’t always theirs to face and who persevered to accomplish their goals.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e9faf9a0147e818b",
-      "title": "Unemployment Rate - Black or African American - FRED",
-      "url": "https://fred.stlouisfed.org/series/LNS14000006",
-      "summary": "Graph and download economic data for Unemployment Rate - Black or African American (LNS14000006) from Jan 1972 to Sep 2026 about African-American, 16 years +, household survey, unemployment, rate, and USA.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2ab4c102a613defa",
-      "title": "Unemployment Rate - Black or African American | FRED | St. Louis Fed",
-      "url": "https://fred.stlouisfed.org/graph/?g=kipe",
-      "summary": "Graph and download economic data for Unemployment Rate - Black or African American from Jan 1954 to Sep 2026 about African-American, 16 years +, household survey, unemployment, rate, USA, white, asian, latino, and hispanic.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afe35c6fde8bdabe",
-      "title": "Unemployment rate by race ethnicity U.S. 2025 | Statista",
-      "url": "https://www.statista.com/statistics/237917/us-unemployment-rate-by-race-and-ethnicity/",
-      "summary": "In 2025, 6.9 percent of the Black or African-American population in the United States were unemployed, the highest unemployment rate of any ethnicity.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2390ede29f7352f",
-      "title": "US Unemployment Rate: Black or African American (Monthly ... - YCharts",
-      "url": "https://ycharts.com/indicators/us_unemployment_rate_black_or_african_american",
-      "summary": "US Unemployment Rate: Black or African American is at 7.00%, compared to 6.00% last month and 7.60% last year. This is lower than the long term average of 11.26%.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2b16e4b950f017e",
-      "title": "Verify your age for a Microsoft account. | Microsoft Support",
-      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/verify-your-age-microsoft-account",
-      "summary": "Microsoft is introducing age assurance to help provide age-appropriate experiences and meet local legal requirements. To access some features, you may need to verify your age.",
-      "discovery_channel": "broad_web+developer",
-      "query": "ThinkAR AiLENS; ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba3d2ac31377b879",
-      "title": "vindicate Definition & Meaning - Dictionary.net",
-      "url": "https://www.dictionary.net/dictionary/vindicate",
-      "summary": "To vindicate someone means to free them from blame or suspicion, often by proving they are right or justified. Yes, vindicate can be used in legal contexts to refer to the act of defending rights or proving innocence. Indeed, vindicate can also imply personal affirmation or proving one's self-worth.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a900292298d9f88f",
-      "title": "VINDICATE Definition & Meaning | Dictionary.com",
-      "url": "https://www.dictionary.com/browse/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20vindicate",
-      "summary": "Vindicate means to justify, prove, or reinforce an idea — or to absolve from guilt. If your family thinks you hogged the last piece of pie on Thanksgiving, you'll be vindicated when your younger brother fesses up.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "93dc559b290e47a4",
-      "title": "Volkswagen Dealer near Buckeye AZ | Lunde’s Peoria Volkswagen",
-      "url": "https://www.peoriavw.com/volkswagen-dealer-near-buckeye-az.html",
-      "summary": "At our Buckeye, AZ, Volkswagen dealer, we pride ourselves on offering a diverse lineup of new Volkswagen models to suit every lifestyle. From the stylish Volkswagen Jetta to the versatile Volkswagen Tiguan and the innovative VW ID.4 EV SUV, our inventory is designed to meet your unique needs.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1a307a0c3cce7c87",
-      "title": "Volkswagen Dealers in Buckeye, AZ | Cars.com",
-      "url": "https://www.cars.com/dealers/buy/volkswagen/buckeye-az/",
-      "summary": "Search Volkswagen dealerships in Buckeye, AZ, read dealer reviews, view inventory, find contact information or contact a dealer directly on Cars.com.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d1d60340efd819f",
-      "title": "Wanda Joyce Robinson Foundation – Serving children and youth ...",
-      "url": "https://wjrfoundation.org/",
-      "summary": "Our mission is to create and invest in relationships that strengthen the lives of children, youth and families impacted by incarceration",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d78a9020b892b2c",
-      "title": "Wesley's failed marriage - Talk Jesus",
-      "url": "https://www.talkjesus.com/threads/wesleys-failed-marriage.45383/",
-      "summary": "John Wesley’s Failed Marriage You can lose your ministry and keep your marriage, but you cannot lose your marriage and keep your ministry Due to her husband’s constant travels, Molly felt increasingly neglected. She grew jealous of her husband’s time since he was often away. And she became...",
+      "id": "3f27bd5d78612fa8",
+      "title": "Wedding Dresses, Bridesmaids & Prom Starting at $69.95 | David's Bridal",
+      "url": "https://www.davidsbridal.com/",
+      "summary": "Shop wedding gowns, bridesmaid dresses and formals at David's Bridal. Find dresses and accessories for any special occasion at amazing prices.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1399,6 +2785,218 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8787a5198d22326e",
+      "title": "Where Does United Fly? United Airlines Interactive Route Map",
+      "url": "https://www.united.com/en/us/destination-map",
+      "summary": "Where does United fly? Use our interactive route map, select your trip type, and our budget filters on United Explore to find the perfect flight.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses firmware",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7534da84f8e6fb17",
+      "title": "YouTube - Reddit",
+      "url": "https://www.reddit.com/r/youtube/top/?t=all",
+      "summary": "r/youtube: r/YouTube is for discussion about YouTube. This is a fan sub, not run or owned by YouTube! Please read the rules…",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4ff78f42c731cad6",
+      "title": "‘Friends end up blocking you’: Northwestern Mutual sold ...",
+      "url": "https://www.theguardian.com/business/2025/nov/24/northwestern-mutual-insurance-jobs-hiring",
+      "summary": "The Guardian spoke with 21 current and former Northwestern workers (plus five who interviewed to be and didn’t end up taking the role) across nine states, who told strikingly similar stories.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a075d8793f478dff",
+      "title": "‘Friends end up blocking you’: Northwestern Mutual sold ...",
+      "url": "https://article.wn.com/view/2025/11/24/Friends_end_up_blocking_you_Northwestern_Mutual_sold_college_s/",
+      "summary": "‘Friends end up blocking you’: Northwestern Mutual sold college grads a dream job. They left ... Expecting to be financial advisers at the Fortune 500 firm, some hires say they were ‘gaslit’ into peddling ‘terrible’ life insurance to all their contacts... read full story.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "49831e69dd94e52a",
+      "title": "‘Friends end up blocking you’: Northwestern Mutual sold ...",
+      "url": "https://article.wn.com/view/2025/11/24/Friends_end_up_blocking_you_Northwestern_Mutual_sold_college/",
+      "summary": "Northwestern Mutual likes to think of itself as a storied American institution offering specialized financial advice.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1556073a81a75ef1",
+      "title": "‘Friends end up blocking you’: Northweste­rn Mutual sold ...",
+      "url": "https://www.pressreader.com/usa/the-guardian-usa/20251125/282076283162965",
+      "summary": "The Guardian spoke with 21 current and former Northweste­rn workers (plus five who interviewe­d to be and didn’t end up taking the role) across nine states, who told strikingly similar stories.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fafb447457442437",
+      "title": "上傳 YouTube 影片 - 電腦 - YouTube說明",
+      "url": "https://support.google.com/youtube/answer/57407?hl=zh-Hant&co=GENIE.Platform%3DDesktop",
+      "summary": "只需幾個簡單步驟，就能輕鬆將影片上傳到 YouTube。以下說明如何透過電腦或行動裝置上傳影片。 注意：使用 YouTube 的受監護帳戶時，可能無法上傳影片。",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
