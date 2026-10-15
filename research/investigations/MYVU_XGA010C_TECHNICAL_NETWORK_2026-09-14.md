@@ -175,3 +175,7 @@ Do not convert one state into another through repetition.
 ## Disposition
 
 The XGA010C now has a cross-project technical map spanning Panny777 application/protocol interoperability, CyanBridge knowledge flow, and BimaPDev firmware work. The evidence now supports a stronger but bounded conclusion: **third-party application-level interoperability and a firmware-level owner-controlled execution path are supported by community-primary, hardware-tested work. GlassesResearch has not independently reproduced either result, and complete custom firmware/root/general native execution remain unproven.**
+
+### October 15, 2026 — public client fork added
+
+[ralamgstromg/Meizu-Myvu-Client](https://github.com/ralamgstromg/Meizu-Myvu-Client) is a substantive public fork of Panny777's MYVU client. Its latest observed [October 2 STT adjustment](https://github.com/ralamgstromg/Meizu-Myvu-Client/commit/291c08e2f003272bcc73b8d4281e41fa924a82c4) and [activity-log, permissions, and notification fixes](https://github.com/ralamgstromg/Meizu-Myvu-Client/commit/0700bd06f9cc16d7634fe8f664a772884ac4f191) demonstrate independent software development. This is a documented code-fork relationship, not a claim of shared hardware identity or independent device verification. Disposition: inspect interoperability changes and invite reproducible owner test results.
