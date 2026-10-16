@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-16T14:41:11.830753+00:00`
+Generated: `2026-10-16T18:21:37.641731+00:00`
 
-- Intake files inspected: **259**
-- Candidates retained in this review window/history: **10864**
+- Intake files inspected: **261**
+- Candidates retained in this review window/history: **10940**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2056
+- `adjacent_radar`: 2077
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 603
-- `rejected_noise`: 8086
+- `needs_editorial_verification`: 604
+- `rejected_noise`: 8140
 - `source_review`: 44
 - `watching`: 53
 
@@ -184,6 +184,7 @@ Generated: `2026-10-16T14:41:11.830753+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.949](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.949) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.950](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.950) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.953](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.953) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-16T14:41:11.830753+00:00`
 | normal | needs_editorial_verification | direct | [599美元！XREAL 1 Pro+智能眼镜发布峰值亮度1200尼特- CNMO科技 - - CNMO](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9QemlhcVo1SmlEbW4xN2hwdzhxVXpaSkxJZXYzckxBdzdYRGo5Y0hFdW03NE1QY2ozcTlSTmNJV1ozT1lFSDZnM2RGUjVwUQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [9to5Google 1d ago XREAL 1 Pro+ has exactly the right hardware upgrades at the same $599 price Coverage Xreal](https://9to5google.com/2026/10/15/xreal-1-pro-plus-upgrades-price/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [9to5Google 26d ago The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [[News] Cellid’s AR Glasses Reference Design Featured in “Extended Reality: Visions of the Future” Exhibition at the Computer History Museum ](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBzR0dCQ2dCYV9NMTZOVGF2dVdrVy0zZG9TWGNUZ2hXVWdUeEozejBSMWJpNWI4UjBfdHpFRExpUURGMlBzVkd1d09kLTJ5dmdjREJ6c1lUUUlnb1J0bEhXcUdR?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
