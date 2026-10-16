@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-16T09:53:34.926109+00:00`
+Generated: `2026-10-16T13:21:31.643611+00:00`
 
-- Intake files inspected: **260**
-- Candidates retained in this review window/history: **10914**
+- Intake files inspected: **261**
+- Candidates retained in this review window/history: **10971**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2045
+- `adjacent_radar`: 2063
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 617
-- `rejected_noise`: 8136
-- `source_review`: 40
-- `watching`: 54
+- `needs_editorial_verification`: 618
+- `rejected_noise`: 8172
+- `source_review`: 41
+- `watching`: 55
 
 ## Action queue
 
@@ -30,8 +30,6 @@ Generated: `2026-10-16T09:53:34.926109+00:00`
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.560](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.560) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.561](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.561) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.562](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.562) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.563](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.563) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.564](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.564) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -189,11 +187,13 @@ Generated: `2026-10-16T09:53:34.926109+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.949](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.949) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.950](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.950) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ2hqZUl1NXJaUm5JVlZLSWRXOXhPQzJYdzJNa1Q2emVxdTJyWnBMUHI5bk5yVE5QQ3c0V01lTXdJcGpNQ0dTOGtISF9LcGZ1TEh0N3RZbWZwbW9DX3NCd0JNRXk2dVhLd2V3STBnQmtZRmNlV1V6VkJMUDlRWlpnMl9OYkJfU2RraEw0bkxkcXdIbFQ3TU02dHNSYVJfUHBUam9WNWNXMWZSekRXc01CNHV0dW44MnJCaWxHZjRQVXUyOUluV3pZ?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ2Nsb0RfdFZMR3VVRjVVaWpHQ3FydVZ6MTdhbG8wSnk1VWRLZThlMDQ5bVVkNDI1Z3JjNnFSUUcxd2p5QzdGLUxVSVZiYi15LXk2TDFyTVhCNXRsZ0JnVGV3UVc1NTZCb3J4MUdoeFZlN0FRTlBKZTlnNXgzc2stNDNKRnhlcEp5N2N6WWIzOTNmZThQdE9EWTBBbEVuYnZ6eXhtcWdGeE93eXVLWE5PZ2tDNzUyTlo1SVQ4a0Vua3RVU0IwcS1B?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android XR Smart Glasses Launch in November - Droid Life](https://news.google.com/rss/articles/CBMiigFBVV95cUxORnJYUTBnelBmaGhibV9KTHEwblc3c1A3RDRpVkZvalg2UVFrak1tVldkdEhHRU83QzUySzlfaXBseHpNMlhvajNBdGIxRWVUR3EtVmZ2RU1EeTMxTUdYQm4zS1dHRkNwQnlyenFuXzRFeVdtaGZIdUVON0I3QnFEeGxzX0Z2MWJVZHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [EssilorLuxottica and Meta launch AI-powered eyewear in Portugal. - Grande Consumo](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUzRpVVZaS3BGQzNsV1dYRW1ZcmhoOGhHNXZRb2kwOGI2ZHVPU2FyTmN4M3VZeGx1Sm84NWIzeHVHb2hFR3ZtUF9nTm91RzU0SW5wNVhuY2R4dVVKZkdpNzZjWS14REdWTjRkQWp3MjhKRlhLRnpzbGV2X0IybUNid3pHcmtBN3FtYVBsSEgxelhmQUVjTmNQUUlZdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GitHub - hkust-spark/xg-glass-sdk: One API for smart-glasses apps ...](https://github.com/hkust-spark/xg-glass-sdk) | reachable (200) | research_news_review, development_hacking |
