@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-16T07:20:09.585589+00:00`
+Generated: `2026-10-16T08:33:32.336130+00:00`
 
-- Intake files inspected: **260**
-- Candidates retained in this review window/history: **10925**
+- Intake files inspected: **258**
+- Candidates retained in this review window/history: **10851**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2081
+- `adjacent_radar`: 2041
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 617
-- `rejected_noise`: 8110
+- `needs_editorial_verification`: 616
+- `rejected_noise`: 8077
 - `source_review`: 42
 - `watching`: 54
 
@@ -206,7 +206,6 @@ Generated: `2026-10-16T07:20:09.585589+00:00`
 | high | needs_editorial_verification | direct | [Samsung Targets Meta With November Launch of Gemini-Powered AI Glasses - konsulteer.com](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSGpqNlg2UkRCdGVFWU81cEw3a0l3SEo5eFRsbTMxc0JfdXVUdjQ4MDEtVW15NEtQNDJyMTVLRzQxaFl2NXN6SjJVcGNFZEQ1RTRWMGhOR1BMaEpYT01kbVl4YnJncVFPRXN3cmpsRVliNksxSl9jeXZWU3dZWlNhTXM2cFlYTXNBSHB2RjV4OTNWcXhWVjgtNWdxeldMMkxiLUVDel84TUc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch AI-Powered Smart Glasses in November 2026 - en.tempo.co](https://news.google.com/rss/articles/CBMilwFBVV95cUxNN3V5OGI0dzJ6YW5SV1MySk1QZEJRLVctTTBUd2g0cXRRb19HUlh6UDdsdDRIdzFXWldlb2VjLVRLdks2X0RQU3RPQ2tLWlRld3hYc3UwbUxKY21FN3NfbWxxc3hQT1NLYTVteWJIY2FpaGtHRGExaUFDcl9Ydll2RS16ODJ0SVFjdW9pY1ZmOUpLRDlXeXBn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to launch first AI glasses in November, taking aim at Meta - theinvestor.co.kr](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mMFpLaTB1cHF5Tlplek5NX1RiVkI4YjhQMHp6VDAtVUZ6ZFQtZUc4ZXNIbjF5QlZ2SHM4T05xbkFJakw0NF9aaWxweWFBb1RkaE55NHljMzZ0dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s first Android XR smart glasses finally have a launch window - androidauthority.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxNRmJwVDJ0RTc1VjZlMnNrQnZMZVFGYTRoTFU5SXRtZUFZZE1qazdoVmZRc1JWS3RwSVIydk5PTEN0YWRENy1GR1FibnNROXVTaFVXbTRxV0Zac0lQVTRReGR1RDVCQzgtMEJLdVZzb2l2UWNKcHAwbFJxa3BITFlNRw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s first Android XR smart glasses finally have a launch window – report - Trusted Reviews](https://news.google.com/rss/articles/CBMisAFBVV95cUxNZmtBck1yMnRPNUJyZUlSVG1mM1l1bHMzS1ZuVnI3WTRDWHZpYWx6bVNlVWJGLUw1S29XdEZRdlZ4MEtJczloVE85cTRWbzVOaDVSaWxIaTM2NzhiYW1vM3YwM001N1BvZ040SUlTVVNQT2V5UElLeHIwTmRCXzYxTWhwNFpjZmZPTmxyWk9nRFpRdmVuNzBpSHNPV2JSQ2ZYR1RidXBFdU9NQ3RuVDZuUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Sesame plans to launch its own AI glasses in 2027 - Lowpass](https://news.google.com/rss/articles/CBMif0FVX3lxTE1aOHpVOG5SYWZMdTBxMEdBVzJkVWZLa0tGSFJGcDZVR3FPX18tRDROV2R2SnUzYnVWVDNDTi1NMjFaZ3g0QjdFOVJfc19yNkxoLVF1TWpKeFFlTmRaT2tCTTgxVW1wU1hUR1FDS29xQ3BvMVlNeFdGVlNHZkc3MVk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SNAP Stock Eyes AR Upside As SPECS AI Glasses Launch - Timothy Sykes](https://news.google.com/rss/articles/CBMidEFVX3lxTE5tZWN2UjdpS1Z3OEdQUjZOT1VsUDh4ZXN2U3F4ejQxcFE4RHp5T3RLRVhLRnpCNWs3QUlKZURfTDk4bVVoaXZkVW1ySnhXeDAzVmpWcE5XakhjNnM2d1Y1WDFGdW5SSll1bl9KTG8yQnpsSTMt?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-16T07:20:09.585589+00:00`
 | normal | needs_editorial_verification | direct | ["눈만 깜빡이면 결제"…알리바바 가세에 불붙은 AI 안경 전쟁 [차이나 워치] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EOGZpWDNsc2xlVXlQNHdyUlZCSzU5RWJoSlpSQ1NoLWFMY202U0dseE9LWTNxMWtJNVFOekZXYlN0X2N4amlLZ3BLeU80UVhGcnFSR3RHWFA0UQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [300308公告，或将注销近50亿元回购股份！智能眼镜新品密集发布，12股前三季度业绩预喜 - 凤凰网](https://news.google.com/rss/articles/CBMiUEFVX3lxTE1wb2pRY2pWeklCWDlib0xRcUotSHFNZ3ozdUk0cXdNYVBqT0xwN3B2Y3FiYURCOEFPNURJUXRvXzF5Q01zOS1zZGEzT3VKTmVl?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [599美元！XREAL 1 Pro+智能眼镜发布 峰值亮度1200尼特 - 搜狐](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZHkyVXA3bHBtUmJEUEM0OGpXTXc3WldzdUpYUHcxa20zTXhjZG9sbjNrdDQ2eUxmcFg4TkJmZTNKT1VWUks5dTZTNUtQaDZNYzhRLXVRLU1McF9UdmhRWjQ2TXIyZ0d2UldRRWdRVXBsZzEzbkk2RklHNTRWTl95NmNqVmUwbkxO?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [599美元！XREAL 1 Pro+智能眼镜发布峰值亮度1200尼特- CNMO科技 - - CNMO](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9QemlhcVo1SmlEbW4xN2hwdzhxVXpaSkxJZXYzckxBdzdYRGo5Y0hFdW03NE1QY2ozcTlSTmNJV1ozT1lFSDZnM2RGUjVwUQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
