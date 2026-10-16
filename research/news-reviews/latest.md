@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-16T00:39:15.276460+00:00`
+Generated: `2026-10-16T01:30:37.527363+00:00`
 
 - Intake files inspected: **260**
-- Candidates retained in this review window/history: **10819**
+- Candidates retained in this review window/history: **10890**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2048
+- `adjacent_radar`: 2083
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 603
-- `rejected_noise`: 8050
-- `source_review`: 42
+- `needs_editorial_verification`: 602
+- `rejected_noise`: 8086
+- `source_review`: 43
 - `watching`: 55
 
 ## Action queue
@@ -29,7 +29,7 @@ Generated: `2026-10-16T00:39:15.276460+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.548](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.548) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.549](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.549) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.551](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.551) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.553](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.553) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
