@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-16T05:07:26.047546+00:00`
+Generated: `2026-10-16T07:20:09.585589+00:00`
 
 - Intake files inspected: **260**
-- Candidates retained in this review window/history: **10909**
+- Candidates retained in this review window/history: **10925**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2089
+- `adjacent_radar`: 2081
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 619
-- `rejected_noise`: 8084
+- `needs_editorial_verification`: 617
+- `rejected_noise`: 8110
 - `source_review`: 42
 - `watching`: 54
 
@@ -30,10 +30,6 @@ Generated: `2026-10-16T05:07:26.047546+00:00`
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.551](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.551) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.553](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.553) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.557](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.557) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.559](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.559) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.560](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.560) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.561](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.561) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.562](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.562) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -191,6 +187,8 @@ Generated: `2026-10-16T05:07:26.047546+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.944](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.944) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.949](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.949) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -207,7 +205,6 @@ Generated: `2026-10-16T05:07:26.047546+00:00`
 | high | needs_editorial_verification | direct | [Samsung prepares to launch AI smart glasses in November 2026 - sammyfans.com](https://news.google.com/rss/articles/CBMinwFBVV95cUxOb1lDSk9YcEowLTAtSHV4X1lzTThRUUhiOVctR09fSHRrNkJaVURDMUQyWVdDQjRRemFBaFF4UDJYMXVSc2FOd3dXbDNWdGNJN1pTNkZiX09vbHdRWGE1U2U4VEI1ZGp4RXRpWjh5SFZWZGh3Rm1WYVdnamxHM3BBeXJIc0VYY2c1ZFYtWTI3WWpTeF9aZ080RGVMd0w1R2_SAaQBQVVfeXFMUDkyc2U1MkhmX2FrUUxVT2hJSFl2QnZad1hNcGZSRWFJeXY1NXBaQkI2SkJaeGVVdTN3V0xNOHJVU01YeEZ6MG5reFF5R3NvX0g3dUxzWkR2ajBlT0Y5RXp2V1VHQTdQSlltVVV4alYtSFVGcmg5Y1VTNGRYMnJyRjdKRHNFUUN0OUdkQUE5OHViamJ3ZHdDTWtzT0puYndpQTRsaFM?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Targets Meta With November Launch of Gemini-Powered AI Glasses - konsulteer.com](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSGpqNlg2UkRCdGVFWU81cEw3a0l3SEo5eFRsbTMxc0JfdXVUdjQ4MDEtVW15NEtQNDJyMTVLRzQxaFl2NXN6SjJVcGNFZEQ1RTRWMGhOR1BMaEpYT01kbVl4YnJncVFPRXN3cmpsRVliNksxSl9jeXZWU3dZWlNhTXM2cFlYTXNBSHB2RjV4OTNWcXhWVjgtNWdxeldMMkxiLUVDel84TUc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch AI-Powered Smart Glasses in November 2026 - en.tempo.co](https://news.google.com/rss/articles/CBMilwFBVV95cUxNN3V5OGI0dzJ6YW5SV1MySk1QZEJRLVctTTBUd2g0cXRRb19HUlh6UDdsdDRIdzFXWldlb2VjLVRLdks2X0RQU3RPQ2tLWlRld3hYc3UwbUxKY21FN3NfbWxxc3hQT1NLYTVteWJIY2FpaGtHRGExaUFDcl9Ydll2RS16ODJ0SVFjdW9pY1ZmOUpLRDlXeXBn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung to launch first AI glasses in November, taking aim at Meta - koreaherald.com](https://news.google.com/rss/articles/CBMiV0FVX3lxTE1ONmdjMUZCc0llcVNiNHc1ekZocFM4RU9fM2lJcHJuZzUtYlZyUE81Mk1vaWxGQ29CcGppRlh4eXl6TThuYTc1QUE5dVItamJwWHdOaTRQaw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to launch first AI glasses in November, taking aim at Meta - theinvestor.co.kr](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mMFpLaTB1cHF5Tlplek5NX1RiVkI4YjhQMHp6VDAtVUZ6ZFQtZUc4ZXNIbjF5QlZ2SHM4T05xbkFJakw0NF9aaWxweWFBb1RkaE55NHljMzZ0dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s first Android XR smart glasses finally have a launch window - androidauthority.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxNRmJwVDJ0RTc1VjZlMnNrQnZMZVFGYTRoTFU5SXRtZUFZZE1qazdoVmZRc1JWS3RwSVIydk5PTEN0YWRENy1GR1FibnNROXVTaFVXbTRxV0Zac0lQVTRReGR1RDVCQzgtMEJLdVZzb2l2UWNKcHAwbFJxa3BITFlNRw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s first Android XR smart glasses finally have a launch window – report - Trusted Reviews](https://news.google.com/rss/articles/CBMisAFBVV95cUxNZmtBck1yMnRPNUJyZUlSVG1mM1l1bHMzS1ZuVnI3WTRDWHZpYWx6bVNlVWJGLUw1S29XdEZRdlZ4MEtJczloVE85cTRWbzVOaDVSaWxIaTM2NzhiYW1vM3YwM001N1BvZ040SUlTVVNQT2V5UElLeHIwTmRCXzYxTWhwNFpjZmZPTmxyWk9nRFpRdmVuNzBpSHNPV2JSQ2ZYR1RidXBFdU9NQ3RuVDZuUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,6 +268,9 @@ Generated: `2026-10-16T05:07:26.047546+00:00`
 | normal | needs_editorial_verification | direct | [KCA and KAIST push security as AI smart glasses threaten exam integrity - DongA Science](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VZFZYXzU3UEs3aFVTN05LNEVIenNnZ3RSM0VxaTg5QVc3Z2JtR3pFd3ZqLUhRaXRES1ZnZmJYY2pGUjJ0X1BGZGV0dUZZV2ZDbjktOQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [South Korean Universities Tighten Security After Students Caught Cheating With AI Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1hKWjl1TUdUbGlCREpzR2gwakRNTklJV3JMQmVvTGpJZmhsN0xFbDNPYXBCYjctamVuTXFEcWhRdU9XQVJzbDBMdVhoLXJQYXZxNk4zS2NMNmxWMzQ5RFhNMk84RUp2MVRHU3VrSW9mTG45Tk1HRVRZQlpQampHZnp4NWZ3ZmJPMkVXVTI2REg0MFdReVUxOTJFeEVLTHRSTW9UaEF4M1lTUWhOQlNVaHlqQ1pkMXNuSzlpdG5pa1Q?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["It's both brilliant and profoundly unsettling at the same time" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses - D](https://news.google.com/rss/articles/CBMigAJBVV95cUxNZ1JJcXV2Y1RCdXpSZ2RzLVJxQUdaWGdycEFuMS1QMmNFbzNndWlWem5xS3NYS0NtS283bUZiNmFpcHhYMXNTdmp4azV6WVpIUy1HSDk3cTBjY2ZmOTRSN052bDdqWjNlaGhDaGZPUHZpOG9SNXBMX3d1R3RKUzYtcHBJeUxpY0oxekVjN2RBT3ZUcWIyQ2ZVeHRpcUZyUFZ0a193aWEzMWI4NlNnQ3hrN0ZGa3pZRlV5V0lSazNPVWZEQ3UzWnJra0N4Tm5YRVI1U1NoSUdjWlJvemprNi1jelZCZ1lQZ2wwVmJFYmdlMTRiTTRJZEhzWGp1V1kxLWlt?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
+| normal | needs_editorial_verification | direct | ["눈만 깜빡이면 결제"…알리바바 가세에 불붙은 AI 안경 전쟁 [차이나 워치] - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5EOGZpWDNsc2xlVXlQNHdyUlZCSzU5RWJoSlpSQ1NoLWFMY202U0dseE9LWTNxMWtJNVFOekZXYlN0X2N4amlLZ3BLeU80UVhGcnFSR3RHWFA0UQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [300308公告，或将注销近50亿元回购股份！智能眼镜新品密集发布，12股前三季度业绩预喜 - 凤凰网](https://news.google.com/rss/articles/CBMiUEFVX3lxTE1wb2pRY2pWeklCWDlib0xRcUotSHFNZ3ozdUk0cXdNYVBqT0xwN3B2Y3FiYURCOEFPNURJUXRvXzF5Q01zOS1zZGEzT3VKTmVl?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [599美元！XREAL 1 Pro+智能眼镜发布 峰值亮度1200尼特 - 搜狐](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZHkyVXA3bHBtUmJEUEM0OGpXTXc3WldzdUpYUHcxa20zTXhjZG9sbjNrdDQ2eUxmcFg4TkJmZTNKT1VWUks5dTZTNUtQaDZNYzhRLXVRLU1McF9UdmhRWjQ2TXIyZ0d2UldRRWdRVXBsZzEzbkk2RklHNTRWTl95NmNqVmUwbkxO?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
