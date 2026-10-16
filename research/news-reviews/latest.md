@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-16T18:26:52.460951+00:00`
+Generated: `2026-10-16T21:22:06.974592+00:00`
 
-- Intake files inspected: **263**
-- Candidates retained in this review window/history: **11029**
+- Intake files inspected: **261**
+- Candidates retained in this review window/history: **10949**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2111
+- `adjacent_radar`: 2098
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 598
-- `rejected_noise`: 8196
-- `source_review`: 49
-- `watching`: 53
+- `needs_editorial_verification`: 593
+- `rejected_noise`: 8138
+- `source_review`: 47
+- `watching`: 51
 
 ## Action queue
 
@@ -30,8 +30,7 @@ Generated: `2026-10-16T18:26:52.460951+00:00`
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.567](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.567) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.568](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.568) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.569](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.569) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.571](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.571) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.572](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.572) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -186,7 +185,6 @@ Generated: `2026-10-16T18:26:52.460951+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.950](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.950) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.953](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.953) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung's first AI glasses launch in November, with no display and no price yet - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxOVDdLSUVqLUE0bVQzTVlydmZ6ZmY4UUMxYV9HdmhxemlzQ2tiQzJxeDZ3ZkxQZklyOGhxX01TNGFHczIzTFhnTmloS0JIb3ZmLXlmcnpUNDJnMVlIcUlLTnJhaTRnZEZpUmdFRmlUdV9SWEJGVlMtZGU1NUowek9Fa01aekFPRTlfZjVMdmhmTmxwUG1u?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Nigeria](https://news.google.com/rss/articles/CBMixwFBVV95cUxPZ2hqZUl1NXJaUm5JVlZLSWRXOXhPQzJYdzJNa1Q2emVxdTJyWnBMUHI5bk5yVE5QQ3c0V01lTXdJcGpNQ0dTOGtISF9LcGZ1TEh0N3RZbWZwbW9DX3NCd0JNRXk2dVhLd2V3STBnQmtZRmNlV1V6VkJMUDlRWlpnMl9OYkJfU2RraEw0bkxkcXdIbFQ3TU02dHNSYVJfUHBUam9WNWNXMWZSekRXc01CNHV0dW44MnJCaWxHZjRQVXUyOUluV3pZ?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -270,7 +268,9 @@ Generated: `2026-10-16T18:26:52.460951+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses raise concerns about cheating ahead of the CSAT exam in South Korea. - Vietnam.vn](https://news.google.com/rss/articles/CBMijgFBVV95cUxNMFZJbWpBVmk3TklrSWRGTnFfZl9CZnRzS1J3bXg1T05CYVhTaTJEaWhDUUkxaDlOcmEzclk4Sl9TT0JJZFRhbFRFRzVmOEJlczhtcXIzaGgwcVdJQWlyeGNiYXRTT002aE42WjBJU1A2OXdGZ1BOQkNjQ2FvQUt4TjNSUHVYSlJpWldVUUR3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI智能眼镜市场加速扩张：2030年规模预计达36.4亿美元 - 搜狐](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOV20ybkZadkVoc1doV3FMRlZmdG5MWFVHd2FEOVNsYU9reVpWX3pCVjFsbjVIbkNQS0tOT1FSWHRqakVPX2oyYWVCTVU2c1N2MFNLSjJFT1FmbmJ0MDAyNXJfRzJsSzlyOXliSUhpUTljeU1ocjdELXhGODBuZ093QXZkQTBiaUdQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Alibaba Takes AI Beyond Chatbots With Smart Glasses, Bose-Powered Earbuds - Yahoo Tech](https://news.google.com/rss/articles/CBMikwFBVV95cUxPckxLbHFWSktLNjhXTDI3M2llX1ZHLUNhSkZYcFlTOC1kOGNTLWtNV0tpU2RGS0djMXpudnNEYXRDNTV2cVgwQkJPUlZhZEhGdDFnOHBweXhVYXFGOGlfNlpTdDB6TmhrZ3c1TllvczBubGw0UXFEQU10VWZzNXZ1VE9oZV81LU1wYzdUZzRYdFNCU0U?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
+| normal | needs_editorial_verification | direct | [Android Central 20h ago Xreal One Pro Plus is official: Here's what changed from the One Pro Coverage Xreal](https://www.androidcentral.com/wearables/xreal-launches-1-pro-plus) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
