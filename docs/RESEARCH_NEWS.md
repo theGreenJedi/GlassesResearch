@@ -31,9 +31,14 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
 
+### October 16, 2026 — MentraOS owner controls and W610 photo transport
+
+**Across the Wire · Community evidence · Not GR verified.** [Mentra touch-gesture controls](https://github.com/Mentra-Community/MentraOS/pull/4802), [binary fetch defect](https://github.com/Mentra-Community/MentraOS/pull/4806), [Wi-Fi debugging control](https://github.com/Mentra-Community/MentraOS/pull/4809), and [W610 thumbnail failure](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/issues/23) warrant owner-control and hardware testing.
+
+
 ### October 12, 2026 — MentraOS telemetry and hotspot reliability
 
-**Across the Wire · Community-reported · Not GR verified.** SDK telemetry and two hotspot reliability changes, with privacy and physical-device verification outstanding. [Read the attributed technical report](news/articles/2026-10-12-mentra-telemetry-and-hotspot-reliability/).
+**Across the Wire · Community-reported · Not GR verified.** SDK telemetry and two hotspot reliability changes, with privacy and physical-device verification outstanding. [Read the attributed technical report](news/articles/2026-10-12-mentra-telemetry-and-hotspot-reliability.md).
 
 ### October 11, 2026 — MentraOS miniapp update consent and pairing ownership
 
