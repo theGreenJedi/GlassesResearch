@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-17T03:30:11.300724+00:00`
+Generated: `2026-10-17T05:41:49.803425+00:00`
 
 - Intake files inspected: **262**
-- Candidates retained in this review window/history: **10960**
+- Candidates retained in this review window/history: **10953**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
@@ -12,10 +12,10 @@ Generated: `2026-10-17T03:30:11.300724+00:00`
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 592
-- `rejected_noise`: 8148
+- `needs_editorial_verification`: 590
+- `rejected_noise`: 8144
 - `source_review`: 47
-- `watching`: 50
+- `watching`: 49
 
 ## Action queue
 
@@ -32,8 +32,7 @@ Generated: `2026-10-17T03:30:11.300724+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.573](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.573) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.574](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.574) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.575](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.575) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.577](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.577) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.579](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.579) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -187,6 +186,8 @@ Generated: `2026-10-17T03:30:11.300724+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.960](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.960) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.966](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.966) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.971](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.971) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.973](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.973) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.975](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.975) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -207,7 +208,7 @@ Generated: `2026-10-17T03:30:11.300724+00:00`
 | high | needs_editorial_verification | direct | [9to5Google 1d ago Meta says it has fixed an issue that let its Ray-Ban smart glasses record on their own Coverage Meta](https://9to5google.com/2026/10/15/meta-ray-ban-recording-bug/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Central 24d ago These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Apple said to delay smart glasses launch after Meta backlash - Mashable](https://news.google.com/rss/articles/CBMidEFVX3lxTFAzODlmSld2el9xcHg1STB1bU8zYW9aa2EyVVVEZHE5V08zX0g3azN5UzZjdjBzbnBaZEl5Y1dVak1wME5RU1puaG5yOXIxSjc4S2ZuV041UUdWaF9Ba1pzcXU1LTI4UXpQTkp6N1NMM1dIdGI0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [British Airways Bans Meta AI Glasses, Threatens to Remove Passengers for Filming Crew Without Consent - Aviation A2Z](https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGs0bkJQcExBbkZBTGpzcm9Jc2Q3NFdqUDVQQjdhM3V0Yy1QTkVtWUx4a0d6c1g1bF9QOUdjSENUMlVJbEtPOXk5OGw2UGpoZGwwTWE3VlFxaDh5SG1faEthS25pNm9QTWFQQmY3YjRVcmlwa3dfeHZsYlY0WXd5ekRQSlBwMXhaUl9JbzVZcFBPNC05bHp4RkxSQnczLVlxei1XLVFBM1VmQWZaRHJhU1Q3QQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -270,7 +271,6 @@ Generated: `2026-10-17T03:30:11.300724+00:00`
 | normal | needs_editorial_verification | direct | [9to5Google 1d ago XREAL 1 Pro+ has exactly the right hardware upgrades at the same $599 price Coverage Xreal](https://9to5google.com/2026/10/15/xreal-1-pro-plus-upgrades-price/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [9to5Google 26d ago The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [After vision loss cost him his job and home, Atlanta veteran finds new independence with Meta smart glasses - CBS News](https://news.google.com/rss/articles/CBMi3AFBVV95cUxNNUFDdFM4Rmk2ZW5LUXBOd1ZQazZwZUtuZFVubkhjMDhHZkd4VjdBQ21FbjlqZGltcFdmcUdSRFVpYXJuY2l2U0JOV29DLXUxcmx3eTIta2NvT1B3RmJ4bnhJWURXb0l0cHRJQ0dJVGlsQlFuYVJWVVBJTTBlMkxfQU00b0pXYXBEa0JhTFNYejVBRVZ3dXU0MjJwUkdoTTZVQUt2UmNsQm5qaTlyelBCMGZEd1cwb0pRajYzRXpUc1BhZWk3LU5TeWFPNDctTy11UjdPS2ZSaVEwQ0d5?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI glasses raise concerns about cheating ahead of the CSAT exam in South Korea. - Vietnam.vn](https://news.google.com/rss/articles/CBMijgFBVV95cUxNMFZJbWpBVmk3TklrSWRGTnFfZl9CZnRzS1J3bXg1T05CYVhTaTJEaWhDUUkxaDlOcmEzclk4Sl9TT0JJZFRhbFRFRzVmOEJlczhtcXIzaGgwcVdJQWlyeGNiYXRTT002aE42WjBJU1A2OXdGZ1BOQkNjQ2FvQUt4TjNSUHVYSlJpWldVUUR3?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
