@@ -1,21 +1,26 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-17T08:04:57.608131+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 116,
+  "discovered_utc": "2026-10-17T10:55:45.328483+00:00",
+  "candidate_count": 2,
+  "precision_rejected_count": 110,
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 1,
+    "adjacent": 0,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "news": 1
+    "model": 2,
+    "tool": 2,
+    "sdk": 2,
+    "community": 2
   },
   "routing_counts": {
-    "adjacent_radar": 1,
-    "research_news_review": 1
+    "community_evidence_review": 2,
+    "development_hacking": 2,
+    "model_catalog_review": 2,
+    "research_news_review": 2
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -26,38 +31,86 @@
   ],
   "candidates": [
     {
-      "id": "d38c22383d7502e6",
-      "title": "Counterpoint Discussions: Qualcomm’s Integration of Personal AI in Earbuds with Snapdragon Sound Elite Gen 2 - RS Web Solutions",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNblQ4U1c4eGJXbGE4UndwRTd3ZEsyZGNnaEZMQlJBVm1CZWFFYk9yNGZHeGNlbWxNME5iTGpKbklBc2RPMm5zeG5Ga2ZMNjlfS3pteE4yOGNfUU5zWWo1Y1diSWZEdGJVQlRoSTRGU09lM3NDYmlsNDEwOGFvQkFzc1ZvM0twYXpaRzNfYWhMbW5VRmZNT3NJbnozQzBIU3lBOENhSzc2TW93WVctNDZhbkJVQjlWbFFaMU92QzU4WVlFNWJldHp6UUhvd1kzZWpBcmVDZw?oc=5",
-      "source": "Google News: wearable AI interface",
-      "source_lane": "adjacent_hci",
-      "published": "Sat, 17 Oct 2026 08:00:00 GMT",
-      "summary": "Counterpoint Discussions: Qualcomm’s Integration of Personal AI in Earbuds with Snapdragon Sound Elite Gen 2 RS Web Solutions",
-      "materiality_score": 2,
+      "id": "0b00c22417c21252",
+      "title": "Mentra 3.4.0-dev.978",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.978",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-17T08:57:23Z",
+      "summary": "Mentra 3.4.0-dev.978 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: dabca16 . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "ai",
-        "snapdragon"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
       ],
       "status": "candidate",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
+      "attribution_required": true,
+      "relationship": "direct",
       "content_types": [
-        "news"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "adjacent_radar"
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "bbb869b4e0c4f297",
+      "title": "Mentra 3.4.0-dev.979",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.979",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-17T10:52:22Z",
+      "summary": "Mentra 3.4.0-dev.979 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: cec2dff . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
     }
   ]
 }
