@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-17T22:35:17.612348+00:00`
+Generated: `2026-10-17T23:13:29.504090+00:00`
 
-- Intake files inspected: **265**
-- Candidates retained in this review window/history: **11080**
+- Intake files inspected: **264**
+- Candidates retained in this review window/history: **11074**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
@@ -12,9 +12,9 @@ Generated: `2026-10-17T22:35:17.612348+00:00`
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 595
-- `rejected_noise`: 8262
-- `source_review`: 42
+- `needs_editorial_verification`: 589
+- `rejected_noise`: 8258
+- `source_review`: 46
 - `watching`: 44
 
 ## Action queue
@@ -33,8 +33,6 @@ Generated: `2026-10-17T22:35:17.612348+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.579](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.579) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.583](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.583) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.584](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.584) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.585](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.585) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.586](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.586) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +269,8 @@ Generated: `2026-10-17T22:35:17.612348+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses as travel guides? Cheaper in China, but bugs slow adoption - South China Morning Post](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNelV3NTl2YWFhYkR3N0dJY2U5MFctazVXTjZHWTBDRV82R3JwMV9uTUxUdEUxaElIVVdNYlhLdE84UjY1WW51ZGRnblZVMUdJcDlya1hxQkZ6bWd0YmVtMFoyVXgwcUJGQ0pwaWRHWDVCTWx1b0MxdzdWUzFFdThwaFdSNVhFM0N2THRIR1BfN3lKbXRtRUp3ZTVqcEpuWV94Q1VPLW5SeVNrQk13MGdPZEdsNjJQRFFnanpVbTJ0MlBxNk5vVkF3ZdIByAFBVV95cUxPQmtMRE1mVUZ3MDBOcklDQlk3N2Q1OHRDZ0syT2dUMUlQQ2x4a2EtSFZyU0JxSy1XTEotc0J3T05oaG9mdGV4SXE5VEp3ZkI1dDJhN3FFcm4taVd0Q3AzN0hueE1TZ0JDZG5xUjhsbVV0Q3gwem1lR2FURnktOWZJYlU3T0IySldDZ1N0ZGlzalk5cmdSUDY2OTA3c2Q3c0FYbERZRGFLdWp6cUY3S3E1V1pLNWlvcHBsbWZjY2xtSHozdzJuTy1kUw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI 안경 부정 잇따라 적발…수능 한 달 앞두고 '비상' - 뉴시스](https://news.google.com/rss/articles/CBMieEFVX3lxTFBTaGltemtSUmhfbzRtTTJyVjdfVUdZbi01Vm9wdTd5V3RVeUxBd1JMV3hIS0laSkpPbFk4R1gzMk1FWHNuSllKTF9ybVR2VTM5VW5LWkJDeXI4b2pELVR3T2Q5M0RkUi1LSUxOSU5JUzV1RkJMNWV2R9IBeEFVX3lxTFBTaGltemtSUmhfbzRtTTJyVjdfVUdZbi01Vm9wdTd5V3RVeUxBd1JMV3hIS0laSkpPbFk4R1gzMk1FWHNuSllKTF9ybVR2VTM5VW5LWkJDeXI4b2pELVR3T2Q5M0RkUi1LSUxOSU5JUzV1RkJMNWV2Rw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 
 ## Meaning of states
 
