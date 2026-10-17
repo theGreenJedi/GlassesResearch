@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-17T15:41:34.507029+00:00`
+Generated: `2026-10-17T17:21:50.184299+00:00`
 
 - Intake files inspected: **264**
-- Candidates retained in this review window/history: **11046**
+- Candidates retained in this review window/history: **11038**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2115
+- `adjacent_radar`: 2109
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 588
-- `rejected_noise`: 8231
-- `source_review`: 44
-- `watching`: 46
+- `needs_editorial_verification`: 596
+- `rejected_noise`: 8221
+- `source_review`: 45
+- `watching`: 45
 
 ## Action queue
 
@@ -193,6 +193,7 @@ Generated: `2026-10-17T15:41:34.507029+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.979](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.979) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.980](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.980) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.981](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.981) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.982](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.982) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -216,7 +217,6 @@ Generated: `2026-10-17T15:41:34.507029+00:00`
 | high | needs_editorial_verification | direct | [Android Central 24d ago These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Apple said to delay smart glasses launch after Meta backlash - Mashable](https://news.google.com/rss/articles/CBMidEFVX3lxTFAzODlmSld2el9xcHg1STB1bU8zYW9aa2EyVVVEZHE5V08zX0g3azN5UzZjdjBzbnBaZEl5Y1dVak1wME5RU1puaG5yOXIxSjc4S2ZuV041UUdWaF9Ba1pzcXU1LTI4UXpQTkp6N1NMM1dIdGI0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Auganix 10d ago ENGO Launches engo Titanium, 28.9-Gram AR Smart Glasses for Runners and Cyclists](https://www.auganix.org/ar-news-engo-titanium-smart-glasses/) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [British Airways Bans Meta AI Glasses, Threatens to Remove Passengers for Filming Crew Without Consent - Aviation A2Z](https://news.google.com/rss/articles/CBMiswFBVV95cUxQcGs0bkJQcExBbkZBTGpzcm9Jc2Q3NFdqUDVQQjdhM3V0Yy1QTkVtWUx4a0d6c1g1bF9QOUdjSENUMlVJbEtPOXk5OGw2UGpoZGwwTWE3VlFxaDh5SG1faEthS25pNm9QTWFQQmY3YjRVcmlwa3dfeHZsYlY0WXd5ekRQSlBwMXhaUl9JbzVZcFBPNC05bHp4RkxSQnczLVlxei1XLVFBM1VmQWZaRHJhU1Q3QQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Bug fazia óculos Ray-Ban Meta gravarem áudio sem consentimento do usuário - O Cafezinho](https://news.google.com/rss/articles/CBMioAFBVV95cUxQemVTcjlXYUxvSWF6MFpOUkJEaTYxZmEydmFJaklJOXBObWNXLWFTcXdQUGNza3kwTFJFTE1ZQ0E3V25hNF9EeXE2eEhjSHd1WUVwU1h1ZzVmeV93d0xveXRYT244MG0tWVd5Uk03WW5UZ1EyRUlJMlIySW5tVExBaGZEOXhGS0JQb1JzRk13c3NkR0VZWXh6TGlEMjdOTThK0gGmAUFVX3lxTE9tdm42TWJHUUpOT2lBc01iVnpyUXdpMkQwa0lBSE90amNEZWNkUnhDVzlVOVlzTHhZaGZjVUtvb3ZxUGJtMVQzLWh5TXo2RWExLUFURjJCNkZkTzRrYWdWNXU5UXFUbXBQOWlERDhpc01XOGJRbW8wR0RWSmNlMThXeGppVlc0M3k2UUZlU1hWWTFwX3c2MjU5Y0tQRXVfU3RpTjVsU3c?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Bug turns one of the biggest fears about Ray-Ban Meta smart glasses into reality - Ars Technica](https://news.google.com/rss/articles/CBMiswFBVV95cUxQOHlPUEprazRLcDF3OW9MZW11SURDckdxRjdla2hLVUl5cGtvS0hyNEpyY0UzdmhyYXRraTloUW0yUVBoUVRDQnhvaUNfcm05UG92a3RtWHl2VDJCVGxHVXdMX0p4VDRzdlBnc0V0XzFlYWhNNk1sNEMwNVByWmNQQ0EzUDA0VDV2M2MweDgxQ2ZMRWQtV1J2N1U4NHk5UGZoTVhBX24yZkthNmY0OTF2eHVjcw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Build for AI glasses from Meta](https://developers.meta.com/wearables/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
@@ -263,14 +263,14 @@ Generated: `2026-10-17T15:41:34.507029+00:00`
 | normal | needs_editorial_verification | direct | [KCA and KAIST push security as AI smart glasses threaten exam integrity - DongA Science](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VZFZYXzU3UEs3aFVTN05LNEVIenNnZ3RSM0VxaTg5QVc3Z2JtR3pFd3ZqLUhRaXRES1ZnZmJYY2pGUjJ0X1BGZGV0dUZZV2ZDbjktOQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [South Korean Universities Tighten Security After Students Caught Cheating With AI Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1hKWjl1TUdUbGlCREpzR2gwakRNTklJV3JMQmVvTGpJZmhsN0xFbDNPYXBCYjctamVuTXFEcWhRdU9XQVJzbDBMdVhoLXJQYXZxNk4zS2NMNmxWMzQ5RFhNMk84RUp2MVRHU3VrSW9mTG45Tk1HRVRZQlpQampHZnp4NWZ3ZmJPMkVXVTI2REg0MFdReVUxOTJFeEVLTHRSTW9UaEF4M1lTUWhOQlNVaHlqQ1pkMXNuSzlpdG5pa1Q?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["눈 깜빡이면 충전"…배터리 없는 스마트 안경 등장 - 지디넷코리아](https://news.google.com/rss/articles/CBMiVkFVX3lxTE1OTEFoeVBRTWJPX2tUZ2UyOHd2MkZpZm91OVl0QUpRb0pGWlBsOHJUWE5fRnViNkxSU21nV1dhWkt1M2QtVjlaSXlueWZpVUF6NVRqNzhB?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [#eyeglasses \| TikTok](https://www.tiktok.com/tag/eyeglasses) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [2026 Unisex AI Smart Glasses - TikTok Shop](https://shop.tiktok.com/us/pdp/2026-unisex-ai-audio-smart-glasses-hd-wireless-calling-music-translation-ai-assistant/1732724595520934440) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [300308公告，或将注销近50亿元回购股份！智能眼镜新品密集发布，12股前三季度业绩预喜 - finance.sina.com.cn](https://news.google.com/rss/articles/CBMimAFBVV95cUxQaF84MjVGWUpaZkJoWTRFeFgzR0lPTW1RcmFsWThWYnVsaGRlbUl5RnExVlRrUnlTTHZnekE4WWE2TVFPcnRMUEhhN212YmJEcTRGUE5aaGxzWVZPRDd1eDY5V1BkWFJ2VWswd1hiWTNvNGhLelNIVVJHVDhVc0FneUhURWVPNXpLTkRDUzBMdjRISjZ0OU9iXw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [9to5Google 27d ago The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI glasses as travel guides? Cheaper in China, but bugs slow adoption - South China Morning Post](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNelV3NTl2YWFhYkR3N0dJY2U5MFctazVXTjZHWTBDRV82R3JwMV9uTUxUdEUxaElIVVdNYlhLdE84UjY1WW51ZGRnblZVMUdJcDlya1hxQkZ6bWd0YmVtMFoyVXgwcUJGQ0pwaWRHWDVCTWx1b0MxdzdWUzFFdThwaFdSNVhFM0N2THRIR1BfN3lKbXRtRUp3ZTVqcEpuWV94Q1VPLW5SeVNrQk13MGdPZEdsNjJQRFFnanpVbTJ0MlBxNk5vVkF3ZdIByAFBVV95cUxPQmtMRE1mVUZ3MDBOcklDQlk3N2Q1OHRDZ0syT2dUMUlQQ2x4a2EtSFZyU0JxSy1XTEotc0J3T05oaG9mdGV4SXE5VEp3ZkI1dDJhN3FFcm4taVd0Q3AzN0hueE1TZ0JDZG5xUjhsbVV0Q3gwem1lR2FURnktOWZJYlU3T0IySldDZ1N0ZGlzalk5cmdSUDY2OTA3c2Q3c0FYbERZRGFLdWp6cUY3S3E1V1pLNWlvcHBsbWZjY2xtSHozdzJuTy1kUw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI glasses as travel guides? Cheaper in China, but technical hitches slow adoption](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ad3969f3b774218904187c3d6775395&url=https%3a%2f%2fwww.scmp.com%2feconomy%2fchina-economy%2farticle%2f3370754%2fai-glasses-travel-guides-cheaper-china-technical-hitches-slow-adoption&c=17517616541508573182&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses for Capturing Everyday Moments \| TikTok](https://www.tiktok.com/@aqua_madness/video/7689151279322516767) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI 안경 부정 잇따라 적발…수능 한 달 앞두고 ‘비상’ - 동아일보](https://news.google.com/rss/articles/CBMiZkFVX3lxTE9XeU42QkpLc1RYLVhUVTJxTGIzRFJKVjdxQUJ1OWJVcmZxSE91R3FYT3JiMVo5RVNfY1R5TnZCNWtnNDQ0VEZCUmEtQkxPbGJkU3BYZkdnZkRfbjB6eGpuSW40TGkwUdIBZkFVX3lxTE9XeU42QkpLc1RYLVhUVTJxTGIzRFJKVjdxQUJ1OWJVcmZxSE91R3FYT3JiMVo5RVNfY1R5TnZCNWtnNDQ0VEZCUmEtQkxPbGJkU3BYZkdnZkRfbjB6eGpuSW40TGkwUQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI眼镜销量暴增，莫非还有隐藏逻辑？ - 财经号](https://news.google.com/rss/articles/CBMiZEFVX3lxTE9tQldzVl84R1htWERRSWxobkdqME9PdEhCRG5heUExUEhkX2dZSHNkZFVrejFEUm1NMFMyZVZ6ZzVJNHpSOWJfczlKSUlvU0hpQkN3a2dYU2swQVBZY050QjQzQlc?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
