@@ -1,40 +1,39 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-17T22:34:51.412059+00:00",
-  "candidate_count": 59,
-  "classifier_irrelevant_count": 54,
+  "discovered_utc": "2026-10-17T23:13:00.852417+00:00",
+  "candidate_count": 62,
+  "classifier_irrelevant_count": 50,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 5,
-    "broad_web": 34,
-    "developer": 20
+    "adjacent": 12,
+    "broad_web": 30,
+    "developer": 20,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 5,
+    "adjacent": 11,
     "speculative": 0,
-    "irrelevant": 54
+    "irrelevant": 50
   },
   "type_counts": {
     "model": 4,
     "review": 1,
-    "news": 25,
-    "research": 2,
-    "tool": 22,
-    "sdk": 20,
-    "policy": 10,
-    "retail": 3,
-    "teardown": 1,
-    "community": 2
+    "news": 29,
+    "research": 1,
+    "tool": 20,
+    "sdk": 21,
+    "hack": 1,
+    "optics": 1,
+    "community": 27
   },
   "routing_counts": {
-    "adjacent_radar": 5,
-    "development_hacking": 1,
-    "reject_noise": 54,
-    "report_card_evidence": 1,
-    "research_news_review": 5,
-    "retail_rebrand_review": 1
+    "adjacent_radar": 11,
+    "model_catalog_review": 1,
+    "reject_noise": 50,
+    "research_news_review": 12,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,50 +47,78 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "9d785136bb4d542a",
-      "title": "Canton MI Real Estate & Homes For Sale - Zillow",
-      "url": "https://www.zillow.com/canton-mi/",
-      "summary": "Zillow has 298 homes for sale in Canton MI. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "id": "8aaeb8787cfc8e59",
+      "title": "SPECS | AR Glasses | Pre-Order Today",
+      "url": "https://www.specs.com/smart-glasses/specs-27",
+      "summary": "Pre-order SPECS AR glasses with a see-through display, hands-free controls, adaptive tint, and immersive Lenses for real life.",
+      "discovery_channel": "broad_web",
+      "query": "AR glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "optics"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f315f78e63470bc8",
+      "title": "AI搜索引擎哪个好？Perplexity/ChatGPT/Gemini/秘塔/豆包/通义千问/智谱?",
+      "url": "https://www.zhihu.com/question/5014673890",
+      "summary": "AI 搜索现在怎么玩？ 2024 年 的江湖上，AI 搜索已经分出两派： 传统派：像 NewBing 这种，本质上是给搜索引擎加了个 AI 马甲。 效率是提升了，但还是摆脱不了关键词思维的套路。 新派：以 ChatGPT 系列为代表，直接把搜索玩成了对话。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e37ba45d1faf4b93",
+      "title": "Cities Nearby Rocklin, California, United States",
+      "url": "https://www.thecitiesnow.com/united_states/california/rocklin",
+      "summary": "Find five hundred cities near Rocklin, California, United States from closest to farthest by distance. Distances from Rocklin to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "review",
-        "retail"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c00e54ad2a27e2a0",
-      "title": "Columbus Blue Jackets - St. Louis Blues - Oct 10, 2026 | NHL.com",
-      "url": "https://www.nhl.com/gamecenter/cbj-vs-stl/2026/10/10/2026020079",
-      "summary": "NHL Gamecenter - Columbus Blue Jackets vs. St. Louis Blues, Oct 10, 2026 - summary, stats, boxscore, play by play, recap and more.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
       "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
@@ -115,73 +142,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cf0484fd6c9da974",
-      "title": "Columbus Blue Jackets live score, schedule & results | Sofascore",
-      "url": "https://www.sofascore.com/ice-hockey/team/columbus-blue-jackets/3683",
-      "summary": "Columbus Blue Jackets live score, upcoming games and statistics for all ice hockey tournaments.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4063bf2c3d946632",
-      "title": "How to Get Help in Windows 10 (All Methods)",
-      "url": "https://techbaked.com/get-help-windows-10/",
-      "summary": "In this guide, we’ll explain 10 ways to get help in Windows 10, including keyboard shortcuts, built-in troubleshooting options, online resources, and what to do when the Get Help app isn’t working.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aac6a901e45795d1",
-      "title": "How to Get Help in Windows 10 - Lifewire",
-      "url": "https://www.lifewire.com/get-help-in-windows-10-5095653",
-      "summary": "This article explains the different ways to access Windows 10 support and get help to troubleshoot any problems in your PC.",
+      "id": "31a5b03e2d90415b",
+      "title": "Perplexity AI - 知乎",
+      "url": "https://www.zhihu.com/topic/27949965/hot",
+      "summary": "Perplexity AI 是一款结合大型语言模型和搜索引擎技术的人工智能搜索引擎，旨在为用户提供全面且准确的搜索结果。",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -209,18 +173,267 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "31bad914f17c06ac",
-      "title": "Summit Racing | Aftermarket Parts & Accessories, Performance Parts, OEM ...",
-      "url": "https://www.summitracing.com/",
-      "summary": "Car parts for modern & classic cars. Jeep & truck accessories. Street performance & off-road parts. Mechanic tools & shop equipment. Free shipping on $125 orders.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "5b645f281cf46962",
+      "title": "perplexity.ai 用于科研体验如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/583882387",
+      "summary": "Perplexity的多模型切换是亮点，同一个问题可以对比不同AI的回答。 如果你是重度用户，需要顶级模型和学术搜索，那Pro值得试试。 说在最后 AI工具更新太快，能白嫖就白嫖。 但请记住：天下没有免费的午餐，所有免费背后都有成本。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f193f4aa41f474a",
+      "title": "perplexity.ai 用于科研体验如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/583882387/answers/updated",
+      "summary": "Perplexity可以说是集合了各大顶流大模型（ChatGPT、Claude、Grok、Gemini），大家可以在Perplexity使用到top级大模型，下载桌面版更可以在本地目录完成工作，必须说真是GPT平替来的,还能轻松使用上claude,接下来详细说说如何使用注册Perplexity吧！ 前言：Perplexity是什么 Perplexity.ai 是一款 AI 驱动的搜索与问答 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e42a0f637a48877",
+      "title": "PerplexityAI - 知乎",
+      "url": "https://www.zhihu.com/people/perplexityai",
+      "summary": "Perplexity 致力于为好奇心驱动、需要准确可信答案和智能体行为的用户提供最优秀的 AI 模型。 OpenAI 最近发布了开放权重模型（ gpt-oss-20b 和 gpt-oss-120b ）。 作为…",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e3dcb572386b0e5a",
+      "title": "如何评价perplexity ai，会是未来搜索的趋势吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/571409453",
+      "summary": "反正现在来看的话，perplexity ai已经完蛋了。 perplexity何德何能跟坐拥Google search+gemini模型的Google、坐拥X和Grok模型的X AI比啊。论搜索，perplexity的工程师对搜索的理解不可能干的过谷歌。论时效性也不可能干的过X。 从使用角度来说，Google 的deepreasearch效果比perplexity强八百条街，而Grok的deepersearch效果不 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "210bb8b9bf56ecd2",
+      "title": "如何评价perplexity ai，会是未来搜索的趋势吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/571409453/answers/updated",
+      "summary": "如何评价perplexity ai，会是未来搜索的趋势吗？ 这种通过GPT进行语义理解，基于搜索引擎的新型搜索引擎会颠覆现在的搜索方式吗？ [文章: ChatGPT与搜索引擎合体，谷歌都不香了，LeCun转发｜… 显示全部 关注者 255",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "01cdf758def143a2",
+      "title": "想问下大家怎么看待Ai加搜索，类似preplexity 在国内的可行性？",
+      "url": "https://www.zhihu.com/question/647771267",
+      "summary": "AI搜索引擎现阶段则解决了以上两个缺陷，我觉得有可能会吸引用户使用。 做一个Ai加搜索的应用可行性较高。 但是目前国内搜索引擎市场已被巨头占据，留给初创公司的空间并不多。 说到底，perplexity是一个问答引擎，360AI搜索也是。 是为解决复杂语句搜索问题。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ab51f2b505164a5e",
+      "title": "求通俗解释NLP里的perplexity是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/58482430",
+      "summary": "H (\\mathcal E_ {test}) 就可认为是根据训练语料学习得到的语言模型 \\hat {p} 的交叉熵，而这一般也是在训练语言模型时的损失函数。 而对于 perplexity 即 2^ {H (\\mathcal E_ {test})} ， 从编码长度的角度来理解，就可认为是在语言模型 \\hat {p} 下，等可能性的输出结果的个数。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "452b4148860402be",
+      "title": "除了Newbing、WallesAI、Perplexity之外，还有哪些好用的AI搜索引擎?",
+      "url": "https://www.zhihu.com/question/611187209",
+      "summary": "还记得以前用的那些搜索引擎吗？结果排了一大堆，但要找到想要的答案，还得一个一个点进去，好麻烦。 你是不是也想过，有没有一种搜索引擎，直接帮你把答案整理好？省得你再东翻西找。想法是不错，以前还挺难实现，但现在不一样了，AI时代来了啊！ 天工AI搜索，就是为了解决这个问题诞生 ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b7f6e177a5bf8d4",
+      "title": "Smart-Glasses Open Development Resource Ledger - GlassesResearch",
+      "url": "https://glassesresearch.org/hacking/OPEN_HACKING_RESOURCE_LEDGER/",
+      "summary": "Direct smart-glasses SDK, API, BLE protocol, firmware, open-hardware, and developer resources with primary/community evidence boundaries.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 5,
       "keyword_hits": [
-        "oem",
-        "shipping"
+        "api",
+        "firmware",
+        "sdk"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -230,11 +443,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
-        "tool",
-        "sdk"
+        "sdk",
+        "hack",
+        "community"
       ],
-      "primary_type": "model",
+      "primary_type": "sdk",
       "routing_targets": [
         "reject_noise"
       ],
@@ -244,65 +457,32 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5d3c357c3fefda7a",
-      "title": "Automotive Shop Equipment - Summit Racing",
-      "url": "https://www.summitracing.com/search/department/tools-shop-equipment/section/shop-equipment",
-      "summary": "Get Shop Equipment fast! Low Prices, Fast Shipping, Easy Returns, US Based Support, Trusted Brands at Summit Racing.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6e622bf6797e9fc",
-      "title": "DNA study uncovers ancient ancestor of Europeans - ScienceNordic",
-      "url": "https://www.sciencenordic.com/archeology-denmark-dna/dna-study-uncovers-ancient-ancestor-of-europeans/1407215",
-      "summary": "This skull belonged to a woman who lived in Stuttgart some 7,000 years ago. Scientists have used samples of her DNA to uncover new truths about European history.",
+      "id": "8ac90dce3e9ecbcf",
+      "title": "Android autofill in Edge : r/1Password - Reddit",
+      "url": "https://www.reddit.com/r/1Password/comments/gyhl9a/android_autofill_in_edge/",
+      "summary": "In Microsoft Edge the autofill API is supported (tested that with another password manager), but with 1Password it does not work. Is this a bug or do I have to switch back to the accessibility services workaround?",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "study"
+        "api"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
+        "review",
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
-      "primary_type": "research",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -312,50 +492,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "14918567694280ac",
-      "title": "Summit Racing - Home · Help Center",
-      "url": "https://help.summitracing.com/",
-      "summary": "Terms of Use | Privacy and Security | Site Accessibility Copyright 2026 by AUTOSALES, INCORPORATED dba Summit Racing Equipment | Trademarks Let's Build it Together ™",
+      "id": "a9a92744916456f4",
+      "title": "How to Enable or Disable Password Monitor in Microsoft Edge Chromium",
+      "url": "https://www.tenforums.com/tutorials/159438-how-enable-disable-password-monitor-microsoft-edge-chromium.html",
+      "summary": "How to Enable or Disable Password Monitor in Microsoft Edge Chromium Microsoft has adopted the Chromium open source project in the development of Microsoft Edge on the desktop to create better web compatibility.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "privacy"
+        "open source"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d9a6cfc9602fc63",
-      "title": "7,000 Years Ago the Last Hunter-Gatherers Met the First Farmers at a ...",
-      "url": "https://www.europesays.com/germany/77806/",
-      "summary": "Located in the transition zone between Germany’s low mountains to the south and the northern plains, it was a place where two worlds met: traditional hunter-gatherers and the farmers arriving from the south.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -377,320 +525,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5a9f7cdfbfb9c0cc",
-      "title": "7,000-year-old deer antler headdress uncovered in Germany",
-      "url": "https://www.thearchaeologist.org/blog/7000-year-old-deer-antler-headdress-uncovered-in-germany",
-      "summary": "Dating back thousands of years, it may represent a moment of contact between Europe’s last hunter-gatherers and its earliest farming communities. Around 5500 BCE, early agricultural groups known as the Linear Pottery culture began expanding across Europe.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5403ad5f34ebca19",
-      "title": "Atech Motorsports | Wholesale Car & Truck Parts Distributor",
-      "url": "https://www.atechmotorsports.com/",
-      "summary": "We stock it, so you don't have to. Atech Motorsports is a global wholesale distributor of: Truck, Jeep & Offroad High Performance Late Model Detroit Muscle European Restoration Stock Replacement Tools & Shop Equipment",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9eb3491898c338ea",
-      "title": "Classic Car & Vintage Car Restoration Parts & Tools | Summit Racing",
-      "url": "https://www.atechmotorsports.com/restoration",
-      "summary": "Summit Racing has everything you need to build or restore the engine in your car, truck, or SUV. We carry competition-proven crate engines, performance-matched top end kits, and complete rotating assemblies from all of the top industry names you trust.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "faebfb6e20684c67",
-      "title": "Contact Us · Help Center - Summit Racing",
-      "url": "https://help.summitracing.com/contact-us/",
-      "summary": "It is currently Saturday, October 17, 2026 8:45:29 AM Eastern",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37b92b76f8b2c4a8",
-      "title": "Hidden for 7,000 years: The twisted skeleton baffling German ...",
-      "url": "https://www.euronews.com/2026/10/14/hidden-for-7000-years-the-enigmatic-skeleton-from-grosskollnbach",
-      "summary": "What happened 7,000 years ago? The excavation site is not open to the public. The skeleton has now been completely recovered and taken to the district archaeology department for further examination.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "923ca33992e0d773",
-      "title": "JEGS Aftermarket Auto Parts & High Performance Racing & Replacement ...",
-      "url": "https://www.jegs.com/",
-      "summary": "Shop Aftermarket Parts For New & Classic Cars Online at JEGS High Performance. Browse Our Collection Of Replacement…",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e22eef7cbddd7008",
-      "title": "Neolithic Europe - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Neolithic_Europe",
-      "summary": "Analysis of radiocarbon dates show clearly that Mesolithic and Neolithic populations lived side by side for as much as a millennium in many parts of Europe, especially in the Iberian Peninsula and along the Atlantic coast.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bb52deb3c47e1e9a",
-      "title": "Oldest grave in Leipzig, Germany, unearthed at 7,000-year-old Neolithic ...",
-      "url": "https://www.foxnews.com/travel/7000-year-old-bones-uncovered-construction-site-startling-find",
-      "summary": "A 7,000-year-old skeleton from the Linear Pottery culture was found in Leipzig, Germany, during a school construction dig, marking the city's oldest grave.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9b0e989d70483c03",
-      "title": "Prehistoric Europe - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Prehistoric_Europe",
-      "summary": "Homo sapiens later populated the entire continent during the Mesolithic, and advanced north, following the retreating ice sheets of the Last Glacial Maximum that spanned between 26,500 and 19,000 years ago.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c7610400b1e9618f",
-      "title": "Something Weird Happened to Men 7,000 Years Ago, And We ... - ScienceAlert",
-      "url": "https://www.sciencealert.com/neolithic-y-chromosome-bottleneck-warring-patrilineal-clans",
-      "summary": "Now, through computer modelling, researchers believe they have found the cause of this mysterious phenomenon: fighting between patrilineal clans. Drops in genetic diversity among humans are not unheard of, inferred based on genetic patterns in modern humans.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22344f1bfbc2bedb",
-      "title": "Summit Racing",
-      "url": "https://www.summitracing.com/apphome",
-      "summary": "-OR- Continue As Guest Email Sign Up Stay Updated with Emails from Summit Racing Never miss a sale on new parts, tools, and more! = Required First Name Last Name",
+      "id": "fa1cd2ca567b7642",
+      "title": "A lot of contacts where added to my iPhon… - Apple Community",
+      "url": "https://discussions.apple.com/thread/255110509",
+      "summary": "Recently Apple added a zillion entries to my contacts. It apparently added as a new contact every email i have ever received or phone call i have ever gotten. How do i go back to the simple list of contacts that i entered myself? I need to get back to the simple contact list that I enerted. [Re-Titled by Moderator]",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -707,7 +545,7 @@
       "content_types": [
         "tool",
         "sdk",
-        "retail"
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -719,42 +557,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "607b8eae503f4513",
-      "title": "Summit Racing Performance, Restoration & Replacement Parts & Tools",
-      "url": "https://www.summitracing.com/search/brand/summit-racing",
-      "summary": "Click here to learn more about our Summit Racing products and when you’re ready to stretch your build budget a lot further, check out all the Summit Racing parts, tools, and accessories for your car or truck available right now.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "96e8eb4876508d7d",
-      "title": "Summit Racing Retail Locations",
-      "url": "https://www.summitracing.com/about/retail",
-      "summary": "Browse a huge selection of in-stock parts, take advantage of guaranteed low prices, and experience Summit Racing's renowned service-in person! Visit one of our four retail locations:",
+      "id": "e3310d9e426e19dd",
+      "title": "block everyone but contacts on my iPhone - Apple Community",
+      "url": "https://discussions.apple.com/thread/253355113",
+      "summary": "block everyone but contacts on my iPhone OK,pretty simple here. I want to set my iPhone (iOS15.1) to block everyone except those in my contact list. All the instructions online refer to \"Do Not Disturb\", which DOESN'T EXIST ANYMORE. Help!",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -771,7 +577,7 @@
       "content_types": [
         "tool",
         "sdk",
-        "retail"
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -783,199 +589,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "73fb62529a319214",
-      "title": "The 7,000 Year Old Shamanic Mystery Found Inside a Farmers Pit",
-      "url": "https://www.sciencenewstoday.org/the-7000-year-old-shamanic-mystery-found-inside-a-farmers-pit",
-      "summary": "Seven thousand years ago, the soil of Central Germany was not just fertile. It was contested. By the mid-6th millennium BC, a profound shift was underway. Newcomers—early Neolithic farmers —arrived on the rich loess soils, bringing with them a radically different way of life. They cultivated crops. They settled. They reshaped the land.",
+      "id": "0716cf99c9b2c991",
+      "title": "Can I view password history in edge? : r/MicrosoftEdge - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftEdge/comments/1dofu4h/can_i_view_password_history_in_edge/",
+      "summary": "I just lost a throwaway reddit account because edge accidentally overwrote my previous password and I have no way of knowing the previous one now…",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "teardown"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9e6217351536f546",
-      "title": "What people lived in Germany 3000 years ago? - StudyCountry.com",
-      "url": "https://www.studycountry.com/wiki/what-people-lived-in-germany-3000-years-ago",
-      "summary": "What ancient people lived in Germany? Up until the 1st century BCE, the regions inhabited by the ancient Germanic people (known to the Romans as Germania) were separated from the Roman Republic by lands inhabited by Celts.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ebd155b3b885f798",
-      "title": "\" why is my case no longer on Mo/CaseNet?\" - Legal Answers",
-      "url": "https://www.avvo.com/legal-answers/-why-is-my-case-no-longer-on-mo-casenet--3225449.html",
-      "summary": "\" why is my case no longer on Mo/CaseNet?\" \"My criminal case has been ongoing for three and a half years now. The prosecutor has been granted continuance after continuance of pretrial over this period. Finally had pretrial conference, and Jury Trial is scheduled for the next day. After pretrial, I received a call from my lawyer (PD).",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "policy"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "729ccc7d57850beb",
-      "title": "0 Auckland Motels from NZ$81, Auckland Motels hotel discounts - Hotels.com",
-      "url": "https://nz.hotels.com/de950540-at7/motels-hotels-in-auckland-new-zealand/",
-      "summary": "Compare prices and reviews from 2,563 Motels in Auckland and find the perfect place to stay for your trip to Auckland on Hotels.com.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad909435b70daa9c",
-      "title": "559 Hamilton Motels from NZ$113, Hamilton Motels hotel discounts ...",
-      "url": "https://nz.hotels.com/de1644423-at7/motels-hotels-in-hamilton-and-vicinity-new-zealand/",
-      "summary": "Compare prices and reviews from Motels in Hamilton and find the perfect place to stay for your trip to Hamilton on Hotels.com.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "415096a00c3fb2b6",
-      "title": "Beste hoteller i Oslo sentrum, Oslo fra 857 kr | Hotels.com",
-      "url": "https://no.hotels.com/nh1637970/hoteller-i-oslo-sentrum-oslo-norge/",
-      "summary": "Gratis avbestilling på utvalgte hoteller. Sammenlign 195 hoteller i Oslo sentrum ved hjelp av 167 196 ekte gjesteanmeldelser. Tjen bonusovernattinger og gjør bestillingen enklere med Hotels.com!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fedce91b8819b88e",
-      "title": "For those who didn't know: \"Case.net is your access to the ... - Reddit",
-      "url": "https://www.reddit.com/r/StLouis/comments/koxce/for_those_who_didnt_know_casenet_is_your_access/",
-      "summary": "For those who didn't know: \"Case.net is your access to the Missouri state courts automated case management system. From here you are able to inquire about case records including docket entries, parties, judgments and charges in public court.\" : r/StLouis Go to StLouis r/StLouis r/StLouis",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -985,308 +607,9 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "policy",
+        "tool",
+        "sdk",
         "community"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "728ad2f387fe1919",
-      "title": "Hampton Pirates at Sacred Heart Pioneers - NCAAF Box Score - Oct 17 ...",
-      "url": "https://sportsdata.usatoday.com/football/ncaaf/stats/2973554",
-      "summary": "Get the full box score for the Hampton Pirates at Sacred Heart Pioneers NCAAF football game on October 17, 2026 from Sikorsky Credit Union Field, Fairfield, CT. Follow player stats live or view the complete box score after the game from USA TODAY.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "80d62786eaae55f0",
-      "title": "Hampton Pirates at Sacred Heart Pioneers · dwwt",
-      "url": "https://www.didwewintoday.com/cfb/game/401866663",
-      "summary": "Hampton Pirates at Sacred Heart Pioneers, Oct 17, 2026. Tap for the result: scores stay hidden until you ask. College Football.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4f1bdbd66a331081",
-      "title": "Hampton Pirates at Sacred Heart Pioneers, Oct 17, 2026 · dwwt",
-      "url": "https://www.didwewintoday.com/cfb/hamp/game/401866663",
-      "summary": "Hampton Pirates at Sacred Heart Pioneers, Oct 17, 2026. Tap for the result: scores stay hidden until you ask. College Football.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "404a1e54b06f26a4",
-      "title": "Hampton vs Sacred Heart - College Football - On3.com",
-      "url": "https://www.on3.com/college/football/scoreboard/1947154/",
-      "summary": "Preview, kickoff time and TV info for Hampton vs Sacred Heart.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ae326efb44e7143",
-      "title": "Hampton vs Sacred Heart FCS Football Game Summary - October 17, 2026 ...",
-      "url": "https://www.ncaa.com/game/6604852",
-      "summary": "Live scores from the Hampton and Sacred Heart FCS Football game, including box scores, individual and team statistics and play-by-play.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0dd3f35368dc487b",
-      "title": "Hampton vs. Sacred Heart (17 Oct, 2026) Box Score - ESPN (UK)",
-      "url": "https://www.espn.co.uk/college-football/boxscore/_/gameId/401866663",
-      "summary": "Box score for the Hampton Pirates vs. Sacred Heart Pioneers NCAAF game from 17 October 2026 on ESPN (UK). Includes all passing, rushing and receiving stats.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3bad86414fa4aab2",
-      "title": "Hampton vs. Sacred Heart (Oct 17, 2026) Play-by-Play - ESPN",
-      "url": "https://www.espn.com/college-football/playbyplay/_/gameId/401866663",
-      "summary": "Play-by-play action for the Hampton Pirates vs. Sacred Heart Pioneers NCAAF game from October 17, 2026 on ESPN.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3939b7dba53d8c8",
-      "title": "Hampton vs. Sacred Heart - Final Score - October 17, 2026",
-      "url": "https://www.foxsports.com/college-football/hampton-pirates-vs-sacred-heart-pioneers-oct-17-2026-game-boxscore-43658",
-      "summary": "See how Hampton vs. Sacred Heart ended on October 17, 2026: final score, box score, top performers and highlights.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "746bd255505949b1",
-      "title": "Hotels.com",
-      "url": "https://zh.hotels.com/en/",
-      "summary": "Hotels.com | Find cheap hotels and discounts when you book on Hotels.com. Compare hotel deals, offers and read unbiased reviews on hotels.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f5dab48427e3342",
-      "title": "Hotels.com - Deals & Discounts for Hotel Reservations from Luxury ...",
-      "url": "https://za.hotels.com/",
-      "summary": "southafrica.Hotels.com With the Hotels.com app, you can: Save on select hotels Earn one reward night* for every 10 nights you stay Search, book, and save on the go",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1298,15 +621,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "98e395cf5670a319",
-      "title": "How can i have it removed from missouri casenet records? Its affecting ...",
-      "url": "https://www.avvo.com/legal-answers/how-can-i-have-it-removed-from-missouri-casenet-re-2507683.html",
-      "summary": "How can i have it removed from missouri casenet records? Its affecting my ability to rent from who i want to rent from.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "bfc226a4be3d435f",
+      "title": "Contact Photos disappeared after update 1… - Apple Community",
+      "url": "https://discussions.apple.com/thread/255288703",
+      "summary": "Any changes or updates made to your contacts, whether it's adding a new contact, editing an existing one, or deleting a contact, are reflected both on your iPhone and in the corresponding email account. By utilizing this synchronization method, you can access and manage your contacts from multiple devices or platforms.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1316,9 +639,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "policy",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1328,15 +653,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "56b999852bc3a8b6",
-      "title": "How can I remove my record off of Missouri's \"casenet\" website?",
-      "url": "https://www.avvo.com/legal-answers/how-can-i-remove-my-record-off-of-missouri-s-casen-1690204.html",
-      "summary": "In general terms you can't. If the case was dismissed or you received an SIS and have completed any probation, call the clerk's office. They can usually fix that over he phone. If it was a case that can be expunged -- a list of cases you can expunge is on the attached web site -- it will be taken off Case Net when the expungment order is issued.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "301deca4d6b287fe",
+      "title": "Deleted contacts still there - Apple Community",
+      "url": "https://discussions.apple.com/thread/8248474",
+      "summary": "Deleted contacts still there Today I discovered that my phone is still storing the contact information from contacts that I deleted months and years ago. If I type the name of a deleted contact in a new text, the contact still shows up.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1346,9 +671,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "policy",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1358,75 +685,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0014c80eecb89524",
-      "title": "How long does it take before a filing appears on Case.net?",
-      "url": "https://www.avvo.com/legal-answers/how-long-does-it-take-before-a-filing-appears-on-c-1356526.html",
-      "summary": "The clerk takes that stack and enters each item. Depending on work flow and volume it is often entered within just a few days if not the same day. If you believe something was filed and it's not on casenet within 3 days of when you think it was filed, it probably was NOT filed.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "4e64ac6e0ee1442d",
+      "title": "Disable AutoFill Passwords GPO : r/MicrosoftEdge - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftEdge/comments/18touup/disable_autofill_passwords_gpo/",
+      "summary": "I'm trying to set up a GPO to disable Password Manager and Password AutoFill. I found the option to prevent saving passwords to password manager, but anything previous passwords stored will still be there and autofill. I only see autofill settings for addresses and payments. Any idea if there is a GPO setting to disable password autofill?",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b88af4230d912ce",
-      "title": "IFA Country Stores | Farm Produce & Supply - St. George Chamber",
-      "url": "https://business.stgeorgechamber.com/list/member/ifa-country-stores-1395",
-      "summary": "IFA Country Stores | Farm Produce & Supply About Us M-F 8 am - 7 pm, Sat 8 am - 6 pm. Intermountain Farmers Association was founded by Utah Poultry Growers in Gunnison Utah in 1933. IFA has been in St George since 1948. Their product line includes: seed, feed fertilizers, AG chemicals, home and garden products, pet foods, and livestock handling equipment. They also deal in western wear, work ...",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3c76c87314b1de1f",
-      "title": "Information on a murder - 1991, Washington, MO : r/RBI - Reddit",
-      "url": "https://www.reddit.com/r/RBI/comments/nox5lz/information_on_a_murder_1991_washington_mo/",
-      "summary": "I met a woman (19, I think) shortly before she was brutally murdered in Washington, MO in 1991. She was really kind to a friend and I on a pretty strange night - the night before she was killed. When I heard she had been killed by one of the men we met that same night, I was appalled and confused and all of the things one might expect.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1436,9 +703,11 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
+        "tool",
+        "sdk",
         "community"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1448,15 +717,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8b29a10cf2209275",
-      "title": "LFUCG Traffic - Lexington, Kentucky",
-      "url": "https://trafficvid.lexingtonky.gov/publicmap/",
-      "summary": "Downtown Hamburg Harrodsburg Rd. Leestown Rd. Man O War Blvd. East Nicholasville Rd./Tates Creek Rd. North New Circle UK Campus Versailles Rd. Winchester Rd.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "id": "cf7d908a884c07c7",
+      "title": "Edge refusing to delete passwords - Windows 10 Forums",
+      "url": "https://www.tenforums.com/browsers-email/185131-edge-refusing-delete-passwords.html",
+      "summary": "Edge refusing to delete passwords Hello all, I've started using a password manager and I am trying to tell Edge that I want all the stored passwords deleted - they are now handled by the password manager. I followed the last step of your tutorial here: How to Delete Saved Passwords for Sites in Microsoft Edge Chromium",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1466,9 +735,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1478,15 +748,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e26bdba0cc7292a",
-      "title": "Movie Showtimes and Theaters near Seattle Washington, undefined",
-      "url": "https://www.fandango.com/seattle-washington_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Seattle Washington, undefined.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "1e54e583367ae7ad",
+      "title": "How do I create a duplicate copy of a gmail contact?",
+      "url": "https://support.google.com/mail/thread/7598794/how-do-i-create-a-duplicate-copy-of-a-gmail-contact?hl=en",
+      "summary": "I need to enter several employees of the same company. Except for the name, all of the information is the same. How do I duplicate the existing gmail contact for the president of the company and then simply change the name for each employee?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1496,9 +766,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1508,15 +779,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8a062cad7513f689",
-      "title": "Movie Theatres in Seattle Area | Cinemark",
-      "url": "https://www.cinemark.com/marketing-areas/seattle/",
-      "summary": "Find Cinemark movie theaters located around Seattle area. Find movie showtimes near you and book tickets online. Enjoy the most cinematic movie experience at Cinemark.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "dd4c6617a770d2fb",
+      "title": "How do u unlink contacts - Apple Community",
+      "url": "https://discussions.apple.com/thread/252755441",
+      "summary": "Unmerging contacts is done manually- contact-by-contact. If you are going to unmerge 10 entries in your Contact list, you need to do the unmerging process 10 times. Open your Contacts app. Phone > Contacts Go to the merged contact you want to unmerge. (Contact Profile Page) Tap on the Edit button located on the top-right corner of your screen. Scroll down to the bottom of the Contact Profile ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1526,9 +797,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1538,15 +811,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c4aef1f523f2d364",
-      "title": "Need help understanding what things mean on casenet in Missouri?",
-      "url": "https://www.avvo.com/legal-answers/need-help-understanding-what-things-mean-on-casene-1909031.html",
-      "summary": "What does it mean when it reads as follows on casenet in Missouri? Heading reads \"Probation Violation Filed\" below it reads \"Initial Violation Report. DMF\". What does this mean? And what does the DMF mean? Please Help! Thank you!!!",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "9f9e7cb1a3ffdf30",
+      "title": "How to list contacts alphabetically by last name, not first name?",
+      "url": "https://support.google.com/mail/thread/18403483/how-to-list-contacts-alphabetically-by-last-name-not-first-name?hl=en",
+      "summary": "My contact list is alpha by last name, but when I hover on To field when composing and click Select Recipients, contact list comes up alphabetical by first name. I want it by last name.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1556,9 +829,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "policy",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1568,15 +842,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9f8621bc15679dda",
-      "title": "Overseeding Your Lawn, A Guide for Utah Grasses | IFA Blog",
-      "url": "https://grow.ifa.coop/lawn-care/overseeding-your-lawn",
-      "summary": "IFA grass seed varieties have been selected and produced for heat and drought tolerance, pest resistance and performance in shady and high traffic areas. Introducing new seed varieties to your lawn by overseeding can aid in the longevity and appearance of your grass, even in undesirable conditions.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "id": "c3e3fc86bcbdc823",
+      "title": "iPhone contacts different from iCloud - Apple Community",
+      "url": "https://discussions.apple.com/thread/251765075",
+      "summary": "iPhone contacts different from iCloud At the bottom of iCloud counts it says 1400. iPhone says 1539. I am syncing iPhone with iCloud why are they different?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1586,9 +860,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1598,15 +874,111 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cbac02e9a10f8e2a",
-      "title": "Sacred Heart 35-21 Hampton (17 Oct, 2026) Final Score - ESPN",
-      "url": "https://www.espn.co.uk/college-football/game?gameId=401866663",
-      "summary": "Game summary of the Sacred Heart Pioneers vs. Hampton Pirates NCAAF game, final score 35-21, from 17 October 2026 on ESPN (UK).",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "25ec6aaa73d731f9",
+      "title": "Is it safe to save passwords in Microsoft Edge? - Reddit",
+      "url": "https://www.reddit.com/r/microsoft/comments/13lc2gu/is_it_safe_to_save_passwords_in_microsoft_edge/",
+      "summary": "The Microsoft Edge password manager syncs to the Authenticator mobile App and does offer storing addresses and credit card information and will offer storing other types confidential information. The data is encrypted at rest with your Microsoft account login. Reply reply maledis87 •",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "14693c6f99e5909c",
+      "title": "Is it safe to store passwords in Edge? : r/edge - Reddit",
+      "url": "https://www.reddit.com/r/edge/comments/xw2d5h/is_it_safe_to_store_passwords_in_edge/",
+      "summary": "Edge passwords aren't really part of chromium browser, the functionality is build into the browser but it comes from and syncs with your Microsoft authentication app, which is connected to the account you login to.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40616e019fb45b1b",
+      "title": "Is there a keyboard shortcut to open the password manager?",
+      "url": "https://www.reddit.com/r/MicrosoftEdge/comments/m5rstk/is_there_a_keyboard_shortcut_to_open_the_password/",
+      "summary": "I couldn't find any keyboard shortcuts for opening password manager. So I came up with an alternative for you. edge://settings/passwords copy that to your address bar and save it as a bookmark.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5bf9336010520409",
+      "title": "Merging all contacts into iCloud Contacts… - Apple Community",
+      "url": "https://discussions.apple.com/thread/256083911",
+      "summary": "Merging all contacts into iCloud Contacts on iPhone 13 I have a number of lists in my contact app. Where one is all contacts on my Iphone 13 and the other are all Gmail contacts and all Icloud contacts. Would like to merge the all contacts list into the all icloud contacts list.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1616,9 +988,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1628,15 +1002,48 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "14c4f9b8c6ad0f9e",
-      "title": "Sacred Heart 35-21 Hampton (Oct 17, 2026) Final Score - ESPN",
-      "url": "https://www.espn.com/college-football/game/_/gameId/401866663/hampton-sacred-heart",
-      "summary": "Game summary of the Sacred Heart Pioneers vs. Hampton Pirates NCAAF game, final score 35-21, from October 17, 2026 on ESPN.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "e95e5d5d378829a6",
+      "title": "Microsoft Edge - Reddit",
+      "url": "https://www.reddit.com/r/edge/",
+      "summary": "ICYMI: The option to add notes to passwords will be available in the redesigned password manager. .",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "20ea7b2720fe8d38",
+      "title": "Why do I have 3 DIFFERENT contact lists? - Apple Community",
+      "url": "https://discussions.apple.com/thread/255348731",
+      "summary": "I have a similar problem - hundreds of contacts in an iCloud contact list and hundreds more in a Hotmail contact list - some contacts are the same in both lists but others are unique. Going through lists one by one is very time consuming and deleting one of the lists risks losing important contacts. Is there a way to merge the lists?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1646,9 +1053,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1658,10 +1067,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a05cc0407cad9db1",
-      "title": "Sign in | Yahoo - Yahoo Mail",
-      "url": "https://mail.yahoo.com/%C2",
-      "summary": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get more out of the web, you get more out of life.",
+      "id": "daea15c4d231bead",
+      "title": "Why switch to Bitwarden? : r/Bitwarden - Reddit",
+      "url": "https://www.reddit.com/r/Bitwarden/comments/1bprc01/why_switch_to_bitwarden/",
+      "summary": "In simple words: Edge is a browser with a simple password manager feature. Bitwarden is a dedicated password manager and designed to manage your passwords as best and as secure as possible.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9ecc1a93b2cb25f7",
+      "title": "8 Ball Champion | Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en/games/8ballchampion",
+      "summary": "Play online 8 Ball Champion at The Zone. No download required. Start playing now! Challenge yourself with this exciting and fun game today.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1688,42 +1129,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "52c7825c5f8786d5",
-      "title": "St. George IFA Country Store | Saint George UT - Facebook",
-      "url": "https://www.facebook.com/StGeorgeIFA/",
-      "summary": "St. George IFA Country Store, Saint George. 1,092 followers · 2 talking about this · 89 were here. Helping to grow the things you love. A locally owned farmer's cooperative since 1923.",
+      "id": "17fd030c35d90a27",
+      "title": "Basket and Ball - Play it Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-basket-and-ball",
+      "summary": "Activate the power bounce in one of our most popular games, Basket and Ball. Jump over the spikes and past the guards. Bounce into Basket to score.",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d26814eda7c81406",
-      "title": "Top Motels in Columbus, OH | Hotels.com",
-      "url": "https://www.hotels.com/de1511594-at7/motels-hotels-columbus-ohio/",
-      "summary": "Flexible booking options on most hotels. Compare 1,696 Motels in Columbus using 5,671 real guest reviews. Pay what you see with upfront pricing on all hotels.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1748,12 +1159,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c8b41d7cda80ed8c",
-      "title": "Traffic Cameras - Kentucky",
-      "url": "https://maps.kytc.ky.gov/trafficcameras/",
-      "summary": "This interactive web map displays available traffic camera images across Kentucky. Each camera provides a single snapshot of current traffic conditions. Only the current image is displayed and replaced every two minutes. No history is stored.",
+      "id": "c0d3f1070f74ef85",
+      "title": "Bodyguard 2.0 guide rod & recoil spring.... | Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/bodyguard-2-0-guide-rod-recoil-spring.727095/",
+      "summary": "Today I cleaned and lubed my new BG2.0 prior to it's first trip to the range. I've been working for an hour trying to get the guide rod & recoil spring back in. At this point, I've given up. I've watched several videos with no help Any hints?",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1766,7 +1177,128 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d58119853ca66e4",
+      "title": "Bubble Town | Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en/games/bubble-town",
+      "summary": "When the cat's away the mouse will play! Bubble Shooter A rainbow wall of spheres is cascading down the board. Microsoft Gem Drop Enjoy 40 levels of replayable gem dropping fun in a classic color-match puzzle game with a twist. Microsoft Bubble Aim the Bubble launcher to match 3 or more of the same ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5bb9508ba79104ad",
+      "title": "Clinical Pharmacy Services - Get Prescriptions Without A Doctor ...",
+      "url": "https://www.safeway.com/pharmacy/care-services/pharmacy-health-services.html/",
+      "summary": "Get testing, prescriptions, and treatment for common conditions like Flu, Strep, and UTIs, plus health screenings and immunizations at your Safeway Pharmacy. Book an appointment online.Prescriptions & Treatment Without a Doctor",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eeb25f9f008a0d0d",
+      "title": "Daily Crossword | Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en/games/dailycrossword",
+      "summary": "Play Daily Crossword online for free at The Zone. Solve clues and fill the grid with words in this classic puzzle. No download, play today's challenge!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "becc74380167e31c",
+      "title": "Discontinued revolvers | Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/discontinued-revolvers.639465/",
+      "summary": "Here is a complete list of revolvers that Smith & Wesson as of this date have discontinued. 12057 M&P BODYGUARD Blk 163072 M&P 340 Blu/Blk 163073 M&P 340CT CT Laser Grip Blu/Blk 11749 Model 360 Scandium Blu/Blk 150469 Model 442 Airweight® Pink Grips Blu/Blk 150467 Model 637 Airweight® Pink...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -1778,12 +1310,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3f12305b1d8ba8bc",
-      "title": "What does this mean on Missouri Case.net docket entries.",
-      "url": "https://www.avvo.com/legal-answers/what-does-this-mean-on-missouri-case-net-docket-en-2650504.html",
-      "summary": "It merely means that the charges have been moved to the Circuit Court Division from the Associate Circuit Court Division. There will be a new case number/case opened in casenet. Normally the new case number will be the same as the original one with -01 added to it. Depending on the clerks office it takes a few days before the new case will appear on casenet.",
+      "id": "bdeeec2d30e9f286",
+      "title": "Duck Duck Clicker - Play it Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-duck-duck-clicker",
+      "summary": "These games have a similar format to Duck Duck Clicker, just with some different twists and turns along the way. Looking for a clicker game that is a bit more serious? Check out Cookie Clicker, the classic idle game that's all about maximizing your sweet treat output.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1796,9 +1328,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "news"
       ],
-      "primary_type": "policy",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1808,12 +1340,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "41349ffb841b24f3",
-      "title": "When you fire your attorney do they have to provide you with a copy of ...",
-      "url": "https://www.avvo.com/legal-answers/when-you-fire-your-attorney-do-they-have-to-provid-1295702.html",
-      "summary": "While each state has its own relevant rules, your prior counsel's refusal to provide you with your case file likely violates state ethics rules or rules of professional conduct. The case file belongs to you. While the attorney may try to hold the file hostage in an effort to collect any unpaid fees, this is a dangerous step. You should not let him/her get away with it.",
+      "id": "13bfce1ff9e21cf9",
+      "title": "Duck Life 4 - Play it Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-duck-life-4",
+      "summary": "Duck Life 4 is one of the newest and most fun games in the series. Feed your duck and attain accessories to train them to be the best that they can be.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1826,9 +1358,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "news"
       ],
-      "primary_type": "policy",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1838,12 +1370,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "49a5276bf7ef6a21",
-      "title": "Why doesn't a case show up on missouri case.net?",
-      "url": "https://www.avvo.com/legal-answers/why-doesn-t-a-case-show-up-on-missouri-case-net--3081214.html",
-      "summary": "A few years ago, my band had our musical equipment stolen, and I know the people that stole it, they were turned in by one of their persons mothers. I recently did a search on Missouri's case.net and I could not find anything about it. I searched all of the peoples names and there was nothing related to the theft. I just recently found a screenshot of the case number, so I searched it. Nothing.",
+      "id": "70c27f07cba67f6b",
+      "title": "Gin Rummy | Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en/games/ginrummy",
+      "summary": "Play free online Gin Rummy at The Zone. Form melds and knock to beat your opponent in this classic card game. No download, deal the cards now!",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1856,9 +1388,580 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "news"
       ],
-      "primary_type": "policy",
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6610e4e5f706b06",
+      "title": "Hangman",
+      "url": "https://hangman-backend.coolmathgames.com/",
+      "summary": "Hangman ... Hangman",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba68f552bad5d2a2",
+      "title": "Letter Garden - Free Word Puzzle Game | The Zone - MSN Games",
+      "url": "https://zone.msn.com/en/games/lettergarden",
+      "summary": "Play Letter Garden free online at The Zone - Microsoft Casual Games. Connect letters to form words in this unique and addictive word puzzle game.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c61826246c90ab32",
+      "title": "M&P Parts Identification | Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/m-p-parts-identification.341115/",
+      "summary": "It's pretty common for someone to come here asking about parts. Things break or are difficult to put together or maybe have a function that needs further explanation. Because we're not all gunsmiths, the names of many of the parts are unknown. So, we make up names. \"That thingy in front of the...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ac8cda2a7017923",
+      "title": "M&P Serial number | Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/m-p-serial-number.362521/",
+      "summary": "Hello, new to the forum and I just bought my first Smith and Wesson M&P 9mm full size. I bought it used without the case so I don't know when the firearm was made. Serial DVD6XX1. Thanks for any help.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f2044c4f4ab45cb3",
+      "title": "Mahjong Dark Dimensions | Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en/games/mahjonggdarkdimensions",
+      "summary": "Mahjong Dark Dimensions at The Zone. Free online with no download needed. Master the challenge and enjoy endless fun with this engaging game!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a383143731b0a8b",
+      "title": "Microsoft Mahjong | Free Online Tile Matching | The Zone - MSN Games",
+      "url": "https://zone.msn.com/en/games/microsoft-mahjong",
+      "summary": "Play Microsoft Mahjong free online at The Zone - Microsoft Casual Games. Match tiles in this classic puzzle game updated with daily challenges and themes.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58c17585ae437be5",
+      "title": "Model 17 - ‘best’ years & models | Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/model-17-best-years-models.561986/",
+      "summary": "Model 17 feedback appreciated....are any of the Models produced over the years (17-2, dash 3, dash 4, etc.) ‘better’ than the others? Any to avoid? Looking for any differences (if any) in fit, finish, accuracy, manufacturing quality, etc.? Any experience with the new classic 17-9? My question...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99f8f897e5ebbfc0",
+      "title": "Modern top break revolvers | Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/modern-top-break-revolvers.718883/",
+      "summary": "For most of us carrying a revolver of any kind would be anachronistic in the age of 20+ round 9mm semi autos, let alone a top break, but I’ve always wondered why the top break fell out of favor. The line is usually that they could not handle modern pressures, but with modern metallurgy is that...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bee07302cbc888df",
+      "title": "Papa's Bakeria - Play online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-papas-bakeria",
+      "summary": "Bake delicious pies in Papa's Bakeria, the legendary baking game. Make your customers' orders quickly to earn extra coins along the way.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bffec8a50d0c4267",
+      "title": "Papa's Games | Play Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/c/papas-games",
+      "summary": "The Papa’s Games are made for those who are masters of multitasking. In the iconic Papa's franchise, you will have to help run a restaurant. Keep up though, orders can pile up awfully quickly. Take orders, prepare food, and make customers happy to score big tips.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60edca3509fb3aa4",
+      "title": "Play Free Strategy Games Online | Microsoft Casual Games",
+      "url": "https://zone.msn.com/en/categories/strategy",
+      "summary": "Play strategic Microsoft Sudoku, Minesweeper, and Checkers on The Zone. Master these classic strategy games with challenging gameplay.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "464fc22bb477a6d2",
+      "title": "Run 2 - Play it Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-run-2",
+      "summary": "Play Run 2, the Coolmath Games title that requires tremendous concentration and memorization as you run (or skate) through the 3-dimensional courses.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b8c96bc15e69ca9",
+      "title": "Text Twist 2 | Microsoft Casual Games - The Zone",
+      "url": "https://zone.msn.com/en/games/texttwist2",
+      "summary": "TextTwist 2 brings back all of that word-finding fun that made the original TextTwist.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47c3c9af906c77a9",
+      "title": "The Complete 3rd Gen Model List - Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/the-complete-3rd-gen-model-list.350215/",
+      "summary": "I've tried my best to compile all the 3rd Generation model numbers onto one list. The information was pulled from the 3rd edition of the S&W Standard Catalog and 34th edition of the BBGV. I'm sure errors exist, so please send me corrections if you see an issue. Also, the list only covers...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb7de96b83200c64",
+      "title": "The Definitive Model 40/42 Thread - Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/the-definitive-model-40-42-thread.137718/",
+      "summary": "According to Smith & Wesson data, total production numbers totalled about 40,000 units from 1952 to 1974. SERIAL NO. range: - L9861 2007: The new Model 40-1 and 42-1 are introduced and shipped out to distributors in late 2007. The Model 40-1 is available in three finishes (Blue, Nickle and Case Hardened).",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1faef73ecb172ca8",
+      "title": "The S&W Model 24 .44 Special Revolvers... - Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/the-s-w-model-24-44-special-revolvers.488825/",
+      "summary": "And then Smith and Wesson responded! In 1983, S&W began to manufacture the “Model 24-3 1950 Target” revolvers. These were nearly identical to the original Model 24, but incorporated a non-pinned barrel, a 3-screw sideplate and eliminated the screw in front of the trigger guard.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "544a339f71281571",
+      "title": "Thumb Safety Operation | Smith & Wesson Forum",
+      "url": "https://smith-wessonforum.com/threads/thumb-safety-operation.366393/",
+      "summary": "The question of the value or how the thumb safety works comes up now and then. So, here's the straight skinny... The thumb safety on all the M&P pistols simply blocks trigger movement. Here's how it does it: When the thumb safety is on, the tab indicated by the red arrow, blocks the trigger...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50be115c381891fd",
+      "title": "Toy Defense - Play it Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-toy-defense",
+      "summary": "Deploy your toy soldiers to defend your home in this great tower defense game, Toy Defense. Protect your base from waves of enemy tanks and infantry.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b28c20aff735a26b",
+      "title": "WorldGuessr - Play it now at CoolmathGames.com",
+      "url": "https://worldguessr1.coolmathgames.com/",
+      "summary": "Free Geoguessr alternative with unlimited rounds and fun multiplayer modes. Explore the world in this game with unlimited rounds! Learn geography and rise up the leaderboard while exploring the world in WorldGuessr.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
