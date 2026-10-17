@@ -31,6 +31,10 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
 
+### October 17, 2026 — MentraOS transfer, voice, firmware and MYVU independence
+
+**Across the Wire · Community-reported · Not GR verified.** [Technical report](../news/articles/2026-10-17-mentra-transfer-voice-firmware/) on MentraOS PRs #4822, #4821, #4829 and independent MYVU ESP32 control, with upstream evidence and physical-verification limits.
+
 ### October 16, 2026 — MentraOS owner controls and W610 photo transport
 
 **Across the Wire · Community evidence · Not GR verified.** [Mentra touch-gesture controls](https://github.com/Mentra-Community/MentraOS/pull/4802), [binary fetch defect](https://github.com/Mentra-Community/MentraOS/pull/4806), [Wi-Fi debugging control](https://github.com/Mentra-Community/MentraOS/pull/4809), and [W610 thumbnail failure](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/issues/23) warrant owner-control and hardware testing.
