@@ -6,7 +6,7 @@ GlassesResearch Report Cards are evidence-linked technical evaluations, not spon
 
 Every canonical model receives the same compact six-dimension Core Report Card. A model does not need a long-form editorial review before it can participate in the Report Card system or the Finder.
 
-- **Discreetness** — how closely the product presents and functions as ordinary eyewear in routine public use, including visible bulk, obvious electronics, capture indicators, and social practicality.
+- **Discreetness** — how closely the product presents and functions as ordinary eyewear in routine public use, including visible bulk, conspicuous branding, recognizable optical/display elements, obvious electronics, appropriate capture indicators, and social practicality.
 - **Camera** — the usefulness of the outward-facing camera system for wearer-perspective capture. Presence alone does not establish a high score; still/video capability, access, limitations, and practical capture quality matter.
 - **Visual AI** — the evidence-backed ability to understand what the wearer is looking at and turn visual context into useful machine understanding.
 - **Hackability** — the practical experimentation surface: BLE or wired access, SDK/API access, firmware paths, reverse-engineering potential, sideloading, exposed interfaces, and community tooling.
@@ -14,6 +14,20 @@ Every canonical model receives the same compact six-dimension Core Report Card. 
 - **Android Compatibility** — the depth and quality of Android support, from basic companion-app compatibility through direct SDK/device access, standard interfaces, and owner-controlled integration.
 
 These six dimensions are the canonical shopper/developer comparison surface. Finder score filters use these same fields rather than a separate subset of specially reviewed models.
+
+### Discreetness: observable criteria
+
+Assess how readily an ordinary observer can distinguish the glasses from conventional eyewear, **including when powered off**. Record separately:
+
+- **Exterior markings:** the visibility and contrast of logos, etched/printed branding, regulatory text, and other conspicuous lettering on exposed frame surfaces.
+- **Visible optics:** recognizable display rectangles, waveguide/combiners, colored reflective patches, projectors, and other optical structures visible to someone looking at the wearer, both powered off and on where safe.
+- **Silhouette and hardware:** frame/temple bulk, asymmetric modules, prominent sensors, visible cables, and unusual lens appearance.
+- **Use in public:** whether normal controls, audible output, and indicator lights attract attention in ordinary operation. Required recording/capture indicators are a privacy/safety feature, **not** a defect to conceal or penalize merely for being present.
+- **Observer context:** viewing distance, angle, and lighting (indoor diffuse/harsh light, outdoor shade/daylight), ideally with a consenting observer. Record which characteristics are visible only under close inspection versus while the glasses are worn in routine conversation.
+
+Distinguish the wearer's first impression from an outside observer's result. A bench photograph, visible reflection at a particular angle, or personal dislike of branding is valid evidence, but **does not alone establish** that the feature is conspicuous to passersby. Preserve these observations even when an overall Discreetness score remains unknown.
+
+**Wearability** remains a broader extended rating for comfort, fit, pressure, balance, and practical long-term use. Discreetness is its own Core score; do not mechanically substitute one score for the other.
 
 ## Extended ratings
 
