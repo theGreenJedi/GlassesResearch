@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-17T08:51:40.636734+00:00`
+Generated: `2026-10-17T10:56:34.408235+00:00`
 
-- Intake files inspected: **263**
-- Candidates retained in this review window/history: **10849**
+- Intake files inspected: **264**
+- Candidates retained in this review window/history: **10996**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2077
+- `adjacent_radar`: 2113
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 586
-- `rejected_noise`: 8069
-- `source_review`: 46
+- `needs_editorial_verification`: 588
+- `rejected_noise`: 8179
+- `source_review`: 45
 - `watching`: 49
 
 ## Action queue
@@ -189,6 +189,8 @@ Generated: `2026-10-17T08:51:40.636734+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.973](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.973) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.975](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.975) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.977](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.977) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.978](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.978) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.979](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.979) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -230,7 +232,6 @@ Generated: `2026-10-17T08:51:40.636734+00:00`
 | high | needs_editorial_verification | direct | [Meta reconoció que sus gafas inteligentes grababan conversaciones incluso cuando los usuarios no lo pedían - TN](https://news.google.com/rss/articles/CBMi5wFBVV95cUxQelNLdjhIUUtwbVhrMHJILXVYTE5SaHM0dFRUbkJ2cDBBV05rWHVSc0hLT1hwYWd5b2hZNVV6VmZuYzFIRWwyX3c4U1l4OFBieHlMT2lYT0QzVlluUmsxcVJVUlBld1JtbXl1bWxxbFdZQmxlcDFkT1ZtUkRhVnhzV1BnSHYtX1JidV80elJZbzhPNDdnUHdfbjhZTFpGQVlRUEJJWEhWLVBsR3R2ZnRweVJ1dGJZZEZ1VG8xdlRuNlJqRDhwUXAxWlZ5ZnRTOGNNem5EeWN5dmZLT3kzV2IySHFjWjFlV0nSAfsBQVVfeXFMT3FkSzJEX2RRdEhMSW02LXFnYk0xUnBRQ2tHTVZaR2thOHNJRW5tNGw0NUhhck92ZEtmZjZVUEtOV2xNVzE5UWllNjZFb2pCbFdJdm5pTDJpN1RSaTNhdXQxN0luT2dlSGdyWWF1enRWeG1OUmpad2RMVkdZdEx5Mk9hNU5PTTZNeng4LVlSUGtfMU9wZEV5RGZvd2gtRHNXUWtzSkVQMUh6UFU4Wm9IMTE2ZWRRUlh6Sllod2tVRF9QLWhDNUpIOTV2VzBycjBnU1hxdzkwdnl4dTBGM1BJb1E4VmlRSzZyVHk3UzQwNGhUQ1IyQVNUYjJzSU0?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta says it fixed Ray-Ban Meta conversation recording glitch — Ars Technica - UA.NEWS](https://news.google.com/rss/articles/CBMisAFBVV95cUxQXzdPcTAwVVlHVjdzRHFXeGQzRWpCdUxyWXZoWUxrVG1LS2tkdTBMMVFULXhfSm1XVnBUX1FEbUdvY2NhTjc2QWM4VjV0NGVla1ZjLXlObHNxamszNjBiSFZCUTc3Zk4tWFFjT041akNhWFU5Z25LVDhiOEd5Y3VBbll3RXRnMERxNF8tTkhIQ0M5WGNLUnNacmE2VXlURDBuVXoyTzF5d2wzclMxT083YQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta smart glasses face Dutch privacy lawsuit over AI - Cybernews](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9zUURiYm13MnBTWmw3dmR1cVROQk9peHc5RjNHY3hJSGhlRGlLdzE1NVRMeVhCbGdtVlRfS0hHMVY3ekRsRV83TUx6SXF3WnB1MUpzeHZVU2RBUXFVRl9KUnBzZmVQR28?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Meta will launch its smart glasses in South Africa - bandwidthblog.co.za](https://news.google.com/rss/articles/CBMie0FVX3lxTE1ZQnhXSDRmVm9uc2tXaDNvX2Y3SVUxSmowR2pwc1FFclNzZnFQaTBjbVdlS3l1NEZNYnZLTnpjeG55elVjR3VSSlkzcXNHUkZZS0taYTRBX3dwRS15RnE3R055ZUkyZUJXOC1rMF9FVDVBQmM2Zl9taUljbw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [meta.com/blog 1d ago Experience Doja Cat’s ‘Tour Ma Vie’ From Her Point of View, Shot on Ray-Ban Meta Newsroom Meta](https://www.meta.com/blog/doja-cat-ma-vie-tour-ray-ban-meta-documentary-meta-lab-takeover/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Notebookcheck 11d ago Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Oakley & Meta launch sports smart glasses in New Zealand - ChannelLife New Zealand](https://news.google.com/rss/articles/CBMijwFBVV95cUxOS2htVVdRV1pTQnlpWXROa2ltQ0ZOcW1udlp4QXR0b2didGZaeW5HWDNQUmR4dDlacWVwZ3BVUjlUQUNUMnNpMXVVVVZ1ay12LXgyWFliQTBvbzZSdFI3MDRyOS1hdWt1Vy1PZDhndmpBWlQ1VGRQN3NHN1JyRVYwbmJ3QXdhSWY4MVFMVU4yZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -266,7 +267,6 @@ Generated: `2026-10-17T08:51:40.636734+00:00`
 | normal | needs_editorial_verification | enabling | [Forget Eufy – EZVIZ's new solar security camera has a dual-lens system and 3 built-in spotlights - T3](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSnBBYW1KV0tSQnAxVnFtb2JBX2V2WlQtYjlCbFVLZkU2Mkp5ZkkwMndHYUpvVXk1NUFVbzNkUVJoMnlRTGl2QzBzN0c4V29oNDFwWnBWaUphUFZZS21ILVRtWFgtV01sOXpzR0c1OEtPdk1lVFV3MmY3RFZiVk1fZGlKRGNrQ2JXQkNNRmpuX1FhMVp2a0hBN2htT3RrMDl2b2dmZU9XYjlHLXdlY1ZfSDh4d1hUX0tBVE16MWtjaDRPUEQ2dkgzTzNkZEF6bkVj?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [KCA and KAIST push security as AI smart glasses threaten exam integrity - DongA Science](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VZFZYXzU3UEs3aFVTN05LNEVIenNnZ3RSM0VxaTg5QVc3Z2JtR3pFd3ZqLUhRaXRES1ZnZmJYY2pGUjJ0X1BGZGV0dUZZV2ZDbjktOQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [South Korean Universities Tighten Security After Students Caught Cheating With AI Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1hKWjl1TUdUbGlCREpzR2gwakRNTklJV3JMQmVvTGpJZmhsN0xFbDNPYXBCYjctamVuTXFEcWhRdU9XQVJzbDBMdVhoLXJQYXZxNk4zS2NMNmxWMzQ5RFhNMk84RUp2MVRHU3VrSW9mTG45Tk1HRVRZQlpQampHZnp4NWZ3ZmJPMkVXVTI2REg0MFdReVUxOTJFeEVLTHRSTW9UaEF4M1lTUWhOQlNVaHlqQ1pkMXNuSzlpdG5pa1Q?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | ["It's both brilliant and profoundly unsettling at the same time" – I finally had a hands-on test of the new Meta Ray-Ban Display glasses - D](https://news.google.com/rss/articles/CBMigAJBVV95cUxNZ1JJcXV2Y1RCdXpSZ2RzLVJxQUdaWGdycEFuMS1QMmNFbzNndWlWem5xS3NYS0NtS283bUZiNmFpcHhYMXNTdmp4azV6WVpIUy1HSDk3cTBjY2ZmOTRSN052bDdqWjNlaGhDaGZPUHZpOG9SNXBMX3d1R3RKUzYtcHBJeUxpY0oxekVjN2RBT3ZUcWIyQ2ZVeHRpcUZyUFZ0a193aWEzMWI4NlNnQ3hrN0ZGa3pZRlV5V0lSazNPVWZEQ3UzWnJra0N4Tm5YRVI1U1NoSUdjWlJvemprNi1jelZCZ1lQZ2wwVmJFYmdlMTRiTTRJZEhzWGp1V1kxLWlt?oc=5) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [300308公告，或将注销近50亿元回购股份！智能眼镜新品密集发布，12股前三季度业绩预喜 - finance.sina.com.cn](https://news.google.com/rss/articles/CBMimAFBVV95cUxQaF84MjVGWUpaZkJoWTRFeFgzR0lPTW1RcmFsWThWYnVsaGRlbUl5RnExVlRrUnlTTHZnekE4WWE2TVFPcnRMUEhhN212YmJEcTRGUE5aaGxzWVZPRDd1eDY5V1BkWFJ2VWswd1hiWTNvNGhLelNIVVJHVDhVc0FneUhURWVPNXpLTkRDUzBMdjRISjZ0OU9iXw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [3D a 60 Hz: Xreal actualiza sus gafas AR insignia One Pro+ - Root-Nation.com](https://news.google.com/rss/articles/CBMikgFBVV95cUxQQW4xVWZfZVVuT0g2NzdMSDQzM3RFczNjX0FJT1pSWGR0NFVhM3N5NzRxZGFjald5WnhRcklyTTFKdThJbGd5ck40cDlNb2x4ckZXQ3k5a3RhSEtjcmF4Yk5OR3lISUdPaW94Q0Q3X2F1N0RRXzJybThPSHFfVVVWeWFtRWdDSzdRZWI2bTdlbWFnUQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [3D at 60 Hz: Xreal Updates Its Flagship One Pro+ AR Glasses - Root-Nation.com](https://news.google.com/rss/articles/CBMikgFBVV95cUxObWVVQW9XREtETzBKVDJOUi02YlRYbm42bUtESkJuaEw5ZXBuUDRfR1ZFLVhtSUxnOGUwd0FiN1lMQnNHSHg5M0JlY3hlTUk4REFDWHp1N0pMRmgtYlBmbWFWNkFvMVpBNzZ1UWhSbF9fc3RtQWVGTnFvQnJCWEJjUk1aZExzZVFuMjJvdUhpd3B4Zw?oc=5) | reachable (200) | research_news_review |
