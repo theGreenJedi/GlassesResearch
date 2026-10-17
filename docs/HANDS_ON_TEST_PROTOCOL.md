@@ -155,11 +155,24 @@ Use the glasses for an ordinary extended session and record:
 - slipping;
 - weight balance;
 - interference with hats, hearing protection, helmets, or headphones where relevant;
-- social conspicuousness;
+- social conspicuousness, including prominent external branding and visible optical elements;
 - ease of putting on/removing;
 - comfort after one hour and, where feasible, several hours.
 
 Wearability should reflect actual use, not merely appearance in product photography.
+
+### Discreetness observation (separate Core Report Card dimension)
+
+Before assigning a Discreetness score, examine the glasses **as worn** from the viewpoint of another person, where practical:
+
+- Document logos, etched/printed lettering, or other markings visible on each exterior temple; record contrast and ordinary viewing distance.
+- Look for rectangular display/waveguide structures, tinted or colored reflections, unusual lens shapes, or optical artifacts **with the device off**, then again during ordinary powered use.
+- Check side/front views and everyday lighting, including indirect indoor light and brighter illumination. Record distance and angle; do not assume close-up artifacts will be noticeable socially.
+- Record obvious hardware bulges, cables, camera/sensor modules, controls, or audible behaviors that differentiate the device from regular glasses.
+- If a second person is available and consents, ask what they notice without prompting them to look for electronics. Do not record people without consent.
+- Document visible camera/recording indicators as part of the outward appearance, while recognizing that privacy-appropriate indicators are desirable safeguards, not inherently a flaw.
+
+Separate **owner impression**, **photographically observed characteristics**, and **independent observer findings**. If only the owner's bench inspection is available, report that limitation and leave social detectability unverified. Refer to [Report Card Method](REPORT_CARD_METHOD.md) for the core Discreetness rubric; do not replace its score with the broader Wearability rating.
 
 ## 11. Software quality
 
