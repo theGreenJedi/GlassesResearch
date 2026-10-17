@@ -1,25 +1,20 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-17T08:01:52.125076+00:00",
+  "discovered_utc": "2026-10-17T08:04:57.608131+00:00",
   "candidate_count": 1,
-  "precision_rejected_count": 112,
+  "precision_rejected_count": 116,
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 1,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "model": 1,
-    "tool": 1,
-    "sdk": 1,
-    "community": 1
+    "news": 1
   },
   "routing_counts": {
-    "community_evidence_review": 1,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
+    "adjacent_radar": 1,
     "research_news_review": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
@@ -27,53 +22,42 @@
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
-    },
-    {
-      "url": "https://www.everysight.com/pages/maverick-ai",
-      "error": "HTTP Error 500: Internal Server Error"
     }
   ],
   "candidates": [
     {
-      "id": "03bab8bac50a95d6",
-      "title": "Mentra 3.4.0-dev.977",
-      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.977",
-      "source": "direct-feed",
-      "source_lane": "research_radar",
-      "published": "2026-10-17T06:16:38Z",
-      "summary": "Mentra 3.4.0-dev.977 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 349c052 . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
-      "materiality_score": 6,
+      "id": "d38c22383d7502e6",
+      "title": "Counterpoint Discussions: Qualcomm’s Integration of Personal AI in Earbuds with Snapdragon Sound Elite Gen 2 - RS Web Solutions",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNblQ4U1c4eGJXbGE4UndwRTd3ZEsyZGNnaEZMQlJBVm1CZWFFYk9yNGZHeGNlbWxNME5iTGpKbklBc2RPMm5zeG5Ga2ZMNjlfS3pteE4yOGNfUU5zWWo1Y1diSWZEdGJVQlRoSTRGU09lM3NDYmlsNDEwOGFvQkFzc1ZvM0twYXpaRzNfYWhMbW5VRmZNT3NJbnozQzBIU3lBOENhSzc2TW93WVctNDZhbkJVQjlWbFFaMU92QzU4WVlFNWJldHp6UUhvd1kzZWpBcmVDZw?oc=5",
+      "source": "Google News: wearable AI interface",
+      "source_lane": "adjacent_hci",
+      "published": "Sat, 17 Oct 2026 08:00:00 GMT",
+      "summary": "Counterpoint Discussions: Qualcomm’s Integration of Personal AI in Earbuds with Snapdragon Sound Elite Gen 2 RS Web Solutions",
+      "materiality_score": 2,
       "keyword_hits": [
-        "bluetooth",
-        "developer",
-        "release",
-        "sdk"
+        "ai",
+        "snapdragon"
       ],
       "status": "candidate",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "direct",
+      "attribution_required": false,
+      "relationship": "adjacent",
       "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "community"
+        "news"
       ],
-      "primary_type": "model",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "development_hacking",
-        "community_evidence_review"
+        "adjacent_radar"
       ],
-      "triage_priority": "high",
-      "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
+      "institution_test": "review durability"
     }
   ]
 }
