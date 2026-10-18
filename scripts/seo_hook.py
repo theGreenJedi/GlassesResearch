@@ -12,7 +12,7 @@ from typing import Any
 
 H2_HEADING = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 PUBLISHED = re.compile(r"^\*\*Published:\*\*\s+(.+?)\s*$", re.MULTILINE)
-WIRE_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+(?:Reported|Under review)\s+·\s+(.+?)\*\*\s*$", re.MULTILINE | re.IGNORECASE)
+WIRE_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+(?:Reported|Under review|Community-reported)\s+·\s+([A-Za-z]+ \d{1,2}, \d{4})(?:\s+·\s+[^*]+)?\*\*\s*$", re.MULTILINE | re.IGNORECASE)
 LINK = re.compile(r"!?\[([^\]]+)\]\([^\)]+\)")
 HTML_TAG = re.compile(r"<[^>]+>")
 MARKDOWN_MARKS = re.compile(r"[`*_~]+")
