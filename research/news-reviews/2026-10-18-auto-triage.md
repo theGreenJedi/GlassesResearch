@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-18T09:29:10.910419+00:00`
+Generated: `2026-10-18T11:22:20.519944+00:00`
 
 - Intake files inspected: **265**
 - Candidates retained in this review window/history: **11162**
@@ -8,13 +8,13 @@ Generated: `2026-10-18T09:29:10.910419+00:00`
 
 ## Queue state
 
-- `adjacent_radar`: 2112
+- `adjacent_radar`: 2111
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 582
-- `rejected_noise`: 8357
-- `source_review`: 45
+- `needs_editorial_verification`: 588
+- `rejected_noise`: 8353
+- `source_review`: 44
 - `watching`: 44
 
 ## Action queue
@@ -33,7 +33,6 @@ Generated: `2026-10-18T09:29:10.910419+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.592](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.592) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.593](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.593) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.594](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.594) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.595](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.595) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -186,6 +185,7 @@ Generated: `2026-10-18T09:29:10.910419+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.982](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.982) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.984](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.984) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.986](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.986) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.987](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.987) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -225,6 +225,9 @@ Generated: `2026-10-18T09:29:10.910419+00:00`
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Audio Review: Smart Glasses Are Better Without Cameras](https://www.pcmag.com/reviews/ray-ban-meta-audio-review) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta записывали чужие разговоры без ведома владельцев из-за программной ошибки - 24 Канал](https://news.google.com/rss/articles/CBMinAFBVV95cUxQOGxnT254bm1zeWRyaXlmV3E3YWM3ZkZWdzBGTkQwdHlCbHdKd05LY0RjT1NBR0NPYndNRjR2OFZWRkhUN1I4Q2d6MkdYd3ZMRHF4YUF3VzUxYUxJcUxCZXZ6b1g2bEN4dmZYeDEwTHdvd2puZHRNZHQ0blBQSURILWFia1RRRW1VR2lvTS1Hc00teHh5TC1PNnUtOFnSAZwBQVVfeXFMUDhsZ09ueG5tc3lkcml5ZldxN2FjN2ZGVncwRk5EMHR5Qmx3SndOS2NEY09TQUdDT2J3TUY0djhWVkZIVDdSOENnejJHWHd2TERxeGFBd1c1MWFMSXFMQmV2em9YNmxDeHZmWHgxMEx3b3dqbmR0TWR0NG5QUElESC1hYmtUUUVtVUdpb00tR3NNLXh4eUwtTzZ1LThZ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Road to VR 10d ago Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Rokid seeks ‘no man’s land’ retail experience with Hong Kong store launch - South China Morning Post](https://news.google.com/rss/articles/CBMi9AFBVV95cUxQemNoTFNISGtFQlNBTDlfWV9pOXlRT05NWDB5VF83XzNETV9HOXMwQ3d5SGIzVmFuRnhmaERoSjVtQ015Zm01RWdLN0ozSTZxNTZyV3ZSQVFvT2xYMXdOYWtUbm02T0ZRRVJfOHF4cE5oWXhYdnBabXhIVGFlS1BQYWtmaVAwVTRBajNQaTRJQldzWXAyUUVfOTNXT1NYdzM0cndqYW5ERGRmWkR3S1MtTWJNbjhycTFkd3VQNy1NbkljZF83M1hBODFwSlJUbnZQdFNEOW5lY3JrMGtFc1hvclR2RmJyT2xVUUQ5dXhsNGZIMUgt?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Rokid seeks ‘no man’s land’ retail experience with Hong Kong store launch - South China Morning Post](https://news.google.com/rss/articles/CBMizAFBVV95cUxOVlFWR18yU1o1Q25vcktYNGJoZTJHLTc0ZFhlclR2NU9BWVVSeXhBbW9ZYmRULTFBWWhyTFZLQUQ1T0oxb1lvQ05ick4xVEltdllNelctc3VPMnlELTBabm9XN1Rmc3BnVVFFSXFfWmVaR05FeFNSamIxS05peXM5Sm1HQXhkZ195U253bEFhMklYZ0xaelFUU01mdGxDcEJTS216cVliN0lMSWcwNDF4ODE2djlzemFWZThmdmJQUHhVT0pqWmF0c2dXXzTSAcwBQVVfeXFMTk1HVDZvQ3p1MGJxbUxFdXV0eGtDblZmb2o5cHZLR0k3ZUxLNXc0THRVWldMRXR0RmhmX1hYVHRGaVFkM1NFMExNaEVRaHBZT0U2cEdSTEhfdHJjaWFQaGtSejk3ZlpBLWlQZ0ZycTN2VTNUN3YtY1RSZXhiaWdkQ1dXaDhHX1pPNkNuRFBOZHVZSFlyMmstX1JWWXV0RWItU1ozTmVHam5Mc0E0UkpyY1QwUmhfRE9HbU5obUN3cU5ULURjT1NkU3NWa0xV?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Rokid seeks ‘no man’s land’ retail experience with Hong Kong store launch - South China Morning Post](https://news.google.com/rss/articles/CBMizAFBVV95cUxOTUdUNm9DenUwYnFtTEV1dXR4a0NuVmZvajlwdktHSTdlTEs1dzRMdFVaV0xFdHRGaGZfWFhUdEZpUWQzU0UwTE1oRVFocFlPRTZwR1JMSF90cmNpYVBoa1J6OTdmWkEtaVBnRnJxM3ZVM1Q3di1jVFJleGJpZ2RDV1doOEdfWk82Q25EUE5kdVlIWXIyay1fUlZZdXRFYi1TWjNOZUdqbkxzQTRSSnJjVDBSaF9ET0dtTmhtQ3dxTlQtRGNPU2RTc1ZrTFXSAcwBQVVfeXFMTk1HVDZvQ3p1MGJxbUxFdXV0eGtDblZmb2o5cHZLR0k3ZUxLNXc0THRVWldMRXR0RmhmX1hYVHRGaVFkM1NFMExNaEVRaHBZT0U2cEdSTEhfdHJjaWFQaGtSejk3ZlpBLWlQZ0ZycTN2VTNUN3YtY1RSZXhiaWdkQ1dXaDhHX1pPNkNuRFBOZHVZSFlyMmstX1JWWXV0RWItU1ozTmVHam5Mc0E0UkpyY1QwUmhfRE9HbU5obUN3cU5ULURjT1NkU3NWa0xV?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Samsung’s first AI glasses launching in November with Gemini, no display: Report - Digit](https://news.google.com/rss/articles/CBMiwwFBVV95cUxNaTNXdm45cTkzdVpJUXNPbXZ4M1pDUk5YOFk2ZHVPOWpTYXNjWkc1S2tQb1JSYTY5eXhob2k0SzhGaC12UlFPQ1JlQmR1Z0tQYUFCbGJnWWQ5MUFEUDFxc0I4ekpwYmFuNzNiTUY0Q2FlR3BXV2lqZXhCNnJ5Q3I5R09xRDdpR181czZoNDZqWFRtaXlhdjZYZjE4NGJBYks3WV9zT053NXNaUk1GclVHS1l4NDlBejhOZDhzV3VZSldmbVHSAcoBQVVfeXFMUFU3ODg1aktJQV80U0o2WHNObUlsc2NqU2NDZGpGdGE2WW1ndXU4RlJfX0ZmMmFJODB4TzlKQmp3NGZxTGt4ek55NEN5c2tfUTR3V0FaR2oxTmR6YTlvM0pIVlEtQkw3WjZRd2RmVWpac0Y2NU5CcXRicnk0eXVta2UzRE1aQUFEak80OUpoVXpVcGlway1QZVR1NmN4bW1qTk9raHY2TXBGaUpOT216RUNZY1ZNSjRkZVR4WEJYc1RKTjBPX2xMWXN5UQ?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Smart Glasses Review: Nighttime Footage Disappointing — Are ... - TikTok](https://www.tiktok.com/@datboyspliff/video/7693799022049430815) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | high | needs_editorial_verification | direct | [Smart Glasses with Display & Ambient AI Prompts \| Even G2](https://www.evenrealities.com/smart-glasses) | reachable (200) | research_news_review |
@@ -268,9 +271,6 @@ Generated: `2026-10-18T09:29:10.910419+00:00`
 | normal | needs_editorial_verification | direct | [AR Insider 2d ago AI/XR Beats: Xreal Brightens Up, Character.ai Winds Down Coverage Xreal](https://arinsider.co/2026/10/16/ai-xr-beats-xreal-brightens-up-character-ai-winds-down/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Are AI Smart Glasses Worth It? Honest Pros and Cons \| TikTok](https://www.tiktok.com/@bargainmandeals/video/7692446812728315158) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Are YOU being recorded? How to tell if someone is wearing Meta glasses - Daily Mail](https://news.google.com/rss/articles/CBMioAFBVV95cUxNTkdKVTFFSEl1bEJtbDQyUXJLR2V3eXhkaUhCTEd0WkNyRU1mRzJXWTZTRWl6b2YxUkMxZ2NBTndrclJpYm9qVEZ1bzRTZzBJdEFZbjYtLVNiUmUwX2loUDdyWEdXUEttUWlUSk41Rk80NExnWkJVUGQ5Mm5Edm1pZFdJdnhyYnNJTFJFSHR5bC1Dd0ZNUmk1LWhZSzBuajJW?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Are You Ready To Drop Some Money On The Meta Glasses Lisa Edition - Yahoo Tech](https://news.google.com/rss/articles/CBMif0FVX3lxTE9IMVhqR3RHQ1hZa1BualYxMFZVT1VXd19wN1RkOXZQSURUc1NwU0puaHZzWHFUSDdvUHoza3Eta0FNTjhIMVpjRzczZUNhZlBOak1DYTVXdG5telQxODhJOUFFTkh4VVdqUVJSWHJjSERiU01sS3NmeVdRenhkWDQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [ARグラスは、聴覚障害者が音声を「見る」ことを可能にする。 - Vietnam.vn](https://news.google.com/rss/articles/CBMif0FVX3lxTE1ZdGNob0tDTGxiVVpXTWh4bExQcUFwb3dLa0Qzd19fQnVlZVcwMlVXRm1EdUlRbFJnVGYyTjB2Q25lcklMRENMelFwS0F2Sl9WWWRQT1dpbHNCMDNJT01obDZfNW9KZG1OQlNpVGI3NFgyb3RLeHVNb3Q2WlVXNk0?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
