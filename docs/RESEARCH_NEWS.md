@@ -33,7 +33,7 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 
 ### October 17, 2026 — MentraOS transfer, voice, firmware and MYVU independence
 
-**Across the Wire · Community-reported · Not GR verified.** [Technical report](../news/articles/2026-10-17-mentra-transfer-voice-firmware/) on MentraOS PRs #4822, #4821, #4829 and independent MYVU ESP32 control, with upstream evidence and physical-verification limits.
+**Across the Wire · Community-reported · Not GR verified.** [Technical report](news/articles/2026-10-17-mentra-transfer-voice-firmware.md) on MentraOS PRs #4822, #4821, #4829 and independent MYVU ESP32 control, with upstream evidence and physical-verification limits.
 
 ### October 16, 2026 — MentraOS owner controls and W610 photo transport
 
