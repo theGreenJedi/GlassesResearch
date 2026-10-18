@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-18T00:25:58.483658+00:00`
+Generated: `2026-10-18T01:12:05.733662+00:00`
 
-- Intake files inspected: **265**
-- Candidates retained in this review window/history: **11162**
+- Intake files inspected: **267**
+- Candidates retained in this review window/history: **11213**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2124
+- `adjacent_radar`: 2131
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 591
-- `rejected_noise`: 8336
+- `needs_editorial_verification`: 593
+- `rejected_noise`: 8378
 - `source_review`: 45
 - `watching`: 44
 
@@ -190,6 +190,8 @@ Generated: `2026-10-18T00:25:58.483658+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.980](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.980) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.981](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.981) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.982](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.982) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.984](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.984) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.986](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.986) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-18T00:25:58.483658+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI 안경 부정 잇따라 적발…수능 한 달 앞두고 '비상' - 뉴시스](https://news.google.com/rss/articles/CBMieEFVX3lxTFBTaGltemtSUmhfbzRtTTJyVjdfVUdZbi01Vm9wdTd5V3RVeUxBd1JMV3hIS0laSkpPbFk4R1gzMk1FWHNuSllKTF9ybVR2VTM5VW5LWkJDeXI4b2pELVR3T2Q5M0RkUi1LSUxOSU5JUzV1RkJMNWV2R9IBeEFVX3lxTFBTaGltemtSUmhfbzRtTTJyVjdfVUdZbi01Vm9wdTd5V3RVeUxBd1JMV3hIS0laSkpPbFk4R1gzMk1FWHNuSllKTF9ybVR2VTM5VW5LWkJDeXI4b2pELVR3T2Q5M0RkUi1LSUxOSU5JUzV1RkJMNWV2Rw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
-| normal | needs_editorial_verification | direct | [Android Central 2d ago Xreal One Pro Plus is official: Here's what changed from the One Pro Coverage Xreal](https://www.androidcentral.com/wearables/xreal-launches-1-pro-plus) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Apple Reportedly Shifts Focus To AI And Smart Glasses With Job Cuts In Siri And Vision Pro Teams - Stocktwits](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWTE0b3JLdkk2Z1EyVnZxRXg0MXFXaXRtMERMY2Z5dXpxZ3A4MW9pYXlSS2FENHRpTjhaS2RvS01FV3I1ZlVJMWVkSHZqVEN5ckptSUw3Y3lwNDlPdlBraFdacmVSZU5yNzRadjh1MDF1VlVmYVlZb2piTnBUREVpaEp2M3pXbDE1bmtpY0JpM0hmTGxRektNc254ZlZkcFZtanZQZElEemFoay1iclV2ZGJCYXQ0TEtC?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
