@@ -179,3 +179,7 @@ The XGA010C now has a cross-project technical map spanning Panny777 application/
 ### October 15, 2026 — public client fork added
 
 [ralamgstromg/Meizu-Myvu-Client](https://github.com/ralamgstromg/Meizu-Myvu-Client) is a substantive public fork of Panny777's MYVU client. Its latest observed [October 2 STT adjustment](https://github.com/ralamgstromg/Meizu-Myvu-Client/commit/291c08e2f003272bcc73b8d4281e41fa924a82c4) and [activity-log, permissions, and notification fixes](https://github.com/ralamgstromg/Meizu-Myvu-Client/commit/0700bd06f9cc16d7634fe8f664a772884ac4f191) demonstrate independent software development. This is a documented code-fork relationship, not a claim of shared hardware identity or independent device verification. Disposition: inspect interoperability changes and invite reproducible owner test results.
+
+### October 18, 2026 — independent ESP32 BLE client
+
+[technosonder/MeizuMYVU_ESP32](https://github.com/technosonder/MeizuMYVU_ESP32) is a public Arduino library for ESP32-S3 BLE pairing, notifications, time sync and reconnect to MYVU glasses. Last observed code update August 22, not a new October release. This is a separate implementation from Panny777's Android client, not a demonstrated fork or confirmed hardware lineage. The author reports testing with ESP32-S3 N16R8; GlassesResearch has not independently reproduced behavior. Disposition: inspect handshake differences and request versioned owner test evidence.
