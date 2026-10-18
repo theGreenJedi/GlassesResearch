@@ -1,37 +1,38 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-18T18:42:33.562848+00:00",
-  "candidate_count": 49,
-  "classifier_irrelevant_count": 37,
+  "discovered_utc": "2026-10-18T19:18:50.199665+00:00",
+  "candidate_count": 56,
+  "classifier_irrelevant_count": 39,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 29,
+    "adjacent": 17,
+    "broad_web": 31,
     "developer": 8
   },
   "relationship_counts": {
     "direct": 0,
     "enabling": 0,
-    "adjacent": 12,
+    "adjacent": 17,
     "speculative": 0,
-    "irrelevant": 37
+    "irrelevant": 39
   },
   "type_counts": {
-    "model": 4,
-    "video": 1,
-    "news": 29,
-    "research": 3,
-    "tool": 10,
-    "sdk": 8,
-    "policy": 3,
-    "retail": 3
+    "model": 3,
+    "video": 7,
+    "news": 18,
+    "tool": 13,
+    "sdk": 12,
+    "policy": 1,
+    "retail": 1,
+    "community": 27
   },
   "routing_counts": {
-    "adjacent_radar": 12,
-    "model_catalog_review": 1,
-    "reject_noise": 37,
-    "research_news_review": 12,
-    "retail_rebrand_review": 2
+    "adjacent_radar": 17,
+    "community_evidence_review": 10,
+    "development_hacking": 7,
+    "reject_noise": 39,
+    "research_news_review": 17,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,17 +46,17 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "a19e97aaa0c7b0cb",
-      "title": "Redcon1 products at Target",
-      "url": "https://www.target.com/b/redcon1/-/N-q643ledu1w0",
-      "summary": "Shop Target for a wide assortment of Redcon1. Choose from Same Day Delivery, Drive Up or Order Pickup. Free standard shipping with $35 orders. Expect More. Pay Less.",
+      "id": "d61bef23b2c401ff",
+      "title": "How to Use Gitpod in the Curriculum - The freeCodeCamp Forum",
+      "url": "https://forum.freecodecamp.org/t/how-to-use-gitpod-in-the-curriculum/668669",
+      "summary": "Gitpod is an online platform that makes it easy to clone and run code from online code repositories like GitHub and Gitlab. It’s essentially VS Code in the browser, running on a temporary server called a workspace, which you can use for development. This guide will cover how to use Gitpod to work on practice and required projects for the Backend Development and APIs, Quality Assurance, and ...",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "shipping"
+        "github"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -65,12 +66,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "model"
+        "tool",
+        "community"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -79,10 +82,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1334b0009f200cf3",
-      "title": "All Products – REDCON1",
-      "url": "https://redcon1.com/collections/all",
-      "summary": "REDCON1 is a mission-based company founded on a simple principle - create the highest quality supplements for people who trained, for people that need to be at their best.",
+      "id": "c7f79bb63c1ac9ff",
+      "title": "About - The freeCodeCamp Forum",
+      "url": "https://forum.freecodecamp.org/about",
+      "summary": "About The freeCodeCamp Forum This community will help you learn to code and get a developer job.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -97,11 +100,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "sdk",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -110,42 +116,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0952ac00e45e3f30",
-      "title": "Amazon.com: Redcon1",
-      "url": "https://www.amazon.com/redcon1/s?k=redcon1",
-      "summary": "Browse REDCON1 supplements including protein powders with whole food sources, pre-workout formulas, and zero-sugar energy drinks to fuel your active lifestyle.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f522d83b90b9d11c",
-      "title": "NEAR Protocol（NEAR）实时价格、合约和现货数据 | CoinGlass",
-      "url": "https://www.coinglass.com/zh/currencies/NEAR",
-      "summary": "在 CoinGlass 查看 NEAR Protocol 的实时市场数据与深度分析。追踪 NEAR Protocol 价格走势、交易所交易对、多空比、成交量、资金费率，以及合约与现货的流入流出与爆仓情况，全面洞察市场情绪与价格变化趋势。",
+      "id": "3d6dfdc131830fcc",
+      "title": "AMK Mapping on X: \"Situation on the Dobropillya & Druzhkivka ...",
+      "url": "https://x.com/AMK_Mapping_/status/2111732084004069505",
+      "summary": "Situation on the Dobropillya & Druzhkivka directions, Donetsk Oblast: Over the last few weeks, both Russian and Ukrainian forces continued their assault operations, with Russian forces focusing primarily on deep infiltrations behind Ukrainian lines. In the east, Russian forces deepened their zon…",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -173,10 +147,76 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "41d6847741e71306",
-      "title": "NEAR在劍橋英語詞典中的解釋及翻譯 - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/zht/%E8%A9%9E%E5%85%B8/%E8%8B%B1%E8%AA%9E/near",
-      "summary": "In formal contexts, we can use near as an adjective to refer to time with the phrase in the near future meaning ‘soon’. It is usually in end position: … Where's the nearest post office? My pocket knife is the nearest thing (= the most similar thing) to a weapon that I have.",
+      "id": "f50362e97a511ee6",
+      "title": "Darkfost on X: \"Bitcoin is back below the MVRV 30th percentile (25.7% ...",
+      "url": "https://x.com/Darkfost_Coc/status/2111725402498421088",
+      "summary": "Bitcoin is back below the MVRV 30th percentile (25.7%) after being rejected near $87,000. It is therefore re-entering a transitional phase following a capitulation episode. This chart is not simply showing the raw MVRV, which compares Bitcoin’s market cap, calculated as price multiplied by supply…",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4529f69014bb4880",
+      "title": "Download the freeCodeCamp Exam Environment App",
+      "url": "https://forum.freecodecamp.org/t/download-the-freecodecamp-exam-environment-app/770835",
+      "summary": "Faceing the problem to Download the freeCodeCamp Exam Environment App. my windows is not allowing to downlod the app for secyrity",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1376082026137048",
+      "title": "Gitmo (Health is a Wealth) (@Gitmo99) on X",
+      "url": "https://x.com/gitmo99/status/2111812191112356260",
+      "summary": "MOUNT EVEREST WAS ONCE BENEATH AN OCEAN! Nearly 29,000 feet above sea level, rocks near Everest’s summit contain fossils of marine life that lived millions of years ago. Around 50 million years ago, the Indian and Eurasian tectonic plates began colliding, forcing ancient seabed sediments upward a…",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -204,12 +244,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f4f1a6ca3ad26c13",
-      "title": "RedCon |The Vitamin Shoppe",
-      "url": "https://www.vitaminshoppe.com/b/redcon1",
-      "summary": "The carefully balanced ingredients in RedCon1 products are designed to work together so you can get everything you want from your fitness supplements. Explore the array of RedCon1 MREs, protein, shakes, and pre-workout supplements at The Vitamin Shoppe online or in-store.",
+      "id": "f3fd5879b726992b",
+      "title": "Grok on X: \"Power delays hit only that UK Nscale site until the 2030s ...",
+      "url": "https://x.com/grok/status/2111781713344856550",
+      "summary": "Power delays hit only that UK Nscale site until the 2030s. Microsoft still needs near-term AI capacity and already partners with multiple neoclouds. This could modestly help those with ready power (US sites especially). IREN has an existing $9.7B MSFT deal for 200 MW in Texas and has delivered th…",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -235,12 +275,44 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "66dc968fe8aa44d6",
-      "title": "REDCON1 - Fastest Growing Sports Supplement Brand In History",
-      "url": "https://redcon1.com/",
-      "summary": "REDCON1 is a mission-based company founded on a simple principle - create the highest quality supplements for people who trained, for people that need to be at their best.",
+      "id": "210b00081e023490",
+      "title": "How do I change profile picture on FCC? - The freeCodeCamp Forum",
+      "url": "https://forum.freecodecamp.org/t/how-do-i-change-profile-picture-on-fcc/720032",
+      "summary": "The profile doesn’t give an option to change the profile picture. There is only a blank line that says “Picture” next to it that lets you enter a URL, I’m assuming, but that doesn’t help to change the profile picture. Is there any way to change the profile picture?",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1dd16e4443267058",
+      "title": "KINU ON NEAR on X: \"One week ago we rebuilt KINU from scratch. 7 days ...",
+      "url": "https://x.com/KINUonNEAR/status/2111688625859764391",
+      "summary": "One week ago we rebuilt KINU from scratch. 🐕 7 days, 213 updates, one non-custodial DeFi terminal on NEAR, built on @rhea_finance Here's what the pack shipped 🧵",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -266,10 +338,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "742a49510fe81088",
-      "title": "Redcon1 - Walmart.com",
-      "url": "https://www.walmart.com/brand/redcon1/10020643",
-      "summary": "Shop items from Redcon1 at Walmart.com and learn more about how you can save money on the best Redcon1 products to help you live better.",
+      "id": "e934255bc0f80c7b",
+      "title": "Latest topics - The freeCodeCamp Forum",
+      "url": "https://forum.freecodecamp.org/latest",
+      "summary": "This community will help you learn to code and get a developer job.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -284,12 +356,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "retail"
+        "sdk",
+        "community"
       ],
-      "primary_type": "retail",
+      "primary_type": "sdk",
       "routing_targets": [
         "research_news_review",
-        "retail_rebrand_review",
+        "development_hacking",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -298,10 +372,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "00560a3e098c8a1a",
-      "title": "REDCON1 ENERGY – Redcon1 Fulfillment",
-      "url": "https://fulfillment.redcon1.com/products/high-performance-energy-drink",
-      "summary": "With 200mg natural caffeine, focus factors and metabolism supporting ingredients, REDCON1 helps you stay energized, ultra focused and feeling good, no matter what the day throws at you.",
+      "id": "7a348be763cd534f",
+      "title": "Log-in Issue Outlook - The freeCodeCamp Forum",
+      "url": "https://forum.freecodecamp.org/t/log-in-issue-outlook/759869",
+      "summary": "When logging in with my Outlook account, I never receive a code. Could someone please help me with this?",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -316,11 +390,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -329,10 +404,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4dc6e437782af6fc",
-      "title": "Shop & Save On REDCON1 Products | GNC",
-      "url": "https://www.gnc.com/brands/redcon1/",
-      "summary": "The trusted leader in clinically studied dietary supplements for weight loss, strength and performance. 3X cash back rewards on protein, vitamins and more.",
+      "id": "54b55fb7722b9c19",
+      "title": "Login into freecodecamp account",
+      "url": "https://forum.freecodecamp.org/t/login-into-freecodecamp-account/549094",
+      "summary": "I need help am trying to login into my account but it keeps saying: Oops! Something went wrong. Please try again in a moment.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -347,11 +422,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -360,43 +436,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4415e7deb9e5d338",
-      "title": "Shop All – REDCON1",
-      "url": "https://redcon1.com/collections/shop-all",
-      "summary": "REDCON1 is a mission-based company founded on a simple principle - create the highest quality supplements for people who trained, for people that need to be at their best.",
+      "id": "25eb4b7e705cb148",
+      "title": "Market Maker_HQ on X: \"$NEAR still has a long way to go Targets of $20 ...",
+      "url": "https://x.com/marketmaker_hq/status/2111707061751042250",
+      "summary": "Market Maker_HQ @marketmaker_hq $ NEAR still has a long way to go Targets of $20 & $30 are still in play (unless something changes) we are in from $2.3 - our first entry",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f889bce24fd8720",
-      "title": "The History's Fastest Growing Brand for Sports Supplements | REDCON1",
-      "url": "https://redcon1nutrition.com/",
-      "summary": "Founded on a straightforward principle, REDCON1 is a mission-driven company creating premium supplements for those who train and need to perform at their peak.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -422,12 +467,145 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "42a006bb58ff9ca0",
-      "title": "Coffeehouse Leadership - Starbucks Careers",
-      "url": "https://careers.starbucks.com/discover-opportunities/coffeehouse-leadership/",
-      "summary": "As a Starbucks coffeehouse leader, it means you can, and do, make a difference. Come explore open opportunities.",
+      "id": "0d233fbe2f8bec81",
+      "title": "The difficulty of learning in freeCodeCamp",
+      "url": "https://forum.freecodecamp.org/t/the-difficulty-of-learning-in-freecodecamp/711944",
+      "summary": "Hello there, I have been learning in freeCodeCamp for over 2-3 months. I love this platform. But I think about something that should be improved in freeCodeCamp. In freeCodeCamp, all the instructions of the courses might be difficult to understand for beginners, and almost every time, beginners might need to read the relevant documentation. Sometimes you might get confused about what you are ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e20cd6511a6a79e",
+      "title": "The freeCodeCamp Forum - Join the developer community and learn to code ...",
+      "url": "https://forum.freecodecamp.org/login",
+      "summary": "Welcome to The freeCodeCamp Forum This community will help you learn to code and get a developer job.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk",
+        "community"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9597e03cf7832f5e",
+      "title": "The freeCodeCamp Forum - Join the developer community and learn to code ...",
+      "url": "https://forum.freecodecamp.org/",
+      "summary": "The freeCodeCamp Forum This community will help you learn to code and get a developer job.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk",
+        "community"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be5d9b811c4c8a11",
+      "title": "十一Eleve on X: \"市场太割裂了 BTC 一直利空不跌，上下插针恶心多空 大山寨开始阴跌，少数几个 $NEAR $UNI $VVV ...",
+      "url": "https://x.com/EleveResearch/status/2111793705057431800",
+      "summary": "市场太割裂了 BTC 一直利空不跌，上下插针恶心多空 大山寨开始阴跌，少数几个 $ NEAR $ UNI $ VVV 还比较硬，其余的一副死样子 小山寨一个个的都开始暴跌跑路了 $ LYN $ APR Meme 自从 $龙虾 一路俯冲之后也开始撤退了 $我踏马来了 $ KOMA 这尼玛真的是牛初？",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ab4b95e30c905856",
+      "title": "FIFA World Cup™ Streaming on FOX One",
+      "url": "https://www.fox.com/watch/clip/fmc-oihw0mlyh38cuvsc/fifa-world-cup-streaming-on-fox-one",
+      "summary": "Stream the FIFA World Cup™ on FOX One.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -440,8 +618,42 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "video",
         "tool",
         "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b2950bd6254c6f8",
+      "title": "Is Meteor Client a safe application? : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/19exblo/is_meteor_client_a_safe_application/",
+      "summary": "Yes meteor is safe, if you really feel threatened download its source code and compile it your self. This is where the term open source comes from, the source code of meteor client can be independently checked for viruses/malware from anyone.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "open source"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -453,167 +665,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ac868e94e579988c",
-      "title": "Hit the road this summer with the Starbucks Road Trip collection",
-      "url": "https://about.starbucks.com/stories/2026/hit-the-road-this-summer-with-the-starbucks-road-trip-collection/",
-      "summary": "The Starbucks Road Trip Collection is available in participating Starbucks coffeehouses in the United States starting May 12, while supplies last.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d00cffaf45dfe353",
-      "title": "Home - Starbucks Stories EMEA",
-      "url": "https://stories.starbucks.com/emea/",
-      "summary": "What is the Starbucks Aerocano? Meet the air-whipped twist on the Iced Americano Launched on International Coffee Day, Oct. 01, 2026 in Starbucks coffeehouses across Europe, Middle East and Africa, the new Aerocano transforms Starbucks® Blonde Espresso and ice into a velvety coffee inspired by a beverage that became a sensation in South Korea.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bd10be33f36a0a3b",
-      "title": "Homepage : Starbucks Stories Asia",
-      "url": "https://stories.starbucks.com/asia/",
-      "summary": "Our Impact Starbucks Vietnam opened its first Signing Store in Ho Chi Minh City, a coffeehouse dedicated to the Deaf, hard of hearing, and sign language communities.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4eb355ed91cfd5b0",
-      "title": "Miffy + Starbucks: A charming new merch collection hops into U.S. and ...",
-      "url": "https://about.starbucks.com/stories/2026/miffy-starbucks-a-charming-new-merch-collection/",
-      "summary": "Inspired by the beloved character’s playful charm and simple design, the limited-edition collection includes a variety of colorful mugs, cold cups, tumblers, gift cards, plush toys and more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a391548d7f6473a",
-      "title": "Refreshers: Starbucks Coffee Company",
-      "url": "https://www.starbucks.com/menu/drinks/refreshers",
-      "summary": "Check out Starbucks menu and get nutritional information about each menu item.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b9c12e6d68f27759",
-      "title": "Roblox Studio setup | Documentation - Roblox Creator Hub",
-      "url": "https://create.roblox.com/docs/studio/setup",
-      "summary": "Explains how to install Roblox Studio on your system.",
+      "id": "9b719e37cb8fb203",
+      "title": "Purchase, Switch Plans and supported devices - help.fox.com",
+      "url": "https://help.fox.com/s/article/Purchase-Switch-Plans-and-supported-devices",
+      "summary": "Purchase Plans Go to Fox.com Scroll down to pick a plan Select a plan Enter in Email Create an account Enter in payment details ⚠️Note: Not all plans come with a free trial period, but if you select a plan with a free trial, you will not be charged until your free trial period ends. Free trials are based on eligibility and you may not qualify if you previously have taken advantage of a ...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -641,12 +696,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e7c2fe803b908247",
-      "title": "Starbucks Coffee Company - Financials - SEC Filings",
-      "url": "https://investor.starbucks.com/financials/sec-filings/default.aspx",
-      "summary": "IR Home News Governance Global Impact Stock Info & Resources Selecting the value will change the page content Choose year and report type Select Year:Filter filing type: All Form Types Annual Filings Quarterly Filings Current Reports Registration Statements Section 16 Filings Other",
+      "id": "08d9ce35539c95d6",
+      "title": "Stream Movies, Shows, Series, and Latest Episodes | FOX One",
+      "url": "https://www.fox.com/shows-movies",
+      "summary": "Watch the hottest FOX show in entertainment on FOX One from iconic animation like The Simpsons and Family Guy, to high-stakes reality shows like Hell's Kitchen, The Floor and The Masked Singer.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -659,10 +714,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "video",
         "tool",
         "sdk"
       ],
-      "primary_type": "tool",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -672,12 +728,174 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "da227ee5f2af1202",
-      "title": "2027 VW Atlas: 7 Seat 3 Row Family SUV | Volkswagen",
-      "url": "https://www.vw.com/en/models/atlas.html",
-      "summary": "Shop the 2027 Atlas Family SUV. 7 seats and 3 rows of fun. Built with our Turbocharged 2.0 TSI® engine & lower maintenance costs than competitors.",
+      "id": "297276f44aa4cec9",
+      "title": "Watch Doc Full Episodes Streaming Online | FOX One",
+      "url": "https://www.fox.com/detail/series/SER003214BDSJ/doc",
+      "summary": "Watch Doc now on FOX One. Full episodes available to stream anytime, anywhere.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "245d7a34af8a2ba4",
+      "title": "Watch Farmer Wants a Wife Full Episodes Streaming Online - FOX",
+      "url": "https://www.fox.com/detail/series/SER002804VOQZ/farmer-wants-a-wife",
+      "summary": "Watch Farmer Wants a Wife now on FOX One. Full episodes available to stream anytime, anywhere.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "994214f8adebe551",
+      "title": "Watch Live Now Fox on FOX One – Stream Full Episodes, Clips & Live Coverage",
+      "url": "https://www.fox.com/detail/category/cat-PdVxB2DtxGRyR1bhDNo7MaDte83h051bxub4jnctMcl/live-now-fox",
+      "summary": "Explore the latest shows, clips, and live coverage from Live Now Fox on FOX One. Watch trending videos and catch up on your favorites – all in one place.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a96bd7308c83e66d",
+      "title": "Watch Live Sports Online & Stream FOX Sports | FOX One",
+      "url": "https://www.fox.com/sports",
+      "summary": "Watch live sports online with FOX One. Stream NFL, college football, MLB, NASCAR, INDYCAR and more, plus FOX Sports shows. Start your 3-day free trial.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f1af1b0dc87d1f6",
+      "title": "Watch UEFA Nations League Games & Shows on FOX One",
+      "url": "https://www.fox.com/sports/soccer/uefa-nations-league",
+      "summary": "Watch and stream UEFA Nations League action including live games, top plays, and expert coverage. Watch now on FOX One.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9003fd5c7568495c",
+      "title": "150 Progressive Typing Lessons – Beginner to Expert | TypingClub",
+      "url": "https://www.typing-club.com/levels.html",
+      "summary": "Explore all 150 structured typing lessons on TypingClub. From basic home row letters to 100+ WPM expert literature passages, track your progress across 7 progressive mastery tiers.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -702,12 +920,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "701f08f160ebc3e6",
-      "title": "Accountant Salary Guide 2026: CPA Pay by State - AccountingEdu",
-      "url": "https://www.accountingedu.org/salary/",
-      "summary": "Discover 2026 accountant salaries by state. Get current CPA wages, entry-level pay, and career growth data from BLS statistics.",
+      "id": "1e7c1d85600415aa",
+      "title": "can i get creative gui? : r/meteorclient - Reddit",
+      "url": "https://www.reddit.com/r/meteorclient/comments/rmeynf/can_i_get_creative_gui/",
+      "summary": "can i get creative gui using meteor client? just asking Share Add a Comment Sort by: Best Open comment sort options Best Top New Controversial Old Q&A [deleted] •",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e1606984d087e5f",
+      "title": "CDDVDW SN-208FB driver - HP Support Community - 5335762",
+      "url": "https://h30434.www3.hp.com/t5/Desktops-Archive-Read-Only/CDDVDW-SN-208FB-driver/td-p/5335762",
+      "summary": "Your account also allows you to connect with HP support faster, access a personal dashboard to manage all of your devices in one place, view warranty information, case status and more.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a047c3e335667a3",
+      "title": "Free Typing Test – Check Your Typing Speed | TypingClub",
+      "url": "https://www.typing-club.com/typing-test.html",
+      "summary": "Take a free online typing speed test on TypingClub. Measure your WPM, CPM, and accuracy across 15s, 30s, 60s, 120s, or 300s timed tests with instant detailed results.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -732,12 +1010,102 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1922528367eb38f4",
-      "title": "Accountant salary in Seattle, WA - Indeed",
-      "url": "https://www.indeed.com/career/accountant/salaries/Seattle--WA",
-      "summary": "The average salary for a Accountant is $73,332 per year in Seattle, WA. Learn about salaries, benefits, salary satisfaction and where you could earn the most.",
+      "id": "f0162b1289f735b0",
+      "title": "How to use Meteor Client : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/j18fak/how_to_use_meteor_client/",
+      "summary": "can you like have meteor client and another mod? for example the .d book dupe thing that has it's jar file and a fabric loader because well im kinda dumb or im just a noob at this. I tried but idk how tho so I just kinda messed up a lil bit and uh yeah I can't use meteor client of I'm using the fabric loader so i need epic solution thenks Reply ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "983eed7ad0548398",
+      "title": "insufficient memory when trying to print - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/LaserJet-Printing/insufficient-memory-when-trying-to-print/td-p/5611558",
+      "summary": "I am trying to print some documents and the first few pages print and then it prints out an error- \" PCL XL error- insufficient memory\" and stops printing everything.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a12fe40bccd7b3f4",
+      "title": "Is meteor safe? : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/11cqk6o/is_meteor_safe/",
+      "summary": "So I used to use wurst but I've been wanting to get meteor. But I don't know if it safe like if there's and rats or viruses in it. Has anyone been using it for a while and has anyone had issues with it? Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Add a Comment FangLeone2526 •",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "940ab96ab813d165",
+      "title": "Learn Touch Typing Free - TypingClub",
+      "url": "https://www.typingclub.com/",
+      "summary": "Learn touch typing online using TypingClub's free typing courses. It includes 650 typing games, typing tests and videos.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -762,282 +1130,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b22c7e863c2f4119",
-      "title": "Accountant Salary | State-by-State Accounting Salaries",
-      "url": "https://www.allbusinessschools.com/accounting/salary/",
-      "summary": "The median annual salary for accountants is over $81,000, but salaries vary depending on location, experience and education.",
+      "id": "2388b63d9046628a",
+      "title": "Learn, teach, create! edclub - TypingClub",
+      "url": "https://www.typingclub.com/sportal/program-3.game",
+      "summary": "The highest quality free courses through the most awesome learning platform.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fd1977b89d6b5834",
-      "title": "Bachelor Accounting in Seattle, WA Salary - October 2026 - Comparably",
-      "url": "https://www.comparably.com/salaries/salaries-for-bachelor-accounting-in-seattle-wa",
-      "summary": "The average salary for a Bachelor Accounting in Seattle, WA is $83,601 per year. However, it can vary based on different factors such as years of experience, skills, company size, and industry.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0217202e19e9982",
-      "title": "Bachelor of Accountancy (BAcc) Salary | PayScale",
-      "url": "https://www.payscale.com/research/US/Degree=Bachelor_of_Accountancy_(BAcc)/Salary",
-      "summary": "Bachelor of Accountancy (BAcc) - Salary - Get a free salary comparison based on job title, skills, experience and education. Accurate, reliable salary and compensation comparisons for...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0b4d3f3201e965dd",
-      "title": "Bachelor's Degree, Accounting Salary | PayScale",
-      "url": "https://www.payscale.com/research/US/Degree=Bachelor%27s_Degree%2C_Accounting/Salary",
-      "summary": "Bachelor's Degree, Accounting - Salary - Get a free salary comparison based on job title, skills, experience and education. Accurate, reliable salary and compensation comparisons for...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0507d77da4b069b2",
-      "title": "Bachelors Accounting Salary in Seattle, WA - ZipRecruiter",
-      "url": "https://www.ziprecruiter.com/Salaries/Bachelors-Accounting-Salary-in-Seattle,WA",
-      "summary": "While ZipRecruiter is seeing salaries as high as $157,047 and as low as $50,073, the majority of Bachelors Accounting salaries currently range between $88,800 (25th percentile) to $127,500 (75th percentile) with top earners (90th percentile) making $146,236 annually in Seattle.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1abb27c69ef01bde",
-      "title": "Best Buy Thousand Oaks",
-      "url": "https://stores.bestbuy.com/ca/thousand-oaks/390-n-moorpark-rd-112.html",
-      "summary": "At Best Buy Thousand Oaks, we specialize in helping you find the best technology to enrich your life. Together, we can transform your living space with the latest smart home technology, HDTVs, computers and gaming consoles from your favorite brands.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e49a33788f2cae3",
-      "title": "Certified Translation Oceanside | Instant Pricing | $29.95/Page",
-      "url": "https://officialtranslations.com/california/oceanside-certified-translation",
-      "summary": "Official Translations delivers USCIS-accepted certified translations for Oceanside residents and businesses – birth certificates, marriage records, diplomas, court documents, and immigration filings translated in 100+ languages with same-day rush service.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0d2d6e4d7161d1cf",
-      "title": "Certified Translation Services in Oceanside, California - $25/page",
-      "url": "https://translationcalifornia.com/certified-translation-services-Oceanside-California-US.php",
-      "summary": "Certified Translation is the exact and accurate translation of content from the source language to the target language. Our expert network of 1,000+ translators provide certificate of accuracy to vouch for the accuracy of the translated document.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b20cfef4d8143c54",
-      "title": "Guide to the Salary of an Accounting Degree Holder",
-      "url": "https://www.indeed.com/career-advice/pay-salary/salary-for-accounting-degree",
-      "summary": "In this article, we discuss what an accounting degree is, share the average salary for accounting degree holders and list some jobs you can pursue with an accounting degree.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "29895ae29974dc21",
-      "title": "Log In to Similarweb Platform - SimilarWeb Identity",
-      "url": "https://pro.similarweb.com/",
-      "summary": "Access digital intelligence and insights to make strategic decisions using SimilarWeb's tools and solutions.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1062,12 +1160,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4bdd6d4b90aa13ad",
-      "title": "Login | Index Fund Advisors, Inc. - IFA",
-      "url": "https://www.ifa.com/login",
-      "summary": "Index Fund Advisors client login includes access to IFA Report Access, eMoney, Schwab, TD Ameritrade and Fidelity accounts.",
+      "id": "dada000f5eb5904d",
+      "title": "Log In - Typing.com",
+      "url": "https://www.typing.com/student/login",
+      "summary": "student.descriptions.login Don't have an account? Sign Up Free!",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1092,10 +1190,71 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3d361f79458a24f6",
-      "title": "NBC4 Los Angeles – Southern California news, weather",
-      "url": "https://www.nbclosangeles.com/",
-      "summary": "NBC4 brings you breaking news alerts, local news and weather forecasts for Southern California.",
+      "id": "f7596fe27ff40aac",
+      "title": "Meteor client vs wurst client : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/sl5xzl/meteor_client_vs_wurst_client/",
+      "summary": "Meteor isbetter for pvp and transportation, but Wurst is harder to detect, and thats a big + for it. (English is my second language) Using Wurst I played on Hypixel and used killaura in front of Admins, but using Meteor I was banned instantly bc of NoFall. Sure, Meteor got cool hacks like ClickTp that other clients don't, but I prefer Wurst.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy",
+        "community"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4fe61e1fd0bbd992",
+      "title": "Network controller driver - HP Support Community - 8055270",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Wireless-and-Networking/Network-controller-driver/td-p/8055270",
+      "summary": "Hi, After re-installing windows from a corrupted OS problem, I can't connect to the internet on my spectre x360. I can't find the drivers for network controller. The HP support page for my laptop model doesn't have the necessary drivers. OS: Windows 10 Model: 13ae051nr",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a51c7442df2f9977",
+      "title": "News - TODAY",
+      "url": "https://www.today.com/news",
+      "summary": "Discover the latest news, videos, photos about current events and stories that matter.",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -1122,12 +1281,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fc18cb285058f67f",
-      "title": "Oceanside Translation Services - RushTranslate",
-      "url": "https://rushtranslate.com/locations/california/oceanside",
-      "summary": "RushTranslate provides certified translation services to customers in and around Oceanside, California. Our fully online platform makes it easy to get accurate, USCIS-accepted translations for immigration, education, legal, and business documents.",
+      "id": "e37b4442b2846ee6",
+      "title": "PCI Bus driver missing (Code 28) - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/PCI-Bus-driver-missing-Code-28/td-p/6626514",
+      "summary": "HP Community Notebooks Notebook Software and How To Questions PCI Bus driver missing (Code 28)",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1140,10 +1299,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "policy"
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1153,70 +1311,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c1ea618ff88d9523",
-      "title": "Oceanside Translation Services - U.S. Language Services",
-      "url": "https://www.uslanguageservices.com/california/oceanside-translation-services/",
-      "summary": "We offer professional translation services for law firms, companies and individuals in 35 languages including those in highest demand: Spanish, French, German, Portuguese, Arabic, Russian and Chinese. Whether you need to translate legal, business or academic documents, we’ve got you covered.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "269473a251f666dd",
-      "title": "Oceanside, CA Translation & Interpreting | Crest",
-      "url": "https://crestls.com/oceanside-california-translation-services-and-interpreting-services/",
-      "summary": "Arrange translation services in Oceanside, California around the document’s purpose, target language and receiving institution. Crest coordinates requests from Nashville and accepts source files online.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ca86e61c877bcd4",
-      "title": "Salary: Bachelors Accounting (October, 2026) United States",
-      "url": "https://www.ziprecruiter.com/Salaries/Bachelors-Accounting-Salary",
-      "summary": "As of Oct 17, 2026, the average annual pay for a Bachelors Accounting in the United States is $95,659 a year. Just in case you need a simple salary calculator, that works out to be approximately $45.99 an hour. This is the equivalent of $1,839 /week or $7,971 /month.",
+      "id": "4b463c4a016b6e7e",
+      "title": "Realtek PCIe GBE Family Controller driver needed",
+      "url": "https://h30434.www3.hp.com/t5/Desktop-Hardware-and-Upgrade-Questions/Realtek-PCIe-GBE-Family-Controller-driver-needed/td-p/5722068",
+      "summary": "I recently upgraded my HP p6608f desktop to Windows 10. I am having some issue that have pointed to the Ethernet adapter. In Device Manager it is identified as Realtek PCIe GBE Family Controller. I would like to download the latest driver for it. HP does not support my computer for Windows 10 ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1243,12 +1341,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4417d53dd13f2ac7",
-      "title": "THE BEST 10 TRANSLATION SERVICES IN OCEANSIDE, CA - Yelp",
-      "url": "https://www.yelp.com/search?cflt=translationservices&find_loc=Oceanside%2C+CA",
-      "summary": "What are people saying about translation services services in Oceanside, CA? \"I had a great experience working with Jamila Del Mistro. She helped us with document translation and notarization for our USCIS process, and everything was handled very professionally and efficiently.",
+      "id": "d5ddac37d11a305e",
+      "title": "Scan to Network Folder Authentication - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Printer-Setup-Software-Drivers/Scan-to-Network-Folder-Authentication/td-p/7109687",
+      "summary": "Set-up of 'Scan to Network Folder' always ends with \"Incorrect User Name or Password\". Suspect problem is with Authentication. Specifically what must be entered to get authentication?? Have tried dozens of combinations with no success !!",
       "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96da1596dd4152cd",
+      "title": "so how do i reset my meteor client hud, i just got it giant by ... - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/10c4kpm/so_how_do_i_reset_my_meteor_client_hud_i_just_got/",
+      "summary": "so how do i reset my meteor client hud, i just got it giant by not putting a zero, do anyone know how to reset it? (cant even see the things)",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "33d7c83d3bca3035",
+      "title": "Solved: How do I bypass empty color cartridges on my HP Officepro 86 ...",
+      "url": "https://h30434.www3.hp.com/t5/Printer-Ink-Cartridges-Print-Quality/How-do-I-bypass-empty-color-cartridges-on-my-HP-Officepro/td-p/5644140",
+      "summary": "Solved: I'm wanting to print in grayscale / black only, yet will not allow me to print because I have empty colour cartridges. How do I bypass - 5644140",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1273,42 +1431,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "883529effab9bdcd",
-      "title": "The Top 100 Most Visited Websites in the USA (August 2026)",
-      "url": "https://www.similarweb.com/blog/research/market-research/most-visited-websites-usa/",
-      "summary": "Explore Similarweb’s August 2026 ranking of the USA’s 100 most visited websites. Discover traffic insights, highlights, and key online trends. Learn more!",
+      "id": "3ad3635ac4d87286",
+      "title": "Solved: Power cord falls out of laptop easily and often. This easy ...",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Hardware-and-Upgrade-Questions/Power-cord-falls-out-of-laptop-easily-and-often-This-easy/td-p/4903920",
+      "summary": "Solved: A free and DIY solution. The power cord never stayed plugged in. It fell out with the slightest movement of either laptop or cord. - 4903920",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f5641d628027a9d9",
-      "title": "Top Classifieds Websites Ranking - Similarweb",
-      "url": "https://www.similarweb.com/top-websites/e-commerce-and-shopping/classifieds/",
-      "summary": "The complete Classifieds websites ranking list: Click here for free access to the top Classifieds websites in the world, ranked by traffic and engagement",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1333,12 +1461,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "75262fcf50886d80",
-      "title": "Top Ecommerce & Shopping Websites Ranking - Similarweb",
-      "url": "https://www.similarweb.com/top-websites/e-commerce-and-shopping/",
-      "summary": "The complete Ecommerce & Shopping websites ranking list: Click here for free access to the top Ecommerce & Shopping websites in the world, ranked by traffic and engagement",
+      "id": "b50c28d2206c65c4",
+      "title": "the altening meteor client issue : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/px022h/the_altening_meteor_client_issue/",
+      "summary": "true the altening alt adder on meteor client isn't working. it shows the ... then doesnt do anything, even if i enter the token token. do i have to enter the user or what?",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "97c5dde76c237af9",
+      "title": "TouchPad Driver for Windows 10 Version 1909 - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/TouchPad-Driver-for-Windows-10-Version-1909/td-p/7304990",
+      "summary": "Solved: I just did a clean install of Windows 10 Version 1909 and I cannot install the Synaptics TouchPad Driver listed on the drivers page of my - 7304990",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e9fe300be733e07",
+      "title": "Typing Lessons | typing club - Typing.com",
+      "url": "https://www.typing.com/student/lesson/229132/typing-club",
+      "summary": "Learn touch typing with Typing Club's engaging lessons and improve your typing skills effectively.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1363,12 +1551,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ed7ba45d2be52bf8",
-      "title": "Top Sites Like anime-world.in - Similarweb",
-      "url": "https://www.similarweb.com/website/anime-world.in/competitors/",
-      "summary": "anime-world.in top 10 competitors & alternatives. Analyze sites like anime-world.in ranked by keyword and audience similarity for free with one click here",
+      "id": "49c8edb017bc6247",
+      "title": "Typing Practice – Target Weak Keys & Build Speed | TypingClub",
+      "url": "https://www.typing-club.com/typing-practice.html",
+      "summary": "Dedicated typing practice exercises for all skill levels. Train your Home Row, Top Row, Bottom Row, numbers, punctuation, symbols, sentences, and paragraphs on TypingClub.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1393,12 +1581,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a0d5bbe6faa63da8",
-      "title": "Top Sites Like makerworld.com - Similarweb",
-      "url": "https://www.similarweb.com/website/makerworld.com/competitors/",
-      "summary": "makerworld.com top 10 competitors & alternatives. Analyze sites like makerworld.com ranked by keyword and audience similarity for free with one click here",
+      "id": "c8ac6fd058c29c16",
+      "title": "Typing Test - keybr.com",
+      "url": "https://www.keybr.com/typing-test",
+      "summary": "Teaching the world to type at the speed of thought! Typing lessons that work.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1423,12 +1611,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "450c4a47c22c04bd",
-      "title": "Top Soccer Websites Ranking - Similarweb",
-      "url": "https://www.similarweb.com/top-websites/sports/soccer/",
-      "summary": "The complete Soccer websites ranking list: Click here for free access to the top Soccer websites in the world, ranked by traffic and engagement",
+      "id": "3ac79e88fc9ddd3a",
+      "title": "TypingClub Courses | edclub",
+      "url": "https://www.edclub.com/typingclub/courses",
+      "summary": "TypingClub Courses Learn Typing Choose from a vast selection of comprehensive touch-typing courses for K-12 students, from beginners to advanced typists.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1453,12 +1641,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f8f1de29131ec825",
-      "title": "Top Sports Betting Websites Ranking - Similarweb",
-      "url": "https://www.similarweb.com/top-websites/gambling/sports-betting/",
-      "summary": "The complete Sports Betting websites ranking list: Click here for free access to the top Sports Betting websites in the world, ranked by traffic and engagement",
+      "id": "cf4156b88b68e33b",
+      "title": "TypingClub | edclub",
+      "url": "https://www.edclub.com/typingclub",
+      "summary": "TypingClub is by far the most accessible typing software available. Students can increase their font size, choose a high-contrast theme, learn to type with one hand, activate the voice-over for audio guidance, or use their choice of screen-reader to learn how to type.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1471,70 +1659,129 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "100b78e00b2e624c",
-      "title": "Top Websites Ranking in United States - Similarweb",
-      "url": "https://www.similarweb.com/top-websites/united-states/",
-      "summary": "United States's complete top websites ranking list: Click here for free access to the top websites in United States, ranked by traffic and engagement",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "14629d9823942689",
-      "title": "Upcoming Films – The Film HQ",
-      "url": "https://thefilmhq.com/upcoming-films/",
-      "summary": "THE FILM HQ / COMING TO THEATERS Upcoming Films. The next 16 major U.S. wide theatrical releases, in release-date order. See who's starring and watch the official trailers.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "video"
+        "model"
       ],
       "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f6bb60a10495236",
+      "title": "unknown device in \"device manager\" - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Hardware-and-Upgrade-Questions/unknown-device-in-quot-device-manager-quot/td-p/8015579",
+      "summary": "Solved: I upgraded my Laptop from windows 10 Home to Pro. After the upgrade I found an \"Unknown Device\" in device manager. The description - 8015579",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3923c5d7acc228a4",
+      "title": "Why do people use meteor client, and why? : r/minecraftclients",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/15tdv84/why_do_people_use_meteor_client_and_why/",
+      "summary": "It's a really good client that has built a community with an amazing dev team and modules they make, even their own community strives to make this client better by making add-ons that are ported from other clients all to give you a godly client that you can use on almost any version in the game. That's why everyone lives it because they aren't rude and don't rat their shut and take pride in ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ef91dc0abea60cc",
+      "title": "Will Meteor Client be caught by anticheat? : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/stkzea/will_meteor_client_be_caught_by_anticheat/",
+      "summary": "Meteor is not built for bypassing, get a 1.8.9 client that have bypasses specifically made for hypixel.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2789f2d21e0d9e48",
+      "title": "Wurst client or meteor? : r/minecraftclients - Reddit",
+      "url": "https://www.reddit.com/r/minecraftclients/comments/rz0nxc/wurst_client_or_meteor/",
+      "summary": "Anyway, you should give Meteor a try anyway and see if it's your thing. If it has what you want for a client after a test run, then go for it! Reply reply TOPICS Gaming Sports NFL NBA Megan Anderson Atlanta Hawks Los Angeles Lakers Boston Celtics Arsenal F.C. Philadelphia 76ers Premier League UFC Business Crypto Television The Real Housewives ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
