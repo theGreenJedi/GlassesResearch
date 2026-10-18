@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-18T08:22:32.802360+00:00`
+Generated: `2026-10-18T08:23:25.504563+00:00`
 
 - Intake files inspected: **265**
 - Candidates retained in this review window/history: **11162**
@@ -265,12 +265,12 @@ Generated: `2026-10-18T08:22:32.802360+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses as travel guides? Cheaper in China, but bugs slow adoption - South China Morning Post](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNelV3NTl2YWFhYkR3N0dJY2U5MFctazVXTjZHWTBDRV82R3JwMV9uTUxUdEUxaElIVVdNYlhLdE84UjY1WW51ZGRnblZVMUdJcDlya1hxQkZ6bWd0YmVtMFoyVXgwcUJGQ0pwaWRHWDVCTWx1b0MxdzdWUzFFdThwaFdSNVhFM0N2THRIR1BfN3lKbXRtRUp3ZTVqcEpuWV94Q1VPLW5SeVNrQk13MGdPZEdsNjJQRFFnanpVbTJ0MlBxNk5vVkF3ZdIByAFBVV95cUxPQmtMRE1mVUZ3MDBOcklDQlk3N2Q1OHRDZ0syT2dUMUlQQ2x4a2EtSFZyU0JxSy1XTEotc0J3T05oaG9mdGV4SXE5VEp3ZkI1dDJhN3FFcm4taVd0Q3AzN0hueE1TZ0JDZG5xUjhsbVV0Q3gwem1lR2FURnktOWZJYlU3T0IySldDZ1N0ZGlzalk5cmdSUDY2OTA3c2Q3c0FYbERZRGFLdWp6cUY3S3E1V1pLNWlvcHBsbWZjY2xtSHozdzJuTy1kUw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI 안경 부정 잇따라 적발…수능 한 달 앞두고 '비상' - 뉴시스](https://news.google.com/rss/articles/CBMieEFVX3lxTFBTaGltemtSUmhfbzRtTTJyVjdfVUdZbi01Vm9wdTd5V3RVeUxBd1JMV3hIS0laSkpPbFk4R1gzMk1FWHNuSllKTF9ybVR2VTM5VW5LWkJDeXI4b2pELVR3T2Q5M0RkUi1LSUxOSU5JUzV1RkJMNWV2R9IBeEFVX3lxTFBTaGltemtSUmhfbzRtTTJyVjdfVUdZbi01Vm9wdTd5V3RVeUxBd1JMV3hIS0laSkpPbFk4R1gzMk1FWHNuSllKTF9ybVR2VTM5VW5LWkJDeXI4b2pELVR3T2Q5M0RkUi1LSUxOSU5JUzV1RkJMNWV2Rw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Smart Glasses](https://www.amazon.com/ai-smart-glasses/s?k=ai+smart+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago Xreal One Pro Plus is official: Here's what changed from the One Pro Coverage Xreal](https://www.androidcentral.com/wearables/xreal-launches-1-pro-plus) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Reorganizes Its Priorities: Smart Glasses Take Center Stage as Vision Pro Takes a Backseat - آي-فون إسلام](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjY3NUFaeWhSVHVwbDE1Y25hS2xyWGFmT1hXTFJWR3kwenJJamlpMGM1T0lHS1djTmtDbWxzQTVxSXVEUVJURC1Wc0RkNEZtODJqb0thX1RpSTM0OVYzX1YtWUdQNVJCVnFlUl9UOUxkd3VEalBFdmdwWGQzcTZwbUE0ZEcxNEtpdmdjQklyZEp6RWRXTktEQUdjVi1LRDQzSlZ6cEJRbV9La0RrcWkyVGNtdjRMaTdTZGZBazEwODVKRTdXYVVIWEJ4c0ZweEphWFNmdFV4eW1KZDdraW9z?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Apple Reportedly Shifts Focus To AI And Smart Glasses With Job Cuts In Siri And Vision Pro Teams - Stocktwits](https://news.google.com/rss/articles/CBMiuAFBVV95cUxOWTE0b3JLdkk2Z1EyVnZxRXg0MXFXaXRtMERMY2Z5dXpxZ3A4MW9pYXlSS2FENHRpTjhaS2RvS01FV3I1ZlVJMWVkSHZqVEN5ckptSUw3Y3lwNDlPdlBraFdacmVSZU5yNzRadjh1MDF1VlVmYVlZb2piTnBUREVpaEp2M3pXbDE1bmtpY0JpM0hmTGxRektNc254ZlZkcFZtanZQZElEemFoay1iclV2ZGJCYXQ0TEtC?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
