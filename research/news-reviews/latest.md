@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-19T14:56:57.347138+00:00`
+Generated: `2026-10-19T17:35:30.766875+00:00`
 
 - Intake files inspected: **268**
-- Candidates retained in this review window/history: **11166**
+- Candidates retained in this review window/history: **11138**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2095
+- `adjacent_radar`: 2081
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 590
-- `rejected_noise`: 8374
-- `source_review`: 40
+- `needs_editorial_verification`: 581
+- `rejected_noise`: 8371
+- `source_review`: 38
 - `watching`: 45
 
 ## Action queue
@@ -33,10 +33,6 @@ Generated: `2026-10-19T14:56:57.347138+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.604](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.604) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.606](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.606) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.611](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.611) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.612](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.612) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.613](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.613) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.614](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.614) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.693](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.693) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -255,7 +251,6 @@ Generated: `2026-10-19T14:56:57.347138+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 식별 감독관이?‥"부당한 책임 전가" - 울산MBC](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1xRWY1c1RnODFzdF8xUzRTa1BDeDdwcHl0aWhvem5Mel9YMUVvTXdVWmFkcUdRQlBsNF9aRnBOV0hFQzZjRjlhNTI1Q21UcENrQzRnOQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 짝꿍 'AR 글래스'…삼성D·LGD는 왜 이 시장 주목하나 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE15aGhhQ3cwXzVpWDhMd0wyN2JLNlpMNlN1NXdwVjE1bTVkWVh4S2FrUmtIRV9SV083dHFBS2ZxU2xKbi1DRG5Tc242TTY0VFJCU1hNQ3BjRTEzLTVpUWRid0h1X18zZF9vMmVjMmJ1Z2E1eU0?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AIグラス購入ガイド、日本で買えるモデルと価格 - Pasquale Pillitteri](https://news.google.com/rss/articles/CBMickFVX3lxTE5wREUtM2V6ZUlPcjBWWHhzVVd4WXVQeG1jRmQxRkVwU1NscWdyb3NJa3RpRnZQalczYjhoZ1h6N25HVWFTemg5X0NmSlliUXlYamVNTHl2S0x1eXAxUGJta2R0WjFVbDV2QnNUMmpETnRmZw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [Another Case of AI Glasses Discovered at University of Seoul Essay Exam - news.sbs.co.kr](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ocmxHMGhsTldmOHRyUi1DeWNIVk1JbFlmWXlsbm02Y0pmWUdNUXh5ck04Z1hrYXM4VW5yRFB6XzJxc0tYajRhT3VjejR3WUhMa3NqbkZEX21TRmVSTUplbDR3NW53QQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 3d ago AI/XR Beats: Xreal Brightens Up, Character.ai Winds Down Coverage Xreal](https://arinsider.co/2026/10/16/ai-xr-beats-xreal-brightens-up-character-ai-winds-down/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR 글래스 100만대 급성장…삼성·LG는 왜 빠졌나 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CT2JtQnFockwwdmxhOVphX0x3cTRRUHR0LWxNWFM5Z1IwUGNIcXVlVmxmSUdWWkt1anM3dDNhSFJQbFpQNkJGckxsZWw3YkI3cW1OVklwNEwzX0gw?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +266,11 @@ Generated: `2026-10-19T14:56:57.347138+00:00`
 | normal | needs_editorial_verification | direct | [Bytech Smart Glasses Review - Instagram](https://www.instagram.com/popular/bytech-smart-glasses-review/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | enabling | [Calagaz Photo and Digital Imaging \| Mobile, AL](https://calagaz.com/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [Cellid Joins Qualcomm Program to Develop Snapdragon-based AR Glasses - EE Times Asia](https://news.google.com/rss/articles/CBMimAFBVV95cUxNYVUyRTUtMkpOQlpZZXl6RTJBY0Vfb3BoWFFFVDdlVjVTbmtBaUpjbG9NRV9rRkg1Tkd2dENlTUpJQUtpRFhVbTk2RkhvcTRjc3lhOUZNVnRjNEdWXzVVQXRXaUFORUhHOUYyUWpLdmxKbmJfbXZybFhkeHc1YVhIQV9fSHpYT1hCbWpEbWpfck1ULW5WbHZUVw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Cellid's AR Glasses Reference Design Featured in "Extended Reality: Visions of the Future" Exhibition at the Computer History Museum - 巴士的報](https://news.google.com/rss/articles/CBMijAJBVV95cUxOUzB6LU9pRDBJeXE5SjVORnhEcFhDQ1VGb2R0eWhobXdDMEQyMDk2STNhQ3d3QVF4MEthNHRnT1FsUTBKcENJTmxmdGg3Y0Z3VVdxLTZqR21SY3dLMjNyVHczcDY4bXJzV1BpLUdra3FlQjdqOEJHckdIQkhFT1dqcVZXV2ZfcFpPWlp2cEs5Y2VlYlozS1AxZXBiRjduSzNxLWNXOG9hOUZrUmZDZlY5UEowUWYtWC1xZ0RjQlRiX0dDdFFBeDBWdGlKYTVUS0Q0SlliakRLNldPYjRVT1NNYVVLNC1qbGFhNzRsSTNKb3BRZ3hUeFgxSVVOZFE3TWhTMHQzRmVqY2VlU3o5?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Engadget 2h ago Even Realities G2 review: Smart glasses, stupid controls Coverage Even Realities](https://www.engadget.com/2288658/even-realities-g2-smart-glasses-review/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [EO Adapt Smart Glasses review: mabilis na features at verdict \| TikTok](https://www.tiktok.com/@burnvlog/video/7675008571389594900) | reachable (200) | research_news_review, report_card_evidence, research_optics |
+| normal | needs_editorial_verification | direct | [EssilorLuxottica and Meta expand smart glasses lineup: what it means for EssilorLuxottica stock - ad-hoc-news.de](https://news.google.com/rss/articles/CBMi7gFBVV95cUxNVWNZeUFUdGVkWHNNZ0g0b3ZQS0RyMm5PdDA2Zm95NnF3WDJTWFZzTFRvU1oySmRBX0V3NFlSN0FVMVF6dGJQbWh4ZGFoaTRVVnBYWkstSUNtWnFZVDF5NmgtWDVwcm5iOGdDaG0xMlFtU1p5Z0EtcGR1a0xob2hES3N3NE5zZ194bGNGbDhXSnIyQjBFU2ZPQ1VSdkNhWW5ReDNIdEVNMnh0d0lJLUM1NkZZWVNXdkJUTXRXV2hpM05xZ1gxeDR4TkppVC04NUVDQkFyRkV6VlMyNC1EUmNrYWNhRlMwY1VERkNBRk1R?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Even G2 Smart Glasses Review 2025 - Instagram](https://www.instagram.com/popular/even-g2-smart-glasses-review-2025/) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
