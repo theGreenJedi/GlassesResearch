@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-19T20:28:18.954187+00:00`
+Generated: `2026-10-19T22:29:19.659447+00:00`
 
 - Intake files inspected: **268**
-- Candidates retained in this review window/history: **11203**
+- Candidates retained in this review window/history: **11188**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2140
+- `adjacent_radar`: 2136
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 580
-- `rejected_noise`: 8378
-- `source_review`: 38
-- `watching`: 45
+- `rejected_noise`: 8374
+- `source_review`: 33
+- `watching`: 43
 
 ## Action queue
 
@@ -195,6 +195,7 @@ Generated: `2026-10-19T20:28:18.954187+00:00`
 | high | needs_editorial_verification | direct | [ACT eyes ban on smart glasses in public schools and pools - The Canberra Times](https://news.google.com/rss/articles/CBMisAFBVV95cUxPbjZvSlBnOTJhY0FsT2oycTdkYlBjQUM1Sm5ETTlDZ0tJNnNYYnhyanFKRzJhRUxQZDVqNW05UDFmbnczYy04SkdzeHlpanlmNXhXM0FidXczajI3M0FUTVk1MldpOVhsM0pqVE5Za2RaQ2JkTGNfWFFOSThueVdKUDR1b2Nqdk1VUkg1X2J1cHRnOHo1QnI1cGR1d1E4QXBIQ25oZjVTOUxycHBnLVNVcg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Central 27d ago These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Auganix 12d ago ENGO Launches engo Titanium, 28.9-Gram AR Smart Glasses for Runners and Cyclists](https://www.auganix.org/ar-news-engo-titanium-smart-glasses/) | reachable (200) | research_news_review |
@@ -254,6 +255,8 @@ Generated: `2026-10-19T20:28:18.954187+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 소지한 수험생 또 있었다…시립대, 응시 3년 제한 - 중앙일보](https://news.google.com/rss/articles/CBMiVkFVX3lxTE5zNmVsYXp4LTA2SFNIODJnM25yeXJJTHpEWGQ1UGlxQ2w2UGJRM0REWjhuWlJJUG4xZFVfU1gydjhFb3FHNGJNZzdZekNMUEE5amVKZEdB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 짝꿍 'AR 글래스'…삼성D·LGD는 왜 이 시장 주목하나 - 마켓인](https://news.google.com/rss/articles/CBMic0FVX3lxTE15aGhhQ3cwXzVpWDhMd0wyN2JLNlpMNlN1NXdwVjE1bTVkWVh4S2FrUmtIRV9SV083dHFBS2ZxU2xKbi1DRG5Tc242TTY0VFJCU1hNQ3BjRTEzLTVpUWRid0h1X18zZF9vMmVjMmJ1Z2E1eU0?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AIグラス購入ガイド、日本で買えるモデルと価格 - Pasquale Pillitteri](https://news.google.com/rss/articles/CBMickFVX3lxTE5wREUtM2V6ZUlPcjBWWHhzVVd4WXVQeG1jRmQxRkVwU1NscWdyb3NJa3RpRnZQalczYjhoZ1h6N25HVWFTemg5X0NmSlliUXlYamVNTHl2S0x1eXAxUGJta2R0WjFVbDV2QnNUMmpETnRmZw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android Central 3d ago Xreal One Pro Plus is official: Here's what changed from the One Pro Coverage Xreal](https://www.androidcentral.com/wearables/xreal-launches-1-pro-plus) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Another Case of AI Glasses Discovered at University of Seoul Essay Exam - news.sbs.co.kr](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5ocmxHMGhsTldmOHRyUi1DeWNIVk1JbFlmWXlsbm02Y0pmWUdNUXh5ck04Z1hrYXM4VW5yRFB6XzJxc0tYajRhT3VjejR3WUhMa3NqbkZEX21TRmVSTUplbDR3NW53QQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Reorganizes Its Priorities: Smart Glasses Take Center Stage as Vision Pro Takes a Backseat - آي-فون إسلام](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjY3NUFaeWhSVHVwbDE1Y25hS2xyWGFmT1hXTFJWR3kwenJJamlpMGM1T0lHS1djTmtDbWxzQTVxSXVEUVJURC1Wc0RkNEZtODJqb0thX1RpSTM0OVYzX1YtWUdQNVJCVnFlUl9UOUxkd3VEalBFdmdwWGQzcTZwbUE0ZEcxNEtpdmdjQklyZEp6RWRXTktEQUdjVi1LRDQzSlZ6cEJRbV9La0RrcWkyVGNtdjRMaTdTZGZBazEwODVKRTdXYVVIWEJ4c0ZweEphWFNmdFV4eW1KZDdraW9z?oc=5) | reachable (200) | research_news_review |
@@ -268,9 +271,6 @@ Generated: `2026-10-19T20:28:18.954187+00:00`
 | normal | needs_editorial_verification | direct | [Blind Veterans Are Getting Free AI Glasses From Meta: “I Got My Independence Back” - Gadget Review](https://news.google.com/rss/articles/CBMirAFBVV95cUxNd0dUc0tnckFaY0F1SXg4azE0TVZqXzRZRGlDYVBGMDdVaEthb1paVFpSckRSNFJNWnVpNmJZSVJVTG5SbURybXFabHBieXgyWDlLOXc3U2IwZzJXY2hFenJvOUticGFhazdEanBXaHgyOXFKX1JwaXB1ampGanFSeENvZ3ZpLU50X3N0TDNTMVJQd2F1TmR5ckxDM1ItWjQwdGlDcXc5bTVEdDg5?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Budget Smart Glasses Review — What Makes Them Different \| TikTok](https://www.tiktok.com/@stormbuysyt/video/7694136484496002324) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Bytech Smart Glasses Review - Instagram](https://www.instagram.com/popular/bytech-smart-glasses-review/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | enabling | [Calagaz Photo and Digital Imaging \| Mobile, AL](https://calagaz.com/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
-| normal | needs_editorial_verification | direct | [Cellid's AR Glasses Reference Design Featured in "Extended Reality: Visions of the Future" Exhibition at the Computer History Museum - The M](https://news.google.com/rss/articles/CBMiggJBVV95cUxQWUhibjFyS0tubDE4RzlqUUdISUFMNDk0WUNZU2FPcE5QbmprS192RVpMQ1VDM0kxZmlSbW1PeWhwM3B2RU1VSC1zTlR4U3dKY3VScWJIT3ZJby1BNGM4Z1JBNHotMm45RmJ2NDI0cFBIMVUtOHowRDNWMzlIX0xFYU1mdXNsSmc3cm9XbHdIQVg3eFpDbW5aR3ZvVngwMThWX255dEd3Z2RrSTJUcWdtTWFGTVdyTjJEMEEyNkVERF9uZXoxdkpVNF81Y2JmN09nQlVtVk80UVUxSWdfRXJyUkNMMzFhRXBZVUlkWnlEd0RtcmdnaENOaUZyUE91dTltZWc?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Crean unas gafas inteligentes que aprovechan el parpadeo para vigilar la salud - Levante-EMV](https://news.google.com/rss/articles/CBMisAFBVV95cUxNZzdWWE1rdVRUbE1BVkdGZjRPUWNjMXlCRmZUQUFSUjlFMExfMlhvZzdZV1hYTnFENkhUbnlVN3lzazE5dWI0Mm1DM0hzaTczR2ZiNEh0YzJaZ3c5cTRPYVNfMTNHdk5Kbk9wcWpXb1ZuWFhHa1BEQXQ0YXBYXzBpcHFQT1VxN0xJYkVKdFR5dEFfU0I3bWUxN1hMWEdjM0pWVml2NV9zSUpDbWFZcFdlRtIBtgFBVV95cUxPRGMyWklQSFlhdWRxMGF0OV9OdFBObTB4Qkw1Szg3ZHVhYjZURVR2YXZ5UkVkN0kwb21mWFVyRHJYajlacjMyZ05PaGhaNnBZa2lpbDYtOFUyZVF4UGt1VHBEMXBLQ0ZXX1hPY3JZU1BQVGtuYmZDa2RKbEMzVG5EV1pEcXh1YXUyOWp3TlB4eGRPMG5QRWtrTUNLdWhKREpzMjlZMjJlcDNTTElaUzZ1N3dkbFk3dw?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
