@@ -13,6 +13,7 @@ from typing import Any
 H2_HEADING = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 PUBLISHED = re.compile(r"^\*\*Published:\*\*\s+(.+?)\s*$", re.MULTILINE)
 WIRE_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+(?:Reported|Under review)\s+·\s+(.+?)\*\*\s*$", re.MULTILINE | re.IGNORECASE)
+COMMUNITY_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+Community-reported\s+·\s+(.+?)\s+·\s+Not independently verified by GlassesResearch\*\*\s*$", re.MULTILINE | re.IGNORECASE)
 LINK = re.compile(r"!?\[([^\]]+)\]\([^\)]+\)")
 HTML_TAG = re.compile(r"<[^>]+>")
 MARKDOWN_MARKS = re.compile(r"[`*_~]+")
@@ -205,9 +206,10 @@ def _article_schema(
         return None
     published = PUBLISHED.search(markdown)
     wire_reported = WIRE_REPORTED.search(markdown)
-    if not published and not wire_reported:
+    community_reported = COMMUNITY_REPORTED.search(markdown)
+    if not published and not wire_reported and not community_reported:
         return None
-    raw_date = (published or wire_reported).group(1).strip()
+    raw_date = (published or wire_reported or community_reported).group(1).strip()
     try:
         date_published = datetime.strptime(raw_date, "%B %d, %Y").date().isoformat()
     except ValueError:
