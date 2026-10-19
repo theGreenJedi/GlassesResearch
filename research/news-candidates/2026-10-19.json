@@ -1,21 +1,28 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-19T17:34:19.660401+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 118,
+  "discovered_utc": "2026-10-19T20:27:17.751649+00:00",
+  "candidate_count": 2,
+  "precision_rejected_count": 119,
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 1,
+    "adjacent": 0,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "news": 1
+    "model": 1,
+    "review": 1,
+    "tool": 1,
+    "sdk": 1,
+    "community": 1
   },
   "routing_counts": {
-    "adjacent_radar": 1,
-    "research_news_review": 1
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "report_card_evidence": 1,
+    "research_news_review": 2
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -26,37 +33,79 @@
   ],
   "candidates": [
     {
-      "id": "6935963e76601a2b",
-      "title": "DLSS NR Mod Enables DLSS 4.5 and Neural Rendering on AMD Radeon GPUs - Technetbook",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPMWt3VXRwcVJWbWd5MFdxOTk4ZW9lVGJ1TTBvLWQwZG8zNXZ0VEgzM1dXemNpVXR2dEh6aEsxS3dINFJkSUJFQ01Zd3lIanQyWGpLdzFyM1NUOXltZXpfczlRT3FrcUhKWVR1SVpFU3RPUS1kZkFGOHZjVy1UeW9SMWh0Qm4tZ0U?oc=5",
-      "source": "Google News: smart glasses tools",
+      "id": "dded9ae3b4edfa18",
+      "title": "Mentra 3.3.0-beta.994",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-19T20:14:35Z",
+      "summary": "Mentra 3.3.0-beta.994 — beta build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 0eb1f06 . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "9ca99a4fce19c7ed",
+      "title": "Blind Veterans Are Getting Free AI Glasses From Meta: “I Got My Independence Back” - Gadget Review",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd0dUc0tnckFaY0F1SXg4azE0TVZqXzRZRGlDYVBGMDdVaEthb1paVFpSckRSNFJNWnVpNmJZSVJVTG5SbURybXFabHBieXgyWDlLOXc3U2IwZzJXY2hFenJvOUticGFhazdEanBXaHgyOXFKX1JwaXB1ampGanFSeENvZ3ZpLU50X3N0TDNTMVJQd2F1TmR5ckxDM1ItWjQwdGlDcXc5bTVEdDg5?oc=5",
+      "source": "Google News: AI glasses",
       "source_lane": "core_glasses",
-      "published": "Mon, 19 Oct 2026 17:03:00 GMT",
-      "summary": "DLSS NR Mod Enables DLSS 4.5 and Neural Rendering on AMD Radeon GPUs Technetbook",
+      "published": "Mon, 19 Oct 2026 18:53:09 GMT",
+      "summary": "Blind Veterans Are Getting Free AI Glasses From Meta: “I Got My Independence Back” Gadget Review",
       "materiality_score": 2,
       "keyword_hits": [
-        "neural"
+        "ai",
+        "review"
       ],
       "status": "candidate",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
-        "news"
+        "review"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
-        "adjacent_radar"
+        "report_card_evidence"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
+      "institution_test": "review durability"
     }
   ]
 }
