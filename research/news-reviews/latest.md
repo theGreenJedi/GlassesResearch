@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-19T10:20:25.374305+00:00`
+Generated: `2026-10-19T10:55:29.079501+00:00`
 
-- Intake files inspected: **265**
-- Candidates retained in this review window/history: **10986**
+- Intake files inspected: **266**
+- Candidates retained in this review window/history: **11065**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2078
+- `adjacent_radar`: 2090
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 581
-- `rejected_noise`: 8223
+- `needs_editorial_verification`: 577
+- `rejected_noise`: 8294
 - `source_review`: 37
 - `watching`: 45
 
@@ -33,7 +33,6 @@ Generated: `2026-10-19T10:20:25.374305+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.603](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.603) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.604](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.604) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.606](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.606) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.611](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.611) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -201,9 +200,9 @@ Generated: `2026-10-19T10:20:25.374305+00:00`
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [AIグラス『Ray-Ban Meta (GEN3)』新型がメガネの愛眼21店舗で10月16日発売 - AppBank](https://news.google.com/rss/articles/CBMiakFVX3lxTE1CS18zSFB4NnZrNXFQYmZBMUVxQ3dRWG91MVNaZGkySjVqTlRreG1uYlRMWUJMNXh3OS1VSWdtWjI4S2RGRFozdlpkQjgxNmFpQlN5cGw5bjRWZER4alN0LVZKTUFKeXRGYmc?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Central 26d ago These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Apple said to delay smart glasses launch after Meta backlash - Mashable](https://news.google.com/rss/articles/CBMidEFVX3lxTFAzODlmSld2el9xcHg1STB1bU8zYW9aa2EyVVVEZHE5V08zX0g3azN5UzZjdjBzbnBaZEl5Y1dVak1wME5RU1puaG5yOXIxSjc4S2ZuV041UUdWaF9Ba1pzcXU1LTI4UXpQTkp6N1NMM1dIdGI0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Distributor clarifies Ray-Ban Meta Smart Glasses not in the Philippines yet - Rappler](https://news.google.com/rss/articles/CBMikgFBVV95cUxObVUtZXUzc1RFT1J5U2Q0VUF4QXVzOGhNblFTakYtalFwdkVWV2FqWWs3VWhBUHlkWHpsdXoyNzJqd05BaGFSV3BuWTBmOGJOTy04eG9NLWtHRWI1RXhnOEtwaHN1U3JMSS1xSFNBODNsZ0N3Q2l4RVBaUVliX3Ntbjlmc05jdUg3TnVWZWxxUndRZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Doja Cat's 12-minute tour documentary was shot almost entirely on Ray-Ban Meta glasses - MIXED Reality News](https://news.google.com/rss/articles/CBMijwFBVV95cUxNUzR2QlZfTG5WbTZUVlF2bTJLbGo2aHBBYzVuUkJxQTR6aXc4Nml2ZmtYdUZZZmNMc2JnMGhwU0RfLVpwOHVwbG1KaHFUM09kRUY3RHFySGszYU03TVB5LXRmX3NxVVdVblBuSldCVmc2RzRCQ1FEZ053UkNGem9fTkNncDBlaENaUE51dGlaQQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Dutch consumer group asks a court to ban Ray-Ban Meta sales if Meta says it cannot comply - MIXED Reality News](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPV2JUNV82TmFGNFhPNHRtalBoWngzREpWZFJyRmU3endxR2VEbkRicnFoVmk0Rm5hUThVLXFqaTRJLXhJVFpqYXk0V1J0UGZlTXYyQ1RGa1FoWDFDT0VZWGRnRU9vekp6ZnJqcm9HODF1Nnh6enBySDBncUZkMW1veHNqVl83c2dBN0FZ?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -263,7 +262,6 @@ Generated: `2026-10-19T10:20:25.374305+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI 안경 적발돼도 다른 대학 입시는 '무사통과'…제재 사각지대 논란 - 이투데이](https://news.google.com/rss/articles/CBMidEFVX3lxTE5wczdCTDVXYThaRXVUZXlFWF9kU054dlF5UjI4bUxrZ1dnU1lPZVd2Z0N4Ylp5Mnd2UVc1bFVoVTdVQThWMTZmWWNKX2NObXFDaVpsS3lrM0ZsWDZhVkkxWHhyalpNd0xwUUF4RjRZWVFDcmVt?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [An unofficial app says it will flash RayNeo's iO glasses over Bluetooth, and can brick them - MIXED Reality News](https://news.google.com/rss/articles/CBMijAFBVV95cUxQS1V3NDAzaGo0S2pJcmMwOTAyaWEwNUdrbktTWTVPMF9OQ2VpcEs1VGc5WnBNOExPZWdmZ0hXeG1hbVZycnRoamNXc0tGOXZTZWJpRVZOTFNRMkhVaWpvY0ZoVmVFcXgyaml5NzdWRWNadkstNnkxYTlCQUFKVkw3c1ZrOTdSV1BHU2NRYQ?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +269,8 @@ Generated: `2026-10-19T10:20:25.374305+00:00`
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - آي-فون إسلام](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 3d ago AI/XR Beats: Xreal Brightens Up, Character.ai Winds Down Coverage Xreal](https://arinsider.co/2026/10/16/ai-xr-beats-xreal-brightens-up-character-ai-winds-down/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR 글래스 100만대 급성장…삼성·LG는 왜 빠졌나 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CT2JtQnFockwwdmxhOVphX0x3cTRRUHR0LWxNWFM5Z1IwUGNIcXVlVmxmSUdWWkt1anM3dDNhSFJQbFpQNkJGckxsZWw3YkI3cW1OVklwNEwzX0gw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AR 글래스 100만대 성장, 삼성·LG는 OLED 집중 - 데일리바이트(DAILY BYTE)](https://news.google.com/rss/articles/CBMilgFBVV95cUxNMnRxNnh1UTRPa0xQRUR0dVNOejJZbmNqTzZhcDZ5LVdUVENVWFB4YlY5ZmN5ODhHMG9VaXRDY2w5ajdTQlVPbWlsOHdLOWI2cU0yYS1jMlc4Ulp2Nlh5cmRCeTBuV21oVDAzclhILWNSWTRqWmtsemdDYUF3d1pGSXR4M3FiWEREakg2LTR4cGxYcVY3elE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
 
 ## Meaning of states
 
