@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-19T09:22:33.581280+00:00`
+Generated: `2026-10-19T10:20:25.374305+00:00`
 
 - Intake files inspected: **265**
 - Candidates retained in this review window/history: **10986**
@@ -12,9 +12,9 @@ Generated: `2026-10-19T09:22:33.581280+00:00`
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 580
+- `needs_editorial_verification`: 581
 - `rejected_noise`: 8223
-- `source_review`: 38
+- `source_review`: 37
 - `watching`: 45
 
 ## Action queue
@@ -263,6 +263,7 @@ Generated: `2026-10-19T09:22:33.581280+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI 안경 적발돼도 다른 대학 입시는 '무사통과'…제재 사각지대 논란 - 이투데이](https://news.google.com/rss/articles/CBMidEFVX3lxTE5wczdCTDVXYThaRXVUZXlFWF9kU054dlF5UjI4bUxrZ1dnU1lPZVd2Z0N4Ylp5Mnd2UVc1bFVoVTdVQThWMTZmWWNKX2NObXFDaVpsS3lrM0ZsWDZhVkkxWHhyalpNd0xwUUF4RjRZWVFDcmVt?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
 | normal | needs_editorial_verification | direct | [An unofficial app says it will flash RayNeo's iO glasses over Bluetooth, and can brick them - MIXED Reality News](https://news.google.com/rss/articles/CBMijAFBVV95cUxQS1V3NDAzaGo0S2pJcmMwOTAyaWEwNUdrbktTWTVPMF9OQ2VpcEs1VGc5WnBNOExPZWdmZ0hXeG1hbVZycnRoamNXc0tGOXZTZWJpRVZOTFNRMkhVaWpvY0ZoVmVFcXgyaml5NzdWRWNadkstNnkxYTlCQUFKVkw3c1ZrOTdSV1BHU2NRYQ?oc=5) | reachable (200) | research_news_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-19T09:22:33.581280+00:00`
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - آي-فون إسلام](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 3d ago AI/XR Beats: Xreal Brightens Up, Character.ai Winds Down Coverage Xreal](https://arinsider.co/2026/10/16/ai-xr-beats-xreal-brightens-up-character-ai-winds-down/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR 글래스 100만대 급성장…삼성·LG는 왜 빠졌나 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CT2JtQnFockwwdmxhOVphX0x3cTRRUHR0LWxNWFM5Z1IwUGNIcXVlVmxmSUdWWkt1anM3dDNhSFJQbFpQNkJGckxsZWw3YkI3cW1OVklwNEwzX0gw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AR 글래스 100만대 성장, 삼성·LG는 OLED 집중 - 데일리바이트(DAILY BYTE)](https://news.google.com/rss/articles/CBMilgFBVV95cUxNMnRxNnh1UTRPa0xQRUR0dVNOejJZbmNqTzZhcDZ5LVdUVENVWFB4YlY5ZmN5ODhHMG9VaXRDY2w5ajdTQlVPbWlsOHdLOWI2cU0yYS1jMlc4Ulp2Nlh5cmRCeTBuV21oVDAzclhILWNSWTRqWmtsemdDYUF3d1pGSXR4M3FiWEREakg2LTR4cGxYcVY3elE?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
