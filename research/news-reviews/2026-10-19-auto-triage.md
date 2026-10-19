@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-19T07:29:06.209736+00:00`
+Generated: `2026-10-19T09:21:42.615181+00:00`
 
-- Intake files inspected: **266**
-- Candidates retained in this review window/history: **11060**
+- Intake files inspected: **265**
+- Candidates retained in this review window/history: **10986**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2088
+- `adjacent_radar`: 2078
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 582
-- `rejected_noise`: 8284
-- `source_review`: 39
+- `needs_editorial_verification`: 580
+- `rejected_noise`: 8223
+- `source_review`: 38
 - `watching`: 45
 
 ## Action queue
@@ -33,8 +33,6 @@ Generated: `2026-10-19T07:29:06.209736+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.601](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.601) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.602](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.602) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.603](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.603) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.604](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.604) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.606](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.606) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +269,8 @@ Generated: `2026-10-19T07:29:06.209736+00:00`
 | normal | needs_editorial_verification | direct | [Android Central 3d ago Xreal One Pro Plus is official: Here's what changed from the One Pro Coverage Xreal](https://www.androidcentral.com/wearables/xreal-launches-1-pro-plus) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - آي-فون إسلام](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 3d ago AI/XR Beats: Xreal Brightens Up, Character.ai Winds Down Coverage Xreal](https://arinsider.co/2026/10/16/ai-xr-beats-xreal-brightens-up-character-ai-winds-down/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AR 글래스 100만대 급성장…삼성·LG는 왜 빠졌나 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5CT2JtQnFockwwdmxhOVphX0x3cTRRUHR0LWxNWFM5Z1IwUGNIcXVlVmxmSUdWWkt1anM3dDNhSFJQbFpQNkJGckxsZWw3YkI3cW1OVklwNEwzX0gw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AR 글래스 100만대 성장, 삼성·LG는 OLED 집중 - 데일리바이트(DAILY BYTE)](https://news.google.com/rss/articles/CBMilgFBVV95cUxNMnRxNnh1UTRPa0xQRUR0dVNOejJZbmNqTzZhcDZ5LVdUVENVWFB4YlY5ZmN5ODhHMG9VaXRDY2w5ajdTQlVPbWlsOHdLOWI2cU0yYS1jMlc4Ulp2Nlh5cmRCeTBuV21oVDAzclhILWNSWTRqWmtsemdDYUF3d1pGSXR4M3FiWEREakg2LTR4cGxYcVY3elE?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
