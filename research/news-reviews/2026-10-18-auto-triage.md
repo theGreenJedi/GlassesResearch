@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-18T23:43:52.166415+00:00`
+Generated: `2026-10-19T00:16:17.952310+00:00`
 
-- Intake files inspected: **267**
-- Candidates retained in this review window/history: **11130**
+- Intake files inspected: **268**
+- Candidates retained in this review window/history: **11191**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2108
+- `adjacent_radar`: 2117
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 582
-- `rejected_noise`: 8327
-- `source_review`: 47
-- `watching`: 44
+- `needs_editorial_verification`: 587
+- `rejected_noise`: 8377
+- `source_review`: 43
+- `watching`: 45
 
 ## Action queue
 
@@ -204,6 +204,7 @@ Generated: `2026-10-18T23:43:52.166415+00:00`
 | high | needs_editorial_verification | direct | [9to5Google 3d ago Meta says it has fixed an issue that let its Ray-Ban smart glasses record on their own Coverage Meta](https://9to5google.com/2026/10/15/meta-ray-ban-recording-bug/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Central 26d ago These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Apple said to delay smart glasses launch after Meta backlash - Mashable](https://news.google.com/rss/articles/CBMidEFVX3lxTFAzODlmSld2el9xcHg1STB1bU8zYW9aa2EyVVVEZHE5V08zX0g3azN5UzZjdjBzbnBaZEl5Y1dVak1wME5RU1puaG5yOXIxSjc4S2ZuV041UUdWaF9Ba1pzcXU1LTI4UXpQTkp6N1NMM1dIdGI0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -268,9 +269,8 @@ Generated: `2026-10-18T23:43:52.166415+00:00`
 | normal | needs_editorial_verification | direct | [9to5Google Sep 20, 2026 The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [An open-source Ray-Ban Meta glasses app kept eight API keys in plain text until October 4 - mixed-news.com](https://news.google.com/rss/articles/CBMikwFBVV95cUxPYXVOc3hJTGtOMW5DbEc3ejJJaXBuajBEZ09IM09QLUFTZlUtZ2JrTHRoOGxMY2c5MXVqSG5NTGI2RENkRFlTUEhCS1VDNGxPQ3JsM0puMzJoMUdOTlQ0b3lJU0JqeFl1OWRGTDBWOWhOQTBMMkdfR0hDaExsNk5lM25ZSkdqTkFnZ3lVTmhBcXF0b0U?oc=5) | reachable (200) | research_news_review, development_hacking, policy_privacy |
-| normal | needs_editorial_verification | direct | [Android Central 3d ago Xreal One Pro Plus is official: Here's what changed from the One Pro Coverage Xreal](https://www.androidcentral.com/wearables/xreal-launches-1-pro-plus) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Smart Glasses](https://www.amazon.com/ai-smart-glasses/s?k=ai+smart+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
