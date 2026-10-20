@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-09-20 → 2026-10-17**.
+Google Search Console page/query pairs for **2026-09-21 → 2026-10-18**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,7 +8,7 @@ Google Search Console page/query pairs for **2026-09-20 → 2026-10-17**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 82 | 0 | 0.00% | 4.7 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 81 | 0 | 0.00% | 4.6 |
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 14 | 0 | 0.00% | 2.9 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | sunglasses for developers | 14 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/evidence/EV-0050-mainstream-optical-serviceability-wave-seven/ | rokid 0050 | 12 | 0 | 0.00% | 9.1 |
