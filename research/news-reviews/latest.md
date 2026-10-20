@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-20T03:58:36.208161+00:00`
+Generated: `2026-10-20T07:44:21.438026+00:00`
 
 - Intake files inspected: **269**
-- Candidates retained in this review window/history: **11245**
+- Candidates retained in this review window/history: **11252**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2147
-- `catalog_review`: 18
+- `adjacent_radar`: 2146
+- `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 581
-- `rejected_noise`: 8419
+- `needs_editorial_verification`: 585
+- `rejected_noise`: 8425
 - `source_review`: 34
 - `watching`: 42
 
@@ -29,6 +29,8 @@ Generated: `2026-10-20T03:58:36.208161+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
 | high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1000](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1000) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1001](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1001) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -179,6 +181,7 @@ Generated: `2026-10-20T03:58:36.208161+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.993](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.993) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.996](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.996) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.998](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.998) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.999](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.999) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Rogbid VisionMax Smart Glasses Launch with Sony 4K Camera and Allwinner Chip - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNZkhNcFpRV1pLbVc1YVltaDhBUVV1dEF6U1Z3bEdrNnc3N0VJNG5KNm5XOWRrNENoa3JTczI2NWl2UzZHRjRCMTdpbjR2NFZGZDJmSUNwbEdwUFA0NzNFam9QNDNkWVVCV0ZSdEFtYkJ5Z181UHBUeThzQ1NDV0dJX01tenZ4Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNOENYTmdDQVl0WjdQb3VBNHpNMV9wR3M1V3hvQlRxVWdZRFUtX196emN2Ylg0R2pUbWVfSVM2Qi1BcWFIeTJiaGRQMVN5bnFEeHFxeVE4V3RmanExUlM3WmJ2SHhOU1doZWpKbjhiN2xESW82enBJYVdKbDJqU3Z6cG5lVE9VTk1lVEFDTUxqWUN0ckRxNllBdjJWa3lvMGtLdk9xcjZPdmNubHl0UjBkTmJJa0pab0ppaTVLWFN6Y3VDaVpKWDM1dg?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Alibaba shares rise in pre-market trade after Qwen AI glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixwFBVV95cUxNa05rRWpKRGkxbTgzTnUwMUVHVjY1dG0wdnNBN2RrVnZwX05wSWxlTlhtUVNKempGbTNobXdsZE9uZExNWjFvSlVsU3lQa1BoZ0V6azF2eHkydmtKbHVUVXdsSHBfdzNHMUZWS0dLMEQtNHk5ZGZLNUlBRHFVYXM5YUhzYTNPME5ESDQ4MTJwNXdCMkE1eUVRLVd2SDZGNzY3RTA2WkZKU2IyU0l2cnlFRVF6cDVMeXk0a2xnekJBV0lucjlsYUhr?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
@@ -268,9 +271,6 @@ Generated: `2026-10-20T03:58:36.208161+00:00`
 | normal | needs_editorial_verification | direct | [AR 글래스 기대감 이어지지만…관련주는 희비 교차 - 핀포인트뉴스](https://news.google.com/rss/articles/CBMid0FVX3lxTE9KdGFLMjFlUVF3VUJuc2R6OFA5S0V2YkpWaXdWMk5pX1JNSlRSajlvZWFqTTJnTmw0ZXVadkEzNmlhbGRERExxTzFoODlvUU5Qc1hpMWJJRVpYc3E2em45aXdSaGNzZmpDVUhLUWZkZ2I1cnQ2aUZV0gF3QVVfeXFMT0p0YUsyMWVRUXdVQm5zZHo4UDlLRXZiSlZpd1YyTmlfUk1KVFJqOW9lYWpNMmdObDRldVp2QTM2aWFsZERETHFPMWg4OW9RTlBzWGkxYklFWlhzcTZ6bjlpd1JoY3NmakNVSEtRZmRnYjVydDZpRlU?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Are AI Smart Glasses Worth It? Honest Pros and Cons \| TikTok](https://www.tiktok.com/@bargainmandeals/video/7692446812728315158) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [AR眼镜市场快速增长 三星显示乐金显示加紧布局微型显示技术 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTE5HS0tQYzhvRUoyRElQbEVKbUhXQ1ZJbWU2QWU3STA0R3k1SjhWckczODl6eVZuYy1nRGdBbkhIVldTSWdhN1Frcm81U2Z4cWlVUURlTU9fNmNNM3JJ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Auganix 3d ago XREAL Updates One Pro AR Glasses With XREAL 1 Pro+, Priced at $599 Coverage Xreal](https://www.auganix.org/ar-news-xreal-1-pro-plus-ar-glasses/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Auganix Sep 15, 2026 ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
