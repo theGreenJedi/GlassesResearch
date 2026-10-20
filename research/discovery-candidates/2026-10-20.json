@@ -1,40 +1,38 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-20T14:28:10.748115+00:00",
-  "candidate_count": 43,
-  "classifier_irrelevant_count": 42,
+  "discovered_utc": "2026-10-20T18:33:00.111935+00:00",
+  "candidate_count": 27,
+  "classifier_irrelevant_count": 24,
   "precision_rejected_count": 0,
   "channel_counts": {
     "adjacent": 1,
-    "broad_web": 35,
-    "developer": 7,
-    "research": 1
+    "broad_web": 16,
+    "developer": 11,
+    "research": 2
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
+    "direct": 1,
+    "enabling": 1,
     "adjacent": 1,
     "speculative": 0,
-    "irrelevant": 42
+    "irrelevant": 24
   },
   "type_counts": {
-    "model": 3,
-    "review": 3,
-    "video": 1,
-    "news": 23,
-    "research": 1,
-    "tool": 7,
-    "sdk": 7,
-    "policy": 5,
-    "retail": 4,
-    "teardown": 2,
-    "community": 3,
-    "rumor": 1
+    "model": 2,
+    "video": 2,
+    "news": 12,
+    "tool": 11,
+    "sdk": 10,
+    "optics": 1,
+    "retail": 2
   },
   "routing_counts": {
     "adjacent_radar": 1,
-    "reject_noise": 42,
-    "research_news_review": 1
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "reject_noise": 24,
+    "research_news_review": 3,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,12 +46,73 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "be353f80d5b7349c",
-      "title": "Electrochromic Systems - Fraunhofer R&D Center for ...",
-      "url": "https://www.fzeb.fraunhofer.de/en/electrochromic-systems.html",
-      "summary": "Electrochromic films and systems are particularly suitable for displays, transportation, automotive, and architectural sectors. They offer numerous benefits, including glare protection, control of lighting conditions and interior temperature, as well as energy savings for air conditioning.",
+      "id": "604a81da272108c7",
+      "title": "Maverick Smartglasses (@everysight) • Instagram photos and videos",
+      "url": "https://www.instagram.com/everysight/",
+      "summary": "7,222 Followers, 424 Following, 769 Posts - Maverick Smartglasses (@everysight) on Instagram: \"Everysight's Maverick Smart Glasses. A powerful, wireless, lightweight, full color AR glasses that you would really want to wear everywhere!\"",
+      "discovery_channel": "broad_web+developer",
+      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, everysight, maverick, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ecae3c13f9a10613",
+      "title": "MF Camera | New & Used Leica, Hasselblad, Sony & Nikon, Folsom CA",
+      "url": "https://www.mfcamera.com/",
+      "summary": "Located in the Historic District of Folsom, CA, we specialize in a curated selection of new and pre-owned premium cameras and lenses — with a focus on Leica, Nikon, Sony, Hasselblad, and Fujifilm systems.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e49961ef7f7bc03",
+      "title": "NEAR Mobile - Best NEAR crypto Wallet",
+      "url": "https://www.nearmobile.app/",
+      "summary": "NEAR Mobile is the leading self-custodial mobile wallet for the NEAR ecosystem, available on iOS and Android with 1M+ downloads. Stake NEAR and swap 120+ assets across 35+ chains through NEAR Intents — without bridges or managing gas tokens.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -66,11 +125,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "model",
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -79,49 +141,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "80733e6ebf3ffb78",
-      "title": "Account access - accounts.ebay.com",
-      "url": "https://accounts.ebay.com/acctxs/email?id=AQAEAAAAUDrUkU3TUXIlXIKL5oYu9MIvmuAJUs",
-      "summary": "Copyright © 1995-2026 eBay Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Consumer Health Data, Payments Terms of Use, Cookies, CA Privacy Notice, Your Privacy Choices and AdChoice",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "f6cfd73a8a0c2dc4",
+      "title": "210 Ken Pratt Blvd - Best Buy",
+      "url": "https://stores.bestbuy.com/co/longmont/210-ken-pratt-blvd-1079.html",
+      "summary": "Visit your local Best Buy at 210 Ken Pratt Blvd in Longmont, CO for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free shipping.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "privacy"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "65f111e13e6fedda",
-      "title": "eBay Australia | Electronics, Cars, Fashion, Collectibles & More",
-      "url": "https://www.ebay.com.au/",
-      "summary": "Buy & sell electronics, cars, clothes, collectibles & more on eBay Australia's online marketplace. Top brands, low prices & free shipping on many items.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
       "keyword_hits": [
         "shipping"
       ],
@@ -134,48 +162,10 @@
       "relationship": "irrelevant",
       "content_types": [
         "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "433d34abf7b16a2e",
-      "title": "Xhamster popup/redirects : r/AskNetsec - Reddit",
-      "url": "https://www.reddit.com/r/AskNetsec/comments/3s50ws/xhamster_popupredirects/",
-      "summary": "While doing some (ahem) research I realized that xhamster was performing redirects when a user clicked inside of a playing video (ie to pause it). These popups and redirects are not blocked by Firefox's popup blocker, or Strict Popup blocker which together block a large majority of encountered web popups. (Noscript has not been tested) This issue only seems to occur on the first visit (Maybe ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
         "video",
-        "research",
-        "tool",
-        "sdk",
-        "teardown",
-        "community"
+        "retail"
       ],
-      "primary_type": "review",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -185,73 +175,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f4d333bc17864918",
-      "title": "Camera news, reviews and features",
-      "url": "https://www.digitalcameraworld.com/",
-      "summary": "Buying Guide The best iPhone for photography can help you capture stunning images and professional videos. Review The M5 Max evolves the Mac Studio into a creative titan.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "031139eb74f97eeb",
-      "title": "Electronics, Cars, Fashion, Collectibles, Coupons and More | eBay",
-      "url": "https://signin.ebay.com/signin/",
-      "summary": "Sign in to your eBay account to access and manage your purchases, sales, and preferences.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6fc0d5a6c627db2a",
-      "title": "Has anyone figured out a way to download videos from xhamster?",
-      "url": "https://www.reddit.com/r/askgaybros/comments/tjghq1/has_anyone_figured_out_a_way_to_download_videos/",
-      "summary": "Posted by u/[Deleted Account] - No votes and 10 comments",
+      "id": "bfa4ec3455134e47",
+      "title": "Sunrise and sunset times in Baltimore - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/usa/baltimore",
+      "summary": "Calculations of sunrise and sunset in Baltimore – Maryland – USA for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -260,15 +187,14 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -280,12 +206,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9d603552c4de04f1",
-      "title": "Login Template Title - eBay",
-      "url": "https://sellerportal.ebay.com/s/login/",
-      "summary": "Login Template Title ×Sorry to interrupt CSS Error Refresh",
+      "id": "11c8e55e66bf4a5a",
+      "title": "Sunrise and sunset times in Bristol - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/uk/bristol",
+      "summary": "Calculations of sunrise and sunset in Bristol – England – United Kingdom for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -311,12 +237,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "db1e091d8d08c1fb",
-      "title": "Welcome to eBay. Browse. Buy. Sell. Easy. | eBay.com.au",
-      "url": "https://pages.ebay.com.au/welcome-to-ebay/",
-      "summary": "Shop your way. Get the best deals. Find exactly what you want, at a price you'll love on eBay.",
+      "id": "140c91eebd35cbdf",
+      "title": "Sunrise and sunset times in Cabo San Lucas",
+      "url": "https://www.timeanddate.com/sun/mexico/cabo-san-lucas",
+      "summary": "Calculations of sunrise and sunset in Cabo San Lucas – Baja California Sur – Mexico for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -330,8 +256,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "retail"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -343,10 +268,407 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "83845e6621f05225",
-      "title": "120 Volt Garage Heaters for Home Improvement",
-      "url": "https://www.walmart.com/c/kp/120-volt-garage-heater",
-      "summary": "Shop 120 volt garage heaters including wall, ceiling, and portable electric models for efficient heating solutions.",
+      "id": "539adcd4e975a5d3",
+      "title": "Sunrise and sunset times in Cheltenham - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/uk/cheltenham",
+      "summary": "Calculations of sunrise and sunset in Cheltenham – England – United Kingdom for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7bb19ab38b205a7",
+      "title": "Sunrise and sunset times in Kathmandu - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/nepal/kathmandu",
+      "summary": "Calculations of sunrise and sunset in Kathmandu – Nepal for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e4ee45fce1eeb02",
+      "title": "Sunrise and sunset times in Leicester - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/uk/leicester",
+      "summary": "Calculations of sunrise and sunset in Leicester – England – United Kingdom for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a46607ec9eb3fa71",
+      "title": "Sunrise and sunset times in London - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/uk/london",
+      "summary": "Calculations of sunrise and sunset in London – England – United Kingdom for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3edd2fd6fd1bd9fe",
+      "title": "Sunrise and sunset times in Marrakech - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/morocco/marrakech",
+      "summary": "Calculations of sunrise and sunset in Marrakech – Morocco for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd90b09dadf2ef16",
+      "title": "Sunrise and sunset times in Ulaanbaatar - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/mongolia/ulaanbaatar",
+      "summary": "Calculations of sunrise and sunset in Ulaanbaatar – Mongolia for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ceb833cb47d3ecba",
+      "title": "Sunrise and sunset times in Youngstown - timeanddate.com",
+      "url": "https://www.timeanddate.com/sun/usa/youngstown",
+      "summary": "Calculations of sunrise and sunset in Youngstown – Ohio – USA for October 2026. Generic astronomy calculator to calculate times for sunrise, sunset, moonrise, moonset for many cities, with daylight saving time and time zones taken in account.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9350ad9f76375477",
+      "title": "11 Best Coffee Shops in Longmont, CO (2026)",
+      "url": "https://mycoffeeexplorer.com/guides/longmont-co",
+      "summary": "The 11 best coffee shops in Longmont — 1 local roaster and 10 top cafes. Curated by locals.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d58936e44bc69745",
+      "title": "Cherokee County Sheriff AL",
+      "url": "https://www.cherokeecountyalsheriff.com/",
+      "summary": "Cherokee County SHERIFF Alabama SERVING & PROTECTING Cherokee County was established January 9, 1836. It was named for the most civilized tribe of Indians, the Cherokee, which first settled and occupied this region for many centuries. Cherokee County is considered the Crappie Capital of the world. Weiss Lake is comprised of several rivers, the Coosa, Chattooga, and Little River. Flood control ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "09c0b679263ee491",
+      "title": "Detention Facility - Cherokee County Sheriff AL",
+      "url": "https://www.cherokeecountyalsheriff.com/detention-facility",
+      "summary": "The Cherokee County Detention Center was opened in October of 1996 and renovated in 2004. The facility houses both male and female adult inmates for the county, municipalities, state, and for the US Marshal Service.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9171480e22d67c70",
+      "title": "Huawei | Founding, Expansion, Innovations, & Controversy ...",
+      "url": "https://www.britannica.com/money/Huawei",
+      "summary": "Huawei is a Chinese tech giant founded in 1987 that became the world's largest telecom supplier and a central figure in U.S.–China technology tensions.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8df09c6ea360028c",
+      "title": "Inmate Roster - Current Inmates Booking Date Descending - Cherokee ...",
+      "url": "https://www.cherokeecountyalsheriff.com/roster.php",
+      "summary": "PROBATION REVOCATION FTA- POSSESSION WITH INTENT TO DISTRIBUTE PV-PROBATION VIOLATION",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90dc349f8a1404ab",
+      "title": "Inmate Roster - Current Inmates Booking Date Descending - Cherokee ...",
+      "url": "https://www.cherokeecountyalsheriff.com/roster",
+      "summary": "PROBATION REVOCATION FTA- POSSESSION WITH INTENT TO DISTRIBUTE PV-PROBATION VIOLATION",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05e4046bcb30e707",
+      "title": "INSTIGATOR Synonyms & Antonyms - 22 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/instigator",
+      "summary": "Find 22 different ways to say INSTIGATOR, along with antonyms, related words, and example sentences at Thesaurus.com.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -361,66 +683,6 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f47b486a87d66c0",
-      "title": "7 Best Electric Heaters for Garage 120V 2026 - tonytantillo.com",
-      "url": "https://tonytantillo.com/best-electric-heater-for-garage-120v/",
-      "summary": "Our recommendations for the best electric heater for garage 120v are based on a comprehensive analysis of available data, incorporating manufacturer specifications, user reviews, and independent testing reports where accessible.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f36e475007a6c212",
-      "title": "9 Best 120V Garage Heater | Beyond the 1500W Ceiling",
-      "url": "https://kitchprep.com/best-120v-garage-heater/",
-      "summary": "From ceiling-mounted radiant units to smart wall panels, here is a clear breakdown of the best 120v garage heater options to keep your workspace warm without costly rewiring.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
         "news"
       ],
       "primary_type": "news",
@@ -433,581 +695,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0c3092f73cc10d8a",
-      "title": "Amazon.com: 120 Volt Garage Heater",
-      "url": "https://www.amazon.com/120-volt-garage-heater/s?k=120+volt+garage+heater",
-      "summary": "Discover garage heating solutions with adjustable temperature controls and safety features. Browse ceiling and wall-mounted heaters for efficient warmth.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f9211adff304edfb",
-      "title": "Amazon.com: Ceiling Mount Heater 120v",
-      "url": "https://www.amazon.com/ceiling-mount-heater-120v/s?k=ceiling+mount+heater+120v",
-      "summary": "Explore ceiling heaters with various wattage options and mounting styles. Discover 120V solutions for garages, patios, and residential use.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "710e36601e09acf5",
-      "title": "Best 120 Volt Garage Heater: 1,500 W for Small Spaces",
-      "url": "https://heaterguides.com/best-120-volt-electric-garage-heater/",
-      "summary": "For most readers, the best 120 volt electric garage heater is a 1500 W unit for small, enclosed spaces, because a standard 120 V circuit tops out around 1,500 watts and won’t trip over a heater that’s sized for the outlet. That matters if you want quick heat without rewiring the garage.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba53cf0869c99199",
-      "title": "Best 120V Ceiling-Mounted Electric Garage Heaters",
-      "url": "https://qualityhomeaircare.com/best-electric-garage-heater-120v-ceiling-mounted/",
-      "summary": "This guide compares five ceiling/wall-mount capable electric heaters that are commonly used in garage and patio spaces, highlighting 120V plug-in infrared options alongside larger hardwired units for comparison.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1a2de66001e30d35",
-      "title": "Best Electric Garage Heater 120V Ceiling Mounted Options",
-      "url": "https://www.pickcomfort.com/best-electric-garage-heater-120v-ceiling-mounted/",
-      "summary": "Quick Overview: This guide compares ceiling-mounted and hanging electric heaters suitable for garages and workshops, with a focus on units that operate on 120V or offer easy ceiling mounting.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3e55475438f78d6",
-      "title": "Best Electric Heater for Garage 120V – 2026 Reviews",
-      "url": "https://www.sloweather.com/best-electric-heater-for-garage-120v/",
-      "summary": "Find the perfect 120V electric garage heater for your workspace. We tested top models for safety, performance, and value to keep your garage warm and comfortable all winter.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "419a112c3e52e4b1",
-      "title": "Cadillac Forums",
-      "url": "https://www.cadillacforums.com/threads/dts-jacking-points-where-are-they.1152132/",
-      "summary": "Cadillac Forums",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ca468704848aae0",
-      "title": "Cadillac Owners Forum",
-      "url": "https://www.cadillacforums.com/",
-      "summary": "Cadillac Forums is the perfect place to go to talk about your favorite Caddys including the ATS, CTS, SRX, Escalade, LYRIQ, Vistiq, concept and future Cadillac models.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community",
-        "rumor"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4937303dad9b6c9c",
-      "title": "Conservative Media at a Crossroads - The Daily Signal",
-      "url": "https://www.dailysignal.com/2026/02/08/conservative-media-at-a-crossroads-daily-signals-rob-bluey-on-press-freedom-trust-and-future-of-journalism/",
-      "summary": "The media landscape is undergoing a fundamental transformation that will reshape how Americans consume news over the next decade—and conservative outlets are leading the way. That’s the view ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e5efadf8a9204aad",
-      "title": "Conservative News & Policy Coverage | The Daily Signal",
-      "url": "https://www.dailysignal.com/category/conservative-news/",
-      "summary": "Breaking conservative news on politics, culture, economy, and national issues.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "51982e783db98c2e",
-      "title": "Cozy Warmth with the Best Garage Heater 120V! - HeaterGuides",
-      "url": "https://heaterguides.com/best-garage-heater-120v/",
-      "summary": "Feeling the chill in your garage? The best garage heater 120V warms up your space in no time! The NewAir NGH160GA00 is perfect for small to medium-sized garages, efficiently heating areas up to 160 square feet. Its compact design makes it easy to move around as needed.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ee8468a97e018d5",
-      "title": "Defense Travel System",
-      "url": "http://www.defensetravel.osd.mil/",
-      "summary": "Featuring the best practices in industry and plug-and-play components, Defense Travel System streamlines the entire process involved in global Department of Defense ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42fca507dc91a770",
-      "title": "DTS和杜比的区别？ - 知乎",
-      "url": "https://www.zhihu.com/question/24574089",
-      "summary": "DTS（DTS-HD MA/DTS:X）：低压缩堆细节 经典DTS 5.1码率直接拉到1536kbps，差不多是杜比的2.4倍，压缩幅度保守，尽可能保留原声里的细微音效、动态起伏。 简单理解：杜比是压缩打包，精简冗余声音；DTS是原汁原味打包，能存多少细节就存多少。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73af198914834eeb",
-      "title": "EXCLUSIVE: The Heritage Foundation to Promote Golden Age Vision in New ...",
-      "url": "https://www.dailysignal.com/2025/12/09/heritage-foundation-promote-golden-age-vision-turning-point-usas-america-fest/",
-      "summary": "The Heritage Foundation launched a new ad campaign Tuesday posing a new strategy and a provocative idea for 2026: \"The Golden Age is a choice.\"",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d6ed3230b1c231df",
-      "title": "Home - City of NPR - City of New Port Richey",
-      "url": "https://www.cityofnewportrichey.org/Home",
-      "summary": "Provides financial assistance to single-family homes within the CRA District to enhance property. Hurricane season is June 1st - Nov. 30th. Stay informed and prepared. Pasco County's Office of Disaster Recovery and Resources is helping customers repair, rebuild or rep.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "79079e032d076bb9",
-      "title": "Independent and Ambitious: A New Era for The Daily Signal",
-      "url": "https://www.dailysignal.com/2024/06/03/independent-and-ambitious-a-new-era-for-the-daily-signal/",
-      "summary": "We believed then that major news outlets and broadcast networks were leaving a massive audience of conservatives and independent-minded Americans unserved.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3145593ab3426ca1",
-      "title": "International Factoring Association",
-      "url": "https://www.factoring.org/",
-      "summary": "Learn about and register for the IFA's upcoming training classes, webinars and conferences. Find a reputable Factoring company to help you with your cash flow needs. Explore the IFA's vast and growing suite of online courses developed for your professional growth.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e46afb3b54d1b5b3",
-      "title": "Liberal Bias Tarnishing What Once Was Journalistic Gold Standard of ‘60 ...",
-      "url": "https://www.dailysignal.com/2025/02/21/the-one-sidedness-of-60-minutes-liberal-bias-taints-what-once-was-gold-standard-of-broadcast-journalism/",
-      "summary": "It’s regrettable that “60 Minutes,” once the gold standard of broadcast news, has become liberal fool’s gold.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3a34302f45d2084",
-      "title": "Meet The Daily Signal’s Team of Journalists",
-      "url": "https://www.dailysignal.com/2024/06/03/daily-signal-celebrates-10-years-meet-its-staff/",
-      "summary": "Olivia Pero News Intern Pero is a summer 2024 Daily Signal intern. A rising senior at Hillsdale College, she is a staff member of the college’s newspaper, The Collegian.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6c4fc02a2d5384d5",
-      "title": "Meta - LinkedIn",
-      "url": "https://www.linkedin.com/company/meta",
-      "summary": "Now, Meta is moving beyond 2D screens toward immersive and intelligent experiences like virtual reality, wearables and AI to help build the next evolution in social technology.",
+      "id": "13a81be20ffbf5df",
+      "title": "Meta Platforms | Facebook, Instagram, WhatsApp, & AI - Britannica Money",
+      "url": "https://www.britannica.com/money/Meta-Platforms",
+      "summary": "Meta Platforms, Inc., formerly Facebook, is an American technology company focused on social media and artificial intelligence whose products include Facebook, Instagram, WhatsApp, Messenger, and Threads.",
       "discovery_channel": "broad_web+research",
       "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
       "source": "Bing web RSS",
@@ -1034,12 +725,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "55ef24d867c58266",
-      "title": "Mexico News: Cartels, Border & U.S. Relations | The Daily Signal",
-      "url": "https://www.dailysignal.com/category/international-news/mexico-news/",
-      "summary": "Conservative coverage of Mexico news including cartel violence, border security, migration, trade relations, and U.S.-Mexico policy.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "17ff3db0eee6a9ae",
+      "title": "Newsroom | Meta Newsroom - About Facebook",
+      "url": "https://about.fb.com/news/",
+      "summary": "View the latest news, announcements and media resources from Meta.",
+      "discovery_channel": "broad_web+research",
+      "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1052,9 +743,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "news"
       ],
-      "primary_type": "policy",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1064,12 +755,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "21d0a50cfa468dd3",
-      "title": "Our Story - The Daily Signal",
-      "url": "https://www.dailysignal.com/daily-signal/",
-      "summary": "The Daily Signal is a leading conservative news website providing fair, accurate, and trustworthy reporting on politics, culture, and policy. We deliver",
+      "id": "584a453d3175fc1b",
+      "title": "Riverton IFA Country Store | Riverton UT - Facebook",
+      "url": "https://www.facebook.com/RivertonIFA/",
+      "summary": "Riverton IFA Country Store, Riverton. 1,953 followers · 46 talking about this · 424 were here. Helping to grow the things you love. A locally owned farmer's cooperative since 1923.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "59ab36a25e942472",
+      "title": "Roster Choose - Cherokee County Sheriff AL",
+      "url": "https://www.cherokeecountyalsheriff.com/roster_choose.php",
+      "summary": "Cherokee County Detention Center Inmate Roster Current Inmates >> Click current inmates to view inmates currently at the Cherokee County Detention Center.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1082,9 +803,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "news"
       ],
-      "primary_type": "policy",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1094,10 +815,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "476d0e1cd23b253b",
-      "title": "SACD（DSD）、DVD Audio、DTS有什么区别？哪种音质（保真度）更高？",
-      "url": "https://www.zhihu.com/question/38745603",
-      "summary": "DVD和DTS都是属于影院系统的数字化音乐，主要是用来伴随着影像画面而相辅相成的音乐类型。而SACD纯粹就是数码唱片的顶级介质，用原母带炮制而成的原声载体，所以SACD跟前面两者的作用并不一样，但论保真度来说就目前为止现在还没有任何一种介质能跟SACD相提并论的，当然以后肯定会出现。至于 ...",
+      "id": "ca79424f8795db45",
+      "title": "THE 10 BEST Restaurants in Longmont (Updated October 2026)",
+      "url": "https://www.tripadvisor.com/Restaurants-g33527-Longmont_Colorado.html",
+      "summary": "Best Dining in Longmont, Colorado: See 8,338 Tripadvisor traveler reviews of 305 Longmont restaurants and search by cuisine, price, location, and more.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51e059df87244432",
+      "title": "YouTube (@YouTube) / X",
+      "url": "https://x.com/YouTube",
+      "summary": "YouTube Edition watch Michelle Khare, Angela Giarratana, and Josh Scherer compete on Jeopardy! YouTube Edition on October 22nd at 9pm ET / 6pm PT, streaming exclusively on YouTube.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1112,249 +863,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ddaffd96037a4b73",
-      "title": "The Daily Signal | Political News, Conservative Analysis & Opinion",
-      "url": "https://www.dailysignal.com/",
-      "summary": "The Daily Signal is a multimedia news organization covering policy and political news, conservative commentary and analysis.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6eb847eb24939529",
-      "title": "Volkswagen Dealer Serving Orlando, FL | Gunther Volkswagen Clermont",
-      "url": "https://www.gunthervwclermont.com/",
-      "summary": "Gunther Volkswagen Clermont is your trusted VW dealership in Clermont, FL, serving Orlando and Central Florida. Shop new & used vehicles, get financing, and book service today.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fcf7df3161c279c2",
-      "title": "White House Purges 442 Reporters Using New Press Credential Rules",
-      "url": "https://www.dailysignal.com/2023/08/04/white-house-purges-442-reporters-using-new-press-credential-rules/",
-      "summary": "The @WhiteHouse is requiring journalists to apply for press credentials from Congress or SCOTUS in an attempt to target conservative journalists. If our @FredLucasWH doesn't play by Biden's new ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "395f3cabcf4fb060",
-      "title": "win10商店中的Dolby access和dts音效哪个更值得购买？ - 知乎",
-      "url": "https://www.zhihu.com/question/347982459/answers/updated",
-      "summary": "DTS有两个模式，一个是headphone一个是DTSX，前者我开启效果没有Access好，且这个模式对500款耳机有特殊优化，我估计得用这500耳机型号才能有进一步的提升，后者目前不知道咋用，显示的是一个DTSX编码器，可能对支持这个格式的电影片源有特殊加成？",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ce472b5ff04aad9f",
-      "title": "下载电影时出现的DTS-HD.MA.7.1是什么意思？ ，希望各路大神解释下图片中的分别代表什么意思？，非常感谢！",
-      "url": "https://www.zhihu.com/question/27680554?sort=created",
-      "summary": "我来尝试一下回答楼主，一点拙见，轻拍：dts hd master audio是dts公司发布的次世代无损压缩音轨格式，对应7.1声道，2010年前后的次世代功放基本支持dtshd ma解码。 通常出现在蓝光原盘或高码率remux版本中，部分h.264 1080p版本也有，与杜比truehd同为次世代音轨。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e8798955f806dcc",
-      "title": "听音乐有必要用 DTS 格式吗？ - 知乎",
-      "url": "https://www.zhihu.com/question/22714309",
-      "summary": "5.1声道的DTS音乐往往用WAV格式，大约150M左右，我一般都将其转换为6声道的FLAC的格式，75M左右，文件尺寸缩小一半。 FLAC格式 可以加入标签和内嵌图片，便于管理，必要的时候可再用 foobar2000 将FLAC再转回WAV格式。 谁听谁知道，信不信由你。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "264219187c3ac684",
-      "title": "杜比全景声和dts:X哪个更好，有人解释一下吗？ - 知乎",
-      "url": "https://www.zhihu.com/question/582977954/answers/updated",
-      "summary": "为什么大把的回音壁敢不支持DTS，为什么三星LG电视敢不支持DTS，（最近LG倒是准备恢复了~）。 无损音轨格式几十个，对象音频格式也有好几个~，话语权依旧在八大影业手里，DTS的初始投资人包括环球影业和斯皮尔伯格，第一部DTS电影是侏罗纪公园（1993）。",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53b54a029733a5a9",
-      "title": "知乎 - 有问题，就会有答案",
-      "url": "https://www.zhihu.com/question/622128586",
-      "summary": "DTS编码. DTS是一种数字音频格式，全称为Digital Theater Systems。DTS编码是将音频信号编码成DTS数据格式的过程。 与其他数字音频格式相比，",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
