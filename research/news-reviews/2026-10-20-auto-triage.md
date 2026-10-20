@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-20T08:56:05.972920+00:00`
+Generated: `2026-10-20T08:57:05.428954+00:00`
 
 - Intake files inspected: **269**
 - Candidates retained in this review window/history: **11252**
@@ -12,9 +12,9 @@ Generated: `2026-10-20T08:56:05.972920+00:00`
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 585
+- `needs_editorial_verification`: 587
 - `rejected_noise`: 8425
-- `source_review`: 34
+- `source_review`: 32
 - `watching`: 42
 
 ## Action queue
@@ -201,6 +201,7 @@ Generated: `2026-10-20T08:56:05.972920+00:00`
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [AI 眼镜｜Ray-Ban Meta Gen 3 登陆港澳 开启 AI 智慧生活新篇章 - 星島頭條](https://news.google.com/rss/articles/CBMitAJBVV95cUxOak5VM2VGMlMtNW9sOWdRRGQtUTFmNHlXOFhtRUNNWGV3Y0JHZ3J4bW56a0MxcmVFOFQ0MzNtd2FtckpyVEhGMlk2T2FWUjZLYzdrOElmSGFhazY4Y1RkRElabUlOYVU2SENfdHBoWHVTTWo5NjhGN2M0VFBPbjBiU2hPNjdjSmFZZGhXaXZPdUo1Ti1kMm52QTcwZWFCSVJFU0VxTG9TaFhDN2lZZzd0bzdGMzVhb2NHNlJqSmgwS2YyalEzU2NqbU1oemxGcXc3RG81c1QzVXRraTZ2cHgzRkMwcjNONXE5eXJSY3pZczFaVV9Yb0lPbEJ4cjJMb2J6WjR0VjVRR0hHOXlMeVBEMWRmRmQ2NWlNd0FZdEtwekdCek1lY3h4N01QNHQtQVVSeEw5ZQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [An unofficial plugin streams Ray-Ban Meta Gen 2 into OBS, and your PC becomes their owner - MIXED Reality News](https://news.google.com/rss/articles/CBMijAFBVV95cUxPZ0Y1amExOTBYM3I3SzVNekJYcVRjdk9weV9IRTV3WTI4VkczODMzc2d3eVRyUF9vMnRHWjF2LVhGVkF6WHlDRmJEYndWTGZVTmNvcUpVc3RQaXN6ZlA2dG5lRTRwbURRVmFrN2lSRmJvMDR3LTRsZFhMUkgyN3k5ZWhfTGF2eEY0bE9DdQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Central 27d ago These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
@@ -265,12 +266,11 @@ Generated: `2026-10-20T08:56:05.972920+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 부정행위 우려…수능 감독 '비상' - EBS](https://news.google.com/rss/articles/CBMijwFBVV95cUxORXBFSy10a01RdVpJa2MzQ05sM2RTY2k3M1M1ZDRmdVFJOWJmNllpMzVYSHA3ZmNTMXNmSEkzVXF6ODFfRVNiNWdXSmFTb3R1el9kTXVwWmpQdTItbHlQNGdlLS03QjZ6VjFmakY4Y3l0YV9xSTlxYjVTSjZoZEpGWkdPVnJQZGdRaTNhVHhzQQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 부정행위 잇따라…수능 한 달 앞두고 대응 공문 - 한국사회복지저널](https://news.google.com/rss/articles/CBMia0FVX3lxTE5LakpKZGhkRUZfdHlhREcyb0k3UE1fVWZqb3E3d1YzUTk4T1l0OTdqWFZaelE2OThQbnpNYjdpY0hBdzU4N2pxdDhCeE9BOFNUYVpMZHF6aG9obVhhMDRmQzk4c0x1RE94Qi1v?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜化身攀岩教练 京东Aidol创造营10月23日揭秘更多创新作品 - 凤凰网科技](https://news.google.com/rss/articles/CBMiTEFVX3lxTFBYZ242MWpUVHpBSVpkQm9ZdmUtUGhTMTJfTjFDcFVIdjA0NHRZOUxJZEtJSHFhZk9fd3BYME9HUVlpaDVxTUFxM1BvaHg?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Android Central 4d ago Xreal One Pro Plus is official: Here's what changed from the One Pro Coverage Xreal](https://www.androidcentral.com/wearables/xreal-launches-1-pro-plus) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Após polêmica com gravações sem consentimento, Meta lança óculos inteligentes sem câmera - ncnews.com.br](https://news.google.com/rss/articles/CBMigAFBVV95cUxPcjduN1NpUWpzcVRaaEZNaVZ4ajdYQXdWaHNVN3BBSFhpVk1KRXlhRi1rX2hBMXo1eFZtMjV0a2Y5N3BBM1dJSGdxR2U1cTcyVlJHekV4QWVlYnpvZHo1Q3JNOXVYX0Q0U0FEblVmdmpvQW9EMWJCX0lNdzlqZWs3NA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 3d ago AI/XR Beats: Xreal Brightens Up, Character.ai Winds Down Coverage Xreal](https://arinsider.co/2026/10/16/ai-xr-beats-xreal-brightens-up-character-ai-winds-down/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR 글래스 기대감 이어지지만…관련주는 희비 교차 - 핀포인트뉴스](https://news.google.com/rss/articles/CBMid0FVX3lxTE9KdGFLMjFlUVF3VUJuc2R6OFA5S0V2YkpWaXdWMk5pX1JNSlRSajlvZWFqTTJnTmw0ZXVadkEzNmlhbGRERExxTzFoODlvUU5Qc1hpMWJJRVpYc3E2em45aXdSaGNzZmpDVUhLUWZkZ2I1cnQ2aUZV0gF3QVVfeXFMT0p0YUsyMWVRUXdVQm5zZHo4UDlLRXZiSlZpd1YyTmlfUk1KVFJqOW9lYWpNMmdObDRldVp2QTM2aWFsZERETHFPMWg4OW9RTlBzWGkxYklFWlhzcTZ6bjlpd1JoY3NmakNVSEtRZmRnYjVydDZpRlU?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
-| normal | needs_editorial_verification | direct | [Are AI Smart Glasses Worth It? Honest Pros and Cons \| TikTok](https://www.tiktok.com/@bargainmandeals/video/7692446812728315158) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
