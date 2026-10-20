@@ -1,39 +1,36 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-20T21:56:16.972445+00:00",
-  "candidate_count": 60,
-  "classifier_irrelevant_count": 58,
+  "discovered_utc": "2026-10-20T22:24:12.358169+00:00",
+  "candidate_count": 56,
+  "classifier_irrelevant_count": 50,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 2,
-    "broad_web": 47,
-    "developer": 11
+    "adjacent": 6,
+    "broad_web": 38,
+    "developer": 12
   },
   "relationship_counts": {
     "direct": 0,
     "enabling": 0,
-    "adjacent": 2,
+    "adjacent": 6,
     "speculative": 0,
-    "irrelevant": 58
+    "irrelevant": 50
   },
   "type_counts": {
-    "model": 2,
-    "review": 1,
-    "video": 2,
-    "news": 41,
-    "research": 5,
-    "tool": 12,
-    "sdk": 11,
-    "policy": 1,
-    "retail": 1,
-    "community": 1
+    "model": 7,
+    "review": 2,
+    "news": 28,
+    "tool": 15,
+    "sdk": 12,
+    "policy": 2,
+    "retail": 9,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 2,
-    "community_evidence_review": 1,
-    "reject_noise": 58,
-    "research_news_review": 2,
-    "retail_rebrand_review": 1
+    "adjacent_radar": 6,
+    "reject_noise": 50,
+    "report_card_evidence": 1,
+    "research_news_review": 6
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,16 +44,18 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "09d2331c2def59b5",
-      "title": "27 Charming Small Towns Within Driving Distance of Cincinnati That Are ...",
-      "url": "https://www.citybeat.com/arts/27-charming-small-towns-within-driving-distance-of-cincinnati-that-are-worth-the-trip-13254512/",
-      "summary": "Sometimes we all need a little escape from the hustle and bustle of the city. Luckily, there are plenty of beautiful small towns with interesting histories, cultures and landscapes within driving...",
+      "id": "08383101bbdc7fc1",
+      "title": "Bank of America Travel Rewards Credit Card Editor's Review",
+      "url": "https://wallethub.com/edu/cc/bank-of-america-travel-rewards-card-review/51612",
+      "summary": "The Bank of America Travel Rewards credit card is most worthwhile for people who are existing Bank of America banking customers with a lot of cash saved. If you are in BofA Rewards™, which requires you to open a BofA checking account, you can get 10% to 75% more rewards.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -65,11 +64,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -78,10 +78,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fc5d20acfaba2d15",
-      "title": "Your amazon store card is probably scamming you - Reddit",
-      "url": "https://www.reddit.com/r/personalfinance/comments/9dcwnn/your_amazon_store_card_is_probably_scamming_you/",
-      "summary": "What's the difference between the Synchrony Amazon store cards and the Chase Amazon Prime card? Why not just get the Chase Prime card for the 5% cash back if you're paying your balance in full every month? I'm sure Chase screws over its clients in various other ways but Sychrony and other online banks just rub me the wrong way.",
+      "id": "627f6dce240dd0fb",
+      "title": "2026 Bank of America Foreign Transaction Fees - WalletHub",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-foreign-transaction-fee-1000339-2140662064/",
+      "summary": "The Bank of America foreign transaction fee is 0% to 3%, depending on the specific credit card. A foreign transaction fee is a surcharge that some credit cards add to transactions processed outside of the United States.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -90,20 +90,17 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "retail",
-        "community"
+        "news"
       ],
-      "primary_type": "retail",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "retail_rebrand_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -112,83 +109,142 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dfc1fd1bce91d6b8",
-      "title": "Red Sox Announce Major Schedule Change For Final Series",
-      "url": "https://www.baseballnow.com/2026/09/23/red-sox-announce-major-schedule-change-for-final-series",
-      "summary": "The Boston Red Sox are scheduled to face the Chicago Cubs in the final series of the year, but the start times have been altered. Due to potential storms in Boston, the Red Sox have announced that they will play a split doubleheader on Friday and a night game on Saturday. The first game of Friday's ...",
+      "id": "0f0fe40b54b42d0c",
+      "title": "Bank of America® Customized Cash Rewards credit card",
+      "url": "https://wallethub.com/d/bank-of-america-cash-rewards-credit-card-128c",
+      "summary": "Reviews, rates, fees, and rewards details for The Bank of America® Customized Cash Rewards credit card. Compare to other cards and apply online in seconds",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3bc0db3fc18ed2b4",
+      "title": "Best Bank of America Credit Cards of October 2026",
+      "url": "https://wallethub.com/credit-cards/bank-of-america/",
+      "summary": "October 2026's best Bank of America credit cards are selected by WalletHub editors from 1,500+ credit card offers. Get expert help choosing the best Bank of America card.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ee23665d51af0f0",
+      "title": "Credit Cards For Gas Purchases Only - WalletHub",
+      "url": "https://wallethub.com/answers/cc/credit-cards-for-gas-purchases-only-2140690246/",
+      "summary": "What are the best easy approval gas credit cards? The best easy approval gas credit card is the Bank of America® Customized Cash Rewards Secured Credit Card. It’s relatively easy to get approved for this card even if you have poor credit, and you will enjoy a $0 annual fee as well as 1 - 6% cash back on purchases.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f59e76b10e21fe1c",
+      "title": "What Counts as Travel for Bank of America Travel Rewards? - WalletHub",
+      "url": "https://wallethub.com/answers/cc/what-counts-as-travel-for-bank-of-america-travel-rewards-2140763076/",
+      "summary": "The Bank of America® Travel Rewards credit card counts as travel everything from airfare, hotel reservations and car rentals to toll fares, tickets to tourist attractions, and rideshare services. Travel-related goods and services must be categorized with an eligible merchant category code to count as a travel purchase.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96c69f7085c29a32",
+      "title": "Login page | Amazon.jobs",
+      "url": "https://www.amazon.jobs/en-US/applicant/login?relay=%2Fen-US%2Fapplicant",
+      "summary": "Privacy Notice Impressum Disability accommodations Diversity and Inclusion © 1996-2026, Amazon.com, Inc or its affiliates",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "announced"
+        "privacy"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7c524ebe6d7a03e4",
-      "title": "Anita Sil, MD, PhD | Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/anita-sil-md-phd",
-      "summary": "\"Fungal Pathogenesis and Host Response\" Dr. Sil studies the human pathogen Histoplasma capsulatum, delving into the cell biology of both the microbe and the relevant host cells. The goal of her research is to use functional genomics and genetics to generate a molecular understanding of how cell-cell interaction, signal transduction, gene regulation, and other fundamental biological processes ...",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "policy"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "be6eee32546ba149",
-      "title": "Boston Red Sox Game Today: Time, TV Channel & Score",
-      "url": "https://newenglandsportswire.com/redsox-tonight/",
-      "summary": "Are the Boston Red Sox playing today? Start time, TV channel, probable pitchers and live score updates.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -198,7 +254,9 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "policy",
+        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -210,232 +268,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d0df56184ebe3e13",
-      "title": "Boston Red Sox Schedule | Boston Red Sox - MLB.com",
-      "url": "https://www.mlb.com/redsox/schedule",
-      "summary": "There are no games scheduled for this date. All Times ET unless otherwise noted. Subject To Change.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8422165e79c7cea4",
-      "title": "Boston Red Sox — News, Schedule, Scores & Tickets",
-      "url": "https://newenglandsportswire.com/redsox/",
-      "summary": "Everything Boston Red Sox in one place: today's game, full schedule, latest news, how to watch and where to get tickets.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "93809365dc59c65a",
-      "title": "Gross, Carol, PhD | Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/gross-carol-phd",
-      "summary": "Gross, Carol, PhD Professor and Vice Chair Department of Microbiology & Immunology Department of Cell & Tissue Biology Research Overview",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a4fc1b6fecedb98",
-      "title": "It’s officially a Red Sox-Yankees rematch. Here’s everything you need ...",
-      "url": "https://www.boston.com/sports/boston-red-sox/2026/09/27/red-sox-yankees-american-league-wild-card-series-playoff-preview-schedule/",
-      "summary": "That’s right, the Red Sox had to fly to St. Petersburg to wrap up the regular season, whereas the Yankees stayed at home and never rescheduled their 162nd game against the Orioles.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab56a4d24d654c60",
-      "title": "Kole Roybal, PhD - Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/kole-roybal-phd",
-      "summary": "Kole Roybal, PhD Associate Professor, Department of Microbiology & Immunology, Parker Institute for Cancer Immunotherapy Research Overview",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "20f6730aef34d2a7",
-      "title": "Michael McManus, PhD - Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/michael-mcmanus-phd",
-      "summary": "Michael McManus, PhD Director, UCSF Keck Center for Noncoding RNAs Director, UCSF Sandler Lentiviral RNAi Core Professor, Department of Microbiology and Immunology UCSF Diabetes Center Research Overview",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b7a165bbd4de7cee",
-      "title": "Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/",
-      "summary": "Our department is the home for the multidisciplinary UCSF iMicro (https://imicro.ucsf.edu) and ImmunoX (https://immunox.ucsf.edu) Programs. Research in the department focuses on areas related to infectious diseases, basic molecular microbiology, immunology, cancer, and the microbiome.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f685423e85e6de0a",
-      "title": "Outlook",
-      "url": "https://outlook.live.com/owa/?realm=hotmail.com&fid=flinbox&path=/mail/inbox/rp",
-      "summary": "Outlook",
+      "id": "f0ae1b56074726a4",
+      "title": "Amazon Hourly Jobs",
+      "url": "https://www.amazon.jobs/content/en/hourly",
+      "summary": "Find Hourly Jobs in warehouses or customer service at Amazon in US, UK, MX, and other global locations.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -451,7 +287,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -463,10 +300,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "615a6ccd18061847",
-      "title": "Outlook",
-      "url": "https://outlook.live.com/owa/calendar/00000000-0000-0000-0000-000000000000/1c1ee4a7-d892-4fd0-b8c8-b352b69252e2/cid-28AE8AF386B2C019/index.html",
-      "summary": "JavaScript must be enabled. tttt",
+      "id": "800614f223c6e945",
+      "title": "Amazon rekindle",
+      "url": "https://www.amazon.jobs/content/en/career-programs/rekindle",
+      "summary": "Amazon India’s rekindle program is your launchpad back to work. This program is designed to reintegrate women into the corporate world with confidence and competence. It blends structured support with flexible options, helping you regain confidence. With mentorship, on-the-job learning, and guidance, we’ll equip you to rejoin the workforce.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -482,7 +319,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk"
+        "sdk",
+        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -494,16 +332,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b4253f5473ce3f60",
-      "title": "Red Sox playoff schedule: Dates for Wild Card series vs. Yankees",
-      "url": "https://www.bostonherald.com/2026/09/25/red-sox-playoff-schedule-opponent-game-times-dates-mlb-postseason-news/",
-      "summary": "It will be Red Sox and the Yankees again in an American League Wild Card series. Here are the dates for the games played.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "57d215584b131cb2",
+      "title": "AMSOIL 100% Synthetic V-Twin Primary Fluid",
+      "url": "https://www.amsoil.com/p/amsoil-100-synthetic-v-twin-primary-fluid-mvp/?code=MVPQT-EA",
+      "summary": "Shop AMSOIL 100% Synthetic V-Twin Primary Fluid at AMSOIL. Find premium synthetic oil, filters and more online. Fast, free shipping available.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -512,373 +352,7 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74db9e3e27a546a7",
-      "title": "Red Sox rework weekend schedule due to impending storm",
-      "url": "https://985thesportshub.com/2026/09/23/red-sox-rework-weekend-schedule-due-to-impending-storm/",
-      "summary": "Originally set to be a Friday, Saturday, Sunday series, the teams will now play a double-header on Friday and then one game on Saturday. Sunday's game will officially be moved to Friday a 1:05 p.m. ET. The original Friday game is also being moved up an hour, to a 6:05 p.m. first pitch.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a11e81ba9a365e1",
-      "title": "Red Sox vs. Cubs Schedule: Dates, Channels, Streams for Final ... - NESN",
-      "url": "https://nesn.com/boston-red-sox/news/red-sox-vs-cubs-schedule-dates-channels-streams/3312bf39ebbce8fc1c19efa2",
-      "summary": "Here is everything you need to know about Red Sox vs. Cubs, including TV and streaming options for the series.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7393f693846b3dc",
-      "title": "What time is Yankees vs Red Sox today? Where to watch MLB playoff game",
-      "url": "https://www.usatoday.com/story/sports/mlb/playoffs/2026/09/29/yankees-red-sox-time-watch-channel-mlb-playoff-predictions/91998533007/",
-      "summary": "Baseball's greatest rivalry gets renewed in the postseason with the New York Yankees hosting the Boston Red Sox for the best-of-three wild card series beginning on Tuesday, Sept. 29.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "92e22631449be275",
-      "title": "56-0748358 - LOWE'S HOME CENTERS, LLC - City-Data.com",
-      "url": "https://www.city-data.com/business-entities/FL/LOWE-S-HOME-CENTERS-LLC-56-0748358-FL.html",
-      "summary": "56-0748358 - LOWE'S HOME CENTERS, LLC Entity Id: 56-0748358 Type: Foreign Limited Liability Company Status: ACTIVE Registration date: 2013 Nov 25 Document Number: M13000007460 Adresses Principal Office Address: 1000 Lowe's Blvd, Mooresville, NC 28117, changed: 01/14/2020 Mailing Address: 1000 Lowe's Blvd., TAX52, Mooresville, NC 28117, changed ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8594c5028aa32083",
-      "title": "Angela Phillips, PhD - Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/angela-phillips-phd",
-      "summary": "The Phillips lab is interested in elucidating the molecular mechanisms that constrain protein evolution at the host-virus interface. The lab develops high-throughput methods to evolve, mutagenize, and biophysically characterize viral proteins and antibodies to better understand the properties that shape their evolution and co-evolution.",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41b17953c8835f49",
-      "title": "Browser features and tools – Google Chrome",
-      "url": "https://www.google.co.uk/chrome/browser-tools/",
-      "summary": "Discover the browser features and tools that set Google Chrome apart and keep you focused. From search to productivity, Google Chrome empowers you to get more done.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "35ca44c0be6af506",
-      "title": "Buckeye, Arizona - City-Data.com",
-      "url": "https://www.city-data.com/city/Buckeye-Arizona.html",
-      "summary": "Buckeye, Arizona detailed profile Mean prices in 2024: all housing units: $593,009; detached houses: $640,661; townhouses or other attached units: $428,400; in 2-unit structures: $374,132; in 3-to-4-unit structures: $400,056; in 5-or-more-unit structures: $356,932; mobile homes: $144,171; occupied boats, rvs, vans, etc.: $111,486 Median gross rent in 2024: $2,466. December 2024 cost of living ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c680552e2be7eb42",
-      "title": "Chen, James, PhD | Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/chen-james-phd",
-      "summary": "UCSF - Microbiology & Immunology 513 Parnassus Ave, San Francisco, CA 94143. Fax: 415-502-8424",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e6e1b019377ebfdf",
-      "title": "Chrome Web Browser - Google Chrome",
-      "url": "https://www.google.com/chrome/index.html",
-      "summary": "A fast, secure, and free web browser built for the modern web. Chrome syncs bookmarks across all your devices, fills out forms automatically, and so much more.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84950968e8937627",
-      "title": "Chrome Web Store",
-      "url": "https://chromewebstore.google.com/",
-      "summary": "Welcome to the Chrome Web Store Supercharge your browser with extensions and themes for Chrome",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a1008196358d758a",
-      "title": "Combined Manual (CM) Home Page - mentalhealth.dhs.state.mn.us",
-      "url": "https://www.mentalhealth.dhs.state.mn.us/main/idcplg/Enrollment_home_page.doc?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=id_016956",
-      "summary": "The Combined Manual (CM) gives financial workers a complete, authoritative, concise set of provisions to determine eligibility for the cash and food programs and to issue client benefits on MAXIS.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e32e318a328e09f9",
-      "title": "Google Chrome - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Google_Chrome",
-      "summary": "Google Chrome ... Google Chrome is a cross-platform web browser developed by Google. It was launched in September 2008 for Microsoft Windows, built with free and open-source (FOSS) components from Apple WebKit and Mozilla Firefox. [16]",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool"
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -890,16 +364,82 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "47abf24ae4874a93",
-      "title": "Google Chrome Browser Download Free - 155.0.8059.85 | TechSpot",
-      "url": "https://www.techspot.com/downloads/4718-google-chrome.html",
-      "summary": "Google Chrome is a fast, simple, and secure web browser, built for the modern web. Chrome combines a minimal design with sophisticated technology to make the web faster, safer, and easier.",
+      "id": "34c6e627e2cdf903",
+      "title": "AMSOIL ATV/UTV Kits for Polaris® Vehicles",
+      "url": "https://www.amsoil.com/p/amsoil-atv-utv-kits-for-polaris-vehicles-pkatvutv/",
+      "summary": "Shop AMSOIL ATV/UTV Kits for Polaris® Vehicles at AMSOIL. Find premium synthetic oil, filters and more online. Fast, free shipping available.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c5807a1737fd4dd",
+      "title": "AMSOIL DOMINATOR® 100% Synthetic 2-Stroke Racing Oil",
+      "url": "https://www.amsoil.com/p/amsoil-dominator-100-synthetic-2-stroke-racing-oil-tdr/",
+      "summary": "Shop AMSOIL DOMINATOR® 100% Synthetic 2-Stroke Racing Oil at AMSOIL. Find premium synthetic oil, filters and more online. Fast, free shipping available.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d909b81a04120cd7",
+      "title": "Boost Mobile : Cell Phones & Smartphones : Target",
+      "url": "https://www.target.com/c/cell-phones-electronics-tech/boost-mobile/-/N-5xte8Z5xzxi",
+      "summary": "Shop Apple iPhone, Google Pixel, Samsung Galaxy and more at Target. Find smartphones, prepaid phones and accessories. Free shipping on orders $35+.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -908,9 +448,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -920,15 +460,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "859c676a50816216",
-      "title": "Manuals / mn.gov/dhs | Partners and Providers",
-      "url": "https://mn.gov/dhs/partners-and-providers/policies-procedures/manuals/",
-      "summary": "This manual is for Minnesota counties, American Indian tribes, Minnesota Department of Human Services personnel, contracted managed care organizations and others involved in administering all PMHCPs.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "f08065ba3b50792c",
+      "title": "China Pizza's J-402800797 (@chinapizzas) - Instagram",
+      "url": "https://www.instagram.com/chinapizzas/",
+      "summary": "48K Followers, 3,046 Following, 1,216 Posts - China Pizza's J-402800797 (@chinapizzas) on Instagram: \"A different concept🍕 Todos los días de 11:30am a 11:00pm. Vie-Sab hasta 01:00am Pedidos por WhatsApp👇🏻\"",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -938,9 +478,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "rumor"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -950,15 +492,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aac010cc59e88924",
-      "title": "Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/faculty",
-      "summary": "McManus, Michael, PhD Picture Working Title & Department Professor Microbiology & Immunology, UCSF Diabetes Center Nicolas-Avila, Jose Angel, PhD Picture Working Title & Department",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "id": "929f43ec9f427d6b",
+      "title": "Incredible Food & Fun | Family Entertainment Center",
+      "url": "https://incrediblefoodandfun.com/",
+      "summary": "Start with one of our four walk-in favorites, or choose an online family bundle before your visit. Food, drinks, games and attractions are all easier when they are bundled together. 🍕 Buffet included Start with the food your crew loves. 🥤 Drinks included One less item to add at checkout. 🎮 Game play included Every package comes with arcade value.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -968,9 +510,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -980,15 +523,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2bc44de27d1af882",
-      "title": "Minnesota Department of Human Services",
-      "url": "https://www.dhs.state.mn.us/main/idcplg%27%22%3E%3C28227%3E?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=ID_016956",
-      "summary": "We would like to show you a description here but the site won’t allow us.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "b58b1077b8946f58",
+      "title": "Online Menu of China House Restaurant, Memphis, Tennessee, 38141 - Zmenu",
+      "url": "https://www.zmenu.com/china-house-memphis-online-menu/",
+      "summary": "View the online menu of China House and other restaurants in Memphis, Tennessee.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -998,9 +541,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1010,15 +554,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2bd0f9ea7f658964",
-      "title": "Minnesota Department of Human Services / Minnesota Department of Human ...",
-      "url": "https://www.dhs.state.mn.us/main/idcplg?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=Manuals",
-      "summary": "We would like to show you a description here but the site won’t allow us.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "d35ffc7ed27f567e",
+      "title": "P.F. Chang's | Restaurant Menu",
+      "url": "https://www.pfchangs.com/menu",
+      "summary": "Find everything from our P.F. Chang's Lettuce Wraps to hand-rolled sushi and dim sum.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1028,9 +572,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1040,166 +585,176 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "88a28ee29931495c",
-      "title": "Mount Airy, North Carolina - City-Data.com",
-      "url": "https://www.city-data.com/city/Mount-Airy-North-Carolina.html",
-      "summary": "Mount Airy, North Carolina detailed profile Mean prices in 2024: all housing units: $314,374; detached houses: $306,223; townhouses or other attached units: $338,372; in 5-or-more-unit structures: $395,740; mobile homes: $52,604 Median gross rent in 2024: $736. December 2024 cost of living index in Mount Airy: 80.8 (low, U.S. average is 100) Mount Airy, NC residents, houses, and apartments ...",
+      "id": "eccbe4fc1ccf6dcc",
+      "title": "Project, Program, and Product Management—Non-Tech - Amazon.jobs",
+      "url": "https://www.amazon.jobs/content/job-categories/project-program-product-management-non-tech",
+      "summary": "We build digital products that improve, entertain or simplify the lives of our product users around the world.This is an exciting space. It all starts as we discover a new product need, consider market dynamics, and build early prototypes. We set a cle...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9bb5885d434e74d1",
+      "title": "SHREYA'S PIZZA",
+      "url": "https://shreyaspizza0093.s4shops.com/",
+      "summary": "Where handcrafted, wood-fired pizza meets the bold, refined flavors of India. Discover signature creations like Butter Chicken, Paneer Tikka, and Mumbai Street Pizza—crafted fresh daily at Shreya’s Pizza.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b6fef7a9ca1056a",
+      "title": "THE 10 BEST Chinese Restaurants in Memphis (Updated 2026)",
+      "url": "https://www.tripadvisor.com/Restaurants-g55197-c11-Memphis_Tennessee.html",
+      "summary": "Best Chinese Restaurants in Memphis, Tennessee: Find Tripadvisor traveller reviews of Memphis Chinese restaurants and search by price, location, and more.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "baa1454934ff50fe",
+      "title": "THE 10 BEST Pizza Places in Memphis (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g55197-c31-Memphis_Tennessee.html",
+      "summary": "Best Pizza in Memphis, Tennessee: Find Tripadvisor traveller reviews of Memphis Pizza places and search by price, location, and more.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "30b6daac49acad01",
+      "title": "THE BEST 10 PIZZA PLACES IN MEMPHIS, TN - UPDATED OCTOBER 2026 ... - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=memphis%2C+TN",
+      "summary": "I love pizza (actually my favorite food) and I have to say, this is definitely one of my favorites!! I am an out of towner, but my husband delivers to Memphis a lot, as he is a truck driver.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f03e8b3efa83f3f",
+      "title": "Weichao Si - 34 Years Old from Wantagh, NY - Instant Checkmate",
+      "url": "https://www.instantcheckmate.com/people/weichao-si/",
+      "summary": "Instant Checkmate has reviews on major review sites, with users often commenting on report depth, ease of use, and billing expectations. Checking recent reviews from multiple sources is the best way to evaluate current sentiment.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
       ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f29f671fc16098a3",
-      "title": "Nicolas-Avila, Jose Angel, PhD | Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/nicolas-avila-jose-angel-phd",
-      "summary": "UCSF - Microbiology & Immunology 513 Parnassus Ave, San Francisco, CA 94143. Fax: 415-502-8424",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b586ffe7511c11d2",
-      "title": "Partnerlink - Manuals - Minnesota Department of Human Services",
-      "url": "https://www.dhs.state.mn.us/main/idcplg/ncmk25?IdcService=GET_DYNAMIC_CONVERSION&RevisionSelectionMethod=LatestReleased&dDocName=Manuals",
-      "summary": "This manual provides general information and step-by-step instructions on how to use the Minnesota Provider Screening and Enrollment (MPSE) portal to submit enrollment requests for new and existing providers.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "73b9314b3dc0f9cf",
-      "title": "Peter Turnbaugh, PhD - Microbiology & Immunology",
-      "url": "https://microbiology.ucsf.edu/content/peter-turnbaugh-phd",
-      "summary": "UCSF - Microbiology & Immunology 513 Parnassus Ave, San Francisco, CA 94143. Fax: 415-502-8424",
-      "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "faf19064c9a4471d",
-      "title": "Policies and Procedures | Minnesota Department of Children, Youth, and ...",
-      "url": "https://dcyf.mn.gov/cash-food-policies-and-procedures",
-      "summary": "Manuals are hosted on PartnerLink. The Combined Manual gives financial workers a complete, authoritative and concise set of provisions to determine eligibility for the cash and food programs, and to issue client benefits on MAXIS.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "15209894e86acd40",
-      "title": "Resources / Minnesota Department of Human Services",
-      "url": "https://mn.gov/dhs/hcbs-lead-agency-review/resources/",
-      "summary": "PartnerLink - A website designed for counties administering all DHS programs that includes manuals, performance measurement data, training resources, and I.T. systems (including SSIS and MnCHOICES).",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -1220,490 +775,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d5ea4afff7e66828",
-      "title": "State of Minnesota Partner Portal",
-      "url": "https://mnpartnerportal.dhs.mn.gov/SASPortal/main.do",
-      "summary": "By using the software, you expressly consent to the State disclosing such names and the other limitations on use of the software set forth in this paragraph. This system is the property of the Minnesota Department of Human Services (DHS).",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e4cd40eaefd683c",
-      "title": "Subway Surfers - Jogue Grátis Online! | Poki",
-      "url": "https://poki.com/br/g/subway-surfers",
-      "summary": "Subway Surfers é um jogo de corrida infinita onde você corre pelos trilhos do trem desviando de trens em movimento e obstáculos. Colete moedas para desbloquear novos personagens e hoverboards, e pegue poderes para continuar correndo o máximo que puder!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b65bde2ed09518d1",
-      "title": "Subway Surfers - Official Homepage | Play Now On iOS & Android",
-      "url": "https://subwaysurfers.com/",
-      "summary": "The official website of the hit mobile game Subway Surfers. Tour the world with Jake, Tricky and friends to escape the grumpy guard & oncoming trains.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7bdf58ddbc3e1cef",
-      "title": "Subway Surfers - play online for free - MEEGames",
-      "url": "https://www.meegames.com/en/game/2653-subway-surfers-classic.html",
-      "summary": "Play Subway Surfers online, a free endless runner game where you dodge trains, collect coins, and chase high scores with no download required. Play for free on computer, tablet, or phone!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f5e03c7a1463ae3",
-      "title": "Subway Surfers - Play Online for Free | Playmox",
-      "url": "https://www.playmox.com/game/subway-surfers/",
-      "summary": "With its dynamic visuals, upbeat soundtrack, and frequent updates featuring new cities and characters, Subway Surfers provides endless entertainment and a chance to test your reflexes and agility. Compete with friends or aim to beat your personal best in this exhilarating, action-packed adventure!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bddecd07cd05fc59",
-      "title": "Subway Surfers - Play Online for Free! | Arcadrome",
-      "url": "https://arcadrome.com/en/games/subway-surfers",
-      "summary": "Play Subway Surfers free online on your computer, tablet, or phone. No downloads needed — simple, fun, and ready to play!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "44c8f85aae9d5a11",
-      "title": "Subway Surfers - Play Online for Free! | Poki",
-      "url": "https://poki.com/en/g/subway-surfers",
-      "summary": "Subway Surfers is an endless runner where you run on train tracks dodging oncoming trains and barriers. Collect coins to unlock new characters and hoverboards, and grab power ups to keep your run going as long as possible. Runs start slow, then fill the screen with obstacles in seconds.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2ed4bf82bdd1a188",
-      "title": "Subway Surfers Play online - PlayMiniGames",
-      "url": "https://playminigames.net/game/subway-surfers",
-      "summary": "Join the thrilling chase in Subway Surfers, an incredibly popular endless runner game developed by Kiloo and SYBO Games! Step into the shoes of a daring graffiti artist escaping a persistent policeman and his relentless dog through vibrant subway tracks filled with adrenaline-pumping action.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0f99dace922544ee",
-      "title": "Subway Surfers | Play Free Online on MadKidGames",
-      "url": "https://www.madkidgames.com/game/subway-surfers",
-      "summary": "Play Subway Surfers free online and dash through colorful subway tracks in one of the most exciting endless running adventures. Run fast, dodge trains, jump over barriers, slide under obstacles, collect coins, and see how far you can go without getting caught.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f296491469c611a",
-      "title": "Subway Surfers ️ Play Now for Free | RocketGames",
-      "url": "https://www.rocketgames.io/game/subway-surfers",
-      "summary": "Escape the inspector, dash through subways, and collect coins in this iconic endless runner game! Play Subway Surfers online for free—no login or download.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d0cb766ed511bbbb",
-      "title": "subway surfers ️ Play on Crazygames",
-      "url": "https://play.crazygames.homes/play/subway-surfers",
-      "summary": "Subway Surfers is a classic endless runner game. You play as Jake, who surfs the subways and tries to escape from the grumpy Inspector and his dog. You'll need to dodge trains, trams, obstacles, and more to go as far as you can in this endless running game.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3facc9d0521d982c",
-      "title": "Word 有哪些神奇的功能？ - 知乎",
-      "url": "https://www.zhihu.com/question/27035859",
-      "summary": "但是复制到Word里，就是点击3下鼠标的事： 这就是 Word 的分栏，被很多人忽略的一个强大技能，特别省纸！ 【6】 英文排版的迷之空格，该如何搞定？ 输入英文，单词间的间隙特别大，删也删不掉，怎么办？ 其实是因为单词没法断词导致，教你一招！",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cc62aa19846d756",
-      "title": "word为什么不提高CPU利用率来提高处理速度？ - 知乎",
-      "url": "https://www.zhihu.com/question/418575640",
-      "summary": "word为什么不提高CPU利用率来提高处理速度？ 在处理大文件或者编写学位论文时，图标较多的情况下，word保存的速度非常之慢，令人愤怒。 而且经常性的卡死，半天之后才有响应。 而此时CPU利用率却非常低… 显示全部 关注者 13",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "36db74ad6815e401",
-      "title": "Word为什么设计得这么难用？ - 知乎",
-      "url": "https://www.zhihu.com/question/339840855",
-      "summary": "Word为什么设计得这么难用？ 首先请要举报的收起小红酱贴大字报的冲动，不要动不动以理中客自居阻碍讨论。 说回提问，我在知乎搜索Word设计得难用，发现仅有的两个提问，一个无人回答，… 显示全部 关注者 130",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "faa44959ec3ea408",
-      "title": "word文件里，我打空格键就有点点出现，为什么？我要怎么做才不会这样？",
-      "url": "https://www.zhihu.com/question/21906193",
-      "summary": "word文件里，我打空格键就有点点出现，为什么？我要怎么做才不会这样？",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1d16fb2c40d4cc20",
-      "title": "word文档不断出现：无法打开文件，因为内容有错误。怎么办？",
-      "url": "https://www.zhihu.com/question/531902654",
-      "summary": "Word文档丢失怎么办？ 如果进行了以上操作Word文档仍然打不开，或者在平时使用Word时由于误删除等原因造成文档丢失怎么办？ 给大家推荐一个好用的方法——使用数据蛙恢复专家找回Word文档。 这款软件专注扫描和恢复各类丢失的文件和数据，且效果较好。",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "34886280c4eb2fca",
-      "title": "Zephyrhills, Florida (FL 33540) profile: population, maps, real estate ...",
-      "url": "https://www.city-data.com/city/Zephyrhills-Florida.html",
-      "summary": "Zephyrhills, Florida detailed profile Mean prices in 2024: all housing units: $364,733; detached houses: $422,317; townhouses or other attached units: $285,236; in 2-unit structures: $622,708; in 3-to-4-unit structures: $182,711; in 5-or-more-unit structures: $171,903; mobile homes: $134,571; occupied boats, rvs, vans, etc.: $27,630 Median gross rent in 2024: $1,334. December 2024 cost of ...",
+      "id": "f6fd6de8d1f61d54",
+      "title": "$1 Background Check | Instant Checkmate Trial",
+      "url": "https://www.instantcheckmate.com/register/special-offer/",
+      "summary": "Looking for a $1 background check? Try Instant Checkmate for 5-days and get unlimited searches.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1730,10 +805,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6efa974367312d8d",
-      "title": "如何做到像使用 LaTeX 那样优雅地使用 Word？",
-      "url": "https://www.zhihu.com/question/20541531",
-      "summary": "一个人，对word有基础的了解，知道样式是怎么回事，知道怎么调段落间距行间距，知道怎么消除页眉下面的横线，那么你只需要外面有人再稍稍推你一把，你就能被带进优雅使用Word的中高档次，排出LaTeX那样的文档。 昨日找到一个模板，简直是一个对格式有追求的理科学生的福音！",
+      "id": "9d3677fe8c6acf75",
+      "title": "2026 Chrysler Pacifica - America's Most Awarded AWD Minivan",
+      "url": "https://www.chrysler.com/pacifica.html",
+      "summary": "Explore the 2026 Chrysler Pacifica minivan with available AWD, seating for 7 and advanced safety and security features. Shop and buy your Pacifica online today.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b9dc396c5827d79e",
+      "title": "AMSOIL International - Mexico",
+      "url": "https://www.amsoil.com/international/distributor/Countries/Mexico.aspx",
+      "summary": "Antonio Flores AV CHURUBUSCO 760, COLONIA VILLAS DE LINDA VISTA, MONTERREY NL CP64540 Phone Numbers: 8181261500 / 8181261501 / 8181261502 / 8181261503 / 8181261504 / 8181261505 antonio.flores@dirego.com.mx",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1760,10 +865,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "61f4297659ae76d9",
-      "title": "如何将word表格转换为excel表格 格式完全不变？ - 知乎",
-      "url": "https://www.zhihu.com/question/42558861",
-      "summary": "我们经常会遇到将word中的表格转换到excel中，但复制粘贴过去后，可以发现原有的word表格到了excel表格中严重的变形了。 小渔老师今天教大家一招，如何让word表格转换到excel表格不变形，记得点赞加关注哦！ 1、首先，我们打开word表格，按F12将表格另存为；",
+      "id": "31bf559121f11b20",
+      "title": "AMSOIL | Online Store for Premium Synthetic Lubricants - AMSOIL",
+      "url": "https://www.amsoil.com/",
+      "summary": "Shop AMSOIL and our premium line of full synthetic motor oils & lubricants engineered to keep your vehicles and equipment running cleaner, longer! - AMSOIL",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1790,10 +895,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8e733f222aaf8466",
-      "title": "如何解决word公式加编号以后字体自动缩小？ - 知乎",
-      "url": "https://www.zhihu.com/question/57586774",
-      "summary": "在Word中，添加公式编号后字体缩小的问题可以通过调整公式编辑器设置解决。",
+      "id": "ce80e850f8c62175",
+      "title": "Auto & Light Truck Lookup Guide: Oil Capacity & Viscosity - AMSOIL",
+      "url": "https://www.amsoil.com/lookup/auto-and-light-truck/",
+      "summary": "Auto & Light Truck Lookup Guide: Oil Capacity & Viscosity - AMSOIL AMSOIL Disclaimer and Technical Concerns Specifications contained on this website are based on manufacturers' information and were believed accurate at the time of publication. Our recommendations apply to AMSOIL products only, as we cannot be responsible for products from other manufacturers. Always compare fluids and ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1820,10 +925,340 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8ab9bde3e87fbfc3",
-      "title": "带有公式的visio 插入到word变 模糊而且拉伸了，怎么办？ - 知乎",
-      "url": "https://www.zhihu.com/question/22182686",
-      "summary": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见解，找到自己的解答」为品牌使命。知乎凭借认真、专业、友善的社区氛围、独特的产品机制以及结构化和易获得的优质内容，聚集了中文互联网科技、商业、影视 ...",
+      "id": "8439542359c260d9",
+      "title": "Betten Volkswagen in Grand Rapids, MI | New & Used VW",
+      "url": "https://www.bettenvolkswagen.com/",
+      "summary": "Visit Betten Volkswagen in Grand Rapids, MI for new Volkswagen models, used cars, financing options, and expert service all in one place.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec05630fcb49cf2a",
+      "title": "Boost Mobile Phones and Prepaid Plans",
+      "url": "https://www.walmart.com/browse/cell-phones/boost-mobile-phones-plans/1105910_4527935_1072335_5381159_3699046",
+      "summary": "Shop Boost Mobile prepaid phones and plans with 5G options, SIM cards, and unlocked devices for easy activation.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76f94b83155f3d68",
+      "title": "Boost Mobile Phones Prepaid Smartphones",
+      "url": "https://www.walmart.com/browse/cell-phones/boost-mobile/1105910_3253219_4862580",
+      "summary": "Shop prepaid Boost Mobile phones with various models and storage options locked to Boost Mobile network.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41a1e47c4ccac4c6",
+      "title": "Cell Phone Deals - Shop Our Best Offers on New Phones - Boost Mobile",
+      "url": "https://www.boostmobile.com/deals",
+      "summary": "Find our best deals on new cell phones and unlimited data plans. Save more on top smartphones when you shop online with Boost Mobile.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5a9db9746bb5ce7",
+      "title": "chrysler",
+      "url": "https://webprod.extra.chrysler.com/tms/servlet/com.dcx.mfg.tmstng.TmsController",
+      "summary": "Click here to find the TMS administrators of your location for access issues",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b7546ebec554d35",
+      "title": "Chrysler Official Site - New Minivans, Deals & Offers",
+      "url": "https://www.chrysler.com/",
+      "summary": "Visit the official Chrysler site for current offers, lease deals & incentives on new minivans. Build & price your Chrysler minivan or find inventory near you.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51a51101beeb0571",
+      "title": "Contact Customer Support - Reverse Phone Lookups by Instant Checkmate",
+      "url": "https://www.phone.instantcheckmate.com/contact",
+      "summary": "Get in touch with one of our Customer Care Representatives via phone or email. Our Agents are happy to assist you when available.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c61899cc156ef3c",
+      "title": "Contact Instant Checkmate Customer Service - Email & Phone",
+      "url": "https://www.instantcheckmate.com/contact/",
+      "summary": "Instant Checkmate's customer service team is available 7am-4pm PT. Click to contact our customer service team & find answers to frequently asked questions.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27e2b2870a3ba965",
+      "title": "Devices - Boost Mobile",
+      "url": "https://help.boostmobile.com/docs/phones",
+      "summary": "Boost Mobile has you covered with the latest and greatest devices from top brands like Apple, Samsung, Motorola, Google and more. Whether you're looking for cutting-edge features or simple affordability, you'll find it here.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aef823fd394f0d9a",
+      "title": "Employee Central - chrysler",
+      "url": "https://kiosk.extra.chrysler.com/eMenu/page/EHub.jsp",
+      "summary": "Employee Central provides Chrysler employees with tools and resources for managing work-related tasks and accessing important information.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b598cf9914814f99",
+      "title": "FCA Employee Advantage - chrysler",
+      "url": "https://www.ea.chrysler.com/EmpAdv/",
+      "summary": "How Does it Work? It`s Easy as 1-2-3. If at any point you require assistance, please call the U.S. FCA Employee Purchase (EP) Hotline at (800) 756-2886 or the Canadian FCA Employee Dedicated Hotline at (866) 785-8783 or the FCA NAFTA Service Desk at 866-322-3274. To Secure Your Employee Purchase (EP) Program Benefits, Participant Eligibility is subject to Audit and Penalties for Noncompliance.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb1803c063ac0640",
+      "title": "Gear Oil vs. Engine Oil: What’s The Difference? - AMSOIL Blog",
+      "url": "https://blog.amsoil.com/gear-oil-vs-engine-oil/",
+      "summary": "When looking at gear oil vs engine oil, their viscosity ratings and additives are two primary things to keep in mind.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1850,10 +1285,190 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c9aa4741f4c06ed1",
-      "title": "请问word如何实现这种长公式的排版？ - 知乎",
-      "url": "https://www.zhihu.com/question/266922477",
-      "summary": "方法一，采用分节符的方法，即公式上下单独双栏，用分节符把他们分开。 这种方法可能会随着文中文字的变得需要重新调节分节符，我不太使用这种方法 方法二 这也是我采用的方法。 通过文本框的形式，将公式放到文本框中即可，然后拖动文本框，放在想放的位置。即使后面又有变动，直接拖 ...",
+      "id": "d5b58cd300f3f6d0",
+      "title": "Historia de Chrysler - Cronología",
+      "url": "https://es.chrysler.com/history.html",
+      "summary": "Desde nuestra fundación en 1925 por parte de Walter Chrysler hasta la primera minivan y nuestra revolucionaria tecnología de hoy en día, la marca Chrysler continúa siendo pionera en el sector.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fcbae892770eb526",
+      "title": "Home | Chrysler",
+      "url": "https://www.collection.chrysler.com/",
+      "summary": "By submitting this form and signing up for email and/or texts, you consent to receive marketing messages (e.g. promos, cart reminders) from Chrysler at the number and/or email provided, including messages sent by autodialer.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7e37d8d3176660b8",
+      "title": "How To Cancel Your Instant Checkmate Account",
+      "url": "https://www.instantcheckmate.com/help/cancel-account/",
+      "summary": "Instant Checkmate is always looking for ways to improve its website and service, and we want your feedback. Contact a member care representative anytime with questions, comments, or concerns.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c8687b402b6a69d",
+      "title": "Instant Checkmate",
+      "url": "https://app.instantcheckmate.com/login",
+      "summary": "Instant Checkmate",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fe67465d2ee2d638",
+      "title": "Instant Checkmate - People Search & Reverse Phone Lookup",
+      "url": "https://www.instantcheckmate.com/",
+      "summary": "Instant Checkmate is a public records search service that gives you the power to perform online background checks quickly. Search someone in America, and you may discover criminal and traffic records, arrest records, related court documents, addresses, age, known aliases, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c59c1612a62dc056",
+      "title": "Instant Checkmate People Search & Background Check Tool",
+      "url": "https://www.instantcheckmate.com/people/",
+      "summary": "Instant Checkmate people search helps you find people by name, run an instant background check, or look up phone numbers from millions of public records.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31fe77603ca7b85b",
+      "title": "Log in to your AMSOIL Account - AMSOIL",
+      "url": "https://www.amsoil.com/login",
+      "summary": "Email Me a One-Time Passcode No password needed. Login with code sent to your email.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1871,6 +1486,276 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3851fe2289dda601",
+      "title": "Motorcycle Oil, Primary Oil & Transmission Fluid - AMSOIL Blog",
+      "url": "https://blog.amsoil.com/motorcycle-oil-differences/",
+      "summary": "We explain the differences between motorcycle oil, primary oil and transmission fluid. And we answer the question: One oil or all three?",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec36feba5c87d226",
+      "title": "MyGARAGE: Free Vehicle Maintenance Software - AMSOIL",
+      "url": "https://www.amsoil.com/l/whymygarage/",
+      "summary": "Work hard, play hard and keep your vehicle maintenance history organized. With MyGarage, you can log any maintenance at any time - whether it’s an oil change, brake service, or tire rotation - so your records stay clear, accurate and easy to access.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6a3b47f72817f193",
+      "title": "Our 9 Best Boost Mobile Phones in the US - October 2026 ...",
+      "url": "https://www.bestproductsreviews.com/boost-mobile-phones",
+      "summary": "Easily compare & choose from the 10 best Boost Mobile Phones for you. Don't buy Boost Mobile Phones in the US before reading our rankings | bestproductsreviews.com",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6787795f448ebe8e",
+      "title": "QlikView - AccessPoint - chrysler",
+      "url": "https://discovery-dc.extra.chrysler.com/QlikView/",
+      "summary": "As you star your favorite documents they will appear here. Click the star next to the document to remove it from your favorites list.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "24c3b5eabd85dc34",
+      "title": "Reverse Phone Lookup",
+      "url": "https://www.phone.instantcheckmate.com/register",
+      "summary": "Instant Checkmate Phone Reports May Contain: Name Photos Owner's Last Known Address Social Media Profiles Social Media Activity Videos AND MORE!!! Address History Satellite Image of Owner's House Possible Associates Online Account Usernames AND MORE!!!",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4330f2e9e66d0fba",
+      "title": "Sign Up For An Instant Checkmate Background Check",
+      "url": "https://www.instantcheckmate.com/register",
+      "summary": "Click here to sign up for an Instant Checkmate Background Check. You're just a couple of clicks away from unlimited searches.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ffbdd9cef3cc90b",
+      "title": "Sitio oficial de Chrysler - Nuevas minivans y ofertas",
+      "url": "https://es.chrysler.com/",
+      "summary": "Visita el sitio web oficial de Chrysler para conocer las ofertas actuales, las promociones de alquiler y los incentivos para las nuevas minivans. Diseñar y cotizar tu minivan Chrysler o buscar un inventario cercano.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7e41441fbf928d73",
+      "title": "Transmission Rebuild Kit BOM's 3-4-16.xlsx - chrysler",
+      "url": "http://starparts.chrysler.com/info/default/21013_TransmissionRebuildKitBOMs_Final.pdf",
+      "summary": "Automatic Transmission Kits Mopar® Overhaul Kits contain all of the necessary gaskets, seals and filters for a specific transmission application. Based on the specific transmission being rebuilt, additional parts are included, such as snap rings, converter bolts, pump bolts, check balls, pistons, retainers, pump covers and more",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ed370788a11fc5a",
+      "title": "Upgrade your Device - Boost Mobile",
+      "url": "https://help.boostmobile.com/docs/phone-upgrades",
+      "summary": "You can purchase an upgrade by selecting your device under My Lines → Shop Upgrades on your account online or by tapping View Details → Shop Phones in the Boost Mobile app.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
