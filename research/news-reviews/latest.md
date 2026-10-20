@@ -1,37 +1,36 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-20T09:40:51.395876+00:00`
+Generated: `2026-10-20T13:40:52.562666+00:00`
 
-- Intake files inspected: **269**
-- Candidates retained in this review window/history: **11204**
+- Intake files inspected: **270**
+- Candidates retained in this review window/history: **11304**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2133
+- `adjacent_radar`: 2173
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 586
-- `rejected_noise`: 8388
-- `source_review`: 35
-- `watching`: 42
+- `needs_editorial_verification`: 583
+- `rejected_noise`: 8448
+- `source_review`: 37
+- `watching`: 43
 
 ## Action queue
 
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [Rokid Lumen publishes unofficial Meta Neural Band control bridge for Rokid RG](https://github.com/beyondlevi/rokid-lumen) | reachable (200) | development/hacking, owner control, security/privacy, Research & News |
-| high | needs_editorial_verification | direct | [MentraOS adds version-verified Private Cloud bootstrap](https://github.com/Mentra-Community/MentraOS/commit/801ee044144fe964eaa24e8b7c3b1326458c931b) | reachable (200) | development/hacking, cloud independence, owner control |
 | high | needs_editorial_verification | direct | [Rokid Lumen releases beta.19–.21 with cross-app handwriting, notification replies and memory fixes](https://github.com/beyondlevi/rokid-lumen/releases/tag/v0.2.0-beta.21) | reachable (200) | development/hacking, owner control, Research & News, Rokid RG ecosystem |
 | high | needs_editorial_verification | direct | [MentraOS Android background captions recovery fix](https://github.com/Mentra-Community/MentraOS/pull/4858) | reachable (200) | Research & News, development/hacking |
 | high | needs_editorial_verification | direct | [Qdrant Edge demonstrates local-first visual memory for smart glasses](https://github.com/qdrant/qdrant-edge-demo) | reachable (200) | development/hacking, cloud independence, deep research |
 | high | needs_editorial_verification | direct | [XREAL AURA opens paid full-payment preorder with $1,279 base price](https://us.shop.xreal.com/products/xreal-aura) | reachable (200) | model lifecycle, Research & News |
 | high | needs_editorial_verification | direct | [Cybernews compares Android permissions and tracker signatures across seven smart-glasses apps](https://cybernews.com/ai-news/smart-glasses-privacy/) | reachable (200) | privacy/policy, app ecosystem, Research & News, Report Card evidence review |
-| high | needs_editorial_verification | direct | [Faceclaw expands third-party Even G2 EvenHub compatibility](https://github.com/jimrandomh/faceclaw/commit/84baee9c7668c84bdc848a15ca2d3c2d6e8960a5) | reachable (200) | development/hacking, community research, owner control |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1000](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1000) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1001](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1001) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1002](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1002) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1005](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1005) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -153,6 +152,8 @@ Generated: `2026-10-20T09:40:51.395876+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.941](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.941) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.943](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.943) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.944](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.944) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1003](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1003) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1004](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1004) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -191,7 +192,6 @@ Generated: `2026-10-20T09:40:51.395876+00:00`
 | high | needs_editorial_verification | direct | [Android XR Smart Glasses Launch in November - Droid Life](https://news.google.com/rss/articles/CBMiigFBVV95cUxORnJYUTBnelBmaGhibV9KTHEwblc3c1A3RDRpVkZvalg2UVFrak1tVldkdEhHRU83QzUySzlfaXBseHpNMlhvajNBdGIxRWVUR3EtVmZ2RU1EeTMxTUdYQm4zS1dHRkNwQnlyenFuXzRFeVdtaGZIdUVON0I3QnFEeGxzX0Z2MWJVZHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [EssilorLuxottica and Meta launch AI-powered eyewear in Portugal. - Grande Consumo](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUzRpVVZaS3BGQzNsV1dYRW1ZcmhoOGhHNXZRb2kwOGI2ZHVPU2FyTmN4M3VZeGx1Sm84NWIzeHVHb2hFR3ZtUF9nTm91RzU0SW5wNVhuY2R4dVVKZkdpNzZjWS14REdWTjRkQWp3MjhKRlhLRnpzbGV2X0IybUNid3pHcmtBN3FtYVBsSEgxelhmQUVjTmNQUUlZdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Jio AI Smart Glasses: UPI Payments, Features And Launch Date - Flickonclick](https://news.google.com/rss/articles/CBMie0FVX3lxTFAzYzY1eS1FMVhNX0xjNUxaN1B4X0VzQmpCX1NjRmdTVVgtdm1GNDFpLTM3T1dycjQ2d3JkZGZlMHl0V25IMHlveER3SlB4S09TbHZnVGlzVm9IVkVSdVVyOC1lcGlxRGM2cndmejZYajZrb0ZXUjZEN2hXRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung to Launch AI-Powered Smart Glasses in November 2026 - en.tempo.co](https://news.google.com/rss/articles/CBMilwFBVV95cUxNN3V5OGI0dzJ6YW5SV1MySk1QZEJRLVctTTBUd2g0cXRRb19HUlh6UDdsdDRIdzFXWldlb2VjLVRLdks2X0RQU3RPQ2tLWlRld3hYc3UwbUxKY21FN3NfbWxxc3hQT1NLYTVteWJIY2FpaGtHRGExaUFDcl9Ydll2RS16ODJ0SVFjdW9pY1ZmOUpLRDlXeXBn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Sesame plans to launch its own AI glasses in 2027 - Lowpass](https://news.google.com/rss/articles/CBMif0FVX3lxTE1aOHpVOG5SYWZMdTBxMEdBVzJkVWZLa0tGSFJGcDZVR3FPX18tRDROV2R2SnUzYnVWVDNDTi1NMjFaZ3g0QjdFOVJfc19yNkxoLVF1TWpKeFFlTmRaT2tCTTgxVW1wU1hUR1FDS29xQ3BvMVlNeFdGVlNHZkc3MVk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SNAP Stock Eyes AR Upside As SPECS AI Glasses Launch - Timothy Sykes](https://news.google.com/rss/articles/CBMidEFVX3lxTE5tZWN2UjdpS1Z3OEdQUjZOT1VsUDh4ZXN2U3F4ejQxcFE4RHp5T3RLRVhLRnpCNWs3QUlKZURfTDk4bVVoaXZkVW1ySnhXeDAzVmpWcE5XakhjNnM2d1Y1WDFGdW5SSll1bl9KTG8yQnpsSTMt?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SNAP Stock Eyes AR Upside As SPECS AI Glasses Launch - Timothy Sykes](https://news.google.com/rss/articles/CBMib0FVX3lxTFBFaHFzUjEtZE5zSlEzV3JXQTIwdjVjRUsyS0xMaXFvR1JUNGpoTU56X0RseHVLRm00STUxWDMyd1VqVU9zd0VFdThlMXRVVWNmQW5EOTlMZHhhSVV2dVVnbW5xb0UyU1l1QzBYT3VHRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
