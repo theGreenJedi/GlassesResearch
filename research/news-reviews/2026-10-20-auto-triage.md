@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-21T00:27:51.602932+00:00`
+Generated: `2026-10-21T01:42:54.583546+00:00`
 
-- Intake files inspected: **274**
-- Candidates retained in this review window/history: **11274**
+- Intake files inspected: **272**
+- Candidates retained in this review window/history: **11180**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2123
+- `adjacent_radar`: 2091
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 582
-- `rejected_noise`: 8471
-- `source_review`: 35
-- `watching`: 43
+- `needs_editorial_verification`: 577
+- `rejected_noise`: 8412
+- `source_review`: 38
+- `watching`: 42
 
 ## Action queue
 
@@ -202,13 +202,11 @@ Generated: `2026-10-21T00:27:51.602932+00:00`
 | high | needs_editorial_verification | direct | [EssilorLuxottica and Meta launch AI-powered eyewear in Portugal. - Grande Consumo](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUzRpVVZaS3BGQzNsV1dYRW1ZcmhoOGhHNXZRb2kwOGI2ZHVPU2FyTmN4M3VZeGx1Sm84NWIzeHVHb2hFR3ZtUF9nTm91RzU0SW5wNVhuY2R4dVVKZkdpNzZjWS14REdWTjRkQWp3MjhKRlhLRnpzbGV2X0IybUNid3pHcmtBN3FtYVBsSEgxelhmQUVjTmNQUUlZdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Jio AI Smart Glasses: UPI Payments, Features And Launch Date - Flickonclick](https://news.google.com/rss/articles/CBMie0FVX3lxTFAzYzY1eS1FMVhNX0xjNUxaN1B4X0VzQmpCX1NjRmdTVVgtdm1GNDFpLTM3T1dycjQ2d3JkZGZlMHl0V25IMHlveER3SlB4S09TbHZnVGlzVm9IVkVSdVVyOC1lcGlxRGM2cndmejZYajZrb0ZXUjZEN2hXRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Sesame plans to launch its own AI glasses in 2027 - Lowpass](https://news.google.com/rss/articles/CBMif0FVX3lxTE1aOHpVOG5SYWZMdTBxMEdBVzJkVWZLa0tGSFJGcDZVR3FPX18tRDROV2R2SnUzYnVWVDNDTi1NMjFaZ3g0QjdFOVJfc19yNkxoLVF1TWpKeFFlTmRaT2tCTTgxVW1wU1hUR1FDS29xQ3BvMVlNeFdGVlNHZkc3MVk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [SNAP Stock Eyes AR Upside As SPECS AI Glasses Launch - Timothy Sykes](https://news.google.com/rss/articles/CBMidEFVX3lxTE5tZWN2UjdpS1Z3OEdQUjZOT1VsUDh4ZXN2U3F4ejQxcFE4RHp5T3RLRVhLRnpCNWs3QUlKZURfTDk4bVVoaXZkVW1ySnhXeDAzVmpWcE5XakhjNnM2d1Y1WDFGdW5SSll1bl9KTG8yQnpsSTMt?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SNAP Stock Eyes AR Upside As SPECS AI Glasses Launch - Timothy Sykes](https://news.google.com/rss/articles/CBMib0FVX3lxTFBFaHFzUjEtZE5zSlEzV3JXQTIwdjVjRUsyS0xMaXFvR1JUNGpoTU56X0RseHVLRm00STUxWDMyd1VqVU9zd0VFdThlMXRVVWNmQW5EOTlMZHhhSVV2dVVnbW5xb0UyU1l1QzBYT3VHRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Two affordable smart glasses launch, one with 20MP Sony camera, one with tint-shift lenses - Notebookcheck](https://news.google.com/rss/articles/CBMizgFBVV95cUxOdFJZWEVZMG1QZTZZWlA4VjcydWlpQnFiSUQ1N01fdVp6YlI4b2x6RFhMaDRWeUIzWEFXa2lxb3hCVUQ3LWx1Q0pXUVdIMi1oQlA2WTF4alZYYU9iSmpBYVU4b1ZXaHdEQXhlOFkzOUdTZkVhMnNkYkp6bUphTkNZZ3VGMEJRNExhMURoSXVpRGE1UzBDaUNmendhRGkzOUR1TDZQYm1fOGd5bVpycVJNdnBLd3IxcEtiaXowbURwRlJHd2g2YmVsYkJFalEwdw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Xreal 1 Pro+ AR glasses launch with 1,200-nit display and smoother 3D conversion - Wareable](https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVdOaUpqSjNZRXdqMTl3eFExalRNLVMxeXRTWHhGbVpfRU90SW90VmpOY0JfMUpnUUxKVFpRaXNkYkZzSjBUZ2ZXTE1rcmo5SEozQXFLR09IeFlsNUJlWmRqdTZmMzhOSFUxWlRleTUzZ0Q2bVJqYTdSYVM0WDhubjJ1Z0x1NF92NmZvSA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
@@ -235,7 +233,6 @@ Generated: `2026-10-21T00:27:51.602932+00:00`
 | high | needs_editorial_verification | direct | [Ray-Ban Maker EssilorLuxottica’s Sales Rise, Buoyed by Smartglasses - WSJ](https://news.google.com/rss/articles/CBMisgFBVV95cUxPUmZjOHc3cGNabG41VGQ2X1NiX1ZwRm9nOXluaDY4SEdZcnI5MlhrQXJnWGZGYnFqa0pTM2tha1lwX1BMR2JnaFlfVWdkT2o2aGVpRkpmcEl1U3hsRzVoQWdsWlRnT3Z4LUtsNFJlR1ZFYWxZbkM4UGp6ZGNzLXlUaWlZY1drUDVDZG5tYnF6OURRZm1kT2lQMHhwelNIUU1oNzNZeHBWZ0tTZHZIZEtyUEFn?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Audio glasses: Order the camera-free AI frames starting at $349 - Mashable](https://news.google.com/rss/articles/CBMic0FVX3lxTE5GOHB1NmthUlgwbE9DWHZyX1l3X1F3dkd2R2I4V05CMmZiZmo5LU5HOWhSeWVJdW0wMnhJbEpXanhxbnU5QzgxdFFLNW9GaU9FczhOdS1Kam9hMWU3WUprMVFJbG5vZ0Nia0lJYjBCampGQXc?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Audio Review: Smart Glasses Are Better Without Cameras](https://www.pcmag.com/reviews/ray-ban-meta-audio-review) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta brings next-generation AI glasses to Hong Kong](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ad8067a1a6745f9a37c79e569b062b0&url=https%3a%2f%2fwww.lifestyleasia.com%2fhk%2ftech%2fray-ban-meta-brings-next-generation-ai-glasses-to-hong-kong%2f&c=12543549788736310597&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta glasses were eavesdropping. Meta says it’s fixed, but won’t explain why - Malwarebytes](https://news.google.com/rss/articles/CBMipwFBVV95cUxOam5mcjlkQldrSDJBdWFFNEZrak5adk5tb0pFck5OcWt0Z0JEUzRrMG5ZR1lxX1ZaZl9MemRPM3hTSnNCd0tXdGFBbElkaTB3TU1hNHVBMkY4eU56czdvWXE0YVlqX05KVThpVGN2cWFrN3BqdU9wVmhJZnN6SGthMHhtU1N2MjI5UzQwN0pKM1ZyYV9GTWgyMGZOSVE0bEFXcEtYV2F1Zw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Metaの次世代モデル「Gen 3」を実際に使ってみた。子育て中にも便利な新しいスマートグラス。 - madameFIGARO.jp](https://news.google.com/rss/articles/CBMibEFVX3lxTE9aYllkWl9MX0J1Zk55R3ZuUnlaLVlFWWdmQnVfSGF2cWt6cm4ybjBXazJvRjZqdUZGREhMSWtWeWk4S2dtbWRQNUM1OHFRbzVWUllvZ3NNcURpTXRmb1UzcTI1eDdnbjJSN21pRQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Road to VR 13d ago Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
@@ -271,6 +268,9 @@ Generated: `2026-10-21T00:27:51.602932+00:00`
 | normal | needs_editorial_verification | direct | [2022–2024 Ford Maverick 12" or 8" Sync 4 Touchscreen Upgrade w ...](https://www.mavericktruckclub.com/12-or-8-sync-4-touchscreen-upgrade-w-wireless-apple-carplay-android-auto-pre-orders-open/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [2026 Unisex AI Smart Glasses - TikTok Shop](https://shop.tiktok.com/us/pdp/2026-unisex-ai-audio-smart-glasses-hd-wireless-calling-music-translation-ai-assistant/1732724595520934440) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [9to5Google 7h ago Iron Man himself now officially endorses Snap’s latest smart glasses Coverage Snap](https://9to5google.com/2026/10/20/iron-man-now-officially-endorses-snap-specs/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [9to5Google Sep 20, 2026 The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [[AFTER 8NEWS] "연대에서 걸렸어? 다른 대학 보면 돼!"…반수생이 AI 안경 쓰면? 수능 코앞인데 - SBS 뉴스](https://news.google.com/rss/articles/CBMiakFVX3lxTE1rRE9wbndsNFdzNFRwYWRPRVRtVkd2UEhvdnJMVXRZMHpYekthanN3Uk9WdWVIQ2JSdjdoWmF4M000bGlzaHI5ZEUtZFQtWmpfMW5hYUowQW9oanU2cV9qNmJPanctWWdQdlHSAWZBVV95cUxPTFBTYmFoM2hHN2FQaUFBTWF3V1FMZDVoXzFfWENfalRscVhXN0Ixb181UmNRdlNtdHQ1UFI0cDV3LXhZbjVKSUpsZ3JYREhjSTNFYTZINi0zcXNkYWNwTnd2MmNzbFE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 
 ## Meaning of states
 
