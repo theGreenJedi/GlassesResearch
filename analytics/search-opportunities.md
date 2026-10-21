@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-09-21 → 2026-10-18**.
+Google Search Console page/query pairs for **2026-09-22 → 2026-10-19**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,23 +8,23 @@ Google Search Console page/query pairs for **2026-09-21 → 2026-10-18**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 81 | 0 | 0.00% | 4.6 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 79 | 0 | 0.00% | 4.6 |
 | https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 14 | 0 | 0.00% | 2.9 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | sunglasses for developers | 14 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/evidence/EV-0050-mainstream-optical-serviceability-wave-seven/ | rokid 0050 | 12 | 0 | 0.00% | 9.1 |
-| https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 10 | 1 | 10.00% | 9.7 |
+| https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 11 | 1 | 9.09% | 9.7 |
 | https://glassesresearch.org/docs/REPORT_CARD/ | inmo air 3 industrial version vs realwear vuzix iristick | 6 | 0 | 0.00% | 2.7 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source smart glasses | 6 | 0 | 0.00% | 6.5 |
 | https://glassesresearch.org/guides/smart-glasses-for-calls-and-music/ | smart glasses vs airpods for hands free calling and audio which should i get | 6 | 0 | 0.00% | 9.3 |
 | https://glassesresearch.org/models/PROFILES_LINEAGE_TOSHIBA_DYNAEDGE/ | toshiba ar100 | 4 | 0 | 0.00% | 6.8 |
 | https://glassesresearch.org/ | research glasses | 4 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | opensource smart glasses | 3 | 0 | 0.00% | 9.0 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glass open source | 3 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glasses with camera | 2 | 0 | 0.00% | 5.5 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | mentra live smart glasses hardware specs and pricing for enterprise deployments | 2 | 0 | 0.00% | 6.0 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | jrt 0223-2021 | 2 | 0 | 0.00% | 7.5 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | opensource glasses | 2 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glass | 2 | 0 | 0.00% | 9.5 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glass open source | 2 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 1 | 0 | 0.00% | 1.0 |
 | https://glassesresearch.org/docs/news/articles/2026-09-19-right-to-repair-smart-glasses/ | right to repair | 1 | 0 | 0.00% | 2.0 |
 | https://glassesresearch.org/docs/RESEARCH_NEWS/ | cyanbridge | 1 | 1 | 100.00% | 3.0 |
@@ -39,13 +39,14 @@ Google Search Console page/query pairs for **2026-09-21 → 2026-10-18**.
 | https://glassesresearch.org/docs/faq/ | smart glasses for research | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/evidence/EV-0069-Iristick-prescription-insert-serviceability/ | iristick g3 | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/guides/offline-smart-glasses/ | offline glasses | 1 | 0 | 0.00% | 10.0 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | opensourcesmartglasses | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/guides/smart-glasses-with-displays/ | which smart displays can recognise individual faces? | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/models/EvenG2/ | even g2 | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glasses | 79 | 2 | 2.53% | 10.3 |
-| https://glassesresearch.org/guides/prescription-smart-glasses/ | smart glasses with prescription | 33 | 0 | 0.00% | 23.2 |
-| https://glassesresearch.org/guides/prescription-smart-glasses/ | smart glasses prescription | 33 | 0 | 0.00% | 24.5 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth smart glasses | 24 | 0 | 0.00% | 18.2 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glasses open source | 16 | 0 | 0.00% | 11.0 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glasses | 85 | 2 | 2.35% | 11.1 |
+| https://glassesresearch.org/guides/prescription-smart-glasses/ | smart glasses with prescription | 36 | 0 | 0.00% | 26.2 |
+| https://glassesresearch.org/guides/prescription-smart-glasses/ | smart glasses prescription | 35 | 0 | 0.00% | 25.2 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth smart glasses | 26 | 0 | 0.00% | 18.0 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glasses open source | 18 | 0 | 0.00% | 10.7 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best bluetooth glasses | 14 | 0 | 0.00% | 21.1 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart bluetooth glasses | 11 | 0 | 0.00% | 22.5 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses with camera and bluetooth | 11 | 0 | 0.00% | 23.5 |
@@ -57,7 +58,6 @@ Google Search Console page/query pairs for **2026-09-21 → 2026-10-18**.
 | https://glassesresearch.org/guides/smart-glasses-with-video-recording/ | glasses that record | 6 | 0 | 0.00% | 29.3 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | glasses with bluetooth | 5 | 0 | 0.00% | 16.8 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | smart glasses comparison | 5 | 0 | 0.00% | 23.0 |
-| https://glassesresearch.org/models/PROFILES_LINEAGE_TOSHIBA_DYNAEDGE/ | dynabook smart glasses | 4 | 0 | 0.00% | 17.8 |
 
 ## How to use this report
 
