@@ -123,8 +123,6 @@ jobs:
           mkdir -p "$tmpdir/analytics/history" "$tmpdir/analytics/series"
           cp analytics/latest.md "$tmpdir/analytics/latest.md"
           cp analytics/latest.json "$tmpdir/analytics/latest.json"
-          cp analytics/question-discovery.md "$tmpdir/analytics/question-discovery.md"
-          cp analytics/question-discovery.json "$tmpdir/analytics/question-discovery.json"
           cp analytics/search-opportunities.md "$tmpdir/analytics/search-opportunities.md"
           cp analytics/search-opportunities.json "$tmpdir/analytics/search-opportunities.json"
           cp analytics/search-impact.md "$tmpdir/analytics/search-impact.md"
@@ -138,8 +136,6 @@ jobs:
             mkdir -p analytics/history
             cp "$tmpdir/analytics/latest.md" analytics/latest.md
             cp "$tmpdir/analytics/latest.json" analytics/latest.json
-            cp "$tmpdir/analytics/question-discovery.md" analytics/question-discovery.md
-            cp "$tmpdir/analytics/question-discovery.json" analytics/question-discovery.json
             cp "$tmpdir/analytics/search-opportunities.md" analytics/search-opportunities.md
             cp "$tmpdir/analytics/search-opportunities.json" analytics/search-opportunities.json
             cp "$tmpdir/analytics/search-impact.md" analytics/search-impact.md
@@ -149,12 +145,12 @@ jobs:
             mkdir -p analytics/series
             cp -a "$tmpdir/analytics/series/." analytics/series/
 
-            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/question-discovery.md analytics/question-discovery.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/)" ]; then
+            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/)" ]; then
               echo 'Analytics snapshot already current.'
               exit 0
             fi
 
-            git add analytics/latest.md analytics/latest.json analytics/question-discovery.md analytics/question-discovery.json research/questions/registry.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/
+            git add analytics/latest.md analytics/latest.json research/questions/registry.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/
             git commit -m "analytics: refresh automated report"
             if git push origin HEAD:main; then
               exit 0
