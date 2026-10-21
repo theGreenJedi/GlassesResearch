@@ -32,13 +32,15 @@ QUESTION_WORDS = (
     "which ", "whereas ", "anyone know ", "has anyone ", "is there ",
 )
 SMART_TERMS = (
-    "smart glass", "ai glass", "ar glass", "xr glass", "wearable",
+    "smart glass", "ai glass", "ar glass", "xr glass", "wearable display",
     "ray-ban meta", "ray ban meta", "spectacles", "inmo", "rokid",
-    "vuzix", "realwear", "solos", "brilliant", "even realities",
+    "vuzix", "realwear", "solos airgo", "brilliant labs", "even realities",
     "myvu", "heycyan", "waveguide", "mentra", "halliday", "xreal",
     "caption glass", "camera glass", "google glass", "optical see-through",
-    "open source glass", "recon jet", "north focals", "microled",
+    "open source glass", "recon jet", "north focals", "micro-led waveguide",
 )
+GITHUB_REPO_TERMS = ("mentra", "rokid", "vuzix", "rayneo", "xreal", "smartglass",
+                     "smart-glass", "evenrealities", "brilliant-labs", "inmo", "myvu")
 HEADERS = {"User-Agent": "GlassesResearch-question-discovery/1.0 (+https://glassesresearch.org/)"}
 SOURCE_WARNINGS = {}
 
@@ -50,7 +52,11 @@ def norm(s: str) -> str:
 
 
 def clean(s: str) -> str:
-    return re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]*>", " ", s or ""))).strip()
+    raw = unescape(s or "")
+    raw = re.sub(r"https?://[^\s<>'\"]+", " ", raw)
+    raw = re.sub(r"<[^>]*>", " ", raw)
+    raw = re.sub(r"\b(?:www\.)?[^\s/]+\.(?:com|org|net|io|dev|ai)/[^\s]+", " ", raw)
+    return re.sub(r"\s+", " ", raw).strip()
 
 
 def looks_like_question(s: str, *, scoped: bool = False) -> bool:
@@ -137,10 +143,19 @@ def github_questions(queries: list[str]) -> list[dict]:
             errors.append(f"{query}: {exc}")
             continue
         for item in items:
-            context = clean((item.get("title") or "") + " " + (item.get("body") or "")[:5000])
-            if not any(term in norm(context) for term in SMART_TERMS):
+            title = clean(item.get("title") or "")
+            url = item.get("html_url") or ""
+            title_scoped = any(term in norm(title) for term in SMART_TERMS)
+            repo_scoped = any(term in url.casefold().split("/issues/")[0] for term in GITHUB_REPO_TERMS)
+            if not (title_scoped or repo_scoped):
+                # Full-text GitHub search also returns spam/link dumps which merely
+                # *mention* glasses. Do not harvest arbitrary questions from those.
                 continue
-            for q in questions_from_text(item.get("title", ""), item.get("body") or "", scoped=True):
+            candidates = questions_from_text(title, "", scoped=True)
+            # Additional questions in an issue body must individually mention a
+            # scoped glasses/model concept; context cannot launder off-topic text.
+            candidates += questions_from_text("", item.get("body") or "", scoped=False)
+            for q in dict.fromkeys(candidates):
                 out.append({
                     "question": q, "source": "github_issues",
                     "source_url": item.get("html_url"),
@@ -175,7 +190,7 @@ def stackexchange_questions(searches: list[dict]) -> list[dict]:
         for item in items:
             # Stack Exchange posts are user questions, even without a trailing ?.
             q = clean(item.get("title") or "")
-            context = norm(q + " " + spec["q"])
+            context = norm(q + " " + " ".join(item.get("tags", [])))
             if not (15 <= len(q) <= 250 and any(t in context for t in SMART_TERMS)):
                 continue
             out.append({
@@ -205,11 +220,11 @@ def reddit_rss_questions(feeds: list[str]) -> list[dict]:
             continue
         for entry in root.findall("atom:entry", ns):
             title = entry.findtext("atom:title", default="", namespaces=ns)
-            summary = entry.findtext("atom:content", default="", namespaces=ns)
             link = entry.find("atom:link", ns)
             url = link.get("href") if link is not None else None
-            # The configured subreddits concern smart glasses or optical AR.
-            for q in questions_from_text(title, summary, scoped=True):
+            # Reddit post titles are the actual questions. Do not mine image alt
+            # text, cross-posted links or unrelated comments from HTML bodies.
+            for q in questions_from_text(title, "", scoped=True):
                 out.append({
                     "question": q, "source": "reddit_rss", "source_url": url,
                     "observed_at": date.today().isoformat(),
