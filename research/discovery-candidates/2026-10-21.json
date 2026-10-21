@@ -1,40 +1,39 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-21T19:31:09.525732+00:00",
-  "candidate_count": 54,
-  "classifier_irrelevant_count": 37,
+  "discovered_utc": "2026-10-21T22:28:11.082956+00:00",
+  "candidate_count": 67,
+  "classifier_irrelevant_count": 56,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 17,
-    "broad_web": 37
+    "adjacent": 11,
+    "broad_web": 39,
+    "developer": 18
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 17,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 37
+    "irrelevant": 56
   },
   "type_counts": {
-    "review": 6,
-    "video": 1,
-    "news": 28,
+    "model": 2,
+    "review": 2,
+    "video": 4,
+    "news": 27,
     "research": 2,
-    "tool": 4,
-    "sdk": 6,
-    "policy": 4,
-    "retail": 8,
-    "community": 1
+    "tool": 21,
+    "sdk": 18,
+    "policy": 2,
+    "community": 16,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 17,
-    "community_evidence_review": 1,
-    "development_hacking": 4,
-    "policy_privacy": 4,
-    "reject_noise": 37,
-    "report_card_evidence": 1,
-    "research_news_review": 17,
-    "retail_rebrand_review": 5
+    "adjacent_radar": 10,
+    "deep_research": 1,
+    "reject_noise": 56,
+    "report_card_evidence": 2,
+    "research_news_review": 11
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,32 +47,65 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "80894ba484642117",
-      "title": "[Bug]: Bedrock Converse/InvokeModel handler never ... - GitHub",
-      "url": "https://github.com/BerriAI/litellm/issues/38357",
-      "summary": "Expected behavior response._hidden_params [\"additional_headers\"] should contain the raw Bedrock response headers (prefixed llm_provider-, consistent with other providers), including llm_provider-x-amzn-requestid, so callers can retrieve the AWS request id for support/debugging purposes — matching the behavior already implemented for providers on the llm_http_handler.py path. Relevant log output",
+      "id": "34c44ff6776f5e6d",
+      "title": "XREAL xbx a01+ Review: A $299 pair of AR glasses that outclasses its ...",
+      "url": "https://www.androidheadlines.com/xreal-xbx-a01-review",
+      "summary": "XREAL’s newest product, the xbx a01+, is a really impressive pair of AR Glasses. This is a pair of entry-level AR glasses, positioned to get users into the AR world for under $300.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8f13180f662c93c6",
+      "title": "San Luis Valley Swordguild; Historic Fencing Club",
+      "url": "https://www.findglocal.com/US/Mosca/2261851500560212/San-Luis-Valley-Swordguild%3B-Historic-Fencing-Club",
+      "summary": "We are the San Luis Valley's first Historical European Martial Arts (HEMA) club, dedicated to the study and practice of the martial arts of Europe from the Middle Ages and Renaissance.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "github"
+        "study"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "research"
       ],
-      "primary_type": "tool",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
+        "deep_research",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -82,15 +114,295 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fb0a3b483c8041a8",
-      "title": "Geico | Commercial Auto Insurance",
-      "url": "https://commercial.geico.com/",
-      "summary": "Geico Commercial Auto Insurance We value your privacy and will never sell your information. Your data is safe with GEICO.",
+      "id": "7d745ffe42f06bb8",
+      "title": "BFSA Groups - Black Falcon School",
+      "url": "https://www.blackfalconschool.com/grouplinks.shtml",
+      "summary": "Located in Alamosa in the heart of the San Luis Valley, the San Luis Valley Swordguild's training primarily focuses on mastering the longsword, sabre, sword and buckler, and dussak, with a particular emphasis on the German martial tradition.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2211d390e6ba407b",
+      "title": "San Luis Valley Sword Guild - Smoothcomp",
+      "url": "https://smoothcomp.com/en/club/38401",
+      "summary": "Smoothcomp is a tournament software for combat sports. The smoothest way to participate, organize and follow competitions",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4990fbf501b153bf",
+      "title": "San Luis Valley Swordguild - HEMA Clubs - stevenlawton.com",
+      "url": "https://stevenlawton.com/hema/clubs/1322-san-luis-valley-swordguild",
+      "summary": "3 members · United States",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9262861464a40673",
+      "title": "San Luis Valley Swordguild - HEMA Ratings",
+      "url": "https://hemaratings.com/clubs/details/1146/",
+      "summary": "This shows the current ratings for the fighters in this club in each of the official rating categories.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8345eecffc43367c",
+      "title": "San Luis Valley Swordguild | HEMA | Historical European Martial Arts ...",
+      "url": "https://www.historicaleuropeanmartialarts.com/store-locator/san-luis-valley-swordguild/",
+      "summary": "Historical European Martial Arts Resources © 2022. All rights reserved.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47748d1f1d443ab5",
+      "title": "San Luis Valley Swordguild; Historic Fencing Club - Facebook",
+      "url": "https://www.facebook.com/SLVSwordGuild/about/",
+      "summary": "San Luis Valley Swordguild; Historic Fencing Club, Monte Vista, Colorado. 116 likes · 1 was here. SLV Sword Guild is the San Luis Valley's first HEMA...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de7246ab9450d62e",
+      "title": "SLV SwordGuild",
+      "url": "https://www.sanluisvalleyswordguild.com/",
+      "summary": "Welcome to the San Luis Valley Swordguild! Nestled in the heart of the San Luis Valley, we are proud to be the local destination for enthusiasts and practitioners of Historical European Martial Arts (HEMA) in the region.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f9c92816bc4abfb",
+      "title": "SLV SwordGuild - Calendar and Events",
+      "url": "https://www.slvswordguild.com/calendar-and-events",
+      "summary": "Once a month we try to meet in Cole Park for a Saturday Practice and Open Spar. Watch the Above calendar for days. In August 202 2 we did a HEMA Showcase at the 2022 South Central Colorado Beer Fest & Car Show. In October 2020 we did a HEMA Showcase at the Colorado Farm Brewery.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc3cb79775667a68",
+      "title": "SLV SwordGuild - Class Notes",
+      "url": "https://www.sanluisvalleyswordguild.com/class-notes",
+      "summary": "HEMA 101 Notes",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e7d16127310193f",
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/en%22",
+      "summary": "Terms of Service Privacy Policy Intellectual Property Policy TikTok Law Enforcement Guidelines Children's Privacy Policy © 2026 TikTok",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
       "keyword_hits": [
         "privacy"
       ],
@@ -100,535 +412,14 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba4649b4ca344c53",
-      "title": "How GEICO Investigates Your Insurance Claim",
-      "url": "https://www.geico.com/claims/claimsprocess/claim-investigation/",
-      "summary": "When someone reports an accident to GEICO, a liability examiner is assigned to investigate the accident thoroughly to ensure that we handle everyone's claim properly. This process is called the liability investigation. Here are some of the steps we commonly follow to make sure we get all the facts about an accident: Review Your Coverage The liability examiner reviews the insurance policy and ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "review",
-        "policy"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "32eff65f84aa2e10",
-      "title": "Inference request parameters and response fields for ...",
-      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-parameters.html",
-      "summary": "The topics in this section describe the request parameters and response fields for the models that Amazon Bedrock supplies. When you make inference calls to models with the model invocation (InvokeModel, InvokeModelWithResponseStream, Converse, and ConverseStream) API operations, you include request parameters depending on the model that you're ...",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "api"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "666de212d5d49264",
-      "title": "Invoke Model API Example - Amazon Bedrock Recipes",
-      "url": "https://aws-samples.github.io/amazon-bedrock-samples/introduction-to-bedrock/bedrock_apis/01_invoke_api/",
-      "summary": "`InvokeModel` body and output The invoke_model () method of the Amazon Bedrock runtime client (InvokeModel API) will be the primary method we use for most of our Text Generation and Processing tasks - whichever model we're using. Although the method is shared, the format of input and output varies depending on the foundation model used, see Inference parameters for foundation models Common ...",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "api"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "tool",
         "sdk",
-        "retail"
+        "policy"
       ],
       "primary_type": "tool",
       "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "48588fbecd76d899",
-      "title": "An Insurance Company For Your Car And More | GEICO",
-      "url": "https://www.geico.com/",
-      "summary": "From car insurance to home insurance and more, GEICO offers reliable coverage that fits your needs. Plus, you can bundle insurance to get a multi-policy discount and conveniently manage all your policies in one place.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c271f906c3acadd6",
-      "title": "AWS Bedrock Audit Logs: What Model Invocation Logging ...",
-      "url": "https://www.deepinspect.ai/blog/aws-bedrock-audit-logs",
-      "summary": "Amazon Bedrock model invocation logging records the full request and response body plus the IAM ARN of the calling principal, but it is disabled by default and the identity field it captures is a role, not a person. This piece breaks down the log schema, the CloudTrail split, and what an auditor still cannot get from either.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "edfe4e86e3e5119d",
-      "title": "AWS Bedrock Model Invocation Logging - an Overview",
-      "url": "https://builder.aws.com/content/2s5cG1VQe1478chNNsZBYUalvIW/aws-bedrock-model-invocation-logging-an-overview",
-      "summary": "AWS Bedrock model invocation logging is a useful component of an evaluation-in-depth strategy that provides generative AI developers with important signals about how their applications and selected models perform. For account administrators, it helps detect potentially uncontrolled access to models, as on-demand inference calls are also logged.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "sdk"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fdb4ee1f710b7452",
-      "title": "Bedrock Model Invocation Logging Remediation - cloudanix.com",
-      "url": "https://www.cloudanix.com/docs/aws/audit/awsbedrockmonitoring/rules/bedrock_model_invocation_logging_remediation",
-      "summary": "2. Open Bedrock Model Invocation Logging In the AWS Console, go to Amazon Bedrock. In the left navigation pane, select Model invocation logging (sometimes under Settings or Data and governance, depending on the UI).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fab93baafa23ceca",
-      "title": "Forgot Your Password? - GEICO",
-      "url": "https://boatus.geico.com/Account/Account/ForgotPassword",
-      "summary": "Hi Policyholders impacted by Hurricane Lowell, Tropical Storm/Hurricane Lala, or the Kona low storms, OR Policyholders impacted by the recent wildfire events during July 2026, GA Policyholders impacted by Hurricane Isaias starting on October 8, 2026, and IA Policyholders impacted by the September 30, 2026 severe storms in Iowa: If you are experiencing financial hardship, we're here to help ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c91870f6df749431",
-      "title": "gateway2.geico.com - Sign up or sign in",
-      "url": "https://gateway2.geico.com/",
-      "summary": "Sign in with your username Forgot your password?",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c00cc410c5384acd",
-      "title": "GEICO - Portfolio",
-      "url": "https://portfolio.geico.com/",
-      "summary": "If you need immediate assistance, please call 1-877-206-0215 to speak with a GEICO Service Representative.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01c3a37d8862705a",
-      "title": "GEICO Careers",
-      "url": "https://careers.geico.com/us/en/",
-      "summary": "GEICO Cares Our dedicated community and volunteerism program, GEICO Cares, connects employees with opportunities to volunteer with non-profit organizations throughout the year both at the office during quarterly We Care Wednesday events and in local communities.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01cc775eb6134b04",
-      "title": "GEICO® ERS Provider",
-      "url": "https://partners.geico.com/erpbweb/",
-      "summary": "Want an easy way to submit invoices and adjustments to GEICO? Enroll in our Emergency Response Service Provider website and access up-to-date information 24 hours a day, 7 days a week.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18c57462d88ad40b",
-      "title": "Lienholder / Dealer Online Coverage Verification - GEICO",
-      "url": "https://partners.geico.com/lienholders/logon.aspx",
-      "summary": "This service is for Automobile Dealers and Automobile Finance Co's only. For other services, please visit Our Business Partners page.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d86fee577f301d0",
-      "title": "Monitor model invocation using CloudWatch Logs and Amazon S3",
-      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html",
-      "summary": "You can use model invocation logging to collect invocation logs, model input data, and model output data for all invocations in your AWS account used in Amazon Bedrock in a Region.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "608d46c346c099d4",
-      "title": "Welcome to GEICO For Your Agency",
-      "url": "https://agencyidentity.geico.com/onboarding-overview",
-      "summary": "Have these details ready: Individual National Producer Number (NPN) Employer Identification Number (EIN) GEICO For Your Agency qualifications: Operate as an independent agent Have an Errors and Omissions (E&O) Policy or intend to obtain one This task will take approximately 5 minutes.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "research_news_review",
-        "policy_privacy",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4f17630de0259a9",
-      "title": "best wood burning stoves review [Updated on: October 2026]",
-      "url": "https://ovencookguy.com/best-wood-burning-stoves-review/",
-      "summary": "Only 15% of wood burning stoves truly deliver consistent, reliable heat, which makes finding the right one a challenge. After hands-on testing, I can say the US Stove 1,200 Sq. Ft. Wood Stove stood out for its superior heat output—up to 1,200 sq. ft. with 68,000 BTUs—and its large ceramic glass window that offers a cozy fire view.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "hands-on",
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -637,114 +428,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "422ba50cc56482a3",
-      "title": "10 Best Practice to Improve Your SEO Rankings in 2026 - Backlinko",
-      "url": "https://backlinko.com/hub/seo/best-practices",
-      "summary": "SEO best practices are the foundational tactics that help search engines find, understand, and rank your content. These practices include on-site optimization, keyword research, and backlink building.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "b46222bf60f32ce2",
+      "title": "Denver BBQ Menu | Smokin’ Dave’s BBQ",
+      "url": "https://denver.smokindavesbbq.com/food-menu",
+      "summary": "View Smokin’ Dave’s Denver BBQ menu: brisket, ribs, wings, pulled pork, sandwiches, sides & more. Order online for pickup near Westminster, Thornton, Arvada & Wheat Ridge.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b74b8d5a329c1227",
-      "title": "7 BEST Wood Burning Cook Stoves: Small And Large Models",
-      "url": "https://fireandsaw.com/best-wood-cook-stove/",
-      "summary": "Best wood cooking stove reviews When purchasing a wood-burning cook stove online, ensure you research the stove’s efficiency, safety ratings, and emissions to comply with local environmental and safety standards.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ec88e8fabad99d9",
-      "title": "Fetching Comments of Comments with the LinkedIn API",
-      "url": "https://stackoverflow.com/questions/59898687/fetching-comments-of-comments-with-the-linkedin-api",
-      "summary": "After talking to LinkedIn API's support, I have the answer to why this wasn't working. A lot of the documentation contains these notes: All API requests are represented in protocol 2.0.0 and require the header X-Restli-Protocol-Version: 2.0.0. I thought that those notes meant that all v2 requests are meant to have their headers contain X-Restli-Protocol-Version: 2.0.0, but in actuality, it is ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "sdk"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1b57e17a6d8e2c9c",
-      "title": "How to Retrieve all possible information about a LinkedIn Account ...",
-      "url": "https://stackoverflow.com/questions/8593144/how-to-retrieve-all-possible-information-about-a-linkedin-account-api-using-c",
-      "summary": "I am writting an C# app to make use of Linkedin's API. I want to be able to query \"Person\" (First Name + Last Name) and retrieve all the possible information about this group of people with the same",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -766,15 +459,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aaa0d851c7a24214",
-      "title": "10 Best Wood Burning Stoves in 2026 — EPA Certified Picks",
-      "url": "https://theconsumerguide.org/a/25/best-wood-burning-stoves",
-      "summary": "Our ranking of the 10 best wood burning stoves for 2026. Compare BTU output, efficiency ratings, and firebox size across EPA-certified models.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
+      "id": "f4841d55f740632f",
+      "title": "Denver BBQ Restaurant | Smokin’ Dave’s BBQ",
+      "url": "https://denver.smokindavesbbq.com/",
+      "summary": "Smokin’ Dave’s BBQ in Denver serves award-winning smoked brisket, ribs, wings, sandwiches & sides. Order pickup or catering near Westminster, Thornton, Arvada, Wheat Ridge, Northglenn & Commerce City.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -784,9 +477,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -796,15 +490,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0f758cc071373582",
-      "title": "10 Best Wood Cook Stoves (October 2026) Complete Buyer’s Guide",
-      "url": "https://www.greenwashingindex.com/best-wood-cook-stoves/",
-      "summary": "Looking for the best wood cook stoves for off-grid living and camping? Our team tested 10 top models for BTU, cooktop, oven, and sustainability.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
+      "id": "7a0dea1cdc435307",
+      "title": "Estes Park BBQ Menu | Smokin’ Dave’s",
+      "url": "https://estespark.smokindavesbbq.com/food-menu",
+      "summary": "View Smokin’ Dave’s Estes Park menu—BBQ plates, wings, sandwiches, sides & more. Order online for pickup near Glen Haven, Allenspark & Drake.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -814,9 +508,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -826,15 +521,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b87a067535e756f9",
-      "title": "13 Best Wood Stoves (October 2026) Complete Buyer’s Guide",
-      "url": "https://www.thirstybear.com/best-wood-stoves/",
-      "summary": "Discover the best wood stoves for 2026. Our expert reviews cover EPA-certified models, BTU ratings, and heating capacity for every home size.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
+      "id": "836044f4aba426f1",
+      "title": "Estes Park BBQ Restaurant | Smokin’ Dave’s BBQ",
+      "url": "https://estespark.smokindavesbbq.com/",
+      "summary": "Smokin’ Dave’s BBQ in Estes Park serves slow-smoked brisket, ribs, pulled pork, wings, sides & more. Order pickup or catering near Glen Haven, Allenspark...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -844,9 +539,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -856,15 +552,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bd429e5677bcae57",
-      "title": "13 SEO Tips to Boost Your Search Visibility - Semrush",
-      "url": "https://www.semrush.com/blog/seo-tips/",
-      "summary": "Top SEO tips include targeting the right terms, updating your content, and prioritizing readability.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "4150b826b402df46",
+      "title": "Longmont BBQ Menu | Smokin’ Dave’s",
+      "url": "https://longmont.smokindavesbbq.com/food-menu",
+      "summary": "View Smokin’ Dave’s Longmont BBQ menu—brisket, ribs, wings, sandwiches, sides & more. Order online for pickup near Boulder, Niwot & Berthoud.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -874,9 +570,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -886,15 +583,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ce40ee7dda5b42ce",
-      "title": "14 SEO Techniques To Boost Your Rankings",
-      "url": "https://www.seo.com/blog/seo-techniques/",
-      "summary": "These 14 SEO techniques can help you smash the search results and rank higher in your industry. Learn more here!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "9dfcff3c53bb0d36",
+      "title": "Longmont BBQ Restaurant | Smokin’ Dave’s BBQ",
+      "url": "https://longmont.smokindavesbbq.com/",
+      "summary": "Smokin’ Dave’s BBQ in Longmont serves smoked brisket, ribs, wings, sandwiches & sides. Order pickup or catering near Boulder, Niwot, Berthoud, Erie, Lafayette..",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -904,9 +601,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -916,15 +614,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0241b04e3f07c975",
-      "title": "15 Best Spanish Restaurants in NYC | 2026 Guide",
-      "url": "https://nycaller.com/best-spanish-restaurants-nyc-2026/",
-      "summary": "Top Spanish restaurants in NYC: paella bars, Basque spots, tapas, and wine bars across Manhattan and Brooklyn. Reservations + walk-ins.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "161fb032f380d2ee",
+      "title": "Lyons BBQ Menu | Smokin’ Dave’s BBQ",
+      "url": "https://lyons.smokindavesbbq.com/lyons-smokin-dave-s-lyons-food-menu",
+      "summary": "View Smokin’Dave’s Lyons BBQ menu—smoked meats, wings, sandwiches, sides & more. Order online for easy pickup near Boulder and Longmont.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -934,9 +632,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -946,15 +645,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8c8cf4825d7f32ec",
-      "title": "16 Ways to Do SEO - wikiHow",
-      "url": "https://www.wikihow.com/Do-SEO",
-      "summary": "Search Engine Optimization (SEO) is a powerful way to improve your website's organic ranking in the results of search engines - like Google and Bing. Higher ranking boosts visibility, ensures you show up to the right audience, and increases your website's traffic. There are many ways to optimize your site, but where do you begin?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "204ca96d33c53b89",
+      "title": "Lyons BBQ Restaurant | Smokin’ Dave’s BBQ",
+      "url": "https://lyons.smokindavesbbq.com/",
+      "summary": "Smokin’ Dave’s BBQ in Lyons serves smoked brisket, pulled pork, ribs, wings, sandwiches & sides. Order pickup or catering near Boulder, Longmont, Hygiene, Mead.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -964,9 +663,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -976,15 +676,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5fe8f9185dbfbdf3",
-      "title": "20 Easy SEO Tips for Higher Rankings and Better AI Visibility",
-      "url": "https://ahrefs.com/blog/seo-tips/",
-      "summary": "Get more SEO tips Watch the video below or take our free SEO course for beginners to learn more tips and ideas for improving your SEO strategy and ranking higher. There are also lots of little SEO tactics you can do to boost search traffic.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "0ed4327737d353ba",
+      "title": "Sign up - TikTok",
+      "url": "https://www.tiktok.com/signup",
+      "summary": "Sign up for an account or log back into TikTok. Create an account to discover real people and real videos that will make your day.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -994,7 +694,197 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ee7852fe3135b96",
+      "title": "Smokin' Dave's BBQ & Brew",
+      "url": "https://smokindavesbbq.com/",
+      "summary": "SMOKIN' DAVE'S BBQ & BREW A Legendary And Award-Winning BBQ Concept",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "rumor"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "998f1fc6918cda6a",
+      "title": "Smokin’ Dave’s BBQ - Greeley, CO - BBQ Menu & Smoked Meats",
+      "url": "https://greeley.smokindavesbbq.com/greeley-smokin-dave-s-greeley-food-menu",
+      "summary": "Discover the Smokin’ Dave’s BBQ menu in Greeley, CO with award-winning smoked meats, BBQ platters, sandwiches, Southern sides, and classics.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ed2b2e90ff6403c",
+      "title": "TikTok - Facebook",
+      "url": "https://www.facebook.com/tiktok/",
+      "summary": "TikTok. 83,888,226 followers · 37,497 talking about this. Your next discovery is waiting on TikTok.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "342e12519e447988",
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en_US",
+      "summary": "TikTok is the global discovery platform for videos, streaming on LIVE, shopping, and more. Our mission is to inspire creativity and bring joy. Over a billion people come to TikTok to share what...",
+      "discovery_channel": "adjacent+developer",
+      "query": "ActiveLook API BLE; wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de4ee73ff9faf7dc",
+      "title": "TikTok - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/TikTok",
+      "summary": "It can be accessed through a mobile app or through its website. Despite being a Chinese-made app, TikTok is blocked in mainland China and Hong Kong, and Douyin is available there instead. While TikTok and Douyin share a similar user interface, the platforms operate separately. [5]",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b3af66ca8842c971",
+      "title": "TikTok US (@tiktok_us) / X",
+      "url": "https://x.com/tiktok_us",
+      "summary": "Four friends gather for a movie night…until a hijacked TV starts revealing their secrets one by one. Watch Episode 1 here, then stream all of Screen Time on TikTok and PineDrama.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
       ],
       "primary_type": "video",
       "routing_targets": [
@@ -1006,10 +896,197 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "79e6ca97747b6ce6",
-      "title": "Best Spanish Restaurants in New York - OpenTable",
-      "url": "https://www.opentable.com/cuisine/best-spanish-restaurants-new-york-ny",
-      "summary": "Book now at Spanish restaurants near me in New York on OpenTable. Explore reviews, menus & photos and find the perfect spot for any occasion.",
+      "id": "fa7bf33d6f8a4edf",
+      "title": "TikTok: What It Is, How It Works, and Why It's Popular",
+      "url": "https://www.investopedia.com/what-is-tiktok-4588933",
+      "summary": "TikTok’s algorithm-driven feed and short-form video format have reshaped how users discover content, making it one of the most influential platforms in social media and digital marketing.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a675c58f76430482",
+      "title": "Vitamin D: Benefits, Sources, Deficiencies - Healthline",
+      "url": "https://www.healthline.com/health/food-nutrition/benefits-vitamin-d",
+      "summary": "Vitamin D helps your body absorb calcium and phosphorus, which are essential for bone growth and development. It also supports immune system function. Research suggests vitamin D may help reduce...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "89c44435f47e3b05",
+      "title": "Watch trending videos for you | TikTok",
+      "url": "https://www.tiktok.com/foryou?lang%3Den",
+      "summary": "It starts on TikTok. Join the millions of viewers discovering content and creators on TikTok - available on the web or on your mobile device.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bc11c4682edc5687",
+      "title": "15 Ways Vitamin D Benefits Your Mood, Immunity, and More",
+      "url": "https://www.verywellhealth.com/vitamin-d3-5082500",
+      "summary": "Vitamin D3 helps your bones by improving calcium and phosphorus absorption. Low vitamin D3 levels can affect your mood and lead to feelings of sadness or anxiety. Vitamin D3 boosts your immune system by helping fight infections and controlling inflammation.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d1bc47900a9731c4",
+      "title": "18 Benefits of Vitamin D3 and How Much You Need - Natural Remedy Ideas",
+      "url": "https://naturalremedyideas.com/vitamin-d3-benefits/",
+      "summary": "In this article, we’ll explore 18 remarkable benefits of vitamin D3, understand how much you actually need, and discover the best ways to maintain healthy levels throughout your life.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "983ac8b3f1b2c34a",
+      "title": "Amputation Care & Rehabilitation | PAM Health",
+      "url": "https://pamhealth.com/hospitals/conditions/amputation/",
+      "summary": "Recover after amputation with personalized physical & occupational therapy, focusing on independence, mobility & community reintegration. Find a location!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c84a45b015c84f3c",
+      "title": "Amputation Rehabilitation - Mass General Brigham",
+      "url": "https://www.massgeneralbrigham.org/en/services/amputee-rehabilitation",
+      "summary": "If you are preparing for or recovering from an upper or lower limb amputation, we are here to help. At the nationally known Amputee Rehabilitation Program, we provide specialized care to support your recovery, mobility, independence, and emotional well-being.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1036,12 +1113,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "abd798ee1ff49317",
-      "title": "best wood burning cooking stove [Updated on: October 2026]",
-      "url": "https://ovencookguy.com/best-wood-burning-cooking-stove/",
-      "summary": "As autumn approaches, the importance of a reliable wood burning cooking stove really hits home. I’ve tested several models, and the Comfort Glow Cast Iron Wood Stove, EPA Certified, 22″ Logs stood out. Its large firebox easily fits 22-inch logs, which means longer burns and less fuss. The cast iron heats up quickly, maintains steady warmth, and the integrated cooktop makes meal prep simple ...",
+      "id": "78a3313b434079f8",
+      "title": "Amputation: Recovery and Rehabilitation - Johns Hopkins Medicine",
+      "url": "https://www.hopkinsmedicine.org/health/treatment-tests-and-therapies/amputation/amputation-recovery-and-rehabilitation",
+      "summary": "A physical medicine and rehabilitation doctor focuses on restoring health and functional abilities after amputation, and creates a custom treatment plan built around your needs.",
       "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1054,7 +1131,38 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "685ea0b1dd90cd8a",
+      "title": "Amputee Rehabilitation - Kessler Institute for Rehabilitation",
+      "url": "https://www.kessler-rehab.com/conditions-and-services/amputee-rehabilitation/",
+      "summary": "From post-surgical care and prosthetic training to community reintegration and long-term follow up, Kessler Institute provides amputees with the individualized care that advances his/her physical recovery and helps overcome the many emotional, psychological and social challenges he/she faces.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "community"
       ],
       "primary_type": "review",
       "routing_targets": [
@@ -1066,10 +1174,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1dc211ae847af24f",
-      "title": "Chicago’s Best Spanish Restaurants | Eater Chicago",
-      "url": "https://chicago.eater.com/maps/best-spanish-restaurants-food-in-chicago",
-      "summary": "From a casual neighborhood retreat in Andersonville to a Michelin-starred seafood palace in West Town, here are Eater Chicago’s picks for the city’s best Spanish restaurants.",
+      "id": "421e71fe96d054f9",
+      "title": "Amputee Rehabilitation - MedStar Health",
+      "url": "https://www.medstarhealth.org/services/amputee-rehabilitation",
+      "summary": "At MedStar Health, we offer a dedicated Amputee Rehabilitation program, helping patients facing or living with amputation due to diabetes, peripheral vascular disease, or a devastating trauma transition into a pain-free, fulfilling life.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1096,12 +1204,192 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c5e82680e8aee5dc",
-      "title": "engo3 Titanium - us.engoeyewear.com",
-      "url": "https://us.engoeyewear.com/products/engo3-titanium",
-      "summary": "For Garmin: build your own display, right from the Engo app. Choose from 40+ metrics - pace, heart rate, power, cadence, and more. Set different layouts for easy runs, intervals, and race day.",
+      "id": "10b0695ce9d06f42",
+      "title": "Amputee Rehabilitation | Brooks Rehabilitation",
+      "url": "https://brooksrehab.org/programs/amputee-rehab/",
+      "summary": "Brooks’ specialized amputation rehabilitation program is designed to meet each patient’s needs and goals. We offer a wide variety of advanced services and programs across our multiple care settings.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba8baefdb7cd51d2",
+      "title": "Amputee Rehabilitation | Kessler Rehabilitation Center",
+      "url": "https://www.kesslerrehabilitationcenter.com/programs-and-services/amputee-rehabilitation/",
+      "summary": "Our experienced licensed physical and/or occupational therapists tailor an amputee rehabilitation plan to target strength, balance, prosthetic gait training and other specific challenges.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53cbfd69fa897c73",
+      "title": "Amputee Rehabilitation | KORT Physical Therapy",
+      "url": "https://www.kort.com/programs-and-services/amputee-rehabilitation/",
+      "summary": "Our experienced licensed physical and/or occupational therapists tailor an amputee rehabilitation plan to target strength, balance, prosthetic gait training and other specific challenges.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a581fd0653d6a7b",
+      "title": "Amputee Rehabilitation | NovaCare",
+      "url": "https://www.novacare.com/programs-and-services/amputee-rehabilitation/",
+      "summary": "NovaCare's amputee rehabilitation program helps individuals recovering from upper and lower extremity amputation. We offer pre-prosthetic and prosthetic training, focusing on the adaptation and building of skills to help each patient achieve independence.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "95332091f4cdc67a",
+      "title": "Amputee Rehabilitation | SSM Health Physical Therapy",
+      "url": "https://www.ssmphysicaltherapy.com/programs-and-services/amputee-rehabilitation/",
+      "summary": "Our experienced licensed physical and/or occupational therapists tailor an amputee rehabilitation plan to target strength, balance, prosthetic gait training and other specific challenges.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c14cf5c07bf62518",
+      "title": "channels are broadcasting in Spanish | Xfinity Community Forum",
+      "url": "https://forums.xfinity.com/conversations/channels-and-programming/channels-are-broadcasting-in-spanish/602db0d7c5375f08cd3be254",
+      "summary": "Several channels randomly started playing in Spanish all settings show English however its still playing audio in spanish. We have reset all settings, reset the SAP, updated the box.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad117f9b50140f6d",
+      "title": "How to get my app translated? - Localization Help",
+      "url": "https://support.google.com/l10n/answer/6227218?hl=en",
+      "summary": "Why translate your app Translating your app into multiple languages will maximize the number of people who can install, use and recommend it. Before you translate Translation is one of the fin",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1126,12 +1414,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "14b469b052ca3a48",
-      "title": "How to Improve SEO: 12 Proven Steps to Boost Your Rankings",
-      "url": "https://www.seo.com/blog/how-to-improve-seo/",
-      "summary": "Learn how to improve SEO with 12 actionable steps, from refreshing existing content and targeting long-tail keywords to optimizing for mobile & featured snippets.",
+      "id": "6cd506cdecfbb241",
+      "title": "I speak English but my bills are in Spanish - Xfinity Community Forum",
+      "url": "https://forums.xfinity.com/conversations/billing/i-speak-english-but-my-bills-are-in-spanish/68e1438c566ff24c9b7ab26e",
+      "summary": "Ever since I started using Xfinity my bills have been in Spanish even though I'm not fluent in Spanish. Can someone help me put my bills in English please?",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1144,9 +1432,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1156,10 +1444,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "43f7c869d9c13363",
-      "title": "linkedin的inmail的具体使用规则是什么呀？ - 知乎",
-      "url": "https://www.zhihu.com/question/52031363",
-      "summary": "普通LinkedIn消息： 只有双方建立连接后才能聊天。 而 InMail： 不需要添加好友， 就能直接联系客户。 这也是为什么很多： 外贸业务员 B2B销售 猎头 海外开发人员 都会使用InMail。 （发送的Inmail前的编辑界面 Inmail由两部分组成 主题+正文） 对方收到InMail是什么 ...",
+      "id": "aef3968cd477e8a8",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/why-is-a-free-download-of-windows-end-up-not-free/cab347f6-7887-440b-a9b8-58823434088e",
+      "summary": "Microsoft Community",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1174,9 +1462,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1186,10 +1474,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c4bbed1915fa2ad2",
-      "title": "oauth 2.0 - How to request r_liteprofile and w_member_social ...",
-      "url": "https://stackoverflow.com/questions/79615910/how-to-request-r-liteprofile-and-w-member-social-permissions-for-linkedin-api-wi",
-      "summary": "LinkedIn has been transitioning from legacy OAuth scopes to OpenID Connect, which affects how developers request permissions like r_liteprofile and w_member_social.",
+      "id": "17ce6894144dc3cd",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/outlook-app-created-by-teams-toolkit-does-not-work/4affde7d-6fd8-4102-8aa1-0bb648f0bffd",
+      "summary": "Microsoft Community",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1204,9 +1492,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "sdk"
+        "tool",
+        "community"
       ],
-      "primary_type": "sdk",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1216,10 +1505,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1a7a304926115b59",
-      "title": "Problema con Scripts en Visual Studio Code",
-      "url": "https://es.stackoverflow.com/questions/321611/problema-con-scripts-en-visual-studio-code",
-      "summary": "En cuanto abro Visual Studio Code, me aparece en la consola propia de VSCode, lo siguiente: . : No se puede cargar el archivo C:\\\\Users\\\\admin\\\\Documents\\\\WindowsPowerShell\\\\profile.ps1 porque la ejec...",
+      "id": "d0179635dce35a8a",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/converting-to-adobe-pdf-causes-text-to-become/161e19fe-634a-478e-b32d-3e71d53a2fe5",
+      "summary": "Microsoft Community",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1234,9 +1523,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1246,463 +1535,553 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6e2377c892eb1520",
-      "title": "SEO tips to help your content catch leads [expert advice]",
-      "url": "https://blog.hubspot.com/marketing/seo-tips",
-      "summary": "Get expert SEO tips from HubSpot to improve search intent, technical SEO, content freshness, and backlink building so you grow organic traffic and leads.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "89d66b7b13b05d01",
-      "title": "Still Not Ranking? Try These 12 Ridiculously Easy SEO Hacks",
-      "url": "https://www.pcmag.com/explainers/still-not-ranking-try-these-easy-seo-hacks",
-      "summary": "Get your website picked up by Google, Bing, and other top search engines with these simple SEO tips.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "036457a5decafd41",
-      "title": "Telefèric Barcelona | Authentic Spanish Restaurants",
-      "url": "https://www.telefericbarcelona.com/",
-      "summary": "Telefèric Barcelona is an Authentic Spanish Restaurant that serves Tapas, Paellas, Sangria and Crafted Cocktails in Walnut Creek, Palo Alto, Los Gatos, Roseville, Scottsdale, Los Angeles, Long Beach, La Jolla and Newport Beach.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ffcdbc4e3ed43b60",
-      "title": "THE 10 BEST Spanish Restaurants in Brooklyn (Updated 2026)",
-      "url": "https://www.tripadvisor.com/Restaurants-g60827-c36-Brooklyn_New_York.html",
-      "summary": "Best Spanish Restaurants in Brooklyn, New York: Find Tripadvisor traveller reviews of Brooklyn Spanish restaurants and search by price, location, and more.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9044e52a66cdb12e",
-      "title": "THE 10 BEST Spanish Restaurants in New York City (Updated 2026)",
-      "url": "https://www.tripadvisor.com/Restaurants-g60763-c36-New_York_City_New_York.html",
-      "summary": "Best Spanish Restaurants in New York City, New York: Find Tripadvisor traveller reviews of New York City Spanish restaurants and search by price, location, and more.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "46e14d2982025ddb",
-      "title": "The 13 Best Spanish Restaurants in NYC - The Infatuation",
-      "url": "https://www.theinfatuation.com/new-york/guides/best-spanish-restaurants-nyc",
-      "summary": "These are the best Spanish restaurants for tapas, paella, and sangria in New York.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "56955da306b61ae7",
-      "title": "The 17 Most Important SEO Tips for Higher Rankings - Backlinko",
-      "url": "https://backlinko.com/actionable-seo-tips",
-      "summary": "17 key SEO tips that can help you get higher Google rankings and more organic traffic.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ab7638fe96e657c",
-      "title": "The 30 Best Wood Burning Stoves of 2026 [Verified] - Cherry Picks",
-      "url": "https://www.cherrypicksreviews.com/wood-burning-stoves",
-      "summary": "We recommends Top-Rated Wood Burning Stoves Deals You Can Buy Online for October 2026 on Amazon, As Tested by CherryPicks Editors and analyzed 2,591 customer reviews to Home & Kitchen products.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "retail"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "55c45dd570cc6440",
-      "title": "The 7 Best Wood Stoves of 2026 - The Spruce",
-      "url": "https://www.thespruce.com/best-wood-stoves-11762554",
-      "summary": "A great wood stove can help heat up your space and elevate your decor. We researched and tested the best wood stoves to help you find the right one.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3407cd4235a68747",
-      "title": "THE BEST 10 SPANISH RESTAURANTS IN NEW YORK, NY - Yelp",
-      "url": "https://www.yelp.com/search?cflt=spanish&find_loc=new+york%2C+ny",
-      "summary": "\"A very solid Spanish restaurant with all the traditional flavors. I came with a few friends and ordered the croquetas de jamón (the bechamel was perfection, loved them), carne y pulpo à la gallega.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "03efe3c4a377d543",
-      "title": "The best Spanish Restaurants Near me | OpenTable",
-      "url": "https://www.opentable.com/nearme/spanish-restaurants-near-me",
-      "summary": "Let OpenTable use your current location to find great Spanish restaurants nearby. Explore reviews, menus and photos; find and book the perfect place for lunch, dinner or any occasion.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "65e43d70d480cc5c",
-      "title": "The Best Wood Stove Brands and Manufacturers Today - Bob Vila",
-      "url": "https://www.bobvila.com/reviews/best-wood-stove-brands/",
-      "summary": "A quality wood stove can last decades, which is why it's important to choose one from the best wood stove brands. See our top brands here.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "08966594b52c9c30",
-      "title": "The Best Wood Stoves in 2024 — Wood Stove Recommendations",
-      "url": "https://www.popularmechanics.com/home/g37791189/best-wood-stoves/",
-      "summary": "A reliable wood burning stove will help you warm up in the winter months. Here are our recommendations for the best wood stoves that you can buy for your home.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses waveguide microLED",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57dd8626b4005c08",
-      "title": "Top 20 SEO Tips to Dominate SEO Rankings in 2025",
-      "url": "https://searchatlas.com/blog/seo-tips/",
-      "summary": "Unlock top SERP rankings with Search Atlas's 20 actionable SEO tips for 2025. Master intent-based queries & content optimization for immediate visibility gains.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3cd909720c9ae0f0",
-      "title": "Volkswagen Credit - My Account",
-      "url": "https://vwcredit.com/login.aspx",
-      "summary": "Simplify your life today with online payments and account management tools.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1538193299e1346c",
-      "title": "如何看待微软以 262 亿美元全现金收购 LinkedIn？ - 知乎",
-      "url": "https://www.zhihu.com/question/47404871",
-      "summary": "1）这个大deal是Morgan Stanley做的，微软将主要以发行债券的方式，用全现金收购，收购后Linkedin将保持独立运作，原CEO汇报给微软高层。 2）Linkedin之前收盘价是$131.08，微软的收购价是$196每股，所以今天盘前Linkedin直接涨了60%+，我相信很多国人有持有该股，恭喜。",
+      "id": "fe0364448aab6444",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/why-is-my-one-outlook-email-getting-hacked/c26573e8-da36-4716-b304-0533c4b207e5",
+      "summary": "Microsoft Community",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "de576708843fbab2",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/microsoft-editor-refinements-missing-from-outlook/fc73efd6-9ec1-4373-bd94-7138649e8e01",
+      "summary": "Microsoft Community",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b36ead964bd82837",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/windows-7-update-problems/b3d0a226-f3ec-4e14-8394-0771ae9f50e8",
+      "summary": "Microsoft Community",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "57a4bccd6aca3cdd",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/how-do-i-stop-outlook-in-chrome-showing-random/a41767cf-8988-4cad-ad23-c0c518426134",
+      "summary": "Microsoft Community",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "276c1e032de4b708",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/unable-to-download-mail-from-my-aliceit-account/0e62e2d1-41f9-4929-96b5-06ba3efe5bc8",
+      "summary": "Microsoft Community",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6babbe4134d21534",
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/how-to-activate-window-after-motherboard-change/257f5de1-06aa-477c-9d76-a3f486a51a0d",
+      "summary": "Microsoft Community",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b3bb495e10e87e96",
+      "title": "NFL on nbc in spanish - Xfinity Community Forum",
+      "url": "https://forums.xfinity.com/conversations/channels-and-programming/nfl-on-nbc-in-spanish/6aa20e870436a8202c59e0b6",
+      "summary": "NFL on nbc in spanish I cannot get the game to play in English on my Xfinity app. Commercials are in English but game is in Spanish. I am streaming remotely.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec8f07a51dd39bf2",
+      "title": "Premium HD Channels are in Spanish, even though my Basic Language is ...",
+      "url": "https://forums.xfinity.com/conversations/channels-and-programming/premium-hd-channels-are-in-spanish-even-though-my-basic-language-is-set-for-english/602db025c5375f08cd23f545",
+      "summary": "Premium HD Channels are in Spanish, even though my Basic Language is set for English In our Master Bedroom, all of the Premium HD Channels are in spanish now and we aren't sure why. Setting indicates that our Audio is English and the lower HD channels are still in English. Where do I switch the Premium Channels Audio to English again??",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6dbc4110d020e6bd",
+      "title": "Spanish language football game | Xfinity Community Forum",
+      "url": "https://forums.xfinity.com/conversations/x1/spanish-language-football-game/68bf7af1a61c8637b6a3daab",
+      "summary": "Why is my football game broadcasting in Spanish? How do I fix it?",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c797556683731f8",
+      "title": "Tickets & Hospitality | The Open",
+      "url": "https://www.theopen.com/tickets-and-hospitality",
+      "summary": "Find out how to book tickets to The Open with the latest ticketing and hospitality experience information for upcoming Championships.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "85702fb69e3071ae",
+      "title": "TV Remote - Xfinity Community Forum",
+      "url": "https://forums.xfinity.com/conversations/channels-and-programming/tv-remote/6244975bb776c838c9d081d0",
+      "summary": "My audio is English, the Channel Guide is in English except for the date in Spanish, and Channel Info is a mixture of Spanish Headings and English descriptions.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "704ab3d3ed9f2f32",
+      "title": "Vitamin D - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/drugs-supplements-vitamin-d/art-20363792",
+      "summary": "Vitamin D is a nutrient the body needs, along with calcium, to build bones and keep them healthy. The body can absorb calcium only if it has enough vitamin D. Calcium is a major part of bones. Vitamin D also has many other uses in the body. It supports immune health and helps keep muscles and brain cells working.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2958674f14c5ee51",
+      "title": "Vitamin D3: 20 Benefits, Sources, Dosage & Deficiency Signs",
+      "url": "https://myhealthopedia.com/vitamin-d3-benefits-sources-dosage-deficiency/",
+      "summary": "In this guide, you’ll learn what Vitamin D3 is, how much you need, its health benefits, side effects of excess intake, deficiency symptoms, food sources, and how to maintain healthy levels safely.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc5e6be0cc9b82fb",
+      "title": "Vitamin D: 20 Benefits, Sources, Dosage & Deficiency Signs",
+      "url": "https://myhealthopedia.com/vitamin-d-benefits-sources-dosage-deficiency/",
+      "summary": "In this guide, you will learn everything about Vitamin D (commonly known as calciferol) — what it is, how much you need, its benefits, side effects, deficiency symptoms, food sources, and how to maintain healthy levels safely.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "438d8803cbf8cdac",
+      "title": "Vitamin D: Benefits and How Much You Need - Cleveland Clinic Health ...",
+      "url": "https://health.clevelandclinic.org/vitamin-d",
+      "summary": "Vitamin D (calciferol) keeps bones strong and supports your immune system. People ages 1 to 70 need 15 mcg (600 IU) per day; people 70+ need 20 mcg (800 IU).",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "11fe8ab897bfda00",
+      "title": "Vitamin D: Benefits, deficiency, sources, and dosage",
+      "url": "https://www.medicalnewstoday.com/articles/161618",
+      "summary": "Vitamin D is essential for the bones and teeth, the immune system, brain health, and for regulating inflammation. The body produces vitamin D as a response to sun exposure.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d816723d8c2e4467",
+      "title": "What Happens to Your Body When You Take Vitamin D Regularly",
+      "url": "https://www.verywellhealth.com/benefits-of-vitamin-d-11870671",
+      "summary": "Vitamin D is essential for immune system function and bone health, and may influence mood regulation and reduce the risk of several chronic health conditions. The body produces vitamin D when exposed to sunlight, but it may also be acquired through food and supplements.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b440e18faff60fdf",
+      "title": "What Taking Vitamin D3 Can Do for Your Body - Health",
+      "url": "https://www.health.com/what-taking-vitamin-d3-does-for-your-body-11935172",
+      "summary": "Vitamin D3 from sunlight and food helps in calcium absorption and muscle strength. It could decrease the risk of cardiovascular disease and depression.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34d5f758d8f78379",
+      "title": "‎Why all of a sudden my channel goes to spanish. I go to language and ...",
+      "url": "https://forums.xfinity.com/conversations/channels-and-programming/why-all-of-a-sudden-my-channel-goes-to-spanish-i-go-to-language-and-it-reads-english/6a432942dae4694352444c49",
+      "summary": "Look for SAP / Secondary Audio Programming. Set it to Off or English. Return to the channel and test again. If it's happening on only one channel or one sporting event, the network may be providing multiple audio feeds, and the box may have selected the Spanish feed accidentally. I am an Official Xfinity Employee.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
