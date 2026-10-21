@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-21T15:19:02.943081+00:00`
+Generated: `2026-10-21T18:46:28.828527+00:00`
 
 - Intake files inspected: **274**
-- Candidates retained in this review window/history: **11197**
+- Candidates retained in this review window/history: **11175**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2081
+- `adjacent_radar`: 2065
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 576
-- `rejected_noise`: 8441
+- `needs_editorial_verification`: 575
+- `rejected_noise`: 8437
 - `source_review`: 37
-- `watching`: 42
+- `watching`: 41
 
 ## Action queue
 
@@ -35,13 +35,13 @@ Generated: `2026-10-21T15:19:02.943081+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1027](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1027) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1031](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1031) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1032](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1032) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1033](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1033) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.698](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.698) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.706](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.706) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.709](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.709) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.711](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.711) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -165,6 +165,7 @@ Generated: `2026-10-21T15:19:02.943081+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1026](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1026) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1029](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1029) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1030](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1030) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1034](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1034) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-21T15:19:02.943081+00:00`
 | normal | needs_editorial_verification | direct | [Apple's 2026 Roadmap: 18 New Products from the Foldable iPhone to Augmented Reality Glasses - آي-فون إسلام](https://news.google.com/rss/articles/CBMi1wFBVV95cUxQTE9ENFVjbUVNUDR0RTBQR1d4THROWkFwNWhrZkEyWkMwZEZKQTFfcHZTXzY3V0lfTHJ0YVE2bzNta0tDUVZuSWJCZ190VlZIV0xMZ0NXaXlNY0RpeVpkWTBJS3JXeDJ1YjF5SFhtZWFuNHhNUllaZW16NlpGYk5YOWtvWUtfbDZ1NTN0b3R1MV9oLUhvWE52ME9ocjRoWXJqT054TlgyQ2t2RWVlREZYbmZ0MXVjNWNRbUlUZ0w4VGtncGZuYjlSSHNTYU51YWNXWjJJb0h1cw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Are AI Smart Glasses Worth It? Honest Pros and Cons \| TikTok](https://www.tiktok.com/@bargainmandeals/video/7692446812728315158) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Asia and Smart Glasses Drive EssilorLuxottica’s Third-Quarter Growth - Luxus Plus](https://news.google.com/rss/articles/CBMimgFBVV95cUxPbDNubjljU0t1ZmxodlBkTWRud1ljOV9oMHplV0ROYlBVUGdnQ3VqQzg5VW9sb29HMVl3SFdQVFNucmVfMk1EUjNaeUd0eHJZVmw3Wmo1bVYwQUxmMlVUQm9SMkZjVEtNMHVTUF9DZXhyZ2wzLURRU1luMi1ydVdHMVRLZXpGZktTTHNoYWwzbFpoVjdvUU9UMXhn?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
