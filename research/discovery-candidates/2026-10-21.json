@@ -1,35 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-21T00:27:20.551874+00:00",
-  "candidate_count": 61,
-  "classifier_irrelevant_count": 56,
+  "discovered_utc": "2026-10-21T01:42:19.154625+00:00",
+  "candidate_count": 76,
+  "classifier_irrelevant_count": 68,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 4,
-    "broad_web": 54,
-    "developer": 3
+    "adjacent": 6,
+    "broad_web": 53,
+    "developer": 17,
+    "research": 11,
+    "retail": 1
   },
   "relationship_counts": {
     "direct": 1,
-    "enabling": 0,
-    "adjacent": 4,
+    "enabling": 1,
+    "adjacent": 6,
     "speculative": 0,
-    "irrelevant": 56
+    "irrelevant": 68
   },
   "type_counts": {
-    "model": 10,
-    "video": 1,
-    "news": 44,
-    "research": 1,
-    "tool": 5,
-    "sdk": 6,
-    "retail": 1,
-    "community": 1
+    "model": 1,
+    "video": 5,
+    "news": 45,
+    "tool": 20,
+    "sdk": 17,
+    "optics": 1,
+    "retail": 5,
+    "community": 6
   },
   "routing_counts": {
-    "adjacent_radar": 4,
-    "reject_noise": 56,
-    "research_news_review": 5
+    "adjacent_radar": 6,
+    "development_hacking": 3,
+    "reject_noise": 68,
+    "research_news_review": 8,
+    "research_optics": 1,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -43,12 +48,12 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "b6c47a874d81f38d",
-      "title": "10 Best Smart Glasses for AI, AR & Entertainment (October 2026)",
-      "url": "https://www.ofzenandcomputing.com/best-smart-glasses/",
-      "summary": "In this comprehensive guide, you’ll discover our top picks across all categories, understand the key differences between AI glasses, AR displays, and audio glasses, and learn exactly which model fits your specific needs.",
+      "id": "a2d6c6660a7ddd1a",
+      "title": "XREAL xbx a01+ AR Glasses and Beam Pro WiFi (8G+256G) Bundle ... - Amazon",
+      "url": "https://www.amazon.com/XREAL-xbx-a01-Glasses-Private/dp/B0H8YBB9RG",
+      "summary": "The xbx a01+ puts a private 147\" virtual screen right in front of you, while XREAL Beam Pro adds a full Android system with Google Play built in. No phone required, no laptop needed, just pick it up and press play.",
       "discovery_channel": "broad_web",
-      "query": "best smart glasses",
+      "query": "XREAL xbx a01+",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -61,27 +66,28 @@
       "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "retail_rebrand_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, audio glasses, smart glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f10ba428fc7fe3f9",
-      "title": "9 Fantastic Recreational Lakes near Billings, MT - Wild",
-      "url": "https://itiswild.com/best-lakes-near-billings/",
-      "summary": "Although there are few lakes in the immediate vicinity of Billings, those willing to make day trips will discover beautiful places and great fishing spots. Some options on the list are managed by the state park system and offer a wide range of activities and excellent facilities.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "id": "d00d986ef82aeb44",
+      "title": "Shop the Best Cameras and Accessories | Tuttle Cameras",
+      "url": "https://www.tuttlecameras.com/",
+      "summary": "Tuttle Cameras offers a wide selection of cameras, lenses, and accessories for photography enthusiasts. Shop now for the latest gear and expert advice.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -89,56 +95,25 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "news"
+        "optics"
       ],
-      "primary_type": "news",
+      "primary_type": "optics",
       "routing_targets": [
         "research_news_review",
-        "adjacent_radar"
+        "research_optics"
       ],
       "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8c5b659d5797d55b",
-      "title": "Cities Nearby Billings, Montana, United States",
-      "url": "https://www.thecitiesnow.com/united_states/montana/billings",
-      "summary": "Find five hundred cities near Billings, Montana, United States from closest to farthest by distance. Distances from Billings to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cc3456d7a9069cdf",
-      "title": "Outlook",
-      "url": "https://outlook.com/campus.technion.ac.il",
-      "summary": "Outlook",
+      "id": "b826952b71ac31aa",
+      "title": "48 Best Chicken Dinners Recipes - Easy Chicken Dinner Ideas",
+      "url": "https://www.delish.com/cooking/recipe-ideas/g71297511/weeknight-chicken-dinners/",
+      "summary": "Get inspired with our list of 48 best chicken dinner recipes—you’ll be sure to find a new weeknight favorite. We’ve got something here for everyone, whether you’re looking for tried-and-true...",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -166,12 +141,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fadcb8cbd1edfbe8",
-      "title": "Towns and Cities Near to Billings, Montana United States",
-      "url": "https://www.cities-towns-data.com/local-towns-near-billings-montana-united_states.htm",
-      "summary": "Within roughly 35 miles of Billings, Montana there are around 6 towns, villages and cities that match your current filters. Billings itself is recorded as having around 117,446 residents, so this page is really showing you the wider catchment area around the core location.",
+      "id": "3d48a0e64f48364c",
+      "title": "50 Best Chicken Recipes for Any Occasion - Insanely Good",
+      "url": "https://insanelygoodrecipes.com/chicken-recipes/",
+      "summary": "Tasty, kid-approved, and budget-friendly, these chicken recipes are ideal for families. They're simple and quick but elegant enough for dinner parties.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -197,210 +172,143 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "956a8d4174baf407",
-      "title": "1920s Shoes for Women | Flapper, Mary Jane & T-Strap Shoes | memery",
-      "url": "https://memery.us/collections/1920s-shoes",
-      "summary": "Shoes and boots inspired by the 1920s. Mary Jane pumps, T-strap and flapper shoes, everyday oxfords and boots in full-grain leather. Free US shipping.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "6bb99eca28f8fd85",
+      "title": "Google マップでストリートビューを使用する",
+      "url": "https://support.google.com/maps/answer/3093484?hl=ja&co=GENIE.Platform%3DDesktop",
+      "summary": "Google マップと Google Earth の両方のストリートビューで、世界中のランドマークや大自然の驚異を眺めたり、博物館、競技場、レストラン、小規模ビジネスなどの場所を体験したりできます。",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "model"
+        "tool"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0c3dbfcff930738e",
-      "title": "2 1/2\" Precut Fabric Strips - Samplers from Connecting Threads",
-      "url": "https://www.connectingthreads.com/precuts/2-1-2-strips/c/602204",
-      "summary": "2-1/2\" strips are a great way to try one of each fabric in a collection. Shop now and grt free shipping on orders over $75!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "ac8972f3c1ea0bd7",
+      "title": "Navigatie gebruiken in Google Maps",
+      "url": "https://support.google.com/maps/answer/3273406?hl=nl&co=GENIE.Platform%3DAndroid",
+      "summary": "Navigatie starten of stoppen Open de Google Maps-app op je Android-telefoon of -tablet. Zoek een plaats of tik op een plaats op de kaart. Tik linksonder op Route. Als je in plaats daarvan de knop vasthoudt, wordt de navigatie meteen gestart en kun je stap 4 tot en met 6 overslaan. Meer informatie over hoe je meer bestemmingen toevoegt. Kies je vervoermiddel. Als er andere routes beschikbaar ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "model"
+        "tool"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8424f5c7e3f043fa",
-      "title": "Fat Quarter Baby Quilting Book | Connecting Threads",
-      "url": "https://www.connectingthreads.com/fat-quarter-baby/p/46311",
-      "summary": "The Fat Quarter Baby quilting book is baby-crazy in the best way. Make 20 crib-size quilts with these fresh fabrics. Free Shipping on orders over $75!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "435473e9d2d93563",
+      "title": "Our Best Chicken Recipes - NYT Cooking",
+      "url": "https://cooking.nytimes.com/topics/our-best-chicken-recipes",
+      "summary": "Browse our Our Best Chicken Recipes collections by the editors of NYT Cooking.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "model"
+        "news"
       ],
-      "primary_type": "model",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "350f9c3d048d4cfa",
-      "title": "GeForce NOW Archives | NVIDIA Blog",
-      "url": "https://blogs.nvidia.com/blog/tag/geforce-now/",
-      "summary": "A warped Manhattan is waiting in the cloud this week. Remedy Entertainment’s CONTROL Resonant brings Dylan Faden’s extraordinary abilities and a paranatural crisis to GeForce NOW at launch. With the...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "65dc1d9741ccd648",
+      "title": "Save favorite places - Computer - Google Maps Help",
+      "url": "https://support.google.com/maps/answer/3184808?hl=en&co=genie.platform%3ddesktop",
+      "summary": "Save your favorite places on Maps to easily find them on any computer, phone, or tablet.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "launch"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "model"
+        "tool"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c0a72d51279917aa",
-      "title": "Mary Jane Shoes for Women | 1920s & 1930s Styles | memery",
-      "url": "https://memery.us/collections/mary-jane-shoes-women",
-      "summary": "Vintage Mary Jane shoes for women in full-grain leather, inspired by the 1920s and 1930s. Low and mid heels, wide fit available. Free US shipping.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "845b063ab769e77a",
+      "title": "Adding a Game or Game Cover Art to Twitch",
+      "url": "https://help.twitch.tv/s/article/adding-a-game-and-box-art-to-the-directory?language=en_US",
+      "summary": "Adding a Non-Gaming Category to Twitch Besides games, Twitch offers a variety of non-gaming categories such as Art, Travel & Outdoors, and Just Chatting for you to select from. If you would like to suggest that a new non-gaming category be added to Twitch, please post in our UserVoice forum and encourage others to upvote your idea.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bbec73c54c090de0",
-      "title": "Quilting Fabric - High Quality, Affordable Options from ConnectingThreads",
-      "url": "https://www.connectingthreads.com/fabrics/quilting-fabrics",
-      "summary": "High quality quilting fabric in exclusive designs, plus unique samplers and kits, starting at only $2.76 per yard. Free Shipping on orders over $75!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "696d60526933925f",
-      "title": "SHIELD Open Source Resources and Drivers | NVIDIA Developer",
-      "url": "https://developer.nvidia.com/shield-open-source",
-      "summary": "NVIDIA publishes source code, binary packages and USB drivers for developers and the Android open source community to use in development and to create custom OS images for SHIELD devices. Look below for links to relevant downloads. Portions of open source software are provided under license terms that require redistribution of source code, including the GNU General Public License. Contact oss ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "open source"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -423,44 +331,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "09f5af4881a697ba",
-      "title": "Shop 1920s Shoes | Mary Jane Shoes & Dance Pumps | BABEYOND",
-      "url": "https://babeyond.com/collections/1920s-shoes",
-      "summary": "From classic Mary Jane shoe style to chic dance pumps, BABEYOND is dedicated to bringing comfortable vintage style shoes to all dance lovers. Free ground shipping on all orders and 14-day unconditional return.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "12d58afe00d47c81",
-      "title": "Top 15 Highest Paying Jobs In The World 2026 (Inc Salaries)",
-      "url": "https://www.nexford.edu/insights/highest-paying-jobs-in-the-world",
-      "summary": "Discover the highest-paying jobs in the world in 2026. This article discusses all, from data science to investment banking. Read more!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "3bc96f092fb58fbe",
+      "title": "addinstr - benryves.com",
+      "url": "https://www.benryves.com/bin/brass3/help/help/fa6ebaa9-c853-3636-b1e9-e2ab84bcf974.html",
+      "summary": "Allows you to add an instruction to the Z80 instruction set at runtime.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -486,12 +362,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3e5be2ba5bb55690",
-      "title": "Top 20 Highest Paying Jobs in the World [Updated 2026]",
-      "url": "https://www.admeducation.com/learn/make-money/top-highest-paying-jobs-in-the-world/",
-      "summary": "Discover the top 20 highest paying jobs in the world for 2025. Explore lucrative career options across industries with detailed insights on salaries and growth potential.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "fad7411112adbd84",
+      "title": "and - benryves.com",
+      "url": "https://benryves.com/bin/brass3/help/help/01eff263-c62f-3d91-91a4-435188534b1f.html",
+      "summary": "Returns true if all of the arguments are true; false if any one is false.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -517,12 +393,45 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dc8b6de34c6081ad",
-      "title": "Top 25 Highest-Paying Jobs in the World (2026 Edition)",
-      "url": "https://www.eimt.edu.eu/highest-paying-jobs-in-the-world",
-      "summary": "Explore the top 25 highest-paying jobs in the world with 2026 salary data from trusted sources like the Bureau of Labor Statistics, Glassdoor, and Forbes. Discover the degrees, skills, and earning potential needed to succeed in today’s most lucrative careers..",
+      "id": "e730ea620c383d94",
+      "title": "Asmongold - Reddit",
+      "url": "https://www.reddit.com/r/Asmongold/",
+      "summary": "Official subreddit of Asmongold (as seen on Netflix) aka ZackRawrr, an Austin, Texas based Twitch streamer, YouTube personality, and gaming organization owner and content creator of One True King (OTK), a group of mostly Austin, Texas based content creators and owner of Starforge Systems, selling prebuilt gaming PCs. Asmongold is primarily known for his World of Warcraft content. Asmongold has ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ec318f579bfcb27",
+      "title": "Brass 3 - benryves.com",
+      "url": "https://www.benryves.com/bin/brass3/",
+      "summary": "Download Windows users are advised to download the installer package as this automates configuration of the assembler.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -548,15 +457,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5e642785e4d372cd",
-      "title": "1920s Mary Jane Shoes - Etsy",
-      "url": "https://www.etsy.com/market/1920s_mary_jane_shoes",
-      "summary": "Step back in time with exquisite 1920s Mary Jane shoes. Discover vintage blue suede heels, antique tan styles, and elegant strappy evening shoes. Find unique black leather Mary Janes, perfect for collectors and fashion enthusiasts.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "b0b9aafc0a2c55a0",
+      "title": "Brass 3 Help - benryves.com",
+      "url": "https://www.benryves.com/bin/brass3/help/index.html?doc=4a2e79ad-4ec5-325c-9b78-d9446d611396.html",
+      "summary": "Brass 3 Help",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -566,9 +475,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -578,15 +488,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3229659d24e07104",
-      "title": "1920s Shoes for Women | Flapper, Mary Jane & T-Strap Shoes | memery",
-      "url": "https://memery.eu/collections/1920s-shoes",
-      "summary": "Shoes and boots inspired by the 1920s. Mary Jane pumps, T-strap and flapper shoes, everyday oxfords and boots in full-grain leather.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "e00da7d6961638a4",
+      "title": "Brass Core Plugins - benryves.com",
+      "url": "http://benryves.com/bin/brass3/help/help/769488d9-a18c-43e3-9235-007e2a1e467b.html",
+      "summary": "Output Writers Listing Writers",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -596,99 +506,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "886a44efd551f591",
-      "title": "1920s Style Shoes, Heels, Boots | Flapper Shoes - Vintage Dancer",
-      "url": "https://vintagedancer.com/1920s/buy-1920s-shoes-for-women/",
-      "summary": "Roaring 20s women's 1920s shoes online. Shop the best 1920s T-Strap (T-bar) flapper shoes, Mary Jane heels, oxford 20s shoes, lace up boots, flats and more.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01be4977f090a4a0",
-      "title": "Accessing the CRM lookup window from an external application",
-      "url": "https://social.microsoft.com/Forums/en-US/fdce9040-9da7-402c-a31e-0d7eb1cb4609/accessing-the-crm-lookup-window-from-an-external-application",
-      "summary": "I even tried wrapping the proxy code in my OrganizationServiceProxy authentication, but that does not work. Is there a way to authenticate to CRM when passing code via a proxy? Is there a way to legally script across domains? Is there a better way to access the lookupinfo.aspx page when hosted on another domain? Thank you for reading.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b3cc3dcd2981d8f",
-      "title": "Amazon.com: 1920s Mary Janes",
-      "url": "https://www.amazon.com/1920s-mary-janes/s?k=1920s+mary+janes",
-      "summary": "1-48 of 555 results for \"1920s mary janes\" Results Check each product page for other buying options. Price and other details may vary based on product size and color.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
+        "tool",
+        "sdk",
         "retail"
       ],
-      "primary_type": "retail",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -698,15 +520,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "314bb92f12268ef9",
-      "title": "Best way to add text based on attribute value - social.microsoft.com",
-      "url": "https://social.microsoft.com/Forums/mvpforum/en-US/fb199fcb-c8a2-4d1c-9d5e-e43d90c15201/best-way-to-add-text-based-on-attribute-value",
-      "summary": "We have a requirement to display a single line of text with some formatting (colors, bold etc) based on whether a particular attribute is true or false. If true we display this one line of text (the attribute itself is not displayed on the form).",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "5cf9c9896eee811a",
+      "title": "Chip-8 Assembler - benryves.com",
+      "url": "https://www.benryves.com/bin/brass3/help/help/7ddf4346-994b-46c0-b0aa-f210fc015eb0.html",
+      "summary": "Chip-8 Assembler Assemblers chip8",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -716,9 +538,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -728,15 +551,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9a7cd7263a82753a",
-      "title": "Casablanca Quilt-As-You-Go Placemats | Connecting Threads",
-      "url": "https://www.connectingthreads.com/casablanca-6-placemats-quilt-as-you-go/p/71662",
-      "summary": "Shop Casablanca 6 Placemats Quilt As You Go at Connecting Threads. Easy, stylish quilting project for your table. Perfect for beginners and experts alike!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "3c37c89a76b2c874",
+      "title": "Co-Streaming on Twitch",
+      "url": "https://help.twitch.tv/s/article/costreaming",
+      "summary": "Co-Streaming is intended to remain on for the duration of your broadcast. Disabling and re-enabling Co-Streaming creates separate broadcast segments and prevents Twitch from automatically aggregating analytics. To access complete analytics across all broadcast segments, you need to reach out to your Twitch account partner.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -746,9 +569,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -758,15 +582,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9bbb7db22c180bb0",
-      "title": "ConnectingThreads.com",
-      "url": "https://www.connectingthreads.com/images/PDF/Catalogs/onlineCatalog.pdf",
-      "summary": "Join for product updates, special offers, and more from our team.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "97f0074ec7c9cef5",
+      "title": "Dual Format Streaming on Twitch",
+      "url": "https://help.twitch.tv/s/article/dual-format-vertical-video?language=en_US",
+      "summary": "As more and more viewers come to Twitch on mobile, optimizing your stream for both web and mobile devices becomes key to reaching and engaging new audiences. Dual format sends two versions of your broadcast to Twitch at once: a standard horizontal stream and a full-screen vertical stream. Viewers automatically get the right one for their device.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -776,9 +600,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -788,15 +614,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0f11ea596010ed30",
-      "title": "Free Woven Pattern by Cluck Cluck Sew Download | Connecting Threads",
-      "url": "https://www.connectingthreads.com/woven-pattern-download/p/12253D",
-      "summary": "Download the Woven Pattern by Cluck Cluck Sew from Connecting Threads! Perfect for quilting projects. Easy-to-follow instructions. Get started on your next masterpiece today!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "14881d2cd2e5d2d2",
+      "title": "function/macro",
+      "url": "http://mail.benryves.com/bin/brass3/help/help/b882c92f-3014-3152-93e7-1468a1af06e3.html",
+      "summary": "Remarks The function can contain any code, including mathematical expressions, directives and assembly source.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -806,9 +632,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -818,10 +645,196 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b50f7469e3ae60dd",
-      "title": "Google Translate",
-      "url": "https://translate.google.com.pr/?hl=bn&tab=8T",
-      "summary": "Google-এর পরিষেবা ইংরেজি থেকে অন্যান্য ১০০টির বেশি ভাষায় শব্দ, বাক্যাংশ ও ওয়েব পৃষ্ঠা ঝটপট অনুবাদ করে, কোনও চার্জ ছাড়াই।",
+      "id": "e8e8b0458f4b4b49",
+      "title": "imggetpixel - mail.benryves.com",
+      "url": "http://mail.benryves.com/bin/brass3/help/help/0c5e388a-c806-324a-9259-e4608709dc3d.html",
+      "summary": "Remarks If x or y are out of bounds then the coordinates are wrapped (so (-1,-1) refers to the bottom right hand corner of the image).",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9ea0d3421a50b217",
+      "title": "incsection",
+      "url": "https://benryves.com/bin/brass3/help/help/c964ee7a-af56-3f93-a540-c1a2fd57a4a2.html",
+      "summary": "incsection Inserts a code section at the current location. See Also endsection/section",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1cb132362eec8f0d",
+      "title": "ln - benryves.com",
+      "url": "https://benryves.com/bin/brass3/help/help/a57949be-ff3b-305e-a32d-188618fbf8a8.html",
+      "summary": "Returns the natural logarithm of a specified number. Syntax",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cbf9a0e68b5ec9a",
+      "title": "Streamer Shouts - help.twitch.tv",
+      "url": "https://help.twitch.tv/s/article/streamer-shouts",
+      "summary": "This guide is for streamers. Streamer Shouts is a new way to engage with your viewers after your stream ends. Once you go offline, send a personal Shout to viewers from your stream, celebrating the moments and milestones that made it special, delivered straight to their Shouts tab (under Activity on mobile or Notifications on desktop).",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2940d0f16eda50b",
+      "title": "Twitch Teams",
+      "url": "https://help.twitch.tv/s/article/twitch-teams",
+      "summary": "Only Twitch Partners can create and manage teams. If a Twitch Partner creates a team, they can transfer ownership of that team to an Affiliate or regular (non-monetized) user. After this transfer process, that Affiliate or regular (non-monetized) user can manage the team, but they cannot request further ownership transfers.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04d4ea1489351519",
+      "title": "while/rept/for/loop",
+      "url": "http://benryves.com/bin/brass3/help/help/0d9b41d5-e70a-3e36-b899-19e358f5aecc.html",
+      "summary": "Remarks Both a C-style for-loop and a BASIC-style for loop are provided.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "705be293b7e36bf8",
+      "title": "13 Best Restaurants in Fairfield, CT [2026 Updated]",
+      "url": "https://eattheway.com/restaurants-in-fairfield-ct/",
+      "summary": "Fairfield, CT might seem like just another affluent coastal town to outsiders—some locals even bristle at the ‘best of’ lists that pop up each year. But when a wave of culinary talent washed ashore, transforming sleepy storefronts into destinations, the food scene quietly earned its stripes.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -848,10 +861,100 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0cf731a581ef91d9",
-      "title": "Hows does a WHS 2011 consume DRAM, and how much do I need?",
-      "url": "https://social.microsoft.com/Forums/en-US/a01bac32-ceb1-4e4e-80c1-5dd1cd7b5502/hows-does-a-whs-2011-consume-dram-and-how-much-do-i-need",
-      "summary": "For instance, using a Linux OS like Openmediavault you would easily get close to 100% utilization of 8gb of RAM. I guess I should ask if WHS 2011 is different in the way it utilizes RAM than say Windows 7? I too, am looking for the answer to how much RAM do I *need*? and am having a hard time finding it.",
+      "id": "8e6c0821aaa4a1d2",
+      "title": "13 Best Restaurants in Fairfield, CT [2026 Updated]",
+      "url": "https://restauranttravelguide.com/restaurants-in-fairfield-ct/",
+      "summary": "Fairfield might boast its manicured lawns and coastal charm, but let’s be real: this town’s true pulse is found on its plates. From historic mainstays to bold newcomers, these aren’t just restaurants—they’re the culinary lifeblood.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60f728a2eb49b6a1",
+      "title": "17 Best Restaurants In Fairfield (CT) - The Tourist Checklist",
+      "url": "https://thetouristchecklist.com/restaurants-in-fairfield-ct/",
+      "summary": "Fairfield, CT, is home to many amazing restaurants that cater to a variety of tastes. Whether you’re in the mood for pizza, seafood, or something sweet, there’s something for everyone. With its friendly atmosphere and delicious food, dining in Fairfield is always a treat.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c719574bb1f503eb",
+      "title": "17 Best Restaurants in Fairfield, CT - Restaurant Observer",
+      "url": "https://restaurantobserver.com/restaurants-fairfield-connecticut/",
+      "summary": "For a romantic meal or a hip time with friends, Fairfield offers more delicious restaurants than you can even imagine. With its local close to the Long Island Sound, Fairfield offers some dynamite restaurants that specialize in local fish and other sea creatures.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f1c2d0a3b27ac52",
+      "title": "2022–23 Premier League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Premier_League",
+      "summary": "The 2022–23 Premier League was the 31st season of the Premier League and the 124th season of top-flight English football overall. Fulham, Bournemouth and Nottingham Forest were the three promoted clubs from the 2021–22 EFL Championship, replacing Burnley, Watford and Norwich City.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -878,12 +981,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ccab5a0c62f2c2a5",
-      "title": "HUAWEI Support - Official Consumer Site",
-      "url": "https://consumer.huawei.com/en/support/",
-      "summary": "Visit HUAWEI service center to quickly get support on products, warranty inquiries, system updates, answers to FAQs, and troubleshooting tips.",
+      "id": "34591cfbaa4f7293",
+      "title": "2023–24 Premier League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League",
+      "summary": "The 2023–24 Premier League was the 32nd season of the Premier League and the 125th season of top-flight English football overall. The season began on 11 August 2023 and concluded on 19 May 2024. [2][3][4][5]",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -908,12 +1011,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "15a09b9a8aca3464",
-      "title": "InstallShield LE in Visual Studio 2012 - social.microsoft.com",
-      "url": "https://social.microsoft.com/Forums/mvpforum/en-US/be55ef5c-6896-43b4-b2c0-ec2f09c881ad/installshield-le-in-visual-studio-2012",
-      "summary": "We'd like to have previous installs uninstalled automatically when new install is executed, but, haven't found a successful way to do this. We followed these steps to create a setup file: 1) Increment the assembly version's release number for the app 2) Change the Product Version in installation project to match the app's assmebly version",
+      "id": "bbad1711bdac02b1",
+      "title": "64 Best Restaurants in Torrance, CA [2026 Updated]",
+      "url": "https://eattheway.com/restaurants-in-torrance-ca/",
+      "summary": "The Japanese fried chicken delights, and the miso soup is the best ever. While the portions may be small and prices hover around $18-25 for mains, the well-executed flavors make it worth the visit. The cozy atmosphere features warm lighting and simple wooden tables, creating an intimate feel.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -926,8 +1029,67 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
-        "tool"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9d36fdc8564330b",
+      "title": "A Foodie's Guide to the Best Restaurants in Fairfield, Connecticut",
+      "url": "https://hometownplate.com/list/best-restaurants-in-fairfield-connecticut/",
+      "summary": "This lovely town boasts a plethora of dining options, making it a haven for foodies seeking the best restaurants in Fairfield. With a rich tapestry of culinary delights ranging from cozy cafes to upscale eateries, Fairfield is a gastronomic paradise waiting to be explored.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f8929b665f64386f",
+      "title": "Account Services | Golden Pacific Bank",
+      "url": "https://www.goldenpacificbank.com/services-tools/account-services/",
+      "summary": "Online Banking with Bill Pay Banking that's secure, easy to use, and always available on any internet-connected device — free with any Golden Pacific Bank checking or savings account.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -939,12 +1101,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e6cb207f0de8cee",
-      "title": "Integrated Login for Microsoft Edge Browser?",
-      "url": "https://social.microsoft.com/Forums/ja-JP/4f268979-a4c0-4e2d-a2ef-5cb232e7d56d/integrated-login-for-microsoft-edge-browser",
-      "summary": "For Microsoft Edge, it seems to be still a long way to go. Regards Please remember to mark the replies as answers if they help, and unmark the answers if they provide no help. If you have feedback for TechNet Support, contact tnmff@microsoft.com. 2015年8月21日 2:21 text/html2015/09/08 19:58:58dpmoody0 0 サインインして投票",
+      "id": "e0f176fe3fe524f4",
+      "title": "Berega - Полно вам снежочки (Polno vam snezhochki) lyrics",
+      "url": "https://lyricstranslate.com/en/berega-%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE-%D0%B2%D0%B0%D0%BC-%D1%81%D0%BD%D0%B5%D0%B6%D0%BE%D1%87%D0%BA%D0%B8-lyrics.html",
+      "summary": "Полно вам снежочки (Polno vam snezhochki) lyrics: Полно вам, снежочки, на талой земле лежать, / Полно вам, казаченьки, горе горевать. / Полно вам,…",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -969,490 +1131,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2f97b2e7675c9a3f",
-      "title": "Invert Float Value Between 0.5 and 1?????? - social.microsoft.com",
-      "url": "https://social.microsoft.com/Forums/partner/en-US/eb03a737-8328-4588-8f52-106f5f3521a4/invert-float-value-between-05-and-1",
-      "summary": "A linear interpolation does the reverse. It says, \"give me a number that is some portion of the way from START to END,\" where you supply the portion as a number between 0 and 1. Give 0 for START and give 1 for END and give a number in between 0 and 1, to get a number proportionally in between START and END. (often called \"lerp\" in shader languages).",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8607f35482647a30",
-      "title": "Is their a way to retrieve currency and date format of all users in ms ...",
-      "url": "https://social.microsoft.com/Forums/en-US/b6d710d1-5a00-4f81-a62e-e244886d0cd4/is-their-a-way-to-retrieve-currency-and-date-format-of-all-users-in-ms-crm-2013-online",
-      "summary": "I have a requirement to take a report of all the users personal settings like currency and date. Is there any way to do this in online version of CRM? Regards, Rekha.J Edited byRekha JTuesday, January 27, 2015 8:21 AM Tuesday, January 27, 2015 8:19 AM",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "138bfdec767a2818",
-      "title": "Is WHS on HP's EX 485 Media Smart Server ... - social.microsoft.com",
-      "url": "https://social.microsoft.com/Forums/en-US/6e1c6af6-ea0d-4020-90bc-4ebc05b2a3cb/is-whs-on-hps-ex-485-media-smart-server-different-than-windows-home-server-2011",
-      "summary": "I am running Windows Home Server software on an Hewlett Packard EX-485 Media Smart Server. I am confused as to whether there is two different version of Windows Home Server software. Also the HP Media Smart Server came equipped with the Windows Home Server software and McAfee antivirus protection. McAfee will discontinue support of this software effective 9/19?11. I have been looking for a ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "94e3fdb212cc608b",
-      "title": "Jo Ann Beard - Alchetron, The Free Social Encyclopedia",
-      "url": "https://alchetron.com/Jo-Ann-Beard",
-      "summary": "Jo Ann Beard is an American essayist. Beard was born in 1955, Chicago, IL. Beard graduated from the University of Iowa with a BFA and MA. She teaches at Sarah Lawrence College. She worked as an editor for a physics journal at the University of Iowa and was a colleague of the victims of the Universit",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3d4522be54b7fd1",
-      "title": "Jo Ann Beard - reference.org",
-      "url": "https://reference.org/facts/Jo_Ann_Beard/3GFeE7tk",
-      "summary": "Beard was born in 1955 in Moline, Illinois. 1 She graduated from the University of Iowa with a BFA degree in art, and from the Nonfiction Writing Program with an MFA in creative nonfiction.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eae349bf06c685cf",
-      "title": "Jo Ann Beard - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Jo_Ann_Beard",
-      "summary": "Beard was born in 1955 in Moline, Illinois. [1] She graduated from the University of Iowa with a BFA degree in art, and from the Nonfiction Writing Program with an MFA in creative nonfiction.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ee66b6287de966b",
-      "title": "Jo Ann Beard - Wikiwand",
-      "url": "https://www.wikiwand.com/en/Jo_Ann_Beard",
-      "summary": "Beard was born in 1955 in Moline, Illinois. [1] She graduated from the University of Iowa with a BFA degree in art, and from the Nonfiction Writing Program with an MFA in creative nonfiction.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe1ddacfde57fcf0",
-      "title": "Jo Ann Beard Obituary (2026) - Lebanon, TN - Legacy.com",
-      "url": "https://www.legacy.com/us/obituaries/name/jo-beard-obituary?id=62585018",
-      "summary": "Jo Beard Obituary In Loving memory of Jo Ann Templeton Beard Jo Ann Templeton Beard, 96 of Lebanon, Tennessee, passed away peacefully at home on September 18, 2026. She was born on October 7, 1929 in",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a72b83ddd6d8da4",
-      "title": "Jo Ann Beard Obituary | 1929 - 2026 | Lebanon, TN - Tribute Archive",
-      "url": "https://www.tributearchive.com/obituaries/49664384/jo-ann-beard",
-      "summary": "She was born on October 7, 1929 in Durant, Oklahoma, to Birdie S. (Bohannon) and Charles H. Templeton. Jo Ann was a beloved mother whose grace, beauty, creativity and gentle spirit touched everyone who knew her. Above all she treasured her family and devoted her life to loving and caring for them.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7f8f087f391ef5ad",
-      "title": "Jo Ann Beard | Bennington College",
-      "url": "https://www.bennington.edu/academics/faculty/jo-ann-beard",
-      "summary": "Jo Ann Beard is the author of The Boys of My Youth, Festival Days, and In Zanesville. She is an emeritus professor at Sarah Lawrence College, where she taught in both the undergraduate and graduate programs.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c41e7dea4e71024f",
-      "title": "Jo Ann Beard | Obituary",
-      "url": "https://wilsoncountysource.com/obituary-jo-ann-beard/",
-      "summary": "She was born on October 7, 1929 in Durant, Oklahoma, to Birdie S. (Bohannon) and Charles H. Templeton. Jo Ann was a beloved mother whose grace, beauty, creativity and gentle spirit touched everyone who knew her. Above all she treasured her family and devoted her life to loving and caring for them.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a43592763bbb7b1a",
-      "title": "Jo Ann Beard, 71 - Miami, FL - Reputation & Contact Details",
-      "url": "https://www.mylife.com/jo-beard/e42092193516",
-      "summary": "Post or read reviews for Jo Beard below. Reviews help people learn more about others, just like Yelp does for businesses, and does affect the Reputation Score.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "52c0dfca19732760",
-      "title": "Jo Beard Obituary, Age 96 - September 18, 2026 - Lebanon, Tennessee",
-      "url": "https://www.legacy.com/person/jo-ann-beard-62490020",
-      "summary": "Read the obituary of Jo Ann Beard, age 96 (October 7, 1929 - September 18, 2026), with arrangements entrusted to Sellars Funeral Home - Lebanon.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c685fba3d3d0c284",
-      "title": "List of allowable SSRS functions and non-allowalble SSRS function for ...",
-      "url": "https://social.microsoft.com/Forums/en-US/c79909ba-bcd3-469a-b74b-8567fc956af3/list-of-allowable-ssrs-functions-and-nonallowalble-ssrs-function-for-crm-2011-online-reports-fetch",
-      "summary": "Can anyone provide a link which provides details about the list of supported SSRS functions or expressions to use in CRM 2011 Online fetch based reports (That use fetchxml) and also the list of unsupported SSRS functions or expressions that will not be allowed or blocked by CRM 2011 Online fetch based reports?",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6aab38433e94621d",
-      "title": "Mary Jane Shoe 1920s - Etsy",
-      "url": "https://www.etsy.com/market/mary_jane_shoe_1920s",
-      "summary": "Check out our mary jane shoe 1920s selection for the very best in unique or custom, handmade pieces from our mary janes shops.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "54695e47d82f51c9",
-      "title": "Millie 1920s Mary Jane Shoes (Black) - American Duchess",
-      "url": "https://www.americanduchess.com/products/millie-womens-1920s-mary-jane-shoes-black",
-      "summary": "Beautiful historical shoes from the Edwardian and 1920s period, perfect for historical reenactment, costume events theater, historybounding, cottage core, dark academia, or everyday wear.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c90ea4f05358ebcc",
-      "title": "New Volkswagen and Used Car Dealer Serving Los Angeles ...",
-      "url": "https://www.vwdtla.com/",
-      "summary": "It is our mission to be the automotive home of drivers in the Los Angeles CA area. We provide a vast selection of new and pre-owned vehicles, exceptional car care and customer service with a smile!",
+      "id": "3edaa615c55fe8aa",
+      "title": "COMMUNITY VOLKSWAGEN - Updated October 2026 - 90 Reviews - Yelp",
+      "url": "https://www.yelp.com/biz/community-volkswagen-santa-maria",
+      "summary": "COMMUNITY VOLKSWAGEN, 2150 S College Dr, Santa Maria, CA 93455, 39 Photos, (805) 348-3221, Mon - 8:00 am - 8:00 pm, Tue - 8:00 am - 8:00 pm, Wed - 8:00 am - 8:00 pm, Thu - 8:00 am - 8:00 pm, Fri - 8:00 am - 8:00 pm, Sat - 8:30 am - 7:00 pm, Sun - 10:00 am - 6:00 pm",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1467,6 +1149,36 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "11bca8d47aff457a",
+      "title": "Contact Us - Golden Pacific Bank",
+      "url": "https://www.goldenpacificbank.com/d/contact-us.html",
+      "summary": "Contact Us Thank you for visiting Golden Pacific Bank! Come back soon! In our constant effort to better serve you, we welcome any and all feedback you have. Please don't hesitate to let us know your thoughts, questions, suggestions, or comments. Fill out the secure form below and someone will get back to you as soon as possible. (800) 582-5503",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
         "news"
       ],
       "primary_type": "news",
@@ -1479,10 +1191,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "67dea6c63fab8505",
-      "title": "no puedo instalar office - social.microsoft.com",
-      "url": "https://social.microsoft.com/Forums/es-ES/14f249c7-f7b3-48b4-bd44-73f808fa5ba1/no-puedo-instalar-office",
-      "summary": "tengo un dell studio s1745 con windows 7, y voy a instalar office 2007 y me aparece el siguiente error: erro1935 , con un codigo larguisimo y al final HRESULT: 0X 8007002",
+      "id": "53d26d70f7e74e8b",
+      "title": "Date Calculator: Add to or Subtract From a Date",
+      "url": "https://www.timeanddate.com/date/dateadd.html%23",
+      "summary": "Find a specific business date and calculate the working days in a given period. The Date Calculator adds or subtracts days, weeks, months and years from a given date.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9b1ca6ff42b70ea8",
+      "title": "Dining — Experience Fairfield",
+      "url": "https://www.experiencefairfieldct.org/dining-list",
+      "summary": "Fairfield’s dining scene is diverse and dynamic, offering everything from artisan bites to high-energy bar atmospheres and refined dining. With two annual restaurant weeks, seasonal menus, and a mix of traditional and innovative establishments, there’s always something fresh and delicious to try.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27403a98ee5df49c",
+      "title": "England Premier League 23/24 Results | LiveScore",
+      "url": "https://www.livescore.com/en/football/england/premier-league-2023-2024/results/",
+      "summary": "Get all the latest England Premier League 23/24 live football results from LiveScore, providers of fast football live score content.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1509,12 +1281,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7445aa3af81cd950",
-      "title": "NVIDIA SHIELD - The Best Streaming Media Device",
-      "url": "https://www.nvidia.com/en-us/shield/",
-      "summary": "The best streaming media device today with all the amazing features.",
+      "id": "3c2ef18f0d02ced6",
+      "title": "English Premier League Scores - 2026 Season - ESPN",
+      "url": "https://www.espn.com/soccer/scoreboard/_/league/eng.1",
+      "summary": "Live scores for English Premier League games on ESPN. Includes box scores, video highlights, play breakdowns and updated odds.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1527,221 +1299,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d0ba822344f98bc",
-      "title": "NVIDIA SHIELD TV and Accessories - Streaming Media Devices",
-      "url": "https://marketplace.nvidia.com/en-us/consumer/streaming-media-devices/",
-      "summary": "Shop NVIDIA SHIELD TV streaming media devices at the NVIDIA Consumer Marketplace. 4K entertainment. GeForce NOW cloud gaming and the Google Assistant built-in.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7bda2f4f195a3b33",
-      "title": "Premium Cotton Batting for Quilting - Connecting Threads",
-      "url": "https://www.connectingthreads.com/batting/cotton-batting/c/601602",
-      "summary": "Shop premium cotton batting for quilting at Connecting Threads. Discover high-quality, affordable options perfect for your next quilting project.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "96422400fd4e7bc0",
-      "title": "Quilt As You Go Tutorial | Connecting Threads",
-      "url": "https://www.connectingthreads.com/tutorials/t/quilt-as-you-go/74",
-      "summary": "Discover easy Quilt-As-You-Go tutorials at Connecting Threads. Perfect for beginners and experts alike. Start your quilting journey today!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "81e7545ecb496d80",
-      "title": "Quilt Backing Fabric | Connecting Threads",
-      "url": "https://www.connectingthreads.com/fabrics/108-wide-quilt-backing-fabric/c/60020326",
-      "summary": "Shop our selection of 108\" wide quilt backing fabric, designed to finish quilts with fewer seams for a smooth, professional look. These extra-wide 100% cotton quilt backing fabrics coordinate with our exclusive fabric collections, making it easy to create beautiful quilt backs for throws, bed quilts, and king-size quilts. Our versatile 108\" wide fabrics are also ideal for tablecloths, duvet ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0713c5efb4e00b05",
-      "title": "Recovery files to recover NVIDIA Shield TV 2019 (Tube Version)",
-      "url": "https://forums.developer.nvidia.com/t/recovery-files-to-recover-nvidia-shield-tv-2019-tube-version/294182",
-      "summary": "Hi, unfortunately my shield got defective after a broken update to version 9.1.1. It cannot pair with a remote anymore and needs a horrible amount of time to boot. Since I am stuck at the pairing screen, I tried to downgrade to 9.0.0 via sd card in fastboot menu, but unfortunately this did not work, since the recovery refuses to install an older version over a new one. I opened the tube and ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "sdk"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3c98a1afeb1e8018",
-      "title": "SHIELD Developer OS Images | NVIDIA Developer",
-      "url": "https://developer.nvidia.com/shield-developer-os-images",
-      "summary": "SHIELD Developer OS Images As a service to developers, NVIDIA makes \"beta\", \"rooted\" and \"early access\" versions of certain SHIELD system images available for download.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "962cf3004523d304",
-      "title": "SHIELD Experience Upgrade 5.2 | NVIDIA SHIELD",
-      "url": "https://support-shield.nvidia.com/android-tv-release-notes/5.2/",
-      "summary": "With Plex on SHIELD, you can now watch and record free over-the-air TV in up to 1080 resolution with 5.1 surround sound - and stream recorded shows to any device, anywhere in the world*.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
         "video"
       ],
-      "primary_type": "model",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1751,100 +1311,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c378874c96f6bc3a",
-      "title": "SHIELD Tablet K1 User Guide - Nvidia",
-      "url": "https://support-shield.nvidia.com/tablet-k1-user-guide/index.htm",
-      "summary": "Introduction About SHIELD Tablet How to Use This Guide SHIELD Tablet Overview Get Started",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04825f03dfcbd8fb",
-      "title": "SHIELD TV Pro Streaming Media Player | NVIDIA",
-      "url": "https://www.nvidia.com/en-us/shield/shield-tv-pro/",
-      "summary": "Shield TV Pro streaming device comes with 4K HDR, Dolby Vision and Atmos having more storage & RAM with Plex media server",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9172e718ec85f732",
-      "title": "The SHIELD: Self-Healing Interconnect - NVIDIA",
-      "url": "https://network.nvidia.com/related-docs/whitepapers/WP_Mellanox_SHIELD.pdf",
-      "summary": "Conclusion Networks have reached a greater degree of autonomy, detecting and correcting link failures and ensuring reliable, high performance data delivery, even as the industry approaches Exascale computing. With SHIELD, Mellanox InfiniBand solutions are unleashing the possibilities of next generation high performance computing, today.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7cabac5c22f9a797",
-      "title": "William's Crossing Quilt Pattern Download - Connecting Threads",
-      "url": "https://www.connectingthreads.com/william-s-crossing-quilt-pattern-download/p/10694D",
-      "summary": "Download the William's Crossing Quilt Pattern from Connecting Threads. Perfect for quilters of all levels. Easy-to-follow instructions included!",
+      "id": "8903bae0339ac729",
+      "title": "Golden Pacific",
+      "url": "https://goldenpacificgroup.com/",
+      "summary": "Streamlined logistics, worldwide connections. Where trade meets innovation for seamless transactions and global success.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1871,12 +1341,1004 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "66a1b0e92290f6de",
-      "title": "Women’s Mary Jane Shoes in the 1920s – VCG",
-      "url": "https://vintageclothingguides.com/decades/womens-mary-jane-shoes-in-the-1920s/",
-      "summary": "In the 1920s, women's Mary Jane shoes became a signature of sophistication and empowerment. Rooted in children's fashion, they evolved into stylish adult wear, symbolizing breaking free from traditional norms.",
+      "id": "2fd8db36e3cd1993",
+      "title": "Golden Pacific Bank Yuba City Branch - Yuba City, CA",
+      "url": "https://www.bankbranchlocator.com/golden-pacific-bank-yuba-city-branch.html",
+      "summary": "Golden Pacific Bank Yuba City branch is located at 620 N. Walton Ave, Yuba City, CA 95993 and has been serving Sutter county, California for over 30 years. Get hours, reviews, customer service phone number and driving directions.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1eeecfed28794b00",
+      "title": "Golden Pacific Bank Yuba City, CA: Hours, Routing # — October 2026",
+      "url": "https://www.branchspot.com/ca/yuba-city/golden-pacific-bank/620-n-walton-ave/",
+      "summary": "Golden Pacific Bank is a community bank with a branch at 620 N. Walton Ave in Yuba City, CA. This branch opened on January 24, 1996 as a satellite of the institution.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f949238a06a903ac",
+      "title": "Golden Pacific Bank | Personal & Business Banking",
+      "url": "https://www.goldenpacificbank.com/",
+      "summary": "Golden Pacific Bancorp's core values define our culture. This culture enables our team to provide custom financial solutions to the communities we serve.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "984744ced10f4306",
+      "title": "Golden Pacific – Innovation Begins Here",
+      "url": "https://golden-pacific.com/",
+      "summary": "GOLDEN PACIFIC. Golden Pacific products represent the highest quality, finest craftsmanship, latest designs, newest fabrications, and the most relevant features.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e24fe0c5386fadd1",
+      "title": "Locations & Hours - Golden Pacific Bank",
+      "url": "https://www.goldenpacificbank.com/about-us/locations-hours.html",
+      "summary": "We'd love to see you in person! Please feel free to drop into any branch location near you. (800) 582-5503",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "752f7b1bd9ea79a6",
+      "title": "Long Beach, CA Live Webcams | Plan a Trip to California Today",
+      "url": "https://www.livebeaches.com/city/long-beach-ca/",
+      "summary": "Check the current weather, surf conditions, and enjoy scenic beach views from popular beaches and coastal towns in California. Check in anytime to see what’s happening at the beach.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "354e77dcb0540b0d",
+      "title": "Personal Checking Accounts | Golden Pacific Bank",
+      "url": "https://www.goldenpacificbank.com/personal/personal-checking/",
+      "summary": "Contact Us Contact Golden Pacific Bank branch staff to learn more or to open an account.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb0cbf44b50f25dc",
+      "title": "Premier League - results archive, standings - Flashscore.com",
+      "url": "https://www.flashscore.com/football/england/premier-league/archive/",
+      "summary": "Find Premier League results archive - Premier League results database and past year's standings.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e8389d7de279c14",
+      "title": "Premier League - Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.com/sport/football/premier-league/scores-fixtures/2023-01",
+      "summary": "Premier League scores, results and fixtures on BBC Sport, including live football scores",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9629ca489e30288c",
+      "title": "Premier League - Scores & Fixtures - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/premier-league/scores-fixtures",
+      "summary": "Premier League scores, results and fixtures on BBC Sport, including live football scores",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6079967e11b0672a",
+      "title": "Premier League 2023/2024 results, Football England - Flashscore",
+      "url": "https://www.flashscore.com/football/england/premier-league-2023-2024/",
+      "summary": "Premier League 2023/2024 results page on Flashscore.com offers results, Premier League 2023/2024 standings and match details.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c289d7de68136fa0",
+      "title": "Premier League 2023/2024 Results, Football England - Flashscore.co.uk",
+      "url": "https://www.flashscore.co.uk/football/england/premier-league-2023-2024/",
+      "summary": "Premier League 2023/2024 results, tables and match informations.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "67546229782794f2",
+      "title": "Premier League Results Archive / Database | Livesport.com",
+      "url": "https://www.livesport.com/en/soccer/england/premier-league/archive/",
+      "summary": "Whether you want to check an old score, track how teams performed in different years, or analyze trends across seasons, the archive has you covered. Each archived season includes comprehensive match details and team standings to help you compare past and present.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d7c68a1f50c109c",
+      "title": "THE 10 BEST Restaurants in Fairfield (Updated October 2026)",
+      "url": "https://www.tripadvisor.com/Restaurants-g33780-Fairfield_Connecticut.html",
+      "summary": "Best Dining in Fairfield, Connecticut: See 6,128 Tripadvisor traveler reviews of 201 Fairfield restaurants and search by cuisine, price, location, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e506a3a7c2697a6",
+      "title": "The 15 Best Restaurants in Torrance - Los Angeles - The Infatuation",
+      "url": "https://www.theinfatuation.com/los-angeles/guides/the-best-restaurants-in-torrance",
+      "summary": "In addition to the top-notch noodle bowls, they also makes some of the best spicy karaage we’ve ever had. Get a large order of the juicy, honey-coated Japanese fried chicken with a side of rice for the table, and try not to argue over the leftovers.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0daf86baf2381fd4",
+      "title": "THE 30 BEST Restaurants in Fairfield - With Menus, Reviews, Photos ...",
+      "url": "https://www.restaurantji.com/ct/fairfield/",
+      "summary": "We've gathered up the best places to eat in Fairfield. Our current favorites are: 1: Taj Fairfield, 2: Brick Walk Tavern, 3: Green Chilitos, 4: Puerto Vallarta Fairfield, 5: Taste Of Everest",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "003765c797eea1be",
+      "title": "THE BEST 10 RESTAURANTS IN TORRANCE, CA - UPDATED OCTOBER 2026 ... - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=torrance%2C+CA",
+      "summary": "Best Restaurants in Torrance, CA - Last Updated October 2026 - Din Tai Fung, North Italia, Umaimi, Local Kitchen, Mumu Hot Pot, Origami Handroll x Kushiyaki Bar, Onki, Unico Tokyo Pasta - Redondo Beach, Salt & Pearl, NAM Kitchen - Gardena",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses; ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6192a853aaca6cd3",
+      "title": "Used Vehicles for Sale in Santa Maria, CA",
+      "url": "https://www.communityvw.net/search/used/?tp=used",
+      "summary": "Used Vehicles for Sale in Santa Maria, CA. Check out our Community Volkswagen of Santa Maria used inventory, we have the right vehicle to fit your style and budget!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0bba66280b94757a",
+      "title": "Volkswagen Dealer Santa Maria CA New & Used Cars for Sale - Community ...",
+      "url": "https://www.communityvw.net/",
+      "summary": "Community Volkswagen of Santa Maria in Santa Maria, CA offers new and used Volkswagen cars, trucks, and SUVs to our customers. Visit us for sales, financing, service, and parts!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "513a372be022e932",
+      "title": "Weeks Between Dates Calculator",
+      "url": "https://www.mega-calculator.com/everyday-life/weeks-between-dates/",
+      "summary": "Find the number of weeks between two dates instantly. Enter a start and end date to count whole weeks, days, months, or years between them.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a4379a06437b6d0",
+      "title": "Weeks Between Two Dates Calculator",
+      "url": "https://www.ultimatefinancecalculator.com/calculators/weeks-between-two-dates-calculator/",
+      "summary": "Calculate the exact number of weeks between any two dates, including whole weeks, remainder days, weekdays, and a week-by-week breakdown table.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "895f390cb0b9093d",
+      "title": "Weeks Between Two Dates Calculator",
+      "url": "https://datetimecalculator.net/weeks-between-two-dates-calculator",
+      "summary": "Use this Weeks Between Two Dates Calculator when you want to figure the number of weeks and remaining days between two separate dates. Manually counting them off on your calendar is quite time consuming than just quickly enter the dates on this calculator.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05ed7d011da5913c",
+      "title": "Weeks Calculator",
+      "url": "https://datetimecalculator.net/weeks-calculator",
+      "summary": "To use the Weeks Calculator, you just need to pick first the operation you want to use - add weeks, subtract weeks or get the weeks between two dates. You just need to enter the values on corresponding inputs and click on Calculate button. Here's a more detailed step by step guide.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b4304788f203d2d",
+      "title": "Weeks Calculator - Between Dates, Add/Subtract, Mon-Fri Mode",
+      "url": "https://infinitycalculator.com/time/weeks-calculator",
+      "summary": "Enter your dates or week values below to find the number of weeks between two dates, or to add or subtract weeks from a date. The calculator will show you the result in weeks, days, and months.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2fec6a17e85562f6",
+      "title": "Weeks Calculator - Count Weeks Between Dates Quickly",
+      "url": "https://timecalculators.io/weeks-calculator",
+      "summary": "Use the Weeks Calculator to determine how many weeks fall between two dates, or to add/subtract weeks from any date. Fast, free, and accurate ideal for planning, scheduling, and time tracking.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc5a0b741bd9a526",
+      "title": "Weeks Calculator - Count Weeks Between Two Dates",
+      "url": "https://calculatorcafe.com/time/weeks-calculator/",
+      "summary": "Count weeks between two dates, add weeks to a date, and convert weeks to days or months. Includes pregnancy weeks, week numbers, and worked examples.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da2218b9441835fc",
+      "title": "Welcome to Golden Pacific Imaging",
+      "url": "https://goldenpacificimaging.com/",
+      "summary": "Welcome to Golden Pacific Imaging We are a leading medical imaging provider, offering fast, flexible scheduling to get patients back on the path to wellness. We pride ourselves on delivering expert care with exceptional service.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e359362396a76fc",
+      "title": "«Полно,вам,снежочки» - Московский Казачий Хор",
+      "url": "https://music.youtube.com/watch?v=ZiqxSnV0kZ4",
+      "summary": "Playing from «Полно,вам,снежочки» - Московский Казачий Хор Mix Autoplay Add similar content to the end of the queue «Полно,вам,снежочки» - Московский Казачий Хор",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8aa3e36fbfb105b1",
+      "title": "Полно Вам Снежочки - YouTube",
+      "url": "https://www.youtube.com/watch?v=PTMyOPysUqk",
+      "summary": "Provided to YouTube by ANYWAV.COM Music DistributionПолно Вам Снежочки · Казачки КавказаПолно Вам Снежочки℗ 2026 Cosacks of the WorldReleased on ...",
+      "discovery_channel": "broad_web+retail",
+      "query": "smartglasses; display smart glasses; titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1752ceeda97aea65",
+      "title": "Полно вам снежочки — Ансамбль «Православный Дон» (альбом «Православный ...",
+      "url": "https://audset.ru/track/45858066",
+      "summary": "Слушайте песню «Полно вам снежочки» Ансамбль «православный дони из альбома «Православный Дон» онлайн бесплатно. Скачать mp3, длительность 1:20, читать текст песни. Аудсет — каталог музыки.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4a5d04e37aa984d3",
+      "title": "Полно вам, снежочки (Enough for you, snowballs) - Genius",
+      "url": "https://genius.com/Moskazhor-enough-for-you-snowballs-lyrics",
+      "summary": "Полно вам, снежочки (Enough for you, snowballs) Lyrics: Полно вам снежочки на талой земле лежать / Полно вам, казаченьки ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0fb2b243f5ba94bf",
+      "title": "Полно вам, снежочки (Polno vam, snezhochki) - English translation",
+      "url": "https://lyricstranslate.com/en/%D0%BF%D0%BE%D0%BB%D0%BD%D0%BE-%D0%B2%D0%B0%D0%BC-%D1%81%D0%BD%D0%B5%D0%B6%D0%BE%D1%87%D0%BA%D0%B8-oh-dear-snow.html",
+      "summary": "Полно вам, снежочки (Polno vam, snezhochki) (English translation): Oh dear snow, don't be lying on the thawing ground, / Oh dear Cossacks, don't be…",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a9b4929503e05ae2",
+      "title": "Текст песни полно вам снежочки",
+      "url": "https://pesni-accordy.ru/teksty2/tekst-pesni-polno-vam-snezhochki.html",
+      "summary": "Текст песни полно вам снежочки | Сборник текстов песен и аккордов на разных языках",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4fc7fc7ed5cf0bb",
+      "title": "Текст песни Фольклорно-этнографический ансамбль - Полно вам, снежочки ...",
+      "url": "https://teksti.org/20/Folklorno-etnograficheskiy-ansambl/tekst-pesni-Polno-vam-snejochki",
+      "summary": "На этой странице находится текст песни Фольклорно-этнографический ансамбль - Полно вам, снежочки..., а также перевод песни и видео или клип.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
