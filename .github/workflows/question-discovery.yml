@@ -4,6 +4,14 @@ on:
   schedule:
     - cron: "17 10 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/question_discovery.py'
+      - 'research/question-sources.json'
+      - 'research/QUESTION_DISCOVERY_PIPELINE.md'
+      - 'tests/test_question_discovery.py'
+      - '.github/workflows/question-discovery.yml'
   pull_request:
     paths:
       - 'scripts/question_discovery.py'
