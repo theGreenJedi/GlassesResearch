@@ -40,6 +40,8 @@ SMART_TERMS = (
     "open source glass", "recon jet", "north focals", "microled",
 )
 HEADERS = {"User-Agent": "GlassesResearch-question-discovery/1.0 (+https://glassesresearch.org/)"}
+SOURCE_WARNINGS = {}
+
 
 
 def norm(s: str) -> str:
@@ -122,13 +124,19 @@ def github_questions(queries: list[str]) -> list[dict]:
     if token:
         headers["Authorization"] = f"Bearer {token}"
     out = []
+    errors = []
     for query in queries:
-        r = requests.get("https://api.github.com/search/issues", params={
-            "q": f"{query} is:issue -repo:theGreenJedi/GlassesResearch",
-            "per_page": 50, "sort": "updated", "order": "desc",
-        }, headers=headers, timeout=35)
-        r.raise_for_status()
-        for item in r.json().get("items", []):
+        try:
+            r = requests.get("https://api.github.com/search/issues", params={
+                "q": f"{query} is:issue -repo:theGreenJedi/GlassesResearch",
+                "per_page": 50, "sort": "updated", "order": "desc",
+            }, headers=headers, timeout=35)
+            r.raise_for_status()
+            items = r.json().get("items", [])
+        except Exception as exc:
+            errors.append(f"{query}: {exc}")
+            continue
+        for item in items:
             context = clean((item.get("title") or "") + " " + (item.get("body") or "")[:5000])
             if not any(term in norm(context) for term in SMART_TERMS):
                 continue
@@ -140,21 +148,31 @@ def github_questions(queries: list[str]) -> list[dict]:
                     "metrics": {"comments": item.get("comments", 0),
                                 "reactions": (item.get("reactions") or {}).get("total_count", 0)},
                 })
+    if errors:
+        SOURCE_WARNINGS["github_issues"] = errors[:5]
+        if len(errors) == len(queries):
+            raise RuntimeError(f"all GitHub search queries failed: {errors[0]}")
     return out
 
 
 def stackexchange_questions(searches: list[dict]) -> list[dict]:
     out = []
+    errors = []
     for spec in searches:
-        r = requests.get("https://api.stackexchange.com/2.3/search/advanced", params={
-            "site": spec["site"], "q": spec["q"], "sort": "activity",
-            "order": "desc", "pagesize": 75,
-        }, headers=HEADERS, timeout=35)
-        r.raise_for_status()
-        payload = r.json()
-        if payload.get("error_id"):
-            raise RuntimeError(payload.get("error_message", "Stack Exchange API error"))
-        for item in payload.get("items", []):
+        try:
+            r = requests.get("https://api.stackexchange.com/2.3/search/advanced", params={
+                "site": spec["site"], "q": spec["q"], "sort": "activity",
+                "order": "desc", "pagesize": 75,
+            }, headers=HEADERS, timeout=35)
+            r.raise_for_status()
+            payload = r.json()
+            if payload.get("error_id"):
+                raise RuntimeError(payload.get("error_message", "Stack Exchange API error"))
+            items = payload.get("items", [])
+        except Exception as exc:
+            errors.append(f"{spec}: {exc}")
+            continue
+        for item in items:
             # Stack Exchange posts are user questions, even without a trailing ?.
             q = clean(item.get("title") or "")
             context = norm(q + " " + spec["q"])
@@ -166,16 +184,25 @@ def stackexchange_questions(searches: list[dict]) -> list[dict]:
                 "observed_at": date.today().isoformat(),
                 "metrics": {"score": item.get("score", 0), "answer_count": item.get("answer_count", 0)},
             })
+    if errors:
+        SOURCE_WARNINGS["stackexchange"] = errors[:5]
+        if len(errors) == len(searches):
+            raise RuntimeError(f"all Stack Exchange searches failed: {errors[0]}")
     return out
 
 
 def reddit_rss_questions(feeds: list[str]) -> list[dict]:
     out = []
     ns = {"atom": "http://www.w3.org/2005/Atom"}
+    errors = []
     for feed in feeds:
-        r = requests.get(feed, headers=HEADERS, timeout=35)
-        r.raise_for_status()
-        root = ET.fromstring(r.text)
+        try:
+            r = requests.get(feed, headers=HEADERS, timeout=35)
+            r.raise_for_status()
+            root = ET.fromstring(r.text)
+        except Exception as exc:
+            errors.append(f"{feed}: {exc}")
+            continue
         for entry in root.findall("atom:entry", ns):
             title = entry.findtext("atom:title", default="", namespaces=ns)
             summary = entry.findtext("atom:content", default="", namespaces=ns)
@@ -187,6 +214,10 @@ def reddit_rss_questions(feeds: list[str]) -> list[dict]:
                     "question": q, "source": "reddit_rss", "source_url": url,
                     "observed_at": date.today().isoformat(),
                 })
+    if errors:
+        SOURCE_WARNINGS["reddit_rss"] = errors[:5]
+        if len(errors) == len(feeds):
+            raise RuntimeError(f"all Reddit RSS feeds failed: {errors[0]}")
     return out
 
 
@@ -303,6 +334,7 @@ def priority(item: dict) -> tuple:
 
 
 def main() -> int:
+    SOURCE_WARNINGS.clear()
     reg = load_registry()
     reg["principle"] = (
         "At least 1,000 published, evidence-backed answers; no ceiling. "
@@ -322,8 +354,12 @@ def main() -> int:
         try:
             batch = collect()
             observations.extend(batch)
-            statuses[name] = {"status": "ok", "observations": len(batch)}
-            if name in {"github_issues", "stackexchange", "reddit_rss"}:
+            statuses[name] = {"status": "partial" if name in SOURCE_WARNINGS else "ok", "observations": len(batch)}
+            if name in SOURCE_WARNINGS:
+                statuses[name]["warnings"] = SOURCE_WARNINGS[name]
+            if name in {"github_issues", "stackexchange", "reddit_rss"} and (cfg.get({"github_issues":"github_queries", "stackexchange":"stackexchange", "reddit_rss":"reddit_rss"}[name]) or batch):
+                working_independent_sources += 1
+            if name == "approved_feed" and batch:
                 working_independent_sources += 1
         except Exception as exc:
             statuses[name] = {"status": "unavailable", "error": str(exc)[:300]}
@@ -364,7 +400,7 @@ def main() -> int:
         "", "## Source health", "",
     ]
     lines += [f"- {name}: {state['status']}" +
-              (f" — {state['observations']} observations" if state["status"] == "ok"
+              (f" — {state['observations']} observations" if state["status"] in {"ok", "partial"}
                else f" — {state.get('error', '')}")
               for name, state in statuses.items()]
     lines += ["", "## New questions", ""]
