@@ -145,4 +145,4 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [When did smart glasses come out?](01-basics.md#when-did-smart-glasses-come-out) — Distinguishes early head-worn systems, 2011 consumer see-through glasses, and the 2013 Glass Explorer launch.
 - [When did AI glasses come out?](01-basics.md#when-did-ai-glasses-come-out) — Separates voice-assistant eyewear (2019), generative-AI glasses (2023), and camera-aware AI (2023–24).
 
-These questions were observed in first-party Search Console data, researched against attributed historical sources, and added without setting a numerical expansion target.
+These questions were observed in first-party Search Console data and researched against attributed historical sources. Practical Answers has a **minimum milestone of 1,000 published, evidence-backed answers and no ceiling**; discovery covers relevant questions across the wider internet regardless of this site's search visibility.
