@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-21T10:38:58+00:00**
+Generated automatically: **2026-10-21T10:46:11+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -54,7 +54,7 @@ Generated automatically: **2026-10-21T10:38:58+00:00**
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **22 browser pageviews**, **19 RUM visits**.
+- Rolling 24h: **21 browser pageviews**, **18 RUM visits**.
 - Rolling 7d: **116 browser pageviews**, **100 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
@@ -77,7 +77,7 @@ Generated automatically: **2026-10-21T10:38:58+00:00**
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 14 | 14 |
+| (direct / none) | 13 | 13 |
 | glassesresearch.org | 3 | 0 |
 | www.ecosia.org | 2 | 2 |
 | www.overleaf.com | 1 | 1 |
@@ -86,20 +86,20 @@ Generated automatically: **2026-10-21T10:38:58+00:00**
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **4,364 requests**, **1,185 HTTP visits**, **99.9 MB** served.
-- Rolling 7d: **32,932 requests**, **8,192 HTTP visits**, **588.2 MB** served.
+- Rolling 24h: **4,565 requests**, **1,244 HTTP visits**, **107.2 MB** served.
+- Rolling 7d: **33,203 requests**, **8,257 HTTP visits**, **596.8 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 2,333 | 1,008 |
+| US | 2,606 | 1,073 |
 | BE | 265 | 5 |
 | PH | 211 | 5 |
 | PL | 198 | 11 |
 | CN | 187 | 18 |
-| BR | 143 | 17 |
+| BR | 142 | 16 |
 | IN | 139 | 6 |
 | CL | 133 | 2 |
 | GB | 109 | 5 |
