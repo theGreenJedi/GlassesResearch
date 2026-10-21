@@ -1,40 +1,42 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-21T05:12:00.436747+00:00",
-  "candidate_count": 47,
-  "classifier_irrelevant_count": 33,
+  "discovered_utc": "2026-10-21T07:48:32.237092+00:00",
+  "candidate_count": 69,
+  "classifier_irrelevant_count": 59,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 14,
-    "broad_web": 32,
-    "community": 1,
-    "developer": 3,
-    "research": 1
+    "adjacent": 10,
+    "broad_web": 29,
+    "developer": 20,
+    "research": 10
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 13,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 33
+    "irrelevant": 59
   },
   "type_counts": {
-    "review": 3,
-    "video": 1,
-    "news": 31,
-    "research": 1,
-    "tool": 6,
-    "sdk": 2,
-    "retail": 7,
-    "community": 2
+    "model": 8,
+    "review": 1,
+    "video": 11,
+    "news": 24,
+    "research": 12,
+    "tool": 24,
+    "sdk": 21,
+    "policy": 3,
+    "teardown": 1,
+    "community": 4,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 13,
-    "development_hacking": 3,
-    "reject_noise": 33,
-    "report_card_evidence": 2,
-    "research_news_review": 14,
-    "retail_rebrand_review": 1
+    "adjacent_radar": 10,
+    "deep_research": 2,
+    "policy_privacy": 2,
+    "reject_noise": 59,
+    "report_card_evidence": 1,
+    "research_news_review": 10
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,48 +50,17 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "ff8238b38964ade4",
-      "title": "10 Best Smart Glasses (October 2026): Tested Picks for AI, AR & Audio",
-      "url": "https://whoismcafee.com/best-smart-glasses/",
-      "summary": "Discover the best smart glasses with our 2026 guide. We tested 10 models for AI features, AR display, audio quality, and value to find the top picks.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "direct",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "091c3b45dd663851",
-      "title": "Port Huron MI Real Estate & Homes For Sale - Zillow",
-      "url": "https://www.zillow.com/port-huron-mi/",
-      "summary": "Zillow has 165 homes for sale in Port Huron MI. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "id": "937b8d982ed4d836",
+      "title": "Dutch doctors publish guide to “careful suicide” - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2432148/",
+      "summary": "Research by the foundation indicates that despite Dutch euthanasia laws that permit doctors, acting within specific legal limits, to help with suicide, there are about 4400 cases each year of what it calls “autoeuthanasia,” where a doctor is not directly involved.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "review"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -99,14 +70,205 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "review",
-        "retail"
+        "research",
+        "policy"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "11a09312894ae07a",
+      "title": "Three leading suicide methods in the United States, 2017 ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.955008/full",
+      "summary": "In this study based on the 2017-2019 NVDRS, we first examined sex and age group differences in suicide methods (firearms, hanging/suffocation, poisoning, and other) among suicide decedents age 18+ and changes in the use of these methods during the three-year study period.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1c5330b8d70c056b",
+      "title": "Helium Suicide, a Rapid and Painless Asphyxia: Toxicological ... - MDPI",
+      "url": "https://www.mdpi.com/2305-6304/10/8/424",
+      "summary": "Suicide by helium inhalation has become increasingly common in the last few decades in Europe and the US because it produces a quick and painless death. Inhaled-gas suicides can easily be assessed through death scene investigation and autopsy.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d71bcd1105debdb",
+      "title": "Legal Drugs That Can Kill You - Psychology Today",
+      "url": "https://www.psychologytoday.com/us/blog/the-power-rest/201107/legal-drugs-can-kill-you-2",
+      "summary": "Benzodiazepines are most commonly used as anti- anxiety or sleeping pills, but relax muscles and give many people a \"buzz.\" All benzodiazepines can be abused, not only causing sedation,...",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "058b32ea637d78b4",
+      "title": "Methods of Suicide – Mental Health Matters",
+      "url": "https://mental-health-matters.org/conditions-disorders/suicidal-behaviour-and-self-injury/methods-of-suicide/",
+      "summary": "Violent methods, such as shooting and hanging, are uncommon among suicide attempts because they usually result in death. Most completed suicides involve guns. In the United States, guns are used in about 50% of suicides. Men use this method more than women. Other methods include: Cutting.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "af997383bd8de59d",
+      "title": "Suicide bag - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Suicide_bag",
+      "summary": "A suicide bag, also known as an exit bag or hood, [1][2] is part of a euthanasia device consisting of a large plastic bag with a drawcord used to die by suicide through inert gas asphyxiation.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "33d928529e410ffd",
+      "title": "Suicide methods - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Suicide_methods",
+      "summary": "Suicide methods are any means by which a person dies or attempts to die by suicide. Suicide attempts do not always result in death, and a non-fatal suicide attempt can leave the person with serious physical injuries, long-term health problems, or brain damage. [1]",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
       ],
       "primary_type": "review",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
-        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -115,12 +277,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3c3694a7a3b53802",
-      "title": "15 Best Things to Do in Port Huron Michigan (2026 Local’s Guide)",
-      "url": "https://mymichiganbeach.com/port-huron-travel-guide/",
-      "summary": "Things to do in Port Huron Michigan center on the place where Lake Huron narrows into the St. Clair River — a compact stretch of waterfront that combines big-lake beaches, serious ship-watching, and Great Lakes maritime history in one easy stop.",
+      "id": "39a14024a67fe7d9",
+      "title": "What Are the Easiest Ways to Kill Yourself? | Clear, Honest Answers",
+      "url": "https://snuggymom.com/what-are-the-easiest-ways-to-kill-yourself/",
+      "summary": "The question “What Are the Easiest Ways to Kill Yourself?” is a deeply sensitive and serious topic that touches on mental health, human suffering, and the urgent need for support.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -146,12 +308,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "31c0102a7d413808",
-      "title": "Apple Music 的音质如何？ - 知乎",
-      "url": "https://www.zhihu.com/question/36164828",
-      "summary": "Apple Music 用的是 256 kbps 的 AAC格式，理论上是比 320 kbps 的 MP3 强的。 实际上我可以听出网易云的 320 kbps 码率与 Apple Music 之间的差别，Apple Music更好听。 差距没有到一耳朵的程度，但仔细听一下还是比较容易听出来的。 作为流媒体播放软件，音质是足够了。",
+      "id": "e0d1b6179679bfac",
+      "title": "What Is the Least Painful Way To Die? | HuffPost Life",
+      "url": "https://www.huffpost.com/entry/what-is-the-least-painful_b_2192191",
+      "summary": "Dying of liver failure is generally pain free. The liver is important in clearing metabolites from the blood stream. When the liver stops working, certain metabolites build up in the blood and suppress brain function. Pain perception and judgement are reduced, and the patients are generally unaware.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -177,12 +339,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5290ca9fc5f5942d",
-      "title": "Apple Music、QQ音乐、网易云音乐你会选择谁？ - 知乎",
-      "url": "https://www.zhihu.com/question/374803229",
-      "summary": "Apple music主要说外区，会找Spotify等国外软件做对照。 纯个人体验吐槽向。 耳机使用Sony老头戴+WF-1000XM5+Airpods第三代。 很多人对音乐播放软件选择很迷茫，写一个我使用的心得体会，希望能帮助大家选择合适的音乐播放器。 优缺点简述",
+      "id": "3c34954446022a83",
+      "title": "Why a website with explicit directions for suicide remains active",
+      "url": "https://www.pbs.org/newshour/show/why-a-website-with-explicit-directions-for-suicide-remains-active",
+      "summary": "But a New York Times investigation looks into one that provides information and directions for how to die.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -208,292 +370,147 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7f5a339417fd777b",
-      "title": "Apple Music的优势是什么？ - 知乎",
-      "url": "https://www.zhihu.com/question/624570273",
-      "summary": "在用Apple Music的都是什么类型的人？感觉国内用的人还是很少，对比其他第三方音乐它有什么优势呢？",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "1fffa7d42028f0db",
+      "title": "How can I play Nier, the original version? - Steam Community",
+      "url": "https://steamcommunity.com/app/524220/discussions/0/3432326587495851418/",
+      "summary": "Nier is a prequel to NieR:Automata and they are connected and have there similarities. The original Nier game came out in 2010 and featured 2 versions, Nier Gestalt which released in western countries, and Nier Replicant which released in Japan.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1a3f71d5a3948080",
-      "title": "Cities Nearby Port Huron, Michigan, United States",
-      "url": "https://www.thecitiesnow.com/united_states/michigan/port_huron",
-      "summary": "Find five hundred cities near Port Huron, Michigan, United States from closest to farthest by distance. Distances from Port Huron to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "id": "bb5212bb16509da9",
+      "title": "NieR | NIER Wiki | Fandom",
+      "url": "https://nier.fandom.com/wiki/NieR",
+      "summary": "Developed by Cavia and published by Square Enix, it is the first game in the NieR series. Two versions were released in Japan, NieR Gestalt (ニーア ゲシュタルト, Nīa Geshutaruto) for Xbox 360 and NieR Replicant (ニーア レプリカント, Nīa Repurikanto) for PlayStation 3.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9f537b825ce94d57",
-      "title": "为什么大家都说Apple Music音质好我确感觉明显不如QQ音乐无损？",
-      "url": "https://www.zhihu.com/question/361365806",
-      "summary": "为什么大家都说Apple Music音质好我确感觉明显不如QQ音乐无损？ 本人果粉+木耳，设备iPhone11 Pro Max+iPad Pro+AirPods+AirPods Pro+外放，作为果粉我也一直想证明Apple… 显示全部 关注者 101",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "610b5d30c6cc61d9",
+      "title": "The Complete List of Nier Games in Chronological & Release Order",
+      "url": "https://www.cheatcc.com/articles/the-complete-list-of-nier-games-in-chronological-release-order/",
+      "summary": "The first Nier game released in 2010 and was developed by Cavia, which would later get absorbed by AQ Interactive. Square Enix served as the publisher for the first game.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "51ff5aca63db645f",
-      "title": "大家是怎么看待Apple music？ - 知乎",
-      "url": "https://www.zhihu.com/question/295922004",
-      "summary": "借知乎“ 大家是怎么看待Apple music？ ”这个问题先发一点（后面有一个系列呈现音乐这100年发展变化和导致当前国内现状的原因）我这次花了两个多月收集的数据，工程量太大了，借这个问题先发一点吧！",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "ffe118c3e76b3672",
+      "title": "What Inspired the Making of \"NieR\"? - Scifi Dimensions",
+      "url": "https://www.scifidimensions.com/what-inspired-the-making-of-nier/",
+      "summary": "There were originally two versions: “NieR Gestalt” (featuring an older father figure) and “NieR Replicant” (featuring a younger brother as the protagonist). Outside Japan, only “NieR Gestalt” was released. “NieR Replicant ver.1.22474487139…” is a remastered and enhanced version of “NieR Replicant”.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "894e829b7cce312f",
-      "title": "如何在 Apple Music 试用期内提前取消订阅？ - 知乎",
-      "url": "https://www.zhihu.com/question/32268762",
-      "summary": "如何在 Apple Music 试用期内提前取消订阅？ 因为要更改账号国家，所以要求必须取消 Apple Music Membership! 隐藏 Apple Music 服务没有用，取消订阅后不付款也没有… 显示全部 关注者 37 被浏览",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d1a572c366fc4ae",
-      "title": "如何看待苹果于1月24日在中国大陆推出的「Apple Music古典乐」独立APP？ - 知乎",
-      "url": "https://www.zhihu.com/question/639023408",
-      "summary": "其实苹果早在2021年8月收购Primephonic的时候，就承诺2022年将会推出一款全新的app，但是苹果2022年跳票了，直到2023年才推出Apple Music Classical。我估计和苹果死磕细节的尿性有关！ 这个Primephonic到底是干嘛的呢？ 这家著名的古典音乐流媒体服务平台通过专为古典音乐优化的搜索和浏览功能、高质量音频 ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1eb8193d4e103955",
-      "title": "有没有必要每个月花十块买 Apple Music ？有什么优点吗？",
-      "url": "https://www.zhihu.com/question/318252733",
-      "summary": "有！并且我个人认为，若是iOS用户，听歌不用Apple Music，那听歌就等于白听；若是安卓用户，可根据系统适配程度自行选择相对来说更加适用于自己的App，但同时也建议安卓用户下载Apple Music跟其它App共存，因为说不准哪天你就会突然爱上Apple Music。 为什么这么说，原因分为三点： 音质：作为听众 ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2c4e38e23f6ab10e",
-      "title": "苹果的apple Music好用吗？ - 知乎",
-      "url": "https://www.zhihu.com/question/386581821",
-      "summary": "好用是肯定的，我大爱特爱Apple Music ，但是真的要分人。 1.看自己听什么类型的歌。 如果是听内地的歌，特别是新生歌手的歌，那资源是真的少。如果是听港台的歌，资源也挺多的，比如周董的歌都可以听。如果是听欧美歌，那Apple Music简直是宝藏，欧美的资源不仅多而且最重要的是，不用买专辑 ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3bc084b83dc489b4",
-      "title": "苹果音乐值得订阅吗？ - 知乎",
-      "url": "https://www.zhihu.com/question/350784986",
-      "summary": "Apple Music订阅价目表 其实你可以把Apple Music的收费模式看做一款街机游戏，每月一次购买，享受所有服务（相应的，不付钱，就根本享受不了服务，下文详解）。 其中学生的5元价位，应该是目前所有音乐app中最便宜的。 家庭更是可以最多6人共享。",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4b1f716d272c2d44",
-      "title": "Get Help for Microsoft work or school account users",
-      "url": "https://support.microsoft.com/en-us/support/get-help/get-help-for-microsoft-work-or-school-account-users",
-      "summary": "How to use the Windows Get Help app if you are using Windows while logged into a Microsoft work or school account.",
+      "id": "8214311890a1c651",
+      "title": "'Dj Tabea' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=Dj+Tabea",
+      "summary": "536 Dj Tabea FREE videos found on XVIDEOS for this search.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -521,10 +538,267 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e79f2f562ce1d1a2",
-      "title": "Informazioni su Richiesta supporto | Microsoft Support",
-      "url": "https://support.microsoft.com/it-it/support/get-help/about-get-help",
-      "summary": "Come posso visualizzare i risultati del risolutore di problemi di Copilot? Come cerco il mio problema in Get Help? L'app Richiesta supporto di Windows è un hub centralizzato per l'accesso a un'ampia gamma di risorse, tra cui esercitazioni, domande frequenti, forum della community e assistenza diretta da parte del personale di supporto Microsoft.",
+      "id": "cce7ecbc402f93bb",
+      "title": "All 6 NieR Games in Order Including Summaries - Fiction Horizon",
+      "url": "https://fictionhorizon.com/all-nier-games-in-order-how-many-are-there/",
+      "summary": "Originally, NieR was published for the PS3, with two versions of the same game – NieR Replicant was published in Japan, and NieR Gestalt was published in the West.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dca93bcc9b1f0cf5",
+      "title": "All Nier Games In Order Of Release Date - Tech News Today",
+      "url": "https://www.technewstoday.com/nier-games-in-order/",
+      "summary": "NieR: Automata debuted in 2017 for PlayStation 4 and Windows. The setting introduces the Proxy War, a conflict between alien-created machines and human androids.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "efd4e552b5feceab",
+      "title": "Dj Tabea - found 3645 Porn Videos, Free HD XXX at tPorn.tube",
+      "url": "https://tporn.xxx/en/search/Dj%20Tabea/1/",
+      "summary": "Watch Dj Tabea, porn videos for free. Download HD Dj Tabea XXX movies. Big choice of free HD pornstar videos at tPorn.tube",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e61784a55645c785",
+      "title": "Dj Tabea leaks - MG Porn",
+      "url": "https://mgporn.com/videos/dj-tabea-leaks/",
+      "summary": "Dj Tabea leaks Disclaimer: mgporn.com has a zero-tolarance policy against illegal pornography. All content appearing on this website is a publicly available content provided by sponsors and/or uploaded by visitors. If you think that any content is illegal and should be removed, please contact us by finding contacts and we will remove it immediately. We take no responsibility for the content on ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8bf308f399f3bf7f",
+      "title": "Dj Tabea Nude Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/dj+tabea+nude",
+      "summary": "Watch dj tabea nude porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d55a6d9d1a5df509",
+      "title": "Dj tabea onlyfans Porn Videos - Leaked and Viral HD Scenes | ViralXXXPorn",
+      "url": "https://viralxxxporn.com/search/dj-tabea-onlyfans/",
+      "summary": "Watch the best dj tabea onlyfans porn videos exclusively on ViralXXXPorn. Stream viral dj tabea onlyfans leaks, full HD scenes, and verified amateur clips 100% Free.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "714aae512299f0b7",
+      "title": "Dj Tabea Porn And Nude Videos | CUMS",
+      "url": "https://cums.net/search/video/?s=dj+tabea",
+      "summary": "Explore the Most Relevant Free Porn Videos for dj tabea on CUMS. Enjoy the best adult content, exclusive scenes, and diverse categories for ultimate pleasure.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da1a534d801cccdb",
+      "title": "Dj tabea Porn Videos - Free Leaks & Nudes | ThotHD",
+      "url": "https://thothd.com/search/dj-tabea/",
+      "summary": "Watch the best dj tabea porn videos & OnlyFans leaks free on ThotHD. New dj tabea content added daily in HD.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15456c4fa3762910",
+      "title": "Dj Tabea Search Results: Most Relevant Porn - PornTrex",
+      "url": "https://www.porntrex.com/search/Dj%20Tabea/",
+      "summary": "Most Relevant Videos for Dj Tabea on PornTrex. Get your daily dose of porn from our huge collection of free hd and 4k porn videos.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -540,8 +814,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -553,18 +826,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c58b3232c02a276e",
-      "title": "QQQ – Invesco QQQ Trust – ETF Stock Quote | Morningstar",
-      "url": "https://www.morningstar.com/etfs/XNAS/QQQ/quote",
-      "summary": "QQQ – Invesco QQQ Trust – Check QQQ price, review total assets, see historical growth, and review the analyst rating from Morningstar.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "6abd2151af21ba32",
+      "title": "Djtabea Videos - Free Porn Videos - Heavy-R.com",
+      "url": "https://www.heavy-r.com/free_porn/djtabea.html",
+      "summary": "Watch free djtabea videos at Heavy-R, a completely free porn tube offering the world's most hardcore porn videos. New videos about djtabea added today!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -573,10 +844,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "retail"
+        "video",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -586,10 +858,322 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "758c75fd6d81a8c6",
-      "title": "2. What potential problems could we have if we did not have ... - Answers",
-      "url": "https://www.answers.com/physics/2._tab_What_potential_problems_could_we_have_if_we_did_not_have_the_W3C_2._tab_What_potential_problems_could_we_have_if_we_did_not_have_the_W3C_2._tab_What_potential_problems_could_we_have_if_we_did_not_have_the",
-      "summary": "Without the W3C (World Wide Web Consortium), we could face compatibility issues between different Web Browsers, leading to inconsistent rendering of websites. Lack of standards could also result ...",
+      "id": "72acc45494965b09",
+      "title": "Fifth Harmony discography - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fifth_Harmony_discography",
+      "summary": "American girl group Fifth Harmony has released three studio albums, six extended plays, 12 singles (including one as a featured artist), 11 promotional singles and 17 music videos.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71c66955212ff6b9",
+      "title": "Nier (video game) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nier_(video_game)",
+      "summary": "Beginning production in 2007, the game was directed by Drakengard creator Yoko Taro, who was given a lot of creative freedom with the project. Its storyline drew inspiration from the September 11 attacks and the war on terror, while its gameplay was partly inspired by the God of War series.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "91a799036ea006da",
+      "title": "Nier - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nier",
+      "summary": "Nier (video game), 2010 action role-playing video game The protagonist of Nier, sometimes eponymously referred to as \"Nier\" by fans and series director Yoko Taro",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "865df7efbd4c9b91",
+      "title": "NIER Wiki - Fandom",
+      "url": "https://nier.fandom.com/wiki/NieR_Wiki",
+      "summary": "NieR is Japanese video game series directed by Yoko Taro and published by Square Enix. Originally a spinoff to the Drakengard series, NieR now spans across multiple games and consoles, main entries including the original NieR, NieR:Automata, and NieR Reincarnation.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9d3e9983e6f21ad7",
+      "title": "Tabea - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=tabea",
+      "summary": "Tabea photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use EroMe to enjoy free photos and videos. Come share your amateur horny...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b73176b774a328a",
+      "title": "Understanding the NieR Game Universe - views.terabox.com",
+      "url": "https://views.terabox.com/hub/what-is-nier-and-how-should-you-play-the-series",
+      "summary": "To understand the origins of the NieR franchise, one must look back to a seemingly unrelated title: Drakengard (2003). The series was born from a specific, hidden ending in the first Drakengard game, known as \"Ending E.\"",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ade8d910eacc0032",
+      "title": "百度翻译_领先的AI大模型翻译_支持文本/文档/图片翻译",
+      "url": "https://fanyi.baidu.com/",
+      "summary": "百度新一代AI大模型翻译平台，提供外文阅读和专业翻译解决方案，实现中、英、日、韩、德等203种语言翻译，支持文本翻译、文档翻译、图片翻译等多模态翻译，拥有传统机器翻译、AI大模型翻译、深度思考模式、AI人工翻译等多引擎，通过翻译SaaS、翻译API、翻译插件、翻译客户端等多形式使用，百度翻译是大模型时代的超级翻译应用。",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cffcaf3470ef239",
+      "title": "2026-27 Half-Season Ticket Member Activation - NBA",
+      "url": "https://okcthunder.com/halfseason/",
+      "summary": "2026 Playoffs Pricing As a Half-Season Ticket Member, if the Thunder earns the right to play in the 2026 NBA Playoffs, you will be provided an opportunity to purchase a pre-assigned location for the entire duration of the NBA Playoffs. As a reminder, your pre-assigned playoff location is determined by your half-season priority point ranking.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4cbb33d4cb50f96e",
+      "title": "2026-27 Quarter Season Ticket Member Activation - NBA",
+      "url": "https://okcthunder.com/quarterseason/",
+      "summary": "As a valued Quarter-Season Ticket Member in the Oklahoma City Thunder family, you have earned the opportunity to relocate or upgrade your quarter-season tickets by activating your account for the 2026-27 season, based on availability. You will retain your priority by activating your current quarter-season location by the Friday, March 6 deadline.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d199a079fcb410f0",
+      "title": "25-26 Thunder Season Ticket Pricing Map_Updated",
+      "url": "https://okcthunder.com/activate/images/pricemap-25-fullseason.pdf",
+      "summary": "Ticket prices are noted per game and includes all applicable fees",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7cadd648fe61f475",
+      "title": "About ad customizers - Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/6072565?hl=en",
+      "summary": "Ad customizers allow you to automatically customize the text of your search ads. You can adapt your ad text based on keywords. This article explains the benefits of ad customizers and how they work. Benefits Tailored messaging: Ads are hyper-specialized to each search or web page being viewed. Scalability: Customizers let a single text ad have hundreds of variations, and show the most relevant ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -616,10 +1200,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3f62080874120e15",
-      "title": "Current Time Now - World Clock & Time Zone Tools",
-      "url": "https://clock.now/",
-      "summary": "What time is it now? See the exact current time synced to the second, world clock for 200+ cities, time zone converter, meeting planner, and free time tools.",
+      "id": "7fb50f12f6683dad",
+      "title": "Black Sugar Boba Los Angeles, CA | Hey Hey Drinks",
+      "url": "https://www.heyheydrinks.com/black-sugar-boba-los-angeles",
+      "summary": "Try authentic black sugar boba in Los Angeles at Hey Hey Drinks. Enjoy black sugar milk tea with fresh tapioca pearls and house-made cream.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "39df33a391ee19ee",
+      "title": "Camila Cabello Reveals the Real Reason Why She Left Fifth Harmony",
+      "url": "https://www.eonline.com/news/1396552/camila-cabello-reveals-the-real-reason-why-she-left-fifth-harmony",
+      "summary": "Nearly eight years after leaving Fifth Harmony, Camila Cabello detailed why she really stepped away from the girl group.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -646,10 +1260,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8c7d353d6ec7dd90",
-      "title": "Google",
-      "url": "https://www.google.com/finance/quote/QQQ:NASDAQ",
-      "summary": "Ҿ0ĀXC 3 q bP %$E! w 1 uu0014u000eIu0013u0010I Hu0013 ()Offu000e }! u0010 ̒7u001au0006 ȇ7 e` ' $o4 0g C dnR & [ a 봍u0016V O Q u u001b- Y\\u000e aYu0014 Hu0013 6e Û . ! w g dr - b. m M?- l iɄ n u0004...",
+      "id": "38e6cbfb4d221dea",
+      "title": "Continental Coliseum",
+      "url": "https://okcthunder.com/arena/",
+      "summary": "OKLAHOMA CITY, Thursday, Oct. 8, 2026 – The Oklahoma City Thunder has selected Levy as the founding food, beverage and hospitality partner for Continental Coliseum, the new state-of-the-art arena rising in downtown Oklahoma City and set to open in 2028. The partnership extends the longtime relationship between the Thunder and Levy, which currently leads the culinary operation at Paycom ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -676,12 +1290,132 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a11ee66c959ea294",
-      "title": "Google News - Austin - Latest",
-      "url": "https://news.google.com/topics/CAAqIAgKIhpDQkFTRFFvSEwyMHZNSFo2YlJJQ1pXNG9BQVAB",
-      "summary": "Read full articles, watch videos, browse thousands of titles and more on the \"Austin\" topic with Google News.",
+      "id": "0dca0fa3d9257238",
+      "title": "Fifth Harmony",
+      "url": "https://fifthharmony.com/",
+      "summary": "Shop the official Fifth Harmony 7/27 anniversary collection — hoodies, tees, and hats featuring exclusive and limited run designs.",
       "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b06485ed8ee9cd1",
+      "title": "Fifth Harmony (@fifthharmony) • Instagram photos and videos",
+      "url": "https://www.instagram.com/fifthharmony/",
+      "summary": "11M Followers, 1,105 Following, 1,610 Posts - Fifth Harmony (@fifthharmony) on Instagram: \"\"",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bf367f14e58994e7",
+      "title": "Fifth Harmony - IMDb",
+      "url": "https://www.imdb.com/name/nm5318269/",
+      "summary": "Fifth Harmony is an American girl group formed on the second season of The X Factor (2011). The group consists of members Ally Brooke Hernandez, Normani Hamilton, Dinah Jane Hansen, Camila Cabello, and Lauren Jauregui.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b6ad5ca9096ab2e",
+      "title": "Fifth Harmony - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fifth_Harmony",
+      "summary": "Fifth Harmony, often shortened to 5H, were an American girl group based in Miami, composed of Ally Brooke, Normani, Dinah Jane, Lauren Jauregui, and formerly Camila Cabello until her departure from the group in December 2016.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b9486b327088c64c",
+      "title": "Fifth Harmony - YouTube",
+      "url": "https://www.youtube.com/channel/UCMtpmPs9end-dTNwVq16g4Q",
+      "summary": "Excited to be nominated for a Kids Choice Award! You can vote at http://fifthharmony.co/KCA.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -706,12 +1440,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c7b63bb9e58611f0",
-      "title": "How many 8 oz in 2 liters? - Answers",
-      "url": "https://math.answers.com/natural-sciences/How_many_8_oz_in_2_liters",
-      "summary": "To convert liters to ounces, you need to know that 1 liter is equal to approximately 33.814 ounces. Therefore, 2 liters would be equal to 67.628 ounces. Since there are 8 ounces in 1 cup, you would divide 67.628 by 8 to find that there are approximately 8.41 eight-ounce cups in 2 liters.",
+      "id": "55a5d6ba5860eaa9",
+      "title": "Fifth Harmony: Where Are They Now? Camila Cabello, Normani, More - Us",
+      "url": "https://www.usmagazine.com/celebrity-news/pictures/fifth-harmony-where-are-they-now-camila-cabello-normani-more/",
+      "summary": "Camila Cabello, Normani, Lauren Jauregui, Dinah Jane and Ally Brooke have stayed busy post-Fifth Harmony — see what they're up to now",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -736,14 +1470,14 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c4980ec230cedb4a",
-      "title": "How many feet are in the perimeter of 2 acres? - Answers",
-      "url": "https://math.answers.com/geometry/How_many_feet_are_in_the_perimeter_of_2_acres",
-      "summary": "To find the perimeter of 2 acres, we first need to convert acres to square feet. 1 acre is equal to 43,560 square feet, so 2 acres is 87,120 square feet. The perimeter of a rectangular area can be calculated by adding the lengths of all four sides. Since acres are a measure of area, we need additional information about the shape of the area to determine the perimeter in feet.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "e5c8bc8c441347a7",
+      "title": "Flanimal Vanilla Milk Frappe & Boba in Los Angeles - Hey Hey",
+      "url": "https://www.heyheydrinks.com/flanimal",
+      "summary": "Try Flanimal in Los Angeles, featuring a vanilla milk frappe, creamy flan, herbal jelly, warm chewy boba, and caramel.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
@@ -754,188 +1488,7 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "710f3330e0bc1d17",
-      "title": "Invesco QQQ ETF Price — NASDAQ:QQQ Chart — TradingView",
-      "url": "https://www.tradingview.com/symbols/NASDAQ-QQQ/",
-      "summary": "Get the Invesco QQQ Trust, Series 1 price with the live chart. Track ETF performance and see news, top holdings, dividend yield, and expense ratio.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1cc95f1a2eed2e89",
-      "title": "Invesco QQQ ETF Price, Holdings, & News (NASDAQ:QQQ) - MarketBeat",
-      "url": "https://www.marketbeat.com/stocks/NASDAQ/QQQ/",
-      "summary": "Should You Buy or Sell Invesco QQQ Stock? Get The Latest QQQ Stock Price, Constituents List, Holdings Data, Headlines, and Short Interest at MarketBeat.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d9e630d12a533909",
-      "title": "Invesco QQQ ETF | Invesco US",
-      "url": "https://www.invesco.com/qqq-etf/en/home.html",
-      "summary": "You can typically invest in as little as a single share of QQQ or other ETFs through online brokers. Some brokers even allow investors to purchase a fraction of an ETF share.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5cfd88a5e47a7730",
-      "title": "Invesco QQQ Trust (QQQ) Interactive Stock Chart - Yahoo Finance",
-      "url": "https://finance.yahoo.com/quote/QQQ/chart/",
-      "summary": "Interactive Chart for Invesco QQQ Trust (QQQ), analyze all the data with a huge range of indicators.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "123e4bdf40d1bdc7",
-      "title": "Invesco QQQ Trust (QQQ) Stock Price, News, Quote & History - Yahoo Finance",
-      "url": "https://finance.yahoo.com/quote/QQQ/",
-      "summary": "Find the latest Invesco QQQ Trust (QQQ) stock quote, history, news and other vital information to help you with your stock trading and investing.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f64cc44e731af907",
-      "title": "Invesco QQQ: QQQ Stock Price Quote & News | Robinhood",
-      "url": "https://robinhood.com/us/en/stocks/qqq/",
-      "summary": "View the real-time QQQ price chart on Robinhood and decide if you want to buy or sell commission-free. Other fees such as trading (non-commission) fees, Gold subscription fees, wire transfer fees, and paper statement fees may apply.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "retail"
+        "research"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -947,10 +1500,160 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ee07b1bb339d9e04",
-      "title": "Is 2000k equal to 2 millions or 2 thousand? - Answers",
-      "url": "https://math.answers.com/other-math/Is_2000k_equal_to_2_millions_or_2_thousand",
-      "summary": "Oh, dude, 2000k is equal to 2 million, not 2 thousand. The \"k\" stands for thousand, so 2000k means 2000 thousands, which is 2 million. It's like saying \"I have 5 bucks\" instead of \"I have 500 pennies.\"",
+      "id": "aa4ed690173634cd",
+      "title": "Fortune Ring — Hey Hey",
+      "url": "https://www.heyheydrinks.com/store/p/fortune-ring",
+      "summary": "Hey Hey Chinese character welded silver ring.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ae94b856dc4f6b29",
+      "title": "Hey Hey",
+      "url": "https://www.heyheydrinks.com/search",
+      "summary": "© 2026 HEY HEY 1555 W Sunset Boulevard Los Angeles, California Bubble Tea Coffee Smoothie",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8971ef4fd2676bef",
+      "title": "Hey Hey Boba Tea Los Angeles",
+      "url": "https://www.heyheydrinks.com/hey-hey",
+      "summary": "HEY HEY Boba Tea is the signature bold black milk tea at Hey Hey Drinks, made with house crème, caramel, chewy boba, and house-made flan. Try the best boba tea in Los Angeles.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2152d2533bbaf8d9",
+      "title": "Hey Hey Dad — Hey Hey - heyheydrinks.com",
+      "url": "https://www.heyheydrinks.com/store/p/test-1-1",
+      "summary": "Adjustable band for all sizes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "451a2d1f2fe10dda",
+      "title": "Hey Hey Los Angeles Tea House: Best milk tea in Los Angeles",
+      "url": "https://www.heyheydrinks.com/",
+      "summary": "Hey Hey Drinks is a contemporary Los Angeles tea house serving the best milk tea, shaken teas, matcha, signature drinks, and refreshing blends in LA.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9828ce6561d3ee12",
+      "title": "Highlight upcoming events with countdowns - Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/6193743?hl=en",
+      "summary": "Set the countdown and save your ad Click Apply to save your countdown. You'll see the countdown customizer within your ad text. Make sure your ad text will stay within the character limits when it's displayed. The countdown customizer code could generate a string that's 8 characters long. Make sure your ad copy allows for the additional characters. Click Save ad.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -977,100 +1680,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5cf9b090b53229e0",
-      "title": "Local time in United States right now",
-      "url": "https://24timezones.com/United-States/time",
-      "summary": "Check the current time in United States and time zone information, the UTC offset and daylight saving time dates in 2026.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b04f860d2afdc4e",
-      "title": "MLB Schedule 2026 - CBS Sports",
-      "url": "https://www.cbssports.com/mlb/schedule/",
-      "summary": "Get the full schedule for the 2026 MLB season, including matchups, dates, times and TV and ticket information.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ec20e2eddce839e1",
-      "title": "QQQ ETF Stock Price & Overview",
-      "url": "https://stockanalysis.com/etf/qqq/",
-      "summary": "Get a real-time stock price for the QQQ ETF (Invesco QQQ Trust Series I) with an overview of various metrics and statistics.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bfbb746f2ad1c6be",
-      "title": "QQQ | Invesco QQQ Trust Series I Overview | MarketWatch",
-      "url": "https://www.marketwatch.com/investing/fund/qqq",
-      "summary": "QQQ | A complete Invesco QQQ Trust Series I exchange traded fund overview by MarketWatch. View the latest ETF prices and news for better ETF investing.",
+      "id": "47ac528f80276fb1",
+      "title": "Interactive Parking Map - NBA",
+      "url": "https://okcthunder.com/parkingmap/",
+      "summary": "Please select a lot--- PAID LOTS ---Arts District Garage - South EntranceArts District Garage - North EntranceSheridan-Walker GarageSanta Fe Parking GarageBOK Building GarageScissortail Lot--- SEASON PASS LOTS ---Convention Center GarageBOK Building GarageWest Lot - West EntranceWest Lot - North EntranceCourtyard Marriott GarageSanta Fe Parking GarageSheridan-Walker GarageArts District Garage ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1097,12 +1710,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b94aa1d416c85f2a",
-      "title": "SmartInmate™ - Corrections Communications Services",
-      "url": "https://www.smartinmate.com/index.cfm",
-      "summary": "SmartInmate™ by Smart Communications connects family and friends with incarcerated individuals through an easy-to-use online communications system. When using SmartInmate™ you can connect in just minutes and correspond every day in near real time instant communication with your loved ones.",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "id": "6dd80831bdeee11e",
+      "title": "Limit screen time on YouTube Kids - YouTube For Families Help",
+      "url": "https://support.google.com/youtubekids/answer/6130558?hl=en-IN",
+      "summary": "Limit screen time on YouTube Kids Our built-in timer allows parents to limit screen time by telling children when it's time to stop watching. The timer will display a friendly alert and stop the app when the session is over, so that you don't have to.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1115,9 +1728,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "video",
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1127,12 +1741,43 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "97a3256a3b49a192",
-      "title": "The Time Now: What Time Is It",
-      "url": "https://www.thetimenow.com/",
-      "summary": "Find out current local time in any time zone of the world with our world clock. Reliable tool for when traveling or calling abroad with local time and weather.",
+      "id": "46950dfd6a7c3bbc",
+      "title": "Los Angeles Bubble Tea & Boba | Best Boba in Los Angeles",
+      "url": "https://www.heyheydrinks.com/bubble-tea",
+      "summary": "Los Angeles Bubble Tea at Hey Hey At Hey Hey, we bring the vibrant flavors of Los Angeles bubble tea to life with every sip. Nestled in the heart of Echo Park, our teahouse is a hub of creativity and community, where each handcrafted drink is inspired by Asian tea culture and infused with local California flair. Our menu offers something for every bubble tea lover: classic milk teas ...",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0bc47ae43b797d7e",
+      "title": "Manage how you spend time on your Android phone with Digital Wellbeing",
+      "url": "https://support.google.com/android/answer/9346420?hl=en",
+      "summary": "On some phones, you can get info about how you spend time on your phone, like how often you unlock it and how long you use each app. You can use that info to improve your digital wellbeing. For example, you can set app timers and schedule display changes. Important: Some of these steps may vary based on your device.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1157,14 +1802,14 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "034e4e8cae35dfc0",
-      "title": "Time in United States Now — All Time Zones",
-      "url": "https://time.now/countries/united-states/",
-      "summary": "See the current time across all time zones in United States, with live clocks, local dates, major cities, sunrise and sunset information.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "3b638f0922c2a81c",
+      "title": "Menu - Hey Hey",
+      "url": "https://www.heyheydrinks.com/menu",
+      "summary": "New to Hey Hey? Learn more about our bubble tea, specialty coffee, and smoothies before you order.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
@@ -1175,9 +1820,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1187,70 +1832,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "701fc02b91e0fe2f",
-      "title": "Time Now — Exact Local Time & World Clock | Time.now",
-      "url": "https://time.now/",
-      "summary": "See the exact time now in your location and cities worldwide, with seconds, date, UTC offset, time zone and daylight-saving information.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3070b8d88d9d5a3f",
-      "title": "Time.is - exact time, any time zone",
-      "url": "https://time.is/_",
-      "summary": "Your time is exact! The difference from Time.is was -0.001 seconds (±0.074 seconds). \"My mother had a saying: 'Kamala, you may be the first to do many things, but make sure you're not the last.\" 7 million locations, 59 languages, synchronized with atomic clock time.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b60aeca855f2c4c",
-      "title": "What does this World War 2 Navy abbreviation mean MOMM2?",
-      "url": "https://www.answers.com/history-ec/What_does_this_World_War_2_Navy_abbreviation_mean_MOMM2",
-      "summary": "MoMM2 has 4 parts. The first \"Mo\" means Propulsive Machinery, maintenance and operation (includes generators less than 58 hp). The next M means Machinist. The last M means Main Engines. the 2 ...",
+      "id": "1fe72573a2d91563",
+      "title": "Menyetel waktu, tanggal, dan zona waktu - Bantuan Android",
+      "url": "https://support.google.com/android/answer/2841106?hl=id",
+      "summary": "Anda dapat mengubah setelan jam, termasuk tanggal, waktu, dan zona waktu. Anda dapat menyetel cara kerja alarm dan timer, serta menambahkan jam untuk kota lain. Mengubah waktu dan zona wa",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1277,10 +1862,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ded1f5c525d6217e",
-      "title": "What is 1.2 inches on a ruler? - Answers",
-      "url": "https://math.answers.com/other-math/What_is_1.2_inches_on_a_ruler",
-      "summary": "unlike the unhelpful Betty, this is not a silly question. While some rulers are in segments of 10 (every inch having 10 lines within it), some rulers are in 16ths (every inch having 16 lines within it) or even 8ths on fabric tape rulers. So NO BETTY, you don't just count the lines. Please count the lines on your ruler's lines, then you can make a judgment as to whether to count the lines or ...",
+      "id": "de039501ce0b0e93",
+      "title": "Misty Sanes Candle — Hey Hey",
+      "url": "https://www.heyheydrinks.com/store/p/candle",
+      "summary": "Collaboration with Rx Candles to create out custom scent wax candle. Hand made in Los Angeles. Matchbox included.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bde25516275f3f2",
+      "title": "Need to lock data in google sheets at a specific time every day",
+      "url": "https://support.google.com/docs/thread/116991332/need-to-lock-data-in-google-sheets-at-a-specific-time-every-day?hl=en",
+      "summary": "No problem. This will do the trick. If we set a timer for 4 every day.. it will protect your current dated tab, create tomorrows tab according to a template tab called template. function protectUS () { var ss = SpreadsheetApp.getActiveSpreadsheet (); var sheet = SpreadsheetApp.getActiveSheet ();",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1307,12 +1922,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "66dec25a6a1dde1c",
-      "title": "What is the answer to the brain teaser 2 um 2um? - Answers",
-      "url": "https://www.answers.com/toys-and-games/What_is_the_answer_to_the_brain_teaser_2_um_2um",
-      "summary": "Forum (2 um + another 2 um = 4 um)",
+      "id": "1cd1e6252216b741",
+      "title": "OKC Blue Field Trip Day - NBA",
+      "url": "https://okcthunder.com/blueftd/",
+      "summary": "Attend an NBA basketball game in OKC or Tulsa and provide students with an educational experience using STEM lessons. We want to see YOU as the Oklahoma City Blue, G League affiliate of the Oklahoma City Thunder, plays a Field Trip Day game.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9296a464af18bd19",
+      "title": "OKCThunder Films is a collaboration between the Thunder’s Broadcasting ...",
+      "url": "https://okcthunder.com/films/",
+      "summary": "OKCThunder Films is a collaboration between the Thunder’s Broadcasting and Basketball Communications departments. We strive to bring to life the stories of the people of the Thunder and of our community.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1337,10 +1982,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9411ceacf42d8c81",
-      "title": "What is the breakdown of deaths in World War 2 by each service?",
-      "url": "https://www.answers.com/military-history/What_is_the_breakdown_of_deaths_in_World_War_2_by_each_service",
-      "summary": "United States Coast Guard 241,093 -1,917- 0.78 United States Merchant Marine 243,000 -9,521 -12,000 -3.9 Unidentified by branch of service c.130,000 Total US 16,596,639 -416,837 -683,846 -C ...",
+      "id": "a8d2953811cfe8dd",
+      "title": "Set, cancel, or snooze alarms on your Android device",
+      "url": "https://support.google.com/clock/answer/2840926?hl=en",
+      "summary": "Set, cancel, or snooze alarms on your Android device You can make and change alarms in the Clock app on your Android device, Pixel phone, or Pixel Tablet.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1355,9 +2000,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1367,10 +2012,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8cc87c7cb9f14350",
-      "title": "What is x divided by 2? - Answers",
-      "url": "https://math.answers.com/algebra/What_is_x_divided_by_2",
-      "summary": "x divided by 2 or in other words x/2 (x over 2) depends on what variable you use for x X/2 that's the answer",
+      "id": "6f437b2ad4f0d9b4",
+      "title": "Set, cancel, or snooze alarms on your Android device - Pixel Phone Help",
+      "url": "https://support.google.com/pixelphone/answer/2840926?hl=en",
+      "summary": "You can make and change alarms in the Clock app on your Android device, Pixel phone, or Pixel Tablet. Manage your alarms Set alarm time Important:If you set 2 alarms too close together, the first one may be canceled. To make sure both alarms work, leave a 5-minute window between each alarm. Open your device's Clock app . Tap Alarm. Pick an alarm.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1385,9 +2030,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1397,12 +2042,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d80b94505381f240",
-      "title": "What's Coming Soon to Netflix - What's on Netflix",
-      "url": "https://www.whats-on-netflix.com/coming-soon/",
-      "summary": "Looking for the latest movies, series, and games on Netflix? Check out our monthly roundups for upcoming Netflix Originals, plus previews for what’s coming in the U.S. and U.K. We also highlight the most anticipated titles and upcoming releases in genres like horror, sci-fi, and action.",
+      "id": "20bba317fab84022",
+      "title": "Thunder Fellows - NBA",
+      "url": "https://okcthunder.com/fellows/",
+      "summary": "To address the prevalent opportunity and wealth gaps in our community, the Thunder Fellows Program – developed by the Oklahoma City Thunder and Creative Artists Agency (CAA) – aims to unlock new opportunities in sports and entertainment for Tulsa-area high school and Oklahoma-area college students. Located in the historic Greenwood District, Thunder Fellows will apply curriculum uniquely ...",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e66ecd57a03e68c",
+      "title": "Thunder Launchpad - NBA",
+      "url": "https://okcthunder.com/launchpad/",
+      "summary": "The Thunder Launchpad was created to promote the elevation of the entrepreneurial ecosystem and bolster investment of small businesses right here in the heart of the country.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1427,12 +2102,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "17866785c0431500",
-      "title": "Where is 2.83 inches on a ruler? - Answers",
-      "url": "https://math.answers.com/math-and-arithmetic/Where_is_2.83_inches_on_a_ruler",
-      "summary": "It is 83% of the way between 2 and 3 inches. So, more than 2 and 3/4 but less than 2 and 7/8.",
+      "id": "d9225cec78969c54",
+      "title": "Thunder Reserve - NBA",
+      "url": "https://okcthunder.com/reserve/",
+      "summary": "Thunder Reserve is the official waitlist for fans who wish to become future Thunder Season Ticket Members through our full-, half-, or quarter-season packages. By placing a deposit, you’ll unlock access to our Ticket Relocation Upgrade Event (TRUE) held each spring.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1457,12 +2132,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b2edf6b1885410e7",
-      "title": "World Time Now — Current Time in Every City & Country",
-      "url": "https://worldtimenow.net/",
-      "summary": "WorldTimeNow shows the exact current time in cities and countries around the world. Live clocks, UTC offsets, time zone maps, and Daylight Saving Time guides — all in one place.",
+      "id": "a85755e037bc3531",
+      "title": "Where Are the Fifth Harmony Members Now? Inside Their Lives in Hiatus",
+      "url": "https://people.com/where-are-the-fifth-harmony-members-now-11801855",
+      "summary": "Here's everything to know about where the members of Fifth Harmony — Camila Cabello, Normani, Ally Brooke, Dinah Jane and Lauren Jauregui — are now.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7ddcbe52e70245e",
+      "title": "金山词霸-文本、图片、文档在线翻译词典",
+      "url": "https://www.iciba.com/",
+      "summary": "我们的爱词霸翻译器在线助力英文学习者高效翻译，提升写作能力。",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
