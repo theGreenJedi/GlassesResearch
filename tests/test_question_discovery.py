@@ -108,6 +108,7 @@ class QuestionDiscoveryTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as td:
             folder = Path(td)
             (folder / "faq").mkdir()
+            (folder / "faq" / "01-basics.md").write_text("## What are smart glasses?\n\nSmart glasses are worn on the face.\n")
             (folder / "sources.json").write_text(json.dumps({
                 "github_queries": ["smart glasses"], "stackexchange": [],
                 "reddit_rss": [],
@@ -130,12 +131,12 @@ class QuestionDiscoveryTests(unittest.TestCase):
                 self.assertEqual(discovery.main(), 0)
             report = json.loads((folder / "report.json").read_text())
             self.assertEqual(report["new_questions"], 1)
-            self.assertEqual(report["published_answers"], 0)
+            self.assertEqual(report["published_answers"], 1)
             self.assertEqual(report["minimum_published_answers"], 1000)
-            self.assertEqual(report["remaining_to_minimum"], 1000)
+            self.assertEqual(report["remaining_to_minimum"], 999)
             self.assertEqual(report["sources"]["google_search_console"]["status"], "unavailable")
             self.assertEqual(report["research_queue"][0]["source_urls"], [question["source_url"]])
-            self.assertEqual(json.loads((folder / "registry.json").read_text())["questions"][0]["status"], "observed")
+            self.assertEqual(sum(q["status"] == "answered" for q in json.loads((folder / "registry.json").read_text())["questions"]), 1)
 
     def test_no_external_sources_fails_visible(self):
         with tempfile.TemporaryDirectory() as td:
