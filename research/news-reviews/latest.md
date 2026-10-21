@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-21T05:12:25.814736+00:00`
+Generated: `2026-10-21T07:49:04.991049+00:00`
 
-- Intake files inspected: **273**
-- Candidates retained in this review window/history: **11227**
+- Intake files inspected: **271**
+- Candidates retained in this review window/history: **11141**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2104
+- `adjacent_radar`: 2093
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 579
-- `rejected_noise`: 8445
-- `source_review`: 37
+- `needs_editorial_verification`: 569
+- `rejected_noise`: 8379
+- `source_review`: 38
 - `watching`: 42
 
 ## Action queue
@@ -39,8 +39,6 @@ Generated: `2026-10-21T05:12:25.814736+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.693](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.693) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.695](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.695) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.696](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.696) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.698](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.698) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.706](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.706) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -210,6 +208,7 @@ Generated: `2026-10-21T05:12:25.814736+00:00`
 | high | needs_editorial_verification | direct | [Xreal 1 Pro+ AR glasses launch with 1,200-nit display and smoother 3D conversion - Wareable](https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVdOaUpqSjNZRXdqMTl3eFExalRNLVMxeXRTWHhGbVpfRU90SW90VmpOY0JfMUpnUUxKVFpRaXNkYkZzSjBUZ2ZXTE1rcmo5SEozQXFLR09IeFlsNUJlWmRqdTZmMzhOSFUxWlRleTUzZ0Q2bVJqYTdSYVM0WDhubjJ1Z0x1NF92NmZvSA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
@@ -271,6 +270,7 @@ Generated: `2026-10-21T05:12:25.814736+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI 혁명 2막이 시작된다 "에이전틱 AI, AI 안경 그리고 피지컬 AI의 시대" - 하이테크정보](https://news.google.com/rss/articles/CBMiakFVX3lxTFBqYVU2eWJmbVBnNFBndk1CeW5FZHhFMDZXMjhoaFZmRkVhZEdfMHZyVlZCdU1BbTZxYnRKaXdDd19EWWM0b2NtZDdyc05JMGlqRHN5MGpYZDR0SGJrWFJYUE9JTjBpcHo0c3c?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜从定制到完成仅用一小时！在华强北现场感受深圳周期 - 奥一网](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1IaEplZmd6UkxiYnBKdmgtZG9vOTdRRGNzT2luVk5RLTRLU0RWVEdPODlXSWU0WFRVYVdlRTZPOVowNHFPdnBHSDhVbFBDeERCdVJrbVJFMTRqb3c5al9icWNBcEZtUQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AI眼镜行业迈向成长期 18只概念股获机构密集调研 - 新浪财经](https://news.google.com/rss/articles/CBMieEFVX3lxTE9JYUpjV0R3dDRmbFdWaVFrb2sxZFpFaXBoU3VlQmllS3ZyV1FNN1l0SFpkQkRKZGR4Nlpfdkd5SHdLTm5zS0cwNS15S1Q1QllhRDY4cXQwbVJBMmpLWkFHQmJUYW4wTEZHRHFvZ2JXekptUWRGdTZGeA?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
