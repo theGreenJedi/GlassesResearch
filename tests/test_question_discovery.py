@@ -160,5 +160,64 @@ class QuestionDiscoveryTests(unittest.TestCase):
             self.assertFalse((folder / "report.json").exists())
 
 
+
+    def test_discard_unrelated_questions_from_fulltext_issue_hit(self):
+        class Reply:
+            def raise_for_status(self):
+                pass
+            def json(self):
+                return {"items": [{
+                    "title": "Ask HN: How do I build a search website?",
+                    "body": "One of my bookmarks mentions smart glasses. How is the weather today?",
+                    "html_url": "https://github.com/other/not-glasses/issues/3",
+                }]}
+        with patch.object(discovery.requests, "get", return_value=Reply()):
+            self.assertEqual(discovery.github_questions(['"smart glasses"']), [])
+
+    def test_keep_scoped_product_repository_questions(self):
+        class Reply:
+            def raise_for_status(self):
+                pass
+            def json(self):
+                return {"items": [{
+                    "title": "Can developers add display support?",
+                    "body": "What makes MentraOS glasses drop the stream?",
+                    "html_url": "https://github.com/Mentra-Community/MentraOS/issues/42",
+                }]}
+        with patch.object(discovery.requests, "get", return_value=Reply()):
+            rows = discovery.github_questions(["MentraOS"])
+        self.assertEqual(len(rows), 2)
+        self.assertTrue(all(r["source_url"].endswith("/issues/42") for r in rows))
+
+    def test_stackexchange_fulltext_query_cannot_launder_offtopic_title(self):
+        class Reply:
+            def raise_for_status(self):
+                pass
+            def json(self):
+                return {"items": [{
+                    "title": "Why does my Python array raise IndexError?",
+                    "link": "https://stackoverflow.com/q/22", "tags": ["python"],
+                }]}
+        with patch.object(discovery.requests, "get", return_value=Reply()):
+            rows = discovery.stackexchange_questions([{"site": "stackoverflow", "q": "smart glasses"}])
+        self.assertEqual(rows, [])
+
+    def test_reddit_only_extracts_actual_post_title_question(self):
+        rss = """<feed xmlns="http://www.w3.org/2005/Atom"><entry>
+        <title>Are smart glasses comfortable all day?</title>
+        <link href="https://www.reddit.com/r/SmartGlasses/comments/abc/topic"/>
+        <content type="html">&lt;a href="https://images.example.com/photos?width=640"&gt;
+        unrelated link title="How can I repair my washing machine?"&lt;/a&gt;</content>
+        </entry></feed>"""
+        class Reply:
+            text = rss
+            def raise_for_status(self):
+                pass
+        with patch.object(discovery.requests, "get", return_value=Reply()):
+            rows = discovery.reddit_rss_questions(["https://www.reddit.com/r/SmartGlasses/new/.rss"])
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["question"], "Are smart glasses comfortable all day?")
+
+
 if __name__ == "__main__":
     unittest.main()
