@@ -18,6 +18,10 @@ Daily source configuration is retained in `research/question-sources.json`. The 
 
 One inaccessible source must not be silently represented as success. Source-level health is reported in `analytics/question-discovery.md`. If no independent internet source works, discovery should fail visibly instead of recording a misleading clean run. Respect API policies, rate limits and source permissions. An extracted question is **not** evidence that its phrasing or implied claims are correct.
 
+## Relevance before volume
+
+Search hits are not necessarily questions about glasses. Reject generic full-text results, link dumps, markdown fragments, boilerplate issue templates and unrelated search matches. Use an explicit glasses/model match in GitHub issue titles or a relevant hardware project, and require additional issue-body questions to be topically self-contained. Stack Exchange title/tags must actually match the topic; Reddit question extraction uses the author's post title, not HTML image links or cross-posted article excerpts. Reject false positives before writing to the canonical registry. Candidate counts must not be inflated to approach 1,000.
+
 ## Normalization, deduplication and prioritization
 
 `research/questions/registry.json` owns stable `Q-######` identifiers, source URLs, original language/variants, lifecycle state, first and last observations, and canonical published URLs.
