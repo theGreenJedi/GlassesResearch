@@ -84,13 +84,6 @@ jobs:
           CLOUDFLARE_ANALYTICS_HOST: ${{ vars.CLOUDFLARE_ANALYTICS_HOST }}
         run: python scripts/analytics_report.py
 
-      - name: Discover real user questions
-        env:
-          GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
-          GOOGLE_SEARCH_CONSOLE_SITE_URL: ${{ vars.GOOGLE_SEARCH_CONSOLE_SITE_URL }}
-          QUESTION_DISCOVERY_FEEDS: ${{ vars.QUESTION_DISCOVERY_FEEDS }}
-        run: python scripts/question_discovery.py
-
       - name: Build page-query search opportunities
         env:
           GOOGLE_SEARCH_CONSOLE_CREDENTIALS: ${{ secrets.GOOGLE_SEARCH_CONSOLE_CREDENTIALS }}
@@ -132,8 +125,6 @@ jobs:
           cp analytics/latest.json "$tmpdir/analytics/latest.json"
           cp analytics/question-discovery.md "$tmpdir/analytics/question-discovery.md"
           cp analytics/question-discovery.json "$tmpdir/analytics/question-discovery.json"
-          mkdir -p "$tmpdir/research/questions"
-          cp research/questions/registry.json "$tmpdir/research/questions/registry.json"
           cp analytics/search-opportunities.md "$tmpdir/analytics/search-opportunities.md"
           cp analytics/search-opportunities.json "$tmpdir/analytics/search-opportunities.json"
           cp analytics/search-impact.md "$tmpdir/analytics/search-impact.md"
@@ -149,8 +140,6 @@ jobs:
             cp "$tmpdir/analytics/latest.json" analytics/latest.json
             cp "$tmpdir/analytics/question-discovery.md" analytics/question-discovery.md
             cp "$tmpdir/analytics/question-discovery.json" analytics/question-discovery.json
-            mkdir -p research/questions
-            cp "$tmpdir/research/questions/registry.json" research/questions/registry.json
             cp "$tmpdir/analytics/search-opportunities.md" analytics/search-opportunities.md
             cp "$tmpdir/analytics/search-opportunities.json" analytics/search-opportunities.json
             cp "$tmpdir/analytics/search-impact.md" analytics/search-impact.md
@@ -160,7 +149,7 @@ jobs:
             mkdir -p analytics/series
             cp -a "$tmpdir/analytics/series/." analytics/series/
 
-            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/question-discovery.md analytics/question-discovery.json research/questions/registry.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/)" ]; then
+            if [ -z "$(git status --porcelain -- analytics/latest.md analytics/latest.json analytics/question-discovery.md analytics/question-discovery.json analytics/search-opportunities.md analytics/search-opportunities.json analytics/search-impact.md analytics/search-impact.json "$history_file" analytics/series/)" ]; then
               echo 'Analytics snapshot already current.'
               exit 0
             fi
