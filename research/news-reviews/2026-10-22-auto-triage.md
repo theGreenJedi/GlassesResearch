@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-22T16:01:10.966731+00:00`
+Generated: `2026-10-22T18:39:26.542477+00:00`
 
 - Intake files inspected: **274**
-- Candidates retained in this review window/history: **11427**
+- Candidates retained in this review window/history: **11383**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2069
-- `catalog_review`: 17
+- `adjacent_radar`: 2057
+- `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 549
-- `rejected_noise`: 8722
-- `source_review`: 27
-- `watching`: 39
+- `needs_editorial_verification`: 548
+- `rejected_noise`: 8693
+- `source_review`: 29
+- `watching`: 38
 
 ## Action queue
 
@@ -154,6 +154,7 @@ Generated: `2026-10-22T16:01:10.966731+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1034](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1034) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1035](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1035) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1044](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1044) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1045](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1045) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -209,6 +210,7 @@ Generated: `2026-10-22T16:01:10.966731+00:00`
 | high | needs_editorial_verification | direct | [INMO GO3 Smart Glasses Brings MicroLED Displays, Gemini Integration, Unique Camera Privacy - Tech Times](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaVpoRVRuWkJtTllJaF91Z2ZwQUpaYjZKdl9JNV9XVHV6LTRpa25KcEhIcGx4YzBpNGVqNUFweTd1czY5MlFadDNIczFzZWIzbmlHb2lGcjh3SzNIWGJoZ092YnhtQ0hXc192c3QwRzNzN0Fod0o4NnVleE1wRGZnR2V0aEtyQU1fUEdKNGY4YkRGUG9VSkNRVXlmQU5ibGR4UHdkWEVOQlFzanoxaWpGS1BBMHdqa000TWhiTjVwWkJBMnpMRHNENWZpV2NPTUVfbXp6Nms4a2tUY3M?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Lawsuit accuses Meta of misleading consumers with expiring AI glasses deals - Top Class Actions](https://news.google.com/rss/articles/CBMiygFBVV95cUxOb3hXc0tRcmNfWGVBOFJCQU5YaWRYWjVzMEdGMUNPOEVpckJ1TEkySmtlTzFYZi14UzZibXhtSk9lM2ZQVERYbTVtQml6UEd4cDhVMDhmUUxMeThPZnlkenpaUS11Z3pvTzM1cWE1YzlhWW90MmdVQ2hIbXdfdjVmTjc4QVpOVF9WUC1SaUdVSUVUYU16NENqOHZ6bGJkX2NMbVNZT1lBdnFzLVlSU0VnMHJKRmZCaTlZMGdQaS1fanZrRzVSSF8zbENB?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Notebookcheck 16d ago Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Owlchemy Prices Hyper Visor at $1.99 for XREAL AURA's Launch, a Tenth of What Job Simulator Costs - https://vr.org/](https://news.google.com/rss/articles/CBMilAFBVV95cUxOMGZuejVveE5rV29iOTFlcm11dFNkRXdJclhkaW5RRmUzSHRIdmlfeWZRVWdsXy1XY0piNjR0ZWRubjJIYzc3dzJvMHBiajlWNWJIVjh0ZnpSdWIyU0ZwZ2ZxZ2hwYUJYWkRjSDhYVl9LOFJycGdGOUktd0NSWE1MaVZqOWI2XzZBa1NFVnJPSWlVLWZ4?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Pakistan: Why has Punjab banned smart glasses? - Gulf News](https://news.google.com/rss/articles/CBMingFBVV95cUxQOXlZenZyTzI3RWxwUjVnTmwxaG9XSjExc3lrMVUxWlNBX2V0eDRuLWxSRHJWaWRHSzExck5qaTV5NGtTempsMG1ZMXFZdVp5OFJaVGVTdXl5d0lhZUF3VWVNSlE1eklHTnNkeEtCR3lsVjN1VElzQ3N2RU5vZ2VtdU1XdEpUNHVtQVlnUHgxcmg2NWxMR1lENFpNTUpmUQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Palmetto Council of the Blind, Meta to distribute Ray-Ban Meta glasses to blinded veterans - WCIV](https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaUpvVHVHOV9zQ3c0d1pGdS1la1BXVXpGTWZrc0pxcURuRTEtTGdiTkUtX1Z0dS12MWtvTEczOVpacFV1QXktSGx6czRhb2U5dUFGWnFRdmo0QkZON1VULW8yQ25GOUJCTWRPaWYxNy1HQl9VT3Q0SzZGNmI3Sjg5VDdSWlJSVkc4Mi1tWDROLU1xeUttRy1XXy1CdUpybVlJNHhFYUk5RUxlQnhORUtUSUctc1JjUVR3Q0RpY3ROME5ZTV83UXZoSg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Punjab CM directs strict enforcement of ban on smart glasses and spy devices - Daily Times](https://news.google.com/rss/articles/CBMisAFBVV95cUxNcFViSzNWYlUyN0pGS2FDcU5Sdzh3d2w4Y2ZqckpzQzE1QlE5X2V2bUdzaEV6NXZMdW1MU196T3FvM0VDbFNsUkZQTnRtSmNrcVhPOWdmdDFhclgzelE1YjM1bXZxTm5kdVhmLWlZTjYzYnQxaVE4ZWN2VXQ4d28xcmttWElDRlhzV2RDdDRCSmQ3dWstTV95c2Nhel8zTVhXSmI5bmFEZ3Y4Qmt0Y0hRXw?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -269,8 +271,6 @@ Generated: `2026-10-22T16:01:10.966731+00:00`
 | normal | needs_editorial_verification | direct | [First Look: Project Aura — The Next Step in XR for Android XR ...](https://www.xreal.com/blog/aura-25-tas-release-en) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | normal | needs_editorial_verification | direct | [getd smart glasses review - TikTok Shop](https://shop.tiktok.com/us/k/getd-smart-glasses-review) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Giborejnr \| Tech \| I’d really like to review smart glasses and this was ...](https://www.instagram.com/reel/Dc8vLheIrTD/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Google VR Studio Behind 'Job Simulator' Unveils 'Hyper Visor' Arcade Blaster for XREAL Aura - Road to VR](https://news.google.com/rss/articles/CBMickFVX3lxTE00QmVUVVR2N0gyenMtcUxIRWtISmlRY0t6SkFuMENNbnpMbGtrUFA3Y3dkSXlxb3BnRkVnaTZreHR6UDJsZDdGeElwZ3hsS1RXaDBEUHR1RkVnZ1ZtN2NxM2FhbUh3UmNFR2RDSkZpYlJUdw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [HarborAeroWind Smart Glasses Review and Buying Guide](https://testforlab101.github.io/harboraerowind-smart-glasses-review/index.html) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 
 ## Meaning of states
 
