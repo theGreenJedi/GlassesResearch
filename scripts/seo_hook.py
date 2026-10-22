@@ -14,8 +14,6 @@ H2_HEADING = re.compile(r"^##\s+(.+?)\s*$", re.MULTILINE)
 PUBLISHED = re.compile(r"^\*\*Published:\*\*\s+(.+?)\s*$", re.MULTILINE)
 WIRE_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+(?:Reported|Under review)\s+·\s+(.+?)\*\*\s*$", re.MULTILINE | re.IGNORECASE)
 COMMUNITY_REPORTED = re.compile(r"^\*\*Across the Wire\s+·\s+Community-reported\s+·\s+(.+?)\s+·\s+Not independently verified by GlassesResearch\*\*\s*$", re.MULTILINE | re.IGNORECASE)
-# The visible label places the publication date between the community status and verification caveat.
-# Keep the date bound to the exact visible status line; do not infer dates from article filenames.
 LINK = re.compile(r"!?\[([^\]]+)\]\([^\)]+\)")
 HTML_TAG = re.compile(r"<[^>]+>")
 MARKDOWN_MARKS = re.compile(r"[`*_~]+")
