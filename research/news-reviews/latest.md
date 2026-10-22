@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-22T00:58:05.357696+00:00`
+Generated: `2026-10-22T01:38:11.199701+00:00`
 
-- Intake files inspected: **273**
-- Candidates retained in this review window/history: **11223**
+- Intake files inspected: **274**
+- Candidates retained in this review window/history: **11289**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2068
+- `adjacent_radar`: 2089
 - `catalog_review`: 18
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 563
-- `rejected_noise`: 8496
-- `source_review`: 34
+- `needs_editorial_verification`: 565
+- `rejected_noise`: 8538
+- `source_review`: 35
 - `watching`: 40
 
 ## Action queue
@@ -219,7 +219,7 @@ Generated: `2026-10-22T00:58:05.357696+00:00`
 | high | needs_editorial_verification | direct | [Notebookcheck 16d ago Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Punjab bans camera-enabled smart glasses for 30 days - Digital Watch Observatory](https://news.google.com/rss/articles/CBMiakFVX3lxTFBqcHM0X0xrMVRLaWc4T3ZybVhBTWpCUkFPS0g2M1pDMlhqUE9RU0xBM3UxRHFSeWRvbzF2NTVkS2NCX2lNdmhEV2hWRjh4UmYyVUNkejd4TWotSldOQWdHWFdFaVFmMUM4ZUE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban maker's shares jump as strong eyewear sales temper AI glasses worries - KSL](https://news.google.com/rss/articles/CBMiswFBVV95cUxOQW8zMTZjTzhCdjNLZXZ0QjgxUTJEdm5yZFEyNVBGRm5WQ3J2eFlZZ1hXVU5xTVA2NE9kcUF5V3VtQk9wSFN4NGtNR0ctS0JNbWJnWWpxOUhyZnNURkVLam5zODVTTXpkdDEzSnU3dmMzNWVab1NrS19xMWNDTTRZTXpPWmdwOHhLUnRBcnBuQkVJSlZJajV1dUFQSk5mU093RmJvdFRoajhvdWlBMWdxdGJhMA?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta Audio Review: Smart Glasses Are Better Without Cameras](https://www.pcmag.com/reviews/ray-ban-meta-audio-review) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
+| high | needs_editorial_verification | direct | [Ray-Ban Meta Audio Review: Smart Glasses Are Better Without Cameras - PCMag](https://www.pcmag.com/reviews/ray-ban-meta-audio-review) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Audio y Gen 3: Características y Novedades - www.todoandroid.es](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPbFYxdXdZcGpMSTJzZmdZenlKUF9IeDE4Uml1eEl5VTVxdUNGX0J0NWY4UWFMT2pnRUtHbmhscXVWb2dZY2VJZDlVTlVTUnhtNHZtdVJGT0t1RHRnSWtmVTYtb2p2ZUZCRVJULVVUUTBEZEZ3WXJNOHJYdmhDQUYybU1sazJVeW44ZVhsOEhiY0ZHVjhvVzl6T0pJa1hqb1U2U1BIb3BsZlYxZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Road to VR 14d ago Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Rokid seeks ‘no man’s land’ retail experience with Hong Kong store launch - South China Morning Post](https://news.google.com/rss/articles/CBMi9AFBVV95cUxQemNoTFNISGtFQlNBTDlfWV9pOXlRT05NWDB5VF83XzNETV9HOXMwQ3d5SGIzVmFuRnhmaERoSjVtQ015Zm01RWdLN0ozSTZxNTZyV3ZSQVFvT2xYMXdOYWtUbm02T0ZRRVJfOHF4cE5oWXhYdnBabXhIVGFlS1BQYWtmaVAwVTRBajNQaTRJQldzWXAyUUVfOTNXT1NYdzM0cndqYW5ERGRmWkR3S1MtTWJNbjhycTFkd3VQNy1NbkljZF83M1hBODFwSlJUbnZQdFNEOW5lY3JrMGtFc1hvclR2RmJyT2xVUUQ5dXhsNGZIMUgt?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
