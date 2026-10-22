@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-22T07:44:45.018216+00:00`
+Generated: `2026-10-22T08:58:11.402625+00:00`
 
 - Intake files inspected: **273**
 - Candidates retained in this review window/history: **11201**
@@ -12,9 +12,9 @@ Generated: `2026-10-22T07:44:45.018216+00:00`
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 554
+- `needs_editorial_verification`: 548
 - `rejected_noise`: 8474
-- `source_review`: 30
+- `source_review`: 36
 - `watching`: 40
 
 ## Action queue
@@ -203,7 +203,6 @@ Generated: `2026-10-22T07:44:45.018216+00:00`
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Distributor clarifies Ray-Ban Meta Smart Glasses not in the Philippines yet - Rappler](https://news.google.com/rss/articles/CBMikgFBVV95cUxObVUtZXUzc1RFT1J5U2Q0VUF4QXVzOGhNblFTakYtalFwdkVWV2FqWWs3VWhBUHlkWHpsdXoyNzJqd05BaGFSV3BuWTBmOGJOTy04eG9NLWtHRWI1RXhnOEtwaHN1U3JMSS1xSFNBODNsZ0N3Q2l4RVBaUVliX3Ntbjlmc05jdUg3TnVWZWxxUndRZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -250,9 +249,6 @@ Generated: `2026-10-22T07:44:45.018216+00:00`
 | normal | needs_editorial_verification | direct | [Absolutely striking: RayNeo GT Max gets a stellar COD: MW4 paint job - Android Central](https://news.google.com/rss/articles/CBMi2wFBVV95cUxORzRNNmlRRERIOHVyalZLUlJuNThWRnRsUUZmZXB4UEZyT0p2dlJFblNQcnpTZjFIeDJkV29wNlBkVFRyVVdXWlRMcTJuQVdtSmZIMFFmdm9VOHNXV2w0R2EyUENsckVvc0ZWejFLOHdGS0FCNDZCdElXYkNDZnlZU3RuOEdvWVBGczB3d2FnSV9rc3BDZV9qUi1VUWdrcTNMYnlsRnN0S2l3Zi02ZC1QUHBzOG9YdUJXWnF4ZEVmWkRUMHZYZXBCaWYwbnl0djEtUVJNVWwtZGIzRlU?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Android Central 11h ago Get ready for MW4: RayNeo's GT Max reloads with Call of Duty for a striking limited edition Coverage RayNeo](https://www.androidcentral.com/gaming/virtual-reality/get-ready-for-mw4-rayneos-gt-max-reloads-with-call-of-duty-for-a-striking-limited-edition) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Reorganizes Its Priorities: Smart Glasses Take Center Stage as Vision Pro Takes a Backseat - آي-فون إسلام](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjY3NUFaeWhSVHVwbDE1Y25hS2xyWGFmT1hXTFJWR3kwenJJamlpMGM1T0lHS1djTmtDbWxzQTVxSXVEUVJURC1Wc0RkNEZtODJqb0thX1RpSTM0OVYzX1YtWUdQNVJCVnFlUl9UOUxkd3VEalBFdmdwWGQzcTZwbUE0ZEcxNEtpdmdjQklyZEp6RWRXTktEQUdjVi1LRDQzSlZ6cEJRbV9La0RrcWkyVGNtdjRMaTdTZGZBazEwODVKRTdXYVVIWEJ4c0ZweEphWFNmdFV4eW1KZDdraW9z?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +267,10 @@ Generated: `2026-10-22T07:44:45.018216+00:00`
 | normal | needs_editorial_verification | direct | [Cuatro formas en las que las gafas inteligentes pueden ayudar a las personas con problemas de visión - Infobae](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQaFBNNWMyclJoQVczWUV6ZHlualMxalptakRHN3phaTNIbFpZNjl4WnlPOWVZMk5nd2xZR3RVUmNJX3dNTl9EUGpWZV9QRUc4LW9PbG1OZWJ0TG1DVml5dEhncHBhUGhidGlZQ3lIVU5rVVdsLW5CTmVocWV6Z3JjSWdXWHVpeHl5UFBQb1BuSFc2QU5JeUdnRDN3QWlobHZhN2Z3aDdRX09GN0Q5QlQyMW5VSDNoLUZXUm9IYkdUZUluYk5WQjYyNEhIdkZTWnlVaUJLaDVZMXJLZ9IB9AFBVV95cUxNZGs3WmpaYXdGcWRMS1laSDNRRVFrWVRpb0pwODVRazZqQTN1ellxMmVYNHZhWXFvTDllam1TamRoblo0MVk1aDRaMFNuYzVrNXpQNm5TMjZfckxLUkxrQXZsMDhVU0NZM3JBS2RwYnlWRlVZUXllN2F6WVNuUGc5YkpTY1B0dnFvWlBncTNTc0U2TURDTTVOeDNfZDMyRVp5dFVESERvNXVPYUItYXhoOVphbmZYeGVzQzlETkpkdkhkdmE0c1NiSlF4SkwyN0NzbnJTQlJPR1NzTkhwSUJFbTlUdXI0bmNJYmcwTUt4V3Qwd2pu?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [EO Adapt Smart Glasses review: mabilis na features at verdict \| TikTok](https://www.tiktok.com/@burnvlog/video/7675008571389594900) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [EssilorLuxottica fatura € 7,49 bilhões no 3º trimestre com avanço de 20% nas vendas de óculos inteligentes - Balada IN](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNNEM4T3BBRFJiVEVxZFYzQnZBTzBUWXNLUnIzNnJuclpKcmtwTE1EUHluMUVHbW4wQ3JFQ2JfczdYY20yc1pSYTFTYk5NYUc4U0lWalFSdUlDMzdvSVBjdXpHUTVrNHM4SFhQeV95QU5xZ1BaaUlrSVUyWHJYbEEwNXhyT1hxcjlzeldDZmFuaXJMdHVPSmlwbnpBa1JYY2poalZqQkZfQTRjVmxqUkdVSHZDZ2ZYNDJNcXptMGI3QXlYQWJsa2FZdUdFNW10bkptVkhtUDd1MWNsUQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [EssilorLuxottica sube tras batir previsiones con sus ventas y el impulso de las gafas inteligentes - MarketScreener España](https://news.google.com/rss/articles/CBMi6gFBVV95cUxOakRzRkZoUFFFaDlYNnFyOEd2UEhUUEFvNEJJX1h6Yk9ScEFnSlAxTk9wQWc5cDNhdjRWQXVNb2tUdGRWbDFfQTVObnU2UldvWUViV2YxaFctdThjT3cyTngwZnZKQ0ZrNHVHQlZ1bzV3NG9JQWRvTlJxeUVTZW9ibW1RcndoeFJXUkl0VVVEUHhPb3dNanl6REx5MUF1blBUT1dPTGpSaDFyZ19hQ3FtQXNSeUFITDdUM1BTQ1FYWDVJSnJuNERkTnpLcTZYalN1blVRQktQeUU2SWN5M2lVVU1SNlNLcHRVaEE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [EssilorLuxottica tem alta nas vendas no 3º tri, com impulso de óculos inteligentes - UOL Economia](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS192TjZZMFVBYlNhZGxxMkNMclJvSzU5WXJVU1d0UjFqX2RCbHdUWU1feGFTZ2xiU1k5a0JaRHRQdFZWbDBYb3FRdGtXZU56ejBtNTZGZWpfMjctYTZZWVNZZjJPLVFjZHlYZGlZZmI3eDgtaEZNS01oNmVNUHgxNHFuV2dFUGIyR3hTNkJ3TUZQOEZjUmxzOHJ4dy1STWxudXhnR3dnb3k4QVVreHNpclpZNUY1eEJCRjhXYWVPa2ViWXNCb2hrTmxNb1VmbzQ3RFVQR0dCVmFDRWFEZ2tJdTE1VQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [EssilorLuxottica's AI glasses and hearing glasses grew revenue 20% in the third quarter - MIXED Reality News](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSjFKd3dMRkI5RFl1SUpSQVhXV2ozTWk1ODJWb05JTlYzYW04MExkQ2o1RWJ5akRvRVMxNkExdGFWa2N2b2lpWmoxV0JRSlI3S0V1a09sTWF0RXlfNnkwSjBUbGlHZUV2dkxVajJGaVFJZXRCQlZxMThJUy1kcmRsT2FNNXkxMjZhSVg4?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Even G2 Smart Glasses Review 2025 - Instagram](https://www.instagram.com/popular/even-g2-smart-glasses-review-2025/) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
