@@ -1,25 +1,26 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-21T15:19:02+00:00**
+Generated: **2026-10-22T15:19:39+00:00**
 
 - Published evidence-backed answers: **104** (minimum **1000**, no ceiling)
 - Remaining to minimum: **896**
-- Canonical registry size: **169** (not the published count)
-- Unanswered research candidates: **65**
-- Observations this run: **69**
-- New distinct questions: **0**
+- Canonical registry size: **171** (not the published count)
+- Unanswered research candidates: **67**
+- Observations this run: **62**
+- New distinct questions: **2**
 
 ## Source health
 
-- github_issues: ok — 15 observations
+- github_issues: ok — 11 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 33 observations
-- google_search_console: ok — 1 observations
+- reddit_rss: partial — 29 observations
+- google_search_console: ok — 2 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-_No new materially distinct questions in this run._
+- **Q-000170** — Choices if I want a display but no camera?
+- **Q-000171** — what are the best smart glasses without a built-in camera for privacy-conscious buyers?
 
 ## Research queue (first 20)
 
