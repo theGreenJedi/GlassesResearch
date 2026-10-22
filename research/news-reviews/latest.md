@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-22T11:24:06.492541+00:00`
+Generated: `2026-10-22T13:55:37.381064+00:00`
 
 - Intake files inspected: **272**
-- Candidates retained in this review window/history: **11169**
+- Candidates retained in this review window/history: **11110**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2071
+- `adjacent_radar`: 2060
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 548
-- `rejected_noise`: 8460
-- `source_review`: 29
-- `watching`: 40
+- `needs_editorial_verification`: 547
+- `rejected_noise`: 8416
+- `source_review`: 27
+- `watching`: 39
 
 ## Action queue
 
@@ -39,8 +39,6 @@ Generated: `2026-10-22T11:24:06.492541+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.721](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.721) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.722](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.722) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.730](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.730) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.734](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.734) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.735](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.735) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -221,7 +219,6 @@ Generated: `2026-10-22T11:24:06.492541+00:00`
 | high | needs_editorial_verification | direct | [Top lawyer warns about criminal liability as Meta smart glasses get official South African launch - MyBroadband](https://news.google.com/rss/articles/CBMi4gFBVV95cUxQT0lUTTR5Slk1RTdWbEx2a3RmaDdNbk1ELVV3VlJoUzlaRjRVM1djMnYtZ0tOSmgzR3BmS2UtZWZIVGt1R3R1QW9BRkZxeGk5cG12RG5qRUZEMFFZWTdLeURaMDVBWHV2eE8tVFRPRmVmdlllMGtjMHZOUUpTb1RLdkRfeTJ2Ni1DWE9FU1UtV1ppT0hqa2JwY0Npa2lIS0ZhZGtRQUZBOEJTVWMxRzZ3U2xlYnAwX3U0UzNfcHZ1cGhNdUhEa2k2eFlFNDBaM2hTaWszWXlaYmZIWnN1bUdROVp3?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA glasses pricing info announced - Pocketables](https://news.google.com/rss/articles/CBMihAFBVV95cUxOVlQtTVJFU1FZRUN5YUl3QkF1c1RTUDFZRkU0Z2RGRk1MZTZLMEJKVGFERl9FSjFuTzltUkRfRGQ3RF9ZUVNtZmp1MVhHaDdyWXlUR0xMd1VJY2FJdTR6OGJ6Nkw1RlRiVmxtZS1LX2FZU2ZFeFNmSnVFcXE4Qmg0Z1NhR0k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA US price, preorder eligibility and shipping](https://us.shop.xreal.com/blogs/guides/xreal-aura-price-preorder-us) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Xreal's Aura store page lists four versions its own FAQ says are not announced - MIXED Reality News](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOX01JSkFseVhPVFJycl91ZXB0OW5oa1VpTmJfWG9wTTlmTy1UOU5HN1JXVEZ3Nk1xeE9lMVJDc1h0VzdPVVp0UFNXcjVraHlfeTdmT3FRMzhuendaR1NJSUN0dkZCVGt3bXplTnl1S2tUdTcxUDdxMzdFRXU4UnpCaDJYa3hkTmZV?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [[Insight] AI Glasses Expose Gaps in University Exam Security, Entry Checks Cannot Stop Cheating Alone - Korea IT Times](https://news.google.com/rss/articles/CBMicEFVX3lxTFBfbUxlUzdjWGFvYzlGcVdzYmR1aUEyZFljOTFtVloyQWc5VzRURHpNWVF5ZHhLTlNWd0U2N0JkMHhMd1VfTTJjX3BVWjdhSGNPd0FRa3JqbWlqVm5rWWR6dGJNbEtBRmdHTVZPVDl1SUs?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses Challenge South Korea’s Exam Security - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSFBnTEhRSlA5LW1fX2hsbXVRcXpyMnc3RU5DLUxub1ZpUHVwOW43ckVVeU1WcjlQbHF2SFppczdpd2FSc1JhWjc2cTROWTFDU3dsUlhwSHdZa0Zia2dvVlNOc044Z3hxcDA2QlM3UjQtTGc5QzMzVnRzNE8xaFlMYmRPTDBUZUJf?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Spark Security Concerns Just Month Before College Entrance Exam - SBS 뉴스](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsd9IBZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsdw?oc=5) | reachable (200) | research_news_review |
@@ -245,7 +242,6 @@ Generated: `2026-10-22T11:24:06.492541+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 쓰고 국가자격시험 본 20대…업무방해 등 혐의 송치 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5uSjVFWlJmN2JWZkpWdkdCVzEtR2JKeThSSU45aFdxc0pKZk83bXZaOWxJdzhFaGlvZ3dtTEdWSFBYckRBVW5iRF9ET2VCRmJXVGpteERmTGlmcFpGMkRBMg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 쓰고 국가자격증 시험 본 20대 송치 - KBS 뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE9OTjJidi1rVG85RjdqVUx1VWpqMTdxUjBubUp3bGlpWE5YVHlMQ2k0OHRoYWExaWJleEFXT3NKaWVwa2pqYlNsRXFZcll4cEI2OU85NHI4R3p4NUU?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜能换电，AI手办会互动 - RFID世界网](https://news.google.com/rss/articles/CBMibEFVX3lxTE9LMzYzUmV4MnBHcFlJVy1oRVVqQlU0Ri1zaDl6d0xabmlTRUxVUHVCcDNZN0VKN3RCcWVzNE16YW05d01ub3ZhWTZNSTNRdmoyM01McEc5aGVBcUN2YkJqWnNsMnR6WXhaMnlBWQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Android Central 17h ago Get ready for MW4: RayNeo's GT Max reloads with Call of Duty for a striking limited edition Coverage RayNeo](https://www.androidcentral.com/gaming/virtual-reality/get-ready-for-mw4-rayneos-gt-max-reloads-with-call-of-duty-for-a-striking-limited-edition) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Glasses Leak Points to a Radical Shift for Wearables](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ad9f1b282e24f599233888a6cef2685&url=https%3a%2f%2fwww.geeky-gadgets.com%2fapple-glasses-details-leaked%2f&c=16231991161908017449&mkt=en-us) | reachable (200) | research_news_review |
@@ -271,6 +267,10 @@ Generated: `2026-10-22T11:24:06.492541+00:00`
 | normal | needs_editorial_verification | enabling | [How to read your contact lens prescription \| ACUVUE®](https://www.acuvue.com/en-us/blog/read-prescriptions/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [I Put on Meta and Xreal’s XR Glasses. Face Computers Are ...](https://www.wired.com/story/weve-tried-meta-and-xreals-xr-glasses-is-there-a-winner/) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [I've never owned smart glasses, but Samsung's Android XR glasses may change that - Android Authority](https://news.google.com/rss/articles/CBMic0FVX3lxTE9sb05fekdJRWFHdE1uVTBMLWZqaWNoU2JXRjhORHI2aHNFVjk1THpGNVNYZWFENG4xaURveWVtaTVBQWNLM2QwSGxGelZNODZVYmszQjNIVTlYaktLS0hjVWZLN3p1Z3VQanN6VDRRS3ZPYlU?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [INMO drops GO3 smart glasses 98-language translation Google Gemini ChatGPT - NewsBytes](https://news.google.com/rss/articles/CBMivgFBVV95cUxNU0p6eTUyM1ItZFV3UkxqMFdrcGoyaUEwUEQzaDFzelg2Z0VnYkg3SkpCd2RiZmtabzA4WThZTGFIRlZ4dFNQakhLY2lHTmhVN2o4UVpBdzlJaWZnMXZzZ0ZSMzhZaExoRjhPWHVuemlhM0t4YUgzN0JvdHZQeVZIWV9BRTN3U3ZaeVppQlpsd2RLTkNUZUtzaEh0WEV4SUloOXljSW91YjU4cDBqTWlZeDN2WFlvYkFsa3lWNm9n?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [INMO GO3 aposta em telas MicroLED e proteção de câmera - SpaceMoney](https://news.google.com/rss/articles/CBMijwFBVV95cUxObW5nRlR3WHZHMENmU0x5U3FnenRjcUQ3Tks1OXphT3hPSWZFN3ZYdTlTUEkyNFY4Z3ZxcGMtbkYzTGYtX2dDQ3FtMlJFMnctdjMxLTlOZUtjQ1NNYjNSMEVpb1RVMnJXTGdLN3NxRlZGZ09RRUt2YmxkRnhraTRUX0YxWmNUU0lQdXdaY0Jmcw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [INMO GO3 coloca display, Gemini e ChatGPT em óculos de 58g e US$ 509 com bateria trocável - TecStudio](https://news.google.com/rss/articles/CBMixwFBVV95cUxQRHprNjVXQjU5TXZ1X1p4MER3U1dUd1YzR3l2WkhLY3RZNDhESkEtbHZrRzIteXVldTMyQWNXdFRwZDVob21TNjBiUU9VX1BOM04yZmdXaDBHN2JsSFc2eWZzdktUVmNjUktrR0VQVEFwUkNBZ1A0LWdCTTVON3hoUW1vdlJpV1FqbVdFQzZZSmJTdWpsRk44TFJWRUF0Z1RGSF9ZMU4xc2REV0pxdUQ4VG5nV3VwOUxxTGFrRGtVd0NyN0VrOUlj?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [INMO GO3 desafia Meta com óculos inteligentes que protegem privacidade - Canaltech](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNME80d0VNbmxzOGZESmpFVHNzcnRFaTNqc1prNkhReGpyWkx3bmFndWRXTnh6YWpWZFZPVlpNM0pja0FyRVNfTFpuemVncVFyQ3lxcjJNa2h4TXdORWFwVWF3ci1OTmJTQVNHaWo0TXpDTUdocm5aNmt4VkN2cGFOeUU0RzFEdnJBd203YjBUSlRPZnhiMHdEQ2tBNkhieUJuS2xEcnJ4MDI?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
