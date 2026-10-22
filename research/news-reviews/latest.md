@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-22T20:00:12.862533+00:00`
+Generated: `2026-10-22T22:28:29.965880+00:00`
 
 - Intake files inspected: **273**
-- Candidates retained in this review window/history: **11402**
+- Candidates retained in this review window/history: **11366**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2090
+- `adjacent_radar`: 2081
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 542
-- `rejected_noise`: 8680
-- `source_review`: 34
+- `needs_editorial_verification`: 541
+- `rejected_noise`: 8655
+- `source_review`: 33
 - `watching`: 38
 
 ## Action queue
@@ -39,8 +39,6 @@ Generated: `2026-10-22T20:00:12.862533+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.734](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.734) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.735](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.735) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.738](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.738) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.748](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.748) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.752](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.752) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -154,6 +152,7 @@ Generated: `2026-10-22T20:00:12.862533+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1035](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1035) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1044](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1044) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1045](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1045) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1050](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1050) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -192,7 +191,6 @@ Generated: `2026-10-22T20:00:12.862533+00:00`
 | high | needs_editorial_verification | direct | [Android XR Smart Glasses Launch in November - Droid Life](https://news.google.com/rss/articles/CBMiigFBVV95cUxORnJYUTBnelBmaGhibV9KTHEwblc3c1A3RDRpVkZvalg2UVFrak1tVldkdEhHRU83QzUySzlfaXBseHpNMlhvajNBdGIxRWVUR3EtVmZ2RU1EeTMxTUdYQm4zS1dHRkNwQnlyenFuXzRFeVdtaGZIdUVON0I3QnFEeGxzX0Z2MWJVZHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [EssilorLuxottica and Meta launch AI-powered eyewear in Portugal. - Grande Consumo](https://news.google.com/rss/articles/CBMimwFBVV95cUxQUzRpVVZaS3BGQzNsV1dYRW1ZcmhoOGhHNXZRb2kwOGI2ZHVPU2FyTmN4M3VZeGx1Sm84NWIzeHVHb2hFR3ZtUF9nTm91RzU0SW5wNVhuY2R4dVVKZkdpNzZjWS14REdWTjRkQWp3MjhKRlhLRnpzbGV2X0IybUNid3pHcmtBN3FtYVBsSEgxelhmQUVjTmNQUUlZdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Jio AI Smart Glasses: UPI Payments, Features And Launch Date - Flickonclick](https://news.google.com/rss/articles/CBMie0FVX3lxTFAzYzY1eS1FMVhNX0xjNUxaN1B4X0VzQmpCX1NjRmdTVVgtdm1GNDFpLTM3T1dycjQ2d3JkZGZlMHl0V25IMHlveER3SlB4S09TbHZnVGlzVm9IVkVSdVVyOC1lcGlxRGM2cndmejZYajZrb0ZXUjZEN2hXRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Sesame plans to launch its own AI glasses in 2027 - Lowpass](https://news.google.com/rss/articles/CBMif0FVX3lxTE1aOHpVOG5SYWZMdTBxMEdBVzJkVWZLa0tGSFJGcDZVR3FPX18tRDROV2R2SnUzYnVWVDNDTi1NMjFaZ3g0QjdFOVJfc19yNkxoLVF1TWpKeFFlTmRaT2tCTTgxVW1wU1hUR1FDS29xQ3BvMVlNeFdGVlNHZkc3MVk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Two affordable smart glasses launch, one with 20MP Sony camera, one with tint-shift lenses - Notebookcheck](https://news.google.com/rss/articles/CBMizgFBVV95cUxOdFJZWEVZMG1QZTZZWlA4VjcydWlpQnFiSUQ1N01fdVp6YlI4b2x6RFhMaDRWeUIzWEFXa2lxb3hCVUQ3LWx1Q0pXUVdIMi1oQlA2WTF4alZYYU9iSmpBYVU4b1ZXaHdEQXhlOFkzOUdTZkVhMnNkYkp6bUphTkNZZ3VGMEJRNExhMURoSXVpRGE1UzBDaUNmendhRGkzOUR1TDZQYm1fOGd5bVpycVJNdnBLd3IxcEtiaXowbURwRlJHd2g2YmVsYkJFalEwdw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Xreal 1 Pro+ AR glasses launch with 1,200-nit display and smoother 3D conversion - Wareable](https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVdOaUpqSjNZRXdqMTl3eFExalRNLVMxeXRTWHhGbVpfRU90SW90VmpOY0JfMUpnUUxKVFpRaXNkYkZzSjBUZ2ZXTE1rcmo5SEozQXFLR09IeFlsNUJlWmRqdTZmMzhOSFUxWlRleTUzZ0Q2bVJqYTdSYVM0WDhubjJ1Z0x1NF92NmZvSA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [9to5Google 20h ago INMO GO3 smart glasses pack a display and Gemini integration with clever camera privacy Coverage Inmo](https://9to5google.com/2026/10/21/inmo-go3-smart-glasses-pack-a-display-and-gemini-integration-with-clever-camera-privacy/) | reachable (200) | research_news_review, policy_privacy |
@@ -271,6 +269,8 @@ Generated: `2026-10-22T20:00:12.862533+00:00`
 | normal | needs_editorial_verification | direct | [I Put on Meta and Xreal’s XR Glasses. Face Computers Are ...](https://www.wired.com/story/weve-tried-meta-and-xreals-xr-glasses-is-there-a-winner/) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [I've never owned smart glasses, but Samsung's Android XR glasses may change that - Android Authority](https://news.google.com/rss/articles/CBMic0FVX3lxTE9sb05fekdJRWFHdE1uVTBMLWZqaWNoU2JXRjhORHI2aHNFVjk1THpGNVNYZWFENG4xaURveWVtaTVBQWNLM2QwSGxGelZNODZVYmszQjNIVTlYaktLS0hjVWZLN3p1Z3VQanN6VDRRS3ZPYlU?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [INMO GO3 aposta em telas MicroLED e proteção de câmera - SpaceMoney](https://news.google.com/rss/articles/CBMijwFBVV95cUxObW5nRlR3WHZHMENmU0x5U3FnenRjcUQ3Tks1OXphT3hPSWZFN3ZYdTlTUEkyNFY4Z3ZxcGMtbkYzTGYtX2dDQ3FtMlJFMnctdjMxLTlOZUtjQ1NNYjNSMEVpb1RVMnJXTGdLN3NxRlZGZ09RRUt2YmxkRnhraTRUX0YxWmNUU0lQdXdaY0Jmcw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [INMO GO3 desafia Meta com óculos inteligentes que protegem privacidade - Canaltech](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNME80d0VNbmxzOGZESmpFVHNzcnRFaTNqc1prNkhReGpyWkx3bmFndWRXTnh6YWpWZFZPVlpNM0pja0FyRVNfTFpuemVncVFyQ3lxcjJNa2h4TXdORWFwVWF3ci1OTmJTQVNHaWo0TXpDTUdocm5aNmt4VkN2cGFOeUU0RzFEdnJBd203YjBUSlRPZnhiMHdEQ2tBNkhieUJuS2xEcnJ4MDI?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [INMO GO3 smart glasses pack a display and Gemini integration with clever camera privacy - 9to5Google](https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDdldHZKRlFHemtvTVRtUV85VzJsNVM0MTZKTHFVbm1paGtOU25PdU1nN2JmbDRsYlhpamVpWTA3S0hKcTNiV3FlbHZfOUZxWm9rRFo4V0xBSnpTY2g2V1FiVnRndjNQVTY5RVlOcHFYd0lMTGxlX0QtQlVtSFNxcTZ0bHNlazlkYnd0aGpNaUU3cHVrYkhDQXZQM0QxZE1oOXFOS2xnSk9SU3ZfcUh0V1ByUzRORExZbjZfemJiMA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
