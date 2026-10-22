@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-22T08:59:13.617390+00:00`
+Generated: `2026-10-22T09:41:24.828705+00:00`
 
-- Intake files inspected: **273**
-- Candidates retained in this review window/history: **11201**
+- Intake files inspected: **271**
+- Candidates retained in this review window/history: **11117**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2082
+- `adjacent_radar`: 2068
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 548
-- `rejected_noise`: 8474
-- `source_review`: 36
+- `needs_editorial_verification`: 546
+- `rejected_noise`: 8411
+- `source_review`: 31
 - `watching`: 40
 
 ## Action queue
@@ -39,8 +39,6 @@ Generated: `2026-10-22T08:59:13.617390+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.718](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.718) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.719](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.719) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.721](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.721) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.722](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.722) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.730](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.730) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -210,7 +208,6 @@ Generated: `2026-10-22T08:59:13.617390+00:00`
 | high | needs_editorial_verification | direct | [Gafas inteligentes con cámara: qué graban, cómo avisan y qué dice la ley si te graban sin saberlo - WWWhat's new](https://news.google.com/rss/articles/CBMiiwFBVV95cUxQU0dVeWFNX2lzc1k5a0FCbDhucy1iM3VHV2xZUnhxeGQ1VEZVMFZMUS1EV0lnSGRSeGhZb09Xem5fTVliWFhNS2hJUDVZaE5MbGtkLV9RS29qWHZfbEdPVnlNRjVWSmpQY2lLSUtrOS13cHd2c0M3dUJhSDVlLWRGdFJGTVVOWXJJdTdR?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Inclusion concerns erupt over Vic Govt’s smart glasses in schools ban - EducationHQ](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPM05SZHhINjM0Zy02SFdqTjFiWjdSd3NMLVA4Rm1NZlNKLXM5dldfdzdKSGR0ZUNnTTZSUXNjbFpCaWgyZ05lQkJ5OGdTTzdXc2p2Y0ZzZU9odlYzQjJDU3k5c1U4LWVnbjZUX0JWa1JPYnZNeGV4ckRNYTlpLXlrLTFtaXhLYWwwb3RQeFp3YWVwSDZVMDQ3S29HaUprTHJRUXpEZFJ5Sl8?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [INMO GO3 smart glasses pack a display and Gemini integration with clever camera privacy - 9to5Google](https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDdldHZKRlFHemtvTVRtUV85VzJsNVM0MTZKTHFVbm1paGtOU25PdU1nN2JmbDRsYlhpamVpWTA3S0hKcTNiV3FlbHZfOUZxWm9rRFo4V0xBSnpTY2g2V1FiVnRndjNQVTY5RVlOcHFYd0lMTGxlX0QtQlVtSFNxcTZ0bHNlazlkYnd0aGpNaUU3cHVrYkhDQXZQM0QxZE1oOXFOS2xnSk9SU3ZfcUh0V1ByUzRORExZbjZfemJiMA?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Innovative Eyewear Reports Record Q3 2026 Preliminary Net Sales and Expansion Plans Ahead of Lucyd Aero Launch - VisionMonday.com](https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMll0LXpzbEdzY09Fd0JRRU1tVXRHcjZ6YzV2SzJUOFJYWkNfMWxwZ0U2REtUdHhEUm9mY19OWG8zSXR5dHZsUjBkcWVndUpCN0tRTE13cWUyTm10SGJfTlJjN3M0NV9mZ2ExdWxjQkhSSzM4eS10cENXUmpvNURwRk8wMTZXcEtxSTdVZ3gtY0l2TkU4aEZlcG1MQ0s2U04xdWxuUmVDbHRNdl9HS2JNTkYtSEV3WjZ4djZqN1A2TV9oU2w1NnVNaGxOZkRlSUgxU21iamdNLTJ2eGRtRTQ4N2p2VGxZbVlRUmE3UGRxbjk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Liberals push for smart glasses ban in ACT - Queanbeyan CityNews](https://news.google.com/rss/articles/CBMigAFBVV95cUxOSDF6OVZXcjh3c0xJQ1pfU1VrVDExOGRoQnkzZHNzVlZhTDBvTmp6Y0E5Z2M4emRlN3JNWE9NS2VsQ21wUUtaNktUd3ZXVmdMRmVqb1cwVWlMQUpkamF1dEVLcHJSdkVDcmlKbVdwTV9PSDZwZDhxRXlUZTRPOGNabg?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Notebookcheck 16d ago Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Punjab bans camera-enabled smart glasses for 30 days - Digital Watch Observatory](https://news.google.com/rss/articles/CBMiakFVX3lxTFBqcHM0X0xrMVRLaWc4T3ZybVhBTWpCUkFPS0g2M1pDMlhqUE9RU0xBM3UxRHFSeWRvbzF2NTVkS2NCX2lNdmhEV2hWRjh4UmYyVUNkejd4TWotSldOQWdHWFdFaVFmMUM4ZUE?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -271,6 +268,9 @@ Generated: `2026-10-22T08:59:13.617390+00:00`
 | normal | needs_editorial_verification | direct | [EssilorLuxottica tem alta nas vendas no 3º tri, com impulso de óculos inteligentes - UOL Economia](https://news.google.com/rss/articles/CBMi4wFBVV95cUxPS192TjZZMFVBYlNhZGxxMkNMclJvSzU5WXJVU1d0UjFqX2RCbHdUWU1feGFTZ2xiU1k5a0JaRHRQdFZWbDBYb3FRdGtXZU56ejBtNTZGZWpfMjctYTZZWVNZZjJPLVFjZHlYZGlZZmI3eDgtaEZNS01oNmVNUHgxNHFuV2dFUGIyR3hTNkJ3TUZQOEZjUmxzOHJ4dy1STWxudXhnR3dnb3k4QVVreHNpclpZNUY1eEJCRjhXYWVPa2ViWXNCb2hrTmxNb1VmbzQ3RFVQR0dCVmFDRWFEZ2tJdTE1VQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [EssilorLuxottica's AI glasses and hearing glasses grew revenue 20% in the third quarter - MIXED Reality News](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOSjFKd3dMRkI5RFl1SUpSQVhXV2ozTWk1ODJWb05JTlYzYW04MExkQ2o1RWJ5akRvRVMxNkExdGFWa2N2b2lpWmoxV0JRSlI3S0V1a09sTWF0RXlfNnkwSjBUbGlHZUV2dkxVajJGaVFJZXRCQlZxMThJUy1kcmRsT2FNNXkxMjZhSVg4?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Even G2 Smart Glasses Review 2025 - Instagram](https://www.instagram.com/popular/even-g2-smart-glasses-review-2025/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [First Look: Project Aura — The Next Step in XR for Android XR ...](https://www.xreal.com/blog/aura-25-tas-release-en) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
+| normal | needs_editorial_verification | direct | [From ‘pervert glasses’ to crime stoppers, smart glasses find some redemption - The World from PRX](https://news.google.com/rss/articles/CBMitAFBVV95cUxQZlEwMEdRMzdCcWhFbmR4U2tqeks0cWN1dFVGeVNJY1Bod3FzTVZtSG41OGV0a2U0amtmSExWaU9mcUJYNGp2XzhQUjNlVE1NeHJ3MzlLYWFncnI1Zk1JNGpkd01RT05wZmV2VW43SGJ5eDhSUTRBWFpSZ0g2T3pIT0tQWGd5c2FxMV8wMmk1YjFySU43Qmcxc0RMdkZ3VENibTMtcVZiYUhDVkdhZ1owbUw0STk?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [getd smart glasses review - TikTok Shop](https://shop.tiktok.com/us/k/getd-smart-glasses-review) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
