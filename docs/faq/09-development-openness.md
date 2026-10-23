@@ -43,3 +43,108 @@ Fashion-oriented models often use glued or sealed batteries and proprietary char
 ## 90. What artifacts should a smart-glasses research repository preserve?
 
 Preserve lawful copies or metadata for manuals, APKs, SDKs, firmware and update URLs, hashes, BLE captures, protocol schemas, logs, model files, PCB photographs, regulatory filings, lens templates, flashing/recovery instructions, tools, repositories, and community posts. Record provenance, retrieval date, license, redistribution status, model/revision, and authenticity caveats.
+
+
+## Veyra Android v4: 25 practical questions (October 2026)
+
+**Evidence notice:** This is a research FAQ, not an endorsement or hands-on review. The October 18 developer/community announcement is the basis for attributed release claims; [locate the original Veyra discussion](https://www.reddit.com/r/augmentedreality/search/?q=Veyra&restrict_sr=1&sort=new). This search link is a discovery pointer, not a verified permalink to the original post. No independent bench verification is claimed.
+
+### 1. What is Veyra?
+
+Veyra is a third-party Android project for using AI with Meta smart glasses. Its developer announced Android v4 in October 2026. **Evidence: developer report; not GlassesResearch hands-on verified.**
+
+### 2. Is Veyra a pair of smart glasses?
+
+No. Veyra is software associated with compatible Meta smart glasses, not a separately manufactured eyewear model. **Evidence: developer description.**
+
+### 3. Which glasses does Veyra support?
+
+The developer describes Meta smart-glasses integration. An exhaustive model-by-model compatibility list has not been independently established here; check the developer's current release information before installation. **Status: partially documented.**
+
+### 4. Does Veyra run on Android?
+
+The developer announced an Android v4 release. Specific minimum Android versions and supported phone models require direct testing or published requirements. **Evidence: developer report.**
+
+### 5. Is there a Veyra iPhone app?
+
+The Android v4 announcement does not establish current iOS availability. Check the developer's official distribution channels. **Status: unknown.**
+
+### 6. Can Veyra use different AI providers?
+
+The developer reports user-selectable AI providers in Android v4. Available providers, account requirements, and feature differences should be confirmed against the current app. **Evidence: developer report.**
+
+### 7. Can Veyra work entirely offline?
+
+No independently verified fully offline operating mode is documented in this research entry. Provider selection alone does not prove on-device inference. **Status: unknown; testing needed.**
+
+### 8. Does Veyra use Meta's Device Access Toolkit?
+
+The developer states that Veyra depends on Meta's Device Access Toolkit. Toolkit permissions and availability may constrain integrations. **Evidence: developer statement.**
+
+### 9. Is Veyra open source?
+
+The developer described Veyra as closed-source. That is distinct from whether Meta publishes portions of its developer toolkit. **Evidence: developer statement.**
+
+### 10. Can users audit Veyra's source code?
+
+Not through a publicly available Veyra source repository established by this research. Closed-source distribution limits independent code auditing. **Status: developer-reported closed source.**
+
+### 11. Can Veyra stream video?
+
+The Android v4 announcement reports video streaming. Resolution, frame rate, sustained duration, and end-to-end latency are not independently measured here. **Evidence: developer report.**
+
+### 12. Can Veyra be activated with a physical button?
+
+The developer reports physical-button activation in Android v4. Exact button mapping and model coverage require confirmation. **Evidence: developer report.**
+
+### 13. Does Veyra record continuously?
+
+No verified conclusion about continuous recording or background capture can be drawn from the release announcement. Review permissions and test camera/microphone behavior. **Status: unknown.**
+
+### 14. What happens to images or video sent through Veyra?
+
+Data handling may depend on the app, selected AI provider, and Meta's platform. No independently audited end-to-end data-flow map is available here. **Status: unverified.**
+
+### 15. Does Veyra identify people?
+
+The cited release information does not establish face-recognition or person-identification functionality. Do not infer it from camera or AI access. **Status: not established.**
+
+### 16. Does Veyra require a network connection?
+
+Network requirements likely vary by feature and provider, but exact offline/online behavior has not been verified. **Status: testing needed.**
+
+### 17. Are there Veyra connection problems?
+
+Some users reported connection difficulties in the developer discussion. Their frequency, causes, and affected configurations are not established. **Evidence: community reports, not independently reproduced.**
+
+### 18. Does Veyra cause overheating?
+
+The developer acknowledged thermal limitations during streaming. That does not quantify temperature rise or establish which devices or sessions are affected. **Evidence: developer statement; testing needed.**
+
+### 19. How long can Veyra stream video?
+
+No independently verified continuous-stream runtime is available here. Thermal behavior, battery depletion, and network conditions should be measured together. **Status: unknown.**
+
+### 20. How does Veyra affect glasses battery life?
+
+No controlled Veyra-versus-stock battery comparison is available here. Video capture and connectivity may affect runtime, but numerical claims require measurement. **Status: unknown.**
+
+### 21. Can Veyra replace the official Meta companion app?
+
+The release announcement does not establish complete replacement of Meta's setup, pairing, update, or account workflows. **Status: not established.**
+
+### 22. Can Veyra work with MYVU or XGA010C glasses?
+
+No documented Veyra support for MYVU/XGA010C is established. Shared smart-glasses terminology does not imply compatible firmware or protocols. **Status: unsupported claim; do not assume compatibility.**
+
+### 23. Does Veyra expose an SDK or documented protocol?
+
+The developer's closed-source statement does not itself establish a public Veyra SDK or stable protocol. Verify official documentation before planning integrations. **Status: unknown.**
+
+### 24. How should owners test Veyra safely?
+
+Record phone and glasses models, firmware and app versions, pairing steps, permissions, activation behavior, provider used, network dependence, battery change, temperature symptoms, and failures. Avoid recording bystanders or exposing credentials. **Status: GlassesResearch proposed test protocol, not a product claim.**
+
+### 25. Has GlassesResearch independently verified Veyra?
+
+No hands-on Veyra bench results are documented in this entry. Features are attributed to the developer; connection issues are attributed to users. Independent repeatable tests are needed before promotion to verified findings. **Status: not independently verified.**
