@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-23T20:30:13.426109+00:00`
+Generated: `2026-10-23T22:20:53.302371+00:00`
 
 - Intake files inspected: **276**
-- Candidates retained in this review window/history: **11410**
+- Candidates retained in this review window/history: **11120**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2118
+- `adjacent_radar`: 2106
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 529
-- `rejected_noise`: 8680
-- `source_review`: 27
+- `rejected_noise`: 8404
+- `source_review`: 25
 - `watching`: 37
 
 ## Action queue
@@ -32,14 +32,13 @@ Generated: `2026-10-23T20:30:13.426109+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1032](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1032) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1033](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1033) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1068](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1068) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1069](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1069) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.767](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.767) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.770](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.770) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.773](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.773) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.775](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.775) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.780](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.780) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -201,6 +200,7 @@ Generated: `2026-10-23T20:30:13.426109+00:00`
 | high | needs_editorial_verification | direct | [La compañía de gafas neerlandesa es el primer minorista en retirar las gafas inteligentes Ray-Ban de Meta de más de 400 tiendas debido a “pr](https://news.google.com/rss/articles/CBMikwJBVV95cUxOX0ZBY3VnMjFCQzRYSDNKcVVCUGh4a1VkN3pUNmRFYlRjS2RCSHNlOF9SR2RQNFdtWXJ1N1I3MEJfaG9IbXd4TmppN2JvUm5jNVZMT3Y3N0ptS01KU0FqVlVRS0VfQlpoUWt5RzY0NjZWSnI0TFZ0b3pkTVQzbFR0TzBkbXN6c1BkWjJUOUwyUTdVSUkzRGJseFBCUW12LWhQY2ZlNlh3Z2VBQ3RzRTZELVl4RDFyZ2U0OU5sbkk5enRXNmd2WU12aEJpLU1VXy1yaGVySnNjbVZKNjh2TzhIa0pVTjduMkEyNUJzcHBMTklCUl81QWNmVkMxd0xDR3RaRUtRQy1hdXJUUDZjb25GMEhvWdIBkwJBVV95cUxOX0ZBY3VnMjFCQzRYSDNKcVVCUGh4a1VkN3pUNmRFYlRjS2RCSHNlOF9SR2RQNFdtWXJ1N1I3MEJfaG9IbXd4TmppN2JvUm5jNVZMT3Y3N0ptS01KU0FqVlVRS0VfQlpoUWt5RzY0NjZWSnI0TFZ0b3pkTVQzbFR0TzBkbXN6c1BkWjJUOUwyUTdVSUkzRGJseFBCUW12LWhQY2ZlNlh3Z2VBQ3RzRTZELVl4RDFyZ2U0OU5sbkk5enRXNmd2WU12aEJpLU1VXy1yaGVySnNjbVZKNjh2TzhIa0pVTjduMkEyNUJzcHBMTklCUl81QWNmVkMxd0xDR3RaRUtRQy1hdXJUUDZjb25GMEhvWQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta AI Glasses Now on Sale in Malaysia: Which Ray-Ban or Oakley Model Should You Buy? - TechRepublic](https://news.google.com/rss/articles/CBMif0FVX3lxTFBObE9HVXdqWTJiUTZjeWtvMENRazU4ZGwtXzczejh0R2dHbE8tWWZ4SkxlSlRibDBURlFQS0tPNG5TaFdzcWthNHc1MzNrVnFPMzk0UnZTUEVnOF9VVG5lUC1NNy04Y0htdXQ2Y25SS3I4N0FYcWZRZnBFZU9PVEk?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Notebookcheck 18d ago Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Owlchemy Labs announces Hyper Visor for XREAL Aura, Android launch - Mobile Goddess](https://news.google.com/rss/articles/CBMipgFBVV95cUxOWVctRXRVUmxOcy1Ya19yTHdwUEFzakRMaFE2c3dsb2pITnZDcEVLWVRMSVl2T1dXVDhOaGFJY2VKT0paT3ZscWNKZXNMdnJKWmV2RmRHMWlRV1ZWRGQyTGt0RmJRSF9VWU5TXzFTYmtuUjQtRk1uS2ZJa21XdVl6RFExQU9ZNko2NUE1SW1lQVQxNFpuWEVJRUZVN29qeERTYkx6TElR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Owlchemy Prices Hyper Visor at $1.99 for XREAL AURA's Launch, a Tenth of What Job Simulator Costs - https://vr.org/](https://news.google.com/rss/articles/CBMilAFBVV95cUxOMGZuejVveE5rV29iOTFlcm11dFNkRXdJclhkaW5RRmUzSHRIdmlfeWZRVWdsXy1XY0piNjR0ZWRubjJIYzc3dzJvMHBiajlWNWJIVjh0ZnpSdWIyU0ZwZ2ZxZ2hwYUJYWkRjSDhYVl9LOFJycGdGOUktd0NSWE1MaVZqOWI2XzZBa1NFVnJPSWlVLWZ4?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Audio Review: Smart Glasses Are Better Without Cameras - PCMag](https://www.pcmag.com/reviews/ray-ban-meta-audio-review) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Nova Smart Glasses: Classic Black Style, Features & Where To Buy - Muzique Magazine](https://news.google.com/rss/articles/CBMihwFBVV95cUxNcFFpemxmd0VKbXZMM21lMlBiVWpXeTlweE0wQlZUVlFXMVpTZ0dTTEE2SS05b1VaMWdKd3dOcTFjWkprTGFGMm51N284RE90VWxiWWdCdDRkWktoeS1vSmJZZWJTLUVtbnJrNFVxajhZVnNwaXZlYktFRG5fdWRtTF9RTlU4Yzg?oc=5) | reachable (200) | research_news_review, policy_privacy |
