@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-23T17:11:34.995434+00:00`
+Generated: `2026-10-23T18:29:50.945939+00:00`
 
 - Intake files inspected: **274**
-- Candidates retained in this review window/history: **11365**
+- Candidates retained in this review window/history: **11330**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2094
+- `adjacent_radar`: 2096
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 535
-- `rejected_noise`: 8653
-- `source_review`: 27
+- `needs_editorial_verification`: 533
+- `rejected_noise`: 8623
+- `source_review`: 22
 - `watching`: 37
 
 ## Action queue
@@ -37,7 +37,6 @@ Generated: `2026-10-23T17:11:34.995434+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.766](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.766) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.767](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.767) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.770](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.770) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.773](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.773) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -145,6 +144,7 @@ Generated: `2026-10-23T17:11:34.995434+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1059](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1059) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1060](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1060) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1061](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1061) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1067](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1067) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -219,6 +219,7 @@ Generated: `2026-10-23T17:11:34.995434+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA US price, preorder eligibility and shipping](https://us.shop.xreal.com/blogs/guides/xreal-aura-price-preorder-us) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Умные очки за 450 долларов: Alibaba представила конкурента Ray-Ban Meta с ИИ - Знай.ua](https://news.google.com/rss/articles/CBMiugFBVV95cUxPbWdvd3Q3ZVBxMnJUeHMxSFlFd1ZZRk1fUG83aXEySlhOcjlQWnNZdnRfYUVxR0ZWWWZZQTNJY0xGSG83LXJDbUZyeFVfQkFWcHdFUmpLV1JmTDNFdHZacUphMzl3cF91S0t1UGFJbnAwYVZ2cjVJMW1iZmxSbmlZcHlSX3h1dWppTU5BbFp5MzdPSG1qdlM3anpRUGduSFZPZk1hanlVZU1IVk54TkVtQmZUSW1FU0VaOWfSAboBQVVfeXFMT21nb3d0N2VQcTJyVHhzMUhZRXdWWUZNX1BvN2lxMkpYTnI5UFpzWXZ0X2FFcUdGVllmWUEzSWNMRkhvNy1yQ21GcnhVX0JBVnB3RVJqS1dSZkwzRXR2WnFKYTM5d3BfdUtLdVBhSW5wMGFWdnI1STFtYmZsUm5pWXB5Ul94dXVqaU1OQWxaeTM3T0htanZTN2p6UVBnbkhWT2ZNYWp5VWVNSFZOeE5FbUJmVEltRVNFWjln?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [“Smart glasses are about to change everything”—what we know before launch - Futura, le média qui explore le monde](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkNMdE13NUlOQTlreHRDb29NM2xwSmkyR2RidWhmbTJoazRmOWNKTllHaVVBYV9Zd0NzWVhhLWtGTXBLa2c3OE5hN3lYMXp4NEtnSk9IckVPSzBtbDY2bF81NHlVWmRSNEFlZ05VLVNnN09QU0ZQZ0NQWnBxWXdsMExfWmtUZnY4NUpwNlNTMF9oZ1RxaWo3cTJ0SXgzNkVfcWNkT1E1R0hfYlFrdW84bVpNcw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [[Insight] AI Glasses Expose Gaps in University Exam Security, Entry Checks Cannot Stop Cheating Alone - Korea IT Times](https://news.google.com/rss/articles/CBMicEFVX3lxTFBfbUxlUzdjWGFvYzlGcVdzYmR1aUEyZFljOTFtVloyQWc5VzRURHpNWVF5ZHhLTlNWd0U2N0JkMHhMd1VfTTJjX3BVWjdhSGNPd0FRa3JqbWlqVm5rWWR6dGJNbEtBRmdHTVZPVDl1SUs?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Glasses Challenge South Korea’s Exam Security - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSFBnTEhRSlA5LW1fX2hsbXVRcXpyMnc3RU5DLUxub1ZpUHVwOW43ckVVeU1WcjlQbHF2SFppczdpd2FSc1JhWjc2cTROWTFDU3dsUlhwSHdZa0Zia2dvVlNOc044Z3hxcDA2QlM3UjQtTGc5QzMzVnRzNE8xaFlMYmRPTDBUZUJf?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Spark Security Concerns Just Month Before College Entrance Exam - SBS 뉴스](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsd9IBZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsdw?oc=5) | reachable (200) | research_news_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-23T17:11:34.995434+00:00`
 | normal | needs_editorial_verification | direct | [DK Shivakumar Raises Spyware Concerns, Claims Industrialist Wore Meta AI Glasses During Meeting - LatestLY](https://news.google.com/rss/articles/CBMi4AFBVV95cUxObTJGQS0yV1VHNXVQRlB2TXp3MXYtUTY3XzVmMnBwdDh3VkxBNzJZNDI4MVJVLUJJdkgtbWMwMFJIa1dOSTUyVGhrSFM3Uk4tMzZXdzIwSzVQVURYdkNpZXhYWEdiZ3JmMlNURlg4V1E5dXhQRVBCM1dUTmN2NUhYOXNnYVhTNGxKZ1ZBaWhxR0hZdzNUNXc1Sl9fQV8xV1BGU1V4NzN2eWtDT2MyYWxIS21HRmxwd01fRjFtSUthTzR4VUVFUkFrYkNzLW5vd3dmLTlqcXhaUHFnWDY0b1VCeNIB4AFBVV95cUxObTJGQS0yV1VHNXVQRlB2TXp3MXYtUTY3XzVmMnBwdDh3VkxBNzJZNDI4MVJVLUJJdkgtbWMwMFJIa1dOSTUyVGhrSFM3Uk4tMzZXdzIwSzVQVURYdkNpZXhYWEdiZ3JmMlNURlg4V1E5dXhQRVBCM1dUTmN2NUhYOXNnYVhTNGxKZ1ZBaWhxR0hZdzNUNXc1Sl9fQV8xV1BGU1V4NzN2eWtDT2MyYWxIS21HRmxwd01fRjFtSUthTzR4VUVFUkFrYkNzLW5vd3dmLTlqcXhaUHFnWDY0b1VCeA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar's 'Sting Op Using Meta Glasses' Charge Against Industrialist - NDTV](https://news.google.com/rss/articles/CBMiugFBVV95cUxPdGdjQU1ueFN3bEYzcDdqSWxnblpTMUw5NWxfVldrYlBVX25nTlUwTnVpd2FhMEZKN3dZWGhiV05vOEtxV0xMXzR1QmV5bV9zUGJmc3dRQ1UzNGpJdjB5NzI5OG1td0dEVUxnSC1wZVBneFp1bHVrOUd6TWExSFFhRWt6cF9WZ3dmY0o3aGlVejJQY1phVk5kYkFCVk1ydXhHZTN0TmxDRUZ1YWJRRTBZVGxraTIzZUVvN3fSAboBQVVfeXFMT3RnY0FNbnhTd2xGM3A3aklsZ25aUzFMOTVsX1ZXa2JQVV9uZ05VME51aXdhYTBGSjd3WVhoYldObzhLcVdMTF80dUJleW1fc1BiZnN3UUNVMzRqSXYweTcyOThtbXdHRFVMZ0gtcGVQZ3hadWx1azlHek1hMUhRYUVrenBfVmd3ZmNKN2hpVXoyUGNaYVZOZGJBQlZNcnV4R2UzdE5sQ0VGdWFiUUUwWVRsa2kyM2VFbzd3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Employers warned over growing legal risks of smart glasses in the workplace - HR News](https://news.google.com/rss/articles/CBMingFBVV95cUxQcDlORWRMc1I2S0VDQ2pQRzd6cFY2WTc3emNCSElZVmN6YmtPRVhZV1RKQUxDNGJMdjdLS0NGQS16anNZcmxSVHJzb21LM0twWlR5OHd3TTBtLUNKQmRzWkZ1aGpWZkdBWnVDWGsyUlltanluNVIzQWxjVHVpSFBqR3lXWXBpZjZUVXh1dUlfVnZpUUhoYS1OMEZ3cmxVZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| normal | needs_editorial_verification | direct | [Energy Technologies (ASX:EGY) Sets Out Cogenic's Smart Glasses Route from Framework to Revenue - Kalkine](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTzRjVWhjRnJmNVdZNXc4ejYtNU1LYUxzUS1BTGRvQWlaS2dtUnBBUm9qcWJkdFBHekI1SGhCaEtiWnRET0pCNEM5SmlzS2tuYjQzQ0tRTkpMeXNEOEZ5TG5kdlNoOFZFVkg1dXlia2U4ZW5yVHVRb1gtWU90N3lNeVViSFhlc2s5TUtrWVhTd0pPejh4NWtoV2NYZ3B1QVNKNC1fY19JVjJxODJhRlF3RDJRNnZ2NEJHZUZwRk9vdEFYLWRXbVBSMQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
