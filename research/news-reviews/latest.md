@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-23T08:53:51.653494+00:00`
+Generated: `2026-10-23T09:38:09.665815+00:00`
 
-- Intake files inspected: **275**
-- Candidates retained in this review window/history: **11439**
+- Intake files inspected: **273**
+- Candidates retained in this review window/history: **11373**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2097
+- `adjacent_radar`: 2082
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 522
-- `rejected_noise`: 8729
-- `source_review`: 35
-- `watching`: 38
+- `needs_editorial_verification`: 517
+- `rejected_noise`: 8685
+- `source_review`: 34
+- `watching`: 37
 
 ## Action queue
 
@@ -37,8 +37,6 @@ Generated: `2026-10-23T08:53:51.653494+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.756](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.756) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.757](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.757) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.758](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.758) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.759](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.759) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.763](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.763) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +269,8 @@ Generated: `2026-10-23T08:53:51.653494+00:00`
 | normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/Dc1n4-xR3gC/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/DdyPZeePaF_/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/DavCO20gBwO/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Kids Probably Shouldn’t Plan on Wearing Smart Glasses to School - Gizmodo](https://news.google.com/rss/articles/CBMickFVX3lxTFA0RXpjVjdacF9VWExkbEN5OGdYaUYyRzA0Q0pNMU5pb05aWUQwSmpGN0ljTUxlUHdCY1prRFA4S1R6R2tQek9VRC03b1RrZGJLREk1bHRxUnhSTGZXM1RkcXNaQWpGUGF6d0lnR1dONTRkQQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Kmart Smart Glasses review — affordable camera glasses tested \| TikTok](https://www.tiktok.com/@jmellortiktok/video/7672679802800721159) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
