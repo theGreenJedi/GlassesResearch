@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-23T12:12:03.667783+00:00`
+Generated: `2026-10-23T13:36:07.636254+00:00`
 
-- Intake files inspected: **273**
-- Candidates retained in this review window/history: **11415**
+- Intake files inspected: **275**
+- Candidates retained in this review window/history: **11523**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2107
+- `adjacent_radar`: 2133
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 529
-- `rejected_noise`: 8691
+- `needs_editorial_verification`: 532
+- `rejected_noise`: 8770
 - `source_review`: 32
 - `watching`: 37
 
@@ -147,6 +147,7 @@ Generated: `2026-10-23T12:12:03.667783+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1058](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1058) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1059](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1059) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1060](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1060) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1061](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1061) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-23T12:12:03.667783+00:00`
 | normal | needs_editorial_verification | direct | [INMO GO3 smart glasses pack a display and Gemini integration with clever camera privacy - 9to5Google](https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDdldHZKRlFHemtvTVRtUV85VzJsNVM0MTZKTHFVbm1paGtOU25PdU1nN2JmbDRsYlhpamVpWTA3S0hKcTNiV3FlbHZfOUZxWm9rRFo4V0xBSnpTY2g2V1FiVnRndjNQVTY5RVlOcHFYd0lMTGxlX0QtQlVtSFNxcTZ0bHNlazlkYnd0aGpNaUU3cHVrYkhDQXZQM0QxZE1oOXFOS2xnSk9SU3ZfcUh0V1ByUzRORExZbjZfemJiMA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/Dc1n4-xR3gC/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/DdyPZeePaF_/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
-| normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/DavCO20gBwO/) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
