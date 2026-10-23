@@ -1,38 +1,41 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-23T17:10:56.696569+00:00",
-  "candidate_count": 66,
-  "classifier_irrelevant_count": 57,
+  "discovered_utc": "2026-10-23T18:29:11.523443+00:00",
+  "candidate_count": 45,
+  "classifier_irrelevant_count": 21,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 10,
-    "broad_web": 45,
-    "developer": 10,
-    "retail": 2
+    "adjacent": 23,
+    "broad_web": 19,
+    "developer": 6,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
-    "adjacent": 9,
+    "direct": 2,
+    "enabling": 1,
+    "adjacent": 21,
     "speculative": 0,
-    "irrelevant": 57
+    "irrelevant": 21
   },
   "type_counts": {
-    "review": 1,
-    "video": 3,
-    "news": 41,
-    "tool": 13,
-    "sdk": 10,
-    "policy": 6,
-    "retail": 2,
-    "community": 12
+    "review": 2,
+    "news": 30,
+    "tool": 5,
+    "sdk": 7,
+    "optics": 1,
+    "policy": 2,
+    "retail": 4,
+    "community": 1
   },
   "routing_counts": {
-    "adjacent_radar": 9,
+    "adjacent_radar": 21,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
     "policy_privacy": 1,
-    "reject_noise": 57,
-    "report_card_evidence": 1,
-    "research_news_review": 9
+    "reject_noise": 21,
+    "report_card_evidence": 2,
+    "research_news_review": 24,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -46,17 +49,110 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "8fa6474595e110eb",
-      "title": "Schedule An Appointment | USPS",
-      "url": "https://tools.usps.com/rcas.htm",
-      "summary": "Change Your Appointment To change your appointment location or contact information, cancel this appointment and create a new one. To change the date, time, or number of applicants, edit your appointment information and click \"Review Appointment\" at the bottom of this page.",
+      "id": "7763b04bf6ba40e3",
+      "title": "How to Refill a Drug Prescription Step by Step - Healthline",
+      "url": "https://www.healthline.com/health/drugs/how-to-refill-a-prescription",
+      "summary": "Here's all you need to request a medication refill, from what you need to bring to how soon to do it.",
+      "discovery_channel": "adjacent+broad_web+research",
+      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e49f8afa21c2ea8",
+      "title": "Best Smart Glasses 2026: VITURE Wins Both AR/XR Glasses Crowns ...",
+      "url": "https://www.viture.com/blog/best-smart-glasses-2026-viture-wins-both-ar-xr-glasses-crowns-flagship-and-budget",
+      "summary": "VITURE ranks #1 in AR/XR display glasses and #2 across all AR/VR headsets shipped in the latest IDC data, with significantly higher shipment volumes than most other brands in the US and EU.",
+      "discovery_channel": "broad_web",
+      "query": "AR glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: display glasses, smart glasses, viture",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "13e6571b91e38725",
+      "title": "XREAL AURAとは？ 中身が入った初のAndroid XRグラスを解説",
+      "url": "https://blog.skeg.jp/archives/2026/06/xreal-aura-android-xr.html",
+      "summary": "XREALが新しいスマートグラス「XREAL AURA」を正式に発表しました。 これまでのXREALやVITUREはスマホやゲーム機の画面を映すだけでしたが、AURAでは Geminiを含むAndroidがメガネ単体で動作します。 日本では2026年内に出荷を開始します。",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: viture, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6d174463aea7374",
+      "title": "Home - THETASTELAB",
+      "url": "https://www.the-taste-lab.co.uk/",
+      "summary": "Our exciting programme offers hands-on training courses, engaging workshops, dynamic demonstrations, and immersive culinary journeys. Led by world-renowned chefs and industry experts. Let’s create something extraordinary together! Step into a world of unforgettable culinary events at The Taste Lab!",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "review"
+        "hands-on"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -80,12 +176,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c51c697a85692ca3",
-      "title": "Passport Acceptance Facility Locator",
-      "url": "https://passportfacilitylocator.travel.state.gov/",
-      "summary": "Locate a Passport Acceptance Facility in your area Use this site to locate the nearest facility to submit your U.S. passport application. Facilities include post offices, courts, libraries, and other local government offices. Search by ZIP code, state, or city. Some locations also offer on-site photo services.",
+      "id": "1456c03dd5c05264",
+      "title": "Classic Fine Foods - Classic Fine Foods",
+      "url": "https://classicfinefoods.co.uk/",
+      "summary": "Wherever your career takes you, you'll find a Classic Fine Foods branch nearby! We are present throughout Europe, The Middle East, and Asia with our 25 local offices and teams.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -111,12 +207,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9ffb8ec62bf46222",
-      "title": "Passport Forms",
-      "url": "https://eforms.state.gov/PassportForms.aspx",
-      "summary": "Form Finder -- Passport Forms If you are applying for a U.S. passport, use the Passport Form Filler to fill out our primary forms (DS-11, DS-82, DS-5504, and DS-64) online and print them. The Form Filler will save you time and reduce the chance of errors on your form.",
+      "id": "76ebdb3f302e6c0a",
+      "title": "Classic Fine Foods UK - Food Distributors in London 291 Abbey Road ...",
+      "url": "https://firmania.co.uk/london/classic-fine-foods-uk-6522198",
+      "summary": "Locate business contact details for Classic Fine Foods UK in 291 Abbey Road, London, Greater London England, NW10 7SA London including phone number ☎, address, ⌚ opening hours. Also, find nearby Food Distributors in London.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -142,12 +238,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f63ee8542e0d96e6",
-      "title": "Passports - Placer County, CA",
-      "url": "https://www.placer.ca.gov/1776/Passports",
-      "summary": "Passports are processed in our Rocklin office only. Please note—Processing times may have significant delays. Please view current processing times or check the status of your application at U.S. Department of State. Placer County Passport Appointments Passport Processing hours are Monday through Friday from 8 a.m. to 3 p.m. An appointment is required for processing passport applications. A ...",
+      "id": "b5a738194fba3c01",
+      "title": "Classic Fine Foods UK | Food Distributors, London",
+      "url": "https://london.cylex-uk.co.uk/company/classic-fine-foods-uk-28801949.html",
+      "summary": "Check Classic Fine Foods UK in London, Abbey Road on Cylex and find ☎ 020 7627 9..., contact info, ⌚ opening hours.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -173,12 +269,229 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e505a224b5b4f7ca",
-      "title": "Passports and U.S. Citizens Services Archives - United States ...",
-      "url": "https://www.state.gov/policy-issues/passports-and-u-s-citizens-services/",
-      "summary": "Passports and U.S. Citizens Services 16 items Remarks Secretary of State Marco Rubio at President Trump’s America.gov Event Marco Rubio September 29, 2026 Washington, D.C.",
+      "id": "78d410e14e251e3d",
+      "title": "Classic Fine Foods UK | London - Facebook",
+      "url": "https://www.facebook.com/classicfinefoodsuk/",
+      "summary": "291 Abbey Road, Park Royal , London, United Kingdom, NW10 7SA",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "461e378bb86eabd1",
+      "title": "Classic fine foods | WE ARE A FINE FOODS SPECIALIST",
+      "url": "https://www.classicfinefoods.com/",
+      "summary": "As the only fine foods specialist serving 11 countries across Europe, the Middle East, and Asia, Classic Fine Foods is there to support your culinary journey, no matter where it takes you.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da05f84c6bcb1040",
+      "title": "Contact us - Classic Fine Foods",
+      "url": "https://classicfinefoods.co.uk/contact-us",
+      "summary": "Address Classic Fine Foods Park Royal 291 Abbey Rd London NW10 7SA United Kingdom Name Email Address Phone",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "97d759c251c0f7bf",
+      "title": "EURO CARS MARKET - Updated October 2026 - 291 Abbey Road, London ... - Yelp",
+      "url": "https://www.yelp.com/biz/euro-cars-market-london",
+      "summary": "EURO CARS MARKET in London, reviews by real people. Yelp is a fun and easy way to find, recommend and talk about what’s great and not so great in London and beyond.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "59bf6f7f68f031e6",
+      "title": "Find us - THETASTELAB",
+      "url": "https://www.the-taste-lab.co.uk/find-us/",
+      "summary": "Park Royal Station (Piccadilly Line) Walk along Western Road to Abbey Road; it’s about a 15-20 minute walk to our location. Alternatively, take bus 226 from Park Royal to Abbey Road Stop Y.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2f8419939349f553",
+      "title": "Memphis Riverline Hotel",
+      "url": "https://www.memphistravel.com/hotels-lodging/memphis-riverline-hotel",
+      "summary": "Enjoy the Memphis experience and outstanding team service complete with southern hospitality at the Memphis Riverline Hotel. The hotel is located in the financial district and conveniently attached to the Renasant Convention Center.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0a1ac8cda4e19d98",
+      "title": "Memphis Riverline Hotel",
+      "url": "https://sheraton-downtown.hotels-memphis.com/en/",
+      "summary": "Boasting a fitness club, this hotel is in the center of the city, right around the corner from Fire Museum of Memphis. Situated 0.9 miles from Beale Street, the Memphis hotel also gives access to such sports venues as the Minor League AutoZone Park Baseball Stadium, which is 0.8 miles away.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9568b1d0fa503e97",
+      "title": "Memphis Riverline Hotel",
+      "url": "https://sheraton-downtown.hotelsoftennessee.com/en/",
+      "summary": "Offering a sauna, a shared lounge, and recreational facilities, the non-smoking Memphis Riverline Hotel is located a 5-minute walk from Shelby County General Sessions Court in an entertainment district.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -205,12 +518,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3b7b673faf7a1d62",
-      "title": "Renew an adult passport - USAGov",
-      "url": "https://www.usa.gov/renew-adult-passport",
-      "summary": "Renew an adult passport Find out if you can renew your passport or need a new one. Learn how to renew your passport online or by mail, get it changed or corrected, or check the status of your application.",
+      "id": "b0d59eed30e6a2ea",
+      "title": "MEMPHIS RIVERLINE HOTEL - Memphis TN 250 N Main St 38103",
+      "url": "https://www.hotelplanner.com/Property/1169039/Reservations-Memphis-Riverline-Hotel-Memphis-250-North-Main-St-38103",
+      "summary": "Memphis Riverline Hotel Overview 250 North Main St., Memphis, TN 38103 United States View map Near Bass Pro Shops at the Pyramid 8.0",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -236,12 +549,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0142fdbe1bd048a5",
-      "title": "Renew Your Passport by Mail - Travel",
-      "url": "https://travel.state.gov/content/travel/en/passports/have-passport/renew.online.html",
-      "summary": "Renew Your Passport Online Eligible U.S. citizens who are applying for routine service can now renew their passports online. To get started, go to our Renew Online page.",
+      "id": "b04bd559308a3d46",
+      "title": "Memphis Riverline Hotel - pleasantholidays.com",
+      "url": "https://www.pleasantholidays.com/USA-Hotels-Memphis-Riverline-Hotel",
+      "summary": "The Memphis Riverline Hotel is just steps away from the Convention Center, Beale Street, museums, and much more. After a day of travel and sightseeing, guests can relax in contemporary rooms featuring luxurious Sheraton Signature beds.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -267,12 +580,44 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f1d16a4363268eed",
-      "title": "Renew Your Passport Online - Travel",
-      "url": "https://travel.state.gov/en/passports/renew-replace/online.html",
-      "summary": "The only official, authorized place to renew your U.S. passport online is opr.travel.state.gov . Other websites or companies claiming you can renew your passport online may be fraudulent. No one else can sign and submit your online passport application for you. These websites and companies charge extra fees and put your personal data at risk. Even if a company has “Gov” in its name, it is ...",
+      "id": "8333f29965d3562d",
+      "title": "MEMPHIS RIVERLINE HOTEL - Updated 2026 Prices & Reviews (TN) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g55197-d98039-Reviews-Memphis_Riverline_Hotel-Memphis_Tennessee.html",
+      "summary": "Book Memphis Riverline Hotel, Memphis on Tripadvisor: See 2,064 traveler reviews, 746 candid photos, and great deals for Memphis Riverline Hotel, ranked #43 of 136 hotels in Memphis and rated 3 of 5 at Tripadvisor.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "284c50666b014709",
+      "title": "Memphis Riverline Hotel | Downtown Hotel with Mississippi ... - Marriott",
+      "url": "https://www.marriott.com/en-us/hotels/memdm-memphis-riverline-hotel/overview/",
+      "summary": "Whether traveling for business or leisure, our hotel in downtown Memphis provides modern comforts and exceptional convenience. With more than 14,000 square feet of flexible meeting space and a dedicated events team, we are ideal for conferences, weddings, and special occasions.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -298,12 +643,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3b64e7c2d58e7899",
-      "title": "U.S. passports - USAGov",
-      "url": "https://www.usa.gov/passport",
-      "summary": "Apply for a new adult passport You need a passport to travel to most countries outside the U.S. Learn how to apply for a passport in person, check your application status, and get it changed or corrected.",
+      "id": "0a7c3a08c03c5e48",
+      "title": "Memphis Riverline Hotel, 250 North Main Street, Memphis, TN (2026)",
+      "url": "https://www.findglocal.com/US/Memphis/951623418042557/Memphis-Riverline-Hotel",
+      "summary": "08/05/2026 The King still rocks Memphis. 🎸👑 From Graceland to the heart of the city, Elvis' legacy lives on around every corner. Stay at Memphis Riverline Hotel and experience the music, history, and iconic attractions that make Memphis unforgettable.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -329,369 +674,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8626477b040c218b",
-      "title": "Anyone ever bid or win stuff at Nellis Auction or Clark County ... - Reddit",
-      "url": "https://www.reddit.com/r/vegaslocals/comments/dvdbg6/anyone_ever_bid_or_win_stuff_at_nellis_auction_or/",
-      "summary": "All items must be picked up within 7 business days of the auction removal date or a relisting fee of 35% of invoice subtotal + premium will be applied to your account. Nellis Auction offers returns on items that are misdescribed within 7 business days of the date you picked up your item (s).",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "84f634c76420c554",
+      "title": "Memphis Riverline Hotel, Memphis (updated prices 2027)",
+      "url": "https://www.booking.com/hotel/us/memphis-riverline-hotel.html",
+      "summary": "The full-service Memphis Riverline Hotel is within walking distance of historic Beale street.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5c8e2512abb105f5",
-      "title": "Best generally good legit auction sites (not best) : r/Flipping - Reddit",
-      "url": "https://www.reddit.com/r/Flipping/comments/179lumi/best_generally_good_legit_auction_sites_not_best/",
-      "summary": "What are some good and legit auction sites out there, I say not the best because you guys would never tell me, like is GovPlanet any good? and other crap.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40b06ed62e30f20d",
-      "title": "GitHub - shihabal3amri/DiPlay: Independent CarPlay receiver for ...",
-      "url": "https://github.com/shihabal3amri/DiPlay",
-      "summary": "Independent CarPlay receiver for compatible Android head units. Wired and wireless public preview. - shihabal3amri/DiPlay",
-      "discovery_channel": "broad_web",
-      "query": "display smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5ffa64618f3a518",
-      "title": "Is there any way to cancel an auction without paying a fee?",
-      "url": "https://www.reddit.com/r/Ebay/comments/bo95jo/is_there_any_way_to_cancel_an_auction_without/",
-      "summary": "People usually participate in auctions to get item for less than X, so this is a bad reason to list the item as an auction as well as to cancel the auction.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a2987b761b72a1c9",
-      "title": "Is there any way to retract a bid? : r/MaddenUltimateTeam - Reddit",
-      "url": "https://www.reddit.com/r/MaddenUltimateTeam/comments/1cralqk/is_there_any_way_to_retract_a_bid/",
-      "summary": "I accidentally bid on something and want to retract it Share Add a Comment Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Choice-Complaint-282 •",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0d45afb8498ba35f",
-      "title": "Nellis Account Closed For High Return Rate : r/NellisAuction",
-      "url": "https://www.reddit.com/r/NellisAuction/comments/1cavl3n/nellis_account_closed_for_high_return_rate/",
-      "summary": "Hello, Nellis here 👋 I wanted to provide some context regarding the recent complaint. The account was deactivated for several reasons beyond just the high return rate. The customer has a history of return fraud, including swapping new items for damaged or defective ones, altering inventory and serial number stickers, and returning items while keeping certain components all of which is ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3c4ac46facd7f018",
-      "title": "Nellis Auction - deals getting worse : r/vegas - Reddit",
-      "url": "https://www.reddit.com/r/vegas/comments/10vmr5j/nellis_auction_deals_getting_worse/",
-      "summary": "hey all, is nellis auction getting worse? i see the charge a 5% fee to deter people from bidding and not picking up, but they just seem to have bad deals and people bidding on stuff that doesn't make sense. for instance, there is a non-working desktop PC that has an i7-2700k, GTX 750, 16gb of ram and it's going for almost 500$ (link below) There is now way this PC, even working, is worth close ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f00cf5e45ff6ec3",
-      "title": "Nellis Auction : r/vegaslocals - Reddit",
-      "url": "https://www.reddit.com/r/vegaslocals/comments/gnx6le/nellis_auction/",
-      "summary": "Anyone else bid on an item at Nellis Auction only to see it keep being bid on buy the same people across all auctions? Its as if they rigged the system to get the items up over a minimum bid.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5399cbb197963a2",
-      "title": "Nellis Auction- anyone else notice they add more hours within ... - Reddit",
-      "url": "https://www.reddit.com/r/vegaslocals/comments/ya7kja/nellis_auction_anyone_else_notice_they_add_more/",
-      "summary": "Nellis Auction- anyone else notice they add more hours within 15 mins of auction ending?",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6fc417cbb3d292ac",
-      "title": "Nellis Auction- proxy bidding : r/vegas - Reddit",
-      "url": "https://www.reddit.com/r/vegas/comments/15hp84c/nellis_auction_proxy_bidding/",
-      "summary": "Semi-hijack of this thread, but I just had two separate auctions close on me with upwards of two minutes left on the timer. Is this Nellis pulling the item because it has not met some undisclosed reserve or is the site that crappy? Reply reply TechConsigliere •",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e5831197a90005f6",
-      "title": "NellisAuction - Reddit",
-      "url": "https://www.reddit.com/r/NellisAuction/",
-      "summary": "In fact, they crack when they are THROWN by NELLIS Auction employees processing returns in. Something incredibly shady is going on at NELLIS Auction and they USE CUSTOMERS to hide their shaddy behavior. I am a victim of Nellis Auction employee theft (or laziness) and the trauma this situation has caused is sad.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cb873ef101a5a7a2",
-      "title": "About Us | Connelly Law Offices",
-      "url": "https://www.connelly-law.com/about-us/",
-      "summary": "Connelly Law Offices is a boutique litigation practice focusing on representation of families and individuals who have been injured or whose rights have been violated.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -699,29 +690,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "25b451220d8f92eb",
-      "title": "Alex Warren - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Alex_Warren",
-      "summary": "Alexander Warren Hughes (born September 18, 2000) is an American singer, songwriter, and YouTuber. He was a founding member of the collaborative TikTok group The Hype House from 2019 to 2022. He began independently releasing music in 2021 before signing with Atlantic Records the following year.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "0e1296046f4b779f",
+      "title": "NEAR Ecosystem: AI and Web3 Collaboration",
+      "url": "https://www.near.org/ecosystem",
+      "summary": "Connect with developers, founders, and AI-focused projects transforming blockchain and AI. Unlock autonomous transactions, secure computation, and a new era of decentralized intelligence with NEAR. Access tools, documentation, and community resources to bring your AI and Web3 ideas to life.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -729,29 +721,64 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk",
+        "community"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0b2b59b618e864f",
+      "title": "Rooms & Suites | Memphis Riverline Hotel - Marriott",
+      "url": "https://www.marriott.com/en-us/hotels/memdm-memphis-riverline-hotel/rooms/",
+      "summary": "Our hotel rooms in downtown Memphis, TN, include high-speed internet access and work desks. All rooms feature in room safes, mini refrigerator, coffee/tea station, iron and ironing board. Guests receive the Marriott Signature Sleep Experience featuring premium bedding and linens.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2e019f830b6ced8b",
-      "title": "Alex Warren 2025 MIX Playlist - Bloodline, Ordinary, On My Mind ...",
-      "url": "https://music.youtube.com/watch?v=Sx2yHWUtEPM",
-      "summary": "Alex Warren 2025 MIX Best Songs, Playlist, Full Album [00:00:00] - 01. Bloodline [00:03:01] - 02. Ordinary [00:06:04] - 03. On My Mind [00:09:13] - 04. Eter...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "cef66b2d37e0eec9",
+      "title": "Thetastelab London, 291 Abbey Road, Park Royal, London (2026)",
+      "url": "https://www.findglocal.com/GB/London/1378371832273734/Thetastelab-London",
+      "summary": "Discover the art of luxury chocolate and confectionery with M*F 2018 and Vice World Pastry Champion Paul Occhipinti. Master bonbons, pralines, pâte de fruits, caramels and sophisticated buffet creations with one of the world's leading chocolatiers. Places are limited.",
+      "discovery_channel": "adjacent",
+      "query": "wearable haptics interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -759,59 +786,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ceca5afb0e99fd85",
-      "title": "Alex Warren 2026 Album Collection - SoundCloud",
-      "url": "https://soundcloud.com/felix-milo-asher/sets/alex-warren-2026-album",
-      "summary": "Listen to Alex Warren 2026 Album Collection, a playlist curated by chillmilo on desktop and mobile.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f46cc32403986a0b",
-      "title": "Alex Warren All Songs - Best of Alex Warren MIX - Spotify",
-      "url": "https://open.spotify.com/playlist/21nVXLCPfaU5Il89JOtpvw",
-      "summary": "Best songs by Alex Warren: Ordinary, FEVER DREAM, Eternity, Carry You Home, Bloodline, Before You Leave Me, Burning Down, Ordinary (feat. Luke Combs) - Live from Lollapalooza, Ordinary - Wedding Version, Save You a Seat, Ordinary, Burning Down (with Joe Jonas), Ordinary, One More I Love You, On My M",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "ea4bbe572701d0ee",
+      "title": "Find your Google Maps edits",
+      "url": "https://support.google.com/maps/answer/7055486?hl=en&co=GENIE.Platform=Android",
+      "summary": "Find your Google Maps edits On your phone or tablet, you can find a list of edits and places you added on Google Maps. Only you can find your list. For each edit, you’ll find: Whether your edit is approved, pending, or not applied What edit you made to a place, like hours or phone number When you made the edit",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -821,9 +819,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -833,15 +832,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f2eb57e2a67c26cf",
-      "title": "Alex Warren Mix - YouTube Music",
-      "url": "https://music.youtube.com/playlist?list=PLzDcsH53p8B_2JBLOrBThkSzcg9SdmfRS",
-      "summary": "Angel of Small Death & The Codeine Scene (BBC Live Version) H... Brenn!",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "e10a4437cc0a64c8",
+      "title": "Is there a way to return to satellite view with latest Google Maps ...",
+      "url": "https://webapps.stackexchange.com/questions/49901/is-there-a-way-to-return-to-satellite-view-with-latest-google-maps",
+      "summary": "With the new Google Maps integrating Google Earth and 3D into the web browser I'm experiencing some performance problems on my PC when I feel the need to look something up while processing power is diverted to tasks like compiling. Is there a way to do away with the Earth view and return to 2D satellite view?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -851,9 +850,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -863,15 +863,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "898381afd6aaf611",
-      "title": "Alex Warren Mix | Spotify Playlist",
-      "url": "https://open.spotify.com/playlist/37i9dQZF1EIW59fyjC7s7V",
-      "summary": "Mark Ambor , Shaboozey and <a href=spotify:playlist ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "5ab81a3f2ccfc83b",
+      "title": "Partager, envoyer ou imprimer un itinéraire à partir de Google Maps",
+      "url": "https://support.google.com/maps/answer/7101463?hl=fr&co=GENIE.Platform%3DDesktop",
+      "summary": "Partager, envoyer ou imprimer un itinéraire à partir de Google Maps L'itinéraire que vous obtenez dans Google Maps peut être imprimé, ou partagé avec d'autres appareils ou personnes.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -881,9 +881,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -893,15 +894,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "08d8c2dcd85fa195",
-      "title": "Alex Warren Playlist - The Best of Alex Warren - YouTube",
-      "url": "https://www.youtube.com/playlist?list=PLxA687tYuMWjJ6TXogYr4DgnXLmPNekyc",
-      "summary": "Alex Warren Playlist - The Best of Alex Warren Here you will find a mix of New Alex Warren Songs, Alex Warren Top Tracks, Alex Warren Greatest Hits, and Alex...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "4e183bea23e4710c",
+      "title": "Rechercher des lieux sur Google Maps",
+      "url": "https://support.google.com/maps/answer/3092445?hl=fr&co=GENIE.Platform%3DDesktop",
+      "summary": "Google Maps vous permet de rechercher des lieux et des établissements. En vous connectant à Google Maps, vous pouvez obtenir des résultats de recherche plus détaillés. Vous pouvez également trouver des lieux recherchés précédemment et rechercher les noms de vos contacts.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -911,9 +912,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -923,15 +925,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fb61433a069dc5ed",
-      "title": "Buscar ubicaciones de USPS | USPS",
-      "url": "https://es-tools.usps.com/locations/details/1355333",
-      "summary": "En Esta Ubicación Estacionamiento disponible en la calle Para accesibilidad a las instalaciones, llame a la Oficina Postal. 1-800-ASK-USPS® (800-275-8777)",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "0383fac1dc669d61",
+      "title": "Request removal of a Business Profile from Google Search & Maps",
+      "url": "https://support.google.com/business/answer/16043467?hl=en",
+      "summary": "If the request is approved, the business will be removed from Search and Maps. Report a business that violates policies To report incorrect info or fraudulent activity on Maps related to the name, phone number, or website of a business, fill out the business redressal complaint form.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -941,728 +943,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "863a5d2d79cb7a2a",
-      "title": "Career opportunities - Careers - About.usps.com",
-      "url": "https://about.usps.com/careers/career-opportunities/",
-      "summary": "USPS offers a wide range of career opportunities that offer promotion and benefits. Many positions are open including professional and field positions - see which one is right for you.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "efb6c6d530ce68ca",
-      "title": "Connelly Law elder law attorney in Rhode Island",
-      "url": "https://www.connellylaw.com/",
-      "summary": "At Connelly Law, we recognize that navigating the complexities of estate planning, probate law, and elder law can be daunting. Our experienced and knowledgeable legal team is committed to delivering the highest standard of professional representation tailored to your specific needs.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
+        "tool",
+        "sdk",
         "policy"
       ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3f3b0f41dc0c688",
-      "title": "Connelly Law Offices - Tacoma, WA",
-      "url": "https://www.yelp.com/biz/connelly-law-offices-tacoma-2",
-      "summary": "About the Business At Connelly Law Offices we are a boutique law firm in the historic Old Town of North Tacoma, Washington. We represent families and individuals who have suffered an injury or whose rights have been violated. Our diverse group of lawyers pride themselves on giving voice to people that……",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "382683ee1e190457",
-      "title": "Connelly Law Offices | Tacoma & Seattle, WA",
-      "url": "https://www.connelly-law.com/",
-      "summary": "Connelly Law is founded on the principles of truth, justice, accountability, and equal access. Our success is a result of the firm's commitment to these guiding principles. We handle cases that make a difference – not only for the people involved but for our community and society as a whole.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d85a8f85db436a9",
-      "title": "Contact | Connelly Law Offices",
-      "url": "https://www.connelly-law.com/contact/",
-      "summary": "We will let you know in a timely fashion if we are able to take on your potential claim. By providing your information, this does not create an attorney-client relationship until a retainer agreement is signed. We look forward to working with you in your pursuit of justice. Filing on behalf of yourself or other (s)? Please include party (s) name.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ce78230f4ee87b0",
-      "title": "Fantasy Basketball 2026: Create or Join a League, Rankings, Analysis ...",
-      "url": "https://basketball.fantasysports.yahoo.com/",
-      "summary": "Play Yahoo Fantasy Basketball for free. Create or join a fantasy Basketball league, draft players, track rankings, get expert advice, and more! A season-long fantasy partner of the NBA.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1cc86db41766083e",
-      "title": "Fantasy Basketball | Yahoo! Sports",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/myleagues",
-      "summary": "Yahoo Sports Fantasy Basketball My Teams & Leagues ... Get Another Team or Create a League",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6a0f7526d2161d35",
-      "title": "Fantasy Basketball | Yahoo! Sports",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/splash?type=nba",
-      "summary": "Yahoo Fantasy Basketball offers everything a serious competitor demands like custom league settings, real time stats and expert basketball analysis from the pros at Yahoo Sports. Sign up for a free fantasy basketball league!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "23231e9201454277",
-      "title": "Fidelity Investments - NetBenefits",
-      "url": "https://netbenefits.fidelity.com/sorryNBretailprod.html",
-      "summary": "A problem occurred with this site. You are being redirected to an alternate site. Click below to continue.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b6d720403db6b9e1",
-      "title": "Fidelity MyVoice - NetBenefits",
-      "url": "https://netbenefits.fidelity.com/MyVoice",
-      "summary": "© 1996-2024 FMR LLC All rights reserved.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9744ebfa83b186c5",
-      "title": "HEAR MY WORK | alexwarren",
-      "url": "https://www.alexwarrenmusic.com/selected-discography",
-      "summary": "Listen to a selected discography of mixes, masters and productions from signed, independent and emerging artists I've worked with.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ae876fee70b5de24",
-      "title": "Home - Connelly Law",
-      "url": "https://www.sconnellylaw.com/",
-      "summary": "I founded Connelly Law to focus my appellate law practice on cases that have personal significance to me and social impact to our community. To every matter that I take on, I bring decades of experience as an appellate law practitioner and the perspective of a former appellate law judge.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eac861c64f4e592f",
-      "title": "Injury Reports - Yahoo Sports Fantasy Basketball",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/injuries",
-      "summary": "Get the latest NBA injury reports. Brandon Ingram ONo new player Notes LAC - SG,SF,PF",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1dc363e0eeb2f9ec",
-      "title": "Jack Connelly | Connelly Law Offices",
-      "url": "https://www.connelly-law.com/about-us/attorneys/jack-connelly/",
-      "summary": "John R. (Jack) Connelly, a fellow of the International Academy of Trial Lawyers and numerous Trial Lawyer organizations in the United States, is consistently named to the Best Lawyers in America, and ranked in the top lawyers in Washington State.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "31802564c26296e9",
-      "title": "Log in - paychexemployer.lh1ondemand.com",
-      "url": "https://paychexemployer.lh1ondemand.com/EmployeePersonal?CurrentControllerType=EmployeeSummary",
-      "summary": "For help, contact Paychex Benefit Accounts at (855) 678-7782, toll free (855) 678-7782 or PaychexBenefitAccountER@healthaccountservices.com © WEX Health, Inc. 2004-2026 ALL RIGHTS RESERVED | Powered by WEX Health",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "09f67d65b29d2e04",
-      "title": "Log In to Fidelity NetBenefits",
-      "url": "https://netbenefits.fidelity.com/NBLogin/?option=hwSummaryPage",
-      "summary": "Want to set up a passkey? Log in as you normally would, then go to your security settings.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "522cf7958a2ac27f",
-      "title": "Meet Our Team | Connelly Law Offices, Ltd. | RI, CT, MA",
-      "url": "https://www.connellylaw.com/ourteam",
-      "summary": "Meet our team of dedicated elder law, legal, fiduciary, and Medicaid planning professionals. Our team will provide you with the best in elder law services.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fcaa1e352cf53564",
-      "title": "Nathan P. Roberts | Connelly Law Offices",
-      "url": "https://www.connelly-law.com/about-us/attorneys/nathan-p-roberts/",
-      "summary": "Nate Roberts has dedicated his career to the litigation and trial of complex personal injury and wrongful death claims.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "633b5b9cf1bf6a99",
-      "title": "NBA Fantasy | Fantasy Basketball | Yahoo! Sports",
-      "url": "https://basketball.fantasysports.yahoo.com/league/nba__fantasy/",
-      "summary": "Yahoo Fantasy Basketball. Create or join a NBA league and manage your team with live scoring, stats, scouting reports, news, and expert advice.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc00549035b5a662",
-      "title": "NBA roster changes for your Fantasy Basketball league | Fantasy ...",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/playerchanges?type=pos",
-      "summary": "Yahoo Sports Fantasy Basketball NBA Roster Changes Active/Inactive Added League/Team Changes Position Eligibility Injured List ... previous next",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a340046c1710f5f2",
-      "title": "Passport Appointments, Renewals, & Photo Services | USPS",
-      "url": "https://www.usps.com/international/passports.htm",
-      "summary": "Make appointments for new passport applications and passport photo services, including digital photos, and learn how to renew passports by mail or online.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "ActiveLook smart glasses; hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "418a7319a9d24899",
-      "title": "Paychex",
-      "url": "https://paychex.flextime.paychex.com/Login.aspx",
-      "summary": "Forgot your password?",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69f01c55310c72a4",
-      "title": "Paychex Flex",
-      "url": "https://myapps.paychex.com/landing_remote/login.do",
-      "summary": "",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ca9b2697b6ab3a80",
-      "title": "Paychex Flex Login and Other Platforms Logins",
-      "url": "https://www.paychex.com/login",
-      "summary": "Our most popular platform, Paychex Flex ®, is an all-in-one solution for all things HR — payroll, time and attendance, benefits, and more.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
       "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
@@ -1673,12 +957,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9d578c24f83db575",
-      "title": "Paychex: Payroll & HR Solutions",
-      "url": "https://www.paychex.com/",
-      "summary": "Paychex Flex® combines payroll processing with comprehensive business insurance options in one integrated platform, allowing you to manage employee pay, benefits, workers' comp, and HR administration from a single dashboard.",
+      "id": "fa60b366667fabf9",
+      "title": "13 Best Restaurants in Prescott Valley, AZ [2026 Updated]",
+      "url": "https://musteatfood.com/restaurants-in-prescott-valley-az/",
+      "summary": "Sure, the shoyu chicken might cost $22, but it’s also some of the best Hawaiian food in the state, which means it’s priceless – like a family recipe or a text from your aunt saying something like, ‘I made extra, come get some.’",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1691,9 +975,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1703,10 +987,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bdec658d08f954b1",
-      "title": "Player Updates Overview - Yahoo Fantasy Basketball",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/playerchangesoverview",
-      "summary": "Get the latest NBA player notes, activated player roster changes, and injury reports.",
+      "id": "741188c1e3729d2d",
+      "title": "20 Famous Los Angeles Restaurants Actually Worth Trying",
+      "url": "https://www.timeout.com/los-angeles/restaurants/famous-los-angeles-restaurants",
+      "summary": "Whether you’re a visitor or a local, believe the hype: These famous Los Angeles restaurants have stood the test of time or made waves with newer fare, and live up to their reputation.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1733,40 +1017,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c2cbc891855ed663",
-      "title": "Practice Areas | Connelly Law Offices",
-      "url": "https://www.connelly-law.com/practice-areas/",
-      "summary": "Attorneys at Connelly Law Offices are experienced in dealing with wrongful death lawsuits. We pair strong and sincere support with aggressive legal representation to provide clients with relief, confidence and a just compensation for their loss.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c1c307e61e657d98",
-      "title": "Pre-Draft Player Rankings | Fantasy Basketball | Yahoo! Sports",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/public_prerank",
-      "summary": "Yahoo Sports Fantasy Basketball Default Player Rankings Top 200 Default Rankings - Standard 1. Nikola Jokić 2. Victor Wembanyama 3. Shai Gilgeous-Alexander 4. Luka Dončić 5. Kawhi Leonard 6. Tyrese Maxey 7. Stephen Curry 8. Donovan Mitchell 9. Jalen Johnson 10. Tyrese Haliburton 11. Jamal Murray 12. Cooper Flagg 13. Chet Holmgren 14. Trey ...",
+      "id": "20984c2f6fcd6b36",
+      "title": "LA Restaurants - Best Places to Eat in Los Angeles | LA.com",
+      "url": "https://losangeles.com/restaurants/",
+      "summary": "Discover the best restaurants in Los Angeles. From world-famous tacos to Michelin-starred fine dining, explore LA's legendary food scene by neighborhood and cuisine.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1793,12 +1047,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8901ff325804fd75",
-      "title": "Sign In - Paychex",
-      "url": "https://adfs.paychex.com/adfs/ls/?wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline",
-      "summary": "Paychex employee services portal. Sign in. User Account. Keep me signed in. Next. Authentication options. Password. Sign in using a certificate. Password. Sign in. © 2018 Microsoft.",
+      "id": "3e08936e052395e8",
+      "title": "Lithia Volkswagen of Reno - Reno, NV | Cars.com",
+      "url": "https://www.cars.com/dealers/89182/lithia-volkswagen-of-reno/",
+      "summary": "Lithia Volkswagen of Reno near the surrounding areas of Reno Carson City Fernley Sparks Virginia City Susanville and Dayton Nevada features a wide selection of new Volkswagen and used...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1823,12 +1077,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cd6c5931eed23227",
-      "title": "Stream Alex Warren music | Listen to songs, albums ... - SoundCloud",
-      "url": "https://soundcloud.com/alexwaarren",
-      "summary": "Play Alex Warren and discover followers on SoundCloud | Stream tracks, albums, playlists on desktop and mobile.",
+      "id": "063eb9228b481532",
+      "title": "LITHIA VOLKSWAGEN OF RENO - Updated October 2026 - Yelp",
+      "url": "https://www.yelp.com/biz/lithia-volkswagen-of-reno-reno",
+      "summary": "Lithia Volkswagen of Reno is committed to the health, safety, and needs of our customers. Lithia Volkswagen of Reno is a new and used car dealership offering a full lineup of new & used vehicles serving customers in Reno, NV area. Our vehicle service department is a top choice for oil changes……",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1853,12 +1107,102 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4bfadd87a7c08129",
-      "title": "TITANIUM中文 (简体)翻译：剑桥词典 - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/titanium",
-      "summary": "It contains a wide variety of minerals including gold, nickel, bauxite, iron, chromite, titanium oxide, beryl and quartz.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "id": "e336e07fe69a4070",
+      "title": "Lithia Volkswagen of Reno | New & Used VW Dealer Reno, NV",
+      "url": "https://www.lithiarenovw.com/",
+      "summary": "Lithia Volkswagen of Reno also offers drivers in the Carson City, NV and Susanville, CA areas a wide variety of pre-owned cars, trucks, and SUVs from Volkswagen and other brands like Toyota, Hyundai, Ford, Kia, and Jeep.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "977e4e16243ae348",
+      "title": "Los Angeles MICHELIN Restaurants - The MICHELIN Guide USA",
+      "url": "https://guide.michelin.com/us/en/california/us-los-angeles/restaurants",
+      "summary": "Starred restaurants, Bib Gourmand and all the MICHELIN restaurants in Los Angeles on the MICHELIN Guide's official website. MICHELIN inspector reviews and insights.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca632c02fc7aef8b",
+      "title": "New Microsoft Certified: Azure AI Apps and Agents Developer Associate ...",
+      "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/new-microsoft-certified-azure-ai-apps-and-agents-developer-associate/4494126",
+      "summary": "Ready to move from prototypes to production? Demonstrate your readiness to deliver scalable, real‑world AI apps and agents using Azure services and Microsoft...",
+      "discovery_channel": "adjacent+broad_web+developer",
+      "query": "ActiveLook smart glasses; Everysight Maverick SDK; electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d4b1765fa6a44d1",
+      "title": "New Volkswagen Models For Sale | Lithia Volkswagen of Reno",
+      "url": "https://www.lithiarenovw.com/new-inventory/index.htm",
+      "summary": "Visit Our Volkswagen Dealership Visit Lithia Volkswagen of Reno to test drive one of these incredible Volkswagen vehicles with our friendly sales staff. It's worth the drive from nearby areas like Fernley, NV and Lake Tahoe.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1883,162 +1227,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f2e27c21fcfe66f6",
-      "title": "Transaction Trends - Yahoo Fantasy Basketball",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/buzzindex",
-      "summary": "Yahoo Sports Fantasy Basketball Transaction Trends Overall Trends Diamond Player Trends All Positions PG SG G SF PF F C Util",
+      "id": "2e0c928f0b8a1184",
+      "title": "THE 10 BEST Lunch Restaurants in Prescott Valley (UPDATED 2026)",
+      "url": "https://www.tripadvisor.com/Restaurants-g31324-zfp30-Prescott_Valley_Arizona.html",
+      "summary": "Best Lunch Restaurants in Prescott Valley, Arizona: Find Tripadvisor traveler reviews of THE BEST Prescott Valley Lunch Restaurants and search by price, location, and more.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "72d5ae88e725ce58",
-      "title": "TWIN FALLS | USPS",
-      "url": "https://tools.usps.com/locations/details/1473644",
-      "summary": "Services at the Twin Falls Post Office Service hours may vary. For all location services, see all hours.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "702d5c9fc6d5daa3",
-      "title": "USPS.com",
-      "url": "https://store.usps.com/store/stamps",
-      "summary": "Shop our selection of Stamps on the USPS.com Postal Store",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cb4015858d993a17",
-      "title": "USPS.com® - USPS Tracking®",
-      "url": "https://tools.usps.com/Go/Trackconfirmaction_Input",
-      "summary": "( / X u001du0007ާ |&) u000e@P ҥ2 ME 1 Fs u0014K u000e_h%w֙]7\"u0011u0013u0001u0010x'*'u001f&Ӓ 3u0010hu0014u0001>u0018\\ u0017~4 Au0017\"옿 [6 Tu0010 L p4RH GD ,Y ,u0012 %Ńu001bK h,O 碇zjg/=]u0007Yp u0006 S Ȳ -Uu0012u000bu000f QǛ u001cB XB u0016 u0010\\x DAu0018cvK ` ȃ u0002E < 9;4a~fu001b =u0018 u001d |u000b u0006 ,p F ~ u0014 κ@ u0015U ~ u0005ȁ r ͠M\\u0019 eu0018 $ Au000f Ku0010 ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e916d0e57adf64c",
-      "title": "Yahoo! Sports - Fantasy Basketball Mock Drafts",
-      "url": "https://basketball.fantasysports.yahoo.com/nba/mock_lobby",
-      "summary": "24/7 Live Fantasy Basketball mock drafts. Choose your league size, type, and draft position, and practice your draft strategy.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b2c0a6a9a6405a57",
-      "title": "镜片上只写了TITANIUM的是纯钛吗? - 知乎",
-      "url": "https://www.zhihu.com/question/444208120",
-      "summary": "利用纯钛材料制作加工而成的镜框具有熔点高、密度小、抗腐蚀力强、电镀层牢固等优良特色，从而可以保证眼镜框的美观和耐用的两大重要性能，所以目前钛金属镜架在市面上很多，很多厂家为了抓住机会占领市场纷纷开发这类镜架，但是不免有鱼目混珠，偷工减料的人存在其中。 所以在选购时候了解钛这种金属可以帮助大家少踩坑，少花钱 多办事。 纯钛的熔点在1600-2300之间，所以加工难度大，大家看到鼻托这个位置，有像阶梯或者台阶一样堆在哪里的就是纯钛金属，很圆滑的没有的就是合金的。 2. β（贝塔）钛。 未处理前具有较高的强度，但热稳定性能差 ，可以将其理解为是钛材质的另一种分子状态。 强度高、抗疲劳性能和耐环境腐蚀，有良好的的韧性，塑性和高温变形性能， (夏蒙商务的主要材料就是这种，很多镜架上也会标明.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "query": "best smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2054,6 +1248,186 @@
         "retail"
       ],
       "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "efc53c065bcb9a3a",
+      "title": "THE 10 BEST Restaurants in Los Angeles - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g32655-Los_Angeles_California.html",
+      "summary": "Best Dining in Los Angeles, California: See 195,651 Tripadvisor traveler reviews of 11,219 Los Angeles restaurants and search by cuisine, price, location, and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d9ba2e329d7a47f4",
+      "title": "THE 10 BEST Restaurants in Prescott Valley - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g31324-Prescott_Valley_Arizona.html",
+      "summary": "Best Dining in Prescott Valley, Arizona: See 2,674 Tripadvisor traveler reviews of 105 Prescott Valley restaurants and search by cuisine, price, location, and more.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5eae75b7c735eaec",
+      "title": "The 25 Best Restaurants In Los Angeles - The Infatuation",
+      "url": "https://www.theinfatuation.com/los-angeles/guides/best-restaurants-los-angeles",
+      "summary": "On this list you’ll find fancy spots, casual hangouts, walk-up windows, and taquerías. Every city has its classics and it's hot new places, but these are restaurants where greatness is guaranteed. This guide is a big deal. Here you’ll find the 25 highest-rated spots in the city.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5653464b26dc8d95",
+      "title": "THE 30 BEST Restaurants in Prescott Valley - With Menus, Reviews ...",
+      "url": "https://www.restaurantji.com/az/prescott-valley/",
+      "summary": "We've gathered up the best places to eat in Prescott Valley. Our current favorites are: 1: Jen's 7th Ave. Cafe, 2: Carnicería Azteca, 3: Ciao Bella Italian Restaurant, 4: BackBurner Family Restaurant, 5: Thai Cafe",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b488d43900bfda45",
+      "title": "THE BEST 10 RESTAURANTS IN PRESCOTT VALLEY, AZ - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Prescott+Valley%2C+AZ",
+      "summary": "Best Restaurants in Prescott Valley, AZ - Last Updated October 2026 - Superb Food Company, Luizas Filipino Kitchen, Ciao Bella, Salt & Pepper, Jen's Seventh Ave Cafe, The Burger Den, Prescott Club at StoneRidge, Taqueria Don Omar, Gabby's Grill, Thai Cafe",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses; Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f74dde240e99068a",
+      "title": "The best restaurants in Los Angeles | (Updated 2026) - OpenTable",
+      "url": "https://www.opentable.com/metro/los-angeles-restaurants",
+      "summary": "Find a quiet and intimate place for a cozy dinner. Book this year’s award-winners, hot newcomers, and hard-to-get tables. Explore what's popular with other diners with these lists, updated weekly. Cardmembers can book exclusive tables and enjoy a $300 annual dining credit from Chase.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
