@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-23T08:52:57.800649+00:00`
+Generated: `2026-10-23T08:53:51.653494+00:00`
 
 - Intake files inspected: **275**
 - Candidates retained in this review window/history: **11439**
@@ -12,9 +12,9 @@ Generated: `2026-10-23T08:52:57.800649+00:00`
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 526
+- `needs_editorial_verification`: 522
 - `rejected_noise`: 8729
-- `source_review`: 31
+- `source_review`: 35
 - `watching`: 38
 
 ## Action queue
@@ -194,7 +194,6 @@ Generated: `2026-10-23T08:52:57.800649+00:00`
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
@@ -241,8 +240,6 @@ Generated: `2026-10-23T08:52:57.800649+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 쓰고 국가자격증 시험 본 20대 송치 - 아시아투데이](https://news.google.com/rss/articles/CBMibkFVX3lxTE5OS0tVOXk2d29kM2ZFZ2NvLXhuX2ZBcnlYaEdhbUEzSkhCb1lJUmxWOUI0S0QzV1pGekR5X0RLeGpzc2Q2YjFkalhFSXBCZ1JLRmZxTXRJMGRnNzlPZUd4ME9qVTFocWhfOUZVVXJB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon lanza gafas inteligentes para conductores - Genbeta](https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNWV5UlZuN1RScjd2aHhNZUxOQm10NTk4M25wcmFmQV9WQW9JN21Wb0JxLVdlMG9HR2Z4Nms4RUtGemNBUGxid3RFYlZlb3ppXy11dlhnQVhHMU1ySGhuZEI3M0RyUkQtSEh6Q0U3U244TUZDMW5UaTMyY1BqME5HNE0ySl9YRDFmVDZv0gGQAUFVX3lxTE5BcnJNblZaa0Z5eGNDcTcwLXBiM2lsMDBUb3E5SmgtX1lCb1BEem9RWEJONGpRT2dOblJUbGVxVmdwckRuLW1RU0J0X3BwY1lKRjc0R0dNS0xIOFY1cnktcWZpank4bUlkcVBNNzdxZjdBVVZFX0sxRnExQ3hDamlSblE4Rk5qLW8yTEhlaTh6bg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon pone gafas inteligentes en manos de sus repartidores - Ensegundos.do](https://news.google.com/rss/articles/CBMimAFBVV95cUxNalVTMzdfQ2lEUkU2U3YxVVFxdm9rYjJFeEpORXUzRFR0cnV0VFhfazRoZnBZb1J1d3k2SjI5dERlc2w3VU9ubTdwX0dyeWhyaWZVMFM3UDZpTzBKR0I1UzV1Q1JHNG90cFR4VkpIRklab3gtUXBfUWZNeWdfbnJ5LWs0YVVYNi14aENSRTJBNkFpNk0xQzJ3Mg?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Smart Glasses](https://www.amazon.com/ai-smart-glasses/s?k=ai+smart+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Android Central 1d ago Get ready for MW4: RayNeo's GT Max reloads with Call of Duty for a striking limited edition Coverage RayNeo](https://www.androidcentral.com/gaming/virtual-reality/get-ready-for-mw4-rayneos-gt-max-reloads-with-call-of-duty-for-a-striking-limited-edition) | reachable (200) | research_news_review |
@@ -271,6 +268,9 @@ Generated: `2026-10-23T08:52:57.800649+00:00`
 | normal | needs_editorial_verification | direct | [INMO GO3 smart glasses pack a display and Gemini integration with clever camera privacy - 9to5Google](https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDdldHZKRlFHemtvTVRtUV85VzJsNVM0MTZKTHFVbm1paGtOU25PdU1nN2JmbDRsYlhpamVpWTA3S0hKcTNiV3FlbHZfOUZxWm9rRFo4V0xBSnpTY2g2V1FiVnRndjNQVTY5RVlOcHFYd0lMTGxlX0QtQlVtSFNxcTZ0bHNlazlkYnd0aGpNaUU3cHVrYkhDQXZQM0QxZE1oOXFOS2xnSk9SU3ZfcUh0V1ByUzRORExZbjZfemJiMA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | normal | needs_editorial_verification | direct | [INMO GO3: óculos inteligentes com Google Gemini e MicroLED - SempreUpdate](https://news.google.com/rss/articles/CBMickFVX3lxTFBOUTcyMGtSQVdZS0VEdnpkQkthOFlIQUZVWl9oVzNZN09IRTRvUlBLUzF2U2NpVk1VY0EwMWdfdHprejJiME41dVhhSndkLTBhREVoSHk2M1NMNWhkSXZ6cUdNYjlVT2JlNTJGQVAzRjd2QQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [INMO GO3智能眼镜发布：双MicroLED屏+Gemini集成，还有摄像头隐私盖 - 搜狐](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcldaTXZRZGhNM0s2MHZZQ192Z3lXbDVlVHQ1N0w3eE1BcDNyZ1BVa1RxcXAyUnRhdDktcGxXRmNJN3hZVzN1azFpcTNOZ2JGVG5hbFFJVlZUS0E4X3VwWkxUZVFYT2N1ZldEN0kzZkoxOG9YSnBaYlgyUW13WXNwV2JnN1ZfSXNO?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/Dc1n4-xR3gC/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
+| normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/DdyPZeePaF_/) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
+| normal | needs_editorial_verification | direct | [Instagram](https://www.instagram.com/reels/DavCO20gBwO/) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
