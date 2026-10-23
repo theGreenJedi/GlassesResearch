@@ -1,38 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-23T22:20:16.379148+00:00",
-  "candidate_count": 42,
-  "classifier_irrelevant_count": 37,
+  "discovered_utc": "2026-10-23T23:25:52.556635+00:00",
+  "candidate_count": 55,
+  "classifier_irrelevant_count": 44,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 5,
-    "broad_web": 35,
-    "developer": 1,
+    "adjacent": 11,
+    "broad_web": 31,
+    "community": 1,
+    "developer": 15,
     "research": 1,
     "retail": 1
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 5,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 37
+    "irrelevant": 44
   },
   "type_counts": {
-    "model": 11,
-    "review": 1,
-    "video": 2,
-    "news": 26,
+    "model": 1,
+    "news": 16,
     "research": 2,
-    "tool": 3,
-    "sdk": 1,
-    "retail": 7
+    "tool": 15,
+    "sdk": 14,
+    "policy": 2,
+    "retail": 11,
+    "teardown": 1,
+    "community": 13
   },
   "routing_counts": {
-    "adjacent_radar": 5,
-    "model_catalog_review": 1,
-    "reject_noise": 37,
-    "research_news_review": 5
+    "adjacent_radar": 10,
+    "community_evidence_review": 10,
+    "development_hacking": 1,
+    "policy_privacy": 1,
+    "reject_noise": 44,
+    "report_card_evidence": 1,
+    "research_news_review": 11,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -46,15 +52,15 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "69a2cbba64c1fa69",
-      "title": "15 Things to Do Outside Las Vegas – Best Attractions Near Vegas",
-      "url": "https://capturetheatlas.com/things-to-do-outside-las-vegas/",
-      "summary": "Whether you’re traveling alone, with kids, or as a couple, you’ll find all kinds of things to do near Vegas and the surrounding areas. From day trips to the nearby natural areas to unique attractions just outside of Sin City, you’ll find lots of cool places to visit near Las Vegas by car.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "id": "506bdf6d00fee5d7",
+      "title": "engo Eyewear | Connected glasses for serious athletes",
+      "url": "https://engoeyewear.com/en-eu",
+      "summary": "engo on TF1 : Inside our technology TF1 came to meet us in Grenoble to discover the technology behind our smart glasses and see them in action, from running and cycling to sailing.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -62,13 +68,47 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
-        "news"
+        "teardown"
       ],
-      "primary_type": "news",
+      "primary_type": "teardown",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62db3b41b372b4ff",
+      "title": "Countries where PH is banned : r/MapPorn - Reddit",
+      "url": "https://www.reddit.com/r/MapPorn/comments/m2xz1c/countries_where_ph_is_banned/",
+      "summary": "23K votes, 1.6K comments. 2.6M subscribers in the MapPorn community. High quality images of maps.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy",
+        "community"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -77,10 +117,202 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0cf71674f616eb26",
-      "title": "Map Center | City of Scottsdale",
-      "url": "https://www.scottsdaleaz.gov/maps",
-      "summary": "Access interactive maps and resources for navigating Scottsdale, including city services, facilities, and points of interest to enhance your local experience.",
+      "id": "45c3aabf6fa5828d",
+      "title": "John-Lemon-Phub (u/John-Lemon-Phub) - Reddit",
+      "url": "https://www.reddit.com/user/John-Lemon-Phub/submitted/",
+      "summary": "John-Lemon-Phub u/John-Lemon-Phub Overview Posts Comments u/John-Lemon-Phub hasn't posted yet",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "058a9059abe41cf4",
+      "title": "MamaMoldova / Yunya Removed Phub videos : r/nsfwasmr - Reddit",
+      "url": "https://www.reddit.com/r/nsfwasmr/comments/14onlwl/mamamoldova_yunya_removed_phub_videos/",
+      "summary": "MamaMoldova on phub (goes by Yunya on patreon) has removed some of her old videos and I was wondering if anybody had the removed ones saved. If they are uploaded somewhere else can you link them?",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10a3e20195092d27",
+      "title": "Most alternative pornsites are better than phub. - Reddit",
+      "url": "https://www.reddit.com/r/TrueUnpopularOpinion/comments/15mxdac/most_alternative_pornsites_are_better_than_phub/",
+      "summary": "Most alternative pornsites are better than phub. Don't get me wrong phub is the grandfather of the porn streaming sites, but it's a bit lackluster now aside from the funny non pornographic videos like the dude cleaning the casting couch. Spankbang is probably king & xvideos seems to have better content than the ol phub.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b38e6efddc07cb53",
+      "title": "PHub : r/runescape - Reddit",
+      "url": "https://www.reddit.com/r/runescape/comments/e3j1br/phub/",
+      "summary": "Wasn’t really a portal room, but it had 3 portals, an altar/summoning restore, a bank, a shop for life/aura refreshes, and unlockables such as better tiers of bonfires, and adrenaline crystals by the portals that act as dummies on roids (gave you 25% adren every so often (looked like 1.8s but can’t say for sure))",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a8e06683973019fd",
+      "title": "Pornhub channel downloader : r/DataHoarder - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/18cjd8u/pornhub_channel_downloader/",
+      "summary": "Jdownloader is very easy to use, especially for phub There is just some specific settings you need to check like the default quality you want to download but after that it's a breeze What issues do you have with it?",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e21a7b7b6042640",
+      "title": "Pornhub is limiting my download speeds? : r/DataHoarder - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/sts0o3/pornhub_is_limiting_my_download_speeds/",
+      "summary": "It's just that I've never experienced such limits with PHUB. Every other adult sites I frequent have no obvious restrictions like that. I wanted to find out the reason because most of the discussions I see here involves bulk downloading and I couldn't believe they'd be doing that at limited speeds. Reply reply cs_legend_93 •",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ba5b7b4aebe248c",
+      "title": "Services Marketplace / Buy Services For Sale - Digital Point",
+      "url": "https://forums.digitalpoint.com/forums/services.60/",
+      "summary": "If you are looking for (or offering) services, this is the forum to use. This includes job listings, etc.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -95,11 +327,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -108,10 +343,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d52fedd7b345b105",
-      "title": "Scottsdale AZ Map | Nearby Cities, Roads & Valley of the Sun ...",
-      "url": "https://www.arizona-leisure.com/scottsdale-area-map.html",
-      "summary": "Use this Scottsdale AZ map to find nearby cities, major roads, attractions and recreation areas throughout Scottsdale and the Valley of the Sun.",
+      "id": "3047fe909c4bce06",
+      "title": "Twitter and p*hub sites won't properly load on my PC, notebook ... - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/c3c0lb/twitter_and_phub_sites_wont_properly_load_on_my/",
+      "summary": "132 votes, 81 comments. true Twitter and p*hub sites won't properly load on my PC, notebook or on my mobile. Other sites are normal.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -120,17 +355,18 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -139,10 +375,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "769511651843eb89",
-      "title": "Scottsdale Map – Location, Streets & City Guide – Map of Arizona",
-      "url": "https://www.arizonastatemap.com/scottsdale-map-location-streets-city-guide/",
-      "summary": "Discover Scottsdale, Arizona with our interactive map. Explore streets, neighborhoods, Old Town, golf resorts, and desert attractions near Phoenix.",
+      "id": "6e7fa495c4f12ecf",
+      "title": "What is phub.net.cable.rogers.com and why does it keep getting flagged ...",
+      "url": "https://www.reddit.com/r/Rogers/comments/sfssw6/what_is_phubnetcablerogerscom_and_why_does_it/",
+      "summary": "What is phub.net.cable.rogers.com and why does it keep getting flagged by my vpn app?",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -151,17 +387,20 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "tool",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -170,15 +409,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3756a4fc03e45116",
-      "title": "Scottsdale, AZ Map & Directions - MapQuest",
-      "url": "https://www.mapquest.com/us/arizona/scottsdale-az-282042158",
-      "summary": "Get directions, maps, and traffic for Scottsdale, AZ. Check flight prices and hotel availability for your visit.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "5706aa50e0103319",
+      "title": "Collins Dictionary | Word of the Day",
+      "url": "https://www.collinsdictionary.com/us/word-of-the-day",
+      "summary": "Expand your vocabulary by learning a new word every day with our carefully curated - and often unusual - word choices. Click through to find what the word means, and examples of how it might be used.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -186,47 +425,12 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3882da8cd6e53613",
-      "title": "Best Buy in Salinas, CA - 390 Northridge Mall - Electronics, Appliances ...",
-      "url": "https://stores.bestbuy.com/ca/salinas/390-northridge-mall-1019.html",
-      "summary": "Visit your local Best Buy at 390 Northridge Mall in Salinas, CA for electronics, computers, appliances, cell phones, video games & more new tech. In-store pickup & free shipping.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
-        "video",
-        "retail"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -236,214 +440,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "18240565e73ce2e8",
-      "title": "Black Friday – Clothing, Home, Shoes & Holiday Must-Haves | Kohl's",
-      "url": "https://www.kohls.com/catalog.jsp?CN=Assortment:Kohls%20Black%20Friday",
-      "summary": "Enjoy free shipping and easy returns every day at Kohl's. Find great deals on Black Friday Deals at Kohl's today!",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "id": "84333c38423890f6",
+      "title": "Copy And Printer Paper - ODP Business Solutions, ODP Business, Business ...",
+      "url": "https://business.officedepot.com/b/copy-and-printer-paper/N-530728",
+      "summary": "Copy And Printer Paper At ODP Business Solutions, our goal is to help you redefine how you work and be more efficient, productive and satisfied in your workplace. Empowering industries for success and advancing adaptable work solutions for the evolving objectives of business.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "289a5e4d5fea16a3",
-      "title": "Clearance Sale: Save Big on Discount Clearance Items | Kohl's",
-      "url": "https://www.kohls.com/catalog/clearance.jsp?CN=Promotions%3AClearance",
-      "summary": "Enjoy free shipping and easy returns every day at Kohl's. Find great deals on Clearance Sales at Kohl's today!",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "30159aae9ccc7bd8",
-      "title": "Kitchen & Dining Products on Sale - Kohl's",
-      "url": "https://www.kohls.com/catalog/sale-kitchen-dining.jsp?CN=Promotions:Sale+Department:Kitchen%20%26%20Dining",
-      "summary": "Enjoy free shipping and easy returns every day at Kohl's. Find great deals on Kitchen & Dining Products on Sale at Kohl's today!",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e2da2aaae0224c71",
-      "title": "Kohl's Sales Today: Shop Nike, Sephora, Shoes, Dresses & Bedding on ...",
-      "url": "https://www.kohls.com/catalog/sale.jsp?CN=Promotions%3ASale",
-      "summary": "Enjoy free shipping and easy returns every day at Kohl's. Find great deals on Sale at Kohl's today!",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3556a949f0bad217",
-      "title": "Kohl's | Shop Clothing, Shoes, Home, Kitchen, Bedding, Toys & More",
-      "url": "https://www.kohls.com/",
-      "summary": "Enjoy free shipping and easy returns every day at Kohl's! Find great savings on clothing, shoes, toys, home décor, appliances and electronics for the whole family.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dbf08b7f413738aa",
-      "title": "Mechanical restraint in inpatient psychiatric settings: A systematic ...",
-      "url": "https://www.cambridge.org/core/journals/european-psychiatry/article/mechanical-restraint-in-inpatient-psychiatric-settings-a-systematic-review-of-international-prevalence-associations-outcomes-and-reduction-strategies/BC8E632C8E0673C9C405FA2BDE9D32B4",
-      "summary": "There was a notable lack of studies investigating different types of restraint, indications, clinical factors associated with use, the impact of ethnicity and language, and evidence for outcomes. Studies examining these factors are crucial areas for future research.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "research"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5089468a052712dc",
-      "title": "Physical Restraint in Mental Health: Ethical and Safety Concerns",
-      "url": "https://neurolaunch.com/physical-restraint-in-mental-health/",
-      "summary": "Yet research consistently shows restraint carries serious risks of physical injury and psychological trauma for both patients and the staff applying it, which is why most modern guidelines now treat it as a failure of prevention rather than a clinical tool.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -453,7 +459,8 @@
       "relationship": "irrelevant",
       "content_types": [
         "research",
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -465,75 +472,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fb7108b647090423",
-      "title": "Smart Savings: Kohl's Home Goods Sale & Clearance | Kohl's",
-      "url": "https://www.kohls.com/catalog/sale-for-the-home.jsp?CN=Promotions:Sale+Activity:For%20the%20Home",
-      "summary": "Enjoy free shipping and easy returns every day at Kohl's. Find great deals on Kohl's Home Goods on Sale at Kohl's today!",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b7d59e47329e1f04",
-      "title": "The use of restraint was eliminated in psychiatric hospitals 200 Years ...",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2590291125002025",
-      "summary": "In 1838, the Mechanic's Hospital in Lincoln, England announced they had eliminated the use of restraint with all residents using Moral Treatment. This…",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "announced"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8f02b20eb94b3bf3",
-      "title": "TOURS | DAYTONA INTERNATIONAL SPEEDWAY",
-      "url": "https://www.daytonainternationalspeedway.com/Tours/",
-      "summary": "Daytona International Speedway offers a variety of tours that give visitors behind-the-scenes access to iconic areas of the track.",
+      "id": "168cba2b43bf09fe",
+      "title": "Office Depot - Business Solutions Division",
+      "url": "https://business.officedepot.com/",
+      "summary": "Sign up with Office Depot's Business Solutions Division. Our highly trained sales associates provide the best products and solutions to meet your business needs.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -561,15 +503,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a66d6a99e8871177",
-      "title": "Alternatives to use of restraint: A path toward humanistic care",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6482675/",
-      "summary": "In India, the Mental Healthcare Act of 2017 advocates the use of least restrictive measures and alternatives to restraint in providing care and treatment for person with mental illness. In this context, approach to restraints is all the more relevant.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "11054ede417458c3",
+      "title": "Office Depot Calendars And Planners - ODP Business Solutions, ODP ...",
+      "url": "https://business.officedepot.com/b/calendars-and-planners/Brand--Office_Depot/N-1131206",
+      "summary": "Office Depot Calendars And Planners At ODP Business Solutions, our goal is to help you redefine how you work and be more efficient, productive and satisfied in your workplace. Empowering industries for success and advancing adaptable work solutions for the evolving objectives of business.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -579,9 +521,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -591,16 +534,174 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cccd74c6d1fdc1e2",
-      "title": "Arsenal 2025-26 Squad - ESPN",
-      "url": "https://www.espn.com/soccer/team/squad/_/id/359/league/ENG.1/season/2025",
-      "summary": "Explore the 2025-26 Arsenal roster on ESPN. Includes full details on appearances, minutes played, goals and assists.",
+      "id": "88341316bb63127b",
+      "title": "Office Depot Office Supplies - ODP Business Solutions, ODP Business ...",
+      "url": "https://business.officedepot.com/b/office-supplies/Brand--Office_Depot/N-1676",
+      "summary": "Office Depot Office Supplies At ODP Business Solutions, our goal is to help you redefine how you work and be more efficient, productive and satisfied in your workplace. Empowering industries for success and advancing adaptable work solutions for the evolving objectives of business.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ab15980258a263a",
+      "title": "Office Supplies - ODP Business",
+      "url": "https://business.officedepot.com/b/office-supplies/N-1676",
+      "summary": "Office Supplies At ODP Business Solutions, our goal is to help you redefine how you work and be more efficient, productive and satisfied in your workplace. Empowering industries for success and advancing adaptable work solutions for the evolving objectives of business.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ec3e25ac9009d0a",
+      "title": "Office Supplies, Furniture, Technology at Office Depot - ODP Business",
+      "url": "https://business.officedepot.com/www.odpbusiness.com",
+      "summary": "Shop office supplies, office furniture and business technology at Office Depot. Paper, file folders, ink, toner and more. Huge selections, brands you trust, everyday low prices! Take Care of Business, shop today.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9cd6e7dbe147f1a9",
+      "title": "Office Supplies: Office Products and Office Furniture: Office Depot ...",
+      "url": "https://business.officedepot.com/a/prelogin/servicesolutions/",
+      "summary": "At Office Depot Business, we are here to provide the essential products and services tailored to your business and industry needs.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22bfbb2e5285a839",
+      "title": "Print, Promo & Apparel | Office Depot Business",
+      "url": "https://business.officedepot.com/l/solutions-and-services/print-services",
+      "summary": "Welcome to better brand awareness Your brand awareness. Our business. Office Depot® Business combines cutting-edge technology, a nationwide network, and customizable solutions to help you get your organization’s name out there. From printed promotional materials to digital media solutions, we’re ready help you reach new audiences.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9009dffebceeba39",
+      "title": "Privacy Policy - Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/privacy-policy",
+      "summary": "This privacy policy describes the information we collect or that you may provide when you visit our websites, including coldwatercreek.com and mycoldwaterrewards.com (\"Websites\"), or otherwise interact with us online in person, or through the mail, and our practices for collecting, using, maintaining, protecting, and disclosing that information.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "privacy"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -609,9 +710,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "policy"
       ],
-      "primary_type": "news",
+      "primary_type": "policy",
       "routing_targets": [
         "reject_noise"
       ],
@@ -621,15 +722,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4b24b1dd4b0199e9",
-      "title": "Arsenal Squad, Fixtures, Results, Stats and Ratings",
-      "url": "https://www.footballcritic.com/arsenal-fc/squad/467",
-      "summary": "Below is the Arsenal first-team squad for the 2026/2027 season ranked by position from goalkeeper to strikers. Use the menu to sort the list per statistic including their FC Player Form Ranking.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "0075f1e0497adbf0",
+      "title": "Same Day Printing | Office Depot Business",
+      "url": "https://business.officedepot.com/l/solutions-and-services/print-services/same-day-printing",
+      "summary": "When you choose Office Depot Business, you get same day printing on anything from business cards to posters, calendars, banners and move.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -639,9 +740,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -651,15 +753,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a6447970b69c77da",
-      "title": "Better Trends Ashton Chenille Bedspread or Sham - Kohl's",
-      "url": "https://www.kohls.com/product/prd-4339284/better-trends-ashton-chenille-bedspread-or-sham.jsp",
-      "summary": "Compliment the look of your existing bedding with this Better Trends Chenille bedspread or sham.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "id": "8d1e0ff2834e21b4",
+      "title": "Solutions and Services | Office Depot Business",
+      "url": "https://business.officedepot.com/l/solutions-services",
+      "summary": "Our solutions at your service For the business owners and admins who feel overwhelmed by their to-do lists, help is here. Let Office Depot® Business help lighten your load with modern solutions and services tailored to your business. From office supplies to breakroom solutions, we’ll work alongside you to find the services your organization needs to succeed.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -669,9 +771,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -681,135 +784,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "676d98dc28bb9838",
-      "title": "Calculator - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Calculator",
-      "summary": "The first solid-state electronic calculator was created in the early 1960s. Pocket-sized devices became available in the 1970s, especially after the Intel 4004, the first microprocessor, was developed by Intel for the Japanese calculator company Busicom.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL AURA",
+      "id": "d11c7e9b5db01689",
+      "title": "Vocation | Word of the Day | Merriam-Webster",
+      "url": "https://www.merriam-webster.com/word-of-the-day",
+      "summary": "Build your vocabulary: get a new word every day from Merriam-Webster dictionary. Learn the meaning, history, and fun facts about Vocation. Also available as podcast, newsletter, and on the finest social networks.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7fd131aac8317c73",
-      "title": "Current Time in London, United Kingdom - Time Zone & Details",
-      "url": "https://worldstandardtime.com/city-united-kingdom-england-greater-london-london",
-      "summary": "Current local time in London, United Kingdom. View time zone details, UTC offset, sunrise, sunset, and daylight saving time info for London.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d366eed846e2b879",
-      "title": "Current Time in London, United Kingdom | Time Zone and Clock Changes",
-      "url": "https://www.exactlocaltime.com/time-in-london.html",
-      "summary": "Current local time in London, United Kingdom: time zone (Europe/London), UTC offset, 2026–2027 clock change dates and time differences.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c9565d8f42281c52",
-      "title": "Elimination of restrictive practices from acute adult mental health ...",
-      "url": "https://www.sciencedirect.com/science/article/pii/S2666560324000100",
-      "summary": "The calls to eliminate restrictive practices (e.g., seclusion and physical restraint) from mental health care services have been gaining momentum over…",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "265e4b2668b11f91",
-      "title": "Join XBOX Game Pass: Discover Your Next Favorite Game | Xbox",
-      "url": "https://www.xbox.com/en-US/xbox-game-pass",
-      "summary": "Game titles, number, features, and availability vary over time, by region, XBOX Game Pass plan, and platform. Subscription continues automatically at the regular monthly price unless canceled through your Microsoft Account. See terms.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -821,7 +804,7 @@
       "content_types": [
         "model",
         "tool",
-        "retail"
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -833,27 +816,89 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ea8392685be03d2e",
-      "title": "Kohl's Rochester MN Department & Clothing Store | Kohl's Near Me",
-      "url": "https://www.kohls.com/stores/mn/rochester/360",
-      "summary": "Shop Kohl's in Rochester MN for clothing, bedding, dresses, shoes and more! Find updated store hours, deals and directions to Kohl's in Rochester Minnesota.",
+      "id": "9c9954366c394030",
+      "title": "Word of the Day - Grammar.com",
+      "url": "https://www.grammar.com/wotd.php",
+      "summary": "Learn a new word every day with the 'Word of the Day' service from Grammar.com which provides unpretentious words that are insightful, persuasive and always FREE!",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "950ccafa813e3d83",
+      "title": "Word of the Day — Daily Inspirational Words & Thoughts",
+      "url": "https://mylettersmash.com/word-of-the-day",
+      "summary": "Discover a new inspirational word every day with its definition, uplifting reflection, and motivational quote. Build your vocabulary with daily doses of positivity.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "261052acb640b5d9",
+      "title": "305/70/r16? On a leveling kit? : r/ToyotaTacoma - Reddit",
+      "url": "https://www.reddit.com/r/ToyotaTacoma/comments/15pj7bh/30570r16_on_a_leveling_kit/",
+      "summary": "I was looking at getting some 305’s and was curious if they will fit with a BMC and a leveling kit Wheels will be +0 offset",
       "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -863,12 +908,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9716783c46a63e55",
-      "title": "Latest World Articles and Videos | NHK WORLD-JAPAN News",
-      "url": "https://www3.nhk.or.jp/nhkworld/en/news/tags/59/",
-      "summary": "Breaking news and developing stories from around the world. Japanese public broadcaster provides articles, analysis, videos, and more.",
+      "id": "bbfeaf29adee8006",
+      "title": "All-Season Jacket - Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/all-season-jacket/13262/",
+      "summary": "With such great details, it's no wonder it's a bestseller – our versatile water-repellent, water resistant mid-weight All-Season Jacket has a protective drawstring hood with toggle adjustment, plus a soft full button-out lining in our Southwest Canyon print (with silky sleeves for easy on/off). The hood buttons on/off for extra convenience. Gentle back-seam shaping. Imported. PLEASE NOTE ...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -893,160 +938,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0aeac239f7d5db08",
-      "title": "London Time Now With Seconds | Live Local Clock",
-      "url": "https://timewithseconds.com/london-time/",
-      "summary": "See the current time in London with seconds, today’s date, time zone, UTC offset, and a live comparison with your device time.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5b09a9fedc188a91",
-      "title": "Meta",
-      "url": "https://auth.meta.com/",
-      "summary": "Access your Meta account or create a new one for seamless login.",
-      "discovery_channel": "broad_web+research",
-      "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4557acfb930382fe",
-      "title": "Overcoming the Use of Mechanical Restraints in Psychiatry: A New ...",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7700144/",
-      "summary": "MR comprises restraining interventions that include use, control, and removal of mechanical fastening tools such as belts, anklets, and rails aimed to limit someone’s physical mobility. MR still represents a challenge and a risk for every psychiatrist who works in everyday clinical practice [1].",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "81341a0223b6d1e6",
-      "title": "Reducing Physical Restraint Use in the Medical Behavioral Unit",
-      "url": "https://publications.aap.org/pediatrics/article/153/3/e2023062747/196663/Reducing-Physical-Restraint-Use-in-the-Medical",
-      "summary": "Our findings also depict a racial disparity in physical restraint use in the MBU because Black patients were more likely to be physically restrained than White patients.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1412b50b1d38e0f3",
-      "title": "Rising Use of Physical Restraints in Hospitalized Adults in the USA",
-      "url": "https://link.springer.com/article/10.1007/s11606-023-08310-4",
-      "summary": "Rising Use of Physical Restraints in Hospitalized Adults in the USA",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e517b41a94acacf",
-      "title": "Time in London Now - GMT and BST Live Clock",
-      "url": "https://www.onlinedigitalclock.com/timezone/europe-london/",
-      "summary": "See current time in London with seconds, standard and daylight offsets, scheduled clock changes and the difference from your time zone.",
+      "id": "03d2e705dc9cdced",
+      "title": "Cast from Chrome to your TV - Google Help",
+      "url": "https://support.google.com/chrome/answer/3228332?hl=en&open_embed_dialog=1&start_dialog_maximized=1&ai1hc=1",
+      "summary": "Cast from Chrome to your TV You can show a Chrome tab or your screen from your PC to your TV with your Chromecast or Google TV Streamer (4K) device. You can cast most web content....",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1073,12 +968,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b04eb6065ce3e384",
-      "title": "Tin tức mới nhất về Nhật Bản và thế giới | ベトナム語ニュース | NHK WORLD-JAPAN News",
-      "url": "https://www3.nhk.or.jp/nhkworld/vi/news/",
-      "summary": "NHK WORLD cung cấp những tin tức mới nhất từ Nhật Bản, châu Á và trên thế giới.",
+      "id": "ef5f547af8ebf621",
+      "title": "Cast from Chrome to your TV - Streaming Help - Google Help",
+      "url": "https://support.google.com/chromecast/answer/3228332?hl=en",
+      "summary": "Cast from Chrome to your TV You can show a Chrome tab or your screen from your PC to your TV with your Chromecast or Google TV Streamer (4K) device. You can cast most web content....",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1103,12 +998,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "52c83e54ce3509cd",
-      "title": "Today's Deals - Kohl's",
-      "url": "https://www.kohls.com/sale-event/todays-deals.jsp",
-      "summary": "Find important information on Today’s Ad, Kohl’s rebates and Kohl’s clearance items in order to save more money for you and your family. It’s easy to stack the savings with Kohl’s promo codes. You can enter up to four promo codes per order when you are placing your order on a desktop.",
+      "id": "a0239d0d65cddfbc",
+      "title": "Coldwater Creek | Women's Clothing | Quality Tunics & Pants XS-3X",
+      "url": "https://www.coldwatercreek.com/",
+      "summary": "Shop quality women's clothing featuring comfortable tunics, pull-on pants, jeans, and versatile dresses. Premium fabrics and thoughtful design in Misses, Petites & Women's Plus XS-3X.",
       "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b0956b2c08e89ac",
+      "title": "Fertilizer Spreaders for Lawn Care and Gardening",
+      "url": "https://www.walmart.com/browse/patio-garden/fertilizer-spreaders/5428_4091_1445596_1229639",
+      "summary": "Shop fertilizer spreaders for lawns and gardens including push, tow-behind, and broadcast models for easy seed and fertilizer application.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1133,10 +1058,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3f5b6dc3e7c05311",
-      "title": "Transition to a Restraint-Free Inpatient Behavioral Health Setting",
-      "url": "https://patientsafetyj.com/article/115424-transition-to-a-restraint-free-inpatient-behavioral-health-setting",
-      "summary": "Restraint reduction was a primary quality initiative for multiple years without success. An analysis of previous attempts toward restraint reduction at Belmont revealed two key barriers.",
+      "id": "06fe7d6000ab70e0",
+      "title": "Frozen French Fries for Easy Sides",
+      "url": "https://www.walmart.com/c/kp/french-fries",
+      "summary": "Shop frozen French fries in various cuts and seasonings for quick snacks and dinner sides.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1151,9 +1076,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1163,10 +1088,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0dc1e67c143cc209",
-      "title": "Trauma Informed Interventions to Reduce Seclusion, Restraint and ...",
-      "url": "https://link.springer.com/article/10.1007/s40653-023-00524-2",
-      "summary": "Engaging with children and adolescents in mental health settings who are exhibiting behaviours that challenge can often result in the use of seclusion, restraint and coercive practices. It is recognised that more therapeutic ways to engage this ...",
+      "id": "1ea7de6dfd7bba94",
+      "title": "Great Value 100% Pure Beef Burgers, 75% Lean, 8 lbs, 32 Count, Frozen ...",
+      "url": "https://www.walmart.com/ip/Great-Value-100-Pure-Beef-Burgers-75-Lean-25-Fat-8-lbs-32-Count-Frozen/10804578",
+      "summary": "Includes 32 frozen beef patties in an 8 lb box, with 1/4 lb portions that help with meal planning and serving. Made with 100% pure beef and a 75% lean/25% fat ratio. Prepare from frozen on a grill, pan, electric skillet, or broiler. Each burger has 18g protein and 330 calories. Gluten-free.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1181,9 +1106,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1193,12 +1118,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "27effcafcabfecb2",
-      "title": "Watch Live TV | NHK WORLD-JAPAN",
-      "url": "https://www3.nhk.or.jp/nhkworld/en/live_tv/",
-      "summary": "NHK WORLD-JAPAN offers live streaming and one-week catch-up programs, delivering news and culture from Japan to global viewers.",
+      "id": "a31059502eb49310",
+      "title": "Great Value Instant Coffee in Instant Coffee - Walmart.com",
+      "url": "https://www.walmart.com/browse/food/great-value-instant-coffee/976759_1086446_1229650_8607506",
+      "summary": "Shop for Great Value Instant Coffee in Instant Coffee. Buy products such as Great Value Classic Medium Roast Instant Coffee, 8 oz at Walmart and save.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1211,9 +1136,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "retail"
       ],
-      "primary_type": "video",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1223,42 +1148,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2cbad3727eefdea3",
-      "title": "Women's Croft & Barrow® Extra Soft Classic Cable Knit Cardigan",
-      "url": "https://www.kohls.com/product/prd-6304183/womens-croft-barrow-extra-soft-classic-cable-knit-cardigan.jsp",
-      "summary": "Stay warm while keeping your style in tact in this women's Croft & Barrow cardigan sweater.",
+      "id": "7b11a99b5bfefa4c",
+      "title": "Home & Gifts - Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/home-gifts",
+      "summary": "Home & Gifts Unique décor & curated gifts for all the spaces & occasions in your life.",
       "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5b5f1b45e329b1f8",
-      "title": "新闻一览 | NHK WORLD-JAPAN News",
-      "url": "https://www3.nhk.or.jp/nhkworld/zh/news/list/",
-      "summary": "NHK环球广播网播报日本、亚洲以及世界各地的最新新闻。",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1283,12 +1178,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89809c2030668a67",
-      "title": "最新日本国际新闻 | 中国語簡体字ニュース | NHK WORLD-JAPAN News",
-      "url": "https://www3.nhk.or.jp/nhkworld/zh/news/",
-      "summary": "NHK环球广播网播报日本、亚洲以及世界各地的最新新闻。",
+      "id": "1d31d1880ee8f253",
+      "title": "How Can You Cast a Chrome Tab to Your TV? - easytweaks.com",
+      "url": "https://www.easytweaks.com/cast-chrome-tab-tv-tablet/",
+      "summary": "Learn how to project your Chrome tab to your TV using the built-in Cast feature, Chromecast, or smart TV compatibility for wireless screen sharing.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1313,12 +1208,522 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "29460a364767bc05",
-      "title": "일본 최신뉴스 | ハングルニュース | NHK WORLD-JAPAN News",
-      "url": "https://www3.nhk.or.jp/nhkworld/ko/news/",
-      "summary": "NHK 월드는 일본과 아시아를 비롯한 전세계의 최신 뉴스를 제공합니다.",
+      "id": "d045132e3c61b20e",
+      "title": "How to Cast Chrome to a TV From Your Computer or Phone",
+      "url": "https://www.technobezz.com/how-to-cast-chrome-to-a-tv",
+      "summary": "Find out how to cast Chrome to TV from your computer or phone, share a tab or screen, and fix a receiver that won't appear.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d50d55158d0e9a04",
+      "title": "How to Cast From a Chrome Browser - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/techtips/how-to-cast-from-a-chrome-browser/",
+      "summary": "Casting from a Chrome browser to your TV or other compatible devices is a convenient way to enjoy your favorite content on a bigger screen. Whether you’re using Chromecast, AirPlay, or an HDMI cable, the process is simple and accessible.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bf35b3c7f2ad07f0",
+      "title": "How to Cast Google Chrome to Your TV: PC, Android, iPhone",
+      "url": "https://www.wikihow.com/Use-Google-Chrome-on-a-TV",
+      "summary": "If you have a Chromecast device or a Smart TV with Chromecast built-in, you can project the Google Chrome browser to your TV. You can also cast from your Android or use AirPlay to screen mirror your iOS device. Here's how to use Google Chrome on a TV using your computer, Android, iPhone, or iPad.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd6331a4dc6db721",
+      "title": "How to use 咯 at end of the sentence? : r/ChineseLanguage - Reddit",
+      "url": "https://www.reddit.com/r/ChineseLanguage/comments/sq763q/how_to_use_%E5%92%AF_at_end_of_the_sentence/",
+      "summary": "Even after looking at the dictionary I don't really understand how it is used and why? How does adding 咯 change the meaning of the sentence?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7bea572e637daeb7",
+      "title": "Please make fun of me, I just ordered 305 70 R16 for my off ... - Reddit",
+      "url": "https://www.reddit.com/r/ToyotaTacoma/comments/ttghty/please_make_fun_of_me_i_just_ordered_305_70_r16/",
+      "summary": "Please make fun of me, I just ordered 305 70 R16 for my off road, upgrading from 285/75 R16. Thoughts?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd93e191f384c9d0",
+      "title": "Queen Comforters for Cozy and Stylish Beds - Walmart.com",
+      "url": "https://www.walmart.com/browse/home/queen-comforters/4044_539103_1995847_5811928",
+      "summary": "Explore queen comforters in various styles and materials for all-season comfort and elegant bedroom decor.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c53b956c879bcfd4",
+      "title": "Shop Fabric Online for Sewing, Crafts and Upholstery - Walmart.com",
+      "url": "https://www.walmart.com/cp/fabric/4232946",
+      "summary": "Discover a wide selection of fabric for sewing, crafts, and upholstery. Browse fabric types and styles to find the perfect material for any project.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1dd8faad412b4c00",
+      "title": "Smart Prepaid",
+      "url": "https://smart.com.ph/prepaid",
+      "summary": "Check your SIM Registration status by visiting the SIM Registration Portal at smart.com.ph/simreg. Enter your Mobile Number and its corresponding OTP to check the registration status. Wait for the prompt confirming that your SIM card is already registered. For more information, click here.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research+retail",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses site:aliexpress.com; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c9f1fd55a31b83b1",
+      "title": "Walmart Grocery in Redmond, OR – Home Delivery, Curbside Pickup ...",
+      "url": "https://www.walmart.com/store/2243-redmond-or/shopping-services",
+      "summary": "Same-day grocery pickup and delivery in Redmond, OR. Choose a pickup or delivery time that's convenient for you. Money back guarantee!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f78bef05c25e4518",
+      "title": "Walmart Supercenter in Bend, OR | Grocery, Electronics, Toys | Serving ...",
+      "url": "https://www.walmart.com/store/2075-bend-or/",
+      "summary": "Get Walmart hours, driving directions and check out weekly specials at your Bend in Bend, OR. Get Bend store hours and driving directions, buy online, and pick up in-store at 20120 Pinebrook Blvd, Bend, OR 97702 or call 541-389-8184.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8531c158e6da995e",
+      "title": "Walmart Supercenter in Redmond, OR | Grocery, Electronics, Toys ...",
+      "url": "https://www.walmart.com/store/2243-redmond-or",
+      "summary": "Get Walmart hours, driving directions and check out weekly specials at your Redmond in Redmond, OR. Get Redmond store hours and driving directions, buy online, and pick up in-store at 300 Nw Oaktree Ln, Redmond, OR 97756 or call 541-923-5972.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34b89ea7d7ecfe74",
+      "title": "Walmart Supercenter in Renton, WA | Grocery, Electronics, Toys ...",
+      "url": "https://www.walmart.com/store/2516-renton-wa",
+      "summary": "Get Walmart hours, driving directions and check out weekly specials at your Renton in Renton, WA. Get Renton store hours and driving directions, buy online, and pick up in-store at 743 Rainier Avenue South, Renton, WA 98057 or call 425-227-0407.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff0c61a2c0cbc644",
+      "title": "Women's Clothing - Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/clothing",
+      "summary": "Clothing Confident styles featuring thoughtful details, exceptional fits & lasting comfort.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40a08873ee50bf10",
+      "title": "Women's Jackets & Vests XS-3X - Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/clothing/jackets-vests",
+      "summary": "Discover jackets and vests designed with quality fabrics and thoughtful details. Well-made layers that add interest and versatility to everyday outfits in Misses, Petites & Women's Plus XS-3X.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "37025e2969cb1bae",
+      "title": "Women's Jeans XS-3X | Stretch Denim Styles | Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/clothing/jeans",
+      "summary": "Shop women's jeans made with quality stretch denim and reliable construction. Straight, slim, and relaxed styles created for everyday in Misses, Petites & Women's Plus XS-3X.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5829b6ffb5b73d0d",
+      "title": "Women's New Arrivals - Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/new-arrivals",
+      "summary": "Discover the latest styles inspired by the colors, textures, and spirit of the places we call home. Each new arrival brings together the premium fabrics and comfortable fits we're known for with distinctive details—embroidered touches, conversational prints, painterly palettes—that make every style feel special. From knit tops with artful details to pants in trusted fits with updated ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80d85325ccc75b45",
+      "title": "Women's Pants & Shorts XS-3X | Comfortable Fits | Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/clothing/pants-shorts",
+      "summary": "Discover women's pants and shorts designed with quality fabrics and thoughtful construction. Familiar fits with pull-on ease and classic zip front styling in Misses, Petites, Women's Plus & Talls XS-3X.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b5e6b95797ca032",
+      "title": "Women's Special Occasion Clothing | Coldwater Creek",
+      "url": "https://www.coldwatercreek.com/clothing/special-occasions",
+      "summary": "Shop women's special occasion clothing at Coldwater Creek.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
