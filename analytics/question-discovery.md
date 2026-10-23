@@ -1,26 +1,29 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-22T15:19:39+00:00**
+Generated: **2026-10-23T15:08:40+00:00**
 
 - Published evidence-backed answers: **104** (minimum **1000**, no ceiling)
 - Remaining to minimum: **896**
-- Canonical registry size: **171** (not the published count)
-- Unanswered research candidates: **67**
-- Observations this run: **62**
-- New distinct questions: **2**
+- Canonical registry size: **176** (not the published count)
+- Unanswered research candidates: **72**
+- Observations this run: **66**
+- New distinct questions: **5**
 
 ## Source health
 
 - github_issues: ok — 11 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 29 observations
+- reddit_rss: partial — 33 observations
 - google_search_console: ok — 2 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000170** — Choices if I want a display but no camera?
-- **Q-000171** — what are the best smart glasses without a built-in camera for privacy-conscious buyers?
+- **Q-000172** — Are there smart glasses that can display my phone's camera feed?
+- **Q-000173** — Green HUD text against a bright sky vs against trees：how big is the difference in real life?
+- **Q-000174** — Would Muse work if my VPN shows me in the US?
+- **Q-000175** — When on earth will the product be released and shipped?
+- **Q-000176** — Best live caption for hard of hearing?
 
 ## Research queue (first 20)
 
