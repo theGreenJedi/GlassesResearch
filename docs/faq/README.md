@@ -146,6 +146,8 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 ## Questions researched from actual search language
 
+- [How can an Android app detect whether it is running on Google Glass?](09-development-openness.md#how-can-an-android-app-detect-whether-it-is-running-on-google-glass) — A historically documented Build-property heuristic, not device attestation.
+- [Can Sony SmartEyeglass apps run directly from Windows or Linux instead of Android?](09-development-openness.md#can-sony-smarteyeglass-apps-run-directly-from-windows-or-linux-instead-of-android) — Distinguishes Sony's Android-hosted SDK from an unverified direct desktop Bluetooth integration.
 - [Why downloaded APK files are not displaying in Vuzix SmartGlass\'s download folder?](09-development-openness.md#why-downloaded-apk-files-are-not-displaying-in-vuzix-smartglasss-download-folder) — Distinguishes missing file-manager listings from the supported M-Series APK installation routes.
 - [Can a pixelated, light-blocking eyeglass lens make text appear ten meters away?](05-displays.md#can-a-pixelated-light-blocking-eyeglass-lens-make-text-appear-ten-meters-away) — Explains optical focus, virtual images, and why a dimming-only lens is insufficient.
 - [When did smart glasses come out?](01-basics.md#when-did-smart-glasses-come-out) — Distinguishes early head-worn systems, 2011 consumer see-through glasses, and the 2013 Glass Explorer launch.
