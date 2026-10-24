@@ -146,6 +146,8 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 ## Questions researched from actual search language
 
+- [Why downloaded APK files are not displaying in Vuzix SmartGlass\'s download folder?](09-development-openness.md#why-downloaded-apk-files-are-not-displaying-in-vuzix-smartglasss-download-folder) — Distinguishes missing file-manager listings from the supported M-Series APK installation routes.
+- [Can a pixelated, light-blocking eyeglass lens make text appear ten meters away?](05-displays.md#can-a-pixelated-light-blocking-eyeglass-lens-make-text-appear-ten-meters-away) — Explains optical focus, virtual images, and why a dimming-only lens is insufficient.
 - [When did smart glasses come out?](01-basics.md#when-did-smart-glasses-come-out) — Distinguishes early head-worn systems, 2011 consumer see-through glasses, and the 2013 Glass Explorer launch.
 - [When did AI glasses come out?](01-basics.md#when-did-ai-glasses-come-out) — Separates voice-assistant eyewear (2019), generative-AI glasses (2023), and camera-aware AI (2023–24).
 
