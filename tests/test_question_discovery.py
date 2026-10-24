@@ -48,6 +48,37 @@ class QuestionDiscoveryTests(unittest.TestCase):
                 discovery.FAQ_ROOT = original
 
 
+    def test_nested_practical_answers_are_seeded_once(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            (root / "09-development-openness.md").write_text(
+                "## Veyra practical answers\n\n"
+                "### 1. What is Veyra?\n\nA clear answer.\n\n"
+                "### 2. Is Veyra open source?\n\nA second answer.\n"
+            )
+            with patch.object(discovery, "FAQ_ROOT", root):
+                result = discovery.seed_published_answers({"next_id": 1, "questions": []})
+                self.assertEqual(len(result["questions"]), 2)
+                self.assertEqual(
+                    result["questions"][0]["answer_url"],
+                    "/docs/faq/09-development-openness/#1-what-is-veyra",
+                )
+                self.assertEqual(len(discovery.seed_published_answers(result)["questions"]), 2)
+
+    def test_nested_faq_search_metadata_covers_each_answer(self):
+        import seo_hook
+        markup = (
+            "## Veyra practical answers\n\n"
+            "### 1. What is Veyra?\n\nFirst answer.\n\n"
+            "### 2. Is it open source?\n\nSecond answer.\n\n"
+            "## Another topic\n\nUnrelated text.\n"
+        )
+        schema = json.loads(seo_hook._faq_schema(markup, "https://example.org/faq/"))
+        self.assertEqual([entity["name"] for entity in schema["mainEntity"]],
+                         ["1. What is Veyra?", "2. Is it open source?"])
+        self.assertEqual([entity["acceptedAnswer"]["text"] for entity in schema["mainEntity"]],
+                         ["First answer.", "Second answer."])
+
     def test_question_scoped_vs_site_traffic(self):
         self.assertTrue(discovery.looks_like_question("Can I use this pair offline?", scoped=True))
         self.assertFalse(discovery.looks_like_question("Can I use this pair offline?"))
