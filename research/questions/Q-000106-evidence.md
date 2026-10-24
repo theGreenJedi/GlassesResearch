@@ -4,7 +4,7 @@ Research reviewed: 2026-10-24. Genuine observed question from [MentraOS issue #4
 
 **Question:** Is RayNeo iO support being considered for the MentraOS roadmap?
 
-**Disposition:** The public support request is confirmed. No maintainer acceptance, committed roadmap date, shipped adapter, or working iOS compatibility is established by the sources reviewed. Draft answer: `docs/faq/09-development-openness.md`. Do not mark published until live verification.
+**Disposition:** The public support request is confirmed. No maintainer acceptance, committed roadmap date, shipped adapter, or working iOS compatibility is established by the sources reviewed. Published answer: `docs/faq/09-development-openness.md`, merged in PR #682. Live page verified against the deployed source digest on 2026-10-24.
 
 ## Claim-level provenance
 
@@ -18,3 +18,7 @@ Research reviewed: 2026-10-24. Genuine observed question from [MentraOS issue #4
 ## Uncertainty and recheck trigger
 
 If a Mentra maintainer responds to #4841, the supported-device list changes, or a tested RayNeo iO adapter ships, re-evaluate this time-sensitive answer. Do not equate a user feature request, experimental independent implementation, or generic adapter roadmap with official support. No physical-device verification was performed.
+
+## Publication verification — 2026-10-24
+
+Merged editorial PR: [#682](https://github.com/theGreenJedi/GlassesResearch/pull/682). Production revision: `3b2458071f92e86cd181b2971b59ed29d23108c2` (PR #683, which repaired the nested README route proof and added FAQ canaries). [Production content proof run #40063314178](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40063314178) succeeded at 2026-10-24T04:42:32Z, fetching the public FAQ route with a cache-busting request and confirming its exact build content digest (c8d957287e00). The Practical Answers index `/docs/faq/` also passed with digest `765a87516754`. No independent device testing is implied by this publication proof.
