@@ -148,3 +148,12 @@ Record phone and glasses models, firmware and app versions, pairing steps, permi
 ### 25. Has GlassesResearch independently verified Veyra?
 
 No hands-on Veyra bench results are documented in this entry. Features are attributed to the developer; connection issues are attributed to users. Independent repeatable tests are needed before promotion to verified findings. **Status: not independently verified.**
+
+
+## Is RayNeo iO support being considered for the MentraOS roadmap?
+
+**A public request exists, but MentraOS has not publicly committed to RayNeo iO support in the sources reviewed.** A community member opened [MentraOS issue #4841](https://github.com/Mentra-Community/MentraOS/issues/4841) on October 17, 2026, requesting RayNeo iO compatibility, especially on iOS. As reviewed October 24, the issue is open without a maintainer response; it is a *request*, not a supported-device announcement or delivery date.
+
+Mentra's [official compatibility page](https://mentraglass.com/os) does not list RayNeo iO as supported. The separate [pluggable OEM glasses-adapter proposal (#3017)](https://github.com/Mentra-Community/MentraOS/issues/3017) describes a potential route for third-party devices but does not itself promise an iO adapter, working pairing, MiniApp compatibility, or iOS support. The requester also cites independent [Turbo-IO](https://github.com/Turbo1123/Turbo-IO) and [Spare io](https://github.com/owenc1122/spare-io) projects; neither is evidence of an official MentraOS integration.
+
+**Practical answer:** Do not purchase RayNeo iO assuming it works with MentraOS today. Follow issue #4841 and the official supported-device list for an explicit maintainer decision and tested release. **Evidence status: public request confirmed; roadmap acceptance, integration, and compatibility unverified. Reviewed 2026-10-24; no GlassesResearch hardware test.**
