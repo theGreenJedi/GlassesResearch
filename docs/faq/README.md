@@ -154,3 +154,4 @@ These questions were observed in first-party Search Console data and researched 
 ## Observed software-compatibility question
 
 - [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
+- [Does the Vuzix Speech SDK support German number-word commands on M300, and how are language files loaded?](09-development-openness.md#does-the-vuzix-speech-sdk-support-german-number-word-commands-on-m300-and-how-are-language-files-loaded) — Separates manufacturer M300 localization documentation from community troubleshooting and newer M400 language claims.
