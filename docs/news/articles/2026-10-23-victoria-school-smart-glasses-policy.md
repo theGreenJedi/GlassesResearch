@@ -1,4 +1,10 @@
+---
+description: "Victoria's 2027 school smart-glasses restrictions differ for students and adults; camera-free devices and disability access are in scope."
+---
+
 # Victoria's 2027 school smart-glasses restrictions: scope and accessibility
+
+**Published:** October 23, 2026
 
 **Across the Wire · Primary-source documented · October 23, 2026 · Not an observation of enforcement**
 
