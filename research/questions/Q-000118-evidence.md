@@ -2,7 +2,7 @@
 
 Research reviewed: 2026-10-24. **Observed source:** [Stack Overflow question 60778715](https://stackoverflow.com/questions/60778715/vuzix-speech-sdk-language-support), asked 2020-03-20. Original question explicitly asks how an M300 Android app can recognize German number words and where to load language-recognition files. Registry entry Q-000118 was discovered from Stack Exchange; this is not a fabricated query.
 
-**Disposition:** Draft, evidence-qualified answer in `docs/faq/09-development-openness.md`. Not yet verified merged or live. Manufacturer sources establish a localized M300 speech interface and German support in Vuzix's broader command engine. They do not independently establish the German-language resource installation process for every M300 firmware. Preserve this distinction.
+**Disposition:** Evidence-qualified answer published in `docs/faq/09-development-openness.md` via merged PR #685; live production page independently proven against the deployed build digest on 2026-10-24. Manufacturer sources establish a localized M300 speech interface and German support in Vuzix's broader command engine. They do not independently establish the German-language resource installation process for every M300 firmware. Preserve this distinction.
 
 ## Claim-level provenance
 
@@ -14,4 +14,8 @@ Research reviewed: 2026-10-24. **Observed source:** [Stack Overflow question 607
 
 ## Uncertainty, safety, and follow-up
 
-No GlassesResearch M300 hardware or firmware test. Actual recognition of German number words, vocabulary behavior across locale switches, accuracy, and whether particular firmware requires extra resources remain unverified. Do not recommend downloading unknown recognition files or changing system partitions. Recheck if Vuzix supplies M300-specific documentation or a reproducible device test. No redistribution of SDK binaries or vendor manuals; links only. The FAQ must not be marked published in the canonical registry until reviewed, merged, and independently proven live.
+No GlassesResearch M300 hardware or firmware test. Actual recognition of German number words, vocabulary behavior across locale switches, accuracy, and whether particular firmware requires extra resources remain unverified. Do not recommend downloading unknown recognition files or changing system partitions. Recheck if Vuzix supplies M300-specific documentation or a reproducible device test. No redistribution of SDK binaries or vendor manuals; links only. Registry publication follows the successful merge and independent live-content proof below.
+
+## Publication verification — 2026-10-24
+
+Merged editorial PR: [#685](https://github.com/theGreenJedi/GlassesResearch/pull/685). Production revision: `9a9880815fc02962bd49235179a561eae9bdd27b`. [Production content proof run #40064267039](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40064267039) succeeded at 2026-10-24T04:57:03Z. Its cache-busted production retrieval proved `/docs/faq/09-development-openness/` with exact build digest `9e7052c6d7d5` and the Practical Answers index `/docs/faq/` with digest `c83d18d2daf4`. The evidence page was also retrieved with digest `bb53926c60fe` before this reconciliation edit. This is publication proof, **not** a hardware or speech-recognition test.
