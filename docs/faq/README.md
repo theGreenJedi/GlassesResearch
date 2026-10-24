@@ -27,6 +27,10 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [**What smart glasses are recalled?**](10-ownership-future.md#what-smart-glasses-are-recalled) — Current verified recall records, affected models, primary regulatory evidence, and remedies.
 - [**Is the INMO Air3 recalled?**](10-ownership-future.md#is-the-inmo-air3-recalled) — Yes. See the verified recall, stop-use guidance, and announced remedy.
 
+## Observed software-compatibility question
+
+- [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
+
 ## How to read the recommendations
 
 - “Best” means the strongest current match for a stated use case, not a universal winner.
