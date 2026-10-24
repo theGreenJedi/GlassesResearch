@@ -176,7 +176,7 @@ For **M300/M300XL**, [Vuzix's installation instructions](https://support.vuzix.c
 
 **Practical next step:** confirm the exact glasses model and firmware, verify where the APK was transferred, and follow that model's supported installation procedure rather than relying only on the Downloads app listing. **Evidence:** direct Vuzix instructions for M300/M300XL and an attributed 2016–2018 community troubleshooting thread; no GlassesResearch M100/M300 device reproduction. Reviewed October 24, 2026.
 
-## How can an Android app detect whether it is running on Google Glass?
+## Detect Google Glass Programmatically
 
 **Short answer:** For the original Android-based Google Glass Explorer devices, check the Android build manufacturer **and** model as a practical *heuristic*, not a guaranteed hardware attestation. The [original developer question (2013)](https://stackoverflow.com/questions/18723689/detect-google-glass-programmatically) includes this community-tested Java approach:
 
@@ -191,7 +191,7 @@ boolean looksLikeExplorerGlass =
 
 **Limits:** these fields are software-provided build properties; they are not proof of a genuine device and do not establish compatibility with every later Glass Enterprise edition, firmware, or emulator. If an app needs a particular feature, test that feature or its documented API separately. Google's [Glass Development Kit documentation](https://developers.google.com/glass/develop/gdk) concerns the legacy Android-based Glass platform, not an all-generation identity guarantee. **Evidence:** official Android and legacy Glass developer documentation plus attributed historical device output; no current Glass hardware test. Reviewed October 24, 2026.
 
-## Can Sony SmartEyeglass apps run directly from Windows or Linux instead of Android?
+## Can Sony Smart Glass be used on platforms other than Android?
 
 **Short answer:** Sony's published **SmartEyeglass SDK** is an **Android SmartExtension/host-app framework**, not an official Windows or Linux Bluetooth SDK. The [original October 2014 developer question](https://stackoverflow.com/questions/26547629/can-sony-smart-glass-be-used-on-platforms-other-than-android) explicitly asks about using the glasses from Windows or Linux over Bluetooth; the contemporary answer states that the supported SDK and host application were Android-only.
 
