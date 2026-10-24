@@ -6,4 +6,6 @@
 
 **Qualified conclusion:** Dimming-only pixels near the eye do not by themselves produce a sharp virtual image at a remote focal distance. This does not imply actively controlling optical phase is the only path; refractive and reflective optics can also form images.
 
-**Proposed answer:** `docs/faq/05-displays.md`; **status:** editorial draft pending merge and production confirmation. No GlassesResearch optical prototype test.
+**Proposed answer:** `docs/faq/05-displays.md`; **status:** published; exact production page and heading anchor verified October 24, 2026. No GlassesResearch optical prototype test.
+
+**Production proof (2026-10-24):** [Live Practical Answer](https://glassesresearch.org/docs/faq/05-displays/#can-a-pixelated-light-blocking-eyeglass-lens-make-text-appear-ten-meters-away) — public page contains the cited answer and generated heading anchor; original Q ID preserved.

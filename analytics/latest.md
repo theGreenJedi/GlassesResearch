@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-24T14:37:47+00:00**
+Generated automatically: **2026-10-24T20:22:03+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -56,8 +56,8 @@ Generated automatically: **2026-10-24T14:37:47+00:00**
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **4 browser pageviews**, **3 RUM visits**.
-- Rolling 7d: **102 browser pageviews**, **92 RUM visits**.
+- Rolling 24h: **6 browser pageviews**, **5 RUM visits**.
+- Rolling 7d: **103 browser pageviews**, **93 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
@@ -65,36 +65,37 @@ Generated automatically: **2026-10-24T14:37:47+00:00**
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
 | /models/catalog/ | 2 | 1 |
+| / | 2 | 2 |
+| /docs/COMPARISON_ENGINE/ | 1 | 1 |
 | /lineages/JTLLINK_G600PRO/ | 1 | 1 |
-| / | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 3 | 3 |
+| (direct / none) | 5 | 5 |
 | glassesresearch.org | 1 | 0 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **4,852 requests**, **2,004 HTTP visits**, **148.2 MB** served.
-- Rolling 7d: **32,264 requests**, **9,842 HTTP visits**, **759.1 MB** served.
+- Rolling 24h: **5,915 requests**, **2,313 HTTP visits**, **170.1 MB** served.
+- Rolling 7d: **32,789 requests**, **10,192 HTTP visits**, **786.4 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 3,891 | 1,854 |
-| BE | 571 | 16 |
-| CN | 86 | 7 |
+| US | 4,718 | 2,146 |
+| BE | 573 | 16 |
+| GB | 177 | 29 |
+| CN | 85 | 8 |
 | DO | 75 | 1 |
-| DE | 51 | 35 |
-| SG | 18 | 6 |
-| BR | 15 | 9 |
-| KR | 15 | 2 |
-| JP | 14 | 14 |
-| MX | 12 | 10 |
+| TH | 59 | 3 |
+| DE | 45 | 31 |
+| SG | 42 | 3 |
+| JP | 19 | 17 |
+| KR | 13 | 1 |
 
 ## What to watch
 

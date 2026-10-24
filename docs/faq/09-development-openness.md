@@ -175,3 +175,26 @@ For an M300, the practical first test is to set the **glasses' system language t
 For **M300/M300XL**, [Vuzix's installation instructions](https://support.vuzix.com/docs/can-i-install-applications-on-my-m-series-device-using-usb) document two routes: transfer the APK in the appropriate USB file-transfer mode, then locate and open it under **Settings > Storage & USB > Explore**, or install from a computer using Android Debug Bridge with `adb install path/to/app.apk`. The [Vuzix App Store](https://support.vuzix.com/docs/how-do-i-install-applications-on-my-m-series-smart-glasses) is another vendor-supported deployment route. These instructions are model-specific: do **not** assume identical menus, connectors, or supported files on the older **M100**. Community replies to the original question also described an M100 System File Manager, but its historical download links and present-day availability have **not** been independently verified.
 
 **Practical next step:** confirm the exact glasses model and firmware, verify where the APK was transferred, and follow that model's supported installation procedure rather than relying only on the Downloads app listing. **Evidence:** direct Vuzix instructions for M300/M300XL and an attributed 2016–2018 community troubleshooting thread; no GlassesResearch M100/M300 device reproduction. Reviewed October 24, 2026.
+
+## Detect Google Glass Programmatically
+
+**Short answer:** For the original Android-based Google Glass Explorer devices, check the Android build manufacturer **and** model as a practical *heuristic*, not a guaranteed hardware attestation. The [original developer question (2013)](https://stackoverflow.com/questions/18723689/detect-google-glass-programmatically) includes this community-tested Java approach:
+
+```java
+boolean looksLikeExplorerGlass =
+    "Google".equalsIgnoreCase(android.os.Build.MANUFACTURER)
+    && android.os.Build.MODEL != null
+    && android.os.Build.MODEL.startsWith("Glass");
+```
+
+[Android's official `Build` reference](https://developer.android.com/reference/android/os/Build) defines `MANUFACTURER` as the hardware manufacturer and `MODEL` as the end-user-visible product name. The original thread reports `MODEL = "Glass 1"` and `MANUFACTURER = "Google"` for a historic device. This is more discriminating than checking Android 4.4 / API 19, which also ran on ordinary phones.
+
+**Limits:** these fields are software-provided build properties; they are not proof of a genuine device and do not establish compatibility with every later Glass Enterprise edition, firmware, or emulator. If an app needs a particular feature, test that feature or its documented API separately. Google's [Glass Development Kit documentation](https://developers.google.com/glass/develop/gdk) concerns the legacy Android-based Glass platform, not an all-generation identity guarantee. **Evidence:** official Android and legacy Glass developer documentation plus attributed historical device output; no current Glass hardware test. Reviewed October 24, 2026.
+
+## Can Sony Smart Glass be used on platforms other than Android?
+
+**Short answer:** Sony's published **SmartEyeglass SDK** is an **Android SmartExtension/host-app framework**, not an official Windows or Linux Bluetooth SDK. The [original October 2014 developer question](https://stackoverflow.com/questions/26547629/can-sony-smart-glass-be-used-on-platforms-other-than-android) explicitly asks about using the glasses from Windows or Linux over Bluetooth; the contemporary answer states that the supported SDK and host application were Android-only.
+
+Sony's own [SmartEyeglassControl API reference](https://developer.sony.com/reference/seg-sdk/com/sony/smarteyeglass/SmartEyeglassControl) describes extensions to Android's SmartExtension framework. Its [intents documentation](https://developer.sony.com/reference/seg-sdk/com/sony/smarteyeglass/SmartEyeglassControl.Intents) specifies Android manifest permissions and communication with the Android HostApp. The [control utilities reference](https://developer.sony.com/reference/seg-sdk/com/sony/smarteyeglass/extension/util/SmartEyeglassControlUtils) describes the Android-hosted display, camera and audio interfaces.
+
+**Practical path:** use an Android host for the supported SDK, and if a desktop workflow is required, connect the Windows/Linux application to that host using a separately designed, authorized bridge. Direct desktop-to-glasses communication would require an independently documented and tested protocol implementation; Bluetooth hardware support alone does **not** establish SDK compatibility. This is a statement about the *documented Sony SDK*, not a claim that reverse-engineered integrations are impossible. **Evidence:** Sony API reference and attributed 2014 developer discussion; no Windows/Linux direct-connection bench test. Reviewed October 24, 2026.
