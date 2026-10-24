@@ -1,0 +1,111 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-10-24T01:41:23.709821+00:00",
+  "candidate_count": 2,
+  "precision_rejected_count": 208,
+  "relationship_counts": {
+    "direct": 1,
+    "enabling": 0,
+    "adjacent": 1,
+    "speculative": 0,
+    "irrelevant": 0
+  },
+  "type_counts": {
+    "model": 1,
+    "news": 1,
+    "tool": 1,
+    "sdk": 1,
+    "community": 1
+  },
+  "routing_counts": {
+    "adjacent_radar": 1,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "research_news_review": 2
+  },
+  "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
+  "collector_errors": [
+    {
+      "url": "https://brilliant.xyz/blog",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "ab25d2df87c7b2fe",
+      "title": "Mentra 3.4.0-dev.1074",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1074",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-24T01:07:43Z",
+      "summary": "Mentra 3.4.0-dev.1074 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Bluetooth example apps React Native example APK Native Android example APK React Native ElevenLabs audio example APK Native iOS example IPA (unsigned) Source: 275e4a7 . Downloads are hosted on Mentra's artifact CDN.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "b06eb9e6a2da8304",
+      "title": "Wearable Devices Ltd. And Cord Technologies, Inc. Sign Strategic Collaboration Agreement To Advance Neural-Enhanced Data For Physical AI - www.marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPQlpraFg1MXVTRnM1YmNneWxraDJrUVR0eWJYSFZRNmUyTGV1MGtfVWJNY25fS0lFX3dJSXZtdU1ORGJVb3ViTk45SnBWUzVLMVVzMGdVRnZXRTl0MUJsS3VEckpvS29HVzRCSWc4MmNPb183dkhyQkRJX1JHdEQxR2FEejIzbmhPd1k5Rm0zd0V6MU1sbF83dzdWTzRkbjhLdmNMazBpeERYc3ZOSWd3N3d4TjJrT2JLSnFiMUoyRXJmLXpJWnI2OTdhNUxpLTYzd3FXRmJVa2lJVWpTMkxUZGVqbw?oc=5",
+      "source": "Google News: neural input wearable",
+      "source_lane": "adjacent_hci",
+      "published": "Thu, 22 Oct 2026 12:55:00 GMT",
+      "summary": "Wearable Devices Ltd. And Cord Technologies, Inc. Sign Strategic Collaboration Agreement To Advance Neural-Enhanced Data For Physical AI www.marketscreener.com",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "ai",
+        "neural"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    }
+  ]
+}
