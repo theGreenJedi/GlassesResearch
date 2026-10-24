@@ -8,4 +8,4 @@
 
 **Claim boundary:** Sony's *documented SDK* does not provide a native Windows/Linux route. This does not prove direct Bluetooth protocol work is impossible. No GlassesResearch Windows/Linux or Sony hardware reproduction.
 
-**Proposed answer:** `docs/faq/09-development-openness.md#can-sony-smarteyeglass-apps-run-directly-from-windows-or-linux-instead-of-android`. **State:** researched; pending deployment and exact live-page verification. Reviewed 2026-10-24.
+**Proposed answer:** `docs/faq/09-development-openness.md#can-sony-smart-glass-be-used-on-platforms-other-than-android`. **State:** researched; pending deployment and exact live-page verification. Reviewed 2026-10-24.
