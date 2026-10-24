@@ -75,7 +75,7 @@ class QuestionDiscoveryTests(unittest.TestCase):
         )
         schema = json.loads(seo_hook._faq_schema(markup, "https://example.org/faq/"))
         self.assertEqual([entity["name"] for entity in schema["mainEntity"]],
-                         ["1. What is Veyra?", "2. Is it open source?"])
+                         ["What is Veyra?", "Is it open source?"])
         self.assertEqual([entity["acceptedAnswer"]["text"] for entity in schema["mainEntity"]],
                          ["First answer.", "Second answer."])
 
