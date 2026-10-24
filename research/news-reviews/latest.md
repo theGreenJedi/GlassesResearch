@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-24T15:47:10.247051+00:00`
+Generated: `2026-10-24T16:43:31.001596+00:00`
 
-- Intake files inspected: **278**
-- Candidates retained in this review window/history: **10911**
+- Intake files inspected: **280**
+- Candidates retained in this review window/history: **10989**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2140
+- `adjacent_radar`: 2155
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 517
-- `rejected_noise`: 8169
-- `source_review`: 30
+- `needs_editorial_verification`: 521
+- `rejected_noise`: 8230
+- `source_review`: 28
 - `watching`: 36
 
 ## Action queue
@@ -149,6 +149,7 @@ Generated: `2026-10-24T15:47:10.247051+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1089](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1089) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1096](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1096) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1097](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1097) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1098](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1098) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -192,7 +193,6 @@ Generated: `2026-10-24T15:47:10.247051+00:00`
 | high | needs_editorial_verification | direct | ['Respect The Privacy Of Others': Norwegian Cruise Line Joins Royal Caribbean In Addressing Smart Glasses Policy - TheTravel](https://news.google.com/rss/articles/CBMilgFBVV95cUxQTXBEc1QxVFFJcnJqMzlkWjFoZGZNMXZFdXZ4V0lYY3VBTlA0elRpbzFPZTByNzlfaHNMbGRUdnZxcmVLc0V6UVBxaDdPMlQtSVE0Rno0bjdxOWFHVHltX0NJQ0NkZ1pVOFJ0R3RBaFpubkZVa2VLT2Z1RG81M09BVXdwc05TNkx1OVY4ZEV6LV94N01fOUE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Smart Glasses 'AiLENS V1' Launch: 76-Language Real-Time Translation ...](https://claypier.com/en/ailens-v1-ai-smart-glasses/) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Authority 18d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
@@ -250,6 +250,8 @@ Generated: `2026-10-24T15:47:10.247051+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI 안경 '시험 커닝', 전파 차단으로 방지할 수 있다?[팩트체크] - 노컷뉴스](https://news.google.com/rss/articles/CBMiUkFVX3lxTE5oVm93UEt0U0dVVm9GN3BKazBDMjlHZmQ3aEN4dUR6clpaSVVRRXYzWW1LZUNsS2tsTWpyWFgzUkNjaGVwa05ZdUJVUXpobDVULVE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 쓰고 국가자격증 시험 본 20대 송치 - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FekhVVUh3dzdON2ZtVnV5M3kxSHJFaGN3UlIxOC1IUzdmellFNXhITHpYT1FQV0FKaHljZTlndkFBWTZiZ1J0LUd5WUx4dm95NjJtWHBVZWtHc19najJjWDg3Mjd2b00?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Apple's AR glasses aren't happening, report claims - Mashable](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1fbjB4T3NJX05XOVlMLUN4Z2FyQmN5M1pzdmlnS1pYSzZWR1RmLU1TN3dHNHNQaWJCeDhJN1FXcWJVcmZQb0haeHlaLW5YNGZ2dklfMEY2cmJ5bjVSVTFN?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple's Smart Glasses May Only Appeal to People Who Already Wear Prescriptions, Patent Filing Shows - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE9PUVZTWlQ1Q3NCaVRVRWdWRWxuZ1gxYzBqU3BkZUowZWt4VXNVUHk5MWlFdi14dFNWR19tWmZqRzc4YmN6RVlUODVueEFFSFF2OTlQdUdvZDJQODdxSWFXZnBRUGUzMUV6aU9LNzBrQzJyNnU4VFE?oc=5) | reachable (200) | research_news_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-24T15:47:10.247051+00:00`
 | normal | needs_editorial_verification | direct | [DK Shivakumar Raises Spyware Concerns, Claims Industrialist Wore Meta AI Glasses During Meeting - LatestLY](https://news.google.com/rss/articles/CBMi4AFBVV95cUxObTJGQS0yV1VHNXVQRlB2TXp3MXYtUTY3XzVmMnBwdDh3VkxBNzJZNDI4MVJVLUJJdkgtbWMwMFJIa1dOSTUyVGhrSFM3Uk4tMzZXdzIwSzVQVURYdkNpZXhYWEdiZ3JmMlNURlg4V1E5dXhQRVBCM1dUTmN2NUhYOXNnYVhTNGxKZ1ZBaWhxR0hZdzNUNXc1Sl9fQV8xV1BGU1V4NzN2eWtDT2MyYWxIS21HRmxwd01fRjFtSUthTzR4VUVFUkFrYkNzLW5vd3dmLTlqcXhaUHFnWDY0b1VCeNIB4AFBVV95cUxObTJGQS0yV1VHNXVQRlB2TXp3MXYtUTY3XzVmMnBwdDh3VkxBNzJZNDI4MVJVLUJJdkgtbWMwMFJIa1dOSTUyVGhrSFM3Uk4tMzZXdzIwSzVQVURYdkNpZXhYWEdiZ3JmMlNURlg4V1E5dXhQRVBCM1dUTmN2NUhYOXNnYVhTNGxKZ1ZBaWhxR0hZdzNUNXc1Sl9fQV8xV1BGU1V4NzN2eWtDT2MyYWxIS21HRmxwd01fRjFtSUthTzR4VUVFUkFrYkNzLW5vd3dmLTlqcXhaUHFnWDY0b1VCeA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar's 'Sting Op Using Meta Glasses' Charge Against Industrialist - NDTV](https://news.google.com/rss/articles/CBMisgFBVV95cUxONklQNDN2OHZ5Z1dMYlVZZlI0ZjRPNDE0SDlWX2xDMzZKeHo0Q0NocXp4b0g4ZDA4XzVCNW9RRjBBSjBzOGFIRTdDUWI5cnlvWlhGSFlkV0ZJXy11bXAwdU53YXJSR0VGVzFrZ3ZVZTZ0ZDZHcm9zbUxfb1ZZT3JHZUFiUkNSaVRmYUtEMmN4VDlFZ2lXU01XejJkdGU0TTlkQ3BITFdRaGszZGdJMkpvempB0gG6AUFVX3lxTE90Z2NBTW54U3dsRjNwN2pJbGduWlMxTDk1bF9WV2tiUFVfbmdOVTBOdWl3YWEwRko3d1lYaGJXTm84S3FXTExfNHVCZXltX3NQYmZzd1FDVTM0akl2MHk3Mjk4bW13R0RVTGdILXBlUGd4WnVsdWs5R3pNYTFIUWFFa3pwX1Znd2ZjSjdoaVV6MlBjWmFWTmRiQUJWTXJ1eEdlM3RObENFRnVhYlFFMFlUbGtpMjNlRW83dw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Energy Technologies (ASX:EGY) Sets Out Cogenic's Smart Glasses Route from Framework to Revenue - Kalkine](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTzRjVWhjRnJmNVdZNXc4ejYtNU1LYUxzUS1BTGRvQWlaS2dtUnBBUm9qcWJkdFBHekI1SGhCaEtiWnRET0pCNEM5SmlzS2tuYjQzQ0tRTkpMeXNEOEZ5TG5kdlNoOFZFVkg1dXlia2U4ZW5yVHVRb1gtWU90N3lNeVViSFhlc2s5TUtrWVhTd0pPejh4NWtoV2NYZ3B1QVNKNC1fY19JVjJxODJhRlF3RDJRNnZ2NEJHZUZwRk9vdEFYLWRXbVBSMQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Even G2 Smart Glasses Review 2025 - Instagram](https://www.instagram.com/popular/even-g2-smart-glasses-review-2025/) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [First Look: Project Aura — The Next Step in XR for Android XR ...](https://www.xreal.com/blog/aura-25-tas-release-en) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 
 ## Meaning of states
 
