@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-09-24 → 2026-10-21**.
+Google Search Console page/query pairs for **2026-09-25 → 2026-10-22**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -9,13 +9,13 @@ Google Search Console page/query pairs for **2026-09-24 → 2026-10-21**.
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 78 | 0 | 0.00% | 4.6 |
-| https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 14 | 0 | 0.00% | 2.9 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | sunglasses for developers | 14 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 13 | 1 | 7.69% | 9.8 |
 | https://glassesresearch.org/evidence/EV-0050-mainstream-optical-serviceability-wave-seven/ | rokid 0050 | 12 | 0 | 0.00% | 9.1 |
+| https://glassesresearch.org/docs/faq/10-ownership-future/ | future of smart glasses ownership | 10 | 0 | 0.00% | 2.8 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source smart glasses | 8 | 0 | 0.00% | 6.4 |
-| https://glassesresearch.org/docs/REPORT_CARD/ | inmo air 3 industrial version vs realwear vuzix iristick | 6 | 0 | 0.00% | 2.7 |
 | https://glassesresearch.org/guides/smart-glasses-for-calls-and-music/ | smart glasses vs airpods for hands free calling and audio which should i get | 6 | 0 | 0.00% | 9.3 |
+| https://glassesresearch.org/docs/REPORT_CARD/ | inmo air 3 industrial version vs realwear vuzix iristick | 4 | 0 | 0.00% | 2.8 |
 | https://glassesresearch.org/models/PROFILES_LINEAGE_TOSHIBA_DYNAEDGE/ | toshiba ar100 | 4 | 0 | 0.00% | 6.8 |
 | https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 3 | 0 | 0.00% | 2.3 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | opensource smart glasses | 3 | 0 | 0.00% | 9.0 |
@@ -28,6 +28,7 @@ Google Search Console page/query pairs for **2026-09-24 → 2026-10-21**.
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glass | 2 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/docs/news/articles/2026-09-19-right-to-repair-smart-glasses/ | right to repair | 1 | 0 | 0.00% | 2.0 |
 | https://glassesresearch.org/docs/RESEARCH_NEWS/ | cyanbridge | 1 | 1 | 100.00% | 3.0 |
+| https://glassesresearch.org/docs/INDUSTRY_TIMELINE/ | ai glasses timeline | 1 | 0 | 0.00% | 4.0 |
 | https://glassesresearch.org/docs/RESEARCH_NEWS/ | "even reality g1" | 1 | 0 | 0.00% | 4.0 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | oui les marques | 1 | 0 | 0.00% | 4.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | opensource ar glasses | 1 | 0 | 0.00% | 6.0 |
@@ -57,7 +58,6 @@ Google Search Console page/query pairs for **2026-09-24 → 2026-10-21**.
 | https://glassesresearch.org/guides/smart-glasses-with-video-recording/ | glasses record video | 7 | 0 | 0.00% | 27.1 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth audio glasses best models | 6 | 0 | 0.00% | 22.7 |
 | https://glassesresearch.org/guides/smart-glasses-with-video-recording/ | glasses that record | 6 | 0 | 0.00% | 29.3 |
-| https://glassesresearch.org/ | research glasses | 5 | 0 | 0.00% | 11.8 |
 
 ## How to use this report
 

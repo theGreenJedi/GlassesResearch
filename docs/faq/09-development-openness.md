@@ -148,3 +148,22 @@ Record phone and glasses models, firmware and app versions, pairing steps, permi
 ### 25. Has GlassesResearch independently verified Veyra?
 
 No hands-on Veyra bench results are documented in this entry. Features are attributed to the developer; connection issues are attributed to users. Independent repeatable tests are needed before promotion to verified findings. **Status: not independently verified.**
+
+
+## Is RayNeo iO support being considered for the MentraOS roadmap?
+
+**A public request exists, but MentraOS has not publicly committed to RayNeo iO support in the sources reviewed.** A community member opened [MentraOS issue #4841](https://github.com/Mentra-Community/MentraOS/issues/4841) on October 17, 2026, requesting RayNeo iO compatibility, especially on iOS. As reviewed October 24, the issue is open without a maintainer response; it is a *request*, not a supported-device announcement or delivery date.
+
+Mentra's [official compatibility page](https://mentraglass.com/os) does not list RayNeo iO as supported. The separate [pluggable OEM glasses-adapter proposal (#3017)](https://github.com/Mentra-Community/MentraOS/issues/3017) describes a potential route for third-party devices but does not itself promise an iO adapter, working pairing, MiniApp compatibility, or iOS support. The requester also cites independent [Turbo-IO](https://github.com/Turbo1123/Turbo-IO) and [Spare io](https://github.com/owenc1122/spare-io) projects; neither is evidence of an official MentraOS integration.
+
+**Practical answer:** Do not purchase RayNeo iO assuming it works with MentraOS today. Follow issue #4841 and the official supported-device list for an explicit maintainer decision and tested release. **Evidence status: public request confirmed; roadmap acceptance, integration, and compatibility unverified. Reviewed 2026-10-24; no GlassesResearch hardware test.**
+
+## Does the Vuzix Speech SDK support German number-word commands on M300, and how are language files loaded?
+
+**German-language commands are a documented capability of the Vuzix speech-command family, but the exact M300 firmware, language resources, and recognition of a developer's chosen number words still need device-level verification.** This answers an [observed M300 developer question](https://stackoverflow.com/questions/60778715/vuzix-speech-sdk-language-support), not a generic claim that every Vuzix model supports every language.
+
+For an M300, the practical first test is to set the **glasses' system language to German**, enable Vuzix speech recognition, and then register and test the German phrases in the app. In the original developer discussion, one respondent reports that the recognizer loads language resources when the system language changes, and suggests restarting the glasses if the change does not take effect; another commenter reports that German phrases do **not** work when the system remains in English. These are **community troubleshooting observations**, not a manufacturer-guaranteed M300 installation procedure. The respondent also suggests inspecting the active vocabulary with `VuzixSpeechClient.dump()`.
+
+[Vuzix's M300/M300XL Speech SDK instructions](https://support.vuzix.com/docs/getting-started-code-4) explicitly describe localized wake words chosen according to the device language and show how to register phrases and inspect the vocabulary. [Vuzix's supported-language documentation](https://support.vuzix.com/docs/overview-32) includes German. However, the company's [28-language OS 2.5 announcement](https://ir.vuzix.com/news-events/press-releases/detail/1966/vuzix-m-series-smart-glasses-now-fully-support-28-languages) specifically concerns the **M400 and M4000**; it must not be used as proof that an older M300 has that firmware or language pack.
+
+**Answer on the requested language files:** The sources reviewed do not establish a supported public download-and-manual-install process for M300 German recognition files. Start with the device locale and built-in speech engine; record the M300 OS/Speech SDK versions, check the active vocabulary, and ask [Vuzix technical support](https://support.vuzix.com/docs/working-with-the-speech-sdk) for model- and firmware-specific resources if German commands still fail. **Evidence status:** manufacturer documentation plus an attributed developer report; no GlassesResearch M300 bench test, no verified recognition-accuracy result. Reviewed 2026-10-24.
