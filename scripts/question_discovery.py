@@ -258,7 +258,7 @@ def external_questions() -> list[dict]:
 def seed_published_answers(reg: dict) -> dict:
     """Reconcile existing visible FAQ questions without overwriting evidence."""
     by_norm = {q["normalized"]: q for q in reg["questions"]}
-    pattern = re.compile(r"^##\s+(?:\d+\.\s+)?(.+?\?)\s*$", re.M)
+    pattern = re.compile(r"^#{2,3}\s+(?:\d+\.\s+)?(.+?\?)\s*$", re.M)
     for path in sorted(FAQ_ROOT.glob("*.md")):
         if path.name in {"README.md", "ASK_YOUR_OWN_QUESTION.md", "COMMUNITY_QUESTIONS.md"}:
             continue
@@ -382,7 +382,7 @@ def main() -> int:
     if not working_independent_sources:
         raise RuntimeError("No independent internet question sources worked; refusing a false successful refresh")
     newly_found = reconcile(reg, observations)
-    answered = sum(1 for q in reg["questions"] if q["status"] == "answered" and q.get("answer_url"))
+    answered = len({q["answer_url"] for q in reg["questions"] if q["status"] == "answered" and q.get("answer_url")})
     pending = [q for q in reg["questions"] if q["status"] in {"observed", "triaged", "researching"}]
     pending.sort(key=priority, reverse=True)
     now = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
