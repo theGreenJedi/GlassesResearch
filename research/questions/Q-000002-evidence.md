@@ -4,7 +4,7 @@ Research reviewed: 2026-10-24. Question source: Google Search Console, first obs
 
 **Question:** Which brands in smart glasses are known for introducing groundbreaking products that have set new industry standards?
 
-**Disposition:** Evidence supports dated, differentiated milestones, not an objective ranking of “groundbreaking” brands or proof of any open interoperability standard. Draft answer: `docs/faq/01-basics.md`. This evidence packet does not establish live publication.
+**Disposition:** Evidence supports dated, differentiated milestones, not an objective ranking of “groundbreaking” brands or proof of any open interoperability standard. Published answer: `docs/faq/01-basics.md`, merged in PR #681. Live page verified against the deployed source digest on 2026-10-24.
 
 ## Claim-level provenance
 
@@ -19,4 +19,8 @@ Research reviewed: 2026-10-24. Question source: Google Search Console, first obs
 
 ## Uncertainty and preservation
 
-No GR bench work was performed on these historical models for this answer. “Groundbreaking” is interpretive, and a product milestone does not establish safety, interoperability, owner control, or a standards-body specification. Links rather than copies are retained because redistribution rights for source pages and images are not established. Mark registry as published only after review, merge and live-route verification.
+No GR bench work was performed on these historical models for this answer. “Groundbreaking” is interpretive, and a product milestone does not establish safety, interoperability, owner control, or a standards-body specification. Links rather than copies are retained because redistribution rights for source pages and images are not established. Registry publication recorded only after successful review, merge and live-route verification.
+
+## Publication verification — 2026-10-24
+
+Merged editorial PR: [#681](https://github.com/theGreenJedi/GlassesResearch/pull/681). Production revision: `3b2458071f92e86cd181b2971b59ed29d23108c2` (PR #683, which repaired the nested README route proof and added FAQ canaries). [Production content proof run #40063314178](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40063314178) succeeded at 2026-10-24T04:42:32Z, fetching the public FAQ route with a cache-busting request and confirming its exact build content digest (72878687d0bd). The Practical Answers index `/docs/faq/` also passed with digest `765a87516754`. No independent device testing is implied by this publication proof.
