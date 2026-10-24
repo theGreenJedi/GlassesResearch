@@ -99,21 +99,24 @@ def _core_schema(page_title: str, description: str, canonical_url: str, site_url
 
 
 def _faq_schema(markdown: str, canonical_url: str) -> str | None:
-    """Build FAQPage JSON-LD from visible H2 question sections only."""
-    headings = list(H2_HEADING.finditer(markdown))
+    """Build FAQPage JSON-LD from visible H2 and nested H3 question sections."""
+    headings = list(re.finditer(r"^(#{2,3})\s+(.+?)\s*$", markdown, re.MULTILINE))
     if not headings:
         return None
 
     entities: list[dict[str, Any]] = []
     for index, match in enumerate(headings):
-        question = _plain_text(match.group(1))
+        question = _plain_text(match.group(2))
         if not question.endswith("?"):
             continue
-        # An answer belongs only to its visible H2 section. Stopping at the
-        # next H2 prevents unrelated model-page sections from being folded
-        # into a single FAQ acceptedAnswer.
+        # Keep each answer within its own heading level. H3 answers stop at
+        # the next H3/H2; H2 answers may contain nested explanatory H3 text.
+        level = len(match.group(1))
         answer_start = match.end()
-        answer_end = headings[index + 1].start() if index + 1 < len(headings) else len(markdown)
+        answer_end = next(
+            (other.start() for other in headings[index + 1:]
+             if len(other.group(1)) <= level), len(markdown)
+        )
         answer_markdown = markdown[answer_start:answer_end].strip()
         answer = _plain_text(answer_markdown)
         if not answer:

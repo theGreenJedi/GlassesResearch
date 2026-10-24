@@ -2,12 +2,14 @@
 
 Generated: **2026-10-24T14:02:26+00:00**
 
-- Published evidence-backed answers: **108** (minimum **1000**, no ceiling)
-- Remaining to minimum: **892**
-- Canonical registry size: **180** (not the published count)
+- Published evidence-backed answers: **132** (minimum **1000**, no ceiling)
+- Remaining to minimum: **868**
+- Canonical registry size: **205** (not the published count)
 - Unanswered research candidates: **72**
 - Observations this run: **65**
 - New distinct questions: **3**
+
+_Published-answer inventory reconciled on 2026-10-24; source-health readings retain the discovery-run timestamp above._
 
 ## Source health
 
