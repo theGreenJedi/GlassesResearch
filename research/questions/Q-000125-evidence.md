@@ -10,4 +10,4 @@
 
 **Claim boundary:** Do not imply this heuristic identifies every Glass Enterprise device, cannot be spoofed, or validates specific features. Avoid treating API level 19 alone as a Glass identifier. No GlassesResearch device reproduction.
 
-**Proposed answer:** `docs/faq/09-development-openness.md#how-can-an-android-app-detect-whether-it-is-running-on-google-glass`. **State:** researched; pending deployment and exact live-page verification. Reviewed 2026-10-24.
+**Proposed answer:** `docs/faq/09-development-openness.md#detect-google-glass-programmatically`. **State:** researched; pending deployment and exact live-page verification. Reviewed 2026-10-24.
