@@ -1,15 +1,13 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-24T14:02:26+00:00**
+Generated: **2026-10-24T14:37:55+00:00**
 
 - Published evidence-backed answers: **132** (minimum **1000**, no ceiling)
 - Remaining to minimum: **868**
 - Canonical registry size: **205** (not the published count)
 - Unanswered research candidates: **72**
 - Observations this run: **65**
-- New distinct questions: **3**
-
-_Published-answer inventory reconciled on 2026-10-24; source-health readings retain the discovery-run timestamp above._
+- New distinct questions: **0**
 
 ## Source health
 
@@ -21,9 +19,7 @@ _Published-answer inventory reconciled on 2026-10-24; source-health readings ret
 
 ## New questions
 
-- **Q-000178** — Do smartwatch reminders actually work for you during deep work?
-- **Q-000179** — Slim fold-over glasses case vs a proper hard shell, what do you actually carry?
-- **Q-000180** — Smart glasses that record in landscape (horizontal) for more than 40 minutes — what do you recommend?
+_No new materially distinct questions in this run._
 
 ## Research queue (first 20)
 
