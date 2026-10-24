@@ -27,10 +27,6 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [**What smart glasses are recalled?**](10-ownership-future.md#what-smart-glasses-are-recalled) — Current verified recall records, affected models, primary regulatory evidence, and remedies.
 - [**Is the INMO Air3 recalled?**](10-ownership-future.md#is-the-inmo-air3-recalled) — Yes. See the verified recall, stop-use guidance, and announced remedy.
 
-## Observed software-compatibility question
-
-- [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
-
 ## How to read the recommendations
 
 - “Best” means the strongest current match for a stated use case, not a universal winner.
@@ -150,3 +146,7 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [When did AI glasses come out?](01-basics.md#when-did-ai-glasses-come-out) — Separates voice-assistant eyewear (2019), generative-AI glasses (2023), and camera-aware AI (2023–24).
 
 These questions were observed in first-party Search Console data and researched against attributed historical sources. Practical Answers has a **minimum milestone of 1,000 published, evidence-backed answers and no ceiling**; discovery covers relevant questions across the wider internet regardless of this site's search visibility.
+
+## Observed software-compatibility question
+
+- [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
