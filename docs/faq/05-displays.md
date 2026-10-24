@@ -43,3 +43,11 @@ Transparent HUD content is usually difficult for bystanders to read, but light l
 ## 50. Are smart-glasses displays safe for all-day use?
 
 Not automatically. Comfort depends on brightness, focus distance, binocular alignment, prescription accuracy, dry eye, motion sensitivity, and break frequency. Stop if you experience pain, double vision, nausea, persistent headache, or visual disturbance, and follow the manufacturer’s health guidance. Display glasses are not a substitute for an eye-care professional.
+
+## Can a pixelated, light-blocking eyeglass lens make text appear ten meters away?
+
+**Short answer: not just by switching pixels between clear and dark.** The underlying [engineering question](https://electronics.stackexchange.com/questions/607852/text-projection-in-smart-glasses) asks whether a transparent eyeglass lens made of many independently dimmable pixels could form sharp text that seems to be far away. A mask placed immediately in front of the eye changes transmitted light, but does not by itself provide the optical image formation and focus needed for a comfortable distant virtual image.
+
+Practical see-through displays instead combine an **image source** (such as a microdisplay) with optics that form and route a virtual image toward the eye. Depending on the architecture, this can involve lenses, reflective combiners, or waveguides; a universally phase-programmable eyeglass lens is **not** required. The [2025 microdisplay engineering review in *Nature Reviews Electrical Engineering*](https://www.nature.com/articles/s44287-025-00199-x) documents light engines used with free-space, freeform, and waveguide optical combiners. Binocular disparity can affect perceived depth, but it does not eliminate the need to present a sharp image to each eye.
+
+**Design implication:** a dimming-only lens is not a substitute for the light engine and optical combiner of a heads-up display. Actual virtual-image distance, focus comfort, and legibility depend on the whole optical design and fit, not simply on a pixel count. **Evidence:** peer-reviewed display-optics overview and an attributed engineering discussion; this is an explanation of optical principles, not a GlassesResearch prototype test. Reviewed October 24, 2026.
