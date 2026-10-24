@@ -8,4 +8,6 @@
 
 **Important uncertainty:** Historic M100 System File Manager advice appears in the community thread; current downloadable package integrity and M100 device behavior have not been tested. The site must not imply that M300-specific menu steps work on M100.
 
-**Proposed answer:** `docs/faq/09-development-openness.md`; **status:** editorial draft pending merge and production confirmation. No GlassesResearch hands-on verification.
+**Proposed answer:** `docs/faq/09-development-openness.md`; **status:** published; exact production page and heading anchor verified October 24, 2026. No GlassesResearch hands-on verification.
+
+**Production proof (2026-10-24):** [Live Practical Answer](https://glassesresearch.org/docs/faq/09-development-openness/#why-downloaded-apk-files-are-not-displaying-in-vuzix-smartglasss-download-folder) — public page contains the cited answer and generated heading anchor; original Q ID preserved.
