@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-24T07:00:27.723383+00:00`
+Generated: `2026-10-24T07:25:56.576713+00:00`
 
-- Intake files inspected: **278**
-- Candidates retained in this review window/history: **10917**
+- Intake files inspected: **279**
+- Candidates retained in this review window/history: **10974**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2152
+- `adjacent_radar`: 2157
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 532
-- `rejected_noise`: 8150
-- `source_review`: 28
+- `needs_editorial_verification`: 531
+- `rejected_noise`: 8202
+- `source_review`: 29
 - `watching`: 36
 
 ## Action queue
@@ -258,7 +258,6 @@ Generated: `2026-10-24T07:00:27.723383+00:00`
 | normal | needs_editorial_verification | direct | [AI眼镜概念震荡拉升 明月镜片20cm涨停 - 新浪财经](https://news.google.com/rss/articles/CBMieEFVX3lxTFBBWVZWcjNqWWRsazZBNUVCRWU4Qk1JWlNHUnAyendVcnFoVTV6eTZmVUxLX3hYNVJGbk5ZcGpsZEtMdUF1Vk8xZFlCVGdmMUhteHZRbl9mQS1VVkh3M1h5LUZPMGJiOGRySXpHUk1Zamg0a280aXh6Qg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜欧美市场旺 香港成内地品牌出海跳台 - www.hkcna.hk](https://news.google.com/rss/articles/CBMib0FVX3lxTE9UYi00TFpJRGRzVk40UGdMOG5RVFAxbGtpOVBlQldvd21NVlNtOXZrWnZEel9aRkRiMkQ1WllWR1JPTFN4aWJ5Z3ZIMWtkY0E2N2xwZW5OZG1Ka0VaTHJIS2VGTGNTN2Npb0IzMWVtRQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon lanza gafas inteligentes para repartidores: miles de fotos por jornada y mucha incomodidad - Qué.es](https://news.google.com/rss/articles/CBMieEFVX3lxTFBoYkFiUVFuX0xoUmN3NDRzc3RERzdLTUdWYmNDQ2lCVzhBeDdMTFZJZUl0MGhiZGxyTGxwLTB0cm9OVG5ZR3ZkQmhHRWgxNXJqZ3NIVk55c1V5MnFyWThFZngtdE5HaW1wRlZyMW9QMUNqSkZITFlWbA?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Android Authority 1d ago I’ve never owned smart glasses, but Samsung’s Android XR glasses may change that Coverage Samsung](https://www.androidauthority.com/samsung-xr-glasses-hype-3721541/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago Get ready for MW4: RayNeo's GT Max reloads with Call of Duty for a striking limited edition Coverage RayNeo](https://www.androidcentral.com/gaming/virtual-reality/get-ready-for-mw4-rayneos-gt-max-reloads-with-call-of-duty-for-a-striking-limited-edition) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-24T07:00:27.723383+00:00`
 | normal | needs_editorial_verification | direct | [Best AI Glasses 2026: 9 Ranked, From $55 Up - Ai Miracle](https://www.aimiracle.ai/ai-collections/best-ai-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses for Prescription Wearers - AR Compare](https://www.arcompare.com/best/prescription-wearers/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Budget Smart Glasses Review — What Makes Them Different \| TikTok](https://www.tiktok.com/@stormbuysyt/video/7694136484496002324) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Bytech Smart Glasses Review - Instagram](https://www.instagram.com/popular/bytech-smart-glasses-review/) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
