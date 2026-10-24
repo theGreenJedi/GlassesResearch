@@ -1,4 +1,10 @@
+---
+description: "Community-reported LensMoo/XKOENPRO control work and Mentra owner-setting and iPhone 17 microphone fixes, with explicit testing limits."
+---
+
 # Community engineering: LensMoo/XKOENPRO control and Mentra owner settings
+
+**Published:** October 23, 2026
 
 **Across the Wire · Community-reported · October 23, 2026 · Not independently hardware-verified by GlassesResearch**
 
