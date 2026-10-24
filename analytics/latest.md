@@ -1,20 +1,20 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-23T09:45:28+00:00**
+Generated automatically: **2026-10-24T04:47:36+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-10-15 → 2026-10-21):** 591 impressions, 6 clicks, 1.02% CTR, average position 18.4.
-- **7-day change:** impressions +1.2%; clicks +0.0%.
-- **Rolling 28 days:** 2438 impressions, 20 clicks, 0.82% CTR, average position 13.3.
+- **Google, latest final 7 days (2026-10-16 → 2026-10-22):** 502 impressions, 6 clicks, 1.20% CTR, average position 19.9.
+- **7-day change:** impressions -15.2%; clicks +0.0%.
+- **Rolling 28 days:** 2343 impressions, 20 clicks, 0.85% CTR, average position 13.5.
 
 ## Practical Answers — search discovery
 
 - Latest 7 days: **2 impressions**, **0 clicks**, **0.00% CTR**, average position **10.5**, across **2 answer pages receiving impressions**.
 - Week-over-week: impressions n/a; clicks n/a.
-- Rolling 28 days: **16 impressions**, **0 clicks**, **3 answer pages receiving impressions**.
+- Rolling 28 days: **12 impressions**, **0 clicks**, **3 answer pages receiving impressions**.
 
 ### Queries reaching Practical Answers
 
@@ -27,84 +27,76 @@ Generated automatically: **2026-10-23T09:45:28+00:00**
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| cyanbridge | 1 | 5 | 20.00% | 11.0 |
+| cyanbridge | 1 | 4 | 25.00% | 10.5 |
 | ai glasses finder | 0 | 1 | 0.00% | 36.0 |
-| androidcentral.com (smart glasses or ar glasses or ai glasses) review | 0 | 1 | 0.00% | 9.0 |
-| androidcentral.com (smart glasses or ar-brille or ki-brille) review | 0 | 1 | 0.00% | 8.0 |
 | ar glasses open source | 0 | 2 | 0.00% | 8.5 |
 | ar glasses sdk | 0 | 2 | 0.00% | 51.5 |
 | best audio smart glasses | 0 | 1 | 0.00% | 35.0 |
 | best bluetooth glasses | 0 | 3 | 0.00% | 25.0 |
 | best bluetooth sunglasses | 0 | 1 | 0.00% | 66.0 |
 | best hud glasses | 0 | 2 | 0.00% | 27.5 |
+| best open source smart glasses | 0 | 3 | 0.00% | 5.7 |
+| best smart glasses for audio | 0 | 2 | 0.00% | 35.0 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | 2 | 98 | 2.04% | 18.2 |
-| https://glassesresearch.org/changes/gre-000003/ | 1 | 8 | 12.50% | 10.0 |
-| https://glassesresearch.org/models/EvenG2/ | 1 | 28 | 3.57% | 10.3 |
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 19 | 5.26% | 4.8 |
-| https://glassesresearch.org/research/investigations/MYVU_XGA010C_TECHNICAL_NETWORK_2026-09-14/ | 1 | 2 | 50.00% | 6.5 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | 2 | 86 | 2.33% | 19.5 |
+| https://glassesresearch.org/changes/gre-000003/ | 1 | 7 | 14.29% | 9.6 |
+| https://glassesresearch.org/models/EvenG2/ | 1 | 23 | 4.35% | 10.6 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 15 | 6.67% | 4.5 |
+| https://glassesresearch.org/research/investigations/MYVU_XGA010C_TECHNICAL_NETWORK_2026-09-14/ | 1 | 1 | 100.00% | 5.0 |
 | https://glassesresearch.org/ | 0 | 8 | 0.00% | 48.9 |
 | https://glassesresearch.org/artifacts/ | 0 | 1 | 0.00% | 10.0 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 1 | 0.00% | 10.0 |
 | https://glassesresearch.org/docs/BLE/ | 0 | 1 | 0.00% | 6.0 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 23 | 0.00% | 8.3 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 0 | 16 | 0.00% | 8.9 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **21 browser pageviews**, **20 RUM visits**.
-- Rolling 7d: **130 browser pageviews**, **110 RUM visits**.
+- Rolling 24h: **7 browser pageviews**, **6 RUM visits**.
+- Rolling 7d: **112 browser pageviews**, **96 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| /resources/COMMUNITY_AND_DEVELOPMENT/ | 6 | 6 |
-| /models/BrilliantFrame/ | 3 | 3 |
-| /docs/faq/01-basics/ | 1 | 1 |
-| /docs/INDUSTRY_TIMELINE/ | 1 | 1 |
-| /docs/community-research/cyanbridge/ | 1 | 1 |
-| /research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 1 |
-| /docs/faq/04-battery/ | 1 | 1 |
-| /docs/RESEARCH_NEWS/ | 1 | 0 |
-| /models/MemoMindOne/ | 1 | 1 |
-| /models/catalog/ | 1 | 1 |
+| /models/catalog/ | 3 | 2 |
+| /models/VuzixZ100/ | 1 | 1 |
+| /lineages/JTLLINK_G600PRO/ | 1 | 1 |
+| / | 1 | 1 |
+| /models/catalog/gls-0166/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 15 | 15 |
-| www.google.com | 2 | 2 |
+| (direct / none) | 5 | 5 |
 | glassesresearch.org | 1 | 0 |
-| www.bing.com | 1 | 1 |
-| www.youtube.com | 1 | 1 |
 | thorsen.it | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **4,710 requests**, **1,305 HTTP visits**, **136.6 MB** served.
-- Rolling 7d: **32,837 requests**, **8,733 HTTP visits**, **698.0 MB** served.
+- Rolling 24h: **4,239 requests**, **1,678 HTTP visits**, **137.3 MB** served.
+- Rolling 7d: **32,020 requests**, **9,386 HTTP visits**, **715.2 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 2,386 | 1,162 |
-| BE | 394 | 11 |
-| IN | 211 | 4 |
-| SG | 199 | 6 |
-| NL | 178 | 7 |
-| CA | 160 | 4 |
-| CN | 148 | 16 |
-| KR | 137 | 5 |
-| SA | 134 | 2 |
-| PK | 92 | 1 |
+| US | 3,285 | 1,538 |
+| BE | 309 | 11 |
+| CN | 160 | 9 |
+| IE | 85 | 1 |
+| SG | 80 | 8 |
+| DO | 75 | 1 |
+| IT | 69 | 1 |
+| DE | 50 | 32 |
+| JP | 15 | 15 |
+| KR | 15 | 2 |
 
 ## What to watch
 
