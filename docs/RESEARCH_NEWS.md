@@ -28,6 +28,15 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 
 *Across the Wire is the high-recall discovery stream. Items there are reported or under review and are not verified GlassesResearch claims.*
 
+### October 23, 2026 — Victoria school rules and disability-access concerns
+
+**Across the Wire · Government primary-source documented; implementation not observed.** Victoria's 2027 student smart-glasses restrictions and stricter government-school policy have different scopes and start dates. The broad definition can include camera-free eyewear, while Vision Australia has challenged the narrow disability exemption. [Read the attributed policy note](news/articles/2026-10-23-victoria-school-smart-glasses-policy.md).
+
+### October 23, 2026 — CyanBridge LensMoo support and Mentra owner-control changes
+
+**Across the Wire · Community-reported · Not GR hardware verified.** Experimental LensMoo/XKOENPRO original-photo and locked-phone voice integration, Mentra Live unworn power-off defaults and an iPhone 17 HFP microphone firmware fix, with explicit upstream test and release limits. [Read the attributed technical report](news/articles/2026-10-23-community-lensmoo-mentra-owner-control.md).
+
+
 <details>
 <summary><strong>Browse detailed newsroom notes</strong></summary>
 
