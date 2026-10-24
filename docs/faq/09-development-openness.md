@@ -47,7 +47,7 @@ Preserve lawful copies or metadata for manuals, APKs, SDKs, firmware and update 
 
 ## Veyra Android v4: 25 practical questions (October 2026)
 
-**Evidence notice:** This is a research FAQ, not an endorsement or hands-on review. The October 18 developer/community announcement is the basis for attributed release claims; [locate the original Veyra discussion](https://www.reddit.com/r/augmentedreality/search/?q=Veyra&restrict_sr=1&sort=new). This search link is a discovery pointer, not a verified permalink to the original post. No independent bench verification is claimed.
+**Evidence notice:** This is a research FAQ, not an endorsement or hands-on review. The October 18 developer/community announcement is the basis for attributed release claims; [October 18 Veyra Android v4 developer announcement and discussion](https://www.reddit.com/r/RaybanMeta/comments/1x9be1z/veyra_for_android_v4_is_out_go_live_to_youtube/). This is the developer's public account, not independent device verification. No independent bench verification is claimed.
 
 ### 1. What is Veyra?
 
