@@ -146,6 +146,8 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 ## Questions researched from actual search language
 
+- [Why downloaded APK files are not displaying in Vuzix SmartGlass\'s download folder?](09-development-openness.md#why-downloaded-apk-files-are-not-displaying-in-vuzix-smartglasss-download-folder) — Distinguishes missing file-manager listings from the supported M-Series APK installation routes.
+- [Can a pixelated, light-blocking eyeglass lens make text appear ten meters away?](05-displays.md#can-a-pixelated-light-blocking-eyeglass-lens-make-text-appear-ten-meters-away) — Explains optical focus, virtual images, and why a dimming-only lens is insufficient.
 - [When did smart glasses come out?](01-basics.md#when-did-smart-glasses-come-out) — Distinguishes early head-worn systems, 2011 consumer see-through glasses, and the 2013 Glass Explorer launch.
 - [When did AI glasses come out?](01-basics.md#when-did-ai-glasses-come-out) — Separates voice-assistant eyewear (2019), generative-AI glasses (2023), and camera-aware AI (2023–24).
 
@@ -155,3 +157,33 @@ These questions were observed in first-party Search Console data and researched 
 
 - [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
 - [Does the Vuzix Speech SDK support German number-word commands on M300, and how are language files loaded?](09-development-openness.md#does-the-vuzix-speech-sdk-support-german-number-word-commands-on-m300-and-how-are-language-files-loaded) — Separates manufacturer M300 localization documentation from community troubleshooting and newer M400 language claims.
+
+## Veyra Android v4 practical answers
+
+These 25 answers are part of **Practical Answers**, alongside all other published questions. They explain current developer-reported capabilities and identify what has not yet been independently verified.
+
+- [What is Veyra?](09-development-openness.md#1-what-is-veyra)
+- [Is Veyra a pair of smart glasses?](09-development-openness.md#2-is-veyra-a-pair-of-smart-glasses)
+- [Which glasses does Veyra support?](09-development-openness.md#3-which-glasses-does-veyra-support)
+- [Does Veyra run on Android?](09-development-openness.md#4-does-veyra-run-on-android)
+- [Is there a Veyra iPhone app?](09-development-openness.md#5-is-there-a-veyra-iphone-app)
+- [Can Veyra use different AI providers?](09-development-openness.md#6-can-veyra-use-different-ai-providers)
+- [Can Veyra work entirely offline?](09-development-openness.md#7-can-veyra-work-entirely-offline)
+- [Does Veyra use Meta's Device Access Toolkit?](09-development-openness.md#8-does-veyra-use-metas-device-access-toolkit)
+- [Is Veyra open source?](09-development-openness.md#9-is-veyra-open-source)
+- [Can users audit Veyra's source code?](09-development-openness.md#10-can-users-audit-veyras-source-code)
+- [Can Veyra stream video?](09-development-openness.md#11-can-veyra-stream-video)
+- [Can Veyra be activated with a physical button?](09-development-openness.md#12-can-veyra-be-activated-with-a-physical-button)
+- [Does Veyra record continuously?](09-development-openness.md#13-does-veyra-record-continuously)
+- [What happens to images or video sent through Veyra?](09-development-openness.md#14-what-happens-to-images-or-video-sent-through-veyra)
+- [Does Veyra identify people?](09-development-openness.md#15-does-veyra-identify-people)
+- [Does Veyra require a network connection?](09-development-openness.md#16-does-veyra-require-a-network-connection)
+- [Are there Veyra connection problems?](09-development-openness.md#17-are-there-veyra-connection-problems)
+- [Does Veyra cause overheating?](09-development-openness.md#18-does-veyra-cause-overheating)
+- [How long can Veyra stream video?](09-development-openness.md#19-how-long-can-veyra-stream-video)
+- [How does Veyra affect glasses battery life?](09-development-openness.md#20-how-does-veyra-affect-glasses-battery-life)
+- [Can Veyra replace the official Meta companion app?](09-development-openness.md#21-can-veyra-replace-the-official-meta-companion-app)
+- [Can Veyra work with MYVU or XGA010C glasses?](09-development-openness.md#22-can-veyra-work-with-myvu-or-xga010c-glasses)
+- [Does Veyra expose an SDK or documented protocol?](09-development-openness.md#23-does-veyra-expose-an-sdk-or-documented-protocol)
+- [How should owners test Veyra safely?](09-development-openness.md#24-how-should-owners-test-veyra-safely)
+- [Has GlassesResearch independently verified Veyra?](09-development-openness.md#25-has-glassesresearch-independently-verified-veyra)

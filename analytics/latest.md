@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-24T09:18:13+00:00**
+Generated automatically: **2026-10-24T14:37:47+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -77,24 +77,24 @@ Generated automatically: **2026-10-24T09:18:13+00:00**
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **4,569 requests**, **1,947 HTTP visits**, **150.8 MB** served.
-- Rolling 7d: **31,996 requests**, **9,715 HTTP visits**, **739.9 MB** served.
+- Rolling 24h: **4,852 requests**, **2,004 HTTP visits**, **148.2 MB** served.
+- Rolling 7d: **32,264 requests**, **9,842 HTTP visits**, **759.1 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 3,807 | 1,811 |
-| BE | 313 | 14 |
-| CN | 87 | 7 |
-| IE | 84 | 1 |
+| US | 3,891 | 1,854 |
+| BE | 571 | 16 |
+| CN | 86 | 7 |
 | DO | 75 | 1 |
-| DE | 58 | 34 |
+| DE | 51 | 35 |
 | SG | 18 | 6 |
-| KR | 16 | 3 |
-| JP | 15 | 15 |
-| BR | 10 | 6 |
+| BR | 15 | 9 |
+| KR | 15 | 2 |
+| JP | 14 | 14 |
+| MX | 12 | 10 |
 
 ## What to watch
 
