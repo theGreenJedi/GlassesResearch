@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-24T08:27:35.090700+00:00`
+Generated: `2026-10-24T09:10:28.638705+00:00`
 
-- Intake files inspected: **278**
-- Candidates retained in this review window/history: **10916**
+- Intake files inspected: **277**
+- Candidates retained in this review window/history: **10859**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2154
+- `adjacent_radar`: 2145
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 520
-- `rejected_noise`: 8159
+- `rejected_noise`: 8111
 - `source_review`: 28
 - `watching`: 36
 
@@ -253,7 +253,6 @@ Generated: `2026-10-24T08:27:35.090700+00:00`
 | normal | needs_editorial_verification | direct | [AI眼镜概念震荡拉升 明月镜片20cm涨停 - 新浪财经](https://news.google.com/rss/articles/CBMieEFVX3lxTFBBWVZWcjNqWWRsazZBNUVCRWU4Qk1JWlNHUnAyendVcnFoVTV6eTZmVUxLX3hYNVJGbk5ZcGpsZEtMdUF1Vk8xZFlCVGdmMUhteHZRbl9mQS1VVkh3M1h5LUZPMGJiOGRySXpHUk1Zamg0a280aXh6Qg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜欧美市场旺 香港成内地品牌出海跳台 - www.hkcna.hk](https://news.google.com/rss/articles/CBMib0FVX3lxTE9UYi00TFpJRGRzVk40UGdMOG5RVFAxbGtpOVBlQldvd21NVlNtOXZrWnZEel9aRkRiMkQ1WllWR1JPTFN4aWJ5Z3ZIMWtkY0E2N2xwZW5OZG1Ka0VaTHJIS2VGTGNTN2Npb0IzMWVtRQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon lanza gafas inteligentes para repartidores: miles de fotos por jornada y mucha incomodidad - Qué.es](https://news.google.com/rss/articles/CBMieEFVX3lxTFBoYkFiUVFuX0xoUmN3NDRzc3RERzdLTUdWYmNDQ2lCVzhBeDdMTFZJZUl0MGhiZGxyTGxwLTB0cm9OVG5ZR3ZkQmhHRWgxNXJqZ3NIVk55c1V5MnFyWThFZngtdE5HaW1wRlZyMW9QMUNqSkZITFlWbA?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Android Authority 1d ago I’ve never owned smart glasses, but Samsung’s Android XR glasses may change that Coverage Samsung](https://www.androidauthority.com/samsung-xr-glasses-hype-3721541/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Android Central 2d ago Get ready for MW4: RayNeo's GT Max reloads with Call of Duty for a striking limited edition Coverage RayNeo](https://www.androidcentral.com/gaming/virtual-reality/get-ready-for-mw4-rayneos-gt-max-reloads-with-call-of-duty-for-a-striking-limited-edition) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-24T08:27:35.090700+00:00`
 | normal | needs_editorial_verification | direct | [DK Shivakumar claims Meta AI glasses used to carry out sting operation on him, says 'I can read faces' - Moneycontrol.com](https://news.google.com/rss/articles/CBMi6AFBVV95cUxOaC1Rd3F2SHM0WlZ2YUszUEd3X0xyVE05RnQzTDQzN05hSVJNZjYxd1k4QWZOblE5LW01U0hlTHVab1FEbjlMSHhOdGlSUTVRQkxiX20wUGpDRXltb0NkSFNoWXFvYjFlUkRhcFpLMnFTMzM5a3FIV3pSYlVocnpTMVdOR0FQRmduTVNlVWt4M1o0ZlY3UDhXMEQxWmFlWWdhZ2VBVjdkNXBaYmpiZzYyWFFFcUpZc0diUHVUOEFuV29fSUpxUEotSUp4VHNzU3FxdXJ2cy12RXdJMUFaZjJ2RXduZGFYY2NG0gHuAUFVX3lxTE9rS05PY1pCaVJZLWZMZk9DMHNIcVBBV3REOWFtaXNhV050RFRJSDNvQ1ZqLXB0QXlBb0E5QlRVckJsWDVpaFVoMFloc1RlOWdUUm56YUVxbHhUSGRoeFlwNGpndlpsUWFnM0wyVW5EWjNUNW1JVnZqNWRpQTBvMHpYWWlVMGJaNGs4OXNfamZXc2JUUmtwWDZZZXVuN3JYOVlBYkk3TDVyMDhnQkdweGV1Y1Y2S1VXRXdZSGc5UUMtUkZEaDhCbFY2RUlfcF8yZTdDM0RGaTV0WURDQkM1T01sRGQwakVkLVJBZGoxWnc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar's 'Sting Op Using Meta Glasses' Charge Against Industrialist - NDTV](https://news.google.com/rss/articles/CBMisgFBVV95cUxONklQNDN2OHZ5Z1dMYlVZZlI0ZjRPNDE0SDlWX2xDMzZKeHo0Q0NocXp4b0g4ZDA4XzVCNW9RRjBBSjBzOGFIRTdDUWI5cnlvWlhGSFlkV0ZJXy11bXAwdU53YXJSR0VGVzFrZ3ZVZTZ0ZDZHcm9zbUxfb1ZZT3JHZUFiUkNSaVRmYUtEMmN4VDlFZ2lXU01XejJkdGU0TTlkQ3BITFdRaGszZGdJMkpvempB0gG6AUFVX3lxTE90Z2NBTW54U3dsRjNwN2pJbGduWlMxTDk1bF9WV2tiUFVfbmdOVTBOdWl3YWEwRko3d1lYaGJXTm84S3FXTExfNHVCZXltX3NQYmZzd1FDVTM0akl2MHk3Mjk4bW13R0RVTGdILXBlUGd4WnVsdWs5R3pNYTFIUWFFa3pwX1Znd2ZjSjdoaVV6MlBjWmFWTmRiQUJWTXJ1eEdlM3RObENFRnVhYlFFMFlUbGtpMjNlRW83dw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Employers warned over growing legal risks of smart glasses in the workplace - HR News](https://news.google.com/rss/articles/CBMingFBVV95cUxQcDlORWRMc1I2S0VDQ2pQRzd6cFY2WTc3emNCSElZVmN6YmtPRVhZV1RKQUxDNGJMdjdLS0NGQS16anNZcmxSVHJzb21LM0twWlR5OHd3TTBtLUNKQmRzWkZ1aGpWZkdBWnVDWGsyUlltanluNVIzQWxjVHVpSFBqR3lXWXBpZjZUVXh1dUlfVnZpUUhoYS1OMEZ3cmxVZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| normal | needs_editorial_verification | direct | [Energy Technologies (ASX:EGY) Sets Out Cogenic's Smart Glasses Route from Framework to Revenue - Kalkine](https://news.google.com/rss/articles/CBMiyAFBVV95cUxNTzRjVWhjRnJmNVdZNXc4ejYtNU1LYUxzUS1BTGRvQWlaS2dtUnBBUm9qcWJkdFBHekI1SGhCaEtiWnRET0pCNEM5SmlzS2tuYjQzQ0tRTkpMeXNEOEZ5TG5kdlNoOFZFVkg1dXlia2U4ZW5yVHVRb1gtWU90N3lNeVViSFhlc2s5TUtrWVhTd0pPejh4NWtoV2NYZ3B1QVNKNC1fY19JVjJxODJhRlF3RDJRNnZ2NEJHZUZwRk9vdEFYLWRXbVBSMQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
