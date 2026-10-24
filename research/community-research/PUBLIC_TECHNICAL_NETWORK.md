@@ -13,6 +13,8 @@ Purpose: track public technical contributors, projects and discussion nodes that
 | `jacob-kruger-work` | Opened CyanBridge issue #5 and repeatedly supplied test requirements, build/test feedback and interoperability use cases around device video access. | Useful source of reproducible test scenarios and owner-facing interoperability requirements. | Track technically substantive follow-ups and resulting implementation/test evidence. |
 | `mariaolivafrei-sys` | Opened CyanBridge issue #16 with an exact AX01/WIFIAX01 hardware, firmware and app-version tuple. | Valuable lineage/compatibility fingerprint for a HeyCyan-compatible device. | Preserve the identity tuple as community-reported evidence; await corroboration before lineage assignment. |
 
+| `Iam5tillLearning` / OpenSource-Ai-Glasses | Maintains an Apache-2.0 embedded-Linux smart-glasses project targeting RV1106B hardware, with public C/C++ SDK, BLE/SPP and Wi-Fi control, RTSP camera streaming, optional display support, firmware and an Android companion client. [v0.7.2 release](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses/releases/tag/v0.7.2) was published August 24, 2026; the upstream README warns that later firmware builds require hardware manufactured after January 1, 2026. | Adjacent owner-control and open development reference: compare reproducible build artifacts, firmware/hardware revision gating, protocol access and camera data path against closed-platform clients. No demonstrated MYVU lineage or interoperability. | **Project-primary code/release and developer documentation verified present; runtime and compatibility claims not GlassesResearch hardware-verified.** Preserve release artifacts/compatibility caveat, inspect SDK interfaces and test on identified hardware before claiming working features. |
+
 ## Project relationships currently worth following
 
 - [Panny777/Meizu-Myvu-Client](https://github.com/Panny777/Meizu-Myvu-Client)
@@ -21,6 +23,7 @@ Purpose: track public technical contributors, projects and discussion nodes that
 - [FerSaiyan/Alternative-HeyCyan-App-and-SDK](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK)
 - [ebowwa/HeyCyanSmartGlassesSDK](https://github.com/ebowwa/HeyCyanSmartGlassesSDK)
 - [aimindseye/rokid-ai-glasses](https://github.com/aimindseye/rokid-ai-glasses)
+- [Iam5tillLearning/OpenSource-Ai-Glasses](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses)
 
 ## Evidence rules
 
