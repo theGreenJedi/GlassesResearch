@@ -37,6 +37,9 @@ EXCLUDED = {
 # byte-identity proof on 2026-09-23. Keep them as cross-surface regression
 # canaries: Research & News, model research, and durable research plumbing.
 REGRESSION_CANARIES = (
+    "docs/faq/README.md",
+    "docs/faq/01-basics.md",
+    "docs/faq/09-development-openness.md",
     "docs/news/articles/2026-09-23-state-of-the-state-smart-glasses-are-no-longer-becoming-one-thing.md",
     "models/PROFILES_2026_09_23_NUANCE_AUDIO.md",
     "research/HARDWARE_LINEAGE_ODM.md",
@@ -68,7 +71,9 @@ def public_output(source: str, site: Path) -> tuple[Path, str] | None:
     p = Path(source)
     if p.suffix.lower() != ".md" or source in EXCLUDED or not p.parts or p.parts[0] not in PUBLIC_ROOTS:
         return None
-    rel = p.with_suffix("")
+    # MkDocs publishes a directory README.md at the directory index route.
+    # Treating it as /README/ made production proof fail even after a healthy deploy.
+    rel = p.parent if p.name == "README.md" else p.with_suffix("")
     # MkDocs directory URLs: foo/index.md -> foo/, foo/bar.md -> foo/bar/
     if rel.name == "index":
         rel = rel.parent
