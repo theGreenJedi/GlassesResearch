@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "discovered_utc": "2026-10-25T02:12:53+00:00",
+  "source_run": "public-community-scour",
+  "candidates": [
+    {
+      "id": "COMM-20261024-MENTRA-ACCOUNT-LINK-ISOLATION",
+      "title": "Mentra App account-switch deep-link security hotfix merged to staging",
+      "summary": "MentraOS PR #4947 describes a phone companion-app account isolation flaw in reset and signup links: an opened link could replace the current signed-in account without consent, risking data association with a different account. The developer says 3.2 main shares the affected code. Staging fix merged October 25 00:31 UTC, with 138 upstream tests; production distribution, exploit reports, and independent device reproduction are not established.",
+      "url": "https://github.com/Mentra-Community/MentraOS/pull/4947",
+      "source": "github",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "privacy",
+        "security",
+        "owner-control",
+        "companion-app",
+        "account-isolation"
+      ],
+      "routing_targets": [
+        "Research & News",
+        "Across the Wire",
+        "security/privacy",
+        "app ecosystem"
+      ],
+      "triage_priority": "high",
+      "materiality_score": 98
+    },
+    {
+      "id": "COMM-20261024-MENTRA-HOME-LAYOUT-REGRESSION",
+      "title": "Mentra App launcher repair for off-screen Home apps and hidden developer shortcut",
+      "summary": "MentraOS PR #4943 reports that Add to Home from All Apps could save drawer coordinates and displace existing Home apps off-screen when no saved layout existed; the developer shortcut also ignored its launcher visibility setting. Merged October 24 03:10 UTC, with 149 upstream tests. The PR says device coverage for exact Add to Home regression remains absent. No claim of erased apps or independently verified consumer rollout.",
+      "url": "https://github.com/Mentra-Community/MentraOS/pull/4943",
+      "source": "github",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "software",
+        "owner-control",
+        "launcher",
+        "reliability"
+      ],
+      "routing_targets": [
+        "Research & News",
+        "Across the Wire",
+        "app ecosystem"
+      ],
+      "triage_priority": "medium",
+      "materiality_score": 82
+    },
+    {
+      "id": "COMM-20261023-MENTRA-STREAM-RECORDING-LEND",
+      "title": "Mentra Live upstream request for video recording without dropping WHIP stream",
+      "summary": "MentraOS issue #4924 documents a developer proposal to borrow the camera for a bounded video recording while the live WHIP stream substitutes black frames. The requester reports a local prototype and build/tests but explicitly no physical-glasses validation, and the upstream issue remains an open feature request, not a shipped capability. Useful camera concurrency and failure-recovery research lead.",
+      "url": "https://github.com/Mentra-Community/MentraOS/issues/4924",
+      "source": "github",
+      "evidence_class": "community_report",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "camera",
+        "video",
+        "streaming",
+        "firmware",
+        "interoperability"
+      ],
+      "routing_targets": [
+        "development/hacking",
+        "camera/streaming research"
+      ],
+      "triage_priority": "medium",
+      "materiality_score": 73
+    },
+    {
+      "id": "COMM-20261023-MENTRA-NATIVE-SIMULATOR",
+      "title": "Mentra Bluetooth SDK request for scriptable native simulated-glasses testing",
+      "summary": "MentraOS issue #4931 requests public native Android/iOS simulated-glasses APIs with display output, mic PCM, touch, head-up, and disconnect injection. The author reports current simulator access is React-Native-only and native SDK simulation is insufficient for CI; the request is open, not an implemented SDK feature.",
+      "url": "https://github.com/Mentra-Community/MentraOS/issues/4931",
+      "source": "github",
+      "evidence_class": "community_report",
+      "delegated_action": "record_attributed_evidence",
+      "relationship": "direct",
+      "content_types": [
+        "sdk",
+        "testing",
+        "interoperability",
+        "developer-tools"
+      ],
+      "routing_targets": [
+        "development/hacking",
+        "test methodology"
+      ],
+      "triage_priority": "medium",
+      "materiality_score": 69
+    }
+  ]
+}
