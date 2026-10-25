@@ -10,4 +10,8 @@
 
 **Claim boundary:** Do not imply this heuristic identifies every Glass Enterprise device, cannot be spoofed, or validates specific features. Avoid treating API level 19 alone as a Glass identifier. No GlassesResearch device reproduction.
 
-**Proposed answer:** `docs/faq/09-development-openness.md#detect-google-glass-programmatically`. **State:** researched; pending deployment and exact live-page verification. Reviewed 2026-10-24.
+**Published answer:** `docs/faq/09-development-openness.md#detect-google-glass-programmatically`. **State:** published and exact production FAQ content verified 2026-10-25; reviewed 2026-10-24. No device reproduction.
+
+## Publication proof — 2026-10-25
+
+[PR #691](https://github.com/theGreenJedi/GlassesResearch/pull/691) merged at revision `3221f106e1853fe0ffd1885cbb14d945319c3465`. [Production content proof run #40161886546](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40161886546) succeeded, fetching the public `/docs/faq/09-development-openness/` page and confirming the exact built content digest `ae61abc38c7f` on 2026-10-25. The FAQ source contains this question's heading and cited answer; the production proof verifies the complete deployed page. This does not verify physical-device behavior.
