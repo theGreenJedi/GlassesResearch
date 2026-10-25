@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-25T09:35:07+00:00**
+Generated automatically: **2026-10-25T20:21:34+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -55,53 +55,53 @@ Generated automatically: **2026-10-25T09:35:07+00:00**
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **18 browser pageviews**, **13 RUM visits**.
-- Rolling 7d: **113 browser pageviews**, **98 RUM visits**.
+- Rolling 24h: **19 browser pageviews**, **14 RUM visits**.
+- Rolling 7d: **112 browser pageviews**, **97 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| / | 5 | 4 |
-| /docs/COMPARISON_ENGINE/ | 3 | 1 |
+| /docs/COMPARISON_ENGINE/ | 4 | 2 |
+| / | 3 | 2 |
 | /docs/community-research/bimapdev-smartglasses/ | 2 | 2 |
 | /research/investigations/MYVU_XGA010C_TECHNICAL_NETWORK_2026-09-14/ | 1 | 1 |
 | /buyers/BUYER_AND_OPENNESS_GUIDE/ | 1 | 1 |
 | /docs/SDK_API_MATRIX/ | 1 | 1 |
+| /docs/faq/04-battery/ | 1 | 1 |
+| /models/catalog/gls-0152/ | 1 | 1 |
 | /models/BrilliantFrame/ | 1 | 1 |
 | /models/catalog/ | 1 | 0 |
-| /hacking/ | 1 | 0 |
-| /evidence/EV-0044-W610-community-protocol-and-owner-access/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 10 | 10 |
+| (direct / none) | 11 | 11 |
 | glassesresearch.org | 5 | 0 |
 | www.google.com | 3 | 3 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **5,755 requests**, **2,128 HTTP visits**, **155.0 MB** served.
-- Rolling 7d: **34,280 requests**, **10,681 HTTP visits**, **851.7 MB** served.
+- Rolling 24h: **6,647 requests**, **2,883 HTTP visits**, **154.9 MB** served.
+- Rolling 7d: **36,402 requests**, **12,093 HTTP visits**, **897.5 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 4,624 | 1,991 |
-| GB | 175 | 27 |
-| DE | 135 | 11 |
-| VN | 128 | 2 |
-| MX | 102 | 9 |
-| SG | 98 | 5 |
-| CN | 94 | 7 |
-| NL | 81 | 6 |
-| FR | 81 | 3 |
-| KR | 68 | 2 |
+| US | 4,794 | 2,667 |
+| CN | 467 | 13 |
+| SG | 217 | 12 |
+| AR | 148 | 0 |
+| DE | 146 | 11 |
+| VN | 139 | 4 |
+| MX | 101 | 2 |
+| NL | 83 | 7 |
+| FR | 82 | 4 |
+| BE | 82 | 82 |
 
 ## What to watch
 
