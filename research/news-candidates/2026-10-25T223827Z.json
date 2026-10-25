@@ -1,0 +1,111 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-10-25T21:50:24.165813+00:00",
+  "candidate_count": 2,
+  "precision_rejected_count": 117,
+  "relationship_counts": {
+    "direct": 1,
+    "enabling": 0,
+    "adjacent": 1,
+    "speculative": 0,
+    "irrelevant": 0
+  },
+  "type_counts": {
+    "model": 1,
+    "news": 1,
+    "tool": 1,
+    "sdk": 1,
+    "community": 1
+  },
+  "routing_counts": {
+    "adjacent_radar": 1,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 1,
+    "research_news_review": 2
+  },
+  "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
+  "collector_errors": [
+    {
+      "url": "https://brilliant.xyz/blog",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "31d88cdd98b4b0a1",
+      "title": "Mentra 3.4.0-dev.1120",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1120",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-25T20:56:50Z",
+      "summary": "Mentra 3.4.0-dev.1120 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Bluetooth example apps React Native example APK Native Android example APK React Native ElevenLabs audio example APK Native iOS example IPA (unsigned) Source: 184ce37 . Downloads are hosted on Mentra's artifact CDN.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "5aa1d43f3b4ce650",
+      "title": "How AI, robotics and neural interfaces are redefining independence | Hindustan Times - Hindustan Times",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOSzAwSFNpeUlacUxvWGFaWjNkc3J6ZUs4cFBNbFhxVGh1VHpQQjhYS2QzZm1ZZXRZSjlxZjRZbll6S1RqTHAteW5oaVJFS3VDUE15bFZla0VFQ003eTNFeVdJajNoSmJxWXZ5SEZYUFBPZGs4dE9LVmVJXzN5NmIyV3ZxUm5jQm9iUTlWeHF0WmFQREpMZVBjR3JfNTk1S3NNZVpKOXBoSEJVX1ZpYmZYSVQ3S2NVWnpIblRZT2Q5MHBrNnZKWGNwYkpMRjhVZGZJZm9WdU9DTdIB3AFBVV95cUxNcGs4c1BuVGlqaFljS0RKakw0N3NyOXBIVkZTc1V5WS1HTHd6Y2xrRDd0UFZfQ1o1TFcteGtwTkRHWFN3dmxEN1FwYkhWYnQ1OUlER0FqX3lJOE1GQU9oSDloNGFGTVh5VTJXVG8xYmdHTG52SWd0NGR5WEQ2cVM3YVdtdFlKWVFkTUtKVE5LUFhwUFA4Y2pEZjBwbl9RVUpqcE5JcEhWMUFLQkFFYWNzaXVaN3hPQjJRUzI4b0VGMFhoV2lQN2hMTkZFOW82NHlKdkliSG5tSXByelpn?oc=5",
+      "source": "Google News: AR glasses",
+      "source_lane": "core_glasses",
+      "published": "Sun, 25 Oct 2026 14:52:29 GMT",
+      "summary": "How AI, robotics and neural interfaces are redefining independence | Hindustan Times Hindustan Times",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "ai",
+        "neural"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    }
+  ]
+}
