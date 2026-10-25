@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-25T08:47:50.876233+00:00`
+Generated: `2026-10-25T09:27:18.754297+00:00`
 
 - Intake files inspected: **284**
 - Candidates retained in this review window/history: **10879**
@@ -12,9 +12,9 @@ Generated: `2026-10-25T08:47:50.876233+00:00`
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 520
+- `needs_editorial_verification`: 521
 - `rejected_noise`: 8139
-- `source_review`: 27
+- `source_review`: 26
 - `watching`: 37
 
 ## Action queue
@@ -253,7 +253,6 @@ Generated: `2026-10-25T08:47:50.876233+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 쓰고 국가자격증 시험 본 20대 송치 - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FekhVVUh3dzdON2ZtVnV5M3kxSHJFaGN3UlIxOC1IUzdmellFNXhITHpYT1FQV0FKaHljZTlndkFBWTZiZ1J0LUd5WUx4dm95NjJtWHBVZWtHc19najJjWDg3Mjd2b00?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AIスマートグラスで日常をもっと楽しく！TikTok世代におすすめの新感覚アイテム - CAMPFIRE (キャンプファイヤー)](https://news.google.com/rss/articles/CBMia0FVX3lxTE1vOXp4T1JwVUlzRmVsdTZBSk5ob0x1VGVvSUJ3SEt0Z3RmRmJNclFQSzAxYWNNczBqSmktQlItZmVCNkpQVWdPbmtnTWRsTDFBT3NXMS1yd3FleGJaR1hDdV80NFA4LThMNFBr?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜到底值不值？乐奇Rokid智能眼镜入手体验分享 - 搜狐网](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGRGt3d3ZHaF9fX3ZwaXVlV3RWeElzd201OE9BbzU4N3dacmFHS3h1NENTOEQ2eWNNNXE2bVp6TXdUWmFoUGZrVFNHUGZVTEswMl9lUFFNeTJUdF8yZFNlUg?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Apple's Smart Glasses May Only Appeal to People Who Already Wear Prescriptions, Patent Filing Shows - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE9PUVZTWlQ1Q3NCaVRVRWdWRWxuZ1gxYzBqU3BkZUowZWt4VXNVUHk5MWlFdi14dFNWR19tWmZqRzc4YmN6RVlUODVueEFFSFF2OTlQdUdvZDJQODdxSWFXZnBRUGUzMUV6aU9LNzBrQzJyNnU4VFE?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-25T08:47:50.876233+00:00`
 | normal | needs_editorial_verification | direct | [Did Alibaba Smart Glasses Win Just Shift Himax Technologies (HIMX) Investment Narrative? - Simply Wall Street](https://news.google.com/rss/articles/CBMi2gFBVV95cUxQY0tBNGJSQTNZLWVMZDhmRHRrSWRHdzFOUnh2TmRyU2ltQVVXZE5jZWVuMFdKamRpQVNLUlRkZnliUkY1Z3h0ZTRaNUFfcEU2YW10UWlzU2x2MkI5T2o2d3NldldzeldKbmZhYTBkQ0J0OWlDcmh2R01JS0FBLVBqbWpRZ0xOTkdtVV9kckxteXJSeWNsa2V1YnlrSTJGcVQxMW5LbDNDd043WFEwWFI1QnlxMzhyeE5ZV2dOdUQzZl9CN0dGV0xZNU9GT1BNak8zTjRxc3g0QTY4UdIB3wFBVV95cUxQUXJxdzFaTzFKWlB1NDF1V1AxbEZoMlRnbldfektSaVBmd04tMkdnOGNISlBMa0NCMWE4dWZ1NG1ZQWhVNE1KNFZOUFZnLUV6N0pHYXd6Si1iZmxXbTB0bGhFbHVKQjVsdGNmTVJScTlVcmFKb240MTdOa1lNN3BUWVpPdV9NbG5SaWZyU210VmRram1JM3puRlFTTWhzT0xyZGhXeS1Pamw4dDV1SzN4SlFTN1pCR1h3akthaHBuaGpwNzhhWVh1a3RjNEdiRk1HdnhOV19BMkp4VkcyM2U0?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar alleges industrialist targeted him, VD Satheesan with Meta glasses - The News Minute](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVHJ5ZHY3MXhXTzVVM0Y0Ymh0MEhFU3JGekRNYUdOcHVsdHJvenRwVWhDN1VYekFlWUNWck9KaC00U0JBMVFOSlNJTGZHV2tKdFlpN1FNQ3pZYVhfT2V1c0JYeXF5NGwwcWlKMW5NZjlmNkw4dEIyS0lOQjdFa3hiYWNibzNxeXBpcUhuMnBXSWFvdlJTU05oeW5UcDJwcUZya3dSWUR1Njd2ZGxFa2JMQ3AxdEdJcnRSMm5N0gHIAUFVX3lxTFBjX2NWUGJQcXh2dlF3cWNhTXpSNHZCUl9aY0p2NG1xMkJ3WmpBUGhCSmhQVXVkR1Q4U21CbU1CZS1yaXg2TmJ1SFRPNmFYbDJ0Y2JocVc1dG1GSjVlVmJBem5PUXktdlFYaGY5U0FrbnFUb09HQ0hQWVdRVUF1TlN6LUhJbFNzRHpET3l1T0JVNjBxTUxEdHB5SXFxdk4tMDB5bEtjcU5jUnltR3owSUlBb0ZRSFlhMDd0WXVwai1WcmZXekc2VVFL?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar Alleges Sting Attempt, Flags Meta Glasses Worn by Businessman - India Today - India Today](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPanluaTVDLTJqUFVSanhnU19zTVpZYU5HZElhSFFtUHd1a0JJbHRVVzN0WUVLc2RjNmx0UWFoQWpfMzNuRTNpV0YwX1JxN1p1bEltWlNKUmZZQkVDUjNUdUI0dVpDSjBGcFA5S203VkdiUGtEWUdqVUFDN2N2UWdRbDlzZmZSclFUZXlLZ1ViQ0RPWDMwX2dDRHV5bjcxSmMtOG1xQnpLVHVhcm81WUN0bjBfa1MxZGRmS1kwcmVUdWJZMndSeXhNTnFTazd6aElrUmfSAdcBQVVfeXFMTU1sWUVoODVNR0kwbGJ0N0dOUjhWbmk5TW1uYW1CRjk2S0U0MDdtdVI1M2Y0cFVuYjIyWFhZWUU4ZDBMZXVuZmp0Y0JYUjhNSllMYm5oRW1DbElHUkNjWWNzVlAwYVQ4TVJVT2s2dGt5NHhONG9zc1hFb3JaU3J1SlItVW92UHZLWHRNUFlXbDhfTE00Q0M1X0I5YTdxT2FJS0NUS244VXU3cWRBbkxSZXdVb2RGb0EycWZ0eXRNTzZtd1lFdHRoZ2dHeWl2ckV4UnRMQ1g5MUE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [DK Shivakumar's 'Sting Op Using Meta Glasses' Charge Against Industrialist - NDTV](https://news.google.com/rss/articles/CBMisgFBVV95cUxONklQNDN2OHZ5Z1dMYlVZZlI0ZjRPNDE0SDlWX2xDMzZKeHo0Q0NocXp4b0g4ZDA4XzVCNW9RRjBBSjBzOGFIRTdDUWI5cnlvWlhGSFlkV0ZJXy11bXAwdU53YXJSR0VGVzFrZ3ZVZTZ0ZDZHcm9zbUxfb1ZZT3JHZUFiUkNSaVRmYUtEMmN4VDlFZ2lXU01XejJkdGU0TTlkQ3BITFdRaGszZGdJMkpvempB0gG6AUFVX3lxTE90Z2NBTW54U3dsRjNwN2pJbGduWlMxTDk1bF9WV2tiUFVfbmdOVTBOdWl3YWEwRko3d1lYaGJXTm84S3FXTExfNHVCZXltX3NQYmZzd1FDVTM0akl2MHk3Mjk4bW13R0RVTGdILXBlUGd4WnVsdWs5R3pNYTFIUWFFa3pwX1Znd2ZjSjdoaVV6MlBjWmFWTmRiQUJWTXJ1eEdlM3RObENFRnVhYlFFMFlUbGtpMjNlRW83dw?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
