@@ -15,4 +15,8 @@
 
 ## Verification boundary and publication gate
 
-No GlassesResearch G2/R1 bench work, exact app/firmware test matrix, or independent confirmation of all Mentra ring gestures. Answer must be phrased as **partial / uncertain**, not simply “yes” or “no.” Proposed FAQ: `docs/faq/09-development-openness.md#does-the-even-r1-ring-work-with-mentraos-on-even-g2`. The registry must remain **observed** until the answer is merged, passes CI, and is verified on the live site. Do not mark this question published based on a PR alone.
+No GlassesResearch G2/R1 bench work, exact app/firmware test matrix, or independent confirmation of all Mentra ring gestures. Answer must be phrased as **partial / uncertain**, not simply “yes” or “no.” Proposed FAQ: `docs/faq/09-development-openness.md#does-the-even-r1-ring-work-with-mentraos-on-even-g2`. The registry was marked **answered** only after PR #691 merged, the documentation build and deploy succeeded, and exact production FAQ content was verified; this is a researched answer, **not** a GlassesResearch device test.
+
+## Publication proof — 2026-10-25
+
+[PR #691](https://github.com/theGreenJedi/GlassesResearch/pull/691) merged at revision `3221f106e1853fe0ffd1885cbb14d945319c3465`. [Production content proof run #40161886546](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40161886546) succeeded, fetching the public `/docs/faq/09-development-openness/` page and confirming the exact built content digest `ae61abc38c7f` on 2026-10-25. The FAQ source contains this question's heading and cited answer; the production proof verifies the complete deployed page. This does not verify physical-device behavior.
