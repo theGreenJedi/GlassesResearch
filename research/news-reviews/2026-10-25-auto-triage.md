@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-25T12:04:30.275442+00:00`
+Generated: `2026-10-25T12:39:10.482997+00:00`
 
-- Intake files inspected: **285**
-- Candidates retained in this review window/history: **10946**
+- Intake files inspected: **286**
+- Candidates retained in this review window/history: **10999**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2147
+- `adjacent_radar`: 2152
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 519
-- `rejected_noise`: 8192
-- `source_review`: 32
+- `needs_editorial_verification`: 520
+- `rejected_noise`: 8240
+- `source_review`: 31
 - `watching`: 37
 
 ## Action queue
@@ -253,6 +253,7 @@ Generated: `2026-10-25T12:04:30.275442+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 쓰고 국가자격증 시험 본 20대 송치 - 연합뉴스TV](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FekhVVUh3dzdON2ZtVnV5M3kxSHJFaGN3UlIxOC1IUzdmellFNXhITHpYT1FQV0FKaHljZTlndkFBWTZiZ1J0LUd5WUx4dm95NjJtWHBVZWtHc19najJjWDg3Mjd2b00?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜、AI录音环、智慧座舱集体上新！科大讯飞把AI从屏幕里拽出来了 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPTFBybjhtY0RPdGZWbEFIQlh4WFlZb0lQRnFVb01aZ0NSUVJCVnVsWTlHbk5MbVVfd0tBZFhpYTNfTzJlUU5Sd0ZiTzZQZTZTcDYzdUhRU05XV2ZJakFFanllbHBRQ0tKbzBrMlRJS0VhNWJrQXlMUEJPN29zV1ozSmp3RFpudnZq?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜到底值不值？乐奇Rokid智能眼镜入手体验分享 - 搜狐网](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBGRGt3d3ZHaF9fX3ZwaXVlV3RWeElzd201OE9BbzU4N3dacmFHS3h1NENTOEQ2eWNNNXE2bVp6TXdUWmFoUGZrVFNHUGZVTEswMl9lUFFNeTJUdF8yZFNlUg?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [AR glasses that don't suck? \| INMO GO 3 review](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6addefbf287e47ffb1cbb5829163b0e6&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2far-glasses-that-dont-suck-inmo-go-3-review%2fvi-AA2fZVfG&c=3592760188153955443&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-25T12:04:30.275442+00:00`
 | normal | needs_editorial_verification | direct | [Digital for Life Festival 2026 Returns to Singapore with Meta Glasses Demos and Family Activities - Alvinology](https://news.google.com/rss/articles/CBMizAFBVV95cUxOWTZ3cU9IeUNmWjZ1VE9KOWFBU2h0ZUhGc1FQcElXTmlNRk1ObXNYaEp6c29rVmhEQlA1M0w0WVhIQTFVZzJhYm8waXNtYVNQSnZ2WGFRLXRsU1VmU3FDUHVXOUlUcVNxcGh3alhhbEZJVlp6ZUZpZDRNd1hwQmJKOWluN29DTlBNTUJYNVJ4WU0wdnZIYk1VV0xnNVR1RUg4WlVtanhwUzBzTVl5SkxneXdPZVFneElfYzl3Yk0tWGc0SWltYXlPUkI1b1U?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar alleges industrialist targeted him, VD Satheesan with Meta glasses - The News Minute](https://news.google.com/rss/articles/CBMiuwFBVV95cUxOVHJ5ZHY3MXhXTzVVM0Y0Ymh0MEhFU3JGekRNYUdOcHVsdHJvenRwVWhDN1VYekFlWUNWck9KaC00U0JBMVFOSlNJTGZHV2tKdFlpN1FNQ3pZYVhfT2V1c0JYeXF5NGwwcWlKMW5NZjlmNkw4dEIyS0lOQjdFa3hiYWNibzNxeXBpcUhuMnBXSWFvdlJTU05oeW5UcDJwcUZya3dSWUR1Njd2ZGxFa2JMQ3AxdEdJcnRSMm5N0gHIAUFVX3lxTFBjX2NWUGJQcXh2dlF3cWNhTXpSNHZCUl9aY0p2NG1xMkJ3WmpBUGhCSmhQVXVkR1Q4U21CbU1CZS1yaXg2TmJ1SFRPNmFYbDJ0Y2JocVc1dG1GSjVlVmJBem5PUXktdlFYaGY5U0FrbnFUb09HQ0hQWVdRVUF1TlN6LUhJbFNzRHpET3l1T0JVNjBxTUxEdHB5SXFxdk4tMDB5bEtjcU5jUnltR3owSUlBb0ZRSFlhMDd0WXVwai1WcmZXekc2VVFL?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar Alleges Sting Attempt, Flags Meta Glasses Worn by Businessman - India Today - India Today](https://news.google.com/rss/articles/CBMi0gFBVV95cUxPanluaTVDLTJqUFVSanhnU19zTVpZYU5HZElhSFFtUHd1a0JJbHRVVzN0WUVLc2RjNmx0UWFoQWpfMzNuRTNpV0YwX1JxN1p1bEltWlNKUmZZQkVDUjNUdUI0dVpDSjBGcFA5S203VkdiUGtEWUdqVUFDN2N2UWdRbDlzZmZSclFUZXlLZ1ViQ0RPWDMwX2dDRHV5bjcxSmMtOG1xQnpLVHVhcm81WUN0bjBfa1MxZGRmS1kwcmVUdWJZMndSeXhNTnFTazd6aElrUmfSAdcBQVVfeXFMTU1sWUVoODVNR0kwbGJ0N0dOUjhWbmk5TW1uYW1CRjk2S0U0MDdtdVI1M2Y0cFVuYjIyWFhZWUU4ZDBMZXVuZmp0Y0JYUjhNSllMYm5oRW1DbElHUkNjWWNzVlAwYVQ4TVJVT2s2dGt5NHhONG9zc1hFb3JaU3J1SlItVW92UHZLWHRNUFlXbDhfTE00Q0M1X0I5YTdxT2FJS0NUS244VXU3cWRBbkxSZXdVb2RGb0EycWZ0eXRNTzZtd1lFdHRoZ2dHeWl2ckV4UnRMQ1g5MUE?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Even G2 Smart Glasses Review 2025 - Instagram](https://www.instagram.com/popular/even-g2-smart-glasses-review-2025/) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
