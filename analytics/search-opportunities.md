@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-09-25 → 2026-10-22**.
+Google Search Console page/query pairs for **2026-09-26 → 2026-10-23**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,7 +8,7 @@ Google Search Console page/query pairs for **2026-09-25 → 2026-10-22**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 78 | 0 | 0.00% | 4.6 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 74 | 0 | 0.00% | 4.5 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | sunglasses for developers | 14 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 13 | 1 | 7.69% | 9.8 |
 | https://glassesresearch.org/evidence/EV-0050-mainstream-optical-serviceability-wave-seven/ | rokid 0050 | 12 | 0 | 0.00% | 9.1 |
