@@ -1,34 +1,32 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-24T14:37:55+00:00**
+Generated: **2026-10-25T14:24:54+00:00**
 
-- Published evidence-backed answers: **132** (minimum **1000**, no ceiling)
-- Remaining to minimum: **868**
-- Canonical registry size: **205** (not the published count)
-- Unanswered research candidates: **72**
-- Observations this run: **65**
-- New distinct questions: **0**
+- Published evidence-backed answers: **137** (minimum **1000**, no ceiling)
+- Remaining to minimum: **863**
+- Canonical registry size: **209** (not the published count)
+- Unanswered research candidates: **69**
+- Observations this run: **67**
+- New distinct questions: **2**
 
 ## Source health
 
 - github_issues: ok — 10 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 32 observations
-- google_search_console: ok — 3 observations
+- reddit_rss: partial — 33 observations
+- google_search_console: ok — 4 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-_No new materially distinct questions in this run._
+- **Q-000208** — Anyone use dymesty’s mind map feature for work? How is it?
+- **Q-000209** — can smart glasses be prescription
 
 ## Research queue (first 20)
 
-- **Q-000125** — Detect Google Glass Programmatically
-- **Q-000136** — Text Projection in Smart Glasses
 - **Q-000119** — Webrtc in Vuzix m300
 - **Q-000126** — How to setup android studio to use vuzix m100 smart glass sdk
 - **Q-000117** — Buttons in Vuforia Unity App did not work for AR game in Vuzix M400
-- **Q-000120** — Why downloaded apk files are not displaying in Vuzix SmartGlass's download folder?
 - **Q-000122** — How to register an app for Sony Smart Glass?
 - **Q-000123** — Error:Configuration with name 'default' not found when building for Sony Smart Glass
 - **Q-000133** — Android Studio "Invalid hash string" warning in Compile Sdk Version
@@ -42,6 +40,9 @@ _No new materially distinct questions in this run._
 - **Q-000113** — Does your `glasses-app` module run on the **Rokid AI Glasses Style** (the display-free model)?
 - **Q-000114** — Could you credit **Bruce** as the developer (the name I use in the apps; **Phantom-Not** on GitHub) and add the current app as **AI Glasses Manager (formerly Rokid Manager)**?
 - **Q-000115** — Would you consider featuring third-party apps in your Rokid Apps Gallery, or linking to ClawLensXR as a community project?
-- **Q-000116** — > "But the ring doesn't work with MentraOS right?
+- **Q-000121** — App installation in Sony Smart Glass
+- **Q-000124** — Audio processing never starts in pocketsphinx-android
+- **Q-000127** — How to get action of System Dialong Box programatically
+- **Q-000128** — Xamarin PCL get Device Information
 
 > A discovered question is not an answered question. Research, independently verify evidence, and publish only what the sources support. Search Console is optional performance feedback, never an eligibility requirement.
