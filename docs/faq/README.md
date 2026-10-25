@@ -31,6 +31,10 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 - [Which smart-glasses brands introduced important product milestones?](01-basics.md#which-brands-in-smart-glasses-are-known-for-introducing-groundbreaking-products-that-have-set-new-industry-standards)
 
+## Community-observed compatibility question
+
+- [Does the Even R1 ring work with MentraOS on Even G2?](09-development-openness.md#does-the-even-r1-ring-work-with-mentraos-on-even-g2) — G2 support is confirmed; R1 gesture and app-navigation coverage remain incompletely verified.
+
 ## How to read the recommendations
 
 - “Best” means the strongest current match for a stated use case, not a universal winner.
