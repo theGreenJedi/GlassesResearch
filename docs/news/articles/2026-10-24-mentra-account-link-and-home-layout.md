@@ -4,7 +4,7 @@ description: "Attributed Mentra App account-switch deep-link hotfix and launcher
 
 # Mentra App: account-switch link hotfix and Home launcher regression
 
-**Research note: October 24, 2026 (U.S. Eastern)**
+**Published:** October 24, 2026
 
 **Across the Wire · Upstream developer evidence · Not independently tested by GlassesResearch**
 
