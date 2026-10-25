@@ -159,10 +159,16 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 These questions were observed in first-party Search Console data and researched against attributed historical sources. Practical Answers has a **minimum milestone of 1,000 published, evidence-backed answers and no ceiling**; discovery covers relevant questions across the wider internet regardless of this site's search visibility.
 
-## Observed software-compatibility question
+## Observed software-compatibility questions
 
 - [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
 - [Does the Vuzix Speech SDK support German number-word commands on M300, and how are language files loaded?](09-development-openness.md#does-the-vuzix-speech-sdk-support-german-number-word-commands-on-m300-and-how-are-language-files-loaded) — Separates manufacturer M300 localization documentation from community troubleshooting and newer M400 language claims.
+
+- [How do I install a custom app for Sony SmartEyeglass?](09-development-openness.md#how-do-i-install-a-custom-app-for-sony-smarteyeglass) — Explains Android-hosted SmartExtension deployment versus sideloading onto the eyewear.
+- [How do I register a Sony SmartEyeglass app so Smart Connect recognizes it?](09-development-openness.md#how-do-i-register-a-sony-smarteyeglass-app-so-smart-connect-recognizes-it) — Identifies the required registration service and missing sample classes.
+- [Can I add a normal Wi-Fi network connection to Sony SmartEyeglass?](09-development-openness.md#can-i-add-a-normal-wi-fi-network-connection-to-sony-smarteyeglass) — Separates high-power Wi-Fi transport from arbitrary SSID joining.
+- [How do I set up Android Studio with the Vuzix M100 SDK?](09-development-openness.md#how-do-i-set-up-android-studio-with-the-vuzix-m100-sdk) — Preserves the API-15 legacy add-on route and warns about expired distribution.
+- [Can a Google Glass GDK app run unchanged on Vuzix M100?](09-development-openness.md#can-a-google-glass-gdk-app-run-unchanged-on-vuzix-m100) — Explains platform/API differences and what a port entails.
 
 ## Veyra Android v4 practical answers
 
