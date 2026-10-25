@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-25T06:41:26.877116+00:00`
+Generated: `2026-10-25T08:46:44.498775+00:00`
 
-- Intake files inspected: **285**
-- Candidates retained in this review window/history: **10953**
+- Intake files inspected: **284**
+- Candidates retained in this review window/history: **10879**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2162
+- `adjacent_radar`: 2137
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 518
-- `rejected_noise`: 8188
-- `source_review`: 29
+- `needs_editorial_verification`: 519
+- `rejected_noise`: 8139
+- `source_review`: 28
 - `watching`: 37
 
 ## Action queue
@@ -41,8 +41,6 @@ Generated: `2026-10-25T06:41:26.877116+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.812](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.812) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.813](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.813) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.814](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.814) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.815](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.815) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.818](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.818) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -151,6 +149,8 @@ Generated: `2026-10-25T06:41:26.877116+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1109](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1109) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1110](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1110) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1111](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1111) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1112](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1112) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1113](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1113) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
