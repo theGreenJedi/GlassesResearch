@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-25T20:21:34+00:00**
+Generated automatically: **2026-10-25T20:31:18+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -68,9 +68,9 @@ Generated automatically: **2026-10-25T20:21:34+00:00**
 | /docs/community-research/bimapdev-smartglasses/ | 2 | 2 |
 | /research/investigations/MYVU_XGA010C_TECHNICAL_NETWORK_2026-09-14/ | 1 | 1 |
 | /buyers/BUYER_AND_OPENNESS_GUIDE/ | 1 | 1 |
+| /models/catalog/gls-0152/ | 1 | 1 |
 | /docs/SDK_API_MATRIX/ | 1 | 1 |
 | /docs/faq/04-battery/ | 1 | 1 |
-| /models/catalog/gls-0152/ | 1 | 1 |
 | /models/BrilliantFrame/ | 1 | 1 |
 | /models/catalog/ | 1 | 0 |
 
@@ -84,24 +84,24 @@ Generated automatically: **2026-10-25T20:21:34+00:00**
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **6,647 requests**, **2,883 HTTP visits**, **154.9 MB** served.
-- Rolling 7d: **36,402 requests**, **12,093 HTTP visits**, **897.5 MB** served.
+- Rolling 24h: **6,730 requests**, **2,878 HTTP visits**, **157.1 MB** served.
+- Rolling 7d: **36,662 requests**, **12,170 HTTP visits**, **908.3 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 4,794 | 2,667 |
-| CN | 467 | 13 |
-| SG | 217 | 12 |
+| US | 4,827 | 2,657 |
+| CN | 514 | 14 |
+| SG | 218 | 13 |
 | AR | 148 | 0 |
 | DE | 146 | 11 |
 | VN | 139 | 4 |
-| MX | 101 | 2 |
+| MX | 102 | 2 |
 | NL | 83 | 7 |
+| BE | 83 | 83 |
 | FR | 82 | 4 |
-| BE | 82 | 82 |
 
 ## What to watch
 
