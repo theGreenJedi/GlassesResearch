@@ -1,36 +1,41 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-25T12:38:39.268036+00:00",
-  "candidate_count": 54,
-  "classifier_irrelevant_count": 48,
+  "discovered_utc": "2026-10-25T16:24:17.343900+00:00",
+  "candidate_count": 60,
+  "classifier_irrelevant_count": 39,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 5,
-    "broad_web": 38,
+    "adjacent": 20,
+    "broad_web": 30,
     "developer": 11
   },
   "relationship_counts": {
     "direct": 1,
-    "enabling": 0,
-    "adjacent": 5,
+    "enabling": 1,
+    "adjacent": 19,
     "speculative": 0,
-    "irrelevant": 48
+    "irrelevant": 39
   },
   "type_counts": {
-    "model": 4,
+    "model": 3,
     "review": 1,
-    "video": 1,
+    "video": 9,
     "news": 34,
+    "research": 2,
     "tool": 12,
     "sdk": 11,
-    "retail": 8,
-    "community": 1
+    "optics": 1,
+    "retail": 5,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 5,
-    "community_evidence_review": 1,
-    "reject_noise": 48,
-    "research_news_review": 6
+    "adjacent_radar": 19,
+    "reject_noise": 39,
+    "report_card_evidence": 9,
+    "research_news_review": 21,
+    "research_optics": 1,
+    "retail_rebrand_review": 3,
+    "watching": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -44,12 +49,12 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "31da27f7c8f5be32",
-      "title": "Our 9 Best Smart Glasses With Camera in the US - October 2026 ...",
-      "url": "https://www.bestproductsreviews.com/smart-glasses-with-camera",
-      "summary": "Easily compare & choose from the 10 best Smart Glasses With Camera for you. Don't buy Smart Glasses With Camera in the US before reading our rankings | bestproductsreviews.com",
+      "id": "bfefb1de0ed4d3fa",
+      "title": "XREAL AURA – XREAL EU shop",
+      "url": "https://eu.shop.xreal.com/products/xreal-aura",
+      "summary": "XREAL AURA is the world's first spatial computing glasses powered by Android XR, delivering an infinite canvas that augments your everyday screens and lets you work, play, and learn beyond boundaries, with Gemini right in your view.",
       "discovery_channel": "broad_web",
-      "query": "best smart glasses",
+      "query": "XREAL AURA",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -70,20 +75,22 @@
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a1d7bf37645e7041",
-      "title": "Cities Near Me - La Verne, California | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/La+Verne,+CA",
-      "summary": "Find the top 15 cities, towns, and suburbs near La Verne, CA, like San Dimas and Claremont, and explore the surrounding area for a day trip.",
+      "id": "99ce451068d4c1fc",
+      "title": "Chesapeake VA Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/chesapeake-va/",
+      "summary": "Zillow has 1072 homes for sale in Chesapeake VA. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -92,11 +99,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -105,143 +115,619 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "500ff9d768ffea43",
-      "title": "Cities Nearby La Verne, California, United States",
-      "url": "https://www.thecitiesnow.com/united_states/california/la_verne",
-      "summary": "Find five hundred cities near La Verne, California, United States from closest to farthest by distance. Distances from La Verne to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "726f8ffaad80499a",
-      "title": "La Verne Campus | University of La Verne",
-      "url": "https://laverne.edu/locations/la-verne/",
-      "summary": "Nestled against the San Gabriel Mountains in the city of La Verne, our main campus offers the full college experience — but with a difference: at the University of La Verne, you’re not just a number —you’re part of a community that knows your name and believes in your success.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a6d6c31b0a91d06",
-      "title": "Recent Earthquakes Near La Verne, California, United States",
-      "url": "https://earthquaketrack.com/us-ca-la-verne/recent",
-      "summary": "See if there was an earthquake just now in La Verne.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef01d99a0eed4878",
-      "title": "Welcome to the University of La Verne",
-      "url": "https://laverne.edu/",
-      "summary": "The University of La Verne offers undergraduate, graduate, and online degree programs across seven diverse California locations. Discover La Verne today.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "409b0d1a2655db29",
-      "title": "White - Dressers - The Home Depot",
-      "url": "https://www.homedepot.com/b/Furniture-Bedroom-Furniture-Dressers/White/N-5yc1vZc7pwZ1z1br1v",
-      "summary": "Get free shipping on qualified White Dressers products or Buy Online Pick Up in Store today in the Furniture Department.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "81b54c3fbf76a7e5",
+      "title": "Sign in - my.walmart.com",
+      "url": "https://my.walmart.com/home",
+      "summary": "Country/Region Argentina Brazil Canada Central America Chile China EMEA India Japan United States Mexico Puerto Rico United Kingdom Location Homeoffice Store/Club Store/Club - Pharmacy & Optical Store/Club (NexGen – Pilot Site) DC !",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "optics",
+        "retail"
       ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: optical",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "80db5a47903e47f1",
+      "title": "Book E-Ticket",
+      "url": "https://contents.irctc.co.in/en/bookEticket.html",
+      "summary": "Register as an individual. Registration is FREE. Login by entering your user name and password. The \" Plan my travel \" page appears. If the From/To station selected by you are correct in the route of the train then : Select e-Ticket option.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "83d0c8805436d7e7",
+      "title": "CPG Bank Interface Home Page - IRCTC",
+      "url": "https://www.operations.irctc.co.in/CPGBankInterface/loginHome.jsf",
+      "summary": "User ID: Password : Copyright © 2026 - www.cris.org.in. All Rights Reserved,",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7258d69a2ed9856",
+      "title": "How to Watch — Supermarket Sweep | GameShows.com",
+      "url": "https://www.gameshows.com/supermarket-sweep/how-to-watch",
+      "summary": "If you're discovering Supermarket Sweep for the first time, start with the free David Ruprecht-era episodes on Tubi or Pluto TV, the version that made the show a household name.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "49658e883e80fcb5",
+      "title": "IRCTC - Care View",
+      "url": "https://www.care.irctc.co.in/",
+      "summary": "Book Flights ticket online for domestic and International destinations and also book LTC airplane ticket at the Lowest Prices* at IRCTC AIR.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "beeb504f85b662bc",
+      "title": "IRCTC Next Generation eTicketing System",
+      "url": "http://www.irctc.co.in/",
+      "summary": "IRCTC's Next Generation eTicketing System enables online booking of train tickets for Indian Railways, offering a seamless and user-friendly experience.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fedd78bb4e71867b",
+      "title": "IRCTC, Flight Ticket, Air Ticket, Cheap Flight, Low Fare Flight",
+      "url": "https://www.corporate.irctc.co.in/",
+      "summary": "cheap air tickets,book online air ticket,flight ticket,online booking,special offers,discounted fares,minimal service charge,lowest fares guaranteed.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "715dbe21bdb880c9",
+      "title": "Login | My Application",
+      "url": "https://pay.irctc.co.in/admin/login",
+      "summary": "Login to your account Login to Your Account Username",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68d0cf4c5aecbebe",
+      "title": "Movie Showtimes and Theaters near Chesapeake, VA | Fandango",
+      "url": "https://www.fandango.com/chesapeake_va_movietimes",
+      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Chesapeake, VA.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a0c5f0d503185d9",
+      "title": "Order Food on Train Online, Food and Meal on Train, Tasty Food for ...",
+      "url": "https://www.ecatering.irctc.co.in/",
+      "summary": "Order Online Cheap Veg and Non-veg Food on Running Train & Enjoy Journey. Grab The Best Offers on Food in Train Food Delivery by Our Travel and Rail Khana Services.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c88e502e9797b353",
+      "title": "Supermarket Sweep - streaming tv show online - JustWatch",
+      "url": "https://www.justwatch.com/us/tv-show/supermarket-sweep-1990",
+      "summary": "Currently you are able to watch \"Supermarket Sweep\" streaming on Peacock Premium, Peacock Premium Plus or for free with ads on Tubi TV, Plex Player. An American television game show combining an ordinary team-based quiz show with the novel concept of a live, timed race through a supermarket.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "rumor"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "watching",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36f6933d72359916",
+      "title": "Supermarket Sweep - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Supermarket_Sweep",
+      "summary": "Supermarket Sweep is an American television game show. Teams of contestants answer trivia questions before competing in a timed race to gather grocery items from the aisles of a supermarket.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b84501a6921f31f",
+      "title": "Supermarket Sweep - YouTube",
+      "url": "https://www.youtube.com/channel/UCbeQpoaM6pwS5P2X6cfkzWg",
+      "summary": "When you hear that beep, think of the fun you could have on Supermarket Sweep! Watch full, classic episodes on BUZZR, Pluto TV, The Roku Channel, Amazon Freevee, XUMO & Prime Video!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a988a9919c16ff45",
+      "title": "User Registration - IRCTC Next Generation eTicketing System",
+      "url": "http://contents.irctc.co.in/en/userregistration.html",
+      "summary": "Login through the user id and password select at the time of registration. Put the OTP received through mail. The page appears as follows: (Email verified successfully) Showing page as Email id verified Verification of mobile number by entering the verification code received on mobile. Showing page as Mobile verified successfully.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec6b0b402d8f9209",
+      "title": "Watch Supermarket Sweep - Free Live TV | Tubi",
+      "url": "https://tubitv.com/live/658748/supermarket-sweep",
+      "summary": "Three teams of two battle it out using their grocery shopping skills and knowledge of merchandise to win cash prizes.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "463c42071e5b646b",
+      "title": "Watch Supermarket Sweep for Free Online | Pluto TV",
+      "url": "https://pluto.tv/us/shows/supermarket-sweep/",
+      "summary": "Teams answer questions to earn time and advantages over their competitors before going on a supermarket shopping spree. The team that adds the most valuable items to their carts wins. Stream Supermarket Sweep for free on Pluto TV.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7804d77f97f64c1",
+      "title": "Watch Supermarket Sweep Season 3 Streaming Online - Tubi",
+      "url": "https://tubitv.com/series/300001964/supermarket-sweep/season-3",
+      "summary": "Watch Supermarket Sweep Season 3 Free Online | 6 Seasons. In this classic game show, teams answer trivia questions to earn time and advantages over competitors in a supermarket shopping spree.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15aabbb504124d2a",
+      "title": "Watch Supermarket Sweep Streaming Online | Tubi Free TV",
+      "url": "https://tubitv.com/series/300001964/supermarket-sweep",
+      "summary": "Watch Supermarket Sweep Free Online | 6 Seasons. In this classic game show, teams answer trivia questions to earn time and advantages over competitors in a supermarket shopping spree.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "df4f7e32dc8ea4c6",
+      "title": "Watch Supermarket Sweep: Live TV Channel for Free | Pluto TV",
+      "url": "https://pluto.tv/us/watch/live-tv/30336/",
+      "summary": "Enjoy a curated lineup of Live TV channels, streaming everything from movies, popular shows, live events, kids’ programs, and more. It's the best grocery game show ever! Watch Supermarket Sweep live for free.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c69e2b7fb45a8648",
+      "title": "8.8.4 Install – Star Wars Genesis",
+      "url": "https://genesismodlist.com/install/",
+      "summary": "Star Wars Genesis features an unleveled world, meaning weapons, armor, and NPCs do not scale with the player. You begin as an ordinary person in the Star Wars galaxy, but with the potential to become something more.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -250,11 +736,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
         "tool",
         "sdk"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -264,44 +749,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a7c117d89c8824c3",
-      "title": "White Dressers & Chests - Macy's",
-      "url": "https://www.macys.com/shop/home/furniture-mattress/bedroom/dressers-chests/Color_normal/White?id=69952",
-      "summary": "Shop White Dressers & Chests at Macy’s. Free shipping available.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f9a7094111c938b9",
-      "title": "Accelerated Reader Bookfinder US - Welcome",
-      "url": "http://arbookfind.com/",
-      "summary": "United States Searching for books with a corresponding Renaissance Accelerated Reader 360 ® quiz is easy with Accelerated Reader Bookfinder®. Students, teachers, parents, and librarians can search in English or Spanish using criteria such as ATOS book level or a Lexile™ measure, interest level, title, author, fiction/nonfiction, subject, award-winners, state lists, CCSS Exemplars, and more ...",
+      "id": "e261e1674d60aa78",
+      "title": "AR 15 Uppers, Rifles & Parts | AR15 Parts",
+      "url": "https://ar15parts.com/",
+      "summary": "Your one-stop shop for AR-15 parts, accessories, and expert advice. Build your dream rifle with AR15Parts.com – quality, selection, and service you can trust.",
       "discovery_channel": "developer",
       "query": "AR glasses SDK developer",
       "source": "Bing web RSS",
@@ -329,12 +780,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4509be6671938a80",
-      "title": "Amazon.com: White Dresser",
-      "url": "https://www.amazon.com/white-dresser/s?k=white+dresser",
-      "summary": "Explore a diverse array of white dressers with modern and classic designs. Quality wood construction ensures durability and timeless appeal for any decor.",
+      "id": "b5439f94c83cc22b",
+      "title": "Best AR-15s Available Now - Guns.com",
+      "url": "https://www.guns.com/news/best-ar-15-rifles-available",
+      "summary": "From practical, budget-friendly AR rifles to battle-ready AR-15s with military quality and beyond, here are some of the best ARs available to you legally today.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "AR glasses SDK developer",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -347,73 +798,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
+        "model",
         "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fc4eff850f178ae6",
-      "title": "Amazon.com: White Dressers",
-      "url": "https://www.amazon.com/white-dressers/s?k=white+dressers",
-      "summary": "Browse white dressers with multiple drawers for bedrooms, living rooms, and entryways in modern or classic styles.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "46fc16a0c04d5496",
-      "title": "Nvidia Shield TV - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Nvidia_Shield_TV",
-      "summary": "The Nvidia Shield TV (also known as Shield Android TV) [1] is an Android TV -based digital media player and microconsole produced by Nvidia as part of its Shield brand of Android devices. First released in May 2015, the Shield was initially marketed by Nvidia as a microconsole, emphasizing its ability to play downloaded games and stream games from a compatible PC on a local network, or via the ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "released"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -425,18 +812,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "379bfbbcc832162b",
-      "title": "Nvidia Shield TV Review 2026: Why This 4K HDR Streaming Box Still Dominates",
-      "url": "https://www.techtimes.com/articles/314560/20260211/nvidia-shield-tv-review-2026-why-this-4k-hdr-streaming-box-still-dominates.htm",
-      "summary": "Nvidia Shield TV review 2026 covers 4K HDR streaming, AI upscaling, Plex server power, gaming, and why it still beats newer Android TV boxes.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "6caf86d787f7f938",
+      "title": "How to download the Genesis Total Conversion...",
+      "url": "https://steamcommunity.com/app/1716740/discussions/0/595158249006756308/",
+      "summary": "If you’ve ever dreamed of an open-world RPG Star Wars game in 2025 where you can explore iconic planets, fly legendary ships, and carve your own path in the galaxy… this is it.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -445,9 +830,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -457,17 +843,17 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d4cf3ddc02096a96",
-      "title": "Released: September 2026 Exchange Server Security Updates | Microsoft ...",
-      "url": "https://techcommunity.microsoft.com/blog/exchange/released-september-2026-exchange-server-security-updates/4554411",
-      "summary": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only.",
+      "id": "4bd2e985fb6c2d07",
+      "title": "IT Careers at Upstate",
+      "url": "https://careers.upstate.edu/imt",
+      "summary": "Job Openings Information Technology Careers at Upstate We provide an information technology infrastructure that enables the delivery of leading-edge patient care, research and education. Our team of over 350 forward-thinking professionals thrives on collaboration and innovation. We believe in the power of collective expertise to drive meaningful change. And we're dedicated to pushing the ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "released"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -477,7 +863,102 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3150ddf5ab59bbc",
+      "title": "Research Careers at Upstate",
+      "url": "https://careers.upstate.edu/research",
+      "summary": "Job Openings Research Careers at Upstate Upstate has openings in labs that use cutting-edge techniques to make discoveries in the fields of neuroscience, oncology, ophthalmology, and many, many more. Check out our news page to see some of the recent projects, publications, and programs happening in Research.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "research"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e44d969bc97900fa",
+      "title": "Star Wars Genesis - Total Conversion Modlist - Nexus Mods",
+      "url": "https://www.nexusmods.com/starfield/mods/11114",
+      "summary": "Star Wars Genesis is a WIP free, fan-made total conversion project for Starfield. It is fully playable via the Wabbajack auto-installer and receives regular updates and expansions.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad113b1457181b7c",
+      "title": "Star Wars Genesis - Total Conversion Modlist - Nexus Mods",
+      "url": "https://www.nexusmods.com/Core/Libs/Common/Widgets/DownloadPopUp?id=53265&game_id=4187&nmm=1",
+      "summary": "Star Wars Genesis is a WIP free, fan-made total conversion project for Starfield. It is ONLY available to be installed through Wabbajack on the official website.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -489,1132 +970,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b2edb70964977f67",
-      "title": "White : Dressers & Chests: Modern Options - Target",
-      "url": "https://www.target.com/c/dressers-chests-bedroom-furniture-home-decor/white/-/N-5xtndZ5y750",
-      "summary": "Shop dressers and chests with modern, drawer and storage-cabinet options for bedrooms, closets and everyday clothing organization.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "bece1d3bfa832a6b",
+      "title": "Star Wars Genesis - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLitA6lhyb1_7FZ4dfyOe1DMYaSfJe7WCr",
+      "summary": "— Star Wars Genesis Mid-Story Boss Gameplay.",
+      "discovery_channel": "adjacent+developer",
+      "query": "Everysight Maverick SDK; electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b4ca696398d82776",
-      "title": "White Dressers & Chests | Bedroom & Long Dressers",
-      "url": "https://www.wayfair.com/furniture/sb1/white-dressers-chests-c46091-a124~164.html",
-      "summary": "When it comes to merging functionality with elegant design in home decor, white dressers and chests of drawers stand out as quintessential elements. These pieces not only offer ample storage solutions for a clutter-free living space but also enhance the aesthetic appeal of any room.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0d14a2571e12a95d",
-      "title": "White Dressers - Ashley",
-      "url": "https://www.ashleyfurniture.com/c/furniture/bedroom/dressers/white/",
-      "summary": "Shop dressers from basic storage to statement pieces at Ashley. We offer a variety of styles, materials, and drawer options for the extra storage you need.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a5c31f8154801766",
-      "title": "White Dressers - Elegant Bedroom Storage Solutions | Lowe's",
-      "url": "https://www.lowes.com/pl/furniture/bedroom-furniture/dressers/white/4294772295-4294820092",
-      "summary": "Elevate your bedroom décor with white dressers that blend timeless elegance with modern functionality. These versatile pieces offer ample storage while creating a clean, airy aesthetic that complements any style.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "21ead6b31fc9fee8",
-      "title": "White Dressers - Modern White Chests of Drawers - IKEA",
-      "url": "https://www.ikea.com/us/en/cat/chests-of-drawers-10451/f/white-dressers-f-colors--10156/",
-      "summary": "Enable great storage with a white dresser. The classic white finish makes it a versatile option that will seamlessly blend in with your existing interior. Choose from a wide selection of sizes and styles to find the best white chest of drawers for your home.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "28173d8b5f248155",
-      "title": "White Dressers for Bedroom Storage - Walmart.com",
-      "url": "https://www.walmart.com/browse/home/white-dressers/4044_103150_102547_91839_4007149",
-      "summary": "Shop white dressers with multiple drawers for stylish bedroom storage and organization.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9650374c0700ca19",
-      "title": "2026 FIFA World Cup - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup",
-      "summary": "The 2026 FIFA World Cup[A] was the 23rd FIFA World Cup, the quadrennial international men's soccer championship contested by the national teams of the member associations of FIFA. The tournament began on June 11, 2026, and concluded on July 19 with Spain winning the championship for the second time. [3]",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a82f1f70ce71ee3d",
-      "title": "All tags - XNXX.COM",
-      "url": "https://en-us.xnxx.place/tags",
-      "summary": "XNXX.COM All tags, free sex videos This menu's updates are based on your activity. The data is only saved locally (on your computer) and never transferred to us. You can click these links to clear your historyor disable it.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e12f1e155f0eaeed",
-      "title": "Amazon.com: Nvidia Shield",
-      "url": "https://www.amazon.com/nvidia-shield/s?k=nvidia+shield",
-      "summary": "1-16 of 392 results for \"nvidia shield\" Results Check each product page for other buying options. Price and other details may vary based on product size and color.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a595d4b85487bbf8",
-      "title": "Amazon.com: NVIDIA Shield Android TV Pro | 4K HDR Streaming Media ...",
-      "url": "https://www.amazon.com/clp/B07YP9FBMM",
-      "summary": "Buy NVIDIA Shield Android TV Pro | 4K HDR Streaming Media Player High Performance, Dolby Vision, 3GB RAM, 2X USB, Works with Alexa, Model:945-12897-2500-101: Streaming Media Players - Amazon.com FREE DELIVERY possible on eligible purchases",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fed88867c5dd837f",
-      "title": "Calendario COMPLETO de la Copa Mundial de la FIFA 2026: Fechas ...",
-      "url": "https://www.aztecaquintanaroo.com/deportes/calendario-completo-la-copa-mundial-la-fifa-2026-fechas-horarios-y-sedes-todos/",
-      "summary": "Consulta el calendario completo de la Copa Mundial de la FIFA 2026. Conoce las fechas, los 104 partidos, horarios y las sedes de México, EEUU y Canadá.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cddaf466940d52d2",
-      "title": "Calendario de la Copa Mundial de la FIFA 2026",
-      "url": "https://fifa.us.org/es/calendario/",
-      "summary": "Tabla del calendario de la Copa Mundial FIFA 2026 con números de partidos, fechas, estado de inicio, equipos, grupos, estadios, ciudades anfitrionas y enlaces a la página de los partidos.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "24b5932f0011995b",
-      "title": "Connie Nielsen - Human Needs Project",
-      "url": "https://www.humanneedsproject.org/team/connie-nielsen",
-      "summary": "Danish-born actor, producer and writer, Connie Nielsen’s achievements in the arts range across leads in films such as the Academy Award winning Gladiator, the critically acclaimed Brothers, One Hour Photo, and Demon Lover.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e38903de3c1fac70",
-      "title": "Connie Nielsen - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Connie_Nielsen",
-      "summary": "Connie Inge-Lise Nielsen (born 3 July 1965) [1][2] is a Danish actress. She has starred as Lucilla in the films Gladiator (2000) and Gladiator II (2024) and as Queen Hippolyta in the DC Extended Universe (2017–2021).",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "00b94d50be7dee28",
-      "title": "Connie Nielsen Bio, Wiki, Age, Height, Family, Husband, The Devil's ...",
-      "url": "https://factprofiles.com/connie-nielsen/",
-      "summary": "Connie Nielsen is a Danish actress who had a career breakthrough after starring in The Devil’s Advocate as Christabella Andreoli in 1997. She also portrayed Lucilla in Gladiator in 2000 and as Queen Hippolyta in the DC Extended Universe, starting with Wonder Woman in 2017.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3579d45b830048c",
-      "title": "Connie Nielsen biography: age, height, net worth, husband (2026)",
-      "url": "https://biographiestart.com/en/actress/connie-nielsen-biography/",
-      "summary": "From Danish beginnings to Hollywood acclaim, Connie Nielsen’s biography reflects a journey of resilience, artistry, and influence. Her work across European cinema, Hollywood blockbusters, and streaming demonstrates her versatility and vision.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11fd137550099964",
-      "title": "Connie Nielsen interview: ‘I’ve been the token woman in so many films ...",
-      "url": "https://www.independent.co.uk/arts-entertainment/films/features/connie-nielsen-interview-nobody-b1860923.html",
-      "summary": "Connie Nielsen, the Danish star of Gladiator, Wonder Woman and new action film Nobody, is repeating the question she’s often asked herself on film sets.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f90af27df5ead45",
-      "title": "Connie Nielsen on Sea Fever and Wonder Woman's Feminist Legacy - Collider",
-      "url": "https://collider.com/connie-nielsen-interview-sea-fever-wonder-woman/",
-      "summary": "Connie Nielsen spoke to us about her sensitive new horror film Sea Fever. Plus: Why she has a personal connection to the material.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "749879053ddbb279",
-      "title": "Connie Nielsen: From Danish Roots and International Modeling to Epic ...",
-      "url": "https://raccoonbio.blogspot.com/2026/10/connie-nielsen-from-danish-roots-and.html",
-      "summary": "Personal Life and Grounded Legacy Away from international film sets, historical epics, and red-carpet premieres, Connie Nielsen maintains a balanced, intellectually curious personal life.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a79ffe05f7cc18dc",
-      "title": "Connie Nielsen: Gladiator Star, Family Life & Acting Career",
-      "url": "https://tushstories.com/connie-nielsen-biography/",
-      "summary": "Explore Connie Nielsen ’s acclaimed acting career, her standout role in Gladiator and her lasting influence on Hollywood",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "801e8fddce999926",
-      "title": "Connie Nielsen: The Danish Actress Who Conquered Hollywood",
-      "url": "https://thedanishdream.com/connie-nielsen-who-conquered-hollywood/",
-      "summary": "Connie Nielsen’s journey is a shining example of artistic excellence intersecting with cultural breadth. From her early life in Denmark, she has crafted a career marked by outstanding performances and iconic roles.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3466bf5a4cd0276",
-      "title": "Connie Nielsen: The Woman Who Stole the Spotlight in Gladiator — The ...",
-      "url": "https://ifeg.info/2026/07/25/connie-nielsen-the-woman-who-stole-the-spotlight-in-gladiator-the-untold-story-of-lucillas-power-passion-and-legacy/",
-      "summary": "Her name was Lucilla. And the actress who brought her to life was Connie Nielsen. For more than two decades, fans have celebrated Gladiator as one of the greatest historical epics ever made. The film won five Academy Awards, including Best Picture and Best Actor for Russell Crowe.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ff7571294f28bb93",
-      "title": "Copa Mundial de Fútbol de 2026 - Wikipedia, la enciclopedia libre",
-      "url": "https://es.wikipedia.org/wiki/Copa_Mundial_de_F%C3%BAtbol_de_2026",
-      "summary": "El 10 de enero de 2017 el Consejo de la FIFA aprobó por unanimidad, la propuesta del presidente del organismo Gianni Infantino, de elevar el número de plazas para la Copa Mundial de Fútbol de 32 a 48, a partir de la edición de 2026.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ced6c4b32ae9146",
-      "title": "Copa Mundial de la FIFA 2026™",
-      "url": "https://www.fifa.com/es/tournaments/mens/worldcup/canadamexicousa2026%C2%A0",
-      "summary": "La Copa Mundial de la FIFA 2026™ será la vigésima tercera edición del torneo, pero será la primera en contar con 48 equipos y tres países anfitriones: Canadá, México y Estados Unidos.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "602e8ea7153c7301",
-      "title": "Copa Mundial de la FIFA 2026™",
-      "url": "https://www.fifa.com/es/tournaments/mens/worldcup/canadamexicousa2026",
-      "summary": "Ganada por España, la Copa Mundial de la FIFA 2026™ fue la primera edición en la que participaron 48 selecciones y tres países anfitriones: Canadá, México y Estados Unidos.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba3451db5f21b716",
-      "title": "Final de la Copa Mundial de Fútbol de 2026 - Wikipedia, la enciclopedia ...",
-      "url": "https://es.wikipedia.org/wiki/Final_de_la_Copa_Mundial_de_F%C3%BAtbol_de_2026",
-      "summary": "La final de la Copa Mundial de la FIFA México/Estados Unidos/Canadá 2026 fue el partido por la definición del título en la 23.a edición de la principal competición de selecciones nacionales masculinas de fútbol organizada por la FIFA.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f7ea56c8eaade81e",
-      "title": "Is The Nvidia Shield TV Pro Still Worth Buying In 2026?",
-      "url": "https://tech.yahoo.com/home-entertainment/tvs/articles/nvidia-shield-tv-pro-still-101700652.html",
-      "summary": "The Nvidia Shield TV Pro has been around for years, but you can still buy one new. Here's what to consider before spending premium money on an older streamer.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb9444d45878fa96",
-      "title": "Learn about NVIDIA SHIELD: SHIELD Gaming - Best Buy",
-      "url": "https://www.bestbuy.com/site/nvidia/learn-about-nvidia-shield/pcmcat1534526745687.c?id=pcmcat1534526745687",
-      "summary": "Learn about NVIDIA SHIELD and SHIELD accessories at Best Buy. Enjoy hundreds of apps and Google Assistant built in.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "00bac25f5f3240c2",
-      "title": "Mundial 2026 - Últimas noticias de la Copa del Mundo de Fútbol",
-      "url": "https://www.marca.com/futbol/mundial.html",
-      "summary": "Consulta toda la información del Mundial de fútbol 2026. Actualidad, imágenes, vídeos y última hora del Mundial en MARCA.com",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "82bedc996e52de6f",
-      "title": "Mundial 2026: fixture, grupos, sedes y todo sobre la Copa",
-      "url": "https://www.infobae.com/mundial-2026/",
-      "summary": "Toda la información del Mundial 2026 en Estados Unidos, México y Canadá. Fixture completo, grupos, calendario de partidos y las 16 sedes de la Copa del Mundo.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3610c3aeac25b41",
-      "title": "New - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/New",
-      "summary": "This disambiguation page lists articles associated with the title New. If an internal link incorrectly led you here, you may wish to change the link to point directly to the intended article.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f66568d0f9e61c6c",
-      "title": "new - Wiktionary, the free dictionary",
-      "url": "https://en.wiktionary.org/wiki/new",
-      "summary": "Hidden behind thickets of acronyms and gorse bushes of detail, a new great game is under way across the globe. Some call it geoeconomics, but it's geopolitics too.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "806ace1b02b48b89",
-      "title": "New games - CrazyGames",
-      "url": "https://www.crazygames.com/new",
-      "summary": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "45a81b998142bcdc",
-      "title": "NEW Synonyms: 211 Similar and Opposite Words - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/thesaurus/new",
-      "summary": "Some common synonyms of new are fresh, novel, and original. While all these words mean \"having recently come into existence or use,\" new may apply to what is freshly made and unused, what has not been known before, or what has not been experienced before.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "236d22861e3fd1ae",
-      "title": "NEW | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/new",
-      "summary": "NEW definition: 1. recently created or having started to exist recently: 2. different from one that existed…. Learn more.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5c4603b3d56e7d11",
-      "title": "NEW | Định nghĩa trong Từ điển tiếng Anh Cambridge",
-      "url": "https://dictionary.cambridge.org/vi/dictionary/english/new",
-      "summary": "NEW ý nghĩa, định nghĩa, NEW là gì: 1. recently created or having started to exist recently: 2. different from one that existed…. Tìm hiểu thêm.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1c8231ac82171cf6",
-      "title": "Nvidia just killed the Shield TV and there's even worse news for the Pro",
-      "url": "https://www.pocket-lint.com/nvidia-discontinuing-shield-tv-raising-price-of-pro/",
-      "summary": "Nvidia is discontinuing its standard Shield TV, and raising the price of its Shield TV Pro.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "94e57ad48c2eef14",
-      "title": "SHIELD TV Streaming Media Players | NVIDIA",
-      "url": "https://www.nvidia.com/en-us/shield/shield-tv/",
-      "summary": "Included Apps NVIDIA GeForce NOW for SHIELD TV Netflix YouTube Amazon Prime Video Google Play Movies & TV Freevee Vudu Amazon Music Google Play Store YouTube Music PLEX Google Play Games * Google ecosystem includes the Google Assistant, Google Play Movies and TV app, Google Music app, Google photos, and access to Google calendar.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1626,7 +990,7 @@
       "content_types": [
         "video",
         "tool",
-        "retail"
+        "sdk"
       ],
       "primary_type": "video",
       "routing_targets": [
@@ -1638,10 +1002,135 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4f668d36ce23138a",
-      "title": "XNXX Free Porn Videos, xnxx2025 - xnxx com",
-      "url": "https://xnxxorg.com/",
-      "summary": "XNXX Free Porn Videos and sex movies here on xnxxorg.com. Enjoy quality porn videos in a wide variety of categories & niches. We show you the best XNXX2025.",
+      "id": "6f90878605e2d2c7",
+      "title": "Star Wars Genesis Might Be The Most Exciting Star Wars RPG Ever",
+      "url": "https://screenrant.com/star-wars-genesis-open-world-rpg-mod-opinion/",
+      "summary": "While it might not be the same as an official triple-A experience, the currently active Star Wars Genesis project is not only one you can play for free right now, but it's also already shaping up to be one of the most promising projects to come out of the series in years.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a60e2e3219b5fd0",
+      "title": "Star Wars Genesis – A Total Conversion Modlist for the game Starfield",
+      "url": "https://genesismodlist.com/",
+      "summary": "Star Wars Genesis is a WIP, free, fan-made total conversion project for Starfield, fully playable through the Wabbajack auto-installer and regularly expanded with new content.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b77039973b890a54",
+      "title": "Star Wars Genesis? Does it make Starfield actually worth it?",
+      "url": "https://steamcommunity.com/app/1716740/discussions/0/595156583818004882/",
+      "summary": "When people ask if Genesis makes Starfield more enjoyable than the vanilla game, I think it's fair to bring up that the amount of people that think it does vastly outnumbers the people that don't think it does.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "55230f30a3ab31e8",
+      "title": "Starfield's Star Wars Genesis Mod is Available to Play Now, and It's ...",
+      "url": "https://gamerant.com/starfield-star-wars-genesis-overhaul-mod-free-download-now/",
+      "summary": "Star Wars Genesis is a total conversion project made for Starfield, which combines hundreds of mods to provide a totally fresh Star Wars experience.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e966884a95126aac",
+      "title": "2026 Football Coaches - University of Minnesota Athletics",
+      "url": "https://gophersports.com/sports/football/coaches",
+      "summary": "The official Football Coach List for the University of Minnesota Gophers",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1668,12 +1157,732 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6f51f30bc59cebee",
-      "title": "⚽ Mundial 2026 en Vivo Resultados, Calendario y Próximos Partidos",
-      "url": "https://vivaelmundial.com/mundial/2026",
-      "summary": "📢 ¡Comparte el Calendario del Mundial! Ayuda a otros fanáticos del fútbol a seguir los marcadores en vivo, el fixture completo de partidos y los resultados del Mundial 2026.",
+      "id": "6626acd8a7c597f8",
+      "title": "2026 Football Roster - University of Minnesota Athletics",
+      "url": "https://gophersports.com/sports/football/roster",
+      "summary": "Explore the 2025 University of Minnesota Gophers football roster, featuring players and their profiles.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e914e80575c877a",
+      "title": "2026 Football Schedule - University of Minnesota Athletics",
+      "url": "https://gophersports.com/sports/football/schedule",
+      "summary": "The official 2026 Football schedule for the University of Minnesota Gophers",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "16d84cf95baccbf7",
+      "title": "Clever | Log in",
+      "url": "https://schools.clever.com/login",
+      "summary": "District Admin login Email",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9db656f7d862bc6f",
+      "title": "Cristian Driver - Football - University of Minnesota Athletics",
+      "url": "https://gophersports.com/sports/football/roster/cristian-driver/23182",
+      "summary": "PERSONAL: Son of Betina and Donald Driver • has two sisters (Christina and Charity) • father, Donald, was a 14-year NFL veteran wide receiver for the Green Bay Packers and played four years of college football at Alcorn State University.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40477d3800193f9f",
+      "title": "Football - University of Minnesota Athletics",
+      "url": "https://gophersports.com/sports/football/",
+      "summary": "The official Football page for the University of Minnesota Gophers",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b8fda81c4f893aaa",
+      "title": "Football vs Eastern Illinois on 9/3/2026 - University of Minnesota ...",
+      "url": "https://gophersports.com/game-center/19392",
+      "summary": "Football vs Eastern Illinois on 9/3/2026 - Game Center - University of Minnesota Athletics Download the App for the full Game Center experience — including Stadium HQ for exclusive in-stadium features.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "66598a081a7e0e28",
+      "title": "Gopher Football Tickets - Official Minnesota Golden Gopher Tickets ...",
+      "url": "https://gophersports.com/sports/2025/4/29/minnesota-golden-gopher-football-tickets",
+      "summary": "To purchase Gopher Football group tickets or to get more information, contact the Gopher Ticket Sales & Service Office at 1-800-U-GOPHER or email GopherSports@umn.edu",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b3df492cf37a46b",
+      "title": "How can we help? - Clever",
+      "url": "https://support.clever.com/hc/s/?language=en_US",
+      "summary": "New to Clever? We're here to help with 24/7 free online training and certifications for teachers! Enroll now",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dd7a45d003bacdc4",
+      "title": "John Nestor - Football - University of Minnesota Athletics",
+      "url": "https://gophersports.com/sports/football/roster/john-nestor/23967",
+      "summary": "PERSONAL: Son of John and Rachele Nestor • has two brothers (Jackson, Griffen) and one sister (Kailey) • father, John, played college football at Miami (Ohio) and was a safety.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b9b62ed0bf949a0",
+      "title": "Log in - Clever",
+      "url": "https://family.clever.com/oauth/clever/login",
+      "summary": "Forgot password? Reset password. Don't have an account? Please contact your child's school district to get a Clever Parents invitation.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "369d829cc4660bed",
+      "title": "Log in to Clever",
+      "url": "https://skilljar-auth.clever.com/",
+      "summary": "Note: if you're a School Tech Lead who also has a Clever Teacher account, make sure you're signed into Clever under your School Tech Lead account before proceeding! Don't have a Clever admin account? Contact your account owner for login help. Clever employee? Click here to log in.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "321f464884418fe4",
+      "title": "Log in with Clever",
+      "url": "https://samlidp.clever.com/chromebook-login/assert/582df1eb56619d0100000482",
+      "summary": "Log in to Clever USD for secure access to educational resources and applications.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f66de199ee40d39d",
+      "title": "Mammography Technologist - Verona, New York, United States",
+      "url": "https://careers.upstate.edu/jobs/mammography-technologist-verona-new-york-united-states-d54b9344-da13-4db4-a29a-c15cb2c982ed",
+      "summary": "We are an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, protected veteran status or disability or other protected classes under State and Federal law.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "386a210994707e1d",
+      "title": "Minnesota Golden Gophers Gear, Minnesota Apparel, University of ...",
+      "url": "https://shop.gophersports.com/",
+      "summary": "Shop officially licensed Minnesota gifts and apparel at the official Minnesota Golden Gophers store. The high-quality array of Minnesota gear featured includes charismatic Minnesota T-shirts, jerseys, hats, and much more to help you pay homage to your favorite team. The Minnesota Shop has an unparalleled collection of University of Minnesota sweatshirts, hats, polos, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5447af8f9165e4e9",
+      "title": "Napleton's Volkswagen of Sanford Car Dealership Serving ...",
+      "url": "https://www.sanfordvw.com/",
+      "summary": "Search Napleton's Volkswagen of Sanford's online dealership and browse our comprehensive selection of new and used Volkswagen cars and SUVs. Serving Deltona, Orlando, Altamonte Springs and surrounding areas. With amazing customer service, great deals and huge Volkswagen selection, Sanford and Orlando residents are sure to love buying their next new VW!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f78ffa9b4e619cf4",
+      "title": "Nursing Careers at Upstate",
+      "url": "https://careers.upstate.edu/nursing",
+      "summary": "Explore nursing careers at Upstate Medical University with opportunities for growth, better staffing ratios, state retirement benefits, and continuing education.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c29b27f52a55e7e",
+      "title": "Personalized Photo Banners | Walmart Custom Print",
+      "url": "https://photos3.walmart.com/category/354-full-photo--designed-custom-banners",
+      "summary": "Personalized photo banners for every celebration Put a favorite photo, a familiar face or a meaningful message at the heart of your celebration. Create personalized banners with Walmart Custom Print to welcome guests, celebrate an achievement or make someone’s big day feel more personal. Choose a design that suits your occasion, then make it your own using the photo and text options in your ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc7eb6c65650a495",
+      "title": "Physical Plant Trades Landing Page - careers.upstate.edu",
+      "url": "https://careers.upstate.edu/trades",
+      "summary": "Facilities Maintenance and Operations Careers at Upstate The Facilities Maintenance and Operations Department is the dynamic backbone of Upstate Medical University. We offer a wide array of positions from entry-level to seasoned professionals. Our team is essential to the seamless functioning of Upstate’s hospitals, clinics and colleges. We ensure that every aspect of the facilities run ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fe31d64b533c6645",
+      "title": "Search Page - State University of New York Upstate Medical University",
+      "url": "https://careers.upstate.edu/jobs/search",
+      "summary": "Search for job opportunities at SUNY Upstate Medical University and log in to check your application status.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "066bdcfd84a33a75",
+      "title": "Social Worker - Emergency Department - careers.upstate.edu",
+      "url": "https://careers.upstate.edu/jobs/social-worker-emergency-department-syracuse-new-york-united-states-2ec32ba1-7345-4c60-9305-a39e73086edc",
+      "summary": "Job Summary: In this position, the Social Worker will provide comprehensive psycho-social assessment, management and support to at risk patients and families at Upstate Medical University Hospital. This position provides coverage to the entire downtown campus during evening hours with weekend rotation coverage to support throughput in the Emergency Department and inpatient units during high ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5f98b277b59ba8c",
+      "title": "Social Worker - Syracuse, New York, United States - careers.upstate.edu",
+      "url": "https://careers.upstate.edu/jobs/social-worker-syracuse-new-york-united-states-ab10c85e-89b1-4661-9186-a382fdae4eb8",
+      "summary": "Job Summary: The licensed clinical social worker will provide outpatient therapy to adults in the Psychiatry Faculty Practice (PFP) at Upstate Medical University's Department of Psychiatry. Responsibilities include providing individual DBT-based psychotherapy. We plan to expand the use of online AI technology to enhance psychotherapy where part of the treatment is computerized. We expect this ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4fc70088f21986f5",
+      "title": "University of Minnesota Athletics - Official Athletics Website",
+      "url": "https://gophersports.com/",
+      "summary": "The official site for University of Minnesota Gophers athletics, featuring news, schedules, rosters, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b20a5eba0f1e9d6",
+      "title": "Upstate Cancer Center Careers",
+      "url": "https://careers.upstate.edu/ucc",
+      "summary": "Job Openings Careers at Upstate Cancer Center Welcome to Upstate Cancer Center's employment page, where we invite passionate individuals to join our dedicated team. At Upstate Cancer Center, multidisciplinary teams provide comprehensive outpatient services, seamlessly integrating advanced technology with compassionate care. Recognized nationally by the Commission on Cancer of the American ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53761f7a5e766936",
+      "title": "Walmart Supercenter in Vidor, TX | Grocery, Electronics, Toys | Serving ...",
+      "url": "https://www.walmart.com/store/457-vidor-tx",
+      "summary": "Get Walmart hours, driving directions and check out weekly specials at your Vidor in Vidor, TX. Get Vidor store hours and driving directions, buy online, and pick up in-store at 1360 N Main St, Vidor, TX 77662 or call 409-769-6233.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b33a964aa051dbf",
+      "title": "Why I AM UPSTATE",
+      "url": "https://careers.upstate.edu/",
+      "summary": "Learn from Upstate Medical University team members and explore opportunities in healthcare education and career development.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
