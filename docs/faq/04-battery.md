@@ -43,3 +43,11 @@ Record the exact test mode: standby, moderate mixed use, continuous audio, conti
 ## 40. How can smart-glasses battery life be extended?
 
 Lower display brightness, reduce wake frequency, disable unused radios/features, shorten capture sessions, improve phone/network signal, keep firmware current, and carry the supported case or power accessory. Avoid heat and deep discharge when possible. Never improvise a battery modification on face-worn hardware; use manufacturer-approved power paths.
+
+## What should an eight-hour AI-glasses battery claim disclose?
+
+**The workload and measurement conditions—not just “up to eight hours.”** The [observed community question](https://www.reddit.com/r/SmartGlasses/comments/1x1be39/what_should_an_8hour_battery_life_claim_on_ai/) asks what such a claim ought to include. For context, [Meta's September 2025 Gen 2 announcement](https://about.fb.com/news/2025/09/ray-ban-meta-gen-2-better-battery-life-video-capture/) advertised **up to eight hours with “typical use”** and a **separate** 48 additional hours from the charging case. That is a manufacturer claim, not an independent eight-hour result.
+
+A reproducible report should identify the **exact model and firmware**, phone/OS, battery age and starting charge, test start/end thresholds, temperature, connection quality, microphone/AI requests, camera/video minutes, music/call minutes, display brightness and on-time, and any idle periods. State whether the eight hours mean **continuous on-face runtime**, mixed daily use, or a total that includes case recharges. Report actual elapsed time and repeat runs where possible; don't compare continuous recording against occasional notification use as if they were equivalent.
+
+**Limits:** This is a GlassesResearch transparency and test-method recommendation, **not** a claim that a regulator requires these exact fields or that we independently measured Meta's endurance. See [battery-claim comparison](#39-how-should-smart-glasses-battery-claims-be-compared). Reviewed October 26, 2026.
