@@ -43,3 +43,11 @@ Only with explicit institutional approval, patient consent, appropriate security
 ## 70. How can smart-glasses privacy be evaluated before purchase?
 
 List every sensor, required permission, account, cloud endpoint, retention rule, training-use term, export/delete control, indicator, and offline function. Then test network-denied behavior and factory reset. Favor vendors with clear policies, update histories, security contacts, and a useful device even when optional cloud features are disabled.
+
+## Can I buy camera smart glasses without a recording indicator?
+
+**Do not select a camera product on the assumption that its capture indicator can or should be hidden.** In the [observed community question](https://www.reddit.com/r/SmartGlasses/comments/1x96b62/i_want_smart_glasses_with_no_recording_indicator/), the desired absence of a recording light conflicts with a useful bystander notice. For example, [Meta says](https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/) its AI glasses blink a white capture LED when taking gallery photos or videos; it says the light has no off switch and that blocking or tampering with it disables the camera on supported models. These are manufacturer statements, not independent tests of every firmware.
+
+**If the goal is discreet eyewear without a recording light, choose glasses with no camera**, rather than modifying a camera indicator. For example, [Even G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs) list a camera-free display design; it still has microphones and connectivity, so camera-free is **not** equivalent to sensor-free or private-by-default. If photography is required, choose a product with a clear, working indicator and follow venue rules and consent expectations.
+
+**Limits:** We do not claim every camera model uses the same indicator, that any light guarantees bystander awareness, or that a particular model has been bench-tested here. Reviewed October 26, 2026.
