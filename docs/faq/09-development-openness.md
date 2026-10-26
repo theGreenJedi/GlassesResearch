@@ -312,3 +312,19 @@ Useful checks include SDK contracts, session lifecycle, permission/error paths, 
 ### 15. What should be tested on real glasses after simulator success?
 
 Verify pairing, activation, latency, image legibility, battery, thermals, interrupted connectivity, microphone shutoff, and safe session termination. VModal's physical/live acceptance is still pending. **Evidence: proposed owner test protocol and project disclosure.**
+
+## Can Sony SmartEyeglass use voice input from a microphone?
+
+**Yes—but distinguish Sony's built-in voice-to-text path from a separate phone microphone.** The [original 2016 developer question](https://stackoverflow.com/questions/36347593/sony-smart-glasses-mic-input) asks whether menu voice control must use the touch-controller microphone or can use an external Bluetooth mic. Sony's [SmartEyeglass control API](https://developer.sony.com/reference/seg-sdk/com/sony/smarteyeglass/extension/util/SmartEyeglassControlUtils) documents a **microphone on the controller** and `enableVoiceTextInput()`, which waits for the wearer to press **Talk** and returns recognized text asynchronously through [`onVoiceTextInput()`](https://developer.sony.com/reference/seg-sdk/com/sony/smarteyeglass/extension/util/SmartEyeglassEventListener). The app needs Sony's SmartEyeglass permission and the separate `VOICE_TEXT_INPUT` permission.
+
+Sony also documents the glasses as a **Bluetooth headset** for host-phone audio using standard Bluetooth Hands-Free Profile (HFP). A host Android app can instead request [`RECORD_AUDIO` permission](https://developer.android.com/media/platform/mediarecorder) and use its own microphone/audio-input routing and recognition, then translate recognized commands into app UI actions. **That is not proof that Sony's built-in `enableVoiceTextInput()` accepts any arbitrary microphone paired to the phone**, nor that speech automatically controls SmartEyeglass menus. Those functions need explicit application logic and hardware testing.
+
+**Limits:** Legacy Sony SDK documentation, not a GlassesResearch microphone-routing or speech-recognition bench test. Specific Android/firmware combinations and third-party Bluetooth mics remain unverified. Reviewed October 26, 2026.
+
+## Does Google Glass GDK provide stereoscopic 3D for Epson Moverio?
+
+**No supported cross-device stereoscopic rendering path is documented for the legacy Google Glass Development Kit.** The [observed 2014 developer question](https://stackoverflow.com/questions/23477637/google-glass-sdk-for-epson-moverio) asks whether the monocular Glass GDK can generate distinct left- and right-eye views on binocular Epson Moverio. The [Google GDK](https://developers.google.com/glass/develop/gdk) was built for Google Glass-specific hardware and APIs; it is **not an Epson stereoscopic SDK**. The original discussion's historical answer also reports no Glass-native stereo support; that community answer is not a current vendor certification.
+
+For Moverio, use the **SDK matching the exact Epson headset and host**. Epson's [Moverio Basic Function SDK](https://tech.moverio.epson.com/en/basic_function_sdk/developers_guide/introduction.html) documents Android development with display/camera/sensor access and a [Unity development route](https://tech.moverio.epson.com/en/basic_function_sdk/developers_guide_unity/developing_apps.html). Crucially, Epson says this modern Basic Function SDK **does not support BT-350 and earlier**; those models require their own legacy SDK. Stereo output, marker tracking and alignment must be implemented and tested through a compatible Moverio toolchain, not assumed from a Glass APK.
+
+**Limits:** No Epson device or historical GDK compatibility test was conducted. This does not claim that Epson never shipped third-party marker tools or that all current Moverio models share one SDK. Reviewed October 26, 2026.
