@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-26T03:48:37.144538+00:00`
+Generated: `2026-10-26T07:55:46.903334+00:00`
 
-- Intake files inspected: **284**
-- Candidates retained in this review window/history: **11139**
+- Intake files inspected: **286**
+- Candidates retained in this review window/history: **11161**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2207
+- `adjacent_radar`: 2219
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 356
-- `rejected_noise`: 8328
-- `source_review`: 193
+- `needs_editorial_verification`: 357
+- `rejected_noise`: 8335
+- `source_review`: 195
 - `watching`: 36
 
 ## Action queue
@@ -155,6 +155,9 @@ Generated: `2026-10-26T03:48:37.144538+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1124](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1124) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1128](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1128) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1129](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1129) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1131](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1131) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1132](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1132) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1133](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1133) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -187,7 +190,6 @@ Generated: `2026-10-26T03:48:37.144538+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.999](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.999) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Authority 20d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
@@ -215,7 +217,6 @@ Generated: `2026-10-26T03:48:37.144538+00:00`
 | normal | needs_editorial_verification | enabling | [About multilayer.app \| Thin Films & Multilayered Spheres](https://multilayer.app/about.html) | reachable (200) | research_news_review, development_hacking, research_optics |
 | normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ai Glasses](https://www.amazon.com/ai-glasses/s?k=ai+glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR glasses that don't suck? \| INMO GO 3 review](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6adecd0158cd43f983371e3512fff352&url=https%3a%2f%2fwww.msn.com%2fen-us%2fnews%2fother%2far-glasses-that-dont-suck-inmo-go-3-review%2fvi-AA2fZVfG&c=3592760188153955443&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
@@ -247,6 +248,7 @@ Generated: `2026-10-26T03:48:37.144538+00:00`
 | normal | needs_editorial_verification | direct | [Patentlyze 2d ago A New Samsung Patent Has AR Glasses Tint Glare and Billboards While You Drive Coverage Samsung](https://patentlyze.com/patent/samsung-ar-glasses-tint-glare-billboards/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Patentlyze 2d ago Apple Files Patent for AR Glasses Tint That Darkens Faster and Uses Less Power Coverage Apple](https://patentlyze.com/patent/apple-faster-darkening-tint-ar-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Patentlyze 2d ago Apple Files Patent to Tuck Eye-Tracking Cameras Into the Nose Bridge of Smart Glasses Coverage Apple](https://patentlyze.com/patent/apple-eye-tracking-camera-nose-bridge/) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Patentlyze 2d ago Meta Files Patent for a Tiny Vibrating Mirror That Takes Less Strain in AR Glasses Coverage Meta](https://patentlyze.com/patent/meta-tiny-low-stress-scanning-mirror-ar-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Patentlyze 2d ago Meta Files Patent for Smart Glasses That Switch Off Their Microphones in Off-Limits Areas Coverage Meta](https://patentlyze.com/patent/meta-smart-glasses-mics-switch-off-zone/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Patentlyze 2d ago Samsung Files Patent to Keep Mirrors From Fooling Its AR Glasses Coverage Samsung](https://patentlyze.com/patent/samsung-teaching-ar-glasses-spot-mirrors/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Patentlyze 2d ago Samsung Files Patent to Shrink Display Pixels for AR Glasses Coverage Samsung](https://patentlyze.com/patent/samsung-micro-led-pixels-built-ar-glasses/) | reachable (200) | research_news_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-26T03:48:37.144538+00:00`
 | normal | needs_editorial_verification | direct | [Tom's Guide 19d ago I’ve used AR glasses to survive economy flights for 5 years — these are the only Prime Day deals worth your money](https://www.tomsguide.com/computing/smart-glasses/prime-day-ar-glasses-deals-xreal-viture-rayneo-october-2026) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Tom's Guide Sep 4, 2026 People are using custom apps and $30 gadgets to hunt for smart glasses that may be filming them—here's how](https://www.tomsguide.com/ai/people-are-using-custom-apps-and-usd30-gadgets-to-hunt-for-smart-glasses-that-may-be-filming-them-heres-how) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Video Recording Smart Glasses, Wearable Smart Glasses, 8MP Camera AI ...](https://shop.tiktok.com/us/pdp/video-recording-smart-glasses-8mp-camera-ai-features/1732462827074916413) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, research_optics |
-| normal | needs_editorial_verification | direct | [VITURE Glasses Community \| Hello everyone, I'm looking at ... - Facebook](https://www.facebook.com/groups/vitureone/posts/471189988865895/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
-| normal | needs_editorial_verification | direct | [What is XREAL AURA? Android XR glasses and the Puck explained](https://us.shop.xreal.com/blogs/guides/xreal-aura-android-xr-puck-guide) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
