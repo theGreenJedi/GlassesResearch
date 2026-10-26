@@ -1,3 +1,7 @@
+---
+description: Evidence review of eight-hour AI-glasses battery claims, required workload disclosures, charging case distinctions, and measurement limitations.
+---
+
 # Q-000161 — What an eight-hour AI-glasses battery claim must disclose
 
 **Original observed question:** [What should an "8-hour battery life" claim on AI glasses include?](https://www.reddit.com/r/SmartGlasses/comments/1x1be39/what_should_an_8hour_battery_life_claim_on_ai/), retained as Q-000161. **Reviewed:** 2026-10-26. Reddit thread content was inaccessible in this pass; original question text comes from the pre-existing registry.
