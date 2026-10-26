@@ -247,3 +247,68 @@ For a preserved legacy toolchain, obtain the authentic M100 SDK package, check i
 **Practical migration:** Separate portable Android logic from Glass-specific voice, cards, UI, and device services; build a dedicated M100 variant targeting the correct Android/API and available Vuzix APIs, then test on real M100 hardware. The questioner later reported that a **Wikitude** SDK could help target both products, but this is a historical project-specific report, **not** proof that an arbitrary GDK APK runs unchanged or that the old Wikitude integration is supported today. Do not attempt to flash a different Android version merely to satisfy a build requirement without manufacturer-backed firmware and recovery procedures.
 
 **Limits:** No current compatibility matrix, supported M100 Android 4.4 upgrade path, or GlassesResearch cross-device bench test was established. Reviewed October 25, 2026.
+
+
+## Voice-session control and smart-glasses SDK testing — 15 practical answers (October 2026)
+
+**Sources:** [Visor protocol and follow-up changes](https://github.com/macedonga/visor/commit/6a4ac0f691fbd7f37a0c4203c4f24b07c7bb1263); [VModal voice-search integration and simulator tests](https://github.com/v-modal/vmodal_sdk_smartglass/commit/da217283a3187b9c64b490bfedb402aacf0a6931). These are public project primary sources. No GlassesResearch independent hardware testing is claimed.
+
+### 1. Can smart glasses accept follow-up questions without repeating a wake phrase?
+
+Yes, in some implementations. Visor's developer reports successfully chaining follow-ups on actual glasses with phone-generated speech. This is a project-specific result, not a universal Meta feature. **Evidence: developer hardware test.**
+
+### 2. Why might a glasses microphone remain active after an AI answer?
+
+An incomplete end-of-turn protocol exchange can leave a device in its answering state. Visor's developer documented that missing `ev60` signaling caused this with phone-generated speech. **Evidence: developer diagnosis; not independently reproduced.**
+
+### 3. How can an app signal that a spoken answer has finished?
+
+Visor documents an `ev60` end-of-turn message and flags such as `shouldSmartFollowUp` and `requiresAnswer`. These are reverse-engineered project observations, not a guarantee of stable public protocol support. **Evidence: source commit.**
+
+### 4. Can users explicitly end a follow-up conversation?
+
+Visor added an `end_conversation` tool intended to send a final answer without requesting another turn. Its developer describes phrases such as 'goodbye' or 'that's all'. **Evidence: developer implementation; coverage beyond reported testing unverified.**
+
+### 5. Do phone-generated and glasses-generated speech use the same session signaling?
+
+Not necessarily. Visor's developer found different handling paths and changed both to close turns correctly. **Evidence: reverse-engineering report; implementation-specific.**
+
+### 6. Can a follow-up question arrive with a different invocation method?
+
+Yes in the Visor protocol observations: invocation method 5 was added to the project's follow-up handling alongside method 3. **Evidence: source commit; protocol stability unknown.**
+
+### 7. Does a blinking indicator always mean the microphone is recording?
+
+Not conclusively. In a documented Visor failure, a blinking light coincided with an active microphone and stuck answer state. Indicator semantics should be checked per device and firmware. **Evidence: developer observation; generalization unverified.**
+
+### 8. How should owners test whether a voice session really ends?
+
+After a response, check the documented device indicator, attempt an expected follow-up, issue an end-session phrase, and observe whether further speech triggers processing. Avoid recording others; instrument microphone state where accessible. **Evidence: proposed GlassesResearch test method, not a verified product claim.**
+
+### 9. What is a smart-glasses mock device kit?
+
+A mock device kit simulates device interfaces for automated development testing. VModal's project uses Meta Mock Device Kit tests to exercise integration without requiring physical hardware for every CI run. **Evidence: project source.**
+
+### 10. Do passing simulator tests prove an app works on physical glasses?
+
+No. VModal explicitly documents physical-device and live acceptance as pending despite simulator and native contract tests. **Evidence: project source.**
+
+### 11. Can a glasses app retrieve images using voice search?
+
+VModal's implementation connects speech, ranked search, image preparation, and display orchestration. That demonstrates an implemented software path, not independently verified performance on glasses. **Evidence: project source; physical acceptance pending.**
+
+### 12. What does rank-one image search mean in a glasses app?
+
+In VModal's implementation, the search pipeline selects a top-ranked result for downstream image preparation and display. Accuracy and relevance need task-based testing. **Evidence: project architecture; performance unverified.**
+
+### 13. Why separate a glasses SDK into an independent package?
+
+An independent package can isolate device-specific integration from application logic and make contract testing easier. VModal's developer describes consuming its Android SDK as a separate Maven package. **Evidence: project source.**
+
+### 14. What should automated smart-glasses CI test?
+
+Useful checks include SDK contracts, session lifecycle, permission/error paths, speech/display orchestration, and mock-device behavior. VModal gates public CI on native contract and Meta Mock Device Kit tests. **Evidence: project source; broader checklist is GlassesResearch guidance.**
+
+### 15. What should be tested on real glasses after simulator success?
+
+Verify pairing, activation, latency, image legibility, battery, thermals, interrupted connectivity, microphone shutoff, and safe session termination. VModal's physical/live acceptance is still pending. **Evidence: proposed owner test protocol and project disclosure.**
