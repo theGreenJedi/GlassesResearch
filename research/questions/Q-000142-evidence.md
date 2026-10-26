@@ -13,4 +13,8 @@
 
 ## Verification and publication gate
 
-No claim is made that every camera-equipped model has a mandatory light or that an indicator alone ensures consent. The safe answer is to choose a **camera-free** design if visible capture indication is unacceptable, rather than defeating safety signals. **State: researched; publication pending exact live FAQ and directory proof.** Proposed anchor: `docs/faq/07-privacy-security.md#can-i-buy-camera-smart-glasses-without-a-recording-indicator`.
+No claim is made that every camera-equipped model has a mandatory light or that an indicator alone ensures consent. The safe answer is to choose a **camera-free** design if visible capture indication is unacceptable, rather than defeating safety signals. **State: published after exact live FAQ and directory proof.** Proposed anchor: `docs/faq/07-privacy-security.md#can-i-buy-camera-smart-glasses-without-a-recording-indicator`.
+
+## Publication proof — 2026-10-26
+
+[PR #698](https://github.com/theGreenJedi/GlassesResearch/pull/698) merged as revision `2262054aaa16529f36e768925535be576f9a17b6` after documentation, editorial, link/fragment, deploy and Lighthouse checks passed. [Production content proof #40396645760](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40396645760) succeeded: fetched the complete public FAQ `/docs/faq/07-privacy-security/` (digest `bb42bbbd03b7`), Practical Answers directory `/docs/faq/` (digest `3f42fb3fe4bc`), and this evidence page (digest `999bfa7220dc`) matching the deployed build. The directory links to the exact built-page anchor [published answer](https://glassesresearch.org/docs/faq/07-privacy-security/#can-i-buy-camera-smart-glasses-without-a-recording-indicator), validated by strict internal fragment checks. This proves content publication, **not** a device or SDK bench test. Registry Q-000142 was credited only after this proof; original observations and uncertainty remain intact.

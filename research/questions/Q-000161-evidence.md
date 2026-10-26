@@ -17,4 +17,8 @@ description: Evidence review of eight-hour AI-glasses battery claims, required w
 
 ## Verification and publication gate
 
-No independent 8-hour test was performed; no single standardized test regime is claimed to be legally required. The answer is a reproducibility checklist and distinguishes manufacturer "up to" claims from real-world measured endurance. **State: researched; publication pending exact live FAQ and directory proof.** Proposed anchor: `docs/faq/04-battery.md#what-should-an-eight-hour-ai-glasses-battery-claim-disclose`.
+No independent 8-hour test was performed; no single standardized test regime is claimed to be legally required. The answer is a reproducibility checklist and distinguishes manufacturer "up to" claims from real-world measured endurance. **State: published after exact live FAQ and directory proof.** Proposed anchor: `docs/faq/04-battery.md#what-should-an-eight-hour-ai-glasses-battery-claim-disclose`.
+
+## Publication proof — 2026-10-26
+
+[PR #698](https://github.com/theGreenJedi/GlassesResearch/pull/698) merged as revision `2262054aaa16529f36e768925535be576f9a17b6` after documentation, editorial, link/fragment, deploy and Lighthouse checks passed. [Production content proof #40396645760](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40396645760) succeeded: fetched the complete public FAQ `/docs/faq/04-battery/` (digest `562b4d5f066e`), Practical Answers directory `/docs/faq/` (digest `3f42fb3fe4bc`), and this evidence page (digest `5b629fc84fea`) matching the deployed build. The directory links to the exact built-page anchor [published answer](https://glassesresearch.org/docs/faq/04-battery/#what-should-an-eight-hour-ai-glasses-battery-claim-disclose), validated by strict internal fragment checks. This proves content publication, **not** a device or SDK bench test. Registry Q-000161 was credited only after this proof; original observations and uncertainty remain intact.
