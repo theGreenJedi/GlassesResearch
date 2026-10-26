@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | Meta AI camera glasses use a blinking white capture LED for gallery photos/videos | [Meta's 2026 capture-indicator FAQ](https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/) | Manufacturer statement, not independently verified on every generation |
 | Meta states camera is disabled if LED is blocked or tampered with on supported models | [Meta's FAQ](https://about.fb.com/news/2026/07/metas-ai-glasses-your-questions-answered/) | Product/firmware behavior can change; do not propose circumvention |
-| Camera-free display glasses are a different category; Even G2 specs list no camera but do include microphones | [Even G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs) | Manufacturer specs, not a claim that all data collection is absent |
+| Camera-free display glasses are a different category; Even explicitly confirms G2 has no camera and its specs list four microphones | [Even manufacturer no-camera explanation](https://www.evenrealities.com/en-HR/blogs/even-insider/asking-for-less), [Even G2 specifications](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs) | Manufacturer statements, not a claim that all data collection is absent |
 | Visible capture indicators do not replace permission/consent in restricted settings | [Existing GlassesResearch privacy FAQ](../../docs/faq/07-privacy-security.md) | Editorial guidance; legal rules differ by place |
 
 ## Verification and publication gate
