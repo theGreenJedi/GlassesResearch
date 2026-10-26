@@ -4,7 +4,7 @@ Research reviewed: 2026-10-26. Source question observed 2026-10-21 in [r/SmartGl
 
 **Question:** Anyone actually using glasses for still photo + dictated note → Obsidian/Markdown, with an iPhone staying pocketed?
 
-**Editorial disposition:** Documentary evidence supports components of a possible integration, but **no verified complete, repeatable, phone-locked/pocketed workflow** was established. Do not name a turnkey compatible model or claim end-to-end success. Proposed answer is in `docs/faq/03-use-cases.md`. Keep registry `observed/unresearched` until editorial review, successful build, deployment and live-route verification; then update to `answered/published` with the exact public URL. If published as a bounded research answer, evidence_state should reflect the documentary limits, not an unperformed bench test.
+**Editorial disposition:** Documentary evidence supports components of a possible integration, but **no verified complete, repeatable, phone-locked/pocketed workflow** was established. Do not name a turnkey compatible model or claim end-to-end success. Proposed answer is in `docs/faq/03-use-cases.md`. Published as a bounded documentary answer after successful build, merge, deployment and live-route proof. Registry is updated to `answered/published` with the exact public FAQ anchor; this does **not** imply an end-to-end bench test.
 
 ## Claim-level provenance
 
@@ -25,3 +25,7 @@ Research reviewed: 2026-10-26. Source question observed 2026-10-21 in [r/SmartGl
 5. Preserve redacted test logs or a reproducible workflow and independent confirmation before upgrading to a tested compatibility claim.
 
 **No bench result, automatic Obsidian photo attachment, iOS background delivery guarantee or third-party user success is claimed.**
+
+## Publication verification — 2026-10-26
+
+Editorial PR [#696](https://github.com/theGreenJedi/GlassesResearch/pull/696) merged as `e221ca2a3b6eb36eb52ff266ddfd21c3728d6a46` after the PR contract, build and Lighthouse checks succeeded. The production deploy [run #40268943377](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40268943377) succeeded. The independent [production content proof run #40269171272](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40269171272) succeeded at 2026-10-26T04:28:29Z, retrieving `/docs/faq/03-use-cases/` with build digest `0b132cea7fa9` and the public Q-000150 evidence page with digest `b6a08792b09b`. These prove the **documentary answer is live**, not that any glasses/Obsidian/iPhone workflow was tested.
