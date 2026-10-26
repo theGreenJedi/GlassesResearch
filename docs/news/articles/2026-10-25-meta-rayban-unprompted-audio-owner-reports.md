@@ -4,7 +4,7 @@ description: "Attributed October 2026 Ray-Ban Meta owner reports of unexpected v
 
 # Ray-Ban Meta: unexpected voice-activity logs and an unresolved owner-control question
 
-**Research note:** October 25, 2026  
+**Published:** October 25, 2026  
 **Across the Wire · Community-reported / independently reported company response · Not independently tested by GlassesResearch**
 
 ## What owners reported
