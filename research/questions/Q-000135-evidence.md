@@ -15,3 +15,7 @@
 ## Verification and publication gate
 
 No Epson hardware, historic GDK APK, or stereoscopic rendering test by GlassesResearch. This answer does not assert any vendor promised a particular 2014 marker editor. **State: researched; publication pending exact public FAQ and directory proof.** Proposed anchor: `docs/faq/09-development-openness.md#does-google-glass-gdk-provide-stereoscopic-3d-for-epson-moverio`.
+
+## Publication proof — 2026-10-26
+
+[PR #698](https://github.com/theGreenJedi/GlassesResearch/pull/698) merged as revision `2262054aaa16529f36e768925535be576f9a17b6` after documentation, editorial, link/fragment, deploy and Lighthouse checks passed. [Production content proof #40396645760](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40396645760) succeeded: fetched the complete public FAQ `/docs/faq/09-development-openness/` (digest `4208f6df07f5`), Practical Answers directory `/docs/faq/` (digest `3f42fb3fe4bc`), and this evidence page (digest `6e5c6f83529a`) matching the deployed build. The directory links to the exact built-page anchor [published answer](https://glassesresearch.org/docs/faq/09-development-openness/#does-google-glass-gdk-provide-stereoscopic-3d-for-epson-moverio), validated by strict internal fragment checks. This proves content publication, **not** a device or SDK bench test. Registry Q-000135 was credited only after this proof; original observations and uncertainty remain intact.
