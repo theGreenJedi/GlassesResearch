@@ -13,7 +13,7 @@ Google Search Console page/query pairs for **2026-09-27 → 2026-10-24**.
 | https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 13 | 1 | 7.69% | 9.8 |
 | https://glassesresearch.org/evidence/EV-0050-mainstream-optical-serviceability-wave-seven/ | rokid 0050 | 12 | 0 | 0.00% | 9.1 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source smart glasses | 8 | 0 | 0.00% | 6.4 |
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 6 | 0 | 0.00% | 1.8 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 7 | 0 | 0.00% | 1.7 |
 | https://glassesresearch.org/guides/smart-glasses-for-calls-and-music/ | smart glasses vs airpods for hands free calling and audio which should i get | 6 | 0 | 0.00% | 9.3 |
 | https://glassesresearch.org/docs/REPORT_CARD/ | inmo air 3 industrial version vs realwear vuzix iristick | 4 | 0 | 0.00% | 2.8 |
 | https://glassesresearch.org/models/PROFILES_LINEAGE_TOSHIBA_DYNAEDGE/ | toshiba ar100 | 4 | 0 | 0.00% | 6.8 |
@@ -35,6 +35,7 @@ Google Search Console page/query pairs for **2026-09-27 → 2026-10-24**.
 | https://glassesresearch.org/models/EvenG2/ | enen g2 | 1 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/docs/RESEARCH_NEWS/ | androidcentral.com (smart glasses or ar-brille or ki-brille) review | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/docs/news/articles/2026-09-19-right-to-repair-smart-glasses/ | acme revival meta luxottica lawsuit | 1 | 0 | 0.00% | 8.0 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source ar glasses | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | open source camera glasses | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/docs/RESEARCH_NEWS/ | androidcentral.com (smart glasses or ar glasses or ai glasses) review | 1 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/docs/faq/ | smart glasses for research | 1 | 0 | 0.00% | 10.0 |
@@ -42,22 +43,21 @@ Google Search Console page/query pairs for **2026-09-27 → 2026-10-24**.
 | https://glassesresearch.org/evidence/EV-0069-Iristick-prescription-insert-serviceability/ | iristick g3 | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/guides/offline-smart-glasses/ | offline glasses | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | opensourcesmartglasses | 1 | 0 | 0.00% | 10.0 |
+| https://glassesresearch.org/guides/smart-glasses-with-displays/ | best smart glasses with heads up display | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/guides/smart-glasses-with-displays/ | which smart displays can recognise individual faces? | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/models/EvenG2/ | even g2 | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glasses | 109 | 2 | 1.83% | 12.3 |
-| https://glassesresearch.org/guides/prescription-smart-glasses/ | smart glasses prescription | 47 | 0 | 0.00% | 25.7 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glasses | 110 | 2 | 1.82% | 12.3 |
+| https://glassesresearch.org/guides/prescription-smart-glasses/ | smart glasses prescription | 51 | 0 | 0.00% | 26.0 |
 | https://glassesresearch.org/guides/prescription-smart-glasses/ | smart glasses with prescription | 44 | 0 | 0.00% | 25.9 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth smart glasses | 35 | 0 | 0.00% | 18.3 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glasses open source | 29 | 0 | 0.00% | 16.3 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glasses open source | 32 | 0 | 0.00% | 15.6 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best bluetooth glasses | 16 | 0 | 0.00% | 21.5 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses bluetooth | 14 | 0 | 0.00% | 19.2 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses with camera and bluetooth | 14 | 0 | 0.00% | 24.1 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses bluetooth | 15 | 0 | 0.00% | 19.3 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses with camera and bluetooth | 15 | 0 | 0.00% | 24.3 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart bluetooth glasses | 13 | 0 | 0.00% | 23.5 |
 | https://glassesresearch.org/guides/smart-glasses-with-video-recording/ | glasses to record video | 10 | 0 | 0.00% | 25.8 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | open source glasses | 9 | 1 | 11.11% | 15.6 |
-| https://glassesresearch.org/guides/smart-glasses-with-video-recording/ | glasses record video | 7 | 0 | 0.00% | 27.1 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth audio glasses best models | 6 | 0 | 0.00% | 22.7 |
-| https://glassesresearch.org/guides/smart-glasses-with-video-recording/ | glasses that record | 6 | 0 | 0.00% | 29.3 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth audio glasses best models | 7 | 0 | 0.00% | 23.1 |
 
 ## How to use this report
 
