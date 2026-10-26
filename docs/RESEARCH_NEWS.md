@@ -28,6 +28,10 @@ Latest verified stories require the live newsroom feed. [Browse the full archive
 
 *Across the Wire is the high-recall discovery stream. Items there are reported or under review and are not verified GlassesResearch claims.*
 
+### October 25, 2026 — Ray-Ban Meta voice-activity owner reports and disputed resolution
+
+**Across the Wire · Community-reported; vendor response quoted by independent press · Not GR verified.** Owners reported unexpected Meta AI audio/transcript entries without intentional activation; Meta said the issue was resolved, but the published response gives no fix version or cause, and later owner comments dispute resolution. **Neither fleet-wide exposure nor ongoing failure is established.** [Read the attributed privacy and owner-control research note](news/articles/2026-10-25-meta-rayban-unprompted-audio-owner-reports.md).
+
 ### October 24, 2026 — Mentra account-link privacy and Home launcher repair
 
 **Across the Wire · Upstream developer evidence · Not GR verified.** A [public upstream account-link hotfix](https://github.com/Mentra-Community/MentraOS/pull/4947) addresses unintended companion-app account switching; a [launcher repair](https://github.com/Mentra-Community/MentraOS/pull/4943) addresses off-screen Home apps. **Staging merges do not establish consumer rollout.** [Read the attributed technical note](news/articles/2026-10-24-mentra-account-link-and-home-layout.md).

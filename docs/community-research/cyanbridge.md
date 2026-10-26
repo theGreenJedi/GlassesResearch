@@ -26,6 +26,14 @@ Two public reports are now useful for compatibility and lineage research:
 
 These findings strengthen the case for treating HeyCyan as a software ecosystem with multiple hardware/firmware branches rather than a single protocol-identical hardware family.
 
+## October 25, 2026 — Local-model workflow and network-behavior questions
+
+A [new public owner report, issue #33](https://github.com/FerSaiyan/Alternative-HeyCyan-App-and-SDK/issues/33), describes **HeyCyan-compatible M02S-C670 glasses**, a **LineageOS** phone with **8 GB RAM**, and a local **Gemma 4 e2b IT** model. The reporter says the model loads but neither the glasses' voice-question nor image-question button successfully starts the expected workflow. They ask whether speech recognition is involved and whether the complete voice/vision pipeline can be local. **This is a single unconfirmed owner report, not proof that the model or device combination is universally unsupported.**
+
+The same report asks about firmware backup/restore, an alternative to paid Tasker automation, translation languages, live video transport, and recording LED/shutter-sound behavior. It also **reports observing a request** to `qcwxfactory.oss-cn-beijing.aliyuncs.com`; the destination's purpose, payload, timing and originating component are **not established** by the issue. Do not characterize that observation as exfiltration or a proven privacy violation. Requests to suppress capture indicators are owner questions, **not an endorsed modification**; any future research should retain bystander privacy and recording-consent safeguards.
+
+**Disposition — watch / reproducibility needed:** preserve the precise device–OS–model tuple; seek logs or a documented STT/vision pipeline, distinguish local inference from local speech recognition and image acquisition, and establish network-request provenance before drawing privacy conclusions. No GlassesResearch hardware test, firmware capability claim, or public compatibility rating follows from this issue.
+
 ## Evidence boundary
 
 CyanBridge's own documentation distinguishes active, experimental, partial, and prototype paths. GlassesResearch should preserve those boundaries. Inclusion here does not imply that every listed adapter or feature has been independently reproduced by GlassesResearch, nor should experimental support be converted into a verified product capability without separate evidence.
