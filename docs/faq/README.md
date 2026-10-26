@@ -14,12 +14,12 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [Basics](01-basics.md)
 - [Buying and recommendations](02-buying.md)
 - [Use cases](03-use-cases.md)
-- [Battery and charging](04-battery.md)
+- [Battery and charging](04-battery.md) — [What should an eight-hour AI-glasses battery claim disclose?](04-battery.md#what-should-an-eight-hour-ai-glasses-battery-claim-disclose)
 - [Displays and optics](05-displays.md)
 - [AI, cameras, and audio](06-ai-cameras-audio.md)
-- [Privacy and security](07-privacy-security.md)
+- [Privacy and security](07-privacy-security.md) — [Can I buy camera smart glasses without a recording indicator?](07-privacy-security.md#can-i-buy-camera-smart-glasses-without-a-recording-indicator)
 - [Accessibility and fit](08-accessibility-fit.md)
-- [Development and openness](09-development-openness.md)
+- [Development and openness](09-development-openness.md) — [Sony SmartEyeglass microphone input](09-development-openness.md#can-sony-smarteyeglass-use-voice-input-from-a-microphone); [Google Glass GDK and Epson stereo](09-development-openness.md#does-google-glass-gdk-provide-stereoscopic-3d-for-epson-moverio)
 - [Ownership and future](10-ownership-future.md)
 
 ## Current safety answers
