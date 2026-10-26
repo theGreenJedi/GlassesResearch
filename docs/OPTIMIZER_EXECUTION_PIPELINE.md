@@ -107,3 +107,11 @@ Finding lifecycle:
 HIGH/VERY HIGH actionable findings link an existing execution object or create one under existing optimizer authority. MEDIUM/LOW findings remain durable and ranked without consuming implementation bandwidth until evidence, urgency, dependencies, visible defects, or leverage justify promotion.
 
 The current UI moratorium applies only to UI/presentation work. Research/governance tracking may continue; UI-bound findings remain non-implementable until the moratorium ends.
+
+## Unified discovery-to-answer plumbing (standing directive, October 2026)
+
+**One pipeline, not parallel maps.** Public technical contributor records, community monitoring, model research, source evidence, practical answers, and publication receipts are connected stages of the existing optimizer pipeline, not independent reporting destinations. Preserve existing canonical files and schemas; do not introduce a competing map, category, or counter.
+
+For each material discovery: (1) reconcile with the existing optimizer ledger and canonical subject; (2) preserve primary-source provenance and classify reported versus verified evidence; (3) update the relevant canonical technical knowledge and public contributor relationships only where supported; (4) derive genuinely useful, nonduplicative owner/buyer/developer questions; (5) research and answer those questions with uncertainty labels and source links in **the existing `docs/faq/` Practical Answers taxonomy**; (6) validate the repository changes and read back the written file/SHA; (7) check live site publication separately; (8) reconcile the **single published-Q&A count** from the canonical public FAQ, not from a secondary category or speculative additions. An item is not counted merely because it was drafted or committed.
+
+Not every discovery warrants a new Q&A. Reject filler, duplicates, unsupported assertions, and artificial numerical progress. Unanswered but worthwhile questions remain evidence-gated work in the same pipeline. A contributor-map entry alone is not the completion condition when useful answers can be produced. Record blockers with exact available execution evidence and continue independent authorized work; never interpret an unattempted write or missing notification as a site outage.
