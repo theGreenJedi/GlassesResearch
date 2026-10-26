@@ -1,38 +1,37 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-26T07:55:16.629014+00:00",
-  "candidate_count": 19,
-  "classifier_irrelevant_count": 7,
+  "discovered_utc": "2026-10-26T09:54:13.506148+00:00",
+  "candidate_count": 37,
+  "classifier_irrelevant_count": 33,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 6,
-    "developer": 1
+    "adjacent": 2,
+    "broad_web": 26,
+    "developer": 9,
+    "retail": 10
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 12,
+    "adjacent": 2,
     "speculative": 0,
-    "irrelevant": 7
+    "irrelevant": 33
   },
   "type_counts": {
-    "model": 1,
-    "news": 8,
-    "research": 2,
-    "tool": 2,
-    "sdk": 1,
+    "news": 21,
+    "research": 5,
+    "tool": 11,
+    "sdk": 9,
     "policy": 1,
-    "retail": 2,
-    "community": 8
+    "retail": 6
   },
   "routing_counts": {
-    "adjacent_radar": 12,
-    "community_evidence_review": 6,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
-    "reject_noise": 7,
-    "research_news_review": 12
+    "adjacent_radar": 2,
+    "deep_research": 1,
+    "development_hacking": 2,
+    "reject_noise": 33,
+    "research_news_review": 4,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -46,47 +45,50 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "b73f734d47366ddb",
-      "title": "Are people having more success on Linkedin or Indeed?",
-      "url": "https://www.reddit.com/r/ITCareerQuestions/comments/137zp5c/are_people_having_more_success_on_linkedin_or/",
-      "summary": "Indeed and Linkedin both landed me jobs the last 2 years, but both have been hard on getting interviews the last 4-5 months.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "8439ce7d3ef4391b",
+      "title": "OpenGlass: Ultra-Low-Power On-Device AI Eyewear with Event-based Vision",
+      "url": "https://arxiv.org/html/2606.07431",
+      "summary": "Fully open source and freely adaptable, the platform enables experimentation at the intersection of embedded intelligence, hardware design, and human–machine interaction. As a reference implementation, a compact, ultra-low-power smart glasses prototype is presented featuring both event-based [22, 21] and frame-based imaging sensors.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "open source"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
+      "attribution_required": false,
+      "relationship": "direct",
       "content_types": [
-        "community"
+        "research",
+        "tool"
       ],
-      "primary_type": "community",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
+        "development_hacking",
+        "deep_research"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai eyewear, smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8c033135f7854d2a",
-      "title": "Best Gas Prices & Local Gas Stations in Lorain, OH",
-      "url": "https://www.gasbuddy.com/gasprices/ohio/lorain",
-      "summary": "Today's best 10 gas stations with the cheapest prices near you, in Lorain, OH. GasBuddy provides the most ways to save money on fuel.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "id": "5044d0b41182f858",
+      "title": "solos® Smart Glasses | AirGo™3 Collection | Solos Smartglasses",
+      "url": "https://solosglasses.com/collections/airgo3-collection",
+      "summary": "Connect seamlessly with ChatGPT and translation capabilities. Enjoy crystal-clear audio with Whisper™ messaging and stay up-to-date with important events. Elevate your style with solos® Smart Glasses and embrace the cutting-edge.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -94,25 +96,24 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "research_news_review"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, smartglasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e60fbc7a0f4d80a2",
-      "title": "Can confirm Indeed is selling user information - Reddit",
-      "url": "https://www.reddit.com/r/recruitinghell/comments/11nsi47/can_confirm_indeed_is_selling_user_information/",
-      "summary": "Without writing a wall of text, I’m sure you guys have read 100x before. I can confirm these scumbags are selling user information.",
+      "id": "43ae0b14b22a6279",
+      "title": "Download or update the Facebook app | Facebook Help Center",
+      "url": "https://www.facebook.com/help/android-app/794433138234667/",
+      "summary": "Download or update the Facebook app Go to the Google Play Store. Search for and tap the Facebook app, then follow the on-screen instructions.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -127,143 +128,12 @@
       "attribution_required": true,
       "relationship": "adjacent",
       "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de26cd8aadbb0d3f",
-      "title": "Cities Nearby Lorain, Ohio, United States",
-      "url": "https://www.thecitiesnow.com/united_states/ohio/lorain",
-      "summary": "Find five hundred cities near Lorain, Ohio, United States from closest to farthest by distance. Distances from Lorain to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2574cc1c90fd0a97",
-      "title": "Does indeed count as a applying for jobs or do I have to use ...",
-      "url": "https://www.reddit.com/r/TexasUnemployment/comments/12htd9j/does_indeed_count_as_a_applying_for_jobs_or_do_i/",
-      "summary": "Ive been logging my work activity through indeed, which also tracks jobs applied to, do I have to use work in texas to find jobs or is this just a…",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "72d6ff9fbecd6f2e",
-      "title": "How do I add a second resume on Indeed? : r/jobs - Reddit",
-      "url": "https://www.reddit.com/r/jobs/comments/m8a3n0/how_do_i_add_a_second_resume_on_indeed/",
-      "summary": "It says “Indeed allows you to add multiple resumes to your profile for sending to different employers.” Okay, where do I do this? Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Add a Comment AutoModerator • Moderator Announcement Read More »",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "model",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "15c8f20d0d462ea6",
-      "title": "Indeed is a horrible app : r/jobs - Reddit",
-      "url": "https://www.reddit.com/r/jobs/comments/13ngf4s/indeed_is_a_horrible_app/",
-      "summary": "Indeed is a horrible app and some of the employers that use indeed to post jobs are incompetent. Indeed specifically will show you jobs you are indeed not qualified for and if you even use the filters to click things like “no college diploma” you’ll still be shown jobs that require for you to have one.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool",
-        "community"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
         "development_hacking",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -272,12 +142,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "38c4a8daa34c4ada",
-      "title": "RISE Lorain Dispensary | Non-Medical & Medical Cannabis Near You",
-      "url": "https://oh.risecannabis.com/dispensaries/ohio/lorain/",
-      "summary": "RISE cannabis dispensary Lorain is open now & offers non-medical & medical cannabis for online ordering and in-store pickup. We offer a range of high and low-potency THC and CBD products perfect for beginners and cannabis connoisseurs.",
+      "id": "f3b562134f5de857",
+      "title": "Using Amazon Pay | For Shoppers | Amazon Pay",
+      "url": "https://pay.amazon.com/using-amazon-pay",
+      "summary": "Use your Amazon account to check out at tens of thousands of sites and stores, anywhere you see the Amazon Pay button. See a list of participating merchants.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -290,11 +160,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -303,152 +174,154 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ae067be45547d281",
-      "title": "THE BEST 10 RESTAURANTS IN LORAIN, OH - Yelp",
-      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Lorain%2C+OH",
-      "summary": "Best Restaurants in Lorain, OH - Last Updated October 2026 - Ardick Seafood, Sweet Pork Wilson’s, Diso's Bistro, Lenoci's Spaghetti House, Cole's Public House, The Beachcliff Diner, El Kefon Puertoriqueno, Brass & Bronze Foundry Bar, The Nest, Mutt and Jeffs Restaurant and Bar",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "id": "94eb0da9aeb86818",
+      "title": "AI Note, Recording & Translation Devices | iFLYTEK",
+      "url": "https://store.iflytek.com/collections/all-products",
+      "summary": "Browse iFLYTEK AI tablets, recorders, translators, and accessories for work, study, and travel. Compare smart devices and find the right product today.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "study"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a9a846bca6024931",
-      "title": "Towns and Cities Near to Lorain, Ohio United States",
-      "url": "https://www.cities-towns-data.com/local-towns-near-lorain-ohio-united_states.htm",
-      "summary": "Getting the nearest towns to Lorain, Ohio along with useful data and insights. We've drawn up relevant population data tables below detailing the nearest towns and cities, and you can download these Lorain locations to a (comma separated values) CSV file to use in excel , and save the textual outputs to a PDF file.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "id": "a43f4b4dfe9a7f58",
+      "title": "AI Note-Taking Tablets, Recorders & Translators | iFLYTEK",
+      "url": "https://store.iflytek.com/en",
+      "summary": "Shop iFLYTEK AI note-taking tablets, voice recorders, and translators for meetings, study, travel, and global work. Explore smart devices and buy online today.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "study"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6cf5293cdb69b912",
-      "title": "What are the best places to search for jobs except LinkedIn, Indeed etc ...",
-      "url": "https://www.reddit.com/r/jobs/comments/ynpo8w/what_are_the_best_places_to_search_for_jobs/",
-      "summary": "441 votes, 181 comments. I am tired of LinkedIn, Indeed (and many similar job sites) especially because most jobs on these platforms are falsely…",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "6e77b33368d6185c",
+      "title": "All Products – iFLYTEK Global",
+      "url": "https://store.iflytek.com/collections/",
+      "summary": "Shop iFLYTEK AI note-taking tablets, voice recorders, and translators for meetings, study, travel, and global work. Explore smart devices and buy online today.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "study"
       ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ff3fb31f3ad55360",
-      "title": "Why is a comma required after indeed? [duplicate]",
-      "url": "https://english.stackexchange.com/questions/366281/why-is-a-comma-required-after-indeed",
-      "summary": "Can someone please explain the grammar rule that governs these three sentences, especially the last. Why is a comma required after the word 'Indeed' in the last sentence? This is indeed a great p...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "research",
       "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
+        "reject_noise"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9320b069ba81d01b",
-      "title": "Furry Porn Subreddit",
-      "url": "https://www.reddit.com/r/FurryPornSubreddit/",
-      "summary": "The Best Furry Porn Subreddit on Reddit",
+      "id": "2b827fb76610734a",
+      "title": "Back to School 2026 Lucky Draw & AI Study Tools | iFLYTEK",
+      "url": "https://store.iflytek.com/en/pages/back-to-school",
+      "summary": "iFLYTEK AI study tools support lectures and campus life with smart note-taking, real-time translation, and speech-to-text. Upgrade your study setup today.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "230b8467c95ea6f4",
+      "title": "Login",
+      "url": "http://marketplacelms.scc.virginia.gov/",
+      "summary": "Meridian Global - Core Domain Log In",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
         "tool",
-        "sdk",
-        "community"
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -460,18 +333,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb47dba0db5be40b",
-      "title": "Gun Rights vs. Gun Control | Pew Research Center",
-      "url": "https://www.pewresearch.org/politics/2017/06/22/public-views-about-guns/",
-      "summary": "The Pew Research Center has tracked shifting public attitudes about guns over the past 20 years. Explore our polling data below to public opinion on guns across demographic groups and read the latest report on these findings. Question: What do you think is more important – to protect the right of Americans to own guns, OR to control gun ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "c17745bdc4cf8f1b",
+      "title": "Transmission Line Projects - Virginia SCC",
+      "url": "https://www.scc.virginia.gov/consumers/public-utility/electricity-faqs/transmission-line-projects/",
+      "summary": "Transmission Line Projects Construction and operation of transmission lines and/or facilities above 115 kV in Virginia usually require the issuance of a Certificate of Public Convenience and Necessity (CPCN) from the State Corporation Commission. Staff guidelines on transmission projects that require a CPCN, and Guidelines of Minimum Requirements for Transmission Line Applications, are ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -480,9 +351,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "research",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -492,18 +364,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4facd0048465b121",
-      "title": "Topic: Gun ownership and regulation | Pew Research Center",
-      "url": "https://www.pewresearch.org/fact-sheet/topic-gun-ownership-and-regulation/",
-      "summary": "The right to bear arms is guaranteed in the Second Amendment of the U.S. Constitution. But the government plays an important role in regulating the sale and use of guns. The public is closely divided over whether it’s more important to protect the rights of Americans to own guns or to control gun ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "0a62b063dc6f401d",
+      "title": "VIRGINIA - SCC",
+      "url": "https://cis.scc.virginia.gov/EntitySearch/BusinessInformation?businessId=11145299&source=FromEntityResult&isSeries%20=%20false",
+      "summary": "Entity Information Entity Name: LOFR Enterprises LLC Entity ID: 11145299 Entity Type: Limited Liability Company Entity Status: Inactive Series LLC: No Reason for Status: Voluntarily Canceled - Can Reinstate Formation Date: 12/10/2020 Status Date: 12/22/2022 VA Qualification Date: 12/10/2020 Period of Duration: Perpetual Industry Code: 0 - General Annual Report Due Date: N/A Jurisdiction: VA ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -512,11 +382,42 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
-        "policy",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d3cd0bff5efbb0a",
+      "title": "Virginia SCC",
+      "url": "https://www.scc.virginia.gov/regulated-industries/securities-retail-franchising/registration/franchise-registration/",
+      "summary": "Franchise Registration Franchise Renewal and Amendment Filing Requirements. Applications to renew or amend a franchise registration or exemption should include a cover letter, a c",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
         "retail"
       ],
-      "primary_type": "research",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -526,10 +427,380 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2d1a2ebccf581579",
-      "title": "4K Ultra HD Digimon Anime Wallpaper - 4724x3508 | Wallpaper Abyss",
-      "url": "https://wall.alphacoders.com/big.php?i=781242",
-      "summary": "4K Ultra HD Digimon Anime Wallpaper 4724x3508 Wallpaper Background Image. Download for FREE! - Wallpaper Abyss",
+      "id": "b99260224785df3f",
+      "title": "Virginia SCC - Addresses",
+      "url": "https://www.scc.virginia.gov/about-the-scc/contact-us/addresses/",
+      "summary": "The State Corporation Commission (SCC) has regulatory authority over utilities, insurance, state-chartered financial institutions, securities, retail franchising and railroads.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e54e4b7646e57890",
+      "title": "Virginia SCC - Business Home",
+      "url": "https://www.scc.virginia.gov/businesses/",
+      "summary": "The State Corporation Commission (SCC) has regulatory authority over utilities, insurance, state-chartered financial institutions, securities, retail franchising and railroads.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f1c5169451adee0f",
+      "title": "Virginia SCC - Home",
+      "url": "https://www.scc.virginia.gov/",
+      "summary": "The State Corporation Commission (SCC) has regulatory authority over utilities, insurance, state-chartered financial institutions, securities, retail franchising and railroads.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60edab5b6771bb5c",
+      "title": "Virginia SCC - Public Service Taxation",
+      "url": "https://www.scc.virginia.gov/regulated-industries/public-taxation/",
+      "summary": "The State Corporation Commission (SCC) has regulatory authority over utilities, insurance, state-chartered financial institutions, securities, retail franchising and railroads.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e33c57917f54cbfb",
+      "title": "Virginia SCC - Utility Regulation",
+      "url": "https://www.scc.virginia.gov/regulated-industries/utility-regulation/",
+      "summary": "The Division of Public Utility Regulation (PUR) provides support to the Commission in its regulation of Virginia's investor-owned electric, natural gas, water and sewer utilities, member-owned electric cooperatives, and the telecommunications industry. Its chief function is supporting the Commission in its goal to ensure Virginia consumers receive adequate utility services at just and ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "542a200e42639bd8",
+      "title": "Best Hot Springs in Chongqing for Foreign Travelers | Local's Guide",
+      "url": "https://dolphinunion.com/post/best-hot-springs-in-chongqing-for-foreign-travelers-wild-traditional-luxury-picks-local-s-guide/",
+      "summary": "Discover the best natural hot springs in Chongqing for foreign travelers. From wild springs to luxury resorts, with prices, transport tips and local insider advice.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3133b9b8e94819ac",
+      "title": "Chongqing Hidden Ancient Towns Guide for Foreigners | Skip Crowded Ciqikou",
+      "url": "https://dolphinunion.com/post/chongqing-ancient-towns-guide-for-foreigners-skip-ciqikou-try-these-hidden-gems/",
+      "summary": "Q：Which Chongqing ancient town is best to avoid tourist crowds? A：Jingangbei Hot Spring Village, Gongtan and Shuangjiang are far less crowded than Ciqikou, perfect for foreign travellers seeking authentic local atmosphere.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eabb1031927cd834",
+      "title": "E Ink Better for Eyes and Powerful AI: Redefining Note-Taking Comfort ...",
+      "url": "https://store.iflytek.com/en/blogs/news/e-ink-better-for-eyes-and-powerful-ai",
+      "summary": "In short, if eye comfort (E ink better for eyes), natural handwriting, and proactive AI matter more than raw multimedia power or endless apps, IFLYTEK delivers a more focused and capable solution.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8861b027d19b8042",
+      "title": "From “The Force” to AI Reality: Star Wars Day and the Future of Work",
+      "url": "https://store.iflytek.com/blogs/news/from-the-force-to-ai-reality",
+      "summary": "Today, AI is making that vision real. From speech recognition to multilingual translation, from intelligent note-taking to e-ink reading systems, the iFLYTEK AINOTE Air 2 represents a practical step toward that future.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f29a76382aa1abfe",
+      "title": "GoWish | Gift Registry & Wishlist - Find It. Love It. Share It.",
+      "url": "https://gowish.com/",
+      "summary": "Create and share your gift registry and wishlist on GoWish with friends and family. Find gift ideas, organize events, and celebrate in style.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "288880be1ce2176b",
+      "title": "iFLYTEK Unveils Groundbreaking AI Innovations at MWC25",
+      "url": "https://store.iflytek.com/blogs/news/iflytek-unveils-groundbreaking-ai-innovations-at-mwc",
+      "summary": "iFLYTEK invites all attendees to visit Hall 4, Stand 4B20, to witness AI innovation in action. Professional product managers will be on-site to provide in-depth demonstrations and answer any questions.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2d75bce89727428f",
+      "title": "Indiana News | Indianapolis Weather | Indiana Sports | WISH-TV",
+      "url": "https://www.wishtv.com/",
+      "summary": "Get the latest Indianapolis news, weather, sports, events, and entertainment for all of Indy. Central Indiana's breaking news source WISH-TV.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "215503d0bcf5f121",
+      "title": "PAR 0 - 0 AUS | Paraguay vs. Australia - Stats - Goals, XG, Possession",
+      "url": "https://superscore.live/en/football/australia-paraguay/fns5anep-1l9ki5bk/stats",
+      "summary": "Get detailed insights into statistics for Paraguay vs. Australia match on Superscore. Analyze goal scorers, assists, XG, possession, etc.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -556,42 +827,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "42bc6f10d15dc3c9",
-      "title": "Best Buy",
-      "url": "https://www.bestbuy.com/site/cameras-camcorders/digital-cameras/abcat0401000.c?id=abcat0401000",
-      "summary": "Best Buy",
+      "id": "25ff66a0bef5f2bc",
+      "title": "PAR 0 - 0 AUS | Paraguay vs. Australia Match Details",
+      "url": "https://superscore.live/en/football/australia-paraguay/fns5anep-1l9ki5bk",
+      "summary": "Follow live commentary of the Paraguay vs. Australia World Championship match on Superscore. Real-time scores, highlights, stats, and more.",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0f03956e45f83214",
-      "title": "Google Translate",
-      "url": "https://translate.google.nl/",
-      "summary": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan 100 andere talen.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -616,12 +857,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "294827494b6937de",
-      "title": "How to track ESUS Tracking number - The eBay Community",
-      "url": "https://community.ebay.com/forum/ask-a-mentor-57913/topic/how-to-track-esus-tracking-number-230229/",
-      "summary": "How to track ESUS Tracking number Have a claim on a card that hasn't arrived yet. Sent it via eBay envelope with ESUS tracking. How do you prove or find the status on this tracking? Frustrating, trying to save money for myself and buyers.",
+      "id": "25657e7d5435d23d",
+      "title": "Paraguay 0-0 Australia (Jun 25, 2026) Final Score - ESPN",
+      "url": "https://www.espn.com/soccer/match/_/gameId/760469/australia-paraguay",
+      "summary": "Game summary of the Paraguay vs. Australia Fifa World Cup game, final score 0-0, from June 25, 2026 on ESPN.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -634,9 +875,309 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eda514ca38bd6bde",
+      "title": "Paraguay 0-0 Australia | Match report and highlights - FIFA",
+      "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/paraguay-australia-match-report-highlights",
+      "summary": "Paraguay 0-0 Australia Paraguay 0-0 Australia Australia attacked but Paraguay battened down the hatches in a spirited final Group D match of the FIFA World Cup 2026™ that sent the Socceroos ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8d07f85f8d47b2a4",
+      "title": "Paraguay 0–0 Australia — Final Score, Stats & Match Record (World Cup 2026)",
+      "url": "https://mungomash.com/sports/soccer/world-cup-2026/matches/2026-06-25-paraguay-australia/",
+      "summary": "Paraguay 0-0 Australia at the 2026 World Cup: verified final score, box-score stats, goals and cards, the group consequence — and the preview preserved exactly as written before kickoff.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e501f729fce9a044",
+      "title": "Paraguay v Australia 0-0 | Result, Stats & Highlights - FIFA",
+      "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021461",
+      "summary": "OVERVIEW LIVE BLOG LINE UP STATS POWER RANKINGS TABLE RELATED MATCHES NEWS Paraguay Paraguay FIFA Official Stats Australia Australia",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7bc16bb91182c99a",
+      "title": "Paraguay vs Australia | June 26, 2026 | World Cup Matchup - theScore",
+      "url": "https://www.thescore.com/worldcup/event/93046",
+      "summary": "Live score, odds, stats, and updates for the Paraguay vs Australia World Cup matchup on June 26, 2026. Follow the game on theScore.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "339a7f67ac6e14de",
+      "title": "Paraguay vs. Australia - Final Score - June 25, 2026 | FOX Sports",
+      "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-paraguay-vs-australia-jun-25-2026-game-boxscore-647675",
+      "summary": "See how Paraguay vs. Australia ended on June 25, 2026: final score, box score, top performers and highlights.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6ad12a99f0e070c6",
+      "title": "The Role of AI in Smart Electronic Notebooks – iFLYTEK Global",
+      "url": "https://store.iflytek.com/en/blogs/news/the-role-of-ai-in-smart-electronic-notebooks",
+      "summary": "In this blog, we’ll explore the role of AI in smart electronic notebooks and how smart features like real-time transcription, AI-powered search, and automated summaries are shaping the future of note-taking.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fde60912e4c00498",
+      "title": "Translation Glasses vs. Pocket Translator: Which One is Better?",
+      "url": "https://store.iflytek.com/blogs/news/translation-glasses-vs-pocket-translator",
+      "summary": "Compare translation glasses and pocket translators to find the best fit for your needs. Explore features, pros, cons, use cases, and top recommendations like iFLYTEK.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4f7756b29acc3ee",
+      "title": "Voice Translator Devices for Travel and Work | iFLYTEK",
+      "url": "https://store.iflytek.com/collections/iflytek-smart-translator",
+      "summary": "The iFLYTEK Smart Translator uses a four-microphone array and noise-cancelling technology to improve voice pickup, while the AI Translation Earbuds include modes intended for meetings and live events.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b7f090430b7ed389",
+      "title": "Volkswagen Kearny Mesa | San Diego VW Dealership | New & Used Cars ...",
+      "url": "https://www.vwofkearnymesa.com/index_htm/",
+      "summary": "Volkswagen is bringing a lot of exciting new Volkswagen vehicles to our showroom floors, including the all-new Volkswagen Atlas. Come explore your favorite model's fresh new look, enhanced comfort and convenience, and updated safety features today at 8040 Balboa Avenue San Diego, California.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47a6fa42e1b608df",
+      "title": "Wish - DND 5th Edition",
+      "url": "https://dnd5e.wikidot.com/spell:wish",
+      "summary": "Duration: Instantaneous Wish is the mightiest spell a mortal creature can cast. By simply speaking aloud, you can alter the very foundations of reality in accord with your desires. The basic use of this spell is to duplicate any other spell of 8th level or lower. You don’t need to meet any requirements in that spell, including costly components.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
