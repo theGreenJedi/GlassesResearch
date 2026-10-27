@@ -161,6 +161,16 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [How can legacy Xamarin PCL code read Vuzix M300 device information?](09-development-openness.md#how-can-legacy-xamarin-pcl-code-read-vuzix-m300-device-information) — Original Q-000128; sourced, evidence-qualified Practical Answer.
 - [Should owners use the manufacturer app or a third-party platform on monochrome display glasses?](09-development-openness.md#should-owners-use-the-manufacturer-app-or-a-third-party-platform-on-monochrome-display-glasses) — Original Q-000154; sourced, evidence-qualified Practical Answer.
 
+- [Do camera-free smart glasses fit workplace security policies more easily?](07-privacy-security.md#do-camera-free-smart-glasses-fit-workplace-security-policies-more-easily) — Observed Q-000148, Q-000242; qualified published-answer candidate.
+- [Should bystanders know when smart glasses record, and when are restrictions reasonable?](07-privacy-security.md#should-bystanders-know-when-smart-glasses-record-and-when-are-restrictions-reasonable) — Observed Q-000162, Q-000169; qualified published-answer candidate.
+- [Why are camera smart glasses legal to buy even though recording can violate privacy?](07-privacy-security.md#why-are-camera-smart-glasses-legal-to-buy-even-though-recording-can-violate-privacy) — Observed Q-000164; qualified published-answer candidate.
+- [Is a full-color smart-glasses display worth paying more than a green monochrome HUD?](05-displays.md#is-a-full-color-smart-glasses-display-worth-paying-more-than-a-green-monochrome-hud) — Observed Q-000168; qualified published-answer candidate.
+- [Are inexpensive smart glasses useful enough for everyday wear?](02-buying.md#are-inexpensive-smart-glasses-useful-enough-for-everyday-wear) — Observed Q-000153; qualified published-answer candidate.
+- [What should a smart-glasses buyer verify beyond the advertised specification sheet?](02-buying.md#what-should-a-smart-glasses-buyer-verify-beyond-the-advertised-specification-sheet) — Observed Q-000156; qualified published-answer candidate.
+- [What is using Even G2 smart glasses every day likely to involve?](03-use-cases.md#what-is-using-even-g2-smart-glasses-every-day-likely-to-involve) — Observed Q-000158; qualified published-answer candidate.
+- [Is a slim fold-over glasses case protective enough for electronic smart glasses?](08-accessibility-fit.md#is-a-slim-fold-over-glasses-case-protective-enough-for-electronic-smart-glasses) — Observed Q-000179; qualified published-answer candidate.
+- [Can Even G1 or G2 temple comfort be predicted against RayNeo iO behind the ears?](08-accessibility-fit.md#can-even-g1-or-g2-temple-comfort-be-predicted-against-rayneo-io-behind-the-ears) — Observed Q-000233; qualified published-answer candidate.
+
 ## Questions researched from actual search language
 
 - [Detect Google Glass Programmatically](09-development-openness.md#detect-google-glass-programmatically) — A historically documented Build-property heuristic, not device attestation.
