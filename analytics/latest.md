@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-27T10:12:57+00:00**
+Generated automatically: **2026-10-27T23:28:57+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -55,54 +55,53 @@ Generated automatically: **2026-10-27T10:12:57+00:00**
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **17 browser pageviews**, **14 RUM visits**.
-- Rolling 7d: **112 browser pageviews**, **94 RUM visits**.
+- Rolling 24h: **12 browser pageviews**, **11 RUM visits**.
+- Rolling 7d: **109 browser pageviews**, **93 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| / | 5 | 5 |
-| /docs/COMPARISON_ENGINE/ | 2 | 0 |
-| /docs/news/RELEASE_TRACKER/ | 1 | 1 |
+| / | 2 | 2 |
+| /models/THE_LIST_RECONCILIATION_2026-09-03_W640_W650/ | 1 | 1 |
+| /docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/ | 1 | 1 |
+| /resources/ECOSYSTEM_RESOURCE_CATALOG/ | 1 | 1 |
 | /research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 1 |
-| /docs/news/articles/2026-08-24-meta-adventurer-gls-0165/ | 1 | 1 |
-| /docs/SDK_API_MATRIX/ | 1 | 1 |
+| /docs/faq/04-battery/ | 1 | 1 |
 | /hacking/OPEN_HACKING_RESOURCE_LEDGER/ | 1 | 1 |
-| /docs/SHENZHEN_SMART_GLASSES_SUPPLY_CHAIN/ | 1 | 1 |
-| /resources/COMMUNITY_AND_DEVELOPMENT/ | 1 | 1 |
-| /models/catalog/ | 1 | 0 |
+| /docs/COMPARISON_ENGINE/ | 1 | 0 |
+| /models/EvenG2/ | 1 | 1 |
+| /models/PROFILES_2026_09_03_W640_W650/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 11 | 11 |
-| glassesresearch.org | 3 | 0 |
-| www.bing.com | 2 | 2 |
-| bing.com | 1 | 1 |
+| (direct / none) | 10 | 10 |
+| glassesresearch.org | 1 | 0 |
+| www.bing.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **6,437 requests**, **1,459 HTTP visits**, **159.9 MB** served.
-- Rolling 7d: **40,788 requests**, **12,655 HTTP visits**, **1039.0 MB** served.
+- Rolling 24h: **5,726 requests**, **1,515 HTTP visits**, **128.3 MB** served.
+- Rolling 7d: **41,661 requests**, **13,046 HTTP visits**, **1081.7 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 3,275 | 1,293 |
-| CN | 759 | 18 |
-| BE | 467 | 6 |
-| SG | 428 | 12 |
+| US | 3,096 | 1,351 |
+| CN | 545 | 13 |
+| BE | 413 | 6 |
 | CL | 297 | 0 |
-| DE | 163 | 24 |
-| ES | 135 | 2 |
-| NL | 102 | 6 |
-| BG | 91 | 14 |
-| GB | 80 | 4 |
+| CO | 207 | 5 |
+| SG | 198 | 7 |
+| ID | 118 | 3 |
+| DE | 96 | 16 |
+| BG | 92 | 14 |
+| JP | 83 | 7 |
 
 ## What to watch
 

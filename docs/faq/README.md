@@ -148,6 +148,29 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 100. [What would an ideal user-controlled smart-glasses platform look like?](10-ownership-future.md#100-what-would-an-ideal-user-controlled-smart-glasses-platform-look-like)
 
 
+- [What should buyers know about HTC VIVE Eagle smart glasses in 2026?](02-buying.md#what-should-buyers-know-about-htc-vive-eagle-smart-glasses-in-2026) — Observed Q-000145; evidence-based answer with published limitations.
+- [VITURE Beast or RayNeo GT Max: what matters more for movies and anime?](02-buying.md#viture-beast-or-rayneo-gt-max-what-matters-more-for-movies-and-anime) — Original Q-000155; sourced, evidence-qualified Practical Answer.
+- [MemoMind One versus Even G2 for work: which features and tradeoffs matter?](02-buying.md#memomind-one-versus-even-g2-for-work-which-features-and-tradeoffs-matter) — Original Q-000143, Q-000235; sourced, evidence-qualified Practical Answer.
+- [Does XREAL AURA's large field of view and $1279 price make compact waveguide glasses obsolete?](05-displays.md#does-xreal-auras-large-field-of-view-and-1279-price-make-compact-waveguide-glasses-obsolete) — Observed Q-000160, Q-000163; evidence-based answer with published limitations.
+- [Were Google's Gemini Android XR AI glasses scheduled for fall 2026?](10-ownership-future.md#were-googles-gemini-android-xr-ai-glasses-scheduled-for-fall-2026) — Observed Q-000152; evidence-based answer with published limitations.
+- [Can smart glasses record landscape video continuously for more than forty minutes?](03-use-cases.md#can-smart-glasses-record-landscape-video-continuously-for-more-than-forty-minutes) — Observed Q-000144, Q-000180; evidence-based answer with published limitations.
+- [Can smart glasses display the live camera view from my phone?](03-use-cases.md#can-smart-glasses-display-the-live-camera-view-from-my-phone) — Observed Q-000172; evidence-based answer with published limitations.
+- [Does Dymesty offer mind maps from meetings, and is that verified to work well?](03-use-cases.md#does-dymesty-offer-mind-maps-from-meetings-and-is-that-verified-to-work-well) — Original Q-000208; sourced, evidence-qualified Practical Answer.
+- [Can a VPN set to the United States make Muse work on unsupported smart glasses or in unsupported regions?](09-development-openness.md#can-a-vpn-set-to-the-united-states-make-muse-work-on-unsupported-smart-glasses-or-in-unsupported-regions) — Observed Q-000174; evidence-based answer with published limitations.
+- [Can a Google Glass app programmatically approve a system install-permission dialog?](09-development-openness.md#can-a-google-glass-app-programmatically-approve-a-system-install-permission-dialog) — Original Q-000127; sourced, evidence-qualified Practical Answer.
+- [How can legacy Xamarin PCL code read Vuzix M300 device information?](09-development-openness.md#how-can-legacy-xamarin-pcl-code-read-vuzix-m300-device-information) — Original Q-000128; sourced, evidence-qualified Practical Answer.
+- [Should owners use the manufacturer app or a third-party platform on monochrome display glasses?](09-development-openness.md#should-owners-use-the-manufacturer-app-or-a-third-party-platform-on-monochrome-display-glasses) — Original Q-000154; sourced, evidence-qualified Practical Answer.
+
+- [Do camera-free smart glasses fit workplace security policies more easily?](07-privacy-security.md#do-camera-free-smart-glasses-fit-workplace-security-policies-more-easily) — Observed Q-000148, Q-000242; qualified published-answer candidate.
+- [Should bystanders know when smart glasses record, and when are restrictions reasonable?](07-privacy-security.md#should-bystanders-know-when-smart-glasses-record-and-when-are-restrictions-reasonable) — Observed Q-000162, Q-000169; qualified published-answer candidate.
+- [Why are camera smart glasses legal to buy even though recording can violate privacy?](07-privacy-security.md#why-are-camera-smart-glasses-legal-to-buy-even-though-recording-can-violate-privacy) — Observed Q-000164; qualified published-answer candidate.
+- [Is a full-color smart-glasses display worth paying more than a green monochrome HUD?](05-displays.md#is-a-full-color-smart-glasses-display-worth-paying-more-than-a-green-monochrome-hud) — Observed Q-000168; qualified published-answer candidate.
+- [Are inexpensive smart glasses useful enough for everyday wear?](02-buying.md#are-inexpensive-smart-glasses-useful-enough-for-everyday-wear) — Observed Q-000153; qualified published-answer candidate.
+- [What should a smart-glasses buyer verify beyond the advertised specification sheet?](02-buying.md#what-should-a-smart-glasses-buyer-verify-beyond-the-advertised-specification-sheet) — Observed Q-000156; qualified published-answer candidate.
+- [What is using Even G2 smart glasses every day likely to involve?](03-use-cases.md#what-is-using-even-g2-smart-glasses-every-day-likely-to-involve) — Observed Q-000158; qualified published-answer candidate.
+- [Is a slim fold-over glasses case protective enough for electronic smart glasses?](08-accessibility-fit.md#is-a-slim-fold-over-glasses-case-protective-enough-for-electronic-smart-glasses) — Observed Q-000179; qualified published-answer candidate.
+- [Can Even G1 or G2 temple comfort be predicted against RayNeo iO behind the ears?](08-accessibility-fit.md#can-even-g1-or-g2-temple-comfort-be-predicted-against-rayneo-io-behind-the-ears) — Observed Q-000233; qualified published-answer candidate.
+
 ## Questions researched from actual search language
 
 - [Detect Google Glass Programmatically](09-development-openness.md#detect-google-glass-programmatically) — A historically documented Build-property heuristic, not device attestation.
@@ -158,6 +181,25 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [When did AI glasses come out?](01-basics.md#when-did-ai-glasses-come-out) — Separates voice-assistant eyewear (2019), generative-AI glasses (2023), and camera-aware AI (2023–24).
 
 These questions were observed in first-party Search Console data and researched against attributed historical sources. Practical Answers has a **minimum milestone of 1,000 published, evidence-backed answers and no ceiling**; discovery covers relevant questions across the wider internet regardless of this site's search visibility.
+
+- [Why does Gradle say configuration default not found in a Sony SmartEyeglass build?](09-development-openness.md#why-does-gradle-say-configuration-default-not-found-in-a-sony-smarteyeglass-build) — Original observed Q-000123; sourced answer with verification limits.
+- [How can I fix Android Studio Invalid hash string for the Vuzix M300 SDK?](09-development-openness.md#how-can-i-fix-android-studio-invalid-hash-string-for-the-vuzix-m300-sdk) — Original observed Q-000133; sourced answer with verification limits.
+- [Can Pixel 10 Pro XL mirror video to USB-C display glasses?](03-use-cases.md#can-pixel-10-pro-xl-mirror-video-to-usb-c-display-glasses) — Original observed Q-000147; sourced answer with verification limits.
+- [What should I check before ordering prescription RayNeo iO glasses?](08-accessibility-fit.md#what-should-i-check-before-ordering-prescription-rayneo-io-glasses) — Original observed Q-000159; sourced answer with verification limits.
+- [Which live-caption glasses should deaf or hard-of-hearing users evaluate?](08-accessibility-fit.md#which-live-caption-glasses-should-deaf-or-hard-of-hearing-users-evaluate) — Original observed Q-000176; sourced answer with verification limits.
+
+- [Why do Vuforia Unity buttons fail on Vuzix M400 even when they work on a computer?](09-development-openness.md#why-do-vuforia-unity-buttons-fail-on-vuzix-m400-even-when-they-work-on-a-computer) — Q-000117; sourced research with explicit verification limits.
+- [Why might WebRTC video work on Android phones but fail on Vuzix M300?](09-development-openness.md#why-might-webrtc-video-work-on-android-phones-but-fail-on-vuzix-m300) — Q-000119; sourced research with explicit verification limits.
+- [Which smart-glasses teleprompter controls are useful for serious presentations?](03-use-cases.md#which-smart-glasses-teleprompter-controls-are-useful-for-serious-presentations) — Q-000139; sourced research with explicit verification limits.
+- [Why can green HUD text read differently against blue sky and green trees?](05-displays.md#why-can-green-hud-text-read-differently-against-blue-sky-and-green-trees) — Q-000173; sourced research with explicit verification limits.
+- [How can I tell which smart-glasses display looks most discreet to other people?](05-displays.md#how-can-i-tell-which-smart-glasses-display-looks-most-discreet-to-other-people) — Q-000236; sourced research with explicit verification limits.
+
+- [Can mainland-China Rokid Glasses use global Hi Rokid and AIUI Studio for development?](09-development-openness.md#can-mainland-china-rokid-glasses-use-global-hi-rokid-and-aiui-studio-for-development) — Original observed Q-000107, Q-000108, Q-000109; cited answer and test limitations.
+- [For Meta smart-glasses SDK testing should developers choose Ray-Ban Meta or Meta Ray-Ban Display?](09-development-openness.md#for-meta-smart-glasses-sdk-testing-should-developers-choose-ray-ban-meta-or-meta-ray-ban-display) — Original observed Q-000110; cited answer and test limitations.
+- [How can a Vuzix Blade client trust a HTTPS or WSS test server certificate without modifying system CA files?](09-development-openness.md#how-can-a-vuzix-blade-client-trust-a-https-or-wss-test-server-certificate-without-modifying-system-ca-files) — Original observed Q-000111, Q-000112; cited answer and test limitations.
+- [Does the community RokidAIAssistant glasses app support display-free Rokid AI Glasses Style?](09-development-openness.md#does-the-community-rokidaiassistant-glasses-app-support-display-free-rokid-ai-glasses-style) — Original observed Q-000113; cited answer and test limitations.
+- [Why can PocketSphinx fail to receive audio on Vuzix M300 when AudioRecord works elsewhere?](09-development-openness.md#why-can-pocketsphinx-fail-to-receive-audio-on-vuzix-m300-when-audiorecord-works-elsewhere) — Original observed Q-000124; cited answer and test limitations.
+- [Can historical Google Glass apps still use the Wikitude augmented-reality SDK?](09-development-openness.md#can-historical-google-glass-apps-still-use-the-wikitude-augmented-reality-sdk) — Original observed Q-000134; cited answer and test limitations.
 
 ## Observed software-compatibility questions
 
