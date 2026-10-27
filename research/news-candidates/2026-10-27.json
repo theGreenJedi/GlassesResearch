@@ -1,20 +1,27 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-27T13:21:30.933356+00:00",
+  "discovered_utc": "2026-10-27T16:43:41.862290+00:00",
   "candidate_count": 4,
-  "precision_rejected_count": 138,
+  "precision_rejected_count": 128,
   "relationship_counts": {
-    "direct": 4,
+    "direct": 3,
     "enabling": 0,
-    "adjacent": 0,
+    "adjacent": 1,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "model": 4
+    "model": 3,
+    "news": 1,
+    "tool": 1,
+    "sdk": 1,
+    "community": 1
   },
   "routing_counts": {
-    "model_catalog_review": 4,
+    "adjacent_radar": 1,
+    "community_evidence_review": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 3,
     "research_news_review": 4
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
@@ -26,46 +33,54 @@
   ],
   "candidates": [
     {
-      "id": "34208e3cd7ca0c54",
-      "title": "A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5",
-      "source": "Google News: AI glasses",
-      "source_lane": "core_glasses",
-      "published": "Tue, 27 Oct 2026 12:00:00 GMT",
-      "summary": "A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. Stock Titan",
-      "materiality_score": 4,
+      "id": "d6c940a99594e095",
+      "title": "Mentra 3.4.0-dev.1151",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1151",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-27T14:31:11Z",
+      "summary": "Mentra 3.4.0-dev.1151 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Bluetooth example apps React Native example APK Native Android example APK React Native ElevenLabs audio example APK Native iOS example IPA (unsigned) Source: 8bc81e8 . Downloads are hosted on Mentra's artifact CDN.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "shipping"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
       ],
       "status": "candidate",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "direct",
       "content_types": [
-        "model"
+        "model",
+        "tool",
+        "sdk",
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review"
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
       ],
       "triage_priority": "high",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, vuzix",
+      "publication_gate_reason": "known smart-glasses source",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
+      "institution_test": "likely durable"
     },
     {
-      "id": "d0d68a1183374d18",
-      "title": "Vuzix Secures U.S. Distribution Deal with CES, Begins Shipping LX1 Smart Glasses - Kalkine Media",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMnpsQVBWVm10UzFmVEtWazZCRkZvbG44ZGtLa19hcXJKUVRsd05nT0s0a3Y3aVJWQXJlN3JTd01FelNrUU9ORlZYejAxR2NnUS0xVHY4dGs4b1VObkROTm9IdWFTSVJJZWFVa292WTlhOGpWdWZPX2Y5N1h1UXRMNXoxUGM3THlCTlI5U0FIUy0weWVSWWd4ZElmVWtPZEJVaGhfdzFnVG82elpzMmhtNjhqY21RYlhmY1VJMnB5MzQ1QQ?oc=5",
+      "id": "97948afe4c0885fb",
+      "title": "Vuzix Corporation Enters Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure Lx1 Smart Glasses Order - www.marketscreener.com",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVHFTTjJSQ2dIZDRHTl9KOGVRM21jd1pYMFVrSVd2YnRBR3ZlbVBUY1BJLW1GQ3d4SzZyUWxTcTZ0a05EZjVTa2dNVnBKVWh3S0JldzdjZmJzbktRMHNzSjdxV1dfa2dOMm8wWVlVbHdERlZiRjFmOTYyM2N4QkxLeFdOT3BteF9TblhQRlpqR3lMdWpBNjFGck9Ma093T0NXamgyc2p1Z25Cc3A3QVdZdm45bjVrQWxuRlVtekRQNU00NlVxeGRPTmxqU21qSHc5aXNjSGpWaWRLdHhaZU13V05pNmZxcHpQ?oc=5",
       "source": "Google News: smart glasses",
       "source_lane": "core_glasses",
-      "published": "Tue, 27 Oct 2026 12:07:47 GMT",
-      "summary": "Vuzix Secures U.S. Distribution Deal with CES, Begins Shipping LX1 Smart Glasses Kalkine Media",
+      "published": "Tue, 27 Oct 2026 14:36:30 GMT",
+      "summary": "Vuzix Corporation Enters Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure Lx1 Smart Glasses Order www.marketscreener.com",
       "materiality_score": 4,
       "keyword_hits": [
         "shipping"
@@ -92,46 +107,13 @@
       "institution_test": "review durability"
     },
     {
-      "id": "bd4ebb600b9583f0",
-      "title": "Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Order - PR Newswire",
-      "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxNNUxaMHhTbWZVU05VZ0ZENHJMQnVjMkZnU05qdThKTTlvSkNhZ3VveXBKektFX2NtMVNMUWF2OVFzNnN5aHdJU2ptdnpEOUJ0OTF6UkQ0TGticWpwSWd0eHZPckI1ZVhtVHdaMmltRzhpV0J0SHdsN1V1Q2xQczZIMmtNck5fM0tmYkttSHB5djdleEpiRDk4YjFmUDRDdkZUWnEzN2ktQXdmUHNXV0I5Sk8xODlKZmJ5SmR2ek1BcHpQTzFRTkNSQjJ6eGVQSG4xS0FRa294MndIbThySG56eXRFSkd1UFlqMzF2MTZyOG1GM2R2Zm1mTk02TlRUeU1fM2s5Q2dWYzA3ck80dlVCQTBpLVlrY2RWemlEM0tNeU1DX1k?oc=5",
-      "source": "Google News: smart glasses",
-      "source_lane": "core_glasses",
-      "published": "Tue, 27 Oct 2026 12:06:57 GMT",
-      "summary": "Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Order PR Newswire",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "direct",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review"
-      ],
-      "triage_priority": "high",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, vuzix",
-      "disposition": "collected",
-      "site_action": "none_pending_editorial_review",
-      "institution_test": "review durability"
-    },
-    {
-      "id": "3a6cdd4798cd87dc",
-      "title": "Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Order - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZHhWUE9ZOGJBaFg3LWE4LW1VUDRtSmlKbDFia1NwSHRpRGNpSFU0QXBhNXJNNnlNZG85d2o3eWdSNXpfWmpLQ2tCMUl4b2h4VFhVYUw4SGhOU1R3NXFiamIzdFI3NjhxRndTa3FLZTZ2X2VveERqU094ZzYyc1g3RzdfbVFSdkEzQ0FPdWFEMjNLbmJrRjJmU1d2RGdPdVdvYTUwdDFSOG1NQQ?oc=5",
-      "source": "Google News: smartglasses",
+      "id": "332dd31d04a256d7",
+      "title": "Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Order - Yahoo Finance UK",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOSS01cjZqZ3lwbWFteGg0aVRMTVZfaVh6ZUdVa29BR3lidVpkVHpTemEyWkk5QVJqRnBxTU5uVHZnNjRrZ0VXUkxhQjRjdnZEYkRrd1BrYnhXc25WUEpLMHZVLXJmYmhTMGxjZV94REdXVUxTYzlhZXNfeDZNS0VXbnRNVU9ZaXFHSXp1bTJGYUV4ZWM4ZHB0MGJB?oc=5",
+      "source": "Google News: upcoming smart glasses",
       "source_lane": "core_glasses",
       "published": "Tue, 27 Oct 2026 12:00:00 GMT",
-      "summary": "Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Order Yahoo Finance",
+      "summary": "Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Order Yahoo Finance UK",
       "materiality_score": 4,
       "keyword_hits": [
         "shipping"
@@ -153,6 +135,40 @@
       "triage_priority": "high",
       "publication_eligible": true,
       "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, vuzix",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "4f8479c9dfa9d1e1",
+      "title": "BrainChip introduces AKD1500 SPI neuromorphic AI chip - Global Sources",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOSTNSTDIzWE1CRHhhUFl6aU5yTXlldXFBNlJrOFVrZHpPRTNoek04OEFxWURLeWh3NlBDT2F4UFdsUW1icTBtMEJBeVpvaTBNUXdzbEtJaUFnUUdqOVQ0b1pac3VLaW94LWpVbU5mamNVSGRjeXhLTS1YN0hXYUJzMmpDcWc2RWtPMk5kUUhMR1d5YmNhbHdUdVJhMGRROWJuckE?oc=5",
+      "source": "Google News: edge AI wearable processor",
+      "source_lane": "adjacent_hci",
+      "published": "Tue, 27 Oct 2026 10:20:44 GMT",
+      "summary": "BrainChip introduces AKD1500 SPI neuromorphic AI chip Global Sources",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "chip"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "review durability"
