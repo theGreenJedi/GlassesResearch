@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-27T16:46:15.456511+00:00`
+Generated: `2026-10-27T19:31:14.588777+00:00`
 
 - Intake files inspected: **289**
-- Candidates retained in this review window/history: **11327**
+- Candidates retained in this review window/history: **11341**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2271
+- `adjacent_radar`: 2273
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 517
-- `rejected_noise`: 8458
-- `source_review`: 28
-- `watching`: 32
+- `needs_editorial_verification`: 514
+- `rejected_noise`: 8473
+- `source_review`: 29
+- `watching`: 31
 
 ## Action queue
 
@@ -41,8 +41,6 @@ Generated: `2026-10-27T16:46:15.456511+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.884](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.884) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.886](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.886) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.887](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.887) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.890](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.890) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.894](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.894) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -217,6 +215,7 @@ Generated: `2026-10-27T16:46:15.456511+00:00`
 | high | needs_editorial_verification | direct | [Rokid seeks ‘no man’s land’ retail experience with Hong Kong store launch - South China Morning Post](https://news.google.com/rss/articles/CBMizAFBVV95cUxOTUdUNm9DenUwYnFtTEV1dXR4a0NuVmZvajlwdktHSTdlTEs1dzRMdFVaV0xFdHRGaGZfWFhUdEZpUWQzU0UwTE1oRVFocFlPRTZwR1JMSF90cmNpYVBoa1J6OTdmWkEtaVBnRnJxM3ZVM1Q3di1jVFJleGJpZ2RDV1doOEdfWk82Q25EUE5kdVlIWXIyay1fUlZZdXRFYi1TWjNOZUdqbkxzQTRSSnJjVDBSaF9ET0dtTmhtQ3dxTlQtRGNPU2RTc1ZrTFXSAcwBQVVfeXFMTk1HVDZvQ3p1MGJxbUxFdXV0eGtDblZmb2o5cHZLR0k3ZUxLNXc0THRVWldMRXR0RmhmX1hYVHRGaVFkM1NFMExNaEVRaHBZT0U2cEdSTEhfdHJjaWFQaGtSejk3ZlpBLWlQZ0ZycTN2VTNUN3YtY1RSZXhiaWdkQ1dXaDhHX1pPNkNuRFBOZHVZSFlyMmstX1JWWXV0RWItU1ozTmVHam5Mc0E0UkpyY1QwUmhfRE9HbU5obUN3cU5ULURjT1NkU3NWa0xV?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [TechRadar 21d ago Norway becomes first country to propose temporary ban on smart glasses](https://www.techradar.com/computing/virtual-reality-augmented-reality/norway-set-to-become-first-country-to-slap-a-temporary-ban-on-smart-specs-and-an-informed-debate-will-determine-the-future-of-meta-ray-bans-and-other-pervert-glasses) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [TechRadar Sep 22, 2026 ‘We don’t want what’s happening in the US to happen here’: Australia’s smart glasses ban extends to even more public ](https://www.techradar.com/computing/virtual-reality-augmented-reality/we-dont-want-whats-happening-in-the-us-to-happen-here-australias-smart-glasses-ban-extends-to-even-more-public-areas) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [VITURE and S-GAME Launch Phantom Beast XR Glasses - Insider Gaming](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jOTFzWTBBZncxM3JXeHpRYmRfbVljcENXS19DSUFhOUkwV1pTcG1kTVA2bjBMYVdKeDhUc1V1Zm9vZkNwTU90LWVkWGN3dGRMZHhNR3VJbnJFVVRybjUtRFVn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vuzix Corporation Enters Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure Lx1 Smart](https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVHFTTjJSQ2dIZDRHTl9KOGVRM21jd1pYMFVrSVd2YnRBR3ZlbVBUY1BJLW1GQ3d4SzZyUWxTcTZ0a05EZjVTa2dNVnBKVWh3S0JldzdjZmJzbktRMHNzSjdxV1dfa2dOMm8wWVlVbHdERlZiRjFmOTYyM2N4QkxLeFdOT3BteF9TblhQRlpqR3lMdWpBNjFGck9Ma093T0NXamgyc2p1Z25Cc3A3QVdZdm45bjVrQWxuRlVtekRQNU00NlVxeGRPTmxqU21qSHc5aXNjSGpWaWRLdHhaZU13V05pNmZxcHpQ?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Vuzix Secures U.S. Distribution Deal with CES, Begins Shipping LX1 Smart Glasses - Kalkine Media](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMnpsQVBWVm10UzFmVEtWazZCRkZvbG44ZGtLa19hcXJKUVRsd05nT0s0a3Y3aVJWQXJlN3JTd01FelNrUU9ORlZYejAxR2NnUS0xVHY4dGs4b1VObkROTm9IdWFTSVJJZWFVa292WTlhOGpWdWZPX2Y5N1h1UXRMNXoxUGM3THlCTlI5U0FIUy0weWVSWWd4ZElmVWtPZEJVaGhfdzFnVG82elpzMmhtNjhqY21RYlhmY1VJMnB5MzQ1QQ?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMiowJBVV95cUxNNUxaMHhTbWZVU05VZ0ZENHJMQnVjMkZnU05qdThKTTlvSkNhZ3VveXBKektFX2NtMVNMUWF2OVFzNnN5aHdJU2ptdnpEOUJ0OTF6UkQ0TGticWpwSWd0eHZPckI1ZVhtVHdaMmltRzhpV0J0SHdsN1V1Q2xQczZIMmtNck5fM0tmYkttSHB5djdleEpiRDk4YjFmUDRDdkZUWnEzN2ktQXdmUHNXV0I5Sk8xODlKZmJ5SmR2ek1BcHpQTzFRTkNSQjJ6eGVQSG4xS0FRa294MndIbThySG56eXRFSkd1UFlqMzF2MTZyOG1GM2R2Zm1mTk02TlRUeU1fM2s5Q2dWYzA3ck80dlVCQTBpLVlrY2RWemlEM0tNeU1DX1k?oc=5) | reachable (200) | research_news_review |
@@ -248,7 +247,6 @@ Generated: `2026-10-27T16:46:15.456511+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI眼镜卷到现在，终于有人不炫技了 - 手机新浪网](https://news.google.com/rss/articles/CBMigAFBVV95cUxQNDZQaVBJQU9vNExDUVhnWjZVTTM5dUdoNzNCWVczMXRITkQ1MzJoSzlhNTdJRG9CWnU5SWl3VDdHcFp0b1lsaExXWWQ3OU9IMGJ0SmVxNk1McVNHV1RuclByS1ZpQkhleGNEYS1DNFhZckluQndQWTNub1B1SngxXw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
 | normal | needs_editorial_verification | direct | [Are AI Smart Glasses Worth It? Honest Pros and Cons \| TikTok](https://www.tiktok.com/@bargainmandeals/video/7692446812728315158) | reachable (200) | research_news_review, report_card_evidence |
@@ -271,6 +269,8 @@ Generated: `2026-10-27T16:46:15.456511+00:00`
 | normal | needs_editorial_verification | enabling | [FreeSnell - people.csail.mit.edu](https://people.csail.mit.edu/jaffer/FreeSnell/FreeSnell) | reachable (200) | research_news_review, development_hacking, research_optics |
 | normal | needs_editorial_verification | direct | [Giborejnr \| Tech \| I’d really like to review smart glasses and this was ...](https://www.instagram.com/reel/Dc8vLheIrTD/) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Guwahati Shooting: Accused Allegedly Used Meta Glasses to Record Killing Spree - Pratidin Time](https://news.google.com/rss/articles/CBMi3gFBVV95cUxQVUVJczBfNUlGV0NwcTI4a2RPYU0wUTdIYjlQQ2pGNzkxWWJyT1QtLUZYNHVuUjNMd3VUdmVTbVA0Z3JVY00wUWJVSHgzOHY2eUpJbWNTMDkyZWVMTlp3YktmWVM1MjZyUXVEUVR0R0pKVjlHa1VJSy1YQVFYLUJ5TmdkNnVFSFNHaUI1U1UtYUlla2wwN2hHVVByMGhjWU44dEdiS1FVUHpReE0wcjNIckxuSkEwTEtqb2NabGZ4dEdGVGlpR2pUUDgydkN0elMtT0R1MDRoVFMwU1FjRWfSAd4BQVVfeXFMUFVFSXMwXzVJRldDcHEyOGtkT2FNMFE3SGI5UENqRjc5MVlick9ULS1GWDR1blIzTHd1VHZlU21QNGdyVWNNMFFiVUh4Mzh2NnlKSW1jUzA5MmVlTE5ad2JLZllTNTI2clF1RFFUdEdKSlY5R2tVSUstWEFRWC1CeU5nZDZ1RUhTR2lCNVNVLWFJZWtsMDdoR1VQcjBoY1lOOHRHYktRVVB6UXhNMHIzSHJMbkpBMExLam9jWmxmeHRHRlRpaUdqVFA4MnZDdHpTLU9EdTA0aFRTMFNRY0Vn?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | enabling | [How to read your contact lens prescription \| ACUVUE®](https://www.acuvue.com/en-us/blog/read-prescriptions/) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [INMO GO3 Smart Glasses Brings MicroLED Displays, Gemini Integration, Unique Camera Privacy - Tech Times](https://news.google.com/rss/articles/CBMi2wFBVV95cUxQaVpoRVRuWkJtTllJaF91Z2ZwQUpaYjZKdl9JNV9XVHV6LTRpa25KcEhIcGx4YzBpNGVqNUFweTd1czY5MlFadDNIczFzZWIzbmlHb2lGcjh3SzNIWGJoZ092YnhtQ0hXc192c3QwRzNzN0Fod0o4NnVleE1wRGZnR2V0aEtyQU1fUEdKNGY4YkRGUG9VSkNRVXlmQU5ibGR4UHdkWEVOQlFzanoxaWpGS1BBMHdqa000TWhiTjVwWkJBMnpMRHNENWZpV2NPTUVfbXp6Nms4a2tUY3M?oc=5) | reachable (200) | research_news_review, research_optics, policy_privacy |
 
 ## Meaning of states
 
