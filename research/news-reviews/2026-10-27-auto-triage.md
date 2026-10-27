@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-27T06:25:54.257860+00:00`
+Generated: `2026-10-27T09:24:05.296526+00:00`
 
-- Intake files inspected: **289**
-- Candidates retained in this review window/history: **11383**
+- Intake files inspected: **288**
+- Candidates retained in this review window/history: **11313**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2308
-- `catalog_review`: 15
+- `adjacent_radar`: 2296
+- `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 528
-- `rejected_noise`: 8466
+- `needs_editorial_verification`: 526
+- `rejected_noise`: 8413
 - `source_review`: 26
 - `watching`: 36
 
@@ -41,8 +41,6 @@ Generated: `2026-10-27T06:25:54.257860+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.864](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.864) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.870](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.870) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.874](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.874) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.878](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.878) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.879](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.879) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -158,6 +156,7 @@ Generated: `2026-10-27T06:25:54.257860+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1141](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1141) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1143](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1143) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1145](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1145) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1149](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1149) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-27T06:25:54.257860+00:00`
 | normal | needs_editorial_verification | direct | [Best Smart Glasses for Prescription Wearers \| AR Compare](https://www.arcompare.com/best/prescription-wearers/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Blind woman says smart glasses replaced her guide dog - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeUtkcTJ1X1RZc0UtSnVibVV1SnFKRlg4bDc4UDBCVVZPWG9salUwTlZQTXFtTG5hYTlwZ2U3amFxOEtGd3JvQ3NaeWYyQzU4VTZwS0l5YUJFRVFPVGM1WXJjbzMwR0hJc3pHNE5Rdk5BUjlMZVJaQ05wa0lXNHZyRGF5TThqVW9MU0d3XzlaeEZNLTdLdzZtRG4tNXFSVmd3SkwwWDJFaUY0V1k?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Blink, and you don’t miss it: Smart glasses keep track of health - DPA Magazine](https://news.google.com/rss/articles/CBMisgFBVV95cUxPYm91OUF2SFpMX0xDRFp0Mzh2a3ZPQVlEWHdvcmFjLVN6YlYwdHJNUTFtNVVYVjhZWHdhV1VaalFRMUpMaUZWNWZFTkd5S2htM3VsMFQ2WFIzaXN2OW9PblZpYjg1dFR4TDZEc0lkcUdwNnRhQUdVdXlGV2JONDREanBtQVZFQ1gxZzRMRERSMzJfV0hkd3hVMkFBV2dSaEVFbjJTY19JT0w5eGlLZG1XUzRB?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Budget Smart Glasses Review — What Makes Them Different \| TikTok](https://www.tiktok.com/@stormbuysyt/video/7694136484496002324) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
