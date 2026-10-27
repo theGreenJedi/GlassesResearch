@@ -161,6 +161,11 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [How can legacy Xamarin PCL code read Vuzix M300 device information?](09-development-openness.md#how-can-legacy-xamarin-pcl-code-read-vuzix-m300-device-information) — Original Q-000128; sourced, evidence-qualified Practical Answer.
 - [Should owners use the manufacturer app or a third-party platform on monochrome display glasses?](09-development-openness.md#should-owners-use-the-manufacturer-app-or-a-third-party-platform-on-monochrome-display-glasses) — Original Q-000154; sourced, evidence-qualified Practical Answer.
 
+- [Can smart glasses replace a drummer's physical music stand?](03-use-cases.md#can-smart-glasses-replace-a-drummers-physical-music-stand) — Observed Q-000166; evidence-qualified answer.
+- [Why do some people object to Ray-Ban Meta AI smart glasses while others value them?](07-privacy-security.md#why-do-some-people-object-to-ray-ban-meta-ai-smart-glasses-while-others-value-them) — Observed Q-000167; evidence-qualified answer.
+- [What should the next generation of AI glasses improve instead of trying to do everything?](10-ownership-future.md#what-should-the-next-generation-of-ai-glasses-improve-instead-of-trying-to-do-everything) — Observed Q-000231, Q-000232; evidence-qualified answer.
+- [Which smart-glasses features deserve priority before buying?](02-buying.md#which-smart-glasses-features-deserve-priority-before-buying) — Observed Q-000241; evidence-qualified answer.
+
 ## Questions researched from actual search language
 
 - [Detect Google Glass Programmatically](09-development-openness.md#detect-google-glass-programmatically) — A historically documented Build-property heuristic, not device attestation.
