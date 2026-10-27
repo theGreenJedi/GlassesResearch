@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-27T00:32:47.503980+00:00`
+Generated: `2026-10-27T00:35:29.261395+00:00`
 
-- Intake files inspected: **288**
-- Candidates retained in this review window/history: **11376**
+- Intake files inspected: **289**
+- Candidates retained in this review window/history: **11437**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2299
+- `adjacent_radar`: 2318
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 525
-- `rejected_noise`: 8471
-- `source_review`: 26
+- `needs_editorial_verification`: 523
+- `rejected_noise`: 8513
+- `source_review`: 28
 - `watching`: 36
 
 ## Action queue
@@ -259,8 +259,6 @@ Generated: `2026-10-27T00:32:47.503980+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경에 커진 수능 감독 부담…경기교사노조, 개선 촉구 나서 - 중부일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE9ZMU0xaFhTd2VTSDI3M2FFLXgwb2k4Rm5fRWxrWnozX2FtbEZaRUtaaHI3NGJQVnE2LURRZE5lZWR6LUpCZDZIWVN2bzNDOUppcDJnbXN3RGtZYktzLW1OaW1iZEhPSnMtQVZlN3FWVQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜乱战，风口上过着苦日子｜钛媒体深度 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOeUZvdzM1TzJNMWQxNmctQWlSZWZYN1lHdGx0c0x0R0VQcnMyci12aFBWMVVBMFRQamJvdXVRTFJvX1dSVkZ6TDBQU2V5NkNXVlJqV2hzT2pPOHVBMW5BTUN0VlAyUGFES2d3d1NFaWNPOWJLN0NaYk1hcThQOUVIc2lmdDBsVW5k?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜带动光学供应链布局，玉晶光、亚光等四家厂商加速拓展相关业务 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNS3JLU2dJWXhFZ20yZnRHRTRTREZ6N1dOUF8zOHhfMWc5SnZqQUpITFJyUWpqbVFNNUFRbU4tWnBGY3B4YWotY2FvV19aRU1uMXMySG96dmthazhhYW1ndTFDc29PTnNQVHVfUzZWV1VhZWVOTEptZXJfVGhsMXZZTFhRVGVoOGY5?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
@@ -271,6 +269,8 @@ Generated: `2026-10-27T00:32:47.503980+00:00`
 | normal | needs_editorial_verification | direct | [Auganix Sep 15, 2026 ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best AI Glasses 2026: 9 Ranked, From $55 Up - Ai Miracle](https://www.aimiracle.ai/ai-collections/best-ai-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses for Prescription Wearers \| AR Compare](https://www.arcompare.com/best/prescription-wearers/) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [Blink, and you don’t miss it: Smart glasses keep track of health - DPA Magazine](https://news.google.com/rss/articles/CBMid0FVX3lxTE1zTTNCRDBlcjVUQ29uUV92Q0tTOGpRMG4ya01OZkYyTEZwd0RmNXZBcC0wMkNSZkUtb2JNXzVBS29FODlnY2x2ZmFVUDM3SWdXX2N0aGttYmpBVjFyWW5WdjhZV0VUcEFicVhmWGwwRmFWSEJOUk9Z?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Budget Smart Glasses Review — What Makes Them Different \| TikTok](https://www.tiktok.com/@stormbuysyt/video/7694136484496002324) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
