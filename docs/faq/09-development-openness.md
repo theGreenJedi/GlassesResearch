@@ -328,3 +328,25 @@ Sony also documents the glasses as a **Bluetooth headset** for host-phone audio 
 For Moverio, use the **SDK matching the exact Epson headset and host**. Epson's [Moverio Basic Function SDK](https://tech.moverio.epson.com/en/basic_function_sdk/developers_guide/introduction.html) documents Android development with display/camera/sensor access and a [Unity development route](https://tech.moverio.epson.com/en/basic_function_sdk/developers_guide_unity/developing_apps.html). Crucially, Epson says this modern Basic Function SDK **does not support BT-350 and earlier**; those models require their own legacy SDK. Stereo output, marker tracking and alignment must be implemented and tested through a compatible Moverio toolchain, not assumed from a Glass APK.
 
 **Limits:** No Epson device or historical GDK compatibility test was conducted. This does not claim that Epson never shipped third-party marker tools or that all current Moverio models share one SDK. Reviewed October 26, 2026.
+
+## Why does Gradle say configuration default not found in a Sony SmartEyeglass build?
+
+This [2016 Sony SmartEyeglass developer question](https://stackoverflow.com/questions/38095198/errorconfiguration-with-name-default-not-found-when-building-for-sony-smart-g) concerns a missing or misconfigured **Gradle project dependency**, not necessarily a defective SDK. The author included `:libraries:mylib` in `settings.gradle`; the community reply instead identified the Sony sample's three actual sibling libraries: `SmartExtensionAPI`, `SmartExtensionUtils`, and `SmartEyeglassAPI`.
+
+**For the original Android Studio 2.1-era example:** start with Sony's matching HelloWorld sample and preserve its `settings.gradle`, module locations, and dependencies. The [historical answer](https://stackoverflow.com/questions/38095198/errorconfiguration-with-name-default-not-found-when-building-for-sony-smart-g) uses `includeFlat` for those three libraries, then `compile project(...)` for each. Check that the library directories and their build files exist exactly where Gradle expects; merely adding a project name is insufficient. [Gradle's dependency guide](https://docs.gradle.org/current/userguide/declaring_dependencies_basics.html) shows modern `implementation(project(...))` syntax, but changing syntax without checking the legacy Sony tooling is not a guaranteed fix. [Gradle's troubleshooting guide](https://docs.gradle.org/current/userguide/troubleshooting.html) recommends isolating configuration failures with `gradle help`.
+
+**Evidence:** one community-proposed fix; the question does not confirm a successful build. GlassesResearch did not run the old Sony SDK. Do not blindly copy obsolete `compile` declarations into a modern Android build. Reviewed October 27, 2026.
+
+## How can I fix Android Studio Invalid hash string for the Vuzix M300 SDK?
+
+For a **legacy Vuzix M300 Android add-on**, a developer reported that Android Studio's Project Structure dropdown rejected `Vuzix Corporation:Vuzix M300 SDK:23` with *Invalid hash string*. The [original question author's own follow-up](https://stackoverflow.com/questions/56549372/android-studio-invalid-hash-string-warning-in-compile-sdk-version) says that specifying the add-on target **directly in the app module's Gradle file** worked:
+
+```gradle
+android {
+    compileSdkVersion 'Vuzix Corporation:Vuzix M300 SDK:23'
+}
+```
+
+This is a **historical reported workaround**, not proof that the syntax works with current Android Gradle Plugin releases. The SDK add-on must be present locally, and toolchain versions must be compatible. In the same discussion, the author reports that Android Gradle Plugin 3.4.1 would not use Build Tools 23.0.3 because it required 28.0.3 or newer; forcing `targetSdkVersion` and all build tool versions to 23 was **not** the demonstrated solution. Use [Android's current build reference](https://developer.android.com/build) for modern builds, but reproduce a known-compatible legacy toolchain when repairing an old M300 project.
+
+**Evidence:** an original-developer comment and Android toolchain documentation. No independent M300 Android Studio build was run. Reviewed October 27, 2026.

@@ -159,6 +159,12 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 These questions were observed in first-party Search Console data and researched against attributed historical sources. Practical Answers has a **minimum milestone of 1,000 published, evidence-backed answers and no ceiling**; discovery covers relevant questions across the wider internet regardless of this site's search visibility.
 
+- [Why does Gradle say configuration default not found in a Sony SmartEyeglass build?](09-development-openness.md#why-does-gradle-say-configuration-default-not-found-in-a-sony-smarteyeglass-build) — Original observed Q-000123; sourced answer with verification limits.
+- [How can I fix Android Studio Invalid hash string for the Vuzix M300 SDK?](09-development-openness.md#how-can-i-fix-android-studio-invalid-hash-string-for-the-vuzix-m300-sdk) — Original observed Q-000133; sourced answer with verification limits.
+- [Can Pixel 10 Pro XL mirror video to USB-C display glasses?](03-use-cases.md#can-pixel-10-pro-xl-mirror-video-to-usb-c-display-glasses) — Original observed Q-000147; sourced answer with verification limits.
+- [What should I check before ordering prescription RayNeo iO glasses?](08-accessibility-fit.md#what-should-i-check-before-ordering-prescription-rayneo-io-glasses) — Original observed Q-000159; sourced answer with verification limits.
+- [Which live-caption glasses should deaf or hard-of-hearing users evaluate?](08-accessibility-fit.md#which-live-caption-glasses-should-deaf-or-hard-of-hearing-users-evaluate) — Original observed Q-000176; sourced answer with verification limits.
+
 ## Observed software-compatibility questions
 
 - [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
