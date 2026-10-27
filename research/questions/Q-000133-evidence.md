@@ -1,3 +1,7 @@
+---
+description: Evidence review of the historical Vuzix M300 Android Studio SDK add-on invalid hash warning and original developer workaround.
+---
+
 # Q-000133 — How can I fix Android Studio Invalid hash string for the Vuzix M300 SDK?
 
 **Original observed question:** [Android Studio "Invalid hash string" warning in Compile Sdk Version](https://stackoverflow.com/questions/56549372/android-studio-invalid-hash-string-warning-in-compile-sdk-version); existing registry ID Q-000133. **Reviewed:** October 27, 2026. Original thread content may be inaccessible; exact question wording is preserved by the preexisting discovery registry.
