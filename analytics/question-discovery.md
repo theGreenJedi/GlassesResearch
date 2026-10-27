@@ -1,30 +1,26 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-26T16:49:30+00:00**
+Generated: **2026-10-27T15:54:44+00:00**
 
-- Published evidence-backed answers: **158** (minimum **1000**, no ceiling)
-- Remaining to minimum: **842**
-- Canonical registry size: **236** (not the published count)
-- Unanswered research candidates: **69**
-- Observations this run: **69**
-- New distinct questions: **6**
+- Published evidence-backed answers: **162** (minimum **1000**, no ceiling)
+- Remaining to minimum: **838**
+- Canonical registry size: **242** (not the published count)
+- Unanswered research candidates: **67**
+- Observations this run: **67**
+- New distinct questions: **2**
 
 ## Source health
 
 - github_issues: ok — 10 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 34 observations
+- reddit_rss: partial — 32 observations
 - google_search_console: ok — 5 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000231** — When AI Smart glasses gonna take a next step?
-- **Q-000232** — Do we actually want smart glasses to do it all?
-- **Q-000233** — How do the Even G1/G2 temples compare to the RayNeo iO behind the ears?
-- **Q-000234** — What smart glasses should I get?
-- **Q-000235** — Should I buy the Memomind One or Even G2?
-- **Q-000236** — which smart glasses have the most discreet display?
+- **Q-000241** — What features would you actually prioritize when buying smart glasses?
+- **Q-000242** — Has your IT/security team ever actually asked about camera-free smart glasses?
 
 ## Research queue (first 20)
 
@@ -45,8 +41,8 @@ Generated: **2026-10-26T16:49:30+00:00**
 - **Q-000124** — Audio processing never starts in pocketsphinx-android
 - **Q-000127** — How to get action of System Dialong Box programatically
 - **Q-000128** — Xamarin PCL get Device Information
-- **Q-000131** — Sony Smart Glasses Mic Input
-- **Q-000135** — Google glass sdk for Epson moverio
 - **Q-000137** — Open Source Smart Glasses?
+- **Q-000138** — What glasses should I buy to help me cheat in my exam?
+- **Q-000139** — Which smart glasses have the most advanced teleprompter display?
 
 > A discovered question is not an answered question. Research, independently verify evidence, and publish only what the sources support. Search Console is optional performance feedback, never an eligibility requirement.
