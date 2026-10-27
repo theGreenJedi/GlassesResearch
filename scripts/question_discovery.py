@@ -292,7 +292,13 @@ def seed_published_answers(reg: dict) -> dict:
 
 def load_registry() -> dict:
     if REGISTRY.exists():
-        return seed_published_answers(json.loads(REGISTRY.read_text(encoding="utf-8")))
+        # Once initialized, the registry is authoritative. Newly authored FAQ
+        # headings are NOT publication proof: an explicit live-site gate must
+        # credit the original observed question ID and canonical answer URL.
+        # Automatic re-seeding would create duplicate IDs and inflate counts.
+        return json.loads(REGISTRY.read_text(encoding="utf-8"))
+    # The bootstrap scan only initializes a previously absent registry from
+    # established published FAQ content; it never runs on an existing ledger.
     return seed_published_answers({
         "schema_version": 1,
         "principle": "1,000 published evidence-backed answers minimum; no maximum. Questions are discovered from real-world demand, independent of our site's search performance.",
