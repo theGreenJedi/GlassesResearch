@@ -171,6 +171,13 @@ These questions were observed in first-party Search Console data and researched 
 - [Why can green HUD text read differently against blue sky and green trees?](05-displays.md#why-can-green-hud-text-read-differently-against-blue-sky-and-green-trees) — Q-000173; sourced research with explicit verification limits.
 - [How can I tell which smart-glasses display looks most discreet to other people?](05-displays.md#how-can-i-tell-which-smart-glasses-display-looks-most-discreet-to-other-people) — Q-000236; sourced research with explicit verification limits.
 
+- [Can mainland-China Rokid Glasses use global Hi Rokid and AIUI Studio for development?](09-development-openness.md#can-mainland-china-rokid-glasses-use-global-hi-rokid-and-aiui-studio-for-development) — Original observed Q-000107, Q-000108, Q-000109; cited answer and test limitations.
+- [For Meta smart-glasses SDK testing should developers choose Ray-Ban Meta or Meta Ray-Ban Display?](09-development-openness.md#for-meta-smart-glasses-sdk-testing-should-developers-choose-ray-ban-meta-or-meta-ray-ban-display) — Original observed Q-000110; cited answer and test limitations.
+- [How can a Vuzix Blade client trust a HTTPS or WSS test server certificate without modifying system CA files?](09-development-openness.md#how-can-a-vuzix-blade-client-trust-a-https-or-wss-test-server-certificate-without-modifying-system-ca-files) — Original observed Q-000111, Q-000112; cited answer and test limitations.
+- [Does the community RokidAIAssistant glasses app support display-free Rokid AI Glasses Style?](09-development-openness.md#does-the-community-rokidaiassistant-glasses-app-support-display-free-rokid-ai-glasses-style) — Original observed Q-000113; cited answer and test limitations.
+- [Why can PocketSphinx fail to receive audio on Vuzix M300 when AudioRecord works elsewhere?](09-development-openness.md#why-can-pocketsphinx-fail-to-receive-audio-on-vuzix-m300-when-audiorecord-works-elsewhere) — Original observed Q-000124; cited answer and test limitations.
+- [Can historical Google Glass apps still use the Wikitude augmented-reality SDK?](09-development-openness.md#can-historical-google-glass-apps-still-use-the-wikitude-augmented-reality-sdk) — Original observed Q-000134; cited answer and test limitations.
+
 ## Observed software-compatibility questions
 
 - [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
