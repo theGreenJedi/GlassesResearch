@@ -165,6 +165,12 @@ These questions were observed in first-party Search Console data and researched 
 - [What should I check before ordering prescription RayNeo iO glasses?](08-accessibility-fit.md#what-should-i-check-before-ordering-prescription-rayneo-io-glasses) — Original observed Q-000159; sourced answer with verification limits.
 - [Which live-caption glasses should deaf or hard-of-hearing users evaluate?](08-accessibility-fit.md#which-live-caption-glasses-should-deaf-or-hard-of-hearing-users-evaluate) — Original observed Q-000176; sourced answer with verification limits.
 
+- [Why do Vuforia Unity buttons fail on Vuzix M400 even when they work on a computer?](09-development-openness.md#why-do-vuforia-unity-buttons-fail-on-vuzix-m400-even-when-they-work-on-a-computer) — Q-000117; sourced research with explicit verification limits.
+- [Why might WebRTC video work on Android phones but fail on Vuzix M300?](09-development-openness.md#why-might-webrtc-video-work-on-android-phones-but-fail-on-vuzix-m300) — Q-000119; sourced research with explicit verification limits.
+- [Which smart-glasses teleprompter controls are useful for serious presentations?](03-use-cases.md#which-smart-glasses-teleprompter-controls-are-useful-for-serious-presentations) — Q-000139; sourced research with explicit verification limits.
+- [Why can green HUD text read differently against blue sky and green trees?](05-displays.md#why-can-green-hud-text-read-differently-against-blue-sky-and-green-trees) — Q-000173; sourced research with explicit verification limits.
+- [How can I tell which smart-glasses display looks most discreet to other people?](05-displays.md#how-can-i-tell-which-smart-glasses-display-looks-most-discreet-to-other-people) — Q-000236; sourced research with explicit verification limits.
+
 ## Observed software-compatibility questions
 
 - [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
