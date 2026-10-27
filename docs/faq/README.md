@@ -155,6 +155,13 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [Can a VPN set to the United States make Muse work on unsupported smart glasses or in unsupported regions?](09-development-openness.md#can-a-vpn-set-to-the-united-states-make-muse-work-on-unsupported-smart-glasses-or-in-unsupported-regions) — Observed Q-000174; evidence-based answer with published limitations.
 - [Can smart glasses display the live camera view from my phone?](03-use-cases.md#can-smart-glasses-display-the-live-camera-view-from-my-phone) — Observed Q-000172; evidence-based answer with published limitations.
 
+- [Can a Google Glass app programmatically approve a system install-permission dialog?](09-development-openness.md#can-a-google-glass-app-programmatically-approve-a-system-install-permission-dialog) — Original Q-000127; sourced, evidence-qualified Practical Answer.
+- [How can legacy Xamarin PCL code read Vuzix M300 device information?](09-development-openness.md#how-can-legacy-xamarin-pcl-code-read-vuzix-m300-device-information) — Original Q-000128; sourced, evidence-qualified Practical Answer.
+- [Should owners use the manufacturer app or a third-party platform on monochrome display glasses?](09-development-openness.md#should-owners-use-the-manufacturer-app-or-a-third-party-platform-on-monochrome-display-glasses) — Original Q-000154; sourced, evidence-qualified Practical Answer.
+- [VITURE Beast or RayNeo GT Max: what matters more for movies and anime?](02-buying.md#viture-beast-or-rayneo-gt-max-what-matters-more-for-movies-and-anime) — Original Q-000155; sourced, evidence-qualified Practical Answer.
+- [MemoMind One versus Even G2 for work: which features and tradeoffs matter?](02-buying.md#memomind-one-versus-even-g2-for-work-which-features-and-tradeoffs-matter) — Original Q-000143, Q-000235; sourced, evidence-qualified Practical Answer.
+- [Does Dymesty offer mind maps from meetings, and is that verified to work well?](03-use-cases.md#does-dymesty-offer-mind-maps-from-meetings-and-is-that-verified-to-work-well) — Original Q-000208; sourced, evidence-qualified Practical Answer.
+
 ## Questions researched from actual search language
 
 - [Detect Google Glass Programmatically](09-development-openness.md#detect-google-glass-programmatically) — A historically documented Build-property heuristic, not device attestation.
