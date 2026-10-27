@@ -48,6 +48,40 @@ class QuestionDiscoveryTests(unittest.TestCase):
                 discovery.FAQ_ROOT = original
 
 
+    def test_existing_registry_does_not_autocredit_new_unverified_faq(self):
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            faq = root / "faq"
+            faq.mkdir()
+            (faq / "09-development-openness.md").write_text(
+                "## Can an observed new glasses question be answered?\n\n"
+                "An evidence-qualified draft awaiting production proof.\n\n"
+                "## Can a separate new question be answered?\n\n"
+                "Another unpublished draft.\n"
+            )
+            registry_path = root / "registry.json"
+            original = {
+                "next_id": 2,
+                "questions": [{
+                    "id": "Q-000001",
+                    "normalized": discovery.norm(
+                        "Can an observed new glasses question be answered?"
+                    ),
+                    "canonical_question": "Can an observed new glasses question be answered?",
+                    "status": "observed",
+                    "answer_url": None,
+                    "evidence_state": "unresearched",
+                }],
+            }
+            registry_path.write_text(json.dumps(original), encoding="utf-8")
+            with patch.object(discovery, "REGISTRY", registry_path), \
+                 patch.object(discovery, "FAQ_ROOT", faq):
+                loaded = discovery.load_registry()
+            self.assertEqual(loaded, original)
+            self.assertEqual(loaded["questions"][0]["status"], "observed")
+            self.assertIsNone(loaded["questions"][0]["answer_url"])
+            self.assertEqual(loaded["next_id"], 2)
+
     def test_nested_practical_answers_are_seeded_once(self):
         with tempfile.TemporaryDirectory() as td:
             root = Path(td)
