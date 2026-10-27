@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-27T22:25:46+00:00**
+Generated automatically: **2026-10-27T23:23:28+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -55,15 +55,15 @@ Generated automatically: **2026-10-27T22:25:46+00:00**
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **15 browser pageviews**, **14 RUM visits**.
-- Rolling 7d: **112 browser pageviews**, **96 RUM visits**.
+- Rolling 24h: **12 browser pageviews**, **11 RUM visits**.
+- Rolling 7d: **110 browser pageviews**, **94 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| / | 5 | 5 |
+| / | 2 | 2 |
 | /models/THE_LIST_RECONCILIATION_2026-09-03_W640_W650/ | 1 | 1 |
 | /docs/news/articles/2026-09-06-when-owners-take-their-glasses-back/ | 1 | 1 |
 | /resources/ECOSYSTEM_RESOURCE_CATALOG/ | 1 | 1 |
@@ -78,31 +78,30 @@ Generated automatically: **2026-10-27T22:25:46+00:00**
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 12 | 12 |
+| (direct / none) | 10 | 10 |
 | glassesresearch.org | 1 | 0 |
-| bing.com | 1 | 1 |
 | www.bing.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **5,162 requests**, **1,214 HTTP visits**, **97.6 MB** served.
-- Rolling 7d: **41,114 requests**, **12,725 HTTP visits**, **1051.6 MB** served.
+- Rolling 24h: **5,530 requests**, **1,412 HTTP visits**, **118.8 MB** served.
+- Rolling 7d: **41,551 requests**, **12,948 HTTP visits**, **1073.5 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 2,570 | 1,048 |
+| US | 2,900 | 1,248 |
 | CN | 545 | 13 |
 | BE | 413 | 6 |
 | CL | 297 | 0 |
 | CO | 207 | 5 |
 | SG | 198 | 7 |
 | ID | 118 | 3 |
-| DE | 97 | 17 |
+| DE | 96 | 16 |
 | BG | 92 | 14 |
-| JP | 84 | 8 |
+| JP | 83 | 7 |
 
 ## What to watch
 
