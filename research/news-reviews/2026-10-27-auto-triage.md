@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-27T09:25:03.759433+00:00`
+Generated: `2026-10-27T10:04:56.823960+00:00`
 
-- Intake files inspected: **288**
-- Candidates retained in this review window/history: **11313**
+- Intake files inspected: **286**
+- Candidates retained in this review window/history: **11252**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2296
+- `adjacent_radar`: 2290
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 527
-- `rejected_noise`: 8413
-- `source_review`: 25
+- `needs_editorial_verification`: 520
+- `rejected_noise`: 8363
+- `source_review`: 27
 - `watching`: 36
 
 ## Action queue
@@ -41,8 +41,6 @@ Generated: `2026-10-27T09:25:03.759433+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.874](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.874) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.878](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.878) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.879](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.879) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.880](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.880) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.881](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.881) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -229,13 +227,11 @@ Generated: `2026-10-27T09:25:03.759433+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA US price, preorder eligibility and shipping](https://us.shop.xreal.com/blogs/guides/xreal-aura-price-preorder-us) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [“Smart glasses are about to change everything”—what we know before launch - Futura, le média qui explore le monde](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkNMdE13NUlOQTlreHRDb29NM2xwSmkyR2RidWhmbTJoazRmOWNKTllHaVVBYV9Zd0NzWVhhLWtGTXBLa2c3OE5hN3lYMXp4NEtnSk9IckVPSzBtbDY2bF81NHlVWmRSNEFlZ05VLVNnN09QU0ZQZ0NQWnBxWXdsMExfWmtUZnY4NUpwNlNTMF9oZ1RxaWo3cTJ0SXgzNkVfcWNkT1E1R0hfYlFrdW84bVpNcw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [[Insight] AI Glasses Expose Gaps in University Exam Security, Entry Checks Cannot Stop Cheating Alone - Korea IT Times](https://news.google.com/rss/articles/CBMicEFVX3lxTFBfbUxlUzdjWGFvYzlGcVdzYmR1aUEyZFljOTFtVloyQWc5VzRURHpNWVF5ZHhLTlNWd0U2N0JkMHhMd1VfTTJjX3BVWjdhSGNPd0FRa3JqbWlqVm5rWWR6dGJNbEtBRmdHTVZPVDl1SUs?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI Glasses Challenge South Korea’s Exam Security - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiiAFBVV95cUxNSFBnTEhRSlA5LW1fX2hsbXVRcXpyMnc3RU5DLUxub1ZpUHVwOW43ckVVeU1WcjlQbHF2SFppczdpd2FSc1JhWjc2cTROWTFDU3dsUlhwSHdZa0Zia2dvVlNOc044Z3hxcDA2QlM3UjQtTGc5QzMzVnRzNE8xaFlMYmRPTDBUZUJf?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI glasses: smart, lightweight eyewear from FiGi \| TikTok](https://www.tiktok.com/@china.ai.glasses.s/video/7687183658364570900) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Spark Security Concerns Just Month Before College Entrance Exam - SBS 뉴스](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsd9IBZkFVX3lxTE1tWk5EN1VyODZnM3JueGtNYXAtUnVtZDU0aUJJa29UOXVvNFdEQ0VndEdIbHBtQTEzMEQ4NlB0RzI4ZDRkSXBhUW04Wm5Jam1FUzhNd0t0YXRwelZWcXo1STRDemxsdw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | enabling | [Forget Eufy – EZVIZ's new solar security camera has a dual-lens system and 3 built-in spotlights - T3](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSnBBYW1KV0tSQnAxVnFtb2JBX2V2WlQtYjlCbFVLZkU2Mkp5ZkkwMndHYUpvVXk1NUFVbzNkUVJoMnlRTGl2QzBzN0c4V29oNDFwWnBWaUphUFZZS21ILVRtWFgtV01sOXpzR0c1OEtPdk1lVFV3MmY3RFZiVk1fZGlKRGNrQ2JXQkNNRmpuX1FhMVp2a0hBN2htT3RrMDl2b2dmZU9XYjlHLXdlY1ZfSDh4d1hUX0tBVE16MWtjaDRPUEQ2dkgzTzNkZEF6bkVj?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | enabling | [JaxLayerLumos \| Differentiable Optical and RF Multilayer Simulation](https://jaxlayerlumos.github.io/) | reachable (200) | research_news_review, development_hacking, research_optics, deep_research |
 | normal | needs_editorial_verification | direct | [KCA and KAIST push security as AI smart glasses threaten exam integrity - DongA Science](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VZFZYXzU3UEs3aFVTN05LNEVIenNnZ3RSM0VxaTg5QVc3Z2JtR3pFd3ZqLUhRaXRES1ZnZmJYY2pGUjJ0X1BGZGV0dUZZV2ZDbjktOQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [South Korean Universities Tighten Security After Students Caught Cheating With AI Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPd1hKWjl1TUdUbGlCREpzR2gwakRNTklJV3JMQmVvTGpJZmhsN0xFbDNPYXBCYjctamVuTXFEcWhRdU9XQVJzbDBMdVhoLXJQYXZxNk4zS2NMNmxWMzQ5RFhNMk84RUp2MVRHU3VrSW9mTG45Tk1HRVRZQlpQampHZnp4NWZ3ZmJPMkVXVTI2REg0MFdReVUxOTJFeEVLTHRSTW9UaEF4M1lTUWhOQlNVaHlqQ1pkMXNuSzlpdG5pa1Q?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["수능 AI 안경 잡을 전문가 달라"…교육부·교원단체, 오늘 긴급대책 논의 - 뉴스1](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5aX3lFVVVoajNZWUZNNXh6cVRvV0VfbmJBakZXODEwTkpvZ2pBWjl3ODkwMmZhc3RZUnBwVVROakl6Q2JvWERDdm1ZVlBoUXg4eVFEa0RLb3BkZw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [#eyeglasses \| TikTok](https://www.tiktok.com/tag/eyeglasses) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | ['스마트 안경'은 부정행위, 성적 향상 위한 '약물 복용'은? - 약사공론](https://news.google.com/rss/articles/CBMibEFVX3lxTE8tSzdJTHlsUks4YWp0X09tZ21IY3B4LURmV2J5aUFTcnhoZnRONzRUWkJna1hvRVdPTDJnZGJwOTdQRUhMY3cyeHpRNm1JUjBHTkliV19lRENtbFdYY3REc3NFZnpfWXZ4Vy1SeQ?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +267,10 @@ Generated: `2026-10-27T09:25:03.759433+00:00`
 | normal | needs_editorial_verification | direct | [Blind woman says smart glasses replaced her guide dog - ABC News & Headlines – Australian Broadcasting Corporation](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNeUtkcTJ1X1RZc0UtSnVibVV1SnFKRlg4bDc4UDBCVVZPWG9salUwTlZQTXFtTG5hYTlwZ2U3amFxOEtGd3JvQ3NaeWYyQzU4VTZwS0l5YUJFRVFPVGM1WXJjbzMwR0hJc3pHNE5Rdk5BUjlMZVJaQ05wa0lXNHZyRGF5TThqVW9MU0d3XzlaeEZNLTdLdzZtRG4tNXFSVmd3SkwwWDJFaUY0V1k?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Blink, and you don’t miss it: Smart glasses keep track of health - DPA Magazine](https://news.google.com/rss/articles/CBMisgFBVV95cUxPYm91OUF2SFpMX0xDRFp0Mzh2a3ZPQVlEWHdvcmFjLVN6YlYwdHJNUTFtNVVYVjhZWHdhV1VaalFRMUpMaUZWNWZFTkd5S2htM3VsMFQ2WFIzaXN2OW9PblZpYjg1dFR4TDZEc0lkcUdwNnRhQUdVdXlGV2JONDREanBtQVZFQ1gxZzRMRERSMzJfV0hkd3hVMkFBV2dSaEVFbjJTY19JT0w5eGlLZG1XUzRB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Budget Smart Glasses Review — What Makes Them Different \| TikTok](https://www.tiktok.com/@stormbuysyt/video/7694136484496002324) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Bytech Smart Glasses Review - Instagram](https://www.instagram.com/popular/bytech-smart-glasses-review/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Century of 3D Movie Viewing Exploration: Revolutionary New Solution Unveiled by Innovative Smart Glasses - eu.36kr.com](https://news.google.com/rss/articles/CBMiU0FVX3lxTE9YRnZfMmkyaWlaZTJ4UFpiU2Q0TV83aHFlNUdrOUJhV1ZTWDFPNDV6MXBMRk5MQlVma3ZjTm9pVDl3QjQ1UE0tdUJtUEhKNXRYaVpB?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Even G2 Smart Glasses Review 2025 - Instagram](https://www.instagram.com/popular/even-g2-smart-glasses-review-2025/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Even G2スマートグラスに鼈甲風の新色「Brown2」、チェーンや偏光クリップも発売 - テクノエッジ TechnoEdge](https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrLTVna29rSnpFaVVZc296UmxFQ1ZzbzZROXloek5xMm0yUXRuVHRYaWNHd2M1dTc3Y3g2bC0xcjI0VTNVbHNTMUlYZ1huZUlyRkZKaTd6YmtxTjM0ek8zMGpNT1E4T0k?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
