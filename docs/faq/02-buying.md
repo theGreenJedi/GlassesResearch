@@ -43,3 +43,9 @@ Vuzix LX1 is the focused warehouse/cold-storage candidate, with an advertised te
 ## 20. Should I buy smart glasses now or wait?
 
 Buy now only when a current product solves a specific job—capture, accessibility, captions, teleprompting, private display, or development—and its return policy protects the experiment. Wait if you expect one pair to deliver all-day battery, unrestricted local AI, perfect translation, full AR, ordinary-eyeglass weight, and open software simultaneously. The market is improving quickly, but category boundaries remain real.
+
+## What should buyers know about HTC VIVE Eagle smart glasses in 2026?
+
+**HTC VIVE Eagle is camera-and-audio AI eyewear, not a see-through display headset.** [HTC's launch announcement](https://www.vive.com/us/newsroom/2025-08-14/) introduced it in August 2025, initially for Taiwan. The [current US storefront](https://shop-us.vive.com/products/vive-eagle/) advertises US ordering **from $499**, with a 12 MP camera, open-ear speakers, 4-microphone array, Snapdragon AR1 Gen 1, 4 GB RAM/32 GB storage and 48.5–49 g frames depending on shape. The manufacturer quotes more than 36 hours in standby, up to 4.5 hours of continuous music and over 3 hours of calls—**not** continuous 36-hour AI/video runtime.
+
+HTC states the product has a visible **capture LED** and offers privacy and photo/AI assistance features. The glasses require a compatible smartphone (HTC lists Android 10+ or iOS 17.6+); check current region-specific companion-app services, language support, prescription policy, returns and any AI subscription before buying. [Original community request](https://www.reddit.com/r/SmartGlasses/comments/1x7xioz/htc_vive_eagle_anyone/). These are manufacturer-provided specifications and current store presentation, not GlassesResearch hands-on performance or an endorsement. **Prices, regional availability and firmware can change.** Reviewed October 27, 2026.
