@@ -148,6 +148,13 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 100. [What would an ideal user-controlled smart-glasses platform look like?](10-ownership-future.md#100-what-would-an-ideal-user-controlled-smart-glasses-platform-look-like)
 
 
+- [What should buyers know about HTC VIVE Eagle smart glasses in 2026?](02-buying.md#what-should-buyers-know-about-htc-vive-eagle-smart-glasses-in-2026) — Observed Q-000145; evidence-based answer with published limitations.
+- [Were Google's Gemini Android XR AI glasses scheduled for fall 2026?](10-ownership-future.md#were-googles-gemini-android-xr-ai-glasses-scheduled-for-fall-2026) — Observed Q-000152; evidence-based answer with published limitations.
+- [Does XREAL AURA's large field of view and $1279 price make compact waveguide glasses obsolete?](05-displays.md#does-xreal-auras-large-field-of-view-and-1279-price-make-compact-waveguide-glasses-obsolete) — Observed Q-000160, Q-000163; evidence-based answer with published limitations.
+- [Can smart glasses record landscape video continuously for more than forty minutes?](03-use-cases.md#can-smart-glasses-record-landscape-video-continuously-for-more-than-forty-minutes) — Observed Q-000144, Q-000180; evidence-based answer with published limitations.
+- [Can a VPN set to the United States make Muse work on unsupported smart glasses or in unsupported regions?](09-development-openness.md#can-a-vpn-set-to-the-united-states-make-muse-work-on-unsupported-smart-glasses-or-in-unsupported-regions) — Observed Q-000174; evidence-based answer with published limitations.
+- [Can smart glasses display the live camera view from my phone?](03-use-cases.md#can-smart-glasses-display-the-live-camera-view-from-my-phone) — Observed Q-000172; evidence-based answer with published limitations.
+
 ## Questions researched from actual search language
 
 - [Detect Google Glass Programmatically](09-development-openness.md#detect-google-glass-programmatically) — A historically documented Build-property heuristic, not device attestation.
