@@ -171,6 +171,11 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [Is a slim fold-over glasses case protective enough for electronic smart glasses?](08-accessibility-fit.md#is-a-slim-fold-over-glasses-case-protective-enough-for-electronic-smart-glasses) — Observed Q-000179; qualified published-answer candidate.
 - [Can Even G1 or G2 temple comfort be predicted against RayNeo iO behind the ears?](08-accessibility-fit.md#can-even-g1-or-g2-temple-comfort-be-predicted-against-rayneo-io-behind-the-ears) — Observed Q-000233; qualified published-answer candidate.
 
+- [Can smart glasses replace a drummer's physical music stand?](03-use-cases.md#can-smart-glasses-replace-a-drummers-physical-music-stand) — Observed Q-000166; evidence-qualified answer.
+- [Why do some people object to Ray-Ban Meta AI smart glasses while others value them?](07-privacy-security.md#why-do-some-people-object-to-ray-ban-meta-ai-smart-glasses-while-others-value-them) — Observed Q-000167; evidence-qualified answer.
+- [What should the next generation of AI glasses improve instead of trying to do everything?](10-ownership-future.md#what-should-the-next-generation-of-ai-glasses-improve-instead-of-trying-to-do-everything) — Observed Q-000231, Q-000232; evidence-qualified answer.
+- [Which smart-glasses features deserve priority before buying?](02-buying.md#which-smart-glasses-features-deserve-priority-before-buying) — Observed Q-000241; evidence-qualified answer.
+
 ## Questions researched from actual search language
 
 - [Detect Google Glass Programmatically](09-development-openness.md#detect-google-glass-programmatically) — A historically documented Build-property heuristic, not device attestation.
