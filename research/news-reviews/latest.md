@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-28T18:47:08.910897+00:00`
+Generated: `2026-10-28T18:58:19.633864+00:00`
 
-- Intake files inspected: **283**
-- Candidates retained in this review window/history: **11273**
+- Intake files inspected: **284**
+- Candidates retained in this review window/history: **11323**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2268
+- `adjacent_radar`: 2278
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 507
-- `rejected_noise`: 8412
-- `source_review`: 42
+- `needs_editorial_verification`: 505
+- `rejected_noise`: 8452
+- `source_review`: 44
 - `watching`: 27
 
 ## Action queue
@@ -192,7 +192,6 @@ Generated: `2026-10-28T18:47:08.910897+00:00`
 | high | needs_editorial_verification | direct | [5 Smart Glasses Under $450 That Beat the $579 Ray-Ban Meta Gen 3 - Geeky Gadgets](https://news.google.com/rss/articles/CBMib0FVX3lxTE1PRFBXam1XVGl1UlIzQkNDQWZSWHIxbnR2VTlyWmdGQlhKWEEyVXZCZ0VpODdkQVp5TE5nam5aUGlZWGQtbzVqalJjV05CQndiY2d2REMtOTEtdjRqcUFfdHFGeERLMmNWOEVpZ0NuMA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [9to5Google 1h ago XREAL Aura is coming in November with a special $200-off launch discount Coverage Xreal](https://9to5google.com/2026/10/28/xreal-aura-is-coming-in-november-with-a-special-200-off-launch-discount/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Central 1h ago Launch day: Xreal Aura is here, and there's a limited-time price drop you won't want to miss Coverage Xreal](https://www.androidcentral.com/gaming/virtual-reality/launch-day-xreal-aura-is-here) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-28T18:47:08.910897+00:00`
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
 | normal | needs_editorial_verification | enabling | [Artificial Intelligence Essentials - Coursera](https://www.coursera.org/learn/artificial-intelligence-essentials) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [Austria plans parliamentary study of smart glasses use — Anadolu Agency - UA.NEWS](https://news.google.com/rss/articles/CBMivgFBVV95cUxNTlhoMWhyVV9KQkxxNDA4blY3eUcxdDgxamthQVVtOF8zWmxQaVpZdWlMZlZfOVdzcHhYc1puWkZyQnlaT0xvWlp6eklYNkFOX0RKc1IxakxSa0pvel9mQS1VQU9jejJXMkRvejBHeTEzVDM3V0lKQVJqdUxmd2NOYmdtSVQyZGdJdFpVSWVJYmF3MkkzYy1mSXJnSDF0N1hwVHYwTDZ4NVhNNFFJbU0wMENIemV3ektwZFJVTEhR?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Best $1300 Smart Glasses: XREAL Aura vs Meta VR Headset - Geeky Gadgets](https://news.google.com/rss/articles/CBMib0FVX3lxTE5QTHZqZDdUNVBYUTRybnR6aXVNTjFoSE8yUUd5SDlIYy11Z29QMVQ0UTJnS1hoSncycmpKYkFKYlFwYy1kU2NlcUV5azhYQk5YVFpUSWtqVnBITnhnbFJoUkljZDNVb1JpTUZjTnRRUQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
