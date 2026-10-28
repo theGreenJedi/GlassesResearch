@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-28T10:05:49.442356+00:00`
+Generated: `2026-10-28T10:52:06.178053+00:00`
 
 - Intake files inspected: **283**
 - Candidates retained in this review window/history: **11267**
@@ -12,9 +12,9 @@ Generated: `2026-10-28T10:05:49.442356+00:00`
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 506
+- `needs_editorial_verification`: 503
 - `rejected_noise`: 8409
-- `source_review`: 38
+- `source_review`: 41
 - `watching`: 30
 
 ## Action queue
@@ -186,7 +186,6 @@ Generated: `2026-10-28T10:05:49.442356+00:00`
 | high | needs_editorial_verification | direct | [Xreal 1 Pro+ AR glasses launch with 1,200-nit display and smoother 3D conversion - Wareable](https://news.google.com/rss/articles/CBMijAFBVV95cUxPZVdOaUpqSjNZRXdqMTl3eFExalRNLVMxeXRTWHhGbVpfRU90SW90VmpOY0JfMUpnUUxKVFpRaXNkYkZzSjBUZ2ZXTE1rcmo5SEozQXFLR09IeFlsNUJlWmRqdTZmMzhOSFUxWlRleTUzZ0Q2bVJqYTdSYVM0WDhubjJ1Z0x1NF92NmZvSA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Authority 22d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
@@ -252,13 +251,13 @@ Generated: `2026-10-28T10:05:49.442356+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 탐지 장비 불발…수능은 '육안 검사' - EBS](https://news.google.com/rss/articles/CBMijwFBVV95cUxPbU1Gc2JIbTJlVnJtLWp3bEpnNGJoNzFSeWM4QXhlY0hQVkZCMVZsdHVUMEhOUXNZZU15dk02YVlvTWxLcG5OWTRxMzMyWnVRUnB4aUFIdlZpZ2dKYlJsQTA4RkYtaGp6ajFIZkpLcm9OZm1mZERleEhkQ29FWXJyYXRSX1U3YzZlUGo1OXpwSQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜卷到现在，终于有人不炫技了 - 手机新浪网](https://news.google.com/rss/articles/CBMigAFBVV95cUxQNDZQaVBJQU9vNExDUVhnWjZVTTM5dUdoNzNCWVczMXRITkQ1MzJoSzlhNTdJRG9CWnU5SWl3VDdHcFp0b1lsaExXWWQ3OU9IMGJ0SmVxNk1McVNHV1RuclByS1ZpQkhleGNEYS1DNFhZckluQndQWTNub1B1SngxXw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜圈的重头戏来了！杭州企业乐奇推出全彩显示眼镜 - 杭州网](https://news.google.com/rss/articles/CBMifkFVX3lxTFBtaENDbkZ5NzZyeThjbi1hOWU2cDhOQXJXVmxHRjA3QlF2QkZPdjJjTDlEaUVwaGFGNUtySU5IaG5oQkNqYUtHVmwweHRRakRHZ3I0WU5UUFhyZU5MVS16QUtZTUdUNjg2RWdoeWZ1ZFdrT1EySm9wRlZIVG5rQQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Apply Now: Smart Glasses for Mapping Challenge - fundsforNGOs](https://news.google.com/rss/articles/CBMikAFBVV95cUxQdVdNbS1xSk5td1MxeXNhdS1DTVJrQms0bV9GRzBwZGZRR0lCSklRRnJuQ2JoekEzWG90TWpudXpnUUR1cVh1TmpJZi1EMko0RlBpSi1ua012WXEta2JwTzIzOWNSY2F4enpOQXpVbXF1Z2NONnVyYkdRLVZUT3FUVGVFNWx4dV9aRDJ3RzU5WFDSAZYBQVVfeXFMT2wtVTZPbkhNQ0g3Y1Q0c1FsWnotQ0ZMSmU0elNfZm1nakVKa3psOFg5dmRqZ2RmbjQ2ajNBQmJDM2lFcHhFc0pyV3E3akpQSllRaTMzY3VMNVBWM0l0dGtOSUFNT2dHMEl3MUxnQ2kyTmhnTXQyM2lZcjlya1RBalNDZ3ZSVlRZdEV1NTVzMm9abWJnaVh3?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR/XR Glasses community - Facebook](https://www.facebook.com/groups/arglasses/) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, community_evidence_review |
 | normal | needs_editorial_verification | enabling | [Artificial Intelligence Essentials - Coursera](https://www.coursera.org/learn/artificial-intelligence-essentials) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [ARグラスをはじめとする次世代テクノロジーの普及を見据え、「見る」から「理解する・参加する・つながる」スポーツ観戦へ - 山陽新聞](https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xdmNVUXF1VW1BRlM1OEwxUlZtQkRZODl6MUZnbzZFZko2TTd4NHF4YS1idFFaZU9xZmZxXzlUTzRhRS1ONmVSTkhEQnpqRzBTZ1E?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Auganix Sep 15, 2026 ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses for Prescription Wearers \| AR Compare](https://www.arcompare.com/best/prescription-wearers/) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | direct | [Best smart glasses in 2026: Top AR and AI glasses worth your money ...](https://www.tomsguide.com/computing/vr-ar/best-smart-glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Brilliant Labs lança os óculos inteligentes com IA Halo por US$ 399, com memória e jogos adaptativos - Unite.AI](https://news.google.com/rss/articles/CBMihAFBVV95cUxOcC1fQ1JWN3hyLVpjX2dVaUhsS1BBRFZrRkxEeGtBb21WUDJoSzdSckw5MHlnblNCamFRLTdYY0ItNTdBNmVTNTNsZllEdkhLMXFNUFRTV3pkU0EyOXRTazR3TWdhZUE3RGVNbG9fYXUwRnNkSzRsc1JxX0lsX2FUSEFMNUY?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-28T10:05:49.442356+00:00`
 | normal | needs_editorial_verification | direct | [CES deal sees Vuzix ship first batch of LX1 smart glasses - Traders Union](https://news.google.com/rss/articles/CBMigwFBVV95cUxPVHRHN3RYRm9uYlpLSldvSlJDNDBvU1lwUkVlczU3STVkaGNqUG42bXZ0OFFjaXRzR0xFdXh6UXVuVXZSVnNfZkY2clppNlpKSlZaVmY3WkdNMjY5bEhUR2tGOVYzTnpUMk9WMmI1QjFmRjVBUElpdy13azZJS25GSFQ5dw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [DK Shivakumar and a mystery sting with Meta glasses \| Powertrip #169 - The News Minute](https://news.google.com/rss/articles/CBMiqAFBVV95cUxQTnR0X0tPR0M5Zi1yY2xLenI1Z3IwT2JFOHdTZlhLWk50eW9VQUI2SldiMFNTSGRCNWpjUm11a29PcU5ZYV9XUjR3Wmpja3pqYVl5OHg1YnozSWtscG5NWXZpZllkUHJxRDMzNFRYUDdqTV9fTU1qVHlBMndaVF9xNEV4VmJZbDF6aFlaMmk5QUZ5NDdzMlFpaFNGSW5SajVzcFBXTzNXZmU?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Even G2 Smart Glasses Review 2025 - Instagram](https://www.instagram.com/popular/even-g2-smart-glasses-review-2025/) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Experience Spatial Computing NOW With Xreal Air AR Glasses! - AppleInsider](https://news.google.com/rss/articles/CBMimwFBVV95cUxPanVseXhaSGNxNmRuY2txZjFNVWRKbEN4TjNDZ0kydDBjYzhIRm1fMUE3aENlVUp0RkRyVnk0R1gtUU5tWWExYndQQVhFcHh2UHRwbWtGTlhOQjFoSUw5Z3dSMnNvN3JHQkVUa3I0NHR2YnF5SVpvRWx4d0JyWG1kVjVFN25rc203YzNTNm1fdzlDSzVPNmdGQjBPTQ?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
