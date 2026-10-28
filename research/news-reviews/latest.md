@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-28T12:59:19.332750+00:00`
+Generated: `2026-10-28T13:12:30.251422+00:00`
 
-- Intake files inspected: **285**
-- Candidates retained in this review window/history: **11349**
+- Intake files inspected: **287**
+- Candidates retained in this review window/history: **11460**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2281
+- `adjacent_radar`: 2302
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 508
-- `rejected_noise`: 8471
+- `rejected_noise`: 8561
 - `source_review`: 41
 - `watching`: 30
 
@@ -249,7 +249,6 @@ Generated: `2026-10-28T12:59:19.332750+00:00`
 | normal | needs_editorial_verification | direct | [AI眼镜圈的重头戏来了！杭州企业乐奇推出全彩显示眼镜 - 杭州网](https://news.google.com/rss/articles/CBMifkFVX3lxTFBtaENDbkZ5NzZyeThjbi1hOWU2cDhOQXJXVmxHRjA3QlF2QkZPdjJjTDlEaUVwaGFGNUtySU5IaG5oQkNqYUtHVmwweHRRakRHZ3I0WU5UUFhyZU5MVS16QUtZTUdUNjg2RWdoeWZ1ZFdrT1EySm9wRlZIVG5rQQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜竞争转向“生态战”：乐奇Rokid连发三款新品，探索全彩显示与微手势交互 - 广州日报新花城](https://news.google.com/rss/articles/CBMiigFBVV95cUxPSExPeGhLUFMzUEw4M3FtV1JmZWZNZDhna1NjZERNVmxXRjBWNVozWFdKY3hEaHMtRGZhXzVXdGNSTVJDSnZMMnhHc1lmNWotVGZFSGNCS1hXNVVmVGtKd0J0T3h2ekNsS0QtRTI5eGMwOTlLLW1hajFhdnh5QTRrSTZlME42dHM2TWc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜终于“上色”了！乐奇发布Rokid Color和一枚“手势戒指” - China Daily](https://news.google.com/rss/articles/CBMifEFVX3lxTE5vaXdpSi1INTlCOEIzOUhyWUMxZUczT0liTGZKVlBOenlwcUpwVVRSMm9PbzJUbWE1Q3BJWk5oQTNkWmUyN1JxY2NWNndBdENwWGRYTFFOOW44NUlUUDVVQ2JlRWlXUWROY1E2a3g5ZklJX0dfSlNrZDVYS2s?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Android Authority 1h ago Samsung’s Android XR smart glasses are doomed to fail Coverage Samsung](https://www.androidauthority.com/samsung-android-xr-smart-glasses-doomed-3726764/) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-28T12:59:19.332750+00:00`
 | normal | needs_editorial_verification | direct | [Ford Maverick Merchandise](https://merchandise.ford.com/collections/ford-trucks-maverick) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Ford Truck Hats - Ford Merchandise](https://merchandise.ford.com/collections/ford-trucks-hats) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | enabling | [Free Thin-Film Optics Simulator \| TMM Multilayer Coating Calculator](https://multilayer.app/) | reachable (200) | research_news_review, development_hacking, research_optics |
+| normal | needs_editorial_verification | enabling | [FreeSnell - people.csail.mit.edu](https://people.csail.mit.edu/jaffer/FreeSnell/FreeSnell) | reachable (200) | research_news_review, development_hacking, research_optics |
 
 ## Meaning of states
 
