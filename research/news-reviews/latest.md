@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-28T00:28:06.618567+00:00`
+Generated: `2026-10-28T05:55:45.608548+00:00`
 
-- Intake files inspected: **288**
-- Candidates retained in this review window/history: **11395**
+- Intake files inspected: **286**
+- Candidates retained in this review window/history: **11314**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2280
+- `adjacent_radar`: 2252
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 513
-- `rejected_noise`: 8517
-- `source_review`: 35
+- `needs_editorial_verification`: 511
+- `rejected_noise`: 8463
+- `source_review`: 38
 - `watching`: 32
 
 ## Action queue
@@ -37,15 +37,14 @@ Generated: `2026-10-28T00:28:06.618567+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1108](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1108) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1160](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1160) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1162](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1162) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1164](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1164) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1168](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1168) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.942](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.942) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.955](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.955) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.967](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.967) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.901](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.901) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.905](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.905) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.906](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.906) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.909](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.909) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.910](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.910) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.911](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.911) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -150,6 +149,9 @@ Generated: `2026-10-28T00:28:06.618567+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1156](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1156) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1161](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1161) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1162](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1162) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1166](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1166) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1170](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1170) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1171](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1171) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -193,7 +195,6 @@ Generated: `2026-10-28T00:28:06.618567+00:00`
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Authority 22d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
@@ -259,8 +260,6 @@ Generated: `2026-10-28T00:28:06.618567+00:00`
 | normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [AI眼镜卷到现在，终于有人不炫技了 - 手机新浪网](https://news.google.com/rss/articles/CBMigAFBVV95cUxQNDZQaVBJQU9vNExDUVhnWjZVTTM5dUdoNzNCWVczMXRITkQ1MzJoSzlhNTdJRG9CWnU5SWl3VDdHcFp0b1lsaExXWWQ3OU9IMGJ0SmVxNk1McVNHV1RuclByS1ZpQkhleGNEYS1DNFhZckluQndQWTNub1B1SngxXw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI眼镜终于“上色”了 - 搜狐网](https://news.google.com/rss/articles/CBMijAFBVV95cUxOcEdWc0hTaGNfRGdOa3d5V0VVaWY1b0JRTzNXUlZUeFZiTmpmRFFleDZHQ0ZRNlMwZy1Tc2xzZGhRZ2tZU2hyWlFsb3R5SmlaSmlwUnpLS1FDSDVuYTBTTlV5a20tVkVKQ3gtcXRjMWpObHR5aG5qLUE0cDg2SUtTODdsVGRWTkJmRVkydQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Prescription Smart Glasses](https://www.amazon.com/prescription-smart-glasses/s?k=prescription+smart+glasses) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [Apple Reorganizes Its Priorities: Smart Glasses Take Center Stage as Vision Pro Takes a Backseat - آي-فون إسلام](https://news.google.com/rss/articles/CBMi3wFBVV95cUxPMjY3NUFaeWhSVHVwbDE1Y25hS2xyWGFmT1hXTFJWR3kwenJJamlpMGM1T0lHS1djTmtDbWxzQTVxSXVEUVJURC1Wc0RkNEZtODJqb0thX1RpSTM0OVYzX1YtWUdQNVJCVnFlUl9UOUxkd3VEalBFdmdwWGQzcTZwbUE0ZEcxNEtpdmdjQklyZEp6RWRXTktEQUdjVi1LRDQzSlZ6cEJRbV9La0RrcWkyVGNtdjRMaTdTZGZBazEwODVKRTdXYVVIWEJ4c0ZweEphWFNmdFV4eW1KZDdraW9z?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Apple Smart Glasses: Will they be the most stylish alternative to Vision Pro in 2026? - آي-فون إسلام](https://news.google.com/rss/articles/CBMizwFBVV95cUxNOWtfaW1abUJ5TldUR3dLMmNKUHhaU05PdVdEVkJrRzczRXJPeUVPMEQtSnZDM2o1SlBLcnZmZEZTTGdudnFyZjU0U1NsVlNNRTQ0WWxPTS1iWFQ0YXZhQnp0ekEtR2VYQXE0NDc0eV9qRDB5UkVZMDFZME5KLVJTOGRaelhiQmF1Mzk0SkZvZzd4Q2ZFRUdnTUlEWFUyOHJDR0szRGE4blNaMUdUNWF1VktZNnJvVlBSWXFTTTRuam5fc3QyR2N2ay0waHhCTGc?oc=5) | reachable (200) | research_news_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-28T00:28:06.618567+00:00`
 | normal | needs_editorial_verification | direct | [ARグラスをはじめとする次世代テクノロジーの普及を見据え、「見る」から「理解する・参加する・つながる」スポーツ観戦へ - 山陽新聞](https://news.google.com/rss/articles/CBMiUkFVX3lxTE8xdmNVUXF1VW1BRlM1OEwxUlZtQkRZODl6MUZnbzZFZko2TTd4NHF4YS1idFFaZU9xZmZxXzlUTzRhRS1ONmVSTkhEQnpqRzBTZ1E?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Auganix Sep 15, 2026 ENGO Announces engo3 Cyclist AR Smart Glasses for Road and Gravel Cyclists](https://www.auganix.org/ar-news-engo-engo3-cyclist-ar-smart-glasses/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Best Smart Glasses for Prescription Wearers \| AR Compare](https://www.arcompare.com/best/prescription-wearers/) | reachable (200) | research_news_review, research_optics |
+| normal | needs_editorial_verification | direct | [Brilliant Labs is betting on gamification to bring smart glasses to the masses - GamesBeat](https://news.google.com/rss/articles/CBMiowFBVV95cUxNRUw1ZkJUQmhhZU5JMHVhOXQ5Q0JLYXo4NTN1akstcXlHSkxkek1CdVlhbEtKT2RXR2FuWlFrLXNueV9CNVoyZlVJaHJsSHJYeWU0Y0ktZnpUcUg1LXZPODNMYW95Y2cyNlhxMHhvMFhHdFRhZHlBdTVONXFmZmNxbEFoeDh3Z2lsVUdFQkhVekVuNmoxYm9JenQ3WGpqelY2MWZj?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
