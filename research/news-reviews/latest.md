@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-28T22:56:28.233991+00:00`
+Generated: `2026-10-28T23:20:36.131789+00:00`
 
-- Intake files inspected: **280**
-- Candidates retained in this review window/history: **11212**
+- Intake files inspected: **282**
+- Candidates retained in this review window/history: **11288**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2279
+- `adjacent_radar`: 2293
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 505
-- `rejected_noise`: 8342
-- `source_review`: 43
+- `needs_editorial_verification`: 509
+- `rejected_noise`: 8401
+- `source_review`: 42
 - `watching`: 26
 
 ## Action queue
@@ -147,6 +147,7 @@ Generated: `2026-10-28T22:56:28.233991+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1181](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1181) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1182](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1182) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1183](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1183) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1184](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1184) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -244,6 +245,7 @@ Generated: `2026-10-28T22:56:28.233991+00:00`
 | high | needs_editorial_verification | direct | [Xreal Aura smartglasses go on sale with launch discounts - Mezha.net](https://news.google.com/rss/articles/CBMiigFBVV95cUxQejVHcnJwV3pfSEo0bzgwOUl4WFktM3RRb3lhLTNTeVgzSUR5cmxYVV9jeUJwWlVoeF9Gc2g2YWRQYTltYjBIeTFnTVF4d0R6dGtNOUtJcF9xVFl3SGxzUVJISTk1RkhwTTlrdnk2bW1MQnhmdkpyTHZ4Rk9nWldtR0FRS3FFNG9XU2c?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [XREAL AURA US price, preorder eligibility and shipping](https://us.shop.xreal.com/blogs/guides/xreal-aura-price-preorder-us) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Xreal lança Aura, óculos com fio que rodam Android XR e encaram o Ray-Ban Meta - TecStudio](https://news.google.com/rss/articles/CBMivwFBVV95cUxOWm5xTElod1Z1UjZMdzJXQmh1Wi1OdUhCdVFqMlVkWF9ZeUIwcE45ZlZCM2UxZ3BKYURFLWZjeTBOdzFVNC1xRm9vNEtQV2JCWE5xek1zZ29JQkE0NjFXSjRDcWU0SDBJZFNCVXhtY0NxN25YbmhwY0pINDZpT2JpeFpPUEFnaWtnMlJsa1hZanpyLWNVMFBQUmt2X3Y3QTYwbHNsVmU2ZzZ0ajAwNWtWMTQ3SVN4SUxfbGVCeUo3QQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered by Android ...](https://www.techpowerup.com/354232/xreal-launches-aura-as-the-first-wired-xr-glasses-powered-by-android-xr) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered by Android XR - TechPowerUp](https://news.google.com/rss/articles/CBMiqgFBVV95cUxObV8tX1QwZDlBVVlJd3FJMlU5N19Zck5OUUxBbmRKRXBhYVVJNlVURFNLalpQbUNWXzZQYkw0SUNVcFR6cnAtX2JKVmV4blJqcXIzWGs5RG5vdDZVYnR0WEZBeXdkWm54bEtHODc3WkhZaERqdUZiUy1JSlp1dWhsTWpsNWNpMTRPSXo4ajhmNm1WOC1Gdmk3MFBMVmswdG1Ldmd2U0lqUTNJUdIBrwFBVV95cUxQT0tkVnE2X0N0c1Z1eWFjY3pCU0plNmlNRXFJOVEtaTVhOUFCOUptYXE3WVVoaEhzOEJobnVGYTY1UENiTmRUYUtVTi1ISFRQV2Y4QW9vWmEyRTRHc3BOdzZ2NjJ4eVc4ZzEzdnRnUEg5QXZqWDVYUk8zODQwQlg2eHlJWXhsVFR4eE9lOVZYZ2s5dE00TkRETWhIaHZDQjBGc1RXdzNiMk5sRlpUYnpF?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal launches Aura glasses with hand gestures in Canada - MobileSyrup](https://news.google.com/rss/articles/CBMiekFVX3lxTFB5a1Q2Y09Ia21ERFZ4NVNvTjNOaExzNFNtSFcxSEpMR2xNRjNidFF6RTBEYnpVR3ZLQk16NkRVWWlMZHU1VWU0Um1fREkxYks3SzJ5blpLM09VR0hiQl9IM0xFU0VrMHlscmZsTlROY3FmN3k5RUpNVWVB?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal opens pre-orders for Aura Android XR glasses today - Shacknews](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOYVJBTnZFYkxRc2h1Um91TWk1Tm5tWWdpXzhya293NGRpWi0wN2Z1RFhncmNYSXlnNzRZbThobG1rMWVSd1I5REZRV25Fb01mci12ZldnRW1wVHBVXzQtSGc1M2F4cy1hZ2F3T1dVdkF3aXQ2M2tudU9odmlHZm5qc0Rta1hVdGxYejlv?oc=5) | reachable (200) | research_news_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-28T22:56:28.233991+00:00`
 | normal | needs_editorial_verification | direct | [9to5Google 4h ago XREAL Aura debuts with 150 made-for-XR experiences, including Project Hail Mary, NBA, Fallout, and more Coverage Xreal](https://9to5google.com/2026/10/28/xreal-aura-debuts-with-150-made-for-xr-experiences-including-project-hail-mary-nba-fallout-and-more/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [9to5Google Sep 20, 2026 The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | enabling | [About multilayer.app \| Thin Films & Multilayered Spheres](https://multilayer.app/about.html) | reachable (200) | research_news_review, development_hacking, research_optics |
-| normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
-| normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
