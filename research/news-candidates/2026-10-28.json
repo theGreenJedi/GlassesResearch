@@ -1,105 +1,277 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-10-28T00:27:10.384986+00:00",
-  "candidate_count": 2,
-  "precision_rejected_count": 170,
+  "discovered_utc": "2026-10-28T05:54:41.256258+00:00",
+  "candidate_count": 6,
+  "precision_rejected_count": 161,
   "relationship_counts": {
-    "direct": 0,
+    "direct": 6,
     "enabling": 0,
-    "adjacent": 2,
+    "adjacent": 0,
     "speculative": 0,
     "irrelevant": 0
   },
   "type_counts": {
-    "model": 1,
-    "review": 1,
-    "tool": 1
+    "model": 5,
+    "news": 1,
+    "tool": 5,
+    "sdk": 5,
+    "community": 5
   },
   "routing_counts": {
-    "adjacent_radar": 2,
-    "development_hacking": 1,
-    "model_catalog_review": 1,
-    "report_card_evidence": 1,
-    "research_news_review": 2
+    "community_evidence_review": 5,
+    "development_hacking": 5,
+    "model_catalog_review": 5,
+    "research_news_review": 6
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
     {
       "url": "https://brilliant.xyz/blog",
       "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "url": "https://www.thinkar.com/en/pages/news",
+      "error": "HTTP Error 503: Service Unavailable"
     }
   ],
   "candidates": [
     {
-      "id": "85ce9face188d1a4",
-      "title": "What Synaptics (SYNA)'s Edge AI Platform Launch Means For Shareholders - Simply Wall Street",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPLXJ3UmxsZ2VEX1gtRmNsQ2VXbUhqWlhscnJmMEhyQTZ0OS1MdzBnWVoxanZpTEI5OWtwVk9yM1c4UHNFcEN5MEo5U1ZNdmFuY1pOQVpUTkZWMTAyamxsS0lFd01vdHpNYVh6YkxRVHVfRXU5bUxnUkFwZ0pyTVhNeGR3UVNnYzlLRm80WjR4ZENPV3Z2QkZHT09Jakx1aktRZXgxVWZHU0s1SWp1TmM1ZE1lYnJzUWs4ZWMwOHZHSXdhdGtudDlsckJoOF81VFXSAdQBQVVfeXFMT1dFM0NhMnN6dkdTWVNJQkNQZjc5dVFLc3owa3h2QmZJaXQ3MWNBLXFmMk16VVlWaGhDcVoyRV90RHNjU0ZPaXhEeU5YUnVpNjZsRHIzNmFvbUZGWUN4cnM5RDUtZm82S25sZ0Q4TXU5MUFYS1hBekttbkE5MTNELTQzOEQ4MF9aNDlsWWFURHB3Ynp2RVo2c0p0LWhIN0Z1bjd4Ql9rNW56LVd0Tnd1ckpOTF9yYmJPWDRvVF9IRzFlNFU0djJxbFdVV3RUSzY0SThvODY?oc=5",
-      "source": "Google News: edge AI wearable processor",
-      "source_lane": "adjacent_hci",
-      "published": "Tue, 27 Oct 2026 22:28:02 GMT",
-      "summary": "What Synaptics (SYNA)'s Edge AI Platform Launch Means For Shareholders Simply Wall Street",
-      "materiality_score": 5,
+      "id": "4cb7406185b30a60",
+      "title": "Mentra 3.3.0-beta.1164",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1164",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-28T01:31:24Z",
+      "summary": "Mentra 3.3.0-beta.1164 — beta build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 83c492b . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
       "keyword_hits": [
-        "ai",
-        "launch"
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
       ],
       "status": "candidate",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
+      "attribution_required": true,
+      "relationship": "direct",
       "content_types": [
         "model",
-        "tool"
+        "tool",
+        "sdk",
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
         "model_catalog_review",
         "development_hacking",
-        "adjacent_radar"
+        "community_evidence_review"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
       "institution_test": "likely durable"
     },
     {
-      "id": "fd42faf2607cd62a",
-      "title": "What will replace the smartphone: neural interfaces, cybernetic eyes, and full immersion—all of which are already being tested on humans - Andro-News",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbGt3aGNaeHQ2dkpkd0RGc3NYRnRobE04amJEbENLQmtDQjNBbDA0S0d3cGY2UnFwUGpReGlHaHdRN0dXY1Z3S1c1dkcxcmFHMUQ4R0JrUGM4cHVyLS0tNzBNalcxWkR0MXh6d0FJR2xWMUw2Y1F3b1YwaFlQYzkyWkM2U2NzbG90UEdKVzhFMEUyamRuR2FMb2ZoZ24tUzlWS1U3YzZmYWV1TDhHaWtEdFJjWE5sVndBOVJRVHdjR1QxOEV6Q05YWmN1UWp2YUdScWwtcFFaYl9iekp2cENtME9VMnlJS2g4eEQ4dEJ2SjAtQQ?oc=5",
-      "source": "Google News: smart contact lens research",
-      "source_lane": "adjacent_hci",
-      "published": "Mon, 26 Oct 2026 18:07:56 GMT",
-      "summary": "What will replace the smartphone: neural interfaces, cybernetic eyes, and full immersion—all of which are already being tested on humans Andro-News",
+      "id": "daf3261a9224b8e5",
+      "title": "Mentra 3.3.0-beta.1168",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1168",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-28T02:42:33Z",
+      "summary": "Mentra 3.3.0-beta.1168 — beta build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Glasses OTA bundle Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Source: 70433cf . Downloads are hosted on Mentra's artifact CDN. Example apps are distributed separately.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "280118e22bb9ab6b",
+      "title": "Mentra 3.4.0-dev.1166",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1166",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-28T02:03:55Z",
+      "summary": "Mentra 3.4.0-dev.1166 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Bluetooth example apps React Native example APK Native Android example APK React Native ElevenLabs audio example APK Native iOS example IPA (unsigned) Source: f7eb5fd . Downloads are hosted on Mentra's artifact CDN.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "1d72a660b83c2c03",
+      "title": "Mentra 3.4.0-dev.1170",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1170",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-28T04:01:55Z",
+      "summary": "Mentra 3.4.0-dev.1170 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Bluetooth example apps React Native example APK Native Android example APK React Native ElevenLabs audio example APK Native iOS example IPA (unsigned) Source: bda9eb4 . Downloads are hosted on Mentra's artifact CDN.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "b3f503053a957181",
+      "title": "Mentra 3.4.0-dev.1171",
+      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1171",
+      "source": "direct-feed",
+      "source_lane": "research_radar",
+      "published": "2026-10-28T05:06:40Z",
+      "summary": "Mentra 3.4.0-dev.1171 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Bluetooth example apps React Native example APK Native Android example APK React Native ElevenLabs audio example APK Native iOS example IPA (unsigned) Source: 71f6bde . Downloads are hosted on Mentra's artifact CDN.",
+      "materiality_score": 6,
+      "keyword_hits": [
+        "bluetooth",
+        "developer",
+        "release",
+        "sdk"
+      ],
+      "status": "candidate",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "community_evidence_review"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "likely durable"
+    },
+    {
+      "id": "bc14f177eadeb002",
+      "title": "Rokid debuts the world's first full-color display, ushering in the \"first-generation iPhone\" moment for AI glasses. - eu.36kr.com",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1SZ1pFWTBseEh6Rk5ZVjh4MTlzRjVURHhkNzQtVU5wNGRpeEN0Mm5aZkhBU0ZQRmhLYmJaQVoxb1NMTU8xWWlqWWc4Z09jQVFQSmk4?oc=5",
+      "source": "Google News: smart glasses",
+      "source_lane": "core_glasses",
+      "published": "Wed, 28 Oct 2026 03:23:58 GMT",
+      "summary": "Rokid debuts the world's first full-color display, ushering in the \"first-generation iPhone\" moment for AI glasses. eu.36kr.com",
       "materiality_score": 2,
       "keyword_hits": [
-        "neural"
+        "ai",
+        "display"
       ],
       "status": "candidate",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "direct",
       "content_types": [
-        "review"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
+        "research_news_review"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, rokid",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
+      "institution_test": "review durability"
     }
   ]
 }
