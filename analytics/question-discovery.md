@@ -1,17 +1,17 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-27T15:54:44+00:00**
+Generated: **2026-10-28T16:40:49+00:00**
 
-- Published evidence-backed answers: **162** (minimum **1000**, no ceiling)
-- Remaining to minimum: **838**
-- Canonical registry size: **242** (not the published count)
-- Unanswered research candidates: **67**
-- Observations this run: **67**
-- New distinct questions: **2**
+- Published evidence-backed answers: **199** (minimum **1000**, no ceiling)
+- Remaining to minimum: **801**
+- Canonical registry size: **286** (not the published count)
+- Unanswered research candidates: **65**
+- Observations this run: **71**
+- New distinct questions: **7**
 
 ## Source health
 
-- github_issues: ok — 10 observations
+- github_issues: ok — 14 observations
 - stackexchange: ok — 20 observations
 - reddit_rss: partial — 32 observations
 - google_search_console: ok — 5 observations
@@ -19,8 +19,13 @@ Generated: **2026-10-27T15:54:44+00:00**
 
 ## New questions
 
-- **Q-000241** — What features would you actually prioritize when buying smart glasses?
-- **Q-000242** — Has your IT/security team ever actually asked about camera-free smart glasses?
+- **Q-000280** — There seem to be glasses are 'open' (Even Realities?
+- **Q-000281** — [Feature Request] Docs: does speaker audio keep playing during a camera stream on Mentra Live?
+- **Q-000282** — the Bluetooth SDK on iOS, the camera streaming to the phone over WHIP, and speech played through the phone's normal audio APIs to Mentra Live as the Bluetooth media output: does the speech stay audible during the stream?
+- **Q-000283** — What do smart glasses reviews always forget to test?
+- **Q-000284** — Has anyone ever bought frames and lenses separately in the UK?
+- **Q-000285** — What smart glasses have offline live translation?
+- **Q-000286** — Even G2 Mic Issues - AI Can't Understand - Suggestions?
 
 ## Research queue (first 20)
 
@@ -41,8 +46,8 @@ Generated: **2026-10-27T15:54:44+00:00**
 - **Q-000124** — Audio processing never starts in pocketsphinx-android
 - **Q-000127** — How to get action of System Dialong Box programatically
 - **Q-000128** — Xamarin PCL get Device Information
-- **Q-000137** — Open Source Smart Glasses?
 - **Q-000138** — What glasses should I buy to help me cheat in my exam?
 - **Q-000139** — Which smart glasses have the most advanced teleprompter display?
+- **Q-000140** — What I actually kept using (and what I turned off) after wearing HUD glasses as my daily prescription pair
 
 > A discovered question is not an answered question. Research, independently verify evidence, and publish only what the sources support. Search Console is optional performance feedback, never an eligibility requirement.
