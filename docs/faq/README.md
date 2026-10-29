@@ -206,6 +206,12 @@ These questions were observed in first-party Search Console data and researched 
 - [Why can PocketSphinx fail to receive audio on Vuzix M300 when AudioRecord works elsewhere?](09-development-openness.md#why-can-pocketsphinx-fail-to-receive-audio-on-vuzix-m300-when-audiorecord-works-elsewhere) — Original observed Q-000124; cited answer and test limitations.
 - [Can historical Google Glass apps still use the Wikitude augmented-reality SDK?](09-development-openness.md#can-historical-google-glass-apps-still-use-the-wikitude-augmented-reality-sdk) — Original observed Q-000134; cited answer and test limitations.
 
+
+- [Does Mentra Live keep speaker audio playing while its camera streams over WHIP?](09-development-openness.md#does-mentra-live-keep-speaker-audio-playing-while-its-camera-streams-over-whip) — Q-000281 and Q-000282; concurrent playback unverified, with a reproducible iOS test.
+- [Which smart glasses can translate speech offline?](06-ai-cameras-audio.md#which-smart-glasses-can-translate-speech-offline) — Q-000285; manufacturer offline packs versus internet-dependent modes.
+- [How do I troubleshoot Even G2 microphone speech-recognition failures?](06-ai-cameras-audio.md#how-do-i-troubleshoot-even-g2-microphone-speech-recognition-failures) — Q-000286; official input-path diagnostics.
+- [Is using live captions in a coffee shop helpful or rude?](08-accessibility-fit.md#is-using-live-captions-in-a-coffee-shop-helpful-or-rude) — Q-000297; accessibility and transcript-retention distinctions.
+
 ## Observed software-compatibility questions
 
 - [Is RayNeo iO support being considered for the MentraOS roadmap?](09-development-openness.md#is-rayneo-io-support-being-considered-for-the-mentraos-roadmap) — Separates a public support request from an official commitment or tested adapter.
