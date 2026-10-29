@@ -31,6 +31,7 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 - [Brilliant Labs Developer Discord](https://discord.gg/7w3DFxek4p) — developer-focused community linked directly from Brilliant Labs' official GitHub for project help and seeing what other builders are creating.
 - [Brilliant Documentation](https://docs.brilliant.xyz/) — hardware, SDK, Bluetooth, firmware, and development documentation.
 - [Brilliant Community Projects](https://docs.brilliant.xyz/community/) — community-created applications, libraries, examples, and tools.
+- [Halo firmware — GitHub](https://github.com/brilliantlabsAR/halo-firmware) — official Zephyr/Lua firmware, build and OTA flashing documentation, with owner-build support and per-file license restrictions; the 0.8.23 release is dated 2026-10-27.
 
 ## Even Realities — G1 / G2
 
