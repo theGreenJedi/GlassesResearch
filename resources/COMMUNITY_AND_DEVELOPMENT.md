@@ -73,6 +73,14 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 - [Meta Community: Ray-Ban SDK discussion](https://communityforums.atmeta.com/discussions/dev-general/suggestion-for-developing-an-sdk-for-meta-ray-ban-glasses/1196341) — developer discussion documenting demand for Ray-Ban access and Meta responses.
 - [r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/) — independent cross-vendor discussion including extensive Meta/Ray-Ban ownership, privacy, buying, and comparison threads.
 
+
+## Independent Meta-compatible development and interoperability
+
+- [Visor — GitHub](https://github.com/macedonga/visor) — independent Meta-compatible companion and reverse-engineering project. [Developer-mode interface](https://github.com/macedonga/visor/blob/main/docs/developer-mode.md) documents Android intents for photo/video capture and media import; [v1.3.10](https://github.com/macedonga/visor/releases/tag/v1.3.10) introduced these controls. [Owner report](https://github.com/macedonga/visor/issues/29#issuecomment-6456479737) describes successful Termux triggering, **not independently verified** by GlassesResearch. [Follow-up voice-session changes](https://github.com/macedonga/visor/commit/6a4ac0f691fbd7f37a0c4203c4f24b07c7bb1263) are developer-reported; do not infer cross-device compatibility.
+- [VModal smart-glasses SDK — GitHub](https://github.com/v-modal/vmodal_sdk_smartglass) — independent voice-search, image-preparation and display integration using an Android SDK package. [October 20 implementation](https://github.com/v-modal/vmodal_sdk_smartglass/commit/da217283a3187b9c64b490bfedb402aacf0a6931) documents Meta Mock Device Kit and native contract tests; **physical-device and live acceptance remain pending**. Simulator tests do not prove hardware operation.
+
+These links are public project evidence, not GlassesResearch hardware test results or endorsements. Additional contributor and test provenance remains in the [public technical research network](../research/community-research/PUBLIC_TECHNICAL_NETWORK.md).
+
 ## Meizu MYVU / Star Air (XGA010C)
 
 - [Panny777 MYVU SDK — GitHub](https://github.com/Panny777/Meizu-Myvu-SDK) — unofficial Android SDK and reverse-engineered BLE/RFCOMM protocol notes.
