@@ -20,4 +20,8 @@ description: Source-level evidence and publication limitations for Q-000231, wha
 
 ## Verification and publication gate
 
-FAQ `docs/faq/10-ownership-future.md#what-should-the-next-generation-of-ai-glasses-improve-instead-of-trying-to-do-everything`; master directory `docs/faq/README.md`. Both original IDs map to one distinct public FAQ URL; do not count twice. No first-person ownership report, musician performance test, universal ranking or speculative future date is claimed. **Status: researched but not yet registry-published.** Credit only after the merged revision passes exact GitHub Pages production-content proof for page, directory and evidence.
+FAQ `docs/faq/10-ownership-future.md#what-should-the-next-generation-of-ai-glasses-improve-instead-of-trying-to-do-everything`; master directory `docs/faq/README.md`. Both original IDs map to one distinct public FAQ URL; do not count twice. No first-person ownership report, musician performance test, universal ranking or speculative future date is claimed. **Status: published and production-verified 2026-10-28.** Credit only after the merged revision passes exact GitHub Pages production-content proof for page, directory and evidence.
+
+## Publication verification — 2026-10-28
+
+Merged publication [PR #711](https://github.com/theGreenJedi/GlassesResearch/pull/711) at `d79c97b15a9064bbe7d29dbf541f67d233905a50`. [Deploy #40756812106](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40756812106) succeeded. [Exact production-content proof #40757406201](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40757406201) succeeded at 2026-10-28T19:48:19Z: the changed FAQ topic, `/docs/faq/` directory, and this evidence packet were retrieved from the public site and matched the deployed build digests. This proves publication, not any independent device bench test.
