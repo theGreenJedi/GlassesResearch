@@ -25,13 +25,14 @@ A public repository proves that code or documentation was published. It does **n
 - [FCC ID 2BNVK-W610](https://fccid.io/2BNVK-W610) — W610 equipment-authorization record with labels and regulatory exhibits.
 - [W610 Research Portal](../models/W610/resources/RESEARCH_PORTAL.md) — GlassesResearch index of the concrete W610 sources collected so far.
 
-## Brilliant Labs Frame
+## Brilliant Labs Frame and Halo
 
 - [Frame SDK](https://docs.brilliant.xyz/frame/frame-sdk/) — **Project-primary** — official development documentation covering Python, Flutter, Lua, direct BLE development, and firmware customization.
 - [Frame hardware manual](https://docs.brilliant.xyz/frame/hardware/) — **Project-primary** — official block diagrams, schematics, MCU/FPGA details, camera, microphone, battery, mechanical data, prescription clip, and firmware-customization information.
 - [Brilliant Labs documentation](https://docs.brilliant.xyz/) — **Project-primary** — official documentation hub for Frame, Halo, Monocle, APIs, firmware and community projects.
 - [Brilliant Labs GitHub organization](https://github.com/brilliantlabsAR) — **Project-primary** — public source repositories and SDKs.
 - [Frame firmware codebase](https://github.com/brilliantlabsAR/frame-codebase) — **Project-primary** — public Frame firmware/source repository referenced by the official hardware documentation.
+- [Halo firmware](https://github.com/brilliantlabsAR/halo-firmware) — **Project-primary; mixed licenses** — Brilliant Labs' public Zephyr-based Halo firmware, including a Lua on-device runtime, BLE protocol documentation, [build/OTA flashing guide](https://github.com/brilliantlabsAR/halo-firmware/blob/main/applications/halo/FLASHING.md), and MCUboot test-boot/auto-revert behavior. [Firmware release 0.8.23](https://github.com/brilliantlabsAR/halo-firmware/releases/tag/0.8.23) was published **2026-10-27**. The maintainer documents owner-built OTA firmware as supported; GlassesResearch has not independently flashed Halo. **License boundary:** Halo-specific code is generally Apache-2.0, but Alif SDK and vendored components have separate terms; the entire repository is **not** uniformly Apache-2.0.
 
 ## MentraOS and open smart-glasses hardware
 
