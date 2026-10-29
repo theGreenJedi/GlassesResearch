@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-29T11:08:36.174604+00:00`
+Generated: `2026-10-29T13:18:49.877084+00:00`
 
-- Intake files inspected: **279**
-- Candidates retained in this review window/history: **11203**
+- Intake files inspected: **281**
+- Candidates retained in this review window/history: **11275**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2251
+- `adjacent_radar`: 2264
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 530
-- `rejected_noise`: 8347
+- `needs_editorial_verification`: 537
+- `rejected_noise`: 8399
 - `source_review`: 42
 - `watching`: 16
 
@@ -23,6 +23,7 @@ Generated: `2026-10-29T11:08:36.174604+00:00`
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [Mentra App account-switch deep-link security hotfix merged to staging](https://github.com/Mentra-Community/MentraOS/pull/4947) | reachable (200) | Research & News, Across the Wire, security/privacy, app ecosystem |
 | high | needs_editorial_verification | direct | [Google and XREAL launch AURA Android XR glasses - TestingCatalog AI News](https://news.google.com/rss/articles/CBMihgFBVV95cUxQNWxHT19iOWo2ajJ4UHgzdV9IbHZzN3czMno1Tkd4eTRqMUF0Z3lseWJLbGZWV1dvcDZMTU9hNzBrc2FtWHpjS3E5aU1nVUdGNmgwQVBRazZETFA5NC1UTjdBU2Vhd2ZtbzdKbEFCNXlyTUNpeFJJSVNNUUxGdU1IdXQxbnVCdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Google and XREAL launch AURA glasses with Android XR and 120 Hz Sony Micro-OLED displays - mobidevices.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5aSFZsNVF0VVd4cGtmUkpYMndpdnNFZ1RiU0paOTdFU0lRVDUxNTF0QURQZFNTNS1DNzJENE5OM3otUnR6SGNxX2RobEV0Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1000](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1000) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1001](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1001) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1002](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1002) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -152,6 +153,8 @@ Generated: `2026-10-29T11:08:36.174604+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1193](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1193) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1195](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1195) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1196](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1196) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1197](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1197) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1198](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1198) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -268,9 +271,6 @@ Generated: `2026-10-29T11:08:36.174604+00:00`
 | normal | needs_editorial_verification | direct | [`AI 안경 면접 금지` 기업·구직자 모두 `찬성`…"정보유출 두려워" - 디지털데일리](https://news.google.com/rss/articles/CBMiYkFVX3lxTE9LOFpROEdwbk0tQW9fa240d2RxYW1tOVhfVEZlRmRzVzRtLXZpX2pFTUQxdHcydUM5cnEyMWFDY2dyQ2JKZkFUeFBzc2dSaEt4TVRiY1hWdUhtTVp6OHBuVkRR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | enabling | [About multilayer.app \| Thin Films & Multilayered Spheres](https://multilayer.app/about.html) | reachable (200) | research_news_review, development_hacking, research_optics |
 | normal | needs_editorial_verification | direct | [AI glasses review: smart translation glasses I tried \| TikTok](https://www.tiktok.com/@jake.outdoor.ai/video/7694609667984608543) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
-| normal | needs_editorial_verification | direct | [AI Smart Glasses Honest Review — Is It Worth the Money? \| TikTok](https://www.tiktok.com/@beardhavennig/video/7694447381185694983) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [An unofficial RayNeo iO emulator runs the stock firmware on a Mac, but its core stays private - MIXED Reality News](https://news.google.com/rss/articles/CBMilAFBVV95cUxNamsxMUlrbTN5clk5b1BXTUFfNV8zaEFlWGwzOTVEZkx3b1d0ek9LZHhETGw4ZmtjZHpIOVFZSm5ET3h0VHJNMHFXaTFhdjE1ZGpzbW9aMjU4am5nLVNZUzNTejJyclNaQzZCdlZPMmpqc0gyOWdnQ29SeEEtVXpZNmlQRE40SWRfUzJWNHF4U2lSZ215?oc=5) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
