@@ -10,6 +10,9 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 - [Open Source Smart Glasses — GitHub](https://github.com/Mentra-Community/OpenSourceSmartGlasses) — open hardware/software project originating with Team Open Smart Glasses / H20 Smart Glasses Community.
 - [Mentra Discord](https://mentra.glass/discord) — developer and user community around MentraOS and compatible devices.
 
+- [OpenSQZ Glass / OpenGlass — GitHub](https://github.com/OpenSQZ/OpenGlass) — research-prototype local-first visual assistance using ESP32 wearable sensing and nearby-host multimodal inference; open build files and experimental Rokid adapter.
+- [OpenSource-Ai-Glasses / OSAIG — GitHub](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses) — early-stage RV1106B Linux smart-glasses software, SDK, firmware and hardware-integration documentation; open software does not imply wholly open hardware.
+
 ## XDA and independent technical troubleshooting
 
 - [XDA: Rokid Max / Android USB-C audio-routing troubleshooting](https://xdaforums.com/t/two-issues-with-apps-after-software-updates-in-march-2024.4672628/) — community troubleshooting involving Rokid Max AR glasses and Android USB-C DisplayPort audio behavior.
@@ -33,6 +36,9 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 
 - [r/EvenRealities](https://www.reddit.com/r/EvenRealities/) — active owner and developer community with app-development, technical-support, feature-request, and EvenHub discussions.
 - [MentraOS — GitHub](https://github.com/Mentra-Community/MentraOS) — independent open-source cross-device platform supporting Even Realities hardware alongside other glasses.
+
+- [Even Realities WebFlasher — GitHub](https://github.com/AM-Guru/evenRealities-webflasher) — independent browser-based G2/R1 diagnostics and guarded official-firmware workflows; experimental operations have important hardware-safety limits and do not revive dead temples.
+- [Even Realities WebFlasher — r/EvenRealities](https://www.reddit.com/r/EvenRealities/comments/1vmz7gs/were_open_sourcing_part_of_our_even_realities/) — public release discussion, maintainer clarifications and owner-reported recovery outcomes; reports are not independently verified.
 
 ## RayNeo
 
@@ -65,6 +71,12 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 - [Meta Developer Community](https://developers.meta.com/community/) — Meta's developer-community entry point.
 - [Meta Community: Ray-Ban SDK discussion](https://communityforums.atmeta.com/discussions/dev-general/suggestion-for-developing-an-sdk-for-meta-ray-ban-glasses/1196341) — developer discussion documenting demand for Ray-Ban access and Meta responses.
 - [r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/) — independent cross-vendor discussion including extensive Meta/Ray-Ban ownership, privacy, buying, and comparison threads.
+
+## Meizu MYVU / Star Air (XGA010C)
+
+- [Panny777 MYVU SDK — GitHub](https://github.com/Panny777/Meizu-Myvu-SDK) — unofficial Android SDK and reverse-engineered BLE/RFCOMM protocol notes.
+- [Panny777 MYVU Client — GitHub](https://github.com/Panny777/Meizu-Myvu-Client) — Android companion client and Python research reference from the same author; not independent verification.
+- [GlassesResearch XGA010C evidence note](../research/investigations/COMMUNITY_MYVU_XGA010C_PANNY777_2026-09-06.md) — existing attributed findings and bounded reproduction plan.
 
 ## HeyCyan-compatible and retail-rebrand ecosystem
 
