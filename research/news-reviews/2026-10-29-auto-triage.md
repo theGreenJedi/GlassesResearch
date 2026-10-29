@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-29T08:38:18.810916+00:00`
+Generated: `2026-10-29T10:29:20.761924+00:00`
 
-- Intake files inspected: **280**
-- Candidates retained in this review window/history: **11247**
+- Intake files inspected: **279**
+- Candidates retained in this review window/history: **11203**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2252
+- `adjacent_radar`: 2251
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 529
-- `rejected_noise`: 8389
-- `source_review`: 43
-- `watching`: 17
+- `needs_editorial_verification`: 530
+- `rejected_noise`: 8347
+- `source_review`: 42
+- `watching`: 16
 
 ## Action queue
 
@@ -151,6 +151,7 @@ Generated: `2026-10-29T08:38:18.810916+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1192](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1192) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1193](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1193) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1195](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1195) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1196](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1196) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -254,7 +255,6 @@ Generated: `2026-10-29T08:38:18.810916+00:00`
 | high | needs_editorial_verification | direct | [“Smart glasses are about to change everything”—what we know before launch - Futura, le média qui explore le monde](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkNMdE13NUlOQTlreHRDb29NM2xwSmkyR2RidWhmbTJoazRmOWNKTllHaVVBYV9Zd0NzWVhhLWtGTXBLa2c3OE5hN3lYMXp4NEtnSk9IckVPSzBtbDY2bF81NHlVWmRSNEFlZ05VLVNnN09QU0ZQZ0NQWnBxWXdsMExfWmtUZnY4NUpwNlNTMF9oZ1RxaWo3cTJ0SXgzNkVfcWNkT1E1R0hfYlFrdW84bVpNcw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | enabling | [Product Launch of NIL Technology’s Award-Winning metaEye™, World's First All Meta-Optics Camera - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOM1FDdHRMYUFoUlY5RjZJU1NfdE55SXAzS0psVF9xbDVhaWFPQVNuaGNNZFF3dUpwN25DS3NCWV81TnRYMjB6VW95MERVOWU0LXVXWWQyU0oyd3lGYTRCQ1FyM3VqTElYc01SQmR1S2pFVTZ0LVhDcHRiSnNjUHdmMXl3V2xLN2wzVHJYU2RtY19LTDhXUEgwZFVVNC0?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI glasses: smart, lightweight eyewear from FiGi \| TikTok](https://www.tiktok.com/@china.ai.glasses.s/video/7687183658364570900) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | enabling | [Forget Eufy – EZVIZ's new solar security camera has a dual-lens system and 3 built-in spotlights - T3](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSnBBYW1KV0tSQnAxVnFtb2JBX2V2WlQtYjlCbFVLZkU2Mkp5ZkkwMndHYUpvVXk1NUFVbzNkUVJoMnlRTGl2QzBzN0c4V29oNDFwWnBWaUphUFZZS21ILVRtWFgtV01sOXpzR0c1OEtPdk1lVFV3MmY3RFZiVk1fZGlKRGNrQ2JXQkNNRmpuX1FhMVp2a0hBN2htT3RrMDl2b2dmZU9XYjlHLXdlY1ZfSDh4d1hUX0tBVE16MWtjaDRPUEQ2dkgzTzNkZEF6bkVj?oc=5) | reachable (200) | research_news_review, research_optics |
 | normal | needs_editorial_verification | enabling | [JaxLayerLumos \| Differentiable Optical and RF Multilayer Simulation](https://jaxlayerlumos.github.io/) | reachable (200) | research_news_review, development_hacking, research_optics, deep_research |
 | normal | needs_editorial_verification | direct | [KCA and KAIST push security as AI smart glasses threaten exam integrity - DongA Science](https://news.google.com/rss/articles/CBMiVEFVX3lxTE9VZFZYXzU3UEs3aFVTN05LNEVIenNnZ3RSM0VxaTg5QVc3Z2JtR3pFd3ZqLUhRaXRES1ZnZmJYY2pGUjJ0X1BGZGV0dUZZV2ZDbjktOQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["선생님도 뿔테 바꾸래요"…AI 안경 논란에 수험생들 안경원으로 - 머니투데이 - 머니투데이](https://news.google.com/rss/articles/CBMia0FVX3lxTE03QmZ3a285ZEs4VEFfTlJhengwMlR4YkRkWmZ0QVhocGNRcmkwVWZyXzljNG41N1BLLU5sRmlITHZEYml6eGs2Q2RsbjZMbzBWaUJzMVR3ckt2R0ZQZWtKTkhSYkhvRlRvUzFZ0gFwQVVfeXFMUEg0Y2g3cXlUWUpRbl9OTHNScEg5UEkxcmZ4VDJsLXNocVhJaHExTVI5UWRVVHlORE9NdkxZSW51U3BCRElseWFWeFZ5YW8ydGhXRFlqbVl1TFZiTlFPQjV3OU15UlRDLXhGVF91UzlHaQ?oc=5) | reachable (200) | research_news_review |
