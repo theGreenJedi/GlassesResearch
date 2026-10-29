@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-29T02:15:15.967036+00:00`
+Generated: `2026-10-29T06:00:19.118720+00:00`
 
 - Intake files inspected: **281**
-- Candidates retained in this review window/history: **11241**
+- Candidates retained in this review window/history: **11242**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2233
+- `adjacent_radar`: 2235
 - `catalog_review`: 13
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 510
-- `rejected_noise`: 8411
-- `source_review`: 44
-- `watching`: 26
+- `needs_editorial_verification`: 516
+- `rejected_noise`: 8409
+- `source_review`: 42
+- `watching`: 23
 
 ## Action queue
 
@@ -47,8 +47,6 @@ Generated: `2026-10-29T02:15:15.967036+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.972](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.972) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.926](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.926) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.927](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.927) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.928](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.928) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.929](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.929) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-dev.930](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-dev.930) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -149,6 +147,10 @@ Generated: `2026-10-29T02:15:15.967036+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1184](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1184) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1185](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1185) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1186](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1186) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1189](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1189) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1190](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1190) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1191](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1191) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1192](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1192) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.945](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.945) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.947](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.947) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -193,6 +195,7 @@ Generated: `2026-10-29T02:15:15.967036+00:00`
 | high | needs_editorial_verification | direct | [Xreal Aura Android XR Glasses Go on Sale at $1,099, Below Preorder Price - Northeast Times](https://news.google.com/rss/articles/CBMirgFBVV95cUxQTE9leGI0bEhabGpSZDM5MjJnZVJNTzg0VTRyODUxUWVCNWxDT0tyMGIxdUlKQnoxMXBMLUtYTnBlLUM3czhrVlM5U1ltZ19HQTlWTFJZbzRxdGtibHU1a05Vczg4eER0WTFOdmlSRHlZOGlhNDFTQk5xbjQ3eVo1YXBtOEp5dTZCN0FWWUpPeTJFXzVkZmMyNjRLVkoxajNRNzhFcktPUUFobFhjV2c?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Xreal Aura Android XR Glasses Launch at $1,099, Undercutting Meta on Price - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE0wSTFqOWo4S045MUpDRkpGSnZIWHE0MEZpYTdXRk5XX2ptRkwwZzJ6cVZrMmd0N3A2R1lrQmhXOW1GcGYxMFBSRkRjanFDZU1PVUhlMWRFZ0haYVpVSF9XajMwX0c5a3QtUXV5VUk1NG4tV25oaEE?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [XREAL AURA Wired Android XR Glasses Launch in November at $1,099 - Thurrott.com](https://news.google.com/rss/articles/CBMipgFBVV95cUxQb0lVb0w0VDVHZi1nOHFXVG1nejVwMFJRS0Y2TmZPNzdBLTRmTl9UMzNYcW5IUWd0ZHhzWHgtNXlJakNmUWlzeWgzLW9ObnJ0YTRiczd4WHhWUlgxZGJDUDNEWW55ZzZtbFAtT0hhQTdhUXJ1clBRSFdxMktWUS1JemNXcks2aUxUcHJNYk1YSHc0S0c4UHlMVHU2SzFaOG5lT2JONHF3?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [XREAL AURA wired XR glasses with Android XR and Gemini announced - FoneArena.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxNd012cVlmVG91VWRkdS1YYTA3N1ZCRHRDOGw1eHR2alBWQVh5U2FxN094cXJQR2YyQk1JVmp6VGx4aWxWS2h1VkZldDFEU1B3WWl3NGtlM0FfM2xlWW5qT0xPR0VwUmZTRm9JM1k1RmpNT0p2a2FTRHk0V3lqSFFRMXVNRGwxQdIBiwFBVV95cUxNTEN1Zjl1NkI1SVB2dDZVT1o1VV9DSW1JMFdKY2FqX2VDMXg2VzgxWEtLNUNsNUwwVU5UNy1ZenFlQWJZS1RHcW93MEdlMlRJQWdtckNNYkFicS03T3VhOUZpZjhicENtWGhsUC12V0p1MnJrYzh4cU1NN3Z2a1Q2cGF3ZmFlZlZsOExB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [9to5Google 8h ago XREAL Aura is coming in November with a special $200-off launch discount Coverage Xreal](https://9to5google.com/2026/10/28/xreal-aura-is-coming-in-november-with-a-special-200-off-launch-discount/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
@@ -245,6 +248,7 @@ Generated: `2026-10-29T02:15:15.967036+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA, which Google calls the first wired glasses running Android XR, starts at $1,099, weighs under 95 grams and ships in the US from ](https://news.google.com/rss/articles/CBMiT0FVX3lxTE9zSERYOGctSHV1XzRUSnUyUVF0SWZ3UHRWOEtGOGM2aXpFVE0xOUpfQ3V5RUtmTGE1bmVoRXd3Z1dnQVd0RDN0M3Jxc0hQSUk?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal Aura: Preorders open for smart glasses powered by Google Android XR - Mashable](https://news.google.com/rss/articles/CBMiekFVX3lxTE8xZkU1RFlPcjhQTm1qY09mY0FHNVpkQy1yTW0tcnpuZGpzRmFpTHhBNzBrZlZhdlZWLVNJU3YtSnR0NC1lSmtPakRtRjAyMEc4YTdBYnNtN1hJdDE1RkhaQVhpa1puVE15ekZyMkZTX1F2ZlNwbXVQdE5n?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal lança Aura, óculos com fio que rodam Android XR e encaram o Ray-Ban Meta - TecStudio](https://news.google.com/rss/articles/CBMivwFBVV95cUxOWm5xTElod1Z1UjZMdzJXQmh1Wi1OdUhCdVFqMlVkWF9ZeUIwcE45ZlZCM2UxZ3BKYURFLWZjeTBOdzFVNC1xRm9vNEtQV2JCWE5xek1zZ29JQkE0NjFXSjRDcWU0SDBJZFNCVXhtY0NxN25YbmhwY0pINDZpT2JpeFpPUEFnaWtnMlJsa1hZanpyLWNVMFBQUmt2X3Y3QTYwbHNsVmU2ZzZ0ajAwNWtWMTQ3SVN4SUxfbGVCeUo3QQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered by Android ...](https://www.techpowerup.com/354232/xreal-launches-aura-as-the-first-wired-xr-glasses-powered-by-android-xr) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered by Android XR - TechPowerUp](https://news.google.com/rss/articles/CBMiqgFBVV95cUxObV8tX1QwZDlBVVlJd3FJMlU5N19Zck5OUUxBbmRKRXBhYVVJNlVURFNLalpQbUNWXzZQYkw0SUNVcFR6cnAtX2JKVmV4blJqcXIzWGs5RG5vdDZVYnR0WEZBeXdkWm54bEtHODc3WkhZaERqdUZiUy1JSlp1dWhsTWpsNWNpMTRPSXo4ajhmNm1WOC1Gdmk3MFBMVmswdG1Ldmd2U0lqUTNJUdIBrwFBVV95cUxQT0tkVnE2X0N0c1Z1eWFjY3pCU0plNmlNRXFJOVEtaTVhOUFCOUptYXE3WVVoaEhzOEJobnVGYTY1UENiTmRUYUtVTi1ISFRQV2Y4QW9vWmEyRTRHc3BOdzZ2NjJ4eVc4ZzEzdnRnUEg5QXZqWDVYUk8zODQwQlg2eHlJWXhsVFR4eE9lOVZYZ2s5dE00TkRETWhIaHZDQjBGc1RXdzNiMk5sRlpUYnpF?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal launches Aura glasses with hand gestures in Canada - MobileSyrup](https://news.google.com/rss/articles/CBMiekFVX3lxTFB5a1Q2Y09Ia21ERFZ4NVNvTjNOaExzNFNtSFcxSEpMR2xNRjNidFF6RTBEYnpVR3ZLQk16NkRVWWlMZHU1VWU0Um1fREkxYks3SzJ5blpLM09VR0hiQl9IM0xFU0VrMHlscmZsTlROY3FmN3k5RUpNVWVB?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Xreal Launches New Xreal Aura Wired Smart Glasses at Android Dev Summit - SSBCrack](https://news.google.com/rss/articles/CBMinwFBVV95cUxPU21ydUpTZ1lkS3VDZGZhMTBaM3hrOGxZaWNYRnJhakJ4Zmw4eDhod0N3TWdkWmhVdnBoU0kzUy1OY2hxV3VrbzVJYnZKQldVZTRpTjM5RXREaGdFTXZGcjhpbFlLX2RwdXNhUEtPTU9HMzNuNUROTFQ4VmxLU3FsSEE0MFFTUHlFbmV2aWpfMHVkR0VtQ3BlRUpvZzJ1M0k?oc=5) | reachable (200) | research_news_review |
@@ -267,10 +271,6 @@ Generated: `2026-10-29T02:15:15.967036+00:00`
 | normal | needs_editorial_verification | direct | [2022–2024 Ford Maverick 12" or 8" Sync 4 Touchscreen Upgrade w ...](https://www.mavericktruckclub.com/12-or-8-sync-4-touchscreen-upgrade-w-wireless-apple-carplay-android-auto-pre-orders-open/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [2026 Unisex AI Smart Glasses - TikTok Shop](https://shop.tiktok.com/us/pdp/2026-unisex-ai-audio-smart-glasses-hd-wireless-calling-music-translation-ai-assistant/1732724595520934440) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | direct | [9to5Google 8h ago XREAL Aura debuts with 150 made-for-XR experiences, including Project Hail Mary, NBA, Fallout, and more Coverage Xreal](https://9to5google.com/2026/10/28/xreal-aura-debuts-with-150-made-for-xr-experiences-including-project-hail-mary-nba-fallout-and-more/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [9to5Google Sep 20, 2026 The camera is my favorite part of smart glasses, but it just feels wrong now](https://9to5google.com/2026/09/20/smart-glasses-camera-newsletter/) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [[속보] 수능 AI 안경 부정행위 형사고발…응시 제한 1년→3년 추진 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1jdWQ5QW9xc3lXYUJLSTNKTU4xZklqX2pydF90cVZ5ZXdIMXE3YzhvRjBtNEpkaDV4cmJHQ09aaWZTVGJmRHIwT2VUdUpCQnEwUDFYeWZ1dWo4Zw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [[에디터픽] "맞혀보세요" 4개 중 AI 안경은?..수험생만큼 어지러운 감독관들 - SBS 뉴스](https://news.google.com/rss/articles/CBMiakFVX3lxTE5GTktLMzBkR1ZhOWdSTXJLcHRpc1lBR21FYWg2a3ZuYWVIdmMyT3FFMGhxemE4THdOZmc2Z0stZmNBWkJWa1ZnLUNFdWVHcEtVYm1FcHNuRTg3YmZaN053RnAwTTlFQnpCOGfSAWZBVV95cUxQdE1JakIyLXc1VG5nVndGTmFwSU1JNEd3MnctYkJnWjlKbFhoWGVTWHpMN0JHZkU2SGR1bTZsOWpBQ1RzclRsQW5QNklIMnlBc3Y3YTRFOTBnRzVXU0c5X1VzY2xndmc?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [[중국 특징주] 바이윈스토리지, AI 안경용 저장장치 성장에 순이익 288배 급증 - 뉴스핌](https://news.google.com/rss/articles/CBMiXEFVX3lxTFB0SVZMY0VMSmFjSlFRTThFUEhEbVdCRXlGNWJVMFFZcmt4U2VpZFFjMDdEN2VDRjJDUEFjbjZvRkZkTUU1TllldER6SURUcUZobkpxSGg4ZmZDdDJo?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
