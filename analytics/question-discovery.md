@@ -1,31 +1,33 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-28T16:40:49+00:00**
+Generated: **2026-10-29T16:57:24+00:00**
 
-- Published evidence-backed answers: **199** (minimum **1000**, no ceiling)
-- Remaining to minimum: **801**
-- Canonical registry size: **286** (not the published count)
-- Unanswered research candidates: **65**
-- Observations this run: **71**
-- New distinct questions: **7**
+- Published evidence-backed answers: **203** (minimum **1000**, no ceiling)
+- Remaining to minimum: **797**
+- Canonical registry size: **299** (not the published count)
+- Unanswered research candidates: **74**
+- Observations this run: **76**
+- New distinct questions: **9**
 
 ## Source health
 
-- github_issues: ok — 14 observations
+- github_issues: ok — 16 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 32 observations
-- google_search_console: ok — 5 observations
+- reddit_rss: partial — 36 observations
+- google_search_console: ok — 4 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000280** — There seem to be glasses are 'open' (Even Realities?
-- **Q-000281** — [Feature Request] Docs: does speaker audio keep playing during a camera stream on Mentra Live?
-- **Q-000282** — the Bluetooth SDK on iOS, the camera streaming to the phone over WHIP, and speech played through the phone's normal audio APIs to Mentra Live as the Bluetooth media output: does the speech stay audible during the stream?
-- **Q-000283** — What do smart glasses reviews always forget to test?
-- **Q-000284** — Has anyone ever bought frames and lenses separately in the UK?
-- **Q-000285** — What smart glasses have offline live translation?
-- **Q-000286** — Even G2 Mic Issues - AI Can't Understand - Suggestions?
+- **Q-000291** — For a China-mainland unit paired with the global Hi Rokid app, which Studio (Global or China) does "Update glasses resource" pull Draft agents from?
+- **Q-000292** — Is there an official data/debug cable for Rokid Glasses that overseas developers can buy, or a way to enable ADB over Wi-Fi?
+- **Q-000293** — Google/Samsung glasses news?
+- **Q-000294** — Anyone else paying attention to full-color smart glasses?
+- **Q-000295** — AR glasses with no built in audio?
+- **Q-000296** — Any brick-and-mortar stores with either the Rayneo iO, MemoMind One, etc (other than Metas) & Low Bridge Fit?
+- **Q-000297** — Reading live captions in a coffee shop: helpful or a bit rude?
+- **Q-000298** — Brilliant Labs Halo?
+- **Q-000299** — XREAL AURA Price Drop Is Here! Should You Buy Now?
 
 ## Research queue (first 20)
 
