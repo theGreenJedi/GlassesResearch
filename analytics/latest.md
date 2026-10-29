@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-29T11:18:46+00:00**
+Generated automatically: **2026-10-29T20:29:53+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -55,8 +55,8 @@ Generated automatically: **2026-10-29T11:18:46+00:00**
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **39 browser pageviews**, **32 RUM visits**.
-- Rolling 7d: **119 browser pageviews**, **102 RUM visits**.
+- Rolling 24h: **32 browser pageviews**, **23 RUM visits**.
+- Rolling 7d: **127 browser pageviews**, **103 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Top pages — rolling 24h
@@ -64,22 +64,22 @@ Generated automatically: **2026-10-29T11:18:46+00:00**
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
 | / | 7 | 6 |
-| /docs/COMPARISON_ENGINE/ | 5 | 1 |
 | /hacking/LOCAL_AI_AGENTS/ | 2 | 2 |
-| /models/catalog/gls-0003/ | 2 | 2 |
-| /docs/ABOUT/ | 2 | 2 |
-| /docs/RESEARCH_NEWS/ | 2 | 1 |
-| /docs/REPOSITORY_LAWS/ | 1 | 1 |
-| /docs/faq/04-battery/ | 1 | 1 |
-| /docs/SDK_API_MATRIX/ | 1 | 1 |
-| /docs/CITING_GLASSESRESEARCH/ | 1 | 1 |
+| /docs/COMPARISON_ENGINE/ | 2 | 0 |
+| /models/THE_LIST/ | 2 | 2 |
+| /models/catalog/gls-0060/ | 1 | 0 |
+| /docs/report-cards/HIGH_THROUGHPUT_BATCH_02/ | 1 | 0 |
+| /models/VuzixM400/ | 1 | 1 |
+| /docs/ABOUT/ | 1 | 1 |
+| /docs/report-cards/HIGH_THROUGHPUT_BATCH_03/ | 1 | 1 |
+| /models/catalog/gls-0074/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 26 | 26 |
-| glassesresearch.org | 7 | 0 |
+| (direct / none) | 17 | 17 |
+| glassesresearch.org | 9 | 0 |
 | duckduckgo.com | 2 | 2 |
 | bing.com | 1 | 1 |
 | www.bing.com | 1 | 1 |
@@ -88,24 +88,24 @@ Generated automatically: **2026-10-29T11:18:46+00:00**
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **13,205 requests**, **2,515 HTTP visits**, **258.0 MB** served.
-- Rolling 7d: **48,977 requests**, **14,065 HTTP visits**, **1207.4 MB** served.
+- Rolling 24h: **13,191 requests**, **1,976 HTTP visits**, **242.7 MB** served.
+- Rolling 7d: **51,261 requests**, **14,130 HTTP visits**, **1246.2 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 3,847 | 1,398 |
-| MX | 2,495 | 67 |
-| NL | 2,089 | 6 |
-| KR | 1,106 | 27 |
-| DE | 921 | 608 |
-| GB | 458 | 10 |
-| CN | 418 | 56 |
-| CA | 343 | 137 |
-| PL | 294 | 17 |
-| IL | 282 | 3 |
+| US | 3,906 | 1,385 |
+| MX | 3,094 | 88 |
+| NL | 2,835 | 14 |
+| CN | 453 | 7 |
+| CA | 445 | 201 |
+| GB | 398 | 16 |
+| IL | 350 | 4 |
+| PL | 326 | 18 |
+| DE | 306 | 23 |
+| KR | 290 | 9 |
 
 ## What to watch
 
