@@ -16,4 +16,8 @@ description: Evidence and verification limits for Q-000285, which smart glasses 
 
 ## Verification and publication gate
 
-Answer: `docs/faq/06-ai-cameras-audio.md#which-smart-glasses-can-translate-speech-offline`; directory: `docs/faq/README.md`. Manufacturer documentation is identified as such; no independent device bench verification is claimed. **Status: researched; registry credit withheld pending merged FAQ, directory, evidence, successful CI, and exact public production-content proof.**
+Answer: `docs/faq/06-ai-cameras-audio.md#which-smart-glasses-can-translate-speech-offline`; directory: `docs/faq/README.md`. Manufacturer documentation is identified as such; no independent device bench verification is claimed. **Status: published after exact public production-content verification.**
+
+## Publication verification — 2026-10-29
+
+[Publication PR #714](https://github.com/theGreenJedi/GlassesResearch/pull/714) merged as `0b33532fcb46fd2a68107252d7830c58f40f5c26` after editorial, strict internal link/fragment and CI checks passed. [Main Pages deploy #40950125377](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40950125377) succeeded. [Exact production-content proof #40950500791](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40950500791) succeeded on 2026-10-29 at 20:37:39 UTC: the changed FAQ topic (digest `f422e3982064`), Practical Answers directory (digest `2c40c339be34`), and this evidence packet (digest `e19050fc26c7`) were retrieved from the public site and matched the deployed build. [Canonical answer](https://glassesresearch.org/docs/faq/06-ai-cameras-audio/#which-smart-glasses-can-translate-speech-offline). This verifies **publication**, not a device bench test; the upstream Mentra simultaneous-playback uncertainty remains explicit.
