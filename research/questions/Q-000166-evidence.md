@@ -15,4 +15,8 @@ description: Source-level evidence and publication limitations for Q-000166, can
 
 ## Verification and publication gate
 
-FAQ `docs/faq/03-use-cases.md#can-smart-glasses-replace-a-drummers-physical-music-stand`; master directory `docs/faq/README.md`.  No first-person ownership report, musician performance test, universal ranking or speculative future date is claimed. **Status: researched but not yet registry-published.** Credit only after the merged revision passes exact GitHub Pages production-content proof for page, directory and evidence.
+FAQ `docs/faq/03-use-cases.md#can-smart-glasses-replace-a-drummers-physical-music-stand`; master directory `docs/faq/README.md`.  No first-person ownership report, musician performance test, universal ranking or speculative future date is claimed. **Status: published and production-verified 2026-10-28.** Credit only after the merged revision passes exact GitHub Pages production-content proof for page, directory and evidence.
+
+## Publication verification — 2026-10-28
+
+Merged publication [PR #711](https://github.com/theGreenJedi/GlassesResearch/pull/711) at `d79c97b15a9064bbe7d29dbf541f67d233905a50`. [Deploy #40756812106](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40756812106) succeeded. [Exact production-content proof #40757406201](https://github.com/theGreenJedi/GlassesResearch/actions/runs/40757406201) succeeded at 2026-10-28T19:48:19Z: the changed FAQ topic, `/docs/faq/` directory, and this evidence packet were retrieved from the public site and matched the deployed build digests. This proves publication, not any independent device bench test.
