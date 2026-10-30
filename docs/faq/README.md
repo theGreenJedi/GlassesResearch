@@ -25,14 +25,14 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 ## Browse the complete answers by topic
 
 - [Basics](01-basics.md)
-- [Buying and recommendations](02-buying.md)
+- [Buying and recommendations](02-buying.md) — [What should smart-glasses reviews test beyond the spec sheet?](02-buying.md#what-should-smart-glasses-reviews-test-beyond-the-spec-sheet)
 - [Use cases](03-use-cases.md)
 - [Battery and charging](04-battery.md) — [What should an eight-hour AI-glasses battery claim disclose?](04-battery.md#what-should-an-eight-hour-ai-glasses-battery-claim-disclose)
-- [Displays and optics](05-displays.md)
-- [AI, cameras, and audio](06-ai-cameras-audio.md)
+- [Displays and optics](05-displays.md) — [Are there AR or HUD glasses without built-in speakers?](05-displays.md#are-there-ar-or-hud-glasses-without-built-in-speakers)
+- [AI, cameras, and audio](06-ai-cameras-audio.md) — [How do people input commands into AI glasses, and what tradeoffs matter?](06-ai-cameras-audio.md#how-do-people-input-commands-into-ai-glasses-and-what-tradeoffs-matter)
 - [Privacy and security](07-privacy-security.md) — [Can I buy camera smart glasses without a recording indicator?](07-privacy-security.md#can-i-buy-camera-smart-glasses-without-a-recording-indicator)
-- [Accessibility and fit](08-accessibility-fit.md)
-- [Development and openness](09-development-openness.md) — [Sony SmartEyeglass microphone input](09-development-openness.md#can-sony-smarteyeglass-use-voice-input-from-a-microphone); [Google Glass GDK and Epson stereo](09-development-openness.md#does-google-glass-gdk-provide-stereoscopic-3d-for-epson-moverio)
+- [Accessibility and fit](08-accessibility-fit.md) — [Can UK buyers get lenses fitted into frames bought separately?](08-accessibility-fit.md#can-uk-buyers-get-lenses-fitted-into-frames-bought-separately)
+- [Development and openness](09-development-openness.md) — [Sony SmartEyeglass microphone input](09-development-openness.md#can-sony-smarteyeglass-use-voice-input-from-a-microphone); [Google Glass GDK and Epson stereo](09-development-openness.md#does-google-glass-gdk-provide-stereoscopic-3d-for-epson-moverio) — [What does Brilliant Labs Halo actually offer to developers and buyers?](09-development-openness.md#what-does-brilliant-labs-halo-actually-offer-to-developers-and-buyers)
 - [Ownership and future](10-ownership-future.md)
 
 ## Current safety answers
