@@ -458,3 +458,25 @@ The decision is about different **app ecosystems and integrations**, not necessa
 For developers, Brilliant publishes a [Halo firmware repository](https://github.com/brilliantlabsAR/halo-firmware) using Zephyr and a Lua runtime, and a separate [Noa assistant repository](https://github.com/brilliantlabsAR/noa-assistant). Public repositories and APIs are meaningful openness evidence, but they do **not** automatically establish open mechanical CAD, unrestricted boot/flash access, offline AI, unrestricted app distribution or long-term support. Verify each layer separately, including signed firmware/update behavior and host/cloud dependencies.
 
 **Purchase test:** compile or load a minimal app, draw text in the actual usable area, check BLE reconnection and audio/camera permissions, inspect the current firmware license and release notes, and obtain a current regional shipping/return statement directly from the vendor. The [original community prompt](https://www.reddit.com/r/SmartGlasses/comments/1xi5pdr/brilliant_labs_halo/) contains no narrower question; this is a sourced capabilities-and-uncertainty overview, **not** a hands-on review, price guarantee or shipping confirmation. Reviewed October 30, 2026.
+
+
+## Which AIUI Studio supplies a draft when mainland Rokid Glasses use global Hi Rokid?
+
+**The exact Draft-agent source is not publicly established for this mixed-region configuration.** In [AIUI issue #89](https://github.com/yodaos-project/AIUI/issues/89), a developer with mainland-version Rokid Glasses, global Hi Rokid on iPhone and Draft agents saved in both AIUI Studio Global and AIUI Studio China reports that the phone acknowledged "Update glasses resource" but the agent did not launch. The issue had no maintainer answer as reviewed October 30, 2026. A sent command is not proof that either package installed.
+
+A [project respondent in issue #74](https://github.com/yodaos-project/AIUI/issues/74) said mainland-market devices can use global Hi Rokid and Global Studio for development, while the two companion apps use different server regions. An earlier Draft launched without a toast. This supports possible compatibility but does not identify which Studio a particular update pulls from.
+
+**Diagnostic next step:** give the Global and China Drafts different names and versions, package them separately, check the linked account and attempt on-glasses launches, and inspect request logs. Ask Rokid for the account/region-to-Studio mapping. Do not infer a firmware region change or hardware replacement is necessary. No independent device test was performed.
+
+**Observed question:** [Original community question](https://github.com/yodaos-project/AIUI/issues/89) — For a China-mainland unit paired with the global Hi Rokid app, which Studio (Global or China) does "Update glasses resource" pull Draft agents from? **Reviewed:** October 30, 2026.
+
+
+## Can overseas Rokid Glasses developers obtain a data cable or use wireless ADB?
+
+**Rokid lists an official developer-cable option; wireless ADB is not a verified universal cable-free substitute.** The [official Rokid Glasses Prototype storefront](https://global.rokid.com/products/rokid-glasses-prototype) offers a "Cable only" selection and states that the developer cable enables ADB debugging. Verify compatibility, destination-country shipping and current stock before buying. The [original developer](https://github.com/yodaos-project/AIUI/issues/89) reports that the included magnetic charging cable did not enumerate as a USB data device.
+
+The [AIUI repository](https://github.com/yodaos-project/AIUI) documents agent tooling. A [community Rokid development project](https://github.com/sses79/rokid-glasses) describes enabling developer/ADB settings in Hi Rokid, connecting a data cable, and checking authorized USB devices. That project is not proof that every firmware supports wireless debugging. A refused ADB TCP connection on port 5555 means that endpoint was not listening under those conditions, not that Wi-Fi is absent.
+
+Start with the documented data cable, enable debugging in the companion app, verify USB enumeration and authorized ADB, and avoid exposing debug access to untrusted networks. No GlassesResearch cable purchase or wireless ADB test is claimed.
+
+**Observed question:** [Original community question](https://github.com/yodaos-project/AIUI/issues/89) — Is there an official data/debug cable for Rokid Glasses that overseas developers can buy, or a way to enable ADB over Wi-Fi? **Reviewed:** October 30, 2026.

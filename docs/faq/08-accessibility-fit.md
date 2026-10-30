@@ -91,3 +91,14 @@ For a casual conversation, explain briefly that the glasses help you read speech
 **Before buying smart frames elsewhere**, ask the intended UK dispensing practice whether it accepts customer-supplied electronic frames, what prescriptions and lens thicknesses it supports, whether lens shape or waveguide restricts glazing, and who assumes risk if a temple, display module or frame breaks. Obtain written terms for fitting, PD/height measurements, adjustments, warranty, remake and aftercare. The [College's dispensing guidance](https://www.college-optometrists.org/clinical-guidance/guidance/knowledge%2C-skills-and-performance/sale-and-supply-of-spectacles/principles) calls for appropriate measurements, fit checks and aftercare; smart frames may introduce extra constraints.
 
 The [original UK community question](https://www.reddit.com/r/SmartGlasses/comments/1xh768j/has_anyone_ever_bought_frames_and_lenses/) asks for owners' experiences. These professional sources establish the process, **not** a verified list of shops that accept a specific frame or firsthand testimony of a successful purchase. Reviewed October 30, 2026.
+
+
+## Where can I try RayNeo iO or MemoMind One for low-bridge fit before buying?
+
+**Online availability is not evidence of a physical try-on demo.** As reviewed October 30, 2026, primary sources did not establish a dependable permanent walk-in demo network for RayNeo iO or MemoMind One in a specific city. [RayNeo's September launch announcement](https://www.prnewswire.com/news-releases/rayneo-showcases-next-generation-cinematic-ar-and-ai-smart-glasses-at-ifa-2026-with-dolby-and-bang--olufsen-302870067.html) describes online sales and a temporary IFA demo; [MemoMind's preorder release](https://www.prnewswire.com/news-releases/memomind-opens-global-pre-orders-for-memomind-one-its-first-everyday-ai-glasses-302755822.html) describes online reservations. This does not prove that no individual store has a unit.
+
+For a low nose bridge, fit also determines optical alignment. [RayNeo's iO support documentation](https://www.rayneo.com/pages/support-rayneo-io-ai-glasses) describes multiple nose-pad bridge sizes and warns that incorrect height can hide part of the display. These adjustments are not a universal fit guarantee.
+
+Call before traveling and confirm the exact model is a powered, wearable demo rather than pickup-only stock. Test the full display at natural posture, slipping, temple pressure, prescription compatibility and charging-case fit. Check current returns before ordering custom lenses; RayNeo warns custom prescription returns differ. No local store inventory or personal fit outcome is verified.
+
+**Observed question:** [Original community question](https://www.reddit.com/r/SmartGlasses/comments/1xi9cfm/any_brickandmortar_stores_with_either_the_rayneo/) — Any brick-and-mortar stores with either the Rayneo iO, MemoMind One, etc (other than Metas) & Low Bridge Fit? **Reviewed:** October 30, 2026.
