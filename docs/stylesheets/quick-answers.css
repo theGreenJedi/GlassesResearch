@@ -1,0 +1,9 @@
+/* A static, keyboard-accessible question-first entrance for Practical Answers. */
+.gr-question-door{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1.1rem 0 1.35rem}
+.gr-question-door a{display:flex;flex-direction:column;gap:.45rem;min-height:6.3rem;padding:1rem;border:1px solid color-mix(in srgb,var(--md-default-fg-color) 16%,transparent);border-radius:.85rem;background:color-mix(in srgb,var(--md-default-bg-color) 96%,var(--md-primary-fg-color) 4%);text-decoration:none!important;color:var(--md-default-fg-color)!important;line-height:1.35;transition:border-color .16s ease,background .16s ease}
+.gr-question-door a strong{font-size:.91rem}
+.gr-question-door a span{font-size:.72rem;font-weight:400;opacity:.78}
+.gr-question-door a:hover,.gr-question-door a:focus-visible{border-color:var(--md-accent-fg-color);background:var(--md-default-bg-color);outline-offset:3px}
+@media(max-width:60em){.gr-question-door{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:36em){.gr-question-door{grid-template-columns:1fr}.gr-question-door a{min-height:0;padding:.85rem}}
+@media(prefers-reduced-motion:reduce){.gr-question-door a{transition:none}}
