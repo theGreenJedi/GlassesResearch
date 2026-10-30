@@ -1,33 +1,28 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-29T16:57:24+00:00**
+Generated: **2026-10-30T16:43:37+00:00**
 
-- Published evidence-backed answers: **203** (minimum **1000**, no ceiling)
-- Remaining to minimum: **797**
-- Canonical registry size: **299** (not the published count)
-- Unanswered research candidates: **74**
+- Published evidence-backed answers: **207** (minimum **1000**, no ceiling)
+- Remaining to minimum: **793**
+- Canonical registry size: **307** (not the published count)
+- Unanswered research candidates: **68**
 - Observations this run: **76**
-- New distinct questions: **9**
+- New distinct questions: **4**
 
 ## Source health
 
 - github_issues: ok — 16 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 36 observations
-- google_search_console: ok — 4 observations
+- reddit_rss: partial — 34 observations
+- google_search_console: ok — 6 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000291** — For a China-mainland unit paired with the global Hi Rokid app, which Studio (Global or China) does "Update glasses resource" pull Draft agents from?
-- **Q-000292** — Is there an official data/debug cable for Rokid Glasses that overseas developers can buy, or a way to enable ADB over Wi-Fi?
-- **Q-000293** — Google/Samsung glasses news?
-- **Q-000294** — Anyone else paying attention to full-color smart glasses?
-- **Q-000295** — AR glasses with no built in audio?
-- **Q-000296** — Any brick-and-mortar stores with either the Rayneo iO, MemoMind One, etc (other than Metas) & Low Bridge Fit?
-- **Q-000297** — Reading live captions in a coffee shop: helpful or a bit rude?
-- **Q-000298** — Brilliant Labs Halo?
-- **Q-000299** — XREAL AURA Price Drop Is Here! Should You Buy Now?
+- **Q-000304** — If you use AI glasses or an AI pin: how do you actually input things, and what is the most annoying part?
+- **Q-000305** — did anyone try ai glass from China?
+- **Q-000306** — best ai glasses developers?
+- **Q-000307** — best smart glass developers?
 
 ## Research queue (first 20)
 
