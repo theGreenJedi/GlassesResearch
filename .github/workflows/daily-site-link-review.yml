@@ -41,13 +41,14 @@ jobs:
       - name: Install documentation dependencies
         run: pip install -r requirements-docs.txt
 
-      - name: Inventory repository links
+      - name: Stage generated pages before auditing links
+        run: python scripts/prepare_site.py
+
+      - name: Inventory repository and generated-page links
         run: python scripts/audit_repository.py --external-output build/external-links.txt
 
-      - name: Stage and build the complete site
-        run: |
-          python scripts/prepare_site.py
-          mkdocs build --strict
+      - name: Build the complete site
+        run: mkdocs build --strict
 
       - name: Verify every internal page, anchor, and asset
         run: python scripts/verify_built_site_links.py

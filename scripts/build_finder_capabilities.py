@@ -100,6 +100,16 @@ def explicit_from_comparison(record, field):
         "offline_operation": ["offline_operation"],
         "self_hostable": ["self_hostable"],
     }
+    # A sourced numeric camera count determines both camera and no_camera.
+    if field == "camera":
+        entry = fields.get("camera_count")
+        if entry and entry.get("evidence") not in {"unknown", "unresolved"}:
+            try:
+                count = int(entry.get("value"))
+                if count >= 0 and count == float(entry.get("value")):
+                    return ("no" if count == 0 else "yes"), "comparison"
+            except (TypeError, ValueError):
+                pass
     if field == "no_camera":
         entry = fields.get("camera_count")
         if entry and entry.get("evidence") != "unknown":
@@ -116,6 +126,13 @@ def explicit_from_comparison(record, field):
         if not entry or entry.get("evidence") == "unknown":
             continue
         s = state(entry.get("value"))
+        # Interpret only explicit, narrowly scoped negatives in source-backed
+        # descriptive comparison text; never infer from vague descriptions.
+        raw = str(entry.get("value", "")).strip().lower()
+        if not s and field == "offline_operation" and raw.startswith("not supported;"):
+            s = "no"
+        if not s and field == "speakers" and raw == "no speakers":
+            s = "no"
         if s:
             return s, "comparison"
     return None, None
