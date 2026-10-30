@@ -14,7 +14,7 @@ The files here answer **what happened over months** using exact source-day recor
 
 Each monthly file has `schema_version: 1` and keeps source dates separate:
 
-- `google_search_console.days[YYYY-MM-DD]` stores the latest finalized Google day, including exact clicks, impressions, CTR, average position, and that day's top queries/pages.
+- `google_search_console.days[YYYY-MM-DD]` stores Google Search Console finalized day-grouped totals (clicks, impressions, CTR, position). Previously collected query/page examples may be retained; new backfilled days do not claim to have complete query/page detail.
 - `cloudflare.days[YYYY-MM-DD]` stores the previous complete UTC day, including requests, HTTP visits, bytes served, and top countries.
 
 Each source also has a `summary` derived only from the exact daily rows in that month. Google average position is weighted by impressions. Cloudflare traffic is infrastructure traffic and must not be interpreted as unique human readership.
@@ -24,7 +24,8 @@ Each source also has a `summary` derived only from the exact daily rows in that 
 1. Historical dates are retained; a later run only replaces the same source/date key when re-collecting that exact day.
 2. Google and Cloudflare dates are intentionally independent because Google finalized Search Console data trails real time while Cloudflare can close a UTC day immediately.
 3. Month files are compact enough that multi-month reports require opening only the relevant month files rather than hundreds of daily snapshots.
-4. `schema_version` must be incremented for breaking structural changes. Migration code should preserve prior files rather than silently rewriting history.
+4. Google Search Console history refreshes the latest 90 finalized days from one date-dimension query. A missing day is **unknown**, not a verified zero; earlier false-zero records are discarded. `index.json` includes a comparison of those daily totals with the independently queried rolling 28-day report, and mismatches raise a workflow warning.
+5. `schema_version` must be incremented for breaking structural changes. Migration code should preserve prior files rather than silently rewriting history.
 5. `analytics/history/` remains the raw daily report-snapshot archive. `analytics/series/` is the canonical source for long-range trend reporting.
 
 This format is designed so a request such as **"show the analytics for the past five months"** can be answered directly from five or six monthly files with explicit completeness information.
