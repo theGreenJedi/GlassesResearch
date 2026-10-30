@@ -150,7 +150,7 @@
     <p>Choose your priorities. The Finder searches the living catalog for documented matches, then leads into model research, comparisons, and Report Cards.</p>
   </div>
 
-  <div id="homepage-finder-app">For the full experience, <a href="docs/COMPARISON_ENGINE/">open the Glasses Finder</a>. This link also works when the embedded Finder cannot load.</div>
+  <div id="homepage-finder-app">Choose what matters to you. <a href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder</a>.</div>
   <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
 </section>
 
