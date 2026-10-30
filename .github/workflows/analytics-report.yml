@@ -6,6 +6,7 @@ on:
     paths:
       - 'scripts/analytics_report.py'
       - 'scripts/analytics_history.py'
+      - 'tests/test_analytics_history.py'
       - 'scripts/cloudflare_rum.py'
       - 'scripts/search_impact.py'
       - 'scripts/question_discovery.py'
@@ -54,6 +55,7 @@ jobs:
         run: |
           python -m py_compile scripts/analytics_report.py scripts/analytics_history.py scripts/cloudflare_rum.py scripts/search_impact.py scripts/question_discovery.py
           python -m unittest discover -s tests -p 'test_question_discovery.py'
+          python -m unittest discover -s tests -p 'test_analytics_history.py'
           python scripts/search_impact.py --validate-only
 
   analytics-report:
