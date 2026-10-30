@@ -39,6 +39,9 @@ jobs:
       - name: Validate comparison engine
         run: python scripts/build_comparison_engine.py --validate-only
 
+      - name: Test sourced model capability consistency
+        run: python -m unittest discover -s tests -p 'test_finder_evidence_alignment.py'
+
       - name: Validate artifact preservation archive
         run: python scripts/validate_artifact_archive.py
 

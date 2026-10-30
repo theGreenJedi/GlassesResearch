@@ -9,6 +9,7 @@
 
   let searchDocs = null;
   let searchLoad = null;
+  let lastTrigger = null;
 
   const normalize = (value) => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
@@ -20,20 +21,25 @@
   };
 
   const closeAll = () => {
+    const wasOpen = searchPanel()?.hidden === false || menuPanel()?.hidden === false;
     setPanelState(searchPanel(), searchButton(), false);
     setPanelState(menuPanel(), menuButton(), false);
     document.documentElement.classList.remove('gr-header-panel-open');
+    if (wasOpen && lastTrigger?.isConnected) lastTrigger.focus();
   };
 
   const openSearch = () => {
+    lastTrigger = document.activeElement;
     setPanelState(menuPanel(), menuButton(), false);
     setPanelState(searchPanel(), searchButton(), true);
     window.requestAnimationFrame(() => searchInput()?.focus());
   };
 
   const openMenu = () => {
+    lastTrigger = document.activeElement;
     setPanelState(searchPanel(), searchButton(), false);
     setPanelState(menuPanel(), menuButton(), true);
+    window.requestAnimationFrame(() => menuPanel()?.querySelector('.gr-header-panel__close')?.focus());
   };
 
   const loadSearch = () => {
@@ -47,6 +53,10 @@
       .then((payload) => {
         searchDocs = Array.isArray(payload.docs) ? payload.docs : [];
         return searchDocs;
+      })
+      .catch((error) => {
+        searchLoad = null; // Retry after transient network failure.
+        throw error;
       });
     return searchLoad;
   };
@@ -158,7 +168,24 @@
   };
 
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closeAll();
+    if (event.key === 'Escape') {
+      closeAll();
+      return;
+    }
+    if (event.key !== 'Tab') return;
+    const panel = [searchPanel(), menuPanel()].find((item) => item && !item.hidden);
+    if (!panel) return;
+    const focusable = [...panel.querySelectorAll('button:not([disabled]), input:not([disabled]), a[href]')]
+      .filter((item) => item.getClientRects().length > 0);
+    if (!focusable.length) return;
+    const first = focusable[0], last = focusable[focusable.length - 1];
+    if (event.shiftKey && (document.activeElement === first || !panel.contains(document.activeElement))) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && (document.activeElement === last || !panel.contains(document.activeElement))) {
+      event.preventDefault();
+      first.focus();
+    }
   });
   document.addEventListener('DOMContentLoaded', bind);
   if (window.document$?.subscribe) window.document$.subscribe(bind);

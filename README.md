@@ -14,7 +14,7 @@
     <div class="home-status gr-home-status-quiet" id="homepage-status" aria-label="Research status">
       <div><strong data-site-stat="models">Living catalog</strong><span>canonical models</span></div>
       <div><strong data-site-stat="report-cards">Scored research</strong><span>scored Report Cards</span></div>
-      <div><strong data-site-stat="freshness">Continuously built</strong><span>catalog updated</span></div>
+      <div><strong data-site-stat="freshness">Continuously built</strong><span>canonical ledger edition</span></div>
     </div>
     <a class="gr-button gr-button-secondary" href="models/catalog/">Browse all models</a>
   </div>
@@ -23,11 +23,13 @@
     <div class="gr-hero-actions">
       <a class="gr-button gr-button-primary" href="docs/COMPARISON_ENGINE/">Find glasses</a>
       <a class="gr-button gr-button-secondary" href="models/catalog/">Research a model</a>
+      <a class="gr-button gr-button-secondary" href="docs/faq/">Ask a practical question</a>
       <a class="gr-button gr-button-secondary" href="docs/RESEARCH_NEWS/">Follow what’s changing</a>
     </div>
     <div class="gr-home-principles" aria-label="Research principles">
       <p>No sponsored rankings. Unknown stays unknown. Owner control matters.</p>
       <p><strong>Independent</strong> research. <strong>Evidence-linked</strong> claims. <strong>Owner-control</strong> lens. <strong>Historical</strong> preservation.</p>
+      <p>Want to return when evidence changes? <a href="docs/FEEDS/">Follow verified research</a> by RSS, reader, or email alert.</p>
     </div>
   </div>
 </section>
@@ -148,7 +150,7 @@
     <p>Choose your priorities. The Finder searches the living catalog for documented matches, then leads into model research, comparisons, and Report Cards.</p>
   </div>
 
-  <div id="homepage-finder-app">Loading the compact Glasses Finder…</div>
+  <div id="homepage-finder-app">Choose what matters to you. <a href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder</a>.</div>
   <a class="gr-text-link" href="docs/COMPARISON_ENGINE/">Open the complete Glasses Finder &amp; Compare <span aria-hidden="true">→</span></a>
 </section>
 
