@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-30T06:19:58.576886+00:00`
+Generated: `2026-10-30T10:30:47.473176+00:00`
 
-- Intake files inspected: **277**
-- Candidates retained in this review window/history: **10842**
+- Intake files inspected: **274**
+- Candidates retained in this review window/history: **10668**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2239
-- `catalog_review`: 10
+- `adjacent_radar`: 2200
+- `catalog_review`: 9
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 532
-- `rejected_noise`: 8000
-- `source_review`: 44
+- `needs_editorial_verification`: 537
+- `rejected_noise`: 7863
+- `source_review`: 42
 - `watching`: 13
 
 ## Action queue
@@ -159,8 +159,8 @@ Generated: `2026-10-30T06:19:58.576886+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1211](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1211) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1212](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1212) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1213](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1213) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.948](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.948) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.949](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.949) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1214](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1214) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1215](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1215) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.950](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.950) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.953](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.953) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.956](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.956) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -195,6 +195,7 @@ Generated: `2026-10-30T06:19:58.576886+00:00`
 | high | needs_editorial_verification | direct | [Google And XREAL Launch XREAL AURA Wired XR Glasses Powered By Android XR - TradingView](https://news.google.com/rss/articles/CBMi2wFBVV95cUxONnVZRTI2YWJaamJfMmEwMjVTX203TXE5ZndqdjFoaXlfQVRGNnJTdTg3bXRFa1JyZHNNSUJXTUE0YTVhRXNfaGh6dzJJZERScjNwTEdUV0loMjE5TlJWalJDdDVMbHNHcEd1TlZNUGZ2ejY3c3hERkhNQ2NFV1ozeEN0a095NjRTUFlGbUQ4RHpXcHdmeG94dXZUT3ZndjlvUWU2b2pzZkZYZnpOSW1CaEVSQnVteDFiVWRJYjdQdTR0QU5kTlMwVVNzUk9iNnhrUUVQSmF6anlQWk0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GOOGLE BLOG - CO AND XREAL LAUNCH XREAL AURA WIRED XR GLASSES POWERED BY ANDROID XR - Moomoo](https://news.google.com/rss/articles/CBMinAFBVV95cUxOSVRDVlBXMHZCd2lDR0pHQnpTT0c2VUZPRllDR1g0QzBWVWZPQmlwSUFzWHZHQ0RYdDg5TThtbHNhVFc4Vkhqaks5UlZ6OU0wS3BnRUxMcmpMa3VGRTlwblAwOE0yVUxFM0pKSTBrU19GLXJYVlYyV2pGc0R6ODk5SnRuMzZLaDVoWlZST05TZEFVa0FleWVwdUxRR3o?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Rokid Glasses 2 launch with upgraded design, bigger battery, and Dolby Audio support - Notebookcheck](https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3NqMktYZnZrNWpoSHZWNUpPRXlWUUlHcVMxZTd4OWptSHhVeEk0TnRhNTZyMTNnS2JNNjlOVmJQSFRSTHBXVkpPOU43aGFOX0VFYzhDMDJsaklseElnQmdJX2hMNlpSSjZ3YzhETFRDWnlMMDd2SkpxWmlsaVAzYkJwVkpDZmZvWjN6RU5uUFN2dm5RT3NJNHJ1Y2cwdVZmQlAwNHhXVmF1QjQtWHpZUFZ1Z3QydVdrdVNva3k2ZWFzbjFWbEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung to Launch First AI Glasses 'Intelligent Eyewear' in South Korea, US in Mid-December - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE1odDhiM1UxOURucHVzMzZOS2xSOVhIVTJ1WGszbFdNM0I0YzVNMVlpMUtxMTdTaFYyREhPY0QtaGtkRDhFcEtMeUprcHhFQVc3WVZzSzAwYUNsY1FEaGxNX0FadFMwa1JyVUtyMG1JRG8tNW1VNXc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vision Express Teases Ray-Ban AI Glasses Launch in the Philippines - Gadget Pilipinas](https://news.google.com/rss/articles/CBMid0FVX3lxTE5NVTNWMGxwWEl3RkpDREZDdVRhQ1M0OHlZajQ2WkthalZaSHBhVnQtU2hDN2hoSm1QdjU3YWM1cTdSSmlPRElsT2E2SGVGU041V1pIVjhKaWtQR0J3by1YWnBoeUNsYjN0ZUZpNlZRTy15cWV4QnZN?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Vuzix begins shipping SHRIKE configurable waveguide platform for defense evaluation - Traders Union](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdXRwOGxNa3h2dlhFdnZYUVRoWldvdFpBQlNMUlVzQ0RnVHhmcnpYUVZyQUVfM0ZWbXY3UlRtcm9UU3pDUDQ1MjBVZExmMXFwVDBhOUhnT1FrWUFjTmpvTlJDYVlXQlVDOVczU1VJN19pcUJhZ3g1QW85Y0tBRndMSA?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMilgFBVV95cUxOUGluS0p2WE9xMEU1cGdheUtXYWhPVjgycklQUjRoVkZlandkMkRMMTIzOUU2SHk1ZWk1QlhWTG9OUU9Xa0Z5eGVyaThIWXEycUZDSGNXSGhCYW5IaUN0eEIzMFhweWoxR3dTcnNGN2xnd0JUd1BOQUpjREIzTzB2OU1WMzYwS2lfV2tNMU1keXNGWXE2Rnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -270,7 +271,6 @@ Generated: `2026-10-30T06:19:58.576886+00:00`
 | high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered ... - TechPowerUp](https://www.techpowerup.com/354232/xreal-launches-aura-as-the-first-wired-xr-glasses-powered-by-android-xr) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMihwFBVV95cUxQMGE5eVBvMmh3SmJLbUZJWXpfclNWZGlyMlJ0ZE4zSk1rSldkREJENll1XzdnOFRfTUhadGo3Yy1INlppaE8wM3drVHVoNEJHd1k0T2VYRjVLU2lSRVBhNUd6U00tQ3NsNWRVMGpBTDdZTDhQSENaeUtKbC1yeXR4REg2OVhWT0k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMijAFBVV95cUxPSDBlb01VQ2RtZkdhdEktWklpNTZZMURYdHFoN0Z5VW82bEZlc0dGMkhSMFB5eEx3YldpcnE5T2JfX1VtdWsyTmpvcG5vUlU2cWVTWDQ2clg1UGdjQzhYSkhHNFFwSndFZnEyQm81Z2dKV1EtUm1oU3NhUU9UN3dmd2ViT0JkekRObEhIbg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
