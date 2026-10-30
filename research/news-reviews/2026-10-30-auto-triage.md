@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-30T13:25:32.946211+00:00`
+Generated: `2026-10-30T18:42:13.095710+00:00`
 
-- Intake files inspected: **276**
-- Candidates retained in this review window/history: **10765**
+- Intake files inspected: **272**
+- Candidates retained in this review window/history: **10603**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2227
+- `adjacent_radar`: 2187
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 545
-- `rejected_noise`: 7927
-- `source_review`: 39
+- `needs_editorial_verification`: 547
+- `rejected_noise`: 7806
+- `source_review`: 36
 - `watching`: 13
 
 ## Action queue
@@ -22,6 +22,7 @@ Generated: `2026-10-30T13:25:32.946211+00:00`
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [Mentra App account-switch deep-link security hotfix merged to staging](https://github.com/Mentra-Community/MentraOS/pull/4947) | reachable (200) | Research & News, Across the Wire, security/privacy, app ecosystem |
+| high | needs_editorial_verification | direct | [Google's wired XR glasses, 'Xreal Aura,' powered by Android XR, have been released and will be available for pre-order in Japan starting Nov](https://news.google.com/rss/articles/CBMiY0FVX3lxTE40MWtzYl95aE1TZnBjN0k4RGhhRHBpNDN6ZGZvV1E4emhuV2tNVFphSEN1SUxYcFR3ZEdnMDFOSmkzTFN5c3d6M0NqSjlQbHdUREoxN2UwXzdTVkFnUFlaVndmYw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google and XREAL launch AURA Android XR glasses - TestingCatalog AI News](https://news.google.com/rss/articles/CBMihgFBVV95cUxQNWxHT19iOWo2ajJ4UHgzdV9IbHZzN3czMno1Tkd4eTRqMUF0Z3lseWJLbGZWV1dvcDZMTU9hNzBrc2FtWHpjS3E5aU1nVUdGNmgwQVBRazZETFA5NC1UTjdBU2Vhd2ZtbzdKbEFCNXlyTUNpeFJJSVNNUUxGdU1IdXQxbnVCdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google and XREAL launch AURA glasses with Android XR and 120 Hz Sony Micro-OLED displays - mobidevices.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5aSFZsNVF0VVd4cGtmUkpYMndpdnNFZ1RiU0paOTdFU0lRVDUxNTF0QURQZFNTNS1DNzJENE5OM3otUnR6SGNxX2RobEV0Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1000](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1000) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -162,7 +163,8 @@ Generated: `2026-10-30T13:25:32.946211+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1214](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1214) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1215](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1215) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1216](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1216) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.953](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.953) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1217](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1217) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1218](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1218) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.956](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.956) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.957](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.957) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.960](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.960) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -269,8 +271,6 @@ Generated: `2026-10-30T13:25:32.946211+00:00`
 | high | needs_editorial_verification | direct | [“Smart glasses are about to change everything”—what we know before launch - Futura, le média qui explore le monde](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkNMdE13NUlOQTlreHRDb29NM2xwSmkyR2RidWhmbTJoazRmOWNKTllHaVVBYV9Zd0NzWVhhLWtGTXBLa2c3OE5hN3lYMXp4NEtnSk9IckVPSzBtbDY2bF81NHlVWmRSNEFlZ05VLVNnN09QU0ZQZ0NQWnBxWXdsMExfWmtUZnY4NUpwNlNTMF9oZ1RxaWo3cTJ0SXgzNkVfcWNkT1E1R0hfYlFrdW84bVpNcw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | normal | needs_editorial_verification | enabling | [Product Launch of NIL Technology’s Award-Winning metaEye™, World's First All Meta-Optics Camera - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOM1FDdHRMYUFoUlY5RjZJU1NfdE55SXAzS0psVF9xbDVhaWFPQVNuaGNNZFF3dUpwN25DS3NCWV81TnRYMjB6VW95MERVOWU0LXVXWWQyU0oyd3lGYTRCQ1FyM3VqTElYc01SQmR1S2pFVTZ0LVhDcHRiSnNjUHdmMXl3V2xLN2wzVHJYU2RtY19LTDhXUEgwZFVVNC0?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | normal | needs_editorial_verification | direct | [AI glasses: smart, lightweight eyewear from FiGi \| TikTok](https://www.tiktok.com/@china.ai.glasses.s/video/7687183658364570900) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | enabling | [AR-15 Buyer's Guide: Best AR-15 Rifles for Every Budget](https://www.usa-gun-shop.com/ar-15-buyers-guide/) | reachable (200) | research_news_review, report_card_evidence, development_hacking, research_optics |
-| normal | needs_editorial_verification | enabling | [JaxLayerLumos \| Differentiable Optical and RF Multilayer Simulation](https://jaxlayerlumos.github.io/) | reachable (200) | research_news_review, development_hacking, research_optics, deep_research |
 
 ## Meaning of states
 
