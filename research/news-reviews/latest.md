@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-30T22:52:33.982059+00:00`
+Generated: `2026-10-30T23:03:33.616306+00:00`
 
-- Intake files inspected: **272**
-- Candidates retained in this review window/history: **10603**
+- Intake files inspected: **274**
+- Candidates retained in this review window/history: **10682**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2164
+- `adjacent_radar`: 2182
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 547
-- `rejected_noise`: 7827
-- `source_review`: 38
-- `watching`: 13
+- `needs_editorial_verification`: 545
+- `rejected_noise`: 7880
+- `source_review`: 47
+- `watching`: 14
 
 ## Action queue
 
@@ -212,7 +212,6 @@ Generated: `2026-10-30T22:52:33.982059+00:00`
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Amazon.com: Everysight Maverick Sport AR Sunglasses: Run, Cycle, Golf ...](https://www.amazon.com/Everysight-Maverick-Augmented-Translation-Waterproof/dp/B0H9NJC8FB) | reachable (200) | research_news_review, model_catalog_review, development_hacking, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Android Authority 25d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
@@ -271,6 +270,7 @@ Generated: `2026-10-30T22:52:33.982059+00:00`
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement With Commercial Electronics Systems And Begins Shipping Against Initial Six-Figure Lx1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMitgJBVV95cUxOaHd6Sm9mTU5xNzVSTjRUVkxqS182NEtXOUZoQmpZQ09oNHNGODFHdml3YUY3R2Fubjh6dkJ6b29ueThEaFRmQllfSnlBUmxrQWRmZ2xtQ3BRSjJPTDlCakhxbnVVRTJkaUtuVGU5SmUyTnRsVG5ZRUpfOWttMWxKOFhOTlJXbzNKSXZLRzJMTWVObGJSc210UURERFF1ajM2alhlOVRoSGVGcFMxT2VnN0YySkR1Y0lzX2dKVXBKQklRQl9jYk1CMDVRbnVPb3c5SHpoYjNuaU9wakdGcFhtYUU0OEhmTDRoX2dzSm5pSXJ1VGJhYUdpeGVrcC1EYzN0NEkwcGctT0dsRDc1TzdlU2dUMnhZQVRUWHo4UTVMVHdfU2Zpd2dhVGg4VWE4R3pWTGxaU3dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZHhWUE9ZOGJBaFg3LWE4LW1VUDRtSmlKbDFia1NwSHRpRGNpSFU0QXBhNXJNNnlNZG85d2o3eWdSNXpfWmpLQ2tCMUl4b2h4VFhVYUw4SGhOU1R3NXFiamIzdFI3NjhxRndTa3FLZTZ2X2VveERqU094ZzYyc1g3RzdfbVFSdkEzQ0FPdWFEMjNLbmJrRjJmU1d2RGdPdVdvYTUwdDFSOG1NQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMimgFBVV95cUxOSS01cjZqZ3lwbWFteGg0aVRMTVZfaVh6ZUdVa29BR3lidVpkVHpTemEyWkk5QVJqRnBxTU5uVHZnNjRrZ0VXUkxhQjRjdnZEYkRrd1BrYnhXc25WUEpLMHZVLXJmYmhTMGxjZV94REdXVUxTYzlhZXNfeDZNS0VXbnRNVU9ZaXFHSXp1bTJGYUV4ZWM4ZHB0MGJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Wolfspeed Launches Material for Quantum Computers and AR Glasses - ForkLog](https://news.google.com/rss/articles/CBMikgFBVV95cUxQMm5CZXlpTjIxZjBISHJvOGRkck1sTko0clBGaHRBd3BOVmFaRHh4bVhWellHTzRKQ2FYekdzUUtMSnBiMENXQy03Z0xnS0pIY2s4cklMcktabmx3aEZDaFZNanBtMG1LRHItcHlHX2FDZnMzWjlSWVNfa09tbEpMUHhETlRsRTR1ZUFZMjg0STRsZw?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
