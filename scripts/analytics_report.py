@@ -311,6 +311,29 @@ def collect_cloudflare_web_analytics():
         return {"available": False, "error": str(exc)}
 
 
+def visitor_path_counts(paths):
+    """Observed pageview counts; not sessions, transitions or completed funnels.
+
+    The RUM paths response can be truncated: these are lower bounds.
+    No identifiers, cookies, custom tracking or extra Cloudflare writes.
+    """
+    destinations = {
+        "Practical Answers": lambda p: p.startswith("/docs/faq/"),
+        "Buying and use-case guides": lambda p: p.startswith("/guides/"),
+        "Model research": lambda p: p.startswith("/models/catalog/gls-"),
+        "Find & Compare": lambda p: p.rstrip("/") == "/docs/COMPARISON_ENGINE",
+        "Follow verified work": lambda p: p.rstrip("/") in {"/docs/FEEDS", "/docs/RESEARCH_NEWS"},
+    }
+    counts = {label: 0 for label in destinations}
+    for row in paths:
+        path = str(row.get("path", "")).split("?", 1)[0]
+        views = int(row.get("pageviews", 0))
+        for label, predicate in destinations.items():
+            if predicate(path):
+                counts[label] += views
+    return counts
+
+
 def md_table(rows, key):
     if not rows:
         return "_No rows yet._\n"
@@ -364,6 +387,17 @@ def render(report):
             f"- Rolling 24h: **{w24['pageviews']:,} browser pageviews**, **{w24['visits']:,} RUM visits**.",
             f"- Rolling 7d: **{w7['pageviews']:,} browser pageviews**, **{w7['visits']:,} RUM visits**.",
             "- Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.",
+            "",
+            "### Paths readers are finding — rolling 7 days",
+            "",
+            "| Destination | Observed browser pageviews |",
+            "|---|---:|",
+        ]
+        for name, views in visitor_path_counts(w7.get("paths", [])).items():
+            lines.append(f"| {name} | {views:,} |")
+        lines += [
+            "",
+            "These are minimum counts from RUM's returned popular paths, **not a session funnel** or proof a reader moved between pages. Cloudflare Web Analytics does not provide custom journey events; do not invent conversion rates.",
             "",
             "### Top pages — rolling 24h",
             "",
