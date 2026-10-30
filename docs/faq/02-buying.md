@@ -10,7 +10,7 @@ For mainstream camera, audio, and assistant use, Ray-Ban Meta Gen 2 is the safes
 
 ## 12. What are the best camera-free display glasses for everyday use?
 
-Even G2 is a leading everyday candidate when the priorities are discreet binocular text, camera-free design, prescription support, IP65 protection, and long advertised endurance. The manufacturer claims two days of regular use and seven case recharges. Buyers who need audio output, photo capture, or a large cinematic screen should choose another category. Sources: [Even G2 specs](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs), [Even G2 product page](https://www.evenrealities.com/smart-glasses).
+[Even G2](/models/catalog/gls-0048/) is a leading everyday candidate when the priorities are discreet binocular text, camera-free design, prescription support, IP65 protection, and long advertised endurance. The manufacturer claims two days of regular use and seven case recharges. Buyers who need audio output, photo capture, or a large cinematic screen should choose another category. [Compare alternatives](/docs/COMPARISON_ENGINE/) or [see the documented camera-free shortlist](/guides/smart-glasses-without-cameras/). Sources: [Even G2 specs](https://support.evenrealities.com/hc/en-us/articles/13499229138959-Specs), [Even G2 product page](https://www.evenrealities.com/smart-glasses).
 
 ## 13. What are the best open-source smart glasses to buy?
 
@@ -26,7 +26,7 @@ For high-refresh portable gaming, XREAL’s ROG XREAL R1 targets 240 Hz, while X
 
 ## 16. What are the best smart glasses for office productivity?
 
-For glanceable notes, translation, meetings, and teleprompting, Even G2 or Halliday G2 are better category matches than cinematic display glasses. For multiple large virtual computer screens, XREAL or VITURE may be more suitable but require a compatible source device and can be less socially natural. Sources: [Even G2](https://www.evenrealities.com/smart-glasses), [Halliday G2](https://www.hallidayglobal.com/), [XREAL One specs](https://tutorials.xreal.com/docs/glasses/one-series/spec/).
+For glanceable notes, translation, meetings, and teleprompting, [Even G2](/models/catalog/gls-0048/) or Halliday G2 are better category matches than cinematic display glasses. For multiple large virtual computer screens, XREAL or VITURE may be more suitable but require a compatible source device and can be less socially natural. Sources: [Even G2](https://www.evenrealities.com/smart-glasses), [Halliday G2](https://www.hallidayglobal.com/), [XREAL One specs](https://tutorials.xreal.com/docs/glasses/one-series/spec/).
 
 ## 17. What are the best smart glasses for developers?
 
