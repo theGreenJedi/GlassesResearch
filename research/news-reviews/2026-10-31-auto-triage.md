@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-31T14:44:02.925801+00:00`
+Generated: `2026-10-31T15:48:44.349814+00:00`
 
-- Intake files inspected: **266**
-- Candidates retained in this review window/history: **10385**
+- Intake files inspected: **267**
+- Candidates retained in this review window/history: **10373**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2096
+- `adjacent_radar`: 2086
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 541
-- `rejected_noise`: 7673
-- `source_review`: 46
+- `rejected_noise`: 7670
+- `source_review`: 47
 - `watching`: 15
 
 ## Action queue
@@ -256,7 +256,6 @@ Generated: `2026-10-31T14:44:02.925801+00:00`
 | high | needs_editorial_verification | direct | [XREAL Aura is coming in November with a special $200-off launch discount - 9to5Google](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQzNwOUNLWEFDdWdEWWhCV05VeGtXTVFOSkZ6U1hsWkRoUUdSRjNBeDRqazQzM0NwZG5XWEo4Z2hKYnVneWYwR1VyVF9pc0hPZUdrbnowVXRFZ1pIRUU5dnFndlFmelJMR28tNjBHNHVCZUNpTGhUWnE1X2RVZjktbGcxbVBsV0l3TW80ZzJlTDFET3VCOVNuVnhWam5lTnFwWHVSYXh3RDgydw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal Aura smartglasses go on sale with launch discounts - Mezha.net](https://news.google.com/rss/articles/CBMiigFBVV95cUxQejVHcnJwV3pfSEo0bzgwOUl4WFktM3RRb3lhLTNTeVgzSUR5cmxYVV9jeUJwWlVoeF9Gc2g2YWRQYTltYjBIeTFnTVF4d0R6dGtNOUtJcF9xVFl3SGxzUVJISTk1RkhwTTlrdnk2bW1MQnhmdkpyTHZ4Rk9nWldtR0FRS3FFNG9XU2c?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [XREAL AURA US price, preorder eligibility and shipping](https://us.shop.xreal.com/blogs/guides/xreal-aura-price-preorder-us) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered ... - TechPowerUp](https://www.techpowerup.com/354232/xreal-launches-aura-as-the-first-wired-xr-glasses-powered-by-android-xr) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMihwFBVV95cUxQMGE5eVBvMmh3SmJLbUZJWXpfclNWZGlyMlJ0ZE4zSk1rSldkREJENll1XzdnOFRfTUhadGo3Yy1INlppaE8wM3drVHVoNEJHd1k0T2VYRjVLU2lSRVBhNUd6U00tQ3NsNWRVMGpBTDdZTDhQSENaeUtKbC1yeXR4REg2OVhWT0k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMijAFBVV95cUxPSDBlb01VQ2RtZkdhdEktWklpNTZZMURYdHFoN0Z5VW82bEZlc0dGMkhSMFB5eEx3YldpcnE5T2JfX1VtdWsyTmpvcG5vUlU2cWVTWDQ2clg1UGdjQzhYSkhHNFFwSndFZnEyQm81Z2dKV1EtUm1oU3NhUU9UN3dmd2ViT0JkekRObEhIbg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,6 +270,7 @@ Generated: `2026-10-31T14:44:02.925801+00:00`
 | normal | needs_editorial_verification | direct | [#eyeglasses \| TikTok](https://www.tiktok.com/tag/eyeglasses) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [2022–2024 Ford Maverick 12" or 8" Sync 4 Touchscreen Upgrade w ...](https://www.mavericktruckclub.com/12-or-8-sync-4-touchscreen-upgrade-w-wireless-apple-carplay-android-auto-pre-orders-open/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [2026 Smart Glasses Review: Best Bluetooth Sunglasses \| TikTok](https://www.tiktok.com/@wjzgvygf/video/7696695800306486541) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [2026 Unisex AI Smart Glasses - TikTok Shop](https://shop.tiktok.com/us/pdp/2026-unisex-ai-audio-smart-glasses-hd-wireless-calling-music-translation-ai-assistant/1732724595520934440) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
