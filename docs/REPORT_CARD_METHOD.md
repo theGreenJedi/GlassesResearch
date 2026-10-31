@@ -95,6 +95,18 @@ GlassesResearch does **not** calculate a single weighted overall winner score. T
 
 If an overall weighting system is introduced in the future, its weights and calculation must be public on this page before the resulting score is published.
 
+## Evaluate task friction separately from complexity
+
+**Complexity is not a feature. Reliability matters. But complexity and friction are different questions.** A narrow-function product may be frustrating to operate; a technologically ambitious one may make demanding tasks feel effortless. Count neither capabilities nor interface steps as an automatic verdict.
+
+When a relevant task has been tried, record the *observed interaction cost*: first-run setup versus practiced use, phone dependency, gestures or taps, successful continuity, error feedback, recovery after interruptions, and physical/social acceptability. Identify the task and test conditions. Distinguish a true failure or persistent design burden from a tester's initial unfamiliarity. An unimplemented capability is **not** a low-friction victory; it is unavailable or N/A for that task.
+
+The result is an **evidence note supporting existing dimensions**, not a new seventh Core score, a hidden weight, or a blanket “simple beats sophisticated” ranking. For example, conversational friction can inform Android Compatibility; the conspicuousness of a display or speaker leakage can inform Discreetness; compulsory services and limitations can inform Owner Control and the extended Cloud Independence rating. No one dimension should absorb every kind of friction.
+
+Record *early observed functional success* separately from *long-term reliability*. A pleasant first-use session cannot support a durability claim. For a worked, explicitly provisional example, see the [KWENRUN audio-glasses first-use field notes](research/kwenrun-audio-first-use-fieldwork-2026-10-31.md). The comparison with a more display-capable test pair is **subjective and task-dependent**, not a transferable score or a full head-to-head ranking.
+
+Follow the [Hands-on Test Protocol](HANDS_ON_TEST_PROTOCOL.md#cross-cutting-task-evaluation-complexity-versus-friction) for repeatable task-level prompts.
+
 ## Evidence before score
 
 Every scored judgment must be defensible from the evidence basis associated with the Report Card. Primary sources, direct measurements, reproducible experiments, manuals, firmware, regulatory records, and other authoritative evidence are preferred. Community and secondary evidence must remain clearly distinguished.
