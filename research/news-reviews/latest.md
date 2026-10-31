@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-31T10:00:17.377648+00:00`
+Generated: `2026-10-31T10:01:04.560065+00:00`
 
 - Intake files inspected: **269**
 - Candidates retained in this review window/history: **10541**
@@ -12,9 +12,9 @@ Generated: `2026-10-31T10:00:17.377648+00:00`
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 543
+- `needs_editorial_verification`: 541
 - `rejected_noise`: 7783
-- `source_review`: 41
+- `source_review`: 43
 - `watching`: 15
 
 ## Action queue
@@ -205,7 +205,6 @@ Generated: `2026-10-31T10:00:17.377648+00:00`
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Android Authority 25d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
@@ -271,6 +270,7 @@ Generated: `2026-10-31T10:00:17.377648+00:00`
 | high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered ... - TechPowerUp](https://www.techpowerup.com/354232/xreal-launches-aura-as-the-first-wired-xr-glasses-powered-by-android-xr) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMihwFBVV95cUxQMGE5eVBvMmh3SmJLbUZJWXpfclNWZGlyMlJ0ZE4zSk1rSldkREJENll1XzdnOFRfTUhadGo3Yy1INlppaE8wM3drVHVoNEJHd1k0T2VYRjVLU2lSRVBhNUd6U00tQ3NsNWRVMGpBTDdZTDhQSENaeUtKbC1yeXR4REg2OVhWT0k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMijAFBVV95cUxPSDBlb01VQ2RtZkdhdEktWklpNTZZMURYdHFoN0Z5VW82bEZlc0dGMkhSMFB5eEx3YldpcnE5T2JfX1VtdWsyTmpvcG5vUlU2cWVTWDQ2clg1UGdjQzhYSkhHNFFwSndFZnEyQm81Z2dKV1EtUm1oU3NhUU9UN3dmd2ViT0JkekRObEhIbg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
