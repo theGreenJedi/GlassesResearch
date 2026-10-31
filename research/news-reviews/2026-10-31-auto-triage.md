@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-10-31T18:49:55.628883+00:00`
+Generated: `2026-10-31T20:05:13.279814+00:00`
 
-- Intake files inspected: **265**
-- Candidates retained in this review window/history: **10558**
+- Intake files inspected: **267**
+- Candidates retained in this review window/history: **10612**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2082
+- `adjacent_radar`: 2101
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 531
-- `rejected_noise`: 7870
-- `source_review`: 46
+- `needs_editorial_verification`: 529
+- `rejected_noise`: 7903
+- `source_review`: 50
 - `watching`: 15
 
 ## Action queue
@@ -185,6 +185,7 @@ Generated: `2026-10-31T18:49:55.628883+00:00`
 | high | needs_editorial_verification | direct | [Google And XREAL Launch XREAL AURA Wired XR Glasses Powered By Android XR - TradingView](https://news.google.com/rss/articles/CBMi2wFBVV95cUxONnVZRTI2YWJaamJfMmEwMjVTX203TXE5ZndqdjFoaXlfQVRGNnJTdTg3bXRFa1JyZHNNSUJXTUE0YTVhRXNfaGh6dzJJZERScjNwTEdUV0loMjE5TlJWalJDdDVMbHNHcEd1TlZNUGZ2ejY3c3hERkhNQ2NFV1ozeEN0a095NjRTUFlGbUQ4RHpXcHdmeG94dXZUT3ZndjlvUWU2b2pzZkZYZnpOSW1CaEVSQnVteDFiVWRJYjdQdTR0QU5kTlMwVVNzUk9iNnhrUUVQSmF6anlQWk0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GOOGLE BLOG - CO AND XREAL LAUNCH XREAL AURA WIRED XR GLASSES POWERED BY ANDROID XR - Moomoo](https://news.google.com/rss/articles/CBMinAFBVV95cUxOSVRDVlBXMHZCd2lDR0pHQnpTT0c2VUZPRllDR1g0QzBWVWZPQmlwSUFzWHZHQ0RYdDg5TThtbHNhVFc4Vkhqaks5UlZ6OU0wS3BnRUxMcmpMa3VGRTlwblAwOE0yVUxFM0pKSTBrU19GLXJYVlYyV2pGc0R6ODk5SnRuMzZLaDVoWlZST05TZEFVa0FleWVwdUxRR3o?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Rokid Glasses 2 launch with upgraded design, bigger battery, and Dolby Audio support - Notebookcheck](https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3NqMktYZnZrNWpoSHZWNUpPRXlWUUlHcVMxZTd4OWptSHhVeEk0TnRhNTZyMTNnS2JNNjlOVmJQSFRSTHBXVkpPOU43aGFOX0VFYzhDMDJsaklseElnQmdJX2hMNlpSSjZ3YzhETFRDWnlMMDd2SkpxWmlsaVAzYkJwVkpDZmZvWjN6RU5uUFN2dm5RT3NJNHJ1Y2cwdVZmQlAwNHhXVmF1QjQtWHpZUFZ1Z3QydVdrdVNva3k2ZWFzbjFWbEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung to Launch Android XR-Powered Intelligent Eyewear in December 2024 - Inkorr](https://news.google.com/rss/articles/CBMitAFBVV95cUxOTURlaU82TC1DQVp6XzNHUjdWV1ZuLVNvcWl0V1pTcDVlRVB4ZnZWNnBqN05FbTZUYkp2X2tyS044SExDcW91X2RvcHZITVJYSVR0dDR1RkNkd3hEV284S0VOVmJZTktPb213dm9iRG5vZUdzSDd1UjZuVnJ0T3VlRHg0VjhfM21HaWhhekJ2T09Xanh0ZlloX1NDdEtlZ3J1bkxWaHAteExycU5KcEFteEVQMHXSAboBQVVfeXFMT1J6dVFybnhYTldLSHU2aHlWSlUwUGE5M3B5NzVsN3VWOWhVR1lIY3pzNFMtcmZ1SkZhMHlsOFNlT2pobUJuYmM2ankyNkYwbjNyMm9kV0lSUFFfOHlFRHhzdEhxVUNmSldrRGIwd0lIa0REbXdqYzBEZkNnbjZYN3ZoOEV0UDZSUjE4MFhzdzJ2U2RRcUstZVZMWldzdjV1aU02cHllalFKUjQxZ3JkOVh2YzByMmFob1dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch Android XR-Powered Intelligent Eyewear in December 2024 - Inkorr](https://news.google.com/rss/articles/CBMiugFBVV95cUxPUnp1UXJueFhOV0tIdTZoeVZKVTBQYTkzcHk3NWw3dVY5aFVHWUhjenM0Uy1yZnVKRmEweWw4U2VPamhtQm5iYzZqeTI2RjBuM3Iyb2RXSVJQUV84eUVEeHN0SHFVQ2ZKV2tEYjB3SUhrRERtd2pjMERmQ2duNlg3dmg4RXRQNlJSMTgwWHN3MnZTZFFxSy1lVkxaV3N2NXVpTTZweWVqUUpSNDFncmQ5WHZjMHIyYWhvV1HSAboBQVVfeXFMT1J6dVFybnhYTldLSHU2aHlWSlUwUGE5M3B5NzVsN3VWOWhVR1lIY3pzNFMtcmZ1SkZhMHlsOFNlT2pobUJuYmM2ankyNkYwbjNyMm9kV0lSUFFfOHlFRHhzdEhxVUNmSldrRGIwd0lIa0REbXdqYzBEZkNnbjZYN3ZoOEV0UDZSUjE4MFhzdzJ2U2RRcUstZVZMWldzdjV1aU02cHllalFKUjQxZ3JkOVh2YzByMmFob1dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch First AI Glasses 'Intelligent Eyewear' in South Korea, US in Mid-December - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE1odDhiM1UxOURucHVzMzZOS2xSOVhIVTJ1WGszbFdNM0I0YzVNMVlpMUtxMTdTaFYyREhPY0QtaGtkRDhFcEtMeUprcHhFQVc3WVZzSzAwYUNsY1FEaGxNX0FadFMwa1JyVUtyMG1JRG8tNW1VNXc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vision Express Teases Ray-Ban AI Glasses Launch in the Philippines - Gadget Pilipinas](https://news.google.com/rss/articles/CBMid0FVX3lxTE5NVTNWMGxwWEl3RkpDREZDdVRhQ1M0OHlZajQ2WkthalZaSHBhVnQtU2hDN2hoSm1QdjU3YWM1cTdSSmlPRElsT2E2SGVGU041V1pIVjhKaWtQR0J3by1YWnBoeUNsYjN0ZUZpNlZRTy15cWV4QnZN?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -270,7 +271,6 @@ Generated: `2026-10-31T18:49:55.628883+00:00`
 | normal | needs_editorial_verification | direct | [AI glasses: smart, lightweight eyewear from FiGi \| TikTok](https://www.tiktok.com/@china.ai.glasses.s/video/7687183658364570900) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | enabling | [AR-15 Buyer's Guide: Best AR-15 Rifles for Every Budget](https://www.usa-gun-shop.com/ar-15-buyers-guide/) | reachable (200) | research_news_review, report_card_evidence, development_hacking, research_optics |
 | normal | needs_editorial_verification | enabling | [JaxLayerLumos \| Differentiable Optical and RF Multilayer Simulation](https://jaxlayerlumos.github.io/) | reachable (200) | research_news_review, development_hacking, research_optics, deep_research |
-| normal | needs_editorial_verification | direct | [2022–2024 Ford Maverick 12" or 8" Sync 4 Touchscreen Upgrade w ...](https://www.mavericktruckclub.com/12-or-8-sync-4-touchscreen-upgrade-w-wireless-apple-carplay-android-auto-pre-orders-open/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
