@@ -189,6 +189,12 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [What should the next generation of AI glasses improve instead of trying to do everything?](10-ownership-future.md#what-should-the-next-generation-of-ai-glasses-improve-instead-of-trying-to-do-everything) — Observed Q-000231, Q-000232; evidence-qualified answer.
 - [Which smart-glasses features deserve priority before buying?](02-buying.md#which-smart-glasses-features-deserve-priority-before-buying) — Observed Q-000241; evidence-qualified answer.
 
+- [What does full-color mean in smart glasses, and which optical designs provide it?](05-displays.md#what-does-full-color-mean-in-smart-glasses-and-which-optical-designs-provide-it) — Original observed Q-000294; evidence-bounded answer reviewed 2026-10-31.
+- [Should I preorder XREAL AURA after its October 2026 price drop?](02-buying.md#should-i-preorder-xreal-aura-after-its-october-2026-price-drop) — Original observed Q-000299; evidence-bounded answer reviewed 2026-10-31.
+- [Which smart glasses are best for live translation, and how should I choose?](06-ai-cameras-audio.md#which-smart-glasses-are-best-for-live-translation-and-how-should-i-choose) — Original observed Q-000319; evidence-bounded answer reviewed 2026-10-31.
+- [Are there credible Solos AirGo V2 reviews, and what remains uncertain?](02-buying.md#are-there-credible-solos-airgo-v2-reviews-and-what-remains-uncertain) — Original observed Q-000320; evidence-bounded answer reviewed 2026-10-31.
+- [How should I compare XREAL 1S black crush with RayNeo GT Max corner blur?](05-displays.md#how-should-i-compare-xreal-1s-black-crush-with-rayneo-gt-max-corner-blur) — Original observed Q-000321; evidence-bounded answer reviewed 2026-10-31.
+
 ## Questions researched from actual search language
 
 - [Detect Google Glass Programmatically](09-development-openness.md#detect-google-glass-programmatically) — A historically documented Build-property heuristic, not device attestation.
