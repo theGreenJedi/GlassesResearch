@@ -1,17 +1,18 @@
+---
+description: Claim-level evidence for observed Q-000159, RayNeo iO prescription fit and conflicting returns wording.
+---
+
 # Q-000159 — What should I check before ordering prescription RayNeo iO glasses?
 
-**Original observed question:** [What to check before ordering the prescription version of the RayNeo iO](https://www.reddit.com/r/SmartGlasses/comments/1x30kdd/what_to_check_before_ordering_the_prescription/); existing registry ID Q-000159. **Reviewed:** October 27, 2026. Original thread content may be inaccessible; exact question wording is preserved by the preexisting discovery registry.
+**Original observed wording:** “What to check before ordering the prescription version of the RayNeo iO.” [Original community question](https://www.reddit.com/r/SmartGlasses/comments/1x30kdd/what_to_check_before_ordering_the_prescription/), observed 2026-10-21. Reviewed 2026-10-31.
 
 ## Claim-level provenance
 
-- [RayNeo's prescription iO product page](https://www.rayneo.com/products/rayneo-io-ai-glasses-prescription) — attributed primary-source/manufacturer guidance or original developer/community observation. Product claims are **not** independently bench-verified.
-- [RayNeo's iO support instructions](https://www.rayneo.com/pages/support-rayneo-io-ai-glasses) — attributed primary-source/manufacturer guidance or original developer/community observation. Product claims are **not** independently bench-verified.
-- [RayNeo's published refund policy](https://www.rayneo.com/policies/refund-policy) — attributed primary-source/manufacturer guidance or original developer/community observation. Product claims are **not** independently bench-verified.
-- [Original observed question](https://www.reddit.com/r/SmartGlasses/comments/1x30kdd/what_to_check_before_ordering_the_prescription/) — attributed primary-source/manufacturer guidance or original developer/community observation. Product claims are **not** independently bench-verified.
+- **Manufacturer product offer:** [RayNeo prescription iO product page](https://www.rayneo.com/products/rayneo-io-ai-glasses-prescription) offers custom prescription eyewear and displays generic “30-Day Free Returns” marketing. It does **not** establish that every lens power, prism, progressive design, PD, fitting height or individual face will work.
+- **Manufacturer fit instructions:** [RayNeo iO support](https://www.rayneo.com/pages/support-rayneo-io-ai-glasses) says multiple nose-pad bridges and adjustable vertical angle affect the eye box and full display visibility. This is an attributed design statement, not independent fit testing.
+- **Manufacturer policy, more specific than promotional copy:** [RayNeo refund policy](https://www.rayneo.com/policies/refund-policy) restricts prescription-order cancellations to **within 24 hours** and generally disallows later prescription returns/refunds except qualifying lens/device defects; third-party sellers are excluded from RayNeo's direct-store policy. The generic 30-day banner must not be represented as overriding this exception.
+- **Original question:** [Community source](https://www.reddit.com/r/SmartGlasses/comments/1x30kdd/what_to_check_before_ordering_the_prescription/) establishes observed demand, not product compatibility.
 
-## Verification and publication gate
+## Limits and publication gate
 
-- Published-answer candidate is at `docs/faq/08-accessibility-fit.md#what-should-i-check-before-ordering-prescription-rayneo-io-glasses`; the Practical Answers directory links to it.
-- Hardware/software behavior has **not** been independently bench-tested. Qualifiers and cited sources are required.
-- **Status: publication pending.** Do not mark original Q-000159 `answered` until a merged revision has passed exact public FAQ, directory, and evidence-page production-content proof.
-- Evidence sources were opened or independently checked on October 27, 2026; any broken original Reddit source URL remains an original observed URL, **not** primary proof for the answer.
+Request written seller confirmation of prescription range, fit measurements, price and applicable return rules before purchase. No lens fitting or purchase performed by GlassesResearch. Proposed canonical FAQ: `docs/faq/08-accessibility-fit.md#what-should-i-check-before-ordering-prescription-rayneo-io-glasses`; directory: `docs/faq/README.md`. **Status: researched; registry Q-000159 remains observed until merged Pages and exact production-content-proof of FAQ, directory and evidence.** Primary sources are linked, not mirrored.
