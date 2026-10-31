@@ -1,28 +1,29 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-30T16:43:37+00:00**
+Generated: **2026-10-31T15:45:42+00:00**
 
-- Published evidence-backed answers: **207** (minimum **1000**, no ceiling)
-- Remaining to minimum: **793**
-- Canonical registry size: **307** (not the published count)
-- Unanswered research candidates: **68**
-- Observations this run: **76**
-- New distinct questions: **4**
+- Published evidence-backed answers: **217** (minimum **1000**, no ceiling)
+- Remaining to minimum: **783**
+- Canonical registry size: **322** (not the published count)
+- Unanswered research candidates: **63**
+- Observations this run: **77**
+- New distinct questions: **5**
 
 ## Source health
 
-- github_issues: ok — 16 observations
+- github_issues: ok — 14 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 34 observations
+- reddit_rss: partial — 37 observations
 - google_search_console: ok — 6 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000304** — If you use AI glasses or an AI pin: how do you actually input things, and what is the most annoying part?
-- **Q-000305** — did anyone try ai glass from China?
-- **Q-000306** — best ai glasses developers?
-- **Q-000307** — best smart glass developers?
+- **Q-000318** — What if dwell didn’t look like a timer?
+- **Q-000319** — Best glasses for translation?
+- **Q-000320** — Any Solos Airgo v2 reviews?
+- **Q-000321** — Xreal 1S crushed blacks or RayNeo GT Max pixel loss/corner blurryness?
+- **Q-000322** — From monochrome to full-color: Upgrading from Rokid Gen 1. Is anyone else excited for CES demos?
 
 ## Research queue (first 20)
 
