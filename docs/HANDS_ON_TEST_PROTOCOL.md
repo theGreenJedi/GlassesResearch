@@ -189,6 +189,25 @@ Record:
 - subscription prompts;
 - whether major functions are understandable without undocumented workarounds.
 
+### Cross-cutting task evaluation: complexity versus friction
+
+**Complexity is not automatically a problem; friction is not a proxy for feature count.** A basic device may be effortless or frustrating, and an ambitious device may be either. Evaluate *the work the wearer is trying to do* rather than rewarding simplicity or penalizing sophistication.
+
+For each important supported task (for example, take a call, start a hands-free conversation, read a HUD notification, translate speech, or recover after Bluetooth disconnects), document:
+
+- **Task and intended outcome:** What was the wearer trying to achieve? Note whether the device actually offers that capability; an absent feature cannot earn a low-friction success for that task.
+- **First use versus repeated use:** Setup, learning, accounts, permissions, and required phone interaction; then the steps required once familiar.
+- **Interaction burden:** Taps, gestures, delays, attention shifts, reach-for-phone events, re-pairing, unclear feedback, or accidental triggers, including whether hands-free operation remains hands-free.
+- **Recovery burden:** What the user must do after ordinary interruptions such as phone calls, disconnects, lock-screen changes, or companion-app restarts.
+- **Physical and social burden:** Comfort, visible display or branding, audibility to bystanders, and whether use is practical in the intended environment.
+- **Dependability over time:** Record separately a successful first test, repeatable short-term behavior, and long-term reliability. Do not infer durability from a smooth afternoon.
+
+Describe the friction **relative to the particular task and tester**, with host OS, app/firmware state and environmental conditions when known. Separate unfamiliarity with controls from a demonstrated design defect. If useful, record a simple/complex × low/high friction comparison, but do not translate it into an unexplained overall score or claim that different-function products are direct substitutes.
+
+Include observed task friction within the relevant existing Report Card evidence (especially Android Compatibility, Discreetness, Software, Wearability, Owner Control or their extended ratings). Do not add a seventh Core dimension merely to capture the idea. Preserve useful subjective findings as *personally observed* rather than generalizing to every owner.
+
+The [first-use KWENRUN audio-glasses field note](research/kwenrun-audio-first-use-fieldwork-2026-10-31.md) illustrates how modest capabilities can work with little initial friction while endurance, optics and long-term reliability remain unverified.
+
 ## 12. Developer and owner-control verification
 
 Where official developer documentation exists, record what the vendor documents for display, camera, audio, sensors, transport, and supported host platforms. Where no official path exists, record only independently demonstrated behavior and label it accordingly.
