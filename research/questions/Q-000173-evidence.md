@@ -1,19 +1,23 @@
 ---
-description: Evidence and verification boundaries for observed Q-000173, covering why can green hud text read differently against blue sky and green trees?
+description: Claim-level evidence and publication limits for original observed Q-000173.
 ---
 
 # Q-000173 — Why can green HUD text read differently against blue sky and green trees?
 
-**Original registry question:** Green HUD text against a bright sky vs against trees：how big is the difference in real life?
+**Original observed question:** Green HUD text against a bright sky vs against trees：how big is the difference in real life?
 
-**Original observations:** https://www.reddit.com/r/SmartGlasses/comments/1xda2xq/green_hud_text_against_a_bright_sky_vs_against/. First observed: 2026-10-23. Reviewed October 27, 2026.
+**Original observation:** [Source](https://www.reddit.com/r/SmartGlasses/comments/1xda2xq/green_hud_text_against_a_bright_sky_vs_against/) (preserved in canonical registry; reviewed October 31, 2026). The observation is not itself device verification.
 
 ## Claim-level provenance
 
-- https://doi.org/10.1145/3385959.3418445 — underlying original observation, manufacturer support documentation, or independently published technical source; clearly attributed and interpreted with limitations in the FAQ.
-- https://doi.org/10.1080/15980316.2021.2018058 — underlying original observation, manufacturer support documentation, or independently published technical source; clearly attributed and interpreted with limitations in the FAQ.
-- https://www.reddit.com/r/SmartGlasses/comments/1xda2xq/green_hud_text_against_a_bright_sky_vs_against/ — underlying original observation, manufacturer support documentation, or independently published technical source; clearly attributed and interpreted with limitations in the FAQ.
+| Claim | Evidence | Boundary |
+| --- | --- | --- |
+| Optical see-through contrast falls with ambient illumination | [Source](https://doi.org/10.1145/3385959.3418445) | Measured HoloLens, not the observer's green HUD |
+| Physical vs perceived AR contrast differs | [Source](https://www.cl.cam.ac.uk/research/rainbow/projects/ar_contrast/) | SIGGRAPH Asia 2025 controlled study; no specific sky/tree product benchmark |
+| Natural scene structure can mask additive text | [Source](https://doi.org/10.1177/1541931218621294) | Controlled text readability research; no numerical field ratio for this pair |
 
-## Limits and gate
+## Uncertainty and publication gate
 
-The answer distinguishes manufacturer claims and technical reasoning from independent hardware testing. No real glasses or SDK build was bench-tested. Any generalized comparison is methodology, **not** a tested ranking. Proposed FAQ location: `docs/faq/05-displays.md#why-can-green-hud-text-read-differently-against-blue-sky-and-green-trees`. Directory: `docs/faq/README.md`. **State: publication pending; do not mark original Q-000173 answered until exact merged public-page, directory and evidence proof.**
+Canonical proposed FAQ: `docs/faq/05-displays.md#why-can-green-hud-text-read-differently-against-blue-sky-and-green-trees`. Existing single directory: `docs/faq/README.md`. The answer separates manufacturer/project assertions, independent technical studies, and community observations. **No GlassesResearch device bench test, guaranteed compatibility, or comparative performance measurement is claimed.**
+
+**State: refreshed research and publication pending.** Do not credit the original registry ID until this publication PR passes editorial, strict links/fragments and all CI checks, merges, the existing main Pages deployment succeeds, and the production-content-proof workflow fetches exact FAQ, directory and evidence pages. Reconcile the original registry row in a follow-up PR with canonical answer_url, publication_verified_at and claim-specific proof. Related Q IDs must not inflate the distinct URL count.
