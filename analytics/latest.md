@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-31T10:43:57+00:00**
+Generated automatically: **2026-10-31T20:37:26+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -52,8 +52,8 @@ _No rows yet._
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **8 browser pageviews**, **7 RUM visits**.
-- Rolling 7d: **133 browser pageviews**, **107 RUM visits**.
+- Rolling 24h: **16 browser pageviews**, **13 RUM visits**.
+- Rolling 7d: **139 browser pageviews**, **110 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Paths readers are finding — rolling 7 days
@@ -62,9 +62,9 @@ _No rows yet._
 |---|---:|
 | Practical Answers | 3 |
 | Buying and use-case guides | 0 |
-| Model research | 6 |
-| Find & Compare | 15 |
-| Follow verified work | 2 |
+| Model research | 8 |
+| Find & Compare | 16 |
+| Follow verified work | 3 |
 
 These are minimum counts from RUM's returned popular paths, **not a session funnel** or proof a reader moved between pages. Cloudflare Web Analytics does not provide custom journey events; do not invent conversion rates.
 
@@ -72,42 +72,46 @@ These are minimum counts from RUM's returned popular paths, **not a session funn
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
+| / | 3 | 3 |
+| /docs/COMPARISON_ENGINE/ | 2 | 1 |
+| /models/catalog/ | 2 | 2 |
 | /hacking/ | 2 | 2 |
-| / | 2 | 2 |
+| /docs/faq/08-accessibility-fit/ | 1 | 1 |
 | /docs/INDUSTRY_TIMELINE/ | 1 | 1 |
+| /evidence/EV-0046-Even-G1-G2-service-survival/ | 1 | 0 |
+| /research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 1 |
 | /docs/SDK_API_MATRIX/ | 1 | 1 |
-| /docs/COMPARISON_ENGINE/ | 1 | 0 |
-| /models/catalog/ | 1 | 1 |
+| /docs/RESEARCH_NEWS/ | 1 | 0 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 5 | 5 |
-| glassesresearch.org | 1 | 0 |
+| (direct / none) | 10 | 10 |
+| glassesresearch.org | 3 | 0 |
+| www.google.com | 2 | 2 |
 | www.bing.com | 1 | 1 |
-| www.google.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **9,608 requests**, **2,365 HTTP visits**, **189.5 MB** served.
-- Rolling 7d: **60,712 requests**, **15,104 HTTP visits**, **1467.6 MB** served.
+- Rolling 24h: **9,279 requests**, **1,896 HTTP visits**, **207.7 MB** served.
+- Rolling 7d: **62,365 requests**, **14,767 HTTP visits**, **1512.4 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 4,145 | 1,593 |
-| MX | 1,567 | 83 |
-| DE | 779 | 309 |
-| NL | 757 | 16 |
-| CA | 571 | 180 |
-| CN | 499 | 10 |
-| JP | 278 | 8 |
-| IT | 212 | 3 |
-| BE | 189 | 6 |
+| US | 3,925 | 1,358 |
+| MX | 2,327 | 85 |
+| CN | 589 | 12 |
+| NL | 544 | 19 |
+| DE | 401 | 19 |
+| CA | 361 | 183 |
 | NO | 134 | 1 |
+| SG | 114 | 7 |
+| GB | 112 | 34 |
+| CH | 110 | 33 |
 
 ## What to watch
 
