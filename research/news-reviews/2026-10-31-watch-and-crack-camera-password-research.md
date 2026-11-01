@@ -12,7 +12,7 @@
 - [Orenbach and Wool, *Watch and Crack: Password Inference from Smart-Glasses Video*, arXiv:2609.06539](https://arxiv.org/abs/2609.06539) — **researcher-primary preprint** (September 2026); the authors describe video-based probabilistic inference of alphanumeric smartphone QWERTY passwords from Meta Ray-Ban footage.
 - [ACM CCS 2026 official accepted-paper list](https://www.sigsac.org/ccs/CCS2026/program/accepted-papers.html) — **independent confirmation** that the paper by Yoav Orenbach and Avishai Wool is accepted, **not** independent reproduction.
 - [Avishai Wool's university publication list](https://www.avishaiwool.sites.tau.ac.il/publication/refereed-conference-papers) — author-primary listing of the paper as forthcoming at CCS 2026.
-- [ITmedia Innovative Tech coverage, October 30](https://www.itmedia.co.jp/author/264347/) — **secondary media surfacing**, not a new study release. The Japanese article discusses filming fingertip motion across a cafe and potential ineffectiveness of screen privacy filters against this *different* observation channel.
+- [ITmedia Innovative Tech coverage, October 30](https://www.itmedia.co.jp/news/article/2610/30/2000002684/) — **secondary media surfacing**, not a new study release. The Japanese article discusses filming fingertip motion across a cafe and potential ineffectiveness of screen privacy filters against this *different* observation channel.
 
 ## What the authors report (not universal capabilities)
 
