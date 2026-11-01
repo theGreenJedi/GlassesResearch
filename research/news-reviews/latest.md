@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-01T01:24:12.635932+00:00`
+Generated: `2026-11-01T06:23:50.567716+00:00`
 
 - Intake files inspected: **265**
-- Candidates retained in this review window/history: **10702**
+- Candidates retained in this review window/history: **10637**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2107
+- `adjacent_radar`: 2086
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 542
-- `rejected_noise`: 7978
-- `source_review`: 46
+- `needs_editorial_verification`: 541
+- `rejected_noise`: 7933
+- `source_review`: 48
 - `watching`: 15
 
 ## Action queue
@@ -261,9 +261,7 @@ Generated: `2026-11-01T01:24:12.635932+00:00`
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMimgFBVV95cUxOSS01cjZqZ3lwbWFteGg0aVRMTVZfaVh6ZUdVa29BR3lidVpkVHpTemEyWkk5QVJqRnBxTU5uVHZnNjRrZ0VXUkxhQjRjdnZEYkRrd1BrYnhXc25WUEpLMHZVLXJmYmhTMGxjZV94REdXVUxTYzlhZXNfeDZNS0VXbnRNVU9ZaXFHSXp1bTJGYUV4ZWM4ZHB0MGJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL Aura is coming in November with a special $200-off launch discount - 9to5Google](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQzNwOUNLWEFDdWdEWWhCV05VeGtXTVFOSkZ6U1hsWkRoUUdSRjNBeDRqazQzM0NwZG5XWEo4Z2hKYnVneWYwR1VyVF9pc0hPZUdrbnowVXRFZ1pIRUU5dnFndlFmelJMR28tNjBHNHVCZUNpTGhUWnE1X2RVZjktbGcxbVBsV0l3TW80ZzJlTDFET3VCOVNuVnhWam5lTnFwWHVSYXh3RDgydw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal Aura smartglasses go on sale with launch discounts - Mezha.net](https://news.google.com/rss/articles/CBMiigFBVV95cUxQejVHcnJwV3pfSEo0bzgwOUl4WFktM3RRb3lhLTNTeVgzSUR5cmxYVV9jeUJwWlVoeF9Gc2g2YWRQYTltYjBIeTFnTVF4d0R6dGtNOUtJcF9xVFl3SGxzUVJISTk1RkhwTTlrdnk2bW1MQnhmdkpyTHZ4Rk9nWldtR0FRS3FFNG9XU2c?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [XREAL AURA US price, preorder eligibility and shipping](https://us.shop.xreal.com/blogs/guides/xreal-aura-price-preorder-us) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Xreal Aura: Preorders open for smart glasses powered by Google Android XR - Mashable](https://news.google.com/rss/articles/CBMiekFVX3lxTE8xZkU1RFlPcjhQTm1qY09mY0FHNVpkQy1yTW0tcnpuZGpzRmFpTHhBNzBrZlZhdlZWLVNJU3YtSnR0NC1lSmtPakRtRjAyMEc4YTdBYnNtN1hJdDE1RkhaQVhpa1puVE15ekZyMkZTX1F2ZlNwbXVQdE5n?oc=5) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered ... - TechPowerUp](https://www.techpowerup.com/354232/xreal-launches-aura-as-the-first-wired-xr-glasses-powered-by-android-xr) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [XREAL \| Building Augmented Reality for Everyone](https://www.xreal.com/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMihwFBVV95cUxQMGE5eVBvMmh3SmJLbUZJWXpfclNWZGlyMlJ0ZE4zSk1rSldkREJENll1XzdnOFRfTUhadGo3Yy1INlppaE8wM3drVHVoNEJHd1k0T2VYRjVLU2lSRVBhNUd6U00tQ3NsNWRVMGpBTDdZTDhQSENaeUtKbC1yeXR4REg2OVhWT0k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMijAFBVV95cUxPSDBlb01VQ2RtZkdhdEktWklpNTZZMURYdHFoN0Z5VW82bEZlc0dGMkhSMFB5eEx3YldpcnE5T2JfX1VtdWsyTmpvcG5vUlU2cWVTWDQ2clg1UGdjQzhYSkhHNFFwSndFZnEyQm81Z2dKV1EtUm1oU3NhUU9UN3dmd2ViT0JkekRObEhIbg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,6 +269,8 @@ Generated: `2026-11-01T01:24:12.635932+00:00`
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Yahoo Tech](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaUZDREhIRk5UUTJyeW1yamlKM0xwb2ZaTW50VzJQRmhNWk5ieGJXdi1hMkFUMDNJYV8zZ2V0RlVPZU9vWFFJZndqRnZteldjb01oNmhUY2FEbW5sMUNLcUNrSlFadUF2VUlCbF9qZG1zQ0t3M3hHQ1BBVGZaaWxuVVhhX29zWnBBTEdr?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Óculos inteligentes: Ray-Ban ou Oakley em 2026? - CenárioMT](https://news.google.com/rss/articles/CBMiigFBVV95cUxOR0ctSXBPYzBLcTU0ckp2djBFLURqdkVBM2FQVDRQWFBwZmdFRlg3MnRwV2lGM2hzeUFMOFZUTFlycmM4RFZCSVRkbEF6MjhDa201RE5NLWRYYjlJSG55aUJfcmpyT3hpajJZdXU4Y21wWjA4WFhkOEk4Yk9Ud0dlMzhBb1NHXzZUVVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [“Smart glasses are about to change everything”—what we know before launch - Futura, le média qui explore le monde](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkNMdE13NUlOQTlreHRDb29NM2xwSmkyR2RidWhmbTJoazRmOWNKTllHaVVBYV9Zd0NzWVhhLWtGTXBLa2c3OE5hN3lYMXp4NEtnSk9IckVPSzBtbDY2bF81NHlVWmRSNEFlZ05VLVNnN09QU0ZQZ0NQWnBxWXdsMExfWmtUZnY4NUpwNlNTMF9oZ1RxaWo3cTJ0SXgzNkVfcWNkT1E1R0hfYlFrdW84bVpNcw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| normal | needs_editorial_verification | enabling | [Product Launch of NIL Technology’s Award-Winning metaEye™, World's First All Meta-Optics Camera - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOM1FDdHRMYUFoUlY5RjZJU1NfdE55SXAzS0psVF9xbDVhaWFPQVNuaGNNZFF3dUpwN25DS3NCWV81TnRYMjB6VW95MERVOWU0LXVXWWQyU0oyd3lGYTRCQ1FyM3VqTElYc01SQmR1S2pFVTZ0LVhDcHRiSnNjUHdmMXl3V2xLN2wzVHJYU2RtY19LTDhXUEgwZFVVNC0?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
+| normal | needs_editorial_verification | direct | [AI glasses: smart, lightweight eyewear from FiGi \| TikTok](https://www.tiktok.com/@china.ai.glasses.s/video/7687183658364570900) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
