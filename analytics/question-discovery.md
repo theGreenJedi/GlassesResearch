@@ -1,13 +1,13 @@
 # Question Discovery — Latest
 
-Generated: **2026-10-31T15:45:42+00:00**
+Generated: **2026-11-01T16:50:00+00:00**
 
-- Published evidence-backed answers: **217** (minimum **1000**, no ceiling)
-- Remaining to minimum: **783**
-- Canonical registry size: **322** (not the published count)
-- Unanswered research candidates: **63**
+- Published evidence-backed answers: **222** (minimum **1000**, no ceiling)
+- Remaining to minimum: **778**
+- Canonical registry size: **328** (not the published count)
+- Unanswered research candidates: **54**
 - Observations this run: **77**
-- New distinct questions: **5**
+- New distinct questions: **1**
 
 ## Source health
 
@@ -19,11 +19,7 @@ Generated: **2026-10-31T15:45:42+00:00**
 
 ## New questions
 
-- **Q-000318** — What if dwell didn’t look like a timer?
-- **Q-000319** — Best glasses for translation?
-- **Q-000320** — Any Solos Airgo v2 reviews?
-- **Q-000321** — Xreal 1S crushed blacks or RayNeo GT Max pixel loss/corner blurryness?
-- **Q-000322** — From monochrome to full-color: Upgrading from Rokid Gen 1. Is anyone else excited for CES demos?
+- **Q-000328** — Has anyone managed to get live translation working during WhatsApp calls?
 
 ## Research queue (first 20)
 
@@ -36,9 +32,7 @@ Generated: **2026-10-31T15:45:42+00:00**
 - **Q-000108** — Is a China-mainland unit officially supported for AIUI development with the global Hi Rokid app and AIUI Studio Global?
 - **Q-000109** — Or should I use the China platform (AIUI Studio China and the Rokid AI App), or buy an overseas unit?
 - **Q-000110** — Target glasses for testing: Ray-Ban Meta or Meta Ray-Ban Display?
-- **Q-000111** — I'm having difficulty installing the certificate on the Vuzix Blade, are you able to elaborate on how you implemented it?
 - **Q-000112** — Is there another way to incorporate the cert on the Vuzix Client side?
-- **Q-000113** — Does your `glasses-app` module run on the **Rokid AI Glasses Style** (the display-free model)?
 - **Q-000114** — Could you credit **Bruce** as the developer (the name I use in the apps; **Phantom-Not** on GitHub) and add the current app as **AI Glasses Manager (formerly Rokid Manager)**?
 - **Q-000115** — Would you consider featuring third-party apps in your Rokid Apps Gallery, or linking to ClawLensXR as a community project?
 - **Q-000124** — Audio processing never starts in pocketsphinx-android
@@ -47,5 +41,7 @@ Generated: **2026-10-31T15:45:42+00:00**
 - **Q-000138** — What glasses should I buy to help me cheat in my exam?
 - **Q-000139** — Which smart glasses have the most advanced teleprompter display?
 - **Q-000140** — What I actually kept using (and what I turned off) after wearing HUD glasses as my daily prescription pair
+- **Q-000143** — Anyone use Memomind One for work?
+- **Q-000144** — Are there any glasses announced that are in development and film in landscape mode with decent quality?
 
 > A discovered question is not an answered question. Research, independently verify evidence, and publish only what the sources support. Search Console is optional performance feedback, never an eligibility requirement.
