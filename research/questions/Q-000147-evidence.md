@@ -16,3 +16,12 @@
 - Hardware/software behavior has **not** been independently bench-tested. Qualifiers and cited sources are required.
 - **Status: publication pending.** Do not mark original Q-000147 `answered` until a merged revision has passed exact public FAQ, directory, and evidence-page production-content proof.
 - Evidence sources were opened or independently checked on October 27, 2026; any broken original Reddit source URL remains an original observed URL, **not** primary proof for the answer.
+
+## November 1, 2026 supplementary review
+
+| Claim | Source | Boundary |
+| --- | --- | --- |
+| Pixel 8 and later support USB-C wired mirroring to compatible displays | [Google Pixel support](https://support.google.com/pixelphone/answer/2865484) | Does not certify a Pixel 10 Pro XL + glasses SKU pairing |
+| Different USB-C adapters behaved differently for Pixel 10 Pro XL owners | [Original community adapter discussion](https://www.reddit.com/r/GooglePixel/comments/1n3h2te/pixel_10_pro_xl_usbc_to_hdmi_issue/) | Anecdotal and adapter-specific, not a guarantee |
+
+Existing FAQ anchor, manufacturer sources and original observed question above are retained. **Do not mark answered before exact public-page, directory and evidence proof.**

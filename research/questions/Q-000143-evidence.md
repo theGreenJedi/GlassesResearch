@@ -20,3 +20,13 @@ description: Claim-level evidence review for Q-000143, memomind one versus even 
 ## Verification and publication gate
 
 FAQ location: `docs/faq/02-buying.md#memomind-one-versus-even-g2-for-work-which-features-and-tradeoffs-matter`; existing directory `docs/faq/README.md`. Both observed comparison/work questions share one unique FAQ URL; do not double count. No independent hardware testing. **State: researched, publication unverified.** Mark the original Q ID answered only after merged production proof of the FAQ, directory and this packet.
+
+## November 1, 2026 supplementary review
+
+| Claim | Source | Boundary |
+| --- | --- | --- |
+| MemoMind advertises meeting summaries, captions, teleprompter and calendar | [MemoMind One product](https://www.memo-mind.com/pages/memomind-one) | Vendor claims, not an owner workplace trial |
+| Call-caption and reminder improvements are described in release notes | [MemoMind October 19 update](https://www.memo-mind.com/blogs/news/memomind-one-september-update) | Release notes, not independent validation |
+| Ordering moved to direct website; shipping timeline and EU pause disclosed | [MemoMind October 30 update](https://www.memo-mind.com/blogs/news/memomind-one-kickstarter) | Vendor statement; no individual delivery confirmed |
+
+**Canonical answer remains** `docs/faq/02-buying.md#memomind-one-versus-even-g2-for-work-which-features-and-tradeoffs-matter`, shared with the existing work-comparison answer. Do not introduce a redundant URL or count this original observed ID twice. The original sources and context above remain intact. **Credit only after exact production proof.**
