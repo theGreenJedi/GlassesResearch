@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-01T11:33:09.393814+00:00`
+Generated: `2026-11-01T11:36:12.217350+00:00`
 
 - Intake files inspected: **263**
 - Candidates retained in this review window/history: **10583**
@@ -12,9 +12,9 @@ Generated: `2026-11-01T11:33:09.393814+00:00`
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 541
+- `needs_editorial_verification`: 545
 - `rejected_noise`: 7887
-- `source_review`: 45
+- `source_review`: 41
 - `watching`: 15
 
 ## Action queue
@@ -212,6 +212,7 @@ Generated: `2026-11-01T11:33:09.393814+00:00`
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Amazon.com: Ar Smart Glasses](https://www.amazon.com/ar-smart-glasses/s?k=ar+smart+glasses) | reachable (200) | research_news_review, policy_privacy, retail_rebrand_review, deep_research |
 | high | needs_editorial_verification | direct | [Android Authority 26d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
@@ -270,7 +271,6 @@ Generated: `2026-11-01T11:33:09.393814+00:00`
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Yahoo Tech](https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaUZDREhIRk5UUTJyeW1yamlKM0xwb2ZaTW50VzJQRmhNWk5ieGJXdi1hMkFUMDNJYV8zZ2V0RlVPZU9vWFFJZndqRnZteldjb01oNmhUY2FEbW5sMUNLcUNrSlFadUF2VUlCbF9qZG1zQ0t3M3hHQ1BBVGZaaWxuVVhhX29zWnBBTEdr?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Óculos inteligentes: Ray-Ban ou Oakley em 2026? - CenárioMT](https://news.google.com/rss/articles/CBMiigFBVV95cUxOR0ctSXBPYzBLcTU0ckp2djBFLURqdkVBM2FQVDRQWFBwZmdFRlg3MnRwV2lGM2hzeUFMOFZUTFlycmM4RFZCSVRkbEF6MjhDa201RE5NLWRYYjlJSG55aUJfcmpyT3hpajJZdXU4Y21wWjA4WFhkOEk4Yk9Ud0dlMzhBb1NHXzZUVVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [“Smart glasses are about to change everything”—what we know before launch - Futura, le média qui explore le monde](https://news.google.com/rss/articles/CBMiswFBVV95cUxPVkNMdE13NUlOQTlreHRDb29NM2xwSmkyR2RidWhmbTJoazRmOWNKTllHaVVBYV9Zd0NzWVhhLWtGTXBLa2c3OE5hN3lYMXp4NEtnSk9IckVPSzBtbDY2bF81NHlVWmRSNEFlZ05VLVNnN09QU0ZQZ0NQWnBxWXdsMExfWmtUZnY4NUpwNlNTMF9oZ1RxaWo3cTJ0SXgzNkVfcWNkT1E1R0hfYlFrdW84bVpNcw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| normal | needs_editorial_verification | enabling | [Product Launch of NIL Technology’s Award-Winning metaEye™, World's First All Meta-Optics Camera - Yahoo Finance](https://news.google.com/rss/articles/CBMinAFBVV95cUxOM1FDdHRMYUFoUlY5RjZJU1NfdE55SXAzS0psVF9xbDVhaWFPQVNuaGNNZFF3dUpwN25DS3NCWV81TnRYMjB6VW95MERVOWU0LXVXWWQyU0oyd3lGYTRCQ1FyM3VqTElYc01SQmR1S2pFVTZ0LVhDcHRiSnNjUHdmMXl3V2xLN2wzVHJYU2RtY19LTDhXUEgwZFVVNC0?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 
 ## Meaning of states
 
