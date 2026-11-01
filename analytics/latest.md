@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-10-31T20:55:22+00:00**
+Generated automatically: **2026-11-01T11:41:28+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-10-23 → 2026-10-29):** 705 impressions, 4 clicks, 0.57% CTR, average position 11.4.
-- **7-day change:** impressions +23.0%; clicks -42.9%.
-- **Rolling 28 days:** 2552 impressions, 23 clicks, 0.90% CTR, average position 14.3.
+- **Google, latest final 7 days (2026-10-24 → 2026-10-30):** 754 impressions, 6 clicks, 0.80% CTR, average position 10.9.
+- **7-day change:** impressions +33.0%; clicks +0.0%.
+- **Rolling 28 days:** 2595 impressions, 25 clicks, 0.96% CTR, average position 14.1.
 
 ## Practical Answers — search discovery
 
@@ -24,46 +24,46 @@ _No rows yet._
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
+| smart glasses sdk | 1 | 1 | 100.00% | 75.0 |
 | "even g2" firmware quicknote conversate update | 0 | 13 | 0.00% | 9.3 |
 | best ai glasses developers? | 0 | 1 | 0.00% | 11.0 |
 | best bluetooth glasses | 0 | 8 | 0.00% | 16.4 |
-| best bluetooth glasses for music and calls | 0 | 1 | 0.00% | 10.0 |
-| best display glasses | 0 | 2 | 0.00% | 40.5 |
+| best bluetooth glasses for music and calls | 0 | 2 | 0.00% | 9.5 |
+| best display glasses | 0 | 3 | 0.00% | 30.0 |
 | best heads up display glasses | 0 | 1 | 0.00% | 7.0 |
 | best open source ar glasses | 0 | 1 | 0.00% | 8.0 |
-| best smart glass developers? | 0 | 7 | 0.00% | 9.1 |
-| best smart glasses app development studio | 0 | 3 | 0.00% | 10.0 |
-| best smart glasses developers | 0 | 3 | 0.00% | 8.0 |
+| best smart glass developers? | 0 | 20 | 0.00% | 9.4 |
+| best smart glasses app development studio | 0 | 8 | 0.00% | 9.8 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/guides/smart-glasses-without-cameras/ | 2 | 28 | 7.14% | 8.9 |
-| https://glassesresearch.org/evidence/EV-0044-W610-community-protocol-and-owner-access/ | 1 | 5 | 20.00% | 8.6 |
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 24 | 4.17% | 5.5 |
-| https://glassesresearch.org/ | 0 | 5 | 0.00% | 21.6 |
-| https://glassesresearch.org/artifacts/ | 0 | 7 | 0.00% | 8.4 |
+| https://glassesresearch.org/guides/smart-glasses-without-cameras/ | 2 | 29 | 6.90% | 8.6 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 2 | 23 | 8.70% | 6.3 |
+| https://glassesresearch.org/evidence/EV-0044-W610-community-protocol-and-owner-access/ | 1 | 4 | 25.00% | 9.5 |
+| https://glassesresearch.org/hacking/ | 1 | 20 | 5.00% | 20.4 |
+| https://glassesresearch.org/ | 0 | 6 | 0.00% | 18.3 |
+| https://glassesresearch.org/artifacts/ | 0 | 6 | 0.00% | 8.3 |
 | https://glassesresearch.org/buyers/BUYER_AND_OPENNESS_GUIDE/ | 0 | 1 | 0.00% | 8.0 |
-| https://glassesresearch.org/changes/gre-000003/ | 0 | 6 | 0.00% | 8.8 |
-| https://glassesresearch.org/changes/gre-000014/ | 0 | 1 | 0.00% | 8.0 |
-| https://glassesresearch.org/docs/ABOUT/ | 0 | 4 | 0.00% | 2.0 |
+| https://glassesresearch.org/changes/gre-000003/ | 0 | 7 | 0.00% | 6.7 |
+| https://glassesresearch.org/docs/ABOUT/ | 0 | 5 | 0.00% | 1.8 |
 | https://glassesresearch.org/docs/BLE/ | 0 | 2 | 0.00% | 10.0 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **16 browser pageviews**, **13 RUM visits**.
-- Rolling 7d: **139 browser pageviews**, **110 RUM visits**.
+- Rolling 24h: **21 browser pageviews**, **15 RUM visits**.
+- Rolling 7d: **136 browser pageviews**, **109 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Paths readers are finding — rolling 7 days
 
 | Destination | Observed browser pageviews |
 |---|---:|
-| Practical Answers | 3 |
-| Buying and use-case guides | 0 |
-| Model research | 8 |
-| Find & Compare | 16 |
+| Practical Answers | 4 |
+| Buying and use-case guides | 2 |
+| Model research | 10 |
+| Find & Compare | 14 |
 | Follow verified work | 3 |
 
 These are minimum counts from RUM's returned popular paths, **not a session funnel** or proof a reader moved between pages. Cloudflare Web Analytics does not provide custom journey events; do not invent conversion rates.
@@ -72,15 +72,15 @@ These are minimum counts from RUM's returned popular paths, **not a session funn
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
-| / | 3 | 3 |
+| /guides/open-source-smart-glasses/ | 2 | 2 |
+| /models/catalog/gls-0167/ | 2 | 0 |
 | /docs/COMPARISON_ENGINE/ | 2 | 1 |
-| /models/catalog/ | 2 | 2 |
-| /hacking/ | 2 | 2 |
+| / | 2 | 2 |
+| /data/$f | 1 | 1 |
 | /docs/faq/08-accessibility-fit/ | 1 | 1 |
-| /docs/INDUSTRY_TIMELINE/ | 1 | 1 |
 | /evidence/EV-0046-Even-G1-G2-service-survival/ | 1 | 0 |
 | /research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 1 |
-| /docs/SDK_API_MATRIX/ | 1 | 1 |
+| /hacking/OPEN_HACKING_RESOURCE_LEDGER/ | 1 | 1 |
 | /docs/RESEARCH_NEWS/ | 1 | 0 |
 
 ### Top referrers — rolling 24h
@@ -88,30 +88,29 @@ These are minimum counts from RUM's returned popular paths, **not a session funn
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
 | (direct / none) | 10 | 10 |
-| glassesresearch.org | 3 | 0 |
-| www.google.com | 2 | 2 |
-| www.bing.com | 1 | 1 |
+| glassesresearch.org | 6 | 0 |
+| www.google.com | 5 | 5 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **9,640 requests**, **1,969 HTTP visits**, **220.8 MB** served.
-- Rolling 7d: **62,834 requests**, **14,916 HTTP visits**, **1533.4 MB** served.
+- Rolling 24h: **12,058 requests**, **2,080 HTTP visits**, **395.8 MB** served.
+- Rolling 7d: **66,972 requests**, **14,993 HTTP visits**, **1706.4 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 4,250 | 1,442 |
-| MX | 2,350 | 59 |
-| CN | 589 | 12 |
-| NL | 548 | 23 |
-| DE | 401 | 19 |
-| CA | 374 | 196 |
-| NO | 134 | 1 |
-| SG | 114 | 7 |
-| GB | 111 | 34 |
-| CH | 110 | 33 |
+| MX | 5,798 | 187 |
+| US | 4,116 | 1,659 |
+| IL | 324 | 0 |
+| CN | 265 | 10 |
+| NL | 243 | 14 |
+| JP | 157 | 8 |
+| ES | 154 | 6 |
+| SG | 140 | 6 |
+| AE | 115 | 1 |
+| CA | 107 | 18 |
 
 ## What to watch
 
