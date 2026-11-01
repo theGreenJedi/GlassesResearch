@@ -109,3 +109,12 @@ The [original community question](https://www.reddit.com/r/SmartGlasses/comments
 **Try both with the same source and firmware:** a dark-scene step ramp, subtitles at all four corners, fine text, a uniform grid and 30 minutes of ordinary viewing. Test native and pinned modes, brightness/picture presets, IPD fit, glasses inserts and head position. Photographing through the lens is not a substitute for what your own eyes see.
 
 The [original community question](https://www.reddit.com/r/SmartGlasses/comments/1xjnplg/xreal_1s_crushed_blacks_or_rayneo_gt_max_pixel/) describes concerns, not confirmed defects across every unit. **GlassesResearch has not measured either pair side-by-side.** Reviewed October 31, 2026.
+
+## Should Rokid Glasses owners wait for a full-color upgrade at CES?
+
+**Treat a future full-color Rokid demonstration as a possibility, not a confirmed product or upgrade path.** Rokid's [current product FAQ](https://global.rokid.com/pages/faq) explicitly identifies the display-equipped **Rokid Glasses** as a **dual monochrome green Micro-LED** waveguide and distinguishes the **display-free** Rokid AI Glasses Style. Its [published Rokid Glasses specification](https://gb.rokid.com/products/rokid-glasses) also calls the display *single green*. Neither document establishes a full-color successor, a CES 2027 demo, launch date, price, or compatibility with existing prescription accessories.
+
+Full-color **does exist in other eyewear architectures**: [RayNeo's X3 Pro specifications](https://www.rayneo.com/products/x3-pro-ai-display-glasses) describe a binocular full-color waveguide. That is not evidence that Rokid has announced the same hardware, nor that full-color will automatically be better for text. Green can suffice for short subtitles and navigation cues; color can help distinguish maps, image previews and multi-layer annotations. Compare **real outdoor contrast, eye box, fit, text sharpness, power, cost, application access and prescription handling**, not merely a color demo.
+
+If an upgrade is important, wait for a **named manufacturer model and published specification**, then test a shipping unit with the same text and daylight scenes used on the current pair. [Original community discussion](https://www.reddit.com/r/SmartGlasses/comments/1xjld7c/from_monochrome_to_fullcolor_upgrading_from_rokid/) is interest in demos, not a verified product announcement. **No Rokid successor or CES demo is asserted, and GlassesResearch has not compared the hardware hands-on.** Reviewed November 1, 2026.
+

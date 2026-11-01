@@ -35,6 +35,15 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [Development and openness](09-development-openness.md) — [Vuzix Blade TLS certificate trust](09-development-openness.md#how-can-a-vuzix-blade-client-trust-a-https-or-wss-test-server-certificate-without-modifying-system-ca-files) — [Rokid AI Glasses Style app compatibility](09-development-openness.md#does-the-community-rokidaiassistant-glasses-app-support-display-free-rokid-ai-glasses-style) — [Manufacturer versus third-party app hosts](09-development-openness.md#should-owners-use-the-manufacturer-app-or-a-third-party-platform-on-monochrome-display-glasses) — [Sony SmartEyeglass microphone input](09-development-openness.md#can-sony-smarteyeglass-use-voice-input-from-a-microphone); [Google Glass GDK and Epson stereo](09-development-openness.md#does-google-glass-gdk-provide-stereoscopic-3d-for-epson-moverio) — [What does Brilliant Labs Halo actually offer to developers and buyers?](09-development-openness.md#what-does-brilliant-labs-halo-actually-offer-to-developers-and-buyers) — [Which AIUI Studio supplies a draft when mainland Rokid Glasses use global Hi Rokid?](09-development-openness.md#which-aiui-studio-supplies-a-draft-when-mainland-rokid-glasses-use-global-hi-rokid) — [Can overseas Rokid Glasses developers obtain a data cable or use wireless ADB?](09-development-openness.md#can-overseas-rokid-glasses-developers-obtain-a-data-cable-or-use-wireless-adb)
 - [Ownership and future](10-ownership-future.md) — [What is confirmed about Google and Samsung smart glasses in October 2026?](10-ownership-future.md#what-is-confirmed-about-google-and-samsung-smart-glasses-in-october-2026)
 
+
+## Recently verified observed questions — November 2026
+
+- [Can smart glasses translate WhatsApp voice calls live?](06-ai-cameras-audio.md#can-smart-glasses-translate-whatsapp-voice-calls-live) — Written-message translation is not voice-call translation.
+- [Is MemoMind One ready for real work use?](02-buying.md#is-memomind-one-ready-for-real-work-use) — Product claims versus verified workplace experience.
+- [Should Rokid Glasses owners wait for a full-color upgrade at CES?](05-displays.md#should-rokid-glasses-owners-wait-for-a-full-color-upgrade-at-ces) — Current green hardware versus unconfirmed future demos.
+- [Which teleprompter controls help serious presentations?](03-use-cases.md#which-smart-glasses-teleprompter-controls-are-useful-for-serious-presentations) — Recovery, speech-following and manual controls.
+- [Can Pixel 10 Pro XL mirror to USB-C display glasses?](03-use-cases.md#can-pixel-10-pro-xl-mirror-video-to-usb-c-display-glasses) — Video output support versus exact-pair verification.
+
 ## Current safety answers
 
 - [**What smart glasses are recalled?**](10-ownership-future.md#what-smart-glasses-are-recalled) — Current verified recall records, affected models, primary regulatory evidence, and remedies.
