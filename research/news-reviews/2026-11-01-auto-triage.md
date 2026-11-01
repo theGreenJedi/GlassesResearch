@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-01T19:27:11.489338+00:00`
+Generated: `2026-11-01T19:47:52.340417+00:00`
 
-- Intake files inspected: **259**
-- Candidates retained in this review window/history: **10473**
+- Intake files inspected: **260**
+- Candidates retained in this review window/history: **10539**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2038
+- `adjacent_radar`: 2051
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 533
-- `rejected_noise`: 7828
-- `source_review`: 46
+- `needs_editorial_verification`: 538
+- `rejected_noise`: 7877
+- `source_review`: 45
 - `watching`: 14
 
 ## Action queue
@@ -190,6 +190,7 @@ Generated: `2026-11-01T19:27:11.489338+00:00`
 | high | needs_editorial_verification | direct | [Google And XREAL Launch XREAL AURA Wired XR Glasses Powered By Android XR - TradingView](https://news.google.com/rss/articles/CBMi2wFBVV95cUxONnVZRTI2YWJaamJfMmEwMjVTX203TXE5ZndqdjFoaXlfQVRGNnJTdTg3bXRFa1JyZHNNSUJXTUE0YTVhRXNfaGh6dzJJZERScjNwTEdUV0loMjE5TlJWalJDdDVMbHNHcEd1TlZNUGZ2ejY3c3hERkhNQ2NFV1ozeEN0a095NjRTUFlGbUQ4RHpXcHdmeG94dXZUT3ZndjlvUWU2b2pzZkZYZnpOSW1CaEVSQnVteDFiVWRJYjdQdTR0QU5kTlMwVVNzUk9iNnhrUUVQSmF6anlQWk0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GOOGLE BLOG - CO AND XREAL LAUNCH XREAL AURA WIRED XR GLASSES POWERED BY ANDROID XR - Moomoo](https://news.google.com/rss/articles/CBMinAFBVV95cUxOSVRDVlBXMHZCd2lDR0pHQnpTT0c2VUZPRllDR1g0QzBWVWZPQmlwSUFzWHZHQ0RYdDg5TThtbHNhVFc4Vkhqaks5UlZ6OU0wS3BnRUxMcmpMa3VGRTlwblAwOE0yVUxFM0pKSTBrU19GLXJYVlYyV2pGc0R6ODk5SnRuMzZLaDVoWlZST05TZEFVa0FleWVwdUxRR3o?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Maverick AI / AI Pro SDK Portal - everysight.github.io](https://everysight.github.io/maverick-ai-docs/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| high | needs_editorial_verification | direct | [Request SDK – Everysight](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Rokid Glasses 2 launch with upgraded design, bigger battery, and Dolby Audio support - Notebookcheck](https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3NqMktYZnZrNWpoSHZWNUpPRXlWUUlHcVMxZTd4OWptSHhVeEk0TnRhNTZyMTNnS2JNNjlOVmJQSFRSTHBXVkpPOU43aGFOX0VFYzhDMDJsaklseElnQmdJX2hMNlpSSjZ3YzhETFRDWnlMMDd2SkpxWmlsaVAzYkJwVkpDZmZvWjN6RU5uUFN2dm5RT3NJNHJ1Y2cwdVZmQlAwNHhXVmF1QjQtWHpZUFZ1Z3QydVdrdVNva3k2ZWFzbjFWbEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Preparing to Launch Its First AI Glasses in December - Root-Nation.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxOTzVob0R4NTFBY3BGc1RsQzRSVkx5MEFET1hNUlYtaHRJXzhsRmZaRzd1S3EyRi1SYVVwcHdoci10Y3RNSmRjVzhjcVBjWnlpeEZNOFJwN3pmLUhqbWI3U01XLVI4ZW5CYTBpRFNPYkpFd0l2R1ZZUFZrUFJtWkZYYQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung to Launch Android XR-Powered Intelligent Eyewear in December 2024 - Inkorr](https://news.google.com/rss/articles/CBMiugFBVV95cUxPUnp1UXJueFhOV0tIdTZoeVZKVTBQYTkzcHk3NWw3dVY5aFVHWUhjenM0Uy1yZnVKRmEweWw4U2VPamhtQm5iYzZqeTI2RjBuM3Iyb2RXSVJQUV84eUVEeHN0SHFVQ2ZKV2tEYjB3SUhrRERtd2pjMERmQ2duNlg3dmg4RXRQNlJSMTgwWHN3MnZTZFFxSy1lVkxaV3N2NXVpTTZweWVqUUpSNDFncmQ5WHZjMHIyYWhvV1HSAboBQVVfeXFMT1J6dVFybnhYTldLSHU2aHlWSlUwUGE5M3B5NzVsN3VWOWhVR1lIY3pzNFMtcmZ1SkZhMHlsOFNlT2pobUJuYmM2ankyNkYwbjNyMm9kV0lSUFFfOHlFRHhzdEhxVUNmSldrRGIwd0lIa0REbXdqYzBEZkNnbjZYN3ZoOEV0UDZSUjE4MFhzdzJ2U2RRcUstZVZMWldzdjV1aU02cHllalFKUjQxZ3JkOVh2YzByMmFob1dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -214,6 +215,7 @@ Generated: `2026-11-01T19:27:11.489338+00:00`
 | high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Auganix 25d ago ENGO Launches engo Titanium, 28.9-Gram AR Smart Glasses for Runners and Cyclists](https://www.auganix.org/ar-news-engo-titanium-smart-glasses/) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Developers – Everysight](https://www.everysight.com/pages/developer) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Engadget 2d ago Senators are looking into 'serious privacy risks' with Meta's AI glasses Coverage Meta](https://www.engadget.com/2301968/senators-looking-into-serious-privacy-risks-with-meta-ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Engadget Oct 1, 2026 Newsom vetoes smart glasses privacy bill](https://www.engadget.com/2274526/newsom-vetoes-smart-glasses-privacy-bill/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/) | reachable (200) | research_news_review, development_hacking |
@@ -269,8 +271,6 @@ Generated: `2026-11-01T19:27:11.489338+00:00`
 | normal | needs_editorial_verification | enabling | [AR-15 Buyer's Guide: Best AR-15 Rifles for Every Budget](https://www.usa-gun-shop.com/ar-15-buyers-guide/) | reachable (200) | research_news_review, report_card_evidence, development_hacking, research_optics |
 | normal | needs_editorial_verification | enabling | [JaxLayerLumos \| Differentiable Optical and RF Multilayer Simulation](https://jaxlayerlumos.github.io/) | reachable (200) | research_news_review, development_hacking, research_optics, deep_research |
 | normal | needs_editorial_verification | direct | ["AI 안경으로 美 수능 83% 정답" 수능 앞두고 부정행위 우려 확산 - 조선일보](https://news.google.com/rss/articles/CBMigwFBVV95cUxOeE9YNGlfVkliQkFuN05jSDhpZEpURHQ1THUzWGh0MTlSSmJjR1FGaHRLSGhrR2lGVWhWZkExWlJkNEIySS1lN2pJdktxZFBUZTBTLVVkYkhoci05aXA3YjR2QXdUaFlrUFBOWjJWSk9jWnZ2VzJ5SFVSY2IyX1I1NzFDaw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | ["Is Cheating with AI Glasses Really Possible?"... Gemini Gets 83% of SAT Questions Right - 아시아경제](https://news.google.com/rss/articles/CBMidEFVX3lxTE8xU2E0VXlRbkRULU5FbUJzNW1FTFQ3ZFI1T1ktY0NBVzRITGNzZmxsQ041NGwtRXJFdUhkeTBDZzAzRnNsaDdvMzRWTTFCMm5JcU1jNmxrQnVoM3o3VzZxbHN0Z3htTGVkemg1RUU5VG5GSm1K?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | ["공부 안 해도 83점?"…시험장 뒤흔들 AI 안경의 위력 - 아시아경제](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BZWY3RXk4eW94dFV1cjMzNEhkdlJvR2ZLelc2VncxSWNLdC02OXpnQjY2ZUs3MUxiLThuXzVCbTFMeWpTQzJ2dHhUajBiNE1oSHZvUVhJQlBpVDkwT1lGdg?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
