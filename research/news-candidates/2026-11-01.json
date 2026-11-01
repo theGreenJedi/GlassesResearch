@@ -1,10 +1,10 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-01T01:23:22.069011+00:00",
-  "candidate_count": 1,
-  "precision_rejected_count": 124,
+  "discovered_utc": "2026-11-01T06:22:57.245764+00:00",
+  "candidate_count": 2,
+  "precision_rejected_count": 106,
   "relationship_counts": {
-    "direct": 1,
+    "direct": 2,
     "enabling": 0,
     "adjacent": 0,
     "speculative": 0,
@@ -12,15 +12,13 @@
   },
   "type_counts": {
     "model": 1,
-    "tool": 1,
-    "sdk": 1,
-    "community": 1
+    "news": 1,
+    "retail": 1
   },
   "routing_counts": {
-    "community_evidence_review": 1,
-    "development_hacking": 1,
     "model_catalog_review": 1,
-    "research_news_review": 1
+    "research_news_review": 2,
+    "retail_rebrand_review": 1
   },
   "publication_policy": "discover broadly, classify, triage, verify, route, then publish; collection never authorizes publication",
   "collector_errors": [
@@ -31,45 +29,73 @@
   ],
   "candidates": [
     {
-      "id": "66a9d56e85ac1257",
-      "title": "Mentra 3.4.0-dev.1228",
-      "url": "https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1228",
-      "source": "direct-feed",
-      "source_lane": "research_radar",
-      "published": "2026-10-31T23:31:20Z",
-      "summary": "Mentra 3.4.0-dev.1228 — development build. Mentra App downloads Android phone APK — install the Mentra App Android App Bundle (AAB) Install on iPhone / share install link macOS ZIP — registered Apple Silicon Macs Glasses and developer downloads Mentra Live glasses APK (ASG) Glasses OTA manifest Mentra Engine package Mentra Bluetooth SDK for iOS Release manifest and SHA-256 checksums Bluetooth example apps React Native example APK Native Android example APK React Native ElevenLabs audio example APK Native iOS example IPA (unsigned) Source: 844a49d . Downloads are hosted on Mentra's artifact CDN.",
-      "materiality_score": 6,
+      "id": "1e3fd596e1d0be53",
+      "title": "Google debuts AI-powered Android XR smart glasses at Google I/O - Mashable",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBON2hIRzh5TWlDLWRCMnp4c3hYSGNkWnloUmdsdEd3X1ZnakpOcUxlQUVKSlFlNkRJSHM3YTFILW04OF96ME9vVVhLb1NQbllWSFd4N3lueWZadmRUZkRMM21wWUFSTkhwVVR1Wk5YVDc2UQ?oc=5",
+      "source": "Google News: smart glasses privacy",
+      "source_lane": "core_glasses",
+      "published": "Sat, 31 Oct 2026 14:28:41 GMT",
+      "summary": "Google debuts AI-powered Android XR smart glasses at Google I/O Mashable",
+      "materiality_score": 2,
       "keyword_hits": [
-        "bluetooth",
-        "developer",
-        "release",
-        "sdk"
+        "ai",
+        "android xr"
       ],
       "status": "candidate",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "disposition": "collected",
+      "site_action": "none_pending_editorial_review",
+      "institution_test": "review durability"
+    },
+    {
+      "id": "903271765138924b",
+      "title": "Subvocal AI Glasses: Silent Speech to Text at 200 WPM, Price and India Availability - Gogi Tech",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9KTlM2MWJVb3hfWEJwVkFIVnB2b1lkdXhMQ2tJclJXZWxrQzZIcHZ0ajBQTWRjb0taV19lYUF0UHZUdmdmUTZJNjFiUkY5MHo4STBycHVYSdIBXEFVX3lxTE1xZHZlTTBRS1JCMjdfUmQ5RThwUEp4VzE0ZG4zdEZmTlRhZVBWS1RmZndEUVkyZE9ZdlJxNVlvT0s4VTdCazlKSUFuWGpRbTZwd3NxR0NwTVVFTW5r?oc=5",
+      "source": "Google News: AI glasses",
+      "source_lane": "core_glasses",
+      "published": "Sun, 01 Nov 2026 03:11:54 GMT",
+      "summary": "Subvocal AI Glasses: Silent Speech to Text at 200 WPM, Price and India Availability Gogi Tech",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "ai",
+        "availability"
+      ],
+      "status": "candidate",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
       "relationship": "direct",
       "content_types": [
         "model",
-        "tool",
-        "sdk",
-        "community"
+        "retail"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
         "model_catalog_review",
-        "development_hacking",
-        "community_evidence_review"
+        "retail_rebrand_review"
       ],
-      "triage_priority": "high",
+      "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "known smart-glasses source",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses",
       "disposition": "collected",
       "site_action": "none_pending_editorial_review",
-      "institution_test": "likely durable"
+      "institution_test": "review durability"
     }
   ]
 }
