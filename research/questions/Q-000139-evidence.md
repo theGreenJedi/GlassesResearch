@@ -1,22 +1,28 @@
 ---
-description: Claim-level evidence and publication limits for original observed Q-000139.
+description: Evidence and verification boundaries for observed Q-000139, covering which smart-glasses teleprompter controls are useful for serious presentations?
 ---
 
 # Q-000139 — Which smart-glasses teleprompter controls are useful for serious presentations?
 
-**Original observed question:** Which smart glasses have the most advanced teleprompter display?
+**Original registry question:** Which smart glasses have the most advanced teleprompter display?
 
-**Original observation:** [Source](https://www.reddit.com/r/SmartGlasses/comments/1xambdc/which_smart_glasses_have_the_most_advanced/) (preserved unchanged in canonical registry; reviewed November 1, 2026). The observation itself is not device verification.
+**Original observations:** https://www.reddit.com/r/SmartGlasses/comments/1xambdc/which_smart_glasses_have_the_most_advanced/. First observed: 2026-10-21. Reviewed October 27, 2026.
 
 ## Claim-level provenance
 
-| Claim | Evidence | Boundary |
+- https://support.evenrealities.com/hc/en-us/articles/14273863878415-Teleprompt — underlying original observation, manufacturer support documentation, or independently published technical source; clearly attributed and interpreted with limitations in the FAQ.
+- https://www.rayneo.com/pages/support-rayneo-io-ai-glasses — underlying original observation, manufacturer support documentation, or independently published technical source; clearly attributed and interpreted with limitations in the FAQ.
+- https://www.reddit.com/r/SmartGlasses/comments/1xambdc/which_smart_glasses_have_the_most_advanced/ — underlying original observation, manufacturer support documentation, or independently published technical source; clearly attributed and interpreted with limitations in the FAQ.
+
+## Limits and gate
+
+The answer distinguishes manufacturer claims and technical reasoning from independent hardware testing. No real glasses or SDK build was bench-tested. Any generalized comparison is methodology, **not** a tested ranking. Proposed FAQ location: `docs/faq/03-use-cases.md#which-smart-glasses-teleprompter-controls-are-useful-for-serious-presentations`. Directory: `docs/faq/README.md`. **State: publication pending; do not mark original Q-000139 answered until exact merged public-page, directory and evidence proof.**
+
+## November 1, 2026 supplementary review
+
+| Claim | Source | Boundary |
 | --- | --- | --- |
-| Even G2 supports AI/Auto/Manual Teleprompt and TXT/DOCX/PDF with limits | [Primary/source](https://support.evenrealities.com/hc/en-us/articles/14273863878415-Teleprompt) | Manufacturer support guide; no side-by-side usability test |
-| RayNeo iO teleprompter supports Smart Follow, Auto Scroll and physical controls | [Primary/source](https://www.rayneo.com/pages/support-rayneo-io-ai-glasses) | Manufacturer support guide; not a universal winner |
+| G2 offers AI, fixed-speed and manual prompting; five-to-nine-line display adjustment and pause/resume | [Even Teleprompt support](https://support.evenrealities.com/hc/en-us/articles/14273863878415-Teleprompt) | Manufacturer guide, firmware-dependent; no comparative benchmark |
+| RayNeo iO offers Smart Follow, Auto Scroll and Smart Crown controls | [RayNeo iO support](https://www.rayneo.com/pages/support-rayneo-io-ai-glasses) | Manufacturer guide, not a ranking |
 
-## Uncertainty and publication gate
-
-Canonical proposed FAQ: `docs/faq/03-use-cases.md#which-smart-glasses-teleprompter-controls-are-useful-for-serious-presentations`. Existing single directory: `docs/faq/README.md`. The answer distinguishes manufacturer/platform statements from community reports, inference and unknowns. **No independent GlassesResearch device, application or compatibility test is claimed.** Links are preserved to primary/support resources rather than reproducing copyrighted documents or inventing an archive.
-
-**State: awaiting publication proof.** Do not credit this original registry ID until this publication PR passes editorial, strict built-page links/fragments and all CI checks, merges, the existing main Pages deployment succeeds, and the production-content-proof workflow fetches the exact changed FAQ, directory and evidence pages. Reconcile the original registry row in a follow-up PR with canonical answer_url, publication_verified_at and claim-specific proof. Related Q IDs must not inflate distinct URL counts.
+The original question and sources above remain intact. The existing FAQ anchor and directory link are unchanged. **Do not credit the original registry ID until exact public-page, directory and evidence proof.**

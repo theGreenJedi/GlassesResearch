@@ -36,10 +36,10 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 - [Ownership and future](10-ownership-future.md) — [What is confirmed about Google and Samsung smart glasses in October 2026?](10-ownership-future.md#what-is-confirmed-about-google-and-samsung-smart-glasses-in-october-2026)
 
 
-## Recently verified observed questions — November 2026
+## Observed Practical Answers — November 2026
 
 - [Can smart glasses translate WhatsApp voice calls live?](06-ai-cameras-audio.md#can-smart-glasses-translate-whatsapp-voice-calls-live) — Written-message translation is not voice-call translation.
-- [Is MemoMind One ready for real work use?](02-buying.md#is-memomind-one-ready-for-real-work-use) — Product claims versus verified workplace experience.
+- [Is MemoMind One ready for real work use?](02-buying.md#memomind-one-versus-even-g2-for-work-which-features-and-tradeoffs-matter) — Product claims versus verified workplace experience.
 - [Should Rokid Glasses owners wait for a full-color upgrade at CES?](05-displays.md#should-rokid-glasses-owners-wait-for-a-full-color-upgrade-at-ces) — Current green hardware versus unconfirmed future demos.
 - [Which teleprompter controls help serious presentations?](03-use-cases.md#which-smart-glasses-teleprompter-controls-are-useful-for-serious-presentations) — Recovery, speech-following and manual controls.
 - [Can Pixel 10 Pro XL mirror to USB-C display glasses?](03-use-cases.md#can-pixel-10-pro-xl-mirror-video-to-usb-c-display-glasses) — Video output support versus exact-pair verification.
