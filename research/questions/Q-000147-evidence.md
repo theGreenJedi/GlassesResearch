@@ -25,3 +25,7 @@
 | Different USB-C adapters behaved differently for Pixel 10 Pro XL owners | [Original community adapter discussion](https://www.reddit.com/r/GooglePixel/comments/1n3h2te/pixel_10_pro_xl_usbc_to_hdmi_issue/) | Anecdotal and adapter-specific, not a guarantee |
 
 Existing FAQ anchor, manufacturer sources and original observed question above are retained. **Do not mark answered before exact public-page, directory and evidence proof.**
+
+## Publication verification — 2026-11-01
+
+[Publication PR #733](https://github.com/theGreenJedi/GlassesResearch/pull/733) merged as `7bca76c7aed93f84eb69100a22cd8b3f0c4cdb00` after editorial, strict links/fragments and all PR checks passed. [Main Pages deploy #41351137343](https://github.com/theGreenJedi/GlassesResearch/actions/runs/41351137343) succeeded. [Exact production-content-proof #41351341361](https://github.com/theGreenJedi/GlassesResearch/actions/runs/41351341361) succeeded 2026-11-01T21:19:48Z, fetching the live FAQ (digest `14f171f0a93a`), single Practical Answers directory (digest `691ceffcb7b8`) and this evidence page (digest `5c7bc9d1a047`) with exact deployed-build matches. [Canonical answer](https://glassesresearch.org/docs/faq/03-use-cases/#can-pixel-10-pro-xl-mirror-video-to-usb-c-display-glasses) has a validated directory fragment. This canonical URL was already counted under another original registry ID. Publication proof does **not** independently verify device hardware, application compatibility, or performance. The original observed registry ID is now answered.
