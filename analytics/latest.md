@@ -1,6 +1,6 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-11-01T11:41:28+00:00**
+Generated automatically: **2026-11-01T21:24:37+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
@@ -52,18 +52,18 @@ _No rows yet._
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **21 browser pageviews**, **15 RUM visits**.
-- Rolling 7d: **136 browser pageviews**, **109 RUM visits**.
+- Rolling 24h: **13 browser pageviews**, **10 RUM visits**.
+- Rolling 7d: **133 browser pageviews**, **106 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Paths readers are finding — rolling 7 days
 
 | Destination | Observed browser pageviews |
 |---|---:|
-| Practical Answers | 4 |
-| Buying and use-case guides | 2 |
-| Model research | 10 |
-| Find & Compare | 14 |
+| Practical Answers | 2 |
+| Buying and use-case guides | 3 |
+| Model research | 7 |
+| Find & Compare | 12 |
 | Follow verified work | 3 |
 
 These are minimum counts from RUM's returned popular paths, **not a session funnel** or proof a reader moved between pages. Cloudflare Web Analytics does not provide custom journey events; do not invent conversion rates.
@@ -74,43 +74,43 @@ These are minimum counts from RUM's returned popular paths, **not a session funn
 |---|---:|---:|
 | /guides/open-source-smart-glasses/ | 2 | 2 |
 | /models/catalog/gls-0167/ | 2 | 0 |
-| /docs/COMPARISON_ENGINE/ | 2 | 1 |
-| / | 2 | 2 |
 | /data/$f | 1 | 1 |
-| /docs/faq/08-accessibility-fit/ | 1 | 1 |
-| /evidence/EV-0046-Even-G1-G2-service-survival/ | 1 | 0 |
-| /research/investigations/MYVU_STARV_LINEAGE_2026-09-02/ | 1 | 1 |
 | /hacking/OPEN_HACKING_RESOURCE_LEDGER/ | 1 | 1 |
-| /docs/RESEARCH_NEWS/ | 1 | 0 |
+| /evidence/EV-0074-Maverick-AI-primary-product/ | 1 | 1 |
+| /models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 1 |
+| /models/catalog/gls-0038/ | 1 | 0 |
+| /models/PROFILES/ | 1 | 1 |
+| / | 1 | 1 |
+| /docs/site_index | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 10 | 10 |
-| glassesresearch.org | 6 | 0 |
-| www.google.com | 5 | 5 |
+| (direct / none) | 6 | 6 |
+| www.google.com | 4 | 4 |
+| glassesresearch.org | 3 | 0 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **12,058 requests**, **2,080 HTTP visits**, **395.8 MB** served.
-- Rolling 7d: **66,972 requests**, **14,993 HTTP visits**, **1706.4 MB** served.
+- Rolling 24h: **13,416 requests**, **1,946 HTTP visits**, **496.3 MB** served.
+- Rolling 7d: **68,886 requests**, **13,966 HTTP visits**, **1874.3 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| MX | 5,798 | 187 |
-| US | 4,116 | 1,659 |
+| MX | 7,935 | 309 |
+| US | 3,169 | 1,477 |
+| BE | 435 | 10 |
+| NL | 416 | 7 |
 | IL | 324 | 0 |
-| CN | 265 | 10 |
-| NL | 243 | 14 |
-| JP | 157 | 8 |
-| ES | 154 | 6 |
-| SG | 140 | 6 |
+| CN | 239 | 14 |
 | AE | 115 | 1 |
-| CA | 107 | 18 |
+| DE | 109 | 3 |
+| JP | 78 | 7 |
+| KR | 74 | 5 |
 
 ## What to watch
 
