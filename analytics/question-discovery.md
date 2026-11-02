@@ -1,28 +1,33 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-01T16:50:00+00:00**
+Generated: **2026-11-02T20:24:22+00:00**
 
-- Published evidence-backed answers: **222** (minimum **1000**, no ceiling)
-- Remaining to minimum: **778**
-- Canonical registry size: **328** (not the published count)
+- Published evidence-backed answers: **224** (minimum **1000**, no ceiling)
+- Remaining to minimum: **776**
+- Canonical registry size: **335** (not the published count)
 - Unanswered research candidates: **54**
-- Observations this run: **77**
-- New distinct questions: **1**
+- Observations this run: **82**
+- New distinct questions: **5**
 
 ## Source health
 
-- github_issues: ok — 14 observations
+- github_issues: ok — 16 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 37 observations
-- google_search_console: ok — 6 observations
+- reddit_rss: partial — 39 observations
+- google_search_console: ok — 7 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000328** — Has anyone managed to get live translation working during WhatsApp calls?
+- **Q-000331** — Has anyone here used smart glasses as assistive technology?
+- **Q-000332** — Is Nimo a Scam?
+- **Q-000333** — which smart glasses are actually open for third party apps right now?
+- **Q-000334** — When do you think we’ll get AR + AI smart glasses capable of guiding a complete novice through home renovation and DIY construction?
+- **Q-000335** — what are the smart glasses with display
 
 ## Research queue (first 20)
 
+- **Q-000280** — There seem to be glasses are 'open' (Even Realities?
 - **Q-000119** — Webrtc in Vuzix m300
 - **Q-000117** — Buttons in Vuforia Unity App did not work for AR game in Vuzix M400
 - **Q-000123** — Error:Configuration with name 'default' not found when building for Sony Smart Glass
@@ -39,9 +44,8 @@ Generated: **2026-11-01T16:50:00+00:00**
 - **Q-000127** — How to get action of System Dialong Box programatically
 - **Q-000128** — Xamarin PCL get Device Information
 - **Q-000138** — What glasses should I buy to help me cheat in my exam?
-- **Q-000139** — Which smart glasses have the most advanced teleprompter display?
 - **Q-000140** — What I actually kept using (and what I turned off) after wearing HUD glasses as my daily prescription pair
-- **Q-000143** — Anyone use Memomind One for work?
 - **Q-000144** — Are there any glasses announced that are in development and film in landscape mode with decent quality?
+- **Q-000145** — HTC Vive Eagle Anyone?
 
 > A discovered question is not an answered question. Research, independently verify evidence, and publish only what the sources support. Search Console is optional performance feedback, never an eligibility requirement.
