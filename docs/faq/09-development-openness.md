@@ -480,3 +480,23 @@ The [AIUI repository](https://github.com/yodaos-project/AIUI) documents agent to
 Start with the documented data cable, enable debugging in the companion app, verify USB enumeration and authorized ADB, and avoid exposing debug access to untrusted networks. No GlassesResearch cable purchase or wireless ADB test is claimed.
 
 **Observed question:** [Original community question](https://github.com/yodaos-project/AIUI/issues/89) — Is there an official data/debug cable for Rokid Glasses that overseas developers can buy, or a way to enable ADB over Wi-Fi? **Reviewed:** October 30, 2026.
+
+## Which smart glasses developer platform should I choose?
+
+**Choose by the device and app you need to ship, not by a universal “best developer” ranking.** For a standalone Android wearable workflow, [Vuzix's developer resources](https://support.vuzix.com/docs/developer-resources) document Android-based M-series development; its Z100 is instead a **phone-connected display peripheral** with Android/iOS SDK paths. For programmable experimental eyewear, [Brilliant Labs' public SDK](https://github.com/brilliantlabsAR/brilliant_sdk) supports Halo and Frame across Python, Flutter and Web Bluetooth, with a BSD-3-Clause license. Published code is a meaningful openness signal, not proof that firmware, manufacturing files and every service are unrestricted.
+
+For consumer-scale integrations, [Meta's wearables developer FAQ](https://developers.meta.com/wearables/faq/) documents a mobile Device Access Toolkit and web apps for **Meta Ray-Ban Display**, but capabilities vary by device and region, and public discovery/submission is a separate gate. For spatial/video-display apps, [XREAL's NRSDK downloads](https://developer.xreal.com/download/) list Unity support and explicit host-device compatibility caveats. For cross-device phone-hosted miniapps, see [MentraOS](https://mentraglass.com/os).
+
+**Developer selection checklist:** identify the exact shipping SKU, required sensors and output, host OS, offline/cloud requirements, SDK license, sample-code build success, sideload/test path, public distribution gate, permissions, firmware support and return policy. Run a real “hello world” and one end-to-end sensor/display operation before committing. This answers a broad observed search query; it is **not** a verified ranking of individual contract developers or a hands-on compatibility test. **Reviewed November 2, 2026.**
+
+## Which smart glasses allow third party apps today?
+
+**Several do, but “open” can mean very different things: local sideloading, a reviewed app store, a phone-hosted miniapp, a mobile SDK or genuinely open-source firmware.** As documented on **November 2, 2026**:
+
+- **Even G2:** [Even Hub](https://hub.evenrealities.com/docs/reference/app-submission) documents working **phone-hosted plugins**, local simulation, QR sideload/private builds and a packaging/submission path. Its other planned app surfaces should not be counted as live.
+- **MentraOS-compatible glasses:** [Mentra](https://mentraglass.com/os) publishes a miniapp SDK and lists compatible models including Mentra Live, Even G1/G2 and Vuzix Z100; individual device sensors still constrain each app.
+- **Vuzix Z100:** [Vuzix's Android SDK](https://support.vuzix.com/docs/sdk-for-android) lets a phone app send text, images and notifications to the display. This is **not** the same as installing Android APKs directly on Z100.
+- **Meta AI glasses:** [Meta's developer FAQ](https://developers.meta.com/wearables/faq/) describes mobile Device Access Toolkit development and **Web Apps on Meta Ray-Ban Display**, including developer-mode URL sharing. Supported hardware, markets and **public discovery/submission** remain separate restrictions.
+- **Brilliant Labs Halo/Frame:** the [BSD-licensed Brilliant SDK](https://github.com/brilliantlabsAR/brilliant_sdk) provides host-side Python, Flutter and Web Bluetooth paths plus device scripting.
+
+**Before buying for an app:** demand a current SDK, runnable sample, exact hardware compatibility, permission list, test-install procedure, distribution rules and source-code license. A vendor API is not automatically an open bootloader or owner-controlled cloud. [Original community question](https://www.reddit.com/r/SmartGlasses/comments/1xlrmsx/which_smart_glasses_are_actually_open_for_third/). No GlassesResearch compatibility test or unannounced app-store launch is asserted.
