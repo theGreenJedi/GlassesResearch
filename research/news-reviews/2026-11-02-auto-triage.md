@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-02T20:05:21.384848+00:00`
+Generated: `2026-11-02T23:57:12.221355+00:00`
 
-- Intake files inspected: **258**
-- Candidates retained in this review window/history: **10344**
+- Intake files inspected: **254**
+- Candidates retained in this review window/history: **10156**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2077
+- `adjacent_radar`: 2008
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 543
-- `rejected_noise`: 7647
-- `source_review`: 42
-- `watching`: 19
+- `needs_editorial_verification`: 540
+- `rejected_noise`: 7528
+- `source_review`: 44
+- `watching`: 20
 
 ## Action queue
 
@@ -46,7 +46,6 @@ Generated: `2026-11-02T20:05:21.384848+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1164](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1164) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1168](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1168) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1188](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1188) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.994](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.994) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.997](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.997) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1003](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1003) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1004](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1004) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -243,6 +242,8 @@ Generated: `2026-11-02T20:05:21.384848+00:00`
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Gen 2 Wayfarers get a modest discount at Amazon - The Gadgeteer](https://news.google.com/rss/articles/CBMinwFBVV95cUxOS2s3Tl9MaEFBSUEzNFI5bFF6UmFOQXdadWtWcFhvYkQ1NkRzVVE1MENId2k4LWVZLWlQenNlcTluQktJVlp3TTZoUVFUWHV6Rm9KcnAxeFBpRXVONF9peTZFaWlBNG1PMXlVRjBoT2Vqc2ZDSE1KWXhOd2U2OFFOWFRlRWx0dktoMDlyX1RLa2h3ZEJ4OW9wXy1YVzh5MWs?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Road to VR 26d ago Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [SamMobile 12h ago Samsung’s Intelligent Eyewear smart glasses will launch next month Coverage Samsung](https://www.sammobile.com/news/samsungs-intelligent-eyewear-smart-glasses-launch-next-month/) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiS0FVX3lxTE53Q1E2TUROTjgzWllZTWtGSHdnTndNTktiYTl2ZzNPRGJsaTFUWGs5ZG42SkJzN3NWM0l3blNjMzVQLTRnWmx3a3kxb9IBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQdIBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Smart Glasses Patent Could Ease Camera Privacy Concerns - SammyGuru](https://news.google.com/rss/articles/CBMic0FVX3lxTE9SbWUyc0F6bkZwMVZsZTV1cHowSkd4dzB6Z1c1V2M0aVl1VFU5enlGRVRUYl9GZlJZVHljdTBUYUMyMUNRRnd2TEhVZjFMRFo5em9JMjVNazVnci1rUVRYa3JSZEhWUjRtMEdVUzd5Z0NadUU?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Samsung smart glasses will reportedly launch in mid-December - Tbreak UAE](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5ZYUs5RmpVZFdDazhsZEN4bnhMS3VpNnFtZ2cxUk1UQXJXSWVZeGlvNUFrRGhpNmNaemhldGZFdkxHOHd6T1lxNVZWazNEZ3o0UUhNd3ZVRXNiZVFzUXlRcmQ3dVlUV2RO?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMilwFBVV95cUxNMUpZQUdlZ0lJTHVQdFV1Yk9JNVFPS0YxZEdoWVpxQjlhdVF2Um1GeDJKSi1YSGJValM2V1Z5ZTNheElyY01maVVOUGFpeUxCdnBTNlpZY1JDRjlMQU9saEgxaXNfVnNpUW0yZDJsNnV0WWs2Y2RwWk5kQ3o4eU5vVlc5NmYzYUJwMEY3dG9YSUI4Z2pETTlv?oc=5) | reachable (200) | research_news_review |
@@ -270,7 +271,6 @@ Generated: `2026-11-02T20:05:21.384848+00:00`
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMiowJBVV95cUxNNUxaMHhTbWZVU05VZ0ZENHJMQnVjMkZnU05qdThKTTlvSkNhZ3VveXBKektFX2NtMVNMUWF2OVFzNnN5aHdJU2ptdnpEOUJ0OTF6UkQ0TGticWpwSWd0eHZPckI1ZVhtVHdaMmltRzhpV0J0SHdsN1V1Q2xQczZIMmtNck5fM0tmYkttSHB5djdleEpiRDk4YjFmUDRDdkZUWnEzN2ktQXdmUHNXV0I5Sk8xODlKZmJ5SmR2ek1BcHpQTzFRTkNSQjJ6eGVQSG4xS0FRa294MndIbThySG56eXRFSkd1UFlqMzF2MTZyOG1GM2R2Zm1mTk02TlRUeU1fM2s5Q2dWYzA3ck80dlVCQTBpLVlrY2RWemlEM0tNeU1DX1k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement With Commercial Electronics Systems And Begins Shipping Against Initial Six-Figure Lx1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMitgJBVV95cUxOaHd6Sm9mTU5xNzVSTjRUVkxqS182NEtXOUZoQmpZQ09oNHNGODFHdml3YUY3R2Fubjh6dkJ6b29ueThEaFRmQllfSnlBUmxrQWRmZ2xtQ3BRSjJPTDlCakhxbnVVRTJkaUtuVGU5SmUyTnRsVG5ZRUpfOWttMWxKOFhOTlJXbzNKSXZLRzJMTWVObGJSc210UURERFF1ajM2alhlOVRoSGVGcFMxT2VnN0YySkR1Y0lzX2dKVXBKQklRQl9jYk1CMDVRbnVPb3c5SHpoYjNuaU9wakdGcFhtYUU0OEhmTDRoX2dzSm5pSXJ1VGJhYUdpeGVrcC1EYzN0NEkwcGctT0dsRDc1TzdlU2dUMnhZQVRUWHo4UTVMVHdfU2Zpd2dhVGg4VWE4R3pWTGxaU3dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZHhWUE9ZOGJBaFg3LWE4LW1VUDRtSmlKbDFia1NwSHRpRGNpSFU0QXBhNXJNNnlNZG85d2o3eWdSNXpfWmpLQ2tCMUl4b2h4VFhVYUw4SGhOU1R3NXFiamIzdFI3NjhxRndTa3FLZTZ2X2VveERqU094ZzYyc1g3RzdfbVFSdkEzQ0FPdWFEMjNLbmJrRjJmU1d2RGdPdVdvYTUwdDFSOG1NQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMimgFBVV95cUxOSS01cjZqZ3lwbWFteGg0aVRMTVZfaVh6ZUdVa29BR3lidVpkVHpTemEyWkk5QVJqRnBxTU5uVHZnNjRrZ0VXUkxhQjRjdnZEYkRrd1BrYnhXc25WUEpLMHZVLXJmYmhTMGxjZV94REdXVUxTYzlhZXNfeDZNS0VXbnRNVU9ZaXFHSXp1bTJGYUV4ZWM4ZHB0MGJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
