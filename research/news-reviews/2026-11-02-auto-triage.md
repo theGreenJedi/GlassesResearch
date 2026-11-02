@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-02T09:52:05.822854+00:00`
+Generated: `2026-11-02T11:44:07.539327+00:00`
 
-- Intake files inspected: **259**
-- Candidates retained in this review window/history: **10487**
+- Intake files inspected: **257**
+- Candidates retained in this review window/history: **10405**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2095
+- `adjacent_radar`: 2084
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 548
-- `rejected_noise`: 7770
+- `rejected_noise`: 7699
 - `source_review`: 42
 - `watching`: 17
 
@@ -254,6 +254,7 @@ Generated: `2026-11-02T09:52:05.822854+00:00`
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMimgFBVV95cUxOSS01cjZqZ3lwbWFteGg0aVRMTVZfaVh6ZUdVa29BR3lidVpkVHpTemEyWkk5QVJqRnBxTU5uVHZnNjRrZ0VXUkxhQjRjdnZEYkRrd1BrYnhXc25WUEpLMHZVLXJmYmhTMGxjZV94REdXVUxTYzlhZXNfeDZNS0VXbnRNVU9ZaXFHSXp1bTJGYUV4ZWM4ZHB0MGJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL Aura is coming in November with a special $200-off launch discount - 9to5Google](https://news.google.com/rss/articles/CBMiqgFBVV95cUxPQzNwOUNLWEFDdWdEWWhCV05VeGtXTVFOSkZ6U1hsWkRoUUdSRjNBeDRqazQzM0NwZG5XWEo4Z2hKYnVneWYwR1VyVF9pc0hPZUdrbnowVXRFZ1pIRUU5dnFndlFmelJMR28tNjBHNHVCZUNpTGhUWnE1X2RVZjktbGcxbVBsV0l3TW80ZzJlTDFET3VCOVNuVnhWam5lTnFwWHVSYXh3RDgydw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal Aura smartglasses go on sale with launch discounts - Mezha.net](https://news.google.com/rss/articles/CBMiigFBVV95cUxQejVHcnJwV3pfSEo0bzgwOUl4WFktM3RRb3lhLTNTeVgzSUR5cmxYVV9jeUJwWlVoeF9Gc2g2YWRQYTltYjBIeTFnTVF4d0R6dGtNOUtJcF9xVFl3SGxzUVJISTk1RkhwTTlrdnk2bW1MQnhmdkpyTHZ4Rk9nWldtR0FRS3FFNG9XU2c?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [XREAL Launches AURA as the First Wired XR Glasses Powered ... - TechPowerUp](https://www.techpowerup.com/354232/xreal-launches-aura-as-the-first-wired-xr-glasses-powered-by-android-xr) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMihwFBVV95cUxQMGE5eVBvMmh3SmJLbUZJWXpfclNWZGlyMlJ0ZE4zSk1rSldkREJENll1XzdnOFRfTUhadGo3Yy1INlppaE8wM3drVHVoNEJHd1k0T2VYRjVLU2lSRVBhNUd6U00tQ3NsNWRVMGpBTDdZTDhQSENaeUtKbC1yeXR4REg2OVhWT0k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMijAFBVV95cUxPSDBlb01VQ2RtZkdhdEktWklpNTZZMURYdHFoN0Z5VW82bEZlc0dGMkhSMFB5eEx3YldpcnE5T2JfX1VtdWsyTmpvcG5vUlU2cWVTWDQ2clg1UGdjQzhYSkhHNFFwSndFZnEyQm81Z2dKV1EtUm1oU3NhUU9UN3dmd2ViT0JkekRObEhIbg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [You Can Preorder XReal's First Wired XR Glasses - Lifehacker](https://news.google.com/rss/articles/CBMic0FVX3lxTE1VUFMxVWRZSGd0RGNnVjNCMjlNYmRYOWlaVlBEdkM4QWhWQ0hTektzR1R0LVFTSkh4Uk92SHZzd0hqLTNkVUVpTnJWSXJBRXBvWUJOZmxYWWdhYlpvZktOdXc4MlNRRk8wYkE2bEJWWTBYZ3c?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -270,7 +271,6 @@ Generated: `2026-11-02T09:52:05.822854+00:00`
 | normal | needs_editorial_verification | direct | [2022–2024 Ford Maverick 12" or 8" Sync 4 Touchscreen Upgrade w ...](https://www.mavericktruckclub.com/12-or-8-sync-4-touchscreen-upgrade-w-wireless-apple-carplay-android-auto-pre-orders-open/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [2026 Smart Glasses Review: Best Bluetooth Sunglasses \| TikTok](https://www.tiktok.com/@wjzgvygf/video/7696695800306486541) | reachable (200) | research_news_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [9.9元抢婴儿推车、1元拿下AI眼镜，京东11.11超省特价日11月2日开启 - 凤凰网](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5THQ1dVhlcjJ6cU5RQXIzTGRFNlExZDk3WV9UUWVuOXBoMWpJbGJfaGRhWlNOaVFSQUtJX2xZQlV2bmU3c1NMSV92MTRLZjA?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [[Mom's 교육] 곧 수능인데 AI 안경 부정행위 어쩌나...일반 안경과 구분 어려워 - 맘스커리어](https://news.google.com/rss/articles/CBMibkFVX3lxTFBsYXpJUXc3aHN3Q1Q3MXZScHRrQ21LS2w1ek5sYmY2UzlwbnlUamdQQ3ppVGlNNkw2ZWRxTk9fX0ViRDJJNGlzNDdRQnI5T1o3U3Qtak5kdmRIWkkxZjFPQ1hneFMtRnRpRlFlWTRB?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
