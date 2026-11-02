@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-02T12:59:14.904412+00:00`
+Generated: `2026-11-02T17:14:27.327333+00:00`
 
 - Intake files inspected: **258**
-- Candidates retained in this review window/history: **10411**
+- Candidates retained in this review window/history: **10388**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2085
-- `catalog_review`: 11
+- `adjacent_radar`: 2084
+- `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 550
-- `rejected_noise`: 7699
-- `source_review`: 41
-- `watching`: 21
+- `needs_editorial_verification`: 543
+- `rejected_noise`: 7682
+- `source_review`: 40
+- `watching`: 23
 
 ## Action queue
 
@@ -178,8 +178,6 @@ Generated: `2026-11-02T12:59:14.904412+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1231](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1231) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1232](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1232) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1233](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1233) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.992](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.992) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.993](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.993) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.996](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.996) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.998](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.998) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.999](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.999) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -197,6 +195,7 @@ Generated: `2026-11-02T12:59:14.904412+00:00`
 | high | needs_editorial_verification | direct | [Rokid Glasses 2 launch with upgraded design, bigger battery, and Dolby Audio support - Notebookcheck](https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3NqMktYZnZrNWpoSHZWNUpPRXlWUUlHcVMxZTd4OWptSHhVeEk0TnRhNTZyMTNnS2JNNjlOVmJQSFRSTHBXVkpPOU43aGFOX0VFYzhDMDJsaklseElnQmdJX2hMNlpSSjZ3YzhETFRDWnlMMDd2SkpxWmlsaVAzYkJwVkpDZmZvWjN6RU5uUFN2dm5RT3NJNHJ1Y2cwdVZmQlAwNHhXVmF1QjQtWHpZUFZ1Z3QydVdrdVNva3k2ZWFzbjFWbEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Preparing to Launch Its First AI Glasses in December - Root-Nation.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxOTzVob0R4NTFBY3BGc1RsQzRSVkx5MEFET1hNUlYtaHRJXzhsRmZaRzd1S3EyRi1SYVVwcHdoci10Y3RNSmRjVzhjcVBjWnlpeEZNOFJwN3pmLUhqbWI3U01XLVI4ZW5CYTBpRFNPYkpFd0l2R1ZZUFZrUFJtWkZYYQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung Smart Glasses Set For December Launch But Australia Misses Initial Release - ChannelNews.com.au](https://news.google.com/rss/articles/CBMitAFBVV95cUxPYUdlWlgyMWFNcG5HTkZENzVaeUEzdmd5cXo2VjdQcTlLZWdjeHVkUUZzbzVxVnV5cWlaeDZscHAtRG1tazBia3FWLUtKQlFLU1dISkRBY25tTjRlSzBtdmtOdmZaZDNZUFA3cWFfSk9DMVJfeERkWjlJWXFhaTJYZkF3RFJyS2VoLUtVaVpCUWRuYkdJUHJDNGtMM3E3Q2ozS1RNYmw2VW13c1V5WXZZQWM5ai0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung To Launch AI Smart Glasses In December 2026 - Dataconomy](https://news.google.com/rss/articles/CBMijwFBVV95cUxPMFM5STBxUy04X2Fyb1AxdGVkenhRdGNuWUlnV054bi1ScWdIZnF6M2c2Rzl4MndPckZIVlBjdzBrTHU2WXNBZ3kzT0swUlM2WUp3aXpCWHQwdndtRG5HemQ0a1dYRjNqcW1icmVCa0duRzZGUlZ4eFdpdnZEMmJyMW9wVXdzSGRVNDJHT25Waw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch Android XR-Powered Intelligent Eyewear in December 2024 - Inkorr](https://news.google.com/rss/articles/CBMiugFBVV95cUxPUnp1UXJueFhOV0tIdTZoeVZKVTBQYTkzcHk3NWw3dVY5aFVHWUhjenM0Uy1yZnVKRmEweWw4U2VPamhtQm5iYzZqeTI2RjBuM3Iyb2RXSVJQUV84eUVEeHN0SHFVQ2ZKV2tEYjB3SUhrRERtd2pjMERmQ2duNlg3dmg4RXRQNlJSMTgwWHN3MnZTZFFxSy1lVkxaV3N2NXVpTTZweWVqUUpSNDFncmQ5WHZjMHIyYWhvV1HSAboBQVVfeXFMT1J6dVFybnhYTldLSHU2aHlWSlUwUGE5M3B5NzVsN3VWOWhVR1lIY3pzNFMtcmZ1SkZhMHlsOFNlT2pobUJuYmM2ankyNkYwbjNyMm9kV0lSUFFfOHlFRHhzdEhxVUNmSldrRGIwd0lIa0REbXdqYzBEZkNnbjZYN3ZoOEV0UDZSUjE4MFhzdzJ2U2RRcUstZVZMWldzdjV1aU02cHllalFKUjQxZ3JkOVh2YzByMmFob1dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch Android XR-Powered Intelligent Eyewear in December 2024 - Inkorr](https://news.google.com/rss/articles/CBMitAFBVV95cUxOTURlaU82TC1DQVp6XzNHUjdWV1ZuLVNvcWl0V1pTcDVlRVB4ZnZWNnBqN05FbTZUYkp2X2tyS044SExDcW91X2RvcHZITVJYSVR0dDR1RkNkd3hEV284S0VOVmJZTktPb213dm9iRG5vZUdzSDd1UjZuVnJ0T3VlRHg0VjhfM21HaWhhekJ2T09Xanh0ZlloX1NDdEtlZ3J1bkxWaHAteExycU5KcEFteEVQMHXSAboBQVVfeXFMT1J6dVFybnhYTldLSHU2aHlWSlUwUGE5M3B5NzVsN3VWOWhVR1lIY3pzNFMtcmZ1SkZhMHlsOFNlT2pobUJuYmM2ankyNkYwbjNyMm9kV0lSUFFfOHlFRHhzdEhxVUNmSldrRGIwd0lIa0REbXdqYzBEZkNnbjZYN3ZoOEV0UDZSUjE4MFhzdzJ2U2RRcUstZVZMWldzdjV1aU02cHllalFKUjQxZ3JkOVh2YzByMmFob1dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch First AI Glasses 'Intelligent Eyewear' in South Korea, US in Mid-December - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE1odDhiM1UxOURucHVzMzZOS2xSOVhIVTJ1WGszbFdNM0I0YzVNMVlpMUtxMTdTaFYyREhPY0QtaGtkRDhFcEtMeUprcHhFQVc3WVZzSzAwYUNsY1FEaGxNX0FadFMwa1JyVUtyMG1JRG8tNW1VNXc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -269,8 +268,9 @@ Generated: `2026-11-02T12:59:14.904412+00:00`
 | normal | needs_editorial_verification | direct | [11月2日捷邦科技涨停：智能眼镜/MR头显，AI PC，苹果产业链概念热股_个股掘金 - 证券之星](https://news.google.com/rss/articles/CBMiYEFVX3lxTE1mZ1JnQ0QtWGh5czZmT1NxRkdXcHp1UUNZTHhLLTJJR3BnTEl6UFNYZHBlV0FnZjFYTUNMRjRsVjMyUWRWV3hNWDBobUlZdlBtTUFzY2hjSzFBMzV1ZThDRg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [11月2日联赢激光涨停：激光，智能眼镜/MR头显，华为产业链概念热股_个股掘金 - 证券之星](https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFUUJZM01JZFZTYVJtRW9pYkxLd0xQVXZRVlZCX0lpQjBvTWNyTl8xUk5XTG9XOEJ0TW16ZC1BLWxfZFhNTi1CTXVxb2dJOElTa2xQV2NSNEN6akl1T2J1OFhn?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [11月2日芯瑞达涨停：智能眼镜/MR头显，华为产业链，MicroLED概念热股_个股掘金 - 证券之星](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKdHd0M25BLUN6bEo4anpBZGtZSjF5TnVOdkUwTm4tZkR6cDlQaHliNjVvTms5d1FrR3ZHWnc4WnNYZG42MWp6dEZrb1JBNUduVXVlU0JBMWxuX1ZyVWJmVQ?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [2022–2024 Ford Maverick 12" or 8" Sync 4 Touchscreen Upgrade w ...](https://www.mavericktruckclub.com/12-or-8-sync-4-touchscreen-upgrade-w-wireless-apple-carplay-android-auto-pre-orders-open/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [2026 Smart Glasses Review: Best Bluetooth Sunglasses \| TikTok](https://www.tiktok.com/@wjzgvygf/video/7696695800306486541) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [9.9元抢婴儿推车、1元拿下AI眼镜，京东11.11超省特价日11月2日开启 - 凤凰网](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5THQ1dVhlcjJ6cU5RQXIzTGRFNlExZDk3WV9UUWVuOXBoMWpJbGJfaGRhWlNOaVFSQUtJX2xZQlV2bmU3c1NMSV92MTRLZjA?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [[Mom's 교육] 곧 수능인데 AI 안경 부정행위 어쩌나...일반 안경과 구분 어려워 - 맘스커리어](https://news.google.com/rss/articles/CBMibkFVX3lxTFBsYXpJUXc3aHN3Q1Q3MXZScHRrQ21LS2w1ek5sYmY2UzlwbnlUamdQQ3ppVGlNNkw2ZWRxTk9fX0ViRDJJNGlzNDdRQnI5T1o3U3Qtak5kdmRIWkkxZjFPQ1hneFMtRnRpRlFlWTRB?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
