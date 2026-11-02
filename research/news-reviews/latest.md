@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-02T02:21:05.303466+00:00`
+Generated: `2026-11-02T06:25:20.148269+00:00`
 
-- Intake files inspected: **259**
-- Candidates retained in this review window/history: **10415**
+- Intake files inspected: **260**
+- Candidates retained in this review window/history: **10439**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2048
-- `catalog_review`: 10
+- `adjacent_radar`: 2078
+- `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 536
-- `rejected_noise`: 7758
-- `source_review`: 46
-- `watching`: 13
+- `needs_editorial_verification`: 535
+- `rejected_noise`: 7748
+- `source_review`: 48
+- `watching`: 15
 
 ## Action queue
 
@@ -190,7 +190,6 @@ Generated: `2026-11-02T02:21:05.303466+00:00`
 | high | needs_editorial_verification | direct | [Google And XREAL Launch XREAL AURA Wired XR Glasses Powered By Android XR - TradingView](https://news.google.com/rss/articles/CBMi2wFBVV95cUxONnVZRTI2YWJaamJfMmEwMjVTX203TXE5ZndqdjFoaXlfQVRGNnJTdTg3bXRFa1JyZHNNSUJXTUE0YTVhRXNfaGh6dzJJZERScjNwTEdUV0loMjE5TlJWalJDdDVMbHNHcEd1TlZNUGZ2ejY3c3hERkhNQ2NFV1ozeEN0a095NjRTUFlGbUQ4RHpXcHdmeG94dXZUT3ZndjlvUWU2b2pzZkZYZnpOSW1CaEVSQnVteDFiVWRJYjdQdTR0QU5kTlMwVVNzUk9iNnhrUUVQSmF6anlQWk0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GOOGLE BLOG - CO AND XREAL LAUNCH XREAL AURA WIRED XR GLASSES POWERED BY ANDROID XR - Moomoo](https://news.google.com/rss/articles/CBMinAFBVV95cUxOSVRDVlBXMHZCd2lDR0pHQnpTT0c2VUZPRllDR1g0QzBWVWZPQmlwSUFzWHZHQ0RYdDg5TThtbHNhVFc4Vkhqaks5UlZ6OU0wS3BnRUxMcmpMa3VGRTlwblAwOE0yVUxFM0pKSTBrU19GLXJYVlYyV2pGc0R6ODk5SnRuMzZLaDVoWlZST05TZEFVa0FleWVwdUxRR3o?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Maverick AI / AI Pro SDK Portal - everysight.github.io](https://everysight.github.io/maverick-ai-docs/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
-| high | needs_editorial_verification | direct | [Request SDK – Everysight](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Rokid Glasses 2 launch with upgraded design, bigger battery, and Dolby Audio support - Notebookcheck](https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3NqMktYZnZrNWpoSHZWNUpPRXlWUUlHcVMxZTd4OWptSHhVeEk0TnRhNTZyMTNnS2JNNjlOVmJQSFRSTHBXVkpPOU43aGFOX0VFYzhDMDJsaklseElnQmdJX2hMNlpSSjZ3YzhETFRDWnlMMDd2SkpxWmlsaVAzYkJwVkpDZmZvWjN6RU5uUFN2dm5RT3NJNHJ1Y2cwdVZmQlAwNHhXVmF1QjQtWHpZUFZ1Z3QydVdrdVNva3k2ZWFzbjFWbEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Preparing to Launch Its First AI Glasses in December - Root-Nation.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxOTzVob0R4NTFBY3BGc1RsQzRSVkx5MEFET1hNUlYtaHRJXzhsRmZaRzd1S3EyRi1SYVVwcHdoci10Y3RNSmRjVzhjcVBjWnlpeEZNOFJwN3pmLUhqbWI3U01XLVI4ZW5CYTBpRFNPYkpFd0l2R1ZZUFZrUFJtWkZYYQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung Smart Glasses Set For December Launch But Australia Misses Initial Release - ChannelNews.com.au](https://news.google.com/rss/articles/CBMitAFBVV95cUxPYUdlWlgyMWFNcG5HTkZENzVaeUEzdmd5cXo2VjdQcTlLZWdjeHVkUUZzbzVxVnV5cWlaeDZscHAtRG1tazBia3FWLUtKQlFLU1dISkRBY25tTjRlSzBtdmtOdmZaZDNZUFA3cWFfSk9DMVJfeERkWjlJWXFhaTJYZkF3RFJyS2VoLUtVaVpCUWRuYkdJUHJDNGtMM3E3Q2ozS1RNYmw2VW13c1V5WXZZQWM5ai0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -211,6 +210,8 @@ Generated: `2026-11-02T02:21:05.303466+00:00`
 | high | needs_editorial_verification | direct | [[News] Samsung’s First AI Glasses Reportedly Set for Mid-December Launch in Korea, U.S.; Enters Meta-Dominated Market](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6ae7f3063d434098ac1d8d5630919a4f&url=https%3a%2f%2fwww.trendforce.com%2fnews%2f2026%2f11%2f02%2fnews-samsungs-first-ai-glasses-reportedly-set-for-mid-december-launch-in-korea-u-s-enters-meta-dominated-market%2f&c=12735021050811099964&mkt=en-us) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Android Authority 27d ago The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Android Authority Sep 22, 2026 These privacy-focused smart glasses promise not to snoop on you and others](https://www.androidauthority.com/vonder-smart-glasses-debut-3713717/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android Central Sep 22, 2026 These new AI glasses have a brilliant privacy feature every pair needs to adopt ASAP](https://www.androidcentral.com/wearables/vonder-ai-glasses-hands-on) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [AR Glasses – XREAL US Shop](https://us.shop.xreal.com/collections/ar-glasses) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Auganix 25d ago ENGO Launches engo Titanium, 28.9-Gram AR Smart Glasses for Runners and Cyclists](https://www.auganix.org/ar-news-engo-titanium-smart-glasses/) | reachable (200) | research_news_review |
@@ -218,7 +219,6 @@ Generated: `2026-11-02T02:21:05.303466+00:00`
 | high | needs_editorial_verification | direct | [Engadget 2d ago Senators are looking into 'serious privacy risks' with Meta's AI glasses Coverage Meta](https://www.engadget.com/2301968/senators-looking-into-serious-privacy-risks-with-meta-ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Engadget Oct 1, 2026 Newsom vetoes smart glasses privacy bill](https://www.engadget.com/2274526/newsom-vetoes-smart-glasses-privacy-bill/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/) | reachable (200) | research_news_review, development_hacking |
-| high | needs_editorial_verification | direct | [Gizmodo Sep 29, 2026 Smart Glasses Recalled After Overheating Reports and ‘Risk of Serious Injury or Death’](https://gizmodo.com/smart-glasses-recalled-after-reports-of-overheating-and-risk-of-death-2000818918) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Google and Xreal Launch Aura Glasses at Discounted Price Ahead of Debut - SSBCrack](https://news.google.com/rss/articles/CBMinwFBVV95cUxOQUMxS2xDQjBJR0lyclBJN1FiSjE5WVcyaVFFQUVyVUFXcVR6NjluSUk5QlRHMDY2cm5wS0djQ1VEUVRHcDBNS0o1VGpHX2ZTdE0xNTluRnA5S3V6Qnk3aFpJQmVZdmdFamV1dmw5SHNzODRfbGN4Z3A5UDFhakZndk9SN2haOFduc09UdmtXUUlURWF1R0xtazU5WTAzdXM?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [GOOGLE BLOG - XREAL AURA LAUNCH PRICING STARTS AT USD 1,099 THROUGH END OF YEAR - Moomoo](https://news.google.com/rss/articles/CBMiowFBVV95cUxPRjBVRW16RmxTOHNCbnREWHlXRElIbGhLTkpEUTMyRXAtdXlSZjhLMnBETkZ6SjdHNFRTWFo0R25DQ0IxNWZxbmVCRkVyaGY5SlhnTzRpazV0LUZnMHk0cFhpbVFpNXU0ZHZ4LWNYM01TWGJ6NFRaMHBlTjVxQ2lmQnJQWHNwUjZLR0U2TjBsU01aZU1BVE9WczR3UzFoSmJQenhJ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google faces resistance at $325 despite Xreal Aura launch and recovery attempt - Traders Union](https://news.google.com/rss/articles/CBMixwFBVV95cUxPMFZTYlpHUkVqYUV4TzlFRFMtNzVQMkk1ekxJWUxSX0VxREdTTWVacERfNVRrX2p5ZU9ra280ckZBdmxIY0VhbzllQXFzYmJfUkotbXFjUkI5dmlGSFg0UnJKMjVWZ190amJWVERXRkhpaW90YkMzU2QwMURWTDZiQkNTLXNhWFBrcnVtck1xRk9YV1FHb3VTUC1pY3FDaVZpbjV6Z0ZMcElNMmtMQ3ZRbFlrTTJyd0x4ZV8zSEJURnJYZDZFdlBv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
