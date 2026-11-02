@@ -76,6 +76,9 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 
 ## Independent Meta-compatible development and interoperability
 
+- [OpenVision — GitHub](https://github.com/rayl15/OpenVision) — independent open-source **iOS** companion for Meta Ray-Ban glasses with documented phone-hosted SmolVLM2 still-image and live-frame interpretation, plus optional cloud backends. [v2.14.0 release](https://github.com/rayl15/OpenVision/releases/tag/v2.14.0) documents account-based integration with an explicitly **unstable, undocumented** interface; hardware performance and offline behavior are **not independently verified** by GlassesResearch. No MYVU/XGA010C compatibility implied.
+
+
 - [Visor — GitHub](https://github.com/macedonga/visor) — independent Meta-compatible companion and reverse-engineering project. [Developer-mode interface](https://github.com/macedonga/visor/blob/main/docs/developer-mode.md) documents Android intents for photo/video capture and media import; [v1.3.10](https://github.com/macedonga/visor/releases/tag/v1.3.10) introduced these controls. [Owner report](https://github.com/macedonga/visor/issues/29#issuecomment-6456479737) describes successful Termux triggering, **not independently verified** by GlassesResearch. [Follow-up voice-session changes](https://github.com/macedonga/visor/commit/6a4ac0f691fbd7f37a0c4203c4f24b07c7bb1263) are developer-reported; do not infer cross-device compatibility.
 - [VModal smart-glasses SDK — GitHub](https://github.com/v-modal/vmodal_sdk_smartglass) — independent voice-search, image-preparation and display integration using an Android SDK package. [October 20 implementation](https://github.com/v-modal/vmodal_sdk_smartglass/commit/da217283a3187b9c64b490bfedb402aacf0a6931) documents Meta Mock Device Kit and native contract tests; **physical-device and live acceptance remain pending**. Simulator tests do not prove hardware operation.
 
