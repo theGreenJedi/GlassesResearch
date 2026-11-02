@@ -38,6 +38,12 @@ Each answer leads with the useful conclusion, then explains the tradeoff and lin
 
 ## Observed Practical Answers — November 2026
 
+- [Which smart glasses have the most discreet visible display?](05-displays.md#which-smart-glasses-have-the-most-discreet-visible-display) — Q-000236 (primary-source review; no hands-on test).
+- [Which smart glasses developer platform should I choose?](09-development-openness.md#which-smart-glasses-developer-platform-should-i-choose) — Q-000307 (primary-source review; no hands-on test).
+- [Can smart glasses work as assistive technology?](08-accessibility-fit.md#can-smart-glasses-work-as-assistive-technology) — Q-000331 (primary-source review; no hands-on test).
+- [Which smart glasses allow third party apps today?](09-development-openness.md#which-smart-glasses-allow-third-party-apps-today) — Q-000333 (primary-source review; no hands-on test).
+- [Can AR and AI glasses guide a novice through home renovation safely?](03-use-cases.md#can-ar-and-ai-glasses-guide-a-novice-through-home-renovation-safely) — Q-000334 (primary-source review; no hands-on test).
+
 - [Can smart glasses translate WhatsApp voice calls live?](06-ai-cameras-audio.md#can-smart-glasses-translate-whatsapp-voice-calls-live) — Written-message translation is not voice-call translation.
 - [Is MemoMind One ready for real work use?](02-buying.md#memomind-one-versus-even-g2-for-work-which-features-and-tradeoffs-matter) — Product claims versus verified workplace experience.
 - [Should Rokid Glasses owners wait for a full-color upgrade at CES?](05-displays.md#should-rokid-glasses-owners-wait-for-a-full-color-upgrade-at-ces) — Current green hardware versus unconfirmed future demos.
