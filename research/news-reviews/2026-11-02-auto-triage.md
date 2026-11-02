@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-02T11:44:07.539327+00:00`
+Generated: `2026-11-02T12:55:43.411390+00:00`
 
-- Intake files inspected: **257**
-- Candidates retained in this review window/history: **10405**
+- Intake files inspected: **258**
+- Candidates retained in this review window/history: **10411**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2084
+- `adjacent_radar`: 2085
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 548
+- `needs_editorial_verification`: 552
 - `rejected_noise`: 7699
-- `source_review`: 42
-- `watching`: 17
+- `source_review`: 39
+- `watching`: 21
 
 ## Action queue
 
@@ -214,6 +214,7 @@ Generated: `2026-11-02T11:44:07.539327+00:00`
 | high | needs_editorial_verification | direct | ["For 2,000 Won, AI Glasses Can Take Photos Illegally"... Privacy Concerns Grow in China - 아시아경제](https://news.google.com/rss/articles/CBMid0FVX3lxTE9FdkRoa29oX0lkaThzbGRzbnNvUUFHY29SeE01UWd3QlVxVDU0cFBQTkJGY1c1dWc2NzZIZmtpeHhtVmFGdjJxUlREdUp1YUNXOUNJRmxvRkRZWERCX3pTUUVGcHRzX3Y0SUJKNUR2a2Fncng0a3Uw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [[News] Samsung’s First AI Glasses Reportedly Launching Mid-December in Korea, U.S.; Takes on Meta - LEDinside](https://news.google.com/rss/articles/CBMiTEFVX3lxTE01WG5ibFBBZkQ2eU1XMDZjT1BNU2plcmF1WnlPWDhyaVNMTmU5bEdjN2JfeENiUk5rTHFtSWNEZnpTSUhYT1VRTkRCakE?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [AI Glasses Can Take Prescription Lenses, but Weight, Battery, and Privacy Hurdles Block Everyday Use - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE5kUEJobWZOZEZHTk9QXzFyelNNWkNVNTZEN0JuVks5aDdFU013TjE1VlduVk5NanNHVjUzYjVWRXBKTE5FekhPSVkwNDFUTmUyZ3dZNnBPbUd3aVR3OUpFcEVPR1hnajhYeXRXV1Q2SFRPTEczQlE?oc=5) | reachable (200) | research_news_review, research_optics, policy_privacy |
 | high | needs_editorial_verification | direct | [Android XR: XREAL AURA Pre-orders Begin - jetstream.blog](https://news.google.com/rss/articles/CBMiakFVX3lxTE9QMmI4WkdFeUNhOW9JajdLZGt2NW9SMHJjMmRmVnpxY1ZpM1hkUmpXYTlEWTU3WmF0ZEpweFBZQnRCc1R6cG85VWM2SlBwUXhSZ1FzVWM2ZmJZUHhFUXVnN1g1al84VVJkQnc?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Auganix 26d ago ENGO Launches engo Titanium, 28.9-Gram AR Smart Glasses for Runners and Cyclists](https://www.auganix.org/ar-news-engo-titanium-smart-glasses/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Developers – Everysight](https://www.everysight.com/pages/developer) | reachable (200) | research_news_review, development_hacking |
@@ -270,7 +271,6 @@ Generated: `2026-11-02T11:44:07.539327+00:00`
 | normal | needs_editorial_verification | direct | [11月2日芯瑞达涨停：智能眼镜/MR头显，华为产业链，MicroLED概念热股_个股掘金 - 证券之星](https://news.google.com/rss/articles/CBMiYEFVX3lxTFBKdHd0M25BLUN6bEo4anpBZGtZSjF5TnVOdkUwTm4tZkR6cDlQaHliNjVvTms5d1FrR3ZHWnc4WnNYZG42MWp6dEZrb1JBNUduVXVlU0JBMWxuX1ZyVWJmVQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [2022–2024 Ford Maverick 12" or 8" Sync 4 Touchscreen Upgrade w ...](https://www.mavericktruckclub.com/12-or-8-sync-4-touchscreen-upgrade-w-wireless-apple-carplay-android-auto-pre-orders-open/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [2026 Smart Glasses Review: Best Bluetooth Sunglasses \| TikTok](https://www.tiktok.com/@wjzgvygf/video/7696695800306486541) | reachable (200) | research_news_review, report_card_evidence |
-| normal | needs_editorial_verification | direct | [9.9元抢婴儿推车、1元拿下AI眼镜，京东11.11超省特价日11月2日开启 - 凤凰网](https://news.google.com/rss/articles/CBMiT0FVX3lxTFB5THQ1dVhlcjJ6cU5RQXIzTGRFNlExZDk3WV9UUWVuOXBoMWpJbGJfaGRhWlNOaVFSQUtJX2xZQlV2bmU3c1NMSV92MTRLZjA?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
