@@ -1,39 +1,41 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-02T20:04:25.180121+00:00",
-  "candidate_count": 57,
-  "classifier_irrelevant_count": 52,
+  "discovered_utc": "2026-11-02T23:56:29.506135+00:00",
+  "candidate_count": 85,
+  "classifier_irrelevant_count": 68,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 2,
-    "broad_web": 44,
-    "developer": 11,
-    "research": 1
+    "adjacent": 17,
+    "broad_web": 48,
+    "developer": 20
   },
   "relationship_counts": {
-    "direct": 3,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 2,
+    "adjacent": 17,
     "speculative": 0,
-    "irrelevant": 52
+    "irrelevant": 68
   },
   "type_counts": {
-    "model": 1,
-    "news": 24,
+    "model": 3,
+    "review": 1,
+    "video": 1,
+    "news": 47,
     "research": 1,
-    "tool": 14,
-    "sdk": 13,
+    "tool": 27,
+    "sdk": 20,
     "retail": 9,
-    "community": 11
+    "community": 5,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 2,
-    "community_evidence_review": 2,
-    "development_hacking": 2,
+    "adjacent_radar": 17,
+    "development_hacking": 1,
     "model_catalog_review": 1,
-    "reject_noise": 52,
-    "research_news_review": 5,
-    "retail_rebrand_review": 1
+    "reject_noise": 68,
+    "research_news_review": 17,
+    "retail_rebrand_review": 3,
+    "watching": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -44,55 +46,56 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "manufacturer_catalog",
-      "url": "https://www.latitude52n.com/",
-      "error": "HTTP Error 503: Service Unavailable"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "b2e140c1e2dc5d84",
-      "title": "/C O R R E C T I O N - XREAL/ - PR Newswire",
-      "url": "https://www.prnewswire.com/news-releases/xreal-aura-launches-as-the-first-wired-xr-glasses-powered-by-android-xr-302921776.html",
-      "summary": "In the news release, XREAL AURA Launches as the First Wired XR Glasses Powered by Android XR, issued 28-Oct-2026 by XREAL over PR Newswire, we are advised by the company that changes have been ...",
-      "discovery_channel": "broad_web",
-      "query": "XREAL AURA",
+      "id": "c0265faf6787c4dd",
+      "title": "Toyota Raize Expected Price ₹10 Lakh, Launch Date, Images ... - CarDekho",
+      "url": "https://www.cardekho.com/toyota/raize",
+      "summary": "Toyota Raize is expected to be launched in India soon. Check Raize Specs, see images, colours and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "launch"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "model"
+        "model",
+        "retail",
+        "rumor"
       ],
       "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review"
+        "watching",
+        "model_catalog_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "04ea75876f4a9bb7",
-      "title": "9 Best Smart Glasses For Translation | Your Pocket Interpreter",
-      "url": "https://thewearify.com/best-smart-glasses-for-translation/",
-      "summary": "This guide breaks down the top contenders to help you find the smart glasses for translation that actually fit your daily life.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "id": "663e2c59c5204cee",
+      "title": "Cities Near Me - Fontana, California | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Fontana,+CA",
+      "summary": "Find the top 15 cities, towns, and suburbs near Fontana, CA, like Bloomington and Rialto, and explore the surrounding area for a day trip.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -100,29 +103,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
         "news"
       ],
       "primary_type": "news",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c84e004c08e8235f",
-      "title": "XREAL - amazon.com",
-      "url": "https://www.amazon.com/stores/XREAL/page/A22D483C-2FAF-4A28-BF00-EF248247ACF6",
-      "summary": "XREAL xbx a01+ XREAL 1S Xreal One Pro Xreal Beam Pro Accessories DP Output Supported Device More",
-      "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "id": "6f5cb5c84c165cfa",
+      "title": "Cities Nearby Fontana, California, United States",
+      "url": "https://www.thecitiesnow.com/united_states/california/fontana",
+      "summary": "Find five hundred cities near Fontana, California, United States from closest to farthest by distance. Distances from Fontana to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -130,27 +134,183 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "direct",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8846ee7019327c3b",
+      "title": "Daihatsu Rocky (A200) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Daihatsu_Rocky_(A200)",
+      "summary": "The Toyota-badged model is sold and marketed as the Toyota Raize in Japan and most international markets. It is mostly identical with the Rocky, differentiated by its front fascia which adopted Toyota's corporate look. [25]",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62756c65766f01f8",
+      "title": "Electrochromic Materials and Device Applications - Nature",
+      "url": "https://www.nature.com/subjects/electrochromic-materials-and-device-applications",
+      "summary": "Single-component metal oxide electrochromic films suffer poor charge utilization and deep-site ion trapping, giving non-uniform charge injection. Targeting heterostructure engineering rather than ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7a347c95a1ecd3e0",
+      "title": "Electrochromic Materials | Windows & Daylighting",
+      "url": "https://windows.lbl.gov/electrochromic-materials",
+      "summary": "Electrochromic devices represent the most versatile window technology of this type, exhibiting the best combination of switching properties for chromogenic window applications.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "83f34c24ab7851e1",
+      "title": "Fontana, CA Weed Dispensaries Near Me - Weedmaps",
+      "url": "https://weedmaps.com/dispensaries/in/united-states/california/fontana",
+      "summary": "Find dispensaries near you in Fontana, CA for recreational and medical weed. Order online from the best dispensaries in your area.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "03255296c7a46c58",
+      "title": "New Toyota Raize 2026 in UAE - Price & Specs | Toyota UAE",
+      "url": "https://www.toyota.ae/en/new-cars/raize/",
+      "summary": "Explore the new Toyota Raize 2026 with its strong and bold appearance, complimented by a spacious cabin. Discover Toyota Raize prices at Toyota UAE now!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
       "content_types": [
         "retail"
       ],
       "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
-        "retail_rebrand_review"
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a4db05657f94ca05",
-      "title": "Spotify Desktop App Not Working on MacBook",
-      "url": "https://community.spotify.com/t5/Desktop-Mac/Spotify-Desktop-App-Not-Working-on-MacBook/td-p/7343715",
-      "summary": "The problem was almost certainly corrupted or stale Spotify local web-app state. Spotify’s desktop app is basically a native shell around a Chromium/web UI. The app process was running, your account/library data was partly reachable, and network access worked, but the embedded renderer was stuck on skeleton placeholders and then a blank page.",
+      "id": "f3b2a859f32ca26f",
+      "title": "Now Hiring: 73,000 Jobs in Fontana, CA | Indeed",
+      "url": "https://www.indeed.com/l-Fontana,-CA-jobs.html",
+      "summary": "Browse 73,879 jobs in Fontana, CA. New jobs posted today. Apply now and find your next opportunity on Indeed.com.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -163,14 +323,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -179,12 +336,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ca197e01b6efc80",
-      "title": "why doesn't my spotify have the camera icon to scan codes",
-      "url": "https://community.spotify.com/t5/Android/why-doesn-t-my-spotify-have-the-camera-icon-to-scan-codes/td-p/5025769",
-      "summary": "The camera icon used to scan Spotify codes should come up when you tap the search bar on your smartphone. If that's not the case, it's possible that some of the apps files have gotten damaged and are causing this issue. This is usually resolved by performing a clean reinstall, so that the app files get built anew.",
+      "id": "ed9736cc36d025b8",
+      "title": "Raize - Toyota MX",
+      "url": "https://www.toyota.mx/modelos/suv/raize/",
+      "summary": "Defensa delantera y trasera al color de la carrocería con insertos negros y antena tipo tiburón. Cuenta con faros, luces diurnas (DRL) y luces traseras de stop LED. Cuenta con control remoto para bloquearla, desbloquearla, darle al botón de pánico, abrir la cajuela y las puertas laterales.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -197,14 +354,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -213,10 +367,485 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cad3d69b4b898d03",
-      "title": "18 Important Things to Know Before Visiting Buenos Aires [2026 Update]",
-      "url": "https://www.ytravelblog.com/visit-buenos-aires/",
-      "summary": "Planning to visit Buenos Aires? Here are important things to know before you visit this incredible city in Argentina, plus tips on where to stay and eat!",
+      "id": "0a4ddb122c1cfe70",
+      "title": "Raize | Toyota Motor Philippines",
+      "url": "https://www.toyota.com.ph/Raize",
+      "summary": "Toyota's Raize is Toyota's newest line of Subcompact SUVs. Get a Subcmpact SUV at a Toyota dealership near you, or view different Raize variants online.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "427cd9fb0733c67f",
+      "title": "THE BEST 10 RESTAURANTS IN FONTANA, CA - UPDATED OCTOBER 2026 ... - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=fontana%2C+CA",
+      "summary": "Best Restaurants in Fontana, CA - Last Updated October 2026 - Thai Kitchen Express, Phu Chen Kitchen, Cocina Sinaloense, Peruvian Restaurant Route 66, Reino 44, Lucy's Diner, Nonoy's Lechon, Leo's Country Kitchen, The Blazin' Claw, Sierra Noodle House",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a1a438cb6ce15063",
+      "title": "Toyota Raize",
+      "url": "http://toyotalebanon.com/Vehicles/1040",
+      "summary": "New and used cars are our specialty at our Toyota dealership in Lebanon, PA. Come get the car of your dreams with our attractive financing and service",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6fbb2276936a9804",
+      "title": "Toyota Raize - photos, colors and specifications- Toyota Aruba",
+      "url": "https://www.toyotaaruba.com/toyota/raize",
+      "summary": "The Toyota Raize is the perfect compact, dynamic, active SUV to energize your everyday life. Equipped with an all-new platform enabling world-class handling stability and ride comfort, the Raize is sure to deliver.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "410f3cf615ae890c",
+      "title": "Toyota Raize 2026 - AutoDeal",
+      "url": "https://www.autodeal.com.ph/cars/toyota/raize",
+      "summary": "Discover the 2026 Toyota Raize: Find specs, price lists & reviews. Check out the latest promos from official Toyota dealers in the Philippines.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1c80f01ba9e1172a",
+      "title": "Toyota Raize 2026 - Compact Urban SUV | Toyota KSA - ALJ",
+      "url": "https://www.toyota.com.sa/en/vehicles/raize",
+      "summary": "Dive into the Toyota Raize 2026, an economical urban SUV offering seamless comfort and efficient performance. Learn more about the Raize at Toyota KSA.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "07877fe02d55f635",
+      "title": "トヨタ ライズ | トヨタ自動車WEBサイト",
+      "url": "https://toyota.jp/raize/",
+      "summary": "トヨタ ライズ の公式サイト。 機能・性能などの紹介をはじめ、ご購入を検討されている方への情報をご案内します。",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "abcf73c02447925e",
+      "title": "Why Novo Stock Is Tumbling After Drugmaker Unveils Ambitious Growth ...",
+      "url": "https://www.barrons.com/articles/novo-stock-growth-plan-wegovy-ozempic-5d86fa59",
+      "summary": "Novo Nordisk plans to launch at least five multi-blockbuster drugs by 2030 and is targeting pipeline drug sales of $23 billion by 2035.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "launch"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5492c04cd8302c29",
+      "title": "A GLD Options Trade for the Fed’s Political ‘Two-Step ... - Barron's",
+      "url": "https://www.barrons.com/articles/gld-options-trade-fed-interest-rates-elections-ad74ee3a",
+      "summary": "If the Fed chief opts against raising rates, the market may fear that politics is guiding his thinking. That could lift gold.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5b9588367a90539e",
+      "title": "Apple Stock Downgraded to Sell as Analyst Claims All-Glass iPhone Is ...",
+      "url": "https://www.barrons.com/articles/apple-stock-sell-downgrade-iphone-glass-2a001a49",
+      "summary": "Jefferies analyst Edison Lee believes Apple has scrapped its all-glass iPhone, citing supply-chain checks.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "67521a3d07c09b35",
+      "title": "Casey’s Earnings Beat Estimates. Why the Stock Is Falling.",
+      "url": "https://www.barrons.com/articles/caseys-general-earnings-stock-price-2c2bdf66",
+      "summary": "Casey General Store’s solid earnings report included strong fuel margins and prepared food sales. But after a strong run-up for Casey’s stock, investors appear to be demanding more than just ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c9a0fbd169394d82",
+      "title": "Ford Stock Drops. It’s China. - Barron's",
+      "url": "https://www.barrons.com/articles/ford-stock-china-ties-duffy-7247026a",
+      "summary": "Transportation Secretary Sean Duffy posted a letter for Ford management on Tuesday. Ford stock appears unfazed for now.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "32b541d96f257672",
+      "title": "Güney Amerika: Fiziki Harita - Map Quiz Game - Seterra",
+      "url": "https://www.geoguessr.com/vgp/3451",
+      "summary": "The South American continent is dominated by Brazil, which in turn is dominated by the massive Amazon rainforest that takes up most of its area. There are, however, many other physical features and different types of environments in the 13 countries that make up the continent. Southern Chile and Argentina, for example, have a temperate climate similar to much of Europe or North America, and ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4a2b22143cddd74",
+      "title": "Jersey Mike's IPO: Stock Slides in Market Debut - Barron's",
+      "url": "https://www.barrons.com/articles/jersey-mikes-stock-ipo-should-i-buy-f70af684",
+      "summary": "Jersey Mike’s stock fell below its IPO price in its first day of trading on Thursday. Its debut doesn’t bode well for investors’ IPO appetites.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56b03fe777161c4a",
+      "title": "Microsoft Is a Good Long-Term Bet - Barron's",
+      "url": "https://www.barrons.com/articles/microsoft-is-a-good-long-term-bet-448c390a",
+      "summary": "With one of the largest contracted backlogs at over $620 billion, a price/earnings ratio under 25, and healthy profit margins, Microsoft has a place in my long-term portfolio (“How to Find the ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2fb91b0d316dfd20",
+      "title": "Regio's, eilanden en gebieden: Vlaggen - Flag Quiz Game - Seterra",
+      "url": "https://www.geoguessr.com/fl/2090",
+      "summary": "This game includes the flags of a wide array of areas: dependent territories, islands, breakaway territories, independent countries that are not UN members, special territories, exclaves and more.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -244,10 +873,73 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "47f53ae7445a2470",
-      "title": "Argentina Travel Advisory | Travel.State.gov",
-      "url": "https://travel.state.gov/en/international-travel/travel-advisories/argentina.html",
-      "summary": "Prepare for your trip to Argentina by reviewing the State Department Travel Advisory, entry and exit requirements, local laws, and U.S. embassy tips.",
+      "id": "01b95be508393dc7",
+      "title": "SpaceX Stock Rises Again. AI Demand Isn’t Slowing Down.",
+      "url": "https://www.barrons.com/articles/spacex-stock-price-ai-demand-a5e66ad2",
+      "summary": "SpaceX stock was up again. The gains might have to do with both AI and the company’s reusable rocket, Starship.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f03f6d7cfb0950c0",
+      "title": "SpaceX Stock: Elon Musk Has a Warning for Short Sellers",
+      "url": "https://www.barrons.com/articles/spacex-stock-elon-musk-short-sellers-206a6c7e",
+      "summary": "SpaceX stock snapped a painful seven-day losing streak on Tuesday. A warning to short sellers from Elon Musk might have helped ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c15ca947fe2a53c",
+      "title": "The Antilles: Islands - Map Quiz Game - Seterra - GeoGuessr",
+      "url": "https://www.geoguessr.com/vgp/3390",
+      "summary": "Hispaniola is the largest and farthest north of the islands. As you work through the islands, try to key off each one's location and size. Antigua, one of the smaller islands in the group, is ringed with coral reefs and known for its inviting beaches. With this map quiz, locating all the islands of the Antilles will be easier than an island breeze!",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -275,10 +967,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9b43804fcc155893",
-      "title": "Buenos Aires Budget Travel Guide (Updated 2026)",
-      "url": "https://www.nomadicmatt.com/travel-guides/argentina-travel-tips/buenos-aires/",
-      "summary": "A comprehensive budget travel guide to Buenos Aires with tips on things to do, costs, ways to save, transportation, accommodation, and more.",
+      "id": "3d4521b8565f207c",
+      "title": "The Caribbean Countries: Printables - Seterra - GeoGuessr",
+      "url": "https://www.geoguessr.com/pdf/4129",
+      "summary": "Geography Games Printables The Caribbean Countries: Printables The Caribbean Countries: Printables With so many small islands, teaching or learning the geography of the Caribbean can be a big task. This downloadable map of the Caribbean is a free resource that is useful for both teachers and students.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -306,10 +998,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e5d21d9ab5dae26e",
-      "title": "Buenos Aires Travel Guide & Tips | Condé Nast Traveler",
-      "url": "https://www.cntraveler.com/destinations/buenos-aires",
-      "summary": "A comprehensive travel guide and a collection of tips for visiting Buenos Aires, Argentina, from the experts at Condé Nast Traveler.",
+      "id": "045875939fb83c79",
+      "title": "The Caribbean: Capitals of Countries and Territories",
+      "url": "https://www.geoguessr.com/vgp/3130",
+      "summary": "There are over 7,000 islands scattered between the 25 island nations of the Caribbean. About half of those island nations are still considered dependencies; an arrangement dating back to the days of colonialism. Puerto Rico, for example, is an official territory of the United States, and Curacao is part of the Netherlands.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -337,10 +1029,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "079f893eb1e29284",
-      "title": "Buenos Aires Travel Guide: Costs, Safety, Currency Exchange & Where to ...",
-      "url": "https://wakaabuja.com/travel-to-buenos-aires-argentina/",
-      "summary": "Travel to Buenos Aires, Argentina: Costs, Safety, Currency Exchange, and Where to Stay.",
+      "id": "740e5c1821db81c9",
+      "title": "The Caribbean: Countries - Map Quiz Game - Seterra",
+      "url": "https://www.geoguessr.com/vgp/3342",
+      "summary": "Did you know that Bimini, a district of the Bahamas, is only 50 miles off the coast of Florida? How about that Saint Lucia is located northwest of Barbados? Learning the independent countries of the Caribbean can be challenging, but picking up a few hints like those can make it easier, and this quiz game can help. Some of these countries' names are a mouthful—Antigua and Barbuda, Saint Kitts ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -368,10 +1060,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "781fe577a3137294",
-      "title": "Buenos Aires Travel Guide: What to Know for Your First Visit",
-      "url": "https://www.rebeccaandtheworld.com/buenos-aires-travel-guide/",
-      "summary": "This Buenos Aires travel guide covers everything you need to know before you go, from where to stay and how many days to spend in the city to practical tips on safety, transport and what not to miss.",
+      "id": "5c967d0d21ec51d5",
+      "title": "The Caribbean: Countries and Territories - Map Quiz Game - Seterra",
+      "url": "https://www.geoguessr.com/vgp/3129",
+      "summary": "With a population of only 5,000 and an area of less than 40 square miles, Montserrat is one of the smallest countries in the world. This interactive geography game will challenge your and your friends to find it on the map along with 23 other islands. If your classroom can get at least 20 right on the first try, you will be ready to challenge any geography club in world!Some of these are ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -399,10 +1091,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "913bdfbdf62f2025",
-      "title": "Buenos Aires, Argentina for First-Time Visitors - Fresh Travel Guide",
-      "url": "https://freshtravelguide.com/buenos-aires-argentina-for-first-time-visitors/",
-      "summary": "Buenos Aires, the vibrant and culturally rich capital city of Argentina, is a dynamic destination known for its unique blend of European charm and Latin American zest. With its world-renowned tango music and dance, exquisite Argentine cuisine—especially those succulent steaks—eclectic architecture spanning colonial to modern, and lively neighborhoods full of character, Buenos Aires has ...",
+      "id": "e4ce80aeeafbc7f1",
+      "title": "The Caribbean: Country Outlines - Flag Quiz Game - Seterra",
+      "url": "https://www.geoguessr.com/fl/2097",
+      "summary": "The Caribbean: Countries The Antilles: Islands The Caribbean: Capitals of Countries and Territories The Caribbean: Capitals The U.S.: 50 States Outlines The U.S.: States in New England",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -430,10 +1122,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7d953b49a70242bd",
-      "title": "Buenos Aires, Argentina: All You Must Know Before You Go (2026 ...",
-      "url": "https://www.tripadvisor.com/Tourism-g312741-Buenos_Aires_Capital_Federal_District-Vacations.html",
-      "summary": "Buenos Aires has a red-hot energy you can’t ignore. The city will wine and dine you with Malbec and unbelievably good steak, and keep you up ‘til dawn at clubs and dance halls. But there’s a low-key side that’s worth getting to know, too.",
+      "id": "2cf92af503df626f",
+      "title": "The Caribbean: Flags - Flag Quiz Game - Seterra - GeoGuessr",
+      "url": "https://www.geoguessr.com/fl/2019",
+      "summary": "Did you know that the triangles on Saint Lucia’s flag symbolize the island's twin volcanic peaks? What about the fact that Grenada’s flag sports a clove of nutmeg, one of the countries principal crops? Details like that can really help you recognize the flags of the Caribbean. Find a few more flag facts on your own, then use this engaging quiz game to lock in a visual connection to each ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -461,10 +1153,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "386753fea4b7ab98",
-      "title": "Buenos Aires: The definitive travel guide to Argentina's capital",
-      "url": "https://www.livemoretravelmore.com/buenos-aires/",
-      "summary": "Find out where Buenos Aires is, how to get there, why to visit, what the weather is like, how to exchange currency in Argentina, and tips for staying safe and practicing responsible tourism during your vacation.",
+      "id": "d70121b8cb180b14",
+      "title": "The Caribbean: Flags of Countries and Territories - Flag Quiz Game ...",
+      "url": "https://www.geoguessr.com/fl/2057",
+      "summary": "This quiz game challenges you to identify flags of Caribbean countries and territories. In the Jamaican flag, black represents the strength and creativity of the people, the gold hue depicts the nation's natural wealth and sunlight, while green stands for hope and agricultural bounty.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -492,12 +1184,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8282e6ced401f917",
-      "title": "Microsoft Project Online is retiring: What you need to know | Microsoft ...",
-      "url": "https://techcommunity.microsoft.com/blog/plannerblog/microsoft-project-online-is-retiring-what-you-need-to-know/4450558",
-      "summary": "After more than a decade of supporting project managers and teams around the world, Project Online will officially retire on September 30, 2026. We know...",
-      "discovery_channel": "developer+research",
-      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "id": "ae797044b25b96c3",
+      "title": "The Cloud vs. Chips: Meta Is Changing the AI Trade—Again",
+      "url": "https://www.barrons.com/articles/ai-stocks-meta-surges-chip-makers-tumble-4ec09cf3",
+      "summary": "The artificial intelligence trade, which has powered by the lion’s share of stock performance and corporate profit growth this year, hit a snag on Wednesday amid reports that Meta Platforms is ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -523,48 +1215,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1820ba00deee2865",
-      "title": "Oil Prices Today: WTI & Brent Crude Benchmarks",
-      "url": "https://www.oilpriceapi.com/oil-prices-today",
-      "summary": "Compare WTI and Brent crude oil benchmarks with source update times, historical charts and API access. Check each timestamp before using a price.",
+      "id": "202740be6a6a9f30",
+      "title": "10 \"Marco Alcazar\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Marco/Alcazar/es-0-Espa%C3%B1a",
+      "summary": "There are 10 professionals named \"Marco Alcazar\", who use LinkedIn to exchange information, ideas, and opportunities.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66d3d383227d67d0",
-      "title": "Trip to Buenos Aires: Travel Checklist for First Time Visitors",
-      "url": "https://secretsofbuenosaires.com/trip-to-buenos-aires-travel-checklist/",
-      "summary": "Comprehensive guide for your trip to Buenos Aires. Where to stay, how to save money, top things to do, transportation, and more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -574,10 +1233,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -587,18 +1245,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6fbacd105a9ea6b6",
-      "title": "Used Volkswagen cars for sale near Harlingen, TX",
-      "url": "https://www.cars.com/shopping/volkswagen/harlingen-tx/",
-      "summary": "Shop Volkswagen vehicles in Harlingen, TX for sale at Cars.com. Research, compare, save listings or contact sellers directly from 16 Volkswagen models in Harlingen, TX.",
+      "id": "7df2219d977b7ab0",
+      "title": "374 New 2026 & 2025 Volkswagen vehicles for Sale in Wisconsin ...",
+      "url": "https://www.boucher.com/new-vehicles/volkswagen/",
+      "summary": "New Volkswagen cars SUVs vans for sale at Boucher Auto Group in Wisconsin. Near Janesville, Racine and Kenosha, WI. View our VW specials, and take a test drive or shop online.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "research"
-      ],
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -607,8 +1263,188 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
         "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfb43286fd3a2eea",
+      "title": "82 New Volkswagen Cars, SUVs in Stock | Volkswagen of ...",
+      "url": "https://www.vwofmilwaukeenorth.com/new-vehicles/",
+      "summary": "With 82 new Volkswagen vehicles in stock, Volkswagen of Milwaukee North has what you're searching for. See our extensive inventory online now!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6236dce9cc2b420c",
+      "title": "About Classroom - Classroom Help - Google Help",
+      "url": "https://support.google.com/edu/classroom/answer/6020279?hl=en",
+      "summary": "About Classroom You can use Classroom in your school to streamline assignments, boost collaboration, and foster communication. Classroom is available on the web or by mobile app. You can use Classroom with many tools that you already use, such as Gmail, Google Docs, and Google Calendar. What can you do with Classroom? ... Related topics",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ea1531efc3d95803",
+      "title": "As the sun sets on our 2022 season, we’re looking back at all we’ve ...",
+      "url": "https://x.com/Vectorsport1/status/1595133323252465666",
+      "summary": "Vectorsport (@Vectorsport1). As the sun sets on our 2022 season, we’re looking back at all we’ve learned and forward to 2023 to put it into practice 🌅 #FIAWEC #VectorSport",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6bb4c41214924cfe",
+      "title": "Beaver Stadium (Penn State): 2026 Seating, Capacity & Tips",
+      "url": "https://gamedayguides.com/beaver-stadium-penn-state/",
+      "summary": "The complete Beaver Stadium guide: best seats, seating chart, capacity, parking, the $700M renovation and tips for Penn state gameday.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68c1d62f660c5d9a",
+      "title": "Beaver Stadium - Penn State Nittany Lions",
+      "url": "https://www.stadiumjourney.com/stadiums/beaver-stadium-s386",
+      "summary": "The home of the Nittany Lions is West Shore Home Field at Beaver Stadium. The stadium is named after James Beaver, a former governor and a past president of the Board of Trustees at the school. It is the third stadium to serve as the football home for the Penn State football program.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7fb2f77c6c5b36e",
+      "title": "Beaver Stadium - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beaver_Stadium",
+      "summary": "Beaver Stadium is a college football stadium on the campus of Pennsylvania State University in Penn State University Park. It has been home to the Penn State Nittany Lions football of the Big Ten Conference since 1960, though some parts of the stadium date back to 1909.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -620,10 +1456,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "115c00d16b75e424",
-      "title": "10-day weather forecast for Springfield Township, Ohio 45504, United ...",
-      "url": "https://weather.com/en-NA/weather/tenday/l/Springfield+OH+United+States?canonicalCityId=49406aa5895b5ff0d177d43a9a296831c1075ee838e5b47b830274ac72825329",
-      "summary": "Be prepared with the most accurate 10-day forecast for Springfield Township, Ohio 45504, United States with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
+      "id": "3ad802a4b5a07832",
+      "title": "Beaver Stadium A-Z Guide - Penn State - Official Athletics Website",
+      "url": "https://gopsusports.com/beaver-stadium-a-z-guide",
+      "summary": "Please help us keep West Shore Home Field at Beaver Stadium and Penn State University beautiful. Tailgate Ambassadors will be in and around the stadium lots on game days.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -650,10 +1486,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "042e6171e48dc706",
-      "title": "10-Day Weather Forecast for Springfield, Ohio - The Weather Channel",
-      "url": "https://weather.com/us/ohio/city/springfield/tenday",
-      "summary": "Be prepared with the most accurate 10-day forecast for Springfield, Ohio with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
+      "id": "d9f8e5f963d350b9",
+      "title": "Beaver Stadium Capacity To Approach 109,000 For 2026-27 Season",
+      "url": "https://onwardstate.com/2026/06/25/beaver-stadium-capacity-to-approach-109000-for-2026-27-season/",
+      "summary": "The second biggest stadium in America will soon have a new title. Beaver Stadium is in the midst of a $700 million revitalization project that will bring new life to Penn State football’s historic home.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -680,70 +1516,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c380ac0021c82a1d",
-      "title": "28 is What Percent of 52? - CalculateMe.com",
-      "url": "https://www.calculateme.com/math/calculate-a-percent/what-percent-of-52/28",
-      "summary": "Divide 28 by 52. 2. Then multiply by 100. 28 is what percent of 52? Use this calculator to find 28/52 as a percentage.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c69d332c397f1efd",
-      "title": "28/52 as a percentage - calculator.name",
-      "url": "https://calculator.name/28over52-as-a-percentage",
-      "summary": "28/52 of an hour is 32 minutes 18 seconds — the figure a timesheet in decimal hours is hiding. Payroll systems usually round decimal hours to the nearest hundredth, so 0.54 h is what would be recorded.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2ba0e88ba95734b2",
-      "title": "7-Day Weather forecast for Springfield, OH",
-      "url": "https://weathershogun.com/weather/usa/oh/springfield/sevendays/5474",
-      "summary": "Latest 7-Day Weather forecast for Springfield, Ohio. Includes daily highs, lows, and probability of precipitation.",
+      "id": "6045f09f90c2eaee",
+      "title": "Beaver Stadium Revitalization - Penn State Athletics",
+      "url": "https://gopsusports.com/beaverstadiumrenovation",
+      "summary": "West Shore Home Field at Beaver Stadium transformed into a winter wonderland as 74,575 fans filled the venue for a historic outdoor hockey game against Michigan State in the middle of the...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -770,163 +1546,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8dabeacc5d9c090e",
-      "title": "Advice and doubt about RulesEngine : r/csharp - Reddit",
-      "url": "https://www.reddit.com/r/csharp/comments/uxpg27/advice_and_doubt_about_rulesengine/",
-      "summary": "I would add that the development lifecycle is also impacted. Instead of having the rules and the code in one source control system you now have to “find the right database for the current version of the code” That is unavoidable if end-users define the rules but if they come from the developers or someone working closely with them it is much more complicated to test and maintain. Reply ...",
+      "id": "52ed1b71b9375597",
+      "title": "Beaver Stadium Seating Chart – 3D Views | Nittany Lions",
+      "url": "https://seatseven.io/college-football/beaver-stadium/",
+      "summary": "See the real 3D view from your seat at Beaver Stadium before you buy. Every deck and section mapped — Penn State Nittany Lions, 2026 season.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "sdk",
-        "community"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f7d00cc4531e8448",
-      "title": "BackgroundTaskHost.exe in Windows 11 : r/Windows11 - Reddit",
-      "url": "https://www.reddit.com/r/Windows11/comments/1dhnnk5/backgroundtaskhostexe_in_windows_11/",
-      "summary": "Not a programmer (but a long time in support): I’d guess it’s a Microsoft executive that allowed people to offload some of the effort writing a program that runs in the background. I’d be looking at using something like ProcessExplorer.exe to see if the instances of BackgroundTaskHost.exe has a parent process. You can also see the commandLine options used and that might give you an idea ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cdf178ba23e72488",
-      "title": "Crude Oil Price (Brent) Today: $123.10 (Oct 2026) — Chart & History",
-      "url": "https://www.macroradar.io/brent-crude-price",
-      "summary": "Crude Oil Price (Brent) today: $123.10, as of Oct 2026. Track the Brent crude oil spot price in USD per barrel with daily data back to 1987. The international oil benchmark, with its full published history.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a646b30c6f966665",
-      "title": "Crude Oil Price Today: November 2, 2026 – Forbes Advisor",
-      "url": "https://www.forbes.com/advisor/investing/oil-prices-today/",
-      "summary": "What Is the Price of Crude Oil Today? West Texas Intermediate (WTI) futures opened at $104.15 per barrel (bbl) on November 2, 2026. Brent crude opened at $113.42 per barrel.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74a95f9e838ec1a0",
-      "title": "Crude Oil Prices Today | OilPrice.com",
-      "url": "https://oilprice.com/",
-      "summary": "Oil price charts for Brent Crude, WTI & oil futures. Energy news covering oil, petroleum, natural gas and investment advice.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3598057b0360d176",
-      "title": "Crude Oil Prices Today: Live WTI & Brent | OilPrice.net",
-      "url": "https://oilprice.net/oil",
-      "summary": "Track today's live WTI and Brent crude oil prices per barrel, interactive charts, the Brent-WTI spread, inventory signals, and daily oil market analysis.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -951,250 +1576,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "49630fafabbecf25",
-      "title": "Global.RulesEngine in task manager : r/techsupport - Reddit",
-      "url": "https://www.reddit.com/r/techsupport/comments/1as5y8y/globalrulesengine_in_task_manager/",
-      "summary": "Hello! I was hoping for some info on a task running in task manager if at all possible! I've noticed this one pop up a few times but it always felt a little weird to me, the icon for it is a blue square with a white X through it, then it has a dropdown for \"Microsoft Text Input Application\" I tried googling Global.RulesEngine but I couldn't find anything that stood out on what exactly it was ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8665f2906b9b5bc",
-      "title": "I got some malware installed by accident recently and a ... - Reddit",
-      "url": "https://www.reddit.com/r/techsupport/comments/snoeqs/i_got_some_malware_installed_by_accident_recently/",
-      "summary": "I got some malware installed by accident recently and a process called Reason Security Engine is continuously using about 50% of my CPU. How should I delete it? : r/techsupport Go to techsupport r/techsupport r/techsupport",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "02d8cb173d66c278",
-      "title": "Live Oil Market Dashboard | Energy Prices Updated",
-      "url": "https://www.oilpriceapi.com/live/oil-market-status",
-      "summary": "Energy market dashboard with live oil and natural gas prices, and the real 24-hour change for each. Prices are updated regularly; a commodity whose 24-hour change we cannot source shows no change at all rather than an estimated one. Last updated:Nov 2, 2026, 5:01 PMGMT",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bea3a8639f941f32",
-      "title": "Microsoft RulesEngine. Feedback from those that have used it in ...",
-      "url": "https://www.reddit.com/r/dotnet/comments/vq5280/microsoft_rulesengine_feedback_from_those_that/",
-      "summary": "Microsoft RulesEngine. Feedback from those that have used it in enterprise environments : r/dotnet Go to dotnet r/dotnet r/dotnet",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c611ec294ecb8caf",
-      "title": "Microsoft's RulesEngine : r/dotnet - Reddit",
-      "url": "https://www.reddit.com/r/dotnet/comments/1bpctba/microsofts_rulesengine/",
-      "summary": "I currently have an application that uses Microsoft's RulesEngine where the rules are hosted as JSON in an external service so that rules can be changed without the need for a code change. I am re-writing the application in Java and wondering if anyone with Java experience has a suggestion for a very similar rules engine that supports JSON. I've looked over a couple and Drool seems like the ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "04f1539504e69537",
-      "title": "Oil Price Charts: WTI, Brent, Natural Gas & Fuels",
-      "url": "https://worldoilmonitor.com/oil-price-charts",
-      "summary": "Oil Price Charts WTI crude closed at $96.80 and Brent at $104.94 on Nov 2, 2026. WTI is +6.2% over the past month and +59% over the past year; Brent is +2.6% and +62%. Pick a market and a range below, from one week to the full futures history, with 52-week highs and lows in the table.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fb4ee07afab90925",
-      "title": "OIL PRICE FORECAST 2026, 2027, 2028 AND 2029",
-      "url": "https://longforecast.com/oil-price-today-forecast-2017-2018-2019-2020-2021-brent-wti",
-      "summary": "Oil price forecast for 2026, 2027, 2028, 2029, 2030. Crude oil price today and predictions. Brent and WTI price forecast by month in tables. Crude oil Brent price forecast for next months and years.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eb285d984daf99c1",
-      "title": "Oil Prices Today: WTI $96.87 · Brent $105.53 · Gas $2.90 | Valor",
-      "url": "https://www.onevalor.com/oil-gas-prices/",
-      "summary": "Oil prices today (as of 2026-11-02): WTI $96.87, Brent $105.53, Henry Hub natural gas $2.90/MMBtu — front-month futures (NYMEX WTI, ICE Brent, NYMEX Henry Hub), with what they mean for your royalty check.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4f4cfe1d572387dc",
-      "title": "Payne Brownsville Volkswagen | New & Certified Pre-Owned VWs in ...",
-      "url": "https://paynebrownsvillevolkswagen.com/",
-      "summary": "Discover new and certified pre-owned Volkswagens at Payne Brownsville Volkswagen, your trusted VW dealer in Brownsville, TX. Enjoy exclusive deals, top-notch service, and genuine VW parts—all in one place.",
+      "id": "61187481e5d87762",
+      "title": "Boucher Volkswagen of Franklin | VW dealership in Franklin ...",
+      "url": "https://www.vwfranklin.com/",
+      "summary": "At our trusted new and used car dealer in Franklin, WI, you can explore a wide range of new Volkswagen vehicles, including the Passat, Golf, Jetta, Tiguan, and more.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1221,12 +1606,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2ee7828a3f15dcf9",
-      "title": "Percentage Calculator",
-      "url": "https://percentagecalculator.org/",
-      "summary": "Free percentage calculator with three live tools: find the percentage of a number, what percent one number is of another, and percentage increase or decrease. Updates instantly as you type, with worked examples and FAQs.",
+      "id": "16505e0519117ed4",
+      "title": "BourdaisOnTrack⁩ being warmly greeted by 200 readers of ⁦@lemainelibre ...",
+      "url": "https://x.com/Vectorsport1/status/1533801819767558146",
+      "summary": "Vectorsport (@Vectorsport1). ⁦@BourdaisOnTrack⁩ being warmly greeted by 200 readers of ⁦@lemainelibre⁩ at the ⁦@MMArenaOfficiel⁩ in Le Mans for a really interesting Q&A ⁦@Vectorsport1⁩ ⁦@24hoursoflemans⁩ ⁦@FIAWEC⁩",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1251,10 +1636,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e210d24322cd3678",
-      "title": "Percentage Calculator",
-      "url": "https://percentagecalculator.co/",
-      "summary": "Calculator or tool that uses the percentage formula to solve for a desired value in that formula. The percentage formula contains three variables. If any two of the variables are known, the third variable can be calculated.",
+      "id": "8ce68979853399fb",
+      "title": "Classroom にログインする - パソコン - Classroom ヘルプ",
+      "url": "https://support.google.com/edu/classroom/answer/6072460?hl=ja&co=GENIE.Platform%3DDesktop",
+      "summary": "ログインする前に ログインするには、インターネットに接続している必要があります。 Classroom へのログイン方法をご存知の場合は、 classroom.google.com にアクセスしてください。 ログイン方法がわからない場合は、次の手順を行います。",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1281,10 +1666,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bef2b660da94d0e5",
-      "title": "Percentage Calculator (%) - RapidTables.com",
-      "url": "https://www.rapidtables.com/calc/math/percentage-calculator.html",
-      "summary": "Percentage calculator (%) - calculate percentage with steps shown free online.",
+      "id": "6d180759ba42244a",
+      "title": "Control user access to Classroom - Google Help",
+      "url": "https://support.google.com/edu/classroom/answer/6023715?hl=en",
+      "summary": "This article is for Google Workspace administrators. As a Google Workspace administrator, use the Google Admin console to give teachers and students access to Classroom. About user accounts User ac",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1311,10 +1696,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4fd196d8a51c524f",
-      "title": "Question: 28 is what percent of 52? - Percentage Calculator",
-      "url": "https://percentage-calculator.net/x-is-what-percent-of-y/28-is-what-percent-of-52.php",
-      "summary": "This leaves us with our final answer: 28 is 53.846 percent of 52. 28 is what percent of 52? With this Percentage Calculator, you will get the quick answer and step by step guide on how to solve your percentage problems with examples.",
+      "id": "e53fc32d2fc9802b",
+      "title": "Create a class - Computer - Classroom Help - Google Help",
+      "url": "https://support.google.com/edu/classroom/answer/6020273?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "Your Google Workspace administrator can create classes for you and add students to them. To activate a provisioned class so it’s visible to students and co-teachers, you have to sign in to Classroom and accept the class.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1329,9 +1714,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1341,12 +1726,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "75e50b087571a262",
-      "title": "Springfield Weather, Ohio — 14-Day Forecast",
-      "url": "https://weatheo.com/en/us/ohio/springfield",
-      "summary": "Springfield, Ohio: sunny, 19° / 11° today. Hourly and 14-day forecast, rainfall, wind, air quality and sunrise times.",
+      "id": "125f85b88c607691",
+      "title": "Create a question - Computer - Classroom Help - Google Help",
+      "url": "https://support.google.com/edu/classroom/answer/6020293?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "Classroom makes a copy to attach to the question and saves it to the class Drive folder. To post the question immediately, click Ask. To schedule the question to post later: Follow the steps above to create a question and select classes. To schedule the same question across multiple classes, make sure to select all classes you want to include.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1359,9 +1744,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1371,280 +1756,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7d7a6d029f135ad1",
-      "title": "Springfield, OH 10-Day Weather Forecast | Weather Underground",
-      "url": "https://www.wunderground.com/forecast/us/oh/springfield",
-      "summary": "Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for the Springfield area.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ce9b8709d0e35c6",
-      "title": "Springfield, OH 10-Day Weather Forecast | WeatherBug",
-      "url": "https://www.weatherbug.com/weather-forecast/10-day-weather/springfield-oh-45504",
-      "summary": "Plan your week with the help of our 10-day weather forecasts and weekend weather predictions for Springfield, OH",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "31c1268f807ef23a",
-      "title": "Springfield, OH 10-Day Weather | AccuWeather",
-      "url": "https://www.accuweather.com/en/us/springfield/45502/10-day-weather-forecast/330116",
-      "summary": "Know what's coming with AccuWeather's extended daily forecasts for Springfield, OH. Up to 90 days of daily highs, lows, and precipitation chances.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea344f488d318723",
-      "title": "Springfield, OH 7 Days Weather - The Weather Network",
-      "url": "https://www.theweathernetwork.com/en/city/us/ohio/springfield/7-days",
-      "summary": "See the Springfield, OH extended weather forecast including feels like temperature, wind gust and chance of rain or snow from TheWeatherNetwork.com",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4be099434ebd7a0d",
-      "title": "Springfield, OH 7-day weather forecast - Weather World",
-      "url": "https://www.weatherworld.com/7dayweather/oh/springfield.html",
-      "summary": "Get the latest Springfield, OH weather forecast with accurate updates on temperature, rain & more. Stay prepared, check your local forecast now!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "26e9a9fd34beb204",
-      "title": "Springfield, Ohio Weather Forecast | 7-Day Outlook & Conditions - Ag Wx",
-      "url": "https://agweather.com/v3/local/ohio/springfield",
-      "summary": "Springfield, OH weather: high 72°, low 51°, 12% rain chance today. 7-day forecast, hourly outlook, radar, alerts and growing conditions.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a97bc6969a8337e4",
-      "title": "Task Manager sometimes lists unrelated processes, including ... - Reddit",
-      "url": "https://www.reddit.com/r/Windows11/comments/12jh5bg/task_manager_sometimes_lists_unrelated_processes/",
-      "summary": "Task Manager sometimes lists unrelated processes, including critical system processes, under \"Microsoft Edge.\" As a result, trying to end \"Microsoft Edge\" in this state will instead end up in a blue screen : r/Windows11 Go to Windows11 r/Windows11 r/Windows11",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88498c295251eef9",
-      "title": "Used Volkswagen Cars for Sale near Harlingen, TX - CarGurus",
-      "url": "https://www.cargurus.com/Cars/l-Used-Volkswagen-Harlingen-m55_L34829",
-      "summary": "Browse the best October 2026 deals on Volkswagen vehicles for sale in Harlingen, TX. Save $10,624 right now on a Volkswagen on CarGurus.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c9784e8aaa734def",
-      "title": "Virus or normal process ? : r/techsupport - Reddit",
-      "url": "https://www.reddit.com/r/techsupport/comments/158txp0/virus_or_normal_process/",
-      "summary": "I gotta be honest, I download some pretty wild things on my computer but not that weird (mostly from official websites) but now my instagram got…",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4af55dc7ff5c8fdd",
-      "title": "Volkswagen Harlingen - Charlie Clark Harlingen",
-      "url": "https://www.charlieclarknissanharlingen.com/volkswagen-harlingen/",
-      "summary": "Here at the Charlie Clark Nissan showroom in Harlingen we can promise you the finest selection of quality new Nissan vehicles and preowned vehicles from Nissan and other automakers that you’ll find anywhere in Harlingen and maybe even throughout the entirety of Texas.",
+      "id": "899c7621a1b6f33d",
+      "title": "Ewald Volkswagen of Menomonee Falls, New and Used Volkswagen ...",
+      "url": "https://www.ewaldvw.com/",
+      "summary": "Welcome to Ewald Volkswagen of Menomonee Falls in Menomonee Falls, WI. Shop new Volkswagen and used vehicles, finance, service, and more today!",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1671,10 +1786,100 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "75d1993d8db91adc",
-      "title": "What is 28 out of 52 as a percentage? - The Percentage Calculator",
-      "url": "https://thepercentagecalculator.net/outof/what-is-28-out-of-52-as-a-percentage.html",
-      "summary": "28 ÷ 52 ≈ 0.5385. Then, we multiplied the answer from the first step by one hundred to get the answer as a percentage: 0.5385 × 100 = 53.85% We can prove that the answer is correct by taking 53.85 percent of 52 to get 28: (52 × 53.85) ÷ 100 ≈ 28. Note that our calculator rounds the answers up to two decimals if necessary.",
+      "id": "d334bbc16aa271ec",
+      "title": "Find an archived class in Google Classroom",
+      "url": "https://support.google.com/edu/classroom/answer/6149820?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "Archiving a class removes it from your Classroom homepage. You can still access class materials in the class Google Drive folder. Only teachers can archive or delete a class. If you want to remove a class from your homepage, you have to unenroll from a class. You can’t unenroll from an archived class.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0479530c3a0a0154",
+      "title": "Flock Camera Locations in Tampa, FL — Live Map | Flock Camera ...",
+      "url": "https://flockcameralocations.com/locations/florida/tampa",
+      "summary": "The live map below is centered on Tampa, Florida and shows every Flock Safety camera and automated license plate reader (ALPR) reported nearby. Tap any red dot for details, or use find cameras near me to jump to your exact spot.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62240766151f2bc2",
+      "title": "Florida Traffic Cameras | View Live Florida Traffic Cameras ...",
+      "url": "https://fl511.com/cctv",
+      "summary": "Video and images are neither stored nor recorded.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "975c6ed0995e4277",
+      "title": "Google Classroom Announcements - Classroom Help",
+      "url": "https://support.google.com/edu/classroom/announcements/11339434?hl=en",
+      "summary": "Google Classroom Announcements Learn more about updates in Google Classroom Stay informed about the new Classroom feature updates and improvements when you visit our Workspace blog.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1701,42 +1906,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6bf383fcbfcd0329",
-      "title": "What is 28/52 as a percent? - Calculatio",
-      "url": "https://calculat.io/en/number/percentage/28--52",
-      "summary": "How do you check that 28 out of 52 is 53.85%? Take 53.85% of 52: 52 × 53.85 ÷ 100 ≈ 28. The percentage is rounded, so the check lands next to 28 rather than exactly on it.",
+      "id": "c59fcd3b99899348",
+      "title": "Google classroom: the bane of my existence : r/teaching - Reddit",
+      "url": "https://www.reddit.com/r/teaching/comments/t81jxs/google_classroom_the_bane_of_my_existence/",
+      "summary": "Second Alice Keeler — her add-on to mass-transfer assignments is clutch. I made a separate google classroom for each of my units so now I can quickly go in and repost them to my actual classes as the semester progresses — saves an enormous amount of time scrolling through the “reuse post” list. Reply reply drrockgrrl •",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9845720543d24cb3",
-      "title": "What is this program that is in my task manager? - Reddit",
-      "url": "https://www.reddit.com/r/techsupport/comments/c6u7um/what_is_this_program_that_is_in_my_task_manager/",
-      "summary": "There is a program running called wusvcs. I tried looking it up and I'm not sure if it could possibly be a virus? Or is it a regular process? Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A Add a Comment krilu •",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1761,12 +1936,702 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b0cebd6745c1f457",
-      "title": "World Oil Monitor — Live Oil Prices, Futures & Energy Data",
-      "url": "https://worldoilmonitor.com/",
-      "summary": "Live WTI & Brent crude prices, EIA fundamentals, the WTI forward curve, global benchmarks, strategic reserves and energy news — updated continuously.",
+      "id": "30afb73ddac2a45c",
+      "title": "Kuehne+Nagel - LinkedIn",
+      "url": "https://www.linkedin.com/company/kuehne-nagel",
+      "summary": "At Kuehne+Nagel, we support the flow of goods that drives global trade. We move goods around the world and manage what happens before and after the journey, from storage and fulfilment to...",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8bf27c0c315f7e3",
+      "title": "Manage notifications - Android phone & tablet - Classroom Help",
+      "url": "https://support.google.com/edu/classroom/answer/6141557?hl=en&co=GENIE.Platform=Android",
+      "summary": "Guardians, go to About guardian email summaries. By default, you get email notifications for some activities, such as when someone comments on your post or your teacher returns work. Students and teachers can change their notification settings at any time. If you use Classroom on a mobile device, you need to update the settings on your device ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c73d314c4254757",
+      "title": "Marco A. Chavez Hernandez - Kuehne+Nagel | LinkedIn",
+      "url": "https://mx.linkedin.com/in/marco-a-chavez-hernandez-8432a8bb",
+      "summary": "With more than 15 years of leadership experience in contract logistics and supply chain, I have led large-scale operations across Mexico and international markets, building high-performance teams,...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "811bfef1626d1a66",
+      "title": "Marco Alcáazr Ballesteros Email & Phone Number - .. | ZoomInfo",
+      "url": "https://www.zoominfo.com/p/Marco-Alcaazr-ballesteros/-1534076235",
+      "summary": "View Marco Alcáazr Ballesteros's business profile as Responsable De Calidad Planta Getafe Airbus DS (Militar Y Cassidian) at Kuehne + Nagel. Find contact's direct phone number, email address, work history, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bdaf0a3310901ed7",
+      "title": "Marco Alcázar - Consejero de seguridad ADR , IATA en Kuehne+Nagel ...",
+      "url": "https://es.linkedin.com/in/marco-alc%C3%A1zar-2a87b487",
+      "summary": "Mira el perfil de Marco Alcázar en LinkedIn, una red profesional de más de 1.000 millones de miembros.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "094eb4c677a4b13d",
+      "title": "Marco Antonio Alcáazr Ballesteros - Responsable de calidad Planta ...",
+      "url": "https://www.linkedin.com/in/marco-antonio-alc%C3%A1azr-ballesteros-502a699a",
+      "summary": "View Marco Antonio Alcáazr Ballesteros’ profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53e3c4b80a3dd1be",
+      "title": "Marco Claassen - Perishable airfreight manager at Kuehne + Nagel NV ...",
+      "url": "https://nl.linkedin.com/in/marco-claassen-1065016",
+      "summary": "Perishable airfreight manager at Kuehne + Nagel NV · Ervaring: Kuehne+Nagel · Locatie: Uithoorn · 500+ connecties op LinkedIn. Bekijk het profiel van Marco Claassen op LinkedIn, een...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a727c4751fe7f9b",
+      "title": "Marco Ortega - FTZ Specialist en Kuehne+Nagel | LinkedIn",
+      "url": "https://www.linkedin.com/in/marco-ortega-3a50863a1",
+      "summary": "View Marco Ortega’s profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b4a971d842193c5",
+      "title": "Marco Valadez - Kuehne+Nagel | LinkedIn",
+      "url": "https://mx.linkedin.com/in/marco-valadez-93226270",
+      "summary": "Experiencia: Kuehne+Nagel · Educación: Universidad Nacional Autónoma de México · Ubicación: Lomas de Tarango · Más de 500 contactos en LinkedIn. Ver el perfil de Marco Valadez en...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f98dece65200e652",
+      "title": "marco vazquez - material handler at Kuehne + Nagel | LinkedIn",
+      "url": "https://www.linkedin.com/in/marco-vazquez-815854106",
+      "summary": "material handler at Kuehne + Nagel · Experience: Kuehne + Nagel · Location: Glendale. View marco vazquez’s profile on LinkedIn, a professional community of 1 billion members.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5511078d1d51941f",
+      "title": "New Isotta Fraschini Tipo 6 Competizione Hypercar revealed in Milan ...",
+      "url": "https://x.com/Vectorsport1/status/1630592651744387073",
+      "summary": "Vectorsport (@Vectorsport1). 368 likes 3 replies. New Isotta Fraschini Tipo 6 Competizione Hypercar revealed in Milan this afternoon. @Vectorsport1 will run and manage the car in @FIAWEC - a mid season debut is currently planned.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b05be38f6c98f082",
+      "title": "Penn State fans won’t believe what they see when they walk into Beaver ...",
+      "url": "https://www.pennlive.com/pennstatefootball/2026/08/penn-state-fans-wont-believe-what-they-see-when-they-walk-into-beaver-stadium-this-fall.html",
+      "summary": "Penn State fans are in for some major surprises Sept. 5 when they enter the new-look Beaver Stadium for the season opener against Marshall. Gone are the temporary steel bleachers that...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f60b292b9ae4ce49",
+      "title": "They really attacked Google Classroom lmao : r/Genshin_Impact - Reddit",
+      "url": "https://www.reddit.com/r/Genshin_Impact/comments/py7idk/they_really_attacked_google_classroom_lmao/",
+      "summary": "From my lecturer friends g classroom sucks a lot, but these people are blocking those legit reviews asking Google to change stuff. Really stupid",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "83920666d3db39e0",
+      "title": "Vector Sport has already entered into positive negotiations with ...",
+      "url": "https://x.com/Vectorsport1/status/1729065946403438788",
+      "summary": "Vectorsport (@Vectorsport1). 99 likes. Vector Sport has already entered into positive negotiations with another manufacturer for 2025, and has registered for entry to 2024 @EuropeanLMS 2 of 2",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "702fbc44703f4b33",
+      "title": "Vectorsport on X: \"@FiMillerPR @StefRichelmi @PatrickPilet ...",
+      "url": "https://x.com/Vectorsport1/status/1802268691234505200",
+      "summary": "@FiMillerPR @StefRichelmi @PatrickPilet @24hoursoflemans @RyanCullenRace",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd96e4e5eeafa24f",
+      "title": "Vectorsport on X: \"Caption this",
+      "url": "https://x.com/Vectorsport1/status/1778495960907206665",
+      "summary": "Caption this 📸",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db91a1b8c5074bfc",
+      "title": "Vectorsport on X: \"Prep over now, ready for FP1 and 2 tomorrow. #6HFuji ...",
+      "url": "https://x.com/Vectorsport1/status/1699745154557530485",
+      "summary": "Vectorsport @Vectorsport1 Prep over now, ready for FP1 and 2 tomorrow. #6HFuji #WEC #LMP2 11:23 AM · Sep 7, 2023 878Views 2 29",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9343f68194f2b2ec",
+      "title": "Volkswagen Dealership | Used Car Dealer in Milwaukee, WI ...",
+      "url": "https://www.vwofmilwaukeenorth.com/",
+      "summary": "Discover Volkswagen of Milwaukee North, your trusted VW dealership in Milwaukee, WI. Explore a full inventory of new and certified pre-owned Volkswagen models, reliable service, and flexible financing options.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ea804dc08b9077d9",
+      "title": "Volkswagen of Milwaukee North | Umansky Motor Cars",
+      "url": "https://www.umanskymotorcars.com/locations/volkwagen-of-milwaukee-north.htm",
+      "summary": "Authorized VW dealer in Milwaukee, WI. New Volkswagen models, certified pre-owned, and expert service. Serving Milwaukee's North Shore.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ce736de9c6c88d7",
+      "title": "What We Saw During a Tour of Penn State's Renovated Beaver Stadium",
+      "url": "https://www.si.com/college/pennstate/football/what-we-saw-during-tour-of-penn-state-renovated-beaver-stadium",
+      "summary": "With the final beam in place, Penn State is giving tours of what Athletic Director Pat Kraft called a \"superstructure\" ahead of the Sept. 5 opener against Marshall. We recently took a walking...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc3fc351b4807edb",
+      "title": "What's New at Penn State's Beaver Stadium for 2026?",
+      "url": "https://www.si.com/college/pennstate/football/whats-new-at-penn-state-s-beaver-stadium-for-2026",
+      "summary": "According to Penn State, here's what's new at Beaver Stadium for the 2026 season, which begins Sept. 5 against Marshall:",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d405274ebc08f822",
+      "title": "X on X / X",
+      "url": "https://x.com/Vectorsport1/status/1532413854638030852",
+      "summary": "X on X See what’s happening and join the conversation",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "578e7d989fc918da",
+      "title": "Your health is important, physical or mental, and today we shine a ...",
+      "url": "https://x.com/Vectorsport1/status/1579540679277285377",
+      "summary": "Your health is important, physical or mental, and today we shine a light on mental health and how crucial it is to take it seriously. The family of motorsport is full of a diverse range of people who are always willing to talk. #MentalHealthDay #MentalHealthAwareness VectorsportVectorsport1 Oct 10",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "25703b097f22d487",
+      "title": "【LIVE】 Webcam Tampa - Florida | SkylineWebcams",
+      "url": "https://www.skylinewebcams.com/en/webcam/united-states/florida/tampa/tampa.html",
+      "summary": "Discover a vibrant city in Florida, through our Tampa live cam feed! Tampa is famous for its stunning beaches bathed in the warm waters of the Gulf of Mexico. The city also offers a vibrant cultural scene.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
