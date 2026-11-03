@@ -1,29 +1,27 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-02T20:24:22+00:00**
+Generated: **2026-11-03T17:54:03+00:00**
 
-- Published evidence-backed answers: **224** (minimum **1000**, no ceiling)
-- Remaining to minimum: **776**
-- Canonical registry size: **335** (not the published count)
-- Unanswered research candidates: **54**
-- Observations this run: **82**
-- New distinct questions: **5**
+- Published evidence-backed answers: **229** (minimum **1000**, no ceiling)
+- Remaining to minimum: **771**
+- Canonical registry size: **343** (not the published count)
+- Unanswered research candidates: **52**
+- Observations this run: **84**
+- New distinct questions: **3**
 
 ## Source health
 
 - github_issues: ok — 16 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 39 observations
+- reddit_rss: partial — 41 observations
 - google_search_console: ok — 7 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000331** — Has anyone here used smart glasses as assistive technology?
-- **Q-000332** — Is Nimo a Scam?
-- **Q-000333** — which smart glasses are actually open for third party apps right now?
-- **Q-000334** — When do you think we’ll get AR + AI smart glasses capable of guiding a complete novice through home renovation and DIY construction?
-- **Q-000335** — what are the smart glasses with display
+- **Q-000341** — Best wired video glasses if you only care about watching movies?
+- **Q-000342** — Should smart glasses work with the apps we already use?
+- **Q-000343** — No camera, no speakers, $450+: are HUD-only frames actual smart glasses or just expensive notification screens?
 
 ## Research queue (first 20)
 
