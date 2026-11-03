@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-03T12:31:53.907463+00:00`
+Generated: `2026-11-03T15:20:40.106367+00:00`
 
-- Intake files inspected: **253**
-- Candidates retained in this review window/history: **10129**
+- Intake files inspected: **251**
+- Candidates retained in this review window/history: **10043**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 2003
+- `adjacent_radar`: 1969
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 538
-- `rejected_noise`: 7507
-- `source_review`: 44
-- `watching`: 22
+- `needs_editorial_verification`: 534
+- `rejected_noise`: 7458
+- `source_review`: 46
+- `watching`: 21
 
 ## Action queue
 
@@ -28,7 +28,6 @@ Generated: `2026-11-03T12:31:53.907463+00:00`
 | high | needs_editorial_verification | direct | [Google and XREAL launch AURA glasses with Android XR and 120 Hz Sony Micro-OLED displays - mobidevices.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5aSFZsNVF0VVd4cGtmUkpYMndpdnNFZ1RiU0paOTdFU0lRVDUxNTF0QURQZFNTNS1DNzJENE5OM3otUnR6SGNxX2RobEV0Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Just Arsenal, Ray Parlour and AI Glasses: Fun At The Oakley Meta Partnership Launch - Just Arsenal News](https://news.google.com/rss/articles/CBMitwFBVV95cUxOaTJ2WjQ3ZTJNbmMxMWhJdHRLUUpfRFNibjg3Um9DMjRld1RKeklZNlVzck9xc0ZSLXVQVzB6bHNTOFVhQkVwRUtIbGZMQmpfOGd1cGhSdlZidEZYWU1KcDR6Vkd2XzVKbFlJNnhRbDdfaXRoYjV1OG9fUUk1UnJ6UGVwZnlSclVEYjhQSnZGTTBrOHNPTWd6QUc3ZzZpalZZU21JZHhpeHNocVR5eUE1UzlfZjl1V0HSAbwBQVVfeXFMTXV2TlhRVkM3d3VfMm9Pd0llcXpaSHE5M3FJN09yS1E0aE1WekpZN0h1THhpeFlfa1Y1cVR6NmljMlpRaWtMeU5mY3FWanppVDhtNkJIaklITy1feW94elBpeXdIV2tEYXQ5LWNaazJZMGxSRmk0MDlDaGhHRHNyc0pkMFNFUXhXUzJvTS1iQzhIUkJYWno4djQ3MlhzdjNIZkxDRFA4NDV3MWJzMDFrMURuSUxDVGhQM2pvbXo?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Just Arsenal, Ray Parlour and AI Glasses: Fun At The Oakley Meta Partnership Launch - Just Arsenal News](https://news.google.com/rss/articles/CBMivAFBVV95cUxNdXZOWFFWQzd3dV8yb093SWVxelpIcTkzcUk3T3JLUTRoTVZ6Slk3SHVMeGl4WV9rVjVxVHo2aWMyWlFpa0x5TmZjcVZqemlUOG02QkhqSUhPLV95b3h6UGl5d0hXa0RhdDktY1prMlkwbFJGaTQwOUNoaEdEc3JzSmQwU0VReFdTMm9NLWJDOEhSQlhaejh2NDcyWHN2M0hmTENEUDg0NXcxYnMwMWsxRG5JTENUaFAzam9tetIBvAFBVV95cUxNdXZOWFFWQzd3dV8yb093SWVxelpIcTkzcUk3T3JLUTRoTVZ6Slk3SHVMeGl4WV9rVjVxVHo2aWMyWlFpa0x5TmZjcVZqemlUOG02QkhqSUhPLV95b3h6UGl5d0hXa0RhdDktY1prMlkwbFJGaTQwOUNoaEdEc3JzSmQwU0VReFdTMm9NLWJDOEhSQlhaejh2NDcyWHN2M0hmTENEUDg0NXcxYnMwMWsxRG5JTENUaFAzam9teg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1005](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1005) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1027](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1027) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1031](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1031) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1032](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1032) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -44,9 +43,6 @@ Generated: `2026-11-03T12:31:53.907463+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1168](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1168) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1188](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1188) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1237](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1237) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1003](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1003) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1004](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1004) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1006](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1006) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1008](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1008) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1009](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1009) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1011](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1011) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -259,6 +255,7 @@ Generated: `2026-11-03T12:31:53.907463+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s Intelligent Eyewear set to launch in the US and South Korea this December - Sammy Fans](https://news.google.com/rss/articles/CBMivAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZdIBvAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Intelligent Eyewear Smart Glasses Could Launch Next Month - Android Headlines](https://news.google.com/rss/articles/CBMikwFBVV95cUxQaU1ONDgwOEJmRWZkVThabkpPQWJQalpON2hWNW5OOHZKbU1lQzJ5UGRCNWdjY0xIeU5Tb0dTbDZKdGN5Q2pfZWlkNU5nZE83NXNDNENodTdMUUtTc0JyV1EzRjBWRXl0NlhKLU5hcURhSVBROHBsU1J2dDBCYnNCMWRfVE1VSjBIQjRiT0N1Z3JFWTA?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Rumored to Launch Mid-December - Phandroid](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDl2MjRnOTJpRU9GT1d0eHRIak9pU29vaUR6T1Y5SC1YLXZQV1BGYjYyUWpCYnN6S1RERHozc1ZnQldkbGFwa1dhWVlrNDVJWG5NSDBUZF9PNnFfUFBNSDZhOFlUcnhPRVExSHJLTVpHOUV4LUdhbF84UEdwVVhuYTMtdXZFQVM0RzZWZk5BQ2TSAZYBQVVfeXFMTmhZdWRaaTIyY3hqY24tXzVkSWU3RmlndjZMWldDNEVxdTAxNDZTcno2b29ZNEFBRGxpeFB0b0lHcHZfM0JZeEcyWG4xdzk1S2dlY0k1OENlOHUwWmJvMGNXNjFfZ3FNOGpzWThNaTAwekxoMXE3dXJmS0FKN3ROeDd2T3ZPM2dZcTZjVVNkSExRaGRhZUJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Senators Launch Investigation into Meta’s Smart Glasses Over Nonconsensual Filming - PetaPixel](https://news.google.com/rss/articles/CBMitgFBVV95cUxPc0k4VjJZaHB4UHlIb3U2b1p4QjdsLU0tV2NXSEJGMlc3b3NXRU1OV3FUdXVxeDVma3hoWkdCVmY4emVNTGNlYWtaXy1GcXNKWmRTUzd0bmRGWVRfR3JnTmNiVGJTWE01X1BKR0VWY0VQUmNFMnRaeTI5YnpCMWR0RnRCY2pYaDl3bnd5VHZqYjV1bmpiM3JkN3NZcXYtMUo2VGFneEpVNjhhSy1YaURFZl83Mm8xdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Smart glasses cheating to be punishable by admissions ban - Taipei Times](https://news.google.com/rss/articles/CBMiekFVX3lxTFBuWnI2QUZmVERMSjEySVRwbjFDT1pVTlR4UWlhSFlNeEZNNmZOLV8zUG9paWREVzJsZC1NNm5MT0Y5Q2w1bDlIc055allraGZJdjJ1UTU0VkJtSWc1aVJ4S2J5NnpSVlZYX2dsckpQdmJLOGJkR08yLS13?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Starting Application Development - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/start-development/) | reachable (200) | research_news_review, development_hacking |
@@ -271,6 +268,9 @@ Generated: `2026-11-03T12:31:53.907463+00:00`
 | high | needs_editorial_verification | direct | [The Xreal Aura Smartglasses Are Now On Sale For A Discounted Launch Price - AOL.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxQbkQ5eVA2UkdYRVVoOFZON254ZzJSR1Q4ZVJNUHRLaVI0T2cyVFRNX29DSzNqUEZqY3RvUDlaYUZLZW0yTnJFVXcxdzU0SUNVODRHZkYwc2tHdE5xRFEycnRpQkoxS1NHTV9KQlVDbDBDRVlacnRWWU9aZ3V6RjRnVWlR?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [The Xreal Aura Smartglasses Are Now On Sale For A Discounted Launch Price - Engadget](https://news.google.com/rss/articles/CBMiqwFBVV95cUxQeDBQRDhDakhNdUR3czVZM1ZKVmNZZEZYb3IycGR4bHVlLXVVemR4MXE5ZHpHeGdGakIxOC1jQ1l5ODd4bmYxR0tuaGl3ZWJmMExyV0Q5ckR3c0kwQ3E1cFBhRmdUMy1BSVprTFFSNEd5UnBTMlFhYWlWb2dEbEJhMUNodGtJT3lkSmlZQ090Y25MNkN4eS1TdmJjaXk2Mk1rSDBYNVJoVXVLOTQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [The Xreal Aura Smartglasses Are Now On Sale For A Discounted Launch Price - Yahoo Tech](https://news.google.com/rss/articles/CBMilgFBVV95cUxOMFVzbFVvd0ZucmQxeWJiYzhrb2xua01xM3NlbEtQcnNoWUZBSHFnOVE4aFpDdWFoTXdfcXMwU3lhUUcyUWhYMTV1cWhSWHNUbmdOQU5ya2NNYk9DY3lxWGZLSUxkMU9SWVNnUThMNDlPNnJlNGpCbWVCSWpnM2QzT1AwcU9obWNNWEllN21FaHBNa3pPZXc?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Vision Monday, 20/20 Launch Smart Eyewear Supplement - VisionMonday.com](https://news.google.com/rss/articles/CBMingFBVV95cUxPMHY3eWdUcGZOVHJRMlVWRzVtMk9obnJBd1RuMkRZQlVQeXYxblN0MnYtNlc2cVY4YkxNQTgxT2d5dG9XX01wMmVycmdmOU1nb0VVSFcxTkRsamRibXYzZ2pYUEtSR0NfOG1jMS1ROE4xMzhzZFRIOWh1cnlGNV9EZTVHWEI4dl9EQ01HQnlLUVczNXExLXFTalBpa2JnQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [VITURE and S-GAME Launch Phantom Beast XR Glasses - Insider Gaming](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5jOTFzWTBBZncxM3JXeHpRYmRfbVljcENXS19DSUFhOUkwV1pTcG1kTVA2bjBMYVdKeDhUc1V1Zm9vZkNwTU90LWVkWGN3dGRMZHhNR3VJbnJFVVRybjUtRFVn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Vuzix Corporation Enters Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure Lx1 Smart](https://news.google.com/rss/articles/CBMi6AFBVV95cUxPVHFTTjJSQ2dIZDRHTl9KOGVRM21jd1pYMFVrSVd2YnRBR3ZlbVBUY1BJLW1GQ3d4SzZyUWxTcTZ0a05EZjVTa2dNVnBKVWh3S0JldzdjZmJzbktRMHNzSjdxV1dfa2dOMm8wWVlVbHdERlZiRjFmOTYyM2N4QkxLeFdOT3BteF9TblhQRlpqR3lMdWpBNjFGck9Ma093T0NXamgyc2p1Z25Cc3A3QVdZdm45bjVrQWxuRlVtekRQNU00NlVxeGRPTmxqU21qSHc5aXNjSGpWaWRLdHhaZU13V05pNmZxcHpQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
