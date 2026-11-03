@@ -17,6 +17,7 @@ The W610 is the current hands-on reference device, not the boundary of the repos
 7. **Claims remain revisable.** Preserve corrections and contradictory evidence. Do not silently convert copied marketing claims into confirmation.
 8. **Repository-first memory.** Durable project decisions belong in Git, not only in chat history.
 9. **Every merge tells its story.** Every pull request must contain a plain-language merge description explaining what was accomplished and why it mattered. A small or routine merge requires at least one complete sentence. A major merge requires a concise paragraph of three to seven sentences describing the outcome, purpose, repository impact, and important evidence or limitations. Lists may supplement the description but may not replace it.
+10. **One Practical Answers library.** All questions and answers live in the existing `docs/faq/01-*.md` through `10-*.md` subject pages. `docs/faq/README.md` is one evergreen topic directory, not an answer-list staging area: never add sections by month/date, source type, publication batch, product, safety status, or observed-vs-foundation provenance. New Practical Answers are added only to their relevant existing subject file; preserve stable anchors and per-answer provenance there. Never reintroduce parallel FAQ inventories or duplicate indexes. 
 
 ## Required pull-request check
 
