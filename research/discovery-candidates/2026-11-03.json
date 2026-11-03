@@ -1,39 +1,35 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-03T02:22:00.372797+00:00",
-  "candidate_count": 63,
-  "classifier_irrelevant_count": 49,
+  "discovered_utc": "2026-11-03T06:59:21.339709+00:00",
+  "candidate_count": 44,
+  "classifier_irrelevant_count": 44,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 13,
-    "broad_web": 40,
-    "developer": 11
-  },
-  "relationship_counts": {
-    "direct": 1,
-    "enabling": 0,
-    "adjacent": 13,
-    "speculative": 0,
-    "irrelevant": 49
-  },
-  "type_counts": {
-    "review": 1,
-    "video": 1,
-    "news": 47,
-    "research": 6,
-    "tool": 10,
-    "sdk": 10,
-    "hack": 1,
-    "optics": 1,
+    "broad_web": 26,
+    "developer": 19,
     "retail": 1
   },
+  "relationship_counts": {
+    "direct": 0,
+    "enabling": 0,
+    "adjacent": 0,
+    "speculative": 0,
+    "irrelevant": 44
+  },
+  "type_counts": {
+    "model": 1,
+    "review": 1,
+    "video": 2,
+    "news": 18,
+    "research": 2,
+    "tool": 19,
+    "sdk": 18,
+    "retail": 1,
+    "teardown": 1,
+    "rumor": 1
+  },
   "routing_counts": {
-    "adjacent_radar": 13,
-    "deep_research": 2,
-    "reject_noise": 49,
-    "report_card_evidence": 1,
-    "research_news_review": 14,
-    "research_optics": 1
+    "reject_noise": 44
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -44,55 +40,51 @@
     "community": "attributed experience lead; never canonical specification evidence by itself",
     "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
   },
-  "collector_errors": [
-    {
-      "channel": "broad_web",
-      "query": "display smart glasses",
-      "url": "https://www.bing.com/search?q=display%20smart%20glasses&format=rss&count=30",
-      "error": "The read operation timed out"
-    }
-  ],
+  "collector_errors": [],
   "candidates": [
     {
-      "id": "bdc703d0225bf135",
-      "title": "XREAL 1 Pro+ – XREAL US Shop",
-      "url": "https://us.shop.xreal.com/products/xreal-1-pro",
-      "summary": "XREAL official store in the US. Size M: In Stock Now Size L: Orders will be shipped within 2 weeks of purchase You'll receive tracking information as soon as your order ships from our US warehouse.",
+      "id": "beb4994d46080a04",
+      "title": "Clearance | Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/clearance",
+      "summary": "The Bob Mills End Zone is a dedicated clearance section found inside every Bob Mills Furniture store. It features a rotating selection of discounted items pulled directly from our own inventory, including floor models, overstock furniture, discontinued collections, as-is pieces, and unclaimed custom orders.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "teardown"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "445236b8a8e45416",
+      "title": "FBNDX - Fidelity ® Investment Grade Bond Fund | Fidelity Investments",
+      "url": "https://fundresearch.fidelity.com/mutual-funds/summary/316146109",
+      "summary": "Analyze the Fund Fidelity ® Investment Grade Bond Fund having Symbol FBNDX for type mutual-funds and perform research on other mutual funds. Learn more about mutual funds at fidelity.com.",
       "discovery_channel": "broad_web",
-      "query": "XREAL xbx a01+",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "direct",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "526c6171e0dfb6dc",
-      "title": "Advanced Eye Tracking Glasses Built for Research - Tobii",
-      "url": "https://www.tobii.com/products/eye-trackers/wearables/tobii-pro-glasses-3",
-      "summary": "Designed to safeguard your Tobii eye tracking glasses from glare, dust, scratching, and accidental damage, our protective lenses ensure uncompromised tracking indoors and out.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [
         "research"
       ],
@@ -102,426 +94,12 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "research",
-        "optics"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "research_news_review",
-        "research_optics",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b28cc693bcee2df9",
-      "title": "Eye Tracking Glasses for Research & Insights - Tobii",
-      "url": "https://www.tobii.com/products/eye-trackers/wearables",
-      "summary": "Eye tracking glasses measure where people look as they move naturally through their environment. By capturing visual attention and gaze behavior in real time, wearable eye tracking helps researchers and organizations understand how people interact with tasks, products, and surroundings.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "research"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "irrelevant",
       "content_types": [
         "research"
       ],
       "primary_type": "research",
       "routing_targets": [
-        "research_news_review",
-        "deep_research",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7cd10efead327967",
-      "title": "Wearable Near-Eye Tracking Technologies for Health: A Review",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11273595/",
-      "summary": "Table 1 shows a comparison of these eye-tracking methods from the aspects of cost, wearability, invasiveness, and accuracy. Non-invasive methods greatly eliminate the requirement for specialized preparation and devices and reduce the related risks and discomfort for the users.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2cdab39b0b3694de",
-      "title": "Glasses based eye tracker for physical environments",
-      "url": "https://www.eyetracking.com/glasses/",
-      "summary": "Wearable eye tracker designed to capture natural viewing behavior in any real-world environment while ensuring outstanding eye tracking robustness and accuracy.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bcda147b40374053",
-      "title": "Hey Ya! lyrics - OUTKAST",
-      "url": "https://www.oldielyrics.com/lyrics/outkast/hey_ya.html",
-      "summary": "(Ice Cold!) Alright, alright, alright, alright, alright, alright, alright, alright Alright, alright, alright, alright, alright, alright Okay now, ladies (Yeah?) Now, we gon' break this thing down in just a few seconds Now don't have me break this thing down for nothing Now I want to see y'all on your baddest behavior Lend me some sugar, I am ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bcc902f477508095",
-      "title": "Hey Yeah - Hey Ya! (Originally Performed by Outkast) Lyrics",
-      "url": "https://www.songlyrics.com/hey-yeah/hey-ya!-originally-performed-by-outkast-lyrics/",
-      "summary": "Now, what cooler than being cool? Ice cold! I can't hear ya! I say what's, what's cooler than being cool? Ice cold! Alright alright alright alright alright alright alright alright alright alright alright alright alright alright alright alright! Okay, now ladies! Yea? I want to see you on your badest behavior! Lend me some sugar, I am your neighbor!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "137a83b5ab91715e",
-      "title": "Kexxu Eye Tracking Glasses",
-      "url": "https://kexxu.com/",
-      "summary": "Heat maps offer the fastest way to get quick insights into your eye tracking data. Using AI, we compensate for head movements to create a stable heat map of focus points, even while walking.",
-      "discovery_channel": "adjacent",
-      "query": "wearable eye tracking",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b6ca323f23cb801c",
-      "title": "Lyrics for Hey Ya! by OutKast - Songfacts",
-      "url": "https://www.songfacts.com/lyrics/outkast/hey-ya",
-      "summary": "Are we so in denial when we know we're not happy here? Alright now, fellas (yeah?) Now, what cooler than being cool? (Ice cold) I say what's, what's cooler than being cool? (Ice cold) Okay, now ladies (yeah?)",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc36f0732cbd629c",
-      "title": "OutKast - Hey Ya lyrics | LyricsFreak",
-      "url": "https://www.lyricsfreak.com/o/outkast/hey+ya_10198164.html",
-      "summary": "(Ice cold!) whooo... Alright, alright, alright, alright Alright, alright, alright, alright Alright, alright, alright, alright Alright, alright, Ok now ladies, (Yeah!) And we gon' break this thing down in just a few seconds Now don't have me break this thang down for nothin' Now I wanna see y'all on y'all baddest behavior",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8edbec61fbdefedb",
-      "title": "OutKast - Hey Ya! lyrics",
-      "url": "https://lyricstranslate.com/en/OutKast-Hey-Ya-lyrics.html",
-      "summary": "Hey, alright now, alright now, fellas (Yeah?) Now, what's cooler than being cool? (Ice Cold!)",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e95fe38f7756cac2",
-      "title": "OutKast - Hey Ya! Lyrics & Meaning",
-      "url": "https://www.songlyrics.com/outkast/hey-ya!-lyrics/",
-      "summary": "I'm just being honest! Hey, alright now, alright now, fellas (yeah?) Now, what cooler than being cool? (Ice cold!) I can't hear ya I say, what's, what's cooler than being cool? (Ice cold!) Alright, alright, alright, alright, alright, alright, alright Alright, alright, alright, alright, alright, alright, alright Okay, now ladies (yeah?)",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "05946ac2084a0039",
-      "title": "OutKast – Hey Ya! Lyrics | Genius Lyrics",
-      "url": "https://genius.com/Outkast-hey-ya-lyrics",
-      "summary": "Hey, all right now, all right now, fellas (Yeah?) Now, what's cooler than being cool? (Ice Cold!) I can't hear ya I say what's, what's cooler than being cool?",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2a905bced1d0cda3",
-      "title": "OutKast's 'Hey Ya!' Lyrics - XXL Mag",
-      "url": "https://www.xxlmag.com/outkast-hey-ya-lyrics/",
-      "summary": "Hey, alright now, alright now, fellas (Yeah?) Now, what's cooler than being cool? (Ice Cold!) I say what's, what's cooler than being cool? (Ice Cold!) OK now, ladies (Yeah?) Ah, here we...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "35fd93150985ff79",
-      "title": "Constitution Hangs by a Thread - LDS Last Days",
-      "url": "http://ldslastdays.com/Constitution-Hangs-by-a-Thread/",
-      "summary": "Joseph Smith predicted that the time would come when the Constitution would hang, as it were, by a thread, and at that time “this people will step forth and save it from the threatened destruction.” (Journal History, Brigham Young’s Speech, July 4, 1854.)",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
         "reject_noise"
       ],
       "triage_priority": "low",
@@ -530,10 +108,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "12905b496d650736",
-      "title": "Joseph F. Smith - Religious Studies Center",
-      "url": "https://rsc.byu.edu/latter-day-prophets-united-states-constitution/joseph-f-smith",
-      "summary": "6.7. Joseph Smith, the prophet, was inspired to affirm and ratify this truth, and he further predicted that the time would come, when the Constitution of our country would hang as it were by a thread, and that the Latter-day Saints above all other people in the world would come to the rescue of that great and glorious palladium of our liberty.",
+      "id": "b44d35b2d507634e",
+      "title": "French Horn Quickstart Guide - SweetCare - Sweetwater",
+      "url": "https://www.sweetwater.com/sweetcare/articles/french-horn-quickstart-guide/",
+      "summary": "The French horn can be a very fun instrument to play, but you first need to learn the fundamentals. In this guide, we will show you the parts of a French horn, teach you how to hold it correctly, and provide some tips and tricks along the way!",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -561,10 +139,134 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9f7b617fbe788e3d",
-      "title": "Joseph Fielding Smith writes that Joseph was inspired to ...",
-      "url": "https://bhroberts.org/records/0v2jWM-0Wmosp/joseph_fielding_smith_writes_that_joseph_was_inspired_to_predict_constitution_will_one_day_hang_by_a_thread_and_the_saints_will_protect_it",
-      "summary": "Joseph Fielding Smith writes that Joseph was inspired to predict Constitution will one day hang by a thread and the Saints will protect it.",
+      "id": "35a88f0a9f2df0cf",
+      "title": "Furniture and Mattress Financing at Bob Mills Furniture | Bob Mills ...",
+      "url": "https://www.bobmillsfurniture.com/financing",
+      "summary": "Bob Mills Furniture offers special financing and savings on select home furniture and mattresses in TX and OK.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c50b2edc7c320d6",
+      "title": "Furniture Store in Midland, TX Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/locations/midland",
+      "summary": "Bob Mills Furniture is the #1 furniture store in Midland, TX. Visit our showroom today to discover the best furniture and mattresses in Midland.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2df0ef2136b99ecc",
+      "title": "Furniture Store in Tulsa, OK - Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/locations/tulsa",
+      "summary": "Bob Mills Furniture is the best furniture store in Tulsa, OK. We carry the furniture and mattresses Tulsa loves. Visit our Tulsa showroom today!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "827dfeaa06fdf58f",
+      "title": "Furniture Store in Wichita, KS - Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/locations/wichita",
+      "summary": "Bob Mills Furniture Wichita — Virtual Showroom Tour Tour our Wichita, KS furniture showroom from anywhere! Explore in-stock living room, bedroom, dining, and mattress displays — including our signature Sleep Spa with BedMatch® technology. Visit us at 11835 E. Kellogg Dr. or shop from home.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "047edb7f78a70235",
+      "title": "How to Play the English Horn | HowToPlayInstruments.com",
+      "url": "https://howtoplayinstruments.com/english-horn",
+      "summary": "Learn how to play the english horn with beginner guidance, practice tips, difficulty ratings, and easy first songs.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -592,10 +294,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f9d381d6f4547762",
-      "title": "Joseph Smith - Religious Studies Center",
-      "url": "https://rsc.byu.edu/latter-day-prophets-united-states-constitution/joseph-smith",
-      "summary": "No: it will be held inviolate by this people; and, as Joseph Smith said, “The time will come when the destiny of the nation will hang upon a single thread. At that critical juncture, this people will step forth and save it from the threatened destruction.”",
+      "id": "466fba1d52497970",
+      "title": "How to Play the French Horn (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Play-the-French-Horn",
+      "summary": "The French horn is one of the most difficult of the standard orchestral wind instruments to play. Mastery happens through dedicated practice and perseverance. The reward of playing this versatile instrument is indescribable. Learn the...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -623,10 +325,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bfc08e6a761b6a72",
-      "title": "JOSEPH SMITH’S PROPHECY THAT THE CONSTITUTION WOULD HANG BY A ...",
-      "url": "https://www.legrandlbaker.org/wp-content/uploads/2012/10/Smith-Joseph-Constitution-to-hang-by-a-thread-by-Preston-Nibley.pdf",
-      "summary": "From all the above it is abundantly evident that the Prophet Joseph Smith did make the marvelous prediction that it is the destiny of the Latter-day Saints to some day save the Constitu-tion of the United States from destruction.",
+      "id": "47ac09ee0d94d101",
+      "title": "How to Play the French Horn - The Tech Edvocate",
+      "url": "https://www.thetechedvocate.org/how-to-play-the-french-horn/",
+      "summary": "Learning how to play this complex yet rewarding instrument can be a bit daunting at first, but it’s incredibly fascinating once you get the hang of it. In this article, we’ll walk you through the key steps for learning to play the French horn.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -654,10 +356,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "508a89166feb66b2",
-      "title": "The Constitution Hanging by a Thread and the “White Horse ...",
-      "url": "https://latterdayconservative.com/faq/the-constitution-hanging-by-a-thread-and-the-white-horse-prophecy/",
-      "summary": "The statement has been made that the Prophet [Joseph Smith] said the time would come when this Constitution would hang as by a thread, and this is true. There has been some confusion, however, as to just what he said following this.",
+      "id": "a5ff28f4cc32dc19",
+      "title": "How to Play the Horn Even If You've Never Played It Before",
+      "url": "https://brassnwind.com/how-to-play-the-horn/",
+      "summary": "If you have ever dreamed of playing an instrument, today we explain in details how to play the horn, which might be ideal for you.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -685,74 +387,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "820e284d76eac1d1",
-      "title": "When the Constitution “Hangs by a Thread” – The White Horse ...",
-      "url": "https://mrm.org/white-horse-prophecy",
-      "summary": "Joseph Smith predicted that the time would come when the Constitution would hang, as it were, by a thread, and at that time “this people will step forth and save it from the threatened destruction” (Conference Report, October 1961, p.70).",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "08be047607130d88",
-      "title": "White Horse Prophecy - Mormonr",
-      "url": "https://mormonr.org/qnas/xLOJnc/white_horse_prophecy",
-      "summary": "President Joseph F. Smith,[BIO] in the October 1912 General Conference, says Joseph Smith taught that \"the Constitution of our country would hang as it were by a thread.\"[9]",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7069386a50e6490a",
-      "title": "White Horse Prophecy - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/White_Horse_Prophecy",
-      "summary": "In 1854 Brigham Young quoted his predecessor stating \"as Joseph Smith said, 'The time will come when the destiny of the nation will hang upon a single thread. At that critical juncture, this people will step forth and save it from the threatened destruction.'",
+      "id": "cd05dd4fd29707ed",
+      "title": "How to Play the Horn: Affordable Self-Paced Online - MusicProfessor",
+      "url": "https://www.musicprofessor.com/bundles/horn-library",
+      "summary": "The cinematic sounds of the Horn make it one of the most popular instruments in homes, classrooms, and on the silver screen. Learn to create this characteristic sound right from the start through the sequential instruction in the Horn Library.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -780,10 +418,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8e52c5229caa8789",
-      "title": "“The Constitution Hangs by a Brittle Thread”: Joseph Smith’s ...",
-      "url": "https://latterdaysaintmag.com/the-constitution-hangs-by-a-brittle-thread-joseph-smiths-prophecy-and-our-responsibility-2/",
-      "summary": "Perhaps my favorite of all such statements was contemporaneously recorded by James Burgess in his personal journal after he heard the Joseph preach, “the time would come when the constitution and government would hang by a brittle thread … but this people … will step forward and save it.”",
+      "id": "912ecee61904b59e",
+      "title": "How to Play the Horn:The road to good horn tone is long - Musical ...",
+      "url": "https://www.yamaha.com/en/musical_instrument_guide/horn/play/",
+      "summary": "The horn consists of several convoluted and complex tiers of tubes, and the air flow is shown in the diagram below. It's easy to see that the length of tube that the air passes through is indeed very long.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -798,11 +436,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
         "tool",
         "sdk"
       ],
-      "primary_type": "research",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -812,10 +449,196 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "64447de3d8ae7e90",
-      "title": "20 Traits Of A Cold Person (And 6 Ways To Deal With Them)",
-      "url": "https://www.bolde.com/traits-cold-person-effective-ways-deal-with-them/",
-      "summary": "The traits of a cold person make them stand out — and not in a good way. Here's how to recognize and deal with someone like this.",
+      "id": "f8d039b9d7275df4",
+      "title": "Learn How to Play the French Horn - howtoplayinstruments.com",
+      "url": "https://howtoplayinstruments.com/french-horn",
+      "summary": "Learn how to play French horn with beginner guidance on posture, embouchure, breathing, first notes, hand position, practice routines, and common mistakes.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d2f1ae48a563304",
+      "title": "Mattresses | Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/catalog/mattresses",
+      "summary": "Explore a wide selection of quality mattresses at Bob Mills Furniture, designed for comfort and support to enhance your sleep experience. Discover your perfect fit today.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f185986b3d593f0",
+      "title": "Quality Furniture in Oklahoma, Texas, and Kansas | Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/",
+      "summary": "We offer a large selection of top-quality brands in furniture and mattresses. Bob Mills Furniture has locations across Oklahoma, Texas, and Kansas.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "630e9f5b606adb94",
+      "title": "Rugs | Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/catalog/rugs",
+      "summary": "Discover a diverse selection of stylish rugs at Bob Mills Furniture, designed to enhance your living space with comfort and elegance. Explore our collection now!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "74b41976f74188fe",
+      "title": "Shop Recliners | Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/catalog/recliners",
+      "summary": "Relax at home with a comfortable reclining chair from Bob Mills Furniture. We carry a great selection of models and designs so you can find the perfect fit.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f2ef2e69e5afb18e",
+      "title": "The #1 Furniture Store in Schertz, TX | Bob Mills Furniture",
+      "url": "https://www.bobmillsfurniture.com/locations/schertz",
+      "summary": "Family-owned since 1971, Bob Mills is that store. The Schertz showroom carries furniture for every room and every budget — living room furniture, bedroom furniture, sofas, recliners, sectionals, dining sets, mattresses, home office furniture, and finishing décor.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b92ecf3cfbeba7e",
+      "title": "Agoda Official Site | Free Cancellation & Booking Deals | Over 2 ...",
+      "url": "https://www.agoda.com/",
+      "summary": "Book your perfect holiday with Agoda and enjoy our great discounts on hotels, homes, flights and activities. Get the Agoda app!",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -830,9 +653,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -842,12 +665,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "271a8d6577892b36",
-      "title": "23 Cold Personality Traits and How to Respond With Compassion",
-      "url": "https://www.marriage.com/advice/relationship/cold-personality-traits/",
-      "summary": "Understanding how to deal with a cold person and reflecting on why someone might become cold-hearted are key steps in fostering healthier connections. Here’s a detailed exploration of strategies to enhance your interactions with someone who might seem emotionally distant.",
+      "id": "756d53fc174514af",
+      "title": "Arnold Schwarzenegger Eye Color Deciphering The Enigma",
+      "url": "https://nbkomputer.com/arnold-schwarzenegger-eye-color-deciphering-the-enigma/",
+      "summary": "Contrary to popular belief, Arnold Schwarzenegger eye color is not a straightforward answer. While many perceive his eyes as blue, closer inspection reveals a more intricate reality.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -872,10 +695,250 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1b18450293240b3c",
-      "title": "ABC7 Los Angeles and Southern California | KABC Eyewitness News",
-      "url": "https://abc7.com/",
-      "summary": "Los Angeles' source for breaking news and live streaming video online. Covering Los Angeles, Orange County and all of the greater Southern California area.",
+      "id": "1942bf1e37f3559c",
+      "title": "Arnold Schwarzenegger Eyes - Instagram",
+      "url": "https://www.instagram.com/popular/arnold-schwarzenegger-eyes/",
+      "summary": "Arnold Schwarzenegger’s eyes are naturally a warm medium to dark brown with subtle golden or amber flecks, not blue as often assumed from his film roles. The color appears dynamic under different... more",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5113f9567d6e5fec",
+      "title": "Arnold Schwarzenegger Eyes Color - Pinterest",
+      "url": "https://www.pinterest.com/ideas/arnold-schwarzenegger-eyes-color/954928679070/",
+      "summary": "Find and save ideas about arnold schwarzenegger eyes color on Pinterest.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f7102377bb4ed5b",
+      "title": "CELTICS at MAGIC | FULL GAME HIGHLIGHTS | November 1, 2026",
+      "url": "https://www.youtube.com/watch?v=8jItnLHesf0",
+      "summary": "Shop for your Medium Men's Ja Morant Portland Trail Blazers gear at the NBA Store! We want fans to celebrate their fandom by customizing and personalizing certain products. For these customizable ...",
+      "discovery_channel": "broad_web+developer+retail",
+      "query": "ThinkAR AiLENS; titanium AI glasses ChatGPT site:walmart.com; Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5682c28b804815d0",
+      "title": "Chiefs Re-sign Long Snapper James Winchester",
+      "url": "https://www.chiefs.com/news/chiefs-re-sign-longstapper-james-winchester",
+      "summary": "One of the Kansas City Chiefs' longest-tenured players is back for a 12th season in 2026. Long snapper James Winchester, who hasn't missed a game since initially joining the Chiefs in 2015, re-signed with Kansas City on Wednesday.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90933b1478073b32",
+      "title": "Chiefs re-sign veteran specialist James Winchester for 12th season",
+      "url": "https://chiefswire.usatoday.com/story/sports/nfl/chiefs/2026/03/07/kansas-city-chiefs-re-sign-veteran-specialist-james-winchester-for-12th-season/89040549007/",
+      "summary": "Winchester will continue in his role as a specialist and locker room leader as the Chiefs look to return to the top of the league in 2026.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "178df9b7b46749b1",
+      "title": "Dublin, Ireland | Fidelity Investments Ireland",
+      "url": "https://jobs.fidelity.com/ie/locations/dublin-ireland/",
+      "summary": "Located in Citywest, the Fidelity Dublin office offers a flexible environment designed for how we work today, set in a diverse and vibrant city.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e370a6c51a624529",
+      "title": "Financial Planning, Investment, Brokerage - Tucson, AZ - Fidelity",
+      "url": "https://www.fidelity.com/branches/investor-center-tucson-arizona-85718",
+      "summary": "Visit Fidelity Investor Center at 3001 East Skyline Drive, Suite 255, Tucson AZ for financial planning, wealth management, retirement, investment and brokerage services.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "402049773e18f8c9",
+      "title": "Find a meaningful career at Fidelity | Fidelity Careers",
+      "url": "https://jobs.fidelity.com/en/",
+      "summary": "Financial planning Provide needs-based investment guidance, wealth management, retirement planning, income strategies, and college planning services to our customers.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1234eded84e14eb3",
+      "title": "Google News - U.S. - Latest",
+      "url": "https://news.google.com/topics/CAAqIggKIhxDQkFTRHdvSkwyMHZNRGxqTjNjd0VnSmxiaWdBUAE?hl=en-US&ceid=US:en",
+      "summary": "Read full articles, watch videos, browse thousands of titles and more on the \"U.S.\" topic with Google News.",
       "discovery_channel": "broad_web",
       "query": "new smart glasses 2026",
       "source": "Bing web RSS",
@@ -902,400 +965,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "022d31cf35f63617",
-      "title": "Breaking News | ABC7 KABC News Feed - ABC7 Los Angeles",
-      "url": "https://abc7.com/news/",
-      "summary": "Read real-time breaking news as it develops with the ABC7 News Feed. Stay up-to-date with local California news as well as U.S. and world news stories.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3348a019733174c7",
-      "title": "Can A Cold Hearted Person Love - Answer Foundry",
-      "url": "https://www.answerfoundry.com/can/can-a-cold-hearted-person-love/",
-      "summary": "Yes, it is possible for a cold-hearted person to experience love. While individuals may exhibit a lack of empathy or emotional warmth, their capacity for love can still exist.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "102d74e0f22f61f0",
-      "title": "Can a Cold-Hearted Person Love? An Approach to Human Nature",
-      "url": "https://www.believeinmind.com/self-growth/can-a-cold-hearted-person-love/",
-      "summary": "It may not come easily, but it is possible. The truth is, a cold heart isn’t a life sentence. Your ability to love is still in there; it’s just buried under years of self-protection. With some work and a willingness to open up, you can rediscover the capacity for deep caring and connection.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "02551e9c83a6791c",
-      "title": "Cold People: What Makes Them That Way? Part 1 - Psychology Today",
-      "url": "https://www.psychologytoday.com/us/blog/evolution-the-self/201105/cold-people-what-makes-them-way-part-1",
-      "summary": "Doubtless, you've had the experience of interacting with someone who was \"off-puttingly standoffish.\" Detached, preoccupied, and not open or friendly, they held you at a distance.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d44f43855d6cbac",
-      "title": "Cold Person Personality: Traits, Causes, and Coping Strategies",
-      "url": "https://neurolaunch.com/cold-person-personality/",
-      "summary": "A cold person personality is a pattern of emotional detachment, muted expression, and reliance on logic over sentiment in relationships. It’s not about villainy or lack of caring.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b881619b217f4ac2",
-      "title": "Earned Income Tax Credit (EITC) - Internal Revenue Service",
-      "url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit-eitc",
-      "summary": "The Earned Income Tax Credit (EITC) helps low- to moderate-income workers and families get a tax break. If you qualify, you can use the credit to reduce the taxes you owe – and maybe increase your refund.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1e2506928ad1903a",
-      "title": "Earned Income Tax Credit (EITC) - USAGov",
-      "url": "https://www.usa.gov/earned-income-credit",
-      "summary": "Find out how you may be able to reduce the amount of taxes you owe and possibly get more money back on your tax refund by claiming the Earned Income Tax Credit (EITC).",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "862c776d35d81fba",
-      "title": "Earned Income Tax Credit (EITC): What It Is, Who Qualifies",
-      "url": "https://www.nerdwallet.com/taxes/learn/can-you-take-earned-income-tax-credit",
-      "summary": "What is the earned income tax credit? The earned income tax credit (EITC) is a refundable tax break for low- and moderate-income workers. This means it can lower your tax bill by the...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "535677b618770f62",
-      "title": "Earned Income Tax Credit (EITC): Who Qualifies and How Much You Can Get",
-      "url": "https://ustax.tools/tax-insights/earned-income-tax-credit-guide/",
-      "summary": "Learn who qualifies for the Earned Income Tax Credit in 2025, the income limits, credit amounts by number of children, and common mistakes that cost filers this valuable refundable credit.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "64b60c8c1f49de9c",
-      "title": "Earned income tax credit - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Earned_income_tax_credit",
-      "summary": "The United States federal earned income tax credit or earned income credit (EITC or EIC) is a refundable tax credit for low- to moderate-income working individuals and couples, particularly those with children.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "11991ae447028d38",
-      "title": "Home - Idaho Housing and Finance Association",
-      "url": "https://www.idahohousing.com/",
-      "summary": "Congratulations to the Top Idaho Housing Partners for Q3 2026! Each quarter, Idaho Housing recognizes top partners – those who assisted the most Idaho Housing homebuyers in each region. Our partnership to help Idahoans obtain sustainable and affordable homeownership is important.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b2e39e29605f99c0",
-      "title": "How To Deal with Indifference in Relationships - Awake Mindful",
-      "url": "https://awakemindful.com/deal-with-indifference/",
-      "summary": "Explore the possible reasons behind your indifference, such as past experiences, burnout, or lack of purpose. Understanding the root causes can guide you in finding appropriate solutions.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "29ab4ce2762b99f3",
-      "title": "IRS EITC Calculator 2025 & 2026 — Earned Income Tax Credit up to $8,231 ...",
-      "url": "https://ustax.tools/eitc-calculator/",
-      "summary": "Estimate your Earned Income Tax Credit (EITC) for tax years 2024-2026. Enter your earned income, filing status, and number of qualifying children to see if you qualify and how much credit you may receive.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e742006fb8f6796",
-      "title": "Lawyer Referral offered by National Organization of Social Security ...",
-      "url": "https://ccwa.doh.wa.gov/search/02e90249-658c-555b-b8fc-2ebb0451d10e",
-      "summary": "Provides referrals to local private attorneys who can represent claimants applying for SSDI and SSI benefits, and those appealing a denial of SSDI and SSI benefits.",
+      "id": "f354325fb442f06c",
+      "title": "Iran and markets | Fidelity Investments",
+      "url": "https://www.fidelity.com/learning-center/trading-investing/geopolitics-war-and-markets",
+      "summary": "Fidelity’s professional investment management services may also help you manage your responses to wars and other bad news while keeping you on track toward your long-term investing goals. Malwal explains, “My team holds stocks and bonds across many different regions, countries, sectors, and industries.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1310,9 +983,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "review"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1322,130 +995,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8f51c1e49eeffd08",
-      "title": "Lawyer Referral Services | National Organization of Social Security ...",
-      "url": "https://search.ne211.org/search/e7359af3-3266-5178-b1d8-1495bd8d0829?entry=search_card",
-      "summary": "Referral service for claimants refers callers to private attorneys in their area who handle Social Security disability claims.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "62d46f1ab20dca01",
-      "title": "National Organization of Social Security Claimants Representative ...",
-      "url": "https://firstcallforhelpsemo.org/agencies/national-organization-of-social-security-claimants-representative/",
-      "summary": "Referral service for individuals in need of a disability attorney or advocate. Provides representation and advocacy on behalf of persons who are seeking Social Security and Supplemental Security Income.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "425d1c4b42cb4aee",
-      "title": "NOSSCR :: Lawyer Referral Service",
-      "url": "http://old.nosscr.org/referral.html",
-      "summary": "For help in finding attorney representation, contact our lawyer referral service during Eastern business hours: 800-431-2804",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c30ab37e63c63eea",
-      "title": "NOSSCR Referral Service | Connecting Disability Claimants with ...",
-      "url": "https://nosscr-referral.chroniclelegal.com/",
-      "summary": "The NOSSCR Referral Service has operated for more than 30 years to help unrepresented Social Security disability claimants find qualified representation.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6103b407292c0969",
-      "title": "Ominous Emails From Microsoft Might Be a Scam - MUO",
-      "url": "https://www.makeuseof.com/microsoft-365-messages-extortion-scam/",
-      "summary": "In the case of the latest Microsoft scam, hackers have taken advantage of a loophole in the Microsoft 365 Admin Portal code to send emails from a Microsoft.com account. Hence, the notifications don't get tossed away into the recipient's spam folder.",
+      "id": "8ed3f32ac7ff9cde",
+      "title": "James Winchester (American football) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/James_Winchester_(American_football)",
+      "summary": "James Winchester (born August 6, 1989) is an American professional football long snapper for the Kansas City Chiefs of the National Football League (NFL). He played college football for the Oklahoma Sooners. [1]",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1472,100 +1025,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3cd2eea9d4a2e52b",
-      "title": "One Hour Translation: Online Translation Services by BLEND",
-      "url": "https://www.getblend.com/online-translation/",
-      "summary": "With our easy online translation services and global network of translators, you’ll enjoy a fast translation turnaround and reliable results for any size project and any subject matter. We work with a pool of 25,000 language experts from around the world, ensuring you get the right talent for the job – in any language you need.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "908b1aa53e70eaad",
-      "title": "Referral Service - NOSSCR",
-      "url": "https://nosscr.org/referral-service/",
-      "summary": "Are you a claimant looking for representation? Please call our automated Referral Service at (845) 682-1881. The NOSSCR Referral Service is authorized by statute.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fa6e2fa7ad4a1d61",
-      "title": "Seeking Benefits | NOSSCR Claimants - Social Security Claimant Help",
-      "url": "https://nosscrhelp.org/seeking-benefits/",
-      "summary": "While you can apply on your own, many individuals choose to get help from a Social Security disability representative. To be connected to a representative, call 1-845-682-1881.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "472c36df6eba61cf",
-      "title": "Sign in to Microsoft Entra",
-      "url": "https://entra.microsoft.com/auth/login/",
-      "summary": "Sign in to Microsoft Entra",
+      "id": "53296a4eb0be6082",
+      "title": "James Winchester - Chiefs.com",
+      "url": "https://www.chiefs.com/team/players-roster/james-winchester/",
+      "summary": "Biography Winchester enters his 12th season with Kansas City in 2026. Originially entered the NFL as a free agent with the Philadelphia Eagles in 2013.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1592,10 +1055,250 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "da328fa2ed390429",
-      "title": "Social Security Claimants' Representatives | NOSSCR",
-      "url": "https://nosscr.org/",
-      "summary": "Are you a Social Security claimant seeking representation? Join NOSSCR and gain access resources, expertise, and a network dedicated to Social Security disability law. Stay up to date—check out NOSSCR’s events calendar for upcoming conferences, training, and networking opportunities.",
+      "id": "82346b48d97ae1bb",
+      "title": "James Winchester - Pro-Football-Reference.com",
+      "url": "https://www.pro-football-reference.com/players/W/WincJa00.htm",
+      "summary": "Checkout the latest stats for James Winchester. Get info about his position, age, height, weight, college, draft, and more on Pro-football-reference.com.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "445b359ffddcc194",
+      "title": "James Winchester 2026 Game Log | StatMuse",
+      "url": "https://www.statmuse.com/nfl/player/james-winchester-24279/game-log?seasonYear=2026",
+      "summary": "Nov 3, 2026 Nov 3, 2026 Nov 3, 2026 Nov 2, 2026 Nov 2, 2026 Nov 2, 2026 Team Leaders PASS 1,795 Mahomes RUSH 770 Walker REC 410 Kelce Team Rankings PPG 23.9 12th OPP PPG 18.7 5th RUSH YDS/G 134.1 5th PASS YDS/G 256.4 8th 2026 Division Standings ... Schedule ... Last Game Chiefs 5 - 2 24 Final 28 Broncos 6 - 2 Sun 1 Nov 2026 Pass Yards Leaders",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8d16942bf677ccb0",
+      "title": "James Winchester 2026 Stats per Game - NFL - ESPN",
+      "url": "https://www.espn.com/nfl/player/gamelog/_/id/16665",
+      "summary": "The 2026 NFL season stats per game for James Winchester of the Kansas City Chiefs on ESPN. Includes full stats, per opponent, for regular and postseason.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e8d8bcef1e86812",
+      "title": "James Winchester NFL Stats & Career — Kansas City Chiefs",
+      "url": "https://fanspeak.com/nfl/players/winchester-james-41-udfa-0615",
+      "summary": "James Winchester (Kansas City Chiefs): season-by-season NFL stats, game log, measurables, and draft pedigree on Fanspeak.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "365f2b0b57bdbf1e",
+      "title": "James Winchester returns to Chiefs on a one-year deal | Kansas City Star",
+      "url": "https://www.kansascity.com/sports/nfl/kansas-city-chiefs/article314965122.html",
+      "summary": "Chiefs re-sign long-snapper James Winchester to a one-year, $1.75M deal for 2026. Winchester, 37 in 2026, holds 181 games played, tied for 11th in franchise history.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "92253870e233ce8a",
+      "title": "James Winchester signs 1-year deal to return to Chiefs in 2026 - KCTV",
+      "url": "https://www.kctv5.com/2026/03/07/report-chiefs-re-sign-one-longest-tenured-players-1-year-deal/",
+      "summary": "According to a report from NFL Network’s Ian Rapoport, the Chiefs are re-signing veteran long-snapper James Winchester to a one-year deal. The deal is reportedly worth $1.75 million and keeps...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "rumor"
+      ],
+      "primary_type": "rumor",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8df3445a3ef1e2e6",
+      "title": "On Shumyatsky’s Question on Coprime Commutators: Nineteen Sporadic ...",
+      "url": "https://eulersolve.org/papers/kou-18-117/",
+      "summary": "Shumyatsky asked whether each element of a nonabelian finite simple group can be written as [x,y] with x and y of coprime orders (Kourovka Notebook, Problem 18.117). The answer is known to be yes for the alternating groups (Shumyatsky), for the groups PSL(2,q) (Pellegrini and Shumyatsky) and for…",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "32f17b3117eecf0a",
+      "title": "On Shumyatsky’s Question on Coprime Commutators: Nineteen Sporadic ...",
+      "url": "https://eulersolve.org/papers/kou-18-117/paper.pdf",
+      "summary": "The question remains open: for HN, Th, Co1, Fi23, Fi′24, B and M only some of the classes are certified here, and the groups of Lie type of order at least 109, apart from PSL(2, q), the Suzuki groups and five groups of the list above, are not treated.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9ac1fac136381807",
+      "title": "Open an Account with Fidelity",
+      "url": "https://www.fidelity.com/open-account/overview",
+      "summary": "The Fidelity ® Cash Management Account is a brokerage account designed for spending, and cash management. For accounts opened after September 28, 2026, investing is limited to certain fixed income investments, CDs and Fidelity money market mutual funds. For a brokerage account with additional investment options, consider the Fidelity Account ®.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1622,130 +1325,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "58be177a3e69dca4",
-      "title": "Social Security Information and Assistance | National Organization of ...",
-      "url": "https://search.nj211.org/search/8805cd7c-35e8-5703-ac50-abf7b17c1ba3",
-      "summary": "Provides a national membership-based professional association of attorneys and advocates representing Social Security Disability Insurance (SSDI) and Supplemental Security Income (SSI) claimants.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "597e4f67f35acb46",
-      "title": "Social Security Representatives & Help | NOSSCR Claimants",
-      "url": "https://nosscrhelp.org/",
-      "summary": "We can connect you with a representative to simplify the process. NOSSCR supports attorneys and advocates representing SSDI and SSI claimants through the adjudication process. As advocates for people with disabilities, we at NOSSCR aim to provide comprehensive guidance on Social Security disability benefits. © Copyright 2024 NOSSCR.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "449dfe2db34d0389",
-      "title": "The Skills Hub Blog - techcommunity.microsoft.com",
-      "url": "https://techcommunity.microsoft.com/blog/skills-hub-blog/the-ai-job-boom-continues-build-the-skills-that-move-business-forward/4494139",
-      "summary": "The Microsoft Certified: Dynamics 365 Contact Center AI Engineer Associate Certification is designed for contact center engineers and solutions pros who design and run modern contact center as a service (CCaaS) solutions with Dynamics 365 Contact Center and service‑oriented autonomous agents.",
-      "discovery_channel": "broad_web+developer",
-      "query": "ENGO smart glasses; ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "852874c8aa26d08a",
-      "title": "Understanding and Addressing Cold Behavior in Relationships",
-      "url": "https://neurolaunch.com/cold-behavior/",
-      "summary": "Explore the causes and effects of cold behavior, and learn effective strategies to address it in personal and professional relationships.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "799dbac3ad2943e1",
-      "title": "Used Volkswagen Cars for Sale in Winter Haven, FL - Autotrader",
-      "url": "https://www.autotrader.com/cars-for-sale/volkswagen/winter-haven-fl",
-      "summary": "Test drive Used Volkswagen Cars at home in Winter Haven, FL. Search from 961 Used Volkswagen cars for sale, including a 2019 Volkswagen Tiguan SEL, a 2021 Volkswagen Atlas SE, and a 2022 Volkswagen Atlas Cross Sport SE ranging in price from $2,300 to $50,638.",
+      "id": "b84a2b698579a7f5",
+      "title": "Used Volkswagen Cars for Sale near Brookshire, TX",
+      "url": "https://www.cargurus.com/Cars/l-Used-Volkswagen-Brookshire-m55_L34432",
+      "summary": "Browse the best August 2026 deals on Volkswagen vehicles for sale in Brookshire, TX. Save $11,705 right now on a Volkswagen on CarGurus.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1772,192 +1355,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b0da0bc5a496a659",
-      "title": "Volkswagen Group of America",
-      "url": "https://www.volkswagengroupofamerica.com/en-us/",
-      "summary": "Volkswagen Group of America is a leading automotive company dedicated to innovation, sustainability, and excellence in the United States.",
+      "id": "c5827827f65a1651",
+      "title": "Wealth Advisor Solutions | Specialized investment advice |Fidelity",
+      "url": "https://www.fidelity.com/wealth-management/private-wealth-management-advisors",
+      "summary": "Ways Fidelity Wealth Advisor Solutions can help The independent investment advisory firms participating in the Wealth Advisor Solutions ® program are positioned to deliver a range of specialized services, helping you access additional options to meet your evolving needs. Here are some sample investment and financial planning solutions.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ae836bfef8a18e9a",
-      "title": "What is the Earned Income Credit? Find Out If You Qualify",
-      "url": "https://turbotax.intuit.com/tax-tips/tax-deductions-and-credits/earned-income-credit/L4lmLBNWa",
-      "summary": "The Earned Income Tax Credit is designed to help low-to-moderate-income taxpayers get a tax break. Which workers qualify depends on factors like income and investment earnings, filing status, citizenship, and more.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b462b9e5b95f257",
-      "title": "What is the Earned Income Tax Credit (EITC)? | H&R Block®",
-      "url": "https://www.hrblock.com/tax-center/filing/credits/earned-income-credit/",
-      "summary": "Learn the requirements, qualifications, and ways to claim the Earned Income Tax Credit (EITC). Then, find answers to EITC FAQs with the experts at H&R Block.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "181fbc180ce41b08",
-      "title": "What Is the Earned Income Tax Credit? - Charles Schwab",
-      "url": "https://www.schwab.com/learn/story/what-is-earned-income-tax-credit",
-      "summary": "What is the Earned Income Tax Credit? The Earned Income Tax Credit (EITC) is a refundable federal tax credit for eligible workers whose income falls below limits set by the Internal Revenue Service (IRS). Eligibility is based on income, filing status, and family size.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ec024c9814467e7",
-      "title": "Who Qualifies for the Earned Income Tax Credit (EITC)",
-      "url": "https://www.irs.gov/credits-deductions/individuals/earned-income-tax-credit/who-qualifies-for-the-earned-income-tax-credit-eitc",
-      "summary": "Find if you qualify for the Earned Income Tax Credit (EITC) with or without qualifying children or relatives on your tax return.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f60c4c294a1863f2",
-      "title": "Why Am I So Cold-Hearted? Causes and How to Fix It",
-      "url": "https://scienceinsights.org/why-am-i-so-cold-hearted-causes-and-how-to-fix-it/",
-      "summary": "One of the most well-studied explanations for feeling cold hearted is what psychologists call avoidant attachment. People with this attachment style are typically independent, self-directed, and uncomfortable with emotional closeness. They often come across as distant, aloof, or even cold to the people around them. This pattern starts in childhood.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b2afcf10d3f3b576",
-      "title": "Why Your Partner Seems Cold Lately (And Why It’s Often Not What You ...",
-      "url": "https://danieldashnawcouplestherapy.com/blog/why-your-partner-seems-cold-lately-and-why-its-often-not-what-you-think",
-      "summary": "If your partner feels distant, flat, or emotionally unavailable lately, you’re not imagining it. This explains the most common psychological and relational reasons partners go cold—and what actually helps.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
