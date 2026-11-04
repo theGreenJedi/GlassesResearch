@@ -1,27 +1,30 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-03T17:54:03+00:00**
+Generated: **2026-11-04T18:00:46+00:00**
 
 - Published evidence-backed answers: **229** (minimum **1000**, no ceiling)
 - Remaining to minimum: **771**
-- Canonical registry size: **343** (not the published count)
-- Unanswered research candidates: **52**
-- Observations this run: **84**
-- New distinct questions: **3**
+- Canonical registry size: **349** (not the published count)
+- Unanswered research candidates: **58**
+- Observations this run: **86**
+- New distinct questions: **6**
 
 ## Source health
 
-- github_issues: ok — 16 observations
+- github_issues: ok — 15 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 41 observations
+- reddit_rss: partial — 44 observations
 - google_search_console: ok — 7 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000341** — Best wired video glasses if you only care about watching movies?
-- **Q-000342** — Should smart glasses work with the apps we already use?
-- **Q-000343** — No camera, no speakers, $450+: are HUD-only frames actual smart glasses or just expensive notification screens?
+- **Q-000344** — Is there a smart glass where I can see the lyrics to a song im listening to? Preferably Spotify
+- **Q-000345** — How much do you guys actually trust through-the-lens photos for waveguide glasses?
+- **Q-000346** — Smart glasses for Black Friday: what's your target price, and what would make you pull the trigger?
+- **Q-000347** — I had no idea 3 companies dominate now. Does it influence which Smart Glasses you buy?
+- **Q-000348** — Raven Prism 1 Impressions - Finally something different in smart glasses?
+- **Q-000349** — AI smartglasses recommendations?
 
 ## Research queue (first 20)
 
