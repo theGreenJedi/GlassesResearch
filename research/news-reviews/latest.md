@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-04T11:38:13.958510+00:00`
+Generated: `2026-11-04T12:38:03.813495+00:00`
 
-- Intake files inspected: **245**
-- Candidates retained in this review window/history: **9972**
+- Intake files inspected: **246**
+- Candidates retained in this review window/history: **9973**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1973
+- `adjacent_radar`: 1974
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 541
+- `needs_editorial_verification`: 542
 - `rejected_noise`: 7376
-- `source_review`: 42
+- `source_review`: 41
 - `watching`: 24
 
 ## Action queue
