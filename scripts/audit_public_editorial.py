@@ -138,6 +138,44 @@ def main() -> int:
             if phrase not in text:
                 failures.append((rel, f"missing shipped-capability marker: {phrase}"))
 
+    # Maintain one evergreen Practical Answers taxonomy, not parallel monthly or
+    # source-specific question indexes. Changes to this public navigation
+    # contract must be intentional rather than added by a publication batch.
+    faq_index = SITE / "docs/faq/README.md"
+    faq_headings = [
+        "## Start with your question",
+        "## Browse all Practical Answers by topic",
+        "## How to read the recommendations",
+    ]
+    faq_topics = (
+        "01-basics.md",
+        "02-buying.md",
+        "03-use-cases.md",
+        "04-battery.md",
+        "05-displays.md",
+        "06-ai-cameras-audio.md",
+        "07-privacy-security.md",
+        "08-accessibility-fit.md",
+        "09-development-openness.md",
+        "10-ownership-future.md",
+    )
+    if not faq_index.exists():
+        failures.append(("docs/faq/README.md", "missing Practical Answers topic directory"))
+    else:
+        faq_text = faq_index.read_text(encoding="utf-8")
+        actual_headings = [
+            line.strip() for line in faq_text.splitlines() if line.startswith("## ")
+        ]
+        if actual_headings != faq_headings:
+            failures.append((
+                "docs/faq/README.md",
+                "Practical Answers must have one topic directory; separate month, source, "
+                "product, foundation, and observed-question sections are forbidden",
+            ))
+        for topic in faq_topics:
+            if f"]({topic})" not in faq_text:
+                failures.append(("docs/faq/README.md", f"missing FAQ subject link: {topic}"))
+
     if failures:
         print("Public editorial audit failed:")
         for rel, issue in failures:
