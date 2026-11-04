@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-03T22:35:44.954856+00:00`
+Generated: `2026-11-04T02:37:39.793778+00:00`
 
-- Intake files inspected: **249**
-- Candidates retained in this review window/history: **10078**
+- Intake files inspected: **247**
+- Candidates retained in this review window/history: **10010**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1999
+- `adjacent_radar`: 1991
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 536
-- `rejected_noise`: 7461
-- `source_review`: 44
+- `rejected_noise`: 7407
+- `source_review`: 38
 - `watching`: 23
 
 ## Action queue
@@ -43,8 +43,6 @@ Generated: `2026-11-03T22:35:44.954856+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1168](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1168) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1188](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1188) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1237](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1237) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1020](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1020) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1023](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1023) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1026](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1026) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1029](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1029) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1030](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1030) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +269,8 @@ Generated: `2026-11-03T22:35:44.954856+00:00`
 | high | needs_editorial_verification | direct | [Vuzix Secures U.S. Distribution Deal with CES, Begins Shipping LX1 Smart Glasses - Kalkine Media](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPMnpsQVBWVm10UzFmVEtWazZCRkZvbG44ZGtLa19hcXJKUVRsd05nT0s0a3Y3aVJWQXJlN3JTd01FelNrUU9ORlZYejAxR2NnUS0xVHY4dGs4b1VObkROTm9IdWFTSVJJZWFVa292WTlhOGpWdWZPX2Y5N1h1UXRMNXoxUGM3THlCTlI5U0FIUy0weWVSWWd4ZElmVWtPZEJVaGhfdzFnVG82elpzMmhtNjhqY21RYlhmY1VJMnB5MzQ1QQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement With Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMiwwFBVV95cUxQR05TQ25nXzFvY29veUlFbnpTelNJS3BuUnZxNEN0VTIyUEwwbG83MU9kdXNmd3JKMnMwMklBN2tUdlNKV2lZWXg2RjA1LUZyZmdSZXg0aTQyN2JrdjdWM2xscFZZdnZvOU9JeGNjZlhZVFFMTDVaRmxpbGt6bHd4R0FkRzdvRU5QOEdoakxfeXNNaVdrS29TQXNGd3BxVjBSWEpJalYwS1QwbTVmQi1NVW42cFl1a0toTEJTRjA0ekRCZzQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMiqgJBVV95cUxPTURFLVlYWDZsbTlOYldVUy1pMnZKaUJCZzU1RnNidkI1dlhicDRSVzFYS1JCQ3lWMFlrR0d3SVBGUWdQZUEwcm01VWlWcUNjWk1Nb3lJbTNqamVEZmVPNEtVMXNOS1F1akdtRTdmS3hKSFoxdHlTMGEtUnJmNFQxUWJXVV9KSXpsTDB3Y05PMVpMdmIyWm9Gakt3OWRfV1BLTWVvM2ZEZFpfd084WndkSEI1N3ItT29aVElMbW5VVnJ1NzVIR2xSVlVlMktEMkhfZWJjbllNUWNJdHlIOWowU0huNGlmdHZjVUhkTjVhemxPVmFQWDVLVWl4SlRSdWRTSW44enM4UnEydVJ1T3F3NC1hdkdLN1NNcVMyVHZyQ3ZSaWVNS1Q5NXh3?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMiowJBVV95cUxNNUxaMHhTbWZVU05VZ0ZENHJMQnVjMkZnU05qdThKTTlvSkNhZ3VveXBKektFX2NtMVNMUWF2OVFzNnN5aHdJU2ptdnpEOUJ0OTF6UkQ0TGticWpwSWd0eHZPckI1ZVhtVHdaMmltRzhpV0J0SHdsN1V1Q2xQczZIMmtNck5fM0tmYkttSHB5djdleEpiRDk4YjFmUDRDdkZUWnEzN2ktQXdmUHNXV0I5Sk8xODlKZmJ5SmR2ek1BcHpQTzFRTkNSQjJ6eGVQSG4xS0FRa294MndIbThySG56eXRFSkd1UFlqMzF2MTZyOG1GM2R2Zm1mTk02TlRUeU1fM2s5Q2dWYzA3ck80dlVCQTBpLVlrY2RWemlEM0tNeU1DX1k?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement With Commercial Electronics Systems And Begins Shipping Against Initial Six-Figure Lx1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMitgJBVV95cUxOaHd6Sm9mTU5xNzVSTjRUVkxqS182NEtXOUZoQmpZQ09oNHNGODFHdml3YUY3R2Fubjh6dkJ6b29ueThEaFRmQllfSnlBUmxrQWRmZ2xtQ3BRSjJPTDlCakhxbnVVRTJkaUtuVGU5SmUyTnRsVG5ZRUpfOWttMWxKOFhOTlJXbzNKSXZLRzJMTWVObGJSc210UURERFF1ajM2alhlOVRoSGVGcFMxT2VnN0YySkR1Y0lzX2dKVXBKQklRQl9jYk1CMDVRbnVPb3c5SHpoYjNuaU9wakdGcFhtYUU0OEhmTDRoX2dzSm5pSXJ1VGJhYUdpeGVrcC1EYzN0NEkwcGctT0dsRDc1TzdlU2dUMnhZQVRUWHo4UTVMVHdfU2Zpd2dhVGg4VWE4R3pWTGxaU3dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
