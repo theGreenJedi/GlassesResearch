@@ -1,13 +1,13 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-04T18:00:46+00:00**
+Generated: **2026-11-05T18:03:37+00:00**
 
 - Published evidence-backed answers: **229** (minimum **1000**, no ceiling)
 - Remaining to minimum: **771**
-- Canonical registry size: **349** (not the published count)
-- Unanswered research candidates: **58**
+- Canonical registry size: **351** (not the published count)
+- Unanswered research candidates: **60**
 - Observations this run: **86**
-- New distinct questions: **6**
+- New distinct questions: **2**
 
 ## Source health
 
@@ -19,12 +19,8 @@ Generated: **2026-11-04T18:00:46+00:00**
 
 ## New questions
 
-- **Q-000344** — Is there a smart glass where I can see the lyrics to a song im listening to? Preferably Spotify
-- **Q-000345** — How much do you guys actually trust through-the-lens photos for waveguide glasses?
-- **Q-000346** — Smart glasses for Black Friday: what's your target price, and what would make you pull the trigger?
-- **Q-000347** — I had no idea 3 companies dominate now. Does it influence which Smart Glasses you buy?
-- **Q-000348** — Raven Prism 1 Impressions - Finally something different in smart glasses?
-- **Q-000349** — AI smartglasses recommendations?
+- **Q-000350** — Do you actually want AR glasses, or just a really good wearable monitor?
+- **Q-000351** — HUD glasses vs micro-OLED display glasses (iO vs GT): if you could only keep one, which fits your life better?
 
 ## Research queue (first 20)
 
