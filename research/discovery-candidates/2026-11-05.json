@@ -1,37 +1,45 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-05T11:35:17.233225+00:00",
-  "candidate_count": 63,
-  "classifier_irrelevant_count": 50,
+  "discovered_utc": "2026-11-05T16:32:47.125823+00:00",
+  "candidate_count": 109,
+  "classifier_irrelevant_count": 78,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 33,
-    "developer": 18
+    "adjacent": 31,
+    "broad_web": 48,
+    "developer": 23,
+    "research": 15
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 12,
+    "adjacent": 31,
     "speculative": 0,
-    "irrelevant": 50
+    "irrelevant": 78
   },
   "type_counts": {
-    "model": 1,
-    "video": 2,
-    "news": 37,
-    "research": 4,
-    "tool": 19,
-    "sdk": 18,
-    "policy": 1,
-    "retail": 2
+    "model": 20,
+    "review": 1,
+    "video": 1,
+    "news": 33,
+    "research": 10,
+    "tool": 31,
+    "sdk": 26,
+    "hack": 1,
+    "policy": 2,
+    "retail": 13,
+    "community": 27
   },
   "routing_counts": {
-    "adjacent_radar": 12,
-    "deep_research": 1,
-    "reject_noise": 50,
+    "adjacent_radar": 31,
+    "community_evidence_review": 9,
+    "deep_research": 2,
+    "development_hacking": 6,
+    "model_catalog_review": 5,
+    "reject_noise": 78,
     "report_card_evidence": 1,
-    "research_news_review": 13
+    "research_news_review": 31,
+    "retail_rebrand_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,40 +53,47 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "91cb2212c224a21c",
-      "title": "Our 9 Best Smart Glasses in the US - November 2026 ...",
-      "url": "https://www.bestproductsreviews.com/best-smart-glasses",
-      "summary": "Easily compare & choose from the 10 best Best Smart Glasses for you. Don't buy Best Smart Glasses in the US before reading our rankings | bestproductsreviews.com.",
-      "discovery_channel": "broad_web",
-      "query": "best smart glasses",
+      "id": "77245e41c463b2a1",
+      "title": "ElevenLabs UI | ElevenLabs UI",
+      "url": "https://ui.elevenlabs.io/",
+      "summary": "Engineered by ElevenLabs. The source code is available on GitHub. A collection of Open Source agent and audio components that you can customize and extend.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "github",
+        "open source"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "news"
+        "model",
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2569e3e5589b395c",
-      "title": "最近席卷西方的Antifa到底是啥？ - 知乎",
-      "url": "https://www.zhihu.com/question/405387875",
-      "summary": "Antifa Financing The coordinated violence raises questions about how Antifa is financed. The Alliance for Global Justice (AFGJ) is an organizing group that serves as a fiscal sponsor to numerous radical left-wing initiatives, according to Influence Watch, a research group that collects data on advocacy organizations, foundations and donors.",
+      "id": "8f31fc1ab15e446e",
+      "title": "AI research and products that reimagine human-technology",
+      "url": "https://elevenlabs.io/about",
+      "summary": "ElevenLabs aims to make communication and creation with technology seamless. We offer Text to Speech, Speech to Text, and several other creative tools.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -95,13 +110,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "video",
         "research"
       ],
-      "primary_type": "video",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "deep_research",
         "adjacent_radar"
       ],
@@ -111,140 +124,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c75dbeb9b9fe667b",
-      "title": "ANTIFA - Sticker in Pixel art - anarcho-punk.net",
-      "url": "https://www.anarcho-punk.net/threads/antifa-sticker-in-pixel-art.20868/",
-      "summary": "ANTIFA - Sticker in Pixel art Discussion in ' Other downloads ' started by AKhan74, Jan 31, 2018.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ef8b5a6d30dfb106",
-      "title": "Antifa是什么组织？ - 知乎",
-      "url": "https://www.zhihu.com/question/357264663",
-      "summary": "Antifa的目的是什么？ 我真没想到，现在竟然这么多人认为Antifa是恐怖组织，更有甚者还给出什么“犹太”阴谋论，真是令本人大开眼界。 Antifa暴力，那么把82和101空输调来的懂王暴不暴力啊？和美国特色老红脖子比起来Antifa暴力吗？ 看来在今天，我们身旁许许多多的人其实都是 威权崇拜者。他们 ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "831b5c5dccd83d90",
-      "title": "Are these bands racist? - Anarcho-Punk.net",
-      "url": "https://www.anarcho-punk.net/threads/are-these-bands-racist.7548/",
-      "summary": "GO ANTIFA ULTRAS WORLDWIDE! \"C'mon C'mon, C'mon, C'mon, C'mon, C'mon, ANTI-FA HOOLIGANS!\" \"Fascism is nothing but a cruel, convulsive spasm of a decaying society that tragically drowns in the quagmire of it's lies.\" Black Flags by Renzo Novatore \"I am an individualist because I am an anarchist; and I am an anarchist because I am a nihilist.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe8d5a4c94fca8dd",
-      "title": "Forming An Antifa Group: A Manual - Anarcho-Punk.net",
-      "url": "https://www.anarcho-punk.net/threads/forming-an-antifa-group-a-manual.20065/",
-      "summary": "WHY“ANTIFA”? The first question is: Why are you forming an “antifa” group? The label has advantages and disadvantages, and you should consider this before adopting it. The antifa name gets you a certain level of brand recognition and built-in credibility, but it also includes certain obligations and distinct disadvantages.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a84778a137bf07ca",
-      "title": "Redirecting...",
-      "url": "https://whatsanswer.com/us-sales-tax/20657-sales-use-tax-rate-lusby-md/",
-      "summary": "Redirecting... ... Redirecting...",
+      "id": "3624851f67ccd825",
+      "title": "Dividend History - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/quotes/dividend-history",
+      "summary": "Explore the dividend history for Nasdaq-listed stocks. Review past payments, yield trends, and payout consistency for informed investment decisions.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -253,11 +144,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -266,201 +158,192 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "04814dfbac350b2c",
-      "title": "whatsanswer.com",
-      "url": "https://whatsanswer.com/wp-content/uploads/blocksy/local-google-fonts/s/kanit/v15/nKKS-Go6G5tXcraQI6miZaxhMXBxEu_GOQ.woff2",
-      "summary": "wOF2 D D ì ( ƒL . `‚l ì Ó; d 6 $ ƒ8 „ ˆi i6EF… €2ÿ #*6«FQ*&;Áÿ‡ 6â®hû G› c R—ºë *±lˆ $dç;ŽPŸ[|¿î ¼×eÈ ‰çúßÛ} û^ À ...",
+      "id": "ea1fdc87b98b3f6f",
+      "title": "Eleven v4 and Eleven v4 Turbo Text to Speech models",
+      "url": "https://elevenlabs.io/v4",
+      "summary": "Meet Eleven v4 and Eleven v4 Turbo by ElevenLabs, our most expressive models yet, with Turbo built for real-time use. Available in apps, API, and agents.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8c5fd3ee3c122543",
+      "title": "ElevenAPI - ElevenLabs the most powerful AI audio APIs",
+      "url": "https://elevenlabs.io/api",
+      "summary": "Build any audio project with native ElevenLabs TypeScript and Python SDKs, or with our REST API. Get started with detailed demos, examples, and documentation. Convert text to speech with the most expressive voice model in the world. Realtime or batch Speech to Text for any platform.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d26492e8a425a0e4",
+      "title": "ElevenLabs - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ElevenLabs",
+      "summary": "In June 2025, ElevenLabs released Eleven v3, a new text-to-speech model that supports more than 70 languages, natural multi-speaker dialogue, and audio tags like [excited], [whispers], and [sighs].",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "released"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e5463b7d529f777",
+      "title": "Explore | ElevenLabs Showcase",
+      "url": "https://showcase.elevenlabs.io/",
+      "summary": "Explore a curated gallery of voice and audio experiences powered by ElevenLabs. Discover what developers and teams are shipping today.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e131ef2296fd66c1",
+      "title": "Menards kitchen cabinets, are they worth it? : r/HomeImprovement - Reddit",
+      "url": "https://www.reddit.com/r/HomeImprovement/comments/cvxwon/menards_kitchen_cabinets_are_they_worth_it/",
+      "summary": "In college I worked in shipping and receiving at Menards. I would recommend staying away from the pressed board/mdf built cabinets. They broke easily and over time the shelves will sag. Quality One was their entry brand if I remember right, but the plywood boxes always seemed to hold up better. Reply reply krista37m •",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8cf4153853665a7e",
+      "title": "NVIDIA Corporation Common Stock (NVDA) - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda/analyst-research",
+      "summary": "Find the latest analyst research, reports, and ratings for NVIDIA Corporation Common Stock (NVDA) at Nasdaq.com.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d21e87274e0875b",
-      "title": "「安提法」（anti-fa）是个什么东西？ - 知乎",
-      "url": "https://www.zhihu.com/question/2607046017",
-      "summary": "在美国，如果要说影响力最大的非政府组织，“安提法（Antifa）”绝对是数一数二的。但是，这个组织其实是高度去中心化的。什么意思呢？简单来说，“安提法”并没有一个固定的组织结构，也没有明确的领导人，或者指挥系统。 所有的成员都像是幽灵，来去都是无影无踪的。他们一般通过加密 ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0607267c3953f4ff",
-      "title": "在欧美国家做一名卡车司机是怎样的体验？ - 知乎",
-      "url": "https://www.zhihu.com/question/27371794",
-      "summary": "因此，我既反对警察对黑人开枪，也反对Antifa运动。 总之，真想学卡车的，最好去华人驾校，而不要为了面子打肿脸充胖子去老外的驾校，否则你是吃不了兜着走。 人性都是一样的，客观地说，中国驾校有些丑恶的东西，在老美的驾校里同样存在：",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ce7042c7507242ae",
-      "title": "如何看待特朗普宣布将极端反法西斯行动组织（ANTIFA）列为恐怖组织？",
-      "url": "https://www.zhihu.com/question/398691084",
-      "summary": "美国的Antifa运动确实在16年后影响力变大，手段也愈加暴力，穿黑衣带黑口罩，进行反zf暴力活动，当然这也是跟川普自身的右翼属性以及经常发表一些极右翼言论密切相关。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "946e8c596253d281",
-      "title": "特朗普称将把美国极左组织 Antifa 正式定性为「恐怖组织」，有何深意？哪些信息值得关注？ - 知乎",
-      "url": "https://www.zhihu.com/question/1952021326056387967",
-      "summary": "Antifa上世纪80~90年代传入美国，为逃避惩罚，运动保持去中心化，无正式领导，依靠社交媒体组织与协调。 BLM、J6都与Antifa有关，自传入美国40年一共发生33起打砸抢烧杀事件，其中： 20起发生在共和党执政期， 13起发生在民主党执政期；",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fedf6a94b4810c3e",
-      "title": "赵泠 - 知乎",
-      "url": "https://www.zhihu.com/people/MarryMea",
-      "summary": "首先是因为这个“按道理说秒射在传播基因上更有优势”不成立。 其次，人的早泄的遗传力只有约 28% [1]，其余约 72% 的差异归因于环境因素（例如心理、伴侣关系、早期经历）和测量误差。许多人是后天发展为早泄的。 包括人类男性在内，某些雄性动物的身体构造有概率在长时间交配时靠机械运动 ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4d5984efd393533e",
-      "title": "Current Date And Time In Ethiopia",
-      "url": "https://www.geocountries.com/holidays/ethiopia",
-      "summary": "Ethiopia public holidays including Patriots' Victory Day (May 5), sourced from official government records — plus a live calendar of upcoming and recently observed dates for business planning and market research.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 2,
       "keyword_hits": [
         "research"
       ],
@@ -470,31 +353,63 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "research",
-        "tool",
-        "sdk"
+        "research"
       ],
       "primary_type": "research",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a8135dfdbdc240c9",
-      "title": "60 Days From Today",
-      "url": "https://calculator.today/60-days-from-today",
-      "summary": "This calculator helps you instantly find what date falls exactly 60 days from today. It also provides useful calendar insights like the day of the week, month number, and more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "6865f6a2eb2c08e9",
+      "title": "Busiest Store?? : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/1boflo5/busiest_store/",
+      "summary": "This subreddit is dedicated to Menards! Customers, Contractors, and Team Members are all welcome! SAVE BIG MONEY AT MENARDS! MembersOnline • moon613child ADMIN MOD",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81c106b320cdde4f",
+      "title": "Earnings Reports | Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/earnings",
+      "summary": "Access detailed earnings reports for companies listed on the Nasdaq. Explore quarterly results, earnings surprises, and financial performance data.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -502,30 +417,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d85b58d37cbb69d6",
-      "title": "60 Days From Today",
-      "url": "https://www.daysfromdate.com/60-days-from-today",
-      "summary": "What date is 60 days from today? Use our free Days From Date calculator to add or subtract 60 days—plus weeks, months, or years—from any start date.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "85da5aab852110d2",
+      "title": "Flexible AI workflows for team collaboration and management",
+      "url": "https://elevenlabs.io/teams",
+      "summary": "Streamline project collaboration and management with unlimited user seats and helpful intra-team communication and asset sharing features tailored to your company's needs. Take your campaigns and projects across the globe with our AI dubbing and multilingual models.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -533,30 +448,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "397671968221092b",
-      "title": "60 Days from Today - Date Calculator",
-      "url": "https://timedatecalc.com/60-days-from-today",
-      "summary": "To get started, enter the start date to which you need to add/subtract days (today's date is initially displayed). Use the calendar for more convenient date selection. Next, enter the time value you need to add or subtract from the start date (years, months, weeks, days).",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "10235597d206cc8a",
+      "title": "Free AI Voice Generator & Voice Agents Platform | ElevenLabs",
+      "url": "https://elevenlabs.io/",
+      "summary": "Powering India’s largest voice-driven car retail operation.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -564,30 +479,97 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "tool",
-        "sdk"
+        "retail"
       ],
       "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4ee01ad0df128238",
-      "title": "60 Days from Today Calculator",
-      "url": "https://dashcalculator.com/calculators/days-from-today?days=60",
-      "summary": "Find the date and weekday 60 calendar days from today. Compare nearby start dates, check the calendar, or choose a different starting day.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "e65ed5371fea5693",
+      "title": "Manager Trainee : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/n50sj4/manager_trainee/",
+      "summary": "13 votes, 11 comments. I recently applied for a job as a Manager Trainee, and coming from Home Depot as an overnight merchandiser making around $1…",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "366e16ab3f36c802",
+      "title": "Menards is going crazy with Masterforce. What are your thoughts ...",
+      "url": "https://www.reddit.com/r/Tools/comments/b7azcw/menards_is_going_crazy_with_masterforce_what_are/",
+      "summary": "Now my local Menards is renovating its selection and clearancing a lot of other brands just to replace them with a lot of Masterforce versions. In many cases, you can tell that Menards is just buying products from the same companies but having them made as Masterforce. Is Masterforce a decent line of tools? Do you trust them? Share Add a Comment",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c601edd42381bdf9",
+      "title": "Menards® - Dedicated to Service & Quality℠",
+      "url": "https://www.menards.com/main/home.html",
+      "summary": "Save BIG Money on your home improvement needs at over 300 stores in categories like tools, lumber, appliances, pet supplies, lawn and gardening and much more.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -595,30 +577,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fb4af0fe50601922",
-      "title": "Current Local Time in Ethiopia - TIME.et",
-      "url": "https://time.et/",
-      "summary": "Today’s date and time in Ethiopia, the calendar and its holidays — plus the everyday tools that go with them: date converter, Amharic keyboard and weather.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "092cc38f797eebad",
+      "title": "NEAR Intents - The Universal Liquidity Protocol",
+      "url": "https://intents.near.org/",
+      "summary": "NEAR Intents powers one-click cross-chain swaps, unified liquidity, and universal execution for onchain markets.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -626,30 +608,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4781c3591969ef35",
-      "title": "Current Time in Addis Ababa, Ethiopia - Time Zone & Details",
-      "url": "https://worldstandardtime.com/city-ethiopia-addis-ababa-addis-ababa",
-      "summary": "Current local time in Addis Ababa, Ethiopia. View time zone details, UTC offset, sunrise, sunset, and daylight saving time info for Addis Ababa.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "2a8f0d80b2719939",
+      "title": "NVDA Latest Real Time Trades - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda/latest-real-time-trades?time=1",
+      "summary": "Stay Informed on NVDA's Latest Trades, Real-Time Updates, Trade Volume, and Price Movements. Get the most current trading insights on NVIDIA Corporation Common Stock (NVDA) with Nasdaq.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -657,30 +639,31 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "retail",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2e1804eaa8296e8a",
-      "title": "Ethiopia Time Now - WorldTimeData",
-      "url": "https://worldtimedata.com/time/ethiopia/",
-      "summary": "Ethiopia: UTC+3 (EAT), no daylight saving time. Live local time, time zones, public holidays and major airports.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "a2ddc2820c885e01",
+      "title": "NVIDIA Corporation Common Stock (NVDA) - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda",
+      "summary": "Discover real-time NVIDIA Corporation Common Stock (NVDA) stock prices, quotes, historical data, news, and Insights for informed trading and investment decisions. Stay ahead with Nasdaq.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -688,30 +671,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "febe9886a6b25ed1",
-      "title": "Ethiopia Time Now — Current Time in Addis Ababa (EAT) & Calendar Converter",
-      "url": "https://ethiopiatime.com/",
-      "summary": "What time is it in Ethiopia right now? Live East Africa Time (EAT), Ethiopian calendar converter, and time zone comparison — updated every second.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "aff2e0a023e8fa0c",
+      "title": "NVIDIA Corporation Common Stock (NVDA) Dividend History",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda/dividend-history",
+      "summary": "Stay up-to-date on NVIDIA Corporation Common Stock (NVDA) Dividends, Current Yield, Historical Dividend Performance, and Payment Schedule.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -719,30 +702,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6d09a1ec12f70b06",
-      "title": "Ethiopian Calendar Today - Date Converter, Holidays & Time",
-      "url": "https://www.ethiopiancalendar.et/",
-      "summary": "Use this free converter to find today's Ethiopian date, convert any Gregorian date to Ethiopian, or look up Ethiopian holidays including Enkutatash (Ethiopian New Year), Fasika (Easter), Timkat, Meskel, and Genna.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "0fdd38b7fa007073",
+      "title": "NVIDIA Corporation Common Stock (NVDA) News - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda/news-headlines",
+      "summary": "Stay up-to-date on NVIDIA Corporation Common Stock (NVDA) news with the latest updates, breaking headlines, news articles, and more from around the web at Nasdaq.com.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -750,30 +733,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "af4c3b552b3ee3db",
-      "title": "Ethiopian Calendar Today 2019, What year is it in Ethiopia 2026",
-      "url": "https://www.ethiopiancalendar.net/",
-      "summary": "Ethiopia is on Eastern Africa Time zone all year and does not have daylight saving. The time in Ethiopia right now is 04:09:40 PM. The Ethiopia time and date system is truly unique, with a calendar and timekeeping system unlike any other.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "a595dc6d4fd5e85f",
+      "title": "NVIDIA Corporation Common Stock (NVDA) Option Chain - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda/option-chain",
+      "summary": "View the most recent data and latest information on option chains for NVIDIA Corporation Common Stock (NVDA) at Nasdaq.com.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -781,30 +764,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f1169501b5ac7f15",
-      "title": "Ethiopian Calendar Today | Date, Converter & Holidays",
-      "url": "https://ethiopiancalendars.com/",
-      "summary": "See today's Ethiopian date, browse all 13 months, convert Ethiopian and Gregorian dates, and check fixed Ethiopian holidays in one accurate calendar.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "f3164f44f8378989",
+      "title": "NVIDIA Corporation Common Stock (NVDA) Real-Time Quotes - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/stocks/nvda/real-time?pageno=0",
+      "summary": "Get real-time updates on NVIDIA Corporation Common Stock (NVDA) stock quotes, trades, and more. Make informed investments with Nasdaq.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -812,32 +795,286 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9d96935c41f8b6e6",
-      "title": "Microsoft OneDrive",
-      "url": "https://onedrive.live.com/login/en-us/",
-      "summary": "No account? Create one! ©2026 Microsoft Privacy statement",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "2d1d4b4cecec0c50",
+      "title": "Outside Yard & Receiving : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/u939ae/outside_yard_receiving/",
+      "summary": "This subreddit is dedicated to Menards! Customers, Contractors, and Team Members are all welcome! SAVE BIG MONEY AT MENARDS! This subreddit is dedicated to the topic of Lowe's. Customers and employees welcome. A place where women can talk about prepping for their specific needs.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4736549a0a38b7f7",
+      "title": "Profit sharing : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/14kzely/profit_sharing/",
+      "summary": "This subreddit is dedicated to Menards! Customers, Contractors, and Team Members are all welcome! SAVE BIG MONEY AT MENARDS! MembersOnline • oofdabuga ADMIN MOD",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "375387d07517d47e",
+      "title": "Rebates. : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/tfp45u/rebates/",
+      "summary": "What keeps someone from walking the parking lot and picking up 2-300 dollars worth of extra rebates? Obviously if you sent in like $5k worth of rebates it would look obvious, but if someone paid in cash there is no way they are going to know.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "876275f8b2b01e54",
+      "title": "Seal coating driveway with Menards Bestseal 100 - Reddit",
+      "url": "https://www.reddit.com/r/HomeImprovement/comments/v3xow8/seal_coating_driveway_with_menards_bestseal_100/",
+      "summary": "Seal coating driveway with Menards Bestseal 100 Around 10 feet of my driveway was removed by the city last year when they were installing new sewer lines. It was replaced with a concrete apron. Unfortunately the movement and shifting made my driveway develop cracks the width of the drive. I had to fill the cracks and a couple pot holes.",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d449056682fc659e",
+      "title": "Short Interest - Nasdaq",
+      "url": "https://www.nasdaq.com/market-activity/quotes/short-interest",
+      "summary": "Many investors believe that rising short interest positions in a stock is a bearish indicator. They use the Days to Cover statistic as a way to judge rising or falling sentiment in a stock from ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "43df568b372aab42",
+      "title": "Sign In | ElevenLabs",
+      "url": "https://elevenlabs.io/app/sign-in",
+      "summary": "Don't have an account? Sign up.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc7c6d98b6964065",
+      "title": "Submit a request – ElevenLabs",
+      "url": "https://help.elevenlabs.io/hc/en-us",
+      "summary": "The best way to contact customer support is through our new submission form: This new form is not yet live for those on our enterprise plans. If the new form doesn't work for you, or you don't have an ElevenLabs account, email support@elevenlabs.io. For enterprise support, email enterprise@elevenlabs.io.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5429c40a4757572a",
+      "title": "The only thing keeping me from shopping for new appliances at Menards ...",
+      "url": "https://www.reddit.com/r/menards/comments/1c8xilj/the_only_thing_keeping_me_from_shopping_for_new/",
+      "summary": "The only thing keeping me from shopping for new appliances at Menards is the lack of ratings/reviews on the website",
+      "discovery_channel": "adjacent",
+      "query": "prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10fadb43bbeae3c0",
+      "title": "Operation Project Freedom - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Project_Freedom",
+      "summary": "Operation Project Freedom is a United States military operation launched on 4 May 2026 to escort merchant ships, in response to Iranian attacks on shipping in the Strait of Hormuz. [a] The operation was temporarily paused on 5 May. It was declared the second stage of the Iran war, following the end of Operation Epic Fury. [12]",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
       "keyword_hits": [
-        "privacy"
+        "shipping"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -847,101 +1084,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5af39f5d07a1b233",
-      "title": "Today in Ethiopian Calendar - EtCal",
-      "url": "https://etcal.net/today.html",
-      "summary": "Check what today's date is in Ethiopia, the Gregorian equivalent, current Ethiopian year, weekday, holidays today, and the next Ethiopian holiday. Install EtCal for reminders, widgets, events, PDF Export, and offline access.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
+        "model",
         "tool",
         "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "373d5f53e84cfbf2",
-      "title": "Today's Ethiopian Date and Time in Ethiopia Now | Ethiopian Calendar",
-      "url": "https://ethiopiancalendar.app/today",
-      "summary": "What is today's date in the Ethiopian calendar? See today's Ethiopian date in Amharic and English, the current time in Ethiopia in Ethiopian and international time, today's holiday and fasting status.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f92d58222f383850",
-      "title": "Unlock the power of Copilot in Excel, now generally available ...",
-      "url": "https://techcommunity.microsoft.com/blog/excelblog/unlock-the-power-of-copilot-in-excel-now-generally-available/4242810",
-      "summary": "Today, we unveiled the next wave of Copilot including the announcement that Copilot in Excel is now generally available and ready to assist data-driven professionals around the world. In addition, we also announced the public preview of Copilot in Excel with Python, enabling powerful advanced analysis. Previously, we talked about the vision of how Copilot in Excel could revolutionize the way ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "announced"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -953,17 +1098,17 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1ec4996f9527f97c",
-      "title": "Used Volkswagen cars for sale near Fruit Cove, FL",
-      "url": "https://www.cars.com/shopping/volkswagen/fruit_cove-fl/",
-      "summary": "Shop Volkswagen vehicles in Fruit Cove, FL for sale at Cars.com. Research, compare, save listings or contact sellers directly from 353 Volkswagen models in Fruit Cove, FL.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "id": "d3ec7bda796c49d5",
+      "title": "Prometheus (company) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prometheus_(company)",
+      "summary": "The project will launch with $6.2 billion in funding, partly from Bezos. [1] Vik Bajaj, a chemist and physicist formerly of Google X who is the co-founder and CEO of AI-incubator Foresite Labs, is the startup's co-founder and co-chief executive. [1] Prometheus is based in San Francisco, with offices in London and Zurich. [2]",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
       "keyword_hits": [
-        "research"
+        "launch"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -973,8 +1118,139 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
-        "retail"
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b983e05cc183282",
+      "title": "The Blair Witch Project - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Blair_Witch_Project",
+      "summary": "The Blair Witch Project was released on VHS and DVD on October 22, 1999 [51][52] by Artisan, presented in a 1.33:1 windowboxed aspect ratio and Dolby Digital 2.0 audio. Special features include the documentary Curse of the Blair Witch, a five-minute Newly Discovered Footage, audio commentary, production notes, and cast and crew biographies.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "released"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75f6eb0d11ccf42a",
+      "title": "Businesses We Love - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/about-us/businesses-we-love.html",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64bba8bc8e3b77dd",
+      "title": "Contact Us - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://www.nouvellesalon.biz/contact.html",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "503e6ae505b1e4f5",
+      "title": "General Science II - Unit 7 : Machines (Part 1) - Quiz 3: Work",
+      "url": "https://quizlet.com/376733702/general-science-ii-unit-7-machines-part-1-quiz-3-work-flash-cards/",
+      "summary": "Study with Quizlet and memorize flashcards containing terms like Write the metric units for these measurements. Do not abbreviate. force distance work power energy time, Select the type of energy in the following example : a pigeon on a ledge, Select the type of energy in the following example : a compressed spring on a railroad bumper and more.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -986,10 +1262,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ac141f6d11db113e",
-      "title": "What Date Is 60 Days From Today? - Inch Calculator",
-      "url": "https://www.inchcalculator.com/days-from/60-days-from-today/",
-      "summary": "Calculate the date sixty days from today. See what date it will be in 60 calendar days or working days.",
+      "id": "665bb62422b33b43",
+      "title": "Gingersnap Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/12214/gingersnap-pumpkin-pie/",
+      "summary": "This creamy gingersnap pumpkin pie has a crunchy gingersnap cookie crust and perfectly spiced pumpkin filling for a showstopping Thanksgiving dessert.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1017,10 +1293,359 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6bb0ed418deb1f62",
-      "title": "What is 60 Days From Today? - Calculatio",
-      "url": "https://calculat.io/en/date/count/60--days--from--today",
-      "summary": "When Will It Be 60 Business Days From Today? February 2, 2027 — counting Monday to Friday and skipping US federal holidays",
+      "id": "779cab0ccc30d635",
+      "title": "Hair Care - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://www.nouvellesalon.biz/services/hair.html",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ccf13b5254601bf4",
+      "title": "Home - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c558005404b8199",
+      "title": "Julia Child's Pumpkin Pie Recipe Has the Most Genius Trick",
+      "url": "https://www.allrecipes.com/julia-childs-pumpkin-pie-hack-11842585",
+      "summary": "Julia Child’s go-to pumpkin pie recipe involves an easy trick: adding an egg white meringue to the filling to get a light and airy texture.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "hack"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb976b4bd54c5c0e",
+      "title": "Location - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/about-us/location.html",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9370303f64cf556",
+      "title": "Meet The Team - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/about-us/meet-the-team/",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c03c576c2acb3f1",
+      "title": "Men's Grooming - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/services/mens-grooming.html",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "585c30f83beb5337",
+      "title": "New at Aveda - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/aveda/new-at-aveda.html",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88e864a84bd40e1e",
+      "title": "Nouvelle Rewards - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/about-us/nouvelle-rewards.html",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "813fb7e74e2d153e",
+      "title": "Project Esther - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Project_Esther",
+      "summary": "Project Esther is a project of the Heritage Foundation, a conservative think tank based in Washington, D.C., that aims to suppress pro-Palestinian protests and what it classifies as antisemitism.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "225e75fc98d47bb8",
+      "title": "Project management - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Project_management",
+      "summary": "Project management is the process of supervising the work of a team to achieve all project goals within the given constraints. [1] This information is usually described in project documentation, created at the beginning of the development process. The primary constraints are scope, time and budget. [2]",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7488270de5a160d",
+      "title": "Project planning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Project_planning",
+      "summary": "Initially, the project scope is defined and the appropriate methods for completing the project are determined. Following this step, the durations for the various tasks necessary to complete the work are listed and grouped into a work breakdown structure. Project planning is often used to organize different areas of a project, including project plans, workloads and the management of teams and ...",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ac53146a4e70c0df",
+      "title": "Pumpkin Custard Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/13858/pumpkin-custard-pie/",
+      "summary": "This pumpkin custard pie has delicious flavor, thanks to caramelized pumpkin puree and fall spices. Baking the hot filling in a chilled crust produces a smooth and shiny, good-textured custard and a well-baked crust for this holiday dessert. Works well with crumb crusts too, such as graham cracker or gingersnap.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1048,10 +1673,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8b60fda694efca7a",
-      "title": "What is 60 Days From Today? - The Calculator Site",
-      "url": "https://www.thecalculatorsite.com/time/days/60",
-      "summary": "Adding sixty days to today's date takes you to Saturday January 2, 2027. This will be the 1st day of the year, falling within the 53rd week and the 1st quarter of the year.",
+      "id": "a77db12566e8ec69",
+      "title": "Pumpkin Pie Bread Recipe",
+      "url": "https://www.allrecipes.com/recipe/7243/pumpkin-pie-bread/",
+      "summary": "This moist pumpkin pie bread recipe is made with pumpkin purée, sugar, and seasoned with pumpkin pie spice, making it taste like just like pumpkin pie.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1079,10 +1704,74 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "202d5056fcc8d767",
-      "title": "What Is The Date 60 Days From Today? - Calculator Online",
-      "url": "https://calculator-online.net/60-days-from-today/",
-      "summary": "The 60 days from today calculator helps you quickly determine the exact date sixty days ahead. You can also enter any custom number of days or use preset options to get instant calculations.",
+      "id": "0d2be00285728aea",
+      "title": "Subsidized housing in the United States - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Subsidized_housing_in_the_United_States",
+      "summary": "The Inclusive Communities Project, Justice Kennedy clarified that the Fair Housing Act was intended to promote equity, not just eliminate explicit acts of discrimination. Changes in both public policy and social narrative are equally necessary for establishing equitable housing opportunities for all Americans.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fde7fd6136ea237d",
+      "title": "Welcome to our new site! - Nouvelle Salon - Sheboygan, WI",
+      "url": "https://nouvellesalon.biz/blog/blog-container/2016/01/04/welcome-to-our-new-site!/",
+      "summary": "Nouvelle Salon is an Aveda salon located in Sheboygan, WI. We offer full Aveda salon and spa services. Salon gift certificates available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0f5b501d0a65ae2f",
+      "title": "Whipped Pumpkin Pie Recipe",
+      "url": "https://www.allrecipes.com/recipe/235146/whipped-pumpkin-pie/",
+      "summary": "With all the flavor of a traditional pumpkin pie, this whipped pumpkin pie boasts a lighter texture and a graham cracker crust.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -1110,12 +1799,73 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "aff02469fd1e2626",
-      "title": "A Guide to England's Lake District - Lonely Planet",
-      "url": "https://www.lonelyplanet.com/articles/guide-to-the-lake-district",
-      "summary": "From Windermere to Scafell Pike, and the best things to do with your family, this guide will tell you everything you need to know before visiting the Lake District.",
+      "id": "8546b68a0173949a",
+      "title": "WikiProject - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikiproject",
+      "summary": "A WikiProject is an affinity group for contributors with shared goals within the Wikimedia movement. WikiProjects are prevalent within the largest wiki, Wikipedia, and exist to varying degrees within sibling projects such as Wiktionary, Wikiquote, Wikidata, and Wikisource. They also exist in different languages, and translating articles is a form of collaboration among them. During the COVID ...",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6eae260ed1055a30",
+      "title": "(US) has anyone used Zillow cash offer? : r/RealEstate - Reddit",
+      "url": "https://www.reddit.com/r/RealEstate/comments/otmtwz/us_has_anyone_used_zillow_cash_offer/",
+      "summary": "Zillow offered 379 (approximately 364 after fees and repairs) and open door offered 365 (344 after fees). What gives? This is a really competitive offer and above what the comps area for my area. I did notice that both websites used a couple residential houses that sold for over 400k to base their offer. I wonder if that is a mistake?",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c06b19f00f12140",
+      "title": "[FREE] Match the terms to their definition/description: 1. A measure of ...",
+      "url": "https://brainly.com/question/41697991",
+      "summary": "Mechanical Advantage: This term describes the measure of the increase in force done by a machine. It allows machines to multiply force, so the output force is greater than the input force.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1140,10 +1890,281 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6588fd3507bb7265",
-      "title": "Accessing OneDrive through Windows Admin and User Accounts",
-      "url": "https://learn.microsoft.com/en-us/answers/questions/5425348/accessing-onedrive-through-windows-admin-and-user",
-      "summary": "I have been using Microsoft 365 and OneDrive for a few years now and use it to store a lot of my documentation. I was accessing my OneDrive through my laptop Admin account and through iOS, using my ApplieID, but then signing in to the OneDrive app, using…",
+      "id": "70b5d1467fe36495",
+      "title": "A sad tale (and a dire warning) about imgflip and its sole ... - Reddit",
+      "url": "https://www.reddit.com/r/cyberbullying/comments/kn379n/a_sad_tale_and_a_dire_warning_about_imgflip_and/",
+      "summary": "Dylan remained unfazed. And came apart at the seams more and more while unintentionally revealing a lot of facts about imgflip.Like that he is the sole global moderator of imgflip and the \"community mods\" only being his creations.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ace0ddf3be3518f4",
+      "title": "Aeronautical Information Manual - Federal Aviation Administration",
+      "url": "https://www.faa.gov/air_traffic/publications/media/AIM_Basic_w_Chg_1_dtd_8-7-25.pdf",
+      "summary": "February 20, 2025 U.S. Department of Transportation Federal Aviation Administration Aeronautical Information Manual Official Guide to Basic Flight Information and ATC Procedures",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0fabae38239374d4",
+      "title": "Airplane Flying Handbook | Federal Aviation Administration",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook",
+      "summary": "Airplane Flying Handbook Airplane Flying Handbook (FAA-H-8083-3C) (full book) (PDF, 260.6 MB) Front Matter: Cover, Preface, Acknowledgments, Major Revisions, & Table of Contents (PDF) Chapter 1: Introduction to Flight Training (PDF) Chapter 2: Ground Operations (PDF) Chapter 3: Basic Flight Maneuvers (PDF)",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f5f828d9543e61f",
+      "title": "Airports Statutes & Regulations - Federal Aviation Administration",
+      "url": "https://www.faa.gov/airports/resources/publications/regulations",
+      "summary": "Explore comprehensive information on Federal Aviation Administration's statutes and regulations related to airports.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c2050520a8cffdd",
+      "title": "Airworthiness Directives | Federal Aviation Administration",
+      "url": "https://www.faa.gov/regulations_policies/airworthiness_directives",
+      "summary": "Airworthiness Directives (ADs) are legally enforceable regulations issued by the FAA in accordance with 14 CFR part 39 to correct an unsafe condition in a product. Part 39 defines a product as an aircraft, engine, propeller, or appliance.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "611f37316cc21fe1",
+      "title": "Apps Marketplace - Canva",
+      "url": "https://apps.canva.com/",
+      "summary": "Power up your design toolkit with new AI design tools and simplify your workflow with Canva Apps and Integrations.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e5c6900e84d5ccf6",
+      "title": "Are all houses on sale posted on Zillow? : r/RealEstate - Reddit",
+      "url": "https://www.reddit.com/r/RealEstate/comments/k274yt/are_all_houses_on_sale_posted_on_zillow/",
+      "summary": "Wondering if there are some houses that aren’t posted on sites like Zillow and if so how to find them? I understand for sale by owner would obviously…",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a167c3b1113361b5",
+      "title": "Aviation Handbooks & Manuals - Federal Aviation Administration",
+      "url": "https://www.faa.gov/regulations_policies/handbooks_manuals/aviation",
+      "summary": "Aviation Handbooks & Manuals Any reproduction or modification of this material from original FAA source material is solely the responsibility of the publisher. Testing Standards Section publications are denoted by an asterisk (*).",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a6251fcc0b58ac01",
+      "title": "Canva - Facebook",
+      "url": "https://www.facebook.com/canva/",
+      "summary": "Learn how to level up your workflow and unlock even more ways to create in Canva with our apps and integrations.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "35aec7a48d11e418",
+      "title": "Canva India: Visual Suite for Everyone",
+      "url": "https://www.canva.in/",
+      "summary": "Canva is a free to use online graphic design tool. Use it to create designs for Indian festivals, social media posts, presentations, posters, videos, logos and more.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1170,10 +2191,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a75aa539e2b08e81",
-      "title": "Aztecs Late Rally Falls Short Against No. 25 North Texas, 49-47",
-      "url": "https://goaztecs.com/news/2025/12/27/aztecs-late-rally-falls-short-against-no-25-north-texas-47-49",
-      "summary": "Aztecs Late Rally Falls Short Against No. 25 North Texas, 49-47 San Diego State pushed the Mean Green to the brink behind four rushing touchdowns from the quarterbacks and a late punt returned for a touchdown.",
+      "id": "0354324c55a28979",
+      "title": "Canva: Visual Suite & Free Online Design Tool",
+      "url": "https://www.canva.cn/en/",
+      "summary": "Create beautiful designs with your team. Use Canva's drag-and-drop feature and layouts to design, share and print business cards, logos, presentations and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8919418898fd6655",
+      "title": "Chapter 12 section 1 work, power, and Machines - Quizlet",
+      "url": "https://quizlet.com/10263772/chapter-12-section-1-work-power-and-machines-flash-cards/",
+      "summary": "work is done only when force causes a change in the position or the motion of an object in the direction of the applied force.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1200,12 +2251,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ac25531f35e3cf94",
-      "title": "Coming Soon: The Best Events in LA (November 16 - November 22, 2026)",
-      "url": "https://www.discoverlosangeles.com/things-to-do/coming-soon-the-best-of-los-angeles",
-      "summary": "From cultural events to superstar concerts, exciting nightlife and world-class sports, Discover LA is your go-to source for the latest and greatest in LA. Find more events and nearby hotels at the DiscoverLA.com Events Calendar. Come for the show, stay for the weekend.",
+      "id": "abd8b15da6a156eb",
+      "title": "Commercial Space Transportation - Federal Aviation Administration",
+      "url": "https://www.faa.gov/regulations_policies/faa_regulations/commercial_space",
+      "summary": "Guidance documents provide information to aid understanding and compliance with specific FAA regulations. They include Advisory Circulars, guidelines, handbooks, and sample applications about commercial space transportation safety and other regulatory matters.",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1230,10 +2281,161 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a6ed1c297050db42",
-      "title": "C吧一天:/Users/LocalAdminUser/OneDrive/SampleConfig_2.xml Crossword Clue",
-      "url": "https://the-crossword-solver.org/clues/C%E5%90%A7%E4%B8%80%E5%A4%A9%3a%2fUsers%2fLocalAdminUser%2fOneDrive%2fSampleConfig_2.xml",
-      "summary": "On this page we collected for you all 'C吧一天:/Users/LocalAdminUser/OneDrive/SampleConfig_2.xml' crossword clue answers and solutions. The most appropriate answer ...",
+      "id": "8a89aee23780a60d",
+      "title": "Company — About | &Open",
+      "url": "https://andopen.co/company/about",
+      "summary": "Corporate gifting is broken. We’re fixing it. At &Open, we know that lasting relationships aren’t built on wasteful freebies. People need to know they matter. A carefully-selected gift, given at just the right time, has the power to take a relationship beyond the transactional.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "17f8c2bd52f81b6c",
+      "title": "Customer Login - Walmart",
+      "url": "https://giftcards.walmart.com/customer/account/login/referer/aHR0cHM6Ly9naWZ0Y2FyZHMud2FsbWFydC5jb20vY2F0YWxvZy9jYXRlZ29yeS92aWV3L2lkLzMvP3A9NCZ0eXBlPWFsbA%2C%2C",
+      "summary": "If you have an account, sign in with your email address. Forgot Your Password? Creating an account has many benefits: check out faster, keep more than one address, track orders and more.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c884b17e58a7ebd",
+      "title": "Design with Canva: Easy AI design tools in one place",
+      "url": "https://www.design.ing/",
+      "summary": "Canva is your all-in-one graphic design tool to create beautiful designs fast, with the power of AI. Access easy AI design tools and apps to create just about anything and collaborate with everyone. It's designing made easy, for every user. Design powerful visual content for any purpose.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "78925919816140fc",
+      "title": "FAA Regulations - Federal Aviation Administration",
+      "url": "https://www.faa.gov/regulations_policies/faa_regulations",
+      "summary": "Overflight Fees Pilots, Flight & Ground Instructors General Operating and Flight Rules (14 CFR Part 91) Certification: Pilots, Flight Instructors, and Ground Instructors (14 CFR Part 61) Pilot Schools (14 CFR Part 141) Commercial Space Transportation Legislation & Policies Regulations & Guidelines Advisory Circulars",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68c40e70e8747b59",
+      "title": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/air_traffic/publications/media/AIM_Basic_dtd_2-20-25_post.pdf",
+      "summary": "Federal Aviation Administration",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a513cf486e52b4a5",
+      "title": "Free templates | Canva",
+      "url": "https://www.canva.com/templates/",
+      "summary": "Browse through our professionally designed selection of free templates and customize a design for any occasion.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1260,70 +2462,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ff1f784d6868dd80",
-      "title": "Draw+simulated+selfhostc%3a%2fusers%2flocaladminuser%2fonedrive ...",
-      "url": "https://crosswordleak.com/crossword-solver/draw+simulated+selfhostc%3a%2fusers%2flocaladminuser%2fonedrive%2fsampleconfig_0-xmlail+at+abc%40microsoft-com",
-      "summary": "Not all answers shown, provide a pattern or longer clue for more results, or please use hidden word feature to get exact word",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ffa715a200db62ae",
-      "title": "Google News - Bellflower - Latest",
-      "url": "https://news.google.com/topics/CAAqIQgKIhtDQkFTRGdvSUwyMHZNSEZmWDNRU0FtVnVLQUFQAQ?hl=en-US&ceid=US:en",
-      "summary": "Read full articles, watch videos, browse thousands of titles and more on the \"Bellflower\" topic with Google News.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6da40b6df5d134ea",
-      "title": "Homepage - Lake District National Park",
-      "url": "https://lakedistrict.gov.uk/",
-      "summary": "Home to vibrant communities and rare wildlife, the Lake District is both a protected National Park and a UNESCO World Heritage Site, where lakes, trails, and cultural heritage are woven into...",
+      "id": "54520b52bd17d672",
+      "title": "How often are listings updated on Zillow and Realtor.com updated?",
+      "url": "https://www.reddit.com/r/RealEstate/comments/2tmsxq/how_often_are_listings_updated_on_zillow_and/",
+      "summary": "Zillow is about to get a lot worse in terms of accuracy when their feed from Listhub dies April 1. Realtor.com is supposed to be updated directly from the MLS feeds every 15 minutes. It is dependent on what information the MLS allows to be pulled and updated though. The original listing gets pulled along with the initial photos.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1332,15 +2474,16 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "regulatory",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail",
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1350,10 +2493,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b851186657812649",
-      "title": "Install or reinstall classic Outlook on a Windows PC | Microsoft Support",
-      "url": "https://support.microsoft.com/en-gb/outlook/install-or-reinstall-classic-outlook-on-a-windows-pc",
-      "summary": "Walk me through how to install classic Outlook on Windows How do I configure languages? Set up classic Outlook after a fresh install",
+      "id": "9e5102bfa9ab145d",
+      "title": "Imgflip is not only a terrible meme creator website, it's also ... - Reddit",
+      "url": "https://www.reddit.com/r/forwardsfromgrandma/comments/8t8slj/imgflip_is_not_only_a_terrible_meme_creator/",
+      "summary": "here's the original post It's filled with tons of gems. the dumpster fire that is the imgflip front page",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1362,15 +2505,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1380,10 +2523,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b105ab76e120f935",
-      "title": "Lake District - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Lake_District",
-      "summary": "The Lake District National Park includes all of the central Lake District, though the town of Kendal, some coastal areas and the Cartmel and Furness peninsulas are located outside the park's boundary.",
+      "id": "42e3a7f38466ed64",
+      "title": "Imgflip showing \"Waiting for download to complete\" when ... - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/qg6qdn/imgflip_showing_waiting_for_download_to_complete/",
+      "summary": "Imgflip showing \"Waiting for download to complete\" when attempting to generate gif",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb9185e0f60c4e1e",
+      "title": "imgflip.com is legitimately so unfunny : r/PointlessStories",
+      "url": "https://www.reddit.com/r/PointlessStories/comments/qictmv/imgflipcom_is_legitimately_so_unfunny/",
+      "summary": "imgflip.com is legitimately so unfunny I use ImgFlip to use their meme maker since I'm too lazy to put in effort and actually open up Photopea and get my Impact font and put a 5px stroke on it, so I just use that instead. On Imgflip, there is a home option that has a home page of people who've made memes using the site and have decided to post ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "82f6e7d158b4a33b",
+      "title": "Is Zillow really any good for finding a place to rent? - Reddit",
+      "url": "https://www.reddit.com/r/pasadena/comments/17uc3qy/is_zillow_really_any_good_for_finding_a_place_to/",
+      "summary": "Zillow’s good if you want to pay top dollar for a rental. Drive or - better - walk around the neighborhood you want to live in. The cheapest, best rentals will have a sign out front. The landlords don’t need to pay commissions to agents or even advertise, their renters and the neighbors will let their friends know there’s a vacancy. Reply ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1392,15 +2595,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1410,254 +2613,377 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "db43431e4c365c4e",
-      "title": "Lake District Attractions & Places to Visit | VisitBritain",
-      "url": "https://www.visitbritain.com/en/destinations/england/lake-district",
-      "summary": "The Lake District is a UNESCO World Heritage Site located in Cumbria, north-west England. The region is known for its natural beauty and is the largest national park in England with a range of lakes, mountains, and more.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "10fc21d3a177b4df",
-      "title": "Lake District National Parks // National Trust Lake District",
-      "url": "https://nationalparks.uk/park/lake-district/",
-      "summary": "Welcome to the Lake District. Step into the National Park and UNESCO World Heritage Site to discover spectacular landscapes, pretty villages, a warm welcome and a rich cultural heritage.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9620aac7d9f98f69",
-      "title": "Lake District | England, Map, & Facts | Britannica",
-      "url": "https://www.britannica.com/place/Lake-District-region-and-national-park-England",
-      "summary": "Lake District, famous scenic region and national park in the administrative county of Cumbria, England. It occupies portions of the historic counties of Cumberland, Lancashire, and Westmorland. The national park covers an area of 866 square miles (2,243 square km).",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "565ba44167c9d7e9",
-      "title": "List of lakes of the Lake District - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/List_of_lakes_of_the_Lake_District",
-      "summary": "This list contains the lakes, tarns and reservoirs in the Lake District National Park in Cumbria, England. Only one body of water, Bassenthwaite Lake, is traditionally named a lake. [1]",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e3bd39b9794cd6b5",
-      "title": "North Texas Mean Green @San Diego State Aztecs 49-47",
-      "url": "https://www.flashscoreusa.com/game/football/north-texas-mean-green-nD8fhBsD/san-diego-state-aztecs-CUAB9bNh/",
-      "summary": "Follow North Texas Mean Green v San Diego State Aztecs results, h2h statistics, latest results, news and more information on Flashscore.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "851eb9d69ba84183",
-      "title": "North Texas Mean Green vs. San Diego State Aztecs Live Score and Stats ...",
-      "url": "https://www.cbssports.com/college-football/gametracker/boxscore/NCAAF_20251227_NTEXAS@SDGST/",
-      "summary": "The third quarter was telling as the Mean Green scored twice on a Hawkins run and a Dorner catch while SDSU managed just 11 total yards. North Texas led 42-20 entering the fourth quarter.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "759c02a32f5ef5eb",
-      "title": "North Texas Mean Green vs. San Diego State Aztecs Live Score and Stats ...",
-      "url": "https://www.cbssports.com/college-football/gametracker/live/NCAAF_20251227_NTEXAS@SDGST/",
-      "summary": "ALBUQUERQUE, N.M. (AP) Caleb Hawkins ran for two touchdowns and caught a scoring pass, Ashton Gray added a pair of rushing touchdowns and Cameron Dorner had two scoring catches as No. 22 North...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c5798be65d3591ff",
-      "title": "North Texas tops San Diego State in New Mexico Bowl for first bowl win ...",
-      "url": "https://www.dallasnews.com/sports/unt-mean-green/2025/12/27/north-texas-tops-san-diego-state-in-new-mexico-bowl-for-first-bowl-win-since-2013/",
-      "summary": "North Texas tops San Diego State in New Mexico Bowl for first bowl win since 2013 The Mean Green outlasted the Aztecs in an offensive shootout and closed out a historic season on a...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9620566ec7c236f3",
-      "title": "Sample Paper___1. 15m ago. C:\\Users\\LocalAdminUser\\OneDrive\\Desktop ...",
-      "url": "https://www.wordplays.com/crossword-solver/Sample-Paper___1.-15m-ago.-C:%5CUsers%5CLocalAdminUser%5COneDrive%5CDesktop.",
-      "summary": "Answers for Sample Paper___1. 15m ago. C:\\\\Users\\\\LocalAdminUser\\\\OneDrive\\\\Desktop. crossword clue, 9 letters. Search for crossword clues found in the Daily Celebrity, NY Times, Daily Mirror, Telegraph and major publications. Find clues for Sample Paper___1. 15m ago. C:\\\\Users\\\\LocalAdminUser\\\\OneDrive\\\\Desktop. or most any crossword answer or clues for crossword answers.",
+      "id": "5fecf681c834cfd0",
+      "title": "Log in to your Canva account to start creating beautiful designs",
+      "url": "https://www.canva.com/class/join/",
+      "summary": "Create beautiful designs with your team. Login with your email address, mobile number, Google, Facebook or Apple.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a32f39636a286590",
+      "title": "Login | Walmart",
+      "url": "https://retailpartners.walmart.com/",
+      "summary": "Sign in or create your account Not sure if you have an account? Enter your email and we’ll check for you.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4a7aa2ff01276cf5",
+      "title": "Login | Walmart",
+      "url": "https://business.walmart.com/plus/plans?direct=true",
+      "summary": "Enter your business email to sign in or create an account Not sure if you have an account? Enter your phone number or email and we’ll check for you.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d7cd35835c223d05",
+      "title": "Maryland Sports - Reddit",
+      "url": "https://www.reddit.com/r/terps/",
+      "summary": "Discussion of The University of Maryland Terrapin athletics.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0418e3eb41ecabdb",
+      "title": "Match each description with the correct term: - Brainly.com",
+      "url": "https://brainly.com/question/29140654",
+      "summary": "Here, force is applied to move an object over a distance. SI unit for work, equal to the amount of work that is done when 1 Newton of force moves an object over a distance of 1 meter.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd6d1997dd044551",
+      "title": "Match each vocabulary word with its text | StudyX",
+      "url": "https://studyx.ai/questions/4mbvwiv/match-each-vocabulary-word-with-its-text-definition-term-definition-work-choose-power",
+      "summary": "Question Match each vocabulary word with its text definition. ... Available Definitions: The rate of change of distance. The SI unit of power; a joule per second. The product of force and distance. An American unit for power; 746 watts. The rate of doing work. The rate of change of speed. The SI unit of work; a newton-meter N ⋅m).",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5183441d4212191e",
+      "title": "My all time favorite weird Zillow listing pics - Reddit",
+      "url": "https://www.reddit.com/r/zillowgonewild/comments/18dezpo/my_all_time_favorite_weird_zillow_listing_pics/",
+      "summary": "418 votes, 67 comments. 277K subscribers in the zillowgonewild community. Home listings that make you wonder.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail",
+        "community"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6c286a170a5b65b5",
+      "title": "Part 139 Airport Certification - Federal Aviation Administration",
+      "url": "https://www.faa.gov/airports/airport_safety/part139_cert",
+      "summary": "Part 139 Airports Part 139 Airport Certification Status List List of certificated airports by state, name, associated city, and identifier. It also identifies Part 139 classification, ARFF index, inactive status, and large hub airports. This list is updated every 28 days with data pulled from the Airport Data and Information Portal. As of 2/2023, the list also includes SMS Triggers and whether ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "246170dac39314ba",
+      "title": "Pilot Records Database (PRD) - Federal Aviation Administration",
+      "url": "https://www.faa.gov/regulations_policies/pilot_records_database",
+      "summary": "Pilot Records Database (PRD) NOTICE: Disabling User Accounts Starting mid-November 2026, the FAA will implement a new policy that automatically disables PRD user accounts after 365 days of inactivity. To prevent account deactivation, users must log in at least once a year. If your account is disabled, you'll need to contact PRD Support for reactivation. For more details: click here.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd727fb91c962869",
+      "title": "Power (physics) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Power_(physics)",
+      "summary": "Power is the amount of energy transferred or converted per unit time. In the International System of Units, the unit of power is the watt (symbol W), equal to one joule per second (J/s). Power is a scalar quantity. The output power of a motor is the product of the torque that the motor generates and the angular velocity of its output shaft.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d39694d380575403",
+      "title": "Power - CK-12 Foundation",
+      "url": "https://flexbooks.ck12.org/cbook/ck-12-middle-school-physical-science-flexbook-2.0/section/13.3/primary/lesson/power-ms-ps/",
+      "summary": "Power and how it relates to work and time, how to calculate power and the unit called horsepower.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2ff8aa02a522031c",
+      "title": "PS-2 Epic Ed Topic 9 Work & Power Vocabulary - Match up - Wordwall",
+      "url": "https://wordwall.net/resource/53371967/physical-science/ps-2-epic-ed-topic-9-work-power-vocabulary",
+      "summary": "Drag and drop each keyword next to its definition.. work input - The work done on a machine by the input force over the input distance..",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6a56eba2c343eca3",
+      "title": "Sign in - Wal-Mart",
+      "url": "https://pfedprod.wal-mart.com/idp/startSSO.ping?PartnerSpId=HCProd",
+      "summary": "Please fill out this field. Forgot Password?",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
@@ -1680,12 +3006,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "156917e412c5d706",
-      "title": "Sample Zip___2. 1h ago. C:\\Users\\LocalAdminUser\\OneDrive. Crossword ...",
-      "url": "https://www.wordplays.com/crossword-solver/Sample-Zip___2.-1h-ago.-C:%5CUsers%5CLocalAdminUser%5COneDrive.",
-      "summary": "Answers for Sample Zip___2. 1h ago. C:\\\\Users\\\\LocalAdminUser\\\\OneDrive. crossword clue, 3 letters. Search for crossword clues found in the Daily Celebrity, NY Times, Daily Mirror, Telegraph and major publications. Find clues for Sample Zip___2. 1h ago. C:\\\\Users\\\\LocalAdminUser\\\\OneDrive. or most any crossword answer or clues for crossword answers.",
+      "id": "560c1cc6cac6b6a4",
+      "title": "Super simple way to disable stop-start - JLwranglerforums.com",
+      "url": "https://www.jlwranglerforums.com/forum/threads/super-simple-way-to-disable-stop-start.19691/",
+      "summary": "Disable stop-start in less than a minute without programming or cutting. Squeeze the clips (red arrows) holding the outboard hood sensor in the holder. Lift the sensor up out of the holder and use a tie wrap to hold it from flopping around. \"Service stop-start\" will show for a few seconds...",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1698,9 +3024,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1710,54 +3036,237 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dd021da06333af43",
-      "title": "The Lake District Guide | Things To Do, Walks, Lakes & Towns",
-      "url": "https://www.thelakedistrict.com/",
-      "summary": "Independent Lake District visitor guide: 16 lakes, 200+ fells, Scafell Pike and Windermere, the best towns, walks and pubs, plus free planning tools for England's largest National Park.",
+      "id": "32191b95b3473055",
+      "title": "The subreddit for Imgflip",
+      "url": "https://www.reddit.com/r/Imgflip/",
+      "summary": "r/Imgflip: The subreddit for Imgflip, a meme creation/browsing website.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e84ab5b01df2f65c",
-      "title": "Things to do - Lake District National Park",
-      "url": "https://lakedistrict.gov.uk/explore/things-to-do/",
-      "summary": "Kayak, paddleboard, swim, sail, or cruise – there’s no better way to see the Lake District National Park than from the water. Find out how to explore safely, hire equipment, check lake byelaws,...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "regulatory",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c3f254ea8cb30ccb",
+      "title": "Url Opener - Open Multiple Urls Or Links - Multiple Url Opener Website",
+      "url": "https://url-opener.com/",
+      "summary": "Free web tool to open multiple URLs or Multiple Links at the same time through the web browser in multiple tabs simultaneously.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b7bac6910be1485",
+      "title": "Walmart.com",
+      "url": "https://www.walmart.com/account/login",
+      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c8a6df0aae0c783d",
+      "title": "Walmart.com",
+      "url": "https://www.walmart.com/i/account/login",
+      "summary": "Sign In. Account. Sign in or create account. Purchase HistoryWalmart+Subscriptions. Language | English. $0.00. Departments. Services. All Departments. Rollbacks & More.",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9482ca9ca343b827",
+      "title": "Walmart.com - Log In",
+      "url": "https://login.account.wal-mart.com/",
+      "summary": "Forgot your User ID or Password?",
+      "discovery_channel": "research",
+      "query": "prescription smart glasses lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "retail"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58dd8b8ad71aad95",
+      "title": "Warner Bros - Reddit",
+      "url": "https://www.reddit.com/r/WarnerBros/",
+      "summary": "r/WarnerBros: Warner Bros. This is for any past/present Warner Brothers Tour Guides (or for anyone who just knows a ton about them). Is there any language that you use between each other or the tram drivers that is unique to you? Like is there a nickname or shorthand reference term you use for each other? The guests? The tour itself? These tours have been happening for 60+ years ago I have to ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "837ec78e604d00c0",
+      "title": "What are instant red flags when looking on Zillow for land?",
+      "url": "https://www.reddit.com/r/homestead/comments/174kcxv/what_are_instant_red_flags_when_looking_on_zillow/",
+      "summary": "Prefer landwatch for looking for land and zillow for houses, personally. The biggest thing is just don't buy anything without seeing it first and without taking the parcel number to the county and asking if there's any reason you can't develop it into what you want. Don't be coy.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cb28a8421b94f53",
+      "title": "What is work, power and efficiency in GCSE Physics? - BBC",
+      "url": "https://www.bbc.co.uk/bitesize/topics/zdgbxyc/articles/zf6vwsg",
+      "summary": "Power is the amount of energy transferred in one second or the amount of work done in one second. Power is measured in watts (W) so 1 W = 1 joule per second (1 W = 1 J/s).",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
         "news"
       ],
       "primary_type": "news",
@@ -1770,12 +3279,165 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "abd8610dc4caebee",
-      "title": "Used Volkswagen Taos For Sale Near Fruit Cove, FL",
-      "url": "https://www.osteenvw.com/used-volkswagen-taos-jacksonville-fl.htm",
-      "summary": "Find a used or certified pre-owned Volkswagen Taos for sale at O'Steen Volkswagen in Jacksonville, FL. Visit us today for a test drive!",
+      "id": "f8a616d22e8d59c2",
+      "title": "Why do some properties not appear on sites like Trulia or Zillow?",
+      "url": "https://www.reddit.com/r/RealEstate/comments/3woix0/why_do_some_properties_not_appear_on_sites_like/",
+      "summary": "Zillow and Trulia don't have all the listing because not all listings get aggregated on those sites. And on top of that, they also show listings that are not available. The reason for all of this is because Zillow and Trulia are not in the business of giving people the right information.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "retail",
+        "community"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bcb2c3737e0fba72",
+      "title": "Winnie the Pooh - Reddit",
+      "url": "https://www.reddit.com/r/Winniethepooh/",
+      "summary": "I’m not sure if I’m thinking of an episode of the cartoon or a movie, but I know it’s NOT “Pooh’s Grand Adventure: The Search for Christopher Robin”. All I remember from the plot is that there is a suspected monster living in a dark cave, and Pooh hears it let out this bellowing moan/howl intermittently which shakes the ground. Eventually he goes into the cave, and as the ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "42de63a35af90630",
+      "title": "Work and Power Definitions Flashcards | Quizlet",
+      "url": "https://quizlet.com/69249350/work-and-power-definitions-flash-cards/",
+      "summary": "2 one joule per second the unit used to measure power 3 the product of the input force and distance of the machines moves in direction of the input force 4 the work done to a machine",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54ac3e2bccfa100d",
+      "title": "Your opinions on Zillow? : r/RealEstate - Reddit",
+      "url": "https://www.reddit.com/r/RealEstate/comments/4y0qa1/your_opinions_on_zillow/",
+      "summary": "Zillow is hit or miss for the reasons in the article. Focus on sites that are actually belonging to brokerages and get data directly from the MLS, like Redfin.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "862e877be78d4c9d",
+      "title": "YouTube links no longer work when attempting to create gifs on ... - Reddit",
+      "url": "https://www.reddit.com/r/youtube/comments/qjg4b3/youtube_links_no_longer_work_when_attempting_to/",
+      "summary": "On a site like Imgflip.com, the video will embed, but when attempting to actually generate the gif, it’ll display a “waiting for download to complete” message before failing entirely. With Giphy and most other sites, they simply refuse to accept the URL in whatever form it’s in (this includes a mobile link, shortened link and standard ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2064ef966dc1e118",
+      "title": "Zillow - Official Site",
+      "url": "https://www.zillow.com/",
+      "summary": "The leading real estate marketplace. Search millions of for-sale and rental listings, compare Zestimate® home values and connect with local professionals.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1791,186 +3453,6 @@
         "retail"
       ],
       "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c0ddbf374ee467c",
-      "title": "Users Folder - Microsoft Q&A",
-      "url": "https://learn.microsoft.com/en-us/answers/questions/4181663/users-folder",
-      "summary": "I recently installed Win 10 Home 22H2 OS Build 19045.2604 in my PC. I am signed in with my Microsoft account, /Admin. There is only one user account in the PC. In File Explorer, I see, This PC > Local Disc C > Users > Admin as the file path. I do not see a file path with my I have ticked Show Hidden Files with no result. Control Panel > User Accounts > Change my ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "452fbcac0ff5c6a3",
-      "title": "Visit Lake District | The Official Guide to Cumbria",
-      "url": "https://www.visitlakedistrict.com/",
-      "summary": "Visit the Lake District Cumbria, a place where the beauty of the landscape combines with the best quality accommodation, food and drink and things to do. Search for Lake District hotels, bed and breakfast, cottages campsites and glamping.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aa0ad5ea35487ff1",
-      "title": "Volkswagen Dealer near Fruit Cove FL | Volkswagen of St. Augustine",
-      "url": "https://www.vwstaug.com/volkswagen-dealer-fruit-cove-fl",
-      "summary": "Volkswagen of St. Augustine proudly serves drivers from Fruit Cove, FL with an outstanding selection of new Volkswagen vehicles and a customer-first dealership experience.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "42d2a66292df7c61",
-      "title": "【OneDrive使用指南】5年使用经验，操作大合集 - 百度贴吧",
-      "url": "https://tieba.baidu.com/p/7725749639",
-      "summary": "看完了，真的好详细。爆赞啊 愛意藏风里 默默无闻 1 想问下加那种家庭的，别人会不会看到我网盘里的东西，我都是上传一些我和我对象的照片视频啥的 圣嘉然 富有美誉 9 请教吧主两个问题 1.在电脑上移动仅联机文件到另一个od同步文件夹，只要数量稍微一多，就自动下载文件，这个现象正常吗 2 ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d680ea1077976d8",
-      "title": "【win11修改用户名，Couldn‘t write to C:\\Users，onedrive/桌面 不可用，问题最终解决方案】",
-      "url": "https://blog.csdn.net/qq_39445235/article/details/143711220",
-      "summary": "文章浏览阅读2.5k次，点赞7次，收藏14次。本文介绍了Win11系统修改用户名的详细步骤。先开启内置账户Administrator，登录该账户修改C盘原用户名，接着修改注册表信息，再登录原用户修改环境变量，之后在桌面属性中修改位置上的用户名，最后关闭Administrator用户，部分C盘应用需更换路径或卸载重装。",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4ecd6a8462c207ed",
-      "title": "啊吧一天C:/Users/LocalAdminUser/Desktop/SamplePaper_0.pdf Crossword Clue",
-      "url": "https://the-crossword-solver.org/clues/%E5%95%8A%E5%90%A7%E4%B8%80%E5%A4%A9C%3a%2fUsers%2fLocalAdminUser%2fDesktop%2fSamplePaper_0.pdf",
-      "summary": "On this page we collected for you all '啊吧一天C:/Users/LocalAdminUser/Desktop/SamplePaper_0.pdf' crossword clue answers and solutions. The most appropriate ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
