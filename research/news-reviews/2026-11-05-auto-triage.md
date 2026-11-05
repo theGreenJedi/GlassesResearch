@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-05T12:52:11.915059+00:00`
+Generated: `2026-11-05T16:33:24.730578+00:00`
 
-- Intake files inspected: **243**
-- Candidates retained in this review window/history: **9803**
+- Intake files inspected: **241**
+- Candidates retained in this review window/history: **9567**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1954
+- `adjacent_radar`: 1973
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 557
-- `rejected_noise`: 7206
-- `source_review`: 46
+- `needs_editorial_verification`: 552
+- `rejected_noise`: 6954
+- `source_review`: 48
 - `watching`: 25
 
 ## Action queue
@@ -43,7 +43,6 @@ Generated: `2026-11-05T12:52:11.915059+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1244](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1244) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1246](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1246) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1251](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1251) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1044](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1044) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1045](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1045) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1050](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1050) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1053](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1053) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +270,7 @@ Generated: `2026-11-05T12:52:11.915059+00:00`
 | high | needs_editorial_verification | direct | [SPECS \| AR Glasses \| Pre-Order Today](https://www.specs.com/smart-glasses/specs-27) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Starting Application Development - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/start-development/) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [TechRadar Oct 6, 2026 Norway becomes first country to propose temporary ban on smart glasses](https://www.techradar.com/computing/virtual-reality-augmented-reality/norway-set-to-become-first-country-to-slap-a-temporary-ban-on-smart-specs-and-an-informed-debate-will-determine-the-future-of-meta-ray-bans-and-other-pervert-glasses) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [The Ghost Howls 2d ago The XR Week Peek (2026.11.02): XREAL discounts Aura at launch, Quest sales are declining, and more! Coverage Xreal](https://skarredghost.com/2026/11/02/xreal-aura-launch-quest/) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
