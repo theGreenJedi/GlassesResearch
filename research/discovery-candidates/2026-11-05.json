@@ -1,37 +1,43 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-05T03:40:21.335752+00:00",
-  "candidate_count": 75,
-  "classifier_irrelevant_count": 55,
+  "discovered_utc": "2026-11-05T07:58:39.975596+00:00",
+  "candidate_count": 67,
+  "classifier_irrelevant_count": 49,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 20,
-    "broad_web": 36,
-    "developer": 19,
+    "adjacent": 18,
+    "broad_web": 42,
+    "developer": 7,
     "research": 1
   },
   "relationship_counts": {
     "direct": 0,
-    "enabling": 0,
-    "adjacent": 20,
+    "enabling": 1,
+    "adjacent": 17,
     "speculative": 0,
-    "irrelevant": 55
+    "irrelevant": 49
   },
   "type_counts": {
-    "model": 4,
+    "model": 6,
+    "review": 1,
     "video": 3,
-    "news": 45,
-    "tool": 20,
-    "sdk": 19,
-    "retail": 3,
-    "community": 14
+    "news": 43,
+    "research": 3,
+    "tool": 10,
+    "sdk": 7,
+    "optics": 1,
+    "retail": 6,
+    "teardown": 1
   },
   "routing_counts": {
-    "adjacent_radar": 20,
-    "community_evidence_review": 1,
-    "reject_noise": 55,
-    "research_news_review": 20,
-    "retail_rebrand_review": 1
+    "adjacent_radar": 17,
+    "deep_research": 2,
+    "development_hacking": 3,
+    "reject_noise": 49,
+    "report_card_evidence": 1,
+    "research_news_review": 18,
+    "research_optics": 1,
+    "retail_rebrand_review": 3
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,16 +51,53 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "0d4ec016b28fe4bf",
-      "title": "11 Best Kids' Party Recipes | Food Network",
-      "url": "https://www.foodnetwork.com/recipes/packages/recipes-for-kids/weekends-at-home/kids--party-crowd-pleasers",
-      "summary": "Please even the smallest food critics next time you're hosting a birthday party, sleepover or playdate, with these fun recipes.",
+      "id": "99e70612757fbc24",
+      "title": "Access Affordable Medications | Prescription Bliss",
+      "url": "https://www.prescriptionbliss.com/",
+      "summary": "Prescription Bliss helps individuals and care teams navigate prescription costs when insurance doesn’t cover medications or costs are simply too high.",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "research",
+        "optics"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "deep_research"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1dbed6eb86ecfb6b",
+      "title": "2014 Acura RLX Prices, Reviews, and Pictures | Edmunds",
+      "url": "https://www.edmunds.com/acura/rlx/2014/review/",
+      "summary": "Research the 2014 Acura RLX with our expert reviews and ratings. Edmunds also has Acura RLX pricing, MPG, specs, pictures, safety features, consumer reviews and more. Our comprehensive coverage ...",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "research"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -63,11 +106,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "review",
+        "research"
       ],
-      "primary_type": "news",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
+        "report_card_evidence",
+        "deep_research",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -76,196 +122,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c2fb4724e2eaff58",
-      "title": "Baseball Park-Inspired Recipes | Food Network",
-      "url": "https://www.foodnetwork.com/recipes/photos/baseball-park-inspired-recipes",
-      "summary": "Ballpark-inspired recipes from Food Network Even if you're not at the ball game, you can eat your favorite game-day snacks at home.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "26376ec909f3bfd2",
-      "title": "Best Foods at Major League Baseball Stadiums - Food Network",
-      "url": "https://www.foodnetwork.com/restaurants/photos/best-baseball-stadium-food",
-      "summary": "Find the best hot dogs, burgers and snacks at Yankee Stadium, Dodger Stadium, Citi Field, Fenway Park and other stadiums.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "35e059a2d40ad8e9",
-      "title": "Cheap Self Storage Units in Brooklyn, NY (from $10) | Neighbor",
-      "url": "https://www.neighbor.com/self-storage-near-me/new-york/brooklyn",
-      "summary": "Find the cheapest self storage units near Brooklyn, New York on Neighbor. Storage reimagined. Neighbor offers an easier, safer, cheaper and more convenient self storage option in Brooklyn, New York. Reserve today!",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4b75621e3a0dc23",
-      "title": "Chipotle Cashew Chicken with Brown Rice - Food Network",
-      "url": "https://www.foodnetwork.com/recipes/rachael-ray/chipotle-cashew-chicken-with-brown-rice-recipe-1952393",
-      "summary": "Make this Chipotle Cashew Chicken with Brown Rice recipe tonight for a satisfying, flavor packed meal with simple ingredients. Try the full recipe today.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4ffac01ab19be5cc",
-      "title": "Cities near Brooklyn",
-      "url": "https://citiesnear.com/Brooklyn",
-      "summary": "These are straight line distances in a radius around Brooklyn, suitable for a day trip or a short weekend trip within roughly 130 miles. You can also explore cities near New York City or cities near Philadelphia. There are many towns within the total area, so if you're looking for closer places, try a smaller radius like 50 miles. If you're okay driving a greater distance, try 150 miles.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c14c345fa7bdd4f6",
-      "title": "Danny's Deli & Catering | Restaurants - Food Network",
-      "url": "https://www.foodnetwork.com/restaurants/il/melrose-park/dannys-deli-catering-restaurant",
-      "summary": "On this episode of Food Network's Sandwich King, Jeff Mauro visits Danny's Deli & Catering in Chicago to get a bite of its juicy meatball sandwich.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9db2ba34029fd3d7",
-      "title": "Dave Evans - MISUMI USA | LinkedIn",
-      "url": "https://www.linkedin.com/in/evansda11",
-      "summary": "President and CEO of MISUMI Americas. Co-Founder and CEO at Fictiv, a global… · Experience: MISUMI USA · Location: San Francisco Bay Area · 500+ connections on LinkedIn. View Dave Evans ...",
+      "id": "55250e70dac1ab20",
+      "title": "2014 Acura ILX Prices Paid and Buying Experience - Edmunds",
+      "url": "https://forums.edmunds.com/discussion/17107/acura/ilx/2014-acura-ilx-prices-paid-and-buying-experience",
+      "summary": "Welcome to Edmunds discussion dedicated to 2014 Acura ILX purchase experiences. If you have recently purchased a 2014 ILX, please share your experience here.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -293,10 +153,386 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d01198d0b42c4bde",
-      "title": "Evans Supply",
-      "url": "https://evanssupply.biz/",
-      "summary": "Evans Supply is your local retailer specializing in contractor, industrial, fleet and safety supplies. Evans Supply is open to the public.",
+      "id": "62c61ceee90cb200",
+      "title": "2014 Acura ILX Value - $2,589-$10,255 | Edmunds",
+      "url": "https://www.edmunds.com/acura/ilx/2014/appraisal-value/",
+      "summary": "Estimated values for the 2014 Acura ILX Values based on 12,000 miles driven per year, with no color or options selected. 2014 Acura ILX trade-in prices range from $2,589 - $10,255.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e91849d971b7f20",
+      "title": "2022 Acura ILX Lease Deals and Prices - Edmunds",
+      "url": "https://forums.edmunds.com/discussion/67184/acura/ilx/2022-acura-ilx-lease-deals-and-prices",
+      "summary": "Can I please get the MF, RV and any lease incentives for the 2022 Acura ILX Premium for 36mo/7.5k for 33317? Thank you so much!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4638b7a4e316319e",
+      "title": "2026 Acura ADX vs 2027 Honda HR-V - Car Comparison - Edmunds",
+      "url": "https://www.edmunds.com/car-comparisons/acura-adx-vs-honda-hr-v/",
+      "summary": "2026 Acura ADX vs 2027 Honda HR-V - which is better for you? Find out with Edmunds' head-to-head car comparison tool. Compare prices, options, features and specs, expert and consumer reviews and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3268e8561c68f38c",
+      "title": "2026 Acura Integra Type S Prices, Reviews, and Pictures | Edmunds",
+      "url": "https://www.edmunds.com/acura/integra/2026/type-s/",
+      "summary": "Explore the 2026 Acura Integra Type S: 320-hp turbo engine, 6-speed manual, 0-60 in 5.7 sec, starting at $53,900. Ratings, specs, and deals at Edmunds.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58dbae70c289d47e",
+      "title": "2026 Mazda CX-5 vs 2026 Acura RDX - Car Comparison - Edmunds",
+      "url": "https://www.edmunds.com/car-comparisons/mazda-cx-5-vs-acura-rdx/",
+      "summary": "2026 Mazda CX-5 vs 2026 Acura RDX - which is better for you? Find out with Edmunds' head-to-head car comparison tool. Compare prices, options, features and specs, expert and consumer reviews and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c2f4718e939ba0a1",
+      "title": "2027 Honda Civic vs 2026 Acura Integra - Car Comparison - Edmunds",
+      "url": "https://www.edmunds.com/car-comparisons/honda-civic-vs-acura-integra/",
+      "summary": "2027 Honda Civic vs 2026 Acura Integra - which is better for you? Find out with Edmunds' head-to-head car comparison tool. Compare prices, options, features and specs, expert and consumer reviews ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76960bbd3502ff99",
+      "title": "Barro's Pizza | Fresh Pizza, Delivery & Locations",
+      "url": "https://barrospizza.com/",
+      "summary": "Barro's Pizza offers fresh, delicious pizza with convenient delivery and multiple locations. Order your favorite pizzas today!",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "63b8feb2b44e648a",
+      "title": "Delivery & Take Out From 20206 North 27th Ave. - Pizza Hut",
+      "url": "https://locations.pizzahut.com/az/phoenix/20206-north-27th-ave",
+      "summary": "Order online from our menu of pizzas, wings, desserts, sides and more! Start with one of our popular recipes like Ultimate Cheese Lover’s® pizza, Pepperoni Lover’s® pizza, Meat Lover's® pizza, Veggie Lover's® pizza, or Supreme.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5945e21ee275ff82",
+      "title": "Pizza Delivery & Carryout in Phoenix, Arizona| Domino's Pizza",
+      "url": "https://pizza.dominos.com/arizona/phoenix",
+      "summary": "Order pizza delivery or carryout from Domino's in Phoenix, Arizona. Find your nearest location, view hours, and start your order online.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "449cc31dbefdb3c0",
+      "title": "PIZZA DELIVERY & CARRYOUT IN Phoenix, AZ",
+      "url": "https://locations.pizzahut.com/az/phoenix",
+      "summary": "Looking for Pizza Delivery or Carryout? Browse all Pizza Hut locations in Phoenix, AZ to find hot and fresh pizza, wings, pasta and more! Order online for quick service.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "92dc8389d19b224a",
+      "title": "Pizzeria Bianco - Phoenix wood fired pizzas",
+      "url": "https://www.pizzeriabianco.com/",
+      "summary": "Learn more about our restaurants or order pizzas and merchandise.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7284d2c7788176b9",
+      "title": "THE 10 BEST Pizza Places in Phoenix (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g31310-c31-Phoenix_Arizona.html",
+      "summary": "Best Pizza in Phoenix, Central Arizona: Find Tripadvisor traveller reviews of Phoenix Pizza places and search by price, location, and more.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "96ef8316e5ab10d1",
+      "title": "Used 2016 Acura ILX for Sale Near Me | Edmunds",
+      "url": "https://www.edmunds.com/acura/ilx/2016/",
+      "summary": "Save up to $5,588 on one of 1,150 used 2016 Acura ILXs near you. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -325,72 +561,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dd91af199497537b",
-      "title": "How to Keep Tortillas Warm for a Taco Bar - Food Network",
-      "url": "https://www.foodnetwork.com/how-to/articles/how-do-you-keep-tortillas-warm-taco-bar",
-      "summary": "Learn the easy secrets to keeping your tortillas warm for taco night, whether using corn or flour tortillas.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "460f19656e37d2ab",
-      "title": "Johnnie's Beef | Restaurants : Food Network | Food Network",
-      "url": "https://www.foodnetwork.com/restaurants/il/elmwood-park/johnnies-beef-restaurant",
-      "summary": "For more than 30 years, Jeff Mauro's favorite place to get an Italian beef sandwich has been Johnnie's Beef in Elmwood Park near Chicago. The thin-sliced roast beef is dripping in au jus and ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ecf1d8d2457384f4",
-      "title": "Leadership - David Evans and Associates, Inc.",
-      "url": "https://www.deainc.com/who-we-are/leadership/",
-      "summary": "Before becoming Chief Financial Officer, Julie served as Vice President and Corporate Controller at David Evans and Associates, Inc., and previously held CFO and Controller roles within the construction and engineering sectors.",
+      "id": "043df53827bfd544",
+      "title": "Used 2018 Acura for Sale Near Me - Edmunds",
+      "url": "https://www.edmunds.com/used-2018-acura/",
+      "summary": "Save money on one of 974 used 2018 Acuras near you. Find your perfect car with Edmunds expert reviews, car comparisons, and pricing tools.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -404,1635 +578,61 @@
       "gr_conclusion_authorized": false,
       "attribution_required": false,
       "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad9b5b1435411e17",
-      "title": "Meet The Team - Utility & Municipal Products - Evan Supply",
-      "url": "https://www.evansupply.com/about-us/meet-the-team",
-      "summary": "Meet the team here at Evans Supply. We strive to deliver the best customer service experience and continued support because we become part of your team.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0c35360b5d03aa6",
-      "title": "Piercing Shop Brooklyn, New York | The End Is Near",
-      "url": "https://www.theendisnearbrooklyn.com/",
-      "summary": "The End Is Near is a warm, welcoming studio that offers custom, professional piercing services in Brooklyn, New York, since 2005. Call us at (347) 335-0846.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d7479dd38154092",
-      "title": "Sunset Park Stuffed Cubanelles Recipe - Food Network",
-      "url": "https://www.foodnetwork.com/recipes/sunny-anderson/sunset-park-stuffed-cubanelles-recipe-1920741",
-      "summary": "Make this Sunset Park Stuffed Cubanelles recipe at home with simple steps and standout results. Delicious every single time. Try the recipe tonight.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "398dedeceab53887",
-      "title": "Trailer Park Bruschetta Recipe | Food Network",
-      "url": "https://www.foodnetwork.com/recipes/trailer-park-bruschetta-12817799",
-      "summary": "Make this Trailer Park Bruschetta recipe at home with simple steps and standout results. Delicious every single time. Try the recipe tonight.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "236f7626bcf4f629",
-      "title": "Where to Eat at Every National Park | Food Network",
-      "url": "https://www.foodnetwork.com/restaurants/photos/where-to-eat-national-parks",
-      "summary": "Eat like a local at these great restaurants in and around America's most-beautiful settings.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2f41296a9730481",
-      "title": "Who We Are - David Evans and Associates, Inc.",
-      "url": "https://www.deainc.com/who-we-are/",
-      "summary": "What sets DEA apart—even more than the quality of our work—is the quality of our relationships and the commitments we make.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6964d3cbedef5ba1",
-      "title": "Wholesalers beware: there is a buyer email scam going around",
-      "url": "https://www.reddit.com/r/Scams/comments/14y8pkt/wholesalers_beware_there_is_a_buyer_email_scam/",
-      "summary": "true I found a post on fb in a group for people who own small businesses. People commenting on the post said they have also experienced the same scam so I'm posting here to maybe help someone going through the same thing. I searched for wholesale on here but I couldn't find any similar posts. The OP said they had someone contact them through their website saying they are in the process of ...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17a1f0238f634c91",
-      "title": "‏David Evans‏ - ‏I move groceries across oceans for a living ...",
-      "url": "https://ae.linkedin.com/in/davidevans-supplychain",
-      "summary": "David Evans I move groceries across oceans for a living | Supply Chain Optimization Manager, Spinneys Dubai | Turning multi-country import complexity into competitive advantage across the GCC",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c8ac4cd898bbd757",
-      "title": "'Gold Tits' Search - XVIDEOS.COM",
-      "url": "https://www.xvideos.com/?k=Gold+Tits",
-      "summary": "65,502 Gold Tits FREE videos found on XVIDEOS for this search.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7a2eb36494da2706",
-      "title": "Big Tits HQ - \"Gold Tits\" - 8,431 videos",
-      "url": "https://bigtitshq.com/gold-tits-videos",
-      "summary": "Enjoy our selection of the hottest Gold Tits movies of big-breasted women! The hottest video is \"November Gold Violet Myers Allstar Spotlight\". And there is 8,431 more videos including Gold Tits and many other. We collect the best Violet Myers, Spanking Punishment, Big Boob Compilation, Gagged Bondage, Blonde Fake Tits Solo, Lana Kendrick, Casting Solo Big Tits videos for your pleasure!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97c61980088ad9da",
-      "title": "Black Laptop Bags, Backpacks and Totes | Nordstrom",
-      "url": "https://www.nordstrom.com/browse/women/handbags/computer-bags?filterByColor=black",
-      "summary": "Free shipping and returns on Women's Black Laptop Bags, Backpacks and Totes at Nordstrom.com.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "845e439d831087ea",
-      "title": "block whatsapp web file transfer : r/paloaltonetworks - Reddit",
-      "url": "https://www.reddit.com/r/paloaltonetworks/comments/ze06ej/block_whatsapp_web_file_transfer/",
-      "summary": "block whatsapp web file transfer hello dear Reddit, recently i've been asked to block whatsappweb file transfer but not the chat itself. we are using a Palo alto 3320 cluster running 10.1.3 software version. iv'e tried a lot of things, from creating file blocking profiles and url filtering profiles yet to no avail.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a342ab0b4f70a7e8",
-      "title": "Blur out whatsapp for windows : r/Windows11 - Reddit",
-      "url": "https://www.reddit.com/r/Windows11/comments/18hb9oj/blur_out_whatsapp_for_windows/",
-      "summary": "Blur out whatsapp for windows General Question r/whatsapp • 10 mo. ago Blur out whatsapp for windows 1 upvote · 3 comments 0 16 Share",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e91bc162cd9550a3",
-      "title": "Can i transfer my WhatsApp Web session to another browser?",
-      "url": "https://www.reddit.com/r/whatsapp/comments/yppoo8/can_i_transfer_my_whatsapp_web_session_to_another/",
-      "summary": "I have a whatsapp web session open on Firefox, but I would like to know how to transfer my account to firefox to any other broswer without having to use the phone since is not available at the time. Edit: I have thought on copying everything on localstorage to the other broswer, but I'm not sure sice maybe I could get blocked or something.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "374bca7aabad4758",
-      "title": "Free Big Tits Porn / Big Boobs & Busty Girls - GOLD TITS",
-      "url": "https://goldtits.com/",
-      "summary": "Check out a vast collection of the hottest big tits porn videos on the internet. The most beautiful busty chicks go down and dirty.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "16e751d5cb85a81c",
-      "title": "Free Gold Tits Porn Videos in 4K HD Full Length! - many.xxx",
-      "url": "https://many.xxx/search/gold-tits/",
-      "summary": "Check out Free Gold Tits Porn in Ultra HD. All in Full Length 😎. NO annoying ADS",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ac194559b77f6499",
-      "title": "Fresh Videos - GOLD TITS",
-      "url": "https://goldtits.com/trends/3/",
-      "summary": "Always stay in the loop with the newest videos bringing you all the hardcore action that you've never seen before.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c3e11fbd04851f34",
-      "title": "Gold tits - 9,362 videos - iWank TV",
-      "url": "https://iwank.tv/en/search/gold+tits/",
-      "summary": "Best selection of Gold tits Porn - 9,362 videos. globe tits and much more.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cdc7cadc8749c29a",
-      "title": "Gold Tits - RedPorn",
-      "url": "https://redporn.porn/search/-query-?query=gold+tits+",
-      "summary": "Red Porn Tube presents you the search results for gold tits . Our algorithm has picked you the best gold tits clips for your enjoyment!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "86e2fcee56dc3426",
-      "title": "Gold Tits HD Porn Videos & Sex Movies on Tubes | BigFuck.TV",
-      "url": "https://bigfuck.tv/s/gold%20tits/hd/",
-      "summary": "Our collection of free HD Gold Tits sex videos & porn movies. Quality Gold Tits HD fucking videos for your device without ads on free porn tubes.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "543b174a8bbad6e5",
-      "title": "Gold+Tits Porn Videos - fuqqt.com",
-      "url": "https://fuqqt.com/videos/gold+tits",
-      "summary": "Gold+Tits porn videos: WATCH for FREE on Fuqqt.com!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dd297e785fbf998b",
-      "title": "I would like to install 2 WhatsApp accoun… - Apple Community",
-      "url": "https://discussions.apple.com/thread/255396485",
-      "summary": "Hello, I have an iPhone 12 with an eSIM and also an SIM card and I would like to install 2 whatsApp accounts. Can someone tell me how to proceed? Thanks [Re-Titled by Moderator]",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d90bfe1cf1b04174",
-      "title": "IOS - WhatsApp Web? - Apple Community",
-      "url": "https://discussions.apple.com/thread/6893850",
-      "summary": "Our web client is simply an extension of your phone: the web browser mirrors conversations and messages from your mobile device -- this means all of your messages still live on your phone. To connect your web browser to your WhatsApp client, simply open https://web.whatsapp.com in your Google Chrome browser.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2a27b6af8d5a91d",
-      "title": "Just a rant: the new whatsapp web sucks. : r/whatsapp - Reddit",
-      "url": "https://www.reddit.com/r/whatsapp/comments/1ayrwkj/just_a_rant_the_new_whatsapp_web_sucks/",
-      "summary": "Yeah, WhatsApp web sucked all the time. The app is better, but the app is kind of trash. I currently use the beta. And yes, your rant will drown like the rest of us. WhatsApp and Meta couldn't give to donkeys butts Reply reply Aromatic-Dimension53 •",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0e0c222bb538bc34",
-      "title": "Mac OS Big Sur 11.7.10 with WhatsApp Desk… - Apple Community",
-      "url": "https://discussions.apple.com/thread/255960095",
-      "summary": "The only solution at the moment is using the OpcodeEmulator kernel extension (at your own risk), so far it's working fine for me, at least until WhatsApp stops working on Big Sur in May 5th.The other solution is switching to WhatsApp Web or, of course, buying a newer Mac lol",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a6744afcfc4f077b",
-      "title": "Milf+Gold+Tits - 7716 Videos - Milf Porn 8",
-      "url": "https://milfporn8.net/search/milf%2Bgold%2Btits/",
-      "summary": "Watch free milf+gold+tits porn videos. The Best milf+gold+tits sex scenes are waiting for you at MilfPorn8.net",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "93761118723620f2",
-      "title": "Whatsapp - Win10 Desktop - Drag & Drop does not work",
-      "url": "https://www.reddit.com/r/whatsapp/comments/s6vjuo/whatsapp_win10_desktop_drag_drop_does_not_work/",
-      "summary": "Drag & drop function will not work on a Win10 desktop, but only with Whatsapp. I can NOT drag a photo file to the Whatsapp window and send it that way (on Win 7 it was working) - drag and drop works on all other apps - copy/paste function works - I can copy a photo link from a website and paste it in Whatsapp",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e941b5c6df651d0",
-      "title": "Why is WhatsApp web cropped, small and centered in the middle ... - Reddit",
-      "url": "https://www.reddit.com/r/whatsapp/comments/1b5wrzp/why_is_whatsapp_web_cropped_small_and_centered_in/",
-      "summary": "Hi, I just upgraded my monitor (from a 19'' 900p to a 24'' 1080p) and when I opened Whatsapp Web, this happens. It looks small and centered in the middle of the screen, when it used to be displayed fullscreen.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "community"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4f4542b449bd8bd1",
-      "title": "Women's Tory Burch Sale Handbags & Wallets - Nordstrom",
-      "url": "https://www.nordstrom.com/browse/sale/women/handbags?filterByBrand=tory-burch",
-      "summary": "Free shipping and returns on Women's Tory Burch Sale Handbags & Wallets at Nordstrom.com.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a93b499043b68f95",
-      "title": "10-Day Weather Forecast for Bayonne, New Jersey - The Weather Channel",
-      "url": "https://weather.com/us/new-jersey/city/bayonne/tenday",
-      "summary": "Be prepared with the most accurate 10-day forecast for Bayonne, New Jersey with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab21a133d9990c71",
-      "title": "10-Day Weather Forecast for Bellmore, New York - The Weather Channel",
-      "url": "https://weather.com/us/new-york/city/bellmore/tenday",
-      "summary": "Be prepared with the most accurate 10-day forecast for Bellmore, New York with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "849fc8ccec5a2aee",
-      "title": "10-Day Weather Forecast for Buford, Georgia - The Weather Channel",
-      "url": "https://weather.com/us/georgia/city/buford/tenday",
-      "summary": "Be prepared with the most accurate 10-day forecast for Buford, Georgia with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0cb683e0914707ec",
-      "title": "10-Day Weather Forecast for New Brunswick, New Jersey - The Weather ...",
-      "url": "https://weather.com/us/new-jersey/city/new-brunswick/tenday",
-      "summary": "Be prepared with the most accurate 10-day forecast for New Brunswick, New Jersey with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ad8e6492b81c1da",
-      "title": "[meta] any porn sites like motherless? : r/NSFW411 - Reddit",
-      "url": "https://www.reddit.com/r/NSFW411/comments/3doxzk/meta_any_porn_sites_like_motherless/",
-      "summary": "83 votes, 19 comments. 1.2M subscribers in the NSFW411 community. /r/NSFW411",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "187ce3d20caf7a0b",
-      "title": "A new era of government by the people and for the people ...",
-      "url": "https://x.com/GinaHinojosaTX/status/2118071479795392884",
-      "summary": "GinaHinojosaTX (Gina Hinojosa). 611 likes 24 replies. A new era of government by the people and for the people begins today. https://t.co/5CgHIqcsDf",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74983d54d3fecd10",
-      "title": "Camera Bag Handbags, Purses & Wallets for Women | Nordstrom",
-      "url": "https://www.nordstrom.com/browse/women/handbags?filterByStyle=camera-bag",
-      "summary": "Find a great selection of Camera Bag Handbags, Purses & Wallets for Women at Nordstrom.com. Shop all styles from belt bags, crossbody, tote and backpacks from top brands.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c845576065d0fbd2",
-      "title": "CPA License Lookup | Verify a CPA and Compare Registry-Backed ...",
-      "url": "https://cpalocator.com/cpa-license-lookup/",
-      "summary": "Start by searching the CPA name, city, or license number on CPA Locator to compare profiles with registry-backed verification details. Then confirm the active status with the relevant state board before you hire.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fd34b3ded4186f17",
-      "title": "Dads Gone Wild - Reddit",
-      "url": "https://www.reddit.com/r/DadsGoneWild/",
-      "summary": "r/DadsGoneWild: [NSFW] A space on Reddit for Dads gone wild to show off. 200K strong and growing!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66b58734b0092941",
-      "title": "Designer Tote Bags for Women | Nordstrom",
-      "url": "https://www.nordstrom.com/browse/designer/women/handbags/totes",
-      "summary": "Find a great selection of Designer Tote Bags for Women at Nordstrom.com. Shop leather, fabric & more women's designer totes.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1287e7a7cb2df693",
-      "title": "Drunk girl jumps into stranger's car and asks him to take her home - Reddit",
-      "url": "https://www.reddit.com/r/videos/comments/11gtws/drunk_girl_jumps_into_strangers_car_and_asks_him/",
-      "summary": "1.5K votes, 2K comments. 27M subscribers in the videos community. Reddit's main subreddit for videos. Please read the sidebar below for our rules.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2fc9067c187e9947",
-      "title": "Find a CPA, Accountants in Montgomery, Texas | CPAdirectory",
-      "url": "https://cpadirectory.com/certified-public-accountants/texas/montgomery-tx",
-      "summary": "Browse profiles and find the top local CPAs in Montgomery. Read customer reviews and get details about our verified & licenced CPAs. Ask tax questions and get answers fast from an accountants near you.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "182e9aa0a32e617b",
-      "title": "Gina Hinojosa on X: \"Cataleya deserves a great public school ...",
-      "url": "https://x.com/GinaHinojosaTX/status/2097417708056768922",
-      "summary": "@GinaHinojosaTX is a radical progressive socialist! Democrats have strayed from their principles and have embraced socialism and anti-government ideologies. This is the new Democratic Party!",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69d748b27447f02d",
-      "title": "Gina Hinojosa on X: \"NEW POLL: Texans are ready for change ...",
-      "url": "https://x.com/GinaHinojosaTX/status/2102581026954371103",
-      "summary": "NEW POLL: Texans are ready for change, and in November we're going to prove it.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b05d69e08b8764d",
-      "title": "Gina Hinojosa on X: \"NEW: Another poll has us ONE POINT from ...",
-      "url": "https://x.com/GinaHinojosaTX/status/2095146458047549911",
-      "summary": "NEW: Another poll has us ONE POINT from beating Greg Abbott. Change is coming to Texas on November 3rd.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7aea5f58e44430eb",
-      "title": "Gina Hinojosa on X: \"NEW: Greg Abbott lies. This is the truth.\"",
-      "url": "https://x.com/GinaHinojosaTX/status/2102820551349662170",
-      "summary": "Running for governor to secure the American Dream by saving Texas schools and putting money in your pocket ...",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "890be40fb2bce8fa",
-      "title": "Gina Hinojosa on X: \"NEW: This is a ONE POINT race, from Fox ...",
-      "url": "https://x.com/GinaHinojosaTX/status/2082988318518632505",
-      "summary": "NEW: This is a ONE POINT race, from Fox News. We are going to take back power for working Texans this November.",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4062f9e351ab7a33",
-      "title": "Gina Hinojosa on X: \"When I'm governor, we'll forge a new way ...",
-      "url": "https://x.com/GinaHinojosaTX/status/2110527232930152670",
-      "summary": "When I'm governor, we'll forge a new way forward by securing the American Dream for the people of Texas, not folding to billionaires. 15 Oct 2026 00:24:38",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c54270b1d1c592a8",
-      "title": "Hobo Bags & Purses for Women | Nordstrom",
-      "url": "https://www.nordstrom.com/browse/women/handbags/hobo",
-      "summary": "Find a great selection of Hobo Bags & Purses for Women at Nordstrom.com. Find leather, coated canvas, nylon bags, and more. Shop from top brands like MCM, Kate Spade, and more.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe5bbba65acff025",
-      "title": "License Lookup ⋆ Texas State Board of Public Accountancy",
-      "url": "https://www.tsbpa.texas.gov/license-lookup/",
-      "summary": "License lookup tools are online systems available from the Texas State Board of Public Accountancy (TSBPA) to verify the licenses of individual CPAs, CPA firms, and CPE Sponsors. You can use these tools by entering a name or license number to find a professional’s license status, including any disciplinary actions or enforcement markers.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d4ab5ebe4b15c5f7",
-      "title": "Mark Ferguson - Consultant / Tax Executive at Self-Employed ...",
-      "url": "https://www.linkedin.com/in/mark-ferguson-55144812",
-      "summary": "Interim Head of Tax for a Houston-based NYSE-listed multinational integrated manufacturer of petrochemicals, plastics and building products.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e18e0835d99e7c93",
-      "title": "Mark Ferguson in TX - Texas Address & Phone Number ...",
-      "url": "https://www.whitepages.com/name/Mark-Ferguson/TX",
-      "summary": "Mark John Ferguson lives in Montgomery, TX. They have also lived in Hollywood, FL, among 11 previous addresses. Mark is related to Julie Ferguson and James Brinson, among 10 relatives on record. Phone numbers for Mark include: (954) 436-2180. View Mark John Ferguson's cell phone and current address.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a40857bce28c92cf",
-      "title": "Meta Platforms, Inc. (META) Stock Price, News, Quote ...",
-      "url": "https://finance.yahoo.com/quote/META/",
-      "summary": "Find the latest Meta Platforms, Inc. (META) stock quote, history, news and other vital information to help you with your stock trading and investing.",
-      "discovery_channel": "broad_web+research",
-      "query": "Meta NameTag smart glasses; Meta NameTag biometrics",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
       "content_types": [
         "retail"
       ],
       "primary_type": "retail",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d4a69c703ac1f60b",
-      "title": "Metallic Gold Tote Bags for Women | Nordstrom",
-      "url": "https://www.nordstrom.com/browse/women/handbags/totes?filterByColor=metallic-gold",
-      "summary": "Find a great selection of Metallic Gold Tote Bags for Women at Nordstrom.com. Shop a variety of tote-bag styles and sizes from brands like Longchamp, MCM, Tory Burch, Madewell, and Saint Laurent.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "a0dce265e801c265",
+      "title": "Where to find the best pizza in Phoenix",
+      "url": "https://www.phoenixnewtimes.com/food-drink/the-best-pizzerias-in-phoenix-9199976/",
+      "summary": "There is the concentration of talented pizzaioli in the Arizona desert, an unlikely yet fortunate development that has helped Phoenix become a culinary destination for die-hard pizza...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d257605d9c56b0ac",
+      "title": "AnyList - The best way to create and share a grocery shopping list.",
+      "url": "https://www.anylist.com/",
+      "summary": "AnyList is the best way to create and share a grocery shopping list. Available now on the App Store and Google Play.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -2042,9 +642,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2054,27 +656,92 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "28e087a74068042a",
-      "title": "r/Conservative - Reddit",
-      "url": "https://www.reddit.com/r/Conservative/",
-      "summary": "The largest conservative subreddit. https://discord.gg/conservative",
+      "id": "fa8b7d97b9e971a0",
+      "title": "Free Online Grocery List Maker - Shopping List App",
+      "url": "https://onlinelistmaker.com/grocery-list",
+      "summary": "Create free grocery lists and shopping lists online. Share with your household, sync in real-time, check items off at the store. No app download required.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31e33bbf2dfe23b2",
+      "title": "Grocery list | My Lists | Walmart.com",
+      "url": "https://www.walmart.com/lists/shared/WL/be117a3b-153e-42e2-b169-cdfe577b8e6e",
+      "summary": "Go to My Items to create and view your own lists. items while you shop.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ebbfecf21ab16041",
+      "title": "MAROON 5 TO CANCEL UPCOMING CONCERT AT THE XL CENTER IN HARTFORD, CT ...",
+      "url": "https://www.maroon5.com/maroon-5-cancel-upcoming-concert-xl-center-hartford-ct-sunday-september-18th/",
+      "summary": "All Other Maroon 5 U.S. Tour Dates to Proceed as Scheduled Maroon 5 have announced that their upcoming show at the XL Center in Hartford, CT this Monday, September 19th will unfortunately be canceled. For all ticket refunds, fans should return to their original point of purchase. Purchases made by phone or online will be returned automatically.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
+      ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "model"
       ],
-      "primary_type": "community",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2084,12 +751,170 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "734db6759c7d7ab1",
-      "title": "Red Shoulder Bags | Nordstrom",
-      "url": "https://www.nordstrom.com/browse/women/handbags/shoulder-bags?filterByColor=red",
-      "summary": "Find a great selection of Red Shoulder Bags at Nordstrom.com. Find tweed, leather, quilted bags, and more. Shop from top designer brands like YSL, Tory Burch, and Coach.",
+      "id": "c49cbed3e0f52c30",
+      "title": "MAROON 5 TO RESCHEDULE SEVERAL UPCOMING CONCERTS",
+      "url": "https://www.maroon5.com/maroon-5-reschedule-several-upcoming-concerts/",
+      "summary": "MAROON 5 TO RESCHEDULE SEVERAL UPCOMING CONCERTS NEW SHOW DATES CONFIRMED All Tickets to be Honored for new Show Maroon 5 have announced that their upcoming shows in Albany, Montreal, Quebec, Buffalo, Cleveland, Cincinnati and Milwaukee will be rescheduled.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd43fceb41cba151",
+      "title": "My Lists | Walmart.com",
+      "url": "https://www.walmart.com/lists",
+      "summary": "Switch countries Choose where you want to shop. Reorder My Items ReorderListsRegistries Sign In Account",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db6021bbd9de8ea3",
+      "title": "OurGroceries",
+      "url": "https://www.ourgroceries.com/",
+      "summary": "The easiest-to-use grocery list app! Never forget your list at home, and always know the exact right items to get.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6bf6eded61fc8637",
+      "title": "Out of Milk - Free Grocery Shopping List App",
+      "url": "https://outofmilk.com/",
+      "summary": "Simplify grocery shopping with Out of Milk. Create and share shopping lists with friends and family. Available for download on Android and iOS.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e072901fe860763d",
+      "title": "Safeway Grocery List - Start Your Grocery List Here",
+      "url": "https://www.safeway.com/loyalty/mylist",
+      "summary": "Safeway now allows you to build a grocery list and store it for your next shopping visit whether online, in-store, or via the app. Use our handy grocery list function today and keep track of your grocery shopping needs here.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1cfa53859135036c",
+      "title": "\"The Lion King\" movie times in Washington - showtimes.com",
+      "url": "https://www.showtimes.com/movies/the-lion-king-the-imax-experience-143135/movie-times/washington/",
+      "summary": "Find local showtimes and movie tickets for The Lion King in Washington.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2114,10 +939,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1717005f09fc4335",
-      "title": "Translator - Phrasly AI",
-      "url": "https://phrasly.ai/translator",
-      "summary": "Translate text from one language to another with our free online translator tool.",
+      "id": "7b304cc19539b1f4",
+      "title": "Chegg - Get 24/7 Homework Help | Rent Textbooks",
+      "url": "https://www.chegg.com/about/working-at-chegg/",
+      "summary": "Opens an external link in a new windowInitiates a phone call (if available)Opens a PDF in a new tab/window (if possible)",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40064a463e276c9b",
+      "title": "Find Tickets | IMAX",
+      "url": "https://www.imax.com/films/now-playing-near-me",
+      "summary": "Find tickets, check local showtimes and get directions to IMAX theatres.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aa2f135a579a6169",
+      "title": "Google Translate",
+      "url": "https://translate.google.com/websitetranslationui",
+      "summary": "Clear search text checkhistory",
       "discovery_channel": "broad_web",
       "query": "translation smart glasses",
       "source": "Bing web RSS",
@@ -2132,9 +1017,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2144,12 +1029,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2c653ad1dc0c2213",
-      "title": "TSBPA - Welcome to Texas State Board of Public Accountancy",
-      "url": "https://tsbpa.texas.gov/php/fpl/indlookup.php",
-      "summary": "TSBPA - Welcome to Texas State Board of Public Accountancy",
+      "id": "a6ec966def49031e",
+      "title": "Grammar Checker: Fix Grammar Mistakes in Seconds | Chegg Writing",
+      "url": "https://www.chegg.com/writing/features/grammar-check",
+      "summary": "Get a free grammar check and immediate, personalized writing suggestions from the Chegg Writing Grammar Checker so you can turn in your best paper",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "444a04d236b96777",
+      "title": "How do I delete my account? - Chegg",
+      "url": "https://www.chegg.com/en/contactus?a=How-do-I-delete-my-account---id--gtItXEPaRSyK1nId-ovgTg",
+      "summary": "Chegg Customer Support. Frequently Asked Questions: Subscriptions, Your Chegg Account, Faculty & Uversity",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2174,130 +1089,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "70f894ca9c42f729",
-      "title": "TSBPA Licensed Firm Lookup - Texas",
-      "url": "https://portal.tsbpa.texas.gov/php/fpl/frmlookup.php",
-      "summary": "Texas State Board of Public Accountancy William Treacy, Executive Director",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dde33534a6cb6ed4",
-      "title": "Weather Forecast and Conditions for Dallas, Texas - The Weather Channel ...",
-      "url": "https://weather.com/us/texas/city/dallas/today",
-      "summary": "Today’s and tonight’s Dallas, Texas weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd4a8b7a105c8cfc",
-      "title": "Weather Forecast and Conditions for Memphis, Tennessee - The Weather ...",
-      "url": "https://weather.com/us/tennessee/city/memphis/today",
-      "summary": "Today’s and tonight’s Memphis, Tennessee weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74669e0ed1b40bdb",
-      "title": "Weather Forecast and Conditions for Portland, Oregon - The Weather ...",
-      "url": "https://weather.com/us/oregon/city/portland/today",
-      "summary": "Today’s and tonight’s Portland, Oregon weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e2626fa36098043b",
-      "title": "Women's Leather (Genuine) Belt Bags & Sling Bags | Nordstrom",
-      "url": "https://www.nordstrom.com/browse/women/handbags/belt-bags-slings?filterByMaterial=leather-genuine",
-      "summary": "Find a great selection of Women's Leather (Genuine) Belt Bags & Sling Bags at Nordstrom.com. Top Brands. New Trends.",
+      "id": "e87fb9739c0d764e",
+      "title": "How Kimi Antonelli became F1’s youngest champion – NBC New York",
+      "url": "https://www.nbcnewyork.com/news/sports/kimi-antonelli-hiding-tires-f1-youngest-champion/6565926/",
+      "summary": "How Kimi Antonelli went from a kid hiding in a stack of tires to F1's youngest champion Every step of the way, Antonelli has been compared to the greats of the sport.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2324,12 +1119,973 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eb83731e2009ebbe",
-      "title": "请求有异常",
-      "url": "https://www.vmall.com/",
-      "summary": "亲，抱歉。您的请求有异常，请检查后再试。 如有疑问，请与客服中心联系。电话：400-088-6888，邮箱：hwec@huawei.com",
+      "id": "65421423b336a19e",
+      "title": "IFA: State Revolving Fund: State Revolving Fund",
+      "url": "https://www.in.gov/ifa/srf/",
+      "summary": "About SRF The State Revolving Fund (SRF) Loan Programs provide low-interest loans to Indiana communities for projects that improve wastewater and drinking water infrastructure. The Program's mission is to provide eligible entities with the lowest interest rates possible on the financing of such projects while protecting public health and the environment. SRF also funds non-point source ...",
       "discovery_channel": "broad_web",
-      "query": "Huawei AI Glasses",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b6114413498db2d9",
+      "title": "Inside Kimi Antonelli’s emotional F1 title win: Tension, tears, and a ...",
+      "url": "https://www.nytimes.com/athletic/7746996/2026/11/02/kimi-antonelli-2026-f1-world-champion-analysis/",
+      "summary": "Inside Kimi Antonelli’s emotional F1 title win: Tension, tears, and a first tequila? Antonelli finished third in Mexico, clinching the 2026 F1 drivers' championship with four races to spare.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34abe8ecb88a11b0",
+      "title": "Kimi Antonelli - Driver - Mercedes-AMG PETRONAS F1",
+      "url": "https://www.mercedesamgf1.com/drivers/driver/andrea-kimi-antonelli",
+      "summary": "Kimi's sophomore season in F1 saw him achieve success beyond his wildest dreams. Following a P2 in the Melbourne opener, he won his first Grand Prix in China, his second in Japan (becoming the youngest championship leader ever) and reeled off a further three for an unprecedented five-win streak.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7129d1c459cbd62",
+      "title": "Kimi Antonelli - F1 Driver for Mercedes - Formula 1",
+      "url": "https://www.formula1.com/en/drivers/kimi-antonelli",
+      "summary": "Andrea Kimi Antonelli’s rise to the F1 grid has been nothing short of meteoric. Son of sportscar racer Marco, the Bologna native was scouted by Mercedes during a karting career that saw him collect a scarcely believable number of winner's trophies.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "58896851a0bef6d5",
+      "title": "Kimi Antonelli - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kimi_Antonelli",
+      "summary": "Antonelli won the Formula One World Drivers' Championship in 2026 with Mercedes, becoming the youngest-ever World Drivers' Champion; he has won nine Grands Prix since his debut in 2025. Born and raised in Bologna, Antonelli is the son of sportscar racing driver Marco Antonelli.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3ca681ad9ad45f23",
+      "title": "Kimi Antonelli Cries After Making F1 History as Youngest-Ever Champion",
+      "url": "https://people.com/kimi-antonelli-breaks-down-after-making-f1-history-as-youngest-ever-champion-12207376",
+      "summary": "Kimi Antonelli of Mercedes made history at age 20 at the 2026 Mexico Grand Prix, where he became the youngest-ever world champion.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8748fabe2c375234",
+      "title": "Kimi Antonelli's historic title-winning F1 season in 5 key moments",
+      "url": "https://apnews.com/article/kimi-antonelli-f1-season-2026-key-moments-487b48e23059c0f9377c6e6036b36d03",
+      "summary": "Kimi Antonelli has become Formula 1’s youngest-ever champion. Securing the title on Sunday at the Mexico City Grand Prix confirms the rapid rise of a 20-year-old driver who hadn’t won a race when 2026 began.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "20340261f2b7b68c",
+      "title": "Kimi Antonelli: 1× F1 World Champion – Career Stats",
+      "url": "https://www.f1-fansite.com/f1-drivers/kimi-antonelli/",
+      "summary": "Kimi Antonelli's F1 record: 1 World title, 9 wins, 7 poles in 43 starts since 2025. Full season-by-season stats, race results and team history.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54529b030fdc7c76",
+      "title": "Kimi Antonelli: Everything You Need To Know About Mercedes’ 2025 F1 ...",
+      "url": "https://www.mercedesamgf1.com/news/kimi-antonelli-everything-you-need-to-know",
+      "summary": "Kimi became the 13th driver to represent Mercedes in F1 when he took the start for his debut race in Melbourne, Australia. In the process he became the third-youngest driver to ever start an F1 race.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c69c68bc22e3dbd",
+      "title": "M5 2021 Tour COVID Vaccine & Testing Requirements - Maroon 5",
+      "url": "https://www.maroon5.com/m5-2021-tour-covid-vaccine-testing-requirements/",
+      "summary": "We want you to know that our top priority is the safety and well-being of our fans as well as that of the hard working men and women who make these events possible. To that end we want to convey our support of recent news around shows starting to require additional protocols for entry, therefore […]",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1c08848956c31151",
+      "title": "Movie Showtimes & Movie Tickets | Regal",
+      "url": "https://www3.regmovies.com/",
+      "summary": "Regal offers the best cinematic experience in digital 2D, 3D, IMAX, 4DX. Check out movie showtimes, find a location near you and buy movie tickets online.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "430d0e7086f3ebba",
+      "title": "Movie Showtimes and Theaters near Imax, undefined | Fandango",
+      "url": "https://www.fandango.com/imax_movietimes",
+      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Imax, undefined.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "09b1b05406068c5a",
+      "title": "Movie Showtimes and Theaters near Seattle, WA-IMAX",
+      "url": "https://www.fandango.com/seattle_wa-imax_movietimes",
+      "summary": "Find showtimes, tickets, and more for your favorite cinema experience in Seattle, WA-IMAX.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "28ec9a78b02fab3a",
+      "title": "Pacific Science Center - PACCAR IMAX Theatre Showtimes Schedule ...",
+      "url": "https://www.bigscreen.com/Marquee.php?theater=26155&view=sched",
+      "summary": "What's playing and when? View showtimes for movies playing at Pacific Science Center - PACCAR IMAX Theatre in Seattle, Washington (WA 98109) with links to movie information (plot summary, reviews, actors, actresses, etc.) and more information about the theater.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ff58eb7d4321216",
+      "title": "Question: 10:01：8 out of 10The notification level of all Therap ...",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/10-01-8-10-notification-level-therap-appointments-high-medium-low-please-select-answer-q196661576",
+      "summary": "Question: 10:01：8 out of 10The notification level of all Therap Appointments is:HighMediumLowPlease select an answer",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e81aaa9f645f2c5",
+      "title": "Roasted Broccolini Recipe | Ina Garten | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/ina-garten/roasted-broccolini-3517966",
+      "summary": "This Roasted Broccolini recipe is tender, juicy, and full of bold flavor. A weeknight dinner the whole family will love. Get the recipe now.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ee19ec91627e45c",
+      "title": "Solved 2. Does the series converge of diverge 2n-3 +7 +1 NO - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/2-series-converge-diverge-2n-3-7-1-sam-poland-therap-login-g-q62018135",
+      "summary": "Math Calculus Calculus questions and answers 2. Does the series converge of diverge 2n-3 +7 +1 NO sam poland Therap=Login - G...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e0c010d871dd0d4",
+      "title": "Solved 51858lags autosave Acidemics | UND. N Northland - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/51858lags-autosave-acidemics-und-n-northland-commu-mentor-netw-t-therap-login-blackboad-ca-q39742892",
+      "summary": "T Therap Login blackboad campus conncetion Stude 3/4 points Previous Answers How old are professional football players? The 11th Edition of The Pro Football Encyclopedia gave the following information.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eae8d0bb304f8242",
+      "title": "Solved Therap software company is trying to determine its - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/therap-software-company-trying-determine-optimal-capital-structure-company-s-current-capit-q193044440",
+      "summary": "Question: Therap software company is trying to determine its optimal capital structure. The company’s current capital structure consists of 35% debt and 65% common equity; however, the treasurer believes that the firm should use more debt.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2e8b9914da4194e0",
+      "title": "Solved à Secure htps 顶aniel pbookmarks顶Therap: Login Shady - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/secure-htps-aniel-pbookmarks-therap-login-shady-20-cyphe-1-remaining-time-59-minutes-31-se-q31623483",
+      "summary": "Question: à Secure htps 顶aniel pbookmarks顶Therap: Login Shady 20 Cyphe-1 Remaining Time: 59 minutes, 31 seconds Question Completion Status Therap : Logged Out QUESTION sartng with a mouse population where A S and a sithe allele frequency of Alinithe next generation is.65 would the population be in B.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "35e7dd5fde0a323b",
+      "title": "The Lion King - An IMAX 3D Experience movie times near Seattle, WA",
+      "url": "https://www.showtimes.com/movie-times/the-lion-king-an-imax-3d-experience-143136/seattle-wa/",
+      "summary": "The Lion King - An IMAX 3D Experience movie times near Seattle, WA | local showtimes & theater listings",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec2940fd5d401f33",
+      "title": "The Song (2014 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Song_(2014_film)",
+      "summary": "The film follows about a singer-songwriter, whose marriage suffers when the song he wrote for his wife propels him to stardom. The film was inspired by the Song of Songs and the life of Solomon.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b836e0323edcbd90",
+      "title": "The Song (2014) - IMDb",
+      "url": "https://www.imdb.com/title/tt2517044",
+      "summary": "Soon after their wedding, Jed writes Rose \"The Song,\" which becomes a breakout hit. Suddenly thrust into a life of stardom and a world of temptation, his life and marriage begin to fall apart.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c1e8aca97e6244a",
+      "title": "The Song (2014) - Plot - IMDb",
+      "url": "https://www.imdb.com/title/tt2517044/plotsummary/",
+      "summary": "THE SONG follows the story of Jed King, an aspiring singer/songwriter who wrestles with the personal and professional struggles of pursuing stardom and a quest for significance.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a002341574894b1",
+      "title": "The Song - Facebook",
+      "url": "https://www.facebook.com/TheSongMovie/",
+      "summary": "Inspired by the life of Solomon, \"The Song\" follows Jed King, a musician whose rise to fame puts his marriage and faith to the test. Honest, emotional, and full of truth, it continues to resonate with many today.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "401473fefb0c257e",
+      "title": "The Song - Prime Video",
+      "url": "https://www.primevideo.com/detail/0ND548L9YIH3G4P0TTCDNMC8HV/",
+      "summary": "An aspiring singer-songwriter is struggling to catch a break and escape the long shadow of his famous father until he writes a love song that catapults him to stardom.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "27ae1e048ac92860",
+      "title": "The Song - The Song",
+      "url": "https://thesong.miraheze.org/wiki/The_Song",
+      "summary": "The Song (French: La Chanson), often known by its initialism TS, is an international song competition organised by the European Broadcasting Union.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c9185b10d8c36506",
+      "title": "The Song TV - Hard Rock",
+      "url": "https://www.thesong.tv/",
+      "summary": "Global partner Hard Rock presents an all new, Season VII, as THE SONG welcomes back partners America’s legendary motorcycle brand Harley-Davidson. The 13-episode series re-launched January 2026 in over 150 markets reaching over 80% of US households.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4581653e610f84c3",
+      "title": "Therap Help and Support",
+      "url": "https://help.therapservices.net/s/article/4497",
+      "summary": "Therap Help and Support ×",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb51817e9364e282",
+      "title": "therap login. YhX Therap: Dashboarx WAMAP | Chegg.com",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/therap-login-yhx-therap-dashboarx-wamap-wamaporg-assess2-cid-29438-aid-1550211475k-apps-m--q91817118",
+      "summary": "YhX Therap: Dashboarx WAMAP wamap.org/assess2/?cid=29438&aid=1550211475k Apps M Gmail YouTube Maps Rolling a regular six-sided dic. What's the probabilities of getting A) a number 2 ?",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b2e0bae9875eaba",
+      "title": "Today’s Schedule - Pacific Science Center",
+      "url": "https://pacificsciencecenter.org/visit/today/",
+      "summary": "PacSci offers several planetarium shows for all ages throughout the day. Visit the Planetarium web page to view the schedule and planetarium descriptions. IMAX® documentary and feature movies are not included and must be purchased separately.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36faf0f488c43f3e",
+      "title": "Watch The Song | Prime Video - amazon.com",
+      "url": "https://www.amazon.com/Song-Ali-Faulkner/dp/B00TF84YZ0",
+      "summary": "An aspiring singer-songwriter is struggling to catch a break and escape the long shadow of his famous father until he writes a love song that catapults him to stardom.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba4abe70df5abff5",
+      "title": "Who is Kimi Antonelli? What to know about F1's new champion",
+      "url": "https://www.msn.com/en-us/news/other/who-is-kimi-antonelli-what-to-know-about-f1s-new-champion/ar-AA2gxPSh",
+      "summary": "Kimi Antonelli, 20, made history when he clinched his first Formula 1 championship at the Mexico City Grand Prix. What to know about the rising star.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
