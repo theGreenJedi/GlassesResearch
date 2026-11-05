@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-05T03:41:04.955241+00:00`
+Generated: `2026-11-05T07:59:22.399988+00:00`
 
-- Intake files inspected: **244**
-- Candidates retained in this review window/history: **9829**
+- Intake files inspected: **242**
+- Candidates retained in this review window/history: **9788**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1954
+- `adjacent_radar`: 1941
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 545
-- `rejected_noise`: 7237
-- `source_review`: 53
+- `needs_editorial_verification`: 551
+- `rejected_noise`: 7207
+- `source_review`: 49
 - `watching`: 25
 
 ## Action queue
@@ -178,6 +178,10 @@ Generated: `2026-11-05T03:41:04.955241+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1258](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1258) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1260](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1260) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1262](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1262) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1263](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1263) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1264](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1264) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1266](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1266) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1267](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1267) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [US Senators Launch Inquiry into Privacy Risks of Meta AI-Enabled Smart Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMisgFBVV95cUxObDBKaDFoYmhEV0p5U3Nwa1NjVjVIeDBmcHNfN0psRnJnRHZJSGJRVHRCR3BCQ093aW9MekJfSVd5YmZtYV9NNTFOT2dzVnJhWS04Wnl6bExRdUlrbll3c2l4TDRCMEt3QjQ0blpDTjY3ejRaUWtDRjl6Mkp4TzdkVFVNcld1SmFLNWptV2JYdXRkN25YNHJBaC1Iak01QWszdW5tZzN0MjNaRXo1bHZFZWNB?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android XR's First AR Glasses 'XREAL Aura' Launch Today, Starting at $1,100 for Limited Time - Road to VR](https://news.google.com/rss/articles/CBMieEFVX3lxTFBRRE5XbzVUbXc2d0JQVzIzMHA0clBUbjlHYl9ZRGxybWhZWEk1N3V6Sl9MZFNhVFFOWUNwQWlWdEFRNTdTN2xvcWVTNGk3bmNDU2wxc2lvclhkdmtOcTAwZHMtWXFMVkFKZERPc0JlWER6VVU4RDExMA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Apple Is Preparing to Launch Its First AI Smart Glasses - ProPakistani](https://news.google.com/rss/articles/CBMilgFBVV95cUxQTk9POUpWRU16N0t4ekloU0dTVlZ0bG0yNVNuSHJNMy1GbFV5UXBxc3o1WUxYdE9XaUZUc3VtRlJGWUVSdlpnR3p2bUEzVmpjZ0YzVUZJcFZJY0ItYmRVOUhBY0ZrUWFjMzZMTWVrQ2tkYVhFemJwOFhlbDAxUmZBNE1iMFBZQVZ5WC1NTklBRGtHOFNOWnfSAZsBQVVfeXFMTWltcGJyZ3c1Q1BIRkNNaTB1YktSWW16WWZlSkpYaWp1SzI0Ni03RUhuR2NIaXdheC1KNVYyNDN1YlJ0M1JCbkxSd1o5NnUtZUJjOGFyUDRocU5VWUo1ZzBWM05pYV92LXFhbEVzM3Zta1p6VnRaUTVSTk01dUh4d1liVVE4dG0wQ0RjcnY0MkdjTFl2b2lPY0drRnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -267,10 +271,6 @@ Generated: `2026-11-05T03:41:04.955241+00:00`
 | high | needs_editorial_verification | direct | [Smart Glasses: The Only Privacy Nightmare Apple Can’t Solve - آي-فون إسلام](https://news.google.com/rss/articles/CBMirAFBVV95cUxQaGJPTFRObllUU0RLZTVDVEVhM3lVYVZtTktCNjVVUG8yNnVqR0FfYy1WTzl3ME5vUVo5a3p4bG5MY1dFQ2NhWE1sYmFRZkFCT3FJVXFMazRucVFfdlBReVdadHBVSDl4dE1jdVVGYWJIZ19Jb1pGaXJ6cl9hRnk4LUJpZ3FMX0RUUUV0bURuTFZCRVROclV2dDc4eEhyM3RXb0J2b1pfaDJaRzRN?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Starting Application Development - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/start-development/) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [TechRadar 6d ago Why AI smart glasses need a privacy-first approach](https://www.techradar.com/pro/why-ai-smart-glasses-need-a-privacy-first-approach) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [TechRadar Oct 6, 2026 Norway becomes first country to propose temporary ban on smart glasses](https://www.techradar.com/computing/virtual-reality-augmented-reality/norway-set-to-become-first-country-to-slap-a-temporary-ban-on-smart-specs-and-an-informed-debate-will-determine-the-future-of-meta-ray-bans-and-other-pervert-glasses) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [The Ghost Howls 2d ago The XR Week Peek (2026.11.02): XREAL discounts Aura at launch, Quest sales are declining, and more! Coverage Xreal](https://skarredghost.com/2026/11/02/xreal-aura-launch-quest/) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [The XR Week Peek (2026.11.02): XREAL discounts Aura at launch, Quest sales are declining, and more! - The Ghost Howls](https://news.google.com/rss/articles/CBMibEFVX3lxTFB0Mk5XYm1CUkRfeWNyd2lISl9CWnJPNkh1dDdYQjg4aHNKUEVJbkV2c0xCQkZWNkhzelphRnRDZHlraklLQlN2aXd5QnUwUmxMeUtWQ0stUVd5Nk5HTnB1dTR5Y05XdEFxMUl2ZtIBckFVX3lxTE9rTFFQWVY3blg2d2dHMjB4UXdpSk9hc2xRMjREeWxuN3h4R3RZdjFnZ0lJZFBmRXRfUkhUM21CS1hJc190VUhCaTgzWjBlTVpLc3hMYzV1eC1rakxSWUxnSHRsU2xJd21YUDlkNDRudnIwQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [The XR Week Peek (2026.11.02): XREAL discounts Aura at launch, Quest sales are declining, and more! - The Ghost Howls](https://news.google.com/rss/articles/CBMickFVX3lxTE9rTFFQWVY3blg2d2dHMjB4UXdpSk9hc2xRMjREeWxuN3h4R3RZdjFnZ0lJZFBmRXRfUkhUM21CS1hJc190VUhCaTgzWjBlTVpLc3hMYzV1eC1rakxSWUxnSHRsU2xJd21YUDlkNDRudnIwQdIBckFVX3lxTE9rTFFQWVY3blg2d2dHMjB4UXdpSk9hc2xRMjREeWxuN3h4R3RZdjFnZ0lJZFBmRXRfUkhUM21CS1hJc190VUhCaTgzWjBlTVpLc3hMYzV1eC1rakxSWUxnSHRsU2xJd21YUDlkNDRudnIwQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
