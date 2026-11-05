@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-05T19:03:11.525277+00:00`
+Generated: `2026-11-05T22:44:14.843221+00:00`
 
-- Intake files inspected: **241**
-- Candidates retained in this review window/history: **9639**
+- Intake files inspected: **240**
+- Candidates retained in this review window/history: **9584**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1997
+- `adjacent_radar`: 1967
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 546
-- `rejected_noise`: 7004
-- `source_review`: 52
+- `rejected_noise`: 6980
+- `source_review`: 51
 - `watching`: 25
 
 ## Action queue
@@ -43,7 +43,6 @@ Generated: `2026-11-05T19:03:11.525277+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1244](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1244) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1246](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1246) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1251](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1251) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1050](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1050) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1053](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1053) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1056](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1056) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1058](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1058) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -180,6 +179,7 @@ Generated: `2026-11-05T19:03:11.525277+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1264](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1264) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1266](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1266) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1267](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1267) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1268](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1268) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [US Senators Launch Inquiry into Privacy Risks of Meta AI-Enabled Smart Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMisgFBVV95cUxObDBKaDFoYmhEV0p5U3Nwa1NjVjVIeDBmcHNfN0psRnJnRHZJSGJRVHRCR3BCQ093aW9MekJfSVd5YmZtYV9NNTFOT2dzVnJhWS04Wnl6bExRdUlrbll3c2l4TDRCMEt3QjQ0blpDTjY3ejRaUWtDRjl6Mkp4TzdkVFVNcld1SmFLNWptV2JYdXRkN25YNHJBaC1Iak01QWszdW5tZzN0MjNaRXo1bHZFZWNB?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Android XR's First AR Glasses 'XREAL Aura' Launch Today, Starting at $1,100 for Limited Time - Road to VR](https://news.google.com/rss/articles/CBMieEFVX3lxTFBRRE5XbzVUbXc2d0JQVzIzMHA0clBUbjlHYl9ZRGxybWhZWEk1N3V6Sl9MZFNhVFFOWUNwQWlWdEFRNTdTN2xvcWVTNGk3bmNDU2wxc2lvclhkdmtOcTAwZHMtWXFMVkFKZERPc0JlWER6VVU4RDExMA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Apple Is Preparing to Launch Its First AI Smart Glasses - ProPakistani](https://news.google.com/rss/articles/CBMilgFBVV95cUxQTk9POUpWRU16N0t4ekloU0dTVlZ0bG0yNVNuSHJNMy1GbFV5UXBxc3o1WUxYdE9XaUZUc3VtRlJGWUVSdlpnR3p2bUEzVmpjZ0YzVUZJcFZJY0ItYmRVOUhBY0ZrUWFjMzZMTWVrQ2tkYVhFemJwOFhlbDAxUmZBNE1iMFBZQVZ5WC1NTklBRGtHOFNOWnfSAZsBQVVfeXFMTWltcGJyZ3c1Q1BIRkNNaTB1YktSWW16WWZlSkpYaWp1SzI0Ni03RUhuR2NIaXdheC1KNVYyNDN1YlJ0M1JCbkxSd1o5NnUtZUJjOGFyUDRocU5VWUo1ZzBWM05pYV92LXFhbEVzM3Zta1p6VnRaUTVSTk01dUh4d1liVVE4dG0wQ0RjcnY0MkdjTFl2b2lPY0drRnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -203,6 +203,7 @@ Generated: `2026-11-05T19:03:11.525277+00:00`
 | high | needs_editorial_verification | direct | [Vision Express Teases Ray-Ban AI Glasses Launch in the Philippines - Gadget Pilipinas](https://news.google.com/rss/articles/CBMid0FVX3lxTE5NVTNWMGxwWEl3RkpDREZDdVRhQ1M0OHlZajQ2WkthalZaSHBhVnQtU2hDN2hoSm1QdjU3YWM1cTdSSmlPRElsT2E2SGVGU041V1pIVjhKaWtQR0J3by1YWnBoeUNsYjN0ZUZpNlZRTy15cWV4QnZN?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Vuzix begins shipping SHRIKE configurable waveguide platform for defense evaluation - Traders Union](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdXRwOGxNa3h2dlhFdnZYUVRoWldvdFpBQlNMUlVzQ0RnVHhmcnpYUVZyQUVfM0ZWbXY3UlRtcm9UU3pDUDQ1MjBVZExmMXFwVDBhOUhnT1FrWUFjTmpvTlJDYVlXQlVDOVczU1VJN19pcUJhZ3g1QW85Y0tBRndMSA?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMilgFBVV95cUxOUGluS0p2WE9xMEU1cGdheUtXYWhPVjgycklQUjRoVkZlandkMkRMMTIzOUU2SHk1ZWk1QlhWTG9OUU9Xa0Z5eGVyaThIWXEycUZDSGNXSGhCYW5IaUN0eEIzMFhweWoxR3dTcnNGN2xnd0JUd1BOQUpjREIzTzB2OU1WMzYwS2lfV2tNMU1keXNGWXE2Rnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Warby Parker Seemingly Spilled The Beans On Google's Android XR Smart Glasses Launch - Engadget](https://news.google.com/rss/articles/CBMiuAFBVV95cUxQQkZTU05XbVFDZXNMNmswUmdvd1p5QXZMR2pTZTRxcFd2M2w1QmdnM2Y0OUhXNDdZNlQzNlVrYXdKUEp2aURiOFBDdzJDQjM4SmFQdWZlTXpfd3RhYUFkLWptX1JWaVlMTDRucC1pM21heTZIYUptZ3V4MlZlTnRPa1JBRFk4VDNLazRPME83SDdhaU5VRlp6REdBOTRiVTBRNWR1RjFEZnFud1VmRUh6S296NTczYTRN?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal Aura Android XR Glasses Go on Sale at $1,099, Below Preorder Price - Northeast Times](https://news.google.com/rss/articles/CBMirgFBVV95cUxQTE9leGI0bEhabGpSZDM5MjJnZVJNTzg0VTRyODUxUWVCNWxDT0tyMGIxdUlKQnoxMXBMLUtYTnBlLUM3czhrVlM5U1ltZ19HQTlWTFJZbzRxdGtibHU1a05Vczg4eER0WTFOdmlSRHlZOGlhNDFTQk5xbjQ3eVo1YXBtOEp5dTZCN0FWWUpPeTJFXzVkZmMyNjRLVkoxajNRNzhFcktPUUFobFhjV2c?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Xreal Aura Android XR Glasses Launch at $1,099, Undercutting Meta on Price - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE0wSTFqOWo4S045MUpDRkpGSnZIWHE0MEZpYTdXRk5XX2ptRkwwZzJ6cVZrMmd0N3A2R1lrQmhXOW1GcGYxMFBSRkRjanFDZU1PVUhlMWRFZ0haYVpVSF9XajMwX0c5a3QtUXV5VUk1NG4tV25oaEE?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Xreal Aura available for preorder at $1279. - Root-Nation.com](https://news.google.com/rss/articles/CBMimgFBVV95cUxObHNFd0FZWUdQQ0M5d2VaNWVWeWdwVXZZV0hUT2oxMzIxcFdvYU85ZG5pUWljYkJ3cEVYWnVhVDNoWDNxQXYzQTJjaEh2V3dXMnpIT0JFSHRnOVNNQVdzUmZPU3c4eG5fNXlsSWhQaUtfWldNdk54OEh5MG10Y1VtLUNmX0ZJR1RmUTNfVUNwQzZENU1hR1cwQ2ZB?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
@@ -270,7 +271,6 @@ Generated: `2026-11-05T19:03:11.525277+00:00`
 | high | needs_editorial_verification | direct | [Smart glasses 'not only have the potential to erode safety and privacy... but raise really important questions about consent': the UK is the](https://news.google.com/rss/articles/CBMikwFBVV95cUxQYno4Wk1ybzZkTHNjMUZmbFVJbVNINjlYVDMyQkVVSmk2WWJ4aXQ4QWd0YmVDX0dTaVpBdEFEWXFQZWNlLUhXcFZmWmxDUVRONjhjTVhsUXM1ZHM0cXVIMXhrSUV6YTA3X2hWWGQtVXhRTk85enVVUmxORkl3WVplalFOTHctd1JRT0xsSXJxblEtWWs?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Smart Glasses Could See Major Bans in the UK - AOL.com](https://news.google.com/rss/articles/CBMifkFVX3lxTE5wZ3k5SlpQdFJPR0VkS21jT1VGNjJESEIzV1JYR0R6bnpsc29ZOVR4dmRBLVJYWEhmRlZ4bUw5MnZJWV9uOGxxZEVwNkQ4M3RLcnFCQlgzS2NNMWNaNzU2RlZxeHJvZFRBQ0ExSFE5SjNtYkZqUWlGMkJEUkhMUQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Starting Application Development - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/start-development/) | reachable (200) | research_news_review, development_hacking |
-| high | needs_editorial_verification | direct | [TechRadar 6h ago Putting the 'ban' in Meta Ray-Ban: the UK mulls restrictions on smart glasses Coverage Meta](https://www.techradar.com/computing/virtual-reality-augmented-reality/putting-the-ban-in-meta-ray-ban-the-uk-is-considering-placing-restrictions-on-smart-glasses-sales-as-the-government-is-already-looking-into-options-to-curb-the-secret-filming-of-women) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
