@@ -1,10 +1,11 @@
-name: Validate review-only outreach queue
+name: Validate offline outreach dry run
 
 on:
   pull_request:
     paths:
       - 'scripts/build_outreach_queue.py'
-      - 'tests/test_outreach_queue.py'
+      - 'scripts/build_outreach_drafts.py'
+      - 'tests/test_outreach_*.py'
       - 'operations/outreach/**'
       - '.github/workflows/outreach-queue-check.yml'
   workflow_dispatch:
@@ -20,9 +21,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate matching and safety boundaries
-        run: python -m unittest discover -s tests -p 'test_outreach_queue.py'
-      - name: Regenerate queue without posting
+      - name: Test candidate and response review gates
+        run: python -m unittest discover -s tests -p 'test_outreach_*.py'
+      - name: Regenerate offline candidate queue
         run: python scripts/build_outreach_queue.py
-      - name: Check committed queue matches generation
-        run: git diff --exit-code -- operations/outreach/queue.md
+      - name: Regenerate offline reply review packets
+        run: python scripts/build_outreach_drafts.py
+      - name: Check deterministic committed review artifacts
+        run: git diff --exit-code -- operations/outreach/queue.md operations/outreach/replies_for_review.md
