@@ -1,6 +1,6 @@
 """Tests for review-only community outreach candidate preparation."""
 import unittest
-from scripts.build_outreach_queue import build_candidates, render_markdown
+from scripts.build_outreach_queue import build_candidates, render_markdown, sample_for_review
 
 
 class QueueTests(unittest.TestCase):
@@ -21,6 +21,18 @@ class QueueTests(unittest.TestCase):
         self.assertEqual(len(result[0]["questions"]), 2)
         self.assertIn("DRAFT CANDIDATES ONLY", render_markdown(result, 15))
         self.assertEqual(build_candidates(registry, {"entries": [{"source_url": src, "status": "posted"}]}), [])
+
+    def test_review_sample_exercises_multiple_platforms(self):
+        items = [
+            {"platform": p, "source_url": f"https://example.com/{p}/{n}", "last_observed": "2026-10-21"}
+            for p in ("Reddit", "GitHub", "Stack Exchange")
+            for n in range(6)
+        ]
+        chosen = sample_for_review(items, 15)
+        self.assertEqual(len(chosen), 15)
+        self.assertEqual([x["platform"] for x in chosen[:3]], ["Reddit", "GitHub", "Stack Exchange"])
+        self.assertEqual({p: sum(c["platform"] == p for c in chosen) for p in ("Reddit", "GitHub", "Stack Exchange")},
+                         {"Reddit": 5, "GitHub": 5, "Stack Exchange": 5})
 
     def test_only_allowed_external_hosts_and_local_answers(self):
         registry = {"questions": [
