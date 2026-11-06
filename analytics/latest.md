@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-11-05T14:00:17+00:00**
+Generated automatically: **2026-11-06T13:45:45+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-10-28 → 2026-11-03):** 739 impressions, 9 clicks, 1.22% CTR, average position 10.8.
-- **7-day change:** impressions +5.4%; clicks +125.0%.
-- **Rolling 28 days:** 2572 impressions, 24 clicks, 0.93% CTR, average position 13.4.
+- **Google, latest final 7 days (2026-10-29 → 2026-11-04):** 622 impressions, 7 clicks, 1.13% CTR, average position 11.1.
+- **7-day change:** impressions -8.0%; clicks +40.0%.
+- **Rolling 28 days:** 2473 impressions, 24 clicks, 0.97% CTR, average position 13.4.
 
 ## Practical Answers — search discovery
 
@@ -25,46 +25,46 @@ _No rows yet._
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
 | smart glasses sdk | 1 | 1 | 100.00% | 75.0 |
-| best ai glasses developers? | 0 | 3 | 0.00% | 10.7 |
-| best bluetooth glasses | 0 | 5 | 0.00% | 24.2 |
+| best ai glasses developers? | 0 | 2 | 0.00% | 10.5 |
+| best bluetooth glasses | 0 | 3 | 0.00% | 28.7 |
 | best bluetooth glasses for music and calls | 0 | 4 | 0.00% | 10.2 |
 | best display glasses | 0 | 3 | 0.00% | 22.7 |
 | best open source ar glasses | 0 | 1 | 0.00% | 1.0 |
-| best smart glass developers? | 0 | 58 | 0.00% | 9.5 |
+| best smart glass developers? | 0 | 57 | 0.00% | 9.5 |
 | best smart glasses app development studio | 0 | 9 | 0.00% | 9.9 |
-| best smart glasses developers | 0 | 20 | 0.00% | 8.8 |
-| best sunglasses for developers | 0 | 1 | 0.00% | 9.0 |
+| best smart glasses developers | 0 | 17 | 0.00% | 8.9 |
+| best wireless sunglasses 2024 | 0 | 3 | 0.00% | 9.3 |
 
 ## Google — top pages
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 2 | 39 | 5.13% | 5.9 |
-| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 1 | 39 | 2.56% | 6.3 |
+| https://glassesresearch.org/docs/COMPARISON_ENGINE/ | 1 | 28 | 3.57% | 6.2 |
 | https://glassesresearch.org/evidence/EV-0063-Recon-Jet-service-survival/ | 1 | 1 | 100.00% | 6.0 |
 | https://glassesresearch.org/evidence/EV-0074-Maverick-AI-primary-product/ | 1 | 6 | 16.67% | 7.2 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | 1 | 166 | 0.60% | 6.4 |
-| https://glassesresearch.org/guides/smart-glasses-without-cameras/ | 1 | 23 | 4.35% | 9.0 |
-| https://glassesresearch.org/hacking/ | 1 | 22 | 4.55% | 17.6 |
-| https://glassesresearch.org/hacking/OPEN_HACKING_RESOURCE_LEDGER/ | 1 | 5 | 20.00% | 4.6 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | 1 | 135 | 0.74% | 6.4 |
+| https://glassesresearch.org/hacking/ | 1 | 19 | 5.26% | 19.5 |
+| https://glassesresearch.org/hacking/OPEN_HACKING_RESOURCE_LEDGER/ | 1 | 4 | 25.00% | 5.2 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | 1 | 36 | 2.78% | 5.7 |
 | https://glassesresearch.org/ | 0 | 8 | 0.00% | 14.0 |
-| https://glassesresearch.org/artifacts/ | 0 | 2 | 0.00% | 8.0 |
+| https://glassesresearch.org/artifacts/ | 0 | 1 | 0.00% | 7.0 |
+| https://glassesresearch.org/changes/gre-000003/ | 0 | 11 | 0.00% | 17.4 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **0 browser pageviews**, **0 RUM visits**.
-- Rolling 7d: **130 browser pageviews**, **100 RUM visits**.
+- Rolling 24h: **74 browser pageviews**, **61 RUM visits**.
+- Rolling 7d: **157 browser pageviews**, **133 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Paths readers are finding — rolling 7 days
 
 | Destination | Observed browser pageviews |
 |---|---:|
-| Practical Answers | 0 |
-| Buying and use-case guides | 0 |
-| Model research | 50 |
-| Find & Compare | 0 |
-| Follow verified work | 0 |
+| Practical Answers | 8 |
+| Buying and use-case guides | 2 |
+| Model research | 8 |
+| Find & Compare | 10 |
+| Follow verified work | 3 |
 
 These are minimum counts from RUM's returned popular paths, **not a session funnel** or proof a reader moved between pages. Cloudflare Web Analytics does not provide custom journey events; do not invent conversion rates.
 
@@ -72,32 +72,46 @@ These are minimum counts from RUM's returned popular paths, **not a session funn
 
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
+| / | 6 | 3 |
+| /docs/COMPARISON_ENGINE/ | 5 | 2 |
+| /models/catalog/gls-0051/ | 2 | 2 |
+| /models/catalog/ | 2 | 0 |
+| /research/news-reviews/2026-10-31-subvocal-subvox-sensing-boundary/ | 2 | 2 |
+| /models/catalog/gls-0165/ | 2 | 2 |
+| /docs/faq/05-displays/ | 2 | 2 |
+| /docs/RESEARCH_NEWS/ | 2 | 1 |
+| /research/questions/Q-000162-evidence/ | 1 | 1 |
+| /hacking/ | 1 | 0 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
+| (direct / none) | 57 | 57 |
+| glassesresearch.org | 13 | 0 |
+| duckduckgo.com | 2 | 2 |
+| www.google.com | 2 | 2 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **14,777 requests**, **2,764 HTTP visits**, **523.0 MB** served.
-- Rolling 7d: **87,850 requests**, **16,828 HTTP visits**, **2787.8 MB** served.
+- Rolling 24h: **9,862 requests**, **1,785 HTTP visits**, **244.5 MB** served.
+- Rolling 7d: **85,518 requests**, **16,497 HTTP visits**, **2675.8 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| MX | 7,138 | 291 |
-| US | 3,874 | 2,040 |
-| CN | 946 | 53 |
-| NL | 595 | 20 |
-| BR | 256 | 8 |
-| SG | 249 | 45 |
-| DE | 179 | 23 |
-| FR | 175 | 63 |
-| AR | 145 | 0 |
-| BE | 127 | 124 |
+| US | 5,732 | 1,570 |
+| MX | 1,137 | 38 |
+| PL | 698 | 17 |
+| CN | 405 | 18 |
+| DE | 306 | 39 |
+| FR | 172 | 3 |
+| ES | 159 | 3 |
+| KR | 144 | 4 |
+| IL | 140 | 0 |
+| GB | 99 | 4 |
 
 ## What to watch
 
