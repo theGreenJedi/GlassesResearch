@@ -1,0 +1,28 @@
+name: Validate review-only outreach queue
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/build_outreach_queue.py'
+      - 'tests/test_outreach_queue.py'
+      - 'operations/outreach/**'
+      - '.github/workflows/outreach-queue-check.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate matching and safety boundaries
+        run: python -m unittest discover -s tests -p 'test_outreach_queue.py'
+      - name: Regenerate queue without posting
+        run: python scripts/build_outreach_queue.py
+      - name: Check committed queue matches generation
+        run: git diff --exit-code -- operations/outreach/queue.md
