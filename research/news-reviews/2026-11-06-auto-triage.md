@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-06T06:51:44.639082+00:00`
+Generated: `2026-11-06T11:38:15.799425+00:00`
 
-- Intake files inspected: **239**
-- Candidates retained in this review window/history: **9564**
+- Intake files inspected: **237**
+- Candidates retained in this review window/history: **9530**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1962
+- `adjacent_radar`: 1953
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 553
-- `rejected_noise`: 6958
+- `needs_editorial_verification`: 552
+- `rejected_noise`: 6934
 - `source_review`: 51
 - `watching`: 25
 
@@ -46,7 +46,6 @@ Generated: `2026-11-06T06:51:44.639082+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1269](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1269) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1275](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1275) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1277](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1277) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1059](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1059) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1060](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1060) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1061](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1061) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1067](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1067) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +270,7 @@ Generated: `2026-11-06T06:51:44.639082+00:00`
 | high | needs_editorial_verification | direct | [Samsung Intelligent Eyewear Launch Timeline Surfaces Online - Gadgets 360](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUEwbUw5MGhjcXBIeW5EWGdwdlFCUTc4aHJUSW9HemZFWkJ3VTUxTHpXT3kzSTRqRDZnampKTmhWZVlzRVVWd25QSlRsYVA4LU9PSU1fczNrcllsLXlzU2Q1b3gtU3o1dVFub05ldHVsU3F2bUNKcl9rNHRFR3AwMVJTZ1VuZnFQQjFPSnFLX3NTc1pZLXlaRW5R?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiS0FVX3lxTE53Q1E2TUROTjgzWllZTWtGSHdnTndNTktiYTl2ZzNPRGJsaTFUWGs5ZG42SkJzN3NWM0l3blNjMzVQLTRnWmx3a3kxb9IBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQdIBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear glasses will go on pre-order next week - SamMobile](https://news.google.com/rss/articles/CBMiigFBVV95cUxPVmcwUDA4SU5HVk41RXhWSGt5UVhXVmhUcjVJaEkyUGZhZDViMmxrUlFiblMtSmFSOUdicVc1WmZudk1WaUNGenJlNVRqcTU0TkZ4OGw5VlRBNTFWRW5NTFJCZ25xTFFoZXQxX1RoNVpaMXJSOFZfRmlxVTcyVlZxWkRPeGxCTEVCVHc?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
