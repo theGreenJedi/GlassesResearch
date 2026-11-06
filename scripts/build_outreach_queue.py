@@ -60,8 +60,24 @@ def build_candidates(registry: dict, outcomes: dict | None = None) -> list[dict]
     ), reverse=False)
 
 
+def sample_for_review(items: list[dict], limit: int) -> list[dict]:
+    """Round-robin by platform for architecture testing, most recently observed first."""
+    platforms = ("Reddit", "GitHub", "Stack Exchange")
+    buckets = {
+        p: sorted((c for c in items if c["platform"] == p),
+                  key=lambda c: (c["last_observed"], c["source_url"]), reverse=True)
+        for p in platforms
+    }
+    chosen = []
+    while len(chosen) < limit and any(buckets.values()):
+        for platform in platforms:
+            if buckets[platform] and len(chosen) < limit:
+                chosen.append(buckets[platform].pop(0))
+    return chosen
+
+
 def render_markdown(items: list[dict], limit: int) -> str:
-    listed = items[:limit]
+    listed = sample_for_review(items, limit)
     lines = [
         "# Community outreach — review queue",
         "",
@@ -74,8 +90,8 @@ def render_markdown(items: list[dict], limit: int) -> str:
         f"- Displayed for human review: **{len(listed)}**",
         "- Posted replies confirmed by this queue: **0** (posting is not a feature of this tool)",
         "",
-        "| Community | Original discussion | Related published answer | Review |",
-        "|---|---|---|---|",
+        "| Community | Original discussion | Related published answer | Last observed | Review |",
+        "|---|---|---|---|---|",
     ]
     for item in listed:
         q = item["questions"][0]
@@ -84,7 +100,7 @@ def render_markdown(items: list[dict], limit: int) -> str:
         answer = q["answer_url"]
         lines.append(f'| {item["platform"]} | [Original thread]({item["source_url"]}) — {label} | [Answer]({answer})' +
                      (f' (+{len(item["questions"])-1} related)' if len(item["questions"]) > 1 else '') +
-                     ' | Context, recency, and community rules **unchecked** |')
+                     f' | {item["last_observed"]} | Context, recency, and community rules **unchecked** |')
     lines += [
         "",
         "## What a reviewer must establish before any reply",
