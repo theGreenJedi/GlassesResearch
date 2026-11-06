@@ -1,6 +1,6 @@
 # Purchase Link Replacement Queue
 
-Generated: 2026-11-05T17:32:00Z
+Generated: 2026-11-06T16:52:58Z
 
 This queue is generated from the purchase-link health checker. Canonical purchase URLs are never silently replaced or deleted by the checker.
 
