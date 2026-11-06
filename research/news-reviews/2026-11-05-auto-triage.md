@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-06T00:08:52.568621+00:00`
+Generated: `2026-11-06T03:30:34.534053+00:00`
 
-- Intake files inspected: **240**
-- Candidates retained in this review window/history: **9574**
+- Intake files inspected: **239**
+- Candidates retained in this review window/history: **9533**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1975
+- `adjacent_radar`: 1962
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 544
-- `rejected_noise`: 6962
-- `source_review`: 53
+- `needs_editorial_verification`: 549
+- `rejected_noise`: 6930
+- `source_review`: 52
 - `watching`: 25
 
 ## Action queue
@@ -181,6 +181,7 @@ Generated: `2026-11-06T00:08:52.568621+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1267](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1267) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1268](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1268) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1270](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1270) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1271](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1271) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [US Senators Launch Inquiry into Privacy Risks of Meta AI-Enabled Smart Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMisgFBVV95cUxObDBKaDFoYmhEV0p5U3Nwa1NjVjVIeDBmcHNfN0psRnJnRHZJSGJRVHRCR3BCQ093aW9MekJfSVd5YmZtYV9NNTFOT2dzVnJhWS04Wnl6bExRdUlrbll3c2l4TDRCMEt3QjQ0blpDTjY3ejRaUWtDRjl6Mkp4TzdkVFVNcld1SmFLNWptV2JYdXRkN25YNHJBaC1Iak01QWszdW5tZzN0MjNaRXo1bHZFZWNB?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Android XR's First AR Glasses 'XREAL Aura' Launch Today, Starting at $1,100 for Limited Time - Road to VR](https://news.google.com/rss/articles/CBMieEFVX3lxTFBRRE5XbzVUbXc2d0JQVzIzMHA0clBUbjlHYl9ZRGxybWhZWEk1N3V6Sl9MZFNhVFFOWUNwQWlWdEFRNTdTN2xvcWVTNGk3bmNDU2wxc2lvclhkdmtOcTAwZHMtWXFMVkFKZERPc0JlWER6VVU4RDExMA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -214,6 +215,7 @@ Generated: `2026-11-06T00:08:52.568621+00:00`
 | high | needs_editorial_verification | direct | [XREAL AURA Wired Android XR Glasses Launch in November at $1,099 - Thurrott.com](https://news.google.com/rss/articles/CBMipgFBVV95cUxQb0lVb0w0VDVHZi1nOHFXVG1nejVwMFJRS0Y2TmZPNzdBLTRmTl9UMzNYcW5IUWd0ZHhzWHgtNXlJakNmUWlzeWgzLW9ObnJ0YTRiczd4WHhWUlgxZGJDUDNEWW55ZzZtbFAtT0hhQTdhUXJ1clBRSFdxMktWUS1JemNXcks2aUxUcHJNYk1YSHc0S0c4UHlMVHU2SzFaOG5lT2JONHF3?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA wired XR glasses with Android XR and Gemini announced - FoneArena.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxNd012cVlmVG91VWRkdS1YYTA3N1ZCRHRDOGw1eHR2alBWQVh5U2FxN094cXJQR2YyQk1JVmp6VGx4aWxWS2h1VkZldDFEU1B3WWl3NGtlM0FfM2xlWW5qT0xPR0VwUmZTRm9JM1k1RmpNT0p2a2FTRHk0V3lqSFFRMXVNRGwxQdIBiwFBVV95cUxNTEN1Zjl1NkI1SVB2dDZVT1o1VV9DSW1JMFdKY2FqX2VDMXg2VzgxWEtLNUNsNUwwVU5UNy1ZenFlQWJZS1RHcW93MEdlMlRJQWdtckNNYkFicS03T3VhOUZpZjhicENtWGhsUC12V0p1MnJrYzh4cU1NN3Z2a1Q2cGF3ZmFlZlZsOExB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XREAL AURA: First Android XR Glasses Launch, Europe Left Out for Now - trendingtopics.eu](https://news.google.com/rss/articles/CBMif0FVX3lxTFBVdnhOWEJpSE5aRmhJSC1OZFdlMTByQi1fQ1NlSVI0QUw4aHZ5YnhrUkc2aDQ4aHd0cHUzeUZrZWE2YUpTcVRXYjZ5NWJSbEdDWGcwQWxiWThwT0pVaWI4NDB4MTQ3Q0Q1MG5TR01IUHdiMTZBaGlsdmVTNEZ3akk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [5 Smart Glasses Worth Buying for Real World Use - Gadget Review](https://www.gadgetreview.com/smart-glasses-worth-buying-for-real-world-use) | reachable (200) | research_news_review, report_card_evidence, policy_privacy |
 | high | needs_editorial_verification | direct | [A closer look at Ray-Ban Meta and Oakley Meta AI glasses - Manila Bulletin](https://news.google.com/rss/articles/CBMijgFBVV95cUxNMXJhcE5IeGdRUmFNUV9NZXJCUFVPYTJRaWFNNzlNMkNNZTlKWS15ZUdBZUtlU2VUeGRleXZMU2Ztekg5VnRTRzFETFl5dC1Sd21mcUJ5R1lzZ0E5NU1nZG1feWdmTTdZN3NIdXM0Z1IwbmRsMjJCWm5Sbks2aTRTb2M2NkI3VUR5UUJMdkpB?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [A six-figure order for smart glasses is shipping under Vuzix's new distribution deal. - Stock Titan](https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRGQxaThVSng5N1RJUm83dElaS2lVTXAxbzVpeTFmX3hBbjQ3bDVxR3RCcHdvQzNPblFzWTBzeDR0VXNvSEZMT29ENk5wYUpXbkxoSnpFZzlORDBDQ19OOGtVX093UHA1Yi1abmpVdFNjcGptRkpYOHAwZFljS0xHTHpxVVAxUWRsVVBVS2tQU0dOZWJyUjFSejRUYTB3OEItQzlSVlRLSW1wVjdNcDEyS3VQSzU4dkpm?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [AI Glasses and Smart Glasses: Ray-Ban, Oakley \| Meta Store](https://www.meta.com/ai-glasses/) | reachable (200) | research_news_review, policy_privacy |
@@ -269,8 +271,6 @@ Generated: `2026-11-06T00:08:52.568621+00:00`
 | high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiS0FVX3lxTE53Q1E2TUROTjgzWllZTWtGSHdnTndNTktiYTl2ZzNPRGJsaTFUWGs5ZG42SkJzN3NWM0l3blNjMzVQLTRnWmx3a3kxb9IBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQdIBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMilwFBVV95cUxNMUpZQUdlZ0lJTHVQdFV1Yk9JNVFPS0YxZEdoWVpxQjlhdVF2Um1GeDJKSi1YSGJValM2V1Z5ZTNheElyY01maVVOUGFpeUxCdnBTNlpZY1JDRjlMQU9saEgxaXNfVnNpUW0yZDJsNnV0WWs2Y2RwWk5kQ3o4eU5vVlc5NmYzYUJwMEY3dG9YSUI4Z2pETTlv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMinwFBVV95cUxPNEQ0czBlVTl4d2NiR2Y3MG94dkp5LXZRZk5uR3R5ZVVHd0t1My1kZmhHeVVwMmlrcElGWHZ1d1h6Y05FWE9KOXdFS2xYaG8yOEVpZFE3UGR5Zi11VFJFT3lZNTZfSDZ6MV9qbS1jZHdTMWREYmhkZkw3ZDZWX0VrVWV2Q0dFdzAyaUEyc3plYWxsSllVQWgxYUxkME5wZEk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s Intelligent Eyewear set to launch in the US and South Korea this December - Sammy Fans](https://news.google.com/rss/articles/CBMivAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZdIBvAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
