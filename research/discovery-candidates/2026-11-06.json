@@ -1,39 +1,43 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-06T14:52:11.644721+00:00",
-  "candidate_count": 57,
-  "classifier_irrelevant_count": 52,
+  "discovered_utc": "2026-11-06T19:32:37.661234+00:00",
+  "candidate_count": 56,
+  "classifier_irrelevant_count": 49,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 5,
-    "broad_web": 36,
-    "developer": 16
+    "adjacent": 2,
+    "broad_web": 46,
+    "developer": 7,
+    "manufacturer_catalog": 1
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
-    "adjacent": 5,
+    "direct": 3,
+    "enabling": 2,
+    "adjacent": 2,
     "speculative": 0,
-    "irrelevant": 52
+    "irrelevant": 49
   },
   "type_counts": {
-    "model": 1,
-    "review": 1,
-    "video": 2,
-    "news": 29,
-    "tool": 21,
-    "sdk": 16,
-    "policy": 3,
-    "retail": 7,
-    "community": 1,
-    "rumor": 1
+    "model": 3,
+    "review": 4,
+    "video": 1,
+    "news": 27,
+    "research": 1,
+    "tool": 16,
+    "sdk": 8,
+    "optics": 2,
+    "retail": 9,
+    "teardown": 1
   },
   "routing_counts": {
-    "adjacent_radar": 5,
-    "community_evidence_review": 1,
-    "development_hacking": 2,
-    "reject_noise": 52,
-    "research_news_review": 5
+    "adjacent_radar": 2,
+    "development_hacking": 1,
+    "model_catalog_review": 2,
+    "reject_noise": 49,
+    "report_card_evidence": 3,
+    "research_news_review": 7,
+    "research_optics": 2,
+    "retail_rebrand_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,78 +51,179 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "21de81c4765b25e7",
-      "title": "chatgpt-5-pro · GitHub Topics · GitHub",
-      "url": "https://github.com/topics/chatgpt-5-pro",
-      "summary": "ChatGPT Plus is the paid plan. Accounts, a checker, a shared login, and an account generator sit with an unlocked session and a token, so one person can stay in the same chat through a normal working day on one machine from morning to night",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "5db8ab2d35df12e7",
+      "title": "Best smart glasses and XR specs: Our recommendations - Wareable",
+      "url": "https://www.wareable.com/ar/the-best-smartglasses-google-glass-and-the-rest",
+      "summary": "This guide reflects our own hands-on testing across both ends of the category, from audio-and-camera glasses to AR display glasses and everything in between. Here's where things currently stand.",
+      "discovery_channel": "broad_web",
+      "query": "smart glasses review",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
-        "github"
+        "hands-on"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
+      "attribution_required": false,
+      "relationship": "direct",
       "content_types": [
-        "tool"
+        "review"
       ],
-      "primary_type": "tool",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
+        "report_card_evidence"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: camera glasses, display glasses, smart glasses, smartglasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6417d5e4ef7d619a",
-      "title": "GitHub - mrjesonredfyru7/chat-gpt-pro",
-      "url": "https://github.com/mrjesonredfyru7/chat-gpt-pro",
-      "summary": "Unlock the ultimate AI experience with ChatGPT Pro MOD — enjoy GPT-4 Turbo, image input, file analysis, and advanced tools with no restrictions, no account, and full offline support.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "8ff379577b8164d2",
+      "title": "Manufacturer catalog lead: Black Friday Sale Up to 25% off smart glasses",
+      "url": "https://lucyd.co/pages/early-black-friday",
+      "summary": "Same-domain catalog/developer link discovered from https://lucyd.co/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://lucyd.co/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9176603e13b61049",
+      "title": "PROCAM Photo & Video Gear | Detroit - Cincinnati · Ann Arbor",
+      "url": "https://procam.com/",
+      "summary": "Shop cameras, lenses, lighting, film & video gear at PROCAM. Serving Detroit, Chicago, Cincinnati & Ann Arbor. New & used equipment, film processing & print lab services, competitive prices, and fast nationwide shipping.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
-        "github"
+        "shipping"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
+      "attribution_required": false,
+      "relationship": "enabling",
       "content_types": [
-        "tool"
+        "model",
+        "video",
+        "optics"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
+        "model_catalog_review",
+        "report_card_evidence",
+        "research_optics"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lenses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5fdb0818a3e2aa52",
-      "title": "The Best 10 Restaurants near Mohawk, NY 13407 - Yelp",
-      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Mohawk%2C+NY+13407",
-      "summary": "Best Restaurants in Mohawk, NY 13407 - Last Updated November 2026 - Stone Soup, Tren De Villa Mexican Restaurant, Paesano's Pizzeria, Waterfront Grille, PK's Pub, Crazy Ottos Empire Diner, Asteroga Ale House, Red Apple, Sorrento's Pizzeria & Restaurant, Godfather's Hideout",
+      "id": "23a569dba19e985f",
+      "title": "10 Best Smart Glasses with Translation for Travelers (November 2026)",
+      "url": "https://peccadille.net/best-smart-glasses-with-translation-for-international-travelers/",
+      "summary": "Discover the best smart glasses with translation for international travelers in 2026. We tested 10 models for accuracy, battery life, and comfort.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "268ebd2750d1fff3",
+      "title": "AI Translation Glasses: 7 Best Picks Compared (2026) · OXIVUE",
+      "url": "https://oxivue.com/guides/best-translation-glasses",
+      "summary": "There are two very different ways of doing it — subtitles drawn on a lens, or a voice in your ear — and the price gap between them is several hundred dollars. This list ranks seven pairs by what they are best at, using only what each maker publishes.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "optics",
+        "retail"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53dd361b71861d61",
+      "title": "Cities Nearby Osage, Iowa, United States - TheCitiesNow.com",
+      "url": "https://www.thecitiesnow.com/united_states/iowa/osage",
+      "summary": "Find five hundred cities near Osage, Iowa, United States from closest to farthest by distance. Distances from Osage to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -146,44 +251,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b5ceb9a0c0711b9e",
-      "title": "Why does it seem like Chat GPT is getting less reliable and ... - Reddit",
-      "url": "https://www.reddit.com/r/ChatGPT/comments/16ger8i/why_does_it_seem_like_chat_gpt_is_getting_less/",
-      "summary": "Chat GPT used to be incredibly helpful if you provided it context it would make a wonderful argument for you using the context you gave it. Now it seems like it just makes things up what has gone wrong and is the paid version how old chat GPT was? I used it in May to help me with a resume it was absolutely spectacular.",
+      "id": "5be2ce78d01792a4",
+      "title": "The Best 10 Restaurants near Osage, IA 50461 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Osage%2C+IA+50461",
+      "summary": "Best Restaurants in Osage, IA 50461 - Last Updated October 2026 - Mick’s Lounge & Grill, Stan's Drive-In, Tres Amigos, BecMar Diner, Teluwut Grille House & Pub, Taste By Unc's Cheesecakes, Osage Bowl & Rivals Sports Bar and Grill, Subway, Casey's",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a77cd9bde20a70e0",
-      "title": "如何评价ChatGPT更新的由GPT-6驱动的chat模式？与之前5.6-sol版本相比体验如何？",
-      "url": "https://www.zhihu.com/question/2091736254425649674",
-      "summary": "这个所谓6的chat模式在需要深度思考的问题研究场景下表现是明显不如 5.6sol 的。5.6sol虽然很啰嗦但确实更愿意会给出详细的推导过程以及说明。 更新省流，科研或者别的复杂问题用途下，chat模式直接切回5.6sol，不要用6。6在此类场景下完全不可用。",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -209,12 +282,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "204acf5848fbcded",
-      "title": "10 Expert-Recommended Pendant Necklaces for Layering in 2026",
-      "url": "https://modtrims.com/expert-recommended-pendant-necklaces-layering/",
-      "summary": "Get 10 expert recommended pendant necklaces for layering in 2026. Perfect proportions and materials for stacking with other fine jewelry.",
+      "id": "32b2c3f5ff8eba0b",
+      "title": "AOL.com - News, Sports, Weather, Entertainment, Local ...",
+      "url": "https://www.aol.com/",
+      "summary": "AOL latest headlines, entertainment, sports, articles for business, health and world news.",
       "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -240,490 +313,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6551a61ba697c9f6",
-      "title": "247Spades Privacy Policy: Protecting Your Data and Security",
-      "url": "https://www.247spades.com/privacy-policy.html",
-      "summary": "Read 247Spades.com's Privacy Policy to understand how we protect your data and ensure your online safety while playing our free Spades games.",
+      "id": "c6761bd0ef71db05",
+      "title": "Contra Review for Freelancers (2026) — Zero-Commission Platform",
+      "url": "https://memvers.com/for-freelancers/platforms/contra",
+      "summary": "Contra charges 0% commission. Is it worth joining? Our guide covers setup, earning potential, and how it compares to Fiverr and Upwork.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "privacy"
+        "review"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "79a75d83c8a1f70e",
-      "title": "7 Best Dainty Necklaces | Layering Gold Without the Tarnish",
-      "url": "https://hometosight.com/best-dainty-necklaces/",
-      "summary": "These dainty necklaces are selected for fair pricing and a subtle style that suits everyday wear, with durability varying by piece. This guide to the best dainty necklaces prioritizes materials and craftsmanship over hype so you can shop with confidence.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cc4e7d1a1c38bd9",
-      "title": "Amazon.com: Gaming Computers",
-      "url": "https://www.amazon.com/gaming-computers/s?k=gaming+computers",
-      "summary": "Gaming desktops built for performance with fast SSDs, ample RAM, and dedicated graphics for gaming and creation.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bbbacb7e00ec0c6e",
-      "title": "Amazon.com: Gold Layered Necklaces",
-      "url": "https://www.amazon.com/gold-layered-necklaces/s?k=gold+layered+necklaces",
-      "summary": "Discover elegant gold layered necklaces for women. Find stackable chains, dainty pendants, and trendy designs perfect for any occasion.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7c4c01a5e6f5c43e",
-      "title": "Amazon.com: Gold Pendant Layered Necklace Sets",
-      "url": "https://www.amazon.com/gold-pendant-layered-necklace-sets/s?k=gold+pendant+layered+necklace+sets",
-      "summary": "Check each product page for other buying options. Price and other details may vary based on product size and color.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5cd0a944c0373e1",
-      "title": "Best Dainty Gold Necklaces for Layering - Elegant Jewelry Collection",
-      "url": "https://btkcollection.com/collections/best-dainty-gold-necklaces-for-layering",
-      "summary": "Elevate your everyday style with our curated collection of the best dainty gold necklaces for layering. Each piece in this collection has been thoughtfully selected to help you create effortlessly chic, personalized layered looks that transition seamlessly from day to night.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c97f6b27bdb89cf4",
-      "title": "Best Dainty Necklaces 2026: 5 Picks for Everyday Layering & Gifts",
-      "url": "https://ajluxe.com/blogs/jewelry-guide/best-dainty-necklaces",
-      "summary": "Best dainty necklaces for 2026 by use case: what each metal label means, layering lengths, care tips and in-stock gold plated picks from $27.99.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d69ffd6c3eefdd37",
-      "title": "Dainty Gold Necklace: How to Style, Layer & Shop Them in 2026 – AJLuxe",
-      "url": "https://ajluxe.com/blogs/jewelry-guide/dainty-gold-necklace-style-guide",
-      "summary": "Dainty gold necklaces work best layered 2–3 at varying lengths. Here's how to style them, what to pair with them, and the best picks under $50.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7e52e0dcc8cbfea0",
-      "title": "Gaming Computers - Best Buy",
-      "url": "https://www.bestbuy.com/site/pc-gaming/gaming-computers/abcat0501003.c?id=abcat0501003",
-      "summary": "Shop Best Buy for a great selection of the latest gaming computers to dominate your game.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d3f6c7c3c80835c2",
-      "title": "Gaming Desktop PC",
-      "url": "https://www.newegg.com/Gaming-Desktop-PC/SubCategory/ID-3742",
-      "summary": "Find prebuilt gaming desktop PCs equipped with the latest RTX 50 Series and RX 9000 GPUs, optimized for high-performance gaming and streaming. Filter by CPU, brand, and price to find the right setup during Black November deals and Black Friday deals.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f989bfa0f4e7f9cb",
-      "title": "Gaming Desktops - Walmart.com",
-      "url": "https://www.walmart.com/browse/electronics/gaming-desktops/3944_1089430_132982_1231068_1097445",
-      "summary": "Refurbished picks ready to play. A gaming pc gives you desktop power for smooth play, sharp graphics, and easy upgrades. Walmart helps you compare tower options, check fast pickup availability, and choose a setup that fits your favorite genres. Serious play starts with hardware that keeps frame rates steady during fast action.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cb06f9a7696db62f",
-      "title": "Gaming PCs | Prebuilt & Custom Desktop Computers | CyberPowerPC",
-      "url": "https://www.cyberpowerpc.com/gaming-pcs/",
-      "summary": "Shop CyberPowerPC prebuilt and custom gaming PCs. Build your own or pick a prebuilt desktop with the latest high performance Intel, AMD, and NVIDIA hardware.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "41af0699721bb234",
-      "title": "Our 10 Best Dainty Gold Necklace in the US - November 2026 ...",
-      "url": "https://www.bestproductsreviews.com/dainty-gold-necklace",
-      "summary": "Easily compare & choose from the 10 best Dainty Gold Necklace for you. Don't buy Dainty Gold Necklace in the US before reading our rankings | bestproductsreviews.com.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "625f222dd92499d7",
-      "title": "Our 9 Best Layered Necklaces in the US - October 2026 ...",
-      "url": "https://www.bestproductsreviews.com/layered-necklaces",
-      "summary": "Easily compare & choose from the 10 best Layered Necklaces for you. Don't buy Layered Necklaces in the US before reading our rankings | bestproductsreviews.com.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8809cd3b8c2f573e",
-      "title": "PC Gaming Laptops Desktops and Monitors",
-      "url": "https://www.walmart.com/browse/electronics/pc-gaming/3944_1089430_7052607",
-      "summary": "Explore PC gaming laptops, desktops, and monitors with high performance and advanced graphics for immersive gameplay.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "052d8fe95564b8ea",
-      "title": "We Tested 50 Layered Necklaces - Here are the 10 Best for 2026",
-      "url": "https://modtrims.com/tested-50-layered-necklaces-best-2026/",
-      "summary": "We tested 50 layered necklaces to bring you the 10 best for 2026. Discover durable stylish options perfect for any occasion and outfit pairing.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -733,8 +334,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "review",
-        "tool",
-        "sdk"
+        "tool"
       ],
       "primary_type": "review",
       "routing_targets": [
@@ -746,15 +346,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "078fceda18fe819a",
-      "title": "247 Spades News",
-      "url": "https://www.247spades.com/news/10-19-2015_New_Spades_Site.php",
-      "summary": "Play the best free Spades game with easy-to-read cards and excellent AI. Enjoy instant gameplay on any device. Start playing Spades now for free and have fun!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "id": "f072c078d012c067",
+      "title": "CUSTOMER VEHICLE DISCLOSURE FORM - dealerdaily.toyota.com",
+      "url": "https://dealerdaily.toyota.com/home/home/ViewPDFDocument/DisclosureForm$Toyota_Customer_Disclosure_Form.pdf",
+      "summary": "Thank you for choosing Toyota – we’re pleased that you’re about to become part of the Toyota family and are confident you will enjoy your driving experience! As part of our Customer First commitment, we want to make you aware of a future change in wireless services.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -764,127 +364,8 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "28f195b0fa4a1cfa",
-      "title": "247Spades Cookie Policy: How We Use and Protect Your Data",
-      "url": "https://www.247spades.com/cookie-policy.html",
-      "summary": "Learn how 247Spades.com uses cookies to enhance your experience and ensure smooth gameplay. Read our Cookie Policy for more details.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a8a894c86932df8a",
-      "title": "A Beginner's Guide To Spades",
-      "url": "https://www.247spades.com/news/beginners-guide-to-spades/",
-      "summary": "Explore our comprehensive beginner’s guide to Spades. Learn rules, strategies, and tips to master the game. Start playing and winning your Spades games today!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "306b1c9d4e3816a2",
-      "title": "Achetez des produits Pull-Ups® en ligne | Pull-Ups® Canada",
-      "url": "https://www.pull-ups.com/fr-ca/buy-online",
-      "summary": "Trouvez où acheter les produits Pull-Ups® en ligne. Sélectionnez votre produit, votre taille et votre détaillant préférés pour trouver en ligne les meilleurs produits d'apprentissage de la propreté pour votre enfant.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b8462289f02bc47d",
-      "title": "All in one global package tracking | 17TRACK",
-      "url": "https://www.17track.net/EN",
-      "summary": "Track your shipments anytime with 17TRACK using the website, mobile app, WeChat Mini Program, or Shopify app. Enjoy the same accurate tracking results as the carrier's official site, with real-time updates at every step.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -896,15 +377,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "25bfc555f14ad5a6",
-      "title": "Area Webcams - National Weather Service",
-      "url": "https://www.weather.gov/sew/webcams",
-      "summary": "A cold front across the East Coast will continue to bring heavy to excessive rainfall, gusty to damaging winds, and a possible tornado through Friday. A series of Pacific storms will continue impacts through the middle of next week across the Pacific Northwest and northern California coast.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "id": "df4fc5ed2a12166e",
+      "title": "Dealer Daily - Toyota",
+      "url": "https://dealerdaily.toyota.com/home/warning.html",
+      "summary": "Dealer Daily is a secure platform for authorized Toyota and Lexus dealers to access confidential information. Login requires accepting terms and protecting credentials.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -914,367 +395,8 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18e7a577cc45f1dc",
-      "title": "Binomial expansion of $(1-x)^n$ - Mathematics Stack Exchange",
-      "url": "https://math.stackexchange.com/questions/1031741/binomial-expansion-of-1-xn",
-      "summary": "I'm not sure how appropriate it is to answer questions this old, but compared to the methods above, I feel the easiest way to see the answer to this question is to take a = -x And substitute that into the binomial expansion: (1+a)^n This yields exactly the ordinary expansion. Then, by substituting -x for a, we see that the solution is simply the ordinary binomial expansion with alternating ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cacd3953732ffdd8",
-      "title": "Contact Us: Product Testimonials & Questions | Pull-Ups® US",
-      "url": "https://www.pull-ups.com/en-us/contact-us",
-      "summary": "All Pull-Ups ® products are disposable training pants designed to look and fit more like underwear. They are intended specifically for potty training because they also encourage your child's independence in easily sliding pants up and down. In addition to a potty training product, Pull-Ups ® training pants are a symbol to your child that it's time to potty like a Big Kid ®. Going back and ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eeab271411f6f304",
-      "title": "Divergence of series sin(1/n) - Mathematics Stack Exchange",
-      "url": "https://math.stackexchange.com/questions/2343408/divergence-of-series-sin1-n",
-      "summary": "More accurately sin x∼0 x sin ⁡ x ∼ 0 x $\\mathrm{sin}x{\\sim }_{0}x$ (in the sense of equivalence of functions near 0 0 $0$).",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eb7c5577415bee79",
-      "title": "Email from no-reply at accounts.google.com stating will delete my ...",
-      "url": "https://support.google.com/accounts/thread/407632497/email-from-no-reply-at-accounts-google-com-stating-will-delete-my-microsoft-hotmail-account?hl=en",
-      "summary": "Received email to my Microsoft hotmail account from no-reply at accounts.google.com stating that due to inactivity it will delete my Microsoft hotmail account. My Microsoft hotmail account is NOT a gmail account but owned by Microsoft.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7c89bbd46da79bd",
-      "title": "Free Diapers & Wipes | Huggies® No Baby Unhugged - Pull-Ups",
-      "url": "https://www.pull-ups.com/en-ca/free-potty-training-kit",
-      "summary": "Free Pull-Ups ® Potty Training Starter Kit Sign up today to get Free Pull-Ups ® Potty Training Starter kit with pants featuring refastenable sides, fading graphics, and an underwear-like fit for your Big Kid ®! Conditions apply",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a4dbfed4bc062448",
-      "title": "functional analysis - How are $C^0,C^1$ norms defined - Mathematics ...",
-      "url": "https://math.stackexchange.com/questions/462901/how-are-c0-c1-norms-defined",
-      "summary": "How are $C^0,C^1$ norms defined? I know $L_p,L_\\infty$ norms but are the former defined.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2a98d952ecdfb03f",
-      "title": "Girl's Potty Training Pants with Learning Layer™ | Pull-Ups® US",
-      "url": "https://www.pull-ups.com/en-us/potty-training-products/potty-training-pants-girls",
-      "summary": "Pull-Ups ® Learning Layer™ is an innovative feature in new, improved Pull-Ups ® Training Pants designed to support potty training. It’s made to feel wet while staying dry, helping kids notice wetness and begin to understand the difference between wet and dry.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "62ffc5023c68cb96",
-      "title": "Google email to Hotmail account asking me to sign in. Appears to be ...",
-      "url": "https://support.google.com/accounts/thread/380068906/google-email-to-hotmail-account-asking-me-to-sign-in-appears-to-be-genuine-google-email?hl=en",
-      "summary": "I have more than 1 Google email, I know one has the hotmail account as a recovery email but I don't know what else would require an email from Google to my Hotmail account.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "62125e3b9e50c9c5",
-      "title": "Google Hesabınızı veya Gmail'inizi kurtarma",
-      "url": "https://support.google.com/accounts/answer/7682439?hl=tr",
-      "summary": "Şifrenizi ya da kullanıcı adınızı unuttuysanız veya doğrulama kodları alamıyorsanız Google Hesabınızı kurtarma adımlarını uygulayın. Bu şekilde Gmail, Fotoğraflar ve Google Play gibi hizmetleri kullanabilirsiniz. İpuçları: Yanlış tahminler hesap kurtarma işlemini iptal etmez. Hesabınızı kurtarmak için istediğiniz kadar deneme yapabilirsiniz. Deneme sayısıyla ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f42a31d8cf3a0857",
-      "title": "How to Potty Train Your Child | Pull-Ups®",
-      "url": "https://www.pull-ups.com/en-us/resources/tips-advice/how-to-potty-train/pull-ups-potty-training-method",
-      "summary": "Are you ready for the new adventure of potty training your child? Learn how to potty train your child with the Pull-Ups ® Potty Training method.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f38c9a955962c78",
-      "title": "How to unlink my gmail and hotmail",
-      "url": "https://support.google.com/accounts/thread/11304821/how-to-unlink-my-gmail-and-hotmail?hl=en",
-      "summary": "I have a personal hotmail email address (ABC@hotmail.com) which is also used as my google account (Android, YouTube, Drive etc). Few days ago I wanted to create a gmail account (DEF@gmail.com) for my work and by accident I think I linked the new gmail and my old hotmail together. Now the gmail account has became the primary account.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ac352f71a4ecbf08",
-      "title": "Iniciar sesión en Gmail",
-      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DAndroid",
-      "summary": "En tu teléfono o tablet Android, abre la aplicación Gmail . Arriba a la derecha, en la barra de búsqueda, toca Perfil . Toca Añadir otra cuenta Google. Para añadir tu cuenta, sigue los pasos que aparecen en pantalla. Nota: Si tienes activada la verificación en dos pasos, Google te pedirá que completes un segundo paso específico para verificar tu identidad. Consulta cómo iniciar ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
+        "tool",
+        "sdk"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1286,12 +408,229 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fa3d37cfae368746",
-      "title": "My Gmail will not send an email to Hotmail. But Hotmail will send to ...",
-      "url": "https://support.google.com/mail/thread/56547002/my-gmail-will-not-send-an-email-to-hotmail-but-hotmail-will-send-to-gmail-i-ve-made-no-changes?hl=en",
-      "summary": "My free Gmail account will not send email to my personal hotmail account, w/o an undeliverable message. It states it was sent in 0 seconds. BUT doesn't send. I can not find out what the issue is. I haven't made any changes to my account. BUT also can't remember when it actually worked last.",
+      "id": "001228173be5fd80",
+      "title": "Dealer Daily Login - Toyota",
+      "url": "https://dealerdaily.toyota.com/Vehicles/",
+      "summary": "Please contact the Dealer Daily support desk at (877) 353-2459, (877) DL-DAILY (US) or (01800) 276-9633, (01800) APOYO-DD (Mexico) to create a problem ticket. Error code: 100",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ef1405be334890ff",
+      "title": "How to Set Up Third-Party Emails in Outlook | Dell Montenegro",
+      "url": "https://www.dell.com/support/kbdoc/en-me/000148879/how-to-set-up-3rd-party-emails-in-outlook",
+      "summary": "This article provides some basic information about setting up third-party emails such as Hotmail, Yahoo Mail, Gmail, or AOL mail in Outlook.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "84c1e8e6f99221d2",
+      "title": "She’s Birdie Review - Must Read This Before Buying",
+      "url": "https://www.honestbrandreviews.com/reviews/shes-birdie-review/",
+      "summary": "The Birdie+ is She’s Birdie’s newest release and updated version of the Original Birdie. Made in charcoal, coral, aqua, indigo, and lavender colors, this lightweight device is easy to spot in your purse. Unlike the Original Birdie, the Birdie+ does not have a flashing light on one side.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "review"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "063e06ccd8b309ce",
+      "title": "Toyota",
+      "url": "https://dealerdaily.toyota.com/",
+      "summary": "SSO to the Identity Provider",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6dd0a40eb6228165",
+      "title": "Toyota",
+      "url": "https://dealerdaily.toyota.com/Home/DDHome/IndexSAML",
+      "summary": "Secure login portal for authorized Toyota and Lexus dealers.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2e3cb85bcc6bcba",
+      "title": "Amazon.ca: Birdie Disc",
+      "url": "https://www.amazon.ca/birdie-disc/s?k=birdie+disc",
+      "summary": "She's Birdie - The Original Personal Safety Alarm Disc for Bikes, Hikes, and Late Nights - Loud Siren, LED Light for Extra Visibility, Rechargeable, Handsfree, Lightweight, Water Resistant (Charcoal)",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "317169843f3edec2",
+      "title": "Amazon.com: She's Birdie - The Original Personal Safety Alarm Disc for ...",
+      "url": "https://www.amazon.com/clp/B0FDMDCJ75",
+      "summary": "Amazon's Choice She's Birdie She’s Birdie 3.0 New Version – The Original Personal Safety Alarm for Women by Women–Loud Siren, Flash Light and Rechargeable Battery in a Variety of Colors (Charcoal Black)",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d069e81415a380e9",
+      "title": "Bank of America - Official Site",
+      "url": "https://www.bankofamerica.com/",
+      "summary": "Welcome to Bank of America, home for all of your financial needs. Our purpose is to help make financial lives better through the power of every connection.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1316,12 +655,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ba0bddb2f8cc679d",
-      "title": "Outlook.com - Microsoft free personal email",
-      "url": "https://outlook.live.com/owa/",
-      "summary": "Outlook.com is a free, personal email service from Microsoft. Keep your inbox clutter-free ...",
+      "id": "792704b9051f3dff",
+      "title": "Bank of America Credit Card Interest Rate 2026 - WalletHub",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-credit-card-interest-rate-1000325-2140668608/",
+      "summary": "In addition to the regular rate, Bank of America credit cards come with a separate interest rate for cash advances and a penalty rate for delinquent payments. The interest rates will be listed on the card's monthly statement and online account summary. If you want to learn more about credit card interest rates, check out WalletHub’s full guide.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1346,12 +685,43 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2ea7fcc4bc021b48",
-      "title": "Play Spades Online with Friends for Free | 247spades.com",
-      "url": "https://www.247spades.com/news/play-spades-online-with-friends/",
-      "summary": "Looking to play spades online, either against a computer or friends? Learn the best websites and apps for playing spades in this post.",
+      "id": "18b6b471226b95a3",
+      "title": "Bank of America Online Shopping Category: What Counts?",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-online-shopping-category-2140732386/",
+      "summary": "The Bank of America online shopping category includes bookstores, clothing stores, and department stores, and more. This category gives you rewards for purchases made online or with a mobile app from merchants such as Amazon, Nordstrom, Walmart, and Netflix. Keep in mind that the online shopping category list is not exhaustive.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "278343ef1fd31ae6",
+      "title": "Bank of America Reviews: 48,032 User Ratings - WalletHub",
+      "url": "https://wallethub.com/profile/bank-of-america-13000450i",
+      "summary": "Bank of America is one of the largest banks in the country, and it offers a wide range of financial products. Those products include credit cards, checking and savings accounts, home loans, auto loans and investment products.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1376,10 +746,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2871297ec45b9e7e",
-      "title": "Potty Training Products, Supplies & Advice | Pull-Ups® US",
-      "url": "https://www.pull-ups.com/en-us/",
-      "summary": "Make potty training fun, fast and easy for your toddler with Pull-Ups® training pants! Find tips, Disney designs, and more from our potty training experts.",
+      "id": "7fdf3b51f50fe2eb",
+      "title": "Bank of AmericaTravel Insurance Benefits for 2026 - WalletHub",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-travel-insurance-1000375-2140669914/",
+      "summary": "Yes, Bank of America does offer travel insurance. The most common Bank of America travel insurance benefits are trip cancellation and interruption and rental car insurance. Some Bank of America credit cards also offer lost luggage reimbursement and travel accident insurance coverage.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6dddb1291be9c10b",
+      "title": "Beechmont Volkswagen | Volkswagen Dealership in Cincinnati OH",
+      "url": "https://www.beechmontvw.com/",
+      "summary": "Experience the 2025 VW lineup at Beechmont Volkswagen in Beechmont, OH. Find Taos, Tiguan, Atlas, and more at your top Cincinnati VW dealer!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "174ffb27fe35bccc",
+      "title": "Birdie Disc - gobeyondrunning.com",
+      "url": "https://gobeyondrunning.com/products/birdie-disc",
+      "summary": "Lightweight, water resistant, and completely handsfree, Birdie Disc clips to clothing, dog leashes, bags, strollers, and more, giving your customers peace of mind on every run, walk, hike, and bike ride.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1406,10 +836,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8fe05ea57a64dc41",
-      "title": "Potty Training Sticker Chart | Pull-Ups® US",
-      "url": "https://www.pull-ups.com/en-us/resources/making-potty-training-fun/rewards-incentives/printable-potty-training-sticker-charts",
-      "summary": "Help make potty training fun with Pull-Ups®! Use our chart to track successes and help boost your child’s motivation with creative rewards and engaging activities.",
+      "id": "e59e78318de305cc",
+      "title": "Birdie Disc Golf Supply Discs for Sale - InfiniteDiscs.com",
+      "url": "https://infinitediscs.com/brand/birdie-disc-golf-supply",
+      "summary": "Birdie Disc Golf Supply Co. is a supply, design, apparel, and production company proudly serving disc golfers across the United States as well as internationally.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b06669c66804437",
+      "title": "Birdie Disc | She's Birdie",
+      "url": "https://www.shesbirdie.com/pages/birdie-disc-for-dark-runs",
+      "summary": "Birdie Disc is a lightweight, hands-free LED light with a built-in 130dB personal safety siren. She clips to clothing, leashes, bags, backpack straps, running vests, bikes and strollers, so hands stay free for the dog, the handlebars or the stroller.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1436,10 +896,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "866f53286642c50e",
-      "title": "Potty Training Tips & Products for Toddlers | Pull-Ups® Canada",
-      "url": "https://www.pull-ups.com/en-ca/",
-      "summary": "Make potty training easier with Pull-Ups® Canada. Find tips, advice, and potty training pants designed to help toddlers learn how to potty train with confidence.",
+      "id": "90934eb38445297b",
+      "title": "Birdie Disc – She's Birdie",
+      "url": "https://www.shesbirdie.com/products/birdie-disc",
+      "summary": "Birdie Disc is designed to deter attackers without needing to use force. No more struggling with pepper spray or tasers. Just pull the Birdie Disc to activate. We hope that you never have to use her, but you can feel safer knowing that you have Birdie on your keychain.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1466,42 +926,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f61ceb99ee200689",
-      "title": "Skin Essentials™ Potty Training Pants for Girls | Pull-Ups® US",
-      "url": "https://www.pull-ups.com/en-us/potty-training-products/skin-essentials-girls",
-      "summary": "Dermatologist-approved, our potty training pants are designed for sensitive skin and provide ultra soft, breathable leak protection. Find your Big Kid®'s size here!",
+      "id": "87f3ada9a7950e95",
+      "title": "Buy or Finance A New VW Car or SUV | Kings Volkswagen Cincinnati",
+      "url": "https://www.vwkings.com/new-inventory/index.htm",
+      "summary": "Score Great Deals on the Latest Models at Kings Volkswagen Cincinnati, OH When it comes to finding quality vehicles at great prices, Cincinnati knows it can trust Kings Volkswagen.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "rumor"
-      ],
-      "primary_type": "rumor",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "56a0b129af310462",
-      "title": "Spades 247 - Play Online Free Spades",
-      "url": "https://www.247spades.com/",
-      "summary": "Be sure to protect your Spades partner if they bid a nil or double nil. Play your Aces first to try to take Spades tricks early before other players run out of that suit. Try to bid as accurately as possible to avoid scoring Spades Sandbags. If the other Spades team bids a nil or blind nil, be sure to try everything to get them a trick.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1526,130 +956,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "80b52f872f97b3f4",
-      "title": "Spades Easter: Play Free, Festive Card Games with a Holiday Theme",
-      "url": "https://www.247spades.com/easter/",
-      "summary": "247 Game Frame Word on the street is that the Easter Bunny is always playing Easter Spades on his days off! And who can blame him! With a great AI, big fun Easter themed cards, and seamless game play, we'll be playing Easter Spades too! Easter Spades is a fun themed version of the classic spades game. Easter Spades is a partner game where you are playing with the player across from you at the ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6341e1f5b3970be6",
-      "title": "Spades New Year's",
-      "url": "https://www.247spades.com/new-years/",
-      "summary": "247 Game Frame DISCLAIMER: The games on this website are using PLAY (fake) money. No payouts will be awarded, there are no \"winnings\", as all games represented by 247 Games LLC are free to play. Play strictly for fun.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dd27920537f84190",
-      "title": "Spades Winter Cookie Policy",
-      "url": "https://www.247spades.com/winter/cookie-policy.html",
-      "summary": "https://support.google.com/adsense/answer/9007336 Spades Winter Cookie Policy",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b60485751e69c66",
-      "title": "St. Patrick's Day Spades",
-      "url": "https://www.247spades.com/st-patricks/",
-      "summary": "247 Game Frame Classic Spades is one of the most popular card games around, so why not kick the lucky level up a notch and play themed St. Patrick's Day Spades?! Featuring a St. Patrick's day background theme and cards, you'll add a bit of spice into your every day card game play! Saint Patricks Day Spades has a fabulous AI which allows you to play against the computer all times of the day ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "87d1a74ee2833ed8",
-      "title": "Verificar que eres tú cuando realizas una acción sensible",
-      "url": "https://support.google.com/accounts/answer/7162782?hl=es&co=GENIE.Platform%3DAndroid",
-      "summary": "Solucionar problemas Si has iniciado sesión en tu cuenta de Google, pero no puedes demostrar que eres tú para completar una acción, consulta la sección correspondiente más abajo.",
+      "id": "78d95d0d4a15562f",
+      "title": "Contra Commission-Free Freelance Payout Calculator",
+      "url": "https://www.profitminty.com/tools/contra-freelance-payout-calculator.html",
+      "summary": "Contra charges 0% commission on freelance contract earnings. Standard platform payout fees are capped between $1 and $29 per contract (50% discount for Contra Pro subscribers).",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1676,70 +986,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5acd180adf1a5a1b",
-      "title": "Video Phone Calls With Disney Characters | Pull-Ups® US",
-      "url": "https://www.pull-ups.com/en-us/resources/making-potty-training-fun/rewards-incentives/disney-character-calls",
-      "summary": "Start your toddler's potty training adventure with fun interactive phone calls from Disney characters like Lightning McQueen, Buzz, Mickey, and Minnie Mouse.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "48f765e52d66515f",
-      "title": "Webcams | Seattle, Washington - king5.com",
-      "url": "https://www.king5.com/webcams",
-      "summary": "Sea-Tac Airport Cam Sea-Tac Airport Cam KING 5 Roof 1 Cam KING 5 Roof 2 Cam Queen Anne Columbia Tower Bellingham Port Angeles Tacoma University of Washington Kalaloch Lodge, Wash. Mount Rainier",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "10e7da92517c40ef",
-      "title": "在 Gmail 中添加 Outlook 账号",
-      "url": "https://support.google.com/mail/answer/15588592?hl=zh-Hans",
-      "summary": "现在，若要连接到任何 Outlook 账号，Microsoft 要求非 Microsoft 电子邮件客户端 使用新式身份验证方法。如果您尝试将 Outlook 账号与 Gmail 同步，可能会遇到同步失败问题并收到错误消息。 了解尝试添加 Outlook 账号时会出现的情况 在您计算机上的 Gmail 中，您无法再添加 Outlook 账号。 如需添加 Outlook 账号 ...",
+      "id": "97f2abc9c45bbb47",
+      "title": "Contra Fee Calculator 2026 — 0% Freelancer Commission",
+      "url": "https://freelancecalc.co/contra-fee-calculator/",
+      "summary": "Contra charges freelancers 0% commission. Calculate what your client pays on top, faster payout costs, and how Contra compares to Upwork and Fiverr. Free, updated June 2026.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1766,10 +1016,281 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "59087f27dad43170",
-      "title": "足球让球0.5/1什么意思？ - 知乎",
-      "url": "https://www.zhihu.com/question/283641764",
-      "summary": "把 里面的“/” 理解为将投注额平分。 比如你打算投注10块的让0.5/1， 就是5块买 让0.5 剩下5块买让1 如果让球方净胜1球，那么让0.5的5块你赢了，让1的5块不输不赢，总的就赢一半 如果让球方净胜2球及以上，那么让0.5的赢了，让1的也赢了，总的就全赢 如果平局或者让球方输球，那么让0.5的输了，让1 ...",
+      "id": "7b5c3be43b3a4ec1",
+      "title": "Contra Fee Calculator 2026 — Commission-Free Freelancing",
+      "url": "https://profitcheckr.com/contra-fee-calculator",
+      "summary": "Contra positions itself as the 'commission-free' freelance platform: 0% platform fee, with Pro features behind a $19 per month subscription. Payments flow through Stripe Connect, so your only real costs are Stripe's standard 2.9% + $0.30 processing fee.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a45bae536d48a3f6",
+      "title": "Contra Fees Explained: What Freelancers and Clients Pay (2026)",
+      "url": "https://staffgrid.net/research/contra-fees-freelancers-clients-2026/",
+      "summary": "Contra takes no commission from freelancers. Who pays the $15 and $29 platform fees, card and payout fees, and when Contra Pro pays off.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fa542db920bc52d4",
+      "title": "Contra Freelancer Guide: 0% Commission Payouts | SolveNook",
+      "url": "https://solvenook.com/platform-guides/contra/",
+      "summary": "Learn how Contra works for freelancers. Set up a commission-free profile, keep 100% of your earnings, and manage direct client contracts with zero fees.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "105775896a1e3cd9",
+      "title": "Contra Pricing & Plans 2026 | SaaSpartout",
+      "url": "https://saaspartout.com/marketplace/contra/",
+      "summary": "Contra is commission-free for freelancers. Clients pay fees from $2 per payment. No platform fees on earnings. Start for free today.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0cbc8306e3a7a729",
+      "title": "Contra | Pricing",
+      "url": "https://contra.com/pricing",
+      "summary": "Upgrade and earn even more Contra is always commission-free for all creatives. Explore plans for feature upgrades and to waive fees for anyone paying you.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f54c8e2f599c7a7",
+      "title": "Contra: Freelance profiles and payments with no commission",
+      "url": "https://cloutstack.net/tool/contra",
+      "summary": "No. Contra states it is commission-free for all creatives, so the client's payment arrives whole. Instead it charges a flat platform fee per payment, capped at $29 on the free plan and $15 on Pro.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4a67fe1fa9d2ebd7",
+      "title": "Current Time in Seattle, United States – Live World Clock",
+      "url": "https://livetimetools.com/cities/seattle.html",
+      "summary": "About Seattle Time Zone Seattle is the largest city in Washington state, on Puget Sound, known for the Space Needle, coffee culture and as the home of Amazon and Microsoft nearby. It uses PST (UTC-8) and PDT (UTC-7). Seattle is in the Pacific Time (PT) time zone, with the IANA identifier America/Los_Angeles and a standard offset of UTC-08:00.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64d50451867e417b",
+      "title": "Current Time in Seattle, United States — JustTheTime",
+      "url": "https://justthetime.com/seattle/",
+      "summary": "Seattle Time Zone Seattle follows the America/Los_Angeles time zone. It uses PST (UTC-8) during winter and PDT (UTC-7) during daylight saving time.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "866dbf16457fce22",
+      "title": "Dirty Birdie Disc Golf",
+      "url": "https://dirtybirdie.shop/",
+      "summary": "Discover top-tier disc golf equipment at Dirty Birdie Disc Golf. Explore our range of premium disc markers, and accessories designed for precision, accuracy, and game improvement.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "87f34799d8e93059",
+      "title": "Does Bank of America Have Pre-Approval? - WalletHub",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-pre-qualify-1000285-2140661996/",
+      "summary": "Yes, Bank of America does have pre-approval. Bank of America has an online pre-approval page where potential applicants can quickly check their odds of approval for certain Bank of America cards before applying for one.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1787,6 +1308,456 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bbabd0de81b8cf5",
+      "title": "Fairfield Volkswagen | VW Dealer in Fairfield, Ohio",
+      "url": "https://www.vwfairfield.com/",
+      "summary": "The Volkswagen lineup is a reflection of our dedication to innovation, sophistication, safety, and sustainability. Once you visit our dealership here in Fairfield, Ohio you will see exactly what that means. Browse our inventory from Cincinnati, Hamilton, West Chester or Middletown areas of Ohio now!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d69ddb1fb867c9dc",
+      "title": "Get paid for freelancing commission-free - Contra",
+      "url": "https://contra.com/commission-free",
+      "summary": "With Contra you can easily accept global payments for your freelance projects commission-free, the way it should be.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c90a8c1d24c11f12",
+      "title": "How Bank of America Rental Car Insurance Works - WalletHub",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-rental-car-insurance-1000405-2140669140/",
+      "summary": "How to File a Bank of America Rental Car Insurance Claim To file a Bank of America rental car insurance claim, call the Benefit Administrator at 1 (800) 348-8472 or visit the card’s benefits website to obtain a claim form.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8a4dd5f245cb3a17",
+      "title": "New Volkswagen Vehicles for Sale in Cincinnati | Joseph VW",
+      "url": "https://www.josephvw.com/new-vehicles/",
+      "summary": "Shop new Volkswagen vehicles for sale at Joseph VW. Browse SUVs, sedans, and EVs in Cincinnati, OH.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4dc788f68d65e171",
+      "title": "New VW for Sale near Cincinnati, OH | Fairfield Volkswagen",
+      "url": "https://www.vwfairfield.com/new-inventory/index.htm",
+      "summary": "Our Fairfield dealership, proudly serving Cincinnati, Hamilton, West Chester and Middletown, OH, specializes in bringing you Volkswagen vehicles you know and love. Our new lineup includes top models like the Golf, Golf GTI, Jetta, Passat and Tiguan.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "30b986b0d95b3864",
+      "title": "Our 10 Best Translation Glasses in the US - November 2026 ...",
+      "url": "https://www.bestproductsreviews.com/translation-glasses",
+      "summary": "Easily compare & choose from the 10 best Translation Glasses for you. Don't buy Translation Glasses in the US before reading our rankings | bestproductsreviews.com.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f3766ab5d5354b8",
+      "title": "Personal Defense Alarm for Women’s Safety | She’s Birdie – She's Birdie",
+      "url": "https://www.shesbirdie.com/",
+      "summary": "Birdie's 130db siren is as loud as a jet engine overhead and is sure to bring all eyes on you when activated. No more struggling with pepper spray or tasers. Just pull the Birdie alarm to activate. Anyone can use Birdie, from young children to grandparents. Birdie's design is sleek and modern.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7c1d499c1f0caf87",
+      "title": "Plainfield News, Breaking News in Plainfield, IL - Patch",
+      "url": "https://patch.com/illinois/plainfield",
+      "summary": "Three trustee seats will be on the ballot in the April 6, 2027, consolidated election in Plainfield. For thousands of older adults across Illinois, a knock at the door is more than just a food...",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "749c3303e94df33c",
+      "title": "Product List | HUAWEI Support Global",
+      "url": "https://consumer.huawei.com/en/support/product/",
+      "summary": "Find the latest Huawei phones, tablets, laptops, watchs and other products on the product page, Get product support, Repair Services, software and tools.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4d398763c33fbfe",
+      "title": "She's Birdie - Birdie Disc – The G|C Boutique",
+      "url": "https://www.thegcboutique.com/products/shes-birdie-birdie-disc",
+      "summary": "Lightweight, water resistant, and completely handsfree, Birdie Disc clips to clothing, dog leashes, bags, strollers, and more, giving your customers peace of mind on every run, walk, hike, and bike ride.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b5ce893180d8dbc1",
+      "title": "Shop New Volkswagen Models & Used Cars | King’s Volkswagen in ...",
+      "url": "https://www.vwkings.com/",
+      "summary": "Browse new Volkswagen models and quality used cars at King’s Volkswagen in Cincinnati, OH. Discover our latest inventory, schedule a test drive, and explore financing options.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40ab1572b7ba8a10",
+      "title": "Time in Seattle — Current Local Time & UTC Offset",
+      "url": "https://global-clock.com/time-in-seattle",
+      "summary": "Seattle is on PST (UTC−8). See the working-hour overlap with your own zone, sunrise and sunset, and daylight saving dates.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c359dc59f33651e",
+      "title": "VentureOne vs. Bank of America Travel Rewards - WalletHub",
+      "url": "https://wallethub.com/answers/cc/ventureone-vs-bank-of-america-travel-rewards-2140691387/",
+      "summary": "The Bank of America Travel Rewards credit card also comes with an initial bonus of 25,000 points for spending $1,000 in the first 90 days vs. Capital One VentureOne’s 20,000 miles for spending $500 in the first 3 months. Both cards have no annual fee and no foreign transaction fee.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47f3d4e43d7d09e6",
+      "title": "Volkswagen Dealer in Cincinnati, OH | Joseph Volkswagen",
+      "url": "https://www.josephvw.com/",
+      "summary": "We sell great new and used VW cars and SUVs with the best customer service you'll find in Cincinnati. As a VW dealership serving the Florence, Mt Lookout, Kenwood, Beechmont, and Fairfield, OH VW communities we pride ourselves on Volkswagen ways: quality employees and quality cars!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ee8811c2e11b1e8",
+      "title": "Yahoo Mail App: Free Download for iPhone and Android",
+      "url": "https://mobile.yahoo.com/mail",
+      "summary": "Download the free Yahoo Mail app for iPhone and Android. AI summaries, package tracking and Gmail support help you clear your inbox faster.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
