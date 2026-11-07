@@ -1,31 +1,26 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-06T17:32:02+00:00**
+Generated: **2026-11-07T16:29:06+00:00**
 
-- Published evidence-backed answers: **229** (minimum **1000**, no ceiling)
-- Remaining to minimum: **771**
-- Canonical registry size: **358** (not the published count)
-- Unanswered research candidates: **67**
+- Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
+- Remaining to minimum: **769**
+- Canonical registry size: **361** (not the published count)
+- Unanswered research candidates: **68**
 - Observations this run: **89**
-- New distinct questions: **7**
+- New distinct questions: **2**
 
 ## Source health
 
-- github_issues: ok — 14 observations
+- github_issues: ok — 15 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 47 observations
+- reddit_rss: partial — 46 observations
 - google_search_console: ok — 8 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000352** — I wore the AI glasses I helped design for a hardware teardown. Could this be useful for industrial maintenance?
-- **Q-000353** — What actually makes smart glasses worth keeping?
-- **Q-000354** — what's one glasses app you'd actually pay for that still doesn't exist?
-- **Q-000355** — which glasses camera is least noticeable
-- **Q-000356** — Any AI glasses that don't look bulky or dorky?
-- **Q-000357** — AI "memory" on smart glasses: killer feature or a bit creepy?
-- **Q-000358** — what sdks or apis are available for spectacles development?
+- **Q-000360** — How was the Memomind one NYC event? Looking for impressions and photos
+- **Q-000361** — Real-world screen-on limits?
 
 ## Research queue (first 20)
 
