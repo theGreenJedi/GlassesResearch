@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-07T11:25:23.861617+00:00`
+Generated: `2026-11-07T13:17:35.113628+00:00`
 
-- Intake files inspected: **233**
-- Candidates retained in this review window/history: **9241**
+- Intake files inspected: **232**
+- Candidates retained in this review window/history: **9204**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1857
+- `adjacent_radar`: 1888
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 564
-- `rejected_noise`: 6731
-- `source_review`: 50
-- `watching`: 24
+- `needs_editorial_verification`: 549
+- `rejected_noise`: 6674
+- `source_review`: 55
+- `watching`: 23
 
 ## Action queue
 
@@ -58,8 +58,6 @@ Generated: `2026-11-07T11:25:23.861617+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1305](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1305) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1307](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1307) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1310](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1310) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1088](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1088) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1089](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1089) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1096](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1096) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1097](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1097) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1098](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1098) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +269,8 @@ Generated: `2026-11-07T11:25:23.861617+00:00`
 | high | needs_editorial_verification | direct | [RayNeo AR Smart Glasses \| Official Olympic Partner](https://www.rayneo.com/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Road to VR Oct 7, 2026 Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Rutherford County Schools Ban Smart Glasses Over Cheating Fears During Testing - Hoodline](https://news.google.com/rss/articles/CBMirAFBVV95cUxPdXlST0JoU0N6MzRoQlNhQlh4S3M3QnJyX0lmWHpDc2tqZVNTMk1jX2ZneFVueThuVUNfdFFRY2l5MWlkVXdtSUg4M2lZbjFPZTVDWWZvM1d0S3BEWGtENzBJVmN0aXNTM2thSEp3M1ZfbWRNTjZPRE9MTVRFSDFJNHZTN1dtdWt1azRlSUNadjBIUUhhMXdkNmIyWWpJM0JuRlJRSkQza2VhTkc3?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [SamMobile 1d ago Samsung’s Intelligent Eyewear glasses will go on pre-order next week Coverage Samsung](https://www.sammobile.com/news/samsung-intelligent-eyewear-glasses-pre-order-date/) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Samsung Intelligent Eyewear Launch Timeline Surfaces Online - Gadgets 360](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUEwbUw5MGhjcXBIeW5EWGdwdlFCUTc4aHJUSW9HemZFWkJ3VTUxTHpXT3kzSTRqRDZnampKTmhWZVlzRVVWd25QSlRsYVA4LU9PSU1fczNrcllsLXlzU2Q1b3gtU3o1dVFub05ldHVsU3F2bUNKcl9rNHRFR3AwMVJTZ1VuZnFQQjFPSnFLX3NTc1pZLXlaRW5R0gGfAUFVX3lxTE9VQVpBOGNuVFZNY3dUc3llRk93WWxpTnFJWFBVa3VjeHJhOWc4MDA1ZE1Pa3NGc1lhY1F5R0xDWEpGRkxZanVjRDJNVkFZUlI1aW15ckhNSVNJOER6bkhsbjR6cU5CcGdrX2VsRld5MnNwY191QThkdGpuTDF6ZkV6SWtWNnZBSk4xM0dQdWNPZENZNTByYlpHV1hTOEJlRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
