@@ -1,40 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-07T00:26:33.915399+00:00",
-  "candidate_count": 48,
-  "classifier_irrelevant_count": 31,
+  "discovered_utc": "2026-11-07T06:13:08.256736+00:00",
+  "candidate_count": 58,
+  "classifier_irrelevant_count": 36,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 17,
-    "broad_web": 28,
-    "developer": 3
+    "adjacent": 20,
+    "broad_web": 19,
+    "developer": 19
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
-    "adjacent": 17,
+    "direct": 1,
+    "enabling": 1,
+    "adjacent": 20,
     "speculative": 0,
-    "irrelevant": 31
+    "irrelevant": 36
   },
   "type_counts": {
-    "model": 2,
-    "review": 1,
-    "video": 6,
-    "news": 35,
-    "research": 2,
-    "tool": 3,
-    "sdk": 3,
+    "model": 3,
+    "video": 1,
+    "news": 28,
+    "research": 3,
+    "tool": 21,
+    "sdk": 20,
+    "optics": 1,
     "policy": 1,
-    "retail": 1,
+    "retail": 3,
+    "teardown": 1,
     "community": 1
   },
   "routing_counts": {
-    "adjacent_radar": 17,
-    "community_evidence_review": 1,
-    "policy_privacy": 1,
-    "reject_noise": 31,
-    "research_news_review": 17,
-    "retail_rebrand_review": 1
+    "adjacent_radar": 20,
+    "deep_research": 2,
+    "development_hacking": 2,
+    "model_catalog_review": 3,
+    "reject_noise": 36,
+    "report_card_evidence": 1,
+    "research_news_review": 22,
+    "research_optics": 1,
+    "retail_rebrand_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,17 +52,82 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "0151d8ca6f23276d",
-      "title": "Privacy Policy | McDonald's",
-      "url": "https://www.mcdonalds.com/us/en-us/privacy.html",
-      "summary": "We may collect personal information about you when you visit our restaurants, use our websites or mobile apps (“online services”), and otherwise interact with us (collectively, “services”). The information we collect falls into three categories: (a) information you provide to us; (b) information we collect through automated methods when you use our services; and (c) information we ...",
+      "id": "9fd3635532882ffd",
+      "title": "Canon 28-300mm f/3.5-5.6 L IS USM EF Mount Lens {77} - KEH Camera",
+      "url": "https://www.keh.com/shop/canon-ef-28-300mm-f-3-5-5-6l-is-usm-telephoto-zoom-lens.html",
+      "summary": "Capture a wide range of subjects with the Canon 28‑300mm f/3.5‑5.6 L IS USM lens, designed for EF‑mount cameras with excellent image stabilization and clarity.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "tool",
+        "sdk",
+        "optics"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "research_optics"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: lens",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71d0b940fd6a3f2e",
+      "title": "Amazon.com: XREAL xbx a01+ AR Glasses",
+      "url": "https://www.amazon.com/clp/B0H44Y6F33",
+      "summary": "Your pick XREAL XREAL xbx a01+ AR Glasses, 147'' Big-Screen Display for Movies & Gaming | 62g Ultralight, 50°FOV, Bright 1600-nit HDR10, USB-C DP for iPhone, iPad, Android, Steam Deck, ROG & PC 500+ bought in past month Click to see price Buy now",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0398cdde8934c926",
+      "title": "COMMERCIAL METALS Co",
+      "url": "https://www.sec.gov/edgar/browse/?CIK=22444",
+      "summary": "Learn how to use EDGAR to research public filings by public companies, mutual funds, ETFs, some annuities, and more.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "privacy"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -68,12 +137,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "policy"
+        "research"
       ],
-      "primary_type": "policy",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "policy_privacy",
+        "deep_research",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -82,10 +151,44 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e7847a703249e421",
-      "title": "Business Resilience - McDonald's",
-      "url": "https://corporate.mcdonalds.com/corpmcd/our-purpose-and-impact/impact-strategy-and-reporting/business-resilience.html",
-      "summary": "McDonald's sustainability strategy results from engaging stakeholders, then turning stakeholder expectations and communications into governance.",
+      "id": "ed94a0e61145efca",
+      "title": "Commercial Metals Company News and Press Releases | PR Newswire",
+      "url": "https://www.prnewswire.com/news/commercial-metals-company/",
+      "summary": "Commercial Metals Company (NYSE: CMC) (\"CMC\" or the \"Company\") today announced that the Company entered into an amendment (the \"Amendment\") to the...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6b6f6f493db2c389",
+      "title": "$2 Billion Financing Fuels Commercial Metals' Strategic Acquisition ...",
+      "url": "https://www.panabee.com/news/2-billion-financing-fuels-commercial-metals-strategic-acquisition-tied-to-october-2026-d",
+      "summary": "Commercial Metals (CMC), an innovative solutions provider for the global construction sector focused on reinforcement products, finalized a substantial capital raise to fund its planned acquisition of entities that own Foley Products Company, LLC.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -113,72 +216,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "834e5c9cdfcf699d",
-      "title": "Cialis (Tadalafil): Side Effects, Uses, Dosage, Interactions ...",
-      "url": "https://www.rxlist.com/cialis-drug.htm",
-      "summary": "Cialis (Tadalafil) may treat, side effects, dosage, drug interactions, warnings, patient labeling, reviews, and related medications including drug comparison and health resources.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "07b885da995c0554",
-      "title": "Everything to Know About Cialis: Use, Effectiveness, and Safety",
-      "url": "https://www.healthline.com/health/mens-health/cialis",
-      "summary": "Cialis (tadalafil) is a phosphodiesterase-5 (PDE5) inhibitor approved by the FDA to treat erectile dysfunction (ED) and benign prostatic hyperplasia (BPH). You can take Cialis daily in low doses...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0b831091f61310b2",
-      "title": "Home | McDonald’s Corporation",
-      "url": "https://corporate.mcdonalds.com/corpmcd/home.html",
-      "summary": "McDonald's Corporation is more than the leading global food service retailer. McDonald's is a proud advocate for the planet and global community.",
+      "id": "a5a6388ca594ac3c",
+      "title": "8-K - SEC.gov",
+      "url": "https://www.sec.gov/Archives/edgar/data/22444/000119312525206788/d875668d8k.htm",
+      "summary": "On September 18, 2025, the Company issued a press release announcing the proposed Acquisition, a copy of which is attached as Exhibit 99.1 to this report and incorporated herein by reference.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -193,14 +234,171 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "retail",
-        "community"
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d86a197a5107caea",
+      "title": "CMC Press Releases Commercial Metals Company",
+      "url": "https://marketchameleon.com/Overview/CMC/PressReleases/",
+      "summary": "View the latest Commercial Metals Company (CMC) company-issued press releases.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b1bad20f76aeeb9d",
+      "title": "CMC TO ACQUIRE FOLEY PRODUCTS COMPANY - PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/cmc-to-acquire-foley-products-company-302586107.html",
+      "summary": "Commercial Metals Company (NYSE: CMC) will host a conference call to discuss this announcement, as well as the Company's fourth quarter financial results.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model",
+        "research"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e26a231482b85b26",
+      "title": "Commercial Metals Company (CMC) Latest Press Releases - Seeking Alpha",
+      "url": "https://seekingalpha.com/symbol/CMC/press-releases",
+      "summary": "Stay up to date with all latest press releases from Commercial Metals Company (CMC).",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8fd209de5ff42af",
+      "title": "Commercial Metals Company Contracts & Agreements - Justia",
+      "url": "https://contracts.justia.com/companies/commercial-metals-company-321/",
+      "summary": "Search Commercial Metals Company business contracts filed with the Securities and Exchange Commission.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bbd109581bd1a4c0",
+      "title": "Commercial Metals Company entered into a definitive agreement to ...",
+      "url": "https://www.marketscreener.com/news/commercial-metals-company-entered-into-a-definitive-agreement-to-acquire-foley-products-company-for-ce7d5adcdb8df520",
+      "summary": "Commercial Metals Company (NYSE:CMC) entered into a definitive agreement to acquire Foley Products Company for $1.8 billion on October 16, 2025. A cash consideration of $1.84 billion will be paid by Commercial Metals Company, subject to customary purchase price adjustments.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
       ],
       "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
         "retail_rebrand_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -209,227 +407,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b78d7d876f94d3b0",
-      "title": "Human Resources careers at McDonald's Restaurants",
-      "url": "https://careers.mcdonalds.com/hr",
-      "summary": "Passionate about people? Help craft the future McDonald’s team. Work with state-of-the-art technology to maximize potential across the organization!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8e6ea43a36c6bc88",
-      "title": "jobs.mcdonalds.com",
-      "url": "https://jobs.mcdonalds.com/?locale=en_US",
-      "summary": "Skip to main content View My Profile",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b7c7a5898fb25274",
-      "title": "McDonald's in India",
-      "url": "https://careers.mcdonalds.com/mcdonald-s-in-india",
-      "summary": "Innovate with us McDonald's new global office in Hyderabad (RMZ Hi-Tec City), is driving global operations alongside our global headquarters (MHQ) in Chicago, USA. Our office in Hyderabad brings together top talent in business solutions and technology services, leading to a better experience for our employees and customers.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ec43645eb8407c2d",
-      "title": "McDonald's: Burgers, Fries & More. Quality Ingredients.",
-      "url": "https://www.mcdonalds.com/us/en-us.html",
-      "summary": "McDonalds.com is your hub for everything McDonald's. Find out more about our menu items and promotions today!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "af260286ab0609a2",
-      "title": "McDonald’s Gift Cards: Arch Card® | McDonald’s",
-      "url": "https://www.mcdonalds.com/us/en-us/arch-card.html",
-      "summary": "Get or give an Arch Card® for the holidays or birthdays this year! Learn how to check your McDonald's gift card balance, how to use your Arch Card® and more.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17b6548922d05648",
-      "title": "McDonald’s New Zealand",
-      "url": "https://www.mcdonalds.com/nz/en-nz.html",
-      "summary": "The official McDonald’s New Zealand website. Explore our menu, find offers and rewards, locate restaurants and discover the latest news from Macca’s®.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "78bc288d4fde02e2",
-      "title": "Order Macca's Online | Pickup & Delivery Near You",
-      "url": "https://order.mcdonalds.com/au/en-au",
-      "summary": "Hungry? Order Macca's online for pickup at your nearest restaurant or get it delivered to your door. Browse the full menu and start your order now.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5611a1ee197d18f5",
-      "title": "Tadalafil (oral route) - Side effects & dosage - Mayo Clinic",
-      "url": "https://www.mayoclinic.org/drugs-supplements/tadalafil-oral-route/description/drg-20067204",
-      "summary": "Tadalafil is used to treat men who have erectile dysfunction (also called sexual impotence). Tadalafil belongs to a group of medicines called phosphodiesterase 5 (PDE5) inhibitors.",
+      "id": "959a2ae60288a7d8",
+      "title": "Histology at SIU",
+      "url": "https://histology.siu.edu/crr/rsguide.htm",
+      "summary": "The conducting passageways of the respiratory system (nasal cavity, trachea, bronchi and bronchioles) are lined by pseudostratified columnar epithelial tissue, which is ciliated and which includes mucus-secreting goblet cells.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -457,10 +438,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "32d22ec1ba6c234b",
-      "title": "Tadalafil dosage: Strengths, max dose, when to take, and more",
-      "url": "https://www.medicalnewstoday.com/articles/drugs-tadalafil-dosage",
-      "summary": "Tadalafil is a generic drug prescribed for erectile dysfunction and other conditions. Learn about the drug’s dosages, form, strengths, and more.",
+      "id": "b4ec83f1a14a77a6",
+      "title": "Mucosa: Function, Anatomy & Definition - Cleveland Clinic",
+      "url": "https://my.clevelandclinic.org/health/body/23930-mucosa",
+      "summary": "Mucosa lines the insides of organs and cavities throughout your body that are exposed to particles from the outside. The mucous membrane lubricates and protects these organs and cavities from abrasive particles and bodily fluids, as well as invasive pathogens.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -488,10 +469,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a8492f4f3833f56b",
-      "title": "Tadalafil Patient Tips: 7 things you should know - Drugs.com",
-      "url": "https://www.drugs.com/tips/tadalafil-patient-tips",
-      "summary": "Tadalafil is a PDE-5 inhibitor that increases blood flow by relaxing smooth muscle, and is used to treat erectile dysfunction (ED) and benign prostatic hyperplasia (BPH) in men.",
+      "id": "9783ef25f9a9366d",
+      "title": "Overview 3 | Digital Histology",
+      "url": "https://digitalhistology.org/organs-systems/respiratory/overview-respiratory/overview-3/",
+      "summary": "The epithelium lining respiratory passageways begins as pseudostratified columnar with cilia and goblet cells, commonly referred to as respiratory epithelium. A prominent basement membrane is also a common feature.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -519,10 +500,41 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3c702ff6d085292c",
-      "title": "Tadalafil: How it works, comparisons, and where to buy",
-      "url": "https://www.medicalnewstoday.com/articles/tadalafil",
-      "summary": "Tadalafil is a medication prescribed to treat erectile dysfunction (ED). The drug increases blood flow to the penis during sexual stimulation.",
+      "id": "edc44259bc30ab0a",
+      "title": "Press Releases - CMC",
+      "url": "https://ir.cmc.com/press-releases/",
+      "summary": "Fiscal 2026 net earnings of $655.8 million. Consolidated core EBITDA increased to $1.4 billion, from $837.3 million in fiscal 2025. Core EBITDA margin increased by 380 basis points to 14.5%.Fourth quarter net earnings of $212.5 million, or $1.91 per diluted share, and adjusted earnings of $233.6 mil...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a3224986e7dcdb3",
+      "title": "Respiratory Epithelium - an overview | ScienceDirect Topics",
+      "url": "https://www.sciencedirect.com/topics/medicine-and-dentistry/respiratory-epithelium",
+      "summary": "Respiratory Epithelium - an overview | ScienceDirect Topics",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -550,10 +562,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fe92ee7d5c6d37fe",
-      "title": "Tadalafil: Uses, Dosage, Side Effects - Drugs.com",
-      "url": "https://www.drugs.com/tadalafil.html",
-      "summary": "Tadalafil relaxes muscles of the blood vessels and increases blood flow to particular areas of the body. Tadalafil under the name of Cialis is used to treat erectile dysfunction (impotence) and symptoms of benign prostatic hypertrophy (enlarged prostate).",
+      "id": "fe888855dfb6bcb5",
+      "title": "Respiratory epithelium - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Respiratory_epithelium",
+      "summary": "The respiratory epithelium functions to moisten and protect the airways. It acts as a physical barrier to pathogens, as well as their removal in the mechanism of mucociliary clearance.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -581,10 +593,167 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "98a9cf57650e7866",
-      "title": "No puedo acceder a YouTube con mi Cuenta de Google",
-      "url": "https://support.google.com/youtube/answer/1074205?hl=es-419",
-      "summary": "Si ves el siguiente mensaje, \"Lo sentimos, pero no puedes acceder a YouTube con tu Cuenta de Google. Tu administrador restringió el acceso\", significa que el administrador de dominio de Google Workspa",
+      "id": "c55a1af6133cd391",
+      "title": "Respiratory histology | Kenhub",
+      "url": "https://www.kenhub.com/en/library/anatomy/histology-of-the-respiratory-system",
+      "summary": "Here, we will describe the microscopic appearance of the trachea and lungs. The trachea (windpipe) connects the larynx with the two main bronchi (principal bronchi) and represents the beginning of the lower respiratory tract. The tracheal wall consists of several layers.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9a5980b382095462",
+      "title": "Respiratory Mucosa: Function, Location, and Protection",
+      "url": "https://biologyinsights.com/respiratory-mucosa-function-location-and-protection/",
+      "summary": "The respiratory mucosa is the moist tissue lining that covers nearly every internal surface of your airways, from the inside of your nostrils down through your windpipe and into the branching passages of your lungs.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "teardown"
+      ],
+      "primary_type": "teardown",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "39a2f308232a80e9",
+      "title": "Respiratory System | Histology Guide",
+      "url": "https://histologyguide.com/slidebox/17-respiratory-system.html",
+      "summary": "It can be divided functionally into two regions: Respiratory epithelium is a pseudostratified ciliated columnar epithelium with goblet cells that lines much of the conducting passages. The nasal cavities provide an extensive surface area for removing debris, warming, and humidifying the air.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "181c44d4dc648a9f",
+      "title": "Respiratory Tissue: Function, Anatomy, and Health",
+      "url": "https://biologyinsights.com/respiratory-tissue-function-anatomy-and-health/",
+      "summary": "The respiratory tissue is equipped with specialized cells and mechanisms to protect itself from foreign particles and maintain its structural integrity. Ciliated cells, which line much of the respiratory tract from the nose to the bronchi, play a significant role in this defense.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0814a341f9cdf129",
+      "title": "What type of tissue is found in the respiratory system?",
+      "url": "https://getaprofessor.com/2025/06/11/what-type-of-tissue-is-found-in-the-respiratory-system/",
+      "summary": "Four tissue types are found within the entire respiratory system: Epithelial Tissue – Covers airways and alveoli. It serves to protect, produce mucus, and facilitate gas exchange. Connective Tissue – Found in cartilage, blood vessels, and elastic fibers.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4d64a276df7dc015",
+      "title": "About Us • Tactile Coordinate Grid & Math Tool | CoordinateGrid.com",
+      "url": "https://coordinategrid.com/about/",
+      "summary": "CCSS.MATH.CONTENT.5.G.A.1 & 5.G.A.2Use a pair of perpendicular number lines, called axes, to define a coordinate system and plot real-world mathematical problems in Quadrant 1.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -599,11 +768,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
         "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -613,10 +781,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "542ecdf9c287b6b9",
-      "title": "Update the YouTube and YouTube Studio app - Google Help",
-      "url": "https://support.google.com/youtube/answer/7341336?hl=en-GB&co=GENIE.Platform%3DAndroid",
-      "summary": "For the best experience with the YouTube and YouTube Studio app, we encourage you to update to the latest version of the app. We send updates so that you can get new features, a faster experience, fixes and more.",
+      "id": "146ea0f086f060d6",
+      "title": "Coordinate Grid & Cartesian Plane Online | Free Graphing Tool",
+      "url": "https://coordinategrid.com/",
+      "summary": "With our online interactive coordinate plane and plottable graph, you can graph coordinate plane relationships in real time, view your live coordinate plane graph or cartesian plane graph, and connect points to create geometric polygons and fun coordinate grid pictures!",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -631,11 +799,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
         "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -645,10 +812,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "75148252f641d6bb",
-      "title": "YouTube Hjelp - Google Help",
-      "url": "https://support.google.com/youtube/?hl=no",
-      "summary": "Mer informasjon om YouTube YouTube-hjelpevideoer Bruk videobiblioteket for å få nyttige tips, oversikt over funksjoner og trinnvise veiledninger.",
+      "id": "a2a3d7ef4f01e508",
+      "title": "Coordinate Grid - Desmos",
+      "url": "https://www.desmos.com/geometry/dzxlvj74t2",
+      "summary": "Explore geometry with our free Geometry Tool. Construct shapes, transform figures, measure angles and lengths, and visualize relationships.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -663,11 +830,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video",
         "tool",
         "sdk"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -677,15 +843,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "014d8132da09d3de",
-      "title": "100 Funny Thanksgiving Jokes for the Whole Family",
-      "url": "https://www.thepioneerwoman.com/holidays-celebrations/a69021215/best-thanksgiving-jokes/",
-      "summary": "Gobble up these hilarious Thanksgiving jokes on turkey day with the whole family! The puns, one-liners, and knock-knock jokes will make you a hit at the table!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "id": "9f615ddd698bf1fe",
+      "title": "Coordinate Grid: Interactive Math Tool for Plotting Points",
+      "url": "https://www.classroomtools.app/blog/en/coordinate-grid",
+      "summary": "Coordinate Grid: Interactive Math Tool for Plotting Points Understanding the coordinate plane is a cornerstone of middle school math. It's where algebra meets geometry, where abstract numbers become visual positions. But teaching coordinates with paper worksheets has real limitations. Our Coordinate Grid is a free, interactive tool that makes plotting points intuitive. Students click anywhere ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -695,637 +861,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "072aa90560d9660a",
-      "title": "105 Turkey Jokes & Puns You Can Laugh at All Year Long",
-      "url": "https://www.wikihow.com/Turkey-Jokes",
-      "summary": "Keep scrolling for hilarious turkey puns, one-liners, Thanksgiving jokes, and more! All the jokes we have here are fun for the whole family (minus our turkey jokes for adults —those are for grown-ups only!), so pick your favs, get settled at dinner, and start laughing!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e3e08e3dbaa1c7e8",
-      "title": "106 Funny Thanksgiving Puns and One-Liners (2026)",
-      "url": "https://icebreakerideas.com/thanksgiving-puns/",
-      "summary": "Below you’ll find 106 family-friendly Thanksgiving puns, one-liners, jokes, and captions you can copy for social posts or sprinkle into conversation throughout the day.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "855c40f6f5e3cce2",
-      "title": "17 Funny Turkey Pictures to Make You Gobble With Laughter",
-      "url": "https://www.birdsandblooms.com/birding/bird-photography/funny-turkey-pictures/",
-      "summary": "Gobble, gobble! Amuse yourself with this collection of funny turkey pictures captured by Birds & Blooms readers.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40869575afb1f6d4",
-      "title": "25 Turkey Jokes That Are Actually Pretty Funny - The Dodo",
-      "url": "https://www.thedodo.com/dodowell/turkey-jokes",
-      "summary": "You don’t have to wait until Thanksgiving to laugh at these hilarious turkey jokes with your kids. From gobble puns to goofy wordplay, your family will be gobbling, just like the bird himself!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97a9657651fd1a6f",
-      "title": "440+ Hilarious Turkey Puns & Jokes That’ll Gobble You Up",
-      "url": "https://punsfinder.com/turkey-puns-and-jokes/",
-      "summary": "Our collection of 440+ funny turkey puns and Jokes will have you gobbling with joy! Whether you’re cooking up a storm in the kitchen or just gathering around the table, these puns are perfect for adding some humor to your celebrations.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f5bf7e26b0f078e4",
-      "title": "66 Turkey Jokes and Puns To Gobble, Gobble Up - Chuckle Daddy",
-      "url": "https://chuckledaddy.com/turkey-jokes-and-puns/",
-      "summary": "These funny turkey jokes and puns carve up the laughs. They might be a little fowl, but wattle you do about it?",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fae5332e20ec795e",
-      "title": "Antidepressants: Which cause the fewest sexual side effects?",
-      "url": "https://www.mayoclinic.org/diseases-conditions/depression/expert-answers/antidepressants/faq-20058104",
-      "summary": "Serotonin and norepinephrine reuptake inhibitor (SNRI) venlafaxine (Effexor XR). Tricyclic and tetracyclic antidepressants amitriptyline, nortriptyline (Pamelor) and clomipramine (Anafranil). There are fewer studies of sexual side effects in this class of antidepressants, but clomipramine carries the highest risk of sexual side effects.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e899d76893dbf57",
-      "title": "Citalopram vs Effexor Comparison - Drugs.com",
-      "url": "https://www.drugs.com/compare/citalopram-vs-effexor",
-      "summary": "Compare Citalopram vs Effexor head-to-head with other drugs for uses, ratings, cost, side effects and interactions.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "36cec2fc84b2d6af",
-      "title": "College Basketball (Men's) | Live Scores, Updates, Odds, Injury News ...",
-      "url": "https://bleacherreport.com/college-basketball/scores",
-      "summary": "Visit Bleacher Report for live scores of every College Basketball (Men's) game. Catch highlights, play-by-play breakdowns, stats, injury reports, and betting odds, all in one place",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5cee8273e7d40943",
-      "title": "College Basketball Scores, 2026-27 Season - Yahoo Sports",
-      "url": "https://sports.yahoo.com/college-basketball/scoreboard/",
-      "summary": "Get the latest NCAA college basketball scores, results, and updates on Yahoo Sports.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7919eebb81d46864",
-      "title": "E 73 Pill Gray & Peach Capsule/Oblong - Pill Identifier - Drugs.com",
-      "url": "https://www.drugs.com/imprints/e-73-17637.html",
-      "summary": "The pill with imprint E 73 (Gray & Peach, Capsule/Oblong, 16 mm) has been identified as Venlafaxine Hydrochloride Extended Release 37.5 mg. It is used for Autism, Back Pain, Major Depressive Disorder, Depression, and Generalized Anxiety Disorder.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6cdbc19cb9fe63da",
-      "title": "Effexor for Depression Reviews - Drugs.com",
-      "url": "https://www.drugs.com/comments/venlafaxine/effexor-for-depression.html",
-      "summary": "Reviews and ratings for Effexor when used in the treatment of depression. 344 reviews submitted.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b7d5e6afe45a8431",
-      "title": "Effexor XR Pill Images - Pill Identifier - Drugs.com",
-      "url": "https://www.drugs.com/imprints.php?drugname=Effexor+XR",
-      "summary": "Drug Identifier results for \"Effexor XR\". Search by imprint, shape, color or drug name.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e1608583603e931",
-      "title": "Effexor XR Uses, Dosage & Side Effects - Drugs.com",
-      "url": "https://www.drugs.com/effexor.html",
-      "summary": "Effexor XR (venlafaxine) is used to treat major depressive disorder, anxiety, and panic disorder. Includes Effexor XR side effects, interactions and indications.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "114b1cb2a979a3ef",
-      "title": "Funny Turkey GIFs | Tenor",
-      "url": "https://tenor.com/search/funny-turkey-gifs",
-      "summary": "With Tenor, maker of GIF Keyboard, add popular Funny Turkey animated GIFs to your conversations. Share the best GIFs now >>>",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "503471354f47404e",
-      "title": "Funny Turkey royalty-free images - Shutterstock",
-      "url": "https://www.shutterstock.com/search/funny-turkey",
-      "summary": "Find 35,652 Funny Turkey stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and vectors in the Shutterstock collection. Thousands of new, high-quality pictures added every day.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6d38577fd3055cf",
-      "title": "Hilarious Turkey Videos Funniest Bird Compialtion - YouTube",
-      "url": "https://www.youtube.com/watch?v=P6QPI1ypwKk",
-      "summary": "🦃🤣 Get ready for the funniest turkey videos compilation on YouTube! This hilarious bird compilation is packed with funny animal moments, thanksgiving fails...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "10043684fd340f03",
-      "title": "Live College Basketball Scores Today | CHD",
-      "url": "https://www.college-hoops-data.com/scoreboard",
-      "summary": "Live NCAA basketball scores with real-time updates, statistical predictions, win probabilities, and game analysis. Updated every 30 seconds.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7a731d4d2fc3b8e",
-      "title": "Men's College Basketball Scores, 2026-27 Season - ESPN (UK)",
-      "url": "https://www.espn.co.uk/mens-college-basketball/scoreboard",
-      "summary": "Live scores for every 2026-27 NCAAM season game on ESPN (UK). Includes box scores, video highlights, play breakdowns and updated odds.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9134c15ef532e6b9",
-      "title": "NCAA 2026/2027 scores, Basketball USA - Flashscore",
-      "url": "https://www.flashscore.com/basketball/usa/ncaa/",
-      "summary": "NCAA 2026/2027 scores on Flashscore.com offer livescore, results, NCAA 2026/2027 standings and match details.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f0ce80e0f89b1a32",
-      "title": "NCAA Basketball Scores - College Basketball Scoreboard | RotoWire",
-      "url": "https://www.rotowire.com/cbasketball/scoreboard.php",
-      "summary": "A look at each game in college basketball. Find the latest scores, today's games, and filter by conference and date to stay up to date on college hoops.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
+        "research",
+        "tool",
+        "sdk"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -1337,15 +875,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e4df8988ef01694b",
-      "title": "NCAA College Men's Basketball Scores, Schedule | NCAA.com",
-      "url": "https://www.ncaa.com/scoreboard/basketball-men/d2",
-      "summary": "Live Men's Basketball DII scores and schedules, searchable by date and conference.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "9a2a9a736e6f886f",
+      "title": "Coordinate Plane – GeoGebra",
+      "url": "https://www.geogebra.org/m/VWN3g9rE",
+      "summary": "Use the coordinate plane to graph and reflect shapes interactively.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1355,9 +893,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "research",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1367,10 +906,445 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6e770e7ec861186c",
-      "title": "NCAA Fixtures, Live Scores & Results » Table, Stats & News",
-      "url": "https://oddspedia.com/basketball/usa/ncaa",
-      "summary": "Complete NCAA Coverage » League Table, Live Scores, Results, Stats, News & Live Video Previews for Upcoming Games, All HERE!",
+      "id": "b7bbc44760786042",
+      "title": "Desmos | Beautiful free math.",
+      "url": "http://desmos.com/",
+      "summary": "Desmos Studio builds free Graphing, Scientific, Geometry, and 3D Calculators along with Notebook. Explore our tools, partner with us, or explore examples for inspiration.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a8c56b321e0e23be",
+      "title": "Free Math Websites: 15 Best Picks for Students in 2026",
+      "url": "https://www.effortlessmath.com/blog/best-free-math-websites-2026/",
+      "summary": "Our picks for the best free math websites in 2026, with who each one fits, what it costs, and how to combine them, from full courses to graphing tools.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d21279e786d2d744",
+      "title": "KEH",
+      "url": "https://redemption.keh.com/",
+      "summary": "Want to know status of your offer or track gear you're selling? Enter your quote id with your contact below.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ad73987078ea4523",
+      "title": "KEH Camera",
+      "url": "https://kehphotolab.keh.com/",
+      "summary": "Bring Your Photos to Life At KEH Camera we understand that capturing the moment is only the beginning—preserving and showcasing those moments is just as essential. Now, we're making it easier for professionals and enthusiasts alike to produce stunning prints that stand out and tell their story. Get Started",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "618d294a7a5dafca",
+      "title": "KEH Camera Grading System & Inspection Process | KEH Certified Used ...",
+      "url": "https://www.keh.com/grading-system",
+      "summary": "Understand the industry standard for pre-owned camera gear. Explore the KEH Camera grading system scale from Like New to Ugly, backed by an expert inspection process & 180-day warranty.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d3032ed6014b56c5",
+      "title": "KEH.com",
+      "url": "https://quote.live.keh.com/",
+      "summary": "Want to know the status of your order or to track gear you're selling? Enter your order/quote number with your contact info below.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b7c23352b9231a03",
+      "title": "Math Figures",
+      "url": "https://mathfigures.com/",
+      "summary": "Free generators for clean, printable math figures. Make a coordinate grid and more, then copy it straight into a test, worksheet or slide.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9efeb33cfa3bf84",
+      "title": "Mathigon – The Mathematical Playground",
+      "url": "https://mathigon.org/",
+      "summary": "The Mathematical Playground Free tools, courses and manipulatives to make online learning more interactive and engaging than ever before.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a0b6675338450dae",
+      "title": "Sell Camera Equipment & Gear Online | KEH Buys Used Cameras",
+      "url": "https://www.keh.com/sell",
+      "summary": "SELL / TRADE CAMERA GEAR Sell Your Used Camera Gear Get top payouts when you sell your camera gear, plus a bonus credit when you trade. Either way, we add value to your gear through our fast, fair, and trusted process backed by KEH Certified™ pros.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a5d1f3f25dd2934e",
+      "title": "Shutter Actuations - KEH Camera",
+      "url": "https://www.keh.com/expert-advice/photography/education/shutter-actuations/",
+      "summary": "Shutter actuations, what are they? How accurate is the count? What is KEH's policy in relation to shutter actuations?One of the most common questions asked of the Customer Service Department of KEH is, what is the actuation count of a digital camera I want to purchase? Before a question like that can even remotely be",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7365a9c804f7cc8c",
+      "title": "Students & Educators - KEH Camera",
+      "url": "https://www.keh.com/student-education",
+      "summary": "Getting Student Creators Started Build a professional-quality kit without blowing your budget. Up to 40% off retail with KEH Certified pre-owned gear Verified students get an extra 5% off with Student Beans* 180-day warranty Expert support from KEH Certified pros to find just what you need. Save with Student Beans *Discount eligibility and exclusions apply",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b7f3fc68eb98aac6",
+      "title": "Top 10 Best Online Mathematics Software | Ranked for 2026",
+      "url": "https://worldmetrics.org/best/online-mathematics-software/",
+      "summary": "Online mathematics software shapes how learners practice and how teachers explain concepts through symbolic solving, equation input, and interactive visualization. This best lists page helps analysts, operators, and instructors weigh the tradeoff between step-by-step solving workflows and graph-first exploration by comparing tools that include Wolfram Alpha, GeoGebra, and Desmos.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "067763d87ba21a80",
+      "title": "Warranty Information - KEH Camera",
+      "url": "https://www.keh.com/shop/warranty-information",
+      "summary": "Keh Warranty & Protection Buy with Confidence We offer peace of mind with our free 180-Day Warranty and add Extend Product Protection for additional coverage, including accidental damage.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a39666213ab95d20",
+      "title": "Accesso e sicurezza | PayPal IT",
+      "url": "https://securepayments.paypal.com/it/cshelp/topic/help_login_and_security_personal",
+      "summary": "Argomenti sezione Aiuto PayPal Accesso e sicurezza Pagamenti e trasferimenti Contestazioni e limitazioni Il mio conto Il mio Wallet Accesso e sicurezza Strumenti di ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f6bb5b65772b128",
+      "title": "Account users Sign in process - Bookeo",
+      "url": "https://support.bookeo.com/hc/en-us/articles/360017920552-Account-users-Sign-in-process",
+      "summary": "All account users can sign in to their Bookeo account by visiting the page https://signin.bookeo.com It is a great idea to add this page...",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1385,7 +1359,308 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "860f38cfc53e3e1d",
+      "title": "Best of October 2026 - XNXX.COM",
+      "url": "https://xnxx.health/best",
+      "summary": "BEST OF 20 YEARS of porn A four way to break the taboo of secret XXX porn! Katerina DeVille, the sexy stepdaughter of the beautiful MILF Elizabeth Skylar, devises a scandalous plan to reunite her parents' divided marriage, enlisting the help of her",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da7b29a4ce7d4021",
+      "title": "Bookeo",
+      "url": "https://signup.bookeo.com/",
+      "summary": "Bookeo offers an online booking system for managing classes, tours, and appointments efficiently.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e76057dda2268df0",
+      "title": "Bookeo Classes and Courses",
+      "url": "https://support.bookeo.com/hc/en-us/categories/360001058031-Bookeo-Classes-and-Courses",
+      "summary": "Bookeo Classes and Courses lets you offer your customers personal lessons held in different locations, taught by different staff members. If you ... READ ARTICLE Booking modes for the customer interface - Bookeo Classes and Courses You can customize how you display your classes to your customers in Settings>Theme and Layout>Page Layout.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "06d23b2925458ccb",
+      "title": "Booking System & Reservation Software That Drives Growth | Bookeo",
+      "url": "https://www.bookeo.com/",
+      "summary": "Bookeo helps you manage your business, engage your customers, strengthen your brand, manage waivers and grow your revenue. Simply. Get 30-day free trial",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9898b7d9a7674062",
+      "title": "Centre d'aide PayPal | Renseignements et assistance PayPal CA | PayPal CA",
+      "url": "https://www-v2.sandbox.paypal.com/ca/cshelp/personal?locale.x=fr_CA",
+      "summary": "Obtenez de l'aide sur PayPal avec notre centre d'assistance - PayPal Canada. Solutions et assistance personnalisée pour toutes vos questions et préoccupations. Faites confiance à PayPal pour vos transactions en ligne.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "edb8ddb29420c2cc",
+      "title": "Need help with your password? - www-v2.sandbox.paypal.com",
+      "url": "https://www-v2.sandbox.paypal.com/authflow/password-recovery/?country.x=WF&locale.x=en_US&redirectUri=%252Fsignin%252F",
+      "summary": "Transfer money online in seconds with PayPal money transfer. All you need is an email address.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0cc1cac5159c192a",
+      "title": "Online-Buchungssystem & Reservierungssoftware | Online-Buchungssoftware ...",
+      "url": "https://www.bookeo.com/de/",
+      "summary": "Bookeo ist ein führendes Online-Reservierungssystem für Touren, Kurse und Termine, mit dem Sie Geld und Zeit sparen können. Testen Sie unsere Online-Reservierungssoftware noch heute!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fb91768550960860",
+      "title": "PayPal - Registration",
+      "url": "https://registration.paypal.com/reLogin.do",
+      "summary": "PayPal is the safer, easier way to make an online payment or set up a merchant account.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "32d8a0f0920f57d4",
+      "title": "PayPal - Registration",
+      "url": "https://registration.paypal.com/",
+      "summary": "After you complete the signup process, you can begin configuring and managing your service (s) within the PayPal Manager, your online business and service management portal.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22c84b66f1476bd8",
+      "title": "PayPal Help Center - Personal | PayPal NZ",
+      "url": "https://securepayments.paypal.com/nz/cshelp/personal",
+      "summary": "Find answers to your PayPal questions. Browse common questions, watch videos, or ask the Community.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "community"
       ],
       "primary_type": "video",
       "routing_targets": [
@@ -1397,12 +1672,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a18265acef57eef8",
-      "title": "Prozac vs Venlafaxine Comparison - Drugs.com",
-      "url": "https://www.drugs.com/compare/prozac-vs-venlafaxine",
-      "summary": "Compare Prozac vs Venlafaxine head-to-head with other drugs for uses, ratings, cost, side effects and interactions.",
+      "id": "e3c46662cefe9371",
+      "title": "Security Challenge - PayPal Developer",
+      "url": "https://developer.paypal.com/dashboard/",
+      "summary": "Transfer money online in seconds with PayPal money transfer. All you need is an email address.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "318fd5d51b97d975",
+      "title": "signin.bookeo.com",
+      "url": "https://signin.bookeo.com/?laction=login&password=password&username=demo-axe@bookeo.com",
+      "summary": "Sign in to your Bookeo account using your username and password.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1427,72 +1732,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "afde56d0e535f522",
-      "title": "Venlafaxine (oral route) - Side effects & dosage - Mayo Clinic",
-      "url": "https://www.mayoclinic.org/drugs-supplements/venlafaxine-oral-route/description/drg-20067379",
-      "summary": "Description Venlafaxine is used to treat depression. It is also used to treat general anxiety disorder, social anxiety disorder, and panic disorder. Venlafaxine belongs to a group of medicines known as serotonin and norepinephrine reuptake inhibitors (SNRI). These medicines are thought to work by increasing the activity of a chemical called serotonin in the brain. This medicine is available ...",
+      "id": "fa0f6293778c99bc",
+      "title": "Sistema di prenotazione online | Software di gestione ... - Bookeo",
+      "url": "https://www.bookeo.com/it/",
+      "summary": "Bookeo fornisce un sistema avanzato di gestione delle prenotazioni online per tour, lezioni e appuntamenti, che ti aiuta a risparmiare tempo e denaro. Prova il nostro software di prenotazione online oggi stesso!",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77f44df0c1b9ee8f",
-      "title": "Venlafaxine - can this make you constantly fatigued and sleepy?",
-      "url": "https://www.drugs.com/answers/i-have-been-taking-venlafaxine-xr-150mg-for-401837.html",
-      "summary": "Hi recl, Venlafaxine/Effexor can definitely cause fatigue. You may consider taking it at night rather than in the morning... I would definitely try that first, particularly if the venlafaxine has been working for you. If you still find that you are very fatigued during the day, talk to your doctor about trying a different medication. Also, if severe fatigue is a long-term problem for you, and ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "574e7b575dabb54d",
-      "title": "Venlafaxine for Depression Reviews - Drugs.com",
-      "url": "https://www.drugs.com/comments/venlafaxine/for-depression.html",
-      "summary": "Venlafaxine \"From my experience, Effexor is a very effective treatment for depression and anxiety. I took it for 10 years at a dose of 150mg and felt great. I stopped 3 months ago and already depression is returning, so today I'm going back on! Yes, the side effects can be grim, but for me, it was only when being late with dose or quitting.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1508,6 +1753,96 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e60d35043b3e93ad",
+      "title": "Straight Bill of Lading - Short Form - Original - Not Negotiable BOL NO ...",
+      "url": "https://commandcenter.globaltranz.com/Service/Document/GetDocumentDownloadInBrowser/?fileRelativePath=%5C%5C%5C%5CTEMPDOCS%5C%5C%5C%5C13159399.pdf",
+      "summary": "Straight Bill of Lading - Short Form - Original - Not Negotiable BOL NO : 13159399 Phone : (630) 706-0012 Fax : (623) 209-0093",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b15dc47ed85657f5",
+      "title": "Système de réservation en ligne et logiciel de réservation - Bookeo",
+      "url": "https://www.bookeo.com/fr/",
+      "summary": "Bookeo offre un excellent système de réservation et de gestion de planning en ligne pour les excursions, les cours et les rendez-vous, afin de vous permettre d'économiser de l'argent et du temps. Essayez notre logiciel de réservation en ligne dès aujourd'hui !",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "341fa0a853ff133e",
+      "title": "XNXX - Free Porn, XXX Sex Movies and Tube Videos",
+      "url": "https://www.xnxx.org/",
+      "summary": "XNXX ACCESS INFORMATION: This page is organized around the Android application because the APK offers a dedicated app route for compatible Android devices without depending on the Google Play Store. Direct APK installation is a standard Android capability, but Android protects it behind a per-source permission so a browser or file manager cannot silently install applications without approval ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
