@@ -1,37 +1,36 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-07T18:07:00.050790+00:00",
-  "candidate_count": 79,
-  "classifier_irrelevant_count": 68,
+  "discovered_utc": "2026-11-07T18:14:22.257754+00:00",
+  "candidate_count": 73,
+  "classifier_irrelevant_count": 71,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 12,
-    "broad_web": 48,
-    "developer": 20
+    "adjacent": 1,
+    "broad_web": 53,
+    "developer": 19
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 11,
+    "adjacent": 1,
     "speculative": 0,
-    "irrelevant": 68
+    "irrelevant": 71
   },
   "type_counts": {
-    "model": 7,
-    "review": 2,
-    "video": 10,
-    "news": 43,
-    "tool": 20,
-    "sdk": 20,
-    "retail": 2,
-    "teardown": 1,
-    "community": 1
+    "model": 3,
+    "video": 3,
+    "news": 39,
+    "tool": 23,
+    "sdk": 21,
+    "policy": 1,
+    "retail": 5,
+    "community": 9
   },
   "routing_counts": {
-    "adjacent_radar": 11,
-    "community_evidence_review": 1,
-    "reject_noise": 68,
-    "research_news_review": 11
+    "adjacent_radar": 1,
+    "development_hacking": 1,
+    "reject_noise": 71,
+    "research_news_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -45,15 +44,15 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "88d429ada45c5d18",
-      "title": "10 Best Vegan Restaurants in Seattle, Washington, USA - HappyCow",
-      "url": "https://www.happycow.net/best-vegan-restaurants/seattle-washington",
-      "summary": "The top vegan and vegetarian restaurants in Seattle, WA, plant-based dining at its finest: as recommended by the HappyCow community.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "f04946719fbaa7f7",
+      "title": "Products – XREAL EU shop",
+      "url": "https://eu.shop.xreal.com/collections/all",
+      "summary": "XREAL official store in the EU. XREAL AR glasses is all about making reality better for everyone, everywhere. xrealair, xreal air 2, xreal air 2 pro, xreal beam pro,augmented reality glasses",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -61,357 +60,78 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, augmented reality glasses, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "804459402ae3fe0d",
+      "title": "NEAR - GitHub",
+      "url": "https://github.com/near",
+      "summary": "NEAR is dedicated to providing the best developer experience possible for building an open web. This mission is next to impossible to achieve without feedback and contributions from people like you. 🫵",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "github"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
       "relationship": "adjacent",
       "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7ab4f4cd209f6d19",
+      "title": "/r/Anime - Reddit",
+      "url": "https://www.reddit.com/r/anime/wiki/index/",
+      "summary": "r/anime: Reddit's premier anime community. Posting memes, reaction images, shitposts, etc. to the subreddit is not allowed. This includes blatant bait or troll attempts. Posts that consist of just an image and text from a meme also break this rule, even if the text is in the title of the post rather than superimposed on the image.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
         "community"
       ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88b2921ed08d6702",
-      "title": "15 Best Vegan Restaurants in Seattle (2026)",
-      "url": "https://veganeatsmap.com/guides/best-vegan-restaurants-seattle/",
-      "summary": "The best vegan and vegetarian restaurants in Seattle, Washington, ranked by rating from 20 listings. Updated November 2026.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe949dfb85037331",
-      "title": "8 Best Seattle Vegan Restaurants to Visit in 2027 From a Local",
-      "url": "https://veggiesabroad.com/vegan-restaurant-guide-to-seattle/",
-      "summary": "All this to say, my palette requires a pretty high standard for vegan cuisine, as I measure it up to everything else on the menu in Seattle. So, the list below offers a great lineup of vegan restaurants in Seattle that every type of foodie will enjoy.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8eac64fba22b7a0f",
-      "title": "First Tech Federal Credit Union",
-      "url": "https://www2.firsttechfed.com/LP=97",
-      "summary": "As the largest credit union investment program in the nation*, we bring you the same level of expertise and tools as the big guys, but with a level of personalized service that you expect as a member of First Tech.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ef00bfdbd7e6835",
-      "title": "First Tech Federal Credit Union - Seattle, WA - Yelp",
-      "url": "https://www.yelp.com/biz/first-tech-federal-credit-union-seattle",
-      "summary": "Yelp users haven’t asked any questions yet about First Tech Federal Credit Union.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d5d286c548bdc11d",
-      "title": "First Technology Federal Credit Union Seattle, WA: Hours - Branchspot",
-      "url": "https://www.branchspot.com/wa/seattle/first-technology-federal-credit-union/555-terry-ave-n/",
-      "summary": "First Technology Federal Credit Union Branch Location at 555 Terry Ave N, Seattle, WA 98109 - Hours of Operation, Phone Number, Services, Address, Directions and Reviews.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22b5994015194186",
-      "title": "Seattle's Best Vegetarian Food Spots",
-      "url": "https://seattlesecrets.org/best-vegetarian-food-in-seattle",
-      "summary": "If you're on the hunt for delicious vegetarian food that embraces comfort with skill, look no further than Wayward Vegan. They’ve crafted a menu that's both satisfying and soul-warming, making it one of the best vegetarian stops in the city.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b408583dcdcd19ff",
-      "title": "Seattle’s Best Vegetarian Restaurants | Eater Seattle",
-      "url": "https://seattle.eater.com/maps/best-seattle-vegetarian-restaurants",
-      "summary": "While many of Seattle’s newer meat-free restaurants are vegan, vegetarian options are still plentiful, and vegetarian restaurants can usually accommodate vegans with relative ease.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "deafe2af3ec6d567",
-      "title": "The 16 Best Vegetarian Restaurants In Seattle - The Infatuation",
-      "url": "https://www.theinfatuation.com/seattle/guides/best-vegetarian-restaurants-seattle",
-      "summary": "For restaurants that serve the best vegetarian dishes in the city, consult this guide.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9760f8166349a396",
-      "title": "The Best Vegan and Vegetarian Restaurants in Seattle",
-      "url": "https://seattle.eater.com/maps/best-vegan-restaurants-seattle-vegetarian-friendly-plant-based",
-      "summary": "Seattle has a wide variety of vegan dining options, not to mention a strong selection of vegetarian restaurants, which can usually accommodate vegans with ease.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "020944f6aea3cdb4",
-      "title": "The Best Vegan Restaurant in Seattle List",
-      "url": "https://seattlesecrets.org/best-vegan-restaurant-in-seattle",
-      "summary": "You’ve eaten a lot of veggie burgers in this town, haven’t you? Some of them taste like damp cardboard, and some of them taste like a dare you lost. But Seattle.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dc22758e8c353984",
-      "title": "158 SERPENTINE DRIVE, Venice, FL 34285 - Trulia",
-      "url": "https://www.trulia.com/home/158-serpentine-dr-venice-fl-34285-47556606",
-      "summary": "158 SERPENTINE DRIVE, Venice, FL 34285 is a 560 sqft, 1 bed, 1 bath home sold in 2024. See the estimate, review home details, and search for homes nearby.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "review",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -421,44 +141,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f7d43c6beced6ee5",
-      "title": "Goalkeeper Jesus Owono shares emotional statement after fatal collision ...",
-      "url": "https://www.thebiglead.com/goalkeeper-jesus-owono-statement-fatal-collision-jesus-de-miguel/",
-      "summary": "He said Owono “would never intentionally hurt anyone” and was deeply affected by the tragedy “with a sadness difficult to explain.” Tenerife announced six days of official mourning.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "announced"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "82078c7a42312850",
-      "title": "'Most difficult days of my life' for keeper Owono - AOL",
-      "url": "https://www.aol.com/articles/keeper-owono-never-intentionally-hurt-114102000.html",
-      "summary": "Earlier on Wednesday, FC Andorra team-mate Lautaro Spatz defended Owono and said he \"would never intentionally hurt anyone\" and had been \"deeply affected\" by De Miguel's death. Writing...",
+      "id": "bd7c25f472454e01",
+      "title": "1/2英寸等于多少毫米 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/366723194326249812.html",
+      "summary": "1/2英寸等于毫米。 因为1英寸=2.54厘米，1厘米=10毫米，所以1/2英寸就等于2.54*1/2*10毫米，即12.7毫米。 毫米，又称公厘 (或公釐)，是长度单位和降雨量单位，符号㎜。",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -486,41 +172,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "66524e2b49b077d4",
-      "title": "'Most difficult days of my life' for keeper Owono - Yahoo Sports",
-      "url": "https://sports.yahoo.com/articles/keeper-owono-never-intentionally-hurt-114102172.html",
-      "summary": "Earlier on Wednesday, FC Andorra team-mate Lautaro Spatz defended Owono and said he \"would never intentionally hurt anyone\" and had been \"deeply affected\" by De Miguel's death. Writing...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e23ecf4e470ab469",
-      "title": "158 Serpentine Dr, Venice, FL 34285 - 1 bedroom House Rental - Zumper",
-      "url": "https://www.zumper.com/address/158-serpentine-dr-venice-fl-34285-usa",
-      "summary": "View 158 Serpentine Dr 34285 rent availability including the monthly rent price and browse photos of this 1 bed, 1 bath, 695 Sq. Ft. house.",
+      "id": "48989fa38da5503d",
+      "title": "Can't access content from addon HANIME.TV (Or any other ... - Reddit",
+      "url": "https://www.reddit.com/r/Stremio/comments/xmwhwq/cant_access_content_from_addon_hanimetv_or_any/",
+      "summary": "Can't access content from addon HANIME.TV (Or any other content addon ) on Stremio For Android TV",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -529,267 +184,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
-        "retail"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ebcb34c305a5a846",
-      "title": "158 Serpentine Dr, Venice, FL 34285 - APN/Parcel ID: 0407-06-1054 - LoopNet",
-      "url": "https://www.loopnet.com/property/158-serpentine-dr-venice-fl-34285/12115-0407061054/",
-      "summary": "Information for the property located at 158 Serpentine Dr Venice, FL includes data gathered from Sarasota County tax records, public records data providers and LoopNet historical data records.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "65415e66fc450610",
-      "title": "158 Serpentine Dr, Venice, FL 34285 - ForRent.com",
-      "url": "https://www.forrent.com/fl/venice/158-serpentine-dr/mtv87xh",
-      "summary": "$1,500/month, 1-bed 1-bath. Rent this 695 sq ft. 1-bedroom house at 158 Serpentine Dr, Venice, FL. Available now — schedule a tour today.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0031568e5c6c3a6c",
-      "title": "158 Serpentine Dr, Venice, FL 34285 - House Rental in Venice, FL ...",
-      "url": "https://www.apartments.com/158-serpentine-dr-venice-fl/1tv80x4/",
-      "summary": "158 Serpentine Dr house in Venice,FL, is available for rent. This house rental unit is available on Apartments.com, starting at $1500 monthly.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "caa3e04990c8e688",
-      "title": "158 Serpentine Dr, Venice, FL 34285 - MLS J984106 - Coldwell Banker",
-      "url": "https://www.coldwellbankerhomes.com/fl/venice/158-serpentine-dr/pid_62918949/",
-      "summary": "Sold - 158 Serpentine Dr, Venice, FL - $100,000. View details, map and photos of this mobile home property with 1 bedrooms and 1 total baths. MLS# J984106.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40b84f7ab6c6a553",
-      "title": "158 Serpentine Dr, Venice, FL 34285 - realtor.com",
-      "url": "https://www.realtor.com/realestateandhomes-detail/158-Serpentine-Dr_Venice_FL_34285_M58383-27801",
-      "summary": "See 158 Serpentine Dr, Venice, FL 34285, a mobile home located in the Venice Bay Adult Park neighborhood. View property details, similar homes, and the nearby school and neighborhood...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b1a5ef2f55f8d326",
-      "title": "158 Serpentine Dr, Venice, FL 34285 | Homes.com",
-      "url": "https://www.homes.com/property/158-serpentine-dr-venice-fl/tr3bkwlhqcsr9/",
-      "summary": "Priced at $124,146 - 158 Serpentine Dr, Venice, FL 34285 - 560 sqft home built in 1981. Browse photos, take a 3D tour & see transaction details about this recently sold property. MLS# J984106.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d46a416c62a6aea",
-      "title": "158 Serpentine Dr, Venice, FL 34285 | Redfin",
-      "url": "https://www.redfin.com/FL/Venice/158-Serpentine-Dr-34285/home/47708697",
-      "summary": "(Stellar MLS as Distributed by MLS Grid) 1 bed, 1 bath, 560 sq. ft. house located at 158 Serpentine Dr, Venice, FL 34285 sold for $100,000 on Dec 19, 2024. MLS# J984106. Live the Florida Dream with your very own waterfront property just m...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a40547b3e04f5119",
-      "title": "158 SERPENTINE DRIVE, Venice, FL 34285 | Zillow",
-      "url": "https://www.zillow.com/homedetails/158-Serpentine-Dr-Venice-FL-34285/47556606_zpid/",
-      "summary": "158 SERPENTINE DRIVE, Venice, FL 34285 is currently not for sale. The 560 Square Feet manufactured home is a 1 bed, 1 bath property. This home was built in 1981 and last sold on 2024-12-19 for $100,000. View more property details, sales history, and Zestimate data on Zillow.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
         "tool",
         "sdk",
-        "retail"
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -801,229 +204,236 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3d3ee57efca12fcf",
-      "title": "Andorra goalkeeper devastated after fatal collision with Tenerife striker",
-      "url": "https://www.aa.com.tr/en/sports/andorra-goalkeeper-devastated-after-fatal-collision-with-tenerife-striker/4111670",
-      "summary": "“Those of us who know him know the kind of person he is, how much he is suffering at this moment and that he would never intentionally hurt anyone.”",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2b489370e7546696",
-      "title": "Goalkeeper involved in collision with Spanish footballer who died ...",
-      "url": "https://news.sky.com/story/goalkeeper-involved-in-collision-with-spanish-footballer-who-died-releases-statement-13608023",
-      "summary": "Writing on social media in defence of Owono, FC Andorra defender Lautaro Spatz said ‌his teammate \"would never intentionally hurt anyone\".",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aee6259e297048b9",
-      "title": "Goalkeeper involved in fatal collision with Tenerife forward Jesus De ...",
-      "url": "https://www.sportbible.com/football/football-news/tenerife-jesus-de-miguel-statement-goalkeeper-499306-20261104",
-      "summary": "This came after Owono’s FC Andorra teammate Lautaro Spatz defended him, saying he would “never intentionally hurt anyone”. Spatz wrote: \"I want to have some words for my team-mate,...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "472ecefac90cba44",
-      "title": "Jesus de Miguel death: Andorra goalkeeper Jesus Owono 'would never ...",
-      "url": "https://www.sepe.gr/en/news/22794858/jesus-de-miguel-death-andorra-goalkeeper-jesus-owono-would-never-intentionally-hurt-anyone-says-team-mate/",
-      "summary": "Andorra goalkeeper Jesus Owono \"would never intentionally hurt anyone\" and is \"deeply affected\" by the death of Tenerife forward Jesus de Miguel, his team-mate said on Wednesday.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e742fe8027d026ee",
-      "title": "Keeper Owono 'would never intentionally hurt anyone' | Nilepost",
-      "url": "https://nilepost.co.ug/sports/384317/keeper-owono-would-never-intentionally-hurt-anyone",
-      "summary": "Andorra goalkeeper Jesus Owono \"would never intentionally hurt anyone\" and has been \"deeply affected\" by the death of Tenerife forward Jesus de Miguel, his team-mate said on Wednesday. Tenerife player De Miguel, 30, died after suffering a serious injury in a collision with Owono during a Spanish second-division match on Monday.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "105ea49cc3990551",
-      "title": "Owono 'would never intentionally harm anyone', says Andorra team-mate ...",
-      "url": "https://www.101greatgoals.com/football/owono-would-never-intentionally-harm-anyone-says-andorra-team-mate-following-de-miguel-death/",
-      "summary": "FC Andorra defender Lautaro Spatz has leapt to the defence of goalkeeper Jesus Owono following the collision that killed Tenerife forward Jesus de Miguel.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "66a2e0afe063a5a4",
-      "title": "Owono 'would never intentionally hurt anyone' after De Miguel death ...",
-      "url": "https://m.dongqiudi.com/en/news/50002211",
-      "summary": "Tenerife forward Jesus de Miguel, 30, died after a collision with Andorra keeper Jesus Owono. Lautaro Spatz said Owono is deeply affected and would never intentionally hurt anyone. Tenerife will hold six official days of mourning and open their stadium on Saturday.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9c1aaa8912e439a1",
-      "title": "Tacoma Voters Approve Connect Tacoma: Safe Streets and Sidewalks Levy ...",
-      "url": "https://tacoma.gov/news/tacoma-voters-approve-connect-tacoma-safe-streets-and-sidewalks-levy-proposition-1/",
-      "summary": "The latest round of election results released today indicate that Tacoma voters have approved the Connect Tacoma: Safe Streets and Sidewalks Levy (Proposition 1), a 10-year funding measure that will support investments in safer streets, neighborhood infrastructure, and transportation connections throughout Tacoma.",
+      "id": "64d8f24b31b24c2d",
+      "title": "facebook - JSSDK Unknown Host domain - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/68932742/jssdk-unknown-host-domain",
+      "summary": "JSSDK Unknown Host domain: The Domain you are hosting the Facebook Javascript SDK is not in your app's Javascript SDK host domain list. Please specify your host domain in App dashboard login settings.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "sdk"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d94ce5787118c275",
+      "title": "Hanime1.me - Is It Safe? [Scam Check] - SensorsTechForum.com",
+      "url": "https://sensorstechforum.com/hanime1-me-is-it-safe/",
+      "summary": "Is Hanime1.me safe to use? Is Hanime1.me malware? How safe to use is Hanime1.me? What are the risks of using Hanime1.me?",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ac3f2320412ea84",
+      "title": "Hanime1.me – 安全ですか? [スカムチェック]",
+      "url": "https://sensorstechforum.com/ja/hanime1-me-is-it-safe/",
+      "summary": "Hanime1.me Hanime1.me はオンライン セキュリティに対する脅威ですか? このガイドには、この Web サイトにリンクされている潜在的なリスクを評価するために必要な詳細が記載されています. Hanime1.me からの脅威を特定して削除するために今すぐ行動してください。.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cfb8e0fa21f7b1a",
+      "title": "HanimetvNSFW - Reddit",
+      "url": "https://www.reddit.com/r/HanimetvNSFW/",
+      "summary": "HanimetvNSFW This is a page where you will post previews or video scenes of your favorite hanime.tv series or episodes.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c79ece026ef589cf",
+      "title": "Is hanime and hentai the same thing or are they different? How ... - Reddit",
+      "url": "https://www.reddit.com/r/AskAnime/comments/ldn9n7/is_hanime_and_hentai_the_same_thing_or_are_they/",
+      "summary": "The only time I’ve heard the term hanime used is in reference to the website hanime.tv, which is almost exclusively hentai. If your referring to more lewd anime (interspecies reviewers for example) I’d say the main difference is that hentai depicts every act on screen.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88095f41d552c4c1",
+      "title": "Is Hanime tv legal? : r/animepiracy - Reddit",
+      "url": "https://www.reddit.com/r/animepiracy/comments/po0vu9/is_hanime_tv_legal/",
+      "summary": "Hanime and other piracy sites are not legally incorporated companies. Since they don't exist as a legal entity, they can't be sued (their owners can if their identity is known, but usually it's not).",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d5818fa8307ff903",
+      "title": "ppr管分为S3.2、S4、S5、S6.3。 是什么意思_百度知道",
+      "url": "https://zhidao.baidu.com/question/398274231.html",
+      "summary": "PPR管分为S3.2、S4、S5、S6.3这个是表示PPR水管的管系列，管系列是区分PPR水管承压能力的一个参数，由此可以判断PPR水管的承压能力。 国家标准中对PPR管系列的规定",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "464a955686692bb0",
+      "title": "REFLECTION Lyrics - NEMZZZ | eLyrics.net",
+      "url": "https://www.elyrics.net/read/n/nemzzz-lyrics/reflection-lyrics.html",
+      "summary": "It is first released on March 15, 2024 as part of Nemzzz's album \"DO NOT DISTURB\" which includes 11 tracks in total. This song is the opening track on this album.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1050,29 +460,29 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1244d8f3cfe34174",
-      "title": "TOP 10 BEST Volkswagen Dealer in Buena Park, CA - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=volkswagen+dealer&find_loc=Buena+Park%2C+CA",
-      "summary": "What are people saying about car dealers services in Buena Park, CA? This is a review for a car dealers business in Buena Park, CA: \"We just purchased two cars today. Shout out to Anthony, Hugo and David. They came through with what we requested in a friendly manner.",
-      "discovery_channel": "adjacent+broad_web",
-      "query": "Volkswagen Smart Glasses; electrochromic eyeglass lenses",
+      "id": "47d28f14e3d28c61",
+      "title": "suggest some good hanime? : r/Animesuggest - Reddit",
+      "url": "https://www.reddit.com/r/Animesuggest/comments/zjakxw/suggest_some_good_hanime/",
+      "summary": "Looking for a series or hanime that has some story to it.. maybe plot twists and all..",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "review"
+        "tool",
+        "sdk",
+        "community"
       ],
-      "primary_type": "review",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1082,10 +492,321 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "177573d3a1d0a3b7",
-      "title": "'bokep terbaru' Search - XNXX.COM",
-      "url": "https://www.xnxx.com/search/bokep+terbaru",
-      "summary": "Bokep Indo terbaru - Fuck my Wife and creampie please - crot dalam memek sampe lumer 34.1k 99% 17min - 1080p Silksatin66 LAGI MAKAN DI MALAH DI AJAK NGENTOT UKHTY HIJAB NURUT AJA -BOKEP INDONESIA TERBARU 20.4k 83% 12min - 1080p Indo Pasutri Premium Bokep indo terbaru - Lagi rame Vidio Selebgram cantik Bali 18.4M 100% 13min - 1080p Silksatin69",
+      "id": "215cf544e78f97fb",
+      "title": "What are some good alternatives to HentaiHaven? - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/a8i7zd/what_are_some_good_alternatives_to_hentaihaven/",
+      "summary": "Archived post. New comments cannot be posted and votes cannot be cast. Share Sort by: Best Open comment sort options Best Top New Controversial Old Q&A [deleted] • Comment deleted by user Reply reply [deleted] • How'd you find this post Reply reply [deleted] • Comment removed by moderator Reply reply [deleted] •",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cb6ffd7d5116f7cd",
+      "title": "What is up with Hanime? : r/animepiracy - Reddit",
+      "url": "https://www.reddit.com/r/animepiracy/comments/l7vh2k/what_is_up_with_hanime/",
+      "summary": "A community dedicated to the discussion of piracy surrounding anime, manga, manhwa, light novels, visual novels, and hentai.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c703c34e58ccd0bc",
+      "title": "Why number 2 has two forms? - chinese.stackexchange.com",
+      "url": "https://chinese.stackexchange.com/questions/31078/why-number-2-has-two-forms",
+      "summary": "二 (èr) and 两 (liăng) I understand when to use which But I'm curious to know why, and correct me if I'm wrong, this is the only number that has 2 forms.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "695126da350d611f",
+      "title": "《欧洲卡车模拟2》为什么能在 Steam 上那么火？ - 知乎",
+      "url": "https://www.zhihu.com/question/54940147",
+      "summary": "用“神奇”二字来形容《欧洲卡车模拟2》一点儿也不夸张。 上市之初，开发团队怎么也想不到，这款以“卡车爱好者”为受众的核心向作品，不仅突然火了，而且一火就是8年。 如今，《欧卡2》已累计突破了500万销量，日均在线人数峰值仍能稳定在3万以上——甚至不输于同样以长寿著称的《老滚5 ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e1b5650155fa7e2d",
+      "title": "求生之路2建房提示这个Server is enforcing consistency for this file:scripts/weapon ...",
+      "url": "https://zhidao.baidu.com/question/585691964.html",
+      "summary": "我有两个最好的方法。第一是去steam创意工坊订阅 无需再进行一致性检查MOD。要打开创意工坊必须要用加速器或者steam++ 加速steam才可以。第二个方法是给求生之路2加一条 关闭服务器检查一致性的启动项指令，这个指令是-console +sv_consistency 0这样以后就不用老是在控制台输入sv_consistency 0了",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf140024dc176c6b",
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/2078938974714971101",
+      "summary": "知乎",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc5fbdf3c6052867",
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/288782580",
+      "summary": "PS4玩家，基本上是想买数字版了但不知道限定版和终极版的内容之后会不会发售以及到底值不值得买。",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "554efb905c6e8270",
+      "title": "造梦西游2易爆点图 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/415471733.html",
+      "summary": "造梦西游2易爆点图 罗刹戒指：在大坛子的最右边打死孟婆装备掉在左边4步 血海邪皇：在最右边打死孟婆，或者坛子第一条铁链那打S 轮回仗：在最右边或者是中间 擎天柱：在最右边或者最左边 九钉耙：最",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c8af2a17e94644c7",
+      "title": "金庸群侠传2全 攻略（超级详细的）_百度知道",
+      "url": "https://zhidao.baidu.com/question/32804685.html",
+      "summary": "金庸群侠传2全 攻略（超级详细的）高悟攻略 1首先,选择属性,如果想比较容易顺手的话,一般应注意:悟性不能太低,不然呆会儿学习比较高级的武功则想突破玄关 (即从9-10级)会很难,我一般选择90以上。如果硬要学得双手左右",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd0dcd5f4f2b4a90",
+      "title": "10346 E US Highway 36 - Best Buy Avon",
+      "url": "https://stores.bestbuy.com/in/avon/10346-e-us-highway-36-489.html",
+      "summary": "At Best Buy Avon, we specialize in helping you find the best technology to enrich your life. Together, we can transform your living space with the latest smart home technology, HDTVs, computers and gaming consoles from your favorite brands.",
+      "discovery_channel": "broad_web",
+      "query": "best smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "388d1ba7204afd59",
+      "title": "15 Best & Fun Restaurants in Chantilly (VA) - The Tourist Checklist",
+      "url": "https://thetouristchecklist.com/restaurants-in-chantilly-va/",
+      "summary": "Check out our guide on the best restaurants in Chantilly, Virginia, to know the best places to eat in Chantilly, VA, for a memorable time.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1112,42 +833,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e94f3fed5a30827e",
-      "title": "1983 陈百强《不》_哔哩哔哩_bilibili",
-      "url": "https://www.bilibili.com/video/BV1WX4y1w7zi/",
-      "summary": "-, 视频播放量 154417、弹幕量 299、点赞数 1452、投硬币枚数 176、收藏人数 1596、转发人数 729, 视频作者 丹尼故事吧, 作者简介 ，相关视频：经典粤语:陈百强《偏偏喜欢你》唱出了对女友何超琼的爱而不得，《今宵多珍重》陈百强，《等》陈百强，陈百强，周润发 ...",
+      "id": "27dbc0f550e36b4b",
+      "title": "15 Best Restaurants in Chantilly, VA [2026 Updated]",
+      "url": "https://bitetheblock.com/restaurants-in-chantilly-va/",
+      "summary": "We love Chantilly’s classics—the crab cakes, the barbecue—and have entire guides dedicated to them. But there’s so much more to this Northern Virginia gem. If you focus only on those staples, you’ll miss out on delicate pho, sizzling fajitas, and bowls of ramen so rich they’ll warm you through.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c63a4f5d6f31c626",
-      "title": "20 Things to Know About Fantasy Brown Granite (actually marble)",
-      "url": "https://columbusgranite.com/fantasy-brown-granite/",
-      "summary": "Discover the allure of Fantasy Brown Granite (marble) - a top choice for kitchen countertops. Explore comprehensive info into Fantasy Brown",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1172,42 +863,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "14eb0419740f60c5",
-      "title": "83年十大金曲，陈百强现场演唱《不》，大家感受下丹尼的舞台魅力_哔哩哔哩_bilibili",
-      "url": "https://www.bilibili.com/video/BV1PV411J7W3/",
-      "summary": "，港式浪漫天花板，陈百强一曲《今宵多珍重》百听不厌！ ，陈百强清唱《顺流逆流》两句歌词，那一年的他正风华正茂，陈百强牵手林忆莲《一生何求》！ ，这首歌只有陈百强唱的出这个味道，至今还无人能超越！",
+      "id": "5b6efe955ceaa430",
+      "title": "8 Chantilly and Centreville Restaurants to Try",
+      "url": "https://northernvirginiamag.com/food-and-drink/2025/06/06/8-places-to-eat-in-centreville-and-chantilly/",
+      "summary": "Here’s where to find classic Italian, Korean barbecue, and Japanese restaurants in Centreville and Chantilly.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1a7110465d2c96bb",
-      "title": "About Columbus Granite | Countertop Fabrication & Installation",
-      "url": "https://columbusgranite.com/about-us/",
-      "summary": "Meet Columbus Granite, serving Central Ohio with countertop selection, fabrication, and installation. Visit our Columbus showroom or Lewis Center warehouse.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1232,10 +893,700 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "752ec4f94da87889",
-      "title": "All Volkswagen Dealers in Buena Park, CA 90621 - Autotrader",
-      "url": "https://www.autotrader.com/car-dealers/volkswagen/buena-park-ca",
-      "summary": "Find Buena Park Volkswagen Dealers. Search for all Volkswagen dealers in Buena Park, CA 90621 and view their inventory at Autotrader",
+      "id": "a9965f8d8df89f5a",
+      "title": "All Free Online Games – Poki",
+      "url": "https://poki.uk.com/games/",
+      "summary": "Browse the complete Poki game library and open any game to play in your browser.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "13c239f56cafeb6f",
+      "title": "Atrial Fibrillation CHA (2)DS (2)-VASc Score for Stroke Risk",
+      "url": "https://www.merckmanuals.com/professional/multimedia/clinical-calculator/atrial-fibrillation-cha2ds2-vasc-score-for-stroke-risk",
+      "summary": "The Lip-Halperin article seeks to improve stroke risk stratification of the CHADS (2) score by adding more points for age >=75 and Vascular disease. The article suggests aspirin or no treatment for a score of 0, and oral anticoagulation when the score is 2 or greater.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e398971fbd12d19f",
+      "title": "Best Restaurants near Chantilly, VA 20151 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Restaurants+Chantilly&find_loc=Chantilly%2C+VA+20151",
+      "summary": "Reviews on Restaurants Chantilly in Chantilly, VA 20151 - Semicolon Cafe, Sedona Taphouse - Chantilly, Taco Zocalo - Chantilly, Odd BBQ, Lazy Dog Restaurant & Bar, Cheng's Asian House, Eggholic - Chantilly, Taste Of Korea, Sirok, Farmtruck Pizza & Greens",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4a39e62bc840c18",
+      "title": "Casual Games - Play Free Online Games on Poki",
+      "url": "https://poki.homes/category/casual",
+      "summary": "Play free online casual games on Poki. Easy-to-pick-up, relaxing games perfect for a quick break—jump in and play instantly in your browser with no download required.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18774843b2248849",
+      "title": "CHA2DS2-VASc Calculator - Live Score, Risk Tier, Breakdown",
+      "url": "https://infinitycalculator.com/health/cha2ds2-vasc-calculator",
+      "summary": "Calculate your CHA2DS2-VASc score with live updates as you toggle 8 AF criteria. Get risk tier, annual stroke rate, anticoagulation guidance, and charts.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31a7868882a867b2",
+      "title": "CHA2DS2-VASc Calculator for Guiding Antithrombotic Treatment ... - ClinCalc",
+      "url": "https://clincalc.com/cardiology/stroke/chadsvasc.aspx",
+      "summary": "CHADS2-VAsc calculator for evaluating ischemic stroke risk in patients with atrial fibrillation.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e85d5b037b7cd034",
+      "title": "CHA2DS2-VASc Score Calculator: Atrial Fibrillation Stroke Risk",
+      "url": "https://heartscorecalculator.com/cha2ds2-vasc-calculator/",
+      "summary": "What Is the CHA₂DS₂-VASc Score? The CHA₂DS₂-VASc score is the international gold standard clinical prediction rule used to estimate the annual risk of ischemic stroke and systemic thromboembolism in adult patients diagnosed with non-valvular atrial fibrillation (AFib) or atrial flutter.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "619f40251e9107f4",
+      "title": "CHA2DS2–VASc score - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/CHA2DS2%E2%80%93VASc_score",
+      "summary": "The CHADS2 score and its proposed updated version, the CHA2DS2-VASc score, are clinical prediction rules for estimating the risk of stroke in people with non-rheumatic atrial fibrillation (AF), a common and serious heart arrhythmia associated with thromboembolic stroke.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a296f1a1cbf09bf",
+      "title": "CHADSVASC, CHA2DS2VASC and HASBLED risk score calculator for atrial ...",
+      "url": "https://chadsvasc.org/",
+      "summary": "Important Update: ESC 2024 Guidelines The CHA₂DS₂-VASc score has been replaced by the CHA₂DS₂-VA score in the 2024 ESC Guidelines.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8a167396657ab30a",
+      "title": "CHADS₂ Score for Atrial Fibrillation Stroke Risk Calculator",
+      "url": "https://www.mdcalc.com/calc/40/chads2-score-atrial-fibrillation-stroke-risk",
+      "summary": "Consider using the CHA₂DS₂-VASc Score to further risk stratify patients who are identified as low risk by their CHADS₂ score. For patients who are identified as moderate (score 1-2) or high risk for ischemic stroke (>3), anticoagulation therapy should be considered.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cbdaba2e52fe73dc",
+      "title": "CHA₂DS₂-VASc Score for Atrial Fibrillation Stroke Risk",
+      "url": "https://www.mdcalc.com/calc/801/cha2ds2-vasc-score-atrial-fibrillation-stroke-risk",
+      "summary": "Depending on a patient’s preferences and individual risk factors, anticoagulation can be considered for a score of 1 in men and 2 in women. Anticoagulation should be started in patients with a CHA₂DS₂-VASc score of ≥ 2 in men or ≥3 in women.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1eda382619c048a4",
+      "title": "CHA₂DS₂-VASc Score | Stroke Risk in Atrial Fibrillation - Patient",
+      "url": "https://patient.info/doctor/cardiovascular-disease/chads-vasc-score",
+      "summary": "The CHA₂DS₂-VASc score is a clinical risk stratification tool used to estimate the risk of stroke and systemic embolism in patients with atrial fibrillation (AF). It is widely used to guide decisions about oral anticoagulation.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e640f1300e8e7a81",
+      "title": "CHA₂DS₂-VASc score — The Cardiovascular",
+      "url": "https://cardvasc.org/docs/tools/calculators/cha2ds2-vasc",
+      "summary": "CHADS-VASc predicts the risk of thromboembolism (stroke, TIA, systemic thromboembolism) in the next 12 months and the calculations apply to untreated patients with non-valvular atrial fibrillation (Table 1).",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f1416ee39ede325",
+      "title": "Comic Shops in Schaumburg, IL — 2 Stores | Comloc",
+      "url": "https://www.comicshoplocator.com/comic-shops/illinois/schaumburg/",
+      "summary": "2 comic book stores in Schaumburg. Each listing below has the full address, a tap-to-call phone number and store details with opening hours.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f2e0e2e997dbcbb8",
+      "title": "Facebook login message: \"URL Blocked: This redirect failed because the ...",
+      "url": "https://stackoverflow.com/questions/37001004/facebook-login-message-url-blocked-this-redirect-failed-because-the-redirect",
+      "summary": "Important notice: If you register for testing, go to your profile settings and to your interests add delete profile. Trying to login with Facebook to my website: I get the following error: URL",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ceb589fbec82608",
+      "title": "FREE POKEMON GAMES - Miniplay.com",
+      "url": "https://www.miniplay.com/pokemon-games",
+      "summary": "Your favorite Pokémon is waiting for you on Miniplay. Find not only that Ditto, that Dratini or that Charmander, but your favourite online Pokémon game. Get all the Pokémon Miniplay! Or all the Minigame games!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a359ae818272e22",
+      "title": "Graham Crackers - Schaumburg, IL",
+      "url": "https://www.yelp.com/biz/graham-crackers-schaumburg",
+      "summary": "2 reviews of GRAHAM CRACKERS \"Great products in store,including many figures like marvel legends and ct toys and more.this place is a hidden gem\"",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56419a546b3fd2fa",
+      "title": "Graham Crackers Comics - Schaumburg — Schaumburg, IL | myLGS",
+      "url": "https://lgsmaps.com/stores/graham-crackers-comics-schaumburg-schaumburg-il",
+      "summary": "Graham Crackers Comics - Schaumburg is a trading card and game shop in Schaumburg, IL. Find hours, location, and reviews on myLGS.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ebd70dddab9aff36",
+      "title": "Graham Crackers Comics of Schaumburg - IL | VerseDB",
+      "url": "https://versedb.com/comic-shop/6311/graham-crackers-comics-of-schaumburg",
+      "summary": "Graham Crackers Comics of Schaumburg is a comic shop in Schaumburg, IL, United States. It is one of 14 locations listed on VerseDB.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bcdf32e17d79170a",
+      "title": "Graham Crackers Comics of Schaumburg in Schaumburg - Comic book store ...",
+      "url": "https://www.atly.com/location/GrahamCrackersComicsOfSchaumburg",
+      "summary": "Comic book store features organized sections for Marvel, DC, and independent comics with well-lit, clean spaces. The layout makes it easy to find both old and new comics, creating a relaxed atmosphere for browsing. Collectibles like blond boxes and custom Lego miniatures add unique variety.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "53534eb439a2158e",
+      "title": "Graham Crackers Comics of Schaumburg | Treasure Hunter",
+      "url": "https://www.treasurehunter.show/shop/graham-crackers-comics-of-schaumburg-schaumburg-il",
+      "summary": "Comics & graphic novels are the focus of this retailer with frequent in-store events.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "55b837050dd7ec86",
+      "title": "Graham Crackers Comics of Schaumburg — Comic Shop…",
+      "url": "https://www.comicshoplocator.com/comic-shops/store/graham-crackers-comics-of-schaumburg-schaumburg-1001643/",
+      "summary": "Graham Crackers Comics of Schaumburg is a comic book store in Schaumburg, IL. Find it at 548 S Roselle Rd. Get the address, opening hours, directions.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0194385d803b8b38",
+      "title": "Graham Crackers — Comic Book Store in Schaumburg, Illinois",
+      "url": "https://comicstoresnearme.com/shops/illinois/schaumburg/graham-crackers-comics-of-schaumburg-schaumburg/",
+      "summary": "Graham Crackers Comics of Schaumburg is a local comic book store in Schaumburg, Illinois. Expect new releases, back issues, graphic novels, and a knowledgeable staff who can help you discover new titles or track down specific issues.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "443e92cb4a254dc7",
+      "title": "Home | New & Pre-Owned Cars and SUV Dealership Near Huntley",
+      "url": "https://www.vwofcrystallake.com/",
+      "summary": "Fox Valley Volkswagen Crystal Lake is a full-service Volkswagen dealership with new and pre-owned vehicles serving Crystal Lake, IL, and nearby communities.",
       "discovery_channel": "broad_web",
       "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
@@ -1262,42 +1613,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c1bce5400524af91",
-      "title": "American Porn Videos & United States Sex Movies | xHamster",
-      "url": "https://xhamster.com/categories/american",
-      "summary": "American girls gladly get filthy in our free porn videos. See pornstars and amateurs from the United States indulge your desires for hot sex at xHamster.",
+      "id": "fa402f4bedaf0a38",
+      "title": "lantibeatz (REMIXES) - YouTube",
+      "url": "https://www.youtube.com/@lantibeatz",
+      "summary": "lantibeatz (REMIXES) @lantibeatz • 24.3K subscribers • 13 videos More about this channel ...more More about this channel ...more ...more",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4581b28773abc673",
-      "title": "Auntjudys - Your 69yo Busty GILF Stepmom Louise Catches You Watching ...",
-      "url": "https://da.xhamster.com/videos/auntjudys-your-69yo-busty-gilf-stepmom-louise-catches-you-watching-mature-porn-xhJsmfd",
-      "summary": "Se Auntjudys - Your 69yo Busty GILF Stepmom Louise Catches You Watching Mature Porn porno. Medvirkende: Sapphire Louise. Kategori: Tabu, Cougar, Store naturlige bryster, POV, Blondiner. Nyd denne HD XXX-video og andre sexfilm!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1322,10 +1643,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ff35896d01627ca6",
-      "title": "Columbus Countertop Showroom | Granite & Quartz",
-      "url": "https://columbusgranite.com/contact/",
-      "summary": "Visit our Columbus countertop showroom at 2276 Westbrooke Dr, Building K. Compare granite, quartz and quartzite options and get help planning your project.",
+      "id": "ede1bcc694baae17",
+      "title": "lantibeatz Lyrics, Songs, and Albums | Genius",
+      "url": "https://genius.com/artists/Lantibeatz",
+      "summary": "Get all the lyrics to songs by lantibeatz and join the Genius community of music scholars to learn the meaning behind the lyrics.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1340,9 +1661,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1352,12 +1673,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7ebbd8b0cadc224f",
-      "title": "Compilation Porn Videos & XXX Collections | xHamster",
-      "url": "https://xhamster.com/categories/compilation",
-      "summary": "Find the web's best collection of compilation porn videos right here. There's a little of everything, from cumshots to anal to gangbangs and more at xHamster.",
+      "id": "25e86e2f9edb467c",
+      "title": "Libertyville Volkswagen | New VW Car Dealer Near Waukegan",
+      "url": "https://www.libertyvw.com/",
+      "summary": "Welcome to Libertyville Volkswagen, a trusted local car dealer in Libertyville, IL. Shop new VW vehicles, explore financing, or schedule service today.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1382,250 +1703,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8535db73a860cc06",
-      "title": "Compilation Porn Videos, #2 | xHamster",
-      "url": "https://xhamster.com/categories/compilation/2",
-      "summary": "The Huge Amateur Cumshot Compilation Video. 100 Cumshots. Cum in Mouth, Facials, Cum on Tits, Creampies, Cum on Ass",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "90b573f5da6a58fc",
-      "title": "Connect Tacoma: Safe Streets and Sidewalks | City of Tacoma",
-      "url": "https://tacoma.gov/government/departments/public-works/connect-tacoma-safe-streets-and-sidewalks/",
-      "summary": "Thank You, Tacoma! Tacoma voters approved Proposition 1 on August 4, 2026. Thank you, Tacoma, for investing in the future of our streets, sidewalks, and transportation system.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "74fe7b1c34217f01",
-      "title": "Early election results for Pierce Transit tax are in. Will they ... - Yahoo",
-      "url": "https://www.yahoo.com/news/politics/articles/early-election-results-pierce-transit-042429183.html",
-      "summary": "Early results show Pierce County voters want to raise sales taxes to expand transit service. Preliminary results for Proposition 1, the ballot measure that would fund Pierce Transit by raising the ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "981821f6d6e15705",
-      "title": "Election results for key races in Tacoma and Pierce County",
-      "url": "https://www.knkx.org/2026-11-03/tacoma-pierce-county-election-results",
-      "summary": "From Tacoma tenants' rights to transit in Pierce County, we have initial results and context on some of the hottest races in the region.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9b920edec670631a",
-      "title": "Everything You Need to Know About Viscount White Granite",
-      "url": "https://columbusgranite.com/viscount-white-granite/",
-      "summary": "Columbus Granite has been fabricating Viscount White for over a decade now. This article covers all you need to know about this granite.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3bf0d7235110ac96",
-      "title": "Free Mature Pussy Porn Videos | xHamster",
-      "url": "https://xhamster.com/tags/mature-pussy",
-      "summary": "Check out free Mature Pussy porn videos on xHamster. Watch all Mature Pussy XXX vids right now!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "588a2982e8cf031e",
-      "title": "Granite & Quartz Suppliers in Columbus, Ohio | Slab Guide",
-      "url": "https://columbusgranite.com/marble-quartzite-granite-and-quartz-suppliers-in-columbus-ohio/",
-      "summary": "Find Columbus-area stone suppliers, showroom hours, and slab-selection tips. Let Columbus Granite help with measurement, fabrication, and installation.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f05adcb385a84721",
-      "title": "Granite Countertops Repair and Restoration in Columbus Ohio",
-      "url": "https://columbusgranite.com/granite-countertop-repair-and-restoration-in-columbus-ohio/",
-      "summary": "To keep your granite countertops in top condition, we provide valuable Granite Countertop Care Tips and recommend high-quality Granite Countertop Care Products. Furthermore, we assist you in making the right decision when it comes to Granite Repair vs. Replacement. Your countertops deserve the best care, and that is precisely what we offer.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "71d481fd04f7a989",
-      "title": "HanStone Quartz Countertop Options | Columbus Granite",
-      "url": "https://columbusgranite.com/hanstone/",
-      "summary": "Explore HanStone quartz countertop options with Columbus Granite. Ask about samples, slab-viewing arrangements, colors, and current availability.",
+      "id": "b33765cb75e2ffb2",
+      "title": "Lyrics | Nemzzz | REFLECTION",
+      "url": "https://lyrics.lyricfind.com/lyrics/nemzzz-reflection",
+      "summary": "Lyrics Available Translations (Zel, this shit crazy) And it's pronounced like this, \"son d'hommage\" son d'hommage (ayy, yo)",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1652,10 +1733,250 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cf49a4a6be76d02a",
-      "title": "Homemade Porn Videos and Amateur Sex Tapes | xHamster",
-      "url": "https://xhamster.com/categories/homemade",
-      "summary": "We bring you the hottest homemade porn videos submitted by real couples that love to fuck. Every day new sex tapes with hot chicks are added at xHamster.",
+      "id": "a2822f26d906feb5",
+      "title": "Nemzzz - REFLECTION Lyrics | AZLyrics.com",
+      "url": "https://www.azlyrics.com/lyrics/nemzzz/reflection.html",
+      "summary": "I don't trust no one, 'cause where were you at when I was tryna get dough? More time, I'm deepin' life, but how can I when I stay in this shit? This track ain't for me to flex, I'm just here to vent, okay? My opinion does not need a reply, I'm just here to vent, okay?",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b83b26261009b038",
+      "title": "Nemzzz – REFLECTION Lyrics - Genius",
+      "url": "https://genius.com/Nemzzz-reflection-lyrics",
+      "summary": "Reflection follows Nemzzz’s split mindset in making decisions and who to trust and not. It also shows how Nemzzz has been through a lot since a young age and how he has gone through many...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90e4271f09fe6b2f",
+      "title": "PokeSurvivor – Play Free Online Pokemon Survivor Game",
+      "url": "https://pokesurvivor.games/",
+      "summary": "PokeSurvivor is a free online Pokemon survivor game (a bullet heaven / survivor-like) that runs entirely in your web browser. You choose a partner Pokemon, then survive waves of wild Pokemon that never stop coming.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "44f26dc66b6c4a4d",
+      "title": "REFLECTION - Nemzzz (Prod By lantibeatz) - YouTube",
+      "url": "https://m.youtube.com/watch?v=5a6H8OFQeWk",
+      "summary": "See what others said about this video while it was live. REFLECTION - Nemzzz (Prod By lantibeatz)Beat also Beats channel: https://youtu.be/sR3yIkEwQDQ?si=PExREP-7jgOzwF3wSample:...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e45f01791ab673c0",
+      "title": "REFLECTION - Nemzzz - LETRAS.COM",
+      "url": "https://www.letras.com/nemzzz/reflection/",
+      "summary": "Nemzzz - REFLECTION (Letra y canción para escuchar) - And it's pronounced like this, son d'hommage son d'hommage (ayy, yo / Them man keep postin' quotes but in real life ain't doin' a thing / Them gyal look good",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ebcb574bd7efc101",
+      "title": "REFLECTION 2 -Nemzzz Ft. Central Cee (Remix @lantibeatz)",
+      "url": "https://soundcloud.com/lantibeats-799528263/reflection-2-nemzzz-ft-central",
+      "summary": "Stream REFLECTION 2 -Nemzzz Ft. Central Cee (Remix @lantibeatz) by lantibeatz on desktop and mobile. Play over 320 million tracks for free on SoundCloud.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f3e41eb3a90f24b6",
+      "title": "REFLECTION lyrics – Nemzzz | Matchlyric",
+      "url": "https://matchlyric.com/nemzzz-reflection",
+      "summary": "Nemzzz – REFLECTION | Intro ( ZEL , this shit crazy ) ( And it's pronounced like this, \" Son d'hommage , son d'hommage...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "181e834b4e885b4d",
+      "title": "RESTAURANTS & DINING - Westfields Center",
+      "url": "https://www.westfieldscenter.com/restaurants-dining/",
+      "summary": "Westfields Center in Chantilly, VA offers incredible options for shopping, dining, golfing, hiking, and swimming. We are near the Air and Space Udvar-Hazy Center, Sully Plantation, and the Dulles Expo Center.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e9cc39597cdb7b54",
+      "title": "SCHAUMBURG, IL store | Graham Crackers Comics, Ltd.",
+      "url": "https://www.grahamcrackers.com/store/schaumburg-il",
+      "summary": "With NEW Comics, Back Issues, Collectible Card Games, Posters, Magnets, Action-Figures, Comic Supplies and Card Supplies, Graham Crackers Comics of Schaumburg will be your one stop shop to get your favorite collectibles!",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1682,12 +2003,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "40e36addc9b18fd5",
-      "title": "Indonesian Porn (93,823) @ Porzo.com",
-      "url": "https://www.porzo.com/category/indonesian",
-      "summary": "Check out the latest Indonesian videos at Porzo.com. Updated continuously and over 1000 categories.",
+      "id": "6bfa2780d3130506",
+      "title": "Sign in or create account - payments.amazon.com",
+      "url": "https://payments.amazon.com/overview/",
+      "summary": "Sign in to Amazon Payments to manage your payment preferences, view transactions, and access secure online payment services.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1700,9 +2021,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1712,280 +2033,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5db3c779ca48cf63",
-      "title": "Kitchen Countertops in Columbus, OH | Columbus Granite",
-      "url": "https://columbusgranite.com/",
-      "summary": "Columbus Granite is your go-to provider for premium granite and quartz countertops, serving both residential and commercial spaces. From slab selection to precision fabrication and professional installation, our team helps homeowners and contractors create beautiful spaces with granite, quartz, quartzite, marble, and other natural stones.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "00db43ffe326c95b",
-      "title": "LadangBokep: Ladang Video Bokep indo Terbaru dan Update Terlengkap ...",
-      "url": "https://ladangbokep.com/",
-      "summary": "LadangBokep nikmat koleksi lengkap nonton video bokep indo tanpa vpn paling viral tahun ini dengan berbagai kategori terbaru yang selalu update setiap hari.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aa69be299f3d0964",
-      "title": "Lewis Center Slab Warehouse | Columbus Granite",
-      "url": "https://columbusgranite.com/contact-lewis-center/",
-      "summary": "Explore full-size countertop slabs at Columbus Granite, 601 Corduroy Rd, Lewis Center, OH 43035. Our Lewis Center location brings slab selection and fabrication together, helping you compare the color and movement of actual stone before choosing countertops for your home or commercial project. No appointment is necessary during business hours.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e4f62ccc9423afd5",
-      "title": "Newest Indonesian 720p HD Porn Videos | xHamster",
-      "url": "https://xhamster.com/categories/indonesian/hd/newest",
-      "summary": "Check out newest Indonesian 720p HD porn videos on xHamster. Watch all newest Indonesian 720p HD XXX vids right now!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e09ec0c86da2be4",
-      "title": "Newest Indonesian Porn Videos | xHamster",
-      "url": "https://xhamster.com/categories/indonesian/newest",
-      "summary": "Check out newest Indonesian porn videos on xHamster. Watch all newest Indonesian XXX vids right now!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "315c2e60a44a0f56",
-      "title": "Pierce Co. voters approve Prop 1, boosting bus service 47% with ... - KOMO",
-      "url": "https://komonews.com/news/local/pierce-county-voters-approve-prop-1-boosting-pierce-transit-bus-service-47-public-transit-commute-discount-seniors-students-traffic",
-      "summary": "PIERCE COUNTY, Wash. — Pierce County voters have approved Proposition 1, setting Pierce Transit up for a major expansion that the agency says will deliver 47% more local bus service over the ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0db1869b9a40502d",
-      "title": "Pierce County Approves Prop 1: Pierce Transit to Deliver 47% More Bus ...",
-      "url": "https://piercetransit.org/transit-news/pierce-county-approves-prop-1-pierce-transit-to-deliver-47-more-bus-service/",
-      "summary": "Based on initial election results, Pierce County voters approved Proposition 1, providing Pierce Transit with additional funding to support a 47% increase in local transit service. Prop 1 increases Pierce Transit’s sales tax rate from 0.6% to 0.9% — an additional 3 cents per $10 spent on qualifying purchases made within our service area.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "62649be90b3a197d",
-      "title": "Pierce County Election Results 2026: Tacoma renters, transit tax on ...",
-      "url": "https://www.mogazmasr.com/154429",
-      "summary": "Tacoma voters weighed in on Initiative 1, a renter-protection measure called Safe Homes For All, while Pierce County voters decided Proposition 1, a transit tax plan, in the Nov. 3, 2026 general election.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "86006d59f037adc4",
-      "title": "Pierce County sales tax measure would nearly double transit service ...",
-      "url": "https://www.knkx.org/politics/2026-10-30/pierce-county-sales-tax-proposition-1-bus-transit-service",
-      "summary": "Prop. 1 would raise the sales tax rate an additional 3 cents on every $10 spent. Pierce Transit said this would enable more bus service, shorter wait times and new routes.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "238126506def843a",
-      "title": "Porn Radar: New Porn Videos You'll Love Watching | xHamster",
-      "url": "https://ge.xhamster.com/porn-radar",
-      "summary": "xHamster's Porn Radar supplies you with a bunch of new porn videos you'll love watching for sure. Stream the hottest new porn on xHamster!",
+      "id": "c63406f889cfb6ad",
+      "title": "Stores | Graham Crackers Comics, Ltd.",
+      "url": "https://grahamcrackers.com/public/store",
+      "summary": "Shop comic books, graphic novels, new releases, back issues, collectibles, and more at Graham Crackers Comics. Explore our latest comics and fan favorites online.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2012,12 +2063,72 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3419412ccbdb034f",
-      "title": "Soapstone Countertops in Columbus, OH | Columbus Granite",
-      "url": "https://columbusgranite.com/products/natural-stones/soapstone/",
-      "summary": "Explore soapstone countertops for kitchens and bathrooms. Learn about the material and contact Columbus Granite to discuss colors and availability.",
+      "id": "a8b6233883f7672d",
+      "title": "THE 10 BEST Restaurants in Chantilly - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g57589-Chantilly_Fairfax_County_Virginia.html",
+      "summary": "Best Dining in Chantilly, Fairfax County: See 4,292 Tripadvisor traveler reviews of 256 Chantilly restaurants and search by cuisine, price, location, and more.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "adc63341023305fd",
+      "title": "THE 10 BEST Restaurants Near King Spa (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/RestaurantsNear-g57589-d23648031-King_Spa-Chantilly_Fairfax_County_Virginia.html",
+      "summary": "Restaurants near King Spa, Chantilly on Tripadvisor: Find traveler reviews and candid photos of dining near King Spa in Chantilly, Virginia.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62fdb27ae567f8e1",
+      "title": "The 10 Best Restaurants Near Me in Chantilly | OpenTable",
+      "url": "https://www.opentable.com/nearby/restaurants-near-me-chantilly",
+      "summary": "Discover top restaurants near me in Chantilly on OpenTable. Browse real-time table availability, view updated menus, and read reviews from fellow diners. Reserve your spot now.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2042,160 +2153,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e1f80aefbe634d17",
-      "title": "Tacoma streets measure leads in early election results | Tacoma News ...",
-      "url": "https://www.thenewstribune.com/news/politics-government/election/article316750666.html",
-      "summary": "City officials estimate that the measure, also known as Connect Tacoma or Prop. 1, would result in a total of $320 million in funding, both in direct revenues and in grant funding.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1a98fbc25f03d552",
-      "title": "Tacoma voters approve $320 million streets levy",
-      "url": "https://cityofdestinydaily.com/articles/tacoma-voters-approve-320-million-streets-levy-msg6ro9t",
-      "summary": "The day before the vote, Council Member Sandesh Sadalge told The News Tribune he feared \"ever being able to do anything if Proposition 1 doesn't pass,\" citing the budget shortfall. Second try succeeds This is the second time Tacoma voters weighed a streets levy in roughly 16 months. A previous version failed in April 2025.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "09a5a45f84a4008e",
-      "title": "Uncensored Porn Videos - xHamster",
-      "url": "https://xhamster.com/search/uncensored",
-      "summary": "Watch uncensored porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c1098ca9d5b72d07",
-      "title": "UPCOMING 释义 | 柯林斯英语词典 - Collins Online Dictionary",
-      "url": "https://www.collinsdictionary.com/zh/dictionary/english/upcoming",
-      "summary": "Upcoming events will happen in the near future. We'll face a tough fight in the upcoming election.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f53c6ad5abd8ecb",
-      "title": "upcoming中文，upcoming的意思，upcoming翻譯及用法 - 英漢詞典",
-      "url": "https://www.chinesewords.org/en/upcoming",
-      "summary": "at this meeting, the product owner presents the features most desired for the upcoming sprint, describing them so that the team can grasp what is expected. 在這個會議上，產品所有者會闡述即將到來的沖刺最需要的特性，描述它們，這樣團隊才會明白接下來他們要做什么。",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0d20a44aa937c510",
-      "title": "Video Bokep Terbaru Cewek indonesia | xHamster",
-      "url": "https://id.xhamster.com/categories/indonesian/newest",
-      "summary": "Cek video bokep terbaru Cewek indonesia di xHamster. Tonton semua video XXX terbaru Cewek indonesia sekarang juga!",
+      "id": "37497bf05030f414",
+      "title": "THE 30 BEST Restaurants in Chantilly - With Menus, Reviews, Photos ...",
+      "url": "https://www.restaurantji.com/va/chantilly/",
+      "summary": "We've gathered up the best places to eat in Chantilly. Our current favorites are: 1: Ocean8 Restaurant & Hookah, 2: Lazy Dog Restaurant & Bar, 3: Izakaya Nana - Virginia, 4: Yaki Sushi, 5: Silver Diner",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -2210,9 +2171,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2222,12 +2183,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "600de74b419619bb",
-      "title": "Vidéos pornos gratuites et films XXX - Site de vidéos de sexe",
-      "url": "https://fra.xhamster.com/",
-      "summary": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore avec des pros et amateurs en haute qualité !",
+      "id": "8b7ea4df4ac8b398",
+      "title": "The Best Restaurants in Chantilly Right Now | OpenTable",
+      "url": "https://www.opentable.com/neighborhood/va/chantilly-restaurants",
+      "summary": "There are 103 Asian restaurants alone, such as many Thai and Chinese dining establishments. Illustrating an appreciation for the Hispanic heritage of the region, there are also 43 different Mexican restaurants to enjoy.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2252,12 +2213,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8741a3891cc22b3a",
-      "title": "《不》1983怀旧经典老歌经典歌曲-陈百强 - 爱奇艺",
-      "url": "https://www.iqiyi.com/v_21h5vy7h308.html",
-      "summary": "视频详情 《不》1983怀旧经典老歌经典歌曲-陈百强 简介：《不》 (1983演唱会现场版)经典歌曲MV-陈百强 年份： 2024 时长： 03:20 播放量： 2122",
+      "id": "645a1aa6097f830e",
+      "title": "USPS.com",
+      "url": "https://www.usps.com/\"",
+      "summary": "USPS.com",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "upcoming smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2282,162 +2243,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b414fa09869cc3e3",
-      "title": "不现场版-陈百强_高清1080P在线观看平台_腾讯视频",
-      "url": "https://v.qq.com/x/page/t0680h9czsf.html",
-      "summary": "不现场版-陈百强",
+      "id": "1ea73b8136f40419",
+      "title": "VW Dealer in Schaumburg, IL | Castle Volkswagen of Schaumburg",
+      "url": "https://www.castlevwcars.com/",
+      "summary": "Shop new and used Volkswagen vehicles at Castle Volkswagen of Schaumburg. Explore current inventory, financing, specials and Volkswagen service in Schaumburg, IL.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "945e86970af86d4d",
-      "title": "不陈百强现场版_不陈百强mv_不陈百强原唱 - 抖音",
-      "url": "https://www.douyin.com/zhuanti/7199466676730021900",
-      "summary": "您在查找“不陈百强现场版、不陈百强mv、不陈百强原唱等陈百强视频信息”吗？ 抖音短视频帮您找到更多精彩的陈百强视频内容！ 让每一个人看见并连接更大的世界，让现实生活更美好",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc16d226ab478445",
-      "title": "陈百强|《不》1983年劲歌金曲现场陈百强经典代表永恒粤语经典_高清1080P在线观看平台_腾讯视频",
-      "url": "https://v.qq.com/x/page/x31395y2sp2.html",
-      "summary": "陈百强|《不》1983年劲歌金曲现场陈百强经典代表永恒粤语经典,简介:陈百强|《不》1983年劲歌金曲现场陈百强经典代表永恒 ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c7e93798c6b1138b",
-      "title": "陈百强《不》1983十大劲歌金曲总选现场版。-音乐视频-搜狐视频",
-      "url": "https://tv.sohu.com/v/dXMvMzM4NDQ5ODczLzE1ODAyOTAzMS5zaHRtbA==.html",
-      "summary": "音乐视频：陈百强《不》1983十大劲歌金曲总选现场版。",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1aea7f04ba5b3a63",
-      "title": "陈百强现场版《不》，经典之作-爱奇艺",
-      "url": "https://www.iqiyi.com/v_221iu7gcw08.html",
-      "summary": "[荃球音悦台] 陈百强现场版《不》，经典之作，很好听的一首歌曲，百听不厌！2023年3月3日发布。精彩内容，就在爱奇艺立即 ...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88607b8aa4d47905",
-      "title": "陈百强现场版《不》，经典之作，很好听的一首歌曲，百听不厌！,音乐,流行音乐,好看视频",
-      "url": "https://haokan.baidu.com/v?vid=10634725019007173564",
-      "summary": "陈百强现场版《不》，经典之作，很好听的一首歌曲，百听不厌！ ,本视频由8090经典老歌i提供,112269次播放,好看视频是由百度团队打造的集内涵和颜值于一身的专业短视频聚合平台",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Volkswagen Smart Glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
