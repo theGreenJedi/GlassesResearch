@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-07T06:27:48.825587+00:00`
+Generated: `2026-11-07T10:43:54.492024+00:00`
 
-- Intake files inspected: **236**
-- Candidates retained in this review window/history: **9360**
+- Intake files inspected: **232**
+- Candidates retained in this review window/history: **9231**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1872
+- `adjacent_radar`: 1855
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 563
-- `rejected_noise`: 6834
-- `source_review`: 52
+- `needs_editorial_verification`: 552
+- `rejected_noise`: 6731
+- `source_review`: 54
 - `watching`: 24
 
 ## Action queue
@@ -28,8 +28,6 @@ Generated: `2026-11-07T06:27:48.825587+00:00`
 | high | needs_editorial_verification | direct | [Google and XREAL launch AURA glasses with Android XR and 120 Hz Sony Micro-OLED displays - mobidevices.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5aSFZsNVF0VVd4cGtmUkpYMndpdnNFZ1RiU0paOTdFU0lRVDUxNTF0QURQZFNTNS1DNzJENE5OM3otUnR6SGNxX2RobEV0Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Just Arsenal, Ray Parlour and AI Glasses: Fun At The Oakley Meta Partnership Launch - Just Arsenal News](https://news.google.com/rss/articles/CBMitwFBVV95cUxOaTJ2WjQ3ZTJNbmMxMWhJdHRLUUpfRFNibjg3Um9DMjRld1RKeklZNlVzck9xc0ZSLXVQVzB6bHNTOFVhQkVwRUtIbGZMQmpfOGd1cGhSdlZidEZYWU1KcDR6Vkd2XzVKbFlJNnhRbDdfaXRoYjV1OG9fUUk1UnJ6UGVwZnlSclVEYjhQSnZGTTBrOHNPTWd6QUc3ZzZpalZZU21JZHhpeHNocVR5eUE1UzlfZjl1V0HSAbwBQVVfeXFMTXV2TlhRVkM3d3VfMm9Pd0llcXpaSHE5M3FJN09yS1E0aE1WekpZN0h1THhpeFlfa1Y1cVR6NmljMlpRaWtMeU5mY3FWanppVDhtNkJIaklITy1feW94elBpeXdIV2tEYXQ5LWNaazJZMGxSRmk0MDlDaGhHRHNyc0pkMFNFUXhXUzJvTS1iQzhIUkJYWno4djQ3MlhzdjNIZkxDRFA4NDV3MWJzMDFrMURuSUxDVGhQM2pvbXo?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Just Arsenal, Ray Parlour and AI Glasses: Fun At The Oakley Meta Partnership Launch - Just Arsenal News](https://news.google.com/rss/articles/CBMivAFBVV95cUxNdXZOWFFWQzd3dV8yb093SWVxelpIcTkzcUk3T3JLUTRoTVZ6Slk3SHVMeGl4WV9rVjVxVHo2aWMyWlFpa0x5TmZjcVZqemlUOG02QkhqSUhPLV95b3h6UGl5d0hXa0RhdDktY1prMlkwbFJGaTQwOUNoaEdEc3JzSmQwU0VReFdTMm9NLWJDOEhSQlhaejh2NDcyWHN2M0hmTENEUDg0NXcxYnMwMWsxRG5JTENUaFAzam9tetIBvAFBVV95cUxNdXZOWFFWQzd3dV8yb093SWVxelpIcTkzcUk3T3JLUTRoTVZ6Slk3SHVMeGl4WV9rVjVxVHo2aWMyWlFpa0x5TmZjcVZqemlUOG02QkhqSUhPLV95b3h6UGl5d0hXa0RhdDktY1prMlkwbFJGaTQwOUNoaEdEc3JzSmQwU0VReFdTMm9NLWJDOEhSQlhaejh2NDcyWHN2M0hmTENEUDg0NXcxYnMwMWsxRG5JTENUaFAzam9teg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1078](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1078) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1081](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1081) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1108](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1108) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1160](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1160) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.3.0-beta.1162](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.3.0-beta.1162) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -55,10 +53,6 @@ Generated: `2026-11-07T06:27:48.825587+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1297](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1297) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1298](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1298) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1300](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1300) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1075](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1075) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1083](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1083) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1085](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1085) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1087](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1087) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1088](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1088) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1089](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1089) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1096](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1096) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +265,12 @@ Generated: `2026-11-07T06:27:48.825587+00:00`
 | high | needs_editorial_verification | direct | [Road to VR Oct 7, 2026 Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Rutherford County Schools Ban Smart Glasses Over Cheating Fears During Testing - Hoodline](https://news.google.com/rss/articles/CBMirAFBVV95cUxPdXlST0JoU0N6MzRoQlNhQlh4S3M3QnJyX0lmWHpDc2tqZVNTMk1jX2ZneFVueThuVUNfdFFRY2l5MWlkVXdtSUg4M2lZbjFPZTVDWWZvM1d0S3BEWGtENzBJVmN0aXNTM2thSEp3M1ZfbWRNTjZPRE9MTVRFSDFJNHZTN1dtdWt1azRlSUNadjBIUUhhMXdkNmIyWWpJM0JuRlJRSkQza2VhTkc3?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [SamMobile 1d ago Samsung’s Intelligent Eyewear glasses will go on pre-order next week Coverage Samsung](https://www.sammobile.com/news/samsung-intelligent-eyewear-glasses-pre-order-date/) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Samsung Intelligent Eyewear Launch Timeline Surfaces Online - Gadgets 360](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUEwbUw5MGhjcXBIeW5EWGdwdlFCUTc4aHJUSW9HemZFWkJ3VTUxTHpXT3kzSTRqRDZnampKTmhWZVlzRVVWd25QSlRsYVA4LU9PSU1fczNrcllsLXlzU2Q1b3gtU3o1dVFub05ldHVsU3F2bUNKcl9rNHRFR3AwMVJTZ1VuZnFQQjFPSnFLX3NTc1pZLXlaRW5R0gGfAUFVX3lxTE9VQVpBOGNuVFZNY3dUc3llRk93WWxpTnFJWFBVa3VjeHJhOWc4MDA1ZE1Pa3NGc1lhY1F5R0xDWEpGRkxZanVjRDJNVkFZUlI1aW15ckhNSVNJOER6bkhsbjR6cU5CcGdrX2VsRld5MnNwY191QThkdGpuTDF6ZkV6SWtWNnZBSk4xM0dQdWNPZENZNTByYlpHV1hTOEJlRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung Intelligent Eyewear Launch Timeline Surfaces Online - Gadgets 360](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUEwbUw5MGhjcXBIeW5EWGdwdlFCUTc4aHJUSW9HemZFWkJ3VTUxTHpXT3kzSTRqRDZnampKTmhWZVlzRVVWd25QSlRsYVA4LU9PSU1fczNrcllsLXlzU2Q1b3gtU3o1dVFub05ldHVsU3F2bUNKcl9rNHRFR3AwMVJTZ1VuZnFQQjFPSnFLX3NTc1pZLXlaRW5R?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung opens smart glasses preorders November 12 with Warby Parker - NewsBytes](https://news.google.com/rss/articles/CBMitAFBVV95cUxQY0c1Ym1SNW0xLVRhQ3drNDNicHV2ZWNUdjRTTmtkNFN5LS1GSFBNX21iLUQ2V0RyS2FkSTkzX3FZQjE5Y1NYZnR4TnFLTGw1eHZ3ZFpWY2VVRkJBOFIxUmQzbllPb1NtemRqWXp5b0x2RjY1UzBqSkhEbm0yX3BYRTEyN2FiMEVTYnkwWHpqdEViU2JZVEIwNWRDUWlrYWJvdUNGcmYwQzhJaUtCLVUwdkRpRXE?oc=5) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiS0FVX3lxTE53Q1E2TUROTjgzWllZTWtGSHdnTndNTktiYTl2ZzNPRGJsaTFUWGs5ZG42SkJzN3NWM0l3blNjMzVQLTRnWmx3a3kxb9IBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung Prepares Gemini-Based Smart Glasses to Launch in December 2026 - VOI.ID](https://news.google.com/rss/articles/CBMiQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQdIBQkFVX3lxTFB1SWhxVjR5LWZvYnRfRzhyeEoyVFhGVjNaTVVtWDFGa1VabDFMNWZnSzk2NkdCVlYtaHhaTVhENXdsQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung's "Intelligent Eyewear" smart glasses get a pre-order date – and you only have to wait one more week until you can book your Android](https://news.google.com/rss/articles/CBMi_wFBVV95cUxOOUw4cF9lM3JSTmpycFFqWm5tMldrWlJqR3NtMWZJTTNfQmZGdi1zR3ExcnVkS2piNkNhZWFGVWlyc0E1ZFhWcTkyZzN6dUxOWUd5Sm9xMFFwVzFEZmo2TUFGTmxhcmdCTzdraWxrVm15bFh2c1JDWUlSMjRMTG1xeXQ2YVpyVVc1MWwzRDBPQzE2YnZYWHo1bXN4TTNKSTRZMmFoU0U3WGJnZXZ2cmhKaldUbXhQSENXUU1BT1BrQ0Z5Y2oxVk9DWXI5OWxqRkdWRGRYS005bDdEZFNSTXFhRTVkc0dQTmp1dnpjMm5WdXVSRkhfdlNRM200czFoeWM?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
