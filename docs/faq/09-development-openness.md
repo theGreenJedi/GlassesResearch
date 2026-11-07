@@ -500,3 +500,14 @@ For consumer-scale integrations, [Meta's wearables developer FAQ](https://develo
 - **Brilliant Labs Halo/Frame:** the [BSD-licensed Brilliant SDK](https://github.com/brilliantlabsAR/brilliant_sdk) provides host-side Python, Flutter and Web Bluetooth paths plus device scripting.
 
 **Before buying for an app:** demand a current SDK, runnable sample, exact hardware compatibility, permission list, test-install procedure, distribution rules and source-code license. A vendor API is not automatically an open bootloader or owner-controlled cloud. [Original community question](https://www.reddit.com/r/SmartGlasses/comments/1xlrmsx/which_smart_glasses_are_actually_open_for_third/). No GlassesResearch compatibility test or unannounced app-store launch is asserted.
+
+
+## Should smart glasses work with the apps we already use?
+
+**Yes, existing-app interoperability is a useful buying criterion—but “works with my phone” does not mean “can show or control every phone app in the lenses.”** The answer depends on whether the glasses are Bluetooth audio accessories, phone-projected HUDs, tethered video displays or standalone XR devices. A Bluetooth pair can carry compatible phone audio without exposing that app's interface; a notification HUD may show only selected messages; a wired video display may mirror a compatible source without giving the glasses native app controls.
+
+[Google's Android XR developer documentation](https://developer.android.com/develop/xr) says most existing Android 2D apps can run as panels on **XR headsets and wired XR glasses**, while **audio and display AI glasses** use a distinct projected-app development path. That is a platform distinction, not a guarantee that a named phone app works on a particular shipping pair. [Vuzix's Z100 Android SDK](https://support.vuzix.com/docs/sdk-for-android) illustrates another approach: a **phone app** sends content to a lightweight glasses display; the glasses do not thereby become a general-purpose Android app host.
+
+**Test the exact task, not the logo:** for Spotify, check whether playback controls and lyrics are actually shown (audio streaming alone proves neither); for messaging, check notification content, reply support and privacy; for maps, check directions versus full-screen mirroring; for video calls, check microphone, camera and app permissions separately. Verify phone OS, companion-app version, supported markets, connection loss and whether features require a subscription. If the vendor says only “compatible with Android/iOS,” ask for an explicit feature matrix.
+
+[Original observed discussion](https://www.reddit.com/r/SmartGlasses/comments/1xmtrr7/should_smart_glasses_work_with_the_apps_we/) expresses a user expectation, not a confirmed interoperability standard. **No GlassesResearch cross-app compatibility bench test is claimed. Reviewed November 4, 2026.**
