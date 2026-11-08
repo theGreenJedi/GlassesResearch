@@ -1,26 +1,27 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-07T16:29:06+00:00**
+Generated: **2026-11-08T16:42:35+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **361** (not the published count)
-- Unanswered research candidates: **68**
+- Canonical registry size: **364** (not the published count)
+- Unanswered research candidates: **71**
 - Observations this run: **89**
-- New distinct questions: **2**
+- New distinct questions: **3**
 
 ## Source health
 
-- github_issues: ok — 15 observations
+- github_issues: ok — 14 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 46 observations
+- reddit_rss: partial — 47 observations
 - google_search_console: ok — 8 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000360** — How was the Memomind one NYC event? Looking for impressions and photos
-- **Q-000361** — Real-world screen-on limits?
+- **Q-000362** — What setup worked for you if you stopped propping a tablet up in bed?
+- **Q-000363** — Brilliant Labs is SHIPPING Halo?
+- **Q-000364** — Can today's AI glasses actually solve exam questions without a phone or internet?
 
 ## Research queue (first 20)
 
