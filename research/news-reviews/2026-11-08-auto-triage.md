@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-08T19:02:11.720760+00:00`
+Generated: `2026-11-08T20:36:52.365084+00:00`
 
-- Intake files inspected: **224**
-- Candidates retained in this review window/history: **8963**
+- Intake files inspected: **221**
+- Candidates retained in this review window/history: **8895**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1797
+- `adjacent_radar`: 1791
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 543
-- `rejected_noise`: 6531
-- `source_review`: 55
+- `needs_editorial_verification`: 542
+- `rejected_noise`: 6471
+- `source_review`: 54
 - `watching`: 22
 
 ## Action queue
@@ -68,9 +68,6 @@ Generated: `2026-11-08T19:02:11.720760+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1328](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1328) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1330](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1330) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1332](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1332) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1117](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1117) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1118](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1118) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1119](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1119) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1120](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1120) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1121](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1121) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1124](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1124) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +268,9 @@ Generated: `2026-11-08T19:02:11.720760+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Intelligent Eyewear set to launch in the US and South Korea this December - Sammy Fans](https://news.google.com/rss/articles/CBMivAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZdIBvAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Rumored to Launch Mid-December - Phandroid](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDl2MjRnOTJpRU9GT1d0eHRIak9pU29vaUR6T1Y5SC1YLXZQV1BGYjYyUWpCYnN6S1RERHozc1ZnQldkbGFwa1dhWVlrNDVJWG5NSDBUZF9PNnFfUFBNSDZhOFlUcnhPRVExSHJLTVpHOUV4LUdhbF84UEdwVVhuYTMtdXZFQVM0RzZWZk5BQ2TSAZYBQVVfeXFMTmhZdWRaaTIyY3hqY24tXzVkSWU3RmlndjZMWldDNEVxdTAxNDZTcno2b29ZNEFBRGxpeFB0b0lHcHZfM0JZeEcyWG4xdzk1S2dlY0k1OENlOHUwWmJvMGNXNjFfZ3FNOGpzWThNaTAwekxoMXE3dXJmS0FKN3ROeDd2T3ZPM2dZcTZjVVNkSExRaGRhZUJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Senators Launch Investigation into Meta’s Smart Glasses Over Nonconsensual Filming - PetaPixel](https://news.google.com/rss/articles/CBMitgFBVV95cUxPc0k4VjJZaHB4UHlIb3U2b1p4QjdsLU0tV2NXSEJGMlc3b3NXRU1OV3FUdXVxeDVma3hoWkdCVmY4emVNTGNlYWtaXy1GcXNKWmRTUzd0bmRGWVRfR3JnTmNiVGJTWE01X1BKR0VWY0VQUmNFMnRaeTI5YnpCMWR0RnRCY2pYaDl3bnd5VHZqYjV1bmpiM3JkN3NZcXYtMUo2VGFneEpVNjhhSy1YaURFZl83Mm8xdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
