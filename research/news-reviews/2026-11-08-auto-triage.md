@@ -1,19 +1,19 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-08T14:30:04.766466+00:00`
+Generated: `2026-11-08T16:05:24.608076+00:00`
 
-- Intake files inspected: **223**
-- Candidates retained in this review window/history: **8995**
+- Intake files inspected: **225**
+- Candidates retained in this review window/history: **9040**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1825
+- `adjacent_radar`: 1828
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 547
-- `rejected_noise`: 6533
+- `needs_editorial_verification`: 549
+- `rejected_noise`: 6573
 - `source_review`: 52
 - `watching`: 23
 
@@ -195,6 +195,7 @@ Generated: `2026-11-08T14:30:04.766466+00:00`
 | high | needs_editorial_verification | direct | [Maverick AI / AI Pro SDK Portal - everysight.github.io](https://everysight.github.io/maverick-ai-docs/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Request SDK – Everysight](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Rokid Glasses 2 launch with upgraded design, bigger battery, and Dolby Audio support - Notebookcheck](https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3NqMktYZnZrNWpoSHZWNUpPRXlWUUlHcVMxZTd4OWptSHhVeEk0TnRhNTZyMTNnS2JNNjlOVmJQSFRSTHBXVkpPOU43aGFOX0VFYzhDMDJsaklseElnQmdJX2hMNlpSSjZ3YzhETFRDWnlMMDd2SkpxWmlsaVAzYkJwVkpDZmZvWjN6RU5uUFN2dm5RT3NJNHJ1Y2cwdVZmQlAwNHhXVmF1QjQtWHpZUFZ1Z3QydVdrdVNva3k2ZWFzbjFWbEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Pre-Orders Start November 12th with Dec 2026 Launch - Geeky Gadgets](https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xMDlpUzNYRWFBYWFsNU5jMzhXWkZ4WGlPZnlQbUNhdFJjYWFwVzhubXJBclh5TFdILVZsY1pTcmdJNWRaazJzajIzMTdCdDVsempsZUh1T1JZM1paSkZobVIwZHk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Android XR smart glasses pre-orders start November 12, initial launch limited to US and Korea - YugaTech](https://news.google.com/rss/articles/CBMiywFBVV95cUxPb0VXamU5MHJKc1FCaFpfcVR0UDE4aHNtQTZHeFdwUjRGamNJSERha0p2dGs4QmF6a2ZkMWpvZ3ZjcUtrck9lUl9FZTlvaEdLYmxYN2RhY21PVTkyQlh5UjFHSFFTYUxySjUxNmUyVXpiUTZrOG5raWpUMXU4bnU4RE5UanRSRzJYcVhObEJ1MVRiNUMtOFc0cjRuZ1VLYTRTcU5ZbW5tMzJxaVRoa2lXVHZTZUVmV1pmRnFoZFlwRm8yWUNRQlk5bjZ4QQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Preparing to Launch Its First AI Glasses in December - Root-Nation.com](https://news.google.com/rss/articles/CBMigAFBVV95cUxOTzVob0R4NTFBY3BGc1RsQzRSVkx5MEFET1hNUlYtaHRJXzhsRmZaRzd1S3EyRi1SYVVwcHdoci10Y3RNSmRjVzhjcVBjWnlpeEZNOFJwN3pmLUhqbWI3U01XLVI4ZW5CYTBpRFNPYkpFd0l2R1ZZUFZrUFJtWkZYYQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung Smart Glasses Set For December Launch But Australia Misses Initial Release - ChannelNews.com.au](https://news.google.com/rss/articles/CBMitAFBVV95cUxPYUdlWlgyMWFNcG5HTkZENzVaeUEzdmd5cXo2VjdQcTlLZWdjeHVkUUZzbzVxVnV5cWlaeDZscHAtRG1tazBia3FWLUtKQlFLU1dISkRBY25tTjRlSzBtdmtOdmZaZDNZUFA3cWFfSk9DMVJfeERkWjlJWXFhaTJYZkF3RFJyS2VoLUtVaVpCUWRuYkdJUHJDNGtMM3E3Q2ozS1RNYmw2VW13c1V5WXZZQWM5ai0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -266,11 +267,10 @@ Generated: `2026-11-08T14:30:04.766466+00:00`
 | high | needs_editorial_verification | direct | [Samsung's Android XR Smart Glasses Arrive in December, Preorders Nov. 12 - PCMag Middle East](https://news.google.com/rss/articles/CBMiswFBVV95cUxPN0FqeUZWRURYQXBDckc5QVJLT05SQl9yZXgzQjFwWmxKc3hFZ0puZDMyNXU3UGEwMFktU2o5M1hGdU1iSE1Ed0R4N3ZfaFJMZF9iRUNDQlJ4aGxLV3UzaTNiR2xuM1hVMzJxNmhfR0VHQU5uemgzdC1SLWx1OXV3ZXhzWDM1QU9jeGFvWEYtazRjajFHd1lFTFU2UFNHeWZNeUJxMWdsYUVJUjFpeWNlT3RqNA?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMilwFBVV95cUxNMUpZQUdlZ0lJTHVQdFV1Yk9JNVFPS0YxZEdoWVpxQjlhdVF2Um1GeDJKSi1YSGJValM2V1Z5ZTNheElyY01maVVOUGFpeUxCdnBTNlpZY1JDRjlMQU9saEgxaXNfVnNpUW0yZDJsNnV0WWs2Y2RwWk5kQ3o4eU5vVlc5NmYzYUJwMEY3dG9YSUI4Z2pETTlv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMinwFBVV95cUxPNEQ0czBlVTl4d2NiR2Y3MG94dkp5LXZRZk5uR3R5ZVVHd0t1My1kZmhHeVVwMmlrcElGWHZ1d1h6Y05FWE9KOXdFS2xYaG8yOEVpZFE3UGR5Zi11VFJFT3lZNTZfSDZ6MV9qbS1jZHdTMWREYmhkZkw3ZDZWX0VrVWV2Q0dFdzAyaUEyc3plYWxsSllVQWgxYUxkME5wZEk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Intelligent Eyewear set to launch in the US and South Korea this December - Sammy Fans](https://news.google.com/rss/articles/CBMivAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZdIBvAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Rumored to Launch Mid-December - Phandroid](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDl2MjRnOTJpRU9GT1d0eHRIak9pU29vaUR6T1Y5SC1YLXZQV1BGYjYyUWpCYnN6S1RERHozc1ZnQldkbGFwa1dhWVlrNDVJWG5NSDBUZF9PNnFfUFBNSDZhOFlUcnhPRVExSHJLTVpHOUV4LUdhbF84UEdwVVhuYTMtdXZFQVM0RzZWZk5BQ2TSAZYBQVVfeXFMTmhZdWRaaTIyY3hqY24tXzVkSWU3RmlndjZMWldDNEVxdTAxNDZTcno2b29ZNEFBRGxpeFB0b0lHcHZfM0JZeEcyWG4xdzk1S2dlY0k1OENlOHUwWmJvMGNXNjFfZ3FNOGpzWThNaTAwekxoMXE3dXJmS0FKN3ROeDd2T3ZPM2dZcTZjVVNkSExRaGRhZUJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Senators Launch Investigation into Meta’s Smart Glasses Over Nonconsensual Filming - PetaPixel](https://news.google.com/rss/articles/CBMitgFBVV95cUxPc0k4VjJZaHB4UHlIb3U2b1p4QjdsLU0tV2NXSEJGMlc3b3NXRU1OV3FUdXVxeDVma3hoWkdCVmY4emVNTGNlYWtaXy1GcXNKWmRTUzd0bmRGWVRfR3JnTmNiVGJTWE01X1BKR0VWY0VQUmNFMnRaeTI5YnpCMWR0RnRCY2pYaDl3bnd5VHZqYjV1bmpiM3JkN3NZcXYtMUo2VGFneEpVNjhhSy1YaURFZl83Mm8xdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
