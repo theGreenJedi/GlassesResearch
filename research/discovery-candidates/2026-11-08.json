@@ -1,38 +1,43 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-08T07:24:54.829365+00:00",
-  "candidate_count": 59,
-  "classifier_irrelevant_count": 54,
+  "discovered_utc": "2026-11-08T09:09:48.514429+00:00",
+  "candidate_count": 97,
+  "classifier_irrelevant_count": 85,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 2,
-    "broad_web": 38,
-    "developer": 19
+    "adjacent": 12,
+    "broad_web": 64,
+    "developer": 21,
+    "research": 2
   },
   "relationship_counts": {
-    "direct": 2,
-    "enabling": 1,
-    "adjacent": 2,
+    "direct": 0,
+    "enabling": 2,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 54
+    "irrelevant": 85
   },
   "type_counts": {
-    "model": 4,
-    "video": 4,
-    "news": 27,
-    "tool": 21,
-    "sdk": 19,
+    "model": 5,
+    "review": 1,
+    "video": 1,
+    "news": 34,
+    "research": 3,
+    "tool": 29,
+    "sdk": 22,
     "optics": 3,
-    "retail": 5,
-    "community": 3
+    "policy": 7,
+    "retail": 2,
+    "community": 21
   },
   "routing_counts": {
-    "adjacent_radar": 2,
-    "community_evidence_review": 1,
-    "model_catalog_review": 1,
-    "reject_noise": 54,
-    "report_card_evidence": 1,
-    "research_news_review": 5,
+    "adjacent_radar": 10,
+    "community_evidence_review": 2,
+    "deep_research": 2,
+    "development_hacking": 1,
+    "policy_privacy": 1,
+    "reject_noise": 85,
+    "research_news_review": 12,
     "research_optics": 3
   },
   "policy": {
@@ -47,14 +52,14 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "5da7d472f8e4efca",
-      "title": "Prescription Smart Glasses: Everything Your Optician Needs to Know",
-      "url": "https://aircaps.com/blog/prescription-smart-glasses",
-      "summary": "Prescription smart glasses are smart frames that hold corrective lenses in addition to whatever the device's core hardware does — a camera, an in-lens display, microphones, an AI assistant, or some combination.",
-      "discovery_channel": "broad_web",
-      "query": "prescription smart glasses",
+      "id": "7ceea20a0d53bf64",
+      "title": "How to Get a Prescription Refill Without a Doctor - Healthline",
+      "url": "https://www.healthline.com/health/how-to-get-prescription-refill-without-doctor",
+      "summary": "You can get a prescription refill without a primary care doctor by contacting your pharmacy, using telemedicine, or exploring emergency refill options.",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 3,
       "keyword_hits": [
         "prescription"
@@ -65,66 +70,35 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "direct",
+      "relationship": "enabling",
       "content_types": [
+        "research",
         "optics"
       ],
-      "primary_type": "optics",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "research_optics"
+        "research_optics",
+        "deep_research"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "publication_gate_reason": "enabling technology signals: prescription",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bb4a291bbc857836",
-      "title": "XREAL Aura Brings Android XR to $1,099 Smart Glasses",
-      "url": "https://www.geeky-gadgets.com/xreal-aura-android-xr-glasses/",
-      "summary": "XREAL Aura Android XR glasses launch with a lightweight 95g design and dual Sony micro OLED displays. Find full specs, pricing, and where to order them.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL AURA",
+      "id": "0f08e2eed4aa9286",
+      "title": "How to Write a Prescription (with Examples) | 7 Steps for Safety",
+      "url": "https://www.studentdoctor.net/2018/08/15/how-to-write-a-prescription/",
+      "summary": "Learn how to write a prescription safely in 7 clear steps. Includes examples of each section (Rx, Sig, Disp, refills, and provider signature) to reduce errors.",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "research",
       "materiality_score": 3,
       "keyword_hits": [
-        "launch"
+        "prescription"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "direct",
-      "content_types": [
-        "model",
-        "optics"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "research_news_review",
-        "model_catalog_review",
-        "research_optics"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses, xreal",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9e052f3ef2b4b125",
-      "title": "Unique Photo | Camera Store, Classes, Rentals & Photo Lab",
-      "url": "https://www.uniquephoto.com/",
-      "summary": "New Jersey & Pennsylvania's largest camera & video superstore — shop new & used cameras, lenses, and accessories, plus the region's largest schedule of photography classes, workshops, and manufacturer demo events, camera rentals, a full-service photo lab, trade-ins, and a community of creators.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -133,29 +107,189 @@
       "attribution_required": false,
       "relationship": "enabling",
       "content_types": [
-        "video",
-        "optics",
+        "research",
+        "optics"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "deep_research"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4c79a6e447e8a544",
+      "title": "Layout 1",
+      "url": "https://www.mds-foundation.org/api/file/file/2023-Updated-MDS-Insurance-Booklet-PRINT-v0.1.pdf",
+      "summary": "(877) 267-2323 Provides detailed information on Medicaid, including information on enrollment, new initiatives and prescription drugs. Also includes information on reimbursement and financial assistance.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk",
+        "optics"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "research_optics",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be8df860a9ee25c9",
+      "title": "CSNbbs",
+      "url": "https://www.csnbbs.com/",
+      "summary": "Hello There, Guest! Registered users see far less ads! Register today and join our virtual tailgate. (Login — Register)",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5eccbc1a887e9ddd",
+      "title": "Current Events - US Message Board",
+      "url": "https://www.usmessageboard.com/forums/current-events.20/",
+      "summary": "Current News and Events After years of screaming about the \"Handmaid's Tale\", now liberal women have voted in a man whose wife is forced to dress like this. Astonishing.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "74358a2fde3be727",
+      "title": "Donald Trump - US Message Board",
+      "url": "https://www.usmessageboard.com/forums/donald-trump.153/",
+      "summary": "On the Trump train? Not up for a full scale debate in the Politics forum, but just want to chat with fellow supporters of Donald Trump? This is the forum for you! #MAGA",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
         "community"
       ],
-      "primary_type": "video",
+      "primary_type": "community",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
-        "research_optics",
-        "community_evidence_review"
+        "community_evidence_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
-      "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: lenses",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "be366f12645dab13",
-      "title": "Cities Nearby Orlando, Florida, United States",
-      "url": "https://www.thecitiesnow.com/united_states/florida/orlando",
-      "summary": "Find five hundred cities near Orlando, Florida, United States from closest to farthest by distance. Distances from Orlando to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "id": "d808a3c7da408355",
+      "title": "Iran - US Message Board",
+      "url": "https://www.usmessageboard.com/forums/iran.83/",
+      "summary": "The civilized government of Iran sentences woman and her band members to 74 lashes and a travel ban for singing without a hijab.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9f811b2fdbe44f36",
+      "title": "Israel and Palestine - US Message Board",
+      "url": "https://www.usmessageboard.com/forums/israel-and-palestine.30/",
+      "summary": "Thoughts in this conflict?",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -181,12 +315,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "350323db4c57179e",
-      "title": "security.microsoft.com - Sign in to your account",
-      "url": "https://security.microsoft.com/",
-      "summary": "Sign in to your Microsoft account to access security features and manage your data and devices securely.",
+      "id": "b67af84afe08ec0a",
+      "title": "MDS Foundation",
+      "url": "https://www.mds-foundation.org/support/mds-exchange/",
+      "summary": "The MDS Foundation is a global non-profit advocacy organization that for over 30 years has supported patients and their families as well as healthcare providers in the fields of MDS and its related diseases.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -212,10 +346,169 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "325441fccdf7d024",
-      "title": "Bands we've notewatched | The Range Planet",
-      "url": "https://therangeplanet.proboards.com/thread/1222?page=2",
-      "summary": "Here's a new thread to organize our notewatching efforts by - an archive of all the bands that we've notewatched members of! Since we've notewatched many vocalists who have replaced previous",
+      "id": "6c47f6a741918400",
+      "title": "Patient and Family Forums - MDS Foundation",
+      "url": "https://www.mds-foundation.org/educational-hub/forums/",
+      "summary": "The MDS Foundation is a global non-profit advocacy organization that for over 30 years has supported patients and their families as well as healthcare providers in the fields of MDS and its related diseases.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b655acca684582f",
+      "title": "Religion and Ethics - US Message Board",
+      "url": "https://www.usmessageboard.com/forums/religion-and-ethics.25/",
+      "summary": "Religion, Philosophy and the discussion of right and wrong",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6db5894342ebd959",
+      "title": "TV Forum - US Message Board",
+      "url": "https://www.usmessageboard.com/forums/tv-forum.119/",
+      "summary": "Discussions for TV Shows, Movies, etc.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0c29c936cbd05aeb",
+      "title": "Blue Angels Pilot Maj. Scott Laux Removed From Team -",
+      "url": "https://lakelandgazette.info/news/2026/11/07/blue-angels-pilot-maj-scott-laux-removed-from-team/",
+      "summary": "The U.S. Navy removed Marine Corps Maj. Scott Laux from the Blue Angels flight demonstration team. The decision was announced by the Chief of Naval Air Training (CNATRA) on November 6, 2026, just as the team began its final event of the 2026 season—the Homecoming Air Show at Naval Air Station Pensacola, Florida.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d1a5ba0d7b9a3fab",
+      "title": "@FordOnline - at.ford.com",
+      "url": "https://www.at.ford.com/us/en/home.html",
+      "summary": "Built From Heritage: The Ford Racing R125 Mustang Brings Ford Racing Parts to Life A 1966 Mustang Fastback connects Ford Racing history with the parts, partners, and craftsmanship shaping modern customization.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "10fff4600e1ee2ea",
+      "title": "Blue Angels Fly With 5 Jets After Scott Laux Removed From Team — Must ...",
+      "url": "https://www.mustdopensacola.com/news/blue-angels-five-jets-homecoming-airshow-2026",
+      "summary": "The Blue Angels are flying with five jets at the 2026 Pensacola Homecoming Airshow after No. 6 pilot Scott Laux was removed for failing to uphold team standards.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -243,10 +536,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "590dccf807ea82f8",
-      "title": "Bryan Cranston | The Range Planet - ProBoards",
-      "url": "https://therangeplanet.proboards.com/thread/2637/bryan-cranston?page=2",
-      "summary": "Reply Bryan Cranston (12,423 views) Actions",
+      "id": "b7732370791449ff",
+      "title": "Blue Angels pilot Scott Laux booted from elite Navy flight team for ...",
+      "url": "https://nypost.com/2026/11/08/us-news/blue-angels-pilot-scott-laux-booted-from-elite-navy-flight-team-for-failing-to-meet-standards/",
+      "summary": "Blue Angels pilot Maj. Scott Laux has been removed from the elite Navy flight team for failing to meet standards, forcing the team to fly 5 jets.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -274,12 +567,639 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1c5c05293b325f21",
-      "title": "Buy Gift Cards - Default location",
-      "url": "https://www.classiccinemas.com/gift-cards",
-      "summary": "Send a gift card in the mail Physical gift cards are shipped via Priority Mail with an additional $7.00 shipping fee. You can also buy gift cards at the theatre.",
+      "id": "b0871c070607f4f8",
+      "title": "Blue Angels pilot Scott Laux removed from team for failing to uphold ...",
+      "url": "https://bucswire.usatoday.com/story/news/military/blueangels/2026/11/06/scott-laux-blue-angel-pilot-removed-from-team-ahead-of-homecoming-show/92649060007/",
+      "summary": "The Blue Angels removed No. 6 pilot Maj. Scott Laux from the team after he \"failed to uphold the standards\" expected of a Blue Angels member.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99d8217793154d48",
+      "title": "Blue Angels Pilot Scott Laux Removed From Team | AeroCorner",
+      "url": "https://aerocorner.com/news/blue-angels-pilot-scott-laux-removed/",
+      "summary": "Blue Angels pilot Maj. Scott Laux was removed for failing to uphold team standards, the Navy said, and the team flew five jets at its Pensacola finale.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f82f8950b2a5728f",
+      "title": "Blue Angels remove Maj. Scott Laux ahead of homecoming airshow - MSN",
+      "url": "https://www.msn.com/en-us/technology/general/blue-angels-remove-maj-scott-laux-ahead-of-homecoming-airshow/ar-AA2gXvCB",
+      "summary": "The U.S. Navy has removed Marine Corps Maj. Scott Laux, the Blue Angels ' No. 6 opposing solo pilot, from the flight demonstration team, citing a failure to meet the standards expected of its members.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6d99a6b8b6061178",
+      "title": "Buy a New Ford® Vehicle Online or In Store | Ford®",
+      "url": "https://www.ford.com/buy/",
+      "summary": "Shopping for a new Ford® vehicle? Get transparent pricing, compare payment options, value your trade-in and purchase online or at a participating Ford Dealer.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "50b63e3c0d29375a",
+      "title": "Family Entertainment Center in San Antonio, Tx | AR's Entertainment Hub",
+      "url": "https://www.arsentertainmenthub-sanantonio.com/",
+      "summary": "AR's Entertainment Hub serves to bring a comprehensive family entertainment option to San Antonio, Tx & the surrounding area. We have fun for all ages. Bowling, Arcades, Laser Tag, Black-Light Mini-Golf, Bumper Cars, Soft Play, Roller Skating, Food, Drinks, Full Bar, Corporate Events, and More!",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1a8d174b7a9056c9",
+      "title": "Federal Report Shows Homelessness Declining Across the U.S., With ...",
+      "url": "https://political.org/2026/06/01/federal-report-shows-homelessness-declining-across-the-u-s-with-notable-drops-in-california/",
+      "summary": "A new federal report released in the spring of 2026 indicates that homelessness has declined both in California and across the United States, marking a notable reversal of trends that had alarmed policymakers and advocates for years.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "734bba4871d79a64",
+      "title": "Ford Dealer, Used Car Sales & Service - Pasco WA | Corwin Ford Tri-Cities",
+      "url": "https://www.corwinfordtricities.com/",
+      "summary": "Find the perfect new or used car for sale in Pasco, WA at Corwin Ford of Tri-Cities. A leading car dealer in Pasco, WA.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "758f361d8fadfd03",
+      "title": "Ford Motor Company - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ford_Motor_Company",
+      "summary": "The Ford Motor Company (commonly known as Ford, sometimes abbreviated as FoMoCo) is an American multinational automobile manufacturer headquartered in Dearborn, Michigan, United States. It was founded by Henry Ford and incorporated on June 16, 1903.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "afea565f6b912033",
+      "title": "Ford Motor Company | Official Ford Corporate Site",
+      "url": "https://corporate.ford.com/homepage/",
+      "summary": "At Ford, we believe in putting passion to work. For over 120 years, Ford has shown up for our customers and communities with a unique blend of grit, optimism, and resilience, consistently keeping an eye on the future.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d827a50c3cf0089a",
+      "title": "Ford Official Site | Vehicles, History & Community",
+      "url": "https://www.fromtheroad.ford.com/us/en/home",
+      "summary": "The official home for stories from Ford. Get the latest news, in-depth vehicle features, media site information, and meet the people and ideas driving our company forward.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0924ba94c9877029",
+      "title": "Ford Vehicle Showroom",
+      "url": "https://shop.ford.com/showroom/?gnav=header-shop-bp&linktype=build",
+      "summary": "No vehicles were found that match. Revise your selections in the filter window to the left or start fresh by clearing your selections with the button below.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40c219f46364c277",
+      "title": "Ford Vehicles",
+      "url": "https://www.fromtheroad.ford.com/us/en/vehicles",
+      "summary": "A Bronco halo build puts Ford Racing Parts’ new supercharged crate engine — over 1,200 horsepower and over 1,000 lb.-ft. of torque — on display for builders and enthusiasts.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a108dac9b024db88",
+      "title": "Ford® - New Hybrid & Electric Vehicles, SUVs, Crossovers, Trucks, Vans ...",
+      "url": "https://www.ford.com/",
+      "summary": "Discover the latest lineup in new Ford vehicles! Explore hybrid & electric vehicle options, see photos, build & price, search inventory, view pricing & incentives & see the latest technology & news happening at Ford.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6f181cc54302d77",
+      "title": "How do you file a complaint on a lawyer for lying to you? So it’s ...",
+      "url": "https://answers.justia.com/question/2023/07/07/how-do-you-file-a-complaint-on-a-lawyer-969602",
+      "summary": "A: If you believe a lawyer has lied to you and want to file a complaint, follow these steps: review the lawyer's code of ethics, contact the state or local bar association, gather evidence, document your concerns, file a formal complaint, and follow up with the bar association.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "policy"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc043c4d89772c82",
+      "title": "HUD Announces Largest Decrease in Homelessness",
+      "url": "https://www.hud.gov/news/hud-no-26-090",
+      "summary": "WASHINGTON - Today, the U.S. Department of Housing and Urban Development announced the largest decrease in homelessness on record in American history. According to data from the 2026 nationwide Point-in-Time (PIT) count, 698,425 individuals were homeless on a single night in January, a 6.3% decrease ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0560ba05adeefbc4",
+      "title": "Scott Laux Bio, Age, Blue Angels Removal, Career & Net Worth",
+      "url": "https://thebiographybytes.com/scott-laux/",
+      "summary": "Blue Angels Maj. Scott Laux was removed from the team November 6, 2026. Explore his Navy flight history, Marine career and what officials confirmed.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "449f6e8f28964a9a",
+      "title": "Scott Laux Removed From Blue Angels What The Navy Has Said",
+      "url": "https://allaboutlawyer.com/scott-laux-removed-from-blue-angels/",
+      "summary": "Marine Corps Maj. Scott Laux, the Blue Angels’ No. 6 opposing solo pilot, has been removed from the Navy Flight Demonstration Squadron for failing to uphold the standards expected of its members.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c561a78017220ab2",
+      "title": "Scott Laux Removed From Blue Angels: What Did Pilot Do? Navy K...",
+      "url": "https://www.ibtimes.sg/scott-laux-removed-blue-angels-what-did-pilot-do-navy-keeps-reason-secret-96016",
+      "summary": "The Navy removed Blue Angels pilot Maj. Scott Laux for failing to meet squadron standards but has not disclosed the circumstances.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f0303448ca0bb8f6",
+      "title": "Scott Laux, Blue Angels pilot #6 removed from team - USA TODAY",
+      "url": "https://www.usatoday.com/picture-gallery/news/military/blueangels/2026/11/07/blue-angels-pilot-scott-laux-removed-from-team/92660422007/",
+      "summary": "Blue Angels pilot Scott Laux has been removed from the team for failing to uphold the standards expected of team members, the Navy said.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "62c052e0e8e8a09a",
+      "title": "Trusted New & Used Ford Dealer | Bud Clary Ford of Moses Lake",
+      "url": "https://www.budclaryfordofmoseslake.com/",
+      "summary": "Discover an extensive selection of new and used Ford vehicles at Bud Clary Ford of Moses Lake. Whether you're in search of a reliable sedan, a spacious SUV, or a powerful truck, we have the perfect Ford vehicle to meet your needs.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56af7b70198c6727",
+      "title": "Worldwide Express Delivery Services for International Shipping | FedEx ...",
+      "url": "https://www.fedex.com/en-sg/home.html",
+      "summary": "FedEx offers companies international express delivery services and solutions worldwide that are tailored to your shipping needs, including to and from Singapore.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -306,15 +1226,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3bd9219ddf2dc81e",
-      "title": "Capital Health Medical Center – Hopewell",
-      "url": "https://www.capitalhealth.org/our-locations/hopewell",
-      "summary": "Opened in 2011, Capital Health Medical Center – Hopewell is located on a 165-acre parcel of property situated on the east side of Scotch Road in Hopewell Township and conveniently located right off exit 73 on I-295. Designed to optimize patient care, the hospital features all private rooms for greater comfort and improved care.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "1b4a3af16d69140e",
+      "title": "1000 Things To Put In Your Minecraft World [WIP]",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/survival-mode/294797-1000-things-to-put-in-your-minecraft-world-wip",
+      "summary": "This are my ideas of 1000 [80 as of now] things to build in your Minecraft world, whether it's creative or survival! Hope you enjoy! 1 - Make your first house. 2 - Make a trade shop. If you want, put in villagers that you can trade with. 3 - A restuarant. 4 - Put pathways between your buildings and stuff, and light it with glowstone chandeliers.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -324,10 +1244,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -337,15 +1256,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fd458ef3121b68d6",
-      "title": "Capital Health Patient Portals",
-      "url": "https://www.capitalhealth.org/myportal",
-      "summary": "At Capital Health, we currently have two patient portals: Select “Doctors Office Portal” for any provider office visits (even if the office is located at the hospital). If you need support with the Doctors Office Portal, please call your provider office for assistance. Select “Hospital Portal” for any information related to a hospital stay or ER visit as a patient or to view direct ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "db3ef339505bb5be",
+      "title": "2026 National Homelessness Estimate",
+      "url": "https://endhomelessness.org/resources/research-and-analysis/2026-national-homelessness-estimate/",
+      "summary": "The National Alliance to End Homelessness is a nonpartisan, nonprofit organization committed to preventing and ending homelessness in the United States.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -355,10 +1274,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "research"
       ],
-      "primary_type": "tool",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -368,15 +1286,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "882c4008e07597ce",
-      "title": "Center for Sleep Medicine | Capital Health Hospitals",
-      "url": "https://www.capitalhealth.org/medical-services/sleep-medicine",
-      "summary": "Find out about Capital Health's Center for Sleep Medicine, the largest fully accredited sleep center for adults and children in Mercer and Bucks counties.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "e1d1edc6fae4f8da",
+      "title": "2026 State of Homlessness Data Dashboards - National Alliance to End ...",
+      "url": "https://endhomelessness.org/resources/toolkits-and-training-materials/2026-homelessness-data-dashboards/",
+      "summary": "These interactive charts can help states and communities better understand who experiences homelessness in their area to meet local demand for homelessness assistance.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -386,10 +1304,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -399,15 +1316,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "65f1226b12dbe4c1",
-      "title": "Find a Location | Capital Health Hospitals",
-      "url": "https://www.capitalhealth.org/our-locations",
-      "summary": "Capital Health Medical Center – Hopewell One Capital Way Pennington, NJ 08534 1-800-637-2374 View Location Get Directions",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "76f066e4cde4555e",
+      "title": "315 Things To Build In A Minecraft City (Creative)",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/creative-mode/2237619-315-things-to-build-in-a-minecraft-city-creative",
+      "summary": "Are you building a city or town but lost for ideas? Here are 315 things you could put in your city: 1. Bakery 2. Butcher 3. Clock Shop 4. Mall ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -417,10 +1334,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -430,15 +1346,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dbc77fad389f94e2",
-      "title": "Geoff Castellucci | The Range Planet",
-      "url": "https://therangeplanet.proboards.com/thread/4070/geoff-castellucci",
-      "summary": "Reply Geoff Castellucci (13,615 views) Actions",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "a471d121c7df65e2",
+      "title": "A handy guide for potion effects list (/effect) - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/creative-mode/366686-a-handy-guide-for-potion-effects-list-effect",
+      "summary": "26 - Luck (minecraft:luck) 27 - Bad Luck (minecraft:unluck) So if you wanted to add speed to the player, you would do this: /effect 1 or (1.9) /effect minecraft:speed So there! A handy guide to the potion effects! Cheers",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -448,198 +1364,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fa8dc3ea8ea61a0f",
-      "title": "Homepage | Capital Health Hospitals",
-      "url": "https://www.capitalhealth.org/",
-      "summary": "Capital Health Medical Center – Hopewell One Capital Way Pennington, NJ 08534 1-800-637-2374 View Location Get Directions",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1a98111e290243cb",
-      "title": "Magnetic Resonance Imaging (MRI) | Capital Health Hospitals",
-      "url": "https://www.capitalhealth.org/medical-services/radiology-services/mri",
-      "summary": "Capital Health has four MRI machines: one 1.5 Tesla and one 3 Tesla unit at Capital Health Medical Center - Hopewell and two 1.5 Tesla units at Capital Health Regional Medical Center (RMC). Tesla is the unit of magnetic field strength. The higher the Tesla numbers the stronger the magnetic field strength.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6fff5d7de9a8eec2",
-      "title": "Male Vocal Range Videos on YouTube | The Range Planet",
-      "url": "https://therangeplanet.proboards.com/thread/4172/male-vocal-range-videos-youtube?page=1",
-      "summary": "Some bass singers with full vocal range videos include: Avi Kaplan Geoff Castellucci Tim Foust Tim Duncan Matt Fouch Tuukka Haapaniemi Mikhail Zlatopolsky J. D. Sumner Paul David Kennamer Adam Chance Matt Sallee Tomi Pizur Marwan Ayman Peter Barber Bobby Waters Davide Dalmonte There’s probably more that I can’t think of off the top of my head.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3bc6193f042458e2",
-      "title": "PATIENTS & VISITORS GUIDE - Capital Health",
-      "url": "https://www.capitalhealth.org/sites/default/files/2021-08/CH_Hopewell_Patient-Info-Guide_COVID19_August2021_Update2.pdf",
-      "summary": "ABOUT CAPITAL HEALTH Capital Health is the region's leader in advanced medicine, with significant investments in the latest technologies and physicians. As a growing health care provider, Capital Health consists of two hospitals (Capital Health Medical Center – Hopewell and Capital Health Regional Medical Center in Trenton) and an outpatient facility (Capital Health – Hamilton) that offers ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc148deb10f9dc8f",
-      "title": "Pelvic Floor Rehabilitation | Capital Health Hospitals",
-      "url": "https://www.capitalhealth.org/medical-services/rehab-services/specialty-programs/pelvic-floor-rehabilitation",
-      "summary": "Get back and neck pain relief with our dedicated spine rehabilitation program at Capital Health. Our tailored therapy improves posture, strength and stability.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f43cc3cd5a0c2f8b",
-      "title": "Range Stuff | The Range Planet",
-      "url": "https://therangeplanet.proboards.com/board/3/range-stuff",
-      "summary": "Community-approved profiles for popular and classical music vocalists alike, and discussion about the notes they hit.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -649,91 +1376,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2b1d2d3a5839bc5e",
-      "title": "Rehabilitation Services | Capital Health Hospitals",
-      "url": "https://www.capitalhealth.org/medical-services/rehab-services",
-      "summary": "Start your journey to recovery with Capital Health’s rehabilitation services. We offer personalized therapy plans to restore function, strength and mobility.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "f4963d2b48b8fc2c",
+      "title": "Bill Gates (5’10”) and Bill Gates Sr. (6’7”) : r/tall - Reddit",
+      "url": "https://www.reddit.com/r/tall/comments/gcostv/bill_gates_510_and_bill_gates_sr_67/",
+      "summary": "How so? Bill Gates Jr has much more hair than Bill Gates Sr. And 5'10\" is average, not short. I'd gladly be average height if it meant I could have a full head of hair. Reply reply morlando63 •",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2197c4fc2ac03235",
-      "title": "Sage Douglas | The Range Planet",
-      "url": "https://therangeplanet.proboards.com/thread/4252/sage-douglas",
-      "summary": "Reply Sage Douglas (2,360 views) Actions",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2b5ae2fc970d3ae",
-      "title": "Singer Index and Thread Moderation | The Range Planet",
-      "url": "https://therangeplanet.proboards.com/thread/7/singer-index-thread-moderation",
-      "summary": "This thread is for compiling all of the singer threads we have on the forum into one, easy-to-navigate index. For singers who have been thoroughly researched enough, check in Range Stuff. The",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
         "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -743,15 +1406,135 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "edf34bce9b825011",
-      "title": "Start a Career | Capital Health Hospitals",
-      "url": "https://www.capitalhealth.org/start-a-career",
-      "summary": "For more than 40 years, Capital Health has provided Emergency Medical Services (EMS) to the Mercer County communities and recently started providing services to the Burlington, Monmouth, and Bucks County communities.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "7a12f658a18e6ce3",
+      "title": "Bill Gates (u/thisisbillgates) - Reddit",
+      "url": "https://www.reddit.com/user/thisisbillgates/",
+      "summary": "Kristin Hannah’s The Women gave me a new appreciation for the incredible sacrifices frontline nurses made in the Vietnam War. Brave New Words by Sal Kahn paints a picture of how AI can radically transform education—and improve student outcomes and teacher experiences along the way. Infectious Generosity by TED’s Chris Anderson is all about how the internet can amplify humanity’s ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "645a565ffa72283d",
+      "title": "Bill Gates holding an Xbox controller, a cheeseburger, and a smile.",
+      "url": "https://www.reddit.com/r/gaming/comments/1ps67n/bill_gates_holding_an_xbox_controller_a/",
+      "summary": "\"Bill Gates holding an Xbox controller and a cheeseburger with a smile.\" Step up your game, OP. Also maybe a bit of comma action in there, but I'll leave that up to your decision.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "657b4369fcd81c38",
+      "title": "Bill Gates isn't short at 1,77m (5'11\") but look at him ... - Reddit",
+      "url": "https://www.reddit.com/r/short/comments/bxuxib/bill_gates_isnt_short_at_177m511_but_look_at_him/",
+      "summary": "Bill Gates actually has stated multiple times over the years since the 80s that he is actually 5' 9\". Given that he is in his 60s now, I'd say he is 5' 8\" probably As for his father, I've seen his father personally at a burger place near University of Washington. His father has lost a lot of height, and looks closer to be around 6' 4\" now.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9666bff083236b4d",
+      "title": "Bill gates sr, the 6’7 monster : r/AbsoluteUnits - Reddit",
+      "url": "https://www.reddit.com/r/AbsoluteUnits/comments/bxqk9c/bill_gates_sr_the_67_monster/",
+      "summary": "well i read the biography and apparently Bill Gates Snr always calls Bill gates Jnr \"kiddy billy\". so its always \"hey kiddy billy. come over here kiddy boy\". Annoys the fuck out of Bill Gates Jnr, but what else can he do?",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71985635684eb74d",
+      "title": "Block Display Models - A place for your Display Ideas",
+      "url": "https://block-display.com/",
+      "summary": "Create and publish 3D models for Minecraft with BDEngine - no mods or installations required. Online editor, model catalog, animations, command export and cloud storage.",
+      "discovery_channel": "broad_web",
+      "query": "display smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -761,10 +1544,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -774,15 +1556,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "23f452f32cd61a47",
-      "title": "Tim Foust | The Range Planet",
-      "url": "https://therangeplanet.proboards.com/thread/4302/tim-foust?page=3",
-      "summary": "Geoff Castellucci: Flavors of Bass (Vocal Arts with Peter Barber) Peter Barber Watch on Last Edit: Jun 1, 2026 at 11:34pm by Steingrim",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "6ba52c8bbb114865",
+      "title": "Can I sue a plasma donation center for injury caused by improper needle ...",
+      "url": "https://answers.justia.com/question/2025/05/10/can-i-sue-a-plasma-donation-center-for-i-1060357",
+      "summary": "A: Yes, you may have grounds to sue the plasma donation center if their negligence caused you physical harm. Improper removal of a needle that results in bruising, soreness, passing out, or nerve damage could fall under medical negligence or personal injury. These centers have a duty to follow proper procedures and ensure donors are treated safely and responsibly. If your symptoms are ongoing ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -792,11 +1574,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video",
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -806,15 +1586,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bced01f81ac82d07",
-      "title": "Work-in-Progress Threads | The Range Planet - ProBoards",
-      "url": "https://therangeplanet.proboards.com/board/4/work-progress-threads",
-      "summary": "Fresh OPs, work-in-progress threads, and notewatching awaiting approval into the main section.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "c7581837777b9dac",
+      "title": "DISCOVERY REQUEST for disclosure of medical ... - Justia Ask a Lawyer",
+      "url": "https://answers.justia.com/question/2024/03/30/discovery-request-for-disclosure-of-medi-1008282",
+      "summary": "Read 2 Answers from lawyers to DISCOVERY REQUEST for disclosure of medical records pursuant to 45 CFR section 164.512 (ii). - California Medical Malpractice Questions & Answers - Justia Ask A Lawyer",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -824,10 +1604,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -837,10 +1616,190 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b648b5e8ac7d04cf",
-      "title": "(주) 마이라이드",
-      "url": "https://myride.co.kr/article/13%EC%9E%A5%EC%B0%A9%EA%B0%A4%EB%9F%AC%EB%A6%AC/14/879/",
-      "summary": "[데모카]마이라이드 벨로스터 터보 스포일러 VER2 GT-WING TYPE HYUNDAI VELOSTER TURBO SPOILER VER2 GT-WING",
+      "id": "c6cc348d33823f84",
+      "title": "Does a person have a case if a surgeon hits an artery during surgery ...",
+      "url": "https://answers.justia.com/question/2023/11/27/does-a-person-have-a-case-if-a-surgeon-h-989775",
+      "summary": "Statute of Limitations: There are time limits for filing medical malpractice lawsuits, which vary by jurisdiction. It’s important to act within these time frames. Legal Consultation: Consulting with a lawyer who specializes in medical malpractice is crucial.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c23709a63c0b3a7a",
+      "title": "Homeless Statistics in US 2026 | Facts about Homeless",
+      "url": "https://www.theglobalstatistics.com/united-states-homeless-statistics/",
+      "summary": "Interesting Facts About Homelessness in the US 2026 ... These compelling statistics reveal the multifaceted nature of homelessness in America, highlighting both the challenges and some areas of progress.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8bbd0ae44c36db5b",
+      "title": "Homelessness Data & Trends | United States Interagency Council on ...",
+      "url": "https://www.usich.gov/guidance-reports-data/data-trends",
+      "summary": "Homelessness in the United States is an urgent public health issue and humanitarian crisis. It impacts cities, suburbs, and rural towns in every state. Housing is a social determinant of health, meaning lack of it has a negative impact on overall health and life expectancy.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b73aadb6f4d37daa",
+      "title": "Homelessness In America Statistics: 2026 Market Report",
+      "url": "https://worldmetrics.org/homelessness-in-america-statistics/",
+      "summary": "Affordable housing shortages and high costs leave millions at risk, driving widespread unsheltered homelessness. Homelessness in America affects people across age, gender, and family status, including veterans, children, and working-age adults.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d5fe196338e75374",
+      "title": "Homelessness in America: The Latest Statistics and Trends for 2026",
+      "url": "https://www.security.org/resources/homeless-statistics/",
+      "summary": "Homelessness in America: The Latest Statistics and Trends for 2026 The number of people experiencing homelessness reached an all-time high of more than 771,000 in 2024, 34 percent higher than it was a decade earlier.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f5d1f78748861cd1",
+      "title": "Homelessness is more common than you think. - NPR",
+      "url": "https://www.npr.org/2026/07/15/nx-s1-5893864/homelessness-is-more-common-than-you-think",
+      "summary": "What does this discrepancy tell us? And how do our cultural ideas about homelessness shape who we see as homeless, and who gets help?",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0178fdcbc0a789a6",
+      "title": "How to Apply for a Vietnam Tourist Visa from USA 2026-2027: A Complete ...",
+      "url": "https://www.vietnamimmigration.com/vietnam-visa-for-american/how-to-apply-for-a-vietnam-tourist-visa-from-usa/",
+      "summary": "Learn how to apply for a Vietnam tourist visa from the USA. Discover visa requirements, application steps, processing times, and expert tips for American travelers.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -867,12 +1826,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "23d28ab8b65293f1",
-      "title": "301 Moved",
-      "url": "https://support.google.com/travel/troubleshooter/9654821?hl=en",
-      "summary": "301 Moved 301 Moved The document has moved here.",
+      "id": "553ee3ce086d3f4b",
+      "title": "How to hold Dr. Fauci accountable for Covid protocol leading to father ...",
+      "url": "https://answers.justia.com/question/2025/03/18/how-to-hold-dr-fauci-accountable-for-cov-1053596",
+      "summary": "If you believe that the treatment your father received, including the use of Remdesivir, led to his death, it’s important to consult with a lawyer who handles medical malpractice or wrongful death cases. They can help you determine if there was negligence or if the treatment protocol was followed inappropriately.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "IFA 2026 smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -897,12 +1856,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7939d48e5d02e36a",
-      "title": "About Netflix",
-      "url": "https://about.netflix.com/",
-      "summary": "Whatever you’re into, whatever your mood, Netflix delivers the next series, films and games you’ll obsess over. This is entertainment the world never sees coming – and can’t stop talking about.",
+      "id": "f140f35201a444ee",
+      "title": "How to summon mobs with equipment - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2378863-how-to-summon-mobs-with-equipment",
+      "summary": "The ~ ~ ~ tells minecraft to summon that mob directly where you or the command block is. When you hit Enter, you should have a Zombie standing where you are, if it's not, make sure your gamemode is on normal.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -915,9 +1874,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -927,27 +1886,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c7bb6bc910eb283d",
-      "title": "Alabama Beavers expelled from IFA amid allegations of fraud, unpaid ...",
-      "url": "https://www.waff.com/2025/04/14/alabama-beavers-expelled-ifa-amid-allegations-fraud-unpaid-debts-ethical-violations/",
-      "summary": "We decided to leave the IFA on April 10, 2025, due to a lot of broken promises and leadership concerns. A formal email was sent to the league on that day explaining why we were making this decision to leave.",
+      "id": "ce0d70f0b0b7861e",
+      "title": "If you place a fence gate next to a wall you get a really nice wavy ...",
+      "url": "https://www.reddit.com/r/DetailCraft/comments/cvh4ty/if_you_place_a_fence_gate_next_to_a_wall_you_get/",
+      "summary": "Not sure if this was submitted yet! This trick is very versatile to add details to builds :) The wall makes the fence gate come down a bit. Reply reply Phat_H1ppo •",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -957,12 +1916,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5ca61296bf0b5869",
-      "title": "Choose a movie - Default location",
-      "url": "https://www.classiccinemas.com/actual-content?tab=now-showing",
-      "summary": "An elderly miser embarks on a supernatural journey after visits from the ghost o...",
+      "id": "7db3f67c113f20f8",
+      "title": "Infinite Health Mob that can't move. - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2957180-infinite-health-mob-that-cant-move",
+      "summary": "Home Minecraft Forum Minecraft: Java Edition Redstone Discussion and Mechanisms Commands, Command Blocks and Functions",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -975,9 +1934,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -987,175 +1946,26 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8f6c7200bd4661b9",
-      "title": "Classic Cinemas Jobs",
-      "url": "https://classiccinemas.com/employment/",
-      "summary": "Employment Opportunities Become a movie theatre star and see free movies! Join the staff of a Classic Cinemas theatre and become a star on our team. We look for friendly, outgoing people of any age (16 and older) to help put smiles on the faces of our guests. When you join Classic Cinemas you'll be joining the friendliest team around, and you will get great benefits: Competitive wages Free ...",
+      "id": "1ec93b2109127b90",
+      "title": "Is the Gates Scholarship real? : r/scholarships - Reddit",
+      "url": "https://www.reddit.com/r/scholarships/comments/d2hiun/is_the_gates_scholarship_real/",
+      "summary": "\"The Gates Scholarship is a program with a huge impact. Launched in 2017, the program's mission is to **give opportunities to outstanding minority students to reach their highest potential.**In this guide, I'll go through all the details of the scholarship and the application protocols. After that, I'll give you expert tips and strategies for putting together the strongest Gates Scholarship ...",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53e94c85c71263ac",
-      "title": "Contact — Triumph Cleveland",
-      "url": "https://triumphcleveland.com/contact",
-      "summary": "At Triumph Cleveland, we bring you nothing but the best in Triumph motorcycles for sale! Located in Cleveland, Ohio, we have a huge selection of new motorcycles for sale. We also carry used Triumph motorcycles from time to time. And if we don’t have it in stock we can order it for you.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "968b45ec7243ba6b",
-      "title": "Dealership Search | For the Ride - Triumph Motorcycles",
-      "url": "https://www.triumphmotorcycles.com/dealers/dealer-search",
-      "summary": "This interactive locator will find your nearest Triumph Motorcycle Dealer.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0898d174072954b8",
-      "title": "Elk Grove",
-      "url": "https://www.classiccinemas.com/program?location=elk-grove",
-      "summary": "10 screen movie theatre in Elk Grove, IL with free refills on freshly popped popcorn, sodas and ICEEs.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "078edd16f2e94311",
-      "title": "Find Cheap Flights Worldwide & Book Your Ticket - Google",
-      "url": "https://www.google.com/travel/flights",
-      "summary": "Explore and compare cheap flights to anywhere with Google Flights. Find your next flight, track price changes to get the best deals, and book your ticket.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "01d66a1f1c02cd7b",
-      "title": "Find out more about us at Triumph Cleveland | Cleveland, OH",
-      "url": "https://showroom.triumphcleveland.com/aboutus",
-      "summary": "Our dealership has a rock solid reputation of providing excellent service, support and satisfaction. We pride ourselves on giving our customers the best service available, the best parts and accessories, and a staff that understands all aspects of our business.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
+        "model",
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -1167,12 +1977,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fd8c6ff4e31e0984",
-      "title": "Find your nearest Classic Cinemas theatre - Locator",
-      "url": "https://www.classiccinemas.com/locator",
-      "summary": "Find your nearest Classic Cinemas theatre i York Theatre XQ 150 North York St., IL 60126 Elmhurst",
+      "id": "22faf233cd838ce4",
+      "title": "Is there a way to summon an entity at a player that ... - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/2184494-is-there-a-way-to-summon-an-entity-at-a-player",
+      "summary": "I want to use a command block to summon an entity at a players co-ords, but i need it to work no matter where the player is",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1185,9 +1995,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1197,12 +2007,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "04aea0a0fdb057bb",
-      "title": "Flight Fare Compare - Google Flights Tool - Chrome Web Store",
-      "url": "https://chromewebstore.google.com/detail/flight-fare-compare-googl/mmhdlhieabmpkjcffmaagonallanjiad",
-      "summary": "Convert Google travel/flights searches to Momondo, Kayak, or Skyscanner to find cheap travel/flights. Convert and compare any Google Flights search to an equivalent search in Momondo, Kayak, or Skyscanner with a single click, finding the cheapest flights and travel deals on the web. Google Flights is the best tool for searching for flights, but the cheapest prices exist only with Online Travel ...",
+      "id": "81367a7f2abc37fe",
+      "title": "Minecraft - Official Site",
+      "url": "https://minecraft.net/",
+      "summary": "Minecraft is a game about placing blocks and going on adventures. Buy it here, or explore the site for the latest news and the community's amazing creations!",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "024526886e449778",
+      "title": "monobank — digital mobile bank - App Store",
+      "url": "https://apps.apple.com/ua/app/monobank-digital-mobile-bank/id1287005205",
+      "summary": "monobank — the first mobile bank, over 11 million users, digital bank, online bank, card, loans, money transfer, payments, cashback, deposit, currency exchange, insurance, business account, in-app marketplace. Banking and finance, open an account, get a card via the app, banking in your pocket, 24/7. Yeah, that was a keyword dump. We did it on purpose so you can actually find us. Here's the ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1227,12 +2067,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "883a72afdc25db5c",
-      "title": "Flock Camera Locations in New Jersey — Live NJ ALPR Map | Flock Camera ...",
-      "url": "https://flockcameralocations.com/locations/new-jersey",
-      "summary": "About 2,275 Flock Safety cameras and ALPRs have been reported in New Jersey. See every location on a live map — Newark, Jersey City, Paterson and across NJ.",
+      "id": "4da3baffe49500a1",
+      "title": "NBTExplorer - NBT Editor for Windows and Mac - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-tools/1262665-nbtexplorer-nbt-editor-for-windows-and-mac",
+      "summary": "NBTExplorer is a low-level graphical NBT data editor originally based on NBTedit. The key difference is NBTExplorer's full support for Minecraft .mcr/.mca re...",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b42e872792e38f5",
+      "title": "News - KFVS12",
+      "url": "https://www.kfvs12.com/news/",
+      "summary": "Scott County deputies arrested 23 registered sex offenders Friday, ending Operation M.A.C.E., otherwise known as Multiple-Agency Compliance Enforcement, which began with surprise compliance checks...",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1257,130 +2127,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1d3b876ba867aed8",
-      "title": "Google",
-      "url": "https://www.google.com/travel/flights/saves",
-      "summary": "( / Xfpu0006^L #) u0006F u0001 D H ? C2 D u00066u000f %u000eu0002G#u0003#%# ? Ju001b >Dr u0007 *j=ʀ V\" Zu0014 _g u0019d̺ \"ѭ' $ $ % a* u000f xpu0016 XZ?Vsy u:W m ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "14dc8c8e39ee7e53",
-      "title": "Google",
-      "url": "https://www.google.com/travel/flights/flights-from-dubai.html",
-      "summary": "( / X|`u0006NC \\# ( bf u0001 qͼ n¢ ^? u0011+E 2&~ } yu0014# \" \" u001de ¯du001d' u0005 pu0003 ߱1 ZoWCH \" t u001b 3 xZu001a & ] oc܇E u001du0006 ?w O` uc UJ u0002u0016Y u001du001f۰k4u0019 I : Y ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "316b8a479a33af19",
-      "title": "Google",
-      "url": "https://www.google.com/travel/flights/flights-from-london.html",
-      "summary": "( / X<\\u0006u000e ( u0004# ( u0006F u0001$tu0011 lz A b @Ҙ (u001b u0003 l \" \" \"u0010n 7 N v 7 m ߁Ǹ I3 . f a Xmu000e Ͳ %b 6& ܟh I b * u001c Du000f g H !u0007 P ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "882ca27683838521",
-      "title": "Kornjace | Sve u vezi kornjaca",
-      "url": "http://miguel.blog.rs/blog/miguel/generalna/2007/11/19/sve-u-vezi-kornjaca",
-      "summary": "Почетна страна / Архива / Фасцикле / Линкови / summary / Manage / « Crvenouhe Kornjace | Main | Kratko o njima » Sve u vezi kornjaca 2007/11/19,12:08",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "677fe0d27b13f429",
-      "title": "Netflix",
-      "url": "https://www.netflix.com/us/login/browse",
-      "summary": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more.",
+      "id": "1a64503e8c8ab6b1",
+      "title": "NUFU : Smart IPTV Player - App Store",
+      "url": "https://apps.apple.com/us/app/nufu-smart-iptv-player/id6463044097",
+      "summary": "Download NUFU : Smart IPTV Player by Rubu LLC on the App Store. See screenshots, ratings and reviews, user tips, and more apps like NUFU : Smart IPTV Player.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1395,98 +2145,7 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e514cfc57fd124b8",
-      "title": "Photo Tour Trekkers :: Machu Picchu Photo Tour Blog Nov 2014",
-      "url": "https://old.phototourtrekkers.com/blog/blog-archives/machu-picchu-nov-2-blog/",
-      "summary": "Photo Tour Trekkers depart early Monday morning for Peru as they journey to \"the Lost City\" of Machu Picchu. Check back each day November 3rd to the 10th as we post images and updates from our Peru adventure. Don't forget to leave a comment as we always enjoy hearing from home as we travel. Nov 9th, 2014 Blog Entry Our Final Day in Lima Nov 8th, 2014 Blog Entry Exploring the City of Cusco Nov ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "736a5119935bdb2b",
-      "title": "TOP 10 BEST Camera Store in Plainfield, NJ - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=camera+store&find_loc=Plainfield%2C+NJ",
-      "summary": "What are people saying about photography stores & services in Plainfield, NJ? \"I had an issue with my Beach Camera order. Nicole @ BC understood my issue, responded to the issue, and found a smooth resolution at the original agreed price!",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "212feeac6d145049",
-      "title": "Track flights & prices - Android phone & tablet - Travel Help - Google Help",
-      "url": "https://support.google.com/travel/answer/6235879?hl=en&co=GENIE.Platform%3DAndroid",
-      "summary": "Track prices for a route or flight When the price for a flight or route you track changes significantly, you can get emails and mobile notifications. Go to Google Flights. At the top, use the buttons to select the: Number of stops Cabin class Number of tickets you need Select your departure airport and destination.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "retail"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -1498,12 +2157,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3f9efd87342f7594",
-      "title": "Traffic Cameras, Traveler Info - dot.nj.gov",
-      "url": "https://dot.nj.gov/transportation/traffic/cameras/",
-      "summary": "The New Jersey Department of Transportation (NJDOT) uses cameras on state highways to help traffic flow as efficiently and safely as possible and to handle emergencies. On the 511NJ Web site an extensive list of cameras is available and their approximate locations are displayed on a map overlay.",
+      "id": "bae68cedd37fff41",
+      "title": "NUFU : Smart IPTV Player - App Store",
+      "url": "https://apps.apple.com/mx/app/nufu-smart-iptv-player/id6463044097?l=en-GB",
+      "summary": "Download NUFU : Smart IPTV Player by Rubu LLC on the App Store. See screenshots, ratings and reviews, user tips and more games like NUFU : Smart IPTV Player.",
       "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1516,9 +2175,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "tool"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1528,12 +2187,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "15538edcb9ead870",
-      "title": "TRIUMPH CLEVELAND - Cleveland OH - Hours, Directions, Reviews - Loc8NearMe",
-      "url": "https://www.loc8nearme.com/ohio/cleveland/triumph-cleveland/6858314/",
-      "summary": "About Triumph Cleveland Triumph Cleveland is a premier Triumph motorcycle dealer located in Cleveland, Ohio, offering a wide range of new and certified pre-owned Triumph motorcycles.",
+      "id": "3eb591170901b7b6",
+      "title": "NUFU : Smart IPTV Player - App Store",
+      "url": "https://apps.apple.com/de/app/nufu-smart-iptv-player/id6463044097",
+      "summary": "Introducing Nufu: Your Ultimate IPTV Streaming Solution Are you looking to break free from the limitations of traditional TV? Look no further than Nufu, a cutting-edge smart IPTV player that redefines your television viewing experience. With its innovative features and powerful capabilities, Nufu opens the door to a world of unlimited entertainment possibilities. Unleash the Power of Nufu ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1546,9 +2205,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1558,12 +2217,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0339fbba37547ecf",
-      "title": "Triumph Cleveland - Cleveland, OH",
-      "url": "https://www.yelp.com/biz/triumph-cleveland-cleveland",
-      "summary": "Triumph Cleveland is Ohio’s leading Triumph motorcycle dealer, specializing in new and used Triumph motorcycles, expert service, and nationwide parts and gear sales.",
+      "id": "d258fdc2cee92db0",
+      "title": "NUFU : Smart IPTV Player on the App Store",
+      "url": "https://apps.apple.com/ca/app/nufu-smart-iptv-player/id6463044097",
+      "summary": "‎Introducing Nufu: Your Ultimate IPTV Streaming Solution Are you looking to break free from the limitations of traditional TV? Look no further than Nufu, a cutting-edge smart IPTV player that redefines your television viewing experience. With its innovative features and powerful capabilities, Nufu o…",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1576,9 +2235,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1588,12 +2247,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "002075efc00b60de",
-      "title": "Triumph Cleveland - Tamarit Motorcycles",
-      "url": "https://tamaritmotorcycles.com/en-us/usa/triumph-cleveland/",
-      "summary": "Triumph Cleveland is Ohio's premiere Flagship Triumph Dealership. And they have for sale, not only new motorcycles but also a wide variety of second-hand motorcycles, as well as parts and accessories from the Triumph world.",
+      "id": "b2c8757734c3548b",
+      "title": "NUFU : Smart IPTV Playerアプリ - App Store",
+      "url": "https://apps.apple.com/jp/app/nufu-smart-iptv-player/id6463044097",
+      "summary": "Introducing Nufu: Your Ultimate IPTV Streaming Solution Are you looking to break free from the limitations of traditional TV? Look no further than Nufu, a cutting-edge smart IPTV player that redefines your television viewing experience. With its innovative features and powerful capabilities, Nufu opens the door to a world of unlimited entertainment possibilities. Unleash the Power of Nufu ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1606,9 +2265,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "tool"
       ],
-      "primary_type": "retail",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1618,72 +2277,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ae9485811960a58b",
-      "title": "Triumph Cleveland - Triumph Motorcycles + Accessories",
-      "url": "https://triumphcleveland.com/",
-      "summary": "Triumph Cleveland is a dedicated Triumph motorcycle dealer in Ohio, trusted by riders across Ohio and nationwide, offering a strong selection of new Triumph motorcycles along with a rotating lineup of certified pre-owned and used bikes.",
+      "id": "279232d2a790dc9f",
+      "title": "Opening Gates - Reddit",
+      "url": "https://www.reddit.com/r/billgates/",
+      "summary": "Bill Gates, Co-founder of Microsoft, created his first computer program- an implementation of tic-tac-toe that enabled users to play games against the computer.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e9ba2b5c6df8911",
-      "title": "Triumph Cleveland in Cleveland, Ohio. Find New and Used Motorcycles for ...",
-      "url": "https://www.cycletrader.com/motorcycle-dealers/detail/Triumph+Cleveland-5000000880?dealerid=5000000880",
-      "summary": "Triumph Cleveland is Ohio’s leading Triumph motorcycle dealer, specializing in new & pre-owned Triumph motorcycles and expert service. We make it easy to ride with: • Competitive financing with flexible terms. • Nationwide delivery on all motorcycles. • We accept trade-ins for seamless upgrades.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d3650e201f7c6eba",
-      "title": "Triumph Cleveland | Cleveland OH - Facebook",
-      "url": "https://www.facebook.com/TriumphCleveland/",
-      "summary": "Triumph Cleveland, Cleveland. 5,149 followers · 245 talking about this · 428 were here. Triumph Cleveland is Ohio’s leading Triumph motorcycle dealer, specializing in new and used Triumph...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1696,6 +2295,36 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b920ea477af874a0",
+      "title": "Q: - Justia Ask a Lawyer",
+      "url": "https://answers.justia.com/question/2024/02/24/oral-surgeon-broke-my-tooth-while-extrac-1003203",
+      "summary": "Consulting with an attorney experienced in medical malpractice or dental negligence can offer guidance on how to proceed. They can help you understand your rights and potentially seek compensation for the additional dental work required.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
         "news"
       ],
       "primary_type": "news",
@@ -1708,10 +2337,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0b8bb934a376affc",
-      "title": "Triumph Motorcycles Cleveland | For the Ride",
-      "url": "https://www.triumphmotorcycles.com/dealers/usa/triumph-cleveland",
-      "summary": "Official Triumph motorcycles dealership in Cleveland, Ohio... Stop in and try our full line-up of motorcycles, riding gear and casual apparel today. We look forward to seeing you!",
+      "id": "8a946683e445f891",
+      "title": "Received COVID vaccine without consent, seeking legal recourse ...",
+      "url": "https://answers.justia.com/question/2025/04/15/received-covid-vaccine-without-consent-s-1057202",
+      "summary": "If you received the COVID vaccine without being told and did not consent to it, this could be viewed as a violation of your bodily autonomy and possibly a form of medical battery. Your first step should be to request your complete medical records from the hospital, including vaccination records, consent forms, and physician notes from that visit.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76f77ff06e7f9135",
+      "title": "Seguimiento del envío | FedEx España",
+      "url": "https://www.fedex.com/es-es/tracking.html",
+      "summary": "¿En dónde está mi envío? Sépalo solo con introducir su número de seguimiento, realice el seguimiento por referencia, obtenga la prueba de entrega o TCN.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1738,12 +2397,73 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ed6ebaaf1f5768e3",
-      "title": "Upcoming Executions - Death Penalty Information Center",
-      "url": "https://deathpenaltyinfo.org/executions/upcoming-executions",
-      "summary": "This page is updated on business days by 12pm Eastern Time to reflect executions that occurred in the previous 24 hours. Although Ohio has issued…",
+      "id": "4dac228e4c47a829",
+      "title": "Server Support and Administration - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/support/server-support-and/3176143-cant-join-my-own-server",
+      "summary": "1 2 Next Home Minecraft Forum Support Server Support and Administration can't join my own server",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e4f1c7d1ac05e138",
+      "title": "Skeleton max fall distance without dying? - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/discussion/2148806-skeleton-max-fall-distance-without-dying",
+      "summary": "I saw a Youtube video of a grinder that made skeletons fall and take just enough damage to be on life low enough to be 1-hit by any Stone Sword. I'm wasting ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "community"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ada78653fa92855a",
+      "title": "Summary Results - FedEx",
+      "url": "https://wap-asia.fedex.com/hkodds/en-hk/",
+      "summary": "Here youâ€™ll find the FedEx Online Declaration Details for Hong Kong. For more information, contact us by email or phone.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1768,12 +2488,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c216f41cab7ef9e1",
-      "title": "Upcoming — The Movie Database (TMDB)",
-      "url": "https://www.themoviedb.org/tv/upcoming",
-      "summary": "The Movie Database (TMDB) is a popular, user editable database for movies and TV shows.",
+      "id": "84a198befe5b8d3d",
+      "title": "The U.S. Just Recorded A Record Drop In Homelessness. The Government Is ...",
+      "url": "https://www.ibtimes.com/hud-2026-pit-count-homelessness-decline-3809530",
+      "summary": "The Department of Housing and Urban Development reported a 6.3% decline in U.S. homelessness in its 2026 point-in-time count, though nonprofit groups warned that chronic homelessness rose and ...",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1798,10 +2518,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fc163e1b91882a03",
-      "title": "من نحن - جفرا نيوز",
-      "url": "https://jfranews.com.jo/page-1",
-      "summary": "من المبكر جدا القول ما إذا كانت الصحافة الورقية سادت ثم بادت، لكن هذا لا يعطي للصحافة الإلكترونية حق تغيير القواعد الصحفية من حيث تقديم محتوى صحفيا يطرب البعض على حساب البعض، إذ لا يمكن لجفرا نيوز أن تنحاز لرسالة غير ...",
+      "id": "9f5095f5f1fbed60",
+      "title": "TIL Bill Gates Sr. is 2 meters tall : r/tall - Reddit",
+      "url": "https://www.reddit.com/r/tall/comments/2kjrql/til_bill_gates_sr_is_2_meters_tall/",
+      "summary": "The Bill Gates of Microsoft is William H. Gates III, and he is the fourth generation with that name. His father, the tall one, is William H. Gates Sr. He was born as William H. Gates II, changed it to William Gates Jr. while in the army during WWII, then changed it to Sr. to distinguish himself from his son.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "891356e29316c752",
+      "title": "Tracking Your Shipment | FedEx Trinidad And Tobago",
+      "url": "https://www.fedex.com/en-tt/tracking.html",
+      "summary": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b34f6c9111e2914",
+      "title": "US to Vietnam Visa 2026: E-Visa Required, USD 25",
+      "url": "https://entryvn.com/evisa-us-citizens/",
+      "summary": "US citizens are not visa-free for Vietnam. You need an e-visa: $25 (single entry) or $50 (multiple entry), valid up to 90 days. Apply at evisa.gov.vn. Processing takes 5–7 business days. There is no visa exemption for US passport holders.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1828,10 +2608,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5e91e63fc00b567d",
-      "title": "디노라이트코리아",
-      "url": "https://dino-lite.co.kr/article/%EC%83%81%ED%92%88-qa/6/48508/",
-      "summary": "상품 Q&A입니다.",
+      "id": "1efd8030fbc2566b",
+      "title": "Viet Nam's visa procedures | Embassy of the Socialist Republic of ...",
+      "url": "https://vietnamembassy-usa.org/content/visa-application-process",
+      "summary": "To apply for an e-Visa, please use the official portal administered by the Viet Nam Immigration Department: https://evisa.xuatnhapcanh.gov.vn/ e-Visas are processed directly by the Immigration Department in Ha Noi, not by the Embassy. For e-Visa inquiries, please contact: foreigners@immigration.gov.vn.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -1849,6 +2629,396 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9cd4a2a71dd228ec",
+      "title": "Vietnam E-Visa for US Citizens & How to Apply (2026) - evisas vietnam",
+      "url": "https://evisasvietnam.com/blog/vietnam-e-visa-for-us-citizens-90-day-visa-fees-how-to-apply-2026/",
+      "summary": "2026 guide to the Vietnam e-visa for US citizens. Requirements, fees ($25/$50), processing times, 83 entry points, and how to apply online.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1cdafed19560a7d9",
+      "title": "Vietnam e-Visa for US Citizens 2026: Requirements, Fees, Processing ...",
+      "url": "https://visarun.ai/blog/vietnam-e-visa-for-us-citizens-2026",
+      "summary": "Vietnam e-Visa for US citizens in 2026: why Americans need a visa, US$25 or US$50 fees, the 4x6 cm photo, 81 listed entry ports and the pre-arrival declaration.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7da2095e9ec601ad",
+      "title": "Vietnam e-Visa for US Citizens: Requirements, Fees & How to Apply",
+      "url": "https://us.trip.com/guide/visa/vietnam-e-visa.html",
+      "summary": "Learn how to apply for a Vietnam e-Visa as a US citizen. Discover requirements, fee structures, processing times, and a step-by-step application guide.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "57d161729d5be2cc",
+      "title": "Vietnam National Electronic Visa system",
+      "url": "https://evisa.gov.vn/",
+      "summary": "Foreigners subject to the provisions in Clauses 1, 2, 3, and 4 of Article 8 of the Law on Entry, Exit, Transit, and Residence of Foreigners in Viet Nam are not required to apply for electronic visas but must go through the inviting and sponsoring agencies and organizations.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40630bd426b7a896",
+      "title": "Vietnam Visa for US Citizens: Complete Guide 2026",
+      "url": "https://www.vietnamvisa.com/visa-requirements/united-states-citizens.html",
+      "summary": "You can get one three ways: the online e-visa, visa on arrival at select airports, or a visa sticker from the Vietnamese Embassy in Washington DC or one of its two consulates. Most travelers pick the e-visa because it skips the embassy visit entirely and covers stays of up to 90 days.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a982b24b63f5154e",
+      "title": "Vietnam Visa for US Citizens: Fees & Requirements in 2026",
+      "url": "https://www.vietnam-visa.com/guide/united-states/",
+      "summary": "How can US citizens apply for a Vietnam eVisa? US citizens can apply online directly through the official Vietnam eVisa portal or through a trusted visa agency like Vietnam-visa.com. Prepare your passport data-page image, a portrait photo and your travel details before starting.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e011edb3bc40317",
+      "title": "Visa | Embassy of the Socialist Republic of Vietnam in the United States",
+      "url": "https://vietnamembassy-usa.org/consular/visa-application-process",
+      "summary": "To apply for a visa to come to Vietnam, you have the following options: For you best convenience in applying tourist visa to Viet Nam, you can leave the required information on our visa application assistant portal: https://www.vnmvisa.com",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f1b4547c0b1f3eab",
+      "title": "What are my legal options for negligence in medical care by Kaiser ...",
+      "url": "https://answers.justia.com/question/2026/05/12/what-are-my-legal-options-for-negligence-1117503",
+      "summary": "To pursue compensation for pain and suffering, you will need a qualified medical expert to connect the delay in diagnosis to the worsening of your condition, so acting quickly to consult with a malpractice attorney experienced in Kaiser arbitrations is strongly advisable.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b4e92d83f3b944c",
+      "title": "What can I do if my attorney is not communicating with me?",
+      "url": "https://answers.justia.com/question/2025/10/30/what-can-i-do-if-my-attorney-is-not-comm-1090134",
+      "summary": "Read 2 Answers from lawyers to What can I do if my attorney is not communicating with me? - New York Legal Malpractice Questions & Answers - Justia Ask A Lawyer",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e0e483ddb450942d",
+      "title": "What is Josh Gates REALLY like? He seems funny, charismatic ... - Reddit",
+      "url": "https://www.reddit.com/r/ExpeditionUnknown/comments/1bkvulu/what_is_josh_gates_really_like_he_seems_funny/",
+      "summary": "Intrigued by legendary mysteries and driven by curiosity, Josh Gates is on a mission for answers. `Exhibition Unknown' chronicles his global adventures as he investigates iconic unsolved events, lost cities, buried treasures and other puzzling stories.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "55f4bd7bfff59ee2",
+      "title": "What legal options do I have for medical negligence by Kaiser ...",
+      "url": "https://answers.justia.com/question/2026/01/07/what-legal-options-do-i-have-for-medical-1098085",
+      "summary": "Q: What legal options do I have for medical negligence by Kaiser Permanente in California? I live in California and am dealing with a chronic pain condition caused by the negligence of my medical provider at Kaiser Permanente.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ede71b1c45610e3",
+      "title": "‎Apps for iPad - App Store",
+      "url": "https://apps.apple.com/us/ipad/apps",
+      "summary": "Find apps and games for iPhone, iPad, Mac, and more on the App Store.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db65ee4d6bda8d2f",
+      "title": "‎FaceTime App - App Store",
+      "url": "https://apps.apple.com/us/app/facetime/id1110145091",
+      "summary": "Download FaceTime by Apple on the App Store. See screenshots, ratings and reviews, user tips, and more apps like FaceTime.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
