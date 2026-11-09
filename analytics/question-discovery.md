@@ -1,27 +1,32 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-08T16:42:35+00:00**
+Generated: **2026-11-09T20:47:05+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **364** (not the published count)
-- Unanswered research candidates: **71**
+- Canonical registry size: **372** (not the published count)
+- Unanswered research candidates: **79**
 - Observations this run: **89**
-- New distinct questions: **3**
+- New distinct questions: **8**
 
 ## Source health
 
-- github_issues: ok — 14 observations
+- github_issues: ok — 11 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 47 observations
-- google_search_console: ok — 8 observations
+- reddit_rss: partial — 49 observations
+- google_search_console: ok — 9 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000362** — What setup worked for you if you stopped propping a tablet up in bed?
-- **Q-000363** — Brilliant Labs is SHIPPING Halo?
-- **Q-000364** — Can today's AI glasses actually solve exam questions without a phone or internet?
+- **Q-000365** — Why do caption glasses cause so much eye strain?
+- **Q-000366** — Which 'Post Flair' for the Samsung Android XR Glasses?
+- **Q-000367** — What Would Make You Buy AR display Glasses For Long-Term?
+- **Q-000368** — Is it possible to add Even G2-style real-time AI conversation assistance to Rokid Glasses (RV101)?
+- **Q-000369** — What IRIS users have said since launch (dev here, every quote word for word)
+- **Q-000370** — Other RayNeo iO owners: what's the one thing you'd tell someone before they buy?
+- **Q-000371** — Title: What's going on with NIMO's Kickstarter and preorders?
+- **Q-000372** — what are the main complaints about the inmo air3 battery life display and software?
 
 ## Research queue (first 20)
 
