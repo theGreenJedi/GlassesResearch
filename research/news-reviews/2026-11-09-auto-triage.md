@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-09T13:30:32.259789+00:00`
+Generated: `2026-11-09T18:57:01.186092+00:00`
 
-- Intake files inspected: **219**
-- Candidates retained in this review window/history: **8847**
+- Intake files inspected: **218**
+- Candidates retained in this review window/history: **8770**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1800
+- `adjacent_radar`: 1734
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 557
-- `rejected_noise`: 6406
+- `needs_editorial_verification`: 558
+- `rejected_noise`: 6393
 - `source_review`: 46
-- `watching`: 23
+- `watching`: 24
 
 ## Action queue
 
@@ -70,8 +70,7 @@ Generated: `2026-11-09T13:30:32.259789+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1330](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1330) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1332](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1332) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1334](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1334) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1136](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1136) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1137](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1137) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1339](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1339) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1138](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1138) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1140](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1140) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1141](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1141) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -169,6 +168,7 @@ Generated: `2026-11-09T13:30:32.259789+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1289](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1289) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1333](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1333) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1335](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1335) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1340](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1340) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [US Senators Launch Inquiry into Privacy Risks of Meta AI-Enabled Smart Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMisgFBVV95cUxObDBKaDFoYmhEV0p5U3Nwa1NjVjVIeDBmcHNfN0psRnJnRHZJSGJRVHRCR3BCQ093aW9MekJfSVd5YmZtYV9NNTFOT2dzVnJhWS04Wnl6bExRdUlrbll3c2l4TDRCMEt3QjQ0blpDTjY3ejRaUWtDRjl6Mkp4TzdkVFVNcld1SmFLNWptV2JYdXRkN25YNHJBaC1Iak01QWszdW5tZzN0MjNaRXo1bHZFZWNB?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Android XR's First AR Glasses 'XREAL Aura' Launch Today, Starting at $1,100 for Limited Time - Road to VR](https://news.google.com/rss/articles/CBMieEFVX3lxTFBRRE5XbzVUbXc2d0JQVzIzMHA0clBUbjlHYl9ZRGxybWhZWEk1N3V6Sl9MZFNhVFFOWUNwQWlWdEFRNTdTN2xvcWVTNGk3bmNDU2wxc2lvclhkdmtOcTAwZHMtWXFMVkFKZERPc0JlWER6VVU4RDExMA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -198,7 +198,7 @@ Generated: `2026-11-09T13:30:32.259789+00:00`
 | high | needs_editorial_verification | direct | [Samsung to Launch First AI Glasses 'Intelligent Eyewear' in South Korea, US in Mid-December - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE1odDhiM1UxOURucHVzMzZOS2xSOVhIVTJ1WGszbFdNM0I0YzVNMVlpMUtxMTdTaFYyREhPY0QtaGtkRDhFcEtMeUprcHhFQVc3WVZzSzAwYUNsY1FEaGxNX0FadFMwa1JyVUtyMG1JRG8tNW1VNXc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's First AI Glasses Open for Preorder on the 12th - Seoul Economic Daily](https://news.google.com/rss/articles/CBMingFBVV95cUxNV0YxSU82dHg2R0hPeGxrN19SaWEwSmQ1QjBTRWczZ2k4NFFpLXpJZlpQN1cwdnFkd2tsNnJHamhYakkwTWNZM0FHV1ZJNVZQNkdvQVdGWnZKV1RTYmpoVEN6dU9uaGJKbDg2U1Y1TVd3azhaWUZjb2Q3WkNtRFVtN1YxdGJrd2JUbDFCdHdSZFM4Qm9WRmdpVmJ3UnJOQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung, Google to launch AI glasses in December, challenging Meta's dominance - 헤럴드경제](https://news.google.com/rss/articles/CBMiV0FVX3lxTE02ZnpCYVBkbTlkMUdKaUZybXhjaFREX1RXT05UMHEwemRtQk9EQ0ZxQzZvdUw0em1yUVVjYXMwSGszS3F2VFpCTDFBNEhYazdEMkw5cHo0MA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [South Korean schools launch inspections after AI glasses used to cheat on exams - streamlinefeed.co.ke](https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGZlZTJHR3BkcDlFWk5KQ1dpWThpUmc2elRRMmVJTENRX2Foa3JEcjUtZGVUNDJUVngxRDFKZmtOaENnUHhVdHpPTkUwQk5IQ2JkTWhLX3p5SjBDVnJPN3J4S1VqRW1BT3ZpeHktdnZDUzdfZW1mb3J6LTNSQ3RKZEJhTFQ4d3JuaGFNYVQ0V1RwTmJQRE5vUXhWbVVxaGxYdVc1SHljR3dsTUlVSUVad1RqTQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [South Korean schools launch inspections after AI glasses used to cheat on exams - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGZlZTJHR3BkcDlFWk5KQ1dpWThpUmc2elRRMmVJTENRX2Foa3JEcjUtZGVUNDJUVngxRDFKZmtOaENnUHhVdHpPTkUwQk5IQ2JkTWhLX3p5SjBDVnJPN3J4S1VqRW1BT3ZpeHktdnZDUzdfZW1mb3J6LTNSQ3RKZEJhTFQ4d3JuaGFNYVQ0V1RwTmJQRE5vUXhWbVVxaGxYdVc1SHljR3dsTUlVSUVad1RqTQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Vision Express Teases Ray-Ban AI Glasses Launch in the Philippines - Gadget Pilipinas](https://news.google.com/rss/articles/CBMid0FVX3lxTE5NVTNWMGxwWEl3RkpDREZDdVRhQ1M0OHlZajQ2WkthalZaSHBhVnQtU2hDN2hoSm1QdjU3YWM1cTdSSmlPRElsT2E2SGVGU041V1pIVjhKaWtQR0J3by1YWnBoeUNsYjN0ZUZpNlZRTy15cWV4QnZN?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Vuzix begins shipping SHRIKE configurable waveguide platform for defense evaluation - Traders Union](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdXRwOGxNa3h2dlhFdnZYUVRoWldvdFpBQlNMUlVzQ0RnVHhmcnpYUVZyQUVfM0ZWbXY3UlRtcm9UU3pDUDQ1MjBVZExmMXFwVDBhOUhnT1FrWUFjTmpvTlJDYVlXQlVDOVczU1VJN19pcUJhZ3g1QW85Y0tBRndMSA?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMilgFBVV95cUxOUGluS0p2WE9xMEU1cGdheUtXYWhPVjgycklQUjRoVkZlandkMkRMMTIzOUU2SHk1ZWk1QlhWTG9OUU9Xa0Z5eGVyaThIWXEycUZDSGNXSGhCYW5IaUN0eEIzMFhweWoxR3dTcnNGN2xnd0JUd1BOQUpjREIzTzB2OU1WMzYwS2lfV2tNMU1keXNGWXE2Rnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
