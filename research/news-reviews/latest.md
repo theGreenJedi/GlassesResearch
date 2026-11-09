@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-09T12:12:55.378748+00:00`
+Generated: `2026-11-09T13:26:41.257797+00:00`
 
-- Intake files inspected: **218**
-- Candidates retained in this review window/history: **8845**
+- Intake files inspected: **219**
+- Candidates retained in this review window/history: **8847**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
@@ -12,9 +12,9 @@ Generated: `2026-11-09T12:12:55.378748+00:00`
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 554
+- `needs_editorial_verification`: 555
 - `rejected_noise`: 6406
-- `source_review`: 47
+- `source_review`: 48
 - `watching`: 23
 
 ## Action queue
@@ -23,6 +23,7 @@ Generated: `2026-11-09T12:12:55.378748+00:00`
 |---|---|---|---|---|---|
 | high | needs_editorial_verification | direct | [Google's wired XR glasses, 'Xreal Aura,' powered by Android XR, have been released and will be available for pre-order in Japan starting Nov](https://news.google.com/rss/articles/CBMiY0FVX3lxTE40MWtzYl95aE1TZnBjN0k4RGhhRHBpNDN6ZGZvV1E4emhuV2tNVFphSEN1SUxYcFR3ZEdnMDFOSmkzTFN5c3d6M0NqSjlQbHdUREoxN2UwXzdTVkFnUFlaVndmYw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Everysight's Maverick SDK - GitHub](https://github.com/everysight-maverick/sdk) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| high | needs_editorial_verification | direct | [Gentle Monster’s AI glasses: preorder plan and December launch target - NeoTeo](https://news.google.com/rss/articles/CBMimAFBVV95cUxPMmhNT0ZqNml4WFdsNFc1NF92Z3lxbjd4T084V2xVSmhJMmp4RFdVYlhrU2J3YWtIVldDTnZPTGJMRGppY3k4S0tHdkFpSFlXU3NtZXZ6MEtmX19tekN6RDd6aUY4MEFOMTVrYUNrUGlWbUh4QXc5TzNmeFByOHlJX09jS1c4X3J0d0NBaTNILU1qTkM0Z1I3RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google and XREAL launch AURA Android XR glasses - TestingCatalog AI News](https://news.google.com/rss/articles/CBMihgFBVV95cUxQNWxHT19iOWo2ajJ4UHgzdV9IbHZzN3czMno1Tkd4eTRqMUF0Z3lseWJLbGZWV1dvcDZMTU9hNzBrc2FtWHpjS3E5aU1nVUdGNmgwQVBRazZETFA5NC1UTjdBU2Vhd2ZtbzdKbEFCNXlyTUNpeFJJSVNNUUxGdU1IdXQxbnVCdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google and XREAL launch AURA glasses with Android XR and 120 Hz Sony Micro-OLED displays - mobidevices.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE5aSFZsNVF0VVd4cGtmUkpYMndpdnNFZ1RiU0paOTdFU0lRVDUxNTF0QURQZFNTNS1DNzJENE5OM3otUnR6SGNxX2RobEV0Zw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [Just Arsenal, Ray Parlour and AI Glasses: Fun At The Oakley Meta Partnership Launch - Just Arsenal News](https://news.google.com/rss/articles/CBMitwFBVV95cUxOaTJ2WjQ3ZTJNbmMxMWhJdHRLUUpfRFNibjg3Um9DMjRld1RKeklZNlVzck9xc0ZSLXVQVzB6bHNTOFVhQkVwRUtIbGZMQmpfOGd1cGhSdlZidEZYWU1KcDR6Vkd2XzVKbFlJNnhRbDdfaXRoYjV1OG9fUUk1UnJ6UGVwZnlSclVEYjhQSnZGTTBrOHNPTWd6QUc3ZzZpalZZU21JZHhpeHNocVR5eUE1UzlfZjl1V0HSAbwBQVVfeXFMTXV2TlhRVkM3d3VfMm9Pd0llcXpaSHE5M3FJN09yS1E0aE1WekpZN0h1THhpeFlfa1Y1cVR6NmljMlpRaWtMeU5mY3FWanppVDhtNkJIaklITy1feW94elBpeXdIV2tEYXQ5LWNaazJZMGxSRmk0MDlDaGhHRHNyc0pkMFNFUXhXUzJvTS1iQzhIUkJYWno4djQ3MlhzdjNIZkxDRFA4NDV3MWJzMDFrMURuSUxDVGhQM2pvbXo?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -270,7 +271,6 @@ Generated: `2026-11-09T12:12:55.378748+00:00`
 | high | needs_editorial_verification | direct | [South Korea plans privacy guidelines for smart glasses amid covert-recording risks - MLex](https://news.google.com/rss/articles/CBMi4AFBVV95cUxNNUJmaDVraDRGOXJPWDdXeGhnLU5EQW45bjZ3by1kQVRmRGdmSENsTTZsRnhZb2NFWmxCVk5oVEFHQ2xhNW1ORE50RWVXZmpXRXg2TmNfSk5zU3JYWTZSTmZuc1UxVnR0SVd5WTNHSFZHck1uQnFoQ0VlWFdpSS1Ea0FwaG51enpuaFZBTm96MnNvbWVWbWJpNTJEM1hYa2lYZEJfb0dhN1lUTXNiWUJLekdrR1FoMXdsR2pUTnBtZXZxQmh6VkZTZjF5OXlydS1FZlBWZ0NUUk5PWllINUxWQdIBWkFVX3lxTE9HOE83RU5QVE52VUQweHNJS3A5Vldpc2RkOEZoczZCU3d3aFlWaDlhdXV2Zm9xQmpNVkVNUFFPZk9DT2xmOFN0VmZhODRWMlk5RXo0WnZmUm9hZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [South Korea to draft privacy guidelines amid smart glasses covert recording fears - Chosunbiz](https://news.google.com/rss/articles/CBMiekFVX3lxTE9Kc0xSeDczaWZ6aGhibzBpTzFfUHhwYmRDNC1KMVNpWmlOYWVfN1o2NVZHbUlibHpBQlQyRU1JTnB6QjJ5ZnJHOTE5X3d5TXFZTHItbW1xRW5oME54NWVfcTBoWmFyNm9YbVU1a095ZXluTjQyY1NoaDlR0gGOAUFVX3lxTE5OblpMdXpVeGlTQkw3V1pvd2R2MGt3dDg3Qi1rY3ZxRHZkR3owU09jN2VrZXBTc002LTF3TUsySmhIYTZHQzJYdk5BSFNNR1otUEJUZTZoTzJjc3JDU0w5ZnY0S3UwcGcyN2tVNjRyMkhQeG0xQWJxODREV2UycG9VZFljQ0w3ZGtYdzVjaUE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [South Korea's Privacy Watchdog Warns on Unauthorized Recording by AI Smart Glasses, to Issue Guidelines This Year - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTFBrOW84YWFqMElUSTVSbXlGbnNfMVRubjFLWjh3MXY3ZzdfOWNiOVIybkFEaGlJRjlpZ1BtR3Ztdmh2T3U0cEtXTzRMQ2xSLWdJaXRwTXROMDFSMkMwckI4R2hUcmFBOUppc2NraFJ0ZW1oeno4WVE?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Starting Application Development - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/start-development/) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
