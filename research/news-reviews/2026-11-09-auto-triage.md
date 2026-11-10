@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-09T20:49:51.071061+00:00`
+Generated: `2026-11-10T02:16:43.765240+00:00`
 
-- Intake files inspected: **218**
-- Candidates retained in this review window/history: **8790**
+- Intake files inspected: **216**
+- Candidates retained in this review window/history: **8604**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1745
+- `adjacent_radar`: 1690
 - `catalog_review`: 11
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 556
-- `rejected_noise`: 6399
-- `source_review`: 51
+- `needs_editorial_verification`: 563
+- `rejected_noise`: 6262
+- `source_review`: 50
 - `watching`: 24
 
 ## Action queue
@@ -72,8 +72,10 @@ Generated: `2026-11-09T20:49:51.071061+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1334](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1334) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1339](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1339) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1342](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1342) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1138](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1138) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1140](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1140) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1344](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1344) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1345](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1345) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1346](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1346) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1347](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1347) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1141](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1141) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1143](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1143) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1145](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1145) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -180,6 +182,8 @@ Generated: `2026-11-09T20:49:51.071061+00:00`
 | high | needs_editorial_verification | direct | [Austria to launch parliamentary inquiry into use of smart glasses amid privacy concerns - Anadolu Ajansı](https://news.google.com/rss/articles/CBMiwgFBVV95cUxOTjdmZHd4YzNpUTZDWkRZbUpJNG1uMUJuQmVFek50VWNsVTBaTXdaenhfaWhYQjZseUtWTG1TbVZCY09pTXk4UVo2RFJETjh3WFQydGE2SjRKTWJPbk9ic2dxazV1aFVuWVJnQ2NIWmJOSGJXWUliMkQ3emhWa24tamZ3M3pucXpCV010cWlPVUQ2Z0VOZVBwQVVwU3lxcUxEM2haVGlPWWw1T29Wbk9MdXFPUFhkdWNuMXgyaDRiVmlzUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Austria to launch parliamentary inquiry into use of smart glasses amid privacy concerns - The Express Tribune](https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQUJ1MkR5dlo2T1VIWDhJdUpBVVp3dzlsN1V0aUhUZFpCeDA2dXNfa3RvcWdBdnFsd3dhbGl2ZnRHdjUtM0FhOFBhZjlYZFdQQW10NVdmVUs2RWd0R1dpQ2RZOTFIRGxPa1J2RXBOTUgtdlNPZTdpUHgzLTVHbEZ2Vk1kS3RGYi03M015Vm11SWhIbXJDRHhPeUNVNVNTR0l3al9kRnhyN1RqV21XRW5DRlZ2Rm1uR2EwMUdWRGgyOVhDdw?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [China Telecom, Rokid and ZTE Launch First Commercial 5G-A and AI-Glasses Powered Smart Tour Guide in Taizhou, Zhejiang - WebWire](https://news.google.com/rss/articles/CBMib0FVX3lxTFBvVkFQbHNYN1V6dGNiMzdRaUNadjJZR0ptMk9kWkJPNEVlZ21pNWU2cWNudFBQMU53NDhnZGEwNjJRRTBXdnV5eWg0LVZIR2paTnNpbmd6MjB6LTVJaGhFRE1vTDVfUXpxV0g1N2RSYw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [China Telecom, Rokid and ZTE Launch First Commercial 5G-A and AI-Glasses Powered Smart Tour Guide in Taizhou, Zhejiang - WebWire](https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BZi02cVpVYi1TYmQzSmpSdjBOOGwwWDd1ek0zNEJ6dGxFWm5JQ19nZjctcUhPelhIc0R6RVNfVkI2Sldoc0J5b3R6eXB3SHRQdVNVQWV4QXg3dllrWUxLdA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [China Telecom, Rokid and ZTE Launch First Commercial 5G-A and AI-Glasses Powered Smart Tour Guide in Taizhou, Zhejiang - WebWire](https://news.google.com/rss/articles/CBMiaEFVX3lxTFBvY1phdzBDbWgxV3pkYVh2eERfTEEyOUU4dmRYZTRDQmtYaEpTQlRXdTNkWVV4UmZfdWNzcHFWbU1zdVdpZGtDZ1dJTVRWWFdjaVhUeFpiU2E5bzMyaHJtYUh6Z0dnaFBV?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [China Telecom, Rokid and ZTE Launch First Commercial 5G-A and AI-Glasses Powered Smart Tour Guide in Taizhou, Zhejiang - ZTE](https://news.google.com/rss/articles/CBMinwJBVV95cUxNdFE3b1BJcGM4b0l0V1VkWnRPTXlFRXZLRzRxa196Zk82dnBWYldOX2xrLWxaNG91U2F1RWU3dkdKbG9EcXV0TVVkMFo1VnVIbk5CN2x6cmNhZkR5bEdaN0tCc2poWUJaWEMtUzhJMUJ6akNpVC1WRGc4aUtLY1hGanRRLTBiS01KTER5Z0hEU1E5S0s3OTBFQTNoWEpJdUhvYkQ5SW9KRjJESlBYeXpPYVBoR0ZrN2NZYkl6cndIbG9YRGZzUk90QkVXcjVBdjRTU3MwLVdUUlVuMHZqQUtkNUFNR0J2cEZ2YnZlclVfc2xHVXN6MWphVVh5Q1BNZHJWVnp6SU41Zl9tY1NoNExqSkZZVmNuTTZNODZBTHNmMA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [China Telecom, ZTE launch 5G-A smart tour guide with Rokid AI glasses at Taizhou ancient city - Telecompaper](https://news.google.com/rss/articles/CBMi0AFBVV95cUxNSjBhZ0RsaGZYS3dYaHFLSDd6NzZpTDlZV25yLUZCR2NTUTZCVjlrNTFUQmQ5aXZFYnJkNmluOE9fWDQycHJFSlJZUHVET1ctUTVZcTkwVXFnQmROaXhWT25lR1VHZ01scnQ4cTJhNmlSNXRsZ0tRYktHZFZRTUZDcExkNVQ0M2JDaHViWVM2ckVoVlNlaWNMQTZSSjFNSTFMaHVkVGw0WkFWNnJ5MEE3Qlk3WXJVbG41TkJWemozeG96QUVGZjBkV2dWRGlSSHps?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Everysight Maverick SDK - GitHub](https://github.com/everysight-maverick/) | reachable (200) | research_news_review, development_hacking |
@@ -267,10 +271,6 @@ Generated: `2026-11-09T20:49:51.071061+00:00`
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMilwFBVV95cUxNMUpZQUdlZ0lJTHVQdFV1Yk9JNVFPS0YxZEdoWVpxQjlhdVF2Um1GeDJKSi1YSGJValM2V1Z5ZTNheElyY01maVVOUGFpeUxCdnBTNlpZY1JDRjlMQU9saEgxaXNfVnNpUW0yZDJsNnV0WWs2Y2RwWk5kQ3o4eU5vVlc5NmYzYUJwMEY3dG9YSUI4Z2pETTlv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMinwFBVV95cUxPNEQ0czBlVTl4d2NiR2Y3MG94dkp5LXZRZk5uR3R5ZVVHd0t1My1kZmhHeVVwMmlrcElGWHZ1d1h6Y05FWE9KOXdFS2xYaG8yOEVpZFE3UGR5Zi11VFJFT3lZNTZfSDZ6MV9qbS1jZHdTMWREYmhkZkw3ZDZWX0VrVWV2Q0dFdzAyaUEyc3plYWxsSllVQWgxYUxkME5wZEk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung-Google AI Glasses Preorders Begin November 12... Competition with Meta Heats Up - 아시아경제](https://news.google.com/rss/articles/CBMiZEFVX3lxTFBsRW9QQ1VfYVo5VzBWc1g3TDNSbjBEY0pxanp5OWJaVDA2aUhKYk1aekZxZ0JDWU5yaXRkY01QMFMza2JGLU5YMkRqdDZjNWpyTmJjOGR6TzFYaVBKcElpMUxLeGs?oc=5) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Are Almost Here, With Preorders Opening This November - Hypebeast](https://news.google.com/rss/articles/CBMihAFBVV95cUxNMTNqX001VU93YWJQenNGUU1ENnAxV2lYN3pMRWJhOEItS2dwaHh0Tkhha3ZJWm5wU0hyMzRoanp6TXZPRzh6MGgzbkRUQklrem5rZ3BVZTlBU1JYVzdlUy1STkVGdGppZS1TeFlOZWlHVktoZENlRmJBYzhoUmNSRHFqdHU?oc=5) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s Intelligent Eyewear set to launch in the US and South Korea this December - Sammy Fans](https://news.google.com/rss/articles/CBMivAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZdIBvAFBVV95cUxNLW83Y0hPakRSN3ZZVGtvU2Z6R1RTMWJKVWFvcjZZNWhaWGhRV25HLVh3N2hlNHFmTFJKaDRoX3kyVXktTS1fbGNRY0FjUi15TEZmLVFjdDJKZ2RDSVlpY2lSNW1vMU1oT1J0SUZuZ25BNlprNjdKX1NpdE81aTNKZ0x1c1BhMnRoSjFEdTQyb2RQb3k2Znp6RHpyRlE3OHBIQ0RnT3FuZkRhT2JGaEd4emZpMnpVRWQ2bHVBZQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
