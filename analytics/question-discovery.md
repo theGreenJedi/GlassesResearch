@@ -1,17 +1,17 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-09T20:47:05+00:00**
+Generated: **2026-11-10T17:53:48+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **372** (not the published count)
-- Unanswered research candidates: **79**
-- Observations this run: **89**
-- New distinct questions: **8**
+- Canonical registry size: **381** (not the published count)
+- Unanswered research candidates: **88**
+- Observations this run: **97**
+- New distinct questions: **9**
 
 ## Source health
 
-- github_issues: ok — 11 observations
+- github_issues: ok — 19 observations
 - stackexchange: ok — 20 observations
 - reddit_rss: partial — 49 observations
 - google_search_console: ok — 9 observations
@@ -19,14 +19,15 @@ Generated: **2026-11-09T20:47:05+00:00**
 
 ## New questions
 
-- **Q-000365** — Why do caption glasses cause so much eye strain?
-- **Q-000366** — Which 'Post Flair' for the Samsung Android XR Glasses?
-- **Q-000367** — What Would Make You Buy AR display Glasses For Long-Term?
-- **Q-000368** — Is it possible to add Even G2-style real-time AI conversation assistance to Rokid Glasses (RV101)?
-- **Q-000369** — What IRIS users have said since launch (dev here, every quote word for word)
-- **Q-000370** — Other RayNeo iO owners: what's the one thing you'd tell someone before they buy?
-- **Q-000371** — Title: What's going on with NIMO's Kickstarter and preorders?
-- **Q-000372** — what are the main complaints about the inmo air3 battery life display and software?
+- **Q-000373** — How to support a new type of glasses
+- **Q-000374** — Investigate what condition triggers the "smart glasses are not connected" check — glasses WebSocket state?
+- **Q-000375** — Could it be possible to support Inmo Air 2 AR glasses?
+- **Q-000376** — will it be uploaded later when the Mentra Live is connected to WiFi?
+- **Q-000377** — Best glasses for recording short form content?
+- **Q-000378** — Any upcoming Black Friday deals or discounts for Even G2?
+- **Q-000379** — prescription wearers, which smart glasses actually worked with your prescription?
+- **Q-000380** — Is there any glasses I can use as a pov live cam for discord
+- **Q-000381** — Is George Clooney wearing Even G2?
 
 ## Research queue (first 20)
 
