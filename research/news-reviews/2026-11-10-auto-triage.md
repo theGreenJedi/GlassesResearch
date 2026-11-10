@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-10T18:53:54.803591+00:00`
+Generated: `2026-11-10T23:31:49.064521+00:00`
 
-- Intake files inspected: **215**
-- Candidates retained in this review window/history: **8672**
+- Intake files inspected: **214**
+- Candidates retained in this review window/history: **8538**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1731
-- `catalog_review`: 7
+- `adjacent_radar`: 1703
+- `catalog_review`: 9
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 581
-- `rejected_noise`: 6278
-- `source_review`: 47
+- `needs_editorial_verification`: 586
+- `rejected_noise`: 6169
+- `source_review`: 43
 - `watching`: 24
 
 ## Action queue
@@ -81,6 +81,8 @@ Generated: `2026-11-10T18:53:54.803591+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1354](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1354) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1356](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1356) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1357](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1357) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1361](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1361) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1362](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1362) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1156](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1156) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1161](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1161) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1162](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1162) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -200,6 +202,7 @@ Generated: `2026-11-10T18:53:54.803591+00:00`
 | high | needs_editorial_verification | direct | [Google And XREAL Launch XREAL AURA Wired XR Glasses Powered By Android XR - TradingView](https://news.google.com/rss/articles/CBMi2wFBVV95cUxONnVZRTI2YWJaamJfMmEwMjVTX203TXE5ZndqdjFoaXlfQVRGNnJTdTg3bXRFa1JyZHNNSUJXTUE0YTVhRXNfaGh6dzJJZERScjNwTEdUV0loMjE5TlJWalJDdDVMbHNHcEd1TlZNUGZ2ejY3c3hERkhNQ2NFV1ozeEN0a095NjRTUFlGbUQ4RHpXcHdmeG94dXZUT3ZndjlvUWU2b2pzZkZYZnpOSW1CaEVSQnVteDFiVWRJYjdQdTR0QU5kTlMwVVNzUk9iNnhrUUVQSmF6anlQWk0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GOOGLE BLOG - CO AND XREAL LAUNCH XREAL AURA WIRED XR GLASSES POWERED BY ANDROID XR - Moomoo](https://news.google.com/rss/articles/CBMinAFBVV95cUxOSVRDVlBXMHZCd2lDR0pHQnpTT0c2VUZPRllDR1g0QzBWVWZPQmlwSUFzWHZHQ0RYdDg5TThtbHNhVFc4Vkhqaks5UlZ6OU0wS3BnRUxMcmpMa3VGRTlwblAwOE0yVUxFM0pKSTBrU19GLXJYVlYyV2pGc0R6ODk5SnRuMzZLaDVoWlZST05TZEFVa0FleWVwdUxRR3o?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Maverick AI / AI Pro SDK Portal - everysight.github.io](https://everysight.github.io/maverick-ai-docs/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
+| high | needs_editorial_verification | direct | [Meta AI glasses launch in UAE from $316 with Etisalat monthly plans starting at $15 - Arabian Business](https://news.google.com/rss/articles/CBMizgFBVV95cUxOR0d4cXE5c2dnRlkyNUNPdGcxQS1NT3FSaUNoU3VLNkdnQm1FOEpWamFpUzB2eU1Cc0tUbGRxNmRWbWN0cjhRWGlpVEVWZGx4Vl92SnNfM0lBTnNNSEpzNDZWQkk0SFlpUXFBM29jbzhjSkhmV0NlUkdiWUN1YkFFUnVDaEdiVS1BSmJ1bk9WdnVnQzNucHBnR1dQbGx4N1piNDhwSWdCWlYzWmdHUzhxTXNjaDc4Zkltdy0yU01GU1M3OXA1WkdRM0V3ZXB6dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Request SDK – Everysight](https://www.everysight.com/pages/sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Rokid Glasses 2 launch with upgraded design, bigger battery, and Dolby Audio support - Notebookcheck](https://news.google.com/rss/articles/CBMixgFBVV95cUxOX3NqMktYZnZrNWpoSHZWNUpPRXlWUUlHcVMxZTd4OWptSHhVeEk0TnRhNTZyMTNnS2JNNjlOVmJQSFRSTHBXVkpPOU43aGFOX0VFYzhDMDJsaklseElnQmdJX2hMNlpSSjZ3YzhETFRDWnlMMDd2SkpxWmlsaVAzYkJwVkpDZmZvWjN6RU5uUFN2dm5RT3NJNHJ1Y2cwdVZmQlAwNHhXVmF1QjQtWHpZUFZ1Z3QydVdrdVNva3k2ZWFzbjFWbEE?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Pre-Orders Start November 12th with Dec 2026 Launch - Geeky Gadgets](https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xMDlpUzNYRWFBYWFsNU5jMzhXWkZ4WGlPZnlQbUNhdFJjYWFwVzhubXJBclh5TFdILVZsY1pTcmdJNWRaazJzajIzMTdCdDVsempsZUh1T1JZM1paSkZobVIwZHk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -268,9 +271,6 @@ Generated: `2026-11-10T18:53:54.803591+00:00`
 | high | needs_editorial_verification | direct | [NOS é a primeira operadora a vender os óculos inteligentes Ray-Ban Meta em Portugal - Echo Boomer](https://news.google.com/rss/articles/CBMifEFVX3lxTE42RUN3ZUdoZW40M2R4QzB5QnJrVFVMZDlzcEJ3WE43T3plMWMyNnQxcGUxR0dfbWYtQ2NlUVQ3UjgteFlscWFER3JWbEJ3bWd2WG96Vk40c0JIN2s1UjhhdGx1M2NyVWtQVFc4ZWt4dEdWd3g4MEJURlVic2Q?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Notebookcheck Oct 5, 2026 Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban and Oakley Meta glasses arrive in UAE with etisalat - Absolute Geeks](https://news.google.com/rss/articles/CBMiogFBVV95cUxPUE5CejNobERrb21ndUd0UkUxdGdqcG40UkEzblhwZS1pcmNjV25TN3g1djVYa0JfV3d4Z1lpd21sOFRRb25VX2pkT3BWUjc5Y2N4SlJmV1JLbE9mTnlORWFXMFR2LThqVWZVN0xad2xjYWNKXzVYOVB1dHZxMURMSDBBbTR3aEpJLThOYzhqSlRuVnZaZXFHQ25mZXJmNGU0Umc?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta & Oakley Meta Launch in Philippines: Official Price - Unbox PH](https://news.google.com/rss/articles/CBMijgFBVV95cUxPdjB0dnNFRXM2ak5mRFlCUEtJdWljdmNOMnBpVHdadVNzaEV6aU5Uak1Ick13bkdScGNmc2JCWFRabXp6N0NjTTJOck1BUnNUVUlaOU5ObG9QRVkzOFJDOW1OVWxFVEs1Y3c1RU0tQWdTdHNncW1qc0c5cmlwV2E3MHlfREJfTVliSVBuRmh3?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Road to VR 1d ago Gentle Monster Teases December Release for Android XR Smart Glasses with Joaquin Phoenix Coverage Google](https://roadtovr.com/gentle-monster-android-xr-joaquin-phoenix-trailer/) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Road to VR Oct 7, 2026 Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
