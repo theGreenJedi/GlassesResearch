@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-11T06:44:34.565869+00:00`
+Generated: `2026-11-11T11:29:31.779985+00:00`
 
-- Intake files inspected: **213**
-- Candidates retained in this review window/history: **8399**
+- Intake files inspected: **212**
+- Candidates retained in this review window/history: **8392**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1635
+- `adjacent_radar`: 1634
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 584
+- `needs_editorial_verification`: 580
 - `rejected_noise`: 6105
-- `source_review`: 38
-- `watching`: 23
+- `source_review`: 37
+- `watching`: 22
 
 ## Action queue
 
@@ -84,7 +84,6 @@ Generated: `2026-11-11T06:44:34.565869+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1368](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1368) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1370](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1370) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1371](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1371) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1172](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1172) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1173](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1173) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1174](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1174) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1175](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1175) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +270,7 @@ Generated: `2026-11-11T06:44:34.565869+00:00`
 | high | needs_editorial_verification | direct | [NOS é a primeira operadora a vender os óculos inteligentes Ray-Ban Meta em Portugal - Echo Boomer](https://news.google.com/rss/articles/CBMifEFVX3lxTE42RUN3ZUdoZW40M2R4QzB5QnJrVFVMZDlzcEJ3WE43T3plMWMyNnQxcGUxR0dfbWYtQ2NlUVQ3UjgteFlscWFER3JWbEJ3bWd2WG96Vk40c0JIN2s1UjhhdGx1M2NyVWtQVFc4ZWt4dEdWd3g4MEJURlVic2Q?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Notebookcheck Oct 5, 2026 Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta & Oakley Meta Launch in Philippines: Official Price - Unbox PH](https://news.google.com/rss/articles/CBMijgFBVV95cUxPdjB0dnNFRXM2ak5mRFlCUEtJdWljdmNOMnBpVHdadVNzaEV6aU5Uak1Ick13bkdScGNmc2JCWFRabXp6N0NjTTJOck1BUnNUVUlaOU5ObG9QRVkzOFJDOW1OVWxFVEs1Y3c1RU0tQWdTdHNncW1qc0c5cmlwV2E3MHlfREJfTVliSVBuRmh3?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [Ray-Ban Meta glasses are on discount right now](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6af3fadfef1c441cbc39a10b3beec6d6&url=https%3a%2f%2fwww.msn.com%2fen-us%2fvideo%2fother%2fray-ban-meta-glasses-are-on-discount-right-now%2fvi-AA2haKzZ&c=7935605273424373935&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
