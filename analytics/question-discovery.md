@@ -1,13 +1,13 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-10T17:53:48+00:00**
+Generated: **2026-11-11T17:55:28+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **381** (not the published count)
-- Unanswered research candidates: **88**
+- Canonical registry size: **384** (not the published count)
+- Unanswered research candidates: **91**
 - Observations this run: **97**
-- New distinct questions: **9**
+- New distinct questions: **3**
 
 ## Source health
 
@@ -19,15 +19,9 @@ Generated: **2026-11-10T17:53:48+00:00**
 
 ## New questions
 
-- **Q-000373** — How to support a new type of glasses
-- **Q-000374** — Investigate what condition triggers the "smart glasses are not connected" check — glasses WebSocket state?
-- **Q-000375** — Could it be possible to support Inmo Air 2 AR glasses?
-- **Q-000376** — will it be uploaded later when the Mentra Live is connected to WiFi?
-- **Q-000377** — Best glasses for recording short form content?
-- **Q-000378** — Any upcoming Black Friday deals or discounts for Even G2?
-- **Q-000379** — prescription wearers, which smart glasses actually worked with your prescription?
-- **Q-000380** — Is there any glasses I can use as a pov live cam for discord
-- **Q-000381** — Is George Clooney wearing Even G2?
+- **Q-000382** — What happened to the NIMO flair?
+- **Q-000383** — Do newer smart glasses actually get real Black Friday discounts, or is it barely anything?
+- **Q-000384** — Good recording glasses that aren't Meta?
 
 ## Research queue (first 20)
 
