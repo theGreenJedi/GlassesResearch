@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-11T11:29:31.779985+00:00`
+Generated: `2026-11-11T12:15:05.086190+00:00`
 
-- Intake files inspected: **212**
-- Candidates retained in this review window/history: **8392**
+- Intake files inspected: **213**
+- Candidates retained in this review window/history: **8403**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1634
+- `adjacent_radar`: 1637
 - `catalog_review`: 10
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 580
+- `needs_editorial_verification`: 586
 - `rejected_noise`: 6105
-- `source_review`: 37
+- `source_review`: 39
 - `watching`: 22
 
 ## Action queue
@@ -84,6 +84,8 @@ Generated: `2026-11-11T11:29:31.779985+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1368](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1368) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1370](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1370) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1371](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1371) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1374](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1374) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1376](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1376) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1173](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1173) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1174](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1174) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1175](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1175) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -177,6 +179,7 @@ Generated: `2026-11-11T11:29:31.779985+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1367](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1367) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1372](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1372) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1373](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1373) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1375](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1375) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [US Senators Launch Inquiry into Privacy Risks of Meta AI-Enabled Smart Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMisgFBVV95cUxObDBKaDFoYmhEV0p5U3Nwa1NjVjVIeDBmcHNfN0psRnJnRHZJSGJRVHRCR3BCQ093aW9MekJfSVd5YmZtYV9NNTFOT2dzVnJhWS04Wnl6bExRdUlrbll3c2l4TDRCMEt3QjQ0blpDTjY3ejRaUWtDRjl6Mkp4TzdkVFVNcld1SmFLNWptV2JYdXRkN25YNHJBaC1Iak01QWszdW5tZzN0MjNaRXo1bHZFZWNB?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Android XR's First AR Glasses 'XREAL Aura' Launch Today, Starting at $1,100 for Limited Time - Road to VR](https://news.google.com/rss/articles/CBMieEFVX3lxTFBRRE5XbzVUbXc2d0JQVzIzMHA0clBUbjlHYl9ZRGxybWhZWEk1N3V6Sl9MZFNhVFFOWUNwQWlWdEFRNTdTN2xvcWVTNGk3bmNDU2wxc2lvclhkdmtOcTAwZHMtWXFMVkFKZERPc0JlWER6VVU4RDExMA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -266,11 +269,8 @@ Generated: `2026-11-11T11:29:31.779985+00:00`
 | high | needs_editorial_verification | direct | [Maverick Apps - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/maverick-apps/) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Meta releases update for AI glasses over moisture-related heating — Engadget - UA.NEWS](https://news.google.com/rss/articles/CBMitwFBVV95cUxPUktuaS1oSVJhZTJkVF9yNEp3TmpJRlRZNDY3QnptbUZaTWhQQ09WaW1pU09qZ3Y3dkNDalNMazRhb2MxbXBmVmV6MzdGT21mdlU1YlJjSHNheGxVT2t1Zm12NVNjaVktX0RPQU5zdXA0LVJQNUZtSGMzVjhacUJPck40T2tkNFYycXZHS285THZpT1Z1dDV0clJtRHlCZExOdi0tb2dzdTdDTnB4WVIxRWZSM3pfaUE?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [MotorTrend 2-Year Long Test Review of Maverick Hybrid: How It Went](https://www.mavericktruckclub.com/motortrend-2-year-long-test-review-of-maverick-hybrid-how-it-went/) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
+| high | needs_editorial_verification | direct | [Nos first operator in Portugal to launch Ray-Ban Meta smart glasses - Telecompaper](https://news.google.com/rss/articles/CBMirwFBVV95cUxOYWFSQ0pnSk9iLUFEcGpPUzdOQTBYVmNtRldNY1RRMzZBX2owYWNKT3AwczR4R1dLSzJPbXZ1T0x0di0yRnRNcTE5M25zbnpKVGx2SDNxRzVrQXBnckx6UjctTU94eDFCRE5tcWxmOGdMTDRERWNUSWY3YmlNcDd6RFBOY1RQNWNZaExTcXJ1UGhVNTRVMmttTHBQVnZMUG9hTUU0TXlHdnp0TktzaTZF?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [NOS traz óculos Ray-Ban Meta para Portugal - MaisTecnologia](https://news.google.com/rss/articles/CBMif0FVX3lxTFB5Ynhhd2FlVnBZYWVuc2RkM3AzRDVMOF9zSXlRYVpUd29Qb0Fza0NrN2U3SE5TQmh5bldKbklpTmhLcnQ5blB4ZXM3MThmdUtpa0FrU0dKQ3NnWUNfVjNiSVpxU0ZVZkVJaHJ4VHJfSEhQTG1oUlJyVGgzd0ZZQ2M?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [NOS é a primeira operadora a vender os óculos inteligentes Ray-Ban Meta em Portugal - Echo Boomer](https://news.google.com/rss/articles/CBMifEFVX3lxTE42RUN3ZUdoZW40M2R4QzB5QnJrVFVMZDlzcEJ3WE43T3plMWMyNnQxcGUxR0dfbWYtQ2NlUVQ3UjgteFlscWFER3JWbEJ3bWd2WG96Vk40c0JIN2s1UjhhdGx1M2NyVWtQVFc4ZWt4dEdWd3g4MEJURlVic2Q?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Notebookcheck Oct 5, 2026 Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta & Oakley Meta Launch in Philippines: Official Price - Unbox PH](https://news.google.com/rss/articles/CBMijgFBVV95cUxPdjB0dnNFRXM2ak5mRFlCUEtJdWljdmNOMnBpVHdadVNzaEV6aU5Uak1Ick13bkdScGNmc2JCWFRabXp6N0NjTTJOck1BUnNUVUlaOU5ObG9QRVkzOFJDOW1OVWxFVEs1Y3c1RU0tQWdTdHNncW1qc0c5cmlwV2E3MHlfREJfTVliSVBuRmh3?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta glasses are on discount right now](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6af3fadfef1c441cbc39a10b3beec6d6&url=https%3a%2f%2fwww.msn.com%2fen-us%2fvideo%2fother%2fray-ban-meta-glasses-are-on-discount-right-now%2fvi-AA2haKzZ&c=7935605273424373935&mkt=en-us) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
