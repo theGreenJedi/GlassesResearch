@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-11T12:55:55.717053+00:00`
+Generated: `2026-11-11T15:25:10.022172+00:00`
 
-- Intake files inspected: **215**
-- Candidates retained in this review window/history: **8454**
+- Intake files inspected: **213**
+- Candidates retained in this review window/history: **8362**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1642
+- `adjacent_radar`: 1618
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 588
-- `rejected_noise`: 6148
-- `source_review`: 36
+- `needs_editorial_verification`: 589
+- `rejected_noise`: 6080
+- `source_review`: 35
 - `watching`: 22
 
 ## Action queue
@@ -86,8 +86,6 @@ Generated: `2026-11-11T12:55:55.717053+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1371](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1371) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1374](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1374) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1376](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1376) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1173](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1173) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1174](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1174) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1175](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1175) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1179](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1179) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1181](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1181) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -219,6 +217,7 @@ Generated: `2026-11-11T12:55:55.717053+00:00`
 | high | needs_editorial_verification | direct | [Samsung's First AI Glasses Open for Preorder on the 12th - Seoul Economic Daily](https://news.google.com/rss/articles/CBMingFBVV95cUxNV0YxSU82dHg2R0hPeGxrN19SaWEwSmQ1QjBTRWczZ2k4NFFpLXpJZlpQN1cwdnFkd2tsNnJHamhYakkwTWNZM0FHV1ZJNVZQNkdvQVdGWnZKV1RTYmpoVEN6dU9uaGJKbDg2U1Y1TVd3azhaWUZjb2Q3WkNtRFVtN1YxdGJrd2JUbDFCdHdSZFM4Qm9WRmdpVmJ3UnJOQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung, Google to launch AI glasses in December, challenging Meta's dominance - 헤럴드경제](https://news.google.com/rss/articles/CBMiV0FVX3lxTE02ZnpCYVBkbTlkMUdKaUZybXhjaFREX1RXT05UMHEwemRtQk9EQ0ZxQzZvdUw0em1yUVVjYXMwSGszS3F2VFpCTDFBNEhYazdEMkw5cHo0MA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [South Korean schools launch inspections after AI glasses used to cheat on exams - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGZlZTJHR3BkcDlFWk5KQ1dpWThpUmc2elRRMmVJTENRX2Foa3JEcjUtZGVUNDJUVngxRDFKZmtOaENnUHhVdHpPTkUwQk5IQ2JkTWhLX3p5SjBDVnJPN3J4S1VqRW1BT3ZpeHktdnZDUzdfZW1mb3J6LTNSQ3RKZEJhTFQ4d3JuaGFNYVQ0V1RwTmJQRE5vUXhWbVVxaGxYdVc1SHljR3dsTUlVSUVad1RqTQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [VSP’s Marchon, Marcolin Plan 2027 Smartglasses Launch – Finance News - Global Banking & Finance Review](https://news.google.com/rss/articles/CBMilgFBVV95cUxPT0YyQ0VmblVtYjFRc1NENGdaZzg0WmlWM21vMjlNQnNmLUVGN01kRExrR1lHSks1YU5lTmt4cnlJdW91NzZrMDZvWWstbU04Rzdjd0dGb0RpS1FrM29BN1MwSGdURDd3M1phN2diRmsyTVRlQzZmNWhhUlN2Ukp4dC0tb2xkcXF4NUIyNnQwMzJ3cGN2OWc?oc=5) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | high | needs_editorial_verification | direct | [Vuzix begins shipping SHRIKE configurable waveguide platform for defense evaluation - Traders Union](https://news.google.com/rss/articles/CBMigAFBVV95cUxPdXRwOGxNa3h2dlhFdnZYUVRoWldvdFpBQlNMUlVzQ0RnVHhmcnpYUVZyQUVfM0ZWbXY3UlRtcm9UU3pDUDQ1MjBVZExmMXFwVDBhOUhnT1FrWUFjTmpvTlJDYVlXQlVDOVczU1VJN19pcUJhZ3g1QW85Y0tBRndMSA?oc=5) | reachable (200) | research_news_review, model_catalog_review, development_hacking, research_optics |
 | high | needs_editorial_verification | direct | [Vuzix Signs Distribution Agreement with Commercial Electronics Systems and Begins Shipping Against Initial Six-Figure LX1 Smart Glasses Orde](https://news.google.com/rss/articles/CBMilgFBVV95cUxOUGluS0p2WE9xMEU1cGdheUtXYWhPVjgycklQUjRoVkZlandkMkRMMTIzOUU2SHk1ZWk1QlhWTG9OUU9Xa0Z5eGVyaThIWXEycUZDSGNXSGhCYW5IaUN0eEIzMFhweWoxR3dTcnNGN2xnd0JUd1BOQUpjREIzTzB2OU1WMzYwS2lfV2tNMU1keXNGWXE2Rnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Warby Parker Seemingly Spilled The Beans On Google's Android XR Smart Glasses Launch - AOL.com](https://news.google.com/rss/articles/CBMiigFBVV95cUxNN1h0Ylh3MU4zTzZMMG1sakF3R0tlMDFHcFBvUGtmWVVxMEFyZ1FyVHZjcVlMX0xJUzFSZFVHU0dRaGFfR0l3bWRaWlhIOTh6YmFPT1JJVEVfN0YtSWw5SlV2d29RNy1aS015M1MybUJjZzhmbkE5SG40dVU1Y3VkRWY5ajFmUG9HcGc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,6 +270,7 @@ Generated: `2026-11-11T12:55:55.717053+00:00`
 | high | needs_editorial_verification | direct | [Meta releases update for AI glasses over moisture-related heating — Engadget - UA.NEWS](https://news.google.com/rss/articles/CBMitwFBVV95cUxPUktuaS1oSVJhZTJkVF9yNEp3TmpJRlRZNDY3QnptbUZaTWhQQ09WaW1pU09qZ3Y3dkNDalNMazRhb2MxbXBmVmV6MzdGT21mdlU1YlJjSHNheGxVT2t1Zm12NVNjaVktX0RPQU5zdXA0LVJQNUZtSGMzVjhacUJPck40T2tkNFYycXZHS285THZpT1Z1dDV0clJtRHlCZExOdi0tb2dzdTdDTnB4WVIxRWZSM3pfaUE?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [MotorTrend 2-Year Long Test Review of Maverick Hybrid: How It Went](https://www.mavericktruckclub.com/motortrend-2-year-long-test-review-of-maverick-hybrid-how-it-went/) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | high | needs_editorial_verification | direct | [Nos first operator in Portugal to launch Ray-Ban Meta smart glasses - Telecompaper](https://news.google.com/rss/articles/CBMirwFBVV95cUxOYWFSQ0pnSk9iLUFEcGpPUzdOQTBYVmNtRldNY1RRMzZBX2owYWNKT3AwczR4R1dLSzJPbXZ1T0x0di0yRnRNcTE5M25zbnpKVGx2SDNxRzVrQXBnckx6UjctTU94eDFCRE5tcWxmOGdMTDRERWNUSWY3YmlNcDd6RFBOY1RQNWNZaExTcXJ1UGhVNTRVMmttTHBQVnZMUG9hTUU0TXlHdnp0TktzaTZF?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Ray-Ban and Oakley Meta AI Glasses Now in the Philippines - thegame.ph](https://news.google.com/rss/articles/CBMilgFBVV95cUxOeXRFRU5WaC1GNU5mTFlNVHZGZGpyYkgzMjgxZFJXV0R3Q2d1NS1paXROZ3ZIMUljMW52cVYxNTlNOHdmczgya1M1NEk4eFE1aTdRMncxR1BRSEw2LUgyRUpWdkR0dEl6dHB4bjBucU8xMUF2dmJQVzVkWkRvZ2dKMFZCdW1xRkJrNERBWWtUV0E5czA1T1E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
