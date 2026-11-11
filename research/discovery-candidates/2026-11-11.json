@@ -1,46 +1,47 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-11T15:24:22.414345+00:00",
-  "candidate_count": 95,
-  "classifier_irrelevant_count": 83,
+  "discovered_utc": "2026-11-11T20:04:12.014405+00:00",
+  "candidate_count": 70,
+  "classifier_irrelevant_count": 43,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 11,
-    "broad_web": 71,
-    "developer": 13
+    "adjacent": 23,
+    "broad_web": 36,
+    "community": 1,
+    "developer": 13,
+    "research": 2,
+    "retail": 2
   },
   "relationship_counts": {
-    "direct": 1,
-    "enabling": 0,
-    "adjacent": 11,
+    "direct": 5,
+    "enabling": 1,
+    "adjacent": 21,
     "speculative": 0,
-    "irrelevant": 83
+    "irrelevant": 43
   },
   "type_counts": {
-    "model": 8,
-    "review": 1,
-    "video": 2,
-    "news": 54,
-    "research": 2,
-    "tool": 22,
+    "model": 4,
+    "review": 3,
+    "video": 3,
+    "news": 40,
+    "research": 1,
+    "tool": 12,
     "sdk": 13,
-    "optics": 1,
-    "policy": 5,
-    "retail": 4,
-    "teardown": 3,
-    "community": 2,
-    "rumor": 1
+    "optics": 3,
+    "policy": 2,
+    "retail": 6,
+    "community": 10
   },
   "routing_counts": {
-    "adjacent_radar": 11,
-    "community_evidence_review": 2,
-    "development_hacking": 7,
-    "policy_privacy": 1,
-    "reject_noise": 83,
-    "report_card_evidence": 2,
-    "research_news_review": 12,
-    "research_optics": 1,
-    "retail_rebrand_review": 2
+    "adjacent_radar": 21,
+    "deep_research": 1,
+    "development_hacking": 1,
+    "model_catalog_review": 2,
+    "reject_noise": 43,
+    "report_card_evidence": 4,
+    "research_news_review": 27,
+    "research_optics": 3,
+    "retail_rebrand_review": 4
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -54,16 +55,87 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "cda35e3a7ff0829b",
-      "title": "XREAL AURA - CES",
-      "url": "https://www.ces.tech/ces-innovation-awards/2027/xreal-aura/",
-      "summary": "XREAL AURA is a sub-95g optical see-through XR headset built to make everyday spatial computing wearable rather than a seated, isolated experience. A dual-chip split-compute architecture separates processing by task: the XREAL X1S Spatial Coprocessor, embedded in the frame, handles low-latency spatial display and sensor processing locally ...",
+      "id": "c2a07f7b48d11207",
+      "title": "XREAL SDK Overview",
+      "url": "https://docs.xreal.com/",
+      "summary": "By utilizing the XREAL SDK, innovative mixed reality experiences are developed. Using a simple development process and a high-level API, XREAL SDK offers a set of powerful MR features and enables your XREAL glasses to understand the real world.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "api",
+        "sdk"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking"
+      ],
+      "triage_priority": "high",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a32e203cc2be775",
+      "title": "Pharmacy and prescription drug benefits - UnitedHealthcare",
+      "url": "https://www.uhc.com/member-resources/pharmacy-benefits",
+      "summary": "Prescription drugs can play an important role in your health, whether you need them every day or once in a while. Knowing how your benefits work may help you fill your prescriptions more easily and help manage costs. Let’s walk through how to use your pharmacy and prescription drug benefits.",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
+      "source": "Bing web RSS",
+      "source_lane": "research",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "research",
+        "optics"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics",
+        "deep_research"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "07e44ac629dce758",
+      "title": "XREAL AURA Prescription Lenses – XREAL US Shop",
+      "url": "https://us.shop.xreal.com/products/xreal-aura-prescription-lenses",
+      "summary": "Light and Comfortable | Uncompromised Sharpness | Optional Blue Light Protection Custom-built exclusively for the XREAL AURA",
       "discovery_channel": "broad_web",
       "query": "XREAL AURA",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -85,10 +157,108 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e09de2d921307b00",
-      "title": "The Best 10 Restaurants near Wilkinson Terrace, VA 23234",
-      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Wilkinson+Terrace%2C+VA+23234",
-      "summary": "What are people saying about restaurants near Wilkinson Terrace, VA? This is a review for restaurants near Wilkinson Terrace, VA: \"This has become my favorite place to visit and enjoy a wonderful dinner. The service is amazing along with the flickering candlelight setting a special mood. Then comes my surprise of fried lobster!!!",
+      "id": "ecd30200750ecdf5",
+      "title": "Amazon.com: AI Smart Glasses with Camera",
+      "url": "https://www.amazon.com/clp/B0GJ5LD7QL",
+      "summary": "Amazon.com: AI Smart Glasses with Camera, 4K Video, Real-Time Translation, AI Assistant | Object Recognition, Open-Ear Speakers, Bluetooth Calling, Transparent Lenses : Electronics",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "video",
+        "optics",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "research_optics",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99c92c17ea19d14b",
+      "title": "Best open-source smart glasses - GlassesResearch",
+      "url": "https://glassesresearch.org/guides/open-source-smart-glasses/",
+      "summary": "Best open-source smart glasses: a verified shortlist from canonical model and capability records, with unresolved claims left unknown.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e21793a593ef8cb0",
+      "title": "Shop New Meta Glasses: Prices Starting at $249",
+      "url": "https://www.meta.com/ai-glasses/meta-glasses/",
+      "summary": "Meta Glasses are smart glasses that let you capture photos and video, listen to music, take calls, and access Meta AI—all hands-free. Available in three styles (Meta Adventurer, Meta Fury, and Meta Starfire), they combine everyday eyewear design with built-in cameras, speakers, and microphones.",
+      "discovery_channel": "broad_web+retail",
+      "query": "AI glasses; AI glasses site:targetoptical.com; AI glasses site:visionexpress.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "video"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2aaabe2637025a6c",
+      "title": "Edinburg TX Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/edinburg-tx/",
+      "summary": "Zillow has 1711 homes for sale in Edinburg TX. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -105,42 +275,10 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "db197d47d6ab119d",
-      "title": "Black Friday Smartwatch and Wearable Tech Deals 2026 - Best Buy",
-      "url": "https://www.bestbuy.com/site/all-electronics-on-sale/all-wearable-technology-on-sale/pcmcat1690897435393.c?id=pcmcat1690897435393",
-      "summary": "Shop the Best Buy Black Friday wearable tech deals for the best prices on smartwatches, Apple Watch, activity trackers, and more.",
-      "discovery_channel": "adjacent",
-      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "video",
+        "review",
         "retail"
       ],
-      "primary_type": "video",
+      "primary_type": "review",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
@@ -153,12 +291,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "41bc0ae76ce043f5",
-      "title": "Disable \"draw a shape to create a screen snip\" screen overlay ...",
-      "url": "https://superuser.com/questions/1608253/disable-draw-a-shape-to-create-a-screen-snip-screen-overlay-triggering-from-sh",
-      "summary": "I have followed all of the instructions I've found online to disable both the Snipping Tool and Snip & Sketch (it is uninstalled from my system). Yet when I press Win+F20, I still see the screen go dim, and am prompted to draw a shape to create a screen snip. How can I disable the shortcut functionality and prevent this behavior from occurring?",
+      "id": "b55d53cd076e6c77",
+      "title": "Charles Schwab | Charles Schwab",
+      "url": "https://international.schwab.com/author/charles-schwab",
+      "summary": "Charles \"Chuck\" R. Schwab started the San Francisco–based The Charles Schwab Corporation in 1971 as a traditional brokerage company, and in 1974 became a pioneer in the discount brokerage business. Schwab took an early lead in the industry, offering a combination of low prices and fast, efficient order executions, and soon became the nation's largest discount broker. Today, the company is ...",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -171,12 +309,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -185,10 +322,73 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8dfe3264ba068472",
-      "title": "Greenshot: The hotkey (s) \"PrintScreen, Alt + PrintScreen, Ctrl ...",
-      "url": "https://superuser.com/questions/1151007/greenshot-the-hotkeys-printscreen-alt-printscreen-ctrl-printscreen",
-      "summary": "I encountered the same warning message about the hot keys. My solution (Windows 10): Go to \"Settings\" > \"Ease of Access\" > \"Keyboard\". Turn off Print Screen shortcut 'Use the PrtScn button to open screen snipping'. I think this disables the standard program using the hotkey Now, the PrntScn button works with Greenshot. Hope this helps :)",
+      "id": "dffab6368904971a",
+      "title": "Cities Nearby Edinburg, Texas, United States",
+      "url": "https://www.thecitiesnow.com/united_states/texas/edinburg",
+      "summary": "Find five hundred cities near Edinburg, Texas, United States from closest to farthest by distance. Distances from Edinburg to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d8f3a95f9ee17c1",
+      "title": "Contact Us - Retirement Plan Services",
+      "url": "https://workplace.schwab.com/contact-us",
+      "summary": "The Charles Schwab Corporation provides services to retirement and other benefit plans and participants through its separate but affiliated companies and subsidiaries: Charles Schwab Trust Bank; Charles Schwab & Co., Inc.; and Schwab Retirement Plan Services, Inc. Trust, custody, and deposit products and services are available through Charles ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e163119e47283f0d",
+      "title": "CVS Caremark Home",
+      "url": "https://www.caremark.com/",
+      "summary": "CVS Caremark is a pharmacy benefit manager dedicated to helping each of our members on a path to better health by getting them the prescriptions they need when they need them.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -216,12 +416,105 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bf05788ed49a645a",
-      "title": "NEAR Protocol USD Price (NEAR-USD)",
-      "url": "https://finance.yahoo.com/quote/NEAR-USD/",
-      "summary": "Find the live NEAR Protocol USD (NEAR-USD) price, history, news and other vital information to help with your cryptocurrency trading and investing.",
+      "id": "f844d9fd13522f48",
+      "title": "CVS Pharmacy - 10th St & Arlington Ave, Indianapolis, IN",
+      "url": "https://www.storeopeninghours.com/cvs-pharmacy-10th-st-and-arlington-ave-indianapolis-in",
+      "summary": "Please see this page for the specifics on CVS Pharmacy 10th St & Arlington Ave, Indianapolis, IN, including the working hours, directions, direct telephone and more info.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ddcbf6202fa9502",
+      "title": "CVS Pharmacy - 1530 Shadeland Avenue in Indianapolis",
+      "url": "https://www.mystore411.com/store/view/78252/CVS-Pharmacy-INDIANAPOLIS",
+      "summary": "CVS Pharmacy - 1530 Shadeland Avenue in Indianapolis, Indiana 46219: store location & hours, services, holiday hours, map, driving directions and more",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "185a8b2582f4e0c6",
+      "title": "CVS PHARMACY - 79TH AND FALL CREEK, 9805 Geist Crossing Dr ...",
+      "url": "https://www.loc8nearme.com/indiana/indianapolis/cvs-pharmacy/2427767/",
+      "summary": "CVS Pharmacy at 79TH AND FALL CREEK, 9805 Geist Crossing Dr, Indianapolis IN 46256 - ⏰hours, address, map, directions, ☎️phone number, customer ratings and comments.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "42898ebd6cd64f57",
+      "title": "CVS Pharmacy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/CVS_Pharmacy",
+      "summary": "CVS Health has adopted a vertical integration strategy, combining its retail pharmacy business with other sectors of the healthcare industry, such as insurance and pharmacy benefit management (PBM).",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -248,10 +541,135 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "18a9093636508ba6",
-      "title": "screenshot - How to reconfigure windows+shift+s key combinations to ...",
-      "url": "https://superuser.com/questions/1766967/how-to-reconfigure-windowsshifts-key-combinations-to-open-different-app-instea",
-      "summary": "Double-click Do not allow Snipping Tool to run. Click on Enabled. Reboot your computer and now CRTL+SHIFT+S should no longer call the built-in Windows Snipping Tool. Proceed to map your shortcut to your desired application. You might to take a look at Microsoft Powertoys instead of Autohotkey because it has keyboard shortcut mapping functionality.",
+      "id": "4fe96080c710df79",
+      "title": "Edinburg, TX Weather Radar | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/edinburg/78539/weather-radar/331113",
+      "summary": "Track storms, and stay in-the-know and prepared for what's coming. Easy to use weather radar at your fingertips!",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6b684a32067ee2b8",
+      "title": "Home | The Schwab Equity Award Center",
+      "url": "https://eac.schwab.com/",
+      "summary": "The Equity Award Center at Schwab. Equity unlocks a world of opportunity. From short-term to long-term financial goals, your equity is the extra help you need.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0bef8168e3da162d",
+      "title": "How to open an account | Charles Schwab",
+      "url": "https://international.schwab.com/content/how-to-open-international-account",
+      "summary": "Narrator: For investors who live outside the US or those who are non-US-residents, you can open an international account through Schwab.com if you live in a qualifying country. Before you begin, make sure you have electronic copies or scans of the documents you'll need to upload to open an account, including a valid passport or government ID, proof of residence, and a Social Security or Tax ID ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0212abffc032a01b",
+      "title": "Now Hiring: 14,000 Jobs in Edinburg, TX | Indeed",
+      "url": "https://www.indeed.com/l-Edinburg,-TX-jobs.html",
+      "summary": "Browse 14,106 jobs in Edinburg, TX. New jobs posted today. Apply now and find your next opportunity on Indeed.com.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2960c47bca1b8236",
+      "title": "Pharmacy Services | CVS Health",
+      "url": "https://www.cvshealth.com/services/pharmacy.html",
+      "summary": "With more than 9,000 locations, there’s a CVS Pharmacy within ten miles of most Americans. Along with a growing number of services and convenience, our pharmacy teams provide trusted advice.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -266,12 +684,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -280,10 +697,166 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e23c40bd3924a434",
-      "title": "Snipping tool cannot save | Microsoft Community Hub",
-      "url": "https://techcommunity.microsoft.com/discussions/windowsinsiderprogram/snipping-tool-cannot-save/3672860",
-      "summary": "Greetings, for the past two weeks, my Snipping tool started giving me problems, it says the following whenever I try to snip a...",
+      "id": "4fd244e802d69453",
+      "title": "Schwab Franchise | Charles Schwab",
+      "url": "https://franchise.schwab.com/",
+      "summary": "A turnkey business model for operating an independent Charles Schwab retail branch supported by a vast range of resources from Schwab.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75ee8417e3d976bb",
+      "title": "Schwab Health Savings Brokerage Account | Advisor Services",
+      "url": "https://advisorservices.schwab.com/serving-your-clients/products/health-savings-brokerage-accounts",
+      "summary": "Maximize possible HSA benefits by investing through Schwab’s Health Savings Brokerage Account. Learn more about this investment featured offered through industry-leading HSA Providers.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "910d5637d0cc3755",
+      "title": "Schwab in Lake Grove, NY: Investment & Brokerage Firm | Charles Schwab",
+      "url": "https://www.schwab.com/branches/lake-grove?branch_id=1169",
+      "summary": "Schwab's Lake Grove, NY branch provides personalized help with investments, wealth management, retirement, and more. Visit our firm near you!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "43e7d63d41c0a5cf",
+      "title": "Sponsors | Charles Schwab",
+      "url": "https://workplace.schwab.com/sponsors",
+      "summary": "Schwab Workplace Services Retirement plan, stock plan and compliance solutions for employers, including those offered through our affiliate Charles Schwab & Co., Inc.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ded4138826708629",
+      "title": "The New World Of Wearables: From Health Monitoring To Human ... - Forbes",
+      "url": "https://www.forbes.com/sites/chuckbrooks/2026/08/25/the-new-world-of-wearables-from-health-monitoring-to-human-augmentation/",
+      "summary": "The new world of wearables may be more about a much larger transformation: providing people with previously unheard-of visibility into their skills, performance, and health.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bd968e07f72131f4",
+      "title": "View Health Records and Find Care | CVS",
+      "url": "http://care.cvs.com/",
+      "summary": "CVS Health Dashboard Family health, connected Your CVS health records, all in one place. Let’s simplify family care together. View test results, vaccination records and health information Keep up with appointments and prescriptions Get preventive care reminders",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -298,14 +871,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -314,10 +884,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9035a58c633e4a69",
-      "title": "Snipping Tool: Policy to Disable \"Automatically save screenshots\"",
-      "url": "https://techcommunity.microsoft.com/discussions/onedriveforbusiness/snipping-tool-policy-to-disable-automatically-save-screenshots/3954267",
-      "summary": "Hello OneDrive Community! We have a use case for the need to push a setting to disable the Windows 11 Snipping Tool to \"Automatically save screenshots\" to OneDrive. Is there a group policy or a registry setting that will set the toggle to autosave to Off?",
+      "id": "bbc38fba80576d2f",
+      "title": "Your Neighborhood Pharmacy | CVS Health",
+      "url": "https://www.cvshealth.com/services/pharmacy/neighborhood-pharmacy.html",
+      "summary": "As a neighborhood pharmacy with more than 9,000 locations, CVS Pharmacy® delivers convenient, accessible care to millions of people every day.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -332,16 +902,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "policy",
-        "community"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "policy_privacy",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -350,114 +915,17 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3378914a88ba1e6d",
-      "title": "Where is the Snipping Tool in Windows 10? - Super User",
-      "url": "https://superuser.com/questions/975843/where-is-the-snipping-tool-in-windows-10",
-      "summary": "Where is the Snipping Tool in Windows 10? I can't get it to appear in my start menu when I'm typing its name, like I could before Windows 10. Is there a built-in alternative? (Of cours...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "372e237e1b41818b",
-      "title": "windows - Win + Shift + S | Only Works Once? - Super User",
-      "url": "https://superuser.com/questions/1669968/win-shift-s-only-works-once",
-      "summary": "I've been using the Win + Shift + S command to take (and copy) screenshots for ages now. Since today I ran into the problem that it only works once? The first time (after I've restarted my computer) the snipping tool works fine. But if I try it again to capture another screenshot, nothing is happening. Things I've tried to solve this issue: Turn on the Clipboard History Switch Make Sure Snip ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "75ea51debfe867d9",
-      "title": "Windows 11: How to reinstall Snip & Sketch - Super User",
-      "url": "https://superuser.com/questions/1708542/windows-11-how-to-reinstall-snip-sketch",
-      "summary": "I did uninstall the old deprecated snipping tool from windows 11. But now I see \"snip & sketch\" is uninstalled too! I removed it via right-clicking on the snipping tool in the start and pressing \"uninstall\". I don't know how can I reinstall it! I searched in the Microsoft store but I didn't find it.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6dc32b17c37d1287",
-      "title": "The Missing Time Travelers of 3025 Could Be a Real Scientific Problem",
-      "url": "https://www.popularmechanics.com/science/a65973489/missing-time-travelers-of-3025/",
-      "summary": "In a new study, Andrew Jackson—a research associate from the School of Informatics—explores reasons beyond the scientific or technological as to why time travel appears to be impossible (at...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "48aff3b78c3aaf37",
+      "title": "Training Hub - NiCE Knowledge Success Center",
+      "url": "https://expert-help.nice.com/Training_Hub",
+      "summary": "Watch the NiCE Knowledge Management Training videos and review success documentation to get familiar with product features and functionality.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 4,
       "keyword_hits": [
-        "research",
-        "study"
+        "review"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -467,40 +935,12 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "60cc3a0df6c23ee4",
-      "title": "African Feminisms - Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/social-sciences/encyclopedias-almanacs-transcripts-and-maps/african-feminisms",
-      "summary": "African FeminismsDocumentation of women’s social activism and collective action in Africa dates as far back as the eighteenth century. In the nineteenth century, women in North Africa and the Arab world owned and published feminist journals in which discussions of gender, as well as religious and nationalist struggles, were featured prominently. Source for information on African Feminisms ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
+        "review",
+        "video",
         "tool",
         "sdk"
       ],
-      "primary_type": "tool",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -510,167 +950,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "24f4a50db4b453d8",
-      "title": "Arnold Gesell | Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/people/medicine/psychology-and-psychiatry-biographies/arnold-gesell",
-      "summary": "Arnold Gesell broke new ground in his use of careful observation of children's behavior as a method of studying the orderly sequence of neuromotor development. Profoundly influenced by early embryologists who mapped the ontogeny of organ systems during fetal development, Gesell proposed that psychological development followed a similar orderly sequence governed by \"lawful growth processes ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d0867a4f6333798",
-      "title": "Crow (people) | Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/history/united-states-and-canada/north-american-indigenous-peoples/crow-people",
-      "summary": "Encyclopedia.com gives you the ability to cite reference entries and articles according to common styles from the Modern Language Association (MLA), The Chicago Manual of Style, and the American Psychological Association (APA). Within the “Cite this article” tool, pick a style to see how all available information looks when formatted according to that style. Then, copy and paste the text ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c970608fee69a782",
-      "title": "cultural theory - Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/social-sciences/dictionaries-thesauruses-pictures-and-press-releases/cultural-theory",
-      "summary": "Encyclopedia.com gives you the ability to cite reference entries and articles according to common styles from the Modern Language Association (MLA), The Chicago Manual of Style, and the American Psychological Association (APA). Within the “Cite this article” tool, pick a style to see how all available information looks when formatted according to that style. Then, copy and paste the text ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9b9379675842346a",
-      "title": "Encyclopedia.com | Free Online Encyclopedia",
-      "url": "https://www.encyclopedia.com/",
-      "summary": "Encyclopedia.com – Online dictionary and encyclopedia with pictures, facts, and videos. Get information and homework help with millions of articles in our FREE, online library.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f8df44352617a715",
-      "title": "Franz Joseph Haydn | Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/people/literature-and-arts/music-history-composers-and-performers-biographies/franz-joseph-haydn",
-      "summary": "Franz Joseph [1] Haydn >The Austrian composer Franz Joseph [2] Haydn (1732-1809) in his instrumental >music, especially the symphonies and string quartets, essentially founded >and brought to first mature realization the formal and structural principles >of the classical style.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "71e0f9c9d03988b2",
-      "title": "Get Started with Pinterest | Pinterest Create",
-      "url": "https://create.pinterest.com/get-started/",
-      "summary": "Learn the basic steps to setting up your Pinterest account and profile. Discover top tips to get your creativity flowing before creating content.",
+      "id": "830446ca8f69c32d",
+      "title": "2026 Connecticut House race — Joe Courtney's seat",
+      "url": "https://ijr.com/election/2026-house-ct-c001069",
+      "summary": "2026 Connecticut House race — Joe Courtney's seat: live polling averages and trend chart, declared candidates from FEC filings with cited stances, and the IJR community straw poll.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -686,6 +969,134 @@
       "relationship": "irrelevant",
       "content_types": [
         "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5ba2cb367be7f35e",
+      "title": "AR-15 Rifles For Sale | MidwayUSA",
+      "url": "https://www.midwayusa.com/interest-hub/ar15-rifles",
+      "summary": "Shop AR-15 Rifles from top brands like Daniel Defense, Ruger, and Springfield Armory. AR-15 Rifles ship free at MidwayUSA!",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee2283f376a6e542",
+      "title": "Best Alternatives to the 2026 Jeep Grand Cherokee",
+      "url": "https://cars.usnews.com/cars-trucks/advice/jeep-grand-cherokee-competitors",
+      "summary": "The Jeep Grand Cherokee is both a storied nameplate and a very capable midsize SUV, and it has been a top pick among buyers since the launch of the current generation four years ago.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "launch"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f747bb62377bf28c",
+      "title": "Cloud Services Terms of Use and Delivery Policy | NiCE",
+      "url": "https://www.nice.com/company/legal/nice-enterprise-terms-and-conditions/cloud-services-terms-of-use-and-delivery-policy",
+      "summary": "Applicable to NiCE CX Nexidia Analytics and NiCE CX Quality Central Cloud Services: “ Hours per Day ” means the hours of recorded audio ingested per day. “ Recorded Media ” means the individual media files that are stored on disk (e.g. *.wav files).",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "33a6e4df4093aa41",
+      "title": "Export and Download Options for Reports - NiCE Knowledge Success Center",
+      "url": "https://expert-help.nice.com/Manage/Analytics/Using_Analytics_and_Reports/Export_Options_for_Reports",
+      "summary": "Admin users can download, send immediately via email, or schedule emails of report data.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
         "sdk"
       ],
       "primary_type": "tool",
@@ -698,10 +1109,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2fa28a7b60ac7169",
-      "title": "Lincoln Memorial - Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/places/united-states-and-canada/us-national-park-system/lincoln-memorial",
-      "summary": "Lincoln Memorial, monument, 107 acres (45 hectares), in Potomac Park, Washington, D.C.; built 1914–17. The building, designed by Henry Bacon [1] and styled after a Greek temple, has 36 Doric columns representing the states of the Union at the time of Lincoln's death.",
+      "id": "4fcab63b89fe4de4",
+      "title": "NiCE colors",
+      "url": "https://resources.nice.com/wp-content/uploads/2025/09/NiCE_Brand-guidelines_Colors.pdf",
+      "summary": "NiCE colors Primary palette Using primary colors Secondary palette Accessibility Using secondary colors Background gradients Background gradient guidance Freeform gradient guidance Dos and don'ts",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -729,10 +1140,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89f68b6572cdee85",
-      "title": "Nestorianism - Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/philosophy-and-religion/christianity/christianity-general/nestorianism",
-      "summary": "Encyclopedia.com gives you the ability to cite reference entries and articles according to common styles from the Modern Language Association (MLA), The Chicago Manual of Style, and the American Psychological Association (APA). Within the “Cite this article” tool, pick a style to see how all available information looks when formatted according to that style. Then, copy and paste the text ...",
+      "id": "408a05191f133ce1",
+      "title": "NICE IEX WORKFORCE MANAGEMENT FOR BACK OFFICE",
+      "url": "http://info.nice.com/rs/nice2/images/Eval%201%20-%20Back%20Office%20WFM%20Solution%20Guide.pdf",
+      "summary": "NICE IEX WORKFORCE MANAGEMENT FOR BACK OFFICE For more than two decades, NICE IEX Workforce Management (WFM) has led the market in product innovation by offering the most complete and configurable solution on the market, attracting the world's largest community of exacting WFM professionals. NICE IEX WFM is a proven solution that helps engage employees across an organization. Our back office ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -747,11 +1158,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
         "tool",
-        "sdk"
+        "sdk",
+        "community"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -761,10 +1172,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "05745b794bb38070",
-      "title": "Piaget, Jean - Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/people/medicine/psychology-and-psychiatry-biographies/jean-piaget",
-      "summary": "Encyclopedia.com gives you the ability to cite reference entries and articles according to common styles from the Modern Language Association (MLA), The Chicago Manual of Style, and the American Psychological Association (APA). Within the “Cite this article” tool, pick a style to see how all available information looks when formatted according to that style. Then, copy and paste the text ...",
+      "id": "5ad6ddb7a53fb936",
+      "title": "NiCE Services Portal - Login",
+      "url": "https://spc.nice.com/",
+      "summary": "Request new temporary Token Not getting the token? Click here for some tips.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -779,11 +1190,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
         "tool",
         "sdk"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -793,16 +1203,112 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6091f00284c2f99c",
-      "title": "Pinterest - Facebook",
-      "url": "https://www.facebook.com/pinterest/",
-      "summary": "Pinterest. 8,619,512 followers · 6,320 talking about this. Pinterest helps you find inspiration to create a life you love.",
+      "id": "64244524fed3feea",
+      "title": "NiCE True to Interval (TTI) FAQ: NiCE CXone ACD with NiCE IEX WFM | NiCE",
+      "url": "https://www.nice.com/resources/nice-true-to-interval-tti-faq-nice-cxone-acd-with-nice-iex-wfm",
+      "summary": "NiCE WFM True to Interval (TTI) accounts for the unique challenges of long duration contacts and work items (both synchronous and asynchronous) for transformative forecasting and planning.",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d14538ae180160a",
+      "title": "NICE WFM 7.0",
+      "url": "https://resources.nice.com/wp-content/uploads/2024/03/0004014-en-WCX-7-0-Forecasting-with-AI-WP.pdf",
+      "summary": "For decades, more than two thousand customers and 2.7 million users of NICE WFM have benefited from its unique, industry-leading forecasting algorithm, which uses interval-specific weighted moving average methodologies with seasonality, week of month, rate of change and automated anomaly detection.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d6fbbb57f6bf5fde",
+      "title": "NUG | NICE User Group",
+      "url": "https://nug.nice.com/",
+      "summary": "NUG | NiCE User Group Your peers. NiCE experts. Shared success. The community for people who use NiCE every day. Peers who get it. CX pros solving the same problems as you. NiCE experts. Straight from the product teams behind your tools. Live webinars. What’s new, what’s changing, and what works. Points and rewards. Earn as you take part, spend in the reward store. A say in what’s next ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "88a5f29701eb6db0",
+      "title": "Rebates are a scam? : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/kvudaj/rebates_are_a_scam/",
+      "summary": "Yes. Menards rebates are a total scam. They even beat a class action lawsuit, which means they are legally allowed to scam you. Technically it isnt even a \"rebate\" but a store credit for future purchases - and that ONLY if they dont pretend it got \"lost in the mail.\" You could send it with a tracking number and tske pics of the forms etc for safekeeping to fight them on each rebate you send in ...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "lawsuit"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "community",
@@ -811,10 +1317,10 @@
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "policy",
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "policy",
       "routing_targets": [
         "reject_noise"
       ],
@@ -824,41 +1330,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "83ec94a3ff30c306",
-      "title": "Pinterest Canada (pinterest_canada) - Profile | Pinterest",
-      "url": "https://ca.pinterest.com/pinterest_canada/",
-      "summary": "Pinterest Canada | Pinterest helps you find the inspiration to create a life you love. Find your next art project, outfit idea or recipe here. 📌",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f2acb742998ba079",
-      "title": "Ratings for Television Programs - Encyclopedia.com",
-      "url": "https://www.encyclopedia.com/media/encyclopedias-almanacs-transcripts-and-maps/ratings-television-programs",
-      "summary": "Encyclopedia.com gives you the ability to cite reference entries and articles according to common styles from the Modern Language Association (MLA), The Chicago Manual of Style, and the American Psychological Association (APA). Within the “Cite this article” tool, pick a style to see how all available information looks when formatted according to that style. Then, copy and paste the text ...",
+      "id": "fb4fbc1d691d3b18",
+      "title": "WORKFORCE MANAGEMENT - NICE Systems",
+      "url": "https://info.nice.com/rs/nice2/images/08_WFM_Business_Partner_Webinar.pdf",
+      "summary": "Enter NICE Performance Manager Module NICE PMM is built to work with IEX WFM out of the box—amplifying your investment Automatic Reporting Role-Based KPIs",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -873,9 +1348,489 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
         "tool",
         "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c79400cf52481990",
+      "title": "10 Best-Selling Jeep SUVs | Indy Auto Man, IN",
+      "url": "https://www.indyautoman.com/blog/best-selling-jeeps",
+      "summary": "The Grand Cherokee is the most popular Jeep ever, introduced in 1992 as a 1993 model, with total sales since then of approximately 7.1 million, and the most recognizable midsize Jeep SUV.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "080bd48245b8f611",
+      "title": "10 Greatest Jeeps of All Time, Ranked - HotCars",
+      "url": "https://www.hotcars.com/jeeps-greatest-all-time-ranked/",
+      "summary": "In this article, we explore the the history of jeep as we bring you the 10 greatest Jeep models ever made. Sometimes criticized for its square headlights, the Wrangler YJ is extremely recognizable and a unique piece of Jeep's history.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "73100ff9255e3798",
+      "title": "7 Best Jeep Trucks & SUVs for 2026 & 2027 - Ranked - TRUECar",
+      "url": "https://www.truecar.com/best-cars-trucks/make-jeep/",
+      "summary": "The Jeep Grand Cherokee is a 6-seater vehicle that comes in 8 trim levels. The most popular style is the Limited 4WD, which starts at $49,125 and comes with a 2.0L I4 Turbo engine and Four Wheel Drive.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8bfcdb89bafd599",
+      "title": "About Us - Volkswagen Group",
+      "url": "https://www.volkswagen-group.com/en/about-us-16013",
+      "summary": "Through our brands, business units, and financial services, we develop technologies and mobility solutions for the electric, digital, and autonomous mobility of the future.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6eab6fc2d2b52101",
+      "title": "Associated Press News: Breaking News, Latest Headlines and Videos",
+      "url": "https://apnews.com/",
+      "summary": "Founded in 1846, AP today remains the most trusted source of fast, accurate, unbiased news in all formats and the essential provider of the technology and services vital to the news business. More than half the world’s population sees AP journalism every day. Copyright 2026 The Associated Press. All Rights Reserved.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "22dd667934bf2ea6",
+      "title": "Avera Health | All Doctors in O'Neill",
+      "url": "https://doctors.avera.org/ne/oneill",
+      "summary": "Family Medicine Pregnancy Care 402-336-2900 Avera Acute Care — O’Neill O'Neill, NE And 4 Other Locations",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f3417bca7399e410",
+      "title": "Avera Medical Group O'Neill - O'Neill, NE, 68763 - Free Clinics",
+      "url": "https://www.freeclinics.com/det/avera-medical-group-oneill",
+      "summary": "Questions and Answers Do you have a question about Avera Medical Group O'Neill? Ask below or help other by answering a question you might know the answer to.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "39432bda57d77efa",
+      "title": "Avera Medical Group O'Neill - Primary Care in O'Neill, NE",
+      "url": "https://primarycarelist.com/provider/avera-medical-group-oneill-oneill-ne-68763",
+      "summary": "Avera Medical Group O'Neill in O'Neill, NE. See verified office hours, telephone numbers, and accepted insurance options.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5e500654ee3930e2",
+      "title": "Avera Medical Group – ONeill | Holt County Economic Development",
+      "url": "https://growholt.com/in-holt-county/businesses/avera-medical-group-oneill/",
+      "summary": "Avera Medical Group – ONeill Avera St. Anthony's Hospital, along with our affiliated primary care clinics and physician offices, provides you and your family with comprehensive health care - and access to extensive medical specialties - as part of the Avera Health system serving South Dakota, North Dakota, Nebraska, Minnesota and Iowa.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "08ab9de0f3989ad1",
+      "title": "Avera O'Neill Clinic, NE",
+      "url": "https://locations.avera.org/avera-oneill-clinic",
+      "summary": "See Avera’s board-certified family medicine doctors at our O’Neill clinic in Nebraska for quality health care for all ages. Find us on North 2nd Street near US Hwy 281.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bcb9d3a1441825ad",
+      "title": "Avera St. Anthony's Hospital - O'Neill, NE",
+      "url": "https://locations.avera.org/avera-st-anthonys-hospital",
+      "summary": "Avera St. Anthony’s Hospital in O’Neill, NE, offers quality medical services like emergency, surgery, and specialty health care for north central Nebraska and south central South Dakota.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b1ca4b74fc21fd3",
+      "title": "Avera St. Anthonys Hospital Specialty Clinic - O Neill | Nebraska",
+      "url": "https://www.hospitalsdata.com/usa/avera-st-anthonys-hospital-specialty-clinic-o-neill.html",
+      "summary": "Avera St. Anthonys Hospital Specialty Clinic - O Neill, Nebraska, USA, Gynaecology, Obestetrician/Gynecologist, Pulmonology, latest news, latest articles.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4471503ab7d09807",
+      "title": "Avera St. Anthony’s Hospital Specialty Clinic - Yankton Medical Clinic",
+      "url": "https://www.yanktonmedicalclinic.com/locations/avera-st-anthonys-hospital-specialty-clinic/",
+      "summary": "Avera St. Anthony's Hospital Specialty Clinic is an extension of Yankton Medical Clinic that offers healthcare services to patients in O'Neill, Nebraska.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba0b60b53a56c4bc",
+      "title": "Every Generation Jeep Grand Cherokee, Ranked Worst To Best",
+      "url": "https://www.slashgear.com/1637367/every-generation-jeep-grand-cherokee-ranked-worst-best/",
+      "summary": "The Jeep Grand Cherokee is the company's most popular SUV thanks to its reliability and design. If you're in the market, here's everything you need to know.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "95236fe07296b46c",
+      "title": "Family Medicine/OB physician - O'Neill, NE - Avera Health",
+      "url": "https://doctors.avera.org/alexis-erbst",
+      "summary": "Dr Erbst is a family medicine/OB physician at Avera Medical Group in O'Neill, NE.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5f37be00a6c98641",
+      "title": "gold-forum.kitco.com",
+      "url": "https://gold-forum.kitco.com/showthread.php?121324-Shipping-Precious-Metals-USPS-Insurance",
+      "summary": "We would like to show you a description here but the site won’t allow us.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "community"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -887,10 +1842,100 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8bf7fb6805df168f",
-      "title": "Contact Us | Get in Touch Now - Intercontinental Football Academy of ...",
-      "url": "https://www.ifanewengland.com/contact-us",
-      "summary": "Reach out to Intercontinental Football Academy of New England for inquiries, updates, and regional contact details. Connect with our team today.",
+      "id": "f7a1f8fec31ee72c",
+      "title": "Health Care in O'Neill - avera.org",
+      "url": "https://www.avera.org/oneill-care/",
+      "summary": "Avera St. Anthony’s Hospital is the proud health care provider for O’Neill and surrounding communities. Your health is our priority — and we're committed to northeast Nebraska and providing you care close to home. As part of our commitment, we've added new services to our offerings in O’Neill.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "353eef2529952e90",
+      "title": "HP Smart",
+      "url": "https://www.hpsmart.com/us/en",
+      "summary": "HP Smart allows you to print, scan, and manage your HP printer from any device.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8b1ec7525bdbb673",
+      "title": "Huawei Enterprise Product & Service Support - Huawei",
+      "url": "https://support.huawei.com/enterprise/en/index.html",
+      "summary": "Huawei Online Support Center for Enterprise provides services such as downloading of technical documents & software patch, requesting and consulting of online service, training and certification, community communication, etc.",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e38bbda19cd012c1",
+      "title": "Intermountain Farmers Association (IFA) - LinkedIn",
+      "url": "https://www.linkedin.com/company/intermountain-farmers-association",
+      "summary": "IFA is a locally-owned farm & ranch cooperative that proudly supports all those who love and live the rural lifestyle. For 100 years, IFA has helped intermountain farmers, ranchers, gardeners,...",
       "discovery_channel": "broad_web",
       "query": "IFA 2026 smart glasses; IFA smart glasses",
       "source": "Bing web RSS",
@@ -917,12 +1962,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3c4dc8cd5ce31744",
-      "title": "Curran Volkswagen | CT's #1 Volkswagen Dealership | Serving Stratford ...",
-      "url": "https://www.curranvw.net/",
-      "summary": "Curran Volkswagen, CT's #1 Volkswagen Dealership for 2 years and counting, serves drivers in Stratford, CT. Visit Curran VW in Stratford for a variety of new and used cars, parts, and service. Family owned and operated for over 50 years.",
+      "id": "0f94f66dd602d67f",
+      "title": "Jeep Grand Cherokee Tier List: Ranking Every Model for 2026",
+      "url": "https://jeepinside.com/jeep-grand-cherokee-tier-list/",
+      "summary": "If you’re shopping for a used Grand Cherokee or just want to know which versions are best, this tier list breaks down the top models, their strengths, and what makes them unique.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -947,265 +1992,26 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c87ecf43f48515fa",
-      "title": "DMV Florida",
-      "url": "https://www.dmvflorida.org/",
-      "summary": "American Safety Council's Guide to the Florida Department of Motor Vehicles for drivers licenses. Including: Florida driving records, traffic school, getting your drivers license, auto insurance requirements, and more.",
+      "id": "948c38800dbfdfb3",
+      "title": "Pros and cons of working for Menards? : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/qcwj2p/pros_and_cons_of_working_for_menards/",
+      "summary": "But Menards is just a retail store, so noone can provide that info. That said, there will always be those employees who just want to do as little as possible and not assist guests. On the guest side of things, there are some really horrible people who just treat others very badly.",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f4f8c7f65d5cfc9",
-      "title": "Driver Licenses & ID Cards - Florida Highway Safety and Motor Vehicles",
-      "url": "https://www.flhsmv.gov/driver-licenses-id-cards/",
-      "summary": "Florida began issuing REAL ID compliant credentials after January 1, 2010. Because Florida is a REAL ID compliant state, Florida driver licenses and ID cards are accepted nationwide as official identification for domestic air travel and access to military bases and most Federal facilities.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a8be2dec2b2f68b",
-      "title": "FLHSMV - MyDMV Portal -",
-      "url": "https://mydmvportal.flhsmv.gov/Home/en/Account/MultipleLogin",
-      "summary": "FLHSMV Home | Español | Driver License | Vehicle Tags & Titles | Florida Highway Patrol | Jobs | Contact Us | Forms | Office Locations",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e7cde36e0793ee97",
-      "title": "FLHSMV - MyDMV Portal - Welcome to MyDMV Portal",
-      "url": "https://mydmvportal.flhsmv.gov/",
-      "summary": "Visit Driver License Check to check a driver license status. Visit Motor Vehicle Information Check for assistance with registration or inquiries. Express Motor Vehicle Renewal offers quick and easy express renewal options for parking permit and registration renewals. © Copyright 2014 – 2018 Florida Highway Safety and Motor Vehicles.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bfdf0e7b87592e50",
-      "title": "FLHSMV - MyDMVPortal - Sign In",
-      "url": "https://mydmvportal-flhsmv.my.site.com/",
-      "summary": "MyDMV Portal is a fast and easy way to renew or replace your Florida driver license or ID card; renew or replace your motor vehicle, vessel or mobile home registration; obtain a paper title; and many other services.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0fa225c098399a5c",
-      "title": "Florida Department of Highway Safety and Motor Vehicles - Sign-In",
-      "url": "https://david.flhsmv.gov/",
-      "summary": "Forgot your password?",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e5051871bbf0e86",
-      "title": "Florida Highway Safety and Motor Vehicles",
-      "url": "https://www.flhsmv.gov/",
-      "summary": "The Florida Highway Patrol (FHP) is once again teaming up with local organizations dedicated to providing essential food and educating communities in…",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6c02304c1c91f4b7",
-      "title": "Florida Highway Safety and Motor Vehicles - LOGIN - Enterprise",
-      "url": "https://icfs.flhsmv.gov/FLEnterprise/",
-      "summary": "You are about to log into a Florida Department of Highway Safety and Motor Vehicle (FLHSMV) online system. Your authorization to utilize this system to access data is limited to ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2753664f2aefe52b",
-      "title": "Harte Volkswagen of Meriden | Connecticut Volkswagen Dealer",
-      "url": "https://www.hartevw.com/",
-      "summary": "For a reputable car dealer in Connecticut, come to Harte Volkswagen of Meriden. Buy a new VW for sale and schedule car repairs at our CT Volkswagen dealer.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
+        "retail",
+        "community"
       ],
       "primary_type": "retail",
       "routing_targets": [
@@ -1217,10 +2023,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "14436819606f7aed",
-      "title": "Howie Voigt Appliance Sales Service & Parts - Appleton, WI",
-      "url": "https://www.yelp.com/biz/howie-voigt-appliance-sales-service-and-parts-appleton",
-      "summary": "HOWIE VOIGT APPLIANCE SALES SERVICE & PARTS, 2610 W Wisconsin Ave, Appleton, WI 54914, 2 Photos, (920) 733-2045, Mon - 7:30 am - 5:00 pm, Tue - 7:30 am - 5:00 pm, Wed - 7:30 am - 5:00 pm, Thu - 7:30 am - 5:00 pm, Fri - 7:30 am - 5:00 pm, Sat - Closed, Sun - Closed",
+      "id": "3b31549e36b3cc00",
+      "title": "S4S lumber is cheaper than rough sawn at my local Menards. Why would ...",
+      "url": "https://www.reddit.com/r/woodworking/comments/1bnpu9a/s4s_lumber_is_cheaper_than_rough_sawn_at_my_local/",
+      "summary": "The economy of scale. Most of their stock is probably s4s and frankly most of the cedar Menards is selling is likely going into decks. Sure, it's one fewer step to get rough boards at a lumber mill, but if you have ever put your head down and produced in any industry you know that a change to your rhythm, even if it's fewer steps, will slow you ...",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1229,15 +2035,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1247,370 +2053,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "59cfe765d1b1528f",
-      "title": "Howie Voigt Appliance Sales Service & Parts, 2610 W Wisconsin Ave ...",
-      "url": "https://www.mapquest.com/us/wisconsin/howie-voigt-appliance-sales-service-parts-284390916",
-      "summary": "Get more information for Howie Voigt Appliance Sales Service & Parts in Appleton, WI. See reviews, map, get the address, and find directions.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "527dae6f6b1f31f5",
-      "title": "Howie Voigt's Appliance Service Center - 2610 W Wisconsin Ave… - Cybo",
-      "url": "https://www.cybo.com/US-biz/howie-voigts-appliance-service-center",
-      "summary": "Howie Voigt's Appliance Service Center is located in Appleton, Wisconsin, and was founded in 2012. At this location, Howie Voigt's Appliance Service Center employs approximately 10 people.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57655d8af3121160",
-      "title": "HOWIE VOIGT'S APPLIANCE SERVICE CENTER - Appleton WI - Hours ...",
-      "url": "https://www.loc8nearme.com/wisconsin/appleton/howie-voigts-appliance-service-center/5645708/",
-      "summary": "Howie Voigt's Appliance Service Center at 2610 W Wisconsin Ave, Appleton WI 54914 - hours, address, map, directions, phone number, customer ratings and reviews.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d066788e3f0722c8",
-      "title": "Howie Voigt's Appliance Service Center - Specialist at 2610 W Wisconsin ...",
-      "url": "https://hvacloc.com/branch/howie-voigts-appliance-service-center-appleton-2610-w-wisconsin-ave-appleton-wi-54914",
-      "summary": "Where is Howie Voigt's Appliance Service Center located for direct consultations? You can find Howie Voigt's Appliance Service Center at their central location: 2610 W Wisconsin Ave, Appleton, WI, 54914, making it convenient for everyone.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ac86c8b0203e1de8",
-      "title": "Howie Voigt's Appliance Service Center in Appleton, WI 54914 - 920-733...",
-      "url": "https://www.chamberofcommerce.com/business-directory/wisconsin/appleton/appliance-repair-service/5178927-howie-voigt-s-appliance-service-center",
-      "summary": "Howie Voigt's Appliance Service Center located at 2610 W Wisconsin Ave, Appleton, WI 54914 - reviews, ratings, hours, phone number, directions, and more.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8b3f7e3ddf036954",
-      "title": "Howie Voigt's Appliance Service Center, 2610 W Wisconsin Ave, Appleton ...",
-      "url": "https://www.mapquest.com/us/wisconsin/howie-voigts-appliance-service-center-7065201",
-      "summary": "Howie Voigt's Appliance Service Center in Appleton, WI, offers a variety of services including appliance repair and a selection of reconditioned appliances. Customers can find items such as washers, dryers, refrigerators, and ranges, all with a 60-day parts and labor warranty.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f2469d258aaa041",
-      "title": "Howie Voigt's Appliance Service Center, 2610 W Wisconsin Ave, Appleton ...",
-      "url": "https://repairhit.com/biz/howie-voigts-appliance-service-center",
-      "summary": "Howie Voigt's Appliance Service Center offers washer repair, dishwasher repair, refrigerator repair, and ice maker repair in Appleton. Professional service services with reliable results.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c89c49ab4e104c4",
-      "title": "Howie Voigt's Service and Appliance Center",
-      "url": "https://howievoigt.com/",
-      "summary": "We have the LARGEST SELECTION of reconditioned used appliances in Northeast Wisconsin with over 200 appliances to choose from! 60 DAY PARTS & LABOR WARRANTY INCLUDED! Washers from $139, Dryers from $139, Refrigerators from $199, Ranges from $149, Microwaves, Washer & Dryer PAIRS. Delivery available.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "510b03830cbbfb02",
-      "title": "Howie Voigt's Service and Appliance Center",
-      "url": "https://howievoigt.com/service-request-scheduler/",
-      "summary": "Do you have an Extended Warranty? Max. file size: 50 MB.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5697b9b0fc90af57",
-      "title": "Is Time Travel Possible? A Journey Through Science, Imagination, and ...",
-      "url": "https://www.sciencenewstoday.org/is-time-travel-possible-a-journey-through-science-imagination-and-reality",
-      "summary": "Time travel has long occupied the boundary between science and fiction. In movies and novels, people step into machines, disappear, and emerge decades earlier or later. Real physics is less dramatic—but surprisingly, it does allow a limited form of time travel.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "40404db7430a2249",
-      "title": "Is Time Travel Possible? | NASA Space Place – NASA Science for Kids",
-      "url": "https://spaceplace.nasa.gov/time-travel/en/",
-      "summary": "Under certain conditions, it is possible to experience time passing at a different rate than 1 second per second. And there are important reasons why we need to understand this real-world form of time travel.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7ae12c70396f6532",
-      "title": "Is time travel really possible? Here’s what physics says - BBC",
-      "url": "https://www.bbc.com/future/article/20231110-doctor-who-is-time-travel-really-possible-heres-what-physics-says",
-      "summary": "The ability to jump forward and backwards in time has long fascinated science fiction writers and physicists alike. So is it really possible to travel into the past and the future?",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e23602c5995a1794",
-      "title": "Jimmy Carter, 39th president, dies at 100 - Washington Times",
-      "url": "https://www.washingtontimes.com/news/2024/dec/29/jimmy-carter-39th-president-dies-100/",
-      "summary": "Jimmy Carter, the Georgia peanut farmer and Naval officer who became the 39th president of the United States and eventually the nation’s longest-living president, has died. He was 100 years old ...",
+      "id": "29c0c5af06d65493",
+      "title": "The Best Jeep for 2026 Is Not The Most Obvious Choice",
+      "url": "https://www.autoblog.com/features/the-best-jeep-for-2026-is-not-the-most-obvious-choice",
+      "summary": "Against this backdrop, the 2026 Jeep Grand Cherokee stands out thanks to its handsome looks, upmarket interior, and very competitive pricing. You may have to pay extra for the all-wheel drive...",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1637,460 +2083,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3f5156999425de89",
-      "title": "Jobs - The Washington Times",
-      "url": "http://classified.washingtontimes.com/category/235/Jobs.html",
-      "summary": "TITLE: Software Architect EMPLOYER: CGI Technologies and Solutions Inc. DUTIES: CGI Technologies and Solutions Inc. has multiple openings for the position Software Architect and the job duties are as follows: - Make high-level design choices and dictate technical standards, including software coding standards, tools, and platforms. - Regulate choices available during...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9411b25572d68d4e",
-      "title": "Krypt Pro X3 T‑Top – Extreme Offshore T‑Top with Radar & Outrigger ...",
-      "url": "https://krypt-t-tops.com/products/krypt-pro-x3-offshore-t-top",
-      "summary": "The Krypt Pro X3 T‑Top is the ultimate offshore‑rated universal T‑Top with a reinforced canopy frame, integrated radar plate, outrigger plates, lighting plates, and vertical brace standoffs.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba005cd58d9fb98b",
-      "title": "Language Services Provider, Healthcare Interpretation, Legal Translation",
-      "url": "https://lango.co/",
-      "summary": "Lango provides highly professional interpreters on-site, where you are, when you need them. Secure AI-enabled machine translation provides high-speed and accurate translation results, saving time and money. Our skilled translators ensure precise document translation with thorough proofreading for accuracy.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1dd41baf1235b887",
-      "title": "Legal scholars say special counsel Jack Smith wasn't lawfully appointed ...",
-      "url": "https://www.washingtontimes.com/news/2024/jan/12/legal-scholars-say-special-counsel-jack-smith-wasn/",
-      "summary": "Former President Ronald Reagan’s attorney general and two law professors who clerked for the late Supreme Court Justice Antonin Scalia are challenging special counsel Jack Smith’s authority to ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e23e9c7977897f72",
-      "title": "List of American films of 2026 - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/List_of_American_films_of_2026",
-      "summary": "This is a list of American films that are scheduled for release in 2026. Following the box office section, this list is organized chronologically, providing information on release dates, production companies, directors, and principal cast members.",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "922342a85506b308",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/Pages/SilentSignInComplete.aspx",
-      "summary": "Sign in to Microsoft Forms to access and manage your surveys, quizzes, and polls.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fabe180a9d06023e",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/Pages/TeamsMeetingPollPage.aspx",
-      "summary": "Create and manage meeting polls using Microsoft Forms.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bc5dc82b481e124c",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/Pages/onenoteaddinpage.aspx",
-      "summary": "OneNote Forms Addin",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1c1cb7fff4017341",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/pages/teamspollbubblepage.aspx",
-      "summary": "Meeting Poll page of Microsoft Forms",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a306508991f6f0f6",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/pages/fluidformpage.aspx",
-      "summary": "Polls in Full Page",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9b232cc276fe1d81",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/pages/formsforexcelpage",
-      "summary": "Create and customize forms, surveys, quizzes, and polls with Microsoft Forms.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f419dc5c11a3bc7c",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx",
-      "summary": "Easily create surveys, quizzes, and polls.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "72f194374185fb51",
-      "title": "Microsoft Forms",
-      "url": "https://forms.office.com/Pages/ResponseDetailPage.aspx?*",
-      "summary": "Please make sure the link is correct and try again.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cff664df534d5c48",
-      "title": "Microsoft Forms - Free tool to create online surveys, forms, polls, and ...",
-      "url": "https://eu.forms.office.com/",
-      "summary": "Use Microsoft Forms to easily create online surveys, forms, quizzes and questionnaires. AI powered, free survey tool from Microsoft.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "589ebe2eb35c60ac",
-      "title": "MyDMV Portal - Florida Highway Safety and Motor Vehicles",
-      "url": "https://www.flhsmv.gov/motorist-modernization/mydmvportal/",
-      "summary": "MyDMV Portal is a quick and convenient way for eligible Florida driver license and identification (ID) card holders and businesses to access and request many driver license and motor vehicle services online at any time.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5281cf8fd23a4892",
-      "title": "Oprah Winfrey says ‘system of white people’ keeps Black Americans off ...",
-      "url": "https://www.washingtontimes.com/news/2020/aug/3/oprah-winfrey-says-system-of-white-people-keeps-bl/",
-      "summary": "Billionaire Oprah Winfrey says it’s important for Americans to realize that “the system of White people” continues to keep Black citizens off “the ladder of success.”",
+      "id": "a645d671cc5d2fca",
+      "title": "The Top 10 Most Popular Jeep Models of All Time - AM Off-Road",
+      "url": "https://amoffroad.com/blogs/guides/the-top-10-most-popular-jeep-models-of-all-time",
+      "summary": "All Jeeps are great vehicles, but some models perform so well that they clearly outshine the rest. Discover the top 10 most popular Jeep models of all time.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -2117,27 +2113,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "29130fae3a2368de",
-      "title": "Prestige Volkswagen of Stamford | New & Used VW Dealer CT",
-      "url": "https://www.prestigevwct.com/",
-      "summary": "Shop new & used Volkswagen models at Prestige VW of Stamford. Explore financing, certified service, & specials at Connecticut’s trusted Volkswagen dealership.",
+      "id": "08eeaf60d80eff46",
+      "title": "Thoughts on patio doors from Menards and Home Depot",
+      "url": "https://www.reddit.com/r/HomeImprovement/comments/y5isnu/thoughts_on_patio_doors_from_menards_and_home/",
+      "summary": "I have another contractor who offered to install any door from Menards or Home Depot and just have me pick which one.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2147,28 +2143,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "444fc1b121ecdb3b",
-      "title": "Prime Video - Upcoming Original Series - Amazon MGM Studios",
-      "url": "https://press.amazonmgmstudios.com/us/en/upcoming-original-series",
-      "summary": "Check out the information about the upcoming web series. You can sort your listing anytime through title, or Premiere date, or from genre.",
+      "id": "83e56377683f7892",
+      "title": "Uniform rules : r/menards - Reddit",
+      "url": "https://www.reddit.com/r/menards/comments/1dcdf3l/uniform_rules/",
+      "summary": "This subreddit is dedicated to Menards! Customers, Contractors, and Team Members are all welcome! SAVE BIG MONEY AT MENARDS! MembersOnline • IntelligentCod8829 ADMIN MOD",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "video",
-        "retail"
+        "community"
       ],
-      "primary_type": "video",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2178,40 +2173,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a98ea3e9c6c3e7ef",
-      "title": "PRODUCT SPECIFICATION - TACO Marine",
-      "url": "https://tacomarine.com/Content/Images/uploaded/Spec%20Sheets/T-Top%20Extrusion%20Plate%20Spec%20Sheet%20V1.pdf",
-      "summary": "The ease of installing TACO Marine Grand Slam Outrigger Bases into your T-top is simplified with our T-Top Extrusion Plates. These plates perfectly match any of our Grand Slam Outrigger Mounts, which makes fabrication a breeze. Once installed, drop in the bases and go fishing.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7d6a7ee36fd46ce0",
-      "title": "Senate adopts altered budget blueprint for Trump agenda that now faces ...",
-      "url": "https://www.washingtontimes.com/news/2025/apr/5/senate-adopts-altered-budget-blueprint-trump-agenda-faces-house/",
-      "summary": "The Senate early Saturday adopted changes to a House budget blueprint for enacting President Trump’s agenda despite pushback from fiscal hawks in the lower chamber.",
+      "id": "348de0986ca8c612",
+      "title": "What is the Best Jeep to Buy? The Top 10 Jeeps in America Ranked by Experts",
+      "url": "https://www.simivalleychryslerdodgejeepram.com/blog/what-is-the-best-jeep-to-get-10-best-jeeps-in-america-the-experts-weigh-in",
+      "summary": "Explore the top 10 best Jeeps in America as experts weigh in on the best options for every lifestyle. From the rugged Jeep Wrangler Rubicon, perfect for off-road enthusiasts, to the luxurious Jeep Grand Cherokee L for families, discover which Jeep model suits your needs and preferences.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -2238,702 +2203,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7e398fbdfa7d93c5",
-      "title": "Sign-In - Florida Department of Highway Safety and Motor Vehicles",
-      "url": "https://david.flhsmv.gov/DAVID/Home/LoginDisclaimer",
-      "summary": "Forgot your password?",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2e41234f89b98457",
-      "title": "Susan Ferrechio - Bio, News, Photos - Washington Times",
-      "url": "https://www.washingtontimes.com/topics/susan-ferrechio/146188/t/stories/",
-      "summary": "Latest news and commentary on Susan Ferrechio including photos, videos, quotations, and a biography.",
+      "id": "ab2414e0eafef986",
+      "title": "Which Is The Best Jeep To Buy: Top Models Compared for 2026",
+      "url": "https://jeepinside.com/which-is-the-best-jeep-to-buy/",
+      "summary": "If you want luxury and space, the Grand Cherokee is Jeep’s flagship. It handles daily driving comfortably, offers advanced tech, and can still tackle light trails.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e3bb2af586bfec50",
-      "title": "T-Profile Extrusions | McMaster-Carr",
-      "url": "https://www.mcmaster.com/products/t-profile-extrusions/",
-      "summary": "Choose from our selection of T-profile extrusions, including T-slotted framing rails, T-slotted framing structural brackets, and more. Same and Next Day Delivery.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4eb67b791fbda21c",
-      "title": "T-Top Extrusion Plate, Pre-Drilled GS Mount - TACO Marine",
-      "url": "https://tacomarine.com/sport-fishing-store-outrigger-accessories-gse-1939",
-      "summary": "The ease of installing TACO Marine Grand Slam Outrigger Bases into your T-top is simplified with our T-Top Extrusion Plates. These plates perfectly match any of our Grand Slam Outrigger Mounts, which makes fabrication a breeze. Once installed, drop in the bases and go fishing.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5810c6359e940bce",
-      "title": "TACO MARINE 20\" T-Top Extrusion Plate, Pre-Drilled GS Mount",
-      "url": "https://www.westmarine.com/taco-marine-20inch-t-top-extrusion-plate-pre-drilled-gs-mount-21202296.html",
-      "summary": "The ease of installing TACO Marine Grand Slam Outrigger Bases into your T-top is simplified with our T-Top Extrusion Plates. These plates perfectly match any of our Grand Slam Outrigger Mounts, which makes fabrication a breeze. Once installed, drop in the bases and go fishing.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a42f688d84a5526b",
-      "title": "TACO Marine T-Top Extrusion Plate Pre-Drilled for Grand Slams - eBay",
-      "url": "https://www.ebay.com/itm/327310809582",
-      "summary": "Find many great new & used options and get the best deals for TACO Marine T-Top Extrusion Plate Pre-Drilled for Grand Slams - 20\" - Pair at the best online prices at eBay!",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "92e598f268136988",
-      "title": "TACO T-Top Extrusion Plate for Grand Slams, 20-Inch",
-      "url": "https://critpro.com/taco-t-top-extrusion-plate-grand-slams-20in/",
-      "summary": "The TACO T-Top Extrusion Plate is a 20 inch heavy-duty extrusion sold in pairs. It mounts T-top legs to the top frame and gives a mounting surface for Grand Slam outrigger mounts.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "026d45f9e11dffc2",
-      "title": "Taco T-Top Extrusion Plate Pre-Drilled For Grand Slams - 20\" - Pair",
-      "url": "https://www.hodgesmarine.com/taogse-1939bsa20-taco-ttop-extrusion-plate-predrilled-for-grand.html",
-      "summary": "Heavy duty extrusion for mounting T-Top legs to top frame, while providing mounting for Grand Slam outrigger mounts, electronics boxes, antennas and to conceal wire routing.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9fac6fca9637d94d",
-      "title": "TACO T-Top Extrusion Plate Pre-Drilled for Grand Slams - 20\" - Pair - eBay",
-      "url": "https://www.ebay.com/itm/267396727437",
-      "summary": "Can be pre-drilled for Grand Slam mounts. Widely used in Taco Marine Outrigger Ready Program. You can count on us to always keep your outdoor adventure better! Choice of low profile and T-top pipe height.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8bda61d03f0953ad",
-      "title": "TACO T-Top Extrusion Plate Pre-Drilled for Grand Slams - Boatzon",
-      "url": "https://boatzon.com/product-detail/taco-ttop-extrusion-plate-predrilled-for-grand-slams-20-pair-68626",
-      "summary": "Heavy duty extrusion for mounting T-Top legs to top frame, while providing mounting for Grand Slam outrigger mounts, electronics boxes, antennas and to conceal wire routing.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5a2b873b1973ad1f",
-      "title": "Teneo Linguistics Company | professional translation service",
-      "url": "https://www.tlctranslation.com/",
-      "summary": "With a network of linguists fluent in over 180 languages, TLC provides translation, interpreting, and accessibility services across continents and cultures. Yet every partnership remains personal.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "599cd9f9bb0d4c29",
-      "title": "The Washington Times Front Page",
-      "url": "http://twtmain.radio.washingtontimes.com/",
-      "summary": "Nov 10, 2026 On Tuesday's Washington Times Front Page: Nvidia is investigating CEO Jensen Huang’s romantic relationship with a businesswoman whom U.S. intelligence suspects gathered information for China during an affair between the two, the Supreme Court has given Trump administration approval to resume building a wall on the...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "279162b88a2671bf",
-      "title": "The Washington Times Listings",
-      "url": "http://classified.washingtontimes.com/",
-      "summary": "Most categories of classifieds on washingtontimes.com are offered free of charge. Exceptions include obituaries and legal announcements such as auctions, legal notices, foreclosures and trustee sales. To place an ad in those categories please call 202-636-3102 to get the most current prices.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c39973bab3fabc20",
-      "title": "Time 'Person of the Year' Donald Trump gets fact-check; first time ...",
-      "url": "https://www.washingtontimes.com/news/2024/dec/13/time-person-year-donald-trump-gets-fact-check-firs/",
-      "summary": "Time magazine gave Donald Trump something it has never done for a Person of the Year designee: a lengthy fact-check of claims he made in an accompanying interview.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4359d13b0e5c791b",
-      "title": "Time Travel - Chrome Web Store",
-      "url": "https://chromewebstore.google.com/detail/time-travel/jfdbpgcmmenmelcghpbbkldkcfiejcjg",
-      "summary": "Usage: - Open the tab you want to change the time in. - Click the Extensions icon in the toolbar, then click Time Travel. - Choose a date from the calendar and edit the time if necessary, or...",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b81836988f64f429",
-      "title": "Time Travel - Stanford Encyclopedia of Philosophy",
-      "url": "https://plato.stanford.edu/entries/time-travel/",
-      "summary": "There is an extensive literature on time travel in both philosophy and physics. Part of the great interest of the topic stems from the fact that reasons have been given both for thinking that time travel is physically possible—and for thinking that it is logically impossible!",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "160ea4c185699579",
-      "title": "Time travel - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Time_travel",
-      "summary": "Time travel is the hypothetical activity of traveling into the past or future. Time travel is a concept in philosophy, space, time and fiction, particularly science fiction. In fiction, time travel is typically achieved through the use of a device known as a time machine.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "rumor"
-      ],
-      "primary_type": "rumor",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9a32e1c0898061e7",
-      "title": "Time Travel: Is It Possible? - timeanddate.com",
-      "url": "https://www.timeanddate.com/astronomy/time-travel.html",
-      "summary": "Science fiction loves the idea of crossing time boundaries, but is time travel possible? Actually, science says it is. At least in theory. Let us explain.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "734450a474262962",
-      "title": "Time-Travel | Interactive World History Map",
-      "url": "https://time-travel.app/",
-      "summary": "Start your journey through human history by selecting a year, decade or century that captures your interest and scroll across the map to begin exploring. The map will display the historical borders of the period, but today’s cities and towns for reference.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cd929fceb4d1ca10",
-      "title": "TIN – Translation & Interpretation Network",
-      "url": "https://tintranslation.com/",
-      "summary": "Secure AI-enabled machine translation provides high-speed and accurate translation results, saving time and money. Our translators are experienced and translated documents are proofread for accuracy. The Test is a standardized procedure for the local global market that measures functionality in writing ability.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aeaa48b7e53b4959",
-      "title": "Volkswagen Dealer North Haven CT | Executive Volkswagen of North Haven",
-      "url": "https://www.executivevolkswagenofnorthhaven.com/",
-      "summary": "At Executive Volkswagen of North Haven, finding your dream car and enjoying first-class service is always within reach. Contact us to learn more!",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c2082b8cf2e8d53c",
-      "title": "VW Dealer near Stratford CT | Executive Volkswagen",
-      "url": "https://www.executivevolkswagenofnorthhaven.com/volkswagen-dealer-near-stratford-ct/",
-      "summary": "Find your perfect Volkswagen at our dealer near Stratford CT. Explore new and pre-owned models, get expert financing advice, and professional VW service.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "81c10714a2bb8266",
-      "title": "Washington Times",
-      "url": "https://www.washingtontimes.com/",
-      "summary": "Washington Times",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0ec5eab20d587252",
-      "title": "WITN | Eastern North Carolina | News, Sports, Weather",
-      "url": "https://www.witn.com/",
-      "summary": "East Carolina University Professor Armin Krishnan says many Americans are not happy with the ongoing war in Iran and other military actions by Hegseth, including multiple military strikes. Gov....",
-      "discovery_channel": "broad_web",
-      "query": "new smart glasses 2026",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
