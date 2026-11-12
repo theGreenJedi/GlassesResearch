@@ -1,27 +1,28 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-11T17:55:28+00:00**
+Generated: **2026-11-12T18:21:55+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **384** (not the published count)
-- Unanswered research candidates: **91**
+- Canonical registry size: **388** (not the published count)
+- Unanswered research candidates: **95**
 - Observations this run: **97**
-- New distinct questions: **3**
+- New distinct questions: **4**
 
 ## Source health
 
 - github_issues: ok — 19 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 49 observations
-- google_search_console: ok — 9 observations
+- reddit_rss: partial — 47 observations
+- google_search_console: ok — 11 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000382** — What happened to the NIMO flair?
-- **Q-000383** — Do newer smart glasses actually get real Black Friday discounts, or is it barely anything?
-- **Q-000384** — Good recording glasses that aren't Meta?
+- **Q-000385** — Any real 100% open-source, local ai capable smart glasses?
+- **Q-000386** — MentraOS terminated/withdrew from supporting Nimo glasses?
+- **Q-000387** — are smart glasses prescription
+- **Q-000388** — what sdks or apis are available for spectacles development? recommendations
 
 ## Research queue (first 20)
 
