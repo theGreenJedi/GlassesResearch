@@ -1,6 +1,6 @@
 # Purchase Link Replacement Queue
 
-Generated: 2026-11-11T17:20:16Z
+Generated: 2026-11-12T17:41:52Z
 
 This queue is generated from the purchase-link health checker. Canonical purchase URLs are never silently replaced or deleted by the checker.
 
@@ -9,5 +9,4 @@ This queue is generated from the purchase-link health checker. Canonical purchas
 | Model | Source | State | HTTP | Current URL | Action |
 |---|---|---|---:|---|---|
 | GLS-0164 | Nautica Smart Eyewear Powered by Lucyd — Corsair | unreachable |  | https://www.bestbuy.com/product/nautica-smart-eyewear-powered-by-lucyd-corsair/J3R8ZC6LGC/sku/6589919 | Retry, then search replacement if persistent |
-| GLS-0165 | Meta Adventurer | redirected | 200 | https://www.meta.com/ai-glasses/meta-glasses/adventurer/ | Verify final page still matches exact model |
 | GLS-0165 | Meta Adventurer AI Glasses | unreachable |  | https://www.bestbuy.com/product/meta-adventurer-ai-glasses-smart-features-like-12mp-camera-live-translate-8-hour-battery-range-of-sizes-brown-lenses-classic-tortoise/J3LHRV8436/sku/6677832 | Retry, then search replacement if persistent |
