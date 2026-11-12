@@ -1,35 +1,43 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-12T20:56:12.020192+00:00",
-  "candidate_count": 55,
-  "classifier_irrelevant_count": 52,
+  "discovered_utc": "2026-11-12T22:54:46.968875+00:00",
+  "candidate_count": 82,
+  "classifier_irrelevant_count": 68,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 2,
-    "broad_web": 43,
-    "developer": 11,
-    "manufacturer_catalog": 1
+    "adjacent": 13,
+    "broad_web": 61,
+    "developer": 8,
+    "retail": 1
   },
   "relationship_counts": {
     "direct": 1,
     "enabling": 0,
-    "adjacent": 2,
+    "adjacent": 13,
     "speculative": 0,
-    "irrelevant": 52
+    "irrelevant": 68
   },
   "type_counts": {
-    "news": 32,
-    "research": 3,
-    "tool": 11,
-    "sdk": 10,
+    "model": 2,
+    "video": 7,
+    "news": 54,
+    "research": 2,
+    "tool": 13,
+    "sdk": 12,
+    "policy": 1,
     "retail": 1,
-    "teardown": 1,
-    "community": 11
+    "community": 3
   },
   "routing_counts": {
-    "adjacent_radar": 2,
-    "reject_noise": 52,
-    "research_news_review": 3
+    "adjacent_radar": 13,
+    "community_evidence_review": 2,
+    "deep_research": 1,
+    "development_hacking": 4,
+    "model_catalog_review": 1,
+    "policy_privacy": 1,
+    "reject_noise": 68,
+    "report_card_evidence": 2,
+    "research_news_review": 14
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -43,12 +51,12 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "d5bb1c5e80066408",
-      "title": "Maverick Sport AR Glasses – Everysight",
-      "url": "https://www.everysight.com/products/maverick",
-      "summary": "Contact us and we will guide you through the steps and confirm what applies to your order. Email store@everysight.com or use the contact form and choose Order Support.",
-      "discovery_channel": "broad_web+developer+manufacturer_catalog",
-      "query": "Everysight Maverick AI Kickstarter; Everysight Maverick SDK",
+      "id": "f84203e309848a29",
+      "title": "Best Smart Glasses With Cameras 2026: Top Picks",
+      "url": "https://cybernews.com/vr-ar/best-smart-glasses-with-cameras/",
+      "summary": "Smart glasses with cameras are changing how we interact with technology. These wearable devices bring you AR (augmented reality) experiences and can capture content hands-free. Today’s smart glasses offer features like seamless video recording, virtual meetings, AI-powered assistants, and ...",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -61,24 +69,198 @@
       "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "news"
+        "video"
       ],
-      "primary_type": "news",
+      "primary_type": "video",
       "routing_targets": [
-        "research_news_review"
+        "research_news_review",
+        "report_card_evidence"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, everysight, maverick",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "55eade99b38c87b9",
-      "title": "ChatGPT Alternative - DeepAI",
-      "url": "https://deepai.org/chat/chatgpt-alternative",
-      "summary": "Looking for something similar to ChatGPT from OpenAI? Try the ChatGPT Alternative! Note that ChatGPT Alternative has no affiliation with OpenAI. ChatGPT is a trademark of OpenAI.",
+      "id": "522626ce84b1d364",
+      "title": "Assistants migration guide | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/assistants/migration",
+      "summary": "Migrate from the retired Assistants API to the Responses API, with side-by-side comparisons and updated patterns.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c14a79da12bc33e8",
+      "title": "How People Use ChatGPT - cdn.openai.com",
+      "url": "https://cdn.openai.com/pdf/a253471f-8260-40c6-a2cc-aa93fe9f142e/economic-research-chatgpt-usage-paper.pdf",
+      "summary": "We study global patterns of ChatGPT usage by measuring the proportion of weekly consumer Chat-GPT users among the internet enabled population of countries with populations larger than 1 million.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "study"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "76a21274527a51c8",
+      "title": "Retrieval | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/guides/retrieval",
+      "summary": "The Retrieval API allows you to perform semantic search over your data, which is a technique that surfaces semantically similar results—even when they match few or no keywords. Retrieval is useful on its own, but is especially powerful when combined with our models to synthesize responses. The Retrieval API is powered by vector stores, which serve as indices for your data. This guide will ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "sdk"
+      ],
+      "primary_type": "sdk",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f9a94cf2ff44d144",
+      "title": "Testing ads in ChatGPT | OpenAI",
+      "url": "https://openai.com/index/testing-ads-in-chatgpt/",
+      "summary": "OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3751148ea8a0fed6",
+      "title": "Tokenizer - OpenAI API",
+      "url": "https://platform.openai.com/tokenizer",
+      "summary": "A helpful rule of thumb is that one token generally corresponds to ~4 characters of text for common English text. This translates to roughly ¾ of a word (so 100 tokens ~= 75 words). If you need a programmatic interface for tokenizing text, check out our tiktoken package for Python. For JavaScript, the community-supported @dbdq/tiktoken package works with most GPT models.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "643fd28ec34dfab8",
+      "title": "Age prediction in ChatGPT - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/12652064-age-prediction-in-chatgpt",
+      "summary": "Age prediction in ChatGPT Learn why your account’s age category can change, how teen protections apply, and how to verify your age.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -104,12 +286,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4282067abcec8631",
-      "title": "What Is ChatGPT? How It Works, How to Use It, and More",
-      "url": "https://www.coursera.org/articles/chatgpt",
-      "summary": "What is ChatGPT? ChatGPT is an artificial intelligence chatbot from the company OpenAI that enables users to \"converse\" with it in a way that mimics natural conversation. As a user, you can prompt ChatGPT by asking it questions or making requests.",
+      "id": "84e87d185c2dfc1f",
+      "title": "Cities Near Ocala FL: Closest Towns & Miles | Only In Ocala",
+      "url": "https://onlyinocala.com/cities-near-ocala",
+      "summary": "The closest major city to Ocala — home to the University of Florida, the Florida Museum of Natural History and Paynes Prairie Preserve State Park. See our full Ocala to Gainesville guide for commute tips and things to do along the way.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -135,10 +317,201 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2709289e4cf4f646",
-      "title": "Cite a Book | Scribbr Citation Generator",
-      "url": "https://www.scribbr.com/citation/generator/cite/book/",
-      "summary": "Book or collection Cite a book, e-book, or book accessed online. Use other forms to cite chapters from edited books , dictionary entries , encyclopedia entries , and conference proceedings .",
+      "id": "836ea7546d9f6087",
+      "title": "Cities Nearby Ocala, Florida, United States",
+      "url": "https://www.thecitiesnow.com/united_states/florida/ocala",
+      "summary": "Find five hundred cities near Ocala, Florida, United States from closest to farthest by distance. Distances from Ocala to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "41fb3528da033454",
+      "title": "Galaxy Wearable",
+      "url": "https://www.samsung.com/us/support/owners/app/galaxy-wearable-watch",
+      "summary": "Whether you want to connect them to a phone, tablet, PC, TV, or even a smart watch, they have you covered. They can be used for streaming music and podcasts as well as making and managing phone calls. You can also switch the connection between other devices in your home using the Galaxy Wearable app or your device's Bluetooth settings.",
+      "discovery_channel": "adjacent",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4dd348cc9c739528",
+      "title": "Introducing group chats in ChatGPT - OpenAI",
+      "url": "https://openai.com/index/group-chats-in-chatgpt/",
+      "summary": "Group chats work much like your usual ChatGPT conversations — only now, others can join in. Responses are powered by GPT‑5.1 Auto, which chooses the best model to respond with based on the prompt and the models available to the user that ChatGPT is responding to based on their Free, Go, Plus or Pro plan.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "15e6d6ec6bac4271",
+      "title": "Ocala Florida - Things to Do & Attractions in Ocala FL",
+      "url": "https://www.visitflorida.com/places-to-go/central/ocala/",
+      "summary": "This route offers a pleasant journey through the heart of Florida, with plenty of opportunities to explore small towns and natural attractions along the way. Ocala's proximity to Tampa makes it a convenient getaway for those looking to escape the city for a day.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68b5f9e594740b3c",
+      "title": "Paid for ChatGPT Plus but still getting free version",
+      "url": "https://community.openai.com/t/paid-for-chatgpt-plus-but-still-getting-free-version/129073",
+      "summary": "Hi, Sorry if this is the wrong place to post this. I followed the link to the Help Centre but you can only browse and search over existing help articles that don’t answer my question. I could not submit a question there. I am a ChatGPT plus subscriber. Recently my access reverted to the free version. I discovered this was due to a credit payment failure. I retried the payment on the same ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3500e718fa203ccb",
+      "title": "Sharing and publishing GPTs - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/8798878-sharing-and-publishing-gpts",
+      "summary": "GPT sharing and publishing options depend on your account and workspace settings. Personal ChatGPT accounts, including Free, Go, Plus, and Pro, cannot create or publish new GPTs. Existing GPTs remain usable and can still be edited if existing plan and permission requirements are met.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c4a79577160f8160",
+      "title": "Cómo cambiar los idiomas de Chrome y traducir páginas web",
+      "url": "https://support.google.com/chrome/answer/173424?hl=es-419&co=GENIE.Platform%3DDesktop",
+      "summary": "Cómo cambiar el idioma preferido para traducir Puedes seleccionar el idioma al que Chrome traduce la página. En la computadora, abre Chrome. En la parte superior derecha, selecciona Más Configuración. A la izquierda, selecciona Idiomas. En \"Google Traductor\", selecciona Traducir a este idioma. Selecciona el idioma que quieras de la lista de ...",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -153,9 +526,289 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "research",
         "tool",
         "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "738b94818281af09",
+      "title": "Descargar idiomas para utilizarlos sin conexión",
+      "url": "https://support.google.com/translate/answer/6142473?hl=es&co=GENIE.Platform%3DAndroid",
+      "summary": "Nota: En la aplicación Traductor, los idiomas que has guardado aparecen como Descargados . Descargar idiomas sin Wi‑Fi Como los archivos de idioma son pequeños, puedes descargarlos con los datos móviles cuando no tengas conexión Wi-Fi. En este caso, tu operador de telefonía móvil puede cobrarte gastos adicionales.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31c0a90c0ddf3713",
+      "title": "Descargar y usar el Traductor de Google",
+      "url": "https://support.google.com/translate/answer/6350850?hl=es&co=GENIE.Platform%3DAndroid",
+      "summary": "Paso 2: Configura el Traductor de Google Nota: En las versiones 6.10 y posteriores, puedes usar el tema oscuro en la aplicación Traductor. La primera vez que abras el Traductor de Google, se te pedirá que elijas tu idioma principal y el idioma del que traduzcas con más frecuencia.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dc0f0d25e2eec35c",
+      "title": "Escuchar traducciones de voz en tiempo real con Traducción instantánea ...",
+      "url": "https://support.google.com/translate/answer/6142474?hl=es&co=GENIE.Platform%3DAndroid",
+      "summary": "Abre la aplicación Traductor . Si quieres usar Traducción instantánea con auriculares en tu teléfono o tablet Android, conecta los auriculares. En la parte inferior, toca Traducción instantánea . Selecciona el modo de Traducción instantánea y los idiomas que quieras.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7b58ef26d0dbd679",
+      "title": "How to Get Help in Windows 10: Complete User Guide - wikihow.com",
+      "url": "https://www.wikihow.com/Get-Help-in-Windows-10",
+      "summary": "In this article, we'll teach you how to get help in Windows 10 using the Get Help app, how to disable it, and how to reinstall it if it's missing on your device.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4eba7560ed13c572",
+      "title": "How to get help in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-au/windows/experience/how-to-get-help-in-windows",
+      "summary": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "73024d0870caf56a",
+      "title": "HTML en google forms - Stack Overflow en español",
+      "url": "https://es.stackoverflow.com/questions/114027/html-en-google-forms",
+      "summary": "Desafortunadamente no es posible editar el código html de un Google Form, puedes manipular los datos de las respuestas enviadas usando La API de Google Forms o bien la API de Google Spreadsheet (claro está, si guardas las respuestas del formulario en una hoja de cálculo). Sin embargo, el código html como tal no puedes manipularlo. Una opción que puedes elegir es crear una Google App y ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "api"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "461c561e738fe9b7",
+      "title": "Obtener traducciones con marca de género",
+      "url": "https://support.google.com/translate/answer/9179237?hl=es",
+      "summary": "Si ves el mensaje \"Las traducciones con marca de género son limitadas\", es posible que solo haya una traducción por género donde haya más de una traducción disponible en varios géneros. Algunos contenidos son de género neutro o ambiguo. Por ejemplo, algunos sustantivos no tienen marca de género en el contenido original, pero sí en el idioma traducido. El mensaje de una traducción con ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "952743efb234600e",
+      "title": "Translate written words - Android phone & tablet - Google Help",
+      "url": "https://support.google.com/translate/answer/6142478?hl=en&co=GENIE.Platform%3DAndroid",
+      "summary": "On your Android phone or tablet, open the Translate app . Choose a language to translate to and from. From: At the bottom left, tap the language pickup bar. To: At the bottom right, tap the language pickup bar. Enter the word or phrase you want to translate. To give the right context to your translation, enter your word or phrase in a complete sentence. The translated content will show up. If ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d4d139c7e4e75ee4",
+      "title": "American Made Music Gerhard Kubik Africa and the Blues ...",
+      "url": "https://pdfcoffee.com/american-made-music-gerhard-kubik-africa-and-the-blues-university-press-of-mississippi-2008-pdf-free.html",
+      "summary": "Library of Congress Cataloging-in-Publication Data Kubik, Gerhard, 1933— Africa and the blues / Gerhard Kubik. p. cm. Includes bibliographical references and index. ISBN 1-57806-145-8 (cloth : alk. paper).—ISBN 1-57806-146-6 (paper : alk. Paper) 1. Blues (Music)—African in uences. 2. Blacks—Africa—Music— History and criticism. 3. Music—Africa—History and criticism. I. Title ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool"
       ],
       "primary_type": "research",
       "routing_targets": [
@@ -167,383 +820,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c3a67d95ddbd983c",
-      "title": "Cite a Scientific Journal Article | Scribbr Citation Generator",
-      "url": "https://www.scribbr.com/citation/generator/cite/journal-article/",
-      "summary": "Scientific journal article Cite an article published in an academic journal, whether accessed through a database or in print.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bf639b7463efad22",
-      "title": "Cite a Wiki (pedia) Article | Scribbr Citation Generator",
-      "url": "https://www.scribbr.com/citation/generator/cite/wiki-entry/",
-      "summary": "Wiki entry (Wikipedia article) Cite a Wikipedia article or other wiki entry. Use another form to cite other encyclopedia entries .",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6034ba303a822b52",
-      "title": "Cite an Artwork | Scribbr Citation Generator",
-      "url": "https://www.scribbr.com/citation/generator/cite/artwork/",
-      "summary": "Artwork Cite an artwork (painting, photograph, sculpture, installation, etc.) from a museum. Use another form to cite other images accessed online or in print.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3f92f73801769853",
-      "title": "Free APA Citation Generator | With Chrome Extension - Scribbr",
-      "url": "https://www.scribbr.com/citation/generator/apa/",
-      "summary": "Scribbr’s free APA Citation Generator lets you generate perfect APA Style citations in seconds. Now even easier with a Chrome extension.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b1c47003d1bb19b4",
-      "title": "Free Citation Generator | APA, MLA, Chicago | Scribbr",
-      "url": "https://www.scribbr.com/citation/generator/",
-      "summary": "Generate citations in APA, MLA, Chicago, and Harvard style with Scribbr’s free Citation Generator. Trusted by students worldwide.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8f211d84e0035f44",
-      "title": "How does the AI Detector work? – EN - help.scribbr.com",
-      "url": "https://help.scribbr.com/hc/en-us/articles/39232894253719-How-does-the-AI-Detector-work",
-      "summary": "Plagiarism Check: Detects similarities between your text and existing sources to ensure proper citation and originality. Does the Plagiarism Check also detect AI-written text? The Scribbr’s Plagiarism Checker can sometimes detect a portion of AI-generated text fragments. However, it doesn't catch all of them.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "25f967723beb7b55",
-      "title": "How to Cite Sources | Citation Generator & Quick Guide",
-      "url": "https://www.scribbr.com/category/citing-sources/",
-      "summary": "To cite a source, you need an in-text citation and a reference entry. Auto-cite in the right format with our free citation generator.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9be0adfe37641217",
-      "title": "My Scribbr account",
-      "url": "https://app.scribbr.com/account/login?source=citation",
-      "summary": "Your path to academic success Improve your paper with our award-winning Proofreading & Editing services, Plagiarism Checker, APA Generator and extensive Knowledge Base.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "research",
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "research",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1aeda02211529e65",
-      "title": "What does a citation generator do? - scribbr.com",
-      "url": "https://www.scribbr.com/frequently-asked-questions/what-does-an-apa-citation-generator-do/",
-      "summary": "What does a citation generator do? A citation generator is an easy tool that helps you cite sources in a specific citation style. You fill in the forms with information about a source, such as the author (s), title, and publication date. The tool then creates an accurate reference and in-text citation that you can use to give credit to the original author.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8346155ac12865cf",
-      "title": "3090 undervolting results. Share yours. : r/nvidia",
-      "url": "https://www.reddit.com/r/nvidia/comments/rw1x3m/3090_undervolting_results_share_yours/",
-      "summary": "At stock, the voltage easily creeps up towards 1050mV (which cause coil whine at high framerates) and makes the memory run really hot - it then starts to clock down to about 1790 MHz or 1820 MHz.",
+      "id": "c57423ba4aa07d79",
+      "title": "Ammonia - PDFCOFFEE.COM",
+      "url": "https://pdfcoffee.com/ammonia-6-pdf-free.html",
+      "summary": "M. Appl Ammonia@ WILEY-VCH Max ApplAmmonia Principles and Industrial Practice@ WILEY-VCH Weinheim*New York *...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "45399b22794adda3",
-      "title": "4080 FE undervolt results : r/nvidia - reddit.com",
-      "url": "https://www.reddit.com/r/nvidia/comments/zvvy3b/4080_fe_undervolt_results/",
-      "summary": "If stock curve is kept and only power limit is used, I suspect the GPU would not downvolt to 1000mV while bumping clock to 2880MHz at the same time (2880MHz @ 1000mV is above the stock curve). Anyway, maybe power limit slider would help rein in power consumption and temperature while keeping performance acceptable.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4438e6420fe95b22",
-      "title": "Buy Nvidia in Roth account or Brokerage? : r/NvidiaStock",
-      "url": "https://www.reddit.com/r/NvidiaStock/comments/1dc1qe1/buy_nvidia_in_roth_account_or_brokerage/",
-      "summary": "Nvidia Corporation (commonly referred to as Nvidia, stylized as NVIDIA, nVIDIA or nvidia) is an American technology company based in Santa Clara, California. Nvidia designs graphics processing units (GPUs) for the gaming market, as well as system on a chip units (SOCs) for the mobile computing and automotive market.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c74088a162338e1e",
-      "title": "Cambridge Dictionary | English Dictionary, Translations & Thesaurus",
-      "url": "https://dictionary.cambridge.org/",
-      "summary": "The most popular dictionary and thesaurus for learners of English. Meanings and definitions of words with pronunciations and translations.",
-      "discovery_channel": "broad_web",
-      "query": "translation smart glasses",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -568,22 +850,82 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d74fe8171f4c86f1",
-      "title": "DEFINITELY Undervolt the RTX 4090 : r/nvidia - reddit.com",
-      "url": "https://www.reddit.com/r/nvidia/comments/y4igtu/definitely_undervolt_the_rtx_4090/",
-      "summary": "1.5M subscribers in the nvidia community. A place for everything NVIDIA, come talk about news, drivers, rumors, GPUs, the industry, show-off your…",
+      "id": "f1eff070150d597c",
+      "title": "Annual Report - Ministry Of Corporate Affairs",
+      "url": "https://www.mca.gov.in/content/mca/global/en/data-and-reports/reports/annual-reports/annual-report.html",
+      "summary": "Annual Report of Ministry of Corporate Affairs The Report gives a synoptic view of the organizational structure, functions and activities of the Ministry undertaken during the previous financial year and the first three quarters of the current financial year. The activities, inter alia, relate to the implementation of the various Acts administered by the Ministry and its attached/subordinate ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "378e8cb9da7bf022",
+      "title": "Annual Reports - Brambles Corporate Site",
+      "url": "https://www.brambles.com/annual-reports",
+      "summary": "Annual Reports Please enter your HIN/SRN and postcode. For security purposes, please retype the security code in the space provided. Login to Shareholder Services",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4e1a27639544d2e3",
+      "title": "ANNUAL REPORTS - GOIL PLC",
+      "url": "https://www.goil.com.gh/investor-relation/annual-reports/",
+      "summary": "REPORTS As part of good corporate and investor relations practice, GOIL strives to keep its shareholders and the investment community up-to-date on the performance of the Company. Our Investor Relations Unit provides historical data on the company’s quarterly and annual financial results and information on the company’s historical dividend payments. As a listed company on the Ghana Stock ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
         "community"
@@ -598,10 +940,490 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0e857214d304f783",
-      "title": "Fantasy Football | Yahoo! Sports",
-      "url": "https://football.fantasysports.yahoo.com/f1/myleagues",
-      "summary": "Fantasy Football | Yahoo! Sports.",
+      "id": "16f2933bf02a962d",
+      "title": "Annual Reports - Meralco",
+      "url": "https://company.meralco.com.ph/investor-relations/annual-reports",
+      "summary": "This report is intended to be read in conjunction with the 2025 One Meralco Foundation (“OMF”) Annual Report, which provides a more detailed discussion of OMF’s programs, initiatives, and accomplishments during the reporting period.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7474f03d62eada9c",
+      "title": "Annual Reports - Tenaga Nasional Berhad",
+      "url": "https://www.tnb.com.my/suppliers-investors-media-relations/annual-reports",
+      "summary": "TNB better. Brighter Look through our TNB annual reports. They are the yearly reports on everything TNB. The reports are also available for download, for users’ reading purposes. Annual Report for 2025 Annual Report for 2024 Annual Report for 2023 Annual Report for 2022 Annual Report for 2021 Annual Report for 2020 Annual Report for 2019 TNB Annual General Meeting Booklet 2019 TNB Corporate ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f449fb65fbf2fc59",
+      "title": "AnnualReports.com",
+      "url": "https://www.annualreports.com/",
+      "summary": "Claim your profile or add your company to the largest Annual Report Directory in the world. Learn about our company profile programs and how you can start receiving potential investor views of your annual report.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "66676ece26a6d2c3",
+      "title": "AnnualReports.com",
+      "url": "https://www.annualreports.com/Browse/Industry",
+      "summary": "Basic Materials Agricultural Chemicals Aluminum Chemicals - Major Diversified Copper Gold Independent Oil & Gas Industrial Metals & Minerals Major Integrated Oil & Gas Nonmetallic Mineral Mining Oil & Gas Drilling & Exploration Oil & Gas Equipment & Services Oil & Gas Pipelines Oil & Gas Refining & Marketing Silver Specialty Chemicals Steel & Iron Synthetics Conglomerates Conglomerates ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2da284a93508a2c",
+      "title": "Asme B30.5-2018 - PDFCOFFEE.COM",
+      "url": "https://pdfcoffee.com/asme-b305-2018-pdf-free.html",
+      "summary": "ASME B30.5-2018(Revision of ASME B30.5-201 4)Mobile and Locomotive Cranes Safety Stan dard for Cableways, Cranes, De...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "047f3507acdebfdb",
+      "title": "Cleveland Clinic",
+      "url": "https://www.clevelandclinic.org/mychart/navigating-mychart_player.html?embedIFrameId=embeddedSmartPlayerInstance",
+      "summary": "Access your Cleveland Clinic MyChart account to view medical records, manage appointments, and connect with healthcare providers conveniently.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f987c326cdaa9a41",
+      "title": "Criar seu primeiro formulário nos Formulários Google",
+      "url": "https://support.google.com/a/users/answer/9303071?hl=pt-BR",
+      "summary": "Primeiros passos com o Formulários no Google Workspace Criar seu primeiro formulário nos Formulários Google",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff4993613f66ba4a",
+      "title": "Donna's Beauty Shop - 3 Reviews - Beauty in Pikeville, TN - Birdeye",
+      "url": "https://reviews.birdeye.com/donnas-beauty-shop-170647742509682",
+      "summary": "Find reviews, ratings, directions, business hours, and book appointments online.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fda93ae44aff24cd",
+      "title": "Donna's Beauty Shop - Facebook",
+      "url": "https://www.facebook.com/99DonnasbeautyShop/",
+      "summary": "Donna's Beauty Shop. 487 likes. to be one of the well known cosmetic retailer in the country that will delivery quality service for our future clients.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e7809dcfd5f749d1",
+      "title": "Donna's Beauty Shop - Piketon, OH",
+      "url": "https://www.yelp.com/biz/donnas-beauty-shop-piketon",
+      "summary": "DONNA'S BEAUTY SHOP in Piketon, reviews by real people. Yelp is a fun and easy way to find, recommend and talk about what’s great and not so great in Piketon and beyond.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "65e1f6ed201a19e3",
+      "title": "DONNA'S BEAUTY SHOP - Pikeville TN - Hours, Directions, Reviews ...",
+      "url": "https://www.loc8nearme.com/tennessee/pikeville/donnas-beauty-shop/4074705/",
+      "summary": "Donna's Beauty Shop at 27057 TN-30, Pikeville TN 37367 - hours, address, map, directions, phone number, customer ratings and reviews.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "369ce04e154f9564",
+      "title": "Donna's Beauty Shop - Pikeville, TN 37367 - The Real Yellow Pages",
+      "url": "https://www.yellowpages.com/pikeville-tn/mip/donnas-beauty-shop-464512462",
+      "summary": "Get reviews, hours, directions, coupons and more for Donna's Beauty Shop. Search for other Beauty Salons on The Real Yellow Pages®.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bcc7075162b295d0",
+      "title": "Donna's Beauty Shop in Greenbrier, AR 72058 - (501) 6...",
+      "url": "https://www.chamberofcommerce.com/united-states/arkansas/greenbrier/beauty-salon/2000520668-donna-s-beauty-shop",
+      "summary": "Donna's Beauty Shop located at 118 AR-25, Greenbrier, AR 72058 - reviews, ratings, hours, phone number, directions, and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54ebd1fd53d625f6",
+      "title": "Donna's Beauty Shop in Pikeville , TN - superpages.com",
+      "url": "https://www.superpages.com/pikeville-tn/bpp/donnas-beauty-shop-464512462",
+      "summary": "Get reviews, hours, directions, coupons and more for Donna's Beauty Shop. Search for other Beauty Salons on superpages.com.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "38ffac38fb51dc87",
+      "title": "Donna's Beauty Shop, 27057 Sr 30, Pikeville, TN 37367-6639, US - MapQuest",
+      "url": "https://www.mapquest.com/us/tennessee/donnas-beauty-shop-350579658",
+      "summary": "Donna's Beauty Shop is a local establishment in Pikeville, TN that offers a range of beauty services to its clientele. With a focus on hair styling, coloring, and other beauty treatments, Donna's Beauty Shop aims to help customers look and feel their best.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2637b0b1d3b41d5a",
+      "title": "Donna’s Beauty Shop - dunlap.directory",
+      "url": "https://dunlap.directory/directories/donnas-beauty-shop/",
+      "summary": "Whether you’re looking for a fresh haircut, a new color, professional styling, nail services, or routine beauty maintenance, Donna’s Beauty Shop strives to provide personalized attention and quality service in a comfortable and relaxing environment.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e44fabc348e522a",
+      "title": "Drew Smith | Robert Irwin and Witney Carson perform an Argentine Tango ...",
+      "url": "https://www.instagram.com/reel/DQYIxl_kSDX/",
+      "summary": "80K likes, 950 comments - drewthedisneydude on October 28, 2025: \"Robert Irwin and Witney Carson perform an Argentine Tango to “Sweet Dreams Are Made of This” by The Hampton String Quartet on Dancing with the Stars Halloween Night! 🔥 #DancingwiththeStars #DWTS #HalloweenNight\".",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
@@ -628,297 +1450,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "603ee2b3bbf9f015",
-      "title": "Hakeem Jeffries - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Hakeem_Jeffries",
-      "summary": "A member of the Democratic Party, Jeffries has served since 2023 as the leader of the House Democratic Caucus and House minority leader. Jeffries was born in the New York City borough of Brooklyn and raised in the Crown Heights neighborhood.",
+      "id": "101e60d01dd681a4",
+      "title": "Foreign & Commonwealth Office annual reports and accounts",
+      "url": "https://www.gov.uk/government/collections/annual-report-and-accounts",
+      "summary": "These reports set out annual sustainability performance for the Foreign and Commonwealth Office. 2014 to 2015 and 2015 to 2016 sustainability reports are located in the Foreign and Commonwealth ...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "343c8e2d80ecc1ec",
-      "title": "House GOP Elects Jim Jordan as Minority Leader as Senate Weighs Next ...",
-      "url": "https://www.usnews.com/news/national-news/articles/2026-11-10/whats-next-for-republicans-inside-the-congressional-leadership-elections",
-      "summary": "House GOP Elects Jim Jordan as Minority Leader as Senate Weighs Next Move Senior Republicans are vying for leadership posts, and some GOP senators are objecting to votes altogether.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c8d1421f852b74c7",
-      "title": "House Republicans elect Jim Jordan as minority leader for the next ...",
-      "url": "https://abcnews.com/Politics/house-republicans-elect-jim-jordan-minority-leader-congress/story?id=138016685",
-      "summary": "House Republicans on Tuesday elected Jim Jordan as minority leader for the next Congress, beating Majority Leader Steve Scalise, according to multiple sources.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f000c826c9556969",
-      "title": "House Republicans elect Jim Jordan to serve as minority leader next ...",
-      "url": "https://www.washingtonpost.com/politics/2026/11/10/house-republicans-elect-jim-jordan-serve-minority-leader-next-year/",
-      "summary": "Republicans on Tuesday elected Rep. Jim Jordan (Ohio) as minority leader for the next Congress, in which the party’s ranks will be severely diminished after last week’s midterm elections ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3ef26e020f1f4169",
-      "title": "Index Fund Advisors, Inc. - Fiduciary Wealth Services, Dimensional ...",
-      "url": "https://www.ifa.com/",
-      "summary": "Index Fund Advisors is a fee-only independent fiduciary financial advisor that specializes in risk-appropriate portfolios of index funds.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d75ee12dc45a4ed3",
-      "title": "International Fertilizer Association | The Global Fertilizer Association",
-      "url": "https://www.fertilizer.org/",
-      "summary": "IFA is the only global fertilizer association and has a membership of around 500 entities in some 80 countries, encompassing all actors in the fertilizer value chain.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77d3bdd63270f14e",
-      "title": "Jim Jordan Elected as New House Republican Leader - TIME",
-      "url": "https://time.com/article/2026/11/10/jim-jordan-house-minority-leader-republicans-congress/",
-      "summary": "Jordan beat out Majority Leader Steve Scalise for the top House GOP position in the next Congress after Speaker Mike Johnson said he would not seek the role.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aa2b5ecf11124eb6",
-      "title": "Jim Jordan picked as new minority leader for House GOP",
-      "url": "https://rollcall.com/2026/11/10/new-minority-leader-for-house-gop-120th/",
-      "summary": "House Republicans on Tuesday opted for a new face atop their ranks, electing Rep. Jim Jordan as the incoming minority leader for the 120th Congress after Republicans suffered massive losses in ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "06b9bff5389a6d73",
-      "title": "Jim Jordan Tapped as House Minority Leader as Republicans Prepare for ...",
-      "url": "https://www.nationalreview.com/news/jim-jordan-tapped-as-house-minority-leader-as-republicans-prepare-for-dem-takeover",
-      "summary": "Republicans on Tuesday selected Representative Jim Jordan of Ohio to be the minority leader of the next House of Representatives in a rebuke of the chamber’s current GOP leadership. Having ...",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "820ec5cfb1e92d4f",
-      "title": "Keep Nvidia until next year? : r/NvidiaStock - reddit.com",
-      "url": "https://www.reddit.com/r/NvidiaStock/comments/1d5k7i0/keep_nvidia_until_next_year/",
-      "summary": "Nvidia Corporation (commonly referred to as Nvidia, stylized as NVIDIA, nVIDIA or nvidia) is an American technology company based in Santa Clara, California. Nvidia designs graphics processing units (GPUs) for the gaming market, as well as system on a chip units (SOCs) for the mobile computing and automotive market.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
+      "evidence_class": "regulatory",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -928,12 +1480,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d8d08e8ab81feacf",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/en-US/07c7983e-5f4a-47fe-a127-bd551d3b4385/forum-faq-how-to-troubleshoot-common-rdp-issues-for-windows-virtual-machines-in-azure?forum=WAVirtualMachinesforWindows",
-      "summary": "MSDN",
+      "id": "20001af1e8076472",
+      "title": "google apps script - Googleフォームの質問の選択肢をスプレッドシートから読む取る方法について（セクションがわかれて ...",
+      "url": "https://ja.stackoverflow.com/questions/89379/google%e3%83%95%e3%82%a9%e3%83%bc%e3%83%a0%e3%81%ae%e8%b3%aa%e5%95%8f%e3%81%ae%e9%81%b8%e6%8a%9e%e8%82%a2%e3%82%92%e3%82%b9%e3%83%97%e3%83%ac%e3%83%83%e3%83%89%e3%82%b7%e3%83%bc%e3%83%88%e3%81%8b%e3%82%89%e8%aa%ad%e3%82%80%e5%8f%96%e3%82%8b%e6%96%b9%e6%b3%95%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6-%e3%82%bb%e3%82%af%e3%82%b7%e3%83%a7%e3%83%b3%e3%81%8c%e3%82%8f%e3%81%8b%e3%82%8c%e3%81%a6%e3%81%84%e3%82%8b%e5%a0%b4%e5%90%88%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6",
+      "summary": "Googleフォームの質問の選択肢（プルダウン式）をスプレッドシートから読み取りたくて下記のようにスクリプトエディタで作成をしています。 2つ目の質問までは反映できるのですが3つ目の質問が反映できません。 3つ目の質問は別のセクションになっており、どのようにコードを書き変えたら ...",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -946,9 +1498,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -958,10 +1510,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "20108e4d30adfffd",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/sqlserver/en-US/home",
-      "summary": "MSDN",
+      "id": "744cc34452f067b2",
+      "title": "Google Formsで編集画面が開けない - スタック・オーバーフロー",
+      "url": "https://ja.stackoverflow.com/questions/82649/google-forms%e3%81%a7%e7%b7%a8%e9%9b%86%e7%94%bb%e9%9d%a2%e3%81%8c%e9%96%8b%e3%81%91%e3%81%aa%e3%81%84",
+      "summary": "Google spreadsheetでアンケートのFormsを連携させているのですが、編集画面として開くことができません。以前まではそうではなかった覚えがあるのですが、最近編集が必要になったので開いてみようとしたら閲覧モードでしか開きません。何が原因でしょうか？ ちなみに、Formと連動している ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a4e45f293f78df66",
+      "title": "How far from Ellis Island is the Statue of Liberty? - Answers",
+      "url": "https://www.answers.com/tourist-attractions/How_far_from_Ellis_Island_is_the_Statue_of_Liberty",
+      "summary": "The Statue of Liberty is located approximately 1.6 kilometers (about 1 mile) from Ellis Island. The two landmarks are situated in New York Harbor, with the statue on Liberty Island and Ellis ...",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -988,10 +1570,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0f948abe3cae1751",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/es-ES/vbes/thread/76faf45f-9da2-4eee-9428-26d2e5ea8637/",
-      "summary": "MSDN",
+      "id": "f7a8b7e69eac549c",
+      "title": "How long did it take to go to Ellis Island from Italy on a boat?",
+      "url": "https://www.answers.com/history-ec/How_long_did_it_take_to_go_to_Ellis_Island_from_Italy_on_a_boat",
+      "summary": "\"The voyage between Naples and New York, which is 4,188 knots, is performed by these steamers in fourteen to sixteen days, which includes one day's stoppage at Gibraltar.\" p. 258, \"Marine Engineer ...",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1018,10 +1600,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "803664d636ac8e92",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/ja-JP/0447118b-652b-463b-a86b-47e170fad8aa",
-      "summary": "MSDN",
+      "id": "807dcd95bf601606",
+      "title": "How many babies were born on Ellis Island? - Answers",
+      "url": "https://www.answers.com/sociology/How_many_babies_were_born_on_Ellis_Island",
+      "summary": "Around 355 babies were born on Ellis Island while it served as an Immigration station between 1892 and 1954.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1048,10 +1630,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b83b787d978825bc",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/en-US/doloto/",
-      "summary": "MSDN",
+      "id": "599778244a5a4cdf",
+      "title": "How many films did jack elam appear in? - Answers",
+      "url": "https://www.answers.com/movies-and-television/How_many_films_did_jack_elam_appear_in",
+      "summary": "Played Hock Ellis in \"Zane Grey Theater\" in 1956. Played McCoy, Bar 8 Rider in \"Jubal\" in 1956. Played Deputy Slats Callahan in \"Thunder Over Arizona\" in 1956.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1078,10 +1660,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "498f283cf5a00251",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/vstudio/en-US/66fcc2c8-38f2-492e-af71-61ad86a0b653/how-to-add-an-item-to-a-ienumerable",
-      "summary": "MSDN",
+      "id": "b39921609e4f04c0",
+      "title": "How often were immigrants rejected at Ellis island? - Answers",
+      "url": "https://www.answers.com/tourist-attractions/How_often_were_immigrants_rejected_at_Ellis_island",
+      "summary": "At Ellis Island, approximately 2% of immigrants were rejected after inspection, which translates to about 250,000 individuals out of the more than 12 million who passed through from 1892 to 1954 ...",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1108,12 +1690,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d6e807934fb5d4ca",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/windowsapps/en-US/67f0e28c-82d2-4268-a506-ed21752820ba/touchpanelgetstate-count-property-behavior",
-      "summary": "MSDN",
+      "id": "c4c3ef74c55609f0",
+      "title": "How to spoof a closed google form (\"...no longer accepting responses ...",
+      "url": "https://stackoverflow.com/questions/62191047/how-to-spoof-a-closed-google-form-no-longer-accepting-responses-i-want-t",
+      "summary": "How to spoof a closed google form (\"...no longer accepting responses\")? I want to submit a form after deadline. How can I access and submit a form when it has been closed? The source of the closed ...",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1138,12 +1720,222 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5cdac7a3b33258cf",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/sharepoint/en-US/f0f60554-79fb-47b6-b672-54295ce8d868/how-to-update-properties-metadata-of-old-versions-of-documents-in-sharepoint-document-library",
-      "summary": "MSDN",
+      "id": "af0bb4d224efb1a6",
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/DQZsekTiYfE/",
+      "summary": "Join the excitement as Robert Irwin and Witney Carson take to the dance floor on Halloween Night's DWTS, performing a mesmerizing Argentine Tango to 'Sweet Dreams are Made of This'. The performance is a must-see for dance fans and enthusiasts alike, showcasing the duo's chemistry and skill.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8019b8e419a9d091",
+      "title": "Introduction to Hydrology by Warren Viessman - PDFCOFFEE.COM",
+      "url": "https://pdfcoffee.com/introduction-to-hydrology-by-warren-viessman-2-pdf-free.html",
+      "summary": "He defineda unit graph as follows:2 givendrainage area, Ifa givenone-day rainfallproduces a 1-in.depthofrunoffoverthe thehydrograph showingtheratesat whichtherunoffoccurredcanbe considered a unit graphfor that watershed.",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "785df451ca926921",
+      "title": "Je formulier delen met bijdragers",
+      "url": "https://support.google.com/docs/answer/2917111?hl=nl",
+      "summary": "Als je een nieuwe spreadsheet met reacties maakt, krijgen formulierbijdragers er automatisch toegang toe. Verdere wijzigingen in de rechten van het formulier worden niet automatisch gesynchroniseerd. Als je de toegang wilt wijzigen of verwijderen, update je de rechten afzonderlijk voor het formulier en de gekoppelde spreadsheet.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f8338170e679809b",
+      "title": "Kertauskysymysten luominen ja arvioiminen Google Formsilla",
+      "url": "https://support.google.com/docs/answer/7032287?hl=fi",
+      "summary": "Avaa lomake Google Formsissa. Valitse lomakkeen yläreunasta Asetukset. Laita Tee tästä kysymystehtävä päälle. Valinnainen: Jos haluat kerätä sähköpostiosoitteet, klikkaa Vastaukset-kohdan vieressä olevaa alanuolta ja laita Kerää sähköpostiosoitteet päälle.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "17a405f773ca8293",
+      "title": "Legacy2CUI PDF - PDFCOFFEE.COM",
+      "url": "https://pdfcoffee.com/legacy2cui-pdf-pdf-free.html",
+      "summary": "Translation of Innovus Legacy UI Commands into Common UI (CUI) Commands Product Version Innovus 18.10 September 2018 C...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a4344be261b3da52",
+      "title": "Limit maximum choices in multi-answer Google Forms question",
+      "url": "https://stackoverflow.com/questions/77715879/limit-maximum-choices-in-multi-answer-google-forms-question",
+      "summary": "want to restrict a person's maximum choices to 6 in one of the more than one answer type questions I don't think this is a feature offered in Google Sheets.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "75d439be84b20aec",
+      "title": "M. Appl Ammonia - PDFCOFFEE.COM",
+      "url": "https://pdfcoffee.com/m-appl-ammonia-pdf-free.html",
+      "summary": "M. Appl Ammonia @ WILEY-VCH Max Appl Ammonia Principles and Industrial Practice @ WILEY-VCH Weinheim * New York * Chichester 1 Brisbane * Singapore * Toronto Dr. Max Appl Berliner StraBe 12 D-67 I25 Dannstadt-Schauernheim This book was carefully produced. Nevertheless, author and publisher do not warrant the information contained therein t o be free of errors. Readers are advised to keep in ...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a2f5aac999f5f788",
+      "title": "MyChart - Cleveland Clinic",
+      "url": "https://my.clevelandclinic.org/online-services/mychart",
+      "summary": "Connect to your MyChart® account via the MyClevelandClinic™ app or website for access to your health information and all of the Cleveland Clinic services you know and trust in a single place.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1168,10 +1960,460 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "49df95445e148500",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/ja-JP/b8580a87-88a4-4001-b455-4df670af758d",
-      "summary": "MSDN",
+      "id": "b04a5669ae583fc0",
+      "title": "MyChart - Login Page",
+      "url": "https://mychart.clevelandclinic.org/Authentication/Login",
+      "summary": "For appointments, test results, and ongoing care, please use the new Cleveland Clinic Canada MyChart. To activate your account, email patientexperiencecanada@ccf.org.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b429628d26b8812e",
+      "title": "MyChart - Login Page",
+      "url": "https://mychart.clevelandclinic.org/SymptomChecker",
+      "summary": "Forgot login information? Need access to a loved one's health record? Here's how. Need Help? Contact Us.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5eab7c565c56037c",
+      "title": "MyChart - Login Page",
+      "url": "https://www.ccmychart.org/fch/Authentication/Login/StandardFile",
+      "summary": "Forgot login information? Need help? Sign up.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f8c75817447bf261",
+      "title": "MyChart - Login Page",
+      "url": "https://mychart.clevelandcliniclondon.uk/PRD/Authentication/Login/StandardFile",
+      "summary": "There are several key steps you MUST follow to prepare for a video visit. You would need to download MyChart and Zoom to your mobile device.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "074ea2731dd84fd5",
+      "title": "Perfect Scores on Halloween: Our Argentine Tango Journey | TikTok",
+      "url": "https://www.tiktok.com/@robertirwin/video/7566672187613039884",
+      "summary": "Experience the thrill of our first perfect scores! Join us as we celebrate Halloween with an intense Argentine tango. #TeamIrWINit #RobertIrwin #WitneyCarson.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2077d608367f4fcf",
+      "title": "Principios-de-Auditoria-Winttington-y-Panny.pdf",
+      "url": "https://pdfcoffee.com/principios-de-auditoria-winttington-y-pannypdf-4-pdf-free.html",
+      "summary": "Principios de Auditoría DECIMOCUARTA EDICIÓNMe Grpw HillWhittington 9 Pany Principios de auditoría1 Principios...",
+      "discovery_channel": "broad_web",
+      "query": "IFA 2026 smart glasses; IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be49298de7d35247",
+      "title": "Publish your form and get responses - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/9303072?hl=en",
+      "summary": "In Forms, you can see a summary of all responses or look at individual responses on the Response tab. You can also view the form questions by clicking on the Question tab. To switch between individual responses, click the individual’s email.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "699591642a67c77d",
+      "title": "Robert and Witney's Argentine Tango from DWTS Season 34 Week 7 ... - TikTok",
+      "url": "https://www.tiktok.com/@thevideonook/video/7567852440658119949",
+      "summary": "TikTok video from TheVideoNook (@thevideonook): “Robert and Witney's Argentine Tango from DWTS Season 34 Week 7 #dwts #dance #robertirwin #witneycarson #halloween @Witney Carson @Robert Irwin”.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f228ca027ea6d45",
+      "title": "Robert Irwin & Witney Carson | Argentine Tango + Scores | Week 7 ...",
+      "url": "https://www.youtube.com/watch?v=Uc_f9OeduHg",
+      "summary": "Robert Irwin & Witney Carson | Argentine Tango + Scores | Week 7 | Dancing With The Stars 2025 RemasterKingdom4K 69.4K subscribers 524",
+      "discovery_channel": "broad_web+retail",
+      "query": "ThinkAR AiLENS; titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "456de9464edeb39b",
+      "title": "Robert Irwin and pro Witney Carson perform a Tango to ... - Facebook",
+      "url": "https://www.facebook.com/dancingwiththestars/videos/robert-irwin-and-pro-witney-carson-perform-a-tango-to-sweet-dreams-are-made-of-t/1189665016383781/",
+      "summary": "I absolutely loved that Robert included the little “neck break” move — such a perfect nod to Bindi’s dance from 10 years ago. Such a beautiful sibling tribute! 🥹💛",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0bc19d1035540135",
+      "title": "Robert Irwin and Witney Carson perform an Argentine Tango to “Sweet ...",
+      "url": "https://www.facebook.com/61574620997044/videos/1047659220717935/",
+      "summary": "Robert Irwin and Witney Carson perform an Argentine Tango to “Sweet Dreams Are Made of This” by The Hampton String Quartet on Dancing with the Stars...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a132e935c21acaf0",
+      "title": "Sign in to your account - Cleveland Clinic",
+      "url": "https://mypc.ccf.org/portal/webclient/index.html",
+      "summary": "Sign in to your account Sign in",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8532983c2d031989",
+      "title": "The Salon on Main | Camden TN - Facebook",
+      "url": "https://www.facebook.com/156SalononMain/",
+      "summary": "Back to school will be here before yall know it! You can call The Salon on Main, message me here, or book online!",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a20eeab6866d05ef",
+      "title": "USA TODAY - Breaking News and Latest News Today",
+      "url": "https://eu.usatoday.com/",
+      "summary": "USA TODAY delivers current national and local news, sports, entertainment, finance, technology, and more through award-winning journalism, photos, and videos.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4abd78f9e8d6c067",
+      "title": "WATCH: Robert Irwin & Witney Carson’s Tango Dance",
+      "url": "https://entertainmentnow.com/dancing-with-the-stars/robert-irwin-dwts-witney-carson-tango-performance/",
+      "summary": "Watch Robert Irwin and Witney Carson's tango performance on \"Dancing with the Stars\" tonight September 23, 2025. Find out their second score.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ad5bcc022cdeca5",
+      "title": "What other two names was Ellis island called in the past?",
+      "url": "https://www.answers.com/tourist-attractions/What_other_two_names_was_Ellis_island_called_in_the_past",
+      "summary": "The Federal government purchased the island from New York state in 1808 and built a fort in it. The fort at Ellis island was named Ft. Gibson in honor of a brave office killed in the War of 1812.",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1198,10 +2440,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "409a00af5bfd0cee",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/sqlserver/pt-BR/a4b4a25f-46fe-4c32-99db-748f1d655861/ssis",
-      "summary": "MSDN",
+      "id": "957cc85fd05e3c06",
+      "title": "What questions were the immigrants asked at Ellis Island?",
+      "url": "https://www.answers.com/tourist-attractions/What_questions_were_the_immigrants_asked_at_Ellis_Island",
+      "summary": "There were 29 questions in total, in which immigrants were asked during the arrival in Ellis Island, including:NameOccupationThe amount of money they carried with themand 26 more questions....",
       "discovery_channel": "broad_web",
       "query": "smartglasses",
       "source": "Bing web RSS",
@@ -1228,42 +2470,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "266ad7185388b8ee",
-      "title": "My 4070 Ti Undervolt Results : r/nvidia - reddit.com",
-      "url": "https://www.reddit.com/r/nvidia/comments/11kmraz/my_4070_ti_undervolt_results/",
-      "summary": "Results Note: The \"STOCK\" setting is with Afterburner completely closed. On my card it's around 2.8 GHz at 1.0-1.1 V.",
+      "id": "ce9064d875dfc638",
+      "title": "When did black began wearing gold teeth? - Answers",
+      "url": "https://www.answers.com/history-ec/When_did_black_began_wearing_gold_teeth",
+      "summary": "gold teeth go back thousands of year specifically in Africa and south America. gold teeth have always been for decoration or an alternative to removing teeth. blacks in America began using gold ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e70f5bdd2533db10",
-      "title": "My League | Fantasy Football | Yahoo! Sports",
-      "url": "https://football.fantasysports.yahoo.com/2021/f1/1245347",
-      "summary": "Yahoo Fantasy Football. Create or join a NFL league and manage your team with live scoring, stats, scouting reports, news, and expert advice.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1288,42 +2500,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4fc33317c4c26ded",
-      "title": "Nvidia vs. AMD: Which Company Should Investors Focus On?",
-      "url": "https://www.reddit.com/r/AMD_Stock/comments/vkcin6/nvidia_vs_amd_which_company_should_investors/",
-      "summary": "21 votes, 34 comments. 46K subscribers in the AMD_Stock community. Investor strategies and discussion relating to AMD.",
+      "id": "120637cc5fa73fd4",
+      "title": "Who was the US President when Ellis Island opened? - Answers",
+      "url": "https://www.answers.com/united-states-government/Who_was_the_US_President_when_Ellis_Island_opened",
+      "summary": "Ellis Island opened on January 1, 1892, during the presidency of Benjamin Harrison. He served as the 23rd President of the United States from 1889 to 1893. The island became a significant entry ...",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "141f798aaa5ef071",
-      "title": "Ohio’s Jim Jordan chosen Republican minority leader: What that means ...",
-      "url": "https://www.cleveland.com/open/2026/11/house-republicans-back-jim-jordan-as-minority-leader-in-new-congress.html",
-      "summary": "Rep. Jim Jordan of Ohio will be the leader of House Republicans when the new Congress convenes in January. Jordan was elected by the GOP caucus over Steve Scalise of Louisiana on Tuesday.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1348,343 +2530,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "760c1540a371a593",
-      "title": "Party leaders of the United States House of Representatives",
-      "url": "https://en.wikipedia.org/wiki/Party_leaders_of_the_United_States_House_of_Representatives",
-      "summary": "With the Republicans holding a majority of seats and the Democrats holding a minority, the current leaders are Majority Leader Steve Scalise of Louisiana and Majority Whip Tom Emmer of Minnesota, Minority Leader Hakeem Jeffries of New York, and Minority Whip Katherine Clark of Massachusetts.",
+      "id": "7f5316b8653e3bfe",
+      "title": "Why did Ellis Island have the nicknames of Island of Hope or ... - Answers",
+      "url": "https://www.answers.com/history-ec/Why_did_Ellis_Island_have_the_nicknames_of_Island_of_Hope_or_Island_of_Tears",
+      "summary": "It was the Island of Hope for many because it was the entryway to the United States, where people hoped to escape from grinding poverty and tyranny and make a better life for themselves. However ...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b98bdd23c9c6c9f1",
-      "title": "Play Yahoo Fantasy Football - leagues, rankings, news, expert insights",
-      "url": "https://football.fantasysports.yahoo.com/f1/signup",
-      "summary": "Play Yahoo Fantasy Football for free. Create or join a fantasy football league, draft players, track rankings, get expert advice, and more!",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e45cb19b9b621bce",
-      "title": "RTX 3080 undervolt - your experience : r/nvidia",
-      "url": "https://www.reddit.com/r/nvidia/comments/rtkv0i/rtx_3080_undervolt_your_experience/",
-      "summary": "That makes it a relative underperformer at stock settings, turning in mildly below-average results for a 3080 12GB across benchmarks, though still very comfortably higher than a 3070Ti (even with higher power limits, and I can speak from experience there because I upgraded from the 3070Ti that could run 350W+ to this MSI card).",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "995298bfce312ce9",
-      "title": "Secret Best Buy Stock Notifications : r/nvidia - reddit.com",
-      "url": "https://www.reddit.com/r/nvidia/comments/krck6n/secret_best_buy_stock_notifications/",
-      "summary": "A place for everything NVIDIA, come talk about news, drivers, rumors, GPUs, the industry, show-off your build and more. This Subreddit is community run and does not represent NVIDIA in any capacity unless specified.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail",
-        "community"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "70ba147ab05a95c1",
-      "title": "Share your 3060 Ti overclock results! : r/nvidia - reddit.com",
-      "url": "https://www.reddit.com/r/nvidia/comments/ka271h/share_your_3060_ti_overclock_results/",
-      "summary": "EVGA 3060 Ti FTW3 - timespy of 11900 stock, boosting to ~2025mHz. My best result so far is holding core voltage to 1000mV, setting core target to 1950mHz, and upping mem frequency by 1000, this gets about 12600 in timespy.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ee49c1407aaa3d61",
-      "title": "Sign in or out of Yahoo | Fantasy Football Help | Yahoo Help",
-      "url": "https://help.yahoo.com/kb/fantasy-football/sign-yahoo-sln3407.html",
-      "summary": "Sign in to your Yahoo, Rocketmail, or Ymail account from anywhere you access your favorite Yahoo services. Find out how to get in to and out of your account.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "17118a70196609df",
-      "title": "Sign in to Yahoo - Yahoo Fantasy Football",
-      "url": "https://football.fantasysports.yahoo.com/f1/livedraft_join?dt=standard&crumb=fantasysports.livedraft|Jd.ylpnT.mP",
-      "summary": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get more out of the web, you get more out of life.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dd1f666f31157769",
-      "title": "Sign in to Yahoo Fantasy - Yahoo Sports",
-      "url": "https://sports.yahoo.com/dailyfantasy/league/7539/2389984",
-      "summary": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get more out of the web, you get more out of life.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "13423986b6d33f88",
-      "title": "With Jim Jordan as leader, House Republicans signal they're ready to ...",
-      "url": "https://www.cbsnews.com/news/jim-jordan-house-republican-leader-democrats/",
-      "summary": "Republicans described the incoming minority leader as a \"fighter\" who can go head to head with Hakeem Jeffries.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "708746ee2ecd18d3",
-      "title": "Yahoo Fantasy Football",
-      "url": "https://football.fantasysports.yahoo.com/",
-      "summary": "Yahoo Fantasy Football: Your home for crushing fantasy football with friends this year",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5fd3a288af899371",
-      "title": "Yahoo Fantasy Football",
-      "url": "https://football.fantasysports.yahoo.com/f1/home",
-      "summary": "Yahoo Fantasy Football: Your home for crushing fantasy football with friends this year",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "aaa0595387105103",
-      "title": "Yahoo! Sports - Fantasy Football League",
-      "url": "https://football.fantasysports.yahoo.com/league/_fantasy_football_league/",
-      "summary": "Yahoo Fantasy Football. Create or join a NFL league and manage your team with live scoring, stats, scouting reports, news, and expert advice.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
