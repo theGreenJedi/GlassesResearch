@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-12T11:55:40.176109+00:00`
+Generated: `2026-11-12T12:55:44.575163+00:00`
 
-- Intake files inspected: **208**
-- Candidates retained in this review window/history: **8192**
+- Intake files inspected: **210**
+- Candidates retained in this review window/history: **8279**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1620
+- `adjacent_radar`: 1636
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 568
-- `rejected_noise`: 5928
+- `needs_editorial_verification`: 572
+- `rejected_noise`: 5994
 - `source_review`: 36
-- `watching`: 22
+- `watching`: 23
 
 ## Action queue
 
@@ -172,6 +172,7 @@ Generated: `2026-11-12T11:55:40.176109+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1388](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1388) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [US Senators Launch Inquiry into Privacy Risks of Meta AI-Enabled Smart Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMisgFBVV95cUxObDBKaDFoYmhEV0p5U3Nwa1NjVjVIeDBmcHNfN0psRnJnRHZJSGJRVHRCR3BCQ093aW9MekJfSVd5YmZtYV9NNTFOT2dzVnJhWS04Wnl6bExRdUlrbll3c2l4TDRCMEt3QjQ0blpDTjY3ejRaUWtDRjl6Mkp4TzdkVFVNcld1SmFLNWptV2JYdXRkN25YNHJBaC1Iak01QWszdW5tZzN0MjNaRXo1bHZFZWNB?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Apple AI smart glasses tipped for late 2027 launch, Chinese supplier hints - Digit](https://news.google.com/rss/articles/CBMivgFBVV95cUxOOUxuOGhjYUREZi1rZk9YejZyT054OHNuQ1Uzc19HVHNZejg4Y3RBTGg0NFpiWG5XUWRobnZMeVl5RnMzNDBpMlJpZTBISmYwTTRYMnpYZElmdk0yNE1zdW42blpQU3phY3ZMQTVVT3ZfTEU0WjdFdGU2SmxRbTVlczBUaDRlQm5JbmROZzRxMzRYaXdSZ3lEWlpNVGRTeXZkajM3aVliNlFNa0VIXzhmcVFLUjRGMTAtZk8tajZ30gHEAUFVX3lxTE93THk4OFNoUTU1YWJFS3ZJTk9YbXFiREUtSlF4aTd4U2tlR29haC1lcjhBQTJ4UmIzNTBtRVpuSy1lUWhHa0JUc1ZqY0dpcDdFNHlzR1VWMHc4YVlVdHFPd2laeDdjX1Z2MUJFODJ4RVRRV0N5UmpLNjhWSkdqSzBNVTZWUG01VE1uTGhFb1AyN0hjU3QyMDZKRzFTV2I4S1pGU19nMHhuYXpoUVFUdUVCYVlhWUhFVjV3cGtHMHl5MVZjS2Y?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Apple Is Preparing to Launch Its First AI Smart Glasses - ProPakistani](https://news.google.com/rss/articles/CBMilgFBVV95cUxQTk9POUpWRU16N0t4ekloU0dTVlZ0bG0yNVNuSHJNMy1GbFV5UXBxc3o1WUxYdE9XaUZUc3VtRlJGWUVSdlpnR3p2bUEzVmpjZ0YzVUZJcFZJY0ItYmRVOUhBY0ZrUWFjMzZMTWVrQ2tkYVhFemJwOFhlbDAxUmZBNE1iMFBZQVZ5WC1NTklBRGtHOFNOWnfSAZsBQVVfeXFMTWltcGJyZ3c1Q1BIRkNNaTB1YktSWW16WWZlSkpYaWp1SzI0Ni03RUhuR2NIaXdheC1KNVYyNDN1YlJ0M1JCbkxSd1o5NnUtZUJjOGFyUDRocU5VWUo1ZzBWM05pYV92LXFhbEVzM3Zta1p6VnRaUTVSTk01dUh4d1liVVE4dG0wQ0RjcnY0MkdjTFl2b2lPY0drRnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Apple Is Preparing to Launch Its First AI Smart Glasses - ProPakistani](https://news.google.com/rss/articles/CBMiSkFVX3lxTFAySEd4MnY4MkY2RjZuMjdnYnpaNFV5eWRHV1E5aTVtS3QzSXp0NmpXelhqSGlBaWsxUE9FOXZEN012NkZBQVh1ekFR0gGbAUFVX3lxTE1pbXBicmd3NUNQSEZDTWkwdWJLUlltellmZUpKWGlqdUsyNDYtN0VIbkdjSGl3YXgtSjVWMjQzdWJSdDNSQm5MUndaOTZ1LWVCYzhhclA0aHFOVVlKNWcwVjNOaWFfdi1xYWxFczN2bWtaelZ0WlE1Uk5NNXVIeHdZYlVROHRtMENEY3J2NDJHY0xZdm9pT2NHa0Z3?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Apple Sets Sights on Late 2027 Smart Glasses Launch, Taking Aim at Meta's 94% Grip on AI Eyewear - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTE1UVkZCMjdrWXJETWcwaXBTSFJxeG9rQ0FJZ2N0bzdCMHB5eWF5TkpKaGtoczVTbm1iSHNYX1dKVnVHTThjNVVkSnExODdCS3BxTjhqeVJUQXNCN3E3WTFSaEEyTmdvQ1psc3pUTTdGU1hJYmFTY3c?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -270,7 +271,6 @@ Generated: `2026-11-12T11:55:40.176109+00:00`
 | high | needs_editorial_verification | direct | [Starting Application Development - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/start-development/) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [TechRadar 13d ago Why AI smart glasses need a privacy-first approach](https://www.techradar.com/pro/why-ai-smart-glasses-need-a-privacy-first-approach) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [TechRadar Oct 6, 2026 Norway becomes first country to propose temporary ban on smart glasses](https://www.techradar.com/computing/virtual-reality-augmented-reality/norway-set-to-become-first-country-to-slap-a-temporary-ban-on-smart-specs-and-an-informed-debate-will-determine-the-future-of-meta-ray-bans-and-other-pervert-glasses) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [The XR Week Peek (2026.11.02): XREAL discounts Aura at launch, Quest sales are declining, and more! - The Ghost Howls](https://news.google.com/rss/articles/CBMibEFVX3lxTFB0Mk5XYm1CUkRfeWNyd2lISl9CWnJPNkh1dDdYQjg4aHNKUEVJbkV2c0xCQkZWNkhzelphRnRDZHlraklLQlN2aXd5QnUwUmxMeUtWQ0stUVd5Nk5HTnB1dTR5Y05XdEFxMUl2ZtIBckFVX3lxTE9rTFFQWVY3blg2d2dHMjB4UXdpSk9hc2xRMjREeWxuN3h4R3RZdjFnZ0lJZFBmRXRfUkhUM21CS1hJc190VUhCaTgzWjBlTVpLc3hMYzV1eC1rakxSWUxnSHRsU2xJd21YUDlkNDRudnIwQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
