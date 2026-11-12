@@ -1,18 +1,18 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-12T09:28:36.783810+00:00`
+Generated: `2026-11-12T11:55:40.176109+00:00`
 
-- Intake files inspected: **209**
-- Candidates retained in this review window/history: **8195**
+- Intake files inspected: **208**
+- Candidates retained in this review window/history: **8192**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1621
+- `adjacent_radar`: 1620
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 570
+- `needs_editorial_verification`: 568
 - `rejected_noise`: 5928
 - `source_review`: 36
 - `watching`: 22
@@ -89,7 +89,6 @@ Generated: `2026-11-12T09:28:36.783810+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1387](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1387) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1389](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1389) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1390](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1390) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1196](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1196) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1197](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1197) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1198](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1198) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1199](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1199) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +270,7 @@ Generated: `2026-11-12T09:28:36.783810+00:00`
 | high | needs_editorial_verification | direct | [Starting Application Development - Everysight's Maverick SDK](https://everysight.github.io/maverick_docs/start-development/) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [TechRadar 13d ago Why AI smart glasses need a privacy-first approach](https://www.techradar.com/pro/why-ai-smart-glasses-need-a-privacy-first-approach) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [TechRadar Oct 6, 2026 Norway becomes first country to propose temporary ban on smart glasses](https://www.techradar.com/computing/virtual-reality-augmented-reality/norway-set-to-become-first-country-to-slap-a-temporary-ban-on-smart-specs-and-an-informed-debate-will-determine-the-future-of-meta-ray-bans-and-other-pervert-glasses) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [The XR Week Peek (2026.11.02): XREAL discounts Aura at launch, Quest sales are declining, and more! - The Ghost Howls](https://news.google.com/rss/articles/CBMibEFVX3lxTFB0Mk5XYm1CUkRfeWNyd2lISl9CWnJPNkh1dDdYQjg4aHNKUEVJbkV2c0xCQkZWNkhzelphRnRDZHlraklLQlN2aXd5QnUwUmxMeUtWQ0stUVd5Nk5HTnB1dTR5Y05XdEFxMUl2ZtIBckFVX3lxTE9rTFFQWVY3blg2d2dHMjB4UXdpSk9hc2xRMjREeWxuN3h4R3RZdjFnZ0lJZFBmRXRfUkhUM21CS1hJc190VUhCaTgzWjBlTVpLc3hMYzV1eC1rakxSWUxnSHRsU2xJd21YUDlkNDRudnIwQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
