@@ -1,28 +1,25 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-12T18:21:55+00:00**
+Generated: **2026-11-13T17:47:44+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **388** (not the published count)
-- Unanswered research candidates: **95**
-- Observations this run: **97**
-- New distinct questions: **4**
+- Canonical registry size: **389** (not the published count)
+- Unanswered research candidates: **96**
+- Observations this run: **91**
+- New distinct questions: **1**
 
 ## Source health
 
 - github_issues: ok — 19 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 47 observations
+- reddit_rss: partial — 41 observations
 - google_search_console: ok — 11 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000385** — Any real 100% open-source, local ai capable smart glasses?
-- **Q-000386** — MentraOS terminated/withdrew from supporting Nimo glasses?
-- **Q-000387** — are smart glasses prescription
-- **Q-000388** — what sdks or apis are available for spectacles development? recommendations
+- **Q-000389** — anyone here preordering the samsung / google glasses, or waiting for reviews?
 
 ## Research queue (first 20)
 
