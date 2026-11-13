@@ -1,46 +1,43 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-13T18:34:32.436851+00:00",
-  "candidate_count": 76,
-  "classifier_irrelevant_count": 55,
+  "discovered_utc": "2026-11-13T23:41:40.850477+00:00",
+  "candidate_count": 61,
+  "classifier_irrelevant_count": 50,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 19,
-    "broad_web": 44,
+    "adjacent": 10,
+    "broad_web": 47,
     "community": 1,
-    "developer": 13,
-    "research": 1,
-    "retail": 2
+    "developer": 3,
+    "research": 2,
+    "retail": 1
   },
   "relationship_counts": {
-    "direct": 3,
+    "direct": 1,
     "enabling": 0,
-    "adjacent": 18,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 55
+    "irrelevant": 50
   },
   "type_counts": {
-    "review": 14,
-    "video": 3,
-    "news": 13,
-    "research": 1,
-    "tool": 20,
-    "sdk": 13,
-    "optics": 1,
-    "policy": 1,
-    "retail": 19,
-    "teardown": 1,
-    "community": 11
+    "model": 7,
+    "review": 3,
+    "news": 28,
+    "research": 3,
+    "tool": 7,
+    "sdk": 3,
+    "retail": 4,
+    "community": 16,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 18,
-    "community_evidence_review": 10,
-    "development_hacking": 1,
-    "reject_noise": 55,
-    "report_card_evidence": 2,
-    "research_news_review": 21,
-    "research_optics": 1,
-    "retail_rebrand_review": 7
+    "adjacent_radar": 10,
+    "community_evidence_review": 4,
+    "deep_research": 1,
+    "development_hacking": 2,
+    "reject_noise": 50,
+    "report_card_evidence": 1,
+    "research_news_review": 11
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -54,12 +51,12 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "38ad1702f7aea200",
-      "title": "XREAL AURA",
-      "url": "https://www.ces.tech/ces-innovation-awards/2027/xreal-aura/",
-      "summary": "XREAL AURA is a sub-95g optical see-through XR headset built to make everyday spatial computing wearable rather than a seated, isolated experience. A dual-chip split-compute architecture separates processing by task: the XREAL X1S Spatial Coprocessor, embedded in the frame, handles low-latency spatial display and sensor processing locally ...",
-      "discovery_channel": "broad_web",
-      "query": "XREAL AURA",
+      "id": "49f5bc586b20b946",
+      "title": "What Smart Glasses Can (and Can't) Do: I Wore the Top Models So You Don ...",
+      "url": "https://www.pcmag.com/explainers/what-smart-glasses-can-and-cant-do-i-wore-top-models-so-you-dont-have-to",
+      "summary": "From AI assistants and built-in cameras to AR displays and wearable private screens, smart glasses come in more flavors than you might think. After testing every major type, here's how they differ ...",
+      "discovery_channel": "broad_web+community+research+retail",
+      "query": "smart glasses; smart glasses review; smart glasses site:amazon.com; smart glasses site:walmart.com; smart glasses site:aliexpress.com; smart glasses site:alibaba.com; smart glasses site:spectrum.ieee.org; smart glasses site:reddit.com/r/SmartGlasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -72,28 +69,95 @@
       "attribution_required": false,
       "relationship": "direct",
       "content_types": [
-        "optics"
+        "news"
       ],
-      "primary_type": "optics",
+      "primary_type": "news",
       "routing_targets": [
-        "research_news_review",
-        "research_optics"
+        "research_news_review"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dde887445157f524",
-      "title": "XREAL AURA launches as first Android XR glasses",
-      "url": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
-      "summary": "XREAL AURA, the first wired XR glasses powered by Android XR, lets you work, watch, and play anywhere with Gemini by your side.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL AURA",
+      "id": "1cd09af832b14c9a",
+      "title": "The Best 10 Restaurants near Los Alamitos, CA 90720 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Los+Alamitos%2C+CA+90720",
+      "summary": "This is a review for restaurants near Los Alamitos, CA: \"Been going to Mama's for the past few years and can only say good things about the food, the people, everything.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
+      "source_lane": "adjacent_hci",
       "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9eeaf71773a4d05a",
+      "title": "Anyone know why Google translate translates this wrong?",
+      "url": "https://www.reddit.com/r/Spanish/comments/psozms/anyone_know_why_google_translate_translates_this/",
+      "summary": "Google Translate does not translate word by word, it uses texts in the internet that are translated and searches for a match. You will see an example of this if you try to translate \"La casa de papel\", you will get \"Money Heist\" and not \"the house of paper\".",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "research",
+        "community"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "research_news_review",
+        "deep_research",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "40771be642e2d7ee",
+      "title": "Cities Near Me - Los Alamitos, California | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Los+Alamitos,+CA",
+      "summary": "Find the top 15 cities, towns, and suburbs near Los Alamitos, CA, like Rossmoor and Hawaiian Gardens, and explore the surrounding area for a day trip.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -101,56 +165,25 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "direct",
+      "relationship": "adjacent",
       "content_types": [
-        "video"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence"
+        "adjacent_radar"
       ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0309488507f1a8b8",
-      "title": "XReal Aura: The Best Inventions of 2026",
-      "url": "https://time.com/collection/best-inventions/2026/xreal-aura/",
-      "summary": "Powered by Android, Aura lets users download millions of Google Play and XR apps and connects to a Bluetooth keyboard to watch movies or play video games right on their glasses.",
-      "discovery_channel": "broad_web",
-      "query": "XREAL AURA",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "direct",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d685be8b6a3de903",
-      "title": "About Our Bank and Locations | CCB Community Bank",
-      "url": "https://www.bankccb.com/about",
-      "summary": "Our story, and the five locations we serve across Alabama and Northwest Florida.",
+      "id": "e22b05ac3461ccef",
+      "title": "Error with ngx-translate: No provider for TranslateStore",
+      "url": "https://stackoverflow.com/questions/79277385/error-with-ngx-translate-no-provider-for-translatestore",
+      "summary": "So provideTranslateService in your topmost Injector, i.e. host app. Only for more complex translated component setups (e.g. pre-built library components with their own inlined translations) multiple instances of ngx-translate's Injectables might be necessary.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -165,12 +198,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "tool"
       ],
-      "primary_type": "community",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -179,138 +212,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "783eb6ce7afcf3f6",
-      "title": "Amazon.com: Home",
-      "url": "https://www.amazon.com/stores/Home/page/C11117E2-47BF-49F6-A82F-5668EB971777",
-      "summary": "Discover everything you need to furnish and enhance your home with our wide selection of products. From furniture to home essentials, find practical, stylish, and functional items that elevate your living space.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "89cf65eaee8b7898",
-      "title": "Amazon.com: Home",
-      "url": "https://www.amazon.com/stores/Home/page/27F0D238-46FE-4CD0-9C8A-3B95441DFAB1",
-      "summary": "Select the department you want to search inAll DepartmentsAlexa SkillsAmazon DevicesAmazon Global StoreAmazon HaulAmazon One MedicalAmazon PharmacyAmazon ResaleAppliancesApps & GamesArts, Crafts & SewingAudible Books & OriginalsAutomotive Parts & AccessoriesBabyBeauty & Personal CareBooksCDs & VinylCell Phones & AccessoriesClothing, Shoes ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e9f1b78cc388c61",
-      "title": "Amazon.com: Home Page",
-      "url": "https://www.amazon.com/stores/HomePage/page/0CD57236-9B07-4773-A817-948ADD92F75E",
-      "summary": "Holiday Shop Custom Products Toys & Games Home Improvement Pet Supplies Gift Cards Medical Care",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d15b2825a9522b8",
-      "title": "Amazon.com: Home Page",
-      "url": "https://www.amazon.com/home-page/s?k=home+page",
-      "summary": "Explore home planning tools like password keepers, bill trackers, and planners to manage household tasks efficiently.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f734b851fe451443",
-      "title": "Business Checking Accounts | CCB Community Bank",
-      "url": "https://www.bankccb.com/business-checking-accounts",
-      "summary": "Explore CCB Community Bank’s business checking accounts with low fees, convenient digital banking, debit card access, and options for small businesses and higher-volume companies.",
+      "id": "28e9b3b9310c214e",
+      "title": "How to translate \"bytes\" objects into literal strings in pandas ...",
+      "url": "https://stackoverflow.com/questions/40389764/how-to-translate-bytes-objects-into-literal-strings-in-pandas-dataframe-pytho",
+      "summary": "How to translate \"bytes\" objects into literal strings in pandas Dataframe, Python3.x? Ask Question Asked 10 years ago Modified 3 years, 9 months ago",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -325,12 +230,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "community"
+        "news"
       ],
-      "primary_type": "community",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -339,10 +243,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4ae3140cada53faa",
-      "title": "CCB Community Bank | Andalusia AL - Facebook",
-      "url": "https://www.facebook.com/ccbcommunitybank/",
-      "summary": "These emails and calls are not from CCB Community Bank. They originate from scammers who exploit the urgency of severe weather conditions to target personal and business financial information.",
+      "id": "ef816eed43a6e27b",
+      "title": "is Google Translate accurate? : r/VietNam - Reddit",
+      "url": "https://www.reddit.com/r/VietNam/comments/xyg82s/is_google_translate_accurate/",
+      "summary": "The reason is there are many Vietnamese words that read and write the same, but with different meaning. And Vietnamese sentence structure is opposite to most of language. These result in meaningless sentences. I think you still can use google translate, but don't be too depended on it.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -371,10 +275,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a308bbd6546012bc",
-      "title": "CCB Community Bank | Andalusia, AL",
-      "url": "https://www.bankccb.com/",
-      "summary": "Bank locally with CCB Community Bank in Andalusia, AL. Explore personal checking, home loans, commercial real estate, small-business banking, credit card payments, and mobile banking.",
+      "id": "eeaa04f8cd34280e",
+      "title": "Is google translate good? : r/languagelearning - Reddit",
+      "url": "https://www.reddit.com/r/languagelearning/comments/xyxxqw/is_google_translate_good/",
+      "summary": "Google Translate is reasonably accurate, depending on the language and complexity of the source text (which isn't always obvious), and has live, whole-sentence (and therefore paragraphs, etc.) translation in dozens of languages, far more than any other single provider.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -383,10 +287,10 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "adjacent",
       "content_types": [
         "community"
@@ -403,12 +307,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bf2bfcba71d3b52e",
-      "title": "Cities Near Me - Elizabeth, New Jersey | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Elizabeth,+NJ",
-      "summary": "Find the top 15 cities, towns, and suburbs near Elizabeth, NJ, like Hillside and Roselle, and explore the surrounding area for a day trip.",
+      "id": "59e363c3422a2daa",
+      "title": "RH Mechatronics, LLC",
+      "url": "https://www.rhmechatronics.com/",
+      "summary": "A wide range of mechanical engineering, specializing in small mechanisms for robotic and wearable applications. We use the full range of prototyping tools for quick iteration and development.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -434,10 +338,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a527cd1492f01a34",
-      "title": "Community Bank - We're a bank that knows community",
-      "url": "https://communitybank.net/",
-      "summary": "Community Bank is a wonderful partner. The ‘community’ in their name says it well. We get great service from all levels of the organization. Our non-profit special purpose school has also been blessed by their volunteers helping us with a big move to our new building.",
+      "id": "9f2164f149b51647",
+      "title": "Use Speech Translation - Computer - Google Meet Help",
+      "url": "https://support.google.com/meet/answer/16221730?hl=en&co=GENIE.Platform%3DDesktop",
+      "summary": "To let Meet translate what you say for others, click Translate me. Use Speech Translation with captions Captions automatically appear in the same language as the translated audio you hear, when you turn on Speech Translation and captions. In a Google Meet meeting, at the bottom, hover over the captions & translation button . Click Translate speech.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -452,142 +356,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ace5ed305657b74d",
-      "title": "Digital Banking - Community Bank",
-      "url": "https://communitybank.net/digital-banking/",
-      "summary": "Open a checking account online quickly and easily. Office Locator Find the nearest office or ATM location. Community Hub Explore our community commitment through financial literacy resources, educational programs, and community service initiatives. FAQs Find answers to frequently asked questions.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d848be65f5c32122",
-      "title": "Digital Banking | CCB Community Bank",
-      "url": "https://www.bankccb.com/digital-banking",
-      "summary": "Manage your money anywhere with CCB Community Bank digital banking. Access online banking, mobile deposit, bill pay, transfers, alerts, and secure account monitoring.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "39d67c0d40ed785d",
-      "title": "Online Banking - ccbank.net",
-      "url": "https://www.ccbank.net/services/online-banking.html",
-      "summary": "Citizens Community Bank is a locally owned and operated bank and mortgage company in TN specializing in mortgage home loans, auto loans, business loans",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "community"
-      ],
-      "primary_type": "community",
-      "routing_targets": [
-        "research_news_review",
-        "community_evidence_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "56900c9b21132b65",
-      "title": "ONLINE BANKING – Community Bank",
-      "url": "https://www.cbcommunitybank.com/online-banking/",
-      "summary": "Whether you want to check your account balance while you are on vacation or transfer funds while you are on lunch at work, you can do it quickly and easily with the Community Bank mobile app!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool",
-        "community"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
         "development_hacking",
-        "community_evidence_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -596,10 +370,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9b38439ca5003ea4",
-      "title": "Personal Checking Accounts | CCB Community Bank",
-      "url": "https://www.bankccb.com/personal-checking",
-      "summary": "Open a personal checking account with CCB Community Bank and enjoy online and mobile banking, bill pay, mobile deposit, debit card, alerts, and convenient 24/7 ATM access.",
+      "id": "e16ae726280058d7",
+      "title": "What does the name “Kimetsu no Yaiba” translate to?",
+      "url": "https://www.reddit.com/r/KimetsuNoYaiba/comments/bj8hyr/what_does_the_name_kimetsu_no_yaiba_translate_to/",
+      "summary": "In Japanese the word “no” means something belongs to the preceding word or is of it, so “Kage bunshin no jutsu” is “Jutsu of the shadow clone”. What does the word “Kimetsu” and “Yaiba” mean? Also is the series official name Demon Slayer Kimetsu no Yaiba? Do you shorten it when you talk to people to “demon slayer” or “Kimetsu no Yaiba”? Is there an acronym you use ...",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -608,10 +382,10 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "adjacent",
       "content_types": [
         "community"
@@ -628,112 +402,19 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fc6e6ed1f90e2113",
-      "title": "SoundBeast - amazon.com",
-      "url": "https://www.amazon.com/stores/SoundBeast/page/94C44241-35F6-4C0E-A44A-CA20D60AA6AC",
-      "summary": "SoundBeast Home We're SoundBeast, an audio products company based in southern California. Our products are fun, unique, and affordable!",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "f5ca7b569c7eae62",
+      "title": "Samsung Announces December Release for Intelligent Eyewear, Bringing a ...",
+      "url": "https://news.samsung.com/us/samsung-announces-u-s-release-intelligent-eyewear-bringing-smart-way-world/",
+      "summary": "Samsung Electronics America today announced the upcoming launch of the full lineup of intelligent eyewear, delivering a smart way to see the world with intuitive, hands-free AI assistance. Set for release in the U.S. on Dec. 10 with pre-orders beginning today, Nov. 12, the collection combines Samsung’s mobile engineering expertise with 30 distinctive designs 1 from Gentle Monster and Warby ...",
+      "discovery_channel": "research",
+      "query": "smart eyewear site:media.mit.edu",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
+      "source_lane": "research",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "announced",
+        "launch"
       ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "252b2ea5ad23013a",
-      "title": "Triple Method Shoulder Massager, with Heat Compression ... - Amazon",
-      "url": "https://www.amazon.com/Hewelth-Shoulder-Compression-Vibration-Relaxation/dp/B0H6W82MCG",
-      "summary": "TRIPLE THERAPY RELIEF: Combines heat, compression, and vibration to target shoulder pain and promote deep muscle relaxation. HEAT THERAPY: Soothing warmth penetrates the shoulder joint to help ease stiffness, soreness, and discomfort from daily tension. VIBRATION MASSAGE: Built-in vibration modes work alongside heat and compression to stimulate circulation and relieve tight muscles. ADJUSTABLE ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0b3fa04ee82104cc",
-      "title": "Your List - amazon.com",
-      "url": "https://www.amazon.com/hz/wishlist/ls",
-      "summary": "Whether you're celebrating a wedding, a baby, a birthday, or any other memorable milestones, our Gift Registries will help you and your guests find the perfect gifts.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "research_news_review",
-        "retail_rebrand_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3ffc28977f7fa58f",
-      "title": "Café Locator: Starbucks Coffee Company",
-      "url": "https://www.starbucks.com/store-locator?place=san%20fracisco",
-      "summary": "Our Starbucks café locator will help you find locations near you where you can enjoy great beverages and wi-fi. Find a Starbucks now.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -742,10 +423,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "model",
+        "research"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -755,10 +436,74 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f85dd04874f8b73f",
-      "title": "Connect to Microsoft Teams",
-      "url": "https://ehrconnector.teams.microsoft.com/",
-      "summary": "Connect Microsoft Teams to electronic health records for seamless integration and enhanced collaboration in healthcare.",
+      "id": "76398798f0c5c39f",
+      "title": "61 LWSD students named National Merit Semifinalists",
+      "url": "https://rhs.lwsd.org/students-and-families/school-news/news-details/~board/press-releases/post/61-lwsd-students-named-national-merit-semifinalists",
+      "summary": "Redmond, Wash. – Sixty-one Lake Washington School District (LWSD) high school seniors have been named semifinalists in the 72nd annual National Merit Scholarship Program. The National Merit Scholarship Corporation announced the semifinalists on Wednesday, September 9.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec2181870b53b342",
+      "title": "Burners - Water Heater Parts - The Home Depot",
+      "url": "https://www.homedepot.com/b/Plumbing-Water-Heaters-Water-Heater-Parts/Burners/N-5yc1vZckr8Z1z0u2ia",
+      "summary": "Get free shipping on qualified Burners Water Heater Parts products or Buy Online Pick Up in Store today in the Plumbing Department.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "60f5f24faf69a3eb",
+      "title": "NAS Status Federal Aviation User Guide",
+      "url": "https://nasstatus.faa.gov/static/media/NASStatusUserGuide.cccc6d48.pdf",
+      "summary": "Overview Public application that provides current and forecast information for traffic management initiatives. These initiatives include airport delays, airport closures, and airspace delays. Additionally, the application provides access to NOTAMS, weather and other related traffic products.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -786,138 +531,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "13a3d29dfe9a465e",
-      "title": "Coyote vs. Acme review: Embrace your inner cartoon with this clever ...",
-      "url": "https://www.rogerebert.com/reviews/coyote-vs-acme-looney-tunes-will-forte-john-cena-film-review-2026",
-      "summary": "“Coyote vs. Acme” understands that you can be both gloriously silly and remarkably smart at the same time.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7771b6d4c86b949a",
-      "title": "Dental Assistant Program | Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/program/dental-assistant/",
-      "summary": "Gulf Coast College’s Dental Assisting diploma provides in-depth, hands-on training for students interested in a dental assisting career. The program covers many must-know areas, such as anatomy and physiology, patient care, healthcare laws and regulations, and dental office management.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "hands-on"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "847b0a36ab1b834a",
-      "title": "Heretic movie review & film summary",
-      "url": "https://www.rogerebert.com/reviews/heretic-hugh-grant-film-review",
-      "summary": "With its limited set, it helps a great deal to have a masterful cinematographer to shoot “Heretic,” so kudos to whoever hired Chung-hoon Chung, the man who shot “ The Handmaiden,” “ Oldboy,” and many others. His camera swoops through this increasingly threatening house in such a captivating manner, staring down its dark hallways and staircases in a way that allows us to feel the ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "286b945fc40baeda",
-      "title": "Lee Cronin’s The Mummy movie review",
-      "url": "https://www.rogerebert.com/reviews/lee-cronins-the-mummy-movie-review-2026",
-      "summary": "The biggest problem with “Lee Cronin’s The Mummy” is one of momentum. There are a number of little issues—Reynor’s bizarrely detached performance, inconsistent editing, a dull visual palette that lacks atmosphere—but they all come under the umbrella of a movie that can’t find its rhythm. While Calamawy is good, the investigation into what actually happened to Katie is a drag. The ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c65d561f5eae3025",
-      "title": "Microsoft Teams",
-      "url": "https://int.teams.microsoft.com/v2",
-      "summary": "Microsoft Teams is a collaboration app that helps you and your team stay informed, organized, and connected in one place.",
+      "id": "be31df6d3b0e75ae",
+      "title": "National Airspace System - Federal Aviation Administration",
+      "url": "https://nasstatus.faa.gov/list",
+      "summary": "The Federal Aviation Administration's National Airspace System (NAS) dashboard",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -945,10 +562,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "af1810d143cfa035",
-      "title": "Microsoft Virtual Events Powered by Teams",
-      "url": "https://events.gcc.teams.microsoft.com/",
-      "summary": "Host and join virtual events with Microsoft Teams for seamless collaboration, communication, and productivity.",
+      "id": "e97a96c57a9167a6",
+      "title": "National Airspace System Status",
+      "url": "https://nasstatus.faa.gov/",
+      "summary": "The Federal Aviation Administration's National Airspace System (NAS) dashboard",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
@@ -976,390 +593,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d3093dca38c7b3d2",
-      "title": "Other Mommy review: Jessica Chastain offers childish child scares",
-      "url": "https://www.rogerebert.com/reviews/other-mommy-jessica-chastain-movie-review-2026",
-      "summary": "“Other Mommy” doesn’t have much of a plot, serving more as a vehicle for effect-driven jump scares and adrenalized dread. We follow Bela as she wanders between various escalating confrontations with the titular fiend, a mysterious shape-shifter that hides “behind our doors”, as Bela puts it. As you might have guessed, Other Mommy mostly looks like Bela’s mom, Ursula (Jessica ...",
+      "id": "30d1a2a926341977",
+      "title": "Out of District & Online Courses - Redmond High School",
+      "url": "https://rhs.lwsd.org/academics/out-of-district-online-courses",
+      "summary": "Or have the out of district institution send an official paper copy of your transcript to: Redmond High School- Counseling Office 17272 NE 104th St Redmond, WA 98052 RHS staff will review transcripts received over summer when we are back in the building in late August and make appropriate schedule changes at that time.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2d124819ea129540",
-      "title": "Public Programs | The Institute of Fine Arts, NYU - ifa.nyu.edu",
-      "url": "https://ifa.nyu.edu/events/index.html",
-      "summary": "As a participant in our public programs, we ask that you review and abide by the Institute's Community Standards Policy which provides for a positive and educational experience for all of our guests. Series: Artists at the Institute. Series: China Project Workshop.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses; IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "policy",
-        "community"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ed008d470bc4fa8",
-      "title": "Scream 7 review: What's your favorite stupid movie?",
-      "url": "https://www.rogerebert.com/reviews/scream-7-neve-campbell-movie-review-2026",
-      "summary": "Genuinely inept in every way, “Scream 7” is far and away the worst of the franchise, a shallow rendering of things that worked better in other films. While director Kevin Williamson and co-writer Guy Busick think they’re appealing to fans by “playing the hits,” it’s all done in such an ugly, boring, craven (but not Craven) manner that those who love this series most of all ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "e49c8afcd840de3c",
-      "title": "Starbucks - San Francisco Centre, San Francisco, CA - Store Opening Hours",
-      "url": "https://www.storeopeninghours.com/starbucks-san-francisco-centre-san-francisco-ca",
-      "summary": "On this page you'll find all the up-to-date information about Starbucks San Francisco Centre, San Francisco, CA, including the business hours, local map, customer rating, and other info.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "27649c3742edc14f",
-      "title": "Starbucks - San Francisco International Airport",
-      "url": "https://www.flysfo.com/passengers/shop-dine-relax/starbucks",
-      "summary": "Stay up to date on new routes, improvement projects, museum exhibitions and much more!",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fccd451eaf65eaef",
-      "title": "Starbucks - San Francisco, CA",
-      "url": "https://www.yelp.com/biz/starbucks-san-francisco-132",
-      "summary": "About the Business Coffee is at our heart. From your favorite daily cup to seasonal offerings, there is always something on the menu at Starbucks, ready to be crafted just for you. Starbucks has always been a special place to gather and connect. We're woven into the communities we serve. Our stores are gatherin……",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77c09d56a6bee0bb",
-      "title": "Starbucks Coffee Company, 3595 California Street, San Francisco, CA ...",
-      "url": "https://www.mapquest.com/us/california/starbucks-coffee-company-265236213",
-      "summary": "Come on in, stay awhile at our welcoming Starbucks coffeehouse in San Francisco. Savor brewed coffee, tea, espresso, Cold Brew, Refreshers, and seasonal favorites, alongside quality breakfast and lunch sandwiches, wraps, egg bites, and a variety of pastries and bakery favorites.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a7a67345f049cd7c",
-      "title": "Starbucks in San Francisco, California - Hours & Locations",
-      "url": "https://www.storesinfo.com/starbucks/california/san-francisco/",
-      "summary": "There are 40 Starbucks locations in San Francisco, California. Local shoppers in San Francisco rely on Starbucks for their daily caffeine fix, artisanal brews, and freshly baked goods, making it a staple in the bustling streets of the city.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f59bea9ee4b5a0c0",
-      "title": "Starbucks San Francisco, CA - Last Updated November 2026 - Yelp",
-      "url": "https://www.yelp.com/search?find_desc=starbucks&find_loc=san+francisco%2C+ca",
-      "summary": "\"This is one of my favorite Starbucks locations. The neighborhood feels relaxed and safe, the café stays busy without being overcrowded, and the staff is really friendly.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "890990ef5bf44662",
-      "title": "Starbucks San Francisco, CA - Store Locator & Hours",
-      "url": "https://www.storeopeninghours.com/retailers/starbucks/san-francisco-ca",
-      "summary": "There is presently a total number of 48 Starbucks branches open near San Francisco, California. On the page below you can find a complete list of Starbucks locations close by.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea8ee802b25a0410",
-      "title": "Starbucks | Restaurants in the Presidio | The Presidio (San Francisco)",
-      "url": "https://presidio.gov/explore/attractions/starbucks",
-      "summary": "Enjoy your favorite Starbucks coffee, tea, or snack in the beauty of the Presidio of San Francisco overlooking the Palace of Fine Arts.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f70d2787eb5d1116",
-      "title": "The End of Oak Street review: The end of the world has never been more fun",
-      "url": "https://www.rogerebert.com/reviews/the-end-of-oak-street-anne-hathaway-ewan-mcgregor-film-review-2026",
-      "summary": "The world was already ending before the dinosaurs arrived. That’s nifty shorthand for the headspace of the Platt family in David Robert Mitchell’s “The End of Oak Street,” the unfortunate protagonists who one night see their entire suburb warped back to a time when creatures like the ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4fb1f02a78c9ce6d",
-      "title": "The Last House review: Don't stop at this dull Netflix residence",
-      "url": "https://www.rogerebert.com/reviews/the-last-house-netflix-movie-review-2026",
-      "summary": "“The Last House,” Netflix’s latest sure-to-be-#1-for-a-week-and-then-forgotten-forever horror movie, has such an intriguing what-if premise that its failures become significantly more disheartening. It’s a movie that worked on paper, but its creators were so content to mimic superior films with similar concepts in production instead of developing their own that the whole thing ended up ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -1387,17 +626,17 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d93057c0bcaa4fe4",
-      "title": "The Runner review: Take a jog instead of watching this Prime original",
-      "url": "https://www.rogerebert.com/reviews/the-runner-gal-gadot-prime-video-movie-review-2026",
-      "summary": "“Run Lola Run” meets “Impractical Jokers” in the truly abrasive “The Runner,” the latest streaming original that feels made by a committee instead of actual flesh-and-blood human beings. In a weird bit of movie timing, Prime Video has a movie called “The Runner” coming out today ...",
+      "id": "cf159f99fbd0cd51",
+      "title": "Re: Sam Hartman released - Clemson Football Forum - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/message/re-sam-hartman-released-37227918",
+      "summary": "Join the conversation on \"Re: Sam Hartman released\". Read more on the premiere Clemson board",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "review"
+        "released"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -1407,10 +646,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "video"
+        "model",
+        "community"
       ],
-      "primary_type": "review",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1420,16 +659,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dcab7eced661510b",
-      "title": "10 Fascinating Facts About Titanium",
-      "url": "https://www.thoughtco.com/facts-about-titanium-609274",
-      "summary": "Titanium is abundant, the ninth most abundant element in the Earth's crust. It occurs naturally in the human body, in plants, in seawater, on the Moon, in meteors, and in the Sun and other stars.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "id": "7aebd9129dd5356b",
+      "title": "Rheem Water Heater Burner Assembly Kits & Parts - SupplyHouse.com",
+      "url": "https://www.supplyhouse.com/Burner-Assemblies-Parts-19260000",
+      "summary": "Shop Rheem burner assembly kits such as assembly replacement kits. Order burner assembly kits today with fast shipping and easy returns.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -1438,9 +679,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "model"
       ],
-      "primary_type": "retail",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1450,16 +691,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "532d6cae4daafac3",
-      "title": "100 Packs 100CC Food Grade Oxygen Absorbers (10 Pack in ... - Amazon",
-      "url": "https://www.amazon.com/Oxygen-Absorbers-Individual-Storage-Indicator/dp/B09YDJ67CN",
-      "summary": "Amazon.com: 100 Packs 100CC Food Grade Oxygen Absorbers (10 Pack in Individual Vacuum Bag ) , Oxygen Absorbers For Long Term Food Storage with Oxygen Indicator , Works in Mylar Bags, Mason Jars, and Vacuum Bags : Home & Kitchen About this item 【Preminum Food Grade Oxygen Absorbers】: Our factory have 18 years experience in oxygen absorber, Also we have ISO9001 Certificate, All our oxygen ...",
+      "id": "58ad95c1092f5ee9",
+      "title": "Sam Hartman released - Clemson Football Forum - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/thread/sam-hartman-released-2455917",
+      "summary": "Join the conversation on \"Sam Hartman released\". Read more on the premiere Clemson board",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -1468,10 +711,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "retail"
+        "model",
+        "community"
       ],
-      "primary_type": "review",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1481,70 +724,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3a64235276daef70",
-      "title": "110 Packs 100CC Food Grade Oxygen Absorbers (10 Packs in ... - Amazon",
-      "url": "https://www.amazon.com/LinsKind-Absorbers-Individual-Storage-Indicator/dp/B09YM5BVQJ",
-      "summary": "Mylar bag doesn't have a vacuum packed look even if put the oxygen absorbers in mylar bags . 20% of the atmosphere is oxygen and 80% is atmospheric air, No matter how many oxygen absorbers been used,still have 80% of the air remains.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "968a54b018630da7",
-      "title": "ACADEMIC CALENDARS",
-      "url": "https://www.bluecliffcollege.edu/wp-content/uploads/2026/05/BCC_Calendar_Mar2026.pdf",
-      "summary": "Note: The College reserves the right to change the academic calendar or to use term breaks to make-up postponed classes.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "89ce32d67bed115b",
-      "title": "All 上海小度人工智能有限公司 Free Android Apps & Games",
-      "url": "https://apkpure.com/developer/%E4%B8%8A%E6%B5%B7%E5%B0%8F%E5%BA%A6%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8",
-      "summary": "小度 2022-09-07 Download APK Read More 小度音箱 2022-09-10 Download APK Read More Xiaodu 2.0 2023-08-30 Download APK Read More meiya 2023-12-04 Download APK Read More",
+      "id": "cd13a4ade93a27ce",
+      "title": "25+ Water Heater Burner for sale | Updated Nov 2026 - eBay",
+      "url": "https://www.ebay.com/b/Water-Heater-Burner/260494/bn_7023245607",
+      "summary": "Upgrade your water heating with top-quality burners like Rheem 40 Gallon Plus and Bradford White LPG. Shop now on eBay for the best deals!",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1559,67 +742,6 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "sdk"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b5fbe3d46275c450",
-      "title": "Amazon.com: 20 Mylar Bags for Food Storage",
-      "url": "https://www.amazon.com/clp/B0CXQ4PRB1",
-      "summary": "Your pick Home Sensei 20 Mylar Bags for Food Storage, 2.5 Gallon Capacity, Extra Thick 15 Mil, with 1000cc Oxygen Absorbers, Resealable, Stand-Up Gusset, Ideal for Long-Term Food Storage 200+ bought in past week Click to see price Buy now",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "retail"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a47ef9d25baa8710",
-      "title": "Amazon.com: 30 Mylar Bags for Food Storage 1 Gallon",
-      "url": "https://www.amazon.com/clp/B092W9LGZ3",
-      "summary": "Myrtilithir 70 PCS Mylar Bags with 300cc Oxygen Absorbers for Food Storage | 10 Mil Heavy Duty Mylar Bags in 3 Sizes (1 Gallon, 1 Quart, 1/2 Pint). Stand-Up Zipper, Airtight and Smell Proof.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
         "retail"
       ],
       "primary_type": "retail",
@@ -1632,164 +754,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c6e0979c86327f6d",
-      "title": "Amazon.com: Lebodu 120 Mylar Bags with 120 x 300cc Oxygen Absorbers for ...",
-      "url": "https://www.amazon.com/clp/B09XN6TQLY",
-      "summary": "Myrtilithir 30 PCS 1 Gallon Mylar Bags with 400cc Oxygen Absorbers for Food Storage | 10 Mil Thick Mylar Bags with Labels, Stand-Up Zipper, Airtight, Smell Proof and Heat Sealable for Long-Term Food Storage.",
+      "id": "4afa8386b557932e",
+      "title": "Advanced Placement (AP) - Redmond High School",
+      "url": "https://rhs.lwsd.org/academics/advanced-placement-ap",
+      "summary": "Advanced Placement (AP) is a nationwide program that is designed to prepare secondary students for higher education. AP classes provide rigorous, college-level curriculum in various subjects and the opportunity to earn college credits or advanced college standing. The AP program is made possible by the close cooperation of secondary schools, colleges, and the College Board. AP Course and Exam ...",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "retail"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "902b89101779817c",
-      "title": "Amazon.com: Mylar Bags With Oxygen Absorbers",
-      "url": "https://www.amazon.com/mylar-bags-oxygen-absorbers/s?k=mylar+bags+with+oxygen+absorbers",
-      "summary": "Airtight mylar bags with oxygen absorbers for rice, grains, beans, and dry goods. Includes labels and sealing accessories.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0a5cd9a2b43d82ed",
-      "title": "Amazon.com: SYMYNELEC 100-Pack Mylar Bags with 400cc Oxygen Absorbers ...",
-      "url": "https://www.amazon.com/clp/B09Z7JSGNJ",
-      "summary": "Myrtilithir 125 PCS Mylar Bags with 400cc Oxygen Absorbers for Food Storage | 10 Mil Heavy Duty Mylar Bags in 4 Sizes (1 Gallon, 1 Quart, 1/2 Pint,4x6). Stand-Up Zipper, Airtight and Smell Proof.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dfffa5779a0ea8f0",
-      "title": "Amazon.com: Wallaby 5-Gallon Zipper 10 Mil Mylar Bags",
-      "url": "https://www.amazon.com/clp/B08SLF9K6F",
-      "summary": "Myrtilithir 30 PCS 1 Gallon Mylar Bags with 400cc Oxygen Absorbers for Food Storage | 10 Mil Thick Mylar Bags with Labels, Stand-Up Zipper, Airtight, Smell Proof and Heat Sealable for Long-Term Food Storage.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review",
-        "retail"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8259987475d6826e",
-      "title": "BrandsMart USA - Appliances, TVs, Electronics, Mattresses & More",
-      "url": "https://www.brandsmartusa.com/",
-      "summary": "Search less and stream more with LG’s Award-winning Smart TV platform, which delivers a smarter, more personalized experience. Browse all your favorite streaming apps and let LG Channels connect you to over 400 free channels and 10,000+ movies & shows (on-demand).",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3aa9e67ccf0111c",
-      "title": "Career Training Programs Metairie - Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/location/metairie-campus/",
-      "summary": "Career training begins at Gulf Coast College in Metairie, LA. Pursue your passion for Healthcare, Cosmetology, Esthetics, or Massage Therapy!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1814,10 +784,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ae3ddc5e37d4942d",
-      "title": "Download Xiaodu 1.4.2.0 Android APK File - APKPure.com",
-      "url": "https://apkpure.com/xiaodu/com.baidu.duer.superapp.oversea/download/1.4.2.0",
-      "summary": "Download Xiaodu 1.4.2.0 APK for Android from APKPure. Xiaodu app is a supporting app for the Du smart buds and Du Smart Buds Pro.",
+      "id": "50dcbcedcabf7bdb",
+      "title": "Amazon.com: American Water Heater Burner Assembly",
+      "url": "https://www.amazon.com/american-water-heater-burner-assembly/s?k=american+water+heater+burner+assembly",
+      "summary": "Find quality water heater burner assemblies from trusted brands. Browse natural gas and conversion kits for reliable performance.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1832,9 +802,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1844,10 +814,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5fd151dd1a0871ad",
-      "title": "Download Xiaodu Latest Version 1.4.6.0 Android APK File",
-      "url": "https://apkpure.com/xiaodu/com.baidu.duer.superapp.oversea/download",
-      "summary": "Download Xiaodu Latest Version 1.4.6.0 APK for Android from APKPure. Xiaodu app is a supporting app for the Du smart buds and Du Smart Buds Pro.",
+      "id": "bb5bd2046a9e0648",
+      "title": "Amazon.com: Water Heater Burner Assembly",
+      "url": "https://www.amazon.com/water-heater-burner-assembly/s?k=water+heater+burner+assembly",
+      "summary": "Shop water heater burner replacements designed for durability and reliable ignition. Multiple brands and sizes available.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1862,9 +832,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "model",
+        "retail"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1874,12 +845,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b69ec0c30f2e5937",
-      "title": "Gulf Coast College | Healthcare & Beauty Programs",
-      "url": "https://www.bluecliffcollege.edu/",
-      "summary": "Career training begins at Gulf Coast College. Explore our healthcare and beauty programs. Campuses in Metairie, LA; Gulfport, MS; and online.",
+      "id": "2a444f195f0f98fc",
+      "title": "Attendance - Lake Washington School District",
+      "url": "https://rhs.lwsd.org/students-and-families/attendance",
+      "summary": "Students and their families are responsible for school attendance. The parent or guardian of any student who is absent from class should leave an e-mail or phone message with the Attendance Office within 48 hours of the absence to explain the circumstance around the absence.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1904,12 +875,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c8b66a5748cc2bc1",
-      "title": "HIMBC Degree - 100% Online | Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/online-programs/himbc-degree/",
-      "summary": "Health Information Management Degree Online. Further your career in medical office administration. Request info & apply today at Gulf Coast College.",
+      "id": "cdb97048298965fd",
+      "title": "Cade Klubnik - Clemson Football Forum - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/thread/cade-klubnik-2508123",
+      "summary": "Join the conversation on \"Cade Klubnik\". Read more on the premiere Clemson board",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1922,9 +893,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1934,130 +905,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c214c6132cd9c281",
-      "title": "HVAC Technician Program | Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/program/hvac-technician/",
-      "summary": "HVAC technicians play an essential role in keeping homes, businesses, schools, hospitals, and industrial facilities comfortable, safe, and energy efficient. They install, maintain, troubleshoot, and repair heating, ventilation, air conditioning, and refrigeration systems that people rely on every day. Our 900-hour HVAC Technician Diploma Program is designed to be completed in approximately 11 ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fcb1bd9868f0f131",
-      "title": "LPN Diploma Program - Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/program/lpn/",
-      "summary": "Train to become a Licensed Practical Nurse (LPN) at Gulf Coast College. Start our LPN program and begin a nursing career in only 15 months.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b09ea1a8cee12b17",
-      "title": "Massage Therapy Training Program | Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/program/massage-therapy/",
-      "summary": "Become a licensed massage therapist in as little as 9 Months! The diploma program prepares the student for entry-level positions in the massage therapy industry.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8aa5c2823b5996d7",
-      "title": "Medical Office Administration Diploma | Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/online-programs/moa/",
-      "summary": "Medical Office Administration Online. Further your career in healthcare around a schedule that works for you. Request info & apply today at Gulf Coast College.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53e88f3675d37d4f",
-      "title": "Movie reviews and ratings by Film Critic Roger Ebert | Roger Ebert",
-      "url": "https://www.rogerebert.com/",
-      "summary": "Movie reviews and ratings by Film Critic Roger Ebert | Roger Ebert Season 3 of “The Lord of the Rings: The Rings of Power” Feels Like Butter Scraped Over Too Much Bread",
+      "id": "e926473604efbf96",
+      "title": "Contact Us - Prairie Lights",
+      "url": "https://prairielights.org/contact-us/",
+      "summary": "Contact us For questions about the event please call 972-237-GLOW (4569). BOOK APPOINTMENT",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -2084,12 +935,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a127c49adfea3ef7",
-      "title": "Practical Nurse (PN) Certificate Program - Gulf Coast College",
-      "url": "https://www.bluecliffcollege.edu/program/practical-nursing-certificate/",
-      "summary": "Practical Nursing Certificate Program The 12-month Practical Nursing Certificate program at Gulf Coast College prepares students for an entry-level nursing career. Practical nurses are essential to the operations of healthcare facilities, supporting doctors, nurses, and patients to ensure each day goes smoothly. We are currently not enrolling new students in the Practical Nursing Certificate ...",
+      "id": "39518e068dea5d20",
+      "title": "Counseling - Redmond High School",
+      "url": "https://rhs.lwsd.org/counseling/",
+      "summary": "Counseling - Redmond High School Our Mission: Each student will graduate prepared to lead a personally fulfilling, responsible life as a contributing member of our community and greater society. Our Vision: Every student future ready having gained the knowledge, skills and attributes necessary for future, academic, and personal success.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eecd05b5ec812e84",
+      "title": "Dallas Passport Agency - Travel",
+      "url": "https://travel.state.gov/en/passports/apply/get-fast/make-appointment/dallas.html",
+      "summary": "You can make an appointment at the Dallas Passport Agency if you have urgent international travel within 14 calendar days, or if you need a foreign visa within 28 calendar days.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2114,10 +995,40 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "69bc46c84a7a4871",
-      "title": "Reviews | Roger Ebert",
-      "url": "https://www.rogerebert.com/reviews",
-      "summary": "Explore insightful movie reviews and ratings by Roger Ebert, covering a wide range of films and genres.",
+      "id": "d3f56d061d592fc3",
+      "title": "Didn't realize until today that Sam Hartman didn't get ... - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/thread/didnt-realize-until-today-that-sam-hartman-didnt-get-drafted-but-did-get-2354554",
+      "summary": "Join the conversation on \"Didn't realize until today that Sam Hartman didn't get drafted, but did get\". Read more on the premiere Clemson board",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ef5309312c43b06a",
+      "title": "Directions - Prairie Lights",
+      "url": "https://prairielights.org/Directions/",
+      "summary": "Please note the main entrance is for General Admission ONLY. See below for Fast Pass directions.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -2144,102 +1055,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "37245f3eac48374c",
-      "title": "Shanghai Xiaodu Artificial Intelligence Co., Ltd. - AppBrain",
-      "url": "https://www.appbrain.com/appstore/dev/shanghai-xiaodu-artificial-intelligence-co-ltd/1563357890",
-      "summary": "The 8 iPhone and iPad apps by Shanghai Xiaodu Artificial Intelligence Co., Ltd. on the Apple App Store.",
+      "id": "eb4a2aa834868c11",
+      "title": "FAQ's - Prairie Lights",
+      "url": "https://prairielights.org/faqs/",
+      "summary": "That will depend on how fast you drive and how heavy traffic is in the park. We encourage people to drive slowly and take in all the sights. Relax and enjoy the park. Typically it takes 45 minutes to drive straight through with light traffic. **Due to the high volume of cars on weekends, please allow for an extra hour or longer to enter the park.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6ff49a0b20834e47",
-      "title": "SHXWELL Kitchen - amazon.com",
-      "url": "https://www.amazon.com/stores/SHXWELLKitchen/page/ED3606E6-AD64-43F3-9FCA-B329ABC478BC",
-      "summary": "Select the department you want to search inAll DepartmentsAlexa SkillsAmazon DevicesAmazon FreshAmazon Global StoreAmazon HaulAmazon One MedicalAmazon PharmacyAmazon ResaleAppliancesApps & GamesArts, Crafts & SewingAudible Books & OriginalsAutomotive Parts & AccessoriesBabyBeauty & Personal CareBooksCDs & VinylCell Phones & AccessoriesClothing, Shoes & JewelryWomen's Clothing, Shoes ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fba78426d4913748",
-      "title": "Titanium Facts",
-      "url": "https://sciencenotes.org/titanium-facts/",
-      "summary": "Titanium is element 22 on the periodic table. These titanium facts contain chemical and physical data, general information, and history.",
-      "discovery_channel": "retail",
-      "query": "titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ecb058a2cd2b583c",
-      "title": "Upcoming Executions | Death Penalty Information Center",
-      "url": "https://deathpenaltyinfo.org/executions/upcoming-executions",
-      "summary": "This page is updated on business days by 12pm Eastern Time to reflect executions that occurred in the previous 24 hours. Although Ohio has issued…",
-      "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2264,12 +1085,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "363c8a0e7201f68e",
-      "title": "Upcoming Releases",
-      "url": "https://store.steampowered.com/explore/upcoming/store.html",
-      "summary": "See more: Upcoming Releases 10% off. $3.99 normally, discounted to $3.59 Tidy Up the Magic Mess Organizing, Cozy, Incremental, Magic",
+      "id": "245c6fc7bec60ba3",
+      "title": "Fast Pass Directions - Prairie Lights",
+      "url": "https://prairielights.org/fast-pass/",
+      "summary": "FAST PASS DIRECTIONS Suggested Route: 360 and exit Lynn Creek/Mildred Walker Pkwy. While traveling eastbound on Lynn Creek/Mildred Walker Pkwy, stay in the right-hand lane and turn right on Lake Ridge Pkwy; the Fast Pass entrance shares the entrance with The Shack Restaurant (formerly the Oasis). >> DO NOT USE THE MAIN ENTRANCE – THIS ENTRANCE […]",
       "discovery_channel": "broad_web",
-      "query": "upcoming smart glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2294,12 +1115,764 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6c6f815f46692dc8",
-      "title": "Wallaby 500cc Oxygen Absorbers for Mylar Food Storage, Max ... - Amazon",
-      "url": "https://www.amazon.com/Wallaby-500cc-Oxygen-Absorbers-Dehydrated/dp/B09BPXHGJK",
-      "summary": "Multi-Size 100ct Mylar Bag Bundle Includes 100 heat-sealable, Mylar bags in small, medium, and large, 100 oxygen absorbers, and 100 sticker labels. Perfect for pantry items like flour, sugar, rice and freeze-dried or dehydrated foods.",
+      "id": "ad52b9824fb968b0",
+      "title": "Hmm, six years in college still wasn't enough for Sam Hartman to make ...",
+      "url": "https://www.tigernet.com/clemson-forum/message/hmm-six-years-in-college-still-wasnt-enough-for-sam-hartman-to-make-the-35346479",
+      "summary": "Join the conversation on \"Hmm, six years in college still wasn't enough for Sam Hartman to make the\". Read more on the premiere Clemson board",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fc8a33bc86535953",
+      "title": "Home - Redmond High School",
+      "url": "https://rhs.lwsd.org/",
+      "summary": "Redmond High School provides a comprehensive education and resources for students, parents, and staff.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e941aea5b3c2f3d4",
+      "title": "Home 26 - Prairie Lights",
+      "url": "https://prairielights.org/",
+      "summary": "Prairie Lights is the premier holiday light park in Texas located at Lynn Creek Park on Joe Pool Lake in Grand Prairie, Texas. Prairie Lights features millions of lights, animated light displays, dazzling themed lands and a spectacular state of the art light tunnel. Midway through the drive is Holiday Village, where you can enjoy a magical walk-thru forest, carnival rides, photos with Santa ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "87e49be68eb9aaed",
+      "title": "Hours & Pricing - Prairie Lights",
+      "url": "https://prairielights.org/hours-pricing/",
+      "summary": "To ensure you have the best Prairie Lights experience, please take a moment to view our park guide and make note of our park status page. Guests are encouraged to arrive early or purchase a fast pass on prime event nights (12/12 – 12/25).",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a4dcd36d27390802",
+      "title": "Library - Redmond High School",
+      "url": "https://rhs.lwsd.org/academics/library",
+      "summary": "Library - Redmond High School Our mission is to cultivate a vibrant and welcoming learning hub for our community. Our commitment is to foster an inclusive environment with resources that inspire exploration, critical thinking, and lifelong learning.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "43bcd2e9cb495a05",
+      "title": "Looked Like Both Players Had The Ball...... - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/thread/looked-like-both-players-had-the-ball......-2551155",
+      "summary": "I don’t the DB had his hands on the ball when hit the ground. It was just in his lap and the WR had his hands on it.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review",
+        "community"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2dcdf5fafc5ce61f",
+      "title": "Meet our Administrative Team - Redmond High School",
+      "url": "https://rhs.lwsd.org/about-us/meet-our-administrative-team",
+      "summary": "Ryan is excited for the opportunity and challenge to be a part of such a dynamic and diverse community like Redmond High School. He looks forward to establishing sincere positive relationships with students, staff and community and contributing to the success of Redmond High School and helping our students grow into lifelong learners.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "37717d5fc273b733",
+      "title": "Park Status - Prairie Lights",
+      "url": "https://prairielights.org/hours-pricing/status/",
+      "summary": "Prairie Lights remains open each night unless otherwise noted. In the event that weather conditions are a safety concern, this page will be updated by 2 p.m. the day of the delay or closure.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a7ce5b678d322273",
+      "title": "Prairie Lights Pro Tips",
+      "url": "https://prairielights.org/prairie-lights-pro-tips/",
+      "summary": "Prairie Lights Pro Tips As we near the busiest days for the event, here are a few Prairie Lights Pro Tips: Arrive early to avoid the long wait. Gates open at 6:00 p.m. and some guests line up earlier. Be sure you have a full tank of gas before arriving in line.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4010612d782e6a80",
+      "title": "Re: Does anyone know how much we’re paying Morris? - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/message/re-does-anyone-know-how-much-were-paying-morris-39314071",
+      "summary": "Join the conversation on \"Re: Does anyone know how much we’re paying Morris?\". Read more on the premiere Clemson board",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd20ae5176baf3f4",
+      "title": "Replace a Limited-Validity Passport - Travel",
+      "url": "https://travel.state.gov/en/passports/renew-replace/limited-validity-passport.html",
+      "summary": "We may issue you a limited validity passport in certain circumstances when an emergency or urgent travel prevents us from issuing a fully valid passport. Limited validity passports: Are issued both domestically and abroad Allow you to complete your trip while still adhering to our requirements Are only valid for a temporary period Expire sooner than a full-validity passport When issued ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eedf94ec049c164b",
+      "title": "Replace a Passport After a Disaster - Travel",
+      "url": "https://travel.state.gov/en/passports/renew-replace/after-disaster.html",
+      "summary": "Replace a Passport After a Disaster When you return home after a major disaster, you may find that your passport is lost or damaged. We understand this is a stressful time and are here to help you replace your passport.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd6a30e983b34b57",
+      "title": "Replacement Parts & Accessories for Water Heaters - Grainger",
+      "url": "https://www.grainger.com/category/plumbing/water-heaters/replacement-parts-accessories-for-water-heaters",
+      "summary": "When it comes to Replacement Parts & Accessories for Water Heaters, you can count on Grainger. Supplies and solutions for every industry, plus easy ordering, fast delivery and 24/7 customer support.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e29ab504fd48445c",
+      "title": "Report Your Passport Lost or Stolen - Travel",
+      "url": "https://travel.state.gov/en/passports/renew-replace/report-passport-lost-stolen.html",
+      "summary": "Report your valid U.S. passport lost or stolen to protect yourself from identity theft. We will cancel it and you will have to apply for a new passport.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d091745154feb728",
+      "title": "Richmond® Water Heater Thermocouple with Burner Door Gasket",
+      "url": "https://www.menards.com/main/plumbing/water-heaters/water-heater-parts-accessories/richmond-reg-water-heater-thermocouple-with-burner-door-gasket/rp20064/p-1444452241261-c-8689.htm",
+      "summary": "The Richmond™ Gasket Replacement Kit with Thermocouple contains everything that you need to replace the thermocouple and burner gasket on your Richmond™ FVIR gas water heater.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "00d2fad36e32856b",
+      "title": "Sam Hartman finally beats Clemson - TigerNet",
+      "url": "https://www.tigernet.com/clemson-football/news/sam-hartman-finally-beats-clemson-44420",
+      "summary": "Former Wake Forest and Notre Dame quarterback Sam Hartman was one of the top signal-callers in college football over the past few seasons. While at Notre Dame, he led the Fighting Irish to a 9-3 ...",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ae379fa450ffd415",
+      "title": "San Diego Passport Agency - Travel",
+      "url": "https://travel.state.gov/en/passports/apply/get-fast/make-appointment/san-diego.html",
+      "summary": "You can make an appointment at the San Diego Passport Agency if you have urgent international travel within 14 calendar days, or if you need a foreign visa within 28 calendar days.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "66d0f0da6abea0a4",
+      "title": "Seniors - Redmond High School",
+      "url": "https://rhs.lwsd.org/students-and-families/seniors",
+      "summary": "Seniors - Redmond High School Cap & Gown Seniors will receive Cap and Gown information on October 19th during homeroom. Please make sure to attend. Students without a homeroom can find the information via parent square. Students who need help paying for a cap and gown may contact their counselor. Graduation requirement: High School and Beyond Plan (HSBP) All Seniors are required to complete ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dd750affbe0bca44",
+      "title": "Staff Directory - Redmond High School",
+      "url": "https://rhs.lwsd.org/about-us/staff-directory",
+      "summary": "Staff Directory - Redmond High School Kopriva, Miranda US History/Civics Cordell, Lesley World History Dejoy, Dan World History Dixon, Parker US History/World History Erwin, Frank World History Evans, Jeff History Flanagan, Siobhan History Gunderson, Pierce Contemporary World Problems Haner, Mark US History Johnson, Ross Contemporary World Problems McDonald, Gregg US History/World History ...",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b0013b4674dc09f5",
+      "title": "THINGS TO DO - Prairie Lights",
+      "url": "https://prairielights.org/things-to-do/",
+      "summary": "Prairie Lights is the premier holiday light park in Texas located at Lynn Creek Park in Grand Prairie, Texas. Upon arriving at the entrance of Prairie Lights, you will be dazzled with 4 million lights set along 2 miles of path. Hundreds of ALL-NEW displays in shapes of all kinds line and arch over the roads.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "196e90e469e5e0ac",
+      "title": "Tickets - Prairie Lights",
+      "url": "https://prairielights.org/tickets/",
+      "summary": "Includes Carnival Rides and Walk-Thru Forest at Holiday Village",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c62457aff9687a87",
+      "title": "TNET: Sam Hartman finally beats Clemson - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/thread/tnet-sam-hartman-finally-beats-clemson-2362289",
+      "summary": "Join the conversation on \"TNET: Sam Hartman finally beats Clemson\". Read more on the premiere Clemson board",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "69bbe35d51b4a5bb",
+      "title": "TNET: Sam Hartman finally beats Clemson - TigerNet",
+      "url": "https://www.tigernet.com/clemson-forum/message/clemson-still-has-455-secs-left.-time-for-gaines-adams-to-do-his-thing-35156140",
+      "summary": "Join the conversation on \"Clemson still has 4:55 secs left. time for Gaines Adams to do his thing\". Read more on the premiere Clemson board",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2cd42e6380f23d23",
+      "title": "Translator – Online Translation Tools for Every Language",
+      "url": "https://translattor.com/",
+      "summary": "Translator for fast, simple online translations. Translate text across languages with Translattor’s easy-to-use translation tool.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e855deee3f1851b0",
+      "title": "Water Heater Burner Assembly | HD Supply",
+      "url": "https://hdsupplysolutions.com/c/water-heater-burner-assemblies-00-95-80-5-80",
+      "summary": "In need of water heater burner replacement? Shop our collection of water heater burner assembly parts from A.O. Smith, Rheem, and Premierplus.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6b59f5414fdd95d7",
+      "title": "Water Heater Burners for Home Improvement - Walmart.com",
+      "url": "https://www.walmart.com/c/kp/water-heater-burner",
+      "summary": "Shop water heater burners for efficient heating solutions in your home improvement projects.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2324,10 +1897,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "297eeddfa2be83c8",
-      "title": "Xiaodu - Free App for Android - AppBrain",
-      "url": "https://www.appbrain.com/app/xiaodu/com.baidu.duer.superapp.oversea",
-      "summary": "Xiaodu was a free tools app developed by 上海小度人工智能有限公司 that had 10,000+ downloads.",
+      "id": "4583fe13e308e782",
+      "title": "Water Heater Parts & Accessories - Ferguson",
+      "url": "https://www.ferguson.com/category/water-heaters/water-heater-parts-accessories/",
+      "summary": "Designed to extend the lifespan of residential and commercial equipment, our extensive selection of replacement parts for both tank and tankless water heaters ensures safe, leak-free, and high-efficiency performance.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -2342,69 +1915,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "rumor"
       ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a405949ccfff4910",
-      "title": "Xiaodu APK (Android App) - Free Download - APKCombo",
-      "url": "https://apkcombo.com/xiaodu/com.baidu.duer.superapp.oversea",
-      "summary": "Xiaodu app is a supporting app for the Du smart buds and Du Smart Buds Pro.Users can check the power of the headset, change the touch , use smart translation，use voice notes and other functions on the app.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "27a0bfab15375525",
-      "title": "Xiaodu APK for Android Download - APKPure.com",
-      "url": "https://apkpure.com/xiaodu/com.baidu.duer.superapp.oversea",
-      "summary": "Xiaodu 1.4.6.0 APK download for Android. Xiaodu app is a supporting app for the Du smart buds and Du Smart Buds Pro.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
+      "primary_type": "rumor",
       "routing_targets": [
         "reject_noise"
       ],
