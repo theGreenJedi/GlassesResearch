@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-12T22:55:26.551191+00:00`
+Generated: `2026-11-13T01:57:35.733481+00:00`
 
-- Intake files inspected: **209**
-- Candidates retained in this review window/history: **8157**
+- Intake files inspected: **207**
+- Candidates retained in this review window/history: **8081**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1585
+- `adjacent_radar`: 1575
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 573
-- `rejected_noise`: 5919
-- `source_review`: 39
+- `needs_editorial_verification`: 574
+- `rejected_noise`: 5855
+- `source_review`: 36
 - `watching`: 23
 
 ## Action queue
@@ -90,9 +90,7 @@ Generated: `2026-11-12T22:55:26.551191+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1387](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1387) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1389](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1389) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1390](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1390) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1207](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1207) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1208](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1208) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1209](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1209) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1393](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1393) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1210](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1210) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1211](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1211) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1212](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1212) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -165,6 +163,7 @@ Generated: `2026-11-12T22:55:26.551191+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1384](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1384) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1386](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1386) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1388](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1388) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1394](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1394) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [US Senators Launch Inquiry into Privacy Risks of Meta AI-Enabled Smart Glasses - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMisgFBVV95cUxObDBKaDFoYmhEV0p5U3Nwa1NjVjVIeDBmcHNfN0psRnJnRHZJSGJRVHRCR3BCQ093aW9MekJfSVd5YmZtYV9NNTFOT2dzVnJhWS04Wnl6bExRdUlrbll3c2l4TDRCMEt3QjQ0blpDTjY3ejRaUWtDRjl6Mkp4TzdkVFVNcld1SmFLNWptV2JYdXRkN25YNHJBaC1Iak01QWszdW5tZzN0MjNaRXo1bHZFZWNB?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Apple AI smart glasses tipped for late 2027 launch, Chinese supplier hints - Digit](https://news.google.com/rss/articles/CBMivgFBVV95cUxOOUxuOGhjYUREZi1rZk9YejZyT054OHNuQ1Uzc19HVHNZejg4Y3RBTGg0NFpiWG5XUWRobnZMeVl5RnMzNDBpMlJpZTBISmYwTTRYMnpYZElmdk0yNE1zdW42blpQU3phY3ZMQTVVT3ZfTEU0WjdFdGU2SmxRbTVlczBUaDRlQm5JbmROZzRxMzRYaXdSZ3lEWlpNVGRTeXZkajM3aVliNlFNa0VIXzhmcVFLUjRGMTAtZk8tajZ30gHEAUFVX3lxTE93THk4OFNoUTU1YWJFS3ZJTk9YbXFiREUtSlF4aTd4U2tlR29haC1lcjhBQTJ4UmIzNTBtRVpuSy1lUWhHa0JUc1ZqY0dpcDdFNHlzR1VWMHc4YVlVdHFPd2laeDdjX1Z2MUJFODJ4RVRRV0N5UmpLNjhWSkdqSzBNVTZWUG01VE1uTGhFb1AyN0hjU3QyMDZKRzFTV2I4S1pGU19nMHhuYXpoUVFUdUVCYVlhWUhFVjV3cGtHMHl5MVZjS2Y?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -233,6 +232,7 @@ Generated: `2026-11-12T22:55:26.551191+00:00`
 | high | needs_editorial_verification | direct | [Google knows smart glasses have a privacy problem. Here’s how it’s trying to fix it - WJRT ABC12](https://news.google.com/rss/articles/CBMi3gFBVV95cUxPQzhTYjFER3AyUXF0Y19HbEZtbHdHRHdRRl9FZ3AwemlJeFVzc0tRcE5QeEhhV1pGc0ZldjZONE1ldXlSeDVLNHFXSWhMMFZWdm1yT24yZXB4Y1I2bEtzRlFvVmlfTkRuSXlXTlpSMzhpX05vV0duUm14OWZBQkRUSVl6OTEzQTRBdnFXWjBVUmg3WVlRem1BRVM4amhNV19odlV6VW1oVEUzX3l5OHpyUEE4T1lZYXdrRnJMSjJscGZoQUlBY1VQcHp0ZENpZlNLSmpjUmhGUGFIcEpMWkE?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google launches Intelligent Eyewear collection with smart glasses from Gentle Monster and Warby Parker - Mashable](https://news.google.com/rss/articles/CBMikwFBVV95cUxQaDJWUzl6UEZNb284WTBTZ2RXaF9NVEVEWERyQXNZLXpGRHBzVjktVDlxMGdCNGRyaFN6bHZYRmZBUzZuVE53OXdZN0g2eWtWcDlIN1VHMTJwb0lKNHNZTURzLU9qY05tMFVIQ3VXdVd2YWFsNHcyMXo1aUNMak1TMk1oRVotaXdxbVBlQ0l0MEgxUHc?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Google smart glasses are now up for preorder: iPhone-compatible from $395 - Softonic](https://news.google.com/rss/articles/CBMipwFBVV95cUxOel9UWjN2RDFvaDF2c1RqcloxM0VVaFRVWUFDZ3lqdFVQNVdhOEp5Tmx1bE56SENsS3E0MjJsVi1rU1JYZ3Y4Z0FJc3JpMktBcFVHTk9fQ0dpSXVCNWp0cWwzajNSNDRwcFZoTmxneVpuUktBWFREaGZOZ1JpcXN6bFFfWjlaZFBSaU5pQS0wbHFIXzJ6ckxQVUw2ZjhCQ0NCTVRaVTNrZw?oc=5) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Google smart glasses privacy features cover wearers and the people around them - Help Net Security](https://news.google.com/rss/articles/CBMijAFBVV95cUxOSGtIZUVfTmhUREpwTURWd2RnN09mUURxVk9lMU1BYXU2OUNEdU9SbTB2WEpYQXhiSjg0VV9mRTh3ZDFQQ3dVOFEtSHFHNktEWGRVajJDYU41LXJPeHlXSTQ2TEpYRW91a3BqUXB1U19XU09CNXV3ZHBKYnFraDh2SXdYWF9sQ1ZwSGJLSA?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google Xreal Aura XR Glasses Compete with Meta: Launch at USD 1,099 - Analytics Insight](https://news.google.com/rss/articles/CBMiswFBVV95cUxPSHVYeDZLOXJpWVhjVTJiNkhxSVZiMXZVdXYzYk1jMzBqeVItZkZ6QmVZb2hhWXdnME1HN1Z1dm91b3JLVWRsQUdQYW54QnpsTnZ2UE9pU1BWVExQZGVJMXktdmNrTFVRQ0N3V21PWVhqdlE2V2lfTUVnQkFHMjRqZWJwU0syTUcxeE9Xb3JLWUJYSzgzNVdjdHdUUEVNcHRvaFRObXBvbUY5bkFQUzFFU09GUdIBswFBVV95cUxPSHVYeDZLOXJpWVhjVTJiNkhxSVZiMXZVdXYzYk1jMzBqeVItZkZ6QmVZb2hhWXdnME1HN1Z1dm91b3JLVWRsQUdQYW54QnpsTnZ2UE9pU1BWVExQZGVJMXktdmNrTFVRQ0N3V21PWVhqdlE2V2lfTUVnQkFHMjRqZWJwU0syTUcxeE9Xb3JLWUJYSzgzNVdjdHdUUEVNcHRvaFRObXBvbUY5bkFQUzFFU09GUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google y Samsung lanzan gafas inteligentes con Gemini para competir con Meta Ray-Ban: cuestan desde US$395 - Bloomberg Línea](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNdzAyQll6dExEREpXZUhQR1hOMENIMUhBZFJQOHJwTnZ4ak9qeldFa1RyQl9pOWg5Wlo0U1FZMjBqQ2hJeVZHdmJYaEFXSktWRlBxUUQzV1B1MjBMbHJuLXJRM3dGaHRVc3NtVWszTXB3aUlCVTl3OE9CUnRiNHo2dHlVT19KQmpGRzFXaW1FQnJNeENCVTFIdngtT1JvanRHeFdtYlhlZEpJaEN6Uzd1Z0cyMGw2Qm1JSGpPZTh3YkxUXzVvV3AxeHlsU2VWdnE0cUE3ck04MkhiSzYtOEHSAfIBQVVfeXFMTnFDRk9pT1VtSFR5NjVYQXhUSC1BZGR3cmFuNGFtVTNIQ0JZOFh3eGQ2VUtkX1Btc0l3Q3pfaEdOOThNUV9KOFVmcWRoSm95M2JnRGxEZ1BqeWs0cjdxRHdHMEtNelBrYWNjWkI3MWJ3Yzl2Q0JCQjhLWm9BTlRwVmZLUXdOMkpQeV9QU25ha3NZam55SzBYVFVaVUFPaGxEY2VMR0JobDJTYXRyOGw0QkJoc21DTGdsbEFFRG1JaVNXTXZFeFN3aUJpT0RxQ2swOHVmMGxTanZmMGVwaG9pT0lEaE8xUDdvbXc3b0dYWnNwX1E?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google's AI smart glasses work with iPhone, preorders are live - AppleInsider](https://news.google.com/rss/articles/CBMipgFBVV95cUxPOGVGb2c5cTJDQWZpVWZxRjZLV2E3LVhuLWRKdlhlb0J3andhajY5Q3B6SEp6MC0zbVlrWW92YlREU3pfV0xXajlLdWxUeEZJMzJBSFduWTZHeHQxQ3NVRW1MeVF1bzAwakFuWUFhR3dCOWczdkd5ZVZVeVlBRVlUeXhJZkxFWi1vYnI0T0doODRTOG5ZRzRmZUJPeWEwbFNmUkVVQUdR?oc=5) | reachable (200) | research_news_review |
