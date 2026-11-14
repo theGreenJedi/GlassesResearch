@@ -1,9 +1,9 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-14T10:59:57.911025+00:00`
+Generated: `2026-11-14T11:49:22.200554+00:00`
 
-- Intake files inspected: **204**
-- Candidates retained in this review window/history: **7938**
+- Intake files inspected: **205**
+- Candidates retained in this review window/history: **7945**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
@@ -12,10 +12,10 @@ Generated: `2026-11-14T10:59:57.911025+00:00`
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 589
+- `needs_editorial_verification`: 596
 - `rejected_noise`: 5755
-- `source_review`: 34
-- `watching`: 20
+- `source_review`: 33
+- `watching`: 21
 
 ## Action queue
 
@@ -156,6 +156,9 @@ Generated: `2026-11-14T10:59:57.911025+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1388](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1388) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1394](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1394) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1408](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1408) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1411](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1411) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1413](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1413) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1416](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1416) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alphabet Stocks Rise 1.19% as Gemini 4 Hydrogen and $395 AI Glasses Launch - TradingView](https://news.google.com/rss/articles/CBMizAFBVV95cUxNMDRveGdzOXVsbjdad1pGX0h2bkVUWkszQVBrUEtfb0tORW1pS1FlTmZjYkFBbmhBcFAxNUJjTXk0eTdLOERLeFY0OTNrdW1oU0RVdUhHUnhHT0JmSXRyaE5KMkdOQnN5TzVoSURpVmdVclp5eHhtdVNNLVpORzVEeXU5T1lWNDl3dmZzY2tOZGxtd2dydF9lNkl2SFZaX3F3cmw4S0JieFVfVnJ4WVZiWFhkQzRMOEQyTjNud05vRVBVR1hFWEhiRWdwV1Q?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alphabet Stocks Rise 1.19% as Gemini 4 Hydrogen and $395 AI Glasses Launch - Yahoo! Finance Canada](https://news.google.com/rss/articles/CBMif0FVX3lxTE16N1JoWHRiU1hMaWpRRDFjMUdCejY0ZC1vSW5kVzZWREJFZzVra1kyWWJ4ODNHenZUY05Ydk9WZGRDVnRrQkIyOFlYb09FeEJWV3FYSW83X2ZVSlJHN3VMMFAzeTBzZ2ZSQzE5eUFxc3ZsT1ZBLXAyd1IzM1pfQ0E?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -255,6 +258,7 @@ Generated: `2026-11-14T10:59:57.911025+00:00`
 | high | needs_editorial_verification | direct | [Road to VR Oct 7, 2026 Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [SamMobile 16h ago Google’s privacy policies prevent Samsung’s smart glasses from social live-streaming Coverage Samsung](https://www.sammobile.com/news/google-privacy-policy-prevents-samsung-smart-glasses-from-social-live-streaming/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Samsung and Google Open AI Glasses Preorders: What $395 Gets You - TechRepublic](https://news.google.com/rss/articles/CBMihAFBVV95cUxQXzZEcE9LQnN1elhwZXQ0aU1hVk1NcTBpTlo4YXhSbUIyYlF6Y2FUSE56ZnU3VVI0b3V0RnhhZTFzZGpHelVXY3BJRnhqVVJJZ3VZWjZnVTl4cHhCcjEzWnlRaVpKdjZHTXZ5dE5WS1N2QUNmNW1DX0hzUUZnSmZXM3h6V1U?oc=5) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Samsung and Google Smart Glasses Launch at a $395 Base Price - Geeky Gadgets](https://news.google.com/rss/articles/CBMic0FVX3lxTE1uQW41VEdIZGh1MlZ4UUk0cWlhV054bzFXVVRva0xCTDlGeHRsQTJhQXZmRm0tYTNfODA0S2xxTTBXSXJwMHpGX0hzTVVHSHEtX3VhUzN1TGRxWi0wS3A2clo3UGZIbFA0MHhaYXVZOHNuMkE?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Samsung confirms December launch for its Gemini smart glasses - Techish Kenya](https://news.google.com/rss/articles/CBMimgFBVV95cUxPR0l6M3pfSm5DQ0lVMmxvdnZ0Q3p6NzNhc2dzNXloN05WXzNNT1hxNUdzQWxnWkVmTnR5M291QlhGU2p4c3F1bHBYMjNYMlBJUzgxNXhmRUhRWkppN1BxOHBDQTdzZUpJSXg5R0dQUTVNbGxsWDZCa3JBVVFDNWRmQS12dDVQTHJKMFl1cWM2ZkV5TWU0dTl4OFJR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Intelligent Eyewear Launch Timeline Surfaces Online - Gadgets 360](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUEwbUw5MGhjcXBIeW5EWGdwdlFCUTc4aHJUSW9HemZFWkJ3VTUxTHpXT3kzSTRqRDZnampKTmhWZVlzRVVWd25QSlRsYVA4LU9PSU1fczNrcllsLXlzU2Q1b3gtU3o1dVFub05ldHVsU3F2bUNKcl9rNHRFR3AwMVJTZ1VuZnFQQjFPSnFLX3NTc1pZLXlaRW5R0gGfAUFVX3lxTE9VQVpBOGNuVFZNY3dUc3llRk93WWxpTnFJWFBVa3VjeHJhOWc4MDA1ZE1Pa3NGc1lhY1F5R0xDWEpGRkxZanVjRDJNVkFZUlI1aW15ckhNSVNJOER6bkhsbjR6cU5CcGdrX2VsRld5MnNwY191QThkdGpuTDF6ZkV6SWtWNnZBSk4xM0dQdWNPZENZNTByYlpHV1hTOEJlRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Intelligent Eyewear Launch Timeline Surfaces Online - Gadgets 360](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUEwbUw5MGhjcXBIeW5EWGdwdlFCUTc4aHJUSW9HemZFWkJ3VTUxTHpXT3kzSTRqRDZnampKTmhWZVlzRVVWd25QSlRsYVA4LU9PSU1fczNrcllsLXlzU2Q1b3gtU3o1dVFub05ldHVsU3F2bUNKcl9rNHRFR3AwMVJTZ1VuZnFQQjFPSnFLX3NTc1pZLXlaRW5R?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -267,10 +271,6 @@ Generated: `2026-11-14T10:59:57.911025+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0ZYVFZtQXhwY0d6Z19xdE9qVnFYZDhBa09MT0Z6Mml5dWZGa3JvOUFoTFp6YzFnQzd6NlpwdHNEZ18wTHpPTnpYQkVWS0M0bTU0eldOWGVGMGd5dzFNSzJHNVVkNnNkV0lCbjdXS0Y0ZVlkYVdqRjlvNndxaklUZmItZG1uRWtoZ0lHWWxjOVp4V3o1Uk9oWUs4SWp5WGRYb0JiOFdR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Put Privacy Ahead of Livestreaming, Unlike Meta’s - SammyGuru](https://news.google.com/rss/articles/CBMigAFBVV95cUxQcEFUUlRxcU5UUGRFNmItYktlV2VKTHNfVXNqNlk1bUw5dllDY0ptMnJnUnhDb2VDYjJPUWhQWnBKM0kwU0JRNUZvVFF1enRxTDZ0M2FxM0dlektxQ2E2dGNsVUpNc0VVS0JwSGhDMGpnTWQ2cmdRaV9EcjZZcUpKMQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Rumored to Launch Mid-December - Phandroid](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDl2MjRnOTJpRU9GT1d0eHRIak9pU29vaUR6T1Y5SC1YLXZQV1BGYjYyUWpCYnN6S1RERHozc1ZnQldkbGFwa1dhWVlrNDVJWG5NSDBUZF9PNnFfUFBNSDZhOFlUcnhPRVExSHJLTVpHOUV4LUdhbF84UEdwVVhuYTMtdXZFQVM0RzZWZk5BQ2TSAZYBQVVfeXFMTmhZdWRaaTIyY3hqY24tXzVkSWU3RmlndjZMWldDNEVxdTAxNDZTcno2b29ZNEFBRGxpeFB0b0lHcHZfM0JZeEcyWG4xdzk1S2dlY0k1OENlOHUwWmJvMGNXNjFfZ3FNOGpzWThNaTAwekxoMXE3dXJmS0FKN3ROeDd2T3ZPM2dZcTZjVVNkSExRaGRhZUJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [SF Ballet's THE NUTCRACKER to Launch as Immersive XR Experience Through Google and XREAL Glasses - BroadwayWorld](https://news.google.com/rss/articles/CBMi7AFBVV95cUxObWNsSDFORVFlZ0NqTXRGenVsZFZVbnNaVWZkNGJXOW9mR2Fsb1JaaHQzNVpWczl6MVpSVkxRUW5CekJxYzc3V0xuOWFnTjhLVW0yeUF2bkJaV3lfcl9zUThEWG0wdWJiSElLTmZheFgzbDN5ZV9Da1RzNkFGNzFySjROaktjdlNBekRMTC1EVjE4NEhVWXJjdmxTYjNfOXc4dlhhanAxSnZVWlpHV2M4UklYbm92MlpTY2dUYzFUREtTQ3dJODdzN1NpNXFvYlVYT2o0VGZ1MVZwUG5Ibk5jeHFZNnZKcnFNSkd6aQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
