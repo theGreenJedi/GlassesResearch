@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-14T18:28:05.464102+00:00`
+Generated: `2026-11-14T19:19:10.798999+00:00`
 
 - Intake files inspected: **207**
-- Candidates retained in this review window/history: **8004**
+- Candidates retained in this review window/history: **7778**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1554
+- `adjacent_radar`: 1551
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 608
-- `rejected_noise`: 5772
-- `source_review`: 30
+- `needs_editorial_verification`: 605
+- `rejected_noise`: 5547
+- `source_review`: 35
 - `watching`: 22
 
 ## Action queue
@@ -204,7 +204,6 @@ Generated: `2026-11-14T18:28:05.464102+00:00`
 | high | needs_editorial_verification | direct | [Samsung Smart Glasses Open for Preorder November 12 With In-Ear Translation - stupidDOPE](https://news.google.com/rss/articles/CBMiqwFBVV95cUxNcC1sRHlJMVRjMTBaeXVteDNMS2w1RkpoS1BjUWY2Z3QyT0NLcG40b21wM3phcGFtTXpKTXFCVXhFWjM2NGxRdnd0N3ItWUdIQ09wdXBZNnJlUEhWT2dmZVJCY1FHeHFLNkxtZlRmc1VCYkQ0N1dyLVdyQnhaRzNFRlNIR0FVaXhTQnBFM3lWTU5DQkFZaFI3QnlCajhuUVRzNWpQQ2VFX0J5RTA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Smart Glasses Set For December Launch But Australia Misses Initial Release - ChannelNews.com.au](https://news.google.com/rss/articles/CBMitAFBVV95cUxPYUdlWlgyMWFNcG5HTkZENzVaeUEzdmd5cXo2VjdQcTlLZWdjeHVkUUZzbzVxVnV5cWlaeDZscHAtRG1tazBia3FWLUtKQlFLU1dISkRBY25tTjRlSzBtdmtOdmZaZDNZUFA3cWFfSk9DMVJfeERkWjlJWXFhaTJYZkF3RFJyS2VoLUtVaVpCUWRuYkdJUHJDNGtMM3E3Q2ozS1RNYmw2VW13c1V5WXZZQWM5ai0?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung To Launch AI Smart Glasses In December 2026 - Dataconomy](https://news.google.com/rss/articles/CBMijwFBVV95cUxPMFM5STBxUy04X2Fyb1AxdGVkenhRdGNuWUlnV054bi1ScWdIZnF6M2c2Rzl4MndPckZIVlBjdzBrTHU2WXNBZ3kzT0swUlM2WUp3aXpCWHQwdndtRG5HemQ0a1dYRjNqcW1icmVCa0duRzZGUlZ4eFdpdnZEMmJyMW9wVXdzSGRVNDJHT25Waw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung to Launch Android XR-Powered Intelligent Eyewear in December 2024 - Inkorr](https://news.google.com/rss/articles/CBMiugFBVV95cUxPUnp1UXJueFhOV0tIdTZoeVZKVTBQYTkzcHk3NWw3dVY5aFVHWUhjenM0Uy1yZnVKRmEweWw4U2VPamhtQm5iYzZqeTI2RjBuM3Iyb2RXSVJQUV84eUVEeHN0SHFVQ2ZKV2tEYjB3SUhrRERtd2pjMERmQ2duNlg3dmg4RXRQNlJSMTgwWHN3MnZTZFFxSy1lVkxaV3N2NXVpTTZweWVqUUpSNDFncmQ5WHZjMHIyYWhvV1HSAboBQVVfeXFMT1J6dVFybnhYTldLSHU2aHlWSlUwUGE5M3B5NzVsN3VWOWhVR1lIY3pzNFMtcmZ1SkZhMHlsOFNlT2pobUJuYmM2ankyNkYwbjNyMm9kV0lSUFFfOHlFRHhzdEhxVUNmSldrRGIwd0lIa0REbXdqYzBEZkNnbjZYN3ZoOEV0UDZSUjE4MFhzdzJ2U2RRcUstZVZMWldzdjV1aU02cHllalFKUjQxZ3JkOVh2YzByMmFob1dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung to Launch Android XR-Powered Intelligent Eyewear in December 2024 - Inkorr](https://news.google.com/rss/articles/CBMitAFBVV95cUxOTURlaU82TC1DQVp6XzNHUjdWV1ZuLVNvcWl0V1pTcDVlRVB4ZnZWNnBqN05FbTZUYkp2X2tyS044SExDcW91X2RvcHZITVJYSVR0dDR1RkNkd3hEV284S0VOVmJZTktPb213dm9iRG5vZUdzSDd1UjZuVnJ0T3VlRHg0VjhfM21HaWhhekJ2T09Xanh0ZlloX1NDdEtlZ3J1bkxWaHAteExycU5KcEFteEVQMHXSAboBQVVfeXFMT1J6dVFybnhYTldLSHU2aHlWSlUwUGE5M3B5NzVsN3VWOWhVR1lIY3pzNFMtcmZ1SkZhMHlsOFNlT2pobUJuYmM2ankyNkYwbjNyMm9kV0lSUFFfOHlFRHhzdEhxVUNmSldrRGIwd0lIa0REbXdqYzBEZkNnbjZYN3ZoOEV0UDZSUjE4MFhzdzJ2U2RRcUstZVZMWldzdjV1aU02cHllalFKUjQxZ3JkOVh2YzByMmFob1dR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung unveils Gemini-powered AI glasses for December launch - upi](https://news.google.com/rss/articles/CBMizAFBVV95cUxPeWJqR0ZrcFFWS1pZRVF2Z2ZpVlJ1ZzRTRGxFYWZ5Wko5NFdwNFR2dHdzbEJlMngwVmlXcUozZ1EzcVljdVMxTEhrTHNaVXQ5Z1AtZHdFT0xkZjNuUmVJcFJWQkQxS0p5OHBZdDlFWXJrbFJseGZnSjV6RkpvZVVWOFFLYlExWGJmS0dkMEFLbGdKalQ0UjlYa2dPMTNTVFJ3cnAwblZSQjhIZE83Wm1ZblFVSFpDTC1RQ1YwRDMzUU01M0tMZ21SdldSa1jSAdIBQVVfeXFMTWNwVlBlQWZGMHpLRTRaVXByTF9OQS1KS3VCM1A1WGpmSHNBamY1UlpLa09CYUpWc3VDaHJhREFCRmJ3dzlYa3BPT3VRYklqQ0xnYnQ1eDN1Y0dVek5IcVVaOFpqVFNKU2ZzUXNmTEVuSjdVN2NZWUJSdWFUbTZRY0xUaGUxR1M4TXlxNnFvNHllbFJiblUyeFA2VzZnNmQwd0s4OXFFdlEwOE4xR1JRVEhmY3UxZ0ZNdXRLZzFrbHpOWDhuYUF2U2JKRjdIOGhCdUlR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's First AI Glasses Open for Preorder on the 12th - Seoul Economic Daily](https://news.google.com/rss/articles/CBMingFBVV95cUxNV0YxSU82dHg2R0hPeGxrN19SaWEwSmQ1QjBTRWczZ2k4NFFpLXpJZlpQN1cwdnFkd2tsNnJHamhYakkwTWNZM0FHV1ZJNVZQNkdvQVdGWnZKV1RTYmpoVEN6dU9uaGJKbDg2U1Y1TVd3azhaWUZjb2Q3WkNtRFVtN1YxdGJrd2JUbDFCdHdSZFM4Qm9WRmdpVmJ3UnJOQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,6 +270,7 @@ Generated: `2026-11-14T18:28:05.464102+00:00`
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMilwFBVV95cUxNMUpZQUdlZ0lJTHVQdFV1Yk9JNVFPS0YxZEdoWVpxQjlhdVF2Um1GeDJKSi1YSGJValM2V1Z5ZTNheElyY01maVVOUGFpeUxCdnBTNlpZY1JDRjlMQU9saEgxaXNfVnNpUW0yZDJsNnV0WWs2Y2RwWk5kQ3o4eU5vVlc5NmYzYUJwMEY3dG9YSUI4Z2pETTlv?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung's Intelligent Eyewear smart glasses will launch next month - SamMobile](https://news.google.com/rss/articles/CBMinwFBVV95cUxPNEQ0czBlVTl4d2NiR2Y3MG94dkp5LXZRZk5uR3R5ZVVHd0t1My1kZmhHeVVwMmlrcElGWHZ1d1h6Y05FWE9KOXdFS2xYaG8yOEVpZFE3UGR5Zi11VFJFT3lZNTZfSDZ6MV9qbS1jZHdTMWREYmhkZkw3ZDZWX0VrVWV2Q0dFdzAyaUEyc3plYWxsSllVQWgxYUxkME5wZEk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaUlOM1NCSUNQTVhtSFI0TXZZb1lYMDhjak5CUDBSbzlJSDJqNmd5SHVwaDBFOGRzWGJJYThka0NDeF9QSUJGS05YakN3T1lPNEJTZWFWNGpWZ3ZQUlh3T0lndlJKVkIzR1ZodnMzanZEUF9qRk91MS1pTlR0YlJaM2lUQlptMXhEaEZiTW1EU3UtWjYteE15RVpJZVR5SU1MTG5YcmlSbWpyZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0ZYVFZtQXhwY0d6Z19xdE9qVnFYZDhBa09MT0Z6Mml5dWZGa3JvOUFoTFp6YzFnQzd6NlpwdHNEZ18wTHpPTnpYQkVWS0M0bTU0eldOWGVGMGd5dzFNSzJHNVVkNnNkV0lCbjdXS0Y0ZVlkYVdqRjlvNndxaklUZmItZG1uRWtoZ0lHWWxjOVp4V3o1Uk9oWUs4SWp5WGRYb0JiOFdR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
