@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-14T06:43:18.270276+00:00`
+Generated: `2026-11-14T10:59:57.911025+00:00`
 
-- Intake files inspected: **207**
-- Candidates retained in this review window/history: **8024**
+- Intake files inspected: **204**
+- Candidates retained in this review window/history: **7938**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1538
+- `adjacent_radar`: 1522
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 599
-- `rejected_noise`: 5820
-- `source_review`: 29
+- `needs_editorial_verification`: 589
+- `rejected_noise`: 5755
+- `source_review`: 34
 - `watching`: 20
 
 ## Action queue
@@ -95,9 +95,6 @@ Generated: `2026-11-14T06:43:18.270276+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1395](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1395) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1396](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1396) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1399](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1399) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1220](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1220) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1222](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1222) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1223](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1223) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1225](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1225) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1226](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1226) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1227](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1227) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +268,9 @@ Generated: `2026-11-14T06:43:18.270276+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Put Privacy Ahead of Livestreaming, Unlike Meta’s - SammyGuru](https://news.google.com/rss/articles/CBMigAFBVV95cUxQcEFUUlRxcU5UUGRFNmItYktlV2VKTHNfVXNqNlk1bUw5dllDY0ptMnJnUnhDb2VDYjJPUWhQWnBKM0kwU0JRNUZvVFF1enRxTDZ0M2FxM0dlektxQ2E2dGNsVUpNc0VVS0JwSGhDMGpnTWQ2cmdRaV9EcjZZcUpKMQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
+| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Rumored to Launch Mid-December - Phandroid](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDl2MjRnOTJpRU9GT1d0eHRIak9pU29vaUR6T1Y5SC1YLXZQV1BGYjYyUWpCYnN6S1RERHozc1ZnQldkbGFwa1dhWVlrNDVJWG5NSDBUZF9PNnFfUFBNSDZhOFlUcnhPRVExSHJLTVpHOUV4LUdhbF84UEdwVVhuYTMtdXZFQVM0RzZWZk5BQ2TSAZYBQVVfeXFMTmhZdWRaaTIyY3hqY24tXzVkSWU3RmlndjZMWldDNEVxdTAxNDZTcno2b29ZNEFBRGxpeFB0b0lHcHZfM0JZeEcyWG4xdzk1S2dlY0k1OENlOHUwWmJvMGNXNjFfZ3FNOGpzWThNaTAwekxoMXE3dXJmS0FKN3ROeDd2T3ZPM2dZcTZjVVNkSExRaGRhZUJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [SF Ballet's THE NUTCRACKER to Launch as Immersive XR Experience Through Google and XREAL Glasses - BroadwayWorld](https://news.google.com/rss/articles/CBMi7AFBVV95cUxObWNsSDFORVFlZ0NqTXRGenVsZFZVbnNaVWZkNGJXOW9mR2Fsb1JaaHQzNVpWczl6MVpSVkxRUW5CekJxYzc3V0xuOWFnTjhLVW0yeUF2bkJaV3lfcl9zUThEWG0wdWJiSElLTmZheFgzbDN5ZV9Da1RzNkFGNzFySjROaktjdlNBekRMTC1EVjE4NEhVWXJjdmxTYjNfOXc4dlhhanAxSnZVWlpHV2M4UklYbm92MlpTY2dUYzFUREtTQ3dJODdzN1NpNXFvYlVYT2o0VGZ1MVZwUG5Ibk5jeHFZNnZKcnFNSkd6aQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
