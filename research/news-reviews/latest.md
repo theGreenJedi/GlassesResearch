@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-14T05:30:01.417466+00:00`
+Generated: `2026-11-14T06:43:18.270276+00:00`
 
-- Intake files inspected: **205**
-- Candidates retained in this review window/history: **7944**
+- Intake files inspected: **207**
+- Candidates retained in this review window/history: **8024**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1517
+- `adjacent_radar`: 1538
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 594
-- `rejected_noise`: 5763
-- `source_review`: 32
+- `needs_editorial_verification`: 599
+- `rejected_noise`: 5820
+- `source_review`: 29
 - `watching`: 20
 
 ## Action queue
@@ -179,6 +179,7 @@ Generated: `2026-11-14T05:30:01.417466+00:00`
 | high | needs_editorial_verification | direct | [Gentle Monster Teases AI Smart Glasses With Gemini Integration Ahead of December Launch - Gadgets 360](https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZ2pqemM1MDNoYmNRakxPYXpubW9yamdnSDRfZ0pNNmJySUhMNXBTUXdSeHAxZlczSE5UY2p3WjJsM2kxNk5Xa1FQRXN5bDV6QUlOb1VXMnVab2prQ2lVVVI4bXZ0cEdfSkdtQTUtZl9hX19yWGhXNGZWNUV2VlkyYmNIOXhaSTZZaHUxNTJteGRPaFRaZUhIX1hzS3NubkN3VU1kSTNCZEV1WE9kc2NxRjEtT2FSRFV10gG-AUFVX3lxTE45aThOUW1lR1htNmtvR2JPYlQ1VFBsaTFqYjdwQWVCRGZoZlQ3ekxDSHRKWGthSlFaOVlDdTJNT253Q0JhMnN5Ql9iZk1uYkJKN2ZKWUVhZ1lVZ1gxN1lVanc5Q01NUFRYNVdRc1BUYUJ4RmVpeGtBYkFRejJhanFQMGxjdVFiMTRYbk9EZmxuTHVLdWxsYk1iLTdfX0p3ZHJWWkpDOFdNb0Y1MEgwVzVxenQ5dmVPeHlVSlhodnc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GitHub - everysight-maverick-AI/sdk](https://github.com/everysight-maverick-AI/sdk) | reachable (200) | research_news_review, development_hacking |
 | high | needs_editorial_verification | direct | [Google (GOOGL) and Samsung (SSNLF) Launch Pre-Orders for AI Smart Glasses Range - TipRanks](https://news.google.com/rss/articles/CBMiqAFBVV95cUxNa0RJNEhSS1dmT0RBRjlmS1RlaGs5eFNNT0Zrd3ZOeXBRRzNxTkZ6Yl9uVlhhbS1KRlhWM3piQWJ2WXRBQndlTlAtekF6ODRSaS13NW1rWlRFUkNNWUZsWk1rLVNLbjFKUDFQTXM1TGUyenlZRzU0d0o1MTQ2eHZuckpSNXdRTE1VRkVOd1c3SkZLNnN6NWg5N1RhbElDTXdDWk0yMEV1U1g?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Google and Samsung Prepare AI Smart Glasses Launch, Challenge Meta in Wearable Technology Market - boldnewsonline.com](https://news.google.com/rss/articles/CBMixgFBVV95cUxQZE9ISDhtTE5wWnBYYm4zYXZLRHpBdDdMY19lemxOTWF2OUFvUUFReFdHX2lrWHk4d0UxNU91d09vRElqN0l6cjBqSkpaRUhxOVItc3h4TlBxeGVUQ1B4YzUySkZOUEpUVTN5MWV3dmJyQmxJdXZrR1FhT2JOQUFXWTM0eHpVM2pFNk1jUzlCUS1vUEwzc0dIVEFvWTRHNTJuZ2ZObkF6N2ZzQURvRHR0eHI4cmdKUmlmeVU2VzhhbDk1MVhNdHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google bets on privacy ahead of Gemini smart glasses launch - 디지털투데이](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS3h6M2hQTlVlaDlrWmZTcmZONkJnYTg5dUQ4UmhCU1M5UV9JZklyS3psSFhtU1hGZXhmb2o1MzA5TGNGcWlwNGQtRDBTRXBmVzF3cU5kMGluMllmZDU0S2VKVVRCcFNpNmNRSmFQM2N5U1lNekxYVi1keVplUUpGd05wcjRZRXVMZXdNbFkwZ0VLRmhFX2taZ0VPZ2tFeS05LUx6M3NROEE?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google Sets December 10 Launch for Smart Glasses with Privacy Safeguards - Analytics Insight](https://news.google.com/rss/articles/CBMirwFBVV95cUxNX2VzUHVldk00SVNVTmZnMEwwc3JYcTdfSlV4RkNQVWtFSjRvbV9UOGJVczBTa1hHQmxXUlpmcnNmTlVId1FOT0U4OGg0YVZlWW4xeGR3dEs1eG9SZndCU3ZSVEEzbDZmR3l6UzRKcnJxUFVVS09DalQ4REJuNmVkcjQxNTN0bjNUVjVSVDJOM0hjSXZCWG5EdVM4Z0luT0Z3Qm9MY1g1WkIzZkhuQW9r0gG8AUFVX3lxTE16cF85Q0d2VERfcTVPVDlaZ3hudWhJMkkwbGJGU1Uzc0N2Wm1nQzkwQ1ptMEFQU29tX2g0Vlo5T0s4clc5WjVIY0FuWVQwTmFoOGIzSm1zdXZhczFiSkp6WE5ORkxDc1N6LUlETWFoZWZGUG03XzBrRDZUOEFDQVEteHNLT0hnWVIzbmJDN0hZaHpiVW91VVlNMXQ5WTd5XzAyVGFGemoxeFRRcEF3ZHV5NE9tODhXZFROZXl0?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google Sets December 10 Launch for Smart Glasses with Privacy Safeguards - Analytics Insight](https://news.google.com/rss/articles/CBMivAFBVV95cUxNenBfOUNHdlREX3E1T1Q5Wmd4bnVoSTJJMGxiRlNVM3NDdlptZ0M5MENabTBBUFNvbV9oNFZaOU9LOHJXOVo1SGNBbllUME5haDhiM0ptc3V2YXMxYkpKelhOTkZMQ3NTei1JRE1haGVmRlBtN18wa0Q2VDhBQ0FRLXhzS09IZ1lSM25iQzdIWWh6YlVvdVVZTTF0OVk3eV8wMlRhRnpqMXhUUXBBd2R1eTRPbTg4V2RUTmV5dNIBvAFBVV95cUxNenBfOUNHdlREX3E1T1Q5Wmd4bnVoSTJJMGxiRlNVM3NDdlptZ0M5MENabTBBUFNvbV9oNFZaOU9LOHJXOVo1SGNBbllUME5haDhiM0ptc3V2YXMxYkpKelhOTkZMQ3NTei1JRE1haGVmRlBtN18wa0Q2VDhBQ0FRLXhzS09IZ1lSM25iQzdIWWh6YlVvdVVZTTF0OVk3eV8wMlRhRnpqMXhUUXBBd2R1eTRPbTg4V2RUTmV5dA?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -270,7 +271,6 @@ Generated: `2026-11-14T05:30:01.417466+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Put Privacy Ahead of Livestreaming, Unlike Meta’s - SammyGuru](https://news.google.com/rss/articles/CBMigAFBVV95cUxQcEFUUlRxcU5UUGRFNmItYktlV2VKTHNfVXNqNlk1bUw5dllDY0ptMnJnUnhDb2VDYjJPUWhQWnBKM0kwU0JRNUZvVFF1enRxTDZ0M2FxM0dlektxQ2E2dGNsVUpNc0VVS0JwSGhDMGpnTWQ2cmdRaV9EcjZZcUpKMQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
