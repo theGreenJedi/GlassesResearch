@@ -1,25 +1,27 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-13T17:47:44+00:00**
+Generated: **2026-11-14T16:38:47+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **389** (not the published count)
-- Unanswered research candidates: **96**
+- Canonical registry size: **392** (not the published count)
+- Unanswered research candidates: **99**
 - Observations this run: **91**
-- New distinct questions: **1**
+- New distinct questions: **3**
 
 ## Source health
 
 - github_issues: ok — 19 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 41 observations
-- google_search_console: ok — 11 observations
+- reddit_rss: partial — 40 observations
+- google_search_console: ok — 12 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000389** — anyone here preordering the samsung / google glasses, or waiting for reviews?
+- **Q-000390** — Would anyone in repair or industrial maintenance find AI glasses with 10-minute recording and SDK access useful?
+- **Q-000391** — Best for Translation?
+- **Q-000392** — what sdks or apis are available for spectacles development? comparison
 
 ## Research queue (first 20)
 
