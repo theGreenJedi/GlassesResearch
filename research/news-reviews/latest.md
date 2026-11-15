@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-15T12:20:33.777481+00:00`
+Generated: `2026-11-15T12:23:34.639496+00:00`
 
 - Intake files inspected: **205**
 - Candidates retained in this review window/history: **7516**
@@ -12,9 +12,9 @@ Generated: `2026-11-15T12:20:33.777481+00:00`
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 603
+- `needs_editorial_verification`: 598
 - `rejected_noise`: 5300
-- `source_review`: 31
+- `source_review`: 36
 - `watching`: 21
 
 ## Action queue
