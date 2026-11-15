@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-15T16:34:27.975741+00:00`
+Generated: `2026-11-15T17:51:22.234890+00:00`
 
-- Intake files inspected: **204**
-- Candidates retained in this review window/history: **7468**
+- Intake files inspected: **205**
+- Candidates retained in this review window/history: **7527**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1520
+- `adjacent_radar`: 1536
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 603
-- `rejected_noise`: 5272
-- `source_review`: 34
+- `needs_editorial_verification`: 591
+- `rejected_noise`: 5314
+- `source_review`: 47
 - `watching`: 21
 
 ## Action queue
@@ -222,7 +222,6 @@ Generated: `2026-11-15T16:34:27.975741+00:00`
 | high | needs_editorial_verification | direct | [AI Glasses Guide: What They Are, How They Work & Best Models 2025](https://www.evenrealities.com/blogs/buyers-guide/ai-glasses-guide) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [AI Glasses Manufacturers Are Emerging... Strengthen the function of preventing invasion of privacy and misconduct - 매일경제](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5lU2RGamFyeGlWUDhsU0hYZ0FiSGM4NndqSjNXR3lpOXUtbDBFbGRWcGJ3VWItSHNBVC1VNC1iU1BiLUtlMXllcDZzZ3lheVNMd1Y4?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Amazon to equip 5,000 delivery drivers with smart glasses, advancing technology-driven last-mile logistics - India Shipping News](https://news.google.com/rss/articles/CBMi3gFBVV95cUxNN3NDX2FkeG9EUkc3TExOWnJWQlhocmYxRkdXUkUyVWlTRDJzVlF0RWJyaVVQaTA4MXF6V18zeHd2M1ZPbl9JX0Z4emZHZlBuZ3NLcTJRRzFLM0FxellOOFlfUVVpWWNqRDMwVDdQWlVNemdYN24xSS1qR3FyWDk5XzhPZ25RbTN0MWZrTlpLNk5FWTlUd29MMjRsZ1pWQ3FvSGppM0tZcmhpTjl6S29OWUE5OWNhb1d6VUxib2ZXcmFKY0JubTBqeGNWejZ5Z0tkbDVRc3ZEXzBaWjhMOVE?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Android Authority Oct 5, 2026 The first national ban on smart glasses could happen soon](https://www.androidauthority.com/norway-smart-glasses-temporary-ban-3719248/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Apple’s Siri AI smart glasses are reportedly launching next year, here’s what to expect - 9to5Mac](https://news.google.com/rss/articles/CBMitwFBVV95cUxPVGM0bXlBSmxpclV6TkFOTnhGWFExXzdCaW56dEdyUjhNbGdTRVNIVi1ZaXlRbEh3bFFWaC1CRGRGUnJmejFTSXROemM3YlFUckVzVGFCMGhGNEstTWx0ODJpRGhnNXdGOHg3NWtTaTl2anJjc3Z0Y3hSZDBlSFJjbmx2MHg5dnlFQU1CSjNEendpZzJkdGRlQ0hvUnV1WWpFWkJZbmpCLXVhSEI2S09zWEdyMHh4S0E?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Apple’s smart glasses are all but confirmed to launch next year - PhoneArena](https://news.google.com/rss/articles/CBMipgFBVV95cUxNNVBXZXl5ZmdsTU9abG9qZjlKWjlEZEtCaXVLcjdLZTFGVVRZc0d5aXNNVlI2eW1UQ3VpQ0RyRFlUY3RUV3RwTmtVYkRsZk5MdFBNbG1JSXRKeGNjM1B5Zzg0ZFZSUHdjWFg1cGdKVzdWYU9WN1RQdHNmNVFMUFYtaW43NWQxUGxiemNTSEFkMUR5V2pfUXlnNXhJMUcxakhyNGRJTlN3?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Auganix Oct 7, 2026 ENGO Launches engo Titanium, 28.9-Gram AR Smart Glasses for Runners and Cyclists](https://www.auganix.org/ar-news-engo-titanium-smart-glasses/) | reachable (200) | research_news_review |
@@ -236,6 +235,7 @@ Generated: `2026-11-15T16:34:27.975741+00:00`
 | high | needs_editorial_verification | direct | [Gentle Monster Brings Its Intelligent Eyewear Collection to NYC Ahead of Its December Launch - Hypebeast](https://news.google.com/rss/articles/CBMivAFBVV95cUxNeE12VEoxekpXUWUxSmhldDd1dnRpbnVuenZGMkJOUDNXMzRtV3ZjWXhRNVJyejRwaC1ZZDl1RE1EUWJPZ2xXX1dvT1hBME1FNEtCdHozX2FINmJBcVQwX2JfYVFwZFdON1dlRTc4ZzBiaVZuRm5hMkNoQ25NOVZNR1hDQ3B4Nzc5NTVVbEwtRGF0UGw5YjZsYW5aWEhXOENZb251a3hmS1NIVlJiem9WSGNYeF9ORl9aNUliMA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Gentle Monster Spills the Beans on Samsung Intelligent Eyewear Launch - SammyGuru](https://news.google.com/rss/articles/CBMiiAFBVV95cUxON3RLYkNBcksyazc0Z0xLc2t1MktKVmk4bzV6cU5WSFNVSldLRXFNZm4zTlZwY3ZtbUExS0prNEp1dzJoVlRTU0dvMkRodlY1SnJpNmw4MXUtZ0toeHBweVA5MjRROFpQR1lxZWs2S3J1WDNZV2sxX0pwOTVuQ0xZVDJIVXVibGF1?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [GitHub - jimrandomh/g2flash: Script for applying custom firmware to ...](https://github.com/jimrandomh/g2flash) | reachable (200) | research_news_review, development_hacking |
+| high | needs_editorial_verification | direct | [Gizmodo 9d ago Smart Glasses Could See Major Bans in the UK](https://gizmodo.com/smart-glasses-ban-uk-2000835682) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google and Samsung to release AI smart glasses in December - The Spokesman-Review](https://news.google.com/rss/articles/CBMingFBVV95cUxNaUxKVkh1TGVsUzFwTFpNdnN5cDkwWEJzcFFQcVh0Qlpfc0VRd2VIQjJzbVVqQ1h6elR4Qm9IbmNsSUFGVGtrZUFnTDFENlBIYXBNNFpsOTFKT0NxaTNLSTcySmpkUTdhdUVDLUFVZ3dHNV9Oc0gtU09XRU5oaFQ3bGVLUnRPYlNPY1oyNzJyUXdHR3lCdFpoTUswMDdlQQ?oc=5) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Google and Samsung’s Gemini smart glasses go on preorder from $395 - The Next Web](https://news.google.com/rss/articles/CBMimgFBVV95cUxPVzY1akpCdjVycnJJUWxFcnE1T1JoX0FXTjJNZEVLNEdYZHFJdUIyZndOMlMyTTI1MmFfTDR1enpzemtFeWJtUW9nem5DUnJHUDRvOE1OeUVaUXJlRVZTRHAxVHhnTmdaN3h5OEF3RkJsbVZSY2pVd2xqMVUyakYxSjVTM0FQZzBFRzhCeWloZE5hMzhOZVQ2REln?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google knows smart glasses have a privacy problem. Here’s how it’s trying to fix it - Toledo Blade](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNb3lZTENHdkswWXU4X19CXzhzWkllLUFSSGtwNk42Q0xNZHBDOFVVVHRsdWNJaXg2czNsV0NWUmNKU0RSRzc2dzQ1RWM4anUzSkx3bi12M1JyNWo1RllFNU8tX2hEbnp1cmRZOWxTZFFadlo1emJNQTRja3pubXlwSVZBRWlpQi1Cc1NObWhBaFlVckVVOVBNdXVEd3daQXhSeUp1Z2JLb2xZdXFkbnZHTlZnLWE5QkpyVzlB?oc=5) | reachable (200) | research_news_review, policy_privacy |
@@ -257,7 +257,6 @@ Generated: `2026-11-15T16:34:27.975741+00:00`
 | high | needs_editorial_verification | direct | [Notebookcheck Oct 5, 2026 Norway plans temporary ban on smart glasses](https://www.notebookcheck.net/Norway-plans-temporary-ban-on-smart-glasses.1416217.0.html) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta & Oakley Meta Launch in Philippines: Official Price - Unbox PH](https://news.google.com/rss/articles/CBMijgFBVV95cUxPdjB0dnNFRXM2ak5mRFlCUEtJdWljdmNOMnBpVHdadVNzaEV6aU5Uak1Ick13bkdScGNmc2JCWFRabXp6N0NjTTJOck1BUnNUVUlaOU5ObG9QRVkzOFJDOW1OVWxFVEs1Y3c1RU0tQWdTdHNncW1qc0c5cmlwV2E3MHlfREJfTVliSVBuRmh3?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Road to VR Oct 7, 2026 Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
-| high | needs_editorial_verification | direct | [SamMobile 2d ago Google’s privacy policies prevent Samsung’s smart glasses from social live-streaming Coverage Samsung](https://www.sammobile.com/news/google-privacy-policy-prevents-samsung-smart-glasses-from-social-live-streaming/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Samsung and Google Smart Glasses Launch at a $395 Base Price - Geeky Gadgets](https://news.google.com/rss/articles/CBMic0FVX3lxTE1uQW41VEdIZGh1MlZ4UUk0cWlhV054bzFXVVRva0xCTDlGeHRsQTJhQXZmRm0tYTNfODA0S2xxTTBXSXJwMHpGX0hzTVVHSHEtX3VhUzN1TGRxWi0wS3A2clo3UGZIbFA0MHhaYXVZOHNuMkE?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Samsung confirms December launch for its Gemini smart glasses - Techish Kenya](https://news.google.com/rss/articles/CBMimgFBVV95cUxPR0l6M3pfSm5DQ0lVMmxvdnZ0Q3p6NzNhc2dzNXloN05WXzNNT1hxNUdzQWxnWkVmTnR5M291QlhGU2p4c3F1bHBYMjNYMlBJUzgxNXhmRUhRWkppN1BxOHBDQTdzZUpJSXg5R0dQUTVNbGxsWDZCa3JBVVFDNWRmQS12dDVQTHJKMFl1cWM2ZkV5TWU0dTl4OFJR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung Intelligent Eyewear Launch Timeline Surfaces Online - Gadgets 360](https://news.google.com/rss/articles/CBMimgFBVV95cUxPaUEwbUw5MGhjcXBIeW5EWGdwdlFCUTc4aHJUSW9HemZFWkJ3VTUxTHpXT3kzSTRqRDZnampKTmhWZVlzRVVWd25QSlRsYVA4LU9PSU1fczNrcllsLXlzU2Q1b3gtU3o1dVFub05ldHVsU3F2bUNKcl9rNHRFR3AwMVJTZ1VuZnFQQjFPSnFLX3NTc1pZLXlaRW5R0gGfAUFVX3lxTE9VQVpBOGNuVFZNY3dUc3llRk93WWxpTnFJWFBVa3VjeHJhOWc4MDA1ZE1Pa3NGc1lhY1F5R0xDWEpGRkxZanVjRDJNVkFZUlI1aW15ckhNSVNJOER6bkhsbjR6cU5CcGdrX2VsRld5MnNwY191QThkdGpuTDF6ZkV6SWtWNnZBSk4xM0dQdWNPZENZNTByYlpHV1hTOEJlRQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -271,6 +270,7 @@ Generated: `2026-11-15T16:34:27.975741+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaUlOM1NCSUNQTVhtSFI0TXZZb1lYMDhjak5CUDBSbzlJSDJqNmd5SHVwaDBFOGRzWGJJYThka0NDeF9QSUJGS05YakN3T1lPNEJTZWFWNGpWZ3ZQUlh3T0lndlJKVkIzR1ZodnMzanZEUF9qRk91MS1pTlR0YlJaM2lUQlptMXhEaEZiTW1EU3UtWjYteE15RVpJZVR5SU1MTG5YcmlSbWpyZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0ZYVFZtQXhwY0d6Z19xdE9qVnFYZDhBa09MT0Z6Mml5dWZGa3JvOUFoTFp6YzFnQzd6NlpwdHNEZ18wTHpPTnpYQkVWS0M0bTU0eldOWGVGMGd5dzFNSzJHNVVkNnNkV0lCbjdXS0Y0ZVlkYVdqRjlvNndxaklUZmItZG1uRWtoZ0lHWWxjOVp4V3o1Uk9oWUs4SWp5WGRYb0JiOFdR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
