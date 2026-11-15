@@ -1,27 +1,30 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-14T16:38:47+00:00**
+Generated: **2026-11-15T17:14:17+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **392** (not the published count)
-- Unanswered research candidates: **99**
-- Observations this run: **91**
-- New distinct questions: **3**
+- Canonical registry size: **398** (not the published count)
+- Unanswered research candidates: **105**
+- Observations this run: **93**
+- New distinct questions: **6**
 
 ## Source health
 
 - github_issues: ok — 19 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 40 observations
-- google_search_console: ok — 12 observations
+- reddit_rss: partial — 39 observations
+- google_search_console: ok — 15 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000390** — Would anyone in repair or industrial maintenance find AI glasses with 10-minute recording and SDK access useful?
-- **Q-000391** — Best for Translation?
-- **Q-000392** — what sdks or apis are available for spectacles development? comparison
+- **Q-000393** — Anyone have any recommendations for smartglasses that work with tagalog?
+- **Q-000394** — Recommendations for smart glasses?
+- **Q-000395** — Is the Meta Adventurer's camera really worse than the Rayban Gen2's?
+- **Q-000396** — are ai glasses bluetooth enabled?
+- **Q-000397** — are smart glasses worth it if i need a prescription?
+- **Q-000398** — which smart glasses work with both iphone and android without being locked to one ecosystem?
 
 ## Research queue (first 20)
 
