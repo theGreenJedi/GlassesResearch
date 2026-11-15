@@ -1,26 +1,27 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-15T09:31:07.372708+00:00`
+Generated: `2026-11-15T11:13:05.738097+00:00`
 
-- Intake files inspected: **204**
-- Candidates retained in this review window/history: **7454**
+- Intake files inspected: **206**
+- Candidates retained in this review window/history: **7520**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1533
+- `adjacent_radar`: 1544
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 600
-- `rejected_noise`: 5247
-- `source_review`: 35
+- `needs_editorial_verification`: 603
+- `rejected_noise`: 5300
+- `source_review`: 34
 - `watching`: 21
 
 ## Action queue
 
 | Priority | State | Relationship | Candidate | Source check | Routes |
 |---|---|---|---|---|---|
+| high | needs_editorial_verification | direct | [Samsung Google Smart Glasses Launch Date, Price Revealed: Gemini AI, 12MP Camera and 9-Hour Battery - Dainik Jagran MP CG](https://news.google.com/rss/articles/CBMivgFBVV95cUxOVzBNaS1pM01yQXBBYUVoeUNlWjRPUEhmSWpjTHdWQ1Nac3lHM3JUVlRoR282TEItc1VPbDRkUFkzdm9vTXAzMjRpTERZS0ZzVkhsd0FlZDU1bjJRaVBxdjE2a01PNlUzeUFLYXZFcXdFM3pmYlZOQktjMWJzbE5CM2xJcWR2M1g2OEpmcHhPMHNORU45NnRBbG1IUEVYcVlFQWZVakpvaF9DcTQ0czJLTXBQQUNQMGwxYTJkdVJn?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Gentle Monster’s AI glasses: preorder plan and December launch target - NeoTeo](https://news.google.com/rss/articles/CBMimAFBVV95cUxPMmhNT0ZqNml4WFdsNFc1NF92Z3lxbjd4T084V2xVSmhJMmp4RFdVYlhrU2J3YWtIVldDTnZPTGJMRGppY3k4S0tHdkFpSFlXU3NtZXZ6MEtmX19tekN6RDd6aUY4MEFOMTVrYUNrUGlWbUh4QXc5TzNmeFByOHlJX09jS1c4X3J0d0NBaTNILU1qTkM0Z1I3RQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google and Samsung's first Android XR smart glasses open for preorder from $395 with Warby Parker and Gentle Monster - MLQ.ai](https://news.google.com/rss/articles/CBMi0AFBVV95cUxObW1KaGsxVVY3ZWZlZzJ5M296X2lwdjJ0SlpVLTJhb3Ezdlk2T2RrZTFVSFNlbGNMZTRuUnRfbTAtallleTNPQTllRlU1eWplMUozVFBaX01vM1A0bGM5SFZGR0JSUGNQR2R2N1FfX2RaVDUwamMxTW1GZTVDRlRhSFJOREpobEgxVm1fUGtwb2R6VEM5eE5NbnlCLVRwdnplTUtzSmgzZFQ2R0JpRmp5TFgycXhaeXk1MWFLclM5LUVnRi1WYjJuYUt2eGZpaWNK?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google to launch AI-powered smart glasses in partnership with Samsung - AzerNews](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1faXlPNHlwUTM0R3dsQ2R5cU84MjN0eFJiNmpNeFVQdWpreEoyS2hnMTZwVkU3ZjhyeUZmMmpldVlVWDh2LXlCYXZ0eVlsdmsya05aVg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -159,6 +160,7 @@ Generated: `2026-11-15T09:31:07.372708+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1413](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1413) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1416](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1416) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1421](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1421) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Samsung intelligent eyewear to launch on December 10 with Gemini AI, 12MP camera; price starts at $395 - Moneycontrol.com](https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTzZkemNFSGQ2THNCeFNxQnYtd2VvZEdabi1BUGFhdkt0aW1ZT3pZNUdyaG92YVllMjJqcjN1NmpxbkR4SE9xQXVsRU9VTmRBRHY4a0RoSlBYbEhMZXAxZ0VQRGxIY0I1RlFnaGRqOVJuZ3Nqek1XWmxzc0tjeVgyNDlFNHU3cGxhZnlKejdKXzdXUUNkR3YtUkFfVEE1QndNQjByZkpGaDFvMm4tckVNLWlQRVlCUnFXaHFtbDhuWE5DVVhGYWd4YnNLUDdfcEloaDNCSWNSV1I1TmxoMXI1OHU2UmZsWU1oeDgwRjhhRXNReWPSAfgBQVVfeXFMT1RSRmNUczJYbFBpQ3g4R2Q2VUY2b2pRLTNPRjVtZ0dmcE1aSGk5dTRidlZaZTBkMDRTcVg1cEpkZWhncUcxNXZ6OER6TFduZmpZalRBRFB0OF9zN2xsVDBlZGJxLTlmS2IycnVYRWdJU1FvZGI0bEU3UVFXYWQzZWZHOVBEVXR1bDBBMjJIOFNYZXhYdHZjRVdrLXRkcVhaTUVUcjVpdjhfZXlyanFVd1lLbnQydG1iRlZURTNuX2JFRUVzd0JrRXktelVwazFDeVFXVDVCa0lfN3kwU0JOX2hiMFRDX1pNTm5lMjd0S3l4alFLTEwxREM?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Samsung’s AI Smart Glasses Launch On December 10 With Gemini, 12MP Camera - Editorji](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRGFhcExiVnh4cTJqcGhZWmpmNkhZM3RORS1udUhlNEI2R2tFc0syRnJ5MjVHbHhKOVcxZ0V0UU1MUTF0d2xXcGs0TzJrMjF4NWpxSnhkdHoxWWl2VFlPWGhzRk9wYjRUSG5GbHBhNGpJazJQNmkzbUJ3YkpUS2ZZenBpRFBXc3pabnA2TnVKeFpUQ004cWxBWmhmOTZTY0I1ZkNoTGJRTDN2Smo3ZVNyaDJjLXdnOWVRb2U0RENadEptVHPSAcMBQVVfeXFMT0RhYXBMYlZ4eHEyanBoWVpqZjZIWTN0TkUtbnVIZTRCNkdrRXNLMkZyeTI1R2x4SjlXMWdFdFFNTFExdHdsV3BrNE8yazIxeDVqcUp4ZHR6MVlpdlRZT1hoc0ZPcGI0VEhuRmxwYTRqSWsyUDZpM21Cd2JKVEtmWXpwaURQV3N6Wm5wNk51SnhaVENNOHFsQVpoZjk2U2NCNWZDaExiUUwzdkpqN2VTcmgyYy13ZzllUW9lNERDWnRKbVRz?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Alphabet Stocks Rise 1.19% as Gemini 4 Hydrogen and $395 AI Glasses Launch - TradingView](https://news.google.com/rss/articles/CBMizAFBVV95cUxNMDRveGdzOXVsbjdad1pGX0h2bkVUWkszQVBrUEtfb0tORW1pS1FlTmZjYkFBbmhBcFAxNUJjTXk0eTdLOERLeFY0OTNrdW1oU0RVdUhHUnhHT0JmSXRyaE5KMkdOQnN5TzVoSURpVmdVclp5eHhtdVNNLVpORzVEeXU5T1lWNDl3dmZzY2tOZGxtd2dydF9lNkl2SFZaX3F3cmw4S0JieFVfVnJ4WVZiWFhkQzRMOEQyTjNud05vRVBVR1hFWEhiRWdwV1Q?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -269,8 +271,6 @@ Generated: `2026-11-15T09:31:07.372708+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Rumored to Launch Mid-December - Phandroid](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDl2MjRnOTJpRU9GT1d0eHRIak9pU29vaUR6T1Y5SC1YLXZQV1BGYjYyUWpCYnN6S1RERHozc1ZnQldkbGFwa1dhWVlrNDVJWG5NSDBUZF9PNnFfUFBNSDZhOFlUcnhPRVExSHJLTVpHOUV4LUdhbF84UEdwVVhuYTMtdXZFQVM0RzZWZk5BQ2TSAZYBQVVfeXFMTmhZdWRaaTIyY3hqY24tXzVkSWU3RmlndjZMWldDNEVxdTAxNDZTcno2b29ZNEFBRGxpeFB0b0lHcHZfM0JZeEcyWG4xdzk1S2dlY0k1OENlOHUwWmJvMGNXNjFfZ3FNOGpzWThNaTAwekxoMXE3dXJmS0FKN3ROeDd2T3ZPM2dZcTZjVVNkSExRaGRhZUJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SF Ballet's THE NUTCRACKER to Launch as Immersive XR Experience Through Google and XREAL Glasses - BroadwayWorld](https://news.google.com/rss/articles/CBMi7AFBVV95cUxObWNsSDFORVFlZ0NqTXRGenVsZFZVbnNaVWZkNGJXOW9mR2Fsb1JaaHQzNVpWczl6MVpSVkxRUW5CekJxYzc3V0xuOWFnTjhLVW0yeUF2bkJaV3lfcl9zUThEWG0wdWJiSElLTmZheFgzbDN5ZV9Da1RzNkFGNzFySjROaktjdlNBekRMTC1EVjE4NEhVWXJjdmxTYjNfOXc4dlhhanAxSnZVWlpHV2M4UklYbm92MlpTY2dUYzFUREtTQ3dJODdzN1NpNXFvYlVYT2o0VGZ1MVZwUG5Ibk5jeHFZNnZKcnFNSkd6aQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Shop New Meta Glasses: Prices Starting at $249](https://www.meta.com/ai-glasses/meta-glasses/) | reachable (200) | research_news_review |
-| high | needs_editorial_verification | direct | [Smart Glasses Firmware Research & Analysis - GlassesResearch](https://glassesresearch.org/docs/Firmware/) | reachable (200) | research_news_review, development_hacking, deep_research |
 
 ## Meaning of states
 
