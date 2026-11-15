@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-10-16 → 2026-11-12**.
+Google Search Console page/query pairs for **2026-10-17 → 2026-11-13**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,23 +8,39 @@ Google Search Console page/query pairs for **2026-10-16 → 2026-11-12**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glass developers? | 121 | 0 | 0.00% | 9.4 |
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | top smart glasses developers | 62 | 0 | 0.00% | 9.2 |
-| https://glassesresearch.org/guides/prescription-smart-glasses/ | best prescription glasses platform | 37 | 0 | 0.00% | 8.9 |
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses developers | 29 | 0 | 0.00% | 8.9 |
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 24 | 0 | 0.00% | 2.7 |
-| https://glassesresearch.org/docs/SDK_API_MATRIX/ | what sdks or apis are available for spectacles development? | 18 | 0 | 0.00% | 7.6 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glass developers? | 155 | 0 | 0.00% | 9.3 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | top smart glasses developers | 65 | 0 | 0.00% | 9.2 |
+| https://glassesresearch.org/guides/prescription-smart-glasses/ | best prescription glasses platform | 46 | 0 | 0.00% | 9.0 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses developers | 33 | 0 | 0.00% | 8.9 |
+| https://glassesresearch.org/docs/SDK_API_MATRIX/ | what sdks or apis are available for spectacles development? | 30 | 0 | 0.00% | 7.7 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 27 | 0 | 0.00% | 2.7 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses app development studio | 15 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/evidence/EV-0046-Even-G1-G2-service-survival/ | "even g2" firmware quicknote conversate update | 13 | 0 | 0.00% | 9.3 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best wireless sunglasses | 10 | 0 | 0.00% | 6.0 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best wireless sunglasses 2024 | 8 | 0 | 0.00% | 6.9 |
-| https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 8 | 2 | 25.00% | 9.0 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source smart glasses | 5 | 0 | 0.00% | 4.6 |
+| https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 8 | 1 | 12.50% | 9.0 |
+| https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source smart glasses | 4 | 0 | 0.00% | 4.5 |
+| https://glassesresearch.org/docs/SDK_API_MATRIX/ | what sdks or apis are available for spectacles development? comparison | 3 | 0 | 0.00% | 4.3 |
 | https://glassesresearch.org/docs/COMPARISON_ENGINE/ | inmo air 3 industrial version vs realwear vuzix iristick | 3 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | best open source ar glasses | 2 | 0 | 0.00% | 4.5 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | ar glasses open source | 2 | 0 | 0.00% | 8.5 |
+| https://glassesresearch.org/ | smart glasses for research | 2 | 0 | 0.00% | 9.0 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best sunglasses for developers | 2 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/guides/smart-glasses-with-displays/ | best comfortable smart display | 2 | 0 | 0.00% | 9.5 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | opensource smart glasses | 2 | 0 | 0.00% | 10.0 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | top ai glasses app developers recommendations | 2 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/guides/smart-glasses-with-displays/ | which smart displays can recognise individual faces? | 2 | 0 | 0.00% | 10.0 |
+| https://glassesresearch.org/evidence/EV-0074-Maverick-AI-primary-product/ | maverick ai glasses | 1 | 0 | 0.00% | 1.0 |
+| https://glassesresearch.org/guides/prescription-smart-glasses/ | can oakley meta glasses be made with prescription lenses? | 1 | 0 | 0.00% | 1.0 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses app development firm comparison | 1 | 0 | 0.00% | 1.0 |
 | https://glassesresearch.org/docs/RESEARCH_NEWS/ | smart glasses for research | 1 | 0 | 0.00% | 3.0 |
+| https://glassesresearch.org/models/catalog/gls-0002/ | meta specs | 1 | 0 | 0.00% | 4.0 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | what are the best audio glasses brands available to buy in the philippines? | 1 | 0 | 0.00% | 5.0 |
+| https://glassesresearch.org/guides/prescription-smart-glasses/ | are smart glasses worth it if i need a prescription? | 1 | 0 | 0.00% | 5.0 |
+| https://glassesresearch.org/guides/smart-glasses-with-displays/ | smart glasses with hud display | 1 | 0 | 0.00% | 5.0 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | which smart glasses work with both iphone and android without being locked to one ecosystem? | 1 | 0 | 0.00% | 6.0 |
+| https://glassesresearch.org/models/catalog/ | l'atitude 52°n | 1 | 1 | 100.00% | 7.0 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | are ai glasses bluetooth enabled? | 1 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glasses opensource | 1 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/guides/smart-glasses-with-displays/ | best adjustable smart display | 1 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/guides/smart-glasses-with-displays/ | best glasses with screen | 1 | 0 | 0.00% | 7.0 |
@@ -35,29 +51,13 @@ Google Search Console page/query pairs for **2026-10-16 → 2026-11-12**.
 | https://glassesresearch.org/docs/RESEARCH_NEWS/ | memomind one sdk | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/docs/news/articles/2026-09-19-right-to-repair-smart-glasses/ | acme revival meta luxottica lawsuit | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/docs/news/articles/2026-10-24-mentra-account-link-and-home-layout/ | pr4947 | 1 | 0 | 0.00% | 8.0 |
+| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | hands-free smart glasses? comparison | 1 | 0 | 0.00% | 8.0 |
+| https://glassesresearch.org/models/BoseFrames/ | bose frames | 1 | 0 | 0.00% | 8.0 |
 | https://glassesresearch.org/models/catalog/ | best prescription glasses platform | 1 | 0 | 0.00% | 8.0 |
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best sunglasses for developers | 1 | 0 | 0.00% | 9.0 |
-| https://glassesresearch.org/docs/faq/ | smart glasses for research | 1 | 0 | 0.00% | 10.0 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best ar glasses developers? free | 1 | 0 | 0.00% | 9.0 |
+| https://glassesresearch.org/guides/smart-glasses-with-displays/ | vision pro led display alternatives | 1 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/docs/faq/01-basics/ | what is the difference between monocular and binocular smart glasses displays? | 1 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/docs/news/articles/2026-09-24-inmo-air3-cpsc-recall/ | what are the main complaints about the inmo air3 battery life display and software? | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glasses with camera | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | opensourcesmartglasses | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glass open source | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | top ai glasses app developers recommendations | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/smart-glasses-with-displays/ | best smart glasses with heads up display | 1 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | open source smart glasses | 48 | 0 | 0.00% | 19.6 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth smart glasses | 35 | 0 | 0.00% | 20.5 |
-| https://glassesresearch.org/guides/open-source-smart-glasses/ | smart glasses open source | 19 | 0 | 0.00% | 18.5 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses with camera and bluetooth | 16 | 0 | 0.00% | 28.1 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best bluetooth glasses | 15 | 0 | 0.00% | 25.5 |
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses app development studio | 13 | 0 | 0.00% | 10.1 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses with bluetooth | 12 | 0 | 0.00% | 22.5 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | smart glasses bluetooth | 10 | 0 | 0.00% | 20.4 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth audio glasses comparison | 7 | 0 | 0.00% | 27.7 |
-| https://glassesresearch.org/guides/prescription-smart-glasses/ | smart prescription comparison | 5 | 0 | 0.00% | 12.0 |
-| https://glassesresearch.org/guides/bluetooth-smart-glasses/ | bluetooth audio glasses best models | 5 | 0 | 0.00% | 26.2 |
-| https://glassesresearch.org/guides/smart-glasses-for-calls-and-music/ | best bluetooth glasses for music and calls | 4 | 0 | 0.00% | 10.2 |
-| https://glassesresearch.org/ | research glasses | 4 | 0 | 0.00% | 14.2 |
 
 ## How to use this report
 
