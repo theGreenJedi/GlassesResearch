@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-15T11:13:05.738097+00:00`
+Generated: `2026-11-15T11:34:16.824660+00:00`
 
-- Intake files inspected: **206**
-- Candidates retained in this review window/history: **7520**
+- Intake files inspected: **205**
+- Candidates retained in this review window/history: **7516**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1544
+- `adjacent_radar`: 1543
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
 - `needs_editorial_verification`: 603
 - `rejected_noise`: 5300
-- `source_review`: 34
+- `source_review`: 31
 - `watching`: 21
 
 ## Action queue
@@ -27,8 +27,6 @@ Generated: `2026-11-15T11:13:05.738097+00:00`
 | high | needs_editorial_verification | direct | [Google to launch AI-powered smart glasses in partnership with Samsung - AzerNews](https://news.google.com/rss/articles/CBMiVEFVX3lxTE1faXlPNHlwUTM0R3dsQ2R5cU84MjN0eFJiNmpNeFVQdWpreEoyS2hnMTZwVkU3ZjhyeUZmMmpldVlVWDh2LXlCYXZ0eVlsdmsya05aVg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google to launch AI-powered smart glasses in partnership with Samsung - Today.Az](https://news.google.com/rss/articles/CBMiU0FVX3lxTE55ZzluSzhsUW50MjVMUnZub1UtamF6ZjktVEZDQVJBbDE2UHBEN1pTbVk5UDFnZF9Hc2tVbi00S1FjcnpBMjRsMDhXejc2WVZteTNR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google to launch AI-powered smart glasses in partnership with Samsung - Today.Az](https://news.google.com/rss/articles/CBMiWEFVX3lxTE81LXBCclN2VmQ5NjFLaDJCVDJ2SXFIT21OVkRvWFJDRDRKRnJneXlFLWg5YzAyNmpHMUNzR0VGdUxEZXZKOGl0X1FmWFA0MXVvcWFQNWUtcVU?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Just Arsenal, Ray Parlour and AI Glasses: Fun At The Oakley Meta Partnership Launch - Just Arsenal News](https://news.google.com/rss/articles/CBMitwFBVV95cUxOaTJ2WjQ3ZTJNbmMxMWhJdHRLUUpfRFNibjg3Um9DMjRld1RKeklZNlVzck9xc0ZSLXVQVzB6bHNTOFVhQkVwRUtIbGZMQmpfOGd1cGhSdlZidEZYWU1KcDR6Vkd2XzVKbFlJNnhRbDdfaXRoYjV1OG9fUUk1UnJ6UGVwZnlSclVEYjhQSnZGTTBrOHNPTWd6QUc3ZzZpalZZU21JZHhpeHNocVR5eUE1UzlfZjl1V0HSAbwBQVVfeXFMTXV2TlhRVkM3d3VfMm9Pd0llcXpaSHE5M3FJN09yS1E0aE1WekpZN0h1THhpeFlfa1Y1cVR6NmljMlpRaWtMeU5mY3FWanppVDhtNkJIaklITy1feW94elBpeXdIV2tEYXQ5LWNaazJZMGxSRmk0MDlDaGhHRHNyc0pkMFNFUXhXUzJvTS1iQzhIUkJYWno4djQ3MlhzdjNIZkxDRFA4NDV3MWJzMDFrMURuSUxDVGhQM2pvbXo?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Just Arsenal, Ray Parlour and AI Glasses: Fun At The Oakley Meta Partnership Launch - Just Arsenal News](https://news.google.com/rss/articles/CBMivAFBVV95cUxNdXZOWFFWQzd3dV8yb093SWVxelpIcTkzcUk3T3JLUTRoTVZ6Slk3SHVMeGl4WV9rVjVxVHo2aWMyWlFpa0x5TmZjcVZqemlUOG02QkhqSUhPLV95b3h6UGl5d0hXa0RhdDktY1prMlkwbFJGaTQwOUNoaEdEc3JzSmQwU0VReFdTMm9NLWJDOEhSQlhaejh2NDcyWHN2M0hmTENEUDg0NXcxYnMwMWsxRG5JTENUaFAzam9tetIBvAFBVV95cUxNdXZOWFFWQzd3dV8yb093SWVxelpIcTkzcUk3T3JLUTRoTVZ6Slk3SHVMeGl4WV9rVjVxVHo2aWMyWlFpa0x5TmZjcVZqemlUOG02QkhqSUhPLV95b3h6UGl5d0hXa0RhdDktY1prMlkwbFJGaTQwOUNoaEdEc3JzSmQwU0VReFdTMm9NLWJDOEhSQlhaejh2NDcyWHN2M0hmTENEUDg0NXcxYnMwMWsxRG5JTENUaFAzam9teg?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1237](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1237) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1241](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1241) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -96,7 +94,6 @@ Generated: `2026-11-15T11:13:05.738097+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1395](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1395) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1396](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1396) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-beta.1399](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-beta.1399) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
-| high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1229](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1229) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1230](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1230) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1231](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1231) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.4.0-dev.1232](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.4.0-dev.1232) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
@@ -271,6 +268,9 @@ Generated: `2026-11-15T11:13:05.738097+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s Meta-rivalling smart glasses tipped for imminent launch - Trusted Reviews](https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHlKUllOeXpLdVlWZHFXbHBWZ2tsQzJGd0VIdGhhd2ozZTJpb0dYdUNENDlkcDlkd05wdW04dTV5QU5Tem9lVmZCb3BmdHE1T0Z0clhIeXFMZWs2aU9zeXFBcXEwak9OYTlCRnJtSEVuS2tCRVZsMzRuUGU2amNraTNGX1ZGanlGOG0zUDZOQjlkUXZ5UlBRR2s2WWJGUzk0anc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Smart Glasses Rumored to Launch Mid-December - Phandroid](https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDl2MjRnOTJpRU9GT1d0eHRIak9pU29vaUR6T1Y5SC1YLXZQV1BGYjYyUWpCYnN6S1RERHozc1ZnQldkbGFwa1dhWVlrNDVJWG5NSDBUZF9PNnFfUFBNSDZhOFlUcnhPRVExSHJLTVpHOUV4LUdhbF84UEdwVVhuYTMtdXZFQVM0RzZWZk5BQ2TSAZYBQVVfeXFMTmhZdWRaaTIyY3hqY24tXzVkSWU3RmlndjZMWldDNEVxdTAxNDZTcno2b29ZNEFBRGxpeFB0b0lHcHZfM0JZeEcyWG4xdzk1S2dlY0k1OENlOHUwWmJvMGNXNjFfZ3FNOGpzWThNaTAwekxoMXE3dXJmS0FKN3ROeDd2T3ZPM2dZcTZjVVNkSExRaGRhZUJB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SF Ballet's THE NUTCRACKER to Launch as Immersive XR Experience Through Google and XREAL Glasses - BroadwayWorld](https://news.google.com/rss/articles/CBMi7AFBVV95cUxObWNsSDFORVFlZ0NqTXRGenVsZFZVbnNaVWZkNGJXOW9mR2Fsb1JaaHQzNVpWczl6MVpSVkxRUW5CekJxYzc3V0xuOWFnTjhLVW0yeUF2bkJaV3lfcl9zUThEWG0wdWJiSElLTmZheFgzbDN5ZV9Da1RzNkFGNzFySjROaktjdlNBekRMTC1EVjE4NEhVWXJjdmxTYjNfOXc4dlhhanAxSnZVWlpHV2M4UklYbm92MlpTY2dUYzFUREtTQ3dJODdzN1NpNXFvYlVYT2o0VGZ1MVZwUG5Ibk5jeHFZNnZKcnFNSkd6aQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Shop New Meta Glasses: Prices Starting at $249](https://www.meta.com/ai-glasses/meta-glasses/) | reachable (200) | research_news_review |
+| high | needs_editorial_verification | direct | [Smart Glasses Firmware Research & Analysis - GlassesResearch](https://glassesresearch.org/docs/Firmware/) | reachable (200) | research_news_review, development_hacking, deep_research |
+| high | needs_editorial_verification | direct | [Smart Glasses: The Only Privacy Nightmare Apple Can’t Solve - آي-فون إسلام](https://news.google.com/rss/articles/CBMirAFBVV95cUxQaGJPTFRObllUU0RLZTVDVEVhM3lVYVZtTktCNjVVUG8yNnVqR0FfYy1WTzl3ME5vUVo5a3p4bG5MY1dFQ2NhWE1sYmFRZkFCT3FJVXFMazRucVFfdlBReVdadHBVSDl4dE1jdVVGYWJIZ19Jb1pGaXJ6cl9hRnk4LUJpZ3FMX0RUUUV0bURuTFZCRVROclV2dDc4eEhyM3RXb0J2b1pfaDJaRzRN?oc=5) | reachable (200) | research_news_review, policy_privacy |
 
 ## Meaning of states
 
