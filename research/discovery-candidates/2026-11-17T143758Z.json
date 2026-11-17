@@ -1,0 +1,1490 @@
+{
+  "schema": 3,
+  "discovered_utc": "2026-11-17T11:01:24.136054+00:00",
+  "candidate_count": 46,
+  "classifier_irrelevant_count": 31,
+  "precision_rejected_count": 0,
+  "channel_counts": {
+    "adjacent": 14,
+    "broad_web": 17,
+    "developer": 13,
+    "manufacturer_catalog": 1,
+    "retail": 1
+  },
+  "relationship_counts": {
+    "direct": 1,
+    "enabling": 0,
+    "adjacent": 14,
+    "speculative": 0,
+    "irrelevant": 31
+  },
+  "type_counts": {
+    "model": 2,
+    "review": 2,
+    "video": 3,
+    "news": 18,
+    "tool": 17,
+    "sdk": 14,
+    "policy": 1,
+    "retail": 5,
+    "community": 5
+  },
+  "routing_counts": {
+    "adjacent_radar": 14,
+    "development_hacking": 3,
+    "model_catalog_review": 1,
+    "policy_privacy": 1,
+    "reject_noise": 31,
+    "report_card_evidence": 4,
+    "research_news_review": 15,
+    "retail_rebrand_review": 2
+  },
+  "policy": {
+    "collection": "high recall across ordinary search surfaces",
+    "classification": "relationship + content type + routing target before review",
+    "publication": "editorial verification required",
+    "retail": "lead only; resolve manufacturer/OEM/rebrand before canonical identity",
+    "research": "source lead; classify question answered before promotion",
+    "community": "attributed experience lead; never canonical specification evidence by itself",
+    "watch_pages": "once a high-value source is discovered, retain it as a durable watch while measuring broad-query recall separately"
+  },
+  "collector_errors": [
+    {
+      "channel": "manufacturer_catalog",
+      "url": "https://dumall.baidu.com/product/902971303493639",
+      "error": "<urlopen error _ssl.c:1129: The handshake operation timed out>"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "74f528eccdff5bd9",
+      "title": "Manufacturer catalog lead: inmo go3 reviews what customers say about ai translation and teleprompter glasses",
+      "url": "https://www.inmoxr.com/blogs/news/inmo-go3-reviews-what-customers-say-about-ai-translation-and-teleprompter-glasses",
+      "summary": "Same-domain catalog/developer link discovered from https://www.inmoxr.com/",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://www.inmoxr.com/",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "74c6be76ee9c563d",
+      "title": "Jasper TN Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/jasper-tn/",
+      "summary": "Zillow has 27 homes for sale in Jasper TN. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "retail"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3968969a19762a9d",
+      "title": "Voice Acceptable Use Policy - Google Help",
+      "url": "https://support.google.com/voice/answer/9230450?hl=en",
+      "summary": "Please follow these policies when using Google Voice. When we identify a potential policy violation, we may review and take action, including limiting or terminating a user’s access to Google Voice. Spam and Commercial Use Do not send or facilitate the transmission of spam, large numbers of commercial messages, or automated messages.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "review",
+        "policy"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfad409cc75ed167",
+      "title": "Business News Today: Stock Markets, Financial News, India Business ...",
+      "url": "https://m.timesofindia.com/business",
+      "summary": "Check latest updates on business, finance, budget and economy from across the world. Get daily updates for BSE Sensex, Share price, Stock markets, BSE, NSE, Nifty, business news on various sectors and much more from Times of India Business.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "18ad5cc540f9c92c",
+      "title": "Chennai Videos | Watch Chennai News Video Online",
+      "url": "https://m.timesofindia.com/videos/chennai",
+      "summary": "Checkout latest Chennai Videos, Chennai News Video at Times of India. Watch trending Chennai Videos Online Today & stay updated",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "592e4eee84f3fbd7",
+      "title": "Delhi Videos | Watch Delhi News Video Online - Times of India",
+      "url": "https://m.timesofindia.com/videos/delhi",
+      "summary": "Checkout latest Delhi Videos, Delhi News Video at Times of India. Watch trending Delhi Videos Online Today & stay updated",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff2fa3fc766139d6",
+      "title": "Free Horoscope Today Online : Daily, Weekly, Monthly & Yearly Horoscope ...",
+      "url": "https://m.timesofindia.com/astrology/horoscope",
+      "summary": "Online astrology reading is very common practice now a days and everyone is very keen to know about their marriage, love - relationship, money, health, job and career so that they can plan things in a better way and Time of India is one of the most genuine and leading website, where you can check out your Daily, Weekly, Monthly and Yearly Horoscope. Also, you can check about planets, their ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5bb47f4cb5f264e3",
+      "title": "Jasper, TN Estate Sales around 37347",
+      "url": "https://www.estatesales.net/TN/Jasper/37347",
+      "summary": "View the best estate sales happening in Jasper, TN around 37347. Find pictures, descriptions, and directions to local estate sales & auctions.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d53d94f7f43a8af3",
+      "title": "Latest News, Breaking News, Top News Headlines and Current Affairs ...",
+      "url": "https://m.timesofindia.com/news",
+      "summary": "Latest News Today: Breaking news on Politics, Business, Sports, Bollywood, Education, Science. Latest News on Politics, India, Current affairs. The Times of India Covers all latest breaking news across India and world",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a8124b4e3ef39f04",
+      "title": "Middle East News Today | GCC News | Latest Gulf News, UAE news, Dubai ...",
+      "url": "https://m.timesofindia.com/world/middle-east",
+      "summary": "Middle East News. TOI brings the latest Middle East news headlines, breaking Middle East news and Live Updates. Catch all the Top Latest and Daily news updates from Dubai, UAE, Bahrain and other Arab countries on politics, current affairs, education news at The Times of India.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d6641454e3306760",
+      "title": "TOI - Breaking News, Latest News, India News, World News, Bollywood ...",
+      "url": "https://m.timesofindia.com/",
+      "summary": "Breaking News in India: Read Latest News on Sports, Business, Entertainment, Blogs and Opinions from leading columnists. Times of India brings the Breaking News and Latest News.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0536802b66188976",
+      "title": "Translate by speech - Android phone & tablet - Google Help",
+      "url": "https://support.google.com/translate/answer/6142468?hl=en&co=GENIE.Platform%3DAndroid",
+      "summary": "Translate by speech If your device has a microphone, you can translate spoken words and phrases. In some languages, you can hear the translation spoken aloud. Important: If you use an audible screen reader, we recommend you use headphones, as the screen reader voice may interfere with the transcribed speech.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e303da8c9ebc6d5c",
+      "title": "Translate with Google Pixel Buds",
+      "url": "https://support.google.com/googlepixelbuds/answer/7573100?hl=en",
+      "summary": "Translate with Google Pixel Buds Google Pixel Buds help you translate easily with your Pixel or compatible Android phone. Follow conversations in real-time using Face-to-Face Live Translate mode, or use Explorer Mode to automatically translate ambient sounds.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "74c9653c42840f56",
+      "title": "Tłumaczenie dokumentów i stron internetowych - Komputer - Google ...",
+      "url": "https://support.google.com/translate/answer/2534559?hl=pl&co=GENIE.Platform%3DDesktop",
+      "summary": "Na niektórych urządzeniach można tłumaczyć witryny i dokumenty. Tłumaczenie stron internetowych Ważne: ta funkcja nie jest obsługiwana we wszystkich regionach.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3a9461991af88fca",
+      "title": "World News, Today World News, Latest International News, World Breaking ...",
+      "url": "https://m.timesofindia.com/world",
+      "summary": "World News Today: Read the latest world news headlines, Current International breaking news world wide. In depth analysis and top news headlines world wide.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "526fa4879d581078",
+      "title": "Augmented Reality (AR) vs. Virtual Reality (VR): What's the Difference?",
+      "url": "https://www.pcmag.com/news/augmented-reality-ar-vs-virtual-reality-vr-whats-the-difference",
+      "summary": "Curious about the difference between augmented reality (AR) and virtual reality (VR)? From the Apple Vision Pro to the Meta Quest to the Microsoft HoloLens, we break it down for you.",
+      "discovery_channel": "developer",
+      "query": "AR glasses SDK developer",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d5fff59fc14206b0",
+      "title": "Radar Signal Simulation and Testing Solutions | RDS1000",
+      "url": "https://gnsssimulator.com/solutions/radar-signal-simulation-testing/",
+      "summary": "Explore radar signal simulation and testing solutions for signal generation, receiver evaluation, interference analysis, algorithm validation, and training.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "324bd52a8bd787d0",
+      "title": "Radar Simulation & Test - Konrad Technologies",
+      "url": "https://www.konrad-technologies.com/solutions/adas/radar-test",
+      "summary": "Working together with our global customer base we successfully integrated multiple radar test systems and enabled our customers to test, validate and successfully produce radars that are incorporated in many vehicles driving on the roads today.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d39a0170d7773a48",
+      "title": "Radar Simulators & Target Generators | Intersoft Electronics",
+      "url": "https://intersoft-electronics.com/cns-test-equipment/simulators-and-signal-generators/",
+      "summary": "Radar Environment Simulators (RES®) and Radar Target Generators (RTG) are highly specialized tools for extensive radar testing. This equipment allows to test systems to their absolute limits in lab and factory settings and can be used on-site for in-depth verification of system performance.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a391a6ba519d4849",
+      "title": "Radar System Test - NI",
+      "url": "https://www.ni.com/en/solutions/aerospace-defense/electromagnetic-spectrum-operations/radar-system-test.html",
+      "summary": "Learn how to find radar test system errors before they become costly and ensure the reliability of your systems.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3fa00d307ab720a8",
+      "title": "Radar Systems Test - Solutions Brochure (2024)",
+      "url": "https://www.ni.com/content/dam/web/pdfs/radar_systems_test_solutions_brochure.pdf",
+      "summary": "Today, radar engineers leverage powerful modeling and simulation tools to digitally test designs prior to implementation. However, hardware testing from components to sub-systems to integrated system-level tests is of critical importance to ensure Radar sensors deliver performance once deployed.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "07fb071cbf719c0e",
+      "title": "Radar Target Simulator and Antenna Positioner for Real-Time Over-the ...",
+      "url": "https://ieeexplore.ieee.org/document/9337461",
+      "summary": "Technological achievements in hardware, software, and computational power have made powerful radar target simulators and real-time capable control computers available.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1bf58db988281efa",
+      "title": "Radar Testing Procedures: RF Accuracy & Compliance - MiCOM Labs",
+      "url": "https://micomlabs.com/radar-testing-procedures/",
+      "summary": "Radar compliance standards vary by operating frequency, application, and region. The table below identifies the primary standards your team needs to know before entering any market.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e10156961712949",
+      "title": "Radar Testing | Target Simulators, OTA and PCB QA - rfpcb.org",
+      "url": "https://rfpcb.org/radar/radar-test-and-validation/",
+      "summary": "A comprehensive guide to radar testing covering target simulators, over-the-air (OTA) validation, end-of-line production checks, and the PCB-level quality steps that underpin every reliable radar module.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f6e71d3b17fd0332",
+      "title": "Radar Toolbox - MATLAB - MathWorks",
+      "url": "https://www.mathworks.com/products/radar.html",
+      "summary": "With Radar Toolbox, you can design, simulate, analyze, and test monostatic, bistatic, and multifunction radar systems for airborne, ground-based, shipborne, and ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fe1ac11f0b627d97",
+      "title": "Radar | Keysight",
+      "url": "https://www.keysight.com/zz/en/industry-solutions/aerospace-defense/radar.html",
+      "summary": "Radar Target Simulation Newer radar test system requirements are driving wider bandwidths, more channels, phase coherency, and lower latency. The window of time to test radars to combat new threats is drastically shrinking. It’s critical to adopt a flexible, commercial off-the-shelf (COTS) architecture to solve modern radar target simulation ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "432e90ee0aec5ccd",
+      "title": "UPS claims a package I dropped off “was never shipped”.",
+      "url": "https://www.reddit.com/r/UPS/comments/1c08a1n/ups_claims_a_package_i_dropped_off_was_never/",
+      "summary": "I recently dropped off a package at a UPS store that had a prepaid label. It shows no movement on the tracking number…the recipient never received it. I called and spoke with them twice twice, they said they don’t have any receipt of the package and never scanned it.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1338c29ce6cc2843",
+      "title": "Why does UPS has the absolute worst customer service and how ... - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/up2uhl/why_does_ups_has_the_absolute_worst_customer/",
+      "summary": "Why does UPS has the absolute worst customer service and how do you speak to some with seniority?",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "da155e8f2e5f6b2f",
+      "title": "10 Best Mobile Casinos and Apps for Real Money Games [2026]",
+      "url": "https://onlinecasinosco.com/mobile-casinos/",
+      "summary": "A list of 10 new mobile casinos - most trusted and reliable. Exclusive games to play casino on mobile for real money. Get mobile casino app and win big!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "805411ca8d37c028",
+      "title": "Amazon Prime Video - App on Amazon Appstore",
+      "url": "https://www.amazon.com/Amazon-com-Amazon-Prime-Video/dp/B00N28818A",
+      "summary": "Watch TV shows and movies including award-winning Amazon exclusives.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "retail"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "90bca84894917c36",
+      "title": "Capturing streams from Chaturbate : r/DataHoarder - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/y4au9r/capturing_streams_from_chaturbate/",
+      "summary": "With CamRecorder you can preview your favorite channels from 7 platforms (Chaturbate, Camsoda, Bongacams, Cam4, Stripchat, Flirt4Free, Jerkmate and Streamate), switch directly to the show and record and save the livestream.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d3baf1f0c0b7e46",
+      "title": "Chaturbate, seems like more competition and less tipping these ... - Reddit",
+      "url": "https://www.reddit.com/r/CamGirlProblems/comments/12k1wxd/chaturbate_seems_like_more_competition_and_less/",
+      "summary": "Chaturbate, seems like more competition and less tipping these days?",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eee1109af8bb31c9",
+      "title": "Discover All Events & Activities in Toronto, Canada | Eventbrite",
+      "url": "https://www.eventbrite.ca/d/canada--toronto/events--this-weekend/",
+      "summary": "Looking for events in Toronto, Canada? Whether you're a local, new in town, or just passing through, you'll be sure to find something that piques your interest.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "52b1b4c09d40512b",
+      "title": "Events and Things to do in Toronto, Canada this weekend",
+      "url": "https://www.eventbrite.com/d/canada--toronto/events--this-weekend/",
+      "summary": "Find events happening this weekend in Toronto, Canada. Browse through a variety of activities and interests to plan your perfect day out.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2059c70047026ed8",
+      "title": "Events in Toronto This Weekend — Live List, Updated Every 2 Hours ...",
+      "url": "https://hiddenevents.online/toronto/this-weekend/",
+      "summary": "Every event happening in Toronto this weekend (Friday through Sunday), pulled live from Luma and refreshed every 4 hours. This includes the 78% of Toronto events that never appear on Luma's featured page — the small gatherings, community events, and meetups you'd otherwise miss.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c0c745a85b150812",
+      "title": "Free Events and Things to do in Toronto, Canada this weekend",
+      "url": "https://www.eventbrite.ca/d/canada--toronto/free--events--this-weekend/",
+      "summary": "Looking for things to do in Toronto this weekend? Explore our real-time listings for the best concerts, nightlife, and food and drink experiences. From seasonal festivals and comedy shows to free activities, find your next plan with our constantly updated feed of Toronto's most popular events.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c74787f574e4d83e",
+      "title": "Jewelry for Initial Piercings – Association of Professional Piercers",
+      "url": "https://safepiercing.org/jewelry-for-initial-piercings/",
+      "summary": "• Titanium is a lightweight metal that is ideal for people with concerns about nickel sensitivity. This material can be anodized to create jewelry of different colors without affecting the safety.",
+      "discovery_channel": "retail",
+      "query": "titanium AI glasses ChatGPT site:walmart.com",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "610f34a267f48018",
+      "title": "New Jersey Online Casinos – Best NJ Gambling Sites 2026",
+      "url": "https://onlinecasinosco.com/states/new-jersey/",
+      "summary": "Uncover the best New Jersey online casinos in 2026. Experience top-tier gambling sites with a wide selection of games, generous bonuses, and secure, immersive online betting. Join the forefront of digital gaming in New Jersey for a premier gambling experience.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "47d0fd0cbf0cf112",
+      "title": "Platinum Volkswagen | Family-owned VW dealer in Hicksville, Long Island",
+      "url": "https://platinumvw.com/",
+      "summary": "Family-owned Volkswagen dealer in Hicksville, NY. New Jetta, Tiguan, Atlas, Taos and used inventory. Service at 45 Nelson Ave. CARFAX Top-Rated seven years. 20 minutes from Huntington.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "04aad8574c7eccce",
+      "title": "The best things to do in Toronto this weekend: November 13-15, 2026",
+      "url": "https://secrettoronto.co/things-to-do-in-toronto-this-weekend/",
+      "summary": "Check out our weekly round-up of the best things to do each weekend in Toronto, including events, activities, and more!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c715d15685785ccf",
+      "title": "Things To Do in Toronto this weekend | AllEvents",
+      "url": "https://allevents.in/toronto/this-weekend",
+      "summary": "Looking for things to do in Toronto this weekend? Explore the best festivals, concerts, parties, and workshops on AllEvents. Don't miss out—plan your weekend now!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "731ec0b4b346e554",
+      "title": "Things to Do in Toronto This Weekend: 2-Day Guide [2026]",
+      "url": "https://www.torontotourism.org/things-to-do-in-toronto-this-weekend/",
+      "summary": "The complete guide to things to do in Toronto this weekend. Saturday markets, iconic attractions, Sunday brunches, hidden gems, weather backups & full itineraries.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7e7433474e2d2114",
+      "title": "TOP 10 BEST Things Going on in Toronto This Weekend in Toronto ... - Yelp",
+      "url": "https://www.yelp.ca/search?find_desc=Things+Going+On+In+Toronto+This+Weekend&find_loc=Toronto%2C+ON",
+      "summary": "\"Since the pandemic, it feels like winter events in Toronto have become bigger and more extravagant...\" more",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9ca1047945dce0ab",
+      "title": "Top 10 Tennessee Online Casinos | Gambling Sites in TN (2026)",
+      "url": "https://onlinecasinosco.com/states/tennessee/",
+      "summary": "A clear guide to the top 10 Tennessee online casinos in 2026. Compare TN gambling sites, bonuses, games, and secure payment methods.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7547c412e5f8a1bb",
+      "title": "Toronto Event Calendar & Tickets 2026-2027 This Weekend | SeatGeek",
+      "url": "https://seatgeek.com/cities/toronto/this-weekend",
+      "summary": "Discover events in Torontothis weekend, and buy tickets at the best price on SeatGeek. Find the top things to do in your city this weekend, and explore more shows near you.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e52873aa7ca31914",
+      "title": "Toronto this weekend | Concerts, Festivals, Tickets & Tour Dates - Songkick",
+      "url": "https://www.songkick.com/metro-areas/27396-canada-toronto/this-weekend",
+      "summary": "Buy tickets for every upcoming concert, festival, gig and tour date taking place in Toronto this weekend.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    }
+  ]
+}
