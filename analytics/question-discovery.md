@@ -1,28 +1,25 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-16T20:31:42+00:00**
+Generated: **2026-11-17T19:12:32+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **402** (not the published count)
-- Unanswered research candidates: **109**
-- Observations this run: **89**
-- New distinct questions: **4**
+- Canonical registry size: **403** (not the published count)
+- Unanswered research candidates: **110**
+- Observations this run: **51**
+- New distinct questions: **1**
 
 ## Source health
 
-- github_issues: ok — 19 observations
+- github_issues: ok — 14 observations
 - stackexchange: ok — 20 observations
-- reddit_rss: partial — 34 observations
-- google_search_console: ok — 16 observations
+- reddit_rss: unavailable — all Reddit RSS feeds failed: https://www.reddit.com/r/smartglasses/new/.rss?limit=100: 404 Client Error: Not Found for url: https://www.reddit.com/r/smartglasses/new/.rss?limit=100
+- google_search_console: ok — 17 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000399** — Smart glasses with transparent lenses that support Android XR?
-- **Q-000400** — Importing to an unsupported country. How to make it/will it work?
-- **Q-000401** — apple glasses reportedly won't have their own apps, just your iphone apps through siri. good call?
-- **Q-000402** — which ai glasses are best for small faces?
+- **Q-000403** — which ar glasses offer the lightest full-featured display? free
 
 ## Research queue (first 20)
 
