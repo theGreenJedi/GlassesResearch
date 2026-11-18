@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-18T02:05:50.939763+00:00`
+Generated: `2026-11-18T04:34:06.613890+00:00`
 
-- Intake files inspected: **201**
-- Candidates retained in this review window/history: **7328**
+- Intake files inspected: **200**
+- Candidates retained in this review window/history: **7359**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1538
+- `adjacent_radar`: 1568
 - `catalog_review`: 14
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 611
-- `rejected_noise`: 5104
-- `source_review`: 35
+- `needs_editorial_verification`: 614
+- `rejected_noise`: 5105
+- `source_review`: 32
 - `watching`: 22
 
 ## Action queue
@@ -200,6 +200,7 @@ Generated: `2026-11-18T02:05:50.939763+00:00`
 | high | needs_editorial_verification | direct | [Meta AI glasses launch in UAE from $316 with Etisalat monthly plans starting at $15 - Arabian Business](https://news.google.com/rss/articles/CBMizgFBVV95cUxOR0d4cXE5c2dnRlkyNUNPdGcxQS1NT3FSaUNoU3VLNkdnQm1FOEpWamFpUzB2eU1Cc0tUbGRxNmRWbWN0cjhRWGlpVEVWZGx4Vl92SnNfM0lBTnNNSEpzNDZWQkk0SFlpUXFBM29jbzhjSkhmV0NlUkdiWUN1YkFFUnVDaEdiVS1BSmJ1bk9WdnVnQzNucHBnR1dQbGx4N1piNDhwSWdCWlYzWmdHUzhxTXNjaDc4Zkltdy0yU01GU1M3OXA1WkdRM0V3ZXB6dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Must Read: Smart Glasses Launch Reopens Debate Over Privacy, How Fashion Helped Protect Great Bear Rainforest - Fashionista](https://news.google.com/rss/articles/CBMidkFVX3lxTE9JOGJnNmY5ejRKVWtqT3U3Q3E3bTBrNlJmY1Zxb00xRTZpVkNWeFB5SGNYNU0yVm1LUVVCdFkxeXFRRnk4SEpTSFpmYmx5SHVTSTZwNUt0MWxWa0d3dGRhV1h1U1MxcDZGUzFpM1pSaEMwaHBzc3c?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [OpenSource-Ai-Glasses/docs/FIRMWARE_FLASHING.en.md at main ... - GitHub](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses/blob/main/docs/FIRMWARE_FLASHING.en.md) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
+| high | needs_editorial_verification | direct | [Samsung & Google Finally Enter AI Glasses, Prioritizing a Focused Launch Over Scale - Counterpoint Research](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPYXRqMDZBV2RBaVI4dnZqS2tra0hSZFp4MmZSOTFxU0ZhVFJZbksxbkFlM1F4MnN4enV6NFlTRkJFb0VGRVBsRUYwYVM4QnpDd251c1JKdGo5VF85cktoSjgweDdhV05PZzZPMnQ4Q1hVTUM5R0dCUi1VMThscEw2TktCNU1HT1Z5M05QTlJDcC1MTDNBWTNBYTVNUkVzMktHcEdzamRLbmV3aFFxWkJqaW9YQkFCQi1KNi1MRGpjLWY?oc=5) | reachable (200) | research_news_review, model_catalog_review, deep_research |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Pre-Orders Start November 12th with Dec 2026 Launch - Geeky Gadgets](https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xMDlpUzNYRWFBYWFsNU5jMzhXWkZ4WGlPZnlQbUNhdFJjYWFwVzhubXJBclh5TFdILVZsY1pTcmdJNWRaazJzajIzMTdCdDVsempsZUh1T1JZM1paSkZobVIwZHk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Sell Out Before Launch as Meta Faces New Rival - ChannelNews.com.au](https://news.google.com/rss/articles/CBMipgFBVV95cUxQN1BaeUFGaEJxc1c0OXBWSlJhTWp2UTk5UWtSWlVGVXg0dU1KVHJJQ1h4cmxVZmVyVmNkOU1nckJ2dDBLQ0FqcXlLOWVQdDM1Q3lHXzI1akptV0xYdHpUUkFrTlhqT3pJbWZWWUs1YnBuSjJoYWxzTGdDNTlqSWg1cHUtODhpaWtkWDZKUmNXc2s4SFpwMUZpcUVwRlg2STJUX0tIaTBB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Sell Out Before Launch as Meta Faces New Rival - SmartHouse](https://news.google.com/rss/articles/CBMipAFBVV95cUxPVnJmSE55UExjX2toUUowaWpFbXJIS3lMMURMZUlWbkF1eHRyRmlDQXpvbC12a0l0c2VTbkhiVS1PWUF1cnM3QTFxLU4xX09xOGJkZ2d3ZG53WFJDbWZZOVFzWXJsOXJlNDVEaVpZc1pyWDlBN1UyX1h5ZTJCU2YwRDJIVnRqNDlMSWJXQ0tIQkZFT1lENGpmcEtTbnRjN1lYZ0R4SA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -270,7 +271,6 @@ Generated: `2026-11-18T02:05:50.939763+00:00`
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Gen 2 Is $284 Through November 19, If Meta Emailed You a Code - https://vr.org/](https://news.google.com/rss/articles/CBMikgFBVV95cUxPMkxtWkVRZmZtMDlNNGVHaEdsZkw2Y2tFcE9KMEw0dHYwaEpsaG5sekV3ZE5tVVo1RFFoX3pFWUhET1pQSnFoWXZtZlhhalZTR0pFdXR5SWNtaE5tbE5WVjlDdGlWY3h4QnpYT2VWUDNlbWFiOVFseTBacW0zX2tmRTdCTTA4TEYxRjBYUGJvbEtsZw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Road to VR Oct 7, 2026 Norway Proposes Temporary Ban on Smart Glasses in Public Places](https://roadtovr.com/norway-proposes-temporary-ban-on-smart-glasses-in-public-places/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Samsung and Google Smart Glasses Launch at a $395 Base Price - Geeky Gadgets](https://news.google.com/rss/articles/CBMic0FVX3lxTE1uQW41VEdIZGh1MlZ4UUk0cWlhV054bzFXVVRva0xCTDlGeHRsQTJhQXZmRm0tYTNfODA0S2xxTTBXSXJwMHpGX0hzTVVHSHEtX3VhUzN1TGRxWi0wS3A2clo3UGZIbFA0MHhaYXVZOHNuMkE?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [Samsung confirms December launch for its Gemini smart glasses - Techish Kenya](https://news.google.com/rss/articles/CBMimgFBVV95cUxPR0l6M3pfSm5DQ0lVMmxvdnZ0Q3p6NzNhc2dzNXloN05WXzNNT1hxNUdzQWxnWkVmTnR5M291QlhGU2p4c3F1bHBYMjNYMlBJUzgxNXhmRUhRWkppN1BxOHBDQTdzZUpJSXg5R0dQUTVNbGxsWDZCa3JBVVFDNWRmQS12dDVQTHJKMFl1cWM2ZkV5TWU0dTl4OFJR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
