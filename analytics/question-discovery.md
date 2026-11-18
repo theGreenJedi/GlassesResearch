@@ -1,25 +1,30 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-17T19:12:32+00:00**
+Generated: **2026-11-18T18:53:36+00:00**
 
 - Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
 - Remaining to minimum: **769**
-- Canonical registry size: **403** (not the published count)
-- Unanswered research candidates: **110**
-- Observations this run: **51**
-- New distinct questions: **1**
+- Canonical registry size: **409** (not the published count)
+- Unanswered research candidates: **116**
+- Observations this run: **55**
+- New distinct questions: **6**
 
 ## Source health
 
-- github_issues: ok — 14 observations
+- github_issues: ok — 12 observations
 - stackexchange: ok — 20 observations
 - reddit_rss: unavailable — all Reddit RSS feeds failed: https://www.reddit.com/r/smartglasses/new/.rss?limit=100: 404 Client Error: Not Found for url: https://www.reddit.com/r/smartglasses/new/.rss?limit=100
-- google_search_console: ok — 17 observations
+- google_search_console: ok — 23 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
 
-- **Q-000403** — which ar glasses offer the lightest full-featured display? free
+- **Q-000404** — are there different models or versions of spectacles available?
+- **Q-000405** — do ray-ban meta glasses work with a prescription?
+- **Q-000406** — do smart glasses come in more than one frame style?
+- **Q-000407** — how do snapchat spectacles handle syncing and storage?
+- **Q-000408** — how do snapchat spectacles handle syncing and storage? recommendations
+- **Q-000409** — what styles do ai glasses come in?
 
 ## Research queue (first 20)
 
