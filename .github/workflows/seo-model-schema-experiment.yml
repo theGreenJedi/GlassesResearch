@@ -1,0 +1,30 @@
+name: SEO model-schema isolation experiment
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/experiment_seo_model_schema.py'
+      - '.github/workflows/seo-model-schema-experiment.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  compare-builds:
+    if: github.head_ref == 'experiment/seo-model-schema-20261118' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+          cache: pip
+          cache-dependency-path: requirements-docs.txt
+      - run: pip install -r requirements-docs.txt
+      - run: python scripts/prepare_site.py
+      - run: python scripts/experiment_seo_model_schema.py
