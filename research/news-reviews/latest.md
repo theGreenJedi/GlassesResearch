@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-19T17:19:47.208186+00:00`
+Generated: `2026-11-19T22:17:35.458955+00:00`
 
 - Intake files inspected: **199**
-- Candidates retained in this review window/history: **7240**
+- Candidates retained in this review window/history: **7222**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1535
+- `adjacent_radar`: 1532
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 610
-- `rejected_noise`: 5022
-- `source_review`: 32
+- `needs_editorial_verification`: 614
+- `rejected_noise`: 5002
+- `source_review`: 33
 - `watching`: 22
 
 ## Action queue
@@ -150,6 +150,8 @@ Generated: `2026-11-19T17:19:47.208186+00:00`
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1475](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1475) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1476](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1476) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1478](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1478) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1479](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1479) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
+| high | needs_editorial_verification | direct | [Mentra 3.5.0-dev.1480](https://github.com/Mentra-Community/MentraOS/releases/tag/mentra-v3.5.0-dev.1480) | reachable (200) | research_news_review, model_catalog_review, development_hacking, community_evidence_review |
 | high | needs_editorial_verification | direct | [Samsung intelligent eyewear to launch on December 10 with Gemini AI, 12MP camera; price starts at $395 - Moneycontrol.com](https://news.google.com/rss/articles/CBMi8wFBVV95cUxNTzZkemNFSGQ2THNCeFNxQnYtd2VvZEdabi1BUGFhdkt0aW1ZT3pZNUdyaG92YVllMjJqcjN1NmpxbkR4SE9xQXVsRU9VTmRBRHY4a0RoSlBYbEhMZXAxZ0VQRGxIY0I1RlFnaGRqOVJuZ3Nqek1XWmxzc0tjeVgyNDlFNHU3cGxhZnlKejdKXzdXUUNkR3YtUkFfVEE1QndNQjByZkpGaDFvMm4tckVNLWlQRVlCUnFXaHFtbDhuWE5DVVhGYWd4YnNLUDdfcEloaDNCSWNSV1I1TmxoMXI1OHU2UmZsWU1oeDgwRjhhRXNReWPSAfgBQVVfeXFMT1RSRmNUczJYbFBpQ3g4R2Q2VUY2b2pRLTNPRjVtZ0dmcE1aSGk5dTRidlZaZTBkMDRTcVg1cEpkZWhncUcxNXZ6OER6TFduZmpZalRBRFB0OF9zN2xsVDBlZGJxLTlmS2IycnVYRWdJU1FvZGI0bEU3UVFXYWQzZWZHOVBEVXR1bDBBMjJIOFNYZXhYdHZjRVdrLXRkcVhaTUVUcjVpdjhfZXlyanFVd1lLbnQydG1iRlZURTNuX2JFRUVzd0JrRXktelVwazFDeVFXVDVCa0lfN3kwU0JOX2hiMFRDX1pNTm5lMjd0S3l4alFLTEwxREM?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Samsung’s AI Smart Glasses Launch On December 10 With Gemini, 12MP Camera - Editorji](https://news.google.com/rss/articles/CBMiwwFBVV95cUxPRGFhcExiVnh4cTJqcGhZWmpmNkhZM3RORS1udUhlNEI2R2tFc0syRnJ5MjVHbHhKOVcxZ0V0UU1MUTF0d2xXcGs0TzJrMjF4NWpxSnhkdHoxWWl2VFlPWGhzRk9wYjRUSG5GbHBhNGpJazJQNmkzbUJ3YkpUS2ZZenBpRFBXc3pabnA2TnVKeFpUQ004cWxBWmhmOTZTY0I1ZkNoTGJRTDN2Smo3ZVNyaDJjLXdnOWVRb2U0RENadEptVHPSAcMBQVVfeXFMT0RhYXBMYlZ4eHEyanBoWVpqZjZIWTN0TkUtbnVIZTRCNkdrRXNLMkZyeTI1R2x4SjlXMWdFdFFNTFExdHdsV3BrNE8yazIxeDVqcUp4ZHR6MVlpdlRZT1hoc0ZPcGI0VEhuRmxwYTRqSWsyUDZpM21Cd2JKVEtmWXpwaURQV3N6Wm5wNk51SnhaVENNOHFsQVpoZjk2U2NCNWZDaExiUUwzdkpqN2VTcmgyYy13ZzllUW9lNERDWnRKbVRz?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Warby Parker to Launch First Android XR Audio Glasses for Pre-Order on November 12 - SSBCrack](https://news.google.com/rss/articles/CBMirgFBVV95cUxON1VGODcwYzhrU3k0cjd2LTAxdWkxVUhNdFRXcFN6bnVoX2ZDRUh2Q2hGZm5ub0s4dGlycmlsNm9lZk5QaWpPbzdFQ3NFOFcwMllkUm52WXFhQ0oyRFRyMnBMMXhwNWttMVBJc2dDb25fMkZBSmxlemlGb2VBa3hrY1Y3MEp5cjBValF4OHdsNWVGZTl3NmkxbTZ6LTRoTGRLbmphN0p6OWlHOS1HOHc?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -269,8 +271,6 @@ Generated: `2026-11-19T17:19:47.208186+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaUlOM1NCSUNQTVhtSFI0TXZZb1lYMDhjak5CUDBSbzlJSDJqNmd5SHVwaDBFOGRzWGJJYThka0NDeF9QSUJGS05YakN3T1lPNEJTZWFWNGpWZ3ZQUlh3T0lndlJKVkIzR1ZodnMzanZEUF9qRk91MS1pTlR0YlJaM2lUQlptMXhEaEZiTW1EU3UtWjYteE15RVpJZVR5SU1MTG5YcmlSbWpyZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0ZYVFZtQXhwY0d6Z19xdE9qVnFYZDhBa09MT0Z6Mml5dWZGa3JvOUFoTFp6YzFnQzd6NlpwdHNEZ18wTHpPTnpYQkVWS0M0bTU0eldOWGVGMGd5dzFNSzJHNVVkNnNkV0lCbjdXS0Y0ZVlkYVdqRjlvNndxaklUZmItZG1uRWtoZ0lHWWxjOVp4V3o1Uk9oWUs4SWp5WGRYb0JiOFdR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [SF Ballet's THE NUTCRACKER to Launch as Immersive XR Experience Through Google and XREAL Glasses - BroadwayWorld](https://news.google.com/rss/articles/CBMi7AFBVV95cUxObWNsSDFORVFlZ0NqTXRGenVsZFZVbnNaVWZkNGJXOW9mR2Fsb1JaaHQzNVpWczl6MVpSVkxRUW5CekJxYzc3V0xuOWFnTjhLVW0yeUF2bkJaV3lfcl9zUThEWG0wdWJiSElLTmZheFgzbDN5ZV9Da1RzNkFGNzFySjROaktjdlNBekRMTC1EVjE4NEhVWXJjdmxTYjNfOXc4dlhhanAxSnZVWlpHV2M4UklYbm92MlpTY2dUYzFUREtTQ3dJODdzN1NpNXFvYlVYT2o0VGZ1MVZwUG5Ibk5jeHFZNnZKcnFNSkd6aQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
