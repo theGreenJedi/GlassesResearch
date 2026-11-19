@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-19T13:29:38.661846+00:00`
+Generated: `2026-11-19T13:59:40.575250+00:00`
 
-- Intake files inspected: **198**
-- Candidates retained in this review window/history: **7254**
+- Intake files inspected: **199**
+- Candidates retained in this review window/history: **7256**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1527
+- `adjacent_radar`: 1529
 - `catalog_review`: 15
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 602
+- `needs_editorial_verification`: 598
 - `rejected_noise`: 5055
-- `source_review`: 29
+- `source_review`: 33
 - `watching`: 22
 
 ## Action queue
@@ -182,7 +182,6 @@ Generated: `2026-11-19T13:29:38.661846+00:00`
 | high | needs_editorial_verification | direct | [Google bets on privacy ahead of Gemini smart glasses launch - 디지털투데이](https://news.google.com/rss/articles/CBMiqAFBVV95cUxPS3h6M2hQTlVlaDlrWmZTcmZONkJnYTg5dUQ4UmhCU1M5UV9JZklyS3psSFhtU1hGZXhmb2o1MzA5TGNGcWlwNGQtRDBTRXBmVzF3cU5kMGluMllmZDU0S2VKVVRCcFNpNmNRSmFQM2N5U1lNekxYVi1keVplUUpGd05wcjRZRXVMZXdNbFkwZ0VLRmhFX2taZ0VPZ2tFeS05LUx6M3NROEE?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google Sets December 10 Launch for Smart Glasses with Privacy Safeguards - Analytics Insight](https://news.google.com/rss/articles/CBMirwFBVV95cUxNX2VzUHVldk00SVNVTmZnMEwwc3JYcTdfSlV4RkNQVWtFSjRvbV9UOGJVczBTa1hHQmxXUlpmcnNmTlVId1FOT0U4OGg0YVZlWW4xeGR3dEs1eG9SZndCU3ZSVEEzbDZmR3l6UzRKcnJxUFVVS09DalQ4REJuNmVkcjQxNTN0bjNUVjVSVDJOM0hjSXZCWG5EdVM4Z0luT0Z3Qm9MY1g1WkIzZkhuQW9r0gG8AUFVX3lxTE16cF85Q0d2VERfcTVPVDlaZ3hudWhJMkkwbGJGU1Uzc0N2Wm1nQzkwQ1ptMEFQU29tX2g0Vlo5T0s4clc5WjVIY0FuWVQwTmFoOGIzSm1zdXZhczFiSkp6WE5ORkxDc1N6LUlETWFoZWZGUG03XzBrRDZUOEFDQVEteHNLT0hnWVIzbmJDN0hZaHpiVW91VVlNMXQ5WTd5XzAyVGFGemoxeFRRcEF3ZHV5NE9tODhXZFROZXl0?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google Sets December 10 Launch for Smart Glasses with Privacy Safeguards - Analytics Insight](https://news.google.com/rss/articles/CBMivAFBVV95cUxNenBfOUNHdlREX3E1T1Q5Wmd4bnVoSTJJMGxiRlNVM3NDdlptZ0M5MENabTBBUFNvbV9oNFZaOU9LOHJXOVo1SGNBbllUME5haDhiM0ptc3V2YXMxYkpKelhOTkZMQ3NTei1JRE1haGVmRlBtN18wa0Q2VDhBQ0FRLXhzS09IZ1lSM25iQzdIWWh6YlVvdVVZTTF0OVk3eV8wMlRhRnpqMXhUUXBBd2R1eTRPbTg4V2RUTmV5dNIBvAFBVV95cUxNenBfOUNHdlREX3E1T1Q5Wmd4bnVoSTJJMGxiRlNVM3NDdlptZ0M5MENabTBBUFNvbV9oNFZaOU9LOHJXOVo1SGNBbllUME5haDhiM0ptc3V2YXMxYkpKelhOTkZMQ3NTei1JRE1haGVmRlBtN18wa0Q2VDhBQ0FRLXhzS09IZ1lSM25iQzdIWWh6YlVvdVVZTTF0OVk3eV8wMlRhRnpqMXhUUXBBd2R1eTRPbTg4V2RUTmV5dA?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Google smart glasses open for preorder from a $395 with live translation - Yahoo Tech](https://news.google.com/rss/articles/CBMikAFBVV95cUxNN0hqeHY0Q1FueW9oSlozYnM3NEp3MEpQQUVNTG9mMkpod0dJdWxrUFJhVDVvSTIwekVNTEJUNVBsS2ZmOU1XTzlrSFhMNGxMWjlZMmtwa0J2Z3pweW5uYkJpWklKTTByV0dpcWZZdHhWZDNoalpfYzBmblNqOWktMk84bzhoRXczZ1U5NWJfVFk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Google to launch smart glasses Dec. 10 with privacy protections - qz.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxNODlCcS1lM3JKbURBQ2dlY3haY3RLaFZtcC1qT3Btdk5YMVh6R2hWVkxxUnBVcVhXQ05qXzF5cDZINGhIdWFsRHc4NDJBNUI5Y0VVZEhRUFhDYTdnamk2UGVNTlhvRnZfcmtQcHFjc0NGcWVuaW9aVnMyN192VklKclBn?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta AI glasses launch in UAE from $316 with Etisalat monthly plans starting at $15 - Arabian Business](https://news.google.com/rss/articles/CBMizgFBVV95cUxOR0d4cXE5c2dnRlkyNUNPdGcxQS1NT3FSaUNoU3VLNkdnQm1FOEpWamFpUzB2eU1Cc0tUbGRxNmRWbWN0cjhRWGlpVEVWZGx4Vl92SnNfM0lBTnNNSEpzNDZWQkk0SFlpUXFBM29jbzhjSkhmV0NlUkdiWUN1YkFFUnVDaEdiVS1BSmJ1bk9WdnVnQzNucHBnR1dQbGx4N1piNDhwSWdCWlYzWmdHUzhxTXNjaDc4Zkltdy0yU01GU1M3OXA1WkdRM0V3ZXB6dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Must Read: Smart Glasses Launch Reopens Debate Over Privacy, How Fashion Helped Protect Great Bear Rainforest - Fashionista](https://news.google.com/rss/articles/CBMidkFVX3lxTE9JOGJnNmY5ejRKVWtqT3U3Q3E3bTBrNlJmY1Zxb00xRTZpVkNWeFB5SGNYNU0yVm1LUVVCdFkxeXFRRnk4SEpTSFpmYmx5SHVTSTZwNUt0MWxWa0d3dGRhV1h1U1MxcDZGUzFpM1pSaEMwaHBzc3c?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
@@ -271,6 +270,7 @@ Generated: `2026-11-19T13:29:38.661846+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - Gizmodo](https://news.google.com/rss/articles/CBMibkFVX3lxTFBLNHVVTXlXNUU1S1k3Y0JLZ2ZOS2RudUFtbDdjd1pWUi1xYkloSlhqQlpGeUFfLTFYNWlXejE1b2ZudDJlbGxpTTRhWXZXN0ZnXzNvZEtQWDhhU2VoYjZKYVV0Q2RmRkpobHBnSmhn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Schools banning smart glasses - WNEM](https://news.google.com/rss/articles/CBMid0FVX3lxTE9iX3VDcmN1OGRNWmNmQXp6WmNkeTJxNTBZUkhwRlRZMkFZcHpVOHVDZ0dndVlzQVVLdGZoOHZicWJlVkZZZjVvaXVzdzNLWi16cnJ2U3hCRG13TF8xTlZSXzZ5RFdodXdHRVNLZGdtVWFqU2VhMHJn?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [SF Ballet's THE NUTCRACKER to Launch as Immersive XR Experience Through Google and XREAL Glasses - BroadwayWorld](https://news.google.com/rss/articles/CBMi7AFBVV95cUxObWNsSDFORVFlZ0NqTXRGenVsZFZVbnNaVWZkNGJXOW9mR2Fsb1JaaHQzNVpWczl6MVpSVkxRUW5CekJxYzc3V0xuOWFnTjhLVW0yeUF2bkJaV3lfcl9zUThEWG0wdWJiSElLTmZheFgzbDN5ZV9Da1RzNkFGNzFySjROaktjdlNBekRMTC1EVjE4NEhVWXJjdmxTYjNfOXc4dlhhanAxSnZVWlpHV2M4UklYbm92MlpTY2dUYzFUREtTQ3dJODdzN1NpNXFvYlVYT2o0VGZ1MVZwUG5Ibk5jeHFZNnZKcnFNSkd6aQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
+| high | needs_editorial_verification | direct | [Smart Glasses Firmware Research & Analysis - GlassesResearch](https://glassesresearch.org/docs/Firmware/) | reachable (200) | research_news_review, development_hacking, deep_research |
 
 ## Meaning of states
 
