@@ -1,39 +1,46 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-20T04:24:14.265443+00:00",
-  "candidate_count": 81,
-  "classifier_irrelevant_count": 79,
+  "discovered_utc": "2026-11-20T13:09:22.011748+00:00",
+  "candidate_count": 68,
+  "classifier_irrelevant_count": 46,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 2,
-    "broad_web": 59,
-    "developer": 20
+    "adjacent": 21,
+    "broad_web": 32,
+    "community": 1,
+    "developer": 16,
+    "manufacturer_catalog": 1,
+    "research": 8
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 0,
-    "adjacent": 2,
+    "direct": 1,
+    "enabling": 1,
+    "adjacent": 20,
     "speculative": 0,
-    "irrelevant": 79
+    "irrelevant": 46
   },
   "type_counts": {
-    "model": 1,
-    "review": 1,
-    "video": 2,
-    "news": 38,
-    "tool": 23,
-    "sdk": 21,
-    "hack": 1,
-    "policy": 1,
-    "retail": 13,
-    "community": 3
+    "model": 5,
+    "video": 3,
+    "news": 36,
+    "research": 4,
+    "tool": 18,
+    "sdk": 16,
+    "optics": 1,
+    "policy": 2,
+    "retail": 3,
+    "community": 2
   },
   "routing_counts": {
-    "adjacent_radar": 2,
+    "adjacent_radar": 20,
+    "deep_research": 1,
+    "development_hacking": 4,
     "model_catalog_review": 1,
-    "reject_noise": 79,
-    "research_news_review": 2,
-    "retail_rebrand_review": 1
+    "policy_privacy": 1,
+    "reject_noise": 46,
+    "report_card_evidence": 1,
+    "research_news_review": 22,
+    "research_optics": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,17 +54,50 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "e9e1b1bf33b93bc8",
-      "title": "Amazon.com: Wearable Technology: Electronics: Accessories, Smartwatches ...",
-      "url": "https://www.amazon.com/Wearable-Technology/b?node=10048700011",
-      "summary": "Shop through a wide selection of Wearable Technology at Amazon.com. Free shipping and free returns on eligible items.",
+      "id": "42cfa5f7605e8e68",
+      "title": "Manufacturer catalog lead: AURA support",
+      "url": "https://us.shop.xreal.com/pages/support",
+      "summary": "Same-domain catalog/developer link discovered from https://us.shop.xreal.com/collections/xreal-product-catalog",
+      "discovery_channel": "manufacturer_catalog",
+      "query": "",
+      "source": "https://us.shop.xreal.com/collections/xreal-product-catalog",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "model",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "development_hacking"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "known smart-glasses source",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "383eaae7ecae0269",
+      "title": "Log in to E*TRADE",
+      "url": "https://us.etrade.com/home/welcome-back",
+      "summary": "Discover even more to love about E*TRADE Get expert insights and research from Morgan Stanley to help guide your investing.",
       "discovery_channel": "adjacent",
-      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 2,
       "keyword_hits": [
-        "shipping"
+        "research"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -67,14 +107,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "model",
-        "retail"
+        "research"
       ],
-      "primary_type": "model",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "retail_rebrand_review",
+        "deep_research",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -83,10 +121,75 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a159826ed5c7bc0a",
-      "title": "Copilot in Outlook: New agentic experiences for email and calendar",
-      "url": "https://techcommunity.microsoft.com/blog/outlook/copilot-in-outlook-new-agentic-experiences-for-email-and-calendar/4514601",
-      "summary": "Copilot in Outlook is now agentic, taking on the ongoing work of running your inbox and calendar. It triages emails, reschedules conflicts, and surfaces...",
+      "id": "70a80cc3b0873710",
+      "title": "Security Center: Protecting Your Online Security | E*TRADE",
+      "url": "https://us.etrade.com/security-center",
+      "summary": "Explore expert tips, fraud protection, encryption, MFA, and privacy safeguards in E*TRADE’s Security Center. Learn how to stay secure and report concerns.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 2,
+      "keyword_hits": [
+        "privacy"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "575f259d906a6c39",
+      "title": "Shop Digital Camera @ Best Prices - Buy High Quality Camera Here ...",
+      "url": "https://www.jumia.com.eg/electronics-cameras-digital-cameras/",
+      "summary": "Why Choose a Digital Camera on Jumia? When you look for a digital camera that blends high-resolution imaging with ease of use, you’ll find on our Cameras page—under the top-level Electronics category—the perfect options to meet your needs. Digital cameras feature cutting-edge technology enabling you to capture stunning photos and videos with advanced pixel resolutions, optical and ...",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "enabling",
+      "content_types": [
+        "optics"
+      ],
+      "primary_type": "optics",
+      "routing_targets": [
+        "research_news_review",
+        "research_optics"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: optical",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f785ccd1dd425ec",
+      "title": "Contact Us: Customer Service & Help Center | E*TRADE",
+      "url": "https://us.etrade.com/contact-us",
+      "summary": "Need help with your E*TRADE account? Give us a call at (800) 387-2331 to get assistance quickly. You can also contact a Customer Service Representative online via live chat.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -114,48 +217,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6a12be495bb8b4d9",
-      "title": "\"Our systems have detected unusual activity from your system. Please ...",
-      "url": "https://www.reddit.com/r/ChatGPT/comments/1443job/our_systems_have_detected_unusual_activity_from/",
-      "summary": "As said above, chat gpt is useless for me without the extensions. The problem seems to be the \"web api mode\". I assume open ai wants to force us to use the API and pay for it. Please someone help me, i reallly rely on the extensions for work. Reply reply tranquyetdev •",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "1daea8613a52ed31",
+      "title": "Cosmo Cover Stories and Celebrity Interviews - Cosmopolitan",
+      "url": "https://www.cosmopolitan.com/cosmopolitan-cover-stories/",
+      "summary": "Every cover story and celebrity interview from the Cosmo Cover archives.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "api"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
-      "content_types": [
-        "sdk",
-        "community"
-      ],
-      "primary_type": "sdk",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bb6df9ffdf7e65d5",
-      "title": "? MPV Blood Test - What does it mean (High, Low - Normal range ...",
-      "url": "https://healthool.com/mpv-mean-platelet-volume-blood-test/",
-      "summary": "If the mean platelet volume is elevated, it means that the platelet is large and more reactive. This could lead to increased platelet turnover, which will put you at risk for myocardial infarction.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -163,30 +233,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d12b7860b8faaefa",
-      "title": "Bladder Wall Thickening: Causes and Treatment - Healthline",
-      "url": "https://www.healthline.com/health/bladder-wall-thickening",
-      "summary": "Your bladder wall usually thickens when your bladder has a problem filling with urine. There are several serious underlying conditions, most of which need to be discussed with a doctor and treated ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "5d742fa695661a10",
+      "title": "Cosmopolitan UK, the women's magazine for fashion, beauty, sex tips and ...",
+      "url": "https://www.cosmopolitan.com/uk/",
+      "summary": "Find all the latest fashion, beauty, sex tips and celebrity news from Cosmopolitan UK.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -194,30 +264,30 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4afd3fd0c24da8ab",
-      "title": "Elevated MPV: Possible Causes and Health Effects",
-      "url": "https://biologyinsights.com/elevated-mpv-possible-causes-and-health-effects/",
-      "summary": "MPV shows up on a routine complete blood count, and while a mildly elevated reading often means nothing on its own, a consistently high MPV has been linked to a surprisingly wide range of health conditions, from heart attacks and strokes to poorly controlled diabetes and severe infections.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "09933730fa3da1be",
+      "title": "Cosmopolitan | Neem of geef een abonnement",
+      "url": "https://abonnement.cosmopolitan.com/",
+      "summary": "Neem of geef nu een abonnement op Cosmopolitan, de glossy die helpt om alles uit je leven te halen. Dit abonnement is inclusief gratis digitaal lezen en vele andere abonneevoordelen.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -225,62 +295,282 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b9ca84a2d9432589",
-      "title": "GitHub - microsoft/sample-app-aoai-chatGPT: Sample code for a simple ...",
-      "url": "https://github.com/microsoft/sample-app-aoai-chatGPT",
-      "summary": "Sample code for a simple web chat experience through Azure OpenAI, including Azure OpenAI On Your Data. - microsoft/sample-app-aoai-chatGPT",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "id": "6c2e7460d926b5d2",
+      "title": "Cosmopolitan.com - The Women's Magazine for Dating Advice ...",
+      "url": "https://www.cosmopolitan.com/",
+      "summary": "Your source for the latest dating tips, celebrity news, relationship help, beauty tutorials, fashion trends, and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee1654e163a6e5ad",
+      "title": "E*TRADE from Morgan Stanley: A New Chapter in Investing",
+      "url": "https://us.etrade.com/l/morganstanley/investing-and-banking",
+      "summary": "Explore E*TRADE from Morgan Stanley: the same innovative tools plus more ways to pursue your goals with insights, products, solutions, and life insurance.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a1074a17cc89fdac",
+      "title": "E*TRADE | Investing, Trading & Retirement",
+      "url": "https://us.etrade.com/home",
+      "summary": "At E*TRADE, we make it easy to trade stocks, bonds, ETFs, mutual funds, and more. Watch our platform demos or join us live every Wednesday at 11 a.m. ET for a 20-minute getting started webinar.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "video",
+        "tool"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb94bfb54da4974d",
+      "title": "Feature Stories, Personal Essays, and Opinion Reads From Cosmopolitan ...",
+      "url": "https://www.cosmopolitan.com/features/",
+      "summary": "Read deep-dive feature stories about relationships, true crime, gender, identity, reproductive rights, and pop culture.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1c636ced66ba43a5",
+      "title": "Gooning Is the Fetish of the Year - sex.cosmopolitan.com",
+      "url": "https://sex.cosmopolitan.com/pleasure/a69676827/gooning-fetish-of-the-year/",
+      "summary": "The star recommended “gooning on the first date” in her Cosmo Quiz for our Summer Issue, resulting in a spirited editorial debate here at Cosmo HQ and one of the most wonderfully unhinged Cosmopolitan coverlines in recent memory. But if this is the first you’re hearing of gooning, you may have some questions. Namely, what is it?",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2183769423f49f4d",
+      "title": "Log On Help | E*TRADE",
+      "url": "https://us.etrade.com/e/t/user/loginhelp",
+      "summary": "Log-On help for E*TRADE Securities and E*TRADE Bank accounts.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4091bf72e4caf107",
+      "title": "Megan Moroney Is Floating On 'Cloud 9' During Her First ... - Cosmopolitan",
+      "url": "https://www.cosmopolitan.com/entertainment/celebs/a73171748/megan-moroney-cloud-9-tour/",
+      "summary": "It’s the day before her sold-out concert at the Barclays Center in Brooklyn. And Megan Moroney isn’t nervous—even if the Cloud 9 Tour is her first headlining arena tour. This moment is just ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d75eeab4a4c0c898",
+      "title": "Power E*TRADE Pro | Desktop Trading Platform",
+      "url": "https://us.etrade.com/platforms/power-etrade/pro",
+      "summary": "Discover even more to love about E*TRADE with our most customizable, advanced, intelligent platform yet. For traders driven to optimize everything about the way they trade. Tailor Power E*TRADE Pro to exactly how you trade. Customize as many as 120 tools and charts across six highly configurable ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
       "content_types": [
         "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "921cecde4687d281",
-      "title": "Incomplete Bladder Emptying: 7 Critical Causes You Can't Ignore Now ...",
-      "url": "https://ubiehealth.com/doctors-note/incomplete-bladder-emptying-reasons",
-      "summary": "Struggling with incomplete bladder emptying? Discover 7 critical causes you can't ignore now. Learn the reasons for your symptoms in this expert doctor's guide.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "ec8419b2fdead12f",
+      "title": "Security ID | E*TRADE",
+      "url": "https://us.etrade.com/security-center/securityid",
+      "summary": "Follow the prompts to link the app to your E*TRADE account. The next time you log on to your account: Enter your E*TRADE user ID and password. Check the box next to “Use security code”. Enter the six-digit code from your VIP Access app in the Security code field. Click Log on.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -288,405 +578,189 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c63d3d461322ddf5",
-      "title": "Is Your Bladder Decompressed? Symptoms, Causes, & Treatment Now",
-      "url": "https://www.sciencefix.blog/decompressed-bladder-symptoms-causes-treatment",
-      "summary": "Optimal bladder health is foundational to overall well-being, yet conditions affecting it often go undiagnosed until they significantly impact daily life.One such challenging condition is a Decompressed Urinary Bladder – a direct consequence of chronic urinary retention.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3d127195b88d51aa",
-      "title": "Life-Threatening Complications Associated with Bladder Decompression: A ...",
-      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9697882/",
-      "summary": "The clinical course of patients who present to the emergency department (ED) with urinary retention is usually uneventful. In this case, we explore the life-threatening complications of urinary retention and bladder decompression. We report the case ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bac854fa7c775435",
-      "title": "MPV Blood Test: High MPV, Low MPV & Normal Ranges - Cleveland Clinic",
-      "url": "https://my.clevelandclinic.org/health/diagnostics/23572-mpv-blood-test",
-      "summary": "A high test result means that your platelets are larger than what’s considered normal. Newly made platelets are larger than older platelets, so a high number may signal that your bone marrow’s making a lot of new platelets.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "15cf6571266debee",
-      "title": "MPV Blood Test: Process, High MPV, Low MPV Meaning - Healthline",
-      "url": "https://www.healthline.com/health/mpv-test",
-      "summary": "Typical MPV levels range from 7 to 13 femtoliters. High MPV can indicate conditions such as preeclampsia, heart disease, diabetes, hemolytic anemia, thrombocytopenia, or myeloproliferative...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a8449b48a304b37c",
-      "title": "MPV Blood Test: What High & Low Platelet Volume Means",
-      "url": "https://themetabolicjournal.com/biomarkers/mpv-blood-test",
-      "summary": "High MPV (above 11.5-12.0 fL) means your platelets are larger than average, indicating the bone marrow is producing young, active platelets rapidly. Common causes: immune thrombocytopenia (ITP), active bleeding, recovery from bone marrow suppression, and cardiovascular disease risk.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f08b33f1d3ed8087",
-      "title": "MPV Blood Test: What Low and High Test Results Mean",
-      "url": "https://www.verywellhealth.com/mpv-low-5193725",
-      "summary": "High MPV means your body is making new platelets quickly with larger cells. Low MPV means older, smaller platelets are present and fewer new ones are being made. The MPV blood test helps assess your blood health by measuring the average size of your platelets.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7335c1f0080b8ad3",
-      "title": "on my recent ct the radiologist notrd that my bladder was mostly ...",
-      "url": "https://www.healthtap.com/questions/515223-on-my-recent-ct-the-radiologist-notrd-that-my-bladder-was-mostly-decompressed-what-does-rhis-mean/",
-      "summary": "Decompressed bladder: A radiologist typically will note a \"mostly decompressed\" bladder when the bladder is not filled up with urine, or is nearly empty, and the bladder walls are collapsed, which makes it difficult for the radiologist to evaluate the bladder wall for any abnormalities. It doesn't mean that there is anything wrong.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9b83c9e823bb0570",
-      "title": "Platelet Count: Normal Range & What Results Mean - WebMD",
-      "url": "https://www.webmd.com/a-to-z-guides/what-to-know-mean-platelet-volume-tests",
-      "summary": "A high platelet count can cause blood clots to form in any of your blood vessels, which can lead to deep vein thrombosis, pulmonary embolism, stroke, and heart attack.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a62612b6832237e5",
-      "title": "PowerSmart 24\" Two-Stage (PS24) Review - Specs, Pros & Cons",
-      "url": "https://snowblowerhq.com/snow-blowers/powersmart-24-two-stage",
-      "summary": "6 forward / 2 reverse self-propelled drive on 13-inch snow tires — no power steering, so you horse it around turns like an old-school two-stage. The chute cranks through 180 degrees (not the 200 of MTD rivals) with manual pitch, and an LED light helps on dark mornings.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c879ba42abcd57fc",
-      "title": "Understanding What an MPV Blood Test Means for Your Health",
-      "url": "https://www.health.com/mpv-blood-test-11751769",
-      "summary": "An MPV blood test can help diagnose symptoms like easy bruising and heavy menstrual periods. This test is usually safe, but you may develop side effects like slight pain or bruising at the needle...",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0186d71cf098014e",
-      "title": "Urinary Retention: Causes, Diagnosis & Treatment - Cleveland Clinic",
-      "url": "https://my.clevelandclinic.org/health/diseases/15427-urinary-retention",
-      "summary": "Urinary retention is when you can’t empty your bladder when you pee. Learn more about urinary retention and when you should seek treatment.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a329c819a8b0b98",
-      "title": "VS Code extension: GPT-6.1 Sol missing from model picker ... - GitHub",
-      "url": "https://github.com/openai/codex/issues/49464",
-      "summary": "GPT-6.1 Sol now appears in the VS Code model picker: This confirms picker visibility in my Remote SSH setup; I have not yet verified a full IDE chat using 6.1 Sol.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "github"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
         "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9fdc4a3b67654d09",
-      "title": "What does a high Mean Platelet Volume (MPV) indicate and how is it managed?",
-      "url": "https://www.droracle.ai/articles/262551/what-does-a-high-mean-platelet-volume-mpv-indicate",
-      "summary": "An elevated Mean Platelet Volume (MPV) of 13.7 is a significant marker of increased platelet activity and size, which is associated with higher risk of cardiovascular events, particularly in patients with pre-existing cardiovascular disease or metabolic syndrome.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "4ae2a65a513cf995",
+      "title": "Stock Plans | Morgan Stanley at Work - E*TRADE",
+      "url": "https://us.etrade.com/stock-plans",
+      "summary": "How can we help you? For existing stock plan participants Log on to manage your Morgan Stanley at Work stock plan account on etrade.com.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1ba7f074d7b0699c",
+      "title": "The 20 Best- and Worst-Dressed Celebs at the 2026 VMAs - Cosmopolitan",
+      "url": "https://www.cosmopolitan.com/entertainment/celebs/a73916846/best-worst-dressed-vmas-2026/",
+      "summary": "Who was the best dressed at the 2026 VMAs? How about worst dressed? Fashion critics Tom + Lorenzo break down the best- and worst-dressed celebrities on the 2026 VMAs red carpet.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "df32c9cf6c6317e3",
+      "title": "The Best Nail Colors, Polish Brands, Mani Ideas & More - Cosmopolitan",
+      "url": "https://www.cosmopolitan.com/nail-polish-and-designs/",
+      "summary": "Your destination for all things nails, including roundups of the best trends, reviews of the best polishes and press-ons, and genius hacks for DIYing a salon-worthy mani at home.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7f17a0ebc652dc22",
+      "title": "The Biggest Sex Trends of 2026, According to Sex Experts",
+      "url": "https://sex.cosmopolitan.com/pleasure/a73194029/sex-trends-2026/",
+      "summary": "It’s weird to think of sex as something that follows trends, but pleasure-seeking can shift with the times just like anything else. This year’s sex trends push back against the hectic pace and tech-focus of our lives. But, more than anything, experts say that right now people are putting in the work to get more out of sex. “I'm seeing people become much more intentional about their sex ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d546344d91240b4",
+      "title": "Trade Online with E*TRADE: Open Your Trading Account Today",
+      "url": "https://us.etrade.com/trade",
+      "summary": "Maximize your trading potential with our E*TRADE online trading solutions. Explore tools that empower you to trade effectively, no matter where you are.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "99b2c1656d6ca70a",
+      "title": "Cameras | 1459+ Products | Best Prices - Jumia Egypt",
+      "url": "https://www.jumia.com.eg/cameras/",
+      "summary": "Shop Cameras online — 1459+ products at the best prices in Egypt. Free shipping on orders over EGP 400 | Installments up to 12 months | Cash on delivery | Free returns — Buy now on Jumia!",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [],
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -695,10 +769,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "model"
       ],
-      "primary_type": "tool",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -708,10 +781,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "91fea766f8d9cdf3",
-      "title": "What Does It Mean When Your Bladder Is Decompressed?",
-      "url": "https://biologyinsights.com/what-does-it-mean-when-your-bladder-is-decompressed/",
-      "summary": "The bladder is a hollow, muscular organ located in the lower abdomen that serves as a temporary reservoir for urine produced by the kidneys. It is responsible for storing urine until it can be expelled from the body. In a medical context, bladder decompression refers to relieving pressure within this organ. This procedure becomes necessary when the bladder cannot effectively empty itself ...",
+      "id": "6f450f0d5072bee0",
+      "title": "Careers at CDK - CDK Careers",
+      "url": "https://careers.cdkglobal.com/",
+      "summary": "Join the CDK Internship program and explore the different career paths our business has to offer you. Our Returnship program is designed to provide experienced professionals, who have taken a career break, with a supportive pathway back into the workforce.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -739,10 +812,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3159a691c2e3f6ff",
-      "title": "What Is a Decompressed Bladder and What Are the Risks?",
-      "url": "https://biologyinsights.com/what-is-a-decompressed-bladder-and-what-are-the-risks/",
-      "summary": "A decompressed bladder refers to emptying a severely overdistended urinary bladder. This is a medical procedure to relieve pressure caused by the bladder’s inability to empty naturally. It involves the controlled removal of a large volume of accumulated urine, reducing pressure. The procedure aims to alleviate discomfort and prevent complications from prolonged bladder distension. Causes of ...",
+      "id": "2615c607b4c12c48",
+      "title": "CDK Global DMS Outbound Integration from ADP Workforce Now®",
+      "url": "https://apps.adp.com/en-US/apps/292781/cdk-global-dms-outbound-integration-from-adp-workforce-now",
+      "summary": "Easily update financial data by efficiently and securely passing payroll journal entries from ADP Workforce Now® to your dealer management system. ADP®/CDK’s smart technology can help eliminate manual tasks in uploading your data from ADP Workforce Now.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "02359f94d842d2f1",
+      "title": "CDK Unify",
+      "url": "https://app-unify.app.connectcdk.com/myUnify",
+      "summary": "Unify is a flexible, intuitive interface for dealerships that provides simplified and personalized access to critical CDK applications and new role-based workflows.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -770,10 +875,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3a974ddefd5b51d2",
-      "title": "What Is a Decompressed Bladder? Key Facts and Guidance",
-      "url": "https://www.bensnaturalhealth.com/blog/prostate-health/decompressed-bladder/",
-      "summary": "Discover what is a decompressed bladder, its causes, symptoms, diagnosis, and treatment with expert insights to help you understand and manage your health.",
+      "id": "7fde9cd54ba1adeb",
+      "title": "cdk.wd1.myworkdayjobs.com",
+      "url": "https://cdk.wd1.myworkdayjobs.com/CDK/job/Hoffman-Estates-IL-USA/Workforce-Administrator_JR8825-1",
+      "summary": "cdk.wd1.myworkdayjobs.com",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -801,10 +906,134 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "bca188192f9a24f8",
-      "title": "Why Is My Bladder Decompressed? - CGAA",
-      "url": "https://www.cgaa.org/article/why-is-my-bladder-decompressed",
-      "summary": "Bladder decompression is an important medical procedure that helps provide relief to patients who are suffering from an obstructed or blocked urinary bladder. It is performed to relieve pressure on the urinary system, reduce pain and discomfort, help with stability of the bladder, and restore proper urination function.",
+      "id": "a1e60ec927441a3a",
+      "title": "Commercial Masonry Projects | Downtown Place | Potts Masonry",
+      "url": "https://www.pottsmasonry.com/downtown-place-commercial-masonry",
+      "summary": "Downtown Place This project involved CMU elevator shafts, stairwalls, and loadbearing walls for the main floor. The entire structure is brick veneer.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "208e5d71860eee80",
+      "title": "Commercial Masonry Projects | Park Church | Potts Masonry",
+      "url": "https://www.pottsmasonry.com/park-church-commercial-masonry",
+      "summary": "Expert commercial masonry services specializing in brickwork, stone veneer, and concrete construction. Quality craftsmanship for durable, aesthetic solutions serving West Michigan.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a0d170388e66a8aa",
+      "title": "Commercial Masonry Projects | Priority Health | Potts Masonry",
+      "url": "https://www.pottsmasonry.com/priority-health-masonry-commercial",
+      "summary": "Expert commercial masonry services specializing in brickwork, stone veneer, and concrete construction. Quality craftsmanship for durable, aesthetic solutions serving West Michigan.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dbb6d32f6a810e9c",
+      "title": "Commercial Masonry Projects | The Outpost | Potts Masonry",
+      "url": "https://www.pottsmasonry.com/outpost-commercial-masonry",
+      "summary": "Expert commercial masonry services specializing in brickwork, stone veneer, and concrete construction. Quality craftsmanship for durable, aesthetic solutions serving West Michigan.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a06cca59775dfe43",
+      "title": "Common Login - CDK",
+      "url": "https://www.connectcdk.com/",
+      "summary": "Common Login - CDK. You need to enable JavaScript to run this app.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -832,12 +1061,45 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f4611d12bdb61c48",
-      "title": "Why Would MPV Be High? Causes and What It Means",
-      "url": "https://biologyinsights.com/why-would-mpv-be-high-causes-and-what-it-means/",
-      "summary": "A high mean platelet volume, or MPV, signals that your platelets are larger than average, which usually means your bone marrow is churning out fresh, younger platelets in response to some kind of demand.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "4b8f81f0ba801536",
+      "title": "Dome Cctv Cameras | 249+ Products | Best Prices - Jumia Egypt",
+      "url": "https://www.jumia.com.eg/surveillance-camera/",
+      "summary": "Shop Dome Cctv Cameras online — 249+ products at the best prices in Egypt. Free shipping on orders over EGP 400 | Installments up to 12 months | Cash on delivery | Free returns — Buy now on Jumia!",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "policy"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "33342824f8da1217",
+      "title": "Expert Masons | Potts Masonry",
+      "url": "https://www.pottsmasonry.com/",
+      "summary": "Trust Potts Masonry to bring expert craftsmanship, attention to detail, and a deep respect for heritage to every restoration project, ensuring that your building remains a proud symbol of the past while standing strong for future generations.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -863,12 +1125,201 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4411ef2a0fa454d4",
-      "title": "10-Day Weather Chandler - meteoblue",
-      "url": "https://www.meteoblue.com/en/weather/10-days/chandler_united-states_4532846",
-      "summary": "The professional 10-day weather trend for Chandler. Showing the uncertainty and reliability of the weather forecast.",
+      "id": "586f30e0bc96dee7",
+      "title": "Job Search - CDK Careers",
+      "url": "https://careers.cdkglobal.com/job-search/",
+      "summary": "At CDK, we look for people that amplify our culture through their passion, enthusiasm and determination to drive our business forward. That’s why our entire hiring process aims to get to know you as a person and recognize your true potential.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "31fdddf9a0e60871",
+      "title": "Login & Support | ADP Workforce Now",
+      "url": "https://www.adp.com/logins/adp-workforce-now.aspx",
+      "summary": "ADP Workforce Now login and support center for employees & administrators.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0725b9e1a4dd40dc",
+      "title": "Residential Masonry Project | Sailview Home | Potts Masonry",
+      "url": "https://www.pottsmasonry.com/residential-masonry-project-sailview",
+      "summary": "Trusted residential masonry services offering expert brick, stone, & concrete work. Enhance your home’s curb appeal with quality craftsmanship & lasting results serving West Michigan.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2c07e8f4c2bfd44d",
+      "title": "Residential Masonry | Projects | Potts Masonry",
+      "url": "https://www.pottsmasonry.com/residential-masonry",
+      "summary": "Residential masonry services. A dedication to craftsmanship & customer satisfaction Potts Masonry specializes in transforming houses into homes with our comprehensive range of residential building services.",
+      "discovery_channel": "developer+research",
+      "query": "Project Aria developer smart glasses; Project Aria smart glasses research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aefc729035ad2295",
+      "title": "Search for Jobs - myworkdayjobs.com",
+      "url": "https://cdk.wd1.myworkdayjobs.com/CDK",
+      "summary": "CDK is a leading provider of cloud-based software to dealerships and Original Equipment Manufacturers (“OEMs”) across automotive and related industries.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "671266f7299c9a4d",
+      "title": "Video conference camera - Jumia Egypt",
+      "url": "https://www.jumia.com.eg/slp/video-conference-camera/",
+      "summary": "Video conference camera online from Jumia Egypt at the best prices. Flexible installments, free shipping, original products, easy returns. Secure payments. Buy now!",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "video",
+        "research"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56389156741e1a2a",
+      "title": "10 Day Forecast on WFMY in Greensboro | wfmynews2.com",
+      "url": "https://www.wfmynews2.com/10-day",
+      "summary": "Weather forecast and conditions for Greensboro, North Carolina and surrounding areas.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -893,12 +1344,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ae0558c0f05168ee",
-      "title": "10-Day Weather Forecast for Chandler, OK - The Weather Channel",
-      "url": "https://weather.com/weather/tenday/l/74834:4:US",
-      "summary": "Be prepared with the most accurate 10-day forecast for Chandler, OK with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
+      "id": "6cb78473758d6c40",
+      "title": "7-Day Forecast 36.09N 79.83W - National Weather Service",
+      "url": "https://forecast.weather.gov/zipcity.php?inputstring=greensboro,NC",
+      "summary": "Mostly sunny, with a high near 68.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "IFA smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -923,12 +1374,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b0340797e486f056",
-      "title": "10-Day Weather Forecast for Chandler, Oklahoma - The Weather Channel ...",
-      "url": "https://weather.com/us/oklahoma/city/chandler/tenday",
-      "summary": "Be prepared with the most accurate 10-day forecast for Chandler, Oklahoma with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
+      "id": "7912acdd99e28ddb",
+      "title": "Amazon.com: Amazon.ca Canada",
+      "url": "https://www.amazon.com/amazon-ca-canada/s?k=amazon.ca+canada",
+      "summary": "Discover millions of products on Amazon Canada. Shop electronics, fashion, home goods, and more with convenient delivery.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dcea8e60b92dff0a",
+      "title": "Commissions - 2026 - Jumia VendorHub EG",
+      "url": "https://vendorhub.jumia.com.eg/commissions-copy/",
+      "summary": "Changes in commission and processing fees (starts from January 15, 2026). The list of commissions deducted from sellers which differs according to the category. The commission is fixed whether your products are in your warehouse or Jumia’s warehouse. Primary Category Subcategory Commission%(Including VAT) Fashion All 15.0% Jewelry/Gold 15% Health and Beauty All 13.0% Watches All […]",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -953,102 +1434,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6ec599d421974a63",
-      "title": "24'' 212cc Two Stage Self-Propelled Gas Snow Blower DB7108B",
-      "url": "https://powersmartusa.com/products/24in-212cc-two-stage-self-propelled-gas-snow-blower-db7108b",
-      "summary": "Illuminate your path for safe and efficient snow removal, even in low-light conditions. Heavy-duty auger powered by a robust engine to cut through icy, compacted snow with ease. Quick push-button start makes operation simple and convenient.",
+      "id": "fc2243f07d87d3ef",
+      "title": "Do I Get Prime Video with Amazon Prime? - Amazon Customer Service",
+      "url": "https://www.amazon.com/gp/help/customer/display.html?nodeId=GG7C9HA2KSYPUACV",
+      "summary": "You get access to a selection of Included with Prime titles if you have an Amazon Prime membership.",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "706bd9bb2f6a2a74",
-      "title": "24'' 212cc Two Stage Self-Propelled Gas Snow Blower w/ Electric Start",
-      "url": "https://powersmartusa.com/products/24in-212cc-two-stage-gas-snow-blower",
-      "summary": "Efficiently clear heavy snow with the PowerSmart 24'' 212cc Two-Stage Gas Snow Blower featuring LED light for enhanced visibility",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3e8bd0544d5161ef",
-      "title": "3.1 Demand, Supply, and Equilibrium in Markets for Goods and Services ...",
-      "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services",
-      "summary": "Is demand the same as quantity demanded? In economic terminology, demand is not the same as quantity demanded. When economists talk about demand, they mean the relationship between a range of prices and the quantities demanded at those prices, as illustrated by a demand curve or a demand schedule.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f12135c8cb6e5725",
-      "title": "[Download.123Movies]Up (2009)HD Film GooGLe~DriVe",
-      "url": "https://groups.google.com/g/komtrakonline/c/Ri5CeKAT1uU",
-      "summary": "03 scond ago [4KHD]Don’t miss!~ [ [OFFICIAL-WATCH-FLIKTV]]~!~!How to watch Up Full Movie Online Free? HQ Reddit [DVD-ENGLISH] Up Full Movie Watch online free Dailymotion [#Up ] Google Drive/ [DvdRip-USA/Eng-Subs] Up Season Season ! (2009) Full Movie Watch online No Sign Up 123 Movies Online !! Up [EMPIREZ] | Watch Up Online (2009) Full Movie Free HD.720Px|Watch Up Online (2009) Full MovieS ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1062,7 +1453,7 @@
       "relationship": "irrelevant",
       "content_types": [
         "video",
-        "community"
+        "retail"
       ],
       "primary_type": "video",
       "routing_targets": [
@@ -1074,10 +1465,220 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "785d18782adc673c",
-      "title": "[golang] Multiple servers (and clients) over the same (grpc) connection",
-      "url": "https://groups.google.com/g/grpc-io/c/3Mtx9pf1qnY",
-      "summary": "Think about it as a gRPC server which is capable of hosting one ore more gRPC services. When you initialise a gRPC server, you can register one or more gRPC services on it and similarly when you write a gRPC client, you can communicate with only one or all of the services registered on the gRPC server.",
+      "id": "3ab8124a504aa722",
+      "title": "Greensboro Weather on WFMY | wfmynews2.com",
+      "url": "https://www.wfmynews2.com/weather",
+      "summary": "Weather forecast and conditions for Greensboro, North Carolina and surrounding areas.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1907515763026828",
+      "title": "Greensboro, 27408, North Carolina - The Weather Channel",
+      "url": "https://weather.com/us/north-carolina/greensboro/postcode/27408/tenday",
+      "summary": "Be prepared with the most accurate 10-day forecast for Greensboro, 27408, North Carolina with highs, lows, chance of precipitation from The Weather Channel and Weather.com",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b4c01d9de0164e56",
+      "title": "Greensboro, NC 10-Day Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/greensboro/27401/10-day-weather-forecast/329822",
+      "summary": "Know what's coming with AccuWeather's extended daily forecasts for Greensboro, NC. Up to 90 days of daily highs, lows, and precipitation chances.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cf5bcd5d4d8f5696",
+      "title": "Greensboro, NC Hourly Weather Forecast | Weather Underground",
+      "url": "https://www.wunderground.com/hourly/us/nc/greensboro/27408",
+      "summary": "Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for the Greensboro area.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "853619e672ba6403",
+      "title": "Greensboro, NC Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/greensboro/27401/hourly-weather-forecast/329822",
+      "summary": "Hourly weather forecast in Greensboro, NC. Check current conditions in Greensboro, NC with radar, hourly, and more.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3b3965f2b0bfc59c",
+      "title": "Greensboro, NC Weather Conditions | Weather Underground",
+      "url": "https://www.wunderground.com/weather/us/nc/greensboro/27408",
+      "summary": "Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for the Greensboro area.",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81c0825483952cb3",
+      "title": "Greensboro, North Carolina 27408 Weather",
+      "url": "https://weather.com/weather/today/l/d513237a6d19f4cec07f33ac7a4931fcec2cfd85cbff4a91612a34c1d3082298",
+      "summary": "Today’s and tonight’s Greensboro, North Carolina 27408 weather forecast, weather conditions and Doppler radar from The Weather Channel and weather.com",
+      "discovery_channel": "broad_web",
+      "query": "IFA smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fdfb249e64ac1162",
+      "title": "Hal | Malcolm in the Middle Wiki | Fandom",
+      "url": "https://malcolminthemiddle.fandom.com/wiki/Hal",
+      "summary": "Several episodes refer to him as a former rebel and troublemaker, much like his sons. He is often an immature, awkward man who is basically lost without Lois to keep him in line and tell him what to do. He is portrayed by Bryan Cranston.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1104,10 +1705,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e25c9c9af03f5142",
-      "title": "AutoCrat Error - Google Groups",
-      "url": "https://groups.google.com/g/nv-autocrat-add-on/c/HjO9IshZ23w",
-      "summary": "Beth Burdick, M.Ed Coordinator of Gifted Services North Royalton City Schools beth.b...@northroyaltonsd.org (440) 582-9144 CONFIDENTIALITY NOTICE: This message may contain confidential information, including, but not limited to, student personally identifiable information. Such information is intended only for the use of the individual or entity named above. If you are not the intended ...",
+      "id": "980d9cf93a4b2023",
+      "title": "Hal's job in seasons 1-5, what the hell did he do for a living?",
+      "url": "https://www.reddit.com/r/malcolminthemiddle/comments/o72euy/hals_job_in_seasons_15_what_the_hell_did_he_do/",
+      "summary": "It's hard to say because there are actually a ton of white collar corporate jobs that are pretty hard to describe without going into a detailed explanation. As someone who has one of these jobs, it's basically just taking care of a technical component of larger transactions.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1116,640 +1717,10 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5375d763fb3c692c",
-      "title": "Chandler 10 Day Weather Forecast | Ease Weather",
-      "url": "https://www.easeweather.com/north-america/united-states/oklahoma/lincoln-county/chandler",
-      "summary": "Discover the latest weather forecast for Chandler, featuring daily and 14-day long-range predictions. View detailed, interactive graphs and click for in-depth information on each day's weather in Chandler.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5ac1fa9338955868",
-      "title": "Chandler, OK 10-Day Weather Forecast | Weather Underground",
-      "url": "https://www.wunderground.com/forecast/us/ok/chandler",
-      "summary": "Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for the Chandler area.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "780e7829979e17dc",
-      "title": "Chandler, OK 10-Day Weather Forecast | WeatherBug",
-      "url": "https://www.weatherbug.com/weather-forecast/10-day-weather/chandler-ok-74834",
-      "summary": "Plan your week with the help of our 10-day weather forecasts and weekend weather predictions for Chandler, OK",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ae3b14f851499979",
-      "title": "Chandler, OK 10-Day Weather | AccuWeather",
-      "url": "https://www.accuweather.com/en/us/chandler/74834/10-day-weather-forecast/335129",
-      "summary": "Know what's coming with AccuWeather's extended daily forecasts for Chandler, OK. Up to 90 days of daily highs, lows, and precipitation chances.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f438489446499457",
-      "title": "Chandler, OK Hourly Weather | AccuWeather",
-      "url": "https://www.accuweather.com/en/us/chandler/74834/hourly-weather-forecast/335129",
-      "summary": "Hourly Weather Forecast for Chandler AccuWeather's hourly forecast for Chandler provides hour-by-hour temperatures, RealFeel® Temperature, and precipitation probability through the next...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5b2c770d34ceb529",
-      "title": "Chandler, Oklahoma 14 Day Weather - 74834 WeatherWorld.com",
-      "url": "https://www.weatherworld.com/14dayweather/ok/chandler.html",
-      "summary": "Enjoyable around 70°F, sunny throughout the day, with steady humidity and barometric pressure falling. Winds moving from the SSE to the S at 14 mph. Gusts up to 26 mph.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4494a36321c0fed4",
-      "title": "Chandler, Oklahoma Weather Forecast",
-      "url": "https://www.weather-forecast.com/locations/Chandler-2/forecasts/latest",
-      "summary": "See the links below the 16 day Chandler (Oklahoma) weather forecast table for other cities and towns nearby along with weather conditions for local outdoor activities.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9ca7c1ff3ed3f64a",
-      "title": "Colores alternados en filas de un grid",
-      "url": "https://groups.google.com/g/publicesvfoxpro/c/iKrVvjyi1_s",
-      "summary": "Buenas, acabo de enterarme de que en vfp9 existe una forma de darle a las grids colores alternados en sus filas y es accediendo al ítem \"Builder\" del menú que se abre con click derecho, en la pestaña \"Style\" y seleccionando el estilo llamado \"Ledger\". Bueno, a mi me interesa saber cómo aplicarle el estilo de dos colores a las filas sin usar el generador ya que la grid que quiero mejorar ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5f06e4c225de8670",
-      "title": "Demand vs Quantity Demanded: Difference and Comparison",
-      "url": "https://askanydifference.com/difference-between-demand-and-quantity-demanded/",
-      "summary": "Demand is the overall desire for a good or service at various prices, while quantity demanded is the specific amount desired at a particular price.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2992b1739eeedae2",
-      "title": "Demand vs. Quantity Demanded — What's the Difference?",
-      "url": "https://www.askdifference.com/demand-vs-quantity-demanded/",
-      "summary": "Demand refers to the overall desire for a product at various prices. Quantity Demanded is the specific amount sought at a particular price.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4bd7d6241cfa671b",
-      "title": "Difference Between Demand and Quantity Demanded",
-      "url": "https://keydifferences.com/difference-between-demand-and-quantity-demanded.html",
-      "summary": "The fundamental difference between demand and quantity demanded is that while demand simply denotes the willingness and a person’s ability to purchase. As against this quantity demanded represents the amount of an economic good or service desired by consumers at a fixed price.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2691dcee2e7cf72b",
-      "title": "Difference Between Demand And Quantity Demanded",
-      "url": "https://economicslive.com/what-is-the-difference-between-demand-and-quantity-demanded/",
-      "summary": "The difference between demand and quantity demanded is one the most important concepts in microeconomics. While demand represents the entire relationship between price and quantity, quantity demanded refers to a specific amount purchased at a specific price.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "56584e97635c65f3",
-      "title": "Difference between Quantity Demanded and Demand",
-      "url": "https://xplaind.com/187925/quantity-demanded-vs-demand",
-      "summary": "In economics, demand refers to the demand schedule i.e. the demand curve while the quantity demanded is a point on a single demand curve which corresponds to a specific price. It is important to distinguish between the two terms because they refer to totally different concepts.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "532dc9d86acd00ff",
-      "title": "dmcf_dailybread - Google Groups",
-      "url": "https://groups.google.com/g/dmcf_dailybread",
-      "summary": "God's voice thunders in marvelous ways. Job 37:5 Today's Scripture Job 37:1-13 Today's",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "710a2ae5de3c34e5",
-      "title": "Fortune - Login",
-      "url": "https://video-admin.fortune.com/",
-      "summary": "Forget your password? Reset password.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b35ce2a09b353416",
-      "title": "Fortune Wins Canada | Social & Sweepstakes Casino Guide",
-      "url": "https://fortunewins.ca/",
-      "summary": "Explore Fortune Wins Canada, a social casino and sweepstakes casino guide for Canadian players. Check bonuses, games, mobile access and eligible provinces.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5d060e57bfbf2beb",
-      "title": "Fortune Wins Casino | Top Social Casino in Canada & the U.S.",
-      "url": "https://fortunewins.com/login",
-      "summary": "Join Fortune Wins Casino, the top social casino in the U.S. and Canada! Play sweepstakes games for free and win big today!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5fac7a4f54c66a00",
-      "title": "Fortune Wins Casino: Top Social Casino in the U.S. and Canada",
-      "url": "https://fortunewins.com/",
-      "summary": "Join Fortune Wins Casino, the top social casino in the U.S. and Canada! Play sweepstakes games for free and win big today!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5013de8621168e1f",
-      "title": "Fortune Wins Login Help | FortuneWins.ca",
-      "url": "https://fortunewins.ca/account/login/",
-      "summary": "How do you reach the correct login screen? Open the official Fortune Wins website ↗ and choose its login option. A familiar logo or a search advert is not enough to identify a website. Check the address bar before using saved credentials.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a43764d444cf909c",
-      "title": "Fortune Wins | Home",
-      "url": "https://support.fortunewins.com/portal/en/home",
-      "summary": "Fortune Wins | Home",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2188cbfead00a8a6",
-      "title": "Fortune Wins | Sign In",
-      "url": "https://support.fortunewins.com/portal/en/kb/articles/how-can-i-close-my-account",
-      "summary": "Create an account to submit tickets, read articles and engage in our community. Still can’t find an answer? Send us a ticket and we will get back to you.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
         "community"
@@ -1764,10 +1735,220 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1ff5c9e4f019fffa",
-      "title": "Holiday Inn Express & Suites - Orlando - Southeast by IHG",
-      "url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-orlando-lake-nona-area.html",
-      "summary": "The prices at Holiday Inn Express & Suites - Orlando - Southeast by IHG may vary depending on your stay (e.g. dates, hotel's policy etc.). To see prices, enter your dates.",
+      "id": "2b90d523e4dbe867",
+      "title": "Jack Hall - The Day After Tomorrow Wiki",
+      "url": "https://thedayaftertomorrow.fandom.com/wiki/Jack_Hall",
+      "summary": "Jack Hall is a climatologist of the National Oceanic and Atmospheric Administration, and the main protagonist of the 2004 film The Day After Tomorrow. He is portrayed by Dennis Quaid.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a375be3c35dc6424",
+      "title": "Jack Hall from The Day After Tomorrow | CharacTour",
+      "url": "https://www.charactour.com/hub/characters/view/Jack-Hall.The-Day-After-Tomorrow",
+      "summary": "Jack works on computer models that help predict global climate patterns. After stumbling on findings that lead him to believe the world is headed for a new ice age, he travels to a U.N. conference in New Delhi to warn them.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6a26b90205b8ec79",
+      "title": "Jack Halls - Senior High Teacher - Davis School District - OpenGovPay",
+      "url": "https://opengovpay.com/ut/jack-halls/152934333",
+      "summary": "In 2024, Jack Halls made $122,457 by working as a Senior High Teacher at the Davis School District.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "523d55f81c4d42ee",
+      "title": "Jack Halls | Senior High Teacher | Davis School District",
+      "url": "https://openpayrolls.com/employee/jack-halls-11605",
+      "summary": "Davis School District records show Jack Halls held multiple jobs between 2018 and 2025. One of the most recent records in 2025 lists a job of Senior High Teacher and a pay of $123,850.01.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71fbce987e00ece7",
+      "title": "Marcus Smart - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Marcus_Smart",
+      "summary": "Smart was drafted by the Boston Celtics with the sixth overall pick in the 2014 NBA Draft. He initially came off the bench for the Celtics before becoming the starting point guard in 2018.",
+      "discovery_channel": "adjacent+broad_web+community+developer+research",
+      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses app GitHub; smart glasses BLE GitHub; smart glasses ADB Android; smart glasses firmware GitHub; smart glasses developer API; smart eyewear research university; smart glasses HCI research; smart glasses privacy research; smart glasses health research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart eyewear site:media.mit.edu; smart glasses biometric privacy litigation; smart glasses owner review forum; smart glasses hack forum; smart glasses community database; smart contact lens research",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "43847d940a301500",
+      "title": "Mini Camera - Best Prices in Egypt | Jumia Egypt",
+      "url": "https://www.jumia.com.eg/mlp-mini-camera/",
+      "summary": "Discover Mini Camera products online at Jumia Egypt. Explore a Wide Collection of Original products at the Best Price in Egypt. Cash on Delivery | Secure Payment | Free Returns - Order Now!",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9e9e7e67c93dde02",
+      "title": "VW USA - Volkswagen",
+      "url": "https://media.vw.com/en-us/home",
+      "summary": "Official Volkswagen of America media site with news, press releases, and multimedia content.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb54a905f70ffb07",
+      "title": "Weather Forecast and Conditions for Greensboro, NC (27408)",
+      "url": "https://www.weatherusa.net/forecasts/zip:27408",
+      "summary": "Local hourly and 7-day forecast, current conditions, weather alerts, radar, and SkyCams for Greensboro, North Carolina (27408).",
       "discovery_channel": "broad_web",
       "query": "IFA smart glasses",
       "source": "Bing web RSS",
@@ -1782,66 +1963,6 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
-      ],
-      "primary_type": "policy",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "52a22a44e395dd1d",
-      "title": "Holiday Inn Express & Suites Nearest Universal Orlando",
-      "url": "https://www.ihg.com/holidayinnexpress/hotels/us/en/orlando/mcomb/hoteldetail",
-      "summary": "Official site of Holiday Inn Express & Suites Nearest Universal Orlando. Stay Smart, rest, and recharge at Holiday Inn Express - Best Price Guarantee.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f39c0f1eb25b7779",
-      "title": "Holiday Inn Express & Suites Nearest Universal Orlando By IHG",
-      "url": "https://www.kayak.com/Orlando-Hotels-Holiday-Inn-Express-Suites-Nearest-Universal-Orlando.36797.ksp",
-      "summary": "Free Wi-Fi, a heated pool and 3-star accommodation are on offer at Holiday Inn Express & Suites - Nearest Universal Orlando. It provides a fitness center, as well as an express check-in and check-out feature, a sun deck and an executive floor.",
-      "discovery_channel": "broad_web",
-      "query": "IFA smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
         "news"
       ],
       "primary_type": "news",
@@ -1854,10 +1975,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cb6670b58c4086ab",
-      "title": "iitb open vpn server (accessing iitb websites from outside iit)",
-      "url": "https://groups.google.com/g/wncc_iitb/c/H5F36jCiyjE",
-      "summary": "for accessing asc.iitb.ac.in the problem is with the dns server. set the dns server address as 10.200.1.11 and 10.200.11.1 and things should work out. also note that you will have to set netmon as proxy to access any website outside iit when the vpn is on.",
+      "id": "13b89e239c40e184",
+      "title": "What Is Jack Hall’s Professional Background Prior to H...",
+      "url": "https://factually.co/fact-checks/politics/jack-hall-professional-background-before-candidacy-74a7d0",
+      "summary": "Executive summary Jack Hall is presented in campaign materials and local reporting as a long-time law enforcement professional with three decades-plus of ...",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1884,40 +2005,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "544bb0770f024f75",
-      "title": "Main Difference Between Demand & Quantity Demanded | Outlier",
-      "url": "https://articles.outlier.org/difference-between-demand-and-quantity-demanded",
-      "summary": "Find out the difference between demand and quantity demanded. Plus learn how the quantity demanded affects society in everyday life and the economy.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "de08247a30d66b0d",
-      "title": "Medici e trattenute ENPAM da ASL - Google Groups",
-      "url": "https://groups.google.com/g/it.discussioni.commercialisti/c/x1q-IX9TQYg",
-      "summary": "Classico problema dei medici: le ASL trattengono anche l'ENPAM a carico del medico (punto 35 della CU) e lo versano per suo conto, indicando nella CU i compensi già al netto di tali trattenute. Ci sono due orientamenti su come comportarsi in dichiarazione: 1. indicare come ricavo i compensi al netto della trattenuta, così come indicato in CU; 2. indicare come ricavo il lordo, dato da netto ...",
+      "id": "25e437844ce3da85",
+      "title": "What was Hal's job? : r/malcolminthemiddle - Reddit",
+      "url": "https://www.reddit.com/r/malcolminthemiddle/comments/8oivnt/what_was_hals_job/",
+      "summary": "In another episode, Hal's company head stated that Hal was one of the best systems managers he ever had, however, in the episode College Recruiters, Hal says he could be replaced at his job in an hour.",
       "discovery_channel": "broad_web",
       "query": "ENGO smart glasses",
       "source": "Bing web RSS",
@@ -1926,465 +2017,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6e2f4b375b4197d6",
-      "title": "Play Social Casino Games for Free at Fortune Wins Casino",
-      "url": "https://fortunewins.com/public-lobby/lobby",
-      "summary": "Explore Fortune Wins Casino online casino games in U.S. and Canada! Safe and secure online casino experience with wide variety of sweeps games free-to-play. Join us today and let the games begin!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0eab1cb5daeaebb9",
-      "title": "PowerSmart 24 in. 2-Stage Electric Start Gas Snow Blower with Heated ...",
-      "url": "https://www.homedepot.com/p/PowerSmart-24-in-2-Stage-Electric-Start-Gas-Snow-Blower-with-Heated-Handles-and-LED-Light-PSSHD24T/317029772",
-      "summary": "Clear snow like an absolute pro with the PowerSmart 24-in 212cc gas powered snow blower. This snow blower is powerful enough to cut through the toughest, wettest snow and gives you up to 40 ft. of throwing distance. With 6 forward and 2 reverse speeds, you can adjust the pace to fit your needs.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4a966b71833e6820",
-      "title": "PowerSmart 24 in. 212cc 2-Stage Gas Snow Blower with Electric Start and ...",
-      "url": "https://www.homedepot.com/p/PowerSmart-24-in-212cc-2-Stage-Gas-Snow-Blower-with-Electric-Start-and-Infinite-Variable-Speed-MB7109A/326654284",
-      "summary": "Introducing the Power Smart 2-Stage Gas Snow Blower, powered by a dynamic 212cc engine for unparalleled snow removal efficiency. Tackle fluffy to heavy snowfall thanks to its impressive 24'' clearing width and 20'' intake height, with blowing clearance up to 40' away.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9d65e69599e4aad5",
-      "title": "PowerSmart 24\" 212cc Two-Stage Self-Propelled Gas Snow Blower, 120V ...",
-      "url": "https://www.walmart.com/ip/PowerSmart-Brand-New-Self-Propelled-Gas-Snow-Blower-212cc-24-in-Two-Stage-with-120V-Electric-Start-and-LED-Headlight/1718507280",
-      "summary": "Powered by a robust 212cc engine, this 2-stage snow blower ensures efficient snow removal with three start options: 120V electric, pull-start, or extension cord electric ignition. Its all-steel auger cuts through heavy snow and prevents clogging while throwing snow up to 45 feet.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f1c1a2fe896c7204",
-      "title": "PowerSmart 24-in Two-stage 208-cc Self-propelled Gas Snow Blower",
-      "url": "https://www.lowes.com/pd/PowerSmart-24-inch-Two-stage-Electric-Start-Gas-Snow-Blower-with-Briggs-Stratton-Engine/5015037451",
-      "summary": "Shop PowerSmart 24-in Two-stage Self-propelled Gas Snow Blower PSSAM24BS in the Snow Blowers department at Lowes.com",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "64681412fdc37cd2",
-      "title": "PowerSmart 24-Inch Self-Propelled Two-Stage Gas Snow Blower ... - Amazon",
-      "url": "https://www.amazon.com/PowerSmart-24-Inch-Self-Propelled-Two-Stage-Electric/dp/B0DRC153ZN",
-      "summary": "About this item 24-Inch Clearing Width with Two-Stage System: Efficiently clears wide paths and handles heavy, wet snow with ease, making it ideal for large driveways and walkways. Powerful 208cc Briggs & Stratton Engine: Delivers reliable and robust performance for tackling tough winter conditions.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fa8ee79e07e8becc",
-      "title": "PowerSmart 24-Inch Snow Blower Gas Powered Self-Propelled 2-Stage 212cc ...",
-      "url": "https://www.lowes.com/pd/PowerSmart-24-Inch-Snow-Blower-Gas-Powered-Self-Propelled-2-Stage-212cc-4-Cycle-Engine-with-Electric-Start-Headlight/9082950",
-      "summary": "Power Smart Quality build for dependable everyday performance Fast Snow Removal: 24 in clearing width and 20 in intake height that makes quick work of deepest snow clear up to 14-cars driveway",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a68825b100c2d38d",
-      "title": "PowerSmart Gas Snow Blower, 24-Inch Self-Propelled 208cc B&S ... - Amazon",
-      "url": "https://www.amazon.com/PowerSmart-24-Inch-Self-Propelled-Electric-Two-Stage/dp/B0DCC4FH94",
-      "summary": "Snow-Shredding Precision at Your Fingertips‌: With 6 forward and 2 reverse speeds, you're the maestro of snow removal. Fine-tune your snow-busting symphony, gliding over driveways and pathways with the grace of a ballerina, yet packing the punch of a heavyweight champion.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "09280cb28a5fd74c",
-      "title": "Quantity Demanded vs Demand: Key Differences Explained [Guide]",
-      "url": "https://clearpedia.blog/quantity-demanded-vs-demand-differences",
-      "summary": "The core difference between quantity demanded vs demand is that quantity demanded represents a specific point on a curve triggered by price changes, whereas demand refers to the entire relationship between price and quantity for a given good.",
-      "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c78d2a98d7d91c16",
-      "title": "Re: ขอสูตรแยกธนบัตรและเหรียญ",
-      "url": "https://groups.google.com/g/excel_for_hr/c/ysF822ZknC8",
-      "summary": "เรียนเพื่อนๆๆ HR ทุกท่าน รบกวนขอสูตร excel การแยกธนบัตรและเหรียญ ด้วยค่ะ เนื่องจากที่บริษัท ฯ มีการจ่ายเงินสดแก่ พนักงานรายวันค่ะ จำนวน 100 กว่าคน ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "07f609ea1b41afe3",
-      "title": "root ssh access denied in Wazuh 4.2 - Google Groups",
-      "url": "https://groups.google.com/g/wazuh/c/KZ4NIMSNOJE",
-      "summary": "Hi alaa.dj, by default root login over ssh is disabled by default. If you want to allow root login over ssh got to /etc/ssh and edit the file sshd_config. Search for the line PermitRootLogin yes and erase the \"#\" at the beginning of the line. Then restart the ssh service. I hope you find this information useful!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2a26e764a78a363f",
-      "title": "Sign-up - Fortune Wins",
-      "url": "https://fortunewins.com/signup",
-      "summary": "Register and play the best free casino-style games at Fortune Wins Social Casino. Double the fun with sweepstakes, raffles, giveaways, free spins, bonuses & jackpots.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "82fa2135a93c91ed",
-      "title": "Social Casino Log-In Daily Bonus - Fortune Wins Casino Bonus - March 2026",
-      "url": "https://fortunewins.com/promotions/promo/daily-bonus",
-      "summary": "Get a daily login bonus for free at Fortune Wins Casino. Collect free bonuses every day and enjoy bigger rewards with consecutive logins. No purchase necessary.",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "dc8c27816bb00ec8",
-      "title": "Susan Harris Movies & TV Shows List | Rotten Tomatoes",
-      "url": "https://www.rottentomatoes.com/celebrity/susan_harris_2",
-      "summary": "Explore the complete filmography of Susan Harris on Rotten Tomatoes! Discover every movie and TV show they have been credited in.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4e4ef1f51513bbb8",
-      "title": "Unable to resolve chat model with family selection: gpt-4.1",
-      "url": "https://github.com/microsoft/vscode/issues/287081",
-      "summary": "Unable to resolve chat model with family selection: gpt-4.1 #287081 Closed Hein Meling (meling) opened on Jan 12",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "primary_artifact",
-      "delegated_action": "record_attributed_evidence",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
       "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2394,12 +2035,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d3af8282cb9e4c3f",
-      "title": "Understanding Quantity Demanded: Definition and Examples",
-      "url": "https://www.investopedia.com/terms/q/quantitydemanded.asp",
-      "summary": "Quantity demanded refers to the total amount of a good or service that consumers demand over a given period. Quantity demanded depends on the price of a good or service in a marketplace.",
+      "id": "2e36285c3885f650",
+      "title": "Wifi Camera Available - Buy Wifi Camera Online - Jumia Egypt",
+      "url": "https://www.jumia.com.eg/mlp-wifi-camera/",
+      "summary": "Buy Wifi Camera At The Best Prices In The Market - Order Wifi Camera From The Comfort Of Your Home Via Jumia Egypt - Free Returns - Fast Delivery",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2412,9 +2053,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "retail"
+        "model"
       ],
-      "primary_type": "retail",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -2424,42 +2065,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "1419ff2caa3dad1d",
-      "title": "What is the difference between demand and quantity demanded?",
-      "url": "https://www.howengineeringworks.com/questions/what-is-the-difference-between-demand-and-quantity-demanded/",
-      "summary": "Demand refers to the complete relationship between price and quantity demanded, while quantity demanded refers to the amount purchased at a specific price. Demand is broad and general, while quantity demanded is specific and limited to one price point.",
+      "id": "3a8fbab4a3544b80",
+      "title": "اشتري كاميرا تصوير بأفضل سعر - جوميا مصر",
+      "url": "https://www.jumia.com.eg/ar/mlp-camera/",
+      "summary": "اكتشف كاميرا تصوير أونلاين علي جوميا مصر. استمتع بالحصول علي مجموعة منتجات كبيرة واصلية بأفضل سعر في مصر. دفع عند الاستلام | توصيل سريع | ارجاع مجاني – اطلب الآن!",
       "discovery_channel": "broad_web",
-      "query": "IFA 2026 smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "deee5719788b74a9",
-      "title": "แบบฟอร์มตารางตรวจความสะอาดของแม่บ้านบ้าง",
-      "url": "https://groups.google.com/g/siamhrm/c/_wbIe7lR7Bk",
-      "summary": "จัดให้ แค่นี้ก่อนนะครับ แบบฟอร์มตรวจสอบการทำงานมันหาไม่ ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -2484,12 +2095,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "898fe70d08c4f29d",
-      "title": "现在这些大模型，哪个在代码编写上表现的最好呀？ - 知乎",
-      "url": "https://www.zhihu.com/question/11016066228",
-      "summary": "多模态融合：GPT-4V等模型开始支持UI设计图转代码 本地化部署：Qwen-72B等国产模型显存优化显著（8卡可部署） 建议结合具体需求试用：DeepSeek-Coder适合长期编码伙伴，GPT-4应对复杂问题，Claude处理遗留系统改造，开源模型满足定制需求。",
+      "id": "fa872f48345433c8",
+      "title": "كاميرات | 1464 + منتج | أفضل الأسعار - جوميا مصر",
+      "url": "https://www.jumia.com.eg/ar/cameras/",
+      "summary": "تسوّق كاميرات أونلاين — 1464 + منتج بأفضل الأسعار في مصر. شحن مجاني على طلبات +400 جنيه | تقسيط حتي 12 شهر | دفع عند الاستلام | إرجاع مجاني — اشترِ الآن من جوميا!",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "44de46321f61cbee",
+      "title": "كاميرات ديجيتال | 18 + منتج | أفضل الأسعار - جوميا مصر",
+      "url": "https://www.jumia.com.eg/ar/electronics-cameras-digital-cameras/",
+      "summary": "تسوّق كاميرات ديجيتال أونلاين — 18 + منتج بأفضل الأسعار في مصر. شحن مجاني على طلبات +400 جنيه | تقسيط حتي 12 شهر | دفع عند الاستلام | إرجاع مجاني — اشترِ الآن من جوميا!",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
