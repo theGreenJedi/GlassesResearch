@@ -7,6 +7,7 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 - [r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/) — broad independent smart-glasses discussion spanning buying, ownership, development, troubleshooting, new releases, hacks, and comparisons across manufacturers.
 - [Mentra Community — GitHub](https://github.com/Mentra-Community) — open-source cross-device smart-glasses OS, SDK, applications, hardware projects, and development work.
 - [MentraOS — GitHub](https://github.com/Mentra-Community/MentraOS) — open-source operating system and SDK targeting multiple smart-glasses families.
+- [Mentra Bluetooth SDK Starter Kit — GitHub](https://github.com/Mentra-Community/Mentra-Bluetooth-SDK-Starter-Kit) — official Android, iOS, React Native and macOS examples with published SDK package integration, capability/firmware notes and privacy checklist; [3.3.0 production example promotion](../research/news-reviews/2026-11-01-mentra-bluetooth-sdk-330.md) is documented with physical-test limits.
 - [Open Source Smart Glasses — GitHub](https://github.com/Mentra-Community/OpenSourceSmartGlasses) — open hardware/software project originating with Team Open Smart Glasses / H20 Smart Glasses Community.
 - [Mentra Discord](https://mentra.glass/discord) — developer and user community around MentraOS and compatible devices.
 
@@ -44,6 +45,8 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 ## RayNeo
 
 - [RayNeo AR Community — Discord](https://discord.com/servers/rayneo-ar-community-1227861918283202581) — RayNeo community for owners, creators, developers, support, product discussion, and events.
+- [OpenRayneo — GitHub](https://github.com/Tobi1chi/OpenRayneo) — independent Apache-2.0 RayNeo **iO** Bluetooth bridge, macOS/Android apps, local API and agent-control reference; maintainer tests are limited to named devices and platforms, not all RayNeo models.
+- [VertoXR — GitHub](https://github.com/rohitsangwan01/Verto_XR) — third-party spatial desktop and head-tracking software for several AR-glasses families; [GT/GT Max firmware-compatibility discussion](../research/news-reviews/2026-11-01-rayneo-gt-usb-topology-community.md) includes an important October 7 correction to an initial October 6 failure report.
 - [r/SmartGlasses](https://www.reddit.com/r/SmartGlasses/) — independent cross-vendor community with substantial RayNeo discussion and comparisons.
 
 ## Rokid
