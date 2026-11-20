@@ -1,11 +1,11 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-19T19:01:18+00:00**
+Generated: **2026-11-20T18:38:51+00:00**
 
-- Published evidence-backed answers: **231** (minimum **1000**, no ceiling)
-- Remaining to minimum: **769**
+- Published evidence-backed answers: **232** (minimum **1000**, no ceiling)
+- Remaining to minimum: **768**
 - Canonical registry size: **409** (not the published count)
-- Unanswered research candidates: **116**
+- Unanswered research candidates: **115**
 - Observations this run: **54**
 - New distinct questions: **0**
 
