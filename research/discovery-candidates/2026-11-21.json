@@ -1,39 +1,40 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-21T19:28:41.267678+00:00",
-  "candidate_count": 53,
-  "classifier_irrelevant_count": 40,
+  "discovered_utc": "2026-11-21T22:29:24.941299+00:00",
+  "candidate_count": 66,
+  "classifier_irrelevant_count": 54,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 15,
-    "broad_web": 34,
-    "community": 1,
-    "developer": 6,
-    "research": 2
+    "adjacent": 10,
+    "broad_web": 36,
+    "developer": 20
   },
   "relationship_counts": {
-    "direct": 0,
+    "direct": 2,
     "enabling": 0,
-    "adjacent": 13,
+    "adjacent": 10,
     "speculative": 0,
-    "irrelevant": 40
+    "irrelevant": 54
   },
   "type_counts": {
-    "model": 3,
-    "review": 1,
-    "video": 12,
-    "news": 29,
+    "video": 4,
+    "news": 25,
     "research": 2,
-    "tool": 6,
-    "sdk": 5
+    "tool": 25,
+    "sdk": 20,
+    "policy": 1,
+    "retail": 4,
+    "community": 10
   },
   "routing_counts": {
-    "adjacent_radar": 13,
-    "deep_research": 1,
-    "model_catalog_review": 1,
-    "reject_noise": 40,
-    "report_card_evidence": 1,
-    "research_news_review": 13
+    "adjacent_radar": 10,
+    "community_evidence_review": 3,
+    "development_hacking": 5,
+    "policy_privacy": 1,
+    "reject_noise": 54,
+    "report_card_evidence": 2,
+    "research_news_review": 12,
+    "retail_rebrand_review": 2
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -47,52 +48,85 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "04562df60b99c00c",
-      "title": "CIDRAP- NEWS BRIEFS December 3, 2025 | FluTrackers",
-      "url": "https://flutrackers.com/threads/cidrap-news-briefs-december-3-2025.1024848/",
-      "summary": "Medical societies jointly launch infection prevention initiative News brief Today at 2:42 p.m. Chris Dall, MA Topics Antimicrobial Stewardship Healthcare-Associated Infections Two medical societies are teaming up on an initiative to provide guidance on infection prevention and antimicrobial stewardship in US health care settings.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "6bbb5cd4c6609a47",
+      "title": "OpenGlass - Open Source Smart Glasses - GitHub",
+      "url": "https://github.com/fre2d0m/OpenGlass-0527",
+      "summary": "OpenGlass - Open Source Smart Glasses Turn any glasses into hackable smart glasses with less than $25 of off-the-shelf components. Record your life, remember people you meet, identify objects, translate text, and more.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 4,
       "keyword_hits": [
-        "launch"
+        "github",
+        "open source"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
+      "attribution_required": true,
+      "relationship": "direct",
       "content_types": [
-        "model"
+        "tool"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "model_catalog_review",
-        "adjacent_radar"
+        "development_hacking"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "52223def8b432351",
-      "title": "CIDRAP- NEWS BRIEFS October 28, 2025 | FluTrackers",
-      "url": "https://flutrackers.com/threads/cidrap-news-briefs-october-28-2025.1021943/",
-      "summary": "News brief 11 minutes ago. Chris Dall, MA Topics Salmonella Antimicrobial Stewardship An international team of scientists led by researchers from the University of Liverpool has received an award of £4.56 million (US $6.06 million) for a 5-year research program that will explore natural human protection against Salmonella.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "id": "ae51822a5025084d",
+      "title": "smart-glasses · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/smart-glasses",
+      "summary": "Open-source iOS app connecting Meta Ray-Ban smart glasses to AI — 5 backends (on-device MLX models, Apple Intelligence, OpenAI, Gemini Live, OpenClaw), on-device neural voice, face recognition & live web search.",
+      "discovery_channel": "broad_web",
+      "query": "open source smart glasses",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
-        "research"
+        "github"
       ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "direct",
+      "content_types": [
+        "tool",
+        "policy"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "policy_privacy"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0d790426ff783fc5",
+      "title": "Actualiza las apps de YouTube y YouTube Studio",
+      "url": "https://support.google.com/youtube/answer/7341336?hl=es-419&co=GENIE.Platform%3DAndroid",
+      "summary": "De forma predeterminada, la app de Google Play Store en tu Android TV debe tener activada la actualización automática de apps en cualquier momento, por lo que la app de YouTube debería actualizarse automáticamente. Si desactivaste la opción y quieres volver a activarla, sigue estos pasos: Presiona el botón de inicio en tu control remoto. Selecciona Apps y elige Google Play Store ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -101,12 +135,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "research"
+        "video",
+        "tool"
       ],
-      "primary_type": "research",
+      "primary_type": "video",
       "routing_targets": [
         "research_news_review",
-        "deep_research",
+        "report_card_evidence",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -115,10 +151,74 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b96d6a5c9066bdbf",
-      "title": "CIDRAP- NEWS BRIEFS January 27, 2026 | FluTrackers",
-      "url": "https://flutrackers.com/threads/cidrap-news-briefs-january-27-2026.1028485/",
-      "summary": "News brief Today at 2:15 p.m. Mary Van Beusekom, MS Topics COVID-19 Real-world data from Japan suggest that an organic mental disorder (one not caused by psychiatric illness, such as Alzheimer’s disease [AD] and/or delirium) is a key risk factor for COVID-19 infection and hospitalization among older adults.",
+      "id": "0d718f3a1c497945",
+      "title": "Amazon Pharmacy: PillPack",
+      "url": "https://pharmacy.amazon.com/pillpack",
+      "summary": "Does PillPack from Amazon Pharmacy work with insurance, my FSA, RxPass, coupons, or other Prime benefits? Yes, PillPack from Amazon Pharmacy works with most health insurance plans, HSA and FSA accounts, RxPass, automatically applied eligible manufacturer coupons, and all other Prime benefits.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd3b442871e2ca33",
+      "title": "Amazon: Full-Time Warehouse Jobs - Openings in the USA",
+      "url": "https://hiring.amazon.com/search/warehouse-jobs",
+      "summary": "Now Hiring: Amazon Full-Time Warehouse jobs in the USA - Start Your Career Today!",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "108d1377f1e51ceb",
+      "title": "Core Web Vitals report - Search Console Help",
+      "url": "https://support.google.com/webmasters/answer/9205520?Hl=en",
+      "summary": "Fix poor user experiences on your siteThe Core Web Vitals report shows how your pages perform, based on real world usage data (sometimes called field data).",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -146,229 +246,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "95799ea33b5badd9",
-      "title": "CIDRAP- NEWS BRIEFS March 31, 2026 | FluTrackers",
-      "url": "https://flutrackers.com/threads/cidrap-news-briefs-march-31-2026.1032366/",
-      "summary": "News brief Today at 5:08 p.m. Chris Dall, MA Topics Avian Influenza (Bird Flu) E coli HIV/AIDS In an update yesterday, the US Centers for Disease Control and Prevention (CDC) said consumers and retailers should not eat, sell, or serve Raw Farm–brand raw cheddar cheese that was sold from January 4 until now.",
+      "id": "6bda0a733bb3039c",
+      "title": "Crea un canal de YouTube - Ayuda de YouTube - Google Help",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=es-419",
+      "summary": "Crea un canal de YouTube Con una Cuenta de Google, puedes mirar videos, ponerles Me gusta y suscribirte a canales. Para subir videos, escribir comentarios o crear playlists, necesitas un canal de YouTube. Sin un canal, no tendrás presencia pública en YouTube.",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0bbdb7f02df1c0a4",
-      "title": "Cities Near Me - Union City, California | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Union+City,+CA",
-      "summary": "Find the top 15 cities, towns, and suburbs near Union City, CA, like Fremont and Newark, and explore the surrounding area for a day trip.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22a7c495f80b36bc",
-      "title": "DRC – 17th Ebola Outbreak (Bundibugyo virus) - Government | W.H.O ...",
-      "url": "https://flutrackers.com/threads/drc-17th-ebola-outbreak-bundibugyo-virus-government-w-h-o-africa-cdc-news-may-2026.1034822/page-26",
-      "summary": "Since the last Disease Outbreak News was published on 11 September 2026, the Bundibugyo virus outbreak in the Democratic Republic of the Congo has expanded further, with two additional health zones affected. These include Bulu health zone in a new province, Sud Ubangi, located on the north-west...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4d1d78b015f41c5d",
-      "title": "DRC – 17th Ebola Outbreak (Bundibugyo virus) - Government | W.H.O ...",
-      "url": "https://flutrackers.com/threads/drc-17th-ebola-outbreak-bundibugyo-virus-government-w-h-o-africa-cdc-news-may-2026.1034822/page-27",
-      "summary": "Since the previous Disease Outbreak News was published on 25 September 2026, an additional 775 confirmed cases, including 379 confirmed deaths, have been reported in the Democratic Republic of the Congo. In the most recent 24-hour period, as of 6 October, 62 new confirmed cases were reported, with Ituri accounting for 33 cases and North Kivu ...",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b584385d56d6e261",
-      "title": "Paraguay 0-0 Australia (Jun 25, 2026) Game Analysis - ESPN",
-      "url": "https://www.espn.com/soccer/report/_/gameId/760469",
-      "summary": "Australia and Paraguay played to a 0-0 draw Thursday night in a result that clinched a spot in the knockout round of the World Cup for the Socceroos and will likely be enough for the Paraguayans...",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ac76ddafcb6898a1",
-      "title": "Paraguay 0-0 Australia: Result, Stats & Report - World Cup Pass",
-      "url": "https://worldcuppass.com/match/paraguay-australia-2026-06-25/",
-      "summary": "Paraguay vs Australia ended 0-0. Get the final score, goals, player ratings, lineups and full match stats.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9e2e5a9e31720bcb",
-      "title": "Paraguay vs Australia live score, H2H and lineups | Sofascore",
-      "url": "https://www.sofascore.com/football/match/paraguay-australia/QUbsOVb",
-      "summary": "On Sofascore livescore you can find all previous Paraguay vs Australia results sorted by their H2H matches. Sofascore also provides the best way to follow the live score of this game with various sports features.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8803041875d00561",
-      "title": "Paraguay vs Australia recap: Score, highlights, play-by-play",
-      "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/25/paraguay-vs-australia-updates-score-how-to-watch-tv-and-streaming/90688030007/",
-      "summary": "The match between Australia and Paraguay ended in a 0-0 draw after a hard fought, physical game that saw both teams unable to register a goal.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -395,12 +278,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6bdd51f8c7db1412",
-      "title": "Paraguay vs Australia summary: score, stats, goals & highlights | World ...",
-      "url": "https://en.as.com/soccer/world-cup/paraguay-vs-australia-live-online-score-stats-goals-updates-world-cup-2026-group-d-f202606-n/",
-      "summary": "Paraguay and Australia played out a stalemate in Santa Clara - a result that sends the Socceroos through, and probably takes the South Americans with them.",
+      "id": "6e14afd932da0557",
+      "title": "Cómo activar o desactivar las cookies - Google Help",
+      "url": "https://support.google.com/accounts/answer/61416?hl=es-419&co=GENIE.Platform%3DDesktop",
+      "summary": "Cómo solucionar problemas Si no puedes acceder a un sitio web de terceros con tu Cuenta de Google y recibes un mensaje que indica que las cookies están desactivadas: Sigue los pasos que se enumeran anteriormente para activar las cookies. Intenta acceder de nuevo. Si todavía aparece el mensaje de error, estas son algunas soluciones posibles.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -413,11 +296,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -426,12 +310,44 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "04e111d1ef59202d",
-      "title": "Paraguay vs. Australia Live Updates, Score: Latest World Cup News and ...",
-      "url": "https://www.foxsports.com/live-blog/soccer/paraguay-vs-australia-live-updates-score-latest-world-cup-news-goals",
-      "summary": "Follow Paraguay vs. Australia live at the 2026 FIFA World Cup. Real-time score updates, key plays, and match analysis as it happens.",
+      "id": "02cdef38122dc047",
+      "title": "El SITATIR : r/copypasta - Reddit",
+      "url": "https://www.reddit.com/r/copypasta/comments/euuzwl/el_sitatir/",
+      "summary": "Los trabajadores de la televisión y la radio, llevaremos a cabo nuestra sexagésima octava asamblea general ordinaria del consejo nacional, en Quintana Roo, inaugurando los trabajos del gobernador del estado, con el respaldo de la confederación de trabajadores de México, avanzamos para un mejor futuro comprometidos contigo, por una ...",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "efe236601889a9c6",
+      "title": "Install your Nest thermostat - Google Home and Nest Help",
+      "url": "https://support.google.com/googlenest/answer/9274936?hl=en",
+      "summary": "Install your thermostat on your own Important: Check if your system works with the Nest thermostat you purchased. Learn more about Nest thermostat compatibility. Most homeowners can easily install a Google Nest thermostat on their own in just 20-30 minutes when they follow the Nest app’s step-by-step instructions. If you want to install your Nest thermostat by yourself, go to Install your ...",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -444,11 +360,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -457,10 +374,136 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "2f4e745e14b024bc",
-      "title": "Fidelity Investments: Invest, Trade, Plan for Retirement, and ...",
-      "url": "https://www.fidelity.com/",
-      "summary": "Open a brokerage account, save with a Roth IRA, HSA, or 529, and work with an advisor on a wealth strategy built around your goals. Learn how Fidelity Investments can help.",
+      "id": "efdd6fe7334614f8",
+      "title": "Tesla Model Y - Reddit",
+      "url": "https://www.reddit.com/r/ModelY/",
+      "summary": "Model Y RWD battery Anybody know what kind of battery the new RWD Model Y’s being delivered now have? Tesla advisor wasn’t sure.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8a395dfff66d385",
+      "title": "Y-cruncher help? : r/overclocking - Reddit",
+      "url": "https://www.reddit.com/r/overclocking/comments/17dkheg/ycruncher_help/",
+      "summary": "But some Y-Cruncher tests barely increase CPU temp at all compared to idle, and others go straight to max (BKT is their most CPU heavy test, and is the only one that makes my CPU fan go to high speed). Edit: Some people may confuse the word \"FFT\" with the Prime95 Small FFT test.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d624edf7b22cd9f0",
+      "title": "2026-27 Men's Basketball Schedule - UCLA Bruins",
+      "url": "https://uclabruins.com/sports/mens-basketball/schedule",
+      "summary": "Men's Basketball Purdue West Lafayette, IN / Mackey Arena 10:00 AM PST Listen away WedFeb 245:30 PM PST Men's Basketball Northwestern Evanston, IL / Welsh-Ryan Arena 5:30 PM PST Listen home SatFeb 277:30 PM PST Men's Basketball Penn State Los Angeles, CA / Pauley Pavilion presented by Wescom Financial 7:30 PM PST ListenTickets away WedMar 37:30 ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9c657066350059d1",
+      "title": "2026-27 UCLA Bruins Men's Roster and Stats | College ...",
+      "url": "https://www.sports-reference.com/cbb/schools/ucla/men/2027.html",
+      "summary": "Check out the detailed 2026-27 UCLA Bruins Roster and Stats for College Basketball at Sports-Reference.com",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ff3d62ea18b3f5ef",
+      "title": "360 Bar | Now Open! | Nightlife Entertainment | Ridgefield, WA | ilani",
+      "url": "https://ilaniresort.com/poi/dining/360-bar/",
+      "summary": "Welcome to the reimagined heartbeat of ilani. With expanded seating, menus and service, 360 Bar is the place to kick-off the night or rehash the highlights surrounded by all the action. 360 Bar is a full-service, lounge-style venue that’s open every day. Located right on the casino floor, you’ll feel the ambient vibes of this lounge as well as the promise of thrills of the casino near by.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -488,10 +531,41 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9d423beedc0c8e2a",
-      "title": "Log in to Fidelity",
-      "url": "https://www.fidelity.com/login/trade",
-      "summary": "Passkeys are a fast and secure way to log in. Want to set up a passkey? Log in as you normally would, then go to your security settings. New to Fidelity? Open an account or sign up.",
+      "id": "cde6805f6c94b5aa",
+      "title": "Home Page - Men's Basketball - UCLA Bruins",
+      "url": "https://uclabruins.com/sports/mens-basketball",
+      "summary": "UCLA's athletic teams are fitted with the nation's best gear. The official athletic website of the UCLA Bruins.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b66006b4826c3129",
+      "title": "ilani BBQ Fest | ilani",
+      "url": "https://ilaniresort.com/ilani-bbqfest/",
+      "summary": "Thank you for joining us at ilani BBQ Fest in Ridgefield, WA.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -519,10 +593,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5e3a6f6a8770882b",
-      "title": "Log in to Fidelity",
-      "url": "https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Verify/Response",
-      "summary": "Passkeys are a fast and secure way to log in. Want to set up a passkey? Log in as you normally would, then go to your security settings. New to Fidelity? Open an account or sign up.",
+      "id": "a0cf4b6b25a8b9b9",
+      "title": "ilani Casino Resort Careers, Jobs and Employment | ilani",
+      "url": "https://ilaniresort.com/grow-your-career/",
+      "summary": "You'll find our Casino Accounting team members all over our facilities - in state-of-the-art count rooms, redeeming chips, taking care of guests' credit transactions and auditing the numbers from all the various casino departments.",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -550,42 +624,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "42c2244bdbc62ed2",
-      "title": "Men's Nike Running Shoes - Nordstrom",
-      "url": "https://www.nordstrom.com/browse/men/shoes/running-shoes?filterByBrand=nike",
-      "summary": "Set your location for available pickup and shipping options. Built for runners who never shop pushing.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ab9a6a9ecf3b3984",
-      "title": "MyGreenline - Fidelity Investments",
-      "url": "https://digital.fidelity.com/prgw/digital/greenline/?ccsource=Vanity",
-      "summary": "Welcome to Fidelity Your personalized hub for completing key tasks. Log in to continue where you left off, or open a new account if you’re just getting started.",
+      "id": "501190da02d3490f",
+      "title": "ilani Forever Rewards | Member Login | ilani | ilani - Ilani Casino Resort",
+      "url": "https://ilaniresort.com/gaming/forever-rewards/login/",
+      "summary": "Login to ilani Forever Rewards for access to your account. Manage your perks, track points, and redeem exclusive casino benefits today!",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -613,18 +655,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "42afa74963996ba0",
-      "title": "Nike Men's Running Shoes - Macy's",
-      "url": "https://www.macys.com/shop/mens/shoes/athletic-sneakers/running/Brand/Nike?id=70663",
-      "summary": "Shop Nike Men's Running Shoes at Macy’s. Free shipping available.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "7ffb6c3969c0536c",
+      "title": "ilani Hotel Pool Patio | ilani | ilani - Ilani Casino Resort",
+      "url": "https://ilaniresort.com/poi/venues/hotel-pool-patio/",
+      "summary": "Relax at the ilani Hotel Pool & Patio with resort-style seating, beautiful surroundings, and a perfect space to unwind during your stay.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -633,9 +673,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -645,709 +686,393 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d42e96ddf315ae87",
-      "title": "Review: ‘Metroid Prime 4’ mostly sticks to a familiar formula",
-      "url": "https://www.mercurynews.com/2026/01/28/metroid-prime-4-review/",
-      "summary": "“Metroid Prime 4: Beyond” is an attempt to nudge the franchise forward. It follows Samus, who aids the Galactic Federation in the middle of a battle between the Space Pirates, who are after an...",
+      "id": "d26a386baf5be43e",
+      "title": "Line & Lure Seafood Kitchen & Tap | Closed | ilani",
+      "url": "https://ilaniresort.com/poi/dining/line-and-lure/",
+      "summary": "1 Cowlitz Way Ridgefield, WA 98642 General Information: 1.877.GO.ilani For assistance in better understanding the content of this page or any other page within this website, please call the following telephone number 1.877.GO.ilani Property Map",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "54c154c35731bdb8",
+      "title": "Men's Basketball - Daily Bruin",
+      "url": "https://dailybruin.com/category/mens-basketball",
+      "summary": "UCLA is set to enter its third season in the Big Ten, following a sophomore campaign in which the program captured three NCAA championships – the most of any Big Ten school.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f99a71a835c60f87",
+      "title": "Men's Basketball - UCLA Bruins On SI - Sports Illustrated",
+      "url": "https://www.si.com/college/ucla/mens-basketball",
+      "summary": "The Bruins could have another star on their roster.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1db9031c524f36ff",
+      "title": "Rock & Brews Ridgefield - Ilani Casino Resort",
+      "url": "https://ilaniresort.com/poi/dining/rock-and-brews/",
+      "summary": "Rock & Brews Ridgefield, WA Where the food rules, and the brews rock Welcome to your new home for high-energy entertainment and delicious locally sourced-dining! Rock & Brews is one of ilani’s hottest restaurants and live entertainment venue featuring one of the most advanced stages in the Pacific Northwest.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "77d0f89cf501ae10",
+      "title": "Schedule Of Events | Venue in Ridgefield, WA | ilani - Ilani Casino Resort",
+      "url": "https://ilaniresort.com/events-and-promotions/schedule-of-events/",
+      "summary": "What fun events are happening this weekend? Check out our schedule of live music and events at ilani Casino Resort in Ridgefield, Washington!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b07cfd2c7edd695e",
+      "title": "Table Games at ilani Casino in Washington State (WA) | ilani",
+      "url": "https://ilaniresort.com/gaming/play-table-games/",
+      "summary": "What table games can I play at ilani? At ilani you'll find over 75 exciting casino table games including fan favorites such as blackjack, roulette, craps, midi-baccarat, commission-free baccarat, pai gow poker, three-card poker and ultimate Texas hold'em.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6f3816b9c214b296",
+      "title": "UCLA Basketball | UCLA Basketball News, Scores, Highlights ...",
+      "url": "https://bleacherreport.com/ucla-basketball",
+      "summary": "Be the best UCLA Basketball fan you can be with Bleacher Report. Keep up with the latest storylines, expert analysis, highlights, scores and more.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5c33f476d722a91c",
+      "title": "UCLA Bruins 2026-27 Men's College Basketball Stats - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/team/stats/_/id/26/ucla-bruins",
+      "summary": "Visit ESPN for UCLA Bruins live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "91fb253df344ccbc",
+      "title": "UCLA Bruins Men's Basketball - News, Scores & Highlights",
+      "url": "https://uclawire.usatoday.com/basketball/",
+      "summary": "Follow UCLA Bruins Men's Basketball for the latest news, game scores, and player highlights. Dive into expert analysis and exclusive coverage.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb5ca33188b1711f",
+      "title": "UCLA Bruins men's basketball - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/UCLA_Bruins_men%27s_basketball",
+      "summary": "The UCLA Bruins men's basketball program represents the University of California, Los Angeles, in the sport of men's basketball as a member of the Big Ten Conference. Established in 1919, the program has won a record 11 NCAA titles.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "research",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "research",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "db3faf9901606548",
+      "title": "UCLA Bruins Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/team/_/id/26/ucla-bruins",
+      "summary": "Visit ESPN for UCLA Bruins live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "video",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "video",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba193680a496a4e1",
+      "title": "Welcome Forever Rewards Members | Win-Loss Ilani",
+      "url": "https://winloss.ilaniresort.com/",
+      "summary": "You may access your 2025 net gaming results Win/Loss Report by logging into this website. For prior statements, please email us at ilanicontactus@ilaniresort.com with your account number and the prior year (s) desired. Your Username is your ilani Forever Rewards account number. Your Password is your date of birth. Please enter your birthdate in the following format: m/d/yyyy If you need ...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b8f477d161000688",
+      "title": "Windy Ridge Ranch and Kennels - AKC Marketplace",
+      "url": "https://marketplace.akc.org/breeder/pamela-cheatham-46764",
+      "summary": "Pamela Cheatham is from Texas and breeds AKC Cairn Terriers, AKC Scottish Terriers and AKC West Highland White Terriers. We breed for the higher standards of the three terriers. We love our pups and want them off to the best start they can have. AKC proudly supports dedicated and responsible breeders. We encourage all prospective puppy owners to do their research and be prepared with questions ...",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "review"
+        "research"
       ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "53480cba8ab66e54",
-      "title": "Welcome to Fidelity.com",
-      "url": "https://www.fidelity.com/homeframe.shtml",
-      "summary": "Should You Convert to a Roth? Decide by Dec. 31 Three Mistakes to Avoid With Cash Today's Market News See Top-Performing Funds Learn More About Fidelity Contact Us",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2aa1813973c35a04",
-      "title": "'bokep barat' Search - XNXX.COM",
-      "url": "https://www.xnxx.com/search/bokep%20barat",
-      "summary": "Bajigur bokep indonesia suaminya tidak tau istrinya di genjot kontol gede 2.3M 100% 11min - 1080p Kimberlisah bokep indonesia Ga sengaja kenalan di supermarket ternyata mulus banget 5M 100% 11min - 1080p Asianmakinglove Cewek Gemoi Viral Nasi Kuning 238.8k 92% 7min - 720p Silksatin66",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "18f622acb5e5a7b2",
-      "title": "'bokep barat' Search - XVIDEOS.COM",
-      "url": "https://www.xvideos.com/?k=bokep%20barat",
-      "summary": "469 bokep barat FREE videos found on XVIDEOS for this search.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "982a47d07cd0da69",
-      "title": "3 Songs That Break Their Own Formula—and Win Because of It",
-      "url": "https://americansongwriter.com/3-songs-that-break-their-own-formula-and-win-because-of-it/",
-      "summary": "The three songs below are unique in that they set a standard only to break it as the song treks on. Revisit these songs that reject formula.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c25a8282499e657c",
-      "title": "Beyond the Familiar - song and lyrics by Evelines-AI | Spotify",
-      "url": "https://open.spotify.com/track/1EcXtELVePOjEV342GEBJr",
-      "summary": "Listen to Beyond the Familiar on Spotify. Song · Evelines-AI · 2025.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "354d33f2f8e4ce22",
-      "title": "Bokep Barat - BOKEPCROT",
-      "url": "https://bokepcrot.cv/category/bokep-barat/",
-      "summary": "Bokep Barat merupakan istilah populer untuk konten video dewasa yang menampilkan pemeran dari negara-negara Barat, seperti Amerika, Inggris, Jerman, dan Prancis. Konten ini umumnya dikenal dengan ciri khas produksi internasional dan beragam genre hiburan dewasa.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84c012b4633eeccd",
-      "title": "Bokep Barat - Crot Media | 554+ Koleksi Bokep Indo",
-      "url": "https://crotmedia.rest/kategori/bokep-barat",
-      "summary": "Streaming 554+ video Bokep Barat HD premium. Koleksi Bokep Indo terlengkap, kualitas jernih, gratis tanpa batas.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba3e4d4c3c94b5ad",
-      "title": "Bokep Barat Archives - BOKEPCABE",
-      "url": "https://bokepcabe.fit/videocategory/bokep-barat/",
-      "summary": "Bokep Barat Newest Best Most viewed Longest Random Kumpulan Video Bokep Barat Hot HD 01:13:42 Percakapan Berakhir Kenikmatan 10M 100%",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d2fb0dda9171a356",
-      "title": "bokep barat Archives - OnlyBokep",
-      "url": "https://onlybokep.stream/tag/bokep-barat/",
-      "summary": "bokep barat Newest Best Most viewed Longest Random Bokepindo | Pacar Udah Ga Tahan Kelewat Sange 202K 85%",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cbc314f19eac2c61",
-      "title": "Bokep Barat Porn Videos - xHamster",
-      "url": "https://xhamster.com/search/bokep+barat",
-      "summary": "Watch bokep barat porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d47f2636a376cace",
-      "title": "Bokep Barat Porn Videos | Pornhub.com",
-      "url": "https://www.pornhub.com/video/search?search=bokep+barat",
-      "summary": "Watch Bokep Barat porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX movies and clips. No other sex tube is more popular and features more Bokep Barat scenes than Pornhub! Browse through our impressive selection of porn videos in HD quality on any device you own.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "881203fb39518c96",
-      "title": "Buscar Dispositivos - Apple iCloud",
-      "url": "https://www.icloud.com/es-es/find",
-      "summary": "Busca tus dispositivos Apple como iPhone, Apple Watch, AirPods y más con Buscar. Emite sonidos, activa el modo Perdido o localiza dispositivos desde tu grupo de En familia.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "209c0d36027600fc",
-      "title": "Find Devices - Apple iCloud",
-      "url": "https://www.icloud.com/en-ca/find",
-      "summary": "Find your Apple devices like iPhone, Apple Watch, AirPods and more with Find My. Play sound, activate Lost Mode or locate devices from your Family Sharing group.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f3b8f7780d1b7784",
-      "title": "Free Slots: Cash Frenzy | Get 100 Free Spins",
-      "url": "https://www.cash-frenzy.com/",
-      "summary": "Cash Frenzy offers 200+ free online slot games to play! Enjoy incredibly exciting features, free bonuses, mini-games and more! Simply login Cash Frenzy to experience authentic casino slots with our online slot machines!",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "edb9c29fd9ad5e9d",
-      "title": "iCloud",
-      "url": "https://www.icloud.com/",
-      "summary": "Log in to iCloud to access your photos, mail, notes, documents and more. Sign in with your Apple Account or create a new account to start using Apple services.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b78fb843e1c93429",
-      "title": "iCloud Drive - Apple iCloud",
-      "url": "https://www.icloud.com/ko-kr/iclouddrive",
-      "summary": "iCloud Drive를 사용하여 파일 및 폴더를 저장, 정리 및 공동 작업할 수 있으며, 파일을 간편하게 업로드, 삭제 및 복구할 수 있습니다. iCloud를 통해 변경 사항이 기기 간에 동기화됩니다.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "3a57d6d68f0c272d",
-      "title": "iCloud Mail - Apple iCloud",
-      "url": "https://www.icloud.com/mail",
-      "summary": "View and send mail from your iCloud email address on the web. Sign in or create a new account to get started.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b6506faf2bdfe01c",
-      "title": "Keynote - Apple iCloud",
-      "url": "https://www.icloud.com/en-gb/keynote",
-      "summary": "Create, edit, collaborate and share Keynote presentations with Keynote on the web. Changes will sync across your devices with iCloud.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "19c05fd3b692d17a",
-      "title": "Koleksi Video Bokep Bokep Barat Terbaru & Viral - Koleksi Bokep",
-      "url": "https://koleksibokep.buzz/kategori/bokep-barat",
-      "summary": "Nonton koleksi video bokep Bokep Barat terbaru, viral, dan terpopuler. Update harian dengan kualitas HD.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afe8a705aaaf5d5c",
-      "title": "Localiser des appareils - Apple iCloud",
-      "url": "https://www.icloud.com/fr-fr/find",
-      "summary": "Localisez vos appareils Apple tels qu’un iPhone, une Apple Watch, des AirPods et plus encore avec Localiser. Émettez un son, activez le mode Perdu ou localisez les appareils de votre groupe de partage familial.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cc3e8234b8160dc6",
-      "title": "Marcus Smart - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Marcus_Smart",
-      "summary": "Marcus Osmond Smart (born March 6, 1994) is an American professional basketball player for the Houston Rockets of the National Basketball Association (NBA). Widely considered one of the most accomplished and versatile defenders of his era, [1][2][3][4][5][6] he has been selected to the NBA All-Defensive First Team thrice and was the NBA Defensive Player of the Year in 2022, becoming only the ...",
-      "discovery_channel": "adjacent+broad_web+community+developer+research",
-      "query": "smart glasses review; smart glasses hands-on; smart glasses YouTube; smart glasses rumors; smart glasses patents; smart glasses lenses optics; smart glasses waveguide microLED; smart glasses teardown; smart glasses optics teardown; smart glasses microdisplay waveguide projection engine; smart glasses repair; smart glasses tools; smart glasses SDK; smart glasses developer; smart glasses firmware; smart glasses OEM ODM rebrand; smart glasses biometric lawsuit; smart glasses facial recognition privacy lawsuit; smart glasses SDK GitHub; smart glasses BLE GitHub; smart glasses firmware GitHub; smart eyewear research university; smart glasses HCI research; smart glasses sensing research; smart glasses optics research; smart glasses waveguide research; smart glasses microdisplay optical engine research; smart glasses LCoS projection engine; smart glasses hack forum; smart glasses community database; smart contact lens research",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f208c048aba2534e",
-      "title": "Men's Nike Running Footwear - DICK'S Sporting Goods",
-      "url": "https://www.dickssportinggoods.com/f/mens-nike-running-footwear",
-      "summary": "Shop a wide selection of Men's Nike Running Footwear at DICK'S Sporting Goods and order online for the finest quality products from the top brands you trust.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "eb41b6bef93f3cea",
-      "title": "Meta AI - Apps no Google Play",
-      "url": "https://play.google.com/store/apps/details?id=com.facebook.stella&hl=pt-BR",
-      "summary": "A Meta AI é o seu assistente de IA pessoal, conectado ao mundo, mas centrado em você. Receba respostas, recomendações e inspirações que você realmente pode usar.",
-      "discovery_channel": "adjacent+research",
-      "query": "Meta NameTag biometrics; wearable gesture control interface; wearable haptics interface",
-      "source": "Bing web RSS",
-      "source_lane": "research",
-      "materiality_score": 2,
-      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -1368,130 +1093,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3dfa17ae8d67d9af",
-      "title": "New Apple ID - iCloud",
-      "url": "https://setup.icloud.com/setup/create_account_ui",
-      "summary": "1. iCloud Photos. When you enable iCloud Photos, your photos, videos, metadata and any edits that you make in the Photos App on your iOS device, macOS computer, or Windows PC will be automatically uploaded and stored in iCloud, and then pushed to all of your other iCloud Photos-enabled devices and computers.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d7575f41dda27a8b",
-      "title": "Nike – Official Online Store for Athletic Shoes, Clothing & Gear",
-      "url": "https://www.nike.in/men/shoes/running/c/92586",
-      "summary": "Nike Run Swift 3 Men's Road Running Shoes ₹ 6,295 Just In Nike Revolution 8 Utility Men's Road-Running Shoes ₹ 5,295 Just In Nike Revolution 8 Utility Men's Road-Running Shoes ₹ 5,295 Just In Nike Revolution 8 EasyOn Men's Road Running Shoes ₹ 4,295 Just In Nike Revolution 8 Men's Road Running Shoes ₹ 4,295 Just In Nike Run Defy Men's ...",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "46720bb00512c052",
-      "title": "Numbers - Apple iCloud",
-      "url": "https://www.icloud.com/en-gb/numbers",
-      "summary": "Create, edit, collaborate and share spreadsheets with Numbers on the web. Changes will sync across your devices with iCloud.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "97469e12e92e9d08",
-      "title": "Pages - Apple iCloud",
-      "url": "https://www.icloud.com/pages",
-      "summary": "Create, edit, collaborate and share documents with Pages on the web. Changes will sync across your devices with iCloud.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "69b5b9cc71d7a521",
-      "title": "Reacher Season 5 Can Finally Abandon 1 Overused Story Formula",
-      "url": "https://screenrant.com/reacher-season-5-book-abandon-overused-story/",
-      "summary": "Some story beats that have defined all three seasons of Reacher will also likely be seen in the show's upcoming installment. After season 4, however, Prime Video's Reacher finally has the opportunity to change things a little and abandon an overused story formula.",
+      "id": "703b4235d8ebdfdd",
+      "title": "AKC Puppies For Sale In Missouri",
+      "url": "https://marketplace.akc.org/puppies/missouri",
+      "summary": "Find Puppies and Breeders in missouri and helpful information. All puppies found here are from AKC-Registered parents.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -1506,9 +1111,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "video"
+        "retail"
       ],
-      "primary_type": "video",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1518,10 +1123,640 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "049377fc6f9b14c8",
-      "title": "shop.cash-frenzy.com - Spend",
-      "url": "https://shop.cash-frenzy.com/",
-      "summary": "Where can I check my Frenzy Cash balance? Frenzy Cash is stored in your account balance and can be viewed in the in-game store.",
+      "id": "d7e7ef4ebf734254",
+      "title": "AKC Puppies For Sale In Pittsburgh, PA",
+      "url": "https://marketplace.akc.org/puppies/pennsylvania/pittsburgh",
+      "summary": "Find Puppies and Breeders in Pittsburgh, PA and helpful information. All puppies found here are from AKC-Registered parents.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fd9db32f37dae76c",
+      "title": "AKC Therapy Dog Record of Visits",
+      "url": "https://images.akc.org/pdf/therapy_dog/visits.pdf",
+      "summary": "Dog Name. Facility Name (use a different form for each facility) For AKC verification purposes: Facility contact person.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d34d17f99741c277",
+      "title": "American Kennel Club - Event Search - AKC VetNet",
+      "url": "https://www.apps.akc.org/event-search/",
+      "summary": "American Kennel Club - Event Search Founded in 1884, the not-for-profit AKC is the recognized and trusted expert in breed, health, and training information for all dogs. AKC actively advocates for responsible dog ownership and is dedicated to advancing dog sports.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a22036c1c5e7fc16",
+      "title": "Can You Powder Coat Plastic? Here’s What You Need to Know",
+      "url": "https://universalpowdercoating.com/can-you-powder-coat-plastic/",
+      "summary": "Today, I can tell you confidently — yes, you can powder coat plastic, but only if you know exactly what you’re doing. Let me walk you through what I’ve learned working with shops across the Midwest and Southeast, where plastic substrates have slowly but surely been making their way into powder coating lines.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b2b5632bc105273c",
+      "title": "Can You Powder Coat Plastic? What You Need to Know",
+      "url": "https://sundialpowdercoating.com/articles/can-you-powder-coat-plastic",
+      "summary": "The key to understanding whether your plastic part can be powder coated lies in two factors: the type of plastic and its heat deflection temperature, and whether a suitable conductive primer system exists for that material.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ac552fed827e948a",
+      "title": "Cayenne Pepper Dog Repellent: Harmful or Safe to Use?",
+      "url": "https://www.akc.org/expert-advice/training/cayenne-pepper-dog-repellent/",
+      "summary": "One reader wants to know if it's safe to apply cayenne pepper to chair legs as a form of dog repellent. Our AKC GoodDog! Helpline trainers give some advice.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "018afebba7bd37a3",
+      "title": "DeepwokenRule34 - Reddit",
+      "url": "https://www.reddit.com/r/DeepwokenRule34/",
+      "summary": "r/DeepwokenRule34: Conquest dropping this Friday. members online Create a post FeedAbout Hot Open sort options Hot New Top Rising Change post view Card Compact Ganymede [Adonisfra] u/fishfapper69 ADMIN MOD • Ganymede [Adonisfra] Straight Owl, big tosty dump [CheeziTost] u/fishfapper69 ADMIN MOD • Owl, big tosty dump [CheeziTost] Straight [CheeziTost] u/fishfapper69 ADMIN MOD ...",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "eb7124632ffe52d3",
+      "title": "DOG - American Kennel Club",
+      "url": "https://images.akc.org/pdf/DogRecord.pdf",
+      "summary": "You sell or give away one of these puppies. Make another entry on this litter page, showing date of transaction, name and address of new owner, and the kind of papers you gave when you delivered the puppy. Again, take care to make this entry on the line which describes this particular puppy by sex, and color and markings. Remember that the puppy must be identified in writing for its new owner ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d224523bfdf82f7a",
+      "title": "Dog Beds - AKC Shop",
+      "url": "https://shop.akc.org/collections/dog-beds",
+      "summary": "American Kennel Club AKC Blanket & Burlap Stripes Pillow Dog Bed",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1aae6a6f058e9f1f",
+      "title": "Feet and Rule 34 - Reddit",
+      "url": "https://www.reddit.com/r/rule34feet/",
+      "summary": "This is the place to post your favorite feet-related Rule 34 images and content.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "51f4f8a1b0b395dd",
+      "title": "Frequently Asked Questions - AKC VetNet",
+      "url": "https://www.apps.akc.org/apps/contact/answer_center/faq_findabreeder.cfm",
+      "summary": "AKC.org offers information on dog breeds, dog ownership, dog training, health, nutrition, exercise & grooming, registering your dog, AKC competition events and affiliated clubs to help you discover more things to enjoy with your dog.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5a10fc99c24209bd",
+      "title": "LoL champion rule 34 results tier list. u/Minuku did this tier list for ...",
+      "url": "https://www.reddit.com/r/LeagueOfMemes/comments/10zau3e/lol_champion_rule_34_results_tier_list_uminuku/",
+      "summary": "LoL champion rule 34 results tier list. u/Minuku did this tier list for season 11 so I updated it for season 12.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "24096e3146b93fe0",
+      "title": "Materials for Powder Coating Application| PPG",
+      "url": "https://powdercoatings.ppg.com/pages/materials",
+      "summary": "PPG coatings can be applied to all metals and some non-metallics such as composites, wood and some plastics. All coating applications require the surface be properly prepared to remove any oils and contaminants through processes such as grit-blasting and/or phosphating.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e1063468e02ea1e",
+      "title": "One Piece Hentai ~ <3 - Reddit",
+      "url": "https://www.reddit.com/r/funpiece/",
+      "summary": "r/funpiece: This is a subreddit for one piece porn, hentai, and rule 34.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "071c48a731db1190",
+      "title": "PalutenaRule34 - Reddit",
+      "url": "https://www.reddit.com/r/PalutenaRule34/",
+      "summary": "r/PalutenaRule34: Pictures of the beautiful goddess both sfw and nsfw!",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "208ffe975ee3f177",
+      "title": "Powder Coating for MDF, Plastics, and Non-Metals: Techniques ...",
+      "url": "https://www.msmetal.co.uk/powder-coating/non-metal-surfaces/",
+      "summary": "Effective surface preparation is essential for successful powder coating on non-metal substrates. These materials, such as plastics, wood, glass, and composites, require tailored pre-treatment to ensure proper adhesion, conductivity, and finish quality.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "64c2119499b16f7d",
+      "title": "Powder Coating Material Compatibility Guide: Metals, Plastics ...",
+      "url": "https://universalpowdercoating.com/powder-coating-material-compatibility/",
+      "summary": "Powder coating is a dry finishing process where electrostatically charged powder particles bond to a grounded surface, then are cured in an oven to form a hard, protective shell. Sounds straightforward. But here’s the thing — that process has two non-negotiable requirements.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "445c7e7ee7320a63",
+      "title": "Powder Coating on Wood",
+      "url": "https://www.powdercoating.org/page/PConWood",
+      "summary": "Powder coating can accommodate these shapes, while other lamination techniques that rely on edge-banding methods cannot. And, powder application is a one-step finishing process, not requiring successive coats or long drying times.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ae420239c0c3038f",
+      "title": "Powder Coating Plastic Parts: A Practical Guide for Engineers ...",
+      "url": "https://www.huacaipowdercoating.com/news/powder-coating-plastic-parts-a-practical-guide-for-engineers-and-buyers.html",
+      "summary": "The questions below reveal whether a supplier can support a powder coating plastic project with real data rather than assumptions. Can you produce a powder that cures at 130 °C and still achieves full mechanical properties on our substrate?",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b0276f5c02c51fb",
+      "title": "Rule 34 Fuck Marry Kill - Reddit",
+      "url": "https://www.reddit.com/r/Rule34FMK/",
+      "summary": "r/Rule34FMK: If it exists you can Fuck, Marry, or Kill it",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ee9de3838d0c17a8",
+      "title": "Stolas rule 34 opinions : r/HelluvaBoss - Reddit",
+      "url": "https://www.reddit.com/r/HelluvaBoss/comments/p94r6p/stolas_rule_34_opinions/",
+      "summary": "Rule 34: If it exists, there is porn of it. By definition alone, there is no such thing as \"more than enough\"",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "68c1a7e4af250b53",
+      "title": "Swampkit (Laurel) - Warrior Clan Cats",
+      "url": "https://warriorclancats.miraheze.org/wiki/Swampkit_(Laurel)",
+      "summary": "Swampkit is a former kit of ThunderClan. He is played by Laurel. Contents 1Personality 2Family and Relationships 3History 4Ceremonies 5Quotes 6Relevant Topics",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1548,12 +1783,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9a823f972b91d0ca",
-      "title": "There’s a formula for writing a hit song. So why isn’t every ...",
-      "url": "https://theconversation.com/theres-a-formula-for-writing-a-hit-song-so-why-isnt-every-song-a-hit-283586",
-      "summary": "Songwriters, producers and music scholars can readily identify techniques shared in successful songs. At the same time, having the right formula alone isn’t enough to write the next big single....",
+      "id": "6bdbf1b9ecdc0920",
+      "title": "Swampkit (Laurel) | Warrior Clan Cats Wiki | Fandom",
+      "url": "https://warriorclancats.fandom.com/wiki/Swampkit_(Laurel)",
+      "summary": "Swampkit is a former kit of ThunderClan. He is played by Laurel. Creation: 20 July 2015 First Appearance: 21 July 2015 Snatched by Hawk, Found by RiverClan: 22 July 2015 Return to ThunderClan: 30 July 2015",
       "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1578,42 +1813,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "51c890c54bce9e1d",
-      "title": "Video Bokep Cewek Amerika - xHamster",
-      "url": "https://id.xhamster.com/categories/american",
-      "summary": "Cek video bokep Cewek Amerika di xHamster. Tonton semua video XXX Cewek Amerika sekarang juga!",
+      "id": "d62eaea9c0dde18a",
+      "title": "Swampkit - Warriors Wiki",
+      "url": "https://warriorcats.wiki/wiki/Swampkit",
+      "summary": "Swampkit was originally introduced in Su Susann's \"Missing Kits\" on Vicky's Facebook as a white tom with ginger patches and green eyes. He was dragged into battle by Brokenstar before his sixth moon and died in battle. [11]",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0e12a051911d3245",
-      "title": "Welcome! - Rate Your Music",
-      "url": "https://rateyourmusic.com/",
-      "summary": "This song has another spoken word passage, along with a call back to the title track. There’s a feeling of dread when this callback is made, until it fades to nothing.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1638,10 +1843,220 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5af2ac67d3f5931c",
-      "title": "Why Insidious: Out Of The Further Has The Highest Rotten ...",
-      "url": "https://screenrant.com/insidious-out-further-rotten-tomatoes-score-reviews-explained/",
-      "summary": "Insidious: Out of the Further has garnered the highest Rotten Tomatoes score in the whole Insidious franchise, outperforming even the iconic original.",
+      "id": "b5fbfb14f170d249",
+      "title": "Swampkit Family Tree - Warrior Cats",
+      "url": "https://www.warriorcatsfamilytree.com/cat/swampkit",
+      "summary": "Swampkit's Warrior Cats family tree: parents Finchflight and Dawncloud, siblings Blossomkit (ShadowClan) and Unnamed kits.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "151fe2d2b4a17dfc",
+      "title": "Swampkit | Raven's Grove Wiki | Fandom",
+      "url": "https://ravens-grove.fandom.com/wiki/Swampkit",
+      "summary": "Swampkit is a long-furred gray she-cat with pale blue eyes. Swampkit was born to Pancake alongside her sibling Sparrowkit.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f4975af2c1417c7e",
+      "title": "Swampkit | Warriors Wiki | Fandom",
+      "url": "https://warriors.fandom.com/wiki/Swampkit",
+      "summary": "Swampkit was originally introduced in Su Susann's \"Missing Kits\" on Vicky's Facebook as a white tom with ginger patches and green eyes. He was dragged into battle by Brokenstar before his sixth moon and died in battle. [11]",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b66f1ded4f428228",
+      "title": "Swampkit | Warriors: Power of the Clans Wiki | Fandom",
+      "url": "https://warriors-power-of-the-clans.fandom.com/wiki/Swampkit",
+      "summary": "Categories: Characters StarClan ShadowClan Kits Deceased Deceased Kits Ginger and White Cats",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "be3e1bece5a054e5",
+      "title": "Swamppaw – Chosen of StarClan",
+      "url": "https://chosenofstarclan.com/characters/swampkit/",
+      "summary": "Swamppaw is a Female Cat with a Tortie Pointed pelt of Short Normal textured hair. They are of Medium-small Size and Semi-foreign build. Their eyes are Orange and ears are Normal. Their tail is Bobtail, with Normal paws and Normal legs. They are of Mix Manx Bobtail descent.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3380f361e69c04a1",
+      "title": "Swampstar (SC) - Warriors OC's Wiki",
+      "url": "https://warriors-ocs.fandom.com/wiki/Swampstar_(SC)",
+      "summary": "When they found out a ShadowClan kit named Crookedkit was listening in on their plan, Swampstar killed the kit and covered him up with dirt. He was told that his deputy Fawnheart was seeing a kittypet, so he ordered two warriors, Darkstep and Flamesnout to kill her and the kittypet.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "138e4b053c862210",
+      "title": "Swankit | Warriors Wiki | Fandom",
+      "url": "https://warriors.fandom.com/wiki/Swankit",
+      "summary": "Swankit was originally introduced on Su Susann's \"Missing Kits\" on Vicky's Facebook, as a silver-and-black tabby she-cat with yellow eyes. Swankit was alive when Oakheart brought Mistykit and Stonekit to RiverClan, and nursed alongside them before dying shortly thereafter.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "783df544c47d54d4",
+      "title": "Teddy Roosevelt Terrier - Dog Breed Information",
+      "url": "https://www.akc.org/dog-breeds/teddy-roosevelt-terrier/",
+      "summary": "Is the Teddy Roosevelt Terrier the right breed for you? Learn more about the Teddy Roosevelt Terrier including personality, history, grooming, pictures, videos, and the AKC breed standard.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
