@@ -48,6 +48,8 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 
 ## Rokid
 
+- [Rokid Lumen — GitHub](https://github.com/beyondlevi/rokid-lumen) — unofficial Rokid RG (YodaOS-Sprite) launcher, web-app and Android companion project driven by the Meta Neural Band through a reverse-engineered Bluetooth link. [Neural Band protocol notes](https://github.com/beyondlevi/rokid-lumen/blob/main/NEURALBAND.md) distinguish unofficial gestures from Meta's published glasses toolkit; [security disclosures](https://github.com/beyondlevi/rokid-lumen/blob/main/docs/security.md) include persistent network-listening ADB (trusted key still required), file-based IPC and unauthenticated hotspot proxy. No GlassesResearch device reproduction; not an official Meta or Rokid integration.
+- [awesome-rokid — GitHub](https://github.com/Anezium/awesome-rokid) — community-maintained discovery index of Rokid apps, developer tools and companion projects; useful for source discovery, not independent validation of the linked implementations.
 - [Rokid Developer Forum](https://forum.rokid.com/?langkey=en) — active developer community covering SDK questions, BLE, device APIs, agents, display behavior, and secondary development.
 - [Rokid Community directory](https://global.rokid.com/pages/explore) — official directory linking Rokid's Reddit, Discord, and Facebook communities.
 - [XDA: Rokid Max / Android USB-C audio-routing troubleshooting](https://xdaforums.com/t/two-issues-with-apps-after-software-updates-in-march-2024.4672628/) — independent Android troubleshooting involving Rokid Max.
