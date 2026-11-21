@@ -13,6 +13,13 @@ GlassesResearch covers the **entire smart-glasses ecosystem**. This is a link-fi
 - [OpenSQZ Glass / OpenGlass — GitHub](https://github.com/OpenSQZ/OpenGlass) — research-prototype local-first visual assistance using ESP32 wearable sensing and nearby-host multimodal inference; open build files and experimental Rokid adapter.
 - [OpenSource-Ai-Glasses / OSAIG — GitHub](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses) — early-stage RV1106B Linux smart-glasses software, SDK, firmware and hardware-integration documentation; open software does not imply wholly open hardware.
 
+## Raven Prism / RavenOS
+
+- [Raven Framework — GitHub](https://github.com/RavenResonance/raven-framework) — manufacturer's Python/PySide6 gaze-based application framework and desktop simulator. **Source-available but proprietary, not open source**: the [license](https://github.com/RavenResonance/raven-framework/blob/main/LICENSE) allows unmodified use and application development, but restricts modifying or redistributing the framework.
+- [Raven Starter Project — GitHub](https://github.com/RavenResonance/raven-starter-project) — manufacturer-authored application examples and simulator setup; desktop success is not hardware verification.
+- [Raven community Discord](https://raven.computer/s/discord) — manufacturer-linked developer discussion entry point; private messages are not treated as public evidence.
+- [DOOMed Prism — GitHub](https://github.com/RBraga01/DOOMed-Prism) — independent developer's gaze-controlled Doom port and framebuffer/IPC work. Hardware execution is reported by Raven personnel; the author explicitly has not completed controlled independent on-device testing. [Public Reddit discussion](https://www.reddit.com/r/augmentedreality/comments/1wgyxow/doom_running_on_actual_raven_prism_smart_glasses/).
+
 ## XDA and independent technical troubleshooting
 
 - [XDA: Rokid Max / Android USB-C audio-routing troubleshooting](https://xdaforums.com/t/two-issues-with-apps-after-software-updates-in-march-2024.4672628/) — community troubleshooting involving Rokid Max AR glasses and Android USB-C DisplayPort audio behavior.
