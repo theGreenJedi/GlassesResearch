@@ -1,34 +1,43 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-21T02:34:34.191624+00:00",
-  "candidate_count": 56,
-  "classifier_irrelevant_count": 31,
+  "discovered_utc": "2026-11-21T02:46:32.637311+00:00",
+  "candidate_count": 82,
+  "classifier_irrelevant_count": 59,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 24,
-    "broad_web": 32
+    "adjacent": 23,
+    "broad_web": 39,
+    "developer": 20
   },
   "relationship_counts": {
-    "direct": 1,
+    "direct": 0,
     "enabling": 0,
-    "adjacent": 24,
+    "adjacent": 23,
     "speculative": 0,
-    "irrelevant": 31
+    "irrelevant": 59
   },
   "type_counts": {
-    "model": 1,
-    "review": 4,
-    "video": 2,
-    "news": 49,
+    "model": 10,
+    "review": 1,
+    "video": 1,
+    "news": 42,
     "research": 1,
-    "retail": 2
+    "tool": 23,
+    "sdk": 20,
+    "policy": 1,
+    "retail": 19,
+    "community": 1,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 24,
-    "reject_noise": 31,
-    "report_card_evidence": 4,
-    "research_news_review": 25,
-    "retail_rebrand_review": 2
+    "adjacent_radar": 23,
+    "community_evidence_review": 1,
+    "development_hacking": 2,
+    "policy_privacy": 1,
+    "reject_noise": 59,
+    "report_card_evidence": 1,
+    "research_news_review": 23,
+    "retail_rebrand_review": 7
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -42,51 +51,16 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "c3e51e9ab373482a",
-      "title": "Amazon.ca: Smart Glasses With Camera",
-      "url": "https://www.amazon.ca/smart-glasses-camera/s?k=smart+glasses+with+camera",
-      "summary": "Video recording glasses with 2× longer battery life, AI translation, visual recognition, voice assistant and Bluetooth audio.",
-      "discovery_channel": "broad_web",
-      "query": "camera smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "direct",
-      "content_types": [
-        "video",
-        "retail"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "retail_rebrand_review"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a29a381bcaa08758",
-      "title": "Coos Bay OR Real Estate & Homes For Sale - Zillow",
-      "url": "https://www.zillow.com/coos-bay-or/",
-      "summary": "Zillow has 210 homes for sale in Coos Bay OR. View listing photos, review sales history, and use our detailed real estate filters to find the perfect place.",
+      "id": "9360b4240a850c8d",
+      "title": "60 Thanksgiving Turkey Clipart Free to Download",
+      "url": "https://cliparte.com/thanksgiving-turkey-clipart/",
+      "summary": "Get into the holiday spirit with this festive collection of 60 Thanksgiving turkey cliparts — from delicious dinner scenes to cute cartoon turkeys. Whether you’re crafting, teaching, or designing, these free cliparts are perfect for adding a seasonal touch to your projects.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
+      "materiality_score": 1,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -95,13 +69,136 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "review",
-        "retail"
+        "news"
       ],
-      "primary_type": "review",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "84c079389a9c23a7",
+      "title": "9,000+ Free Thanksgiving Turkey & Thanksgiving Images - Pixabay",
+      "url": "https://pixabay.com/images/search/thanksgiving%20turkey/",
+      "summary": "Free thanksgiving turkey images to use in your next project. Browse amazing images uploaded by the Pixabay community. Find images of Thanksgiving Turkey Royalty-free No attribution required High quality images.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "66cbc1a1d5b8dd9e",
+      "title": "9,000+ Free Turkey Thanksgiving & Thanksgiving Images - Pixabay",
+      "url": "https://pixabay.com/images/search/turkey%20thanksgiving/",
+      "summary": "Turkey thanksgiving images for free download. Browse or use the filters to find your next picture for your project. Find images of Turkey Thanksgiving Royalty-free No attribution required High quality images.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "411e010e661415d7",
+      "title": "Acciones BBVA Banco hoy | Cotización BVL:BBVAC1 - Investing.com",
+      "url": "https://es.investing.com/equities/bco-continenta",
+      "summary": "Consulte los datos de las acciones de BBVA Banco con ticker BBVAC1 antes de la sesión de mercado o evalúe su cotización fuera de horario.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "29200ead5d0d3a68",
+      "title": "Banco BBVA Perú (BBVAC1.LM) Stock Price, News, Quote & History - Yahoo ...",
+      "url": "https://finance.yahoo.com/quote/BBVAC1.LM/",
+      "summary": "Find the latest Banco BBVA Perú (BBVAC1.LM) stock quote, history, news and other vital information to help you with your stock trading and investing.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
         "retail_rebrand_review",
         "adjacent_radar"
       ],
@@ -111,46 +208,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "23beccb1967af70d",
-      "title": "The Best 10 Restaurants near Coos Bay, OR - Yelp",
-      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Coos+Bay%2C+OR",
-      "summary": "What are people saying about restaurants near Coos Bay, OR? This is a review for restaurants near Coos Bay, OR: \"When the owner delivers your food and lets you know the vegetables are from her own garden.... You have something amazing! From drinks to desserts there is something to enjoy, fill your bellies, and fill your soul. Open dinning atmosphere set up in a way that each space is unique ...",
+      "id": "24aa2a5b4a4080c1",
+      "title": "Banco BBVA Perú (BVL:BBVAC1) Stock Price, Chart & News",
+      "url": "https://stockanalysis.com/quote/bvl/BBVAC1/",
+      "summary": "Get the latest Banco BBVA Perú (BVL:BBVAC1) stock price quote with financials, statistics, dividends, charts, historical data and more.",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 2,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2fd1668c24afebeb",
-      "title": "Cities Near Me - Coos Bay, Oregon | Travelmath",
-      "url": "https://www.travelmath.com/cities-near/Coos+Bay,+OR",
-      "summary": "Find the top 15 cities, towns, and suburbs near Coos Bay, OR, like North Bend and Roseburg, and explore the surrounding area for a day trip.",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -163,11 +226,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -176,12 +240,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d7f73c9233188164",
-      "title": "Cities Nearby Coos Bay, Oregon, United States",
-      "url": "https://www.thecitiesnow.com/united_states/oregon/coos_bay",
-      "summary": "Cities Nearby Coos Bay, Oregon, United States Find five hundred cities near Coos Bay, Oregon, United States from closest to farthest by distance. Distances from Coos Bay to nearby cities are shown in miles, kilometers (km) and nautical miles (nm). Cities near Coos Bay",
+      "id": "23220803104ba8bd",
+      "title": "Banco Bilbao Viscaya Argentaria - BBVA - Stock Price Today - Zacks",
+      "url": "https://www.zacks.com/stock/quote/BBVA",
+      "summary": "View Banco Bilbao Viscaya Argentaria SA BBVA investment & stock information. Get the latest Banco Bilbao Viscaya Argentaria SA BBVA detailed stock quotes, stock data, Real-Time ECN, charts, stats ...",
       "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -194,11 +258,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -207,10 +272,106 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "53171f8ab3c7197b",
-      "title": "Domino's - Wikipedia",
-      "url": "https://en.wikipedia.org/wiki/Domino%27s",
-      "summary": "Domino's Pizza, Inc.[3], trading as Domino's, is an American multinational pizza restaurant chain founded in 1960. [4]",
+      "id": "9b6e1f21be451837",
+      "title": "BBVA Banco Continental SA Stock Price Today | BVL: BBVAC1 Live ...",
+      "url": "https://www.investing.com/equities/bco-continenta",
+      "summary": "View today's BBVA Banco Continental SA stock price and latest BBVAC1 news and analysis. Create real-time notifications to follow any changes in the live stock price.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4f28a1861a03648f",
+      "title": "BBVAC1 Stock Price and Chart — BVL:BBVAC1 — TradingView",
+      "url": "https://www.tradingview.com/symbols/BVL-BBVAC1/",
+      "summary": "Track Banco BBVA Peru SA stock price today with the live chart. Find BBVAC1 news, trading ideas, forecasts, financials, and more.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b63f0375a3ab2d8",
+      "title": "BBVAC1 Stock Price | Bank BBVA Peru Stock Quote (Peru: Lima) - MarketWatch",
+      "url": "https://www.marketwatch.com/investing/stock/bbvac1?countrycode=pe",
+      "summary": "BBVAC1 | Complete Bank BBVA Peru stock news by MarketWatch. View real-time stock prices and stock quotes for a full financial overview.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3831a40f3afaf52c",
+      "title": "BBVAC1 | Bank BBVA Peru Advanced Charts | MarketWatch",
+      "url": "https://www.marketwatch.com/investing/stock/bbvac1/charts?countrycode=pe",
+      "summary": "Bank BBVA Peru advanced stock charts by MarketWatch. View BBVAC1 historial stock data and compare to other stocks and exchanges.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -238,10 +399,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "253767cab50d6de0",
-      "title": "Domino's Pizza - West Richland, WA",
-      "url": "https://www.yelp.com/biz/dominos-pizza-west-richland",
-      "summary": "DOMINO'S PIZZA - Try Our New Menu - 4001 Kennedy Rd, Ste 10, West Richland, WA 99353, 19 Photos, (509) 627-2000, Mon - 10:30 am - 12:00 am, Tue - 10:30 am - 12:00 am, Wed - 10:30 am - 12:00 am, Thu - 10:30 am - 12:00 am, Fri - 10:30 am - 1:00 am, Sat - 10:30 am - 1:00 am, Sun - 10:30 am - 12:00 am",
+      "id": "4c9f4dd6d5d1762c",
+      "title": "BBVAC1 | Bank BBVA Peru Stock Overview (Peru: Lima) | Barron's",
+      "url": "https://www.barrons.com/market-data/stocks/bbvac1?countrycode=pe",
+      "summary": "Complete Bank BBVA Peru stock information by Barron's. View real-time BBVAC1 stock price and news, along with industry-best analysis.",
       "discovery_channel": "adjacent",
       "query": "hearable AI interface",
       "source": "Bing web RSS",
@@ -256,11 +417,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "retail",
       "routing_targets": [
         "research_news_review",
+        "retail_rebrand_review",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -269,12 +431,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "95772087aee42c72",
-      "title": "Domino's Pizza at 1408 Jadwin Avenue | Domino's in Richland",
-      "url": "https://pizza.dominos.com/washington/richland/1408-jadwin-avenue",
-      "summary": "Order from Domino's on 1408 Jadwin Avenue for pizza delivery or takeout in Richland, WA. Visit, call, or order online for pizza, pasta, sandwiches & more!",
+      "id": "9844668261378b44",
+      "title": "Free Images Of Thanksgiving Turkey, Download Free Images Of ...",
+      "url": "https://clipart-library.com/images-of-thanksgiving-turkey.html",
+      "summary": "Here you will find a carefully collected gallery of free images in high quality. Each Images Of Thanksgiving Turkey can be downloaded for school projects, presentations, websites or creative designs.",
       "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -287,11 +449,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "tool"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -300,227 +463,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8d3c69f97b67f8ac",
-      "title": "Domino's Pizza at 4001 Kennedy Road Suite 10 | Domino's in West Richland",
-      "url": "https://pizza.dominos.com/washington/west-richland/4001-kennedy-road-suite-10",
-      "summary": "Order from Domino's on 4001 Kennedy Road Suite 10 for pizza delivery or takeout in West Richland, WA. Visit, call, or order online for pizza, pasta, sandwiches & more!",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0af105d553d286cf",
-      "title": "Domino's Pizza Menu in West Richland, WA | Order Delivery & Reviews",
-      "url": "https://www.menupix.com/washington/restaurants/4703118/Dominos-Pizza-West-Richland-WA",
-      "summary": "View the menu for Domino's Pizza in West Richland, WA. Order Online, get delivery, see prices and reviews.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "afa7a43bfc60ed5c",
-      "title": "Domino's Pizza West Richland - Find Local Businesses",
-      "url": "https://www.findglocal.com/US/West-Richland/1755605871381813/Domino%27s-Pizza-West-Richland",
-      "summary": "Contact information, map and directions, contact form, opening hours, services, ratings, photos, videos and announcements from Domino's Pizza West Richland, Food Delivery Service, 4001 Kennedy Road Suite 10, Ste 10, West Richland, WA.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "753b52dcefd799ab",
-      "title": "Domino's Pizza West Richland | West Richland WA - Facebook",
-      "url": "https://www.facebook.com/DominosPizzaWestRichlandWA4001KennedyRd/",
-      "summary": "Choose any 2 or more: Medium 2-Topping Pizza, Bread Twists, Salad, Marbled Cookie Brownie, Oven Baked Sandwich, or Stuffed Cheesy Bread for $6.99 each! Sure to please everyone! 😎",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "community",
-      "delegated_action": "record_community_signal",
-      "gr_conclusion_authorized": false,
-      "attribution_required": true,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4ea24d9a38a5b97c",
-      "title": "Domino's Pizza, 4001 Kennedy Road Suite 10, Ste 10, West Richland, WA ...",
-      "url": "https://www.mapquest.com/us/washington/dominos-pizza-24404069",
-      "summary": "At Domino’s, we’re passionate about bringing you the best pizza experience, whether you're carrying out or ordering pizza delivery. Whether you’re craving thin, foldable New York Style pizza or a thick, Handmade Pan pizza, Domino’s has you covered.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d871edd5bb8bd296",
-      "title": "Domino's Pizza, West Richland - Menu, Reviews (157), Photos (62 ...",
-      "url": "https://www.restaurantji.com/wa/west-richland/dominos-pizza-/",
-      "summary": "Latest reviews, photos and ratings for Domino's Pizza at 4001 Kennedy Road Suite 10 Ste 10 in West Richland - view the menu, hours, phone number, address and map.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d71dc4fecb336643",
-      "title": "Movie Showtimes and Theaters near Coos Bay, OR | Fandango",
-      "url": "https://www.fandango.com/coos-bay_or_movietimes",
-      "summary": "Discover showtimes and movie theaters near you with Fandango! Find showtimes, tickets, and more for your favorite cinema experience in Coos Bay, OR",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2f646b55f8dfffd1",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/vstudio/en-us/home",
-      "summary": "MSDN",
+      "id": "dc5134c19539c7f0",
+      "title": "Free Thanksgiving Turkey Dinner Photos - Pexels",
+      "url": "https://www.pexels.com/search/thanksgiving%20turkey%20dinner/",
+      "summary": "Download and use 100,000+ Thanksgiving Turkey Dinner stock photos for free. Thousands of new images every day Completely Free to Use High-quality videos and images from Pexels",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -548,12 +494,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cd6562a75fd73582",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/en-US/biztalkr2adapters/threads",
-      "summary": "MSDN",
+      "id": "d19bb918eda8806a",
+      "title": "Gráfico y cotización de BBVAC1: BVL:BBVAC1 — TradingView",
+      "url": "https://es.tradingview.com/symbols/BVL-BBVAC1/",
+      "summary": "Siga la cotización de las acciones de Banco BBVA Peru SA a día de hoy. Analice su gráfico en directo con previsiones, noticias e información financiera sobre BBVAC1.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -579,12 +525,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7e58900e810e47e0",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/Forums/es-ES/ae9c1e1e-d5d1-4a9a-8c43-bfa8264ead8c/ayuda-como-puedo-saber-el-numero-de-registros-totales-en-una-tabla",
-      "summary": "MSDN",
+      "id": "7ed136193e82e59d",
+      "title": "Now Hiring: 133,000 Jobs in Griffith, IN | Indeed",
+      "url": "https://www.indeed.com/l-Griffith,-IN-jobs.html",
+      "summary": "Job Overview As a Security Officer, you’ll help protect people, property, and facilities through attentive surveillance, access control, and regular patrols. You’ll respond to concerns calmly, follow established emergency response procedures, and document incidents clearly. This role may involve standing, walking, and heavy lifting.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "near-eye display optics",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -597,11 +543,12 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "news"
+        "policy"
       ],
-      "primary_type": "news",
+      "primary_type": "policy",
       "routing_targets": [
         "research_news_review",
+        "policy_privacy",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -610,12 +557,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5a2efb06c89d9439",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/windowsapps/en-US/d79533f5-1152-43e1-b110-ccee28d2e531/a-popup-element-containing-a-webview-with-video",
-      "summary": "MSDN",
+      "id": "caacb34bad345ce8",
+      "title": "Samsung US | Mobile | TV | Home Electronics | Home Appliances | Samsung US",
+      "url": "https://www.samsung.com/us/support/owners/app/galaxy-wearable-watch",
+      "summary": "Samsung US | Mobile | TV | Home Electronics | Home Appliances | Samsung US",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -628,12 +575,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "video"
+        "video",
+        "tool"
       ],
       "primary_type": "video",
       "routing_targets": [
         "research_news_review",
         "report_card_evidence",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -642,10 +591,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ca8acaaf02bf0e54",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/en-us/sqldatabaseengine/thread/8a7ffef6-7a02-419f-b6ef-5f7f7c8a8c13",
-      "summary": "MSDN",
+      "id": "73a40390066b31a5",
+      "title": "Thanksgiving thanksgiving turkey Images - Free Download on Magnific ...",
+      "url": "https://www.magnific.com/free-photos-vectors/thanksgiving-thanksgiving-turkey",
+      "summary": "Find & Download Free Graphic Resources for Thanksgiving thanksgiving turkey Vectors, Stock Photos & PSD files. Free for commercial use High Quality Images",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -673,10 +622,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5143756227025f93",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/sharepoint/en-US/bf010979-77e3-45ea-8a2e-b5264b2447a3/workflow-failed-to-start-sharepoint-designer",
-      "summary": "MSDN",
+      "id": "f30fca58124ac2af",
+      "title": "Thanksgiving turkey Images - Free Download on Magnific (formerly Freepik)",
+      "url": "https://www.magnific.com/free-photos-vectors/thanksgiving-turkey",
+      "summary": "Find & Download Free Graphic Resources for Thanksgiving turkey Vectors, Stock Photos & PSD files. Free for commercial use High Quality Images",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -704,10 +653,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c1caedb0ae3d2c62",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/exchange/en-US/95a8e16a-ea98-480a-b9fe-469264e5f98b/odbc-driver-for-exchange",
-      "summary": "MSDN",
+      "id": "1701834f54c8a859",
+      "title": "Thanksgiving Turkey Photos, Download The BEST Free ... - Pexels",
+      "url": "https://www.pexels.com/search/thanksgiving%20turkey/",
+      "summary": "Download and use 100,000+ Thanksgiving Turkey stock photos for free. Thousands of new images every day Completely Free to Use High-quality videos and images from Pexels",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -735,10 +684,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c5294cff99539fa8",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/windowsapps/en-US/54f25275-d8a1-44aa-8807-f9057f835e3f/platformvector",
-      "summary": "MSDN",
+      "id": "bc6a5daa0e8dd9ba",
+      "title": "Thanksgiving Turkey Pictures | Download Free Images on Unsplash",
+      "url": "https://unsplash.com/s/photos/thanksgiving-turkey",
+      "summary": "Download the perfect thanksgiving turkey pictures. Find over 100+ of the best free thanksgiving turkey images. Free for commercial use No attribution required Copyright-free",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -766,10 +715,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "f3adee516a2b969c",
-      "title": "MSDN",
-      "url": "https://social.msdn.microsoft.com/forums/silverlight/en-US/b428d0fe-b188-4c92-ba1c-93ecdb587648/wcf-service-returning-object-array",
-      "summary": "MSDN",
+      "id": "bfbc8ccf997c4bff",
+      "title": "Thanksgiving Turkey Vector Images - Vecteezy",
+      "url": "https://www.vecteezy.com/free-vector/thanksgiving-turkey",
+      "summary": "Browse 1,942 incredible Thanksgiving Turkey vectors, icons, clipart graphics, and backgrounds for royalty-free download from the creative contributors at Vecteezy!",
       "discovery_channel": "adjacent",
       "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
@@ -797,10 +746,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "917c8643bb980559",
-      "title": "THE 15 BEST Things to Do in Coos Bay (2026) - Tripadvisor",
-      "url": "https://www.tripadvisor.com/Attractions-g51813-Activities-Coos_Bay_Oregon.html",
-      "summary": "Things to Do in Coos Bay, Oregon: See Tripadvisor's 10,129 traveler reviews and photos of Coos Bay tourist attractions. Find what to do today, this weekend, or in November. We have reviews of the best places to see in Coos Bay. Visit top-rated & must-see attractions.",
+      "id": "463960447bf883f9",
+      "title": "The Best 10 Restaurants near Griffith, IN 46319 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Griffith%2C+IN+46319",
+      "summary": "It's surprising when you first walk in. The low lighting and dark wood creates a very intimate, upscale atmosphere. I came just…\" more. 6. El Jimador Bar and Grill #6. \"Cool Spot! Great food, cozy and great service. They did run out of beer, was drinking Pacifico, but everything else was good.\" more. 7. Bombers BBQ.",
       "discovery_channel": "adjacent",
       "query": "near-eye display optics",
       "source": "Bing web RSS",
@@ -828,15 +777,188 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "46d7481918d931d6",
-      "title": "Glycaemic index and diabetes | Diabetes UK",
-      "url": "https://www.diabetes.org.uk/living-with-diabetes/eating/carbohydrates-and-diabetes/glycaemic-index-and-diabetes",
-      "summary": "Research has shown that choosing low GI foods can particularly help manage long-term blood glucose (HbA1c) levels in people with type 2 diabetes. Swapping high GI foods and drinks for slower, lower ranking ones are better for managing blood sugar levels in people with gestational diabetes too.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "2bbe4e003ef4a674",
+      "title": "Amazon.com: FALAN MULE Women's Wallet Leather RFID Blocking Large ...",
+      "url": "https://www.amazon.com/FALAN-MULE-Genuine-Blocking-Capacity/dp/B09CGMQ8NS",
+      "summary": "Buy FALAN MULE Women's Wallet Leather RFID Blocking Large Capacity Trifold Ladies Wallet Wristlet Clutch Card Holder and other Wallets at Amazon.com. Our wide selection is eligible for free shipping and free returns.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4a559a1e89cfbefc",
+      "title": "Amazon.com: Falan Mule Women's Wallet, Genuine Leather, Bifold, RFID ...",
+      "url": "https://www.amazon.com/FALAN-MULE-Genuine-Leather-Blocking/dp/B099RWY8SV",
+      "summary": "Buy Falan Mule Women's Wallet, Genuine Leather, Bifold, RFID Blocking, Antique Yellow, 10 Slots, 2 Windows, 1 Zipper Pocket, 2 Compartments and other Wallets at Amazon.com. Our wide selection is eligible for free shipping and free returns.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "shipping"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "retail"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1fb2895a67a575a5",
+      "title": "Governor Ivey Announces $1.8 Billion Niron Magnetics Investment",
+      "url": "https://governor.alabama.gov/newsroom/2026/11/governor-ivey-announces-1-8-billion-niron-magnetics-investment/",
+      "summary": "DOTHAN – Governor Kay Ivey on Friday announced Niron Magnetics, a global leader in the development and manufacturing of rare-earth-free Iron Nitride permanent magnets, will build a $1.8 billion advanced manufacturing campus in Dothan, Alabama. The 10,000-ton high-volume manufacturing plant is ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "71a1842869b7a145",
+      "title": "Niron Magnetics announces $1.8 billion Dothan plan, 700 jobs",
+      "url": "https://www.wdhn.com/news/local-news/houston-county/city-of-dothan/niron-magnetics-announces-1-8-billion-dothan-plan-700-jobs/",
+      "summary": "Governor Kay Ivey on Friday announced Niron Magnetics, a global leader in the development and manufacturing of rare-earth-free Iron Nitride permanent magnets, will build a $1.8 billion advanced manufacturing campus in Dothan, Alabama, Nov. 20, 2026.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9fc334333d58a241",
+      "title": "Niron Magnetics announces $1.8B investment in Alabama, creating 700 ...",
+      "url": "https://www.madeinalabama.com/2026/11/niron-magnetics-announces-1-8b-investment-in-alabama-creating-700-jobs/",
+      "summary": "Dothan, Alabama – Niron Magnetics, a global leader in the development and manufacturing of rare-earth-free Iron Nitride permanent magnets, will build a $1.8 billion advanced manufacturing campus in southeast Alabama, company officials and Governor Kay Ivey announced Friday. The 10,000-ton high-volume manufacturing plant in Dothan is expected to create 700 high-wage jobs within five years ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk",
+        "rumor"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b71fa3a953923eb3",
+      "title": "Niron Magnetics Changes Game by Breaking Ground on Rare-Earth-Free ...",
+      "url": "https://nironmagnetics.com/niron-magnetics-changes-game-by-breaking-ground-on-rare-earth-free-magnet-facility/",
+      "summary": "After nearly a decade of research and development in partnership with the U.S. Department of Energy and the University of Minnesota, Niron Magnetics has successfully created one of the first commercially viable new magnet materials in decades, capable of producing superior permanent magnets.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
       "keyword_hits": [
         "research"
       ],
@@ -848,10 +970,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review",
-        "research"
+        "research",
+        "tool",
+        "sdk"
       ],
-      "primary_type": "review",
+      "primary_type": "research",
       "routing_targets": [
         "reject_noise"
       ],
@@ -861,17 +984,51 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6bbff28966ecfeb7",
-      "title": "How to Prevent Blood Sugar Spikes - Healthline",
-      "url": "https://www.healthline.com/nutrition/blood-sugar-spikes",
-      "summary": "Adopting a low-carb diet and reducing intake of refined carbohydrates and added sugars can help stabilize blood sugar levels by limiting the amount of glucose released into the bloodstream.",
+      "id": "f6cbd57772216092",
+      "title": "Niron Magnetics to build $1.8 billion manufacturing campus in Dothan ...",
+      "url": "https://www.fox10tv.com/2026/11/21/niron-magnetics-build-18-billion-manufacturing-campus-dothan-creating-700-jobs/",
+      "summary": "Governor Kay Ivey on Friday announced Niron Magnetics, a global leader in the development and manufacturing of rare-earth-free Iron Nitride permanent magnets, will build a $1.8 billion advanced ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 4,
+      "keyword_hits": [
+        "announced"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0ffc6b79ff40360d",
+      "title": "Contact | Wish",
+      "url": "https://www.wish.com/contact",
+      "summary": "Discover affordable items for your home and life needs. Enjoy our money back guarantee, frequent discounts, flat rate shipping (select markets), and more.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "released"
+        "shipping"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -893,15 +1050,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "13e19a5852dde4fb",
-      "title": "14 Food, Insulin & Exercise Strategies to Tame Post-Meal BG ...",
-      "url": "https://waltzingthedragon.ca/diabetes/managing-bg/tame-post-meal-spikes-with-food-insulin-exercise-strategies/",
-      "summary": "Here we look at the 14 best tips regarding insulin, food and exercise that can help reduce the size and frequency of post-meal spikes, which will give our kids the best chance to feel good, protect long term health and reach their own potential.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "1a6344ea3c60ede7",
+      "title": "FALAN MULE Wallet Women Genuine Leather Bifold Compact RFID ... - eBay",
+      "url": "https://www.ebay.com/itm/175916738758",
+      "summary": "Tested & Approved by Independent Test Lab. Genuine Leather: Ladies wallet made of high quality cowhide lichee leather. Compact yet small enough to put into your clothes pocket or your bag. It's convenient to take when go outside.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -911,7 +1068,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "review"
+        "review",
+        "tool",
+        "sdk"
       ],
       "primary_type": "review",
       "routing_targets": [
@@ -923,15 +1082,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e2b339704b34d527",
-      "title": "Blood sugar spikes explained – and how to manage them - BBC",
-      "url": "https://www.bbc.co.uk/food/articles/cewzd0jk28zo",
-      "summary": "You don't need to track everything you eat or monitor your blood sugar at each meal. Your body has a natural system built to deal with the changes in blood sugar that happen.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "ef9b84032f81ef8d",
+      "title": "Falan Mule Wallets for Women on Sale up to 90% Off: Poshmark",
+      "url": "https://poshmark.com/brand/Falan%20Mule-Women-Bags-Wallets",
+      "summary": "Find new & pre-owned authentic Women's Falan Mule Wallets from trusted sellers on Poshmark, and save up to 90% off retail. Select and buy from a wide range of new & pre-owned styles from Falan Mule to refresh your wardrobe for less!",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -941,9 +1100,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -953,15 +1114,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b2d46372f80fab11",
-      "title": "Foods That Help Stabilize Spikes And Dips In Your Blood Sugar",
-      "url": "https://www.diabetescarecommunity.ca/diet-and-fitness-articles/foods-that-help-stabilize-spikes-and-dips-in-your-blood-sugar/",
-      "summary": "Fortunately, you can help control blood sugar with diet, as there are foods that help stabilize blood sugar and foods that spike it. Let’s look at some ways you can help keep your blood sugar in check via the right meal and snack choices throughout the day.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "893d96bfb2f3de3d",
+      "title": "FALAN MULE Women Genuine Leather Wallet Large Capacity Bifold RFID ...",
+      "url": "https://us.shein.com/FALAN-MULE-Women-Genuine-Leather-Wallet-Large-Capacity-Bifold-RFID-Blocking-Card-Holder-With-Zipper-Coin-Pocket-AK-p-162466204.html",
+      "summary": "FALAN MULE Women Genuine Leather Wallet Large Capacity Bifold RFID Blocking Card Holder With Zipper Coin Pocket AK-- Long Wallets at SHEIN.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -971,9 +1132,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -983,15 +1145,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cd4cfa36194b2168",
-      "title": "Glucose Spikes: 8 Evidence-Based Ways to Flatten Them",
-      "url": "https://www.1mg.com/articles/glucose-spikes-8-evidence-based-ways-to-flatten-them/",
-      "summary": "Struggling with post-meal glucose spikes? Learn 8 ways to flatten glucose spikes naturally and improve blood sugar control.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "b3146c76ec262206",
+      "title": "FALAN MULE Women's Compact Genuine Leather Wallet with RFID Blocking ...",
+      "url": "https://business.walmart.com/ip/FALAN-MULE-Small-Wallet-for-Women-Genuine-Leather-Bifold-Purse-RFID-Blocking-Card-Holder/1892243853",
+      "summary": "Discover the FALAN MULE Small Wallet for Women! Genuine Leather, RFID blocking and superior card holder capacity.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1001,9 +1163,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1013,15 +1177,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7e99c54476b75f9f",
-      "title": "Glycemic index and diabetes: MedlinePlus Medical Encyclopedia",
-      "url": "https://medlineplus.gov/ency/patientinstructions/000941.htm",
-      "summary": "You need to keep an eye on the portion size and number of carbohydrates in the meal you are having, even if it has low GI foods. In general, processed foods have a higher GI.",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "02ba1feea406232e",
+      "title": "FALAN MULE Women's Genuine Leather Bifold Wallet with RFID Blocking and ...",
+      "url": "https://business.walmart.com/ip/FALAN-MULE-Genuine-Leather-Small-Wallet-for-Women-RFID-Blocking-Compact-Size-Brown/1165541401",
+      "summary": "Discover FALAN MULE's small wallet for women. Genuine Leather, RFID blocking and ample card slots. Perfect coin purse for stylish organization.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1031,9 +1195,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1043,15 +1209,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b40396797333f78b",
-      "title": "How to get blood sugar levels down quickly: 6 tips to stop ...",
-      "url": "https://www.bswhealth.com/blog/6-simple-ways-to-prevent-blood-sugar-spikes-after-meals",
-      "summary": "When blood sugar spikes after eating, it can leave you feeling tired, lethargic and moody. Over time, chronic blood sugar spikes can put you at risk for conditions like kidney disease, heart disease and even dementia. The good news is this: you can improve your blood sugar control today. Here’s how. What causes blood sugar spikes?",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "id": "1c7e209b013d80fb",
+      "title": "FALAN MULE Women's Wallet Genuine Leather RFID Blocking Large AA-Black ...",
+      "url": "https://www.ebay.com/itm/305548238046",
+      "summary": "Black leather FALAN MULE women's wallet with multiple card slots, gold zippers, and daisy symbol on front.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1061,9 +1227,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1073,15 +1240,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "459cf74a658db475",
-      "title": "How to Make a Mini-potato Cannon : 7 Steps - Instructables",
-      "url": "https://www.instructables.com/How-to-make-a-mini-potato-cannon/",
-      "summary": "How to Make a Mini-potato Cannon: Have you ever wanted to build a potato gun but never had the time? Well, now you can! This mini potato gun will only take 10-20 minutes and will entertain you for hours. (This is my first instructable.)",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "9d297b09fd8136c7",
+      "title": "FALAN MULE, Small Wallet for Women, RFID Blocking, Genuine Leather ...",
+      "url": "https://www.walmart.com/ip/FALAN-MULE-Small-Wallet-for-Women-Genuine-Leather-Bifold-Purse-RFID-Blocking-Card-Holder/5150791891",
+      "summary": "Stay organized with FALAN MULE Small Wallet for Women, genuine leather with RFID blocking, 14 credit card slots, coin pocket, and bill compartments for daily use.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1091,9 +1258,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1103,15 +1272,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "81215e5506d4c00c",
-      "title": "How to Make a Robin Hood Hat - Instructables",
-      "url": "https://www.instructables.com/How-to-Make-a-Robin-Hood-Hat/",
-      "summary": "How to Make a Robin Hood Hat: I recently introduced my four children to one of my favorite Disney movies of all time, Robin Hood. Like myself at their age, my four children have become totally enthralled with the heroic story, and the three boys in particular have been running a…",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "cd2b97ed9b241743",
+      "title": "FALAN MULE, Small Wallet for Women, RFID Blocking, Genuine Leather ...",
+      "url": "https://www.walmart.com/ip/FALAN-MULE-Small-Wallet-for-Women-Genuine-Leather-Bifold-Purse-RFID-Blocking-Card-Holder/5150841872",
+      "summary": "Stay organized with FALAN MULE's small genuine leather wallet for women, featuring RFID blocking, 14 credit card slots, 2 SIM slots.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1121,9 +1290,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1133,46 +1304,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0ccf08d2271857bd",
-      "title": "How to Make a Shirt Bigger by Adding Side Panels",
-      "url": "https://www.instructables.com/How-to-Make-a-Shirt-Bigger-by-Adding-Side-Panels/",
-      "summary": "How to Make a Shirt Bigger by Adding Side Panels : Whether you've outgrown a shirt, ordered the wrong size, or find a shirt you love but it doesn't quite fit, here's an easy way to make a shirt bigger by adding coordinating side panels.So Women's clothing is tricky! Sizing at one store is different …",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "642929069abc827d",
-      "title": "How to Make a Wooden Backgammon Board - Instructables",
-      "url": "https://www.instructables.com/How-to-Make-a-Wooden-Backgammon-Board/",
-      "summary": "How to Make a Wooden Backgammon Board: I decided to make a backgammon board as a gift and wound up making two sets. I didn't find any good plans online so I'm posting them here in case others want to follow them. I made it at Techshop and got a lot of great advice from the folks there.",
+      "id": "d23cd2ab80f0e2fc",
+      "title": "Free Barcode Generator - QR Code Generator | Avery.com",
+      "url": "https://www.avery.com/software/barcode-generator/",
+      "summary": "Use this free barcode generator & QR code generator at avery.com to easily add QR codes & barcodes to product labels, marketing postcards, shipping labels & more.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -1181,9 +1324,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1193,15 +1336,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "29635c7627e44610",
-      "title": "How to Make Flatware (spoon and Forks) Bracelets",
-      "url": "https://www.instructables.com/How-to-bend-ANY-flatware-spoon-and-forks-to-make/",
-      "summary": "How to Make Flatware (spoon and Forks) Bracelets: I love to re-purpose old flatware into wearable works of art. Here's how I do it.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "02cd5f54869353e1",
+      "title": "Home - Niron Magnetics",
+      "url": "https://nironmagnetics.com/",
+      "summary": "Niron Magnetics has developed a rare-earth-free permanent magnet made with Iron Nitride. This material platform is engineered for performance, scalability, and domestic manufacturing. Niron is actively manufacturing and sampling customers from its commercial pilot plant today.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1211,9 +1354,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1223,16 +1367,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "86f27909584dab2f",
-      "title": "How to Make Invisible Ink : 6 Steps - Instructables",
-      "url": "https://www.instructables.com/How-To-Make-Invisible-Ink-3/",
-      "summary": "How to Make Invisible Ink: So I came upon this amazing formula for making an invisible ink , with could only be seen under UV/Black light. How?Glad you asked! Black lights are not that different from any other type of light, whether incandescent, fluorescent, or just the age …",
+      "id": "51f0a7fea6222f7a",
+      "title": "Managing Your Account | Home - Wish",
+      "url": "https://home.wish.com/faq/managing-account",
+      "summary": "Discover affordable items for your home and life needs. Enjoy our money back guarantee, frequent discounts, flat rate shipping (select markets), and more.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -1241,9 +1387,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1253,16 +1399,18 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "73298c7473a47253",
-      "title": "Make a Clay Ocarina : 12 Steps (with Pictures) - Instructables",
-      "url": "https://www.instructables.com/Make-A-Clay-Ocarina/",
-      "summary": "Make a Clay Ocarina: Ever since \"Legend of Zelda : Ocarina of Time\" came out, everyone associates ocarinas with Zelda and there fore, anyone interested in ocarinas is considered a die-hard Zelda fanatic!! There is alot more to Ocarinas than Zelda you know. With this In…",
+      "id": "fb8806989dabece0",
+      "title": "Mobile Apps | Wish",
+      "url": "https://www.wish.com/mobile-apps",
+      "summary": "Discover affordable items for your home and life needs. Enjoy our money back guarantee, frequent discounts, flat rate shipping (select markets), and more.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
+      "materiality_score": 3,
+      "keyword_hits": [
+        "shipping"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -1271,9 +1419,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "model"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1283,15 +1431,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "137c50a970c32ef3",
-      "title": "Make a E-bow Variant : 3 Steps - Instructables",
-      "url": "https://www.instructables.com/make-a-E-bow-variant/",
-      "summary": "things i used 1) op amp LM386 2) 10 uF cap X 2 3) 100uF cap 4) 220uF cap 5) .473 uF cap 6) 9V battery + battery plug (or clip or any thing to connect battery) & 7) most important induction coils that are customized X2 (i obtained them from old CFLs inductances)",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "79440fe7c51f836d",
+      "title": "More about Niron: What we know about the company coming to Dothan",
+      "url": "https://www.wtvy.com/2026/11/21/more-about-niron-what-we-know-about-company-coming-dothan/",
+      "summary": "The company is new to this part of the country. Niron Magnetics was founded about 12 years ago. “Niron began with a big idea. A high-performance magnet made without any rare earth elements.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1301,9 +1449,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1313,15 +1462,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a6c53b455d3c1172",
-      "title": "Make Your Own Electrocardiogram (ECG) : 6 Steps - Instructables",
-      "url": "https://www.instructables.com/Make-Your-Own-Electrocardiogram-ECG/",
-      "summary": "Make Your Own Electrocardiogram (ECG): NOTICE: This is not a medical device. This is for educational purposes only, using simulated signals. If using this circuit for real ECG measurements, please ensure the circuit and the circuit-to-instrument connections are utilizing battery power a…",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "eebb72e18718c56e",
+      "title": "NIRON MAGNETICS ANNOUNCES $1.8B INVESTMENT IN ALABAMA, CREATING 700 JOBS",
+      "url": "https://www.prnewswire.com/news-releases/niron-magnetics-announces-1-8b-investment-in-alabama-creating-700-jobs-302946505.html",
+      "summary": "Niron Magnetics, a global leader in the development and manufacturing of rare-earth-free Iron Nitride permanent magnets, will build a $1.8 billion advanced manufacturing campus in southeast ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1331,9 +1480,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1343,15 +1493,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c39474e6dd716870",
-      "title": "Make Your Own Fog Juice : 3 Steps - Instructables",
-      "url": "https://www.instructables.com/Make-Your-Own-Fog-Juice/",
-      "summary": "Make Your Own Fog Juice: Make your very own fog juice that is cheap and very effective!All you need is a few things.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "id": "491bd82910201b18",
+      "title": "Niron Magnetics chooses Alabama for $1.8 billion manufacturing plant ...",
+      "url": "https://www.al.com/business/2026/11/magnet-manufacturer-chooses-alabama-for-18-billion-plant-creating-700-jobs.html",
+      "summary": "Alabama’s Wiregrass region is getting a major economic investment from an out-of-state manufacturing company. Minneapolis-based Niron Magnetics will build a $1.8 billion advanced manufacturing ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1361,9 +1511,10 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1373,15 +1524,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ce2c9a3d50cfa589",
-      "title": "Naught - definition of naught by The Free Dictionary",
-      "url": "https://www.thefreedictionary.com/naught",
-      "summary": "Nothing: All their work was for naught. 1. Nonexistent. 2. Insignificant. [Middle English, from Old English nāwiht : nā, no; see ne in Indo-European roots + wiht, thing; see wekti- in Indo-European roots.] American Heritage® Dictionary of the English Language, Fifth Edition. Copyright © 2016 by Houghton Mifflin Harcourt Publishing Company.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "id": "0e56ae36048d7a3c",
+      "title": "Niron Magnetics Stock Price, Valuation & News",
+      "url": "https://stockanalysis.com/private/niron-magnetics/",
+      "summary": "Get a detailed overview of Niron Magnetics, including its latest private market stock price, chart, valuation, news and other related information.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 2,
+      "materiality_score": 3,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -1391,9 +1542,11 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "tool",
+        "sdk",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1403,280 +1556,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "feacf136b5b880b5",
-      "title": "Naught - Definition, Meaning & Synonyms | Vocabulary.com",
-      "url": "https://www.vocabulary.com/dictionary/naught",
-      "summary": "When things come to naught, they've come to nothing. If you feel bad about ending up with nothing, you can also say \"It was all for naught!\"",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d43b90cbdf2f3d7",
-      "title": "Naught - Etymology, Origin & Meaning - Etymonline",
-      "url": "https://www.etymonline.com/word/naught",
-      "summary": "This distinction is that nought is simply the name of the cipher 0, while the archaic, poetic, & rhetorical uses in which the word is substituted for nothing in any other than the arithmetical sense now prefer naught.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ca12afd99470a81b",
-      "title": "naught - Wiktionary, the free dictionary",
-      "url": "https://en.wiktionary.org/wiki/naught",
-      "summary": "Noun naught (countable and uncountable, plural naughts) (archaic) Nothingness. (chiefly US, dated) Alternative spelling of nought.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5751f7c43956eda2",
-      "title": "NAUGHT Definition & Meaning - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/dictionary/naught",
-      "summary": "The meaning of NAUGHT is nothing. How to use naught in a sentence.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d928b568150f8a60",
-      "title": "Naught Definition & Meaning - YourDictionary",
-      "url": "https://www.yourdictionary.com/naught",
-      "summary": "Naught definition: Nonexistence; nothingness.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "da20400666aad52e",
-      "title": "NAUGHT Definition & Meaning | Dictionary.com",
-      "url": "https://www.dictionary.com/browse/naught",
-      "summary": "Naught is a word for nothing that is used in specific ways, usually when a project or effort comes to naught. Looking to grow your vocabulary? Check out this interactive, curated word list from our team of English language specialists at Vocabulary.com – one of over 17,000 lists we've built to help learners worldwide!",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "1f6a05ee6ac70750",
-      "title": "NAUGHT definition and meaning | Collins English Dictionary",
-      "url": "https://www.collinsdictionary.com/dictionary/english/naught",
-      "summary": "5 meanings: 1. archaic or literary nothing or nothingness; ruin or failure 2. → a variant spelling (esp US) of nought 3. → See.... Click for more definitions.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8b87120452721da3",
-      "title": "NAUGHT Simple Definition - Merriam-Webster",
-      "url": "https://www.merriam-webster.com/simple/naught",
-      "summary": "The simple definition of NAUGHT is nothing.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b3f6a83bedfdb2aa",
-      "title": "NAUGHT | English meaning - Cambridge Dictionary",
-      "url": "https://dictionary.cambridge.org/dictionary/english/naught",
-      "summary": "(Definition of naught from the Cambridge Advanced Learner's Dictionary & Thesaurus © Cambridge University Press)",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "05574970965d4554",
-      "title": "Speedtest Frequently Asked Questions",
-      "url": "https://www.speedtest.net/about/knowledge/faq",
-      "summary": "You've got questions, we've got answers. Dig into some of the most frequently asked questions about internet speeds in our FAQs.",
+      "id": "83c81c071e18933a",
+      "title": "5 Massage Techniques for Her That Every Woman Needs",
+      "url": "https://www.thebirdrockmassagestudio.com/blog/5-massage-techniques-for-her-that-every-woman-needs/",
+      "summary": "Here is a list of 5 massage techniques for her that will promote overall wellness in any woman’s life.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1703,12 +1586,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8ee7051516926dc1",
-      "title": "Those bothersome blood sugar spikes after meals…",
-      "url": "https://www.knowdiabetes.org.uk/blog/those-bothersome-blood-sugar-spikes-after-meals/",
-      "summary": "Below are some ways you may be able to reduce the size and duration of some of your blood sugar spikes after meals. Before implementing any of the below, please do speak to your healthcare team to understand if this is right for you. 1. Choose low glycaemic index foods.",
+      "id": "5ce7772163f6cdfc",
+      "title": "Barcode Generator - Create Barcodes Online & Free",
+      "url": "https://www.barcode-generator.com/",
+      "summary": "Generate custom barcodes online for free. Create EAN, UPC, Code 128, Code 39 and other barcodes instantly. Simple, fast and easy to use.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1733,12 +1616,972 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "240b4fc4dd560af8",
-      "title": "Why Some Low-GI Foods Still Spike Your Blood Sugar",
-      "url": "https://www.snaq.ai/blog/why-low-gi-foods-still-spike-blood-sugar",
-      "summary": "Low-GI foods are a useful starting point, not a guarantee. Your glucose response depends on portion size, food pairings, and daily factors that GI tables can't capture.",
+      "id": "cd64fb202cdf248f",
+      "title": "Book a Mobile Massage Near You | In-Home Massages | Soothe",
+      "url": "https://www.soothe.com/services/massage/",
+      "summary": "Soothe connects you with licensed massage therapists in your area for in-home massages. Book mobile massages near you for your home, office, or hotel here.",
       "discovery_channel": "broad_web",
-      "query": "smartglasses",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81578cf2fc9e742d",
+      "title": "Bulk Barcode Generator - Free Online Barcode Generator",
+      "url": "https://barcode-maker.com/bulk-barcode-generator",
+      "summary": "Free bulk barcode generator online. Paste Excel rows or import CSV, generate multiple barcodes, and download PNG, SVG, or ZIP files for batch labels.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "86215a1308126423",
+      "title": "Centimeters to Feet Converter | Formula, Chart & Examples",
+      "url": "https://allunitconversions.com/cm-to-ft",
+      "summary": "Convert centimeters to feet instantly with a step-by-step formula, worked examples, and a quick reference chart. Free calculator for students and engineers.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c8d4b10f5a56d1d7",
+      "title": "Centimeters to Feet: How to Convert cm to ft Correctly",
+      "url": "https://yconvert.com/centimeters-to-feet/",
+      "summary": "Short answer: to convert centimeters to feet, divide the number of centimeters by 30.48. So 170 cm ÷ 30.48 = 5.58 ft.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d2480049a6d95e48",
+      "title": "Cheap Gadgets, Top Quality. On Sale Now. | Wish",
+      "url": "https://www.wish.com/~/gadgets",
+      "summary": "Buy Gadgets at Deep Discounts. Direct from Manufacturer Pricing. Satisfaction Guaranteed. We have Car Electronics, Computers and Office Gadgets, Home Electronics, Mobile Phones and Accessories and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b503a8f8f84cfdbf",
+      "title": "Cheap Mode, Top Quality. On Sale Now. | Wish",
+      "url": "https://www.wish.com/fr/~/mode/fashion",
+      "summary": "Buy Mode at Deep Discounts. Direct from Manufacturer Pricing. Satisfaction Guaranteed. We have Sacs et Sacs à main, Cute and Funny Outfits, Accessoires de mode, Marques de mode, Vêtements pour enfants and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b98adc13c31f42b5",
+      "title": "Cheap Women's Dresses, Top Quality. On Sale Now. | Wish",
+      "url": "https://www.wish.com/~/fashion/women%27s-dresses",
+      "summary": "Buy Women's Dresses at Deep Discounts. Direct from Manufacturer Pricing. Satisfaction Guaranteed. We have Unique Dresses, Women's Dresses by Color, Women's Dresses by Event, Women's Dresses by Length, Women's Dresses by Material and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5079a585dc3a3931",
+      "title": "Document Translator — Free AI-Powered Translation",
+      "url": "https://doctranslator.net/tools/document-translator",
+      "summary": "Try our free online document translator for PDFs, DOCX, and more. Context-aware AI delivers format-preserving translations in 50+ languages instantly.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8438346a056a8f2d",
+      "title": "Free Barcode Generator | MobileDemand",
+      "url": "https://www.mobiledemand.com/barcode-generator",
+      "summary": "MobileDemand offers a free barcode generator to create a variety of common barcode symbologies. These barcodes are widely used across industries such as logistics, inventory management, product identification, advertising, procurement, and more.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "adf7ddebb1229dfa",
+      "title": "Free Barcode Generator – BarcodeOn",
+      "url": "https://barcodeon.com/",
+      "summary": "BARCODEON Free Barcode Generator Create Code 128, EAN-13, UPC-A, Code 39 and GS1-128 barcodes online for free. Generate multiple barcodes, save SVG files, print, and use check digit tools directly in your browser.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f29e2d917a8144b0",
+      "title": "Free Online Barcode Generator - Barcode Maker",
+      "url": "https://barcode-maker.com/",
+      "summary": "Free barcode generator online. Create Code 128, EAN, UPC, QR and bulk barcodes from Excel or CSV. Download PNG, SVG or ZIP files instantly.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8019cbb1d0f1afc3",
+      "title": "Free Online Barcode Generator: Create Barcodes for Free!",
+      "url": "https://barcode.tec-it.com/en",
+      "summary": "Test this online barcode-generator without any software installation (Terms of Service) and generate your barcodes right now: EAN, UPC, GS1 DataBar, Code-128, QR Code®, Data Matrix, PDF417, Postal Codes, ISBN, etc.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cee15044f4398148",
+      "title": "Free Online Barcode Generator: GS1-128 (UCC/EAN-128)",
+      "url": "https://barcode.tec-it.com/en/GS1-128",
+      "summary": "You may use this barcode generator as part of your non-commercial web-application or web-site to create barcodes, QR codes and other 2D codes with your own data.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b03acc8deb1281b9",
+      "title": "Full Body Sensual Massage for Women - Tantra Body Rub",
+      "url": "https://www.tantrabodyrub.com/",
+      "summary": "Full Body Sensual Massage for Women NYC. Safe and loving setting for Erotic, Body Rub tantric yoni massage.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2b6b8ef5dd31555b",
+      "title": "Happy Ending Massage: My Experience As A Middle-Aged Woman - HuffPost",
+      "url": "https://www.huffpost.com/entry/happy-ending-massage-for-women_n_62d83e7fe4b03dbb9913e047",
+      "summary": "I’m A Middle-Aged Woman. This Is What Happened When I Got A Happy Ending Massage.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a79b1c2ffc6522b9",
+      "title": "Height converter (cm to feet and inches) - Metric Conversion",
+      "url": "https://www.metric-conversions.org/calculators/height-converter.htm",
+      "summary": "Convert height between centimetres and feet and inches. Divide cm by 2.54 for inches, then split into feet. 180 cm is 5 ft 10.9 in.",
+      "discovery_channel": "broad_web",
+      "query": "ENGO smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "17acecedfbc87627",
+      "title": "List of Volkswagen vehicles - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/List_of_Volkswagen_vehicles",
+      "summary": "Volkswagen, the core brand of Volkswagen Group produces various models since its inception, ranging from passenger vehicles and commercial vehicles. It also consists of global products and regional products, specifically for large markets including Europe, China and Latin America. Volkswagen AG annual report in 2022 reported that the best-selling model under the Volkswagen brand globally was ...",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c6b3b6589dc04a61",
+      "title": "Massage Therapy | Find Massage Online Booking for Massages Near You ...",
+      "url": "https://www.massagebook.com/",
+      "summary": "Use our massage online booking to find massages near you. Find and book highly rated professional massage therapists, reflexologists, bodyworkers and more. Discover massage therapy near you at MassageBook today.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b2a9a6fe9236fe3c",
+      "title": "Online Barcode Generator Free — QR, UPC, EAN & Code 128",
+      "url": "https://barcodx.com/online-barcode-generator",
+      "summary": "Free online barcode generator and barcode creator — create QR Code, Code 128, EAN-13, UPC-A and more in seconds. No account needed. Download instantly.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4b3f1bc0c2d1b17b",
+      "title": "Top Spa Prime services near me - Urban Company",
+      "url": "https://www.urbancompany.com/near-me/spa-near-me",
+      "summary": "Top-class reliable Spa Prime services at your convenience near me. * Trained professionals * Best prices",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "147d1e18d6fd502a",
+      "title": "UPC, Barcode and Label Generator Tools - Barcodes Inc",
+      "url": "https://www.barcodesinc.com/generator/index.php",
+      "summary": "Completely free online barcode generator outputs many different symbologies in JPEG or PNG format",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "13702ab9e0cac363",
+      "title": "Used Cars for Sale in Bismarck, ND | Volkswagen of Bismarck",
+      "url": "https://www.volkswagenofbismarck.com/used-cars-for-sale-in-bismarck-nd/",
+      "summary": "Volkswagen of Bismarck offers a premium selection of used vehicles from VW and other trusted automakers. See our selection today near Minot, ND!",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "81694754fe3b7f9b",
+      "title": "Volkswagen Dealership in Bismarck, ND - Bismarck Motor Company",
+      "url": "https://www.bismarckmotorcompany.com/bismarck-nd/volkswagen-dealership/",
+      "summary": "See the full lineup of efficient and sophisticated VW cars and SUVs at Bismarck Motor Company. Take a test drive at our Volkswagen dealership in Bismarck, ND.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "43c3fa1dc6138c9e",
+      "title": "Volkswagen of Bismarck | Volkswagen Dealership | Bismarck, ND",
+      "url": "https://www.volkswagenofbismarck.com/",
+      "summary": "Volkswagen of Bismarck has you covered with new vehicles, expert service, and competitive financing. Call or visit our VW dealership near Mandan, ND today.",
+      "discovery_channel": "broad_web",
+      "query": "Volkswagen Smart Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "bed1a1559c7f7bb3",
+      "title": "What Is Normal – & Not Normal – During a Massage?",
+      "url": "https://www.sheknows.com/health-and-wellness/articles/1137145/whats-normal-massage/",
+      "summary": "You should never feel uncomfortable during a massage. Here's how and when to speak up.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8bff305a61ef252b",
+      "title": "Wish for Merchants",
+      "url": "https://merchant.wish.com/login",
+      "summary": "Wish for Merchants",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8ec11526ac222314",
+      "title": "Wish for Merchants",
+      "url": "https://merchant.wish.com/welcome-cn-platforms",
+      "summary": "Sell to hundreds of millions of customers on the leading mobile commerce platform in the United States and Europe. Sign up as a Wish merchant for free and start selling online fast.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2a45fe49eef5543b",
+      "title": "Wish Local Empowerment Program",
+      "url": "https://www.wish.com/local/empowerment",
+      "summary": "Wish is offering $2M in funds for up to 4,000 Black-owned businesses who participate in the Wish Local program. Learn more about the program here.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0032efd70214072a",
+      "title": "Woman to Woman Massage Therapy",
+      "url": "https://womantowomanmassage.ca/",
+      "summary": "Woman to Woman Massage Therapy offers healing massage and Reiki services tailored for women. Book your appointment today!",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec34adf4ac31e27b",
+      "title": "Women's Harmony – Massage Therapy",
+      "url": "https://womensharmonyllc.com/",
+      "summary": "At Women’s Harmony, I believe in the power of touch to heal, relax, and rejuvenate. My mission is to provide a safe, serene, and supportive environment where women can escape the stress of daily life and find balance and harmony within themselves. I understand that women have unique needs and preferences when it comes to wellness and relaxation. By creating a women-only space, I ensure that ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ccb71354415ec2ed",
+      "title": "Women's Wellness Massage Therapy",
+      "url": "https://www.womenswellnessmassage.com/",
+      "summary": "Calming stress, anxiety, and depression, improving sleep quality, and easing fatigue, while reconnecting with emotions held in the body.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "580e942e0f19a9af",
+      "title": "Women-Only Massage Therapy in Brandon, FL | Essence Massage & Beauty Spa",
+      "url": "https://essencemassagebeauty.com/",
+      "summary": "Essence Massage & Beauty Spa is a women-only spa in Brandon, FL offering Deep Tissue Massage, Prenatal Massage, Sports Therapy, Post-Op Massage, Body Sculpting.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c714964d1e578bc9",
+      "title": "‍♀️ Woman Getting Massage Emoji | Meaning, Copy And Paste",
+      "url": "https://emojipedia.org/woman-getting-massage",
+      "summary": "The Woman Getting Massage emoji is a ZWJ sequence combining 💆 Person Getting Massage, Zero Width Joiner and ♀️ Female Sign. These display as a single emoji on supported platforms.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
