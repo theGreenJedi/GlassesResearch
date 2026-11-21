@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-21T17:46:53.174385+00:00`
+Generated: `2026-11-21T19:29:28.904056+00:00`
 
-- Intake files inspected: **192**
-- Candidates retained in this review window/history: **6966**
+- Intake files inspected: **190**
+- Candidates retained in this review window/history: **6865**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1492
+- `adjacent_radar`: 1493
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 582
-- `rejected_noise`: 4813
-- `source_review`: 37
+- `needs_editorial_verification`: 578
+- `rejected_noise`: 4714
+- `source_review`: 38
 - `watching`: 22
 
 ## Action queue
@@ -198,7 +198,6 @@ Generated: `2026-11-21T17:46:53.174385+00:00`
 | high | needs_editorial_verification | direct | [Samsung’s $395 smart glasses are up for preorder, but there’s no display - MIXED News](https://news.google.com/rss/articles/CBMihwFBVV95cUxOTW9GcU10dXhsUDVtMFFndzdZT2VPRkFhWG5CNDVJaGVKZTZ1dXNybWZad2w2RTk2ajdZa1g1MHFGR3lsb3hHVUdJZ0p0SDU2bUR3VXN2QUNjNHNrb0QtMjQ2R1RRaDRJNlRaWmN1VXBWeVptREtWQ0MwZVVsUWpUc2tIWWFLTmM?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [South Korean schools launch inspections after AI glasses used to cheat on exams - https://streamlinefeed.co.ke/](https://news.google.com/rss/articles/CBMiswFBVV95cUxNRGZlZTJHR3BkcDlFWk5KQ1dpWThpUmc2elRRMmVJTENRX2Foa3JEcjUtZGVUNDJUVngxRDFKZmtOaENnUHhVdHpPTkUwQk5IQ2JkTWhLX3p5SjBDVnJPN3J4S1VqRW1BT3ZpeHktdnZDUzdfZW1mb3J6LTNSQ3RKZEJhTFQ4d3JuaGFNYVQ0V1RwTmJQRE5vUXhWbVVxaGxYdVc1SHljR3dsTUlVSUVad1RqTQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [VSP’s Marchon, Marcolin Plan 2027 Smartglasses Launch – Finance News - Global Banking & Finance Review](https://news.google.com/rss/articles/CBMilgFBVV95cUxPT0YyQ0VmblVtYjFRc1NENGdaZzg0WmlWM21vMjlNQnNmLUVGN01kRExrR1lHSks1YU5lTmt4cnlJdW91NzZrMDZvWWstbU04Rzdjd0dGb0RpS1FrM29BN1MwSGdURDd3M1phN2diRmsyTVRlQzZmNWhhUlN2Ukp4dC0tb2xkcXF4NUIyNnQwMzJ3cGN2OWc?oc=5) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
-| high | needs_editorial_verification | direct | [Warby Parker Seemingly Spilled The Beans On Google's Android XR Smart Glasses Launch - AOL.com](https://news.google.com/rss/articles/CBMihwFBVV95cUxQX0VRdzZucXRyV2Z0SHZMLTNmVkgyM3EzMDF2ZmtBQ2pZc1B2QjBabmdMQUFVNUQ1ZkdIRVoyZzh1MmJoUFh0TmVmYlVMMndaSlZ3d3RpQjhCTXZGem5aUmltOEVJZmR0dmJtcENCaG1Wd1NPR3ZxSU94aTVKRTYwZnFrNUpNVDQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [XR Glass Manufacturer XREAL announced on the 9th that it will launch its flagship XR Glass "XREAL 1 - 매일경제](https://news.google.com/rss/articles/CBMiS0FVX3lxTE9faGNxX3lXb1piOTA5dl92b2hQYXp4YnF2bDg4cklvb1VHUW5salAzeVRNT0pfZFVFSVB1anB2eG5zUjRpazVqcFFGOA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Xreal Aura hits the market: Android XR glasses with launch discount - Foro3D](https://news.google.com/rss/articles/CBMisgFBVV95cUxNalptM05yNVdZQVpQVm5lRnpiaktqdFNlR2ZmVFJvVEZ5YkNaMTBGdEZPREpCTkNEVTBQcVV3cmNySlczMUFDejA1SGNMWThYQkVOYkpDeTBHOTZEd3dROUlWc29qZksxdjJCdlctLXdrOVNSUWItcTVIeFBvUUY1Z3F1OTdFV2swWlhmazY1eVdHb1UxVHFXVGw3M0dSTk9oNE1LZEpxckltVkdkMzE5Q0Zn?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [[OFFICIAL] 2025 Ford Maverick Flat Tow for all Hybrids](https://www.mavericktruckclub.com/official-2025-ford-maverick-flat-tow-for-all-hybrids/) | reachable (200) | research_news_review, model_catalog_review, development_hacking |
@@ -270,7 +269,8 @@ Generated: `2026-11-21T17:46:53.174385+00:00`
 | high | needs_editorial_verification | direct | [SPECS \| AR Glasses \| Pre-Order Today](https://www.specs.com/smart-glasses/specs-27) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [TechRadar 23d ago Why AI smart glasses need a privacy-first approach](https://www.techradar.com/pro/why-ai-smart-glasses-need-a-privacy-first-approach) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [UBS raises Warby Parker stock price target on smart glasses launch - Investing.com Australia](https://news.google.com/rss/articles/CBMixgFBVV95cUxQQ1ZrRS15VktLSk1qVk03QS1KdUUwZ1Fyc2lTWnYwUnJxX0RScGpIaE15ekhzcjBNbjZuaVpKalFxeThCYWFTaXRaTXFVSk1idVhnYXpJUlZxcVBGcEQ1SXRZVFREUnBWS0ZqZ3Nib2R0azREeng1N1JlUWE3RFJVRnFjdzQ5UjFCLWpxdXo5dW9FcGU1MmNCTko1cXFsRE8wN21kSWJ4M3RnX19femlkdS1KbzVxTlozRnlvMXhTejk1U0p0enc?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
-| high | needs_editorial_verification | direct | [UBS raises Warby Parker stock price target on smart glasses launch - Investing.com Nigeria](https://news.google.com/rss/articles/CBMixgFBVV95cUxPbXZ0M0NXUGMybmVGUW5ET2RJSXJ4VFp0SHVSYW9ZME9DZWxDQWR1UjVqcG13NFVRMW1ZZXphb3ZtVHV2djdBUzRMc291TlpacWFyV0RleWp2US1aT2ZSdXc0Q3lLWUd5N1lOQmx2WVFYVDRJOFZDUGFTODQ1TEJhSzRpbk1OMlFyQmRDVzBNdWhtWXdWWGJCMU1xQkRkaWFOUlN6c0Voa0c1LS1ZLXh0OGNtR3AteG5aV0kxN0o1T3AxZzF1Mmc?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [UBS raises Warby Parker stock price target on smart glasses launch By Investing.com - Investing.com South Africa](https://news.google.com/rss/articles/CBMixgFBVV95cUxOSGtDREwtV1BpX0ljZFBXdjV6bnBmRmhHRHQ4R3k1LVZqT0x6T3A4Vk05cXM5QkR3c1dwRmVqQ1l6TUhLWENlU3FTWDRIcEhBYUVrQU5sYVJxN0EwY0NyenZqNDR2ZFlZRTlfY1lWQTA2YmltSGtwVkJSUWpBbVp1eVNXSU5BUk01SFpaU3oybXQxMV92VWt6aGFodHE0QlR6R29vYW9mVl9vblFRVzh5T3dvRDRyaEF4aVpCSjJFcDZvRHcxTWc?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
+| high | needs_editorial_verification | direct | [VSP-owned Marchon, Marcolin to unveil plan in 2027 to launch smartglasses - TradingView](https://news.google.com/rss/articles/CBMi2gFBVV95cUxNYkFRcExjbkVjd2dBa1lxaHFTWjREVm5IMUhGVU9pcjlHTWRiWmxCcnc2ZjVkckx1a01SZWlGbUpPVk56ZV9wNEJwZnFUaHpETHlxWHBKLWlwMzdwTG5pLVhDcEJMVUZaODhyNkw5bWY1el9LcEFuWHlOdjVnWG9iOU9zUkFFMkc4eVFjX2QwSXE1WE1MYUNRemF1YklIVkN0a295N1dEbzE5RmdaUGhkcXRoR0sySm1GYW4zR0dDazg5Ty0zYUUyck84czBwXy1XT2pzM2pIWlRiUQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 
 ## Meaning of states
 
