@@ -1,14 +1,14 @@
 # GlassesResearch Analytics — Latest
 
-Generated automatically: **2026-11-21T14:14:32+00:00**
+Generated automatically: **2026-11-22T14:04:20+00:00**
 
 > **Interpretation rule:** Google Search Console measures search discovery; Cloudflare Web Analytics/RUM measures browser-side page loads; Cloudflare HTTP edge traffic is infrastructure traffic and must not be treated as a count of human readers.
 
 ## Executive summary
 
-- **Google, latest final 7 days (2026-11-13 → 2026-11-19):** 1740 impressions, 9 clicks, 0.52% CTR, average position 14.4.
-- **7-day change:** impressions +139.0%; clicks +28.6%.
-- **Rolling 28 days:** 3898 impressions, 29 clicks, 0.74% CTR, average position 14.1.
+- **Google, latest final 7 days (2026-11-14 → 2026-11-20):** 1828 impressions, 10 clicks, 0.55% CTR, average position 14.5.
+- **7-day change:** impressions +120.8%; clicks +42.9%.
+- **Rolling 28 days:** 4076 impressions, 30 clicks, 0.74% CTR, average position 14.3.
 
 ## Practical Answers — search discovery
 
@@ -34,7 +34,7 @@ Generated automatically: **2026-11-21T14:14:32+00:00**
 | ai glasses brands | 0 | 1 | 0.00% | 7.0 |
 | ai smart glases | 0 | 1 | 0.00% | 7.0 |
 | ai-based thermal glasses development | 0 | 2 | 0.00% | 58.5 |
-| ai68610 | 0 | 2 | 0.00% | 4.0 |
+| ai68610 | 0 | 4 | 0.00% | 3.8 |
 | android xr architecture | 0 | 4 | 0.00% | 37.8 |
 | anko camera glasses | 0 | 1 | 0.00% | 20.0 |
 
@@ -42,21 +42,21 @@ Generated automatically: **2026-11-21T14:14:32+00:00**
 
 | Item | Clicks | Impressions | CTR | Position |
 |---|---:|---:|---:|---:|
-| https://glassesresearch.org/docs/community-research/bimapdev-smartglasses/ | 2 | 5 | 40.00% | 1.6 |
-| https://glassesresearch.org/research/myvu-open-research/ | 2 | 3 | 66.67% | 1.0 |
+| https://glassesresearch.org/docs/community-research/bimapdev-smartglasses/ | 3 | 9 | 33.33% | 1.6 |
+| https://glassesresearch.org/research/myvu-open-research/ | 2 | 5 | 40.00% | 2.6 |
 | https://glassesresearch.org/changes/gre-000003/ | 1 | 1 | 100.00% | 9.0 |
 | https://glassesresearch.org/models/catalog/gls-0184/ | 1 | 7 | 14.29% | 4.1 |
 | https://glassesresearch.org/models/catalog/gls-0221/ | 1 | 8 | 12.50% | 8.0 |
 | https://glassesresearch.org/research/EG08_EVERYLINK_INVESTIGATION/ | 1 | 2 | 50.00% | 5.5 |
 | https://glassesresearch.org/research/questions/Q-000116-evidence/ | 1 | 3 | 33.33% | 3.0 |
-| https://glassesresearch.org/ | 0 | 40 | 0.00% | 13.0 |
-| https://glassesresearch.org/artifacts/ | 0 | 3 | 0.00% | 7.7 |
+| https://glassesresearch.org/ | 0 | 44 | 0.00% | 11.8 |
+| https://glassesresearch.org/artifacts/ | 0 | 3 | 0.00% | 6.3 |
 | https://glassesresearch.org/changes/ | 0 | 1 | 0.00% | 10.0 |
 
 ## Cloudflare Web Analytics — browser traffic
 
-- Rolling 24h: **22 browser pageviews**, **19 RUM visits**.
-- Rolling 7d: **187 browser pageviews**, **159 RUM visits**.
+- Rolling 24h: **11 browser pageviews**, **10 RUM visits**.
+- Rolling 7d: **182 browser pageviews**, **154 RUM visits**.
 - Browser-side RUM is the preferred Cloudflare signal for readership; it is still not a unique-person count.
 
 ### Paths readers are finding — rolling 7 days
@@ -64,7 +64,7 @@ Generated automatically: **2026-11-21T14:14:32+00:00**
 | Destination | Observed browser pageviews |
 |---|---:|
 | Practical Answers | 4 |
-| Buying and use-case guides | 6 |
+| Buying and use-case guides | 7 |
 | Model research | 12 |
 | Find & Compare | 4 |
 | Follow verified work | 0 |
@@ -76,44 +76,44 @@ These are minimum counts from RUM's returned popular paths, **not a session funn
 | Path | Pageviews | RUM visits |
 |---|---:|---:|
 | / | 3 | 3 |
-| /models/BrilliantFrame/ | 2 | 2 |
-| /gls/gls-0051/ | 2 | 2 |
-| /models/catalog/gls-0051/ | 2 | 0 |
-| /docs/community-research/bimapdev-smartglasses/ | 2 | 2 |
-| /guides/open-source-smart-glasses/ | 1 | 1 |
-| /docs/news/RELEASE_TRACKER/ | 1 | 1 |
-| /models/RokidGlasses/ | 1 | 1 |
-| /docs/TECHNOLOGY_PRIMERS/ | 1 | 1 |
-| /guides/smart-glasses-for-developers/ | 1 | 0 |
+| /models/NuanceAudio/ | 1 | 1 |
+| /models/catalog/gls-0167/ | 1 | 1 |
+| /evidence/EV-0055-RayNeo-X2-primary-platform-surface/ | 1 | 1 |
+| /guides/smart-glasses-for-developers/ | 1 | 1 |
+| /evidence/EV-0048-RayNeo-X3-Pro-service-survival/ | 1 | 1 |
+| /models/catalog/ | 1 | 1 |
+| /models/catalog/gls-0051/ | 1 | 0 |
+| /docs/report-cards/LINEAGE_XIAOMI_MIJIA_CAMERA/ | 1 | 1 |
 
 ### Top referrers — rolling 24h
 
 | Referrer | Pageviews | RUM visits |
 |---|---:|---:|
-| (direct / none) | 16 | 16 |
-| noai.duckduckgo.com | 3 | 3 |
-| glassesresearch.org | 3 | 0 |
+| (direct / none) | 8 | 8 |
+| glassesresearch.org | 1 | 0 |
+| www.bing.com | 1 | 1 |
+| duckduckgo.com | 1 | 1 |
 
 ## Cloudflare edge traffic
 
-- Rolling 24h: **17,523 requests**, **2,566 HTTP visits**, **254.1 MB** served.
-- Rolling 7d: **91,590 requests**, **14,889 HTTP visits**, **1762.3 MB** served.
+- Rolling 24h: **7,450 requests**, **1,452 HTTP visits**, **159.8 MB** served.
+- Rolling 7d: **82,157 requests**, **14,267 HTTP visits**, **1602.0 MB** served.
 - These figures can contain bots, scanners, crawlers and owner/development traffic; do **not** equate them with unique human readers.
 
 ### Top countries by request count — rolling 24h
 
 | Country | Requests | HTTP visits |
 |---|---:|---:|
-| US | 13,291 | 2,161 |
-| BE | 1,642 | 6 |
-| CN | 402 | 20 |
-| NL | 372 | 246 |
-| MX | 282 | 2 |
-| JP | 176 | 20 |
-| DE | 148 | 15 |
-| EC | 142 | 2 |
-| AR | 126 | 3 |
-| PH | 102 | 1 |
+| US | 4,643 | 1,099 |
+| CN | 629 | 19 |
+| ES | 363 | 3 |
+| MX | 314 | 4 |
+| NL | 234 | 190 |
+| LT | 229 | 2 |
+| ZW | 222 | 0 |
+| DE | 86 | 9 |
+| IT | 86 | 3 |
+| GB | 86 | 3 |
 
 ## What to watch
 
