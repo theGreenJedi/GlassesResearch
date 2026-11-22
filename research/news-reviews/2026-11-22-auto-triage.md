@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-22T12:57:35.647678+00:00`
+Generated: `2026-11-22T16:25:29.447576+00:00`
 
-- Intake files inspected: **185**
-- Candidates retained in this review window/history: **6836**
+- Intake files inspected: **183**
+- Candidates retained in this review window/history: **6772**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1528
+- `adjacent_radar`: 1527
 - `catalog_review`: 16
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 561
-- `rejected_noise`: 4664
-- `source_review`: 41
+- `needs_editorial_verification`: 563
+- `rejected_noise`: 4606
+- `source_review`: 34
 - `watching`: 22
 
 ## Action queue
@@ -161,7 +161,6 @@ Generated: `2026-11-22T12:57:35.647678+00:00`
 | high | needs_editorial_verification | direct | [Must Read: Smart Glasses Launch Reopens Debate Over Privacy, How Fashion Helped Protect Great Bear Rainforest - Fashionista](https://news.google.com/rss/articles/CBMidkFVX3lxTE9JOGJnNmY5ejRKVWtqT3U3Q3E3bTBrNlJmY1Zxb00xRTZpVkNWeFB5SGNYNU0yVm1LUVVCdFkxeXFRRnk4SEpTSFpmYmx5SHVTSTZwNUt0MWxWa0d3dGRhV1h1U1MxcDZGUzFpM1pSaEMwaHBzc3c?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [OpenSource-Ai-Glasses/docs/FIRMWARE_FLASHING.en.md at main ... - GitHub](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses/blob/main/docs/FIRMWARE_FLASHING.en.md) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung & Google Finally Enter AI Glasses, Prioritizing a Focused Launch Over Scale - Counterpoint Research](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPYXRqMDZBV2RBaVI4dnZqS2tra0hSZFp4MmZSOTFxU0ZhVFJZbksxbkFlM1F4MnN4enV6NFlTRkJFb0VGRVBsRUYwYVM4QnpDd251c1JKdGo5VF85cktoSjgweDdhV05PZzZPMnQ4Q1hVTUM5R0dCUi1VMThscEw2TktCNU1HT1Z5M05QTlJDcC1MTDNBWTNBYTVNUkVzMktHcEdzamRLbmV3aFFxWkJqaW9YQkFCQi1KNi1MRGpjLWY?oc=5) | reachable (200) | research_news_review, model_catalog_review, deep_research |
-| high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Pre-Orders Start November 12th with Dec 2026 Launch - Geeky Gadgets](https://news.google.com/rss/articles/CBMiZEFVX3lxTE8xMDlpUzNYRWFBYWFsNU5jMzhXWkZ4WGlPZnlQbUNhdFJjYWFwVzhubXJBclh5TFdILVZsY1pTcmdJNWRaazJzajIzMTdCdDVsempsZUh1T1JZM1paSkZobVIwZHk?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Sell Out Before Launch as Meta Faces New Rival - ChannelNews.com.au](https://news.google.com/rss/articles/CBMipgFBVV95cUxQN1BaeUFGaEJxc1c0OXBWSlJhTWp2UTk5UWtSWlVGVXg0dU1KVHJJQ1h4cmxVZmVyVmNkOU1nckJ2dDBLQ0FqcXlLOWVQdDM1Q3lHXzI1akptV0xYdHpUUkFrTlhqT3pJbWZWWUs1YnBuSjJoYWxzTGdDNTlqSWg1cHUtODhpaWtkWDZKUmNXc2s4SFpwMUZpcUVwRlg2STJUX0tIaTBB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Sell Out Before Launch as Meta Faces New Rival - SmartHouse](https://news.google.com/rss/articles/CBMipAFBVV95cUxPVnJmSE55UExjX2toUUowaWpFbXJIS3lMMURMZUlWbkF1eHRyRmlDQXpvbC12a0l0c2VTbkhiVS1PWUF1cnM3QTFxLU4xX09xOGJkZ2d3ZG53WFJDbWZZOVFzWXJsOXJlNDVEaVpZc1pyWDlBN1UyX1h5ZTJCU2YwRDJIVnRqNDlMSWJXQ0tIQkZFT1lENGpmcEtTbnRjN1lYZ0R4SA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung and Google prepare to launch Android XR smart glasses with November preorders - streamlinefeed.co.ke](https://news.google.com/rss/articles/CBMilwFBVV95cUxNc3ZzT2t3VVJrd2NOb2hNcXB2SkhOM2dQMDRfSjRZb2ZKZHJUNzVlWGl5TGZhZ3lkeTluVUV1YmZjakVmd2Rid3FTT3BrelAwdUFmMzBCdzdrZDJfNzJqb05lRUZQeHNld29udHJwVjM2QW5iTGQxazFMWDM0TTZmcjY1aVBseWZKSE1uZkNVRjJlekFCbkgw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -230,7 +229,6 @@ Generated: `2026-11-22T12:57:35.647678+00:00`
 | high | needs_editorial_verification | direct | [MotorTrend 2-Year Long Test Review of Maverick Hybrid: How It Went](https://www.mavericktruckclub.com/motortrend-2-year-long-test-review-of-maverick-hybrid-how-it-went/) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | high | needs_editorial_verification | direct | [Norway Smart Glasses Curbs: Oslo Bans Them in 100+ Schools - shattered.io](https://news.google.com/rss/articles/CBMimwFBVV95cUxQME9SVkhNY0dwbEFyTWpJdngxMTJLMUxDZ2luVzBNNFIwSDBDQVFTMm1KMEVQODdIUGhkejRFSEdRNHprcDZWdm10NUx2QkZ2cUZ0R2prb0gxRzJDeW1qWDNrSUhFVGRTRENZV1NRSGU1eDNXUEp6QzRqWkdXaTdnVHpMWnQ0R1c2UWJqOFdVMW1xRDBteU9IYWFZVQ?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Nos first operator in Portugal to launch Ray-Ban Meta smart glasses - Telecompaper](https://news.google.com/rss/articles/CBMirwFBVV95cUxOYWFSQ0pnSk9iLUFEcGpPUzdOQTBYVmNtRldNY1RRMzZBX2owYWNKT3AwczR4R1dLSzJPbXZ1T0x0di0yRnRNcTE5M25zbnpKVGx2SDNxRzVrQXBnckx6UjctTU94eDFCRE5tcWxmOGdMTDRERWNUSWY3YmlNcDd6RFBOY1RQNWNZaExTcXJ1UGhVNTRVMmttTHBQVnZMUG9hTUU0TXlHdnp0TktzaTZF?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
-| high | needs_editorial_verification | direct | [Ray-Ban Meta (Gen 2) glasses get $103 off for Black Friday](https://www.androidauthority.com/ray-ban-meta-wayfarer-gen-2-deal-3737770/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Gen 2 glasses just hit their lowest price yet for Black Friday - The Gadgeteer](https://news.google.com/rss/articles/CBMiswFBVV95cUxOUlJ3SFZYd2l6aGEzWTU5TmFEWFNFTXpVTWN5bGN2MFI4R19wb1JKYV9sdS1Pc3RtYnZrWEt1Ulg1d042bDJENkJncXdGVWIyZ201YnhjZ0ZJV2s2eVMwbHg1UnF5c2w1eEgyV1ZIajF4T0dCSG9kam1FUDFXbDdxUkJ5Vzh5VG9kelJjbHZaNGhBTkF3VG90SnRpX3o5dTJYa1FjUWQzOEhqYXdBaTFqZ2RPYw?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Ray-Ban Meta Gen 2 Wayfarer deals start at $284—mind the lenses - Digg](https://news.google.com/rss/articles/CBMiREFVX3lxTFBqWURUMjQtdm0zdDhTeFRULXU4YThjM0NkVlA2ME1YWktDWm1vcXM5VWNjdW1iLVlhYkRhRWgzOVN5Q2ND?oc=5) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [RayNeo Launches Limited Edition Call of Duty AR Glasses Alongside Its Black Friday Sale - IGN](https://news.google.com/rss/articles/CBMinAFBVV95cUxPZkV4djlsX3dJNV9zMFpmVmNDdUI0aGxxQTl6MVJRVDVDZEVnaTdZMjlYcmxpSHFGdUxRcXFqc2pVMVg2R18wNkI2YjhKc3l6MjJGU3B6UXVTdVBUamJRYU5aZ0VQWUkzSEI1S2VObEdFclU4U3RGWVVVc09mTEJKaDdORWVIb2cwXzkwVU54U0Ruck1nS2E4WEw3ekI?oc=5) | reachable (200) | research_news_review |
@@ -243,7 +241,6 @@ Generated: `2026-11-22T12:57:35.647678+00:00`
 | high | needs_editorial_verification | direct | [Samsung vs Apple smart glasses: Launch timeline, features, specs, price and everything else you can expect - Digit](https://news.google.com/rss/articles/CBMi8AFBVV95cUxQdzRfVGNmU2p3N2JjRmpvSVVFSHA5WnMyWFpOUlJ6X0NVVTNhWlFfRjZOOXROcVpQazVUU3VfaTNRSFVORnhSYi1SQ3BHLVhlLVRsT3Y4TE9kZXZiN2dMVlhFZGNZTDRiRDVQSG1GMExqUkVyWjBGZmE0d1c1dFBBcHF1ajNYS3hiNjJXcUdiMGN6cHMyTGRRdXJPTHNJdVk5aG1CWWFJRzJFUWdNa1pGSWRSUmE2ajRRTWhXLWQxZDd0OThJbUZVb1NNMWJrbmYwd1k0dkpTX2hPR1lnTnhsVTl4X0VfOVcxNUxlLVIyRlLSAfABQVVfeXFMUHc0X1RjZlNqdzdiY0Zqb0lVRUhwOVpzMlhaTlJSel9DVVUzYVpRX0Y2Tjl0TnFaUGs1VFN1X2kzUUhVTkZ4UmItUkNwRy1YZS1UbE92OExPZGV2YjdnTFZYRWRjWUw0YkQ1UEhtRjBMalJFclowRmZhNHdXNXRQQXBxdWozWEt4YjYyV3FHYjBjenBzMkxkUXVyT0xzSXVZOWhtQllhSUcyRVFnTWtaRklkUlJhNmo0UU1oVy1kMWQ3dDk4SW1GVW9TTTFia25mMHdZNHZKU19oT0dZZ054bFU5eF9FXzlXMTVMZS1SMkZS?oc=5) | reachable (200) | research_news_review, model_catalog_review, retail_rebrand_review |
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaUlOM1NCSUNQTVhtSFI0TXZZb1lYMDhjak5CUDBSbzlJSDJqNmd5SHVwaDBFOGRzWGJJYThka0NDeF9QSUJGS05YakN3T1lPNEJTZWFWNGpWZ3ZQUlh3T0lndlJKVkIzR1ZodnMzanZEUF9qRk91MS1pTlR0YlJaM2lUQlptMXhEaEZiTW1EU3UtWjYteE15RVpJZVR5SU1MTG5YcmlSbWpyZw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung’s Android Smart Glasses Open for Preorder From $395 - JournalArta](https://news.google.com/rss/articles/CBMipgFBVV95cUxNb0ZYVFZtQXhwY0d6Z19xdE9qVnFYZDhBa09MT0Z6Mml5dWZGa3JvOUFoTFp6YzFnQzd6NlpwdHNEZ18wTHpPTnpYQkVWS0M0bTU0eldOWGVGMGd5dzFNSzJHNVVkNnNkV0lCbjdXS0Y0ZVlkYVdqRjlvNndxaklUZmItZG1uRWtoZ0lHWWxjOVp4V3o1Uk9oWUs4SWp5WGRYb0JiOFdR?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Samsung’s First Smart Glasses Finally Have a Preorder Date - AOL.com](https://news.google.com/rss/articles/CBMihgFBVV95cUxQaFZ1TkxfZVVISGNGMDQwWHROanRPN2cyazMtVkxWbFc2SjJyTEtqbDFpcWQ0WGJacVlXelZGWm5UVjFJSHo4WHNYRVhqRFJBeGpEWnhjNW1nTDJVVFlRbENvcWJBMXhBeXFsdHdpcnBudHdCc3g3NzN4T0pWdzhnMTRaRlJfdw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [SF Ballet's THE NUTCRACKER to Launch as Immersive XR Experience Through Google and XREAL Glasses - BroadwayWorld](https://news.google.com/rss/articles/CBMi7AFBVV95cUxObWNsSDFORVFlZ0NqTXRGenVsZFZVbnNaVWZkNGJXOW9mR2Fsb1JaaHQzNVpWczl6MVpSVkxRUW5CekJxYzc3V0xuOWFnTjhLVW0yeUF2bkJaV3lfcl9zUThEWG0wdWJiSElLTmZheFgzbDN5ZV9Da1RzNkFGNzFySjROaktjdlNBekRMTC1EVjE4NEhVWXJjdmxTYjNfOXc4dlhhanAxSnZVWlpHV2M4UklYbm92MlpTY2dUYzFUREtTQ3dJODdzN1NpNXFvYlVYT2o0VGZ1MVZwUG5Ibk5jeHFZNnZKcnFNSkd6aQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Shop New Meta Glasses: Prices Starting at $249 \| Meta Store](https://www.meta.com/ai-glasses/meta-glasses/) | reachable (200) | research_news_review |
 | high | needs_editorial_verification | direct | [Smart Glasses Firmware Research & Analysis - GlassesResearch](https://glassesresearch.org/docs/Firmware/) | reachable (200) | research_news_review, development_hacking, deep_research |
@@ -271,6 +268,9 @@ Generated: `2026-11-22T12:57:35.647678+00:00`
 | normal | needs_editorial_verification | direct | [Study Smart: Best Prescription Smart Glasses for Back to School \| The ...](https://cybernews.com/vr-ar/best-prescription-smart-glasses/) | reachable (200) | research_news_review, research_optics, deep_research |
 | normal | needs_editorial_verification | direct | [XREAL xbx a01+ Review: Are AR Glasses Good for Drones - Geeky Gadgets](https://www.geeky-gadgets.com/ar-glasses-for-drones/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [“Could They Be After Industrial Secrets?” ... Samsung, SK, Hyundai Motor and LG Wary of ‘AI Glasses’ at Industrial Sites [‘AI Security’ Aler](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NSHA0Z1pwRkk5TWJFck10LV9SNktFVWtERVFscGx3djVlc0Z4enpBNDB0TVY0bzFvSjA4OExIVldFZko4RXpEaEtrdDlOM3B6MmhBaVlVWHc?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | ["스마트 안경 금지"…국가시험 아예 폐지해버린 이 나라 - 한국경제](https://news.google.com/rss/articles/CBMiWkFVX3lxTE1mMmt6ZHVid2ZXUVR0ZFVvOEhGYjVzSzN6dUdPMVlBTm5JcUhVTEp5aWdmaE5GMUxpWElYNGswcE5aUXplUHVmdm12eTJMNVo4cS1aUkFuZU80UQ?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | ["제조 기밀 유출될라"… 식품사 AI 안경 규정 정비 나섰다 - 파이낸셜뉴스](https://news.google.com/rss/articles/CBMiWkFVX3lxTE5tLUlmMWZnaEpHRVhEZEtNMzFtNHJQSV9WQ09vd0RkTGFJSFFQTTJxcnFWM1VrTmJqSjFTYnVTMWtEMWRoMUxxc2V3S2hKcGRPLUxieXFMUzNMdw?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | ['커닝 도구' 된 AI 안경, 현대전에선 '게임 체인저'?[한반도 GPS] - 뉴스1](https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1mRzFERnFERDEzbHVZWmxJeW5hYXBNSWRReWl4eWhEejAyVi0tT1diTDVhMkJ1RUl2eUdzQnA1bmh0YXduMUVVN0U0MHRwd1BaaUx4UUJyQktJZm43ZHZyVU1lT3ZrVjg?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
