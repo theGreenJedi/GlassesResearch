@@ -1,13 +1,13 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-21T17:36:08+00:00**
+Generated: **2026-11-22T17:52:12+00:00**
 
 - Published evidence-backed answers: **232** (minimum **1000**, no ceiling)
 - Remaining to minimum: **768**
 - Canonical registry size: **410** (not the published count)
 - Unanswered research candidates: **116**
 - Observations this run: **53**
-- New distinct questions: **1**
+- New distinct questions: **0**
 
 ## Source health
 
@@ -19,7 +19,7 @@ Generated: **2026-11-21T17:36:08+00:00**
 
 ## New questions
 
-- **Q-000410** — "Allow Rokid Nexus to connect to your Rokid glasses?
+_No new materially distinct questions in this run._
 
 ## Research queue (first 20)
 
