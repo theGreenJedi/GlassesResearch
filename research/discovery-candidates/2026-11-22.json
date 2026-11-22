@@ -1,40 +1,48 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-22T22:32:38.497449+00:00",
-  "candidate_count": 60,
-  "classifier_irrelevant_count": 40,
+  "discovered_utc": "2026-11-22T23:43:49.744654+00:00",
+  "candidate_count": 64,
+  "classifier_irrelevant_count": 42,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 18,
-    "broad_web": 32,
-    "developer": 12
+    "adjacent": 20,
+    "broad_web": 42,
+    "community": 1,
+    "developer": 2,
+    "research": 1
   },
   "relationship_counts": {
-    "direct": 2,
-    "enabling": 0,
+    "direct": 3,
+    "enabling": 1,
     "adjacent": 18,
     "speculative": 0,
-    "irrelevant": 40
+    "irrelevant": 42
   },
   "type_counts": {
-    "model": 4,
+    "model": 6,
     "review": 1,
-    "video": 2,
-    "news": 32,
-    "tool": 18,
-    "sdk": 10,
-    "hack": 1,
-    "policy": 3,
-    "retail": 3,
-    "teardown": 1
+    "video": 1,
+    "news": 35,
+    "research": 1,
+    "tool": 11,
+    "sdk": 2,
+    "optics": 1,
+    "policy": 6,
+    "retail": 2,
+    "community": 7
   },
   "routing_counts": {
     "adjacent_radar": 18,
-    "development_hacking": 5,
-    "policy_privacy": 1,
-    "reject_noise": 40,
-    "report_card_evidence": 2,
-    "research_news_review": 20
+    "community_evidence_review": 5,
+    "deep_research": 1,
+    "development_hacking": 2,
+    "model_catalog_review": 4,
+    "policy_privacy": 5,
+    "reject_noise": 42,
+    "report_card_evidence": 1,
+    "research_news_review": 22,
+    "research_optics": 1,
+    "retail_rebrand_review": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -48,646 +56,88 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "c58dee7c9f360f93",
-      "title": "Halliday G2 AI smart glasses review: Helpful features done better ...",
-      "url": "https://www.tomsguide.com/computing/smart-glasses/i-tested-the-halliday-g2-ai-smart-glasses-and-they-turned-me-into-a-walking-cheat-sheet-but-everyone-could-tell",
-      "summary": "The Halliday G2 AI smart glasses are a step in the right direction, delivering camera-less specs with helpful AI features in a comfortable yet dorky design.",
-      "discovery_channel": "broad_web",
-      "query": "smart glasses review",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "review"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "direct",
-      "content_types": [
-        "review"
-      ],
-      "primary_type": "review",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence"
-      ],
-      "triage_priority": "normal",
-      "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: halliday, smart glasses",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a771fd127211396f",
-      "title": "Open source smart glasses: AI glasses and Meta Ray-Ban apps",
-      "url": "https://hardwarelab.dev/guides/open-source-smart-glasses/",
-      "summary": "Eight open-source smart glasses projects, from DIY glasses you build yourself to open apps and SDKs for Meta Ray-Ban and Rokid glasses. Each is described in one line quoted from its creator's repository at a pinned commit, with its license and two or three facts linked to the exact README lines. Two of the most-starred builds, OpenGlass and Open Source Smart Glasses, are no longer maintained ...",
+      "id": "bd44e3f0689b6363",
+      "title": "SidekickOS - Open Source Smart Glasses - GitHub",
+      "url": "https://github.com/siersidekick/SidekickOS",
+      "summary": "An open-source implementation of smart glasses functionality, inspired by the SIER Sidekick. Transform any glasses into smart glasses with camera capture, audio streaming, and AI assistance capabilities.",
       "discovery_channel": "broad_web",
       "query": "open source smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 4,
       "keyword_hits": [
+        "github",
         "open source"
       ],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "primary_artifact",
+      "delegated_action": "record_attributed_evidence",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "direct",
       "content_types": [
-        "tool",
-        "policy"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "development_hacking",
-        "policy_privacy"
+        "development_hacking"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, rokid, smart glasses",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3042c2434a1b9933",
-      "title": "Autoclick (Dwell timing) - Android Accessibility Help",
-      "url": "https://support.google.com/accessibility/android/answer/7071579?hl=en",
-      "summary": "It helps you prevent an accidental reset of the dwell timer. This is turned off by default. Use left-click as the default action: To automatically revert to a standard left-click after you perform another action, turn on this setting. This applies to actions like right-click, double-click, or drag from the floating click type selector.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
+      "id": "f02850ea21dff220",
+      "title": "Walgreens Rx Savings Finder",
+      "url": "http://walgreens.rxsense.com/",
+      "summary": "Walgreens Rx Savings Finder can help you find prescription discount cards that can help you find the lowest price on a medication at Walgreens. Lowest price means the price available when you purchase a medication without using insurance coverage.",
+      "discovery_channel": "adjacent+research",
+      "query": "prescription smart glasses lens research; prescription lens technology eyewear",
       "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "source_lane": "research",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "prescription"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "adjacent",
+      "relationship": "enabling",
       "content_types": [
-        "news"
+        "model",
+        "research",
+        "optics",
+        "retail"
       ],
-      "primary_type": "news",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
-        "adjacent_radar"
+        "model_catalog_review",
+        "research_optics",
+        "retail_rebrand_review",
+        "deep_research"
       ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "enabling technology signals: prescription",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4e65c2dfad16eb42",
-      "title": "Business Banking - VyStar Credit Union",
-      "url": "https://www.vystarcu.org/business/bank",
-      "summary": "Grow your business with VyStar’s free checking and high-yield savings accounts. We can help you earn, manage and make the most of your money.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5d4071bb98eaadcd",
-      "title": "Change floodlight settings - Google Home and Nest Help",
-      "url": "https://support.google.com/googlehome/answer/10500343?hl=en",
-      "summary": "Set up your timer Open the Google Home app . Tap Home Lights and then touch and hold your floodlight's tile. At the top right, tap More Settings Floodlight timer. Choose how long you want your floodlight to stay on after it detects motion. You can choose from 10 seconds up to 5 minutes.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "03a7e90c0b38970a",
-      "title": "Control your Android mobile device & apps with Device assistance",
-      "url": "https://support.google.com/gemini/answer/15235441?hl=en",
-      "summary": "Set & manage alarms, timers & stopwatch in your clock app Important: For HONOR, OnePlus, OPPO, Samsung, TECNO, and Xiaomi mobile devices, the Gemini mobile app uses the manufacturer’s clock app. For other mobile devices, if the Clock app by Google is enabled on your device, the Gemini mobile app uses it over any other clock app.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a3704d8378423caa",
-      "title": "Estate Planning with Trust & Will - VyStar Credit Union",
-      "url": "https://www.vystarcu.org/personal/invest/trustwill",
-      "summary": "VyStar has partnered with Trust & Will — the leading online estate planning platform in the U.S.— to provide you with an easy, affordable and online estate planning services.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "543f32782cc0f1e9",
-      "title": "Heat Pump Balance - Google Home and Nest Help",
-      "url": "https://support.google.com/googlehome/answer/9248719?hl=en",
-      "summary": "So you won’t need to set a lockout temperature yourself, as your Nest thermostat will set one for you. If you have a dual fuel system, a type of system with a heat pump outside and a separate heater installed inside your home, you won’t be able to use Heat Pump Balance.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "teardown"
-      ],
-      "primary_type": "teardown",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a33089f7b7827479",
-      "title": "Investment Planning | VyStar Credit Union",
-      "url": "https://www.vystarcu.org/personal/invest",
-      "summary": "VyStar Credit Union provides investment services to help members achieve financial goals with personalized planning and free consultations.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "cde685b14bb8fa7e",
-      "title": "Mortgage Servicing | VyStar Credit Union",
-      "url": "https://www.vystarcu.org/personal/borrow/home-loans/mortgages/mortgage-servicing",
-      "summary": "How to make a mortgage or home equity loan payment in Online & Mobile Banking From the VyStar Credit Union Website: From the VyStar Credit Union homepage, go to the Login tab in the upper right corner On the login page, enter your username and password to access your account. On your Accounts page, click on the loan you'd like to make a payment on.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "75825189833ffd40",
-      "title": "Online & Mobile Banking - VyStar Credit Union",
-      "url": "https://www.vystarcu.org/personal/bank/online-and-mobile-banking",
-      "summary": "See your account information at a glance, pay bills, transfer money, deposit checks and more with VyStar Online & Mobile Banking.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "c0cc423d0a2476e0",
-      "title": "Online & Mobile Banking for Businesses - VyStar Credit Union",
-      "url": "https://www.vystarcu.org/business/bank/online-and-mobile-banking-for-businesses",
-      "summary": "Online & Mobile Banking for Businesses Access your VyStar business accounts anytime, anywhere with our online and mobile banking. It’s easy, convenient and secure, whether you’re on a computer, tablet or mobile phone.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "2142ea8e4b0f7e66",
-      "title": "Set a timer in Google Meet",
-      "url": "https://support.google.com/meet/answer/16380429?hl=en-GB",
-      "summary": "Set a timer in Google Meet As a Google Meet host or co-host, you can set a timer that's visible to everyone. The timer can help you: Manage meeting time effectively. Make sure that you cover all agenda items. Important: The hosts and co-hosts can start and control the timer only on the web.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a46213cce3105e9b",
-      "title": "Set time, date and time zone - Pixel Phone Help - Google Help",
-      "url": "https://support.google.com/pixelphone/answer/2841106?hl=en",
-      "summary": "You can change your clock’s settings, including the date, time, and time zone. You can set how your alarms and timers work, and add clocks for other cities.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b379ed5fe47d7988",
-      "title": "Set, cancel, or snooze alarms on your Android device - Google Help",
-      "url": "https://support.google.com/android/answer/2840926?hl=en",
-      "summary": "Set, cancel, or snooze alarms on your Android device You can make and change alarms in the Clock app on your Android device, Pixel phone, or Pixel Tablet.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "research_news_review",
-        "development_hacking",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "da61f42a1b0b68bd",
-      "title": "Use the alarm, timer and stopwatch - Wear OS by Google Help",
-      "url": "https://support.google.com/wearos/answer/6300982?hl=en-GB",
-      "summary": "You can set alarms and use the timer and stopwatch on your smartwatch.",
-      "discovery_channel": "adjacent",
-      "query": "hearable AI interface",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0024fd0f987b8c6a",
-      "title": "VyStar - Return To Application - vystarcu.org",
-      "url": "https://apply.vystarcu.org/return",
-      "summary": "Return To Your Application If you already have an application started, you can return to it by providing the information below.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "00d4fc5f1f29f997",
-      "title": "VyStar Credit Union",
-      "url": "https://www.vystarcu.org/",
-      "summary": "VyStar Credit Union offers financial services, including checking accounts, loans, and more for members.",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8a3cd8b053e9fc93",
-      "title": "VyStar Online Banking",
-      "url": "https://online.vystarcu.org/",
-      "summary": "VyStar Credit Union P.O. Box 45085 Jacksonville FL 32232",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "fe3a1a01c758f2ec",
-      "title": "vystarplus.vystarcu.org",
-      "url": "https://vystarplus.vystarcu.org/",
-      "summary": "Click here to enter a few details so you can access all of the great benefits at vystarplus.vystarcu.org",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "research_news_review",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6834ea67da717d74",
-      "title": "Primo Brands Customer Service Phone Number 1-866-827-7873, Email, Help ...",
-      "url": "https://primo-brands.pissedconsumer.com/customer-service.html",
-      "summary": "How to contact Primo Brands (rebranded from Primo Water Corporation) customer support at toll-free or legal phone number? Call or write an email to corpresolutions@primobrands.com to resolve Primo Brands issues: Shipping and Delivery, Payments and Charges, Activation/ Cancellation.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "152d2315651c5ab9",
+      "title": "XREAL xbx a01+ Smart AR Glasses 62g 147 inch Giant Screen 50 ... - eBay",
+      "url": "https://www.ebay.com/itm/407170952967",
+      "summary": "Find many great new & used options and get the best deals for XREAL xbx a01+ Smart AR Glasses 62g 147 inch Giant Screen 50°FOV HDR10 1600Nits at the best online prices at eBay! Free shipping for many products!",
+      "discovery_channel": "broad_web",
+      "query": "XREAL xbx a01+",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
       "keyword_hits": [
         "shipping"
       ],
@@ -697,32 +147,126 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "direct",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ar glasses, xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "9486435a3bd2980d",
+      "title": "Technical Specifications | Tutorials",
+      "url": "https://tutorials.xreal.com/docs/aura/specifications/",
+      "summary": "Compatibility, availability, and age restrictions vary. Some features require setup or subscription. Google, Android XR, YouTube, Gemini and other marks are trademarks of Google LLC.",
+      "discovery_channel": "broad_web",
+      "query": "XREAL AURA",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
       "content_types": [
         "model",
-        "tool",
-        "sdk",
+        "video"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: xreal",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "34e3880b66bee6be",
+      "title": "AttorneyBritt - Gary L Britt, CPA JD",
+      "url": "https://www.yelp.com/biz/attorneybritt-gary-l-britt-cpa-jd-austin-3",
+      "summary": "Yelp users haven’t asked any questions yet about AttorneyBritt - Gary L Britt, CPA JD.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f382190056a79e3e",
+      "title": "AttorneyBritt - Gary L Britt, CPA JD - Property Tax...",
+      "url": "https://taxfightback.com/directory/attorneybritt-gary-l-britt-cpa-jd-austin-tx",
+      "summary": "Gary L. Britt's dual expertise in accounting and law creates exceptional value for property owners facing complex assessment challenges. This rare combination of professional qualifications allows the firm to approach property tax disputes from both financial and legal perspectives.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
         "policy"
       ],
-      "primary_type": "model",
+      "primary_type": "policy",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5192a0aed43d8810",
-      "title": "Bottled Water & Beverage Delivery Service | ReadyRefresh",
-      "url": "https://www.readyrefresh.com/en/misc/contactUs",
-      "summary": "Get your favorite brands of bottled water, sparkling water, and other beverages delivered right to your home or office. Browse our selection and sign up today.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "5d00c8d9a3b669ee",
+      "title": "AttorneyBritt - Gary L. Britt, CPA, J.D. (@attorneybritt) / Posts / X",
+      "url": "https://x.com/AttorneyBritt",
+      "summary": "AttorneyBritt - Gary L. Britt, CPA, J.D. (@attorneybritt) - Posts - Austin Business Lawyer And CPA | 35 years expertise in business law, business formations. LLCs, corp... | X (formerly Twitter)",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -730,30 +274,190 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f5042efc0b7127d3",
+      "title": "AttorneyBritt - Gary L. Britt, CPA, J.D. | Lawyer in Austin - Reviews ...",
+      "url": "https://legalrank.co/b/attorneybritt-gary-l-britt-cpa-j-d/",
+      "summary": "Led by Gary L. Britt, who holds both a Juris Doctor and a CPA license, the firm provides a holistic approach to legal representation, particularly for business owners and professionals facing litigation, regulatory issues, or tax disputes.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cd0ed89bf5b8a4a3",
+      "title": "Can’t create Yahoo account : r/yahoo - Reddit",
+      "url": "https://www.reddit.com/r/yahoo/comments/11z6d5e/cant_create_yahoo_account/",
+      "summary": "I couldn’t create yahoo account since 3 months because of this error, even I tried to change the phone number for the verification and the phone it self but the error still showing up.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "436e0cb9a7cf0b16",
+      "title": "Cities Near Me - Kernersville, North Carolina | Travelmath",
+      "url": "https://www.travelmath.com/cities-near/Kernersville,+NC",
+      "summary": "Find the top 15 cities, towns, and suburbs near Kernersville, NC, like Winston-Salem and High Point, and explore the surrounding area for a day trip.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "dffe39374d178414",
+      "title": "Cities Nearby Kernersville, North Carolina, United States",
+      "url": "https://www.thecitiesnow.com/united_states/north_carolina/kernersville",
+      "summary": "Find five hundred cities near Kernersville, North Carolina, United States from closest to farthest by distance. Distances from Kernersville to nearby cities are shown in miles, kilometers (km) and nautical miles (nm).",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e37c0e9e0a8db4c7",
+      "title": "Difference between Yahoo rank and Xrank? : r/fantasybball - Reddit",
+      "url": "https://www.reddit.com/r/fantasybball/comments/dhupzd/difference_between_yahoo_rank_and_xrank/",
+      "summary": "In the Yahoo draft app, I'm seeing two different rankings for each player: rank and Xrank. They're mostly similar, except for some players they vary widely. Westbrook is like 17 in rank and 50 in Xrank, I think. What's the difference between these rankings? What's the methodology behind them? Share Add a Comment Sort by: Best Open comment sort options Best Top New Controversial Old Q&A ...",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
       "content_types": [
         "tool",
-        "sdk"
+        "community"
       ],
       "primary_type": "tool",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "development_hacking",
+        "community_evidence_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "40f9f0182150b4d1",
-      "title": "Contact Us | Pure Life® Purified Water",
-      "url": "https://www.purelifewater.com/contact-us/",
-      "summary": "Contact Us We value your opinion and would love to hear from you. Just call us at 1-866-599-8980 Monday through Friday, 8 a.m. – 5 p.m. EST. Primo Brands delivery - For delivery information, call 1-844-877-5899, Monday through Friday, 8 a.m. – 6 p.m. local time.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "e4b85ec043776a0c",
+      "title": "Gary Britt Law | Trusted & Experienced Legal Representation",
+      "url": "https://garybrittlaw.com/",
+      "summary": "At Gary Britt Law, my guiding principle is to provide personalized and compassionate legal services to all clients. I understand that every client is unique, and it's important to take the time to get to know them and understand their legal needs.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -761,30 +465,31 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "tool",
-        "sdk"
+        "policy"
       ],
-      "primary_type": "tool",
+      "primary_type": "policy",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c8a96cb12cd5567f",
-      "title": "Customer Service | Primo Brands™ - Water.com",
-      "url": "https://www.water.com/support/customer-service/",
-      "summary": "Our customer service team is available to answer your questions regarding Primo Brands™ services, equipment support, and more.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "6750a3912878094a",
+      "title": "Gary L. Britt (born 1952), American lawyer | World Biographical ...",
+      "url": "https://prabook.com/web/gary_l.britt/3165855",
+      "summary": "Background Britt, Gary L. was born in 1952. Education De Paul University (Bachelor of Science). South Texas College of Law (Juris Doctor). Career Worked at P.O. Box 7943. Admitted to the bar, 1985.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
       "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -792,33 +497,286 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "irrelevant",
+      "relationship": "adjacent",
       "content_types": [
-        "model",
-        "tool",
-        "sdk"
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7abedc7e34a16fc9",
+      "title": "Gary L. Britt, Cpa, J.D., Attorney At Law",
+      "url": "https://www.attorneyatlaw.com/firms/gary-l-britt-cpa-j-d-attorney-at-law",
+      "summary": "About Gary L. Britt, Cpa, J.D., Attorney At Law Gary L. Britt, is both a lawyer and Certified Public Accountant. Mr. Britt provides a multidisciplinary and comprehensive approach to solving the multifaceted legal, tax, and business law problems of his individual, professional, and corporate clients. Mr.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "fae556114a680047",
+      "title": "Gary Lawrence Britt, 65 - Lakeland, FL - Has Court or Arrest Records",
+      "url": "https://www.mylife.com/gary-britt/e74301931962",
+      "summary": "Right now, Gary Britt lives in Lakeland, FL. Sometimes Gary goes by various nicknames including Garry Lawrence Britt, Gary L Britt, Garry Britt and Garry L Britt.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "policy"
+      ],
+      "primary_type": "policy",
+      "routing_targets": [
+        "research_news_review",
+        "policy_privacy",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4330a4af2046d14a",
+      "title": "Lumber Mill | GPS Hardwoods | Kernersville, NC",
+      "url": "https://www.gpshardwoods.com/",
+      "summary": "At GPS Hardwoods, we take pride in offering an exceptional selection of hardwood lumber to Greensboro, Winston-Salem, Kernersville, and the surrounding areas in NC.",
+      "discovery_channel": "adjacent",
+      "query": "near-eye display optics",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ba7e9e3d86b77ab0",
+      "title": "State Bar of Texas | Find A Lawyer | Gary L. Britt",
+      "url": "https://www.texasbar.com/AM/Template.cfm?Section=Find_A_Lawyer&template=/Customsource/MemberDirectory/MemberDirectoryDetail.cfm&ContactID=161332",
+      "summary": "Practice Areas: Business, Health Care, Litigation: Commercial, Real Estate, Taxation, Wills-Trusts-Probate, Elder Law, Non-Profits. Please note: Not all payment options are available for all cases, and any payment arrangement must be agreed upon by the attorney and his/her client.",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
-        "reject_noise"
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
       ],
       "triage_priority": "low",
       "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "148af513e602de70",
-      "title": "ENGO 3 - Photochromic - Black – ActiveLook",
-      "url": "https://shop.activelook.net/products/engo-3-photochromic",
-      "summary": "ENGO 3 are connected sunglasses that allow the user to visualize information in their field of view while keeping their eyes focused on their activity. New features of Engo 3: - Photochromic Lense - Multicolor Display - ActiveLook 3.0 Firmware compatibility for improved widget based visual experience - IMU + Magnetome",
-      "discovery_channel": "broad_web+developer",
-      "query": "ActiveLook smart glasses; ActiveLook API BLE",
+      "id": "c3d7a9104581b364",
+      "title": "State Bar of Texas | Home | Gary L. Britt",
+      "url": "https://www.texasbar.com/am/template.cfm?template=/customsource/memberdirectory/memberdirectorydetail.cfm&contactid=161332",
+      "summary": "← Back to Search Results Mr.GaryL.Britt Deceased AttorneyBritt Bar Card Number: 03025300 TX License Date: 11/08/1985 Primary Practice Location: Austin , Texas",
+      "discovery_channel": "adjacent",
+      "query": "electrochromic eyeglass lenses",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b2efb17f3b2b82f1",
+      "title": "What does the colored fonts mean? : r/YahooFantasy - Reddit",
+      "url": "https://www.reddit.com/r/YahooFantasy/comments/d35w69/what_does_the_colored_fonts_mean/",
+      "summary": "A subreddit for Yahoo Fantasy Sports to help and listen to our members. -- Reach us by email at help.yahoo.com, Twitter @YahooFantasyCC, or send us a chat message here. 🏀 🏈 ⚾️🏒 Have product feedback?",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "56b80dba25b9b637",
+      "title": "Yahoo Fantasy Customer Care - Reddit",
+      "url": "https://www.reddit.com/r/YahooFantasy/wiki/index/",
+      "summary": "Welcome to the r/YahooFantasy subreddit Wiki. We've built this Wiki to provide Yahoo Fantasy Sports members with an organized, easy to use, directory, and index of information to guide Redditors to solutions and answers for common issues and questions. Technical Support - For all bugs, glitches, and if something is broken.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b9d411964f09cc2c",
+      "title": "Yahoo search instead of Google (browser hijacking?) - Reddit",
+      "url": "https://www.reddit.com/r/chrome/comments/fvin0v/yahoo_search_instead_of_google_browser_hijacking/",
+      "summary": "I don't get any other weird things like a changed homepage or random tabs, just the once in a while Yahoo redirect instead Google search",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "adjacent",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "research_news_review",
+        "community_evidence_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d8b829132588beb9",
+      "title": "github - Copy a git repo without history - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/29368837/copy-a-git-repo-without-history",
+      "summary": "How does this answer the question? All this does is create a shallow clone locally, but then what? How do you copy this local copy with limited history to a new repo?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "firmware"
+        "github"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -828,38 +786,7 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ea629e113309e598",
-      "title": "Help Center | Contact Us - ReadyRefresh",
-      "url": "https://www.readyrefresh.com/en/misc/helpCenterContactUs",
-      "summary": "Get your favorite brands of bottled water, sparkling water, and other beverages delivered right to your home or office. Browse our selection and sign up today.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
+        "tool"
       ],
       "primary_type": "tool",
       "routing_targets": [
@@ -871,41 +798,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b55dd528401374c3",
-      "title": "Home - Primo Brands",
-      "url": "https://www.primobrands.com/",
-      "summary": "Our first neighborhood was Eagle Rock in Los Angeles. Our mission then was to be a great-tasting bottled water supplier. Even though our service area has grown to cover five states, and we deliver more than just water, our goal remains the same, and we strive to deliver on it every day.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "507566853149b686",
-      "title": "Outdoor Christmas Decorations | Large Freestanding Displays",
-      "url": "https://www.wayfair.com/holiday-decor/sb0/outdoor-christmas-decorations-c547229.html",
-      "summary": "Find All Outdoor Christmas Decorations at Wayfair. Enjoy Free Shipping & browse our great selection of Outdoor Christmas Decorations, Outdoor Nativity Scenes, Christmas Inflatables and more!",
+      "id": "6ab37ea27d3acc22",
+      "title": "Shipping policy - Snapmaker US",
+      "url": "https://us.snapmaker.com/policies/shipping-policy",
+      "summary": "Shop Snapmaker toolchanger 3D printers for fast multi-color and multi-material printing. Complete your setup with filament, modules & accessories today.",
       "discovery_channel": "broad_web",
       "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
@@ -914,6 +810,432 @@
       "keyword_hits": [
         "shipping"
       ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "model",
+        "policy"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a19a56fae2e99c1e",
+      "title": "Snapmaker 2.0 Accessories & Modules - Snapmaker EU",
+      "url": "https://eu.snapmaker.com/collections/snapmaker-2-0",
+      "summary": "Snapmaker 2.0 collection is designed for compatible products across the Snapmaker 2.0 series, including F350, F250, A150, A250, A250T, A350, and A350T. Product compatibility may vary by item, please review the details on each product page before choosing a module, accessory, or part for your machine.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfca041cd642a898",
+      "title": "So many problems with MAG Z890 Tomahawk WIFI - MSI Global English Forum",
+      "url": "https://forum-en.msi.com/index.php?threads/so-many-problems-with-mag-z890-tomahawk-wifi.407895/",
+      "summary": "I just bought a High end computer: Intel Core Ultra 7 265K with 64 RAM, Windows 11 Pro, MAG Z890 Tomahawk WIFI. C is on an NVME Samsung 4TB PRO 990. Once it arrived home I installed 2 more nvme, 2 ssd, and 1 Magnetic HD. I also installed my Nvidia RTX 3900 and for Sound a Behringer USB UMC204HD...",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk",
+        "community"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f7f9033e3f99172d",
+      "title": "Yahoo - login",
+      "url": "https://login.yahoo.com/",
+      "summary": "Yahoo makes it easy to enjoy what matters most in your world. Best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies and more.",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ec3811e6dfa7c7ff",
+      "title": "3D Printer Black Friday Sale 2026 | €300 Off U1 – Snapmaker EU",
+      "url": "https://eu.snapmaker.com/pages/snapmaker-black-friday-sale",
+      "summary": "Black Friday brings up to €2,350 off Snapmaker machines, €300 off the U1 and double reward points. Bring bigger ideas to life for less this holiday season.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3c866dadfbe90d34",
+      "title": "Access or download information about your activity in ... - Messenger",
+      "url": "https://www.messenger.com/help/506794473544588",
+      "summary": "Your information and permissions section in Accounts Center allows you to manage your information and export your information and activity to a device or to external service. You can also control what information Meta technologies can use to influence your experience.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1f02d91d61c2c061",
+      "title": "Auto-Refill | Snapmaker Wiki",
+      "url": "https://wiki.snapmaker.com/en/snapmaker_u1/printing_guides/auto-refill",
+      "summary": "Snapmaker U1 supports auto-refill to ensure uninterrupted printing. During a print task, when the filament in one toolhead runs out, U1 will automatically switch to another toolhead loaded with the same type of filament and continue printing. If multiple backup filaments are loaded, U1 will perform auto-refill in ascending order of toolhead ...",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "83e6fa5be77bd671",
+      "title": "Brooklyn, NY Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/brooklyn/11210/hourly-weather-forecast/334651",
+      "summary": "Hourly weather forecast in Brooklyn, NY. Check current conditions in Brooklyn, NY with radar, hourly, and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "08f9c395641463cb",
+      "title": "c# - Copy all files in directory - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7146021/copy-all-files-in-directory",
+      "summary": "How can I copy all of the contents in one directory to another with out looping over each file?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "21f603e302abd176",
+      "title": "Coming Soon: The Best Events in LA (November 30 - December 6, 2026)",
+      "url": "https://www.discoverlosangeles.com/things-to-do/coming-soon-the-best-of-los-angeles",
+      "summary": "From cultural events to superstar concerts, exciting nightlife and world-class sports, Discover LA is your go-to source for the latest and greatest in LA. Find more events and nearby hotels at the DiscoverLA.com Events Calendar. Come for the show, stay for the weekend.",
+      "discovery_channel": "broad_web",
+      "query": "upcoming smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6e4f47373c30e620",
+      "title": "Copy all files and folders using MSBuild - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/119271/copy-all-files-and-folders-using-msbuild",
+      "summary": "The best way to recursively copy files from one directory to another using MSBuild is using Copy task with SourceFiles and DestinationFiles as parameters. For example - To copy all files from build directory to back up directory will be ... Now in above Copy command all source directories are traversed and files are copied to destination directory.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3f3457ce2de34ade",
+      "title": "Copy entire directory contents to another directory? [duplicate]",
+      "url": "https://stackoverflow.com/questions/6214703/copy-entire-directory-contents-to-another-directory",
+      "summary": "Method to copy entire directory contents to another directory in java or groovy?",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d9dae3c92aab44c",
+      "title": "Een kopie van je Facebook-gegevens exporteren - Messenger",
+      "url": "https://www.messenger.com/help/messenger-app/212802592074644/?locale=nl_NL",
+      "summary": "Als je aanvullende Facebook-profielen hebt, kun je een kopie van je Facebook-gegevens exporteren voor elk van je profielen. Sommige gegevens die zijn verzameld uit je aanvullende profielen, waaronder advertentiegegevens, kun je alleen openen door je Facebook-gegevens voor je hoofdprofiel te exporteren. Dit is het eerste profiel dat je maakt als je je registreert voor Facebook.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b36aa24eef727007",
+      "title": "Een kopie van je Messenger-gegevens opvragen",
+      "url": "https://www.messenger.com/help/messenger-app/713635396288741/?locale=nl_NL",
+      "summary": "Je kunt de tool Je gegevens downloaden gebruiken om een kopie van je gegevens in Messenger op te vragen en te downloaden.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a1d7ed21b97a8e77",
+      "title": "Export a copy of your Facebook information - Messenger",
+      "url": "https://www.messenger.com/help/212802592074644",
+      "summary": "You can export a copy of your information to an external service, or export it to your device. Available information includes content and info you’ve shared, your activity and info we collect. Devices and external services support different types of information for export. Learn more about the categories of information you can export.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -934,136 +1256,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "4a360140e6a65b15",
-      "title": "Primo Water Customer Service Phone Number 1-866-429-7566, Email, Help ...",
-      "url": "https://primo-water.pissedconsumer.com/customer-service.html",
-      "summary": "Primo Water Corporation extends its customers' services through various contact channels. To seek assistance regarding general concerns, use the contact number 1-866-429-7566, specifically in the US. For other customer service inquiries, the contact number is 1-877-830-0653.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8ef4846bfca42b5b",
-      "title": "Primo Water Customer Service Phone Number 866-429-7566: Call Support",
-      "url": "https://gethuman.com/phone-number/Primo-Water",
-      "summary": "What are the hours and when should I call? Primo Water operates the call center for this 866-429-7566 phone number Mon-Fri 8am-9pm ET. The short answer is that you should call on a Friday.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "07c249cefb2d7bab",
-      "title": "Primo Water Exchange in San Jose, CA 95122 - 844-237...",
-      "url": "https://www.chamberofcommerce.com/business-directory/california/san-jose/bottled-water-supplier/2030131750-primo-water-exchange",
-      "summary": "Primo Water Exchange is located at 777 Story Rd in San Jose, California 95122. Primo Water Exchange can be contacted via phone at 844-237-7466 for pricing, hours and directions.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "67623c5ab4ccb67a",
-      "title": "Primo Water FAQ",
-      "url": "https://www.water.com/education/primo-water-faq/",
-      "summary": "Our most frequently asked questions about Primo Exchange, Primo Refill, and Primo Water Dispensers, answered in one place.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "22ac6b6e3a16d85f",
-      "title": "ActiveLook® Sports Glasses Application version 2.0",
-      "url": "https://blog.activelook.net/?p=177",
-      "summary": "We’re excited and proud to share with you the new ActiveLook Sports application we’ve been working on for the last months. Thanks to our early users, we have received a lot of valuable feedback that we used to redesign our companion application. The new features: – Better Design and User Interface – Activity profile (Cycling, Running, Multi-Activity) – ActiveLook® glasses display ...",
-      "discovery_channel": "broad_web+developer",
-      "query": "ActiveLook smart glasses; ActiveLook API BLE",
+      "id": "965f95e6851a3e9b",
+      "title": "Folder copy in C# - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1974019/folder-copy-in-c-sharp",
+      "summary": "I have a folder with 10 text files at C:\\\\TEXTFILES\\\\ drive in my machine. I want to copy the folder TEXTFILES and its contents completely from my machine to another machine. How to copy the same usi...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1088,130 +1286,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6d7863887c22ce41",
-      "title": "Amazon.com: Outdoor Christmas Decorations",
-      "url": "https://www.amazon.com/outdoor-christmas-decorations/s?k=outdoor+christmas+decorations",
-      "summary": "Find the perfect outdoor Christmas decorations for your home. Shop LED lights, animated displays, and weather-resistant decor.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8156c5b306ae2582",
-      "title": "Amazon.com: Outdoor Holiday Decorations - Outdoor Holiday Decorations ...",
-      "url": "https://www.amazon.com/Outdoor-Holiday-Decorations/b?node=285033011",
-      "summary": "48\" 3-Piece 2.5D Colorful Lighted Christmas Deer Family Outdoor Decorations, Clear-Look Reindeer Set with 145 Lights, Gold Antlers, Stakes and Zip Ties for Yard Lawn Porch Garden Holiday Decor 1K+ bought in past month Black Friday Deal Exclusive Prime price",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ba2b2ae1f62bc3e6",
-      "title": "Basket Brawl | Survivor Wiki | Fandom",
-      "url": "https://survivor.fandom.com/wiki/Basket_Brawl",
-      "summary": "Basket Brawl (also known as Water Polo and Survivor Dodgeball) is a recurring challenge that originated in Survivor: Tocantins, and has since reappeared in Heroes vs. Villains, One World, and Cambodia. It is a Survivor version of basketball, albeit more physical.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "162078feb3d72cb9",
-      "title": "Contact — Team Survivor VA Basketball",
-      "url": "https://www.teamsurvivorvabasketball.com/contact",
-      "summary": "Ready to join ? Give us your details and we’ll connect with you in no time. We’re eager to hear from you! warriorsbasketballva@gmail.com.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "5e929387a911d254",
-      "title": "Display - NVIDIA",
-      "url": "https://www.nvidia.com/content/Control-Panel-Help/vLatest/en-us/mergedProjects/Display/Display.htm",
-      "summary": "Display NVIDIA® nView™ multi-display software—bundled free with NVIDIA® desktop, workstation, mobile, platform, and multimedia software solutions—provides a revolutionary way to multitask and process information easier.",
+      "id": "04121c44ffc236e5",
+      "title": "Free Online Screen Test & Monitor Test | DisplayCheck",
+      "url": "https://www.displaycheck.cc/",
+      "summary": "Free online screen and monitor test. Check dead pixels, OLED wear, color handling, gradients, refresh cadence, and motion directly in your browser. No download required. A clean test for every common display issue. Each test opens in a distraction-free runner and explains exactly what to look for.",
       "discovery_channel": "broad_web",
       "query": "display smart glasses",
       "source": "Bing web RSS",
@@ -1226,9 +1304,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1238,42 +1316,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "ba3e1b112586081b",
-      "title": "engo Brillen | Vernetzte Brillen für ambitionierte Sportler",
-      "url": "https://engoeyewear.com/de-eu",
-      "summary": "If you struggle to see your watch screen up close, this is where engo becomes a game-changer. The display projects 3-5 meters ahead - perfectly readable without squinting, tilting, or fumbling for reading glasses mid-run.",
+      "id": "c5c99b1000e0ce0b",
+      "title": "How to copy a DOM node with event listeners? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/15408394/how-to-copy-a-dom-node-with-event-listeners",
+      "summary": "cloneNode () does not copy event listeners. In fact, there's no way of getting hold of event listeners via the DOM once they've been attached, so your options are: Add all the event listeners manually to your cloned node Refactor your code to use event delegation so that all event handlers are attached to a node that contains both the original and the clone Use a wrapper function around Node ...",
       "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ed5a9f1523c17cc1",
-      "title": "Engo | Eternal Hope/Ewige Hoop",
-      "url": "https://engo.co.za/",
-      "summary": "Engo is ’n nie-winsgewende en nie-regeringswelsynsorganisasie wat hoofsaaklik in die Vrystaat werksaam is en sorg en berading bied aan kinders, gesinne, bejaardes, persone met gestremdhede en pasiënte wat hulp benodig.",
-      "discovery_channel": "broad_web",
-      "query": "ENGO smart glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1298,12 +1346,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a21b369528295c5a",
-      "title": "Ethan Zohn - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Ethan_Zohn",
-      "summary": "Zohn returned as a contestant on the fortieth season of Survivor, Survivor: Winners at War, where he was a member of the Sele tribe. Along with All-Stars castmate Amber Mariano, Zohn broke Kelly Wiglesworth's record for the longest gap between seasons.",
+      "id": "7af383277337cade",
+      "title": "How to copy files from dockerfile to host? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/33377022/how-to-copy-files-from-dockerfile-to-host",
+      "summary": "I want to get some files when dockerfile built successfully, but it doesn't copy files from container to host. That means when I have built dockerfile, the files already be host.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1328,12 +1376,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "182d29f2b030851c",
-      "title": "Every former NCAA student-athlete on 'Survivor' — from NCAA ...",
-      "url": "https://www.ncaa.com/news/ncaa/article/2026-09-16/every-former-ncaa-athlete-survivor-ncaa-champs-diii-standouts",
-      "summary": "From NCAA Champions to DIII standouts, let's take a look back at every former NCAA athlete that has competed on \"Survivor.\"",
+      "id": "a933c1bbfa5c00ab",
+      "title": "How to copy views from one database to another database",
+      "url": "https://stackoverflow.com/questions/1913685/how-to-copy-views-from-one-database-to-another-database",
+      "summary": "I have two databases with same structure in MS SQL server. I'd like to copy all views another database. I tried to use Export data functionality by DTS (that works with the table objects). But t...",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1358,373 +1406,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5433cf8e9d584834",
-      "title": "Home | NFL Pro",
-      "url": "https://pro.nfl.com/games/scores",
-      "summary": "With NFL+ Premium, get access to NFL Pro and over 95 unique player and team performance stats and all-22 film for an advanced analytics platform (available on desktop and mobile web).",
+      "id": "1cec332ba7800686",
+      "title": "How to copy/select a whole file or buffer in Emacs?",
+      "url": "https://stackoverflow.com/questions/22544655/how-to-copy-select-a-whole-file-or-buffer-in-emacs",
+      "summary": "Is there any command to select the whole file contents in Emacs? For example, Control + a selects whole contents of a file in Notepad, Notepad++, etc. I can select whole contents using the mouse, but it's inconvenient for large files. I found the basic Emacs commands here and here, but could not find what I am looking for.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a071c857b805f225",
+      "title": "How to download or update the Messenger mobile app",
+      "url": "https://www.messenger.com/help/218228001910904",
+      "summary": "Keep the Messenger app up to date on your iPhone, iPad or Android device. Install the latest version of Messenger to help fix problems when Messenger isn't working as expected and to get the newest features.",
       "discovery_channel": "broad_web",
       "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "37bac9370a5898ed",
-      "title": "NFL playoff picks: Divisional Round score predictions and matchup ...",
-      "url": "https://www.nfl.com/news/nfl-playoff-picks-divisional-round-2025-nfl-season",
-      "summary": "Can the Texans run their win streak to 11 games by upsetting the Patriots in Foxborough? Will the Rams end the Bears' magical season on Sunday night in Chicago? Check out the Divisional Round game ...",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "f6b814eb72efa641",
-      "title": "NFL+: How to watch Week 1, schedule, Melbourne game details, and more",
-      "url": "https://www.nfl.com/news/nfl-how-to-watch-week-1-schedule-melbourne-game-details-and-more",
-      "summary": "How to watch 2026 NFL Week 1 games: For access to live local and primetime games on mobile devices and 24/7 access to NFL Network (which includes seven exclusive games this season), sign up for NFL+.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "52cb4a251bf1d726",
-      "title": "Ori Jean-Charles | Survivor Wiki | Fandom",
-      "url": "https://survivor.fandom.com/wiki/Ori_Jean-Charles",
-      "summary": "So, I transferred from the University of Louisville to the University of Maine, for simple fact that it was close to home. When creating our schedules I joined the earliest workout group on Fridays at 5am and the latest on Mondays at 3pm.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0081b331a7155478",
-      "title": "Outdoor Christmas Decoration - Walmart.com",
-      "url": "https://www.walmart.com/browse/home/outdoor-christmas-decorations/4044_2634414_7472650_4622223",
-      "summary": "Outdoor christmas decorations help you turn your yard, porch, and entryway into a festive holiday scene with light, color, and character. You can compare lights, inflatables, nativity scenes, and wireframe figures in one place, so your display fits your space and setup style. When you plan your holiday layout, you’ll want pieces that handle winter weather and stay easy to arrange. You can ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "7b7dd5fcd80eb188",
-      "title": "Outdoor Christmas Decorations",
-      "url": "https://www.wayfair.com/holiday-decor/cat/outdoor-christmas-decorations-c243534.html",
-      "summary": "Outdoor Christmas decorations are a simple way to transform your home into a winter wonderland. From sparkling string lights and illuminated reindeer to cheerful inflatables and timeless nativity scenes, outdoor decorations seamlessly capture the Christmas spirit. Whether you prefer neutral-colored modern decorations or classic snowmen and Santa themes, there are options for every home ...",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bba98b8b4cfcd564",
-      "title": "Outdoor Christmas Decorations & Holiday Yard Decor - Sam's Club",
-      "url": "https://www.samsclub.com/browse/outdoor-holiday-decor/3230101",
-      "summary": "Find exclusive outdoor Christmas decor, from giant nutcrackers to dazzling pathway lights, at members-exclusive prices at Sam's Club near you..",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4c5acafac938e436",
-      "title": "Outdoor Christmas Decorations - Target",
-      "url": "https://www.target.com/c/outdoor-christmas-decorations/-/N-5xt2t",
-      "summary": "Outdoor Christmas decorations bring holiday cheer not only to your home but also to your neighborhood. Whether you’re looking to create a magical display with lights, greenery, or unique lawn decorations, choosing the right outdoor Christmas decor can set the perfect tone for your holiday season.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d308a0416a6ddc83",
-      "title": "Outdoor Christmas Decorations - The Home Depot",
-      "url": "https://www.homedepot.com/b/Holiday-Decorations-Christmas-Decorations-Outdoor-Christmas-Decorations/N-5yc1vZc3sq",
-      "summary": "Shop Outdoor Christmas Decorations and more at The Home Depot. We offer free delivery, in-store and curbside pick-up for most items.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "151b76e665c67e8f",
-      "title": "Outdoor Christmas Decorations for Yards and Porches | Lowe's",
-      "url": "https://www.lowes.com/pl/christmas-decorations/outdoor-christmas-decor/outdoor-christmas-decorations/4294417423",
-      "summary": "Browse outdoor Christmas decorations for festive yard displays, porches and entryways in seasonal styles. Shop online for delivery or pickup at Lowe's.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "032d5b5c6f4216a6",
-      "title": "Outdoor Christmas Decorations | Inflatables & Signs | Michaels",
-      "url": "https://www.michaels.com/shop/holidays-occasions/christmas/outdoor-christmas-decorations",
-      "summary": "Show off your love of the holiday season with outdoor Christmas decorations like Christmas inflatables, lighted décor, wreaths, garlands and more from Michaels.",
-      "discovery_channel": "broad_web",
-      "query": "Everysight Maverick AI Kickstarter",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ad340a7a138d6813",
-      "title": "Scot Pollard - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/Scot_Pollard",
-      "summary": "In 2016, Pollard appeared as a contestant on Survivor: Kaôh Rōng, competing in the 32nd season of the competitive reality television series Survivor as part of the To Tang, Gondol, and Dara tribes.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "003fdb2652a4cff6",
-      "title": "Sign in to your account - Outlook",
-      "url": "https://outlook.live.com/tasks/?app",
-      "summary": "Microsoft To Do No account? Create one! Can’t access your account?",
-      "discovery_channel": "broad_web",
-      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1749,12 +1466,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d65ffe5f0cf71c8f",
-      "title": "Survivor 39: Where Are The Contestants Today?",
-      "url": "https://thecinemaholic.com/survivor-39/",
-      "summary": "Drawing on his passion for basketball, Dean also holds the position of Associate Director at Full Court Peace, a foundation uniting youth from different backgrounds through the love of the game.",
+      "id": "a0d9079a41644bfb",
+      "title": "How to fix problems with the Messenger app",
+      "url": "https://www.messenger.com/help/522894144496549?locale=en_GB",
+      "summary": "Learn how to fix the Messenger app when it crashes or isn't working.",
       "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
+      "query": "ThinkAR AiLENS",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1767,9 +1484,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "tool"
       ],
-      "primary_type": "policy",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1779,10 +1496,100 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8902104f304b08db",
-      "title": "Survivor Q&A with Scot Pollard: 'I had rats crawling on me at ...",
-      "url": "https://www.cbssports.com/nba/news/survivor-qa-with-scot-pollard-i-had-rats-crawling-on-me-at-night/",
-      "summary": "The 32nd season of Survivor (Wednesday nights at 8 p.m. ET/7 p.m. CT) has three tribes (Beauty, Brains and Brawn) all competing with each other to whittle down the competition and have one person...",
+      "id": "bb520f89efc8ac38",
+      "title": "How to request a copy of your Messenger data",
+      "url": "https://www.messenger.com/help/713635396288741",
+      "summary": "Instructions for Deactivated Except Messenger Accounts If you use Messenger without an active Facebook account, learn how to export your information for Messenger only.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "821cf5d80752a309",
+      "title": "IDrive Arkansas",
+      "url": "https://www.idrivearkansas.com/",
+      "summary": "Arkansas Department of Transportation.",
+      "discovery_channel": "broad_web",
+      "query": "camera smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ceb3cad63b427af6",
+      "title": "Je gegevens van end-to-end versleutelde Messenger-chats downloaden",
+      "url": "https://www.messenger.com/help/messenger-app/677912386869109/?locale=nl_NL",
+      "summary": "Je kunt je end-to-end versleutelde chatberichten en bijlagen in Messenger op elk gewenst moment downloaden.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e24eb2b9da07f104",
+      "title": "Local Weather Forecast, News and Conditions | Weather Underground",
+      "url": "https://www.wunderground.com/",
+      "summary": "Access local and long-range weather forecasts, news, maps, and tropical weather updates for locations worldwide on Weather Underground.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1809,10 +1616,70 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "84cc2b970785d158",
-      "title": "Survivor: Every Pro Athlete Who Has Competed - Screen Rant",
-      "url": "https://screenrant.com/survivor-players-pro-athletes-cbs-reality-tv/",
-      "summary": "Over two decades of Survivor, professional football, basketball, baseball, hockey, and soccer players have competed as well as some Olympians.",
+      "id": "55d42e01c57ad129",
+      "title": "Messenger",
+      "url": "https://www.messenger.com/desktop/?locale=ko_KR",
+      "summary": "언제 어디서나 어울려보세요. Messenger를 통해 좋아하는 사람들과 쉽고 재미있게 시간을 보낼 수 있습니다.",
+      "discovery_channel": "broad_web",
+      "query": "ThinkAR AiLENS",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f08108b9c7d54d94",
+      "title": "Modules - Snapmaker Global",
+      "url": "https://shop.snapmaker.com/collections/3d-printer-modules",
+      "summary": "Transform your Snapmaker with a wide range of modules, seamlessly integrating with your Artisan, 2.0, and Ray models. Elevate your projects to the next level.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1e78586005fcf44e",
+      "title": "National and Local Weather Radar, Daily Forecast, Hurricane ...",
+      "url": "https://weather.com/",
+      "summary": "The Weather Channel and weather.com provide a national and local weather forecast for cities, as well as weather radar, report and hurricane coverage",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1839,10 +1706,250 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "89bfd0e431aaa19d",
-      "title": "Team Survivor VA Basketball",
-      "url": "https://www.teamsurvivorvabasketball.com/",
-      "summary": "The name, Team Survivor Virginia (TSVA), is to remember all who are in remission, still fighting the struggle, and lost their battle with cancer, this devastating illness.",
+      "id": "cff5e03edc4ca4cf",
+      "title": "Online Screen Test — Monitor & Display Test",
+      "url": "https://screentester.io/",
+      "summary": "Online screen test and display tester for monitors, laptops and phones: 12 full-screen colors to find dead and stuck pixels, plus resolution and refresh rate.",
+      "discovery_channel": "broad_web",
+      "query": "display smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3d5a68d48fcfa4c2",
+      "title": "Resource Hub | Snapmaker Wiki",
+      "url": "https://wiki.snapmaker.com/en/resource_hub",
+      "summary": "A Curated List of Snapmaker Resources, Mods, and Guides U1 3MF Converter User Guide Useful Prints For Snapmaker U1 Cleaning Tools Top Cover External Exhaust Port.stp Top Cover External Exhaust Port.3mf Top Cover External Exhaust Port Replacement Guide Top Cover Seating: Mounting Posts and Silicone Pads",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0700a7cff3dc0c15",
+      "title": "Snapmaker 2.0 | Best-Selling 3-In-1 3D Printer",
+      "url": "https://www.snapmaker.com/en-US/snapmaker-2",
+      "summary": "Snapmaker 2.0 redefines precision with its modular 3-in-1 design. For seamless 3D printing, CNC carving, and laser engraving in a robust, all-metal setup.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5aaf6141db5f5cd0",
+      "title": "Snapmaker | Toolchanger 3D Printers - Official Website",
+      "url": "https://www.snapmaker.com/",
+      "summary": "Innovate with Snapmaker, maker of Kickstarter's most-funded multi-color 3D printer. From fast tool changes to multi-material printing—bringing ideas to life.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aa483d639ed18bc4",
+      "title": "The Definitive Guide to Laser Engraving and Cutting with ... - Snapmaker",
+      "url": "https://support.snapmaker.com/hc/en-us/articles/360019025954-The-Definitive-Guide-to-Laser-Engraving-and-Cutting-with-the-200mW-and-1600mW-Laser-Module",
+      "summary": "Keep reading to learn about the recommended Snapmaker settings for different materials. Snapmaker offers two types of laser modules. The one comes with the Snapmaker Original 3-in-1 3D printer is a 200mW laser module and you can upgrade it with the new 1600mW laser module.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "23040a6d82771f1b",
+      "title": "The Snappy Club – Snapmaker US",
+      "url": "https://us.snapmaker.com/pages/the-snappy-club",
+      "summary": "Shop & save with the Snapmaker US loyalty program. Earn points with every purchase & redeem for discounts. Join free now!",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "079bceceebbf6369",
+      "title": "US | CNN",
+      "url": "https://www.cnn.com/us",
+      "summary": "View the latest US news, top stories, photos and videos from around the nation. To get the day’s top headlines delivered to your inbox every morning, sign up for our 5 Things newsletter.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "e35094fea9c3a398",
+      "title": "version - SVN upgrade working copy - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7992034/svn-upgrade-working-copy",
+      "summary": "Before you can use an existing working copy with TortoiseSVN 1.7, you have to upgrade the format first. If you right-click on an old working copy, TortoiseSVN only shows you one command in the context menu: Upgrade working copy.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0e7323259b8308a5",
+      "title": "Weather Forecast and Conditions for Brooklyn, 11201, New York ...",
+      "url": "https://weather.com/us/new-york/new-york-city/postcode/11201/today",
+      "summary": "Today’s and tonight’s Brooklyn, 11201, New York City, New York weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1869,12 +1976,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "855861a40749e56d",
-      "title": "Volkswagen Dealership in Newton NJ | Serving Newton and Andover ...",
-      "url": "https://www.newtonvolkswagen.com/",
-      "summary": "We made your Volkswagen the superior vehicle it is today and we want to ensure it remains that way. Our technicians are highly trained and certified to perform whatever work you may need on your vehicle.",
+      "id": "08a585634cfeaeeb",
+      "title": "Zone Area Forecast for Kings (Brooklyn)",
+      "url": "https://forecast.weather.gov/MapClick.php?zoneid=NYZ075",
+      "summary": "Current conditions at New York, Kennedy International Airport (KJFK) Lat: 40.64° N Lon: 73.76° W Elev: 10 ft. Mostly Cloudy 59°F 15°C ... More Information: Local Forecast Office More Local Wx 3 Day History Hourly Weather Forecast Detailed forecast for Kings (Brooklyn)",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1890,6 +1997,36 @@
         "news"
       ],
       "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6bce698ad1b55635",
+      "title": "AI Mode - Bing",
+      "url": "https://www.bing.com/ai",
+      "summary": "Copilot Search delivers AI-powered insights, helping you explore topics, uncover relevant instant answers, and connect ideas seamlessly.",
+      "discovery_channel": "adjacent+community",
+      "query": "AI smart glasses real world test reddit; AI wearable camera",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
