@@ -1,6 +1,6 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-23T15:27:41.022242+00:00`
+Generated: `2026-11-23T15:34:15.531869+00:00`
 
 - Intake files inspected: **183**
 - Candidates retained in this review window/history: **7312**
@@ -12,9 +12,9 @@ Generated: `2026-11-23T15:27:41.022242+00:00`
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 545
+- `needs_editorial_verification`: 548
 - `rejected_noise`: 5123
-- `source_review`: 39
+- `source_review`: 36
 - `watching`: 28
 
 ## Action queue
@@ -244,6 +244,8 @@ Generated: `2026-11-23T15:27:41.022242+00:00`
 | normal | needs_editorial_verification | direct | [Samsung AI Glasses Pose Security Risk to Semiconductor Facilities - 조선일보](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTFlOQktiQ2tQOWZOaTJBNUtCTkZfUFpQTWJ1QkV3RlVzM0FSbXpmTENETzFaelZZb2VQOEg0TFYwZFBqZnhWMjJRbVFWN1NvbFg2YWdIRWZUV3VRR3NlN04wMlFzbW5SVU9rWHhiV3R5bGJyMl9rNUxyckFZNDhST2laT0p6NlBB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [SidekickOS - Open Source Smart Glasses - GitHub](https://github.com/siersidekick/SidekickOS) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [South Korea's SK Hynix Bans AI Glasses From Its Sites; Security Alert Spreads to Defense, Shipbuilding - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTFBpa2tlMjNYVTNXMWw4SHhkbERMcFNtZlhVWlBlVll3RUlXTF8ydnEtVE4xM3FKQzFqTHJVTk1KbDRLQlFkRzJMMWVhX3AyTDlhNnBFRjJwMGZuRlVKZWh5WGlwaW9GYVpkQ3F6VXpTdm4wZFRxWFE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Study Smart: Best Prescription Smart Glasses for Back to School \| The ...](https://cybernews.com/vr-ar/best-prescription-smart-glasses/) | reachable (200) | research_news_review, research_optics, deep_research |
+| normal | needs_editorial_verification | direct | [THINKAR AiLENS V2 AI Text Recognition AR Smart Glasses ... - Amazon](https://www.amazon.com/Recognition-Teleprompter-interpretation-multilingual-notifications/dp/B0HHHVDTRP) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [XREAL xbx a01+ Review: Are AR Glasses Good for Drones - Geeky Gadgets](https://www.geeky-gadgets.com/ar-glasses-for-drones/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [“Could They Be After Industrial Secrets?” ... Samsung, SK, Hyundai Motor and LG Wary of ‘AI Glasses’ at Industrial Sites [‘AI Security’ Aler](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NSHA0Z1pwRkk5TWJFck10LV9SNktFVWtERVFscGx3djVlc0Z4enpBNDB0TVY0bzFvSjA4OExIVldFZko4RXpEaEtrdDlOM3B6MmhBaVlVWHc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["AI 안경, 사람에게 유용하도록"···KAIST서 '생활 속 해법' 모색 - 헬로디디](https://news.google.com/rss/articles/CBMiakFVX3lxTE9mRFhRQlVFOFhIanFrNUhUYjVkQm8xTEpFY01Hekd3Yi0xY2wtRUxUQTRENEpYOWZZNDVadUlELU9VVnF6Q2ZsQVdNQTdaeFFUSWh3WEFxbDdDVXhfQklSTkRxR1NZMUpLRHc?oc=5) | reachable (200) | research_news_review |
@@ -269,8 +271,6 @@ Generated: `2026-11-23T15:27:41.022242+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 '몰카' 예방…불법촬영 방지법 발의돼 - 금융소비자뉴스](https://news.google.com/rss/articles/CBMiakFVX3lxTE5HSHlfQUZVcE1fcmRDeTVVbUtVamNpMEtpZWt3bnJ3V01qZHFiZXNqSEdfNFpELWJVNDdwdmZnY0Nnbzl4R2RGZU5rQWsyWDc2SzZfV1JqTFRVUjdoWXpaTGlTb2VJQ2RKWVE?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 ‘몰카’ 방지 나선다… ‘촬영 표시 의무화’ 법안 발의 - 천지일보](https://news.google.com/rss/articles/CBMiakFVX3lxTFBUb25ER0JaTUdNVlQwMDYwbGhRRW5yS0RNSmRQRk1GdmxUVnNiQ2czTGN1NDUzeThrMFpiTlVxWUUzdTktSnh2bmhURkdxbVotblI2bmw3TWU0RWpEVWZQR3J6U2ZFcXpuZ2c?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 악용에 과기정통부 "안전 사용 지침 마련" 산업부 "AI 안경 정의 필요" - 아이뉴스24](https://news.google.com/rss/articles/CBMiS0FVX3lxTE8xVWN0NVNLWG01UEU0QTkwTGE3Q2haY29xOTBHLTNRUERmdWNMcU5jcDBaTHdfUlBFTGcyR3dvQ0U2TjFhbzFWOXlTdw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI 안경 열풍에 정책금융도 베팅 … 부품사는 적자 늪, 부채비율 346% - 뉴데일리 경제](https://news.google.com/rss/articles/CBMie0FVX3lxTE5GaThiT1FacTJyZ3ZUNVFVdS1XaWNtbFFOc2RVT1U4VWVFenlhY3FUbUtSaERuRThHX0YzaHd5M1h6eDFheWdSS1lkaWJHYnV0dDR1aS1uQ016Q2VXck1kTlNGVGxKMzNxaUdRMHJTNjR1UDNOaVF1eUphNNIBgAFBVV95cUxQUEJxNkdCOThUd08zdW9XWXY2d0UzcE1sejZHdm5tMUY2a3FOMDNGWnVTWU44YXo4SlNMV19sWlR2UUoySUY4Y1lGSC0wbkZTdjVsSUZqWUwydTF3cGY5dGNXNERkUGtfejZtdjktTnp2ZnNNWjkySGZ5cm9xaWd6WA?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI 안경 촬영표시 의무화 법 개정 추진…위반시 과태료 - 강원도민일보](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iUVRfT2x0cWhzUlJOQ1pSSktydVl1RDdpbEd4TGlDTHk3SlBEWmdzUngxMVEweXgwbmxFVWNmRUJVVlgzU3p2WUd0WGpIVXlIQmdxc2hMbXVES1l4LXhTcHh6UHZZcHhB?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
