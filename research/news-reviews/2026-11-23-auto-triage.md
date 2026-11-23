@@ -1,20 +1,20 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-23T14:43:37.851283+00:00`
+Generated: `2026-11-23T14:55:52.112419+00:00`
 
-- Intake files inspected: **181**
-- Candidates retained in this review window/history: **7262**
+- Intake files inspected: **183**
+- Candidates retained in this review window/history: **7312**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1547
+- `adjacent_radar`: 1556
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 544
-- `rejected_noise`: 5082
-- `source_review`: 40
+- `needs_editorial_verification`: 538
+- `rejected_noise`: 5123
+- `source_review`: 46
 - `watching`: 28
 
 ## Action queue
@@ -155,6 +155,7 @@ Generated: `2026-11-23T14:43:37.851283+00:00`
 | high | needs_editorial_verification | direct | [Google to launch smart glasses Dec. 10 with privacy protections - qz.com](https://news.google.com/rss/articles/CBMiggFBVV95cUxNODlCcS1lM3JKbURBQ2dlY3haY3RLaFZtcC1qT3Btdk5YMVh6R2hWVkxxUnBVcVhXQ05qXzF5cDZINGhIdWFsRHc4NDJBNUI5Y0VVZEhRUFhDYTdnamk2UGVNTlhvRnZfcmtQcHFjc0NGcWVuaW9aVnMyN192VklKclBn?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Meta AI glasses launch in UAE from $316 with Etisalat monthly plans starting at $15 - Arabian Business](https://news.google.com/rss/articles/CBMizgFBVV95cUxOR0d4cXE5c2dnRlkyNUNPdGcxQS1NT3FSaUNoU3VLNkdnQm1FOEpWamFpUzB2eU1Cc0tUbGRxNmRWbWN0cjhRWGlpVEVWZGx4Vl92SnNfM0lBTnNNSEpzNDZWQkk0SFlpUXFBM29jbzhjSkhmV0NlUkdiWUN1YkFFUnVDaEdiVS1BSmJ1bk9WdnVnQzNucHBnR1dQbGx4N1piNDhwSWdCWlYzWmdHUzhxTXNjaDc4Zkltdy0yU01GU1M3OXA1WkdRM0V3ZXB6dw?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Must Read: Smart Glasses Launch Reopens Debate Over Privacy, How Fashion Helped Protect Great Bear Rainforest - Fashionista](https://news.google.com/rss/articles/CBMidkFVX3lxTE9JOGJnNmY5ejRKVWtqT3U3Q3E3bTBrNlJmY1Zxb00xRTZpVkNWeFB5SGNYNU0yVm1LUVVCdFkxeXFRRnk4SEpTSFpmYmx5SHVTSTZwNUt0MWxWa0d3dGRhV1h1U1MxcDZGUzFpM1pSaEMwaHBzc3c?oc=5) | reachable (200) | research_news_review, model_catalog_review, policy_privacy |
+| high | needs_editorial_verification | direct | [OpenSource-Ai-Glasses/docs/FIRMWARE_FLASHING.en.md at main ... - GitHub](https://github.com/Iam5tillLearning/OpenSource-Ai-Glasses/blob/main/docs/FIRMWARE_FLASHING.en.md) | reachable (200) | research_news_review, report_card_evidence, development_hacking |
 | high | needs_editorial_verification | direct | [Samsung & Google Finally Enter AI Glasses, Prioritizing a Focused Launch Over Scale - Counterpoint Research](https://news.google.com/rss/articles/CBMiwAFBVV95cUxPYXRqMDZBV2RBaVI4dnZqS2tra0hSZFp4MmZSOTFxU0ZhVFJZbksxbkFlM1F4MnN4enV6NFlTRkJFb0VGRVBsRUYwYVM4QnpDd251c1JKdGo5VF85cktoSjgweDdhV05PZzZPMnQ4Q1hVTUM5R0dCUi1VMThscEw2TktCNU1HT1Z5M05QTlJDcC1MTDNBWTNBYTVNUkVzMktHcEdzamRLbmV3aFFxWkJqaW9YQkFCQi1KNi1MRGpjLWY?oc=5) | reachable (200) | research_news_review, model_catalog_review, deep_research |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Sell Out Before Launch as Meta Faces New Rival - ChannelNews.com.au](https://news.google.com/rss/articles/CBMipgFBVV95cUxQN1BaeUFGaEJxc1c0OXBWSlJhTWp2UTk5UWtSWlVGVXg0dU1KVHJJQ1h4cmxVZmVyVmNkOU1nckJ2dDBLQ0FqcXlLOWVQdDM1Q3lHXzI1akptV0xYdHpUUkFrTlhqT3pJbWZWWUs1YnBuSjJoYWxzTGdDNTlqSWg1cHUtODhpaWtkWDZKUmNXc2s4SFpwMUZpcUVwRlg2STJUX0tIaTBB?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Samsung AI Smart Glasses Sell Out Before Launch as Meta Faces New Rival - SmartHouse](https://news.google.com/rss/articles/CBMipAFBVV95cUxPVnJmSE55UExjX2toUUowaWpFbXJIS3lMMURMZUlWbkF1eHRyRmlDQXpvbC12a0l0c2VTbkhiVS1PWUF1cnM3QTFxLU4xX09xOGJkZ2d3ZG53WFJDbWZZOVFzWXJsOXJlNDVEaVpZc1pyWDlBN1UyX1h5ZTJCU2YwRDJIVnRqNDlMSWJXQ0tIQkZFT1lENGpmcEtTbnRjN1lYZ0R4SA?oc=5) | reachable (200) | research_news_review, model_catalog_review |
@@ -247,7 +248,6 @@ Generated: `2026-11-23T14:43:37.851283+00:00`
 | normal | needs_editorial_verification | direct | [THINKAR AiLENS V2 AI Text Recognition AR Smart Glasses ... - Amazon](https://www.amazon.com/Recognition-Teleprompter-interpretation-multilingual-notifications/dp/B0HHHVDTRP) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [XREAL xbx a01+ Review: Are AR Glasses Good for Drones - Geeky Gadgets](https://www.geeky-gadgets.com/ar-glasses-for-drones/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [“Could They Be After Industrial Secrets?” ... Samsung, SK, Hyundai Motor and LG Wary of ‘AI Glasses’ at Industrial Sites [‘AI Security’ Aler](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NSHA0Z1pwRkk5TWJFck10LV9SNktFVWtERVFscGx3djVlc0Z4enpBNDB0TVY0bzFvSjA4OExIVldFZko4RXpEaEtrdDlOM3B6MmhBaVlVWHc?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | ["AI 안경, 사람에게 유용하도록"···KAIST서 '생활 속 해법' 모색 - 헬로디디](https://news.google.com/rss/articles/CBMiakFVX3lxTE9mRFhRQlVFOFhIanFrNUhUYjVkQm8xTEpFY01Hekd3Yi0xY2wtRUxUQTRENEpYOWZZNDVadUlELU9VVnF6Q2ZsQVdNQTdaeFFUSWh3WEFxbDdDVXhfQklSTkRxR1NZMUpLRHc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["커닝·몰카?" 사람 돕는 AI 안경 활용법 - 대전일보](https://news.google.com/rss/articles/CBMib0FVX3lxTE5xT0xVbjRjYmRmZ0g4d2FlTl9naWIyd1Z3ZEswWkFUSmFUSTdEQVZMWFc0cnZMT055SXQwTkx4YjNUMkw0RFAxT1ZGLTR2bmQya3VKZTFoZDVZN0J5RUN3MFNZWF81MWY0ZmJOQ1dNYw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [11月23日国光电器涨停：智能音箱，NFT，智能眼镜/MR头显概念热股_个股掘金 - 证券之星](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5tMll4ejFuYTB5RlFVRzdaSUdCV3JuTDh5ZXJLRGkybFZQSFM5N0Y3R2pEQ1A3b2l2OXpIVm9EUlBqTUlMTi1KckluejJGWTBPenNmQUpwNmhKTjY3UFpPY053?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [11月23日淳中科技涨停：智能眼镜/MR头显，星闪概念，超高清视频概念热股_个股掘金 - 证券之星](https://news.google.com/rss/articles/CBMiYkFVX3lxTE82X2QyaWlKWHFUNHplRkxnZ1JCdXgxeGgtcG5WUTVUWXdFVmdkNGdRTXg2azhSNENDQVYyRmZBTDlYRjdKLTNacU9wZ0JINzhVYzNKMTF0clk5U3lFZ2RuWkR3?oc=5) | reachable (200) | research_news_review |
@@ -268,9 +268,9 @@ Generated: `2026-11-23T14:43:37.851283+00:00`
 | normal | needs_editorial_verification | direct | [AI 안경 '몰래 촬영' 막는다…촬영 표시·사적 촬영 고지 의무화 추진 - AI타임스](https://news.google.com/rss/articles/CBMiakFVX3lxTFBsUV9Ydkg2T0dTd0E5ZUk4cGJrM2pINlMxZkRGblFrejVCYkhwLXhTcFZrQUNYcTR6N2QtSXZwYW1kMFM0WXFXbHZsUDI3cFJsQ3pLdmltNFNQY0VDcVhJUHAwSk5IQ3ZPOGc?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 '몰카' 막는다…촬영 표시 의무화 법안 발의 - 연합뉴스](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1IYTEwYXF1Z2ptLVR0YnN3VkROY1U0ZWtEWm1jdWxaR3YtdmhOd2dJa3NLSjV2WENfM1R3aE5PWnJhbjFUbTd6MVltaFI5dFRjVkdRZ1pzS3Q3M3PSAWBBVV95cUxPZ3h1YmVneXp5bl9rYnVZcGpOTk9TVUR3bmpUUEI3aXBPTUh3RGM2Y2s5bWpmYnlDSkxiaHJxMGlEY0RtY1ViWlg3dkZlZWFQbFVVd1E5YkdzTDNGQmlmM08?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 '몰카' 예방…불법촬영 방지법 발의돼 - 금융소비자뉴스](https://news.google.com/rss/articles/CBMiakFVX3lxTE5HSHlfQUZVcE1fcmRDeTVVbUtVamNpMEtpZWt3bnJ3V01qZHFiZXNqSEdfNFpELWJVNDdwdmZnY0Nnbzl4R2RGZU5rQWsyWDc2SzZfV1JqTFRVUjdoWXpaTGlTb2VJQ2RKWVE?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [AI 안경 ‘몰카’ 방지 나선다… ‘촬영 표시 의무화’ 법안 발의 - 천지일보](https://news.google.com/rss/articles/CBMiakFVX3lxTFBUb25ER0JaTUdNVlQwMDYwbGhRRW5yS0RNSmRQRk1GdmxUVnNiQ2czTGN1NDUzeThrMFpiTlVxWUUzdTktSnh2bmhURkdxbVotblI2bmw3TWU0RWpEVWZQR3J6U2ZFcXpuZ2c?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 악용에 과기정통부 "안전 사용 지침 마련" 산업부 "AI 안경 정의 필요" - 아이뉴스24](https://news.google.com/rss/articles/CBMiS0FVX3lxTE8xVWN0NVNLWG01UEU0QTkwTGE3Q2haY29xOTBHLTNRUERmdWNMcU5jcDBaTHdfUlBFTGcyR3dvQ0U2TjFhbzFWOXlTdw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AI 안경 열풍에 정책금융도 베팅 … 부품사는 적자 늪, 부채비율 346% - 뉴데일리 경제](https://news.google.com/rss/articles/CBMie0FVX3lxTE5GaThiT1FacTJyZ3ZUNVFVdS1XaWNtbFFOc2RVT1U4VWVFenlhY3FUbUtSaERuRThHX0YzaHd5M1h6eDFheWdSS1lkaWJHYnV0dDR1aS1uQ016Q2VXck1kTlNGVGxKMzNxaUdRMHJTNjR1UDNOaVF1eUphNNIBgAFBVV95cUxQUEJxNkdCOThUd08zdW9XWXY2d0UzcE1sejZHdm5tMUY2a3FOMDNGWnVTWU44YXo4SlNMV19sWlR2UUoySUY4Y1lGSC0wbkZTdjVsSUZqWUwydTF3cGY5dGNXNERkUGtfejZtdjktTnp2ZnNNWjkySGZ5cm9xaWd6WA?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [AI 안경 촬영표시 의무화 법 개정 추진…위반시 과태료 - 강원도민일보](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5iUVRfT2x0cWhzUlJOQ1pSSktydVl1RDdpbEd4TGlDTHk3SlBEWmdzUngxMVEweXgwbmxFVWNmRUJVVlgzU3p2WUd0WGpIVXlIQmdxc2hMbXVES1l4LXhTcHh6UHZZcHhB?oc=5) | reachable (200) | research_news_review |
 
 ## Meaning of states
 
