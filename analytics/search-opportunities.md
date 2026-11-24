@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-10-25 → 2026-11-21**.
+Google Search Console page/query pairs for **2026-10-26 → 2026-11-22**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -17,7 +17,6 @@ Google Search Console page/query pairs for **2026-10-25 → 2026-11-21**.
 | https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 24 | 0 | 0.00% | 3.4 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best wireless sunglasses | 18 | 0 | 0.00% | 6.4 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses app development studio | 15 | 0 | 0.00% | 10.0 |
-| https://glassesresearch.org/evidence/EV-0046-Even-G1-G2-service-survival/ | "even g2" firmware quicknote conversate update | 13 | 0 | 0.00% | 9.3 |
 | https://glassesresearch.org/research/populated/LENOVO_THINKREALITY_A3/ | thinkreality | 12 | 0 | 0.00% | 5.8 |
 | https://glassesresearch.org/models/catalog/ | which ai glasses are best for small faces? | 10 | 0 | 0.00% | 4.2 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best wireless sunglasses 2024 | 9 | 0 | 0.00% | 6.2 |
@@ -45,6 +44,7 @@ Google Search Console page/query pairs for **2026-10-25 → 2026-11-21**.
 | https://glassesresearch.org/guides/smart-glasses-with-displays/ | glasses with hud | 3 | 0 | 0.00% | 7.0 |
 | https://glassesresearch.org/docs/community-research/cyanbridge/ | cyanbridge | 3 | 0 | 0.00% | 9.3 |
 | https://glassesresearch.org/ | research glasses | 3 | 0 | 0.00% | 10.0 |
+| https://glassesresearch.org/models/catalog/gls-0043/ | google glass explorer edition | 2 | 0 | 0.00% | 1.5 |
 | https://glassesresearch.org/research/ | smart glasses for manufacturing companies | 2 | 0 | 0.00% | 1.5 |
 | https://glassesresearch.org/models/catalog/ | best glasses with ai? | 2 | 0 | 0.00% | 2.0 |
 | https://glassesresearch.org/models/catalog/gls-0221/ | maverick ai pro glasses | 2 | 1 | 50.00% | 2.5 |
