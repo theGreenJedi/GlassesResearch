@@ -1,12 +1,12 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-22T17:52:12+00:00**
+Generated: **2026-11-23T22:04:46+00:00**
 
 - Published evidence-backed answers: **232** (minimum **1000**, no ceiling)
 - Remaining to minimum: **768**
 - Canonical registry size: **410** (not the published count)
 - Unanswered research candidates: **116**
-- Observations this run: **53**
+- Observations this run: **52**
 - New distinct questions: **0**
 
 ## Source health
@@ -14,7 +14,7 @@ Generated: **2026-11-22T17:52:12+00:00**
 - github_issues: ok — 11 observations
 - stackexchange: ok — 20 observations
 - reddit_rss: unavailable — all Reddit RSS feeds failed: https://www.reddit.com/r/smartglasses/new/.rss?limit=100: 404 Client Error: Not Found for url: https://www.reddit.com/r/smartglasses/new/.rss?limit=100
-- google_search_console: ok — 22 observations
+- google_search_console: ok — 21 observations
 - approved_feed: ok — 0 observations
 
 ## New questions
