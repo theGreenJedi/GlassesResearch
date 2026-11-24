@@ -1,6 +1,6 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-23T22:04:46+00:00**
+Generated: **2026-11-24T20:41:36+00:00**
 
 - Published evidence-backed answers: **232** (minimum **1000**, no ceiling)
 - Remaining to minimum: **768**
