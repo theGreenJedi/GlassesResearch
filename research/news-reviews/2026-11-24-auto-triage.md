@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-24T12:20:26.645241+00:00`
+Generated: `2026-11-24T13:58:20.718609+00:00`
 
-- Intake files inspected: **178**
-- Candidates retained in this review window/history: **7457**
+- Intake files inspected: **180**
+- Candidates retained in this review window/history: **7501**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1524
+- `adjacent_radar`: 1538
 - `catalog_review`: 17
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 529
-- `rejected_noise`: 5314
-- `source_review`: 42
-- `watching`: 27
+- `needs_editorial_verification`: 531
+- `rejected_noise`: 5339
+- `source_review`: 44
+- `watching`: 28
 
 ## Action queue
 
@@ -229,6 +229,7 @@ Generated: `2026-11-24T12:20:26.645241+00:00`
 | normal | needs_editorial_verification | direct | [THINKAR AiLENS V2 AI Text Recognition AR Smart Glasses ... - Amazon](https://www.amazon.com/Recognition-Teleprompter-interpretation-multilingual-notifications/dp/B0HHHVDTRP) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [XREAL xbx a01+ Review: Are AR Glasses Good for Drones - Geeky Gadgets](https://www.geeky-gadgets.com/ar-glasses-for-drones/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [“Could They Be After Industrial Secrets?” ... Samsung, SK, Hyundai Motor and LG Wary of ‘AI Glasses’ at Industrial Sites [‘AI Security’ Aler](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NSHA0Z1pwRkk5TWJFck10LV9SNktFVWtERVFscGx3djVlc0Z4enpBNDB0TVY0bzFvSjA4OExIVldFZko4RXpEaEtrdDlOM3B6MmhBaVlVWHc?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [“Smart Glasses and AI Cheating, You’re on Notice”: FOCUS AI Ramps Up Exam Security Business - 파이낸셜뉴스](https://news.google.com/rss/articles/CBMiWEFVX3lxTE51eHRKemxDV2xpVVQ4WmVBZktPRW5EUFdiZHZnNHRJcl9SWlFBcG9nSDZXUkZzYW80YTRyblp1N2dIUGRqM1lGc1RvcE44OEd0YU9UemtVRjQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["미성년자 사귀는 법·엉터리 복약지도"…AI 안경, 커닝만 문제 아니다 > 시애틀 뉴스/핫이슈 - SeattleN](https://news.google.com/rss/articles/CBMicEFVX3lxTFBWR28wMWNKWC1wZWxoUEh2TDFlTGVzWDk1dWY1VUZ2MEl6VU1kWklQcVMyOWJ5c3JKeW80cnI0UzVtVkNPaGNLMEtwVVRrM0pLcWI5OHpoUENxcE9GdlJzVHBwYUM4TnVMblhkVzdYcDg?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | ["스마트 안경 부정행위까지 대비" 전북교육청, 고교 평가담당자 260명 대상 선행출제 예방 연수 - 전북미래교육신문](https://news.google.com/rss/articles/CBMiX0FVX3lxTE1ydmpSSGl4bUJRN29vbVhSR3g1dGl1Q3RvdWtMcnpmVzVabHZidmZzb2hTTGhOVngtbVhKQjZoSjlkSEtwV0VxWHljVjFzS1c4SE9Kd0M3WmNNTUVabWE0?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [11月24日淳中科技涨停：星闪概念，智能眼镜/MR头显，液冷服务器概念热股_个股掘金 - 证券之星](https://news.google.com/rss/articles/CBMiYkFVX3lxTE5XbUNDZmtaUWg1bEdaM29pRDBnUFc1MnlicURsUmJ6UmFQZExJSGVUQnZ3ZktZMU9GVkY5OEttek14MndQN3ExZnhrTUhZMWw0RG91RlYtWWt3TzdtblhLTmVn?oc=5) | reachable (200) | research_news_review |
@@ -270,7 +271,6 @@ Generated: `2026-11-24T12:20:26.645241+00:00`
 | normal | needs_editorial_verification | direct | [Engadget Oct 25, 2026 When AI glasses could be a worthy headphones replacement](https://www.engadget.com/2292076/when-ai-glasses-worth-headphones-replacement/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Enovix Smart Glasses Battery: Q3 2027, 0 Specs - shattered.io](https://news.google.com/rss/articles/CBMimAFBVV95cUxQbVBpdVFwM3AyaVVwcl93Uzhibk1KRVZ2YldUS0NLMGh0M1MyN1VyQTNkZDREMjlEV3N5bGhzdkdLX3JSeFllaGZpRWF5LUZRUWpUMWtTMWNTTlVIeHpiZjk0d1FlZjI1ZXh3enVYMzA5blpYYTVHR25TdW1YdXZlalJ5ZmdIdVg2QjI1YjR1LTJ4b2JPZ2NnMA?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Even Realities launches 1st enterprise SDK for AR glasses - NewsBytes](https://news.google.com/rss/articles/CBMipwFBVV95cUxPR2huVS1mZXdEYVBrY05sTjZNYkdnWkhVOWpQQ3Y4V3FyYjQ0Z0pCWWlnN1pBZFhZVFFUeTNBODBzMHFGVW1XTUxSNVBGb2RDd3pTY3F1UHBBMDllcWx1ZmhDQ0VUd2l4VkE5ZklhdDRzenlNd29RYzdPbXdjeWtCRC1fSEFsOHBCM3VEWGdST1NtQnMxWU5lVU92SDB6TkloMUNLbjU1WQ?oc=5) | reachable (200) | research_news_review, development_hacking |
-| normal | needs_editorial_verification | direct | [Even Realities launches Enterprise SDK for G2 glasses - Mezha.net](https://news.google.com/rss/articles/CBMiigFBVV95cUxOT0lPQkZQRGV4dnZtazJmS3JhQlpGTjNJbEhabEs4Q2ZsQ09BTWlQTnlUeVgzcFJSWVdQb3MtOEd3Z2lGMm95Q2JvaEgwU2tFcE5EODZEVnA2MXlFbkpIQnQwNGxWekNSMC1VWFFFYTN2X0loVUpEb2RJdVJyZzlvUHMtVHdzako1V2c?oc=5) | reachable (200) | research_news_review, development_hacking |
 
 ## Meaning of states
 
