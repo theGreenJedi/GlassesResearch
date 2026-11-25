@@ -1,17 +1,17 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-24T20:41:36+00:00**
+Generated: **2026-11-25T19:58:18+00:00**
 
 - Published evidence-backed answers: **232** (minimum **1000**, no ceiling)
 - Remaining to minimum: **768**
-- Canonical registry size: **410** (not the published count)
-- Unanswered research candidates: **116**
-- Observations this run: **52**
-- New distinct questions: **0**
+- Canonical registry size: **411** (not the published count)
+- Unanswered research candidates: **117**
+- Observations this run: **53**
+- New distinct questions: **1**
 
 ## Source health
 
-- github_issues: ok — 11 observations
+- github_issues: ok — 12 observations
 - stackexchange: ok — 20 observations
 - reddit_rss: unavailable — all Reddit RSS feeds failed: https://www.reddit.com/r/smartglasses/new/.rss?limit=100: 404 Client Error: Not Found for url: https://www.reddit.com/r/smartglasses/new/.rss?limit=100
 - google_search_console: ok — 21 observations
@@ -19,7 +19,7 @@ Generated: **2026-11-24T20:41:36+00:00**
 
 ## New questions
 
-_No new materially distinct questions in this run._
+- **Q-000411** — Could Smart Glasses settings include a persistent **Show Smart Glasses shortcut** toggle, on by default?
 
 ## Research queue (first 20)
 
