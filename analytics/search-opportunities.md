@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-10-26 → 2026-11-22**.
+Google Search Console page/query pairs for **2026-10-27 → 2026-11-23**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -14,7 +14,7 @@ Google Search Console page/query pairs for **2026-10-26 → 2026-11-22**.
 | https://glassesresearch.org/guides/prescription-smart-glasses/ | best prescription glasses platform | 50 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/docs/SDK_API_MATRIX/ | what sdks or apis are available for spectacles development? | 43 | 0 | 0.00% | 7.4 |
 | https://glassesresearch.org/models/catalog/ | best prescription glasses platform | 38 | 0 | 0.00% | 3.1 |
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 24 | 0 | 0.00% | 3.4 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 23 | 0 | 0.00% | 3.5 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best wireless sunglasses | 18 | 0 | 0.00% | 6.4 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses app development studio | 15 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/research/populated/LENOVO_THINKREALITY_A3/ | thinkreality | 12 | 0 | 0.00% | 5.8 |
