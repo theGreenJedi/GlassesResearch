@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-10-27 → 2026-11-23**.
+Google Search Console page/query pairs for **2026-10-28 → 2026-11-24**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -14,7 +14,7 @@ Google Search Console page/query pairs for **2026-10-27 → 2026-11-23**.
 | https://glassesresearch.org/guides/prescription-smart-glasses/ | best prescription glasses platform | 50 | 0 | 0.00% | 9.0 |
 | https://glassesresearch.org/docs/SDK_API_MATRIX/ | what sdks or apis are available for spectacles development? | 43 | 0 | 0.00% | 7.4 |
 | https://glassesresearch.org/models/catalog/ | best prescription glasses platform | 38 | 0 | 0.00% | 3.1 |
-| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 23 | 0 | 0.00% | 3.5 |
+| https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 22 | 0 | 0.00% | 3.6 |
 | https://glassesresearch.org/guides/bluetooth-smart-glasses/ | best wireless sunglasses | 18 | 0 | 0.00% | 6.4 |
 | https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses app development studio | 15 | 0 | 0.00% | 10.0 |
 | https://glassesresearch.org/research/populated/LENOVO_THINKREALITY_A3/ | thinkreality | 12 | 0 | 0.00% | 5.8 |
@@ -29,7 +29,6 @@ Google Search Console page/query pairs for **2026-10-27 → 2026-11-23**.
 | https://glassesresearch.org/models/catalog/ | find me ai glasses options with top device and software compatibility. | 5 | 0 | 0.00% | 5.0 |
 | https://glassesresearch.org/models/PROFILES_LEGACY_DISPLAY/ | how do snapchat spectacles handle syncing and storage? | 5 | 0 | 0.00% | 5.6 |
 | https://glassesresearch.org/research/populated/VUZIX/ | vzux | 5 | 0 | 0.00% | 6.2 |
-| https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 5 | 1 | 20.00% | 8.2 |
 | https://glassesresearch.org/ | waveguide display | 4 | 0 | 0.00% | 2.2 |
 | https://glassesresearch.org/research/state-of-smart-glasses/ | smart glasses for documentation | 4 | 0 | 0.00% | 3.0 |
 | https://glassesresearch.org/models/W610/resources/search-starting-points/ | ai68610 | 4 | 0 | 0.00% | 3.8 |
@@ -37,6 +36,7 @@ Google Search Console page/query pairs for **2026-10-27 → 2026-11-23**.
 | https://glassesresearch.org/research/ | manufacturing challenges for smart glasses review | 4 | 0 | 0.00% | 4.5 |
 | https://glassesresearch.org/research/ | best sunglasses for developers | 4 | 0 | 0.00% | 6.8 |
 | https://glassesresearch.org/models/catalog/gls-0063/ | rokid rv203 | 4 | 0 | 0.00% | 7.5 |
+| https://glassesresearch.org/changes/gre-000003/ | cyanbridge | 4 | 1 | 25.00% | 7.8 |
 | https://glassesresearch.org/docs/SDK_API_MATRIX/ | what sdks or apis are available for spectacles development? recommendations | 4 | 0 | 0.00% | 8.5 |
 | https://glassesresearch.org/models/catalog/gls-0167/ | meizu myvu ar (xga010c) | 3 | 0 | 0.00% | 3.0 |
 | https://glassesresearch.org/guides/prescription-smart-glasses/ | can oakley meta glasses be made with prescription lenses? | 3 | 0 | 0.00% | 4.0 |
