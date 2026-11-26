@@ -1,13 +1,13 @@
 # Question Discovery — Latest
 
-Generated: **2026-11-25T19:58:18+00:00**
+Generated: **2026-11-26T19:39:53+00:00**
 
 - Published evidence-backed answers: **232** (minimum **1000**, no ceiling)
 - Remaining to minimum: **768**
 - Canonical registry size: **411** (not the published count)
 - Unanswered research candidates: **117**
 - Observations this run: **53**
-- New distinct questions: **1**
+- New distinct questions: **0**
 
 ## Source health
 
@@ -19,7 +19,7 @@ Generated: **2026-11-25T19:58:18+00:00**
 
 ## New questions
 
-- **Q-000411** — Could Smart Glasses settings include a persistent **Show Smart Glasses shortcut** toggle, on by default?
+_No new materially distinct questions in this run._
 
 ## Research queue (first 20)
 
