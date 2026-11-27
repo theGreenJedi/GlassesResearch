@@ -1,6 +1,6 @@
 # GlassesResearch Search Opportunities
 
-Google Search Console page/query pairs for **2026-10-28 → 2026-11-24**.
+Google Search Console page/query pairs for **2026-10-29 → 2026-11-25**.
 
 > This is an evidence tool, not a keyword-chasing list. Improve a page only when the query genuinely matches the research the page should contain.
 
@@ -8,10 +8,10 @@ Google Search Console page/query pairs for **2026-10-28 → 2026-11-24**.
 
 | Page | Query | Impressions | Clicks | CTR | Position |
 |---|---|---:|---:|---:|---:|
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glass developers? | 192 | 0 | 0.00% | 9.3 |
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | top smart glasses developers | 68 | 0 | 0.00% | 9.2 |
-| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses developers | 52 | 0 | 0.00% | 8.8 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glass developers? | 191 | 0 | 0.00% | 9.3 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | top smart glasses developers | 66 | 0 | 0.00% | 9.3 |
 | https://glassesresearch.org/guides/prescription-smart-glasses/ | best prescription glasses platform | 50 | 0 | 0.00% | 9.0 |
+| https://glassesresearch.org/guides/smart-glasses-for-developers/ | best smart glasses developers | 49 | 0 | 0.00% | 8.9 |
 | https://glassesresearch.org/docs/SDK_API_MATRIX/ | what sdks or apis are available for spectacles development? | 43 | 0 | 0.00% | 7.4 |
 | https://glassesresearch.org/models/catalog/ | best prescription glasses platform | 38 | 0 | 0.00% | 3.1 |
 | https://glassesresearch.org/models/PROFILES_2026_09_03_MYVU_STARV/ | xga010c | 22 | 0 | 0.00% | 3.6 |
