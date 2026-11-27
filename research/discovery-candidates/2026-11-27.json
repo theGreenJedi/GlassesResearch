@@ -1,41 +1,44 @@
 {
   "schema": 3,
-  "discovered_utc": "2026-11-27T05:08:56.723649+00:00",
-  "candidate_count": 61,
-  "classifier_irrelevant_count": 52,
+  "discovered_utc": "2026-11-27T08:58:28.354379+00:00",
+  "candidate_count": 62,
+  "classifier_irrelevant_count": 46,
   "precision_rejected_count": 0,
   "channel_counts": {
-    "adjacent": 9,
-    "broad_web": 33,
-    "developer": 20,
-    "research": 1,
-    "retail": 1
+    "adjacent": 11,
+    "broad_web": 40,
+    "developer": 11
   },
   "relationship_counts": {
-    "direct": 0,
-    "enabling": 1,
-    "adjacent": 8,
+    "direct": 5,
+    "enabling": 0,
+    "adjacent": 11,
     "speculative": 0,
-    "irrelevant": 52
+    "irrelevant": 46
   },
   "type_counts": {
-    "model": 7,
-    "video": 6,
-    "news": 21,
-    "tool": 25,
-    "sdk": 20,
-    "hack": 1,
-    "optics": 1,
-    "policy": 2,
+    "model": 5,
+    "review": 5,
+    "video": 1,
+    "news": 22,
+    "research": 1,
+    "tool": 14,
+    "sdk": 11,
     "retail": 6,
-    "teardown": 1
+    "teardown": 1,
+    "community": 12,
+    "rumor": 1
   },
   "routing_counts": {
-    "adjacent_radar": 8,
-    "reject_noise": 52,
-    "report_card_evidence": 5,
-    "research_news_review": 9,
-    "research_optics": 1
+    "adjacent_radar": 11,
+    "deep_research": 1,
+    "development_hacking": 3,
+    "model_catalog_review": 2,
+    "reject_noise": 46,
+    "report_card_evidence": 2,
+    "research_news_review": 16,
+    "retail_rebrand_review": 3,
+    "watching": 1
   },
   "policy": {
     "collection": "high recall across ordinary search surfaces",
@@ -49,17 +52,17 @@
   "collector_errors": [],
   "candidates": [
     {
-      "id": "18aa67f213fa084c",
-      "title": "What to know about OTC and prescription medications",
-      "url": "https://www.medicalnewstoday.com/articles/otc-vs-prescription-drugs",
-      "summary": "Over-the-counter (OTC) medications can be purchased without a prescription and are generally used for minor ailments, while prescription drugs require a doctor’s order and typically treat more...",
-      "discovery_channel": "adjacent+broad_web+research",
-      "query": "prescription smart glasses; prescription smart glasses lens research; prescription lens technology eyewear",
+      "id": "814daa36f9504803",
+      "title": "AI Smart Glasses with Bluetooth, 165+ Languages Translation ... - Amazon",
+      "url": "https://www.amazon.com/Glasses-Bluetooth-Languages-Translation-Assistant/dp/B0HGLZQBB4",
+      "summary": "These smart translation glasses help make travel, business communication, study, and everyday conversations easier through multiple translation modes including face-to-face interaction and real-time assistance.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "prescription"
+        "study"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -67,31 +70,161 @@
       "delegated_action": "queue_for_review",
       "gr_conclusion_authorized": false,
       "attribution_required": false,
-      "relationship": "enabling",
+      "relationship": "direct",
       "content_types": [
-        "optics"
+        "research",
+        "retail"
       ],
-      "primary_type": "optics",
+      "primary_type": "research",
       "routing_targets": [
         "research_news_review",
-        "research_optics"
+        "retail_rebrand_review",
+        "deep_research"
       ],
       "triage_priority": "normal",
       "publication_eligible": true,
-      "publication_gate_reason": "enabling technology signals: prescription",
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e0c14bf3c43fdb66",
-      "title": "Convinced To Cheat Porn Videos | Pornhub.com",
-      "url": "https://www.pornhub.com/video/search?search=convinced+to+cheat",
-      "summary": "Browse through our impressive selection of porn videos in HD quality on any device you own.",
+      "id": "5927369fb35949e7",
+      "title": "Huawei Ai Glasses 2026 Unboxing & Full Review + Camera Test | Best ...",
+      "url": "https://www.youtube.com/watch?v=Dr56567cgQc",
+      "summary": "Huawei Ai Glasses 2026 Unboxing & Full Review + Camera Test | Best Smart Eyewear! Zahar Mobile Review 80.6K subscribers Subscribe",
+      "discovery_channel": "broad_web",
+      "query": "Huawei AI Glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "review",
+        "video"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "research_news_review",
+        "report_card_evidence"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: ai glasses, smart eyewear",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "05ee1007d1239d93",
+      "title": "Amazon.com: Translation Glasses",
+      "url": "https://www.amazon.com/translation-glasses/s?k=translation+glasses",
+      "summary": "AI-powered smart glasses with real-time translation, cameras, and open-ear audio for travel and work.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "6fdf127ba5667903",
+      "title": "Solos AirGo3 Smart Glasses Expand Live Translate and Group ...",
+      "url": "https://solosglasses.com/blogs/article/solos-airgo3-smart-glasses-expand-live-translate-and-group-communication-capabilities-launching-at-2024-ces",
+      "summary": "Solos translates the captured speech into the user’s preferred language and discreetly plays it back through the smart glasses, for an intuitive and private experience. GROUP Mode, perfect for multi-person discussions, allows each participant to speak and listen in their preferred language.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c1c0fe21ff6b2bee",
+      "title": "Translation Glasses and AI Smart Eyewear - Best Buy",
+      "url": "https://www.bestbuy.com/site/shop/translation-glasses-ai-smart-eyewear",
+      "summary": "Shop translation glasses and AI smart eyewear at Best Buy. Discover smart glasses with live translate, AI assistance, camera, audio and everyday-ready designs.",
+      "discovery_channel": "broad_web",
+      "query": "translation smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "direct",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "research_news_review",
+        "retail_rebrand_review"
+      ],
+      "triage_priority": "normal",
+      "publication_eligible": true,
+      "publication_gate_reason": "explicit smart-glasses/eyewear signals: smart eyewear, smart glasses",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "500e5056a92ec3ec",
+      "title": "ZDNET’s best wearables of 2026: The 3 health trackers we ...",
+      "url": "https://www.zdnet.com/tech/zdnet-best-of-2026-wearables/",
+      "summary": "We tested all the major wearable devices released in 2026, but one takes the lead for its compelling set of features.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "wearable AI interface; wearable gesture control interface; wearable eye tracking; wearable haptics interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
+      "materiality_score": 2,
+      "keyword_hits": [
+        "released"
+      ],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -100,11 +233,13 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "video"
+        "model",
+        "review"
       ],
-      "primary_type": "video",
+      "primary_type": "model",
       "routing_targets": [
         "research_news_review",
+        "model_catalog_review",
         "report_card_evidence",
         "adjacent_radar"
       ],
@@ -114,12 +249,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "6cccdda02b03dcbd",
-      "title": "convinced videos - XVIDEOS.COM",
-      "url": "https://www.xvideos.com/tags/convinced",
-      "summary": "Tomando uns drinks com a minha madrasta gostosa, acabei sendo convencido a foder aquela bucetinha apertada e gozar dentro da puta carente. Vagninho e Luna Oliveira. Wife's best friend seduces cheating impregnation creampie while ovulation.",
+      "id": "e4b40f4cc0b688c0",
+      "title": "About the Model RFP | MRSI Home Page",
+      "url": "https://mrsi.erdc.dren.mil/model-rfp/",
+      "summary": "The modern, web-based MRSI Wizard is designed to streamline the development of Request for Proposal (RFP) Statement of Work (SOW) documents for new military construction (MILCON) design-build (D-B) projects.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -145,12 +280,76 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "0958c3ae3e4eb823",
-      "title": "Convincing Porn – Gay Male Tube",
-      "url": "https://www.gaymaletube.com/search/a/convincing",
-      "summary": "convincing tube at GayMaleTube. We cater to all your needs and make you rock hard in seconds. Enter and get off now!",
+      "id": "0873ca68d09887b6",
+      "title": "About the MRSI Wizard | MRSI Home Page",
+      "url": "https://mrsi.erdc.dren.mil/wizard/",
+      "summary": "About the MRSI Wizard The modern, third-generation MRSI Wizard is an adaptable, web-based platform designed to streamline the development of standards-compliant documents.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b43934abd3209b07",
+      "title": "About the MRSI Wizard | MRSI Home Page",
+      "url": "https://mrsi.erdc.dren.mil/mrsi_wizard/",
+      "summary": "About the MRSI Wizard The modern, third-generation MRSI Wizard is an adaptable, web-based platform designed to streamline the development of standards-compliant documents.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "tool"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "research_news_review",
+        "development_hacking",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "d163a8a9580dd1a9",
+      "title": "Accounts and Login | MRSI Home Page",
+      "url": "https://mrsi.erdc.dren.mil/wizard/accounts/",
+      "summary": "How do I create an account for the MRSI Wizard? In order to use the capabilities within the MRSI Wizard, you will first need to create an account. Creating a MRSI Wizard account is a three-step process for non-government users and two steps for federal government employees.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -176,76 +375,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "d2de17aec1f85b7a",
-      "title": "convincing search results - PornZog Free Porn Clips",
-      "url": "https://pornzog.com/search/?s=convincing",
-      "summary": "Watch convincing videos at our mega porn collection.",
+      "id": "5334147e73b3df99",
+      "title": "Frequently Asked Questions (FAQ) | MRSI Home Page",
+      "url": "https://mrsi.erdc.dren.mil/mrsi/faq/",
+      "summary": "Creating a MRSI Wizard account is a three-step process for non-government users and two steps for federal government employees. Step 1: Create an account through Login.gov (external site), if you do not already have one.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "32b2f2502dfc185d",
-      "title": "Free Convinced Porn Videos | xHamster",
-      "url": "https://xhamster.com/tags/convinced",
-      "summary": "Check out free Convinced porn videos on xHamster. Watch all Convinced XXX vids right now!",
-      "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
-      "source": "Bing web RSS",
-      "source_lane": "adjacent_hci",
-      "materiality_score": 1,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "adjacent",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "research_news_review",
-        "report_card_evidence",
-        "adjacent_radar"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "578fa1697898b9bc",
-      "title": "New Madrid, Missouri - Wikipedia",
-      "url": "https://en.m.wikipedia.org/wiki/New_Madrid,_Missouri",
-      "summary": "The city is located 42 miles (68 km) southwest of Cairo, Illinois, and north of an exclave of Fulton County, Kentucky, across the Mississippi River. The town is on the north side of the Kentucky Bend in the Mississippi River, which is also known as \"New Madrid Bend\" or \"Madrid Bend.\"",
-      "discovery_channel": "adjacent",
-      "query": "near-eye display optics",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -271,12 +406,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "88743800171d3a77",
-      "title": "Slowly Convincing For Sex Porn Videos - xHamster",
-      "url": "https://xhamster.com/search/slowly+convincing+for+sex",
-      "summary": "Watch slowly convincing for sex porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!",
+      "id": "7781866fecb7665c",
+      "title": "MRSI Home Page",
+      "url": "https://mrsi.erdc.dren.mil/",
+      "summary": "Our current document generation tool is the modern, web-based MRSI Wizard, which is the third generation of our Wizard concept.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -289,12 +424,14 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "video"
+        "tool",
+        "rumor"
       ],
-      "primary_type": "video",
+      "primary_type": "tool",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
+        "watching",
+        "development_hacking",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -303,12 +440,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "15dcc5fb28f6cde7",
-      "title": "Way Too Convincing - Will Pounder - PornZog Free Porn Clips",
-      "url": "https://pornzog.com/video/23646188/way-too-convincing-will-pounder/",
-      "summary": "Watch Way Too Convincing - Will Pounder on PornZog Free Porn Clips. All for free and in streaming quality!",
+      "id": "e345356d58b9282e",
+      "title": "MRSI Wizard - Version 3",
+      "url": "https://wizards.mrsi.erdc.dren.mil/",
+      "summary": "Welcome to the new MRSI Wizard. This version brings all our tools together into a single browser-based application, making it easier for you to access all your documents in one place using a common interface.",
       "discovery_channel": "adjacent",
-      "query": "electrochromic eyeglass lenses",
+      "query": "hearable AI interface",
       "source": "Bing web RSS",
       "source_lane": "adjacent_hci",
       "materiality_score": 1,
@@ -321,12 +458,11 @@
       "attribution_required": false,
       "relationship": "adjacent",
       "content_types": [
-        "video"
+        "news"
       ],
-      "primary_type": "video",
+      "primary_type": "news",
       "routing_targets": [
         "research_news_review",
-        "report_card_evidence",
         "adjacent_radar"
       ],
       "triage_priority": "low",
@@ -335,15 +471,327 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "959ad8640b2a2117",
-      "title": "Women's Clothes | ZARA United Kingdom",
-      "url": "https://www.zara.com/uk/en/woman-mkt1000.html",
-      "summary": "Weekly new trends in clothes, shoes & accessories at ZARA online. FREE SHIPPING* for you to try on at your leisure.",
+      "id": "2f2b3e76943fb67e",
+      "title": "MRSI Wizard - Version 3",
+      "url": "https://wizards.mrsi.erdc.dren.mil/login",
+      "summary": "YOU ARE ACCESSING A U.S. GOVERNMENT (USG) INFORMATION SYSTEM (IS) THAT IS PROVIDED FOR USG-AUTHORIZED USE ONLY. By using this IS (which includes any device attached to this IS), you consent to the following conditions:",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2319fa61508ed458",
+      "title": "MRSI Wizard - Version 3",
+      "url": "https://wizards.mrsi.erdc.dren.mil/help",
+      "summary": "MRSI Team MRSI Wizard Help More information is available on our website at https://mrsi.erdc.dren.mil/mrsi_wizard/",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "research_news_review",
+        "model_catalog_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "f62f4a4b4341f1d7",
+      "title": "Small Projects Wizard | MRSI Home Page",
+      "url": "https://mrsi.erdc.dren.mil/small_projects_wizard/",
+      "summary": "The RFP Wizard for Small Projects provides a standardized way to support the creation of Request For Proposal (RFP) documents for the design and construction of facility Sustainment, Restoration, and Modernization (SRM) and small Military Programs work.",
+      "discovery_channel": "adjacent",
+      "query": "hearable AI interface",
+      "source": "Bing web RSS",
+      "source_lane": "adjacent_hci",
+      "materiality_score": 1,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "adjacent",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "research_news_review",
+        "adjacent_radar"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "neighboring wearable/HCI development without a concrete glasses claim",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2843965eaf394418",
+      "title": "Best Grow Lights for Houseplants: Complete Buying Guide (2026)",
+      "url": "https://indoorplantspro.com/posts/best-grow-lights-for-houseplants-2026/",
+      "summary": "We review 5 top picks for every budget and setup — from desk clip lights to full shelf systems. Plus a buyer's guide on light types and placement. If your home lacks natural light — or you live somewhere with dark winters — grow lights are a game-changer.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [
+        "review"
+      ],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "review"
+      ],
+      "primary_type": "review",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "0b09611c34fb3cc4",
+      "title": "Google",
+      "url": "https://www.google.com/travel/flights/flights-from-toronto.html",
+      "summary": "( / X4[u0006 $K \"( bF u0001 D > a qU VXG.u0006s 0 u001du0019u0013? > < \" \" \" T' u0018 Dh u0011 l 6 =N& 뛴 X ' R u000eb l E T C@qu0002 u0006<\\ u000fu001b [Z # 1Z5 ...",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "4274523a3256f3d0",
+      "title": "Google",
+      "url": "https://www.google.com/travel/flights/flights-from-san-juan.html",
+      "summary": "u0014# |UH I ] u001f M 0/ hu0017j xr (x u0019 Kߛ* Uu000eqW rnј Ϯ IXԢ u000f iEu0019B> u0017:y&u001aiͱu0017h ,Y c u00102 { 3> \\ { ?8 xro\\ I Z C G !W Fj RfV ) | \\ aK| y > u001a O {\" { u001eVc ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5d41f9fb0ed8a0e8",
+      "title": "Google",
+      "url": "https://www.google.com/travel/flights?tfs=CBwQARoJagcIARIDSkZLGglyBwgBEgNKRktAAUgBcAGCAQsI____________AZgBAQ&tfu=KgIIAw",
+      "summary": "( / XDeu0006 6u000b4# ( bf u0001u0002 G u000777 #V eL \" \" \" u0007 (k u001b }' Q4u0007~Z >vA u000e4 [ u0005u0002 u001eJ u001fV u0015 u0007u0018 . v )u0005 >u001f - 4u001e lu000b o] ? $ >G oK ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "a551b3c787729784",
+      "title": "Google",
+      "url": "https://www.google.com/travel/flights/region/flights-to-australia.html",
+      "summary": "( / X$du0006^0K #) bf u0001u0002 S > / Y u000e u000f u0002 Uu0018c u0003 u0003 \" \" \" ùܑ Xr* 7$u001cu0010v 4H u0005E C ? u0017%7u001e u0005 f # H Hu001c > M 1 ɼ M E ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "36a936965170e1c7",
+      "title": "Google",
+      "url": "https://www.google.com/travel/flights/flights-from-tulsa.html",
+      "summary": "( / X [u0006>' b#( bF u0001 ba 㪊 H ~ u001du0019u0013? > < \" \" \" u0003 r u0015P u000e ! ݰ ' b . 4 u001b ,yu0007= u0013 ,: 1\" vu0004 u000e k* h u0006 u?J hs ,Fu000bS ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1966d32c3595062c",
+      "title": "Google Flights",
+      "url": "https://flights.corp.google.com/",
+      "summary": "( / X Su0006 u001b \" ( bF u0001 fM >6 O;e Iu001fzM ִ u0001 1u001dpu001e \"t\" \" u0014k % l 8 ʊE q ! u000fv ̬ u0017\"_u001dѲ U' h h '&u0018 u001eu0018꾎R IB ^|ldNu0012 o n $] ? ~Mu000bh4u0017 5γ E މ u0011 v 1 |' >*@КHdg `sYҳu000fN 2 )T ;qu0010u0016 Hby d N V y u0014!B \" n3 b]F f gT 茈 Cㆸ ) 'u0012-'K3 6: c!Z 6n 4 >gwͿu0011 MR +~Q gv ߋZ O8 l2 u0011 u0010 ZNY Xu0015 \\ Ԣ ~8 u000eb ...",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "507a770b66aa46aa",
+      "title": "Men's Performance Q-Zips - rhoback.com",
+      "url": "https://rhoback.com/collections/mens-tops-performance-q-zips",
+      "summary": "Performance Activewear Designed for Those Who Crave Activity. Shop Performance Polos, Hoodies, Q-Zips, & More. Free Standard Shipping On All Orders Abov...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
       "keyword_hits": [
         "shipping"
       ],
@@ -355,9 +803,7 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
-        "tool",
-        "sdk"
+        "model"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -369,15 +815,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "8f9f6d89e787956d",
-      "title": "Women's Special Price Items | ZARA Canada",
-      "url": "https://www.zara.com/ca/en/woman-special-prices-l1314.html",
-      "summary": "FREE SHIPPING. Women's special price clothing at ZARA online. Key pieces for this season to stay in style.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "id": "55ca0211c51e6e2d",
+      "title": "Premium Men's Performance Quarter-Zips | GenTeal Apparel",
+      "url": "https://www.gentealapparel.com/collections/performance-quarter-zips",
+      "summary": "Premium men\\Performance Quarter-Zips from GenTeal. Performance fabric built for the office, the course, and the weekend. Free shipping over $200.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
+      "materiality_score": 3,
       "keyword_hits": [
         "shipping"
       ],
@@ -389,12 +835,41 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model",
+        "model"
+      ],
+      "primary_type": "model",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "2210b56c78252bfd",
+      "title": "Raleigh to United States | Explore - Google",
+      "url": "https://www.google.com/travel/explore/flights-to-united-states.html",
+      "summary": "Explore and compare cheap flights to anywhere with Google Flights. Find your next flight, track price changes to get the best deals, and book your ticket.",
+      "discovery_channel": "developer",
+      "query": "Everysight Maverick SDK",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
         "tool",
         "sdk",
         "retail"
       ],
-      "primary_type": "model",
+      "primary_type": "tool",
       "routing_targets": [
         "reject_noise"
       ],
@@ -404,18 +879,16 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a99753270b4d1361",
-      "title": "Women's Special Price Items | ZARA United States",
-      "url": "https://www.zara.com/us/en/woman-special-prices-l1314.html",
-      "summary": "FREE SHIPPING. Women's special price clothing at ZARA online. Key pieces for this season to stay in style.",
+      "id": "7ea4ab7c48c75f97",
+      "title": "seats.aero - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/seatsaero/oedchdidbnokclkbokgpilmeabomahlj",
+      "summary": "Easily search for award availability on Google Flights, Chase Travel, and Amex Travel.",
       "discovery_channel": "developer",
       "query": "Everysight Maverick SDK",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 4,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "materiality_score": 3,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -426,8 +899,7 @@
       "content_types": [
         "model",
         "tool",
-        "sdk",
-        "retail"
+        "sdk"
       ],
       "primary_type": "model",
       "routing_targets": [
@@ -439,17 +911,17 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "a2cb292a829d2643",
-      "title": "Car Tech Was The Only True Source Of Innovation At CES 2015",
-      "url": "https://www.forbes.com/sites/dougnewcomb/2015/01/09/car-tech-was-the-only-true-source-of-innovation-at-ces-2015/",
-      "summary": "Audi, Hyundai and Volkswagen all announced in Las Vegas that they'll offer Android Auto/Apple CarPlay-ready infotainment systems for the 2015 model year.",
+      "id": "6c66c4b1eda3b29f",
+      "title": "The 5 Best Grow Lights (2026 Review) - This Old House",
+      "url": "https://www.thisoldhouse.com/gardening/best-grow-lights",
+      "summary": "We’ve gathered a list of the top-rated grow lights to support your indoor plants year-round. Read our guide to find the best choice for your space, experience level, and gardening goals. Grow lights are a great solution for indoor gardening, especially when natural sunlight is limited.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
       "keyword_hits": [
-        "announced"
+        "review"
       ],
       "status": "candidate",
       "disposition": "collected",
@@ -459,9 +931,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "review"
       ],
-      "primary_type": "model",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -471,10 +943,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "cde1403d352852c1",
-      "title": "CMVR FORMS - Parivahan Sewa",
-      "url": "https://parivahan.gov.in/sites/default/files/DownloadForm/cmvr/FORM-27.pdf",
-      "summary": "I/We hereby declare that the registration is valid up to....................and it has not been suspended or cancelled under the provisions of the Act.",
+      "id": "217e9c0461a40518",
+      "title": "Yinyues的具体资料！求解，有一首很经典的曲子叫everything?",
+      "url": "https://www.zhihu.com/question/35429511",
+      "summary": "是个伦敦音乐人，在soundcloud上发混音获得一定知名度，但后来不懂为啥账号被注销，2015年，作者全部平台都停更了，有人说他放弃了音乐，糟糕的生活压倒了他",
       "discovery_channel": "developer",
       "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
@@ -502,12 +974,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "eb98d772621a68b1",
-      "title": "Damen Kleidung | ZARA Deutschland",
-      "url": "https://www.zara.com/de/de/damen-mkt1000.html",
-      "summary": "Entdecken Sie die neueste Damenmode-Kollektion von ZARA mit trendiger Kleidung, Abendmode, Schuhen, Taschen und Accessoires.",
+      "id": "59411e8449481d7f",
+      "title": "写小说用什么编辑器好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/26075756",
+      "summary": "其次呢，Hackpad 的嵌入功能十分强大，可以嵌入一条 tweet，一个 Google map 地点，一段 soundcloud 上的音频等等。 这些对于写小说可能没什么帮助。 Hackpad 极为强大，还有太多实用的功能我都没有讲到 详细可以看这里： How to use Hackpad",
       "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
+      "query": "ActiveLook API BLE",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 3,
@@ -533,18 +1005,47 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5299ebaaff780806",
-      "title": "HEYDUDE Shoes - Shoe Carnival",
-      "url": "https://www.shoecarnival.com/heydude",
-      "summary": "Discover comfort and style with Hey Dude shoes at Shoe Carnival. Shop a wide range of colors and styles for men, women, and kids. In-store or online with fast shipping.",
+      "id": "2a12e88cff6d7ae9",
+      "title": "有没有可以随意使用的无版权音乐资源库？ - 知乎",
+      "url": "https://www.zhihu.com/question/33199927",
+      "summary": "详细介绍可访问 Creative Commons 官网 了解。 推荐几个高质量的无版权音乐网站： SoundCloud：有些音乐人会将自己创作的音乐设置为 CC0 发布上来，允许听众随意下载、使用。 JEWELBEAT：音乐为 WAV 格式，均可免注册直接下载，但使用者须按网站要求标明音乐出处。",
+      "discovery_channel": "developer",
+      "query": "ActiveLook API BLE",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 3,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "tool",
+        "sdk"
+      ],
+      "primary_type": "tool",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1b7afc3bd71e1ea8",
+      "title": "10 Best Grow Lights for Indoor Plants That Actually Work",
+      "url": "https://plantingguys.com/gear-guides/best-pot-grow-light/",
+      "summary": "Proven grow lights that transform struggling houseplants into thriving green beauties—discover which models deliver real results for your indoor garden.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
       "evidence_class": "secondary",
@@ -553,9 +1054,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "model"
+        "news"
       ],
-      "primary_type": "model",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -565,47 +1066,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "95bdf486789e3056",
-      "title": "HEYDUDES | Sign in for Free Shipping - Famous Footwear",
-      "url": "https://www.famousfootwear.com/browse/brands/heydude",
-      "summary": "HEYDUDE sneakers and HEYDUDE boots are loved for their casual yet fresh style and lightweight design. They go with your favorite everyday outfits and are perfect for all-day wear. Women’s HEYDUDEs, like the HEYDUDE Wendy, feature fun colors and patterns that perfectly suit every taste.",
+      "id": "1b32e81c64d785bf",
+      "title": "10 Best Men's Quarter Zip Sweaters, Tested by Style Editors",
+      "url": "https://www.menshealth.com/style/g46371890/best-quarter-zip-sweaters/",
+      "summary": "With so many options to choose from, we tested out a few dozen designs from some of our favorite menswear brands to find the ten best men’s quarter zip sweaters to shop right now.",
       "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "shipping"
-      ],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model"
-      ],
-      "primary_type": "model",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "15e556a077156f4b",
-      "title": "Home [sarathi.parivahan.gov.in]",
-      "url": "https://sarathi.parivahan.gov.in/sarathiservice/applicationredirect.do",
-      "summary": "Driving license holders and registered vehicle owners are advised to ensure their mobile numbers are updated in the Vahan and Sarathi portals. This helps keep records accurate and up to date. You can now update your mobile number online without visiting the RTO. Scan or Click to Update Your Mobile Number:",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -615,10 +1084,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "review"
       ],
-      "primary_type": "tool",
+      "primary_type": "review",
       "routing_targets": [
         "reject_noise"
       ],
@@ -628,15 +1096,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "dfa42fc5cfe1b4d4",
-      "title": "NHAI Barrier-less Tolling - eNotice & Grievance Portal",
-      "url": "https://nhfeenotice.parivahan.gov.in/",
-      "summary": "Welcome to MLFF e-Notice Road User Portal! An e-Notice is an electronically generated notice to notify road users of unpaid toll plaza fee under MLFF tolling. This portal can be used to make payment and submit representation for e-Notices. To login, use your Vehicle Registration Number. OTP will be sent to the mobile number linked to your VRN in VAHAN database. To Update your mobile number ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "ab320547cbde870f",
+      "title": "11 Best Men's Quarter Zip-Up Sweaters, According to Esquire",
+      "url": "https://www.esquire.com/style/mens-fashion/g45559743/best-mens-quarter-zip-sweaters/",
+      "summary": "Cozy, classy, and cool, the quarter-zip sweater is a staple for your wardrobe. Inside, shop picks from Lululemon, Alo, Naadam, Orlebar Brown, and more.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -646,10 +1114,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "teardown"
       ],
-      "primary_type": "tool",
+      "primary_type": "teardown",
       "routing_targets": [
         "reject_noise"
       ],
@@ -659,123 +1126,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "78dbadbace78cecd",
-      "title": "Parivahan - VLT & EAS",
-      "url": "https://brvlts.parivahan.gov.in/",
-      "summary": "Vehicle Location Tracking & Emergency Alert System (AIS 140 Certified Solution) Improve safety of women and children. Real-time identification of vehicle and its location for immediate response. Setup monitoring centres for tracking as well health check of the VLT device and emergency buttons. Integrate the system with ERSS for quick response in case of emergency. Equip all the public service ...",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "d25e027102e35b96",
-      "title": "Parivartan - Empowering Cleaner Transport Across NCR Region",
-      "url": "http://parivartan.parivahan.gov.in/parivartan/",
-      "summary": "Parivartan Portal - Government of India initiative under Ministry of Road Transport and Highways (MoRTH) promoting clean commercial electric vehicles, vehicle scrappage policy benefits, and EV incentives across NCR.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk",
-        "policy"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "918d54baacb8ad04",
-      "title": "SELF DEC.FOR DL - SarathiOnWeb",
-      "url": "https://sarathi.parivahan.gov.in/sarathiservice/Self_declartion_form_For_Punjab.pdf",
-      "summary": "2. भेरु लड़ींस विमे ही छलाँ/वेम डिच ऐसींट ऱठी है (डुपलीवेट ऋषलखी लड़ी है) ।",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "06eca11d22e84c60",
-      "title": "The best VPN service online for free, open internet | NordVPN",
-      "url": "https://visit.nordvpn.com/",
-      "summary": "Fast, secure, and risk-free VPN for online privacy. Encrypt your traffic, change your IP, and browse freely without restrictions or intrusive ads.",
+      "id": "166f619554c244da",
+      "title": "40 Plus Gone Wild - Reddit",
+      "url": "https://www.reddit.com/r/40PlusGW/",
+      "summary": "r/40PlusGW: Welcome to 40+ Gone Wild. As long as you're over 40, that's all we care about. Milfs, Onlyfans content creators you are all welcome.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [
-        "privacy"
-      ],
+      "materiality_score": 2,
+      "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "policy"
+        "community"
       ],
-      "primary_type": "policy",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -785,15 +1156,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "129449d78d7cd6f3",
-      "title": "VAHAN SEWA| DASHBOARD",
-      "url": "https://vahan.parivahan.gov.in/vahan4dashboard/",
-      "summary": "Please click on refersh icon for reloading your filter changes",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "eedfd6588c715998",
+      "title": "6 Types of Plants That Need Grow Lights in the Winter",
+      "url": "https://www.bhg.com/plants-to-keep-under-grow-lights-in-winter-11870945",
+      "summary": "Indoor plants that prefer more intense bright light, or plants that you want to flower in winter, will often grow better with supplemental lighting. This includes common houseplants like philodendron, monstera, maranta, calathea, African violets, orchids, and some carnivorous plants.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -803,10 +1174,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -816,15 +1186,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "7754093b42346ef5",
-      "title": "Welcome Transport Department",
-      "url": "https://puc.parivahan.gov.in/puc/views/DownloadFeesReceipts.xhtml",
-      "summary": "ministry of road transport and highways Government of India",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "2eb782110e0d7ec6",
+      "title": "8 Best Quarter-Zip Pullovers For Men in 2026 - FashionBeans",
+      "url": "https://www.fashionbeans.com/article/best-quarter-zip-pullovers/",
+      "summary": "Layered and accessorized properly, the quarter-zip is a timeless piece that exudes effortless confidence. Compare the best quarter-zip pullover options.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -834,10 +1204,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
+        "news"
       ],
-      "primary_type": "tool",
+      "primary_type": "news",
       "routing_targets": [
         "reject_noise"
       ],
@@ -847,15 +1216,15 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "c31d092a6bafa8eb",
-      "title": "Welcome! | Parivahansewa",
-      "url": "https://parivahan.gov.in/parivahan/",
-      "summary": "Parivahan Front Page PopUp Update Your Mobile Number Driving license holders and registered Vehicle owners are urged to ensure that their mobile number is updated in the Vahan and Sarathi portal. This will help them in ensuring that the details are complete, accurate, and up to date.",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
+      "id": "c6d1421fe3700704",
+      "title": "Amazon.com: Performance Quarter Zip Men",
+      "url": "https://www.amazon.com/performance-quarter-zip-men/s?k=performance+quarter+zip+men",
+      "summary": "Contains at least 50% recycled material. Global Recycled Standard (GRS) certified products contain recycled content (>50%) that has been independently verified at each stage of the supply chain, from the source to the final product and meet social, environmental, and chemical requirements.",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
-      "materiality_score": 3,
+      "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
@@ -865,43 +1234,9 @@
       "attribution_required": false,
       "relationship": "irrelevant",
       "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a87496cdfa69fa1d",
-      "title": "Women's Special Prices | ZARA United Kingdom",
-      "url": "https://www.zara.com/uk/en/woman-special-prices-l1314.html",
-      "summary": "The Zara special prices edit is perfect for finding that one thing your wardrobe is missing, whether it be a little black dress, blazer, a pair of jeans, or staples like vests, T-shirts and lingerie. Available in store and online, shop clothes, accessories and footwear on sale.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "model",
-        "tool",
-        "sdk",
         "retail"
       ],
-      "primary_type": "model",
+      "primary_type": "retail",
       "routing_targets": [
         "reject_noise"
       ],
@@ -911,198 +1246,42 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "3c34661fd7ee55f4",
-      "title": "Women's Trousers | ZARA Australia",
-      "url": "https://www.zara.com/au/en/woman-trousers-l1335.html",
-      "summary": "Zara women’s trousers offer a strategic balance between sartorial structure and daily utility. From architectural tailored silhouettes intended for professional environments to relaxed, fluid shapes suited to everyday life, the right pair adapts to the shifting demands of a contemporary schedule. Zara women’s trousers are defined by high-quality fabrics and precision of cut.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "48d1bd45f305610f",
-      "title": "ZARA Brasil | -40% EM ARTIGOS SELECIONADOS",
-      "url": "https://www.zara.com/br/",
-      "summary": "-40% EM ARTIGOS SELECIONADOS | Descubra a nova coleção da ZARA online. As últimas tendências para Mulher, Homem, Criança e os editoriais da próxima estação.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6f36a9248e0941b1",
-      "title": "ZARA India | 40% OFF SELECTED ITEMS",
-      "url": "https://www.zara.com/in/",
-      "summary": "40% OFF SELECTED ITEMS | Discover the new ZARA collection online. The latest trends for Woman, Man, Kids and next season’s editorials.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a794de7cf2973f3f",
-      "title": "ZARA United Kingdom | 40% OFF SELECTED ITEMS",
-      "url": "https://www.zara.com/uk/",
-      "summary": "40% OFF SELECTED ITEMS | Discover the new ZARA collection online. The latest trends for Woman, Man, Kids and next season’s editorials.",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "6d0c9ac443d8fb46",
-      "title": "|| V A H A N | National Register e-Services - Parivahan Sewa",
-      "url": "https://vahan.parivahan.gov.in/nrservices/faces/user/citizen/searchstatus.xhtml",
-      "summary": "Powered by National Informatics Centre. All Rights Reserved. Copyright @2019",
-      "discovery_channel": "developer",
-      "query": "ActiveLook API BLE",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "77556861f8254671",
-      "title": "レディース | ZARA 日本",
-      "url": "https://www.zara.com/jp/ja/woman-mkt1000.html",
-      "summary": "ZARA最新のレディースファッション。今シーズントレンドのウールコート、パール付きセーター、刺繍入りジーンズ、クロスオーバーワンピース、ファイクファー付き帽子、スエードトートバッグなどをザラ公式通販サイトにてお買い求めいただけます。",
-      "discovery_channel": "developer",
-      "query": "Everysight Maverick SDK",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 3,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "sdk"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ffd7e2985791f48a",
-      "title": "4 Standout Tech Features Of The 2019 Volvo XC40 - Forbes",
-      "url": "https://www.forbes.com/sites/dougnewcomb/2018/02/28/4-standout-tech-features-of-the-2019-volvo-xc40/",
-      "summary": "The tech features in the all-new XC40 are familiar since some are used in other Volvo vehicles, while others are fresh, resulting in a mix of old and new and good and not so good.",
+      "id": "3f9ca0f9f4d0d6c9",
+      "title": "Amazon.com: Winter Light Warmers For Plants",
+      "url": "https://www.amazon.com/winter-light-warmers-plants/s?k=winter+light+warmers+for+plants",
+      "summary": "Full spectrum grow lights with adjustable brightness, timers, and flexible positioning for indoor plants during winter.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "retail"
+      ],
+      "primary_type": "retail",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "8e00755493ea1cb9",
+      "title": "Best Grow Lights for Indoor Plants in Winter: Brighten Your Indoor ...",
+      "url": "https://whistlestopgardens.com/best-light-for-plants-in-winter/",
+      "summary": "Winter sunlight is often limited, but indoor plants still need steady, full-spectrum light to thrive. This guide presents five top-rated grow lights that deliver balanced spectra, adjustable brightness, and reliable timers to support healthy growth during the colder months.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1127,70 +1306,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "06518ce94eda5225",
-      "title": "A Week With Volvo's Semi-Autonomous Pilot Assist II - Forbes",
-      "url": "https://www.forbes.com/sites/dougnewcomb/2017/02/27/a-week-with-volvos-semi-autonomous-pilot-assist-ii/",
-      "summary": "My time with Volvo’s Pilot Assist II made me think that the technology still has a way to go before drivers can completely kick back and let the car drive – and totally trust the technology.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0284c85ebf6d5b8a",
-      "title": "All Shoes | HEYDUDE Shoes",
-      "url": "https://www.heydude.com/c/footwear",
-      "summary": "Find your next favorite pair of HEYDUDE shoes with lightweight, easygoing styles made for wherever the day takes you. From iconic casual shoes and easy-on slip-ons to boots, clogs, slippers and golf-ready styles, shop footwear for men and women designed to bring comfort to the everyday.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "4b43af2bb1b0d7d3",
-      "title": "Best camera for photography: top picks for any budget | TechRadar",
-      "url": "https://www.techradar.com/cameras/best-camera",
-      "summary": "Our guide to the best camera for photography ranks the finest choices from Canon, Sony, Nikon and more.",
+      "id": "11dd3008b430a08b",
+      "title": "Cameras - Kenmore Camera",
+      "url": "https://kenmorecamera.com/cameras/",
+      "summary": "The EOS C80 camera is designed for limitless creative vision. The compact, full-featured camera body includes Canon's 6K full frame Back-Illuminated Stacked CMOS sensor, Cinema RAW Light and... MSRP:$5,849.00 Was:$5,849.00 Now: $5,599.00",
       "discovery_channel": "broad_web",
       "query": "camera smart glasses",
       "source": "Bing web RSS",
@@ -1217,100 +1336,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "52281c925af700e3",
-      "title": "Car Tech Startup Investment Exceeds $1 Billion In 2016 - Forbes",
-      "url": "https://www.forbes.com/sites/dougnewcomb/2017/01/27/car-tech-startup-investment-exceeds-1-billion-in-2016/",
-      "summary": "Other OEMs making large bets on mobility include Toyota with Uber, Volkswagen with Gett, BMW iVentures with Zendrive and Daimler with Blacklane and a variety of other investments.",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "0ddf7a9e2e59ebb8",
-      "title": "Comfortable & Durable Shoes for Men, Women, and Kids | HeyDude",
-      "url": "https://www.heydude.com/",
-      "summary": "Black Friday Deals: 25% Off! Extra 40% Off Sale Styles! Doorbusters! 20% off your next order. Be the first to know about exclusive offers & product drops.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "227c0a0156b9612f",
-      "title": "Comfortable & Durable Shoes for Men, Women, and Kids | HeyDude",
-      "url": "https://www.heydude.ca/",
-      "summary": "Be the first to know about exclusive offers & product drops.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "b832b7862d77de2e",
-      "title": "Comment installer l'application NordVPN sur les distributions Linux",
-      "url": "https://support.nordvpn.com/hc/fr/articles/20196094470929-Comment-installer-l-application-NordVPN-sur-les-distributions-Linux",
-      "summary": "Veuillez noter que dans la version 3.18.4 de l’application NordVPN pour Linux, le trafic du réseau local acheminé par un ordinateur connecté au VPN est bloqué par défaut. Pour débloquer le trafic du réseau local, activez la détection sur LAN ou ajoutez à la liste d’autorisation tout sous-réseau ou trafic IP à transférer. Se ...",
+      "id": "04ac38dd0dd660ae",
+      "title": "Club_MILF - Reddit",
+      "url": "https://www.reddit.com/r/Club_MILF/",
+      "summary": "The hottest and classiest MILFs on reddit! For creators, by creators and with no pervy or abusive mods! Be sure to join our telegram channel! (Ladies DM modmail to post there)",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1319,15 +1348,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1337,10 +1366,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "9e60023c4694984b",
-      "title": "Connecting to NordVPN (IKEv2/IPSec) on Android",
-      "url": "https://support.nordvpn.com/hc/en-us/articles/20350995979793-Connecting-to-NordVPN-IKEv2-IPSec-on-Android",
-      "summary": "IntroductionThis article tells you how to manually set up an IKEv2/IPsec connection to use NordVPN on your Android device.Before you...",
+      "id": "5b785254b518bd2e",
+      "title": "Emma (u/emmapiperxxx) - Reddit",
+      "url": "https://www.reddit.com/user/emmapiperxxx/",
+      "summary": "Here you can find all different types of pussy, milf pussy, married pussy, pussies from sexy college girls or even just your average amateur girl trying to show Reddit that beautiful pussy of hers.",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1349,15 +1378,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "news"
+        "community"
       ],
-      "primary_type": "news",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1367,10 +1396,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "e032282bf099638e",
-      "title": "Das beste Linux-VPN für 2026 in nur wenigen Minuten | NordVPN",
-      "url": "https://nordvpn.com/de/download/linux/",
-      "summary": "Freies und offenes Internet dank einer VPN-App mit GUI für Linux. Schnelle Einrichtung und Schutz für deine Verbindung und Online-Aktivitäten.",
+      "id": "2f8be93e4b74a342",
+      "title": "HornyMILFNextDoor - Reddit",
+      "url": "https://www.reddit.com/r/HornyMILFNextDoor/",
+      "summary": "r/HornyMILFNextDoor: OC Only Reddit's best place to see horny and beautiful milfs",
       "discovery_channel": "broad_web",
       "query": "ActiveLook smart glasses",
       "source": "Bing web RSS",
@@ -1379,15 +1408,15 @@
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1397,27 +1426,27 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "b377a3bb89488648",
-      "title": "Download the best VPN for Mac | NordVPN",
-      "url": "https://nordvpn.com/download/mac/",
-      "summary": "Download a VPN app for a Mac. Secure your connection with the fastest VPN for macOS and browse with more confidence. Try risk free now.",
+      "id": "3b341a8f070a0e35",
+      "title": "How is dating on xHamster? : r/DatingHell - Reddit",
+      "url": "https://www.reddit.com/r/DatingHell/comments/1cg6rsq/how_is_dating_on_xhamster/",
+      "summary": "I made a xHamster and legit girls are messaging me. It is odd and I still think they are just dedicated scammers of Nigerian or Indian origin or weird men of Nigerian/African origin that really get off on pretending to be women on American dating websites and trolling.",
       "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
+      "query": "smartglasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
       "keyword_hits": [],
       "status": "candidate",
       "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
       "gr_conclusion_authorized": false,
-      "attribution_required": false,
+      "attribution_required": true,
       "relationship": "irrelevant",
       "content_types": [
-        "tool"
+        "community"
       ],
-      "primary_type": "tool",
+      "primary_type": "community",
       "routing_targets": [
         "reject_noise"
       ],
@@ -1427,431 +1456,10 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "fb1a652e7cbb809d",
-      "title": "Guided Meditation | Mindfulness | Breathwork | Open ...",
-      "url": "https://o-p-e-n.com/",
-      "summary": "Open is a mindfulness studio for everyone. A place to come to your senses — meditation, music, breathwork and movement awaken your body and mind.",
-      "discovery_channel": "broad_web",
-      "query": "open source smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "096ac744e9f555eb",
-      "title": "HEY DUDE SHOES - amazon.com",
-      "url": "https://www.amazon.com/stores/HEYDUDESHOES/page/5FD6619D-918F-4405-B793-E326D8C34C69",
-      "summary": "Amazon Basics Everyday Household, Health & Baby Care HEY DUDE SHOES Follow Home Featured Offers",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "20251a980fc1d8a5",
-      "title": "Hey Dude Shoes | Black Friday at DICK'S",
-      "url": "https://www.dickssportinggoods.com/f/hey-dude-shoes",
-      "summary": "Find your new favorite casual footwear with Hey Dude Shoes at DICK'S Sporting Goods. With comfort, lasting support and laid-back styles, Hey Dudes are the perfect shoes for everyday adventures.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "267b9fe1f3120f1e",
-      "title": "HEYDUDE Footwear for Men, Women, & Kids | Bass Pro Shops",
-      "url": "https://www.basspro.com/l/hey-dude-shop-all",
-      "summary": "Fishing Line, Hooks, & Weights. Jig Heads. Fishing Line. Fish Hooks. Weights & Sinkers. View All. Fishing Accessories. Fillet Knives & Tables. Rod & Reel Accessories. Bait Buckets & Management.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "a75067d8866f51bd",
-      "title": "HEYDUDE Shoes | DSW",
-      "url": "https://www.dsw.com/brands/heydude",
-      "summary": "This is HEYDUDE country. The OG easy-on, casual comfort shoe for men. The original, versatile silhouette for women that started it all. Built for the coast, ready for the water. All-day comfort sandals are here. Black Friday! Extra 30% off. Black Friday! Extra 30% off. Black Friday! Extra 30% off. Black Friday! Extra 30% off. Black Friday!",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "9191ad2d3409f2de",
-      "title": "How to connect to NordVPN with a manual IKEv2/IPSec connection on an ...",
-      "url": "https://support.nordvpn.com/hc/en-us/articles/20371657885329-How-to-connect-to-NordVPN-with-a-manual-IKEv2-IPSec-connection-on-an-iOS-device",
-      "summary": "IntroductionThis article shows you how to manually set up an IKEv2/IPsec connection to use NordVPN on your iOS device.Before you start...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "ff2df91b0ae134a6",
-      "title": "How to connect to NordVPN with IKEv2/IPSec on Linux",
-      "url": "https://support.nordvpn.com/hc/en-us/articles/20371023942289-How-to-connect-to-NordVPN-with-IKEv2-IPSec-on-Linux",
-      "summary": "This guide will show you how to use StrongSwan to set up a manual IKEv2/IPSec connection to NordVPN on Linux (Debian-based, but works similarly on other distributions).Before you start Ensure you c...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "57f24a616d296453",
-      "title": "How to Get Help in Windows 11 (10 Easy Ways) - YouTube",
-      "url": "https://www.youtube.com/watch?v=jnDbVIJRm1E",
-      "summary": "Having trouble with your PC? Whether you're running into glitches, crashes, or just confused by Windows, this guide will walk you through 10 simple ways to get help in Windows 10 and...",
-      "discovery_channel": "broad_web+retail",
-      "query": "Xiaodu AI glasses; titanium AI glasses ChatGPT site:walmart.com",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "video"
-      ],
-      "primary_type": "video",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "399b11a38af3ea2c",
-      "title": "How to Get Help in Windows 11: 15 Easy Ways to Fix Problems",
-      "url": "https://techbaked.com/how-get-help-windows-11/",
-      "summary": "Need help with Windows 11? Discover easy ways to troubleshoot problems, use the Get Help app, contact Microsoft Support, and repair Windows.",
-      "discovery_channel": "broad_web",
-      "query": "Xiaodu AI glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool",
-        "teardown"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "bb224d9bbae9e7ac",
-      "title": "How to set up a manual connection on Linux using OpenVPN?",
-      "url": "https://support.nordvpn.com/hc/en-us/articles/20164827795345-How-to-set-up-a-manual-connection-on-Linux-using-OpenVPN",
-      "summary": "Note: We have a separate set of instructions on how to set up the NordVPN application for Linux, and you can download NordVPN for Linux here.Please note that since Linux has a lot of different dist...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "news"
-      ],
-      "primary_type": "news",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "23ec4b30807658a2",
-      "title": "I can't install or update the NordVPN app on Linux – Live Chat, VPN ...",
-      "url": "https://support.nordvpn.com/hc/en-us/articles/38295918469393-I-can-t-install-or-update-the-NordVPN-app-on-Linux",
-      "summary": "Problem The NordVPN Linux app fails to install properly, making it unusable. Common symptoms The installer launches and appears to be installing, but it never finishes. The update process gets stu...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "88cd050296bfac7e",
-      "title": "Nissan To Provide Data For Mobileye's Real-Time ... - Forbes",
-      "url": "https://www.forbes.com/sites/dougnewcomb/2017/04/26/nissan-to-provide-data-for-mobileyes-real-time-mapping-platform/",
-      "summary": "The Japanese automaker joins BMW and Volkswagen in allowing the REM platform to capture anonymized data via company’s in-car cameras and sensors to create what Mobileye calls a RoadBook mapping...",
-      "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "tool"
-      ],
-      "primary_type": "tool",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "8cd3a1d6a6e61865",
-      "title": "NordVPN",
-      "url": "https://downloads.nordvpn.com/certificates/root.pem",
-      "summary": "-----BEGIN CERTIFICATE----- MIIFCjCCAvKgAwIBAgIBATANBgkqhkiG9w0BAQ0FADA5MQswCQYDVQQGEwJQQTEQ MA4GA1UEChMHTm9yZFZQTjEYMBYGA1UEAxMPTm9yZFZQTiBSb290IENBMB4XDTE2 ...",
-      "discovery_channel": "broad_web",
-      "query": "ActiveLook smart glasses",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "hack"
-      ],
-      "primary_type": "hack",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "84bd75187241b663",
-      "title": "Official Website of HEYDUDE shoes | Lightweight & Comfortable Shoes",
-      "url": "https://www.usheydude.com/",
-      "summary": "$ 89.99 Original price was: $89.99.$ 53.99 Current price is: $53.99. $ 94.99 Original price was: $94.99.$ 56.99 Current price is: $56.99. $ 69.99 Original price was: $69.99.$ 41.99 Current price is: $41.99. $ 79.99 Original price was: $79.99.$ 47.99 Current price is: $47.99. $ 74.99 Original price was: $74.99.$ 44.99 Current price is: $44.99.",
-      "discovery_channel": "broad_web",
-      "query": "ThinkAR AiLENS",
-      "source": "Bing web RSS",
-      "source_lane": "research_radar",
-      "materiality_score": 2,
-      "keyword_hits": [],
-      "status": "candidate",
-      "disposition": "collected",
-      "evidence_class": "secondary",
-      "delegated_action": "queue_for_review",
-      "gr_conclusion_authorized": false,
-      "attribution_required": false,
-      "relationship": "irrelevant",
-      "content_types": [
-        "retail"
-      ],
-      "primary_type": "retail",
-      "routing_targets": [
-        "reject_noise"
-      ],
-      "triage_priority": "low",
-      "publication_eligible": false,
-      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
-      "site_action": "none_pending_editorial_review"
-    },
-    {
-      "id": "68225227c147555b",
-      "title": "Use Quick Assist for Help on Windows 11 | Microsoft Windows",
-      "url": "https://www.microsoft.com/en-us/windows/learning-center/how-to-use-quick-assist-to-get-help-on-windows-11",
-      "summary": "Learn how to use Quick Assist to get safe, remote help on Windows 11 from someone you trust. Discover clear steps to connect and solve PC issues fast.",
+      "id": "a61f7f78ecf5aca8",
+      "title": "Men's Performance Quarter Zip Sweater | HAUS - gohaus.com",
+      "url": "https://gohaus.com/products/mens-performance-quarter-zip",
+      "summary": "Made from a stretch blend of 79% Polyester, 15% Lyocell, and 6% Spandex, this quarter zip is breathable, durable, and soft with a natural hand-feel. The athletic fit is tapered across the chest and shoulders, looser at the waist for a flattering shape.",
       "discovery_channel": "broad_web",
       "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
@@ -1878,12 +1486,12 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "57f5f6e5b96f45b3",
-      "title": "Verizon Acquisition of Telogis Expands Company's ... - Forbes",
-      "url": "https://www.forbes.com/sites/dougnewcomb/2016/06/30/verizon-acquisition-of-telogis-expands-companys-connected-car-footprint/",
-      "summary": "Meanwhile, Verizon Telematics has enlisted only a handful of automakers, including Mercedes-Benz and Volkswagen, and its technology is used in aftermarket applications by State Farm and others.",
+      "id": "ab1562b81cf087d1",
+      "title": "Men's Quarter Zip Performance Shirt | Black Friday Picks | DICK'S ...",
+      "url": "https://www.dickssportinggoods.com/a/mens-quarter-zip-performance-shirt-0ayz00a.html",
+      "summary": "Discover our collection of men's performance quarter-zip shirts, designed for versatility and comfort. Perfect for layering or wearing solo, these shirts feature moisture-wicking fabrics that keep you cool and dry during any activity.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
@@ -1908,12 +1516,432 @@
       "site_action": "none_pending_editorial_review"
     },
     {
-      "id": "5299f75c01f68d99",
-      "title": "With $2.4B Fleetmatics Acquisition, Verizon Focuses On ...",
-      "url": "https://www.forbes.com/sites/dougnewcomb/2016/08/02/with-2-4b-fleetmatics-acquisition-verizon-focuses-on-connected-commercial-vehicles-and-software/",
-      "summary": "While Verizon’s Telematics business unit currently has deals with Mercedes-Benz and Volkswagen and has been pushing its aftermarket Hum connected car product, its focus of late has shifted to ...",
+      "id": "2cc9fb82aa91fd41",
+      "title": "Men's Quarter Zips - Performance & Classic Styles | Southern Tide",
+      "url": "https://southerntide.com/collections/mens-quarter-zips",
+      "summary": "Shop men’s quarter zips and 1/4 zip pullovers in classic and performance styles. Lightweight quarter zip sweaters built for work, travel, and everyday wear.",
       "discovery_channel": "broad_web",
-      "query": "Volkswagen Smart Glasses",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "ca32c2f0d8f7ed34",
+      "title": "Men's Quarter Zips | Rhoback",
+      "url": "https://rhoback.com/collections/mens-tops-q-zips",
+      "summary": "Shop Rhoback's collection of men's q-zips. Designed for those who crave activity, our quarter zips are perfect for work, the course and everything in be...",
+      "discovery_channel": "broad_web",
+      "query": "Xiaodu AI glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b6307320b9adea25",
+      "title": "MILFs - Reddit",
+      "url": "https://www.reddit.com/r/MILFs/top/",
+      "summary": "A Place to Enjoy the Beauty of an Amateur (real) MILF - Mainly in the Buff.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b48991c37377ca23",
+      "title": "Mom Next-door (u/Irish_Starz_29) - Reddit",
+      "url": "https://www.reddit.com/user/Irish_Starz_29/",
+      "summary": "Milfs, Hot Milfs, Naughty Milfs, Mature Milfs, you can find all types of Milfs here. They say that moms and milfs can be the wildest type of women out there so let's show Reddit how wild you as a MILF can get. Milf is an acronym that stands for \"Mother I'd Like to Fuck\". This abbreviation is used in colloquial English, instead of the whole phrase. It connotes a sexually attractive MATURE woman ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b186cfd0f9580ae9",
+      "title": "MomsMilfsMaturesGilfs - Reddit",
+      "url": "https://www.reddit.com/r/MomsMilfsMaturesGilfs/",
+      "summary": "Are you a Mom, a Milf, a Mature or a Gilf? 30+, 40+, 50+, 60+ or 70+ you are all welcome this is a moderated safe space to share all of you. Welcome say hi and feel free to Share yourself with the community! We all love Moms, Milfs, Matures and Gilfs so you are sure to get plenty of love. This is an NSFW community however if you are feeling yourself in a selfie before a date, A mirror pic ...",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "aaaa6a1c0bce7f3d",
+      "title": "New - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/New",
+      "summary": "This disambiguation page lists articles associated with the title New. If an internal link incorrectly led you here, you may wish to change the link to point directly to the intended article.",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "1eee3e96c6e10ae1",
+      "title": "NEW（英文单词）_百度百科",
+      "url": "https://baike.baidu.com/item/NEW/13034047",
+      "summary": "NEW是英语中具有形容词、名词、副词词性的多义词。 形容词含义包括“新的”“新鲜的”“更新的”，名词可指代英语国家姓氏，副词表示“新近”的时间概念。 其发音在英式与美式英语中存在差异，并广泛应用于短语搭配与复合词构成。",
+      "discovery_channel": "broad_web",
+      "query": "new smart glasses 2026",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3cbee569c8ae5c91",
+      "title": "PeeKink - Reddit",
+      "url": "https://www.reddit.com/r/PeeKink/",
+      "summary": "r/PeeKink: A place for all pee lovers to connect and post their content! Anyone simply curious is more than welcome! Keep it civil and respect…",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b613d04cc3d37333",
+      "title": "slut_MILFs - Reddit",
+      "url": "https://www.reddit.com/r/slut_MILFs/",
+      "summary": "r/slut_MILFs: Slutty MILFs that love to show off their naked bodies! Join us if you love slutty MILFs or if you are one.",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "b8c390376405fc43",
+      "title": "The Best LED Grow Lights for Houseplants This Winter (2026) | WIRED",
+      "url": "https://www.wired.com/story/best-led-grow-lights/",
+      "summary": "A good LED grow light can replicate sunlight with full-spectrum light and day/night cycles, keeping plants lush and thriving even in a dark, windowless corner or basement.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "3e1e31cdea471bb0",
+      "title": "The MILF Reddit",
+      "url": "https://www.reddit.com/r/milf/top/?t=all",
+      "summary": "The MILF Reddit This sub is for r/milf. Images with subjects who appear to not be mothers will be removed. Post only a single direct image. Albums may be posted as a comment on your submission, provided that they do not contain any personal information or links. Approved hosts: redgifs.com catbox.moe lensdump.com",
+      "discovery_channel": "broad_web",
+      "query": "ActiveLook smart glasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "7d26764e3ec25efc",
+      "title": "Top 4 Best Indoor Grow Lights for Houseplants in 2026",
+      "url": "https://plantnative.org/best-indoor-grow-lights-for-houseplants.htm",
+      "summary": "Below are our top nine picks for 2026, covering every budget and use case. We have organized our picks to cover a range of needs, from standalone grow lights ideal for supplementing window light to all-in-one plant stand systems that combine storage and illumination.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "c5cfcba3ac66d034",
+      "title": "Use Grow Lights on These 10 Houseplants for Healthy, Bushy Growth",
+      "url": "https://www.epicgardening.com/grow-lights-houseplants/",
+      "summary": "Discover how to use grow lights on these houseplants for healthy, bushy growth during low-light winter months.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "secondary",
+      "delegated_action": "queue_for_review",
+      "gr_conclusion_authorized": false,
+      "attribution_required": false,
+      "relationship": "irrelevant",
+      "content_types": [
+        "news"
+      ],
+      "primary_type": "news",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "cfcdbcaf8b15afcf",
+      "title": "What internet porn is safe? : r/relationship_advice - Reddit",
+      "url": "https://www.reddit.com/r/relationship_advice/comments/a1z805/what_internet_porn_is_safe/",
+      "summary": "Sites like pornhub, redtube, youporn, spankwire, xvids, xhamster will all be just fine, they just all also have popup ads. Get an adblocker extension on your browser and that should take care of em.",
+      "discovery_channel": "broad_web",
+      "query": "smartglasses",
+      "source": "Bing web RSS",
+      "source_lane": "research_radar",
+      "materiality_score": 2,
+      "keyword_hits": [],
+      "status": "candidate",
+      "disposition": "collected",
+      "evidence_class": "community",
+      "delegated_action": "record_community_signal",
+      "gr_conclusion_authorized": false,
+      "attribution_required": true,
+      "relationship": "irrelevant",
+      "content_types": [
+        "community"
+      ],
+      "primary_type": "community",
+      "routing_targets": [
+        "reject_noise"
+      ],
+      "triage_priority": "low",
+      "publication_eligible": false,
+      "publication_gate_reason": "no concrete smart-glasses, enabling-technology, or adjacent-HCI relationship detected",
+      "site_action": "none_pending_editorial_review"
+    },
+    {
+      "id": "5fbb82fa011b73df",
+      "title": "Winter Plant Lighting: Best Full-Spectrum Led Options For Indoor Growth",
+      "url": "https://shuncy.com/article/what-lights-should-i-use-for-winter-for-my-plants",
+      "summary": "The article will explain how to select the right spectrum and color temperature, set appropriate light duration and intensity for various plant types, compare energy use and heat output, and address common issues such as over‑ or under‑lighting to keep plants healthy through winter.",
+      "discovery_channel": "broad_web",
+      "query": "Everysight Maverick AI Kickstarter",
       "source": "Bing web RSS",
       "source_lane": "research_radar",
       "materiality_score": 2,
