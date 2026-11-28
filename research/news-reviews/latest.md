@@ -1,21 +1,21 @@
 # Automated editorial triage — latest
 
-Generated: `2026-11-28T12:28:17.713428+00:00`
+Generated: `2026-11-28T13:43:42.104329+00:00`
 
-- Intake files inspected: **165**
-- Candidates retained in this review window/history: **6835**
+- Intake files inspected: **164**
+- Candidates retained in this review window/history: **6779**
 - **Bounded evidence authority:** explicit regulatory, primary-artifact, manufacturer-primary, and community evidence may be recorded in its attributed lane. GlassesResearch conclusions remain gated.
 
 ## Queue state
 
-- `adjacent_radar`: 1288
+- `adjacent_radar`: 1278
 - `catalog_review`: 12
 - `editorial_published`: 3
 - `editorial_watch`: 1
-- `needs_editorial_verification`: 468
-- `rejected_noise`: 4992
-- `source_review`: 40
-- `watching`: 31
+- `needs_editorial_verification`: 466
+- `rejected_noise`: 4947
+- `source_review`: 42
+- `watching`: 30
 
 ## Action queue
 
@@ -177,7 +177,6 @@ Generated: `2026-11-28T12:28:17.713428+00:00`
 | high | needs_editorial_verification | direct | [Engadget 12d ago Some places have already banned AI glasses, and the list just keeps growing](https://www.engadget.com/2313707/ai-glasses-banned-places-list-keeps-growing/) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Extensive new report claims Apple’s smart glasses will launch in June - Macworld](https://news.google.com/rss/articles/CBMitAFBVV95cUxOVWNOUzdGZXJlTC1GSFJhOGxEY3RQMTl4U2Utb1QtSmZrU1VuaUZSbGhFMDNkYjJ3Y1Nwa0ZuOUtyNkt0LVpwRWlqWDZYRGhzaUpYODByQmFwVHg3VHVQMXJwN0g0WFExVHZwYUJVTnp0MmJnRDA1RjV2d2x1UXNDUWNJNXg1aTZZbUd3WEstNjhXU1dGSFF1ZXVmZ09xRDJpMWh1aF9JQkZhTnh0T1FCSjZnczI?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [Gentle Monster smart glasses open for preorder from $449, CNET reports - Digg](https://news.google.com/rss/articles/CBMiREFVX3lxTFBHN05GeHFVQTBVaWM1b3lQUl82WktudkZ2eTUyelhNOVlEaGNoV2ZjMnJjdjRBUTZzekRVQ1cwM2hQUEpP?oc=5) | reachable (200) | research_news_review, model_catalog_review |
-| high | needs_editorial_verification | direct | [Gizmodo 22d ago Smart Glasses Could See Major Bans in the UK](https://gizmodo.com/smart-glasses-ban-uk-2000835682) | reachable (200) | research_news_review, policy_privacy |
 | high | needs_editorial_verification | direct | [Google's Gemini-powered smart glasses, 'Intelligent Eyewear,' are now available for pre-order, offering real-time translation in over 70 lan](https://news.google.com/rss/articles/CBMieEFVX3lxTE16VW8wVElzRWFqbEhyTGJ4dEpZMmF5RDJyZExVb284X2VNaHFZUmVHeEVFcXE4ak54bk5qZ09ZbmNRNHhEQklsSEtad0hHa1Y1aGFPbXlhbmkzbERGN2xlQ3lLZmhDMjZjSWhUc25YdV9xZjU3d2wzaQ?oc=5) | reachable (200) | research_news_review, model_catalog_review |
 | high | needs_editorial_verification | direct | [INMO Future Smart Glasses Launch with 120Hz Micro OLED Optics - Technetbook](https://news.google.com/rss/articles/CBMihgFBVV95cUxNY2wxR2YtZGNiaHFwR0h5OVA0cDQzTkVCWlZ1eTdSUzNTN09PcW9xUjd0S1NWeGlwblFZR0UwRGhWdldxa3loeHJpQ2tOTHV0T0o3QVZqeXFCMHdKdmhfT0JZc3RLcVRPQ2NjalF2dTdnaHdDdWJsU09LTzlqSXlfQ0VZb0pDZw?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
 | high | needs_editorial_verification | direct | [IXI Smart Glasses with Autofocus Lenses: Check Features, Launch and More - Analytics Insight](https://news.google.com/rss/articles/CBMiugFBVV95cUxNdFRuMkFVUS1wSDh6RDVMX1lMYS1RRHNray01Y3ZWUGpwc2NZUUhmWmpEVzFGeFBWY3dSa0luaGVCUUtkOGhPeXRQWGpnRnM2MEl2WU9pSEt2VW5hRXZEcS10Qng4YlpOSFN1blJjYTRhU2ZMX294b21Hc2xTbFJtdXF2VDNZZnVHTDZpdjhXTlJHVWZrdVRTdDl6NHZmdEo5ZkpCR0Rfbm4wWEtKUWJSRG96RXBFVVdGS2fSAboBQVVfeXFMTXRUbjJBVVEtcEg4ekQ1TF9ZTGEtUURza2stNWN2VlBqcHNjWVFIZlpqRFcxRnhQVmN3UmtJbmhlQlFLZDhoT3l0UFhqZ0ZzNjBJdllPaUhLdlVuYUV2RHEtdEJ4OGJaTkhTdW5SY2E0YVNmTF9veG9tR3NsU2xSbXVxdlQzWWZ1R0w2aXY4V05SR1Vma3VUU3Q5ejR2ZnRKOWZKQkdEX25uMFhLSlFiUkRvekVwRVVXRktn?oc=5) | reachable (200) | research_news_review, model_catalog_review, research_optics |
@@ -213,6 +212,7 @@ Generated: `2026-11-28T12:28:17.713428+00:00`
 | normal | needs_editorial_verification | direct | [Samsung AI Glasses Pose Security Risk to Semiconductor Facilities - 조선일보](https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTFlOQktiQ2tQOWZOaTJBNUtCTkZfUFpQTWJ1QkV3RlVzM0FSbXpmTENETzFaelZZb2VQOEg0TFYwZFBqZnhWMjJRbVFWN1NvbFg2YWdIRWZUV3VRR3NlN04wMlFzbW5SVU9rWHhiV3R5bGJyMl9rNUxyckFZNDhST2laT0p6NlBB?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [SidekickOS - Open Source Smart Glasses - GitHub](https://github.com/siersidekick/SidekickOS) | reachable (200) | research_news_review, development_hacking |
 | normal | needs_editorial_verification | direct | [South Korea's SK Hynix Bans AI Glasses From Its Sites; Security Alert Spreads to Defense, Shipbuilding - BigGo Finance](https://news.google.com/rss/articles/CBMidkFVX3lxTFBpa2tlMjNYVTNXMWw4SHhkbERMcFNtZlhVWlBlVll3RUlXTF8ydnEtVE4xM3FKQzFqTHJVTk1KbDRLQlFkRzJMMWVhX3AyTDlhNnBFRjJwMGZuRlVKZWh5WGlwaW9GYVpkQ3F6VXpTdm4wZFRxWFE?oc=5) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Study Smart: Best Prescription Smart Glasses for Back to School \| The ...](https://cybernews.com/vr-ar/best-prescription-smart-glasses/) | reachable (200) | research_news_review, research_optics, deep_research |
 | normal | needs_editorial_verification | direct | [THINKAR AiLENS V2 AI Text Recognition AR Smart Glasses ... - Amazon](https://www.amazon.com/Recognition-Teleprompter-interpretation-multilingual-notifications/dp/B0HHHVDTRP) | reachable (200) | research_news_review, research_optics, retail_rebrand_review |
 | normal | needs_editorial_verification | direct | [XREAL xbx a01+ Review: Are AR Glasses Good for Drones - Geeky Gadgets](https://www.geeky-gadgets.com/ar-glasses-for-drones/) | reachable (200) | research_news_review, report_card_evidence, research_optics |
 | normal | needs_editorial_verification | direct | [“Could They Be After Industrial Secrets?” ... Samsung, SK, Hyundai Motor and LG Wary of ‘AI Glasses’ at Industrial Sites [‘AI Security’ Aler](https://news.google.com/rss/articles/CBMiWEFVX3lxTE1NSHA0Z1pwRkk5TWJFck10LV9SNktFVWtERVFscGx3djVlc0Z4enpBNDB0TVY0bzFvSjA4OExIVldFZko4RXpEaEtrdDlOM3B6MmhBaVlVWHc?oc=5) | reachable (200) | research_news_review |
@@ -235,9 +235,8 @@ Generated: `2026-11-28T12:28:17.713428+00:00`
 | normal | needs_editorial_verification | direct | [AI眼镜能翻译、AI手表测心率，华强北“AI八骏”装进年货大礼包，海外客商也来打卡 - Sohu](https://news.google.com/rss/articles/CBMijAFBVV95cUxPVWZHbjBqMEJoSGdkaXh2VDc2QWM2QURSejZmQ2t6THNoaGpvVWhYbUFjellWTkV2TUxrRU9wOWFLaHZyLVJqaXRTUThTUWdtNmpsX05lTWwtTFpjbUJ2eklxOVF1UEwtY1d1SGF4ZFk1S1VlcnpRa0RQMko4RkM1RGxUSnZUVmZqaUxTNw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Alleged smart glasses robber takes photo of himself; poppy donation box thief wanted - Toronto Sun](https://news.google.com/rss/articles/CBMiuwFBVV95cUxNV2VpOEZKcGpLNVhoQzlrQnFjTV9keWJDSEpZN3cwRUcwdm94NDd5dkJmN0JYN0FQc3Z6WXVsSnpXaFRGbTFUM2t1NkM5NV9GQVZZLTdGa3F4VzN2c2dTdWotT3RjRG5KVE9UMS12amVWRy1XYzVPcGNDQ2dYV0x5dTdpMTBsR1dDYmtoWlFTVXdSdUE0Szh0MGpOZVR0aFRiNUJ2MkV4dFRLM2J3aUZmazV2djBZWFhWS1pR?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Altair Raises $100 Million to Keep AI Glasses and Wearables Connected All Day - Ventureburn](https://news.google.com/rss/articles/CBMieEFVX3lxTE1wNDlYZ2NVdnJkWjhicDhORUJGNUJNUnhFeHdXUHVWWWpRczlKMnZWbElhMzF2RUZkWEpJVHU3aVhDRWVEa3ROdWpjNXNWYTFTWlJveFVVMjFKSlBibWdtS2U4TFFWMjR1bkJpU2FLeERzUjJJZlN2R9IBeEFVX3lxTE1wNDlYZ2NVdnJkWjhicDhORUJGNUJNUnhFeHdXUHVWWWpRczlKMnZWbElhMzF2RUZkWEpJVHU3aVhDRWVEa3ROdWpjNXNWYTFTWlJveFVVMjFKSlBibWdtS2U4TFFWMjR1bkJpU2FLeERzUjJJZlN2Rw?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Ar Glasses](https://www.amazon.com/ar-glasses/s?k=ar+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Augmented Reality Glasses](https://www.amazon.com/augmented-reality-glasses/s?k=augmented+reality+glasses) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Amazon.com: Smart Glasses](https://www.amazon.com/Smart-Glasses/s?k=Smart+Glasses) | reachable (200) | research_news_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Video Display Glasses - Video Display Glasses / Televisions ...](https://www.amazon.com/video-glasses/b?node=3213034011) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence, retail_rebrand_review |
+| normal | needs_editorial_verification | direct | [Amazon.com: Wearable Tech Glasses - Wearable Tech Glasses / Wearable ...](https://www.amazon.com/Smart-Glasses/b?node=10048708011) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR glasses are bulky and an eyesore. New material could slim them dramatically and save you from looking dorky](http://www.bing.com/news/apiclick.aspx?ref=FexRss&aid=&tid=6b0a9ee3a51a4c35a12391d231a754e7&url=https%3a%2f%2fwww.msn.com%2fen-us%2ftechnology%2fhardware-and-devices%2far-glasses-are-bulky-and-an-eyesore-new-material-could-slim-them-dramatically-and-save-you-from-looking-dorky%2far-AA2io45d&c=15645873254979376690&mkt=en-us) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR Insider 18d ago Can AI Glasses Fill the Home-Services Skills Gap?](https://arinsider.co/2026/11/09/can-ai-glasses-fill-the-home-services-skills-gap/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [AR 眼镜关键部件发现新材料，有望薄至石英方案的 1/120 薄至石英1/120！AR眼镜关键光学部件迎来新材料突破 - Sohu](https://news.google.com/rss/articles/CBMiiAFBVV95cUxPQUN6WnhDVDY0U3NLVzNta0paSlVVSFhYcGZ0dTUwTnc2cDJaYmlpcEdKZ1RmZU85ZUFQMDN3LWZOR2RtZ3lyeTJkWnRfTll2SW1hSmluX1NDd0J1U0NsYXREQ19jSDluOVlqQTNoeV9DV1oxRkIxX2ctMXc2Wkd0ZlN1NjFaNTNm?oc=5) | reachable (200) | research_news_review |
@@ -267,10 +266,11 @@ Generated: `2026-11-28T12:28:17.713428+00:00`
 | normal | needs_editorial_verification | direct | [Europa empieza a poner límites a las gafas inteligentes de Meta: piden paralizar su venta por los riesgos para la privacidad - 20 Minutos](https://news.google.com/rss/articles/CBMi-AFBVV95cUxPeGE3TWZ6RG1EWG5yOTVEeFFUeUdHYTBSUkw0NHNRZF9KSXRmUG9DNUxIQTlkTDZsSFJuTHczMGxYazZublNnZUs4aTY2cHcyTFRnMmZTSDVlQkNFR21Nd2dYbWdBLUdYZlJsMl9JYkRvMERSTllKOGRlYTVEOGFUeDRKVHBzeUJIc2F2WHAwZGFtZ19ZWUQwS2VPVE1OelpSa2tDc1RISWhHSXNxbnhIZnMtdzFCNEJud0U5MUIzRlpNbjd1ZHhGQ0laVGxUSXMyUHFpRWV6WFlYLTFyMHVEdnpHWDJkOHlwM2oyRTFkZTY1ek9ORWNZSQ?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Every single pair of Xreal smart glasses is now on sale for Black Friday](https://9to5google.com/2026/11/27/all-xreal-glasses-black-friday-sale-2026/) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Get Your Meta Smart Glasses at Walmart, Save $120 - Droid Life](https://news.google.com/rss/articles/CBMihwFBVV95cUxOaWVUUXdLaTU0clU3bVpIY3pmSTZ0WXlyYTZ2UVVJcG9iUGVGNmFlal9DTHlJZjVELXYyckZWN3czQ2FOWkx4VUFsQ3RwTVpvS0YzbDJZMV9QMm9hdGQ2WkEtQlc5ZExyVURtaTk5allUTlJEZnJ4cHRfRkt1Y0xwTXRjVmZlX0k?oc=5) | reachable (200) | research_news_review |
-| normal | needs_editorial_verification | direct | [Gizmodo 17d ago Smart Glasses Want to Be the Next Gadget to Incessantly Track Your Health](https://gizmodo.com/smart-glasses-want-to-be-the-next-gadget-to-incessantly-track-your-health-2000837726) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Google and Samsung to release AI smart glasses in December - The Spokesman-Review](https://news.google.com/rss/articles/CBMingFBVV95cUxNaUxKVkh1TGVsUzFwTFpNdnN5cDkwWEJzcFFQcVh0Qlpfc0VRd2VIQjJzbVVqQ1h6elR4Qm9IbmNsSUFGVGtrZUFnTDFENlBIYXBNNFpsOTFKT0NxaTNLSTcySmpkUTdhdUVDLUFVZ3dHNV9Oc0gtU09XRU5oaFQ3bGVLUnRPYlNPY1oyNzJyUXdHR3lCdFpoTUswMDdlQQ?oc=5) | reachable (200) | research_news_review, model_catalog_review, report_card_evidence |
 | normal | needs_editorial_verification | direct | [Grupos da Holanda pedem suspensão dos óculos inteligentes da Meta - G1](https://news.google.com/rss/articles/CBMizgFBVV95cUxNYkVVdkN1QTZEdjNrLU0xcktXS3lCOHg4RVl4dXI0SnRkM1A0Q294WnpMZV9TdlpRZHpsWUFIUHVSLU5nYy1kM2lKVGdvRC16eE5WVDdUemVJTzRCR0QyOE83M2ZncGlrTFpQN2JNRU9hSXpDZzFvaU03elZMVTItTjJjX3hoWjQ4XzdSamlhc0NRXzRGdV9UOUEzYzlycGVCM1BTZnBWY0ZVaE85RGNiWjBSLURwRVV4Y0FacE8taGlVNDJiaWNvYlFFX3VJd9IBzgFBVV95cUxNYkVVdkN1QTZEdjNrLU0xcktXS3lCOHg4RVl4dXI0SnRkM1A0Q294WnpMZV9TdlpRZHpsWUFIUHVSLU5nYy1kM2lKVGdvRC16eE5WVDdUemVJTzRCR0QyOE83M2ZncGlrTFpQN2JNRU9hSXpDZzFvaU03elZMVTItTjJjX3hoWjQ4XzdSamlhc0NRXzRGdV9UOUEzYzlycGVCM1BTZnBWY0ZVaE85RGNiWjBSLURwRVV4Y0FacE8taGlVNDJiaWNvYlFFX3VJdw?oc=5) | reachable (200) | research_news_review |
 | normal | needs_editorial_verification | direct | [Halliday G2 AI smart glasses review: Helpful features done better ...](https://www.tomsguide.com/computing/smart-glasses/i-tested-the-halliday-g2-ai-smart-glasses-and-they-turned-me-into-a-walking-cheat-sheet-but-everyone-could-tell) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Huawei Ai Glasses 2026 Unboxing & Full Review + Camera Test \| Best ...](https://m.youtube.com/watch?v=Dr56567cgQc) | reachable (200) | research_news_review, report_card_evidence |
+| normal | needs_editorial_verification | direct | [Huawei Ai Glasses 2026 Unboxing & Full Review + Camera Test \| Best ...](https://www.youtube.com/watch?v=Dr56567cgQc) | reachable (200) | research_news_review, report_card_evidence |
 
 ## Meaning of states
 
